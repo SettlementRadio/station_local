@@ -14,18 +14,19 @@ its own task (§33); it does not get folded into the one in progress.
 2. Read the architecture sections the task's `Reads:` line names, **plus Part II (§21–32), which
    binds every task.** An agent that has read only Part I is not ready to write code.
 3. On a grid or showrunner task, also read `docs/PROGRAMMING.md` — the editorial reference and the
-   input to `grid.yaml`. On any other task, never.
+   input to `grid.yaml`. In a planning session, also read `docs/PHASES.md` and only the phase named.
+   On any other task, neither.
 4. If the task has no observable check, it is not a task. Ask.
 
 ## Never
 
 - **Never add a task to `TASKS.md` — except in a planning session.** In normal work, end with an
   `## Observations` list; the operator decides what becomes work. A **planning session** is declared
-  by the operator, covers **one phase of §35 only**, and drafts cards the operator accepts or
+  by the operator, covers **one phase of `docs/PHASES.md` only**, and drafts cards the operator accepts or
   rejects one by one. Drafting work as a side effect of doing work is the thing this forbids.
-- **Never create a document.** Eight exist — the six in the §32 cap, plus `PRODUCT.md` and
-  `PROGRAMMING.md` outside it — and that is the cap. Two files are not documents and may be
-  created on a task that names them: `voices/PROVENANCE.md` and `README.md`.
+- **Never create a document.** Nine exist — the six in the §32 cap, plus `PRODUCT.md`,
+  `PROGRAMMING.md` and `PHASES.md` outside it — and that is the cap. Two files are not documents and
+  may be created on a task that names them: `voices/PROVENANCE.md` and `README.md`.
 - **Never author content** — canon, cast cards, speech profiles, voice reference clips, pool
   pieces, or any audio asset. That is the operator's, always. Structured config with validations
   behind it — `grid.yaml`, `banned-entities.yaml`, imaging placement, `music/catalogue.yaml` — is

@@ -166,9 +166,10 @@ explicit yes. The anti-sprawl intent is untouched, because the failure mode §33
 agent *deciding what work exists* as a side effect of doing other work — and that stays forbidden.
 Outside a planning session, a session still ends with `## Observations` and nothing else.
 
-**A planning session covers one phase of §35 and stops.** Planning all phases up front is a phase
-pack, which §34 records as the specific thing that killed the previous attempt, and the 10-item cap
-on `TASKS.md` is what makes it impossible. §35 is already the roadmap; it does not get restated.
+**A planning session covers one phase of `docs/PHASES.md` and stops.** Planning all phases up front
+is a phase pack, which §34 records as the specific thing that killed the previous attempt, and the
+10-item cap on `TASKS.md` is what makes it impossible. The roadmap already exists; it does not get
+restated as tasks ahead of time.
 
 **Consequence for the task format:** `Goal` and `Check` are written so a non-developer can judge
 them — what will be true, and what they will see or hear. `Reads` and `Files` are agent bookkeeping.
@@ -176,7 +177,27 @@ And **WIP 1 applies to agent tasks only**: operator content items marked `[opera
 `TASKS.md` without consuming the slot, or writing the canon seed would block every code task for a
 fortnight.
 
-**§35 gained a phase grouping (A–G) to give "one phase at a time" a referent.** The steps and their
-order are unchanged; the phases are a name for the existing groups, and the unit a planning session
-works in. A and B are independent and may run in either order — B needs no Studio, so it is the
-phase to run while hardware is arriving.
+### D-013 · The roadmap gets its own document — 2026-07-31
+
+A phase grouping was briefly added to ARCHITECTURE §35 and has been removed: §35 is the *technical*
+build order, and sequencing, milestones, hardware lead times, accounts and the outward-facing work
+are not architecture. **`docs/PHASES.md`** now holds eleven phases, A–K, each with a goal, an
+observable outcome, its hardware / accounts / content prerequisites, and its dependencies on other
+phases. It is the unit a planning session works in (D-012).
+
+**This raises the documentation cap from eight to nine**, which is a real cost and taken knowingly.
+The justification: the roadmap had no home, so it was being reconstructed in conversation every
+time it was needed, and the outward-facing half of the product — the site, the YouTube channel,
+support, social, the licence — appeared in no document at all. §35 covers what to build; nothing
+covered how the station reaches anyone.
+
+**It is a roadmap, not a phase pack.** One paragraph per phase, no tasks, no checklists, no
+per-phase sub-documents, and it generates no work by existing. §34's rule stands: if it ever starts
+producing work by being read, it has become the thing that killed the previous attempt and should be
+cut back to the table of contents.
+
+**Two things the phase map made visible that no document had said.** Phase J is entirely new
+scope — YouTube's synthetic-content settings, Ko-fi, social presence, stream directory listings and
+the LICENSE decision were scattered across §18, PRODUCT §10 and C10, and never sequenced. And
+**Ko-fi is a compliance input**, not just a donations link: it is what puts the station outside the
+AI Act's purely-personal-use carve-out, which is why phase G gates phase J.

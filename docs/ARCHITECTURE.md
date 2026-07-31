@@ -2714,7 +2714,7 @@ settlement-radio/
 ├── panel/                      # Next.js ops panel → Tailscale (after 30 days)
 └── docs/
     ├── ARCHITECTURE.md  ADMIN.md  DECISIONS.md  TASKS.md
-    └── PRODUCT.md  PROGRAMMING.md      # operator-owned, outside the §32 cap
+    └── PRODUCT.md  PROGRAMMING.md  PHASES.md   # operator-owned, outside the §32 cap
 ```
 
 **Layer rules:**
@@ -3198,13 +3198,21 @@ attempt, where a growing pack of phase documents became a machine for generating
 | `README.md` | Reproducible install from scratch | a dependency changes |
 | `CLAUDE.md` | **One page.** The non-negotiables only, pointing here for detail | rarely |
 
-Two further files sit **outside this cap** because they are operator-owned reference material, in
-the same class as canon rather than as process documentation. Neither generates tasks:
+Three further files sit **outside this cap** because they are operator-owned reference material, in
+the same class as canon rather than as process documentation. None generates tasks by itself:
 
 | File | Contains | Read by an agent |
 |---|---|---|
 | `PRODUCT.md` | The idea, principles, audience, milestones | never |
 | `PROGRAMMING.md` | Domains, formats, dayparts, presenters — the input to `grid.yaml` | only on grid or showrunner tasks |
+| `PHASES.md` | The eleven phases: goal, outcome, hardware, accounts, content, dependencies | only in a planning session (§33) |
+
+**Nine documents, and that is the cap.** `PHASES.md` was added because the roadmap had no home: §35
+holds the technical build order, but sequencing, milestones, hardware lead times, accounts and the
+outward-facing work (the site, the channel, support, social) had nowhere to live and were being
+reconstructed in conversation each time. It is a roadmap, **not a phase pack** — it describes phases
+at one paragraph each and holds no tasks, no checklists and no per-phase sub-documents. If it ever
+starts generating work by existing, it has become the thing §34 forbids and should be cut back.
 
 Rules:
 
@@ -3264,9 +3272,9 @@ Four rules keep this from becoming the thing §34 forbids:
 
 1. **Declared, never incidental.** A planning session happens because the operator asked for one. An
    agent finishing a coding task still ends with `## Observations` and nothing else.
-2. **One phase at a time.** A session covers the current phase of §35 and stops. **Planning every
-   phase up front is a phase pack**, which is precisely what killed the previous attempt (§34), and
-   the 10-item cap exists to make it impossible.
+2. **One phase at a time.** A session covers the current phase of `docs/PHASES.md` and stops.
+   **Planning every phase up front is a phase pack**, which is precisely what killed the previous
+   attempt (§34), and the 10-item cap exists to make it impossible.
 3. **Card by card.** Each draft is accepted, rewritten or rejected explicitly. Silence is not
    acceptance.
 4. **It produces no document.** Output is cards in `TASKS.md`. Not a plan, not a roadmap, not a
@@ -3333,29 +3341,10 @@ Each has a specific reason, recorded so nobody re-opens it in month three.
 
 Each step ends in something audible or visible.
 
-### The seven phases
-
-Steps are numbered for ordering; **phases are the unit a planning session works in** (§33). One
-phase is planned into `TASKS.md`, shipped, and only then is the next planned. This grouping adds no
-work — it is a name for what is already below.
-
-| Phase | Steps | Content | Ends when |
-|---|---|---|---|
-| **A · Can this work at all?** | 0, 0b, 1, and §36.2's cold read | — | Two verdicts in `DECISIONS.md`: the measured RTF, and whether the writer is good enough to broadcast |
-| **B · A stream that never dies** | 2 | — | **M0.** A URL playing placeholder audio, unlisted, surviving a week unattended |
-| **C · The world exists** | 3–7 | C1, C8 | `make tick` moves a world you can read |
-| **D · It sounds like a station** | 8–11b | C2, C3, C4, C9 | **M1 → M2.** A day generated overnight and broadcast while you sleep |
-| **E · Furniture and music** | 12–13c | C5, C6, C7 | Imaging, a music show, the pool, and the voice-identity decision made |
-| **F · Legal and public** | 14–18 | C10 | **M3.** Lawyer signed off, site up, anyone can listen |
-| **G · After** | 19, 20 | — | Chart at week 3, ops panel at day 30 |
-
-**A and B are independent** — different machines, no shared dependency — so they run in parallel,
-and either may go first. Everything from C onward is serial. **B needs no Studio at all**, which
-makes it the phase to run while hardware is still arriving.
-
-Phase D opens on step 8, the go/no-go: it is where you find out whether the local writer is good
-enough, and the honest answer may end the project or change its budget. Nothing in E–G is worth
-starting before it lands.
+> **The steps below are grouped into eleven phases by `docs/PHASES.md`**, which is where sequencing,
+> milestones, hardware, accounts and cross-phase dependencies live. A planning session works in one
+> phase at a time (§33). This section stays the *technical* build order and does not restate any of
+> that; where the two disagree about ordering, `PHASES.md` wins.
 
 ### The content track — runs in parallel, and half of it gates the engineering track
 
@@ -3604,6 +3593,7 @@ package, the canon pipeline, the transmitter, the working agreement.
 
 | Decision | The deciding test |
 |---|---|
+| **The catalogue's shape** | Never stated: §8 gives rotation weights and separation rules but no size. The binding constraint is structure, not count — a label retrospective needs a label with artists and albums behind it (§10). Specify labels × artists × albums × tracks, and let the count fall out. Decide before phase F |
 | Writer model | Same brief, same context, candidates write `The Evening Report`. Read blind (§36.2) |
 | Chatterbox vs Qwen3-TTS for cast | Same 90-second two-hander through both. Listen |
 | Which freshness tier the grid ships at | Falls out of the RTF measurement (§36) against `PROGRAMMING.md` §9 |
