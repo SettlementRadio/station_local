@@ -48,7 +48,7 @@ Everything else in this document is solvable engineering. Those two are not.
 |---|---|---|
 | **Writer LLM** | dense, **≤6GB at Q4** + KV — which is **9–10B**, not 9–12B (see the memory budget) | The only LLM. Does scripts, world tick, items, canon checks. Named candidate: Qwen 3.5 9B |
 | **LLM runtime** | **LM Studio (MLX backend)**, OpenAI-compatible on `:1234` | MLX is typically faster than GGUF on Apple Silicon. OpenAI-compatible keeps the seam honest |
-| **Cast TTS** | **Chatterbox Multilingual v3** (Resemble, MIT) | Emotion exaggeration + paralinguistic tags; built-in PerTh watermark, useful for Art. 50(2) |
+| **Cast TTS** | **Chatterbox Multilingual v3** (Resemble, MIT) | Emotion exaggeration + paralinguistic tags. Its built-in PerTh watermark is a **bonus, not a requirement** (D-019) — the engine is chosen on how it sounds |
 | **Second TTS** | **Qwen3-TTS** (Alibaba, Apache 2.0, 0.6B) | Different control vocabulary (natural-language direction). Two implementations is what proves the seam (§3) |
 | **Fallback TTS** | **Kokoro-82M** (Apache 2.0) | Circuit-breaker spill and CI smoke. **Never *scheduled*** — it reaches air only when the cast lane trips, and the day is marked degraded (§20) |
 | **Database** | **Postgres 16** + `pgvector` + `tsvector` | One datastore for world, canon, music, retrieval, queue, metrics |
@@ -66,7 +66,7 @@ Everything else in this document is solvable engineering. Those two are not.
 > | Slot | Profile | Current candidate | Verified |
 > |---|---|---|---|
 > | Writer | dense, **≤6GB at Q4**, ≥32k context, OpenAI-compatible, passes the benchmark (§29) | `Qwen/Qwen3.5-9B` (released 2026-03-02) | **unverified — task zero** |
-> | Cast TTS | zero-shot cloning, emotion control, ≤5GB | Chatterbox (Resemble, MIT, PerTh watermark) | base confirmed; the *Multilingual v3* revision must be verified |
+> | Cast TTS | zero-shot cloning, emotion control, ≤5GB. **Watermarking is recorded, never required** (D-019) | Chatterbox (Resemble, MIT, PerTh watermark) | base confirmed; the *Multilingual v3* revision must be verified |
 > | Second TTS | cloning + a *different* control vocabulary | `Qwen/Qwen3-TTS-12Hz-0.6B-Base` + `Qwen/Qwen3-TTS-Tokenizer-12Hz` (Apache 2.0, 2.52GB, 3-second cloning) | **unverified — task zero** |
 > | Embeddings | multilingual, ≤1.5GB, dimension declared in config | `BAAI/bge-m3` | confirmed |
 > | Reranker | cross-encoder, CPU-viable at 60 candidates in <1.5s | `BAAI/bge-reranker-v2-m3` | confirmed |
@@ -79,6 +79,12 @@ Everything else in this document is solvable engineering. Those two are not.
 > not resolve, the fallback second engines in order are **Dia2**, **Fish Speech S2**, **CosyVoice
 > 3.0**. Kokoro cannot serve as the second implementation — it has no control vocabulary, which is
 > the entire point of the pairing (§3).
+>
+> **Task zero also records, for every TTS candidate it resolves, whether it emits an inaudible
+> watermark and by what mechanism** — one extra column, no extra work. The engine is not chosen on
+> that column (D-019), but §18's marking posture reads it, and Phase G needs the answer as a fact
+> rather than as a recollection. An engine with no watermark is acceptable and makes standalone
+> watermarking a Phase G task.
 >
 > Before pinning any name, verify it is a real downloadable MLX artifact and record the **exact HF
 > repo, revision and quantisation** in `config/models.yaml`. **The embedding dimension is read
@@ -1739,6 +1745,17 @@ from the hour clock. `make pool-check` counts only what back-timing can draw on.
 Roughly 37 pieces, all rendered once, all reusable forever. `make pool-check` reports coverage per
 band and is part of the launch checklist.
 
+> **"Pool" means two different things in this document, and conflating them has already produced one
+> wrong check.** Use the full name in code, in tasks and in prose:
+>
+> | Name | What | Size | Counted by | Built in |
+> |---|---|---|---|---|
+> | **the back-timing pool** (`pool_items`) | short filler that absorbs the seconds between a programme ending and the next `:00` | 37 pieces in three length bands | `make pool-check` | §35 step 13c |
+> | **the archive pool** (`archive_items`) | whole retired and pre-built programmes that fill the overnight | 135 h floor, 165 h target, **no ceiling** | hours, in the digest and the rundown | §35 step 16 |
+>
+> They share no table, no floor, no check and no build step. `make pool-check` is green long before
+> a single archive hour exists and says nothing whatever about the archive.
+
 ### Duration estimation
 
 Six things depend on predicting speech length from text before anything is rendered: script
@@ -1897,11 +1914,12 @@ archive_items(segment_id, first_aired, last_aired, plays,
 
 | Rule | Value | Why |
 |---|---|---|
-| Separation | 14 days between plays | Below this, recurrence is audible |
+| Separation | 14 days between plays | Below this, recurrence is audible. **Never shortened** (D-021) |
 | Retire on plays | 12 | ≈6 months of life at 26 plays/year |
 | Retire on age | 18 months | Register and world drift |
 | Pool floor | **135 hours** | 9.5 h/day × 14-day separation |
 | Pool target | **165 hours** | Headroom so top-up is never urgent |
+| Pool ceiling | **none** | The target is a floor with a name, not a cap (D-021) |
 
 **Where 9.5 comes from.** The grid airs 7.9 archive hours on a weekday and 13.1–13.5 at the weekend,
 where lightness is bought with archive rather than with silence — 9.5 h/day averaged across the week
@@ -1934,6 +1952,13 @@ density is **~4,000 speech-minutes** — about 19 nights of pure archive render 
 realistically a couple of months alongside everything else (§35 step 16). It is not 2,250; that
 figure assumed a 90-hour pool that the grid never supported. With no launch date the render time is
 free (`DECISIONS.md` D-006); what is not free is building the pool before the voice is settled.
+
+**The archive is elastic and the launch date is what gives (D-021).** 165 hours is a target, not a
+budget: if the separation simulation says the pool needs 300 or 400 hours to keep a fortnight clean
+at the tier the station actually ships at, the answer is more nights of render, never a shorter
+separation window. Render time before launch costs nothing but calendar, and the two levers D-003
+declined — a 10-day window, a shorter Night Watch — stay declined. **Phase H finishes when the
+simulation is clean, and everything downstream waits for it.**
 
 **The cost dial is the overnight music-led share.** A talk archive hour costs ~42 speech-minutes to
 build; a `music_show` or `music_sequence` hour costs ~6. Moving one more Night Watch hour to
@@ -2138,7 +2163,7 @@ Fresh hours are limited by render capacity, not by anything else. Since everythi
 generation goes where listeners are — the morning and evening blocks — and the slow-domain
 overnight is where reused material belongs. The same holds across the week: **one clock, seven
 days, with the weekend made lighter by freshness rather than by a different shape** (D-001). This
-section deliberately restates no hours; where the two disagree, `PROGRAMMING.md` wins.
+section deliberately restates no hours; where the two disagree, `PROGRAMMING.md` wins (§32).
 
 **Hourly pinned junctions run across all 24 hours**, including the archive block. A current
 bulletin, the correct time and the disclosure every hour is most of what makes an archive block
@@ -2552,7 +2577,7 @@ qualify.
 |---|---|
 | On air | Spoken disclosure inside every hourly junction, **plus** a `disclosure_sting` hard-scheduled hourly independently of content, so it fires when playout has fallen through to music at 04:00 |
 | Stream metadata | `StreamTitle` and server name carry an AI marker on every track change, **at every fallback level** |
-| Files | C2PA manifest on every rendered file; the engine's own watermark as a second inaudible layer. Complementary mechanisms supporting Art. 50(2) — not a certified answer |
+| Files | C2PA manifest on every rendered file; **plus a second, inaudible watermark layer** — the engine's own where it has one, otherwise a standalone watermarking pass applied after render. Complementary mechanisms supporting Art. 50(2) — not a certified answer. **The two layers are the commitment; the engine is not** (D-019): the cast engine is chosen on how it sounds, and if the winner does not watermark, supplying the second layer is Phase G work, not a reason to pick a different voice |
 | Player | Persistent line above the fold, using the Annex I EU icon |
 | Website | `/ai-transparency` linked from every footer: what generates what, which models, and that the world is fictional |
 | YouTube (**the distribution-chain limb**) | The final Guidelines expect deployers in a production and distribution chain to take proportionate measures so the label reaches the audience at first exposure — via contractual terms and **interface settings**. Here that means: the channel-level synthetic-content setting, the per-broadcast altered-content flag, first line of the description. The spoken disclosure and hourly sting travel with the audio; **stream metadata does not survive RTMP**, which is why the spoken layer is the one that carries compliance on this path |
@@ -3007,6 +3032,7 @@ measurement logged.
 | Playlist build | 10 s |
 | Snapshot publish | 5 s |
 | World tick, end to end | 30 min |
+| **Assemble — mix, loudness, C2PA, cue sheets, for one night's fresh output** | **20 min**, measured in phase A before it is relied on (§36.3) |
 | **Whole batch** | **must complete by 06:50** |
 
 ### Required indexes
@@ -3235,6 +3261,28 @@ reconstructed in conversation each time. It is a roadmap, **not a phase pack** �
 at one paragraph each and holds no tasks, no checklists and no per-phase sub-documents. If it ever
 starts generating work by existing, it has become the thing §34 forbids and should be cut back.
 
+### Which document wins
+
+Precedence was previously stated four times in four places, in terms that did not quite agree. **It
+is stated once, here, and nowhere else.** An agent that finds two documents disagreeing consults
+this table, acts on the winner, and records the disagreement under `## Observations` — it does not
+stop, and it does not try to reconcile them mid-task.
+
+| Question | Authority | Everyone else defers |
+|---|---|---|
+| How the system works, and why | `ARCHITECTURE.md` | all |
+| **Ordering** — what is built when, phases, milestones, prerequisites, lead times | `PHASES.md` | §35 defers on ordering; it stays the *technical* build order |
+| **The schedule** — hours, slots, strands, which programme sits where | `PROGRAMMING.md` §8 | §15 defers; it holds only the principle |
+| **Editorial** — domains, formats, presenters, register | `PROGRAMMING.md` | — |
+| What was decided, and when | `DECISIONS.md` | outranks every other document *and* memory; if it disagrees with the code, one of them is wrong and fixing it is a task |
+| The non-negotiables an agent must not break | `CLAUDE.md` | but on any conflict **of fact**, `ARCHITECTURE.md` is right and the disagreement is recorded |
+| How to operate it | `ADMIN.md` | and it may only describe commands that exist |
+| What the product is for | `PRODUCT.md` | never read by an agent; generates no work |
+
+**Two rules that resolve almost every real case.** A *later* `DECISIONS.md` entry beats an earlier
+line anywhere else, including this document — that is what append-only means. And where the conflict
+is about **when**, `PHASES.md` wins; where it is about **what** or **how**, `ARCHITECTURE.md` wins.
+
 Rules:
 
 - **No phase packs.** Ever.
@@ -3365,7 +3413,7 @@ Each step ends in something audible or visible.
 > **The steps below are grouped into eleven phases by `docs/PHASES.md`**, which is where sequencing,
 > milestones, hardware, accounts and cross-phase dependencies live. A planning session works in one
 > phase at a time (§33). This section stays the *technical* build order and does not restate any of
-> that; where the two disagree about ordering, `PHASES.md` wins.
+> that; where the two disagree about ordering, `PHASES.md` wins (§32).
 
 ### The content track — runs in parallel, and half of it gates the engineering track
 
@@ -3380,7 +3428,7 @@ when the work is split into tasks.
 | C4 | **`grid.yaml`** — programmes, hosts, dayparts, hour clocks (§17a) | eng 9, 10 |
 | C5 | **Suno catalogue** + `music/catalogue.yaml` + licence evidence | eng 13, 15 |
 | C6 | **Imaging pack** — logo, stings, beds, opens/closes, disclosure sting | eng 12 |
-| C7 | **Pool pieces** — 37 minimum across three length bands (§13) | eng 13c |
+| C7 | **Pool pieces** — 37 minimum across three length bands (§13) | eng **10** (back-timing cannot run without some pool at all) and eng **13c** (where the 37 minimum is reached and `make pool-check` goes green) |
 | C8 | **`banned-entities.yaml` seed** | eng 4 |
 | C9 | **Stock voice bank** — 12–20 synthetic reference clips for `figures` (§3), varied by age, register and settlement. Required by every two-way, interview, vox pop and package, i.e. by most of the grid | eng 8 |
 | C10 | **LICENSE decision** — the repo is public. Code and canon/voices probably want different terms; MIT or Apache-2.0 for `src/`, a restrictive or all-rights-reserved statement for `canon/`, `voices/` and `music/` | before the repo is public |
@@ -3451,13 +3499,18 @@ Steps 1–11 are the system. If those work, the rest is filling in.
 
 ---
 
-## 36. The two measurements
+## 36. The measurements
 
-**Ordering, because these are not both doable on day one.** Measurement 1 needs only the TTS engine
+**Two are gates and one is a budget.** Measurements 1 and 2 can end the project; §1 calls them the
+two numbers that gate everything, and that is still true. §36.3 cannot end anything — it establishes
+a number the batch timetable currently assumes.
+
+**Ordering, because these are not all doable on day one.** Measurement 1 needs only the TTS engine
 and a script file — run it immediately, before any pipeline code. Measurement 2 needs real canon, a
 real world slice and a real brief, so it lands after build steps 3–7; that is the first moment it
 can be run honestly, and it must be run *before* step 8's pipeline work is extended any further.
-Both verdicts go in `DECISIONS.md`.
+§36.3 needs only rendered files and ffmpeg, so it runs alongside measurement 1.
+All three verdicts go in `DECISIONS.md`.
 
 ### 1. Sustained TTS RTF — 60 minutes, not 5
 
@@ -3602,6 +3655,37 @@ That is a day of work and it answers the only question that matters: can this mo
 apart for twenty minutes. The full measurement, on real retrieved context, still lands after step 7.
 It is far better to face the cheap version in week one than the real one in month three.
 
+### 3. The assemble pass — a budget, not a gate
+
+§14 gives the whole assemble stage **20 minutes**, 06:30 → 06:50, and that figure was written down
+rather than measured. It covers mixing fresh segments with imaging, loudness normalisation, C2PA
+signing and cue sheets, across several hundred files. Signing is per-file and is the part most
+likely to surprise.
+
+**Protocol, an afternoon in phase A:** render ~50 representative segments, then run the real
+assemble path over them — mix, normalise, sign, write cue sheets — and time it end to end. Divide
+by the segment count, multiply by a full night's fresh output at the tier the RTF measurement
+bought. Record the per-file and per-night figures in `DECISIONS.md` and the budget in
+`config/measured.yaml` beside the RTF.
+
+**Why it is not a gate.** A slow assemble cannot end the project, because the batch window is
+adjustable in three independent ways and none of them costs a listener anything:
+
+| Lever | What moves |
+|---|---|
+| **Start the night earlier** | The Think phase begins before 20:00. Costs nothing but the operator's evening |
+| **Finish the render earlier** | Move the render/assemble boundary before 06:30, spending fresh speech-minutes to buy assemble time |
+| **Assemble incrementally** | Sign and mix each segment as its render completes rather than in one pass at 06:30. Removes the deadline entirely, at the cost of a more complex batch |
+
+**The reason to measure it in phase A rather than discover it in E** is that the third lever is a
+design decision. Building the batch as a pipeline that assembles continuously is cheap before
+step 11 exists and is a rewrite afterwards. Twenty minutes of measurement in A decides whether
+step 11 needs it.
+
+**If the measured figure exceeds 20 minutes**, reach for the levers in the order above and record
+which was taken. Do not shorten the fresh tier to buy assemble time until the first two are spent —
+speech is the product and the window is not.
+
 ---
 
 ## 37. If the hardware improves
@@ -3628,7 +3712,6 @@ package, the canon pipeline, the transmitter, the working agreement.
 | Writer model | Same brief, same context, candidates write `The Evening Report`. Read blind (§36.2) |
 | Chatterbox vs Qwen3-TTS for cast | Same 90-second two-hander through both. Listen |
 | Which freshness tier the grid ships at | Falls out of the RTF measurement (§36) against `PROGRAMMING.md` §9 |
-| Archive pool: build 135 h, or shorten the separation window | Step 16, with measured RTF in hand (D-003) |
 | Voice identity when the archive is deep | Bulk re-render vs an in-world host change, forced at step 13b |
 | Sign the Code of Practice deployer section | Lawyer, at step 15 |
 | Panel screens | Whatever you actually reached for in the first 30 days |
@@ -3636,5 +3719,7 @@ package, the canon pipeline, the transmitter, the working agreement.
 
 **Closed since v9:** grid composition (talk : music) — §11 settles it, this is a speech station and
 music does not fill gaps; where the fresh hours sit — `PROGRAMMING.md` §8 is the schedule; the
-real-person match threshold (D-009); the Saturday chart slot (D-010); and whether chart clips score
-(D-011).
+real-person match threshold (D-009); the Saturday chart slot (D-010); whether chart clips score
+(D-011); whether the cast engine must watermark (D-019 — it must not be chosen on that); and the
+archive pool size versus the separation window (D-021 — the pool is elastic, the window never
+moves, and the launch date absorbs the difference).

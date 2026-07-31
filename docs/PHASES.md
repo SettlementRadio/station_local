@@ -9,8 +9,11 @@ can see or hear, and what it needs before it can start.*
 >
 > **This document says *what* and *when*. `ARCHITECTURE.md` says *how*.** Each phase names the
 > architecture sections it completes and does not restate them; each phase names the §35 build steps
-> it contains and does not re-describe them. If a detail appears here that also appears there, there
-> is the one that is right.
+> it contains and does not re-describe them.
+>
+> **Where the two disagree, ARCHITECTURE §32's precedence table decides — it is the only place
+> precedence is stated.** In short: on **when**, this document wins; on **what** or **how**,
+> `ARCHITECTURE.md` wins; and a later `DECISIONS.md` entry beats both.
 
 ---
 
@@ -132,19 +135,20 @@ this says *when*.
 
 | §38 decision | Closes in |
 |---|---|
-| Chatterbox vs Qwen3-TTS for cast | **A** — the same 90-second two-hander through both |
+| Chatterbox vs Qwen3-TTS for cast | **A** — the same 90-second two-hander through both. **A listening test and nothing else** (D-019): watermarking is recorded, never weighed |
 | Which freshness tier the grid ships at | **A** — falls out of the RTF measurement against `PROGRAMMING.md` §9 |
 | Writer model | **narrowed in A, settled in C** — `make benchmark` disqualifies candidates cheaply on synthetic context; choosing between the survivors is a blind read (§36.2) and needs real canon |
 | The catalogue's shape | **before F** — labels × artists × albums × tracks; C5 cannot start without it |
 | Voice identity when the archive is deep | **F**, at step 13b — before 50 shows exist, not 500 |
 | Sign the Code of Practice deployer section | **G** — the lawyer |
-| Archive pool: 135 h or a shorter separation window | **H** — with measured RTF in hand |
 | Panel screens | **K** — whatever was actually reached for in the first 30 days |
 | **Listener telemetry — whether to collect it at all** | **J** — added here; PRODUCT §9 wants return listening and time in stream, and no section of the architecture provides either |
 
-**A and C close four of the nine between them**, which is what makes the front of the project the
+**A and C close three of the eight between them**, which is what makes the front of the project the
 part that can least afford to be rushed — the cast engine and the freshness tier are both
-irreversible in practice once content exists.
+irreversible in practice once content exists. One row left the register entirely: the archive is
+elastic and the separation window never moves (D-021). One was narrowed rather than closed — the
+cast engine is now a pure listening test, because watermarking no longer bears on it (D-019).
 
 ---
 
@@ -167,7 +171,9 @@ freshness tier the grid ships at — and the writer-model field is narrowed to t
 
 **Completes in ARCHITECTURE:** §21 repo layout · §22 toolchain · §23 config and secrets ·
 §29 the five kinds of test and `make benchmark`'s pass thresholds · §30 the three CI workflows ·
-§31 code standards · §2's model table resolved to real artifacts · **§36.1** the RTF measurement.
+§31 code standards · §2's model table resolved to real artifacts, **with each TTS candidate's
+watermarking recorded as a fact** (D-019) · **§36.1** the RTF measurement · **§36.3** the assemble
+budget.
 **Build steps:** 0, 0b, 1, and §36.2's cheap week-one version.
 
 > **The cold read is model-bound, not hardware-bound.** Whether a 9–10B model writes usable radio is
@@ -186,6 +192,11 @@ freshness tier the grid ships at — and the writer-model field is narrowed to t
 > **The repo stays private until J.** §27's public-repo hygiene and §30's no-secrets-on-forks rule
 > are built now and become load-bearing then; gitleaks runs from the first commit regardless. This
 > is why C10 sits in J rather than here.
+>
+> **§36.3 is an afternoon and it decides a design question.** The batch gives assembly 20 minutes at
+> 06:30 and nobody has timed it. Measure it here, because the fix for a slow assemble — building the
+> batch to mix and sign continuously rather than in one pass — is cheap before step 11 exists and a
+> rewrite afterwards. It is a budget, not a gate: a slow figure moves the night, never the product.
 
 ---
 
@@ -304,10 +315,10 @@ rundown telling you what will air, and it airs. The hour lands on `:00`.
 - **Hardware** — the Studio, plus its power and sleep settings hardened (§21).
 - **Accounts** — offsite object storage for backups · an outbound email path for the daily digest
   and the one alert · a password manager entry for `BACKUP_ENCRYPTION_KEY`.
-- **Content** — **C7 pool pieces** (37 minimum across three length bands) — needed here because
-  back-timing draws on the pool roughly 24 times a day from the first night. §35 gates C7 on step
-  13c; that step is where `make pool-check` goes green in **F**, but the pieces have to exist here
-  or the first night's hours cannot be back-timed at all.
+- **Content** — **C7 pool pieces**, enough to back-time from — needed here because back-timing draws
+  on the pool roughly 24 times a day from the first night. §35 gates C7 on steps 10 and 13c: this
+  phase is step 10 and needs *some* pool, **F** is step 13c and is where the 37-piece minimum is
+  reached and `make pool-check` goes green.
 - **Depends on** — B (somewhere to push to), D (something worth pushing).
 
 **Completes in ARCHITECTURE:** §13 the clock contract and back-timing · §14 the nightly batch and
@@ -380,8 +391,9 @@ and why. Disclosure surviving all six playout levels, verified after push.
 - **Content** — the written statement of what the station broadcasts, for the lawyer to review.
 - **Depends on** — E (real output to gate), F (Suno licence evidence).
 
-**Completes in ARCHITECTURE:** §18 compliance in full · §19's remaining limbs — the model check,
-profanity, structural checks and the quarantine path — plus the whole gate, C's figure screen
+**Completes in ARCHITECTURE:** §18 compliance in full — **including a standalone watermarking pass
+if the cast engine chosen in A does not supply one** (D-019) · §19's remaining limbs — the model
+check, profanity, structural checks and the quarantine path — plus the whole gate, C's figure screen
 included, reviewed end to end · §27's prompt-injection and public-repo posture.
 **Build steps:** 14, 15.
 
@@ -399,8 +411,9 @@ included, reviewed end to end · §27's prompt-injection and public-repo posture
 **Goal.** Build the 165 hours of reusable programming the grid consumes, before it is consumed.
 
 **Outcome.** An archive deep enough that nothing recurs inside a fortnight, and an overnight block
-with its own identity. **The check is the nightly digest's archive line reading at or above the
-135-hour floor, and holding there for a week without the top-up phase falling behind** (§24).
+with its own identity. **The check is a rotation simulation, not a wait:** run the archive scheduler
+over a simulated 30 days at the tier the station actually ships at, and assert no item is drawn
+twice inside the 14-day separation window. It either passes or it names the shortfall in hours.
 
 - **Hardware** — the Studio, running most nights.
 - **Accounts** — none new.
@@ -419,9 +432,18 @@ with its own identity. **The check is the nightly digest's archive line reading 
 > goes green in F and stays green throughout this phase whether or not a single archive hour exists,
 > so it cannot be H's check.
 >
-> **§38's 135-versus-165 question closes here**, with measured RTF in hand: build the full target,
-> or shorten the separation window and accept earlier recurrence (D-003 declines the second lever;
-> D-006 says there is no launch date, so the render time is free).
+> **The simulation is the check because a fortnight cannot be waited out.** What H promises — you
+> will not hear the same programme twice in two weeks — is only *audible* after the station has run
+> two weeks, which is phase K. But it is fully *computable* now: the pool, the daily consumption and
+> the separation window are all known, so the scheduler can be run forward over a month of synthetic
+> days before a single hour airs. A shortfall comes back as a number of hours, which is exactly the
+> instruction for what to do next.
+>
+> **165 hours is a target, not a budget (D-021).** If the simulation wants 300 or 400 hours, the
+> answer is more nights of render — never a shorter separation window, and never a thinner Night
+> Watch. There is no launch date (D-006), so this phase simply takes as long as it takes and
+> everything after it waits. That is what makes it the longest phase and also the least risky one:
+> it cannot fail, it can only run late, and running late costs nothing but calendar.
 
 > **The longest phase by far: ~4,000 speech-minutes, roughly 19 nights of pure render and
 > realistically a couple of months alongside everything else.** There is no launch date, so this is

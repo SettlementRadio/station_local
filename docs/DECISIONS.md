@@ -286,3 +286,74 @@ pre-launch. Both tier tables now say to plan one notch below what the measured R
 and to relax it once the digest shows what retirement actually contributes. **Recorded as a
 measurement to take, not an open decision** — it resolves with three months of real retirement data
 and needs no §38 row.
+
+### D-019 · The cast engine is chosen on sound, never on watermarking — 2026-07-31
+
+Chatterbox was picked partly for its built-in PerTh watermark, which supplies the second of §18's
+two inaudible marking layers for Art. 50(2). That made a compliance property into a hidden input to
+a voice-quality decision — and the engine is chosen in phase A while the lawyer reviews the marking
+in phase G, so the two could diverge for months without anyone noticing.
+
+**The voices are the product; the marking is an obligation with more than one implementation.** So
+the commitment is the **two layers**, not the engine that happens to provide one of them. The cast
+engine is chosen on how it sounds. If the winner does not watermark, a standalone watermarking pass
+applied after render supplies the second layer, and that is **phase G work** — planned, not
+discovered.
+
+**Task zero records the fact rather than acting on it**: for every TTS candidate it resolves, one
+extra column saying whether it watermarks and by what mechanism. No extra work, and phase G inherits
+an answer instead of a recollection. §38's "Chatterbox vs Qwen3-TTS" row loses its compliance limb
+and becomes what it should always have been — a listening test.
+
+### D-020 · The assemble window is measured in phase A, and the night moves before the product does — 2026-07-31
+
+§14 allots 06:30 → 06:50 to mixing, loudness normalisation, C2PA signing and cue sheets, and that
+20 minutes was written down rather than measured — the only tight window in the system without a
+number behind it, while TTS RTF gets an entire phase. Signing is per-file across several hundred
+files and is the part most likely to surprise.
+
+**It is measured in phase A (§36.3) and it is a budget, not a gate.** ~50 representative segments
+through the real assemble path, timed, extrapolated to a night's output at the tier the RTF
+measurement bought. The figure goes in `config/measured.yaml` beside the RTF.
+
+**The reason to measure it early is that one of the fixes is a design decision.** If assembly is
+slow the levers are, in order: start the night earlier, move the render/assemble boundary earlier,
+or assemble incrementally as each render completes. The third removes the deadline entirely and is
+cheap before step 11 exists and a rewrite afterwards. **The fresh tier is not a lever** — speech is
+the product and the window is not, so the night moves before the programming does.
+
+### D-021 · The archive is elastic; the separation window never moves — 2026-07-31
+
+§38 asked whether to build 135 hours or shorten the 14-day separation window. **Neither: build
+whatever the separation window requires, and let the launch date absorb it.** If the rotation
+simulation says the pool needs 300 or 400 hours at the tier the station ships at, that is 300 or 400
+hours of render — nights, not compromises. D-003's two declined levers (a 10-day window, a shorter
+Night Watch) stay declined permanently. 165 hours becomes a target with no ceiling above it.
+
+**This is affordable only because there is no launch date (D-006)**, and it is the cheapest trade in
+the project: pre-launch render time costs calendar and nothing else, while a shortened separation
+window costs audible repetition forever, on the one thing the product is actually about.
+
+**It also gives phase H a real check, which it did not have.** The promise — no programme twice
+inside a fortnight — is only *audible* after two weeks on air (phase K), but it is fully
+*computable* now: run the archive scheduler forward over 30 synthetic days and assert no item is
+drawn twice inside the window. It passes, or it returns the shortfall in hours, which is the
+instruction for what to do next. H can no longer fail, only run late.
+
+### D-022 · Precedence between documents is stated once, in §32 — 2026-07-31
+
+Which document wins was stated in four places — `CLAUDE.md`, `PHASES.md`'s preamble, §35 and §15 —
+in terms that did not agree: the `PHASES.md` preamble said `ARCHITECTURE.md` was right about any
+shared detail, while §35 said `PHASES.md` wins on ordering. An agent cross-checking documents
+mid-session could reach opposite conclusions depending on which it read first.
+
+**§32 now carries the only precedence table**, covering all nine documents, and the other four
+places point at it instead of restating it. Two rules resolve nearly every real case: **on *when*,
+`PHASES.md` wins; on *what* or *how*, `ARCHITECTURE.md` wins** — and a later `DECISIONS.md` entry
+beats both, which is what append-only means.
+
+**Two concrete collisions were fixed at the same time.** §35's content track gated C7 on step 13c
+alone while `PHASES.md` needed pool pieces in phase E; it now names both steps and what each one
+means. And **"pool" meant two unrelated things** — the 37-piece back-timing pool and the 135-hour
+archive pool — which had already produced one wrong phase check (D-015); §13 now carries a naming
+table, and the full name is used in code, tasks and prose.
