@@ -19,8 +19,10 @@ its own task (§33); it does not get folded into the one in progress.
 
 ## Never
 
-- **Never add a task to `TASKS.md`.** End the session with an `## Observations` list instead. The
-  operator decides what becomes work.
+- **Never add a task to `TASKS.md` — except in a planning session.** In normal work, end with an
+  `## Observations` list; the operator decides what becomes work. A **planning session** is declared
+  by the operator, covers **one phase of §35 only**, and drafts cards the operator accepts or
+  rejects one by one. Drafting work as a side effect of doing work is the thing this forbids.
 - **Never create a document.** Eight exist — the six in the §32 cap, plus `PRODUCT.md` and
   `PROGRAMMING.md` outside it — and that is the cap. Two files are not documents and may be
   created on a task that names them: `voices/PROVENANCE.md` and `README.md`.

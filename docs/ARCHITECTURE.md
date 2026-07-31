@@ -3250,6 +3250,28 @@ If you cannot state the observable check, it is not a task yet — it is a thoug
 **`Reads:` names the architecture sections the task needs.** `CLAUDE.md` tells an agent to read
 only the sections a task names, so the format has to give it somewhere to name them.
 
+**`Goal` and `Check` are written for a non-developer; `Reads` and `Files` are agent bookkeeping.**
+The operator does not review implementations — they review *what will be true when this is done*,
+and whether they can see or hear it. A `Check` that only another developer could evaluate is a
+badly written check, not a technical necessity.
+
+### The planning session
+
+The operator is not a developer and cannot author task cards. Requiring it would stop the project,
+so **an agent drafts cards and the operator accepts them** — authorship moves, authority does not.
+
+Four rules keep this from becoming the thing §34 forbids:
+
+1. **Declared, never incidental.** A planning session happens because the operator asked for one. An
+   agent finishing a coding task still ends with `## Observations` and nothing else.
+2. **One phase at a time.** A session covers the current phase of §35 and stops. **Planning every
+   phase up front is a phase pack**, which is precisely what killed the previous attempt (§34), and
+   the 10-item cap exists to make it impossible.
+3. **Card by card.** Each draft is accepted, rewritten or rejected explicitly. Silence is not
+   acceptance.
+4. **It produces no document.** Output is cards in `TASKS.md`. Not a plan, not a roadmap, not a
+   summary of the plan. §35 is already the roadmap and does not need restating.
+
 ### Definition of done
 
 Code, plus the one kind of test that applies (§29), plus `ADMIN.md` if a command changed, plus a
@@ -3258,9 +3280,13 @@ document, not a new pack, not a gate.
 
 ### Standing rules
 
-- **WIP limit 1.** One task at a time, finished, before the next.
-- **An agent may not add tasks.** It may end a session with an "Observations" list; the operator
-  decides what becomes a task. This is the most important rule in this document.
+- **WIP limit 1 — for agent tasks.** One agent task at a time, finished, before the next. Operator
+  content items (`[operator]`, the §35 content track) sit in `TASKS.md` alongside them and do not
+  consume the slot; writing canon for a fortnight must not block every code task behind it.
+- **An agent may not decide what work exists.** It may end a session with an "Observations" list;
+  the operator decides what becomes a task. This is the most important rule in this document, and
+  it survives the planning-session exception below intact — because the exception moves *authorship*
+  to the agent while leaving *authority* with the operator.
 - **A null result is a completed task.** "Measured, no improvement, reverted" is success.
 - **The default for any judgment call is no change.**
 - **Ask before destructive actions.** `make reset-world` and anything irreversible.
@@ -3306,6 +3332,30 @@ Each has a specific reason, recorded so nobody re-opens it in month three.
 ## 35. Build order
 
 Each step ends in something audible or visible.
+
+### The seven phases
+
+Steps are numbered for ordering; **phases are the unit a planning session works in** (§33). One
+phase is planned into `TASKS.md`, shipped, and only then is the next planned. This grouping adds no
+work — it is a name for what is already below.
+
+| Phase | Steps | Content | Ends when |
+|---|---|---|---|
+| **A · Can this work at all?** | 0, 0b, 1, and §36.2's cold read | — | Two verdicts in `DECISIONS.md`: the measured RTF, and whether the writer is good enough to broadcast |
+| **B · A stream that never dies** | 2 | — | **M0.** A URL playing placeholder audio, unlisted, surviving a week unattended |
+| **C · The world exists** | 3–7 | C1, C8 | `make tick` moves a world you can read |
+| **D · It sounds like a station** | 8–11b | C2, C3, C4, C9 | **M1 → M2.** A day generated overnight and broadcast while you sleep |
+| **E · Furniture and music** | 12–13c | C5, C6, C7 | Imaging, a music show, the pool, and the voice-identity decision made |
+| **F · Legal and public** | 14–18 | C10 | **M3.** Lawyer signed off, site up, anyone can listen |
+| **G · After** | 19, 20 | — | Chart at week 3, ops panel at day 30 |
+
+**A and B are independent** — different machines, no shared dependency — so they run in parallel,
+and either may go first. Everything from C onward is serial. **B needs no Studio at all**, which
+makes it the phase to run while hardware is still arriving.
+
+Phase D opens on step 8, the go/no-go: it is where you find out whether the local writer is good
+enough, and the honest answer may end the project or change its budget. Nothing in E–G is worth
+starting before it lands.
 
 ### The content track — runs in parallel, and half of it gates the engineering track
 

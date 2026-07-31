@@ -153,3 +153,30 @@ inertia — inertia is the `previous position` term, bounded at 0.20 and decayin
 excludes `chart_clip`.** The rows are still written, because rotation separation must know the track
 was heard — playing it again an hour later is the audible clash the separation rules exist to
 prevent, whether the earlier play was a clip or not.
+
+### D-012 · Agents draft tasks; the operator accepts them — 2026-07-31
+
+"An agent may not add tasks" assumed an operator who could write task cards. **The operator is not a
+developer**, so the rule as written had no path forward: nobody could author the first `TASKS.md`
+and the project could not start.
+
+The rule now separates **authorship** from **authority**. An agent drafts cards in a **declared
+planning session**; the operator accepts, rewrites or rejects each one; nothing lands without an
+explicit yes. The anti-sprawl intent is untouched, because the failure mode §33 describes is an
+agent *deciding what work exists* as a side effect of doing other work — and that stays forbidden.
+Outside a planning session, a session still ends with `## Observations` and nothing else.
+
+**A planning session covers one phase of §35 and stops.** Planning all phases up front is a phase
+pack, which §34 records as the specific thing that killed the previous attempt, and the 10-item cap
+on `TASKS.md` is what makes it impossible. §35 is already the roadmap; it does not get restated.
+
+**Consequence for the task format:** `Goal` and `Check` are written so a non-developer can judge
+them — what will be true, and what they will see or hear. `Reads` and `Files` are agent bookkeeping.
+And **WIP 1 applies to agent tasks only**: operator content items marked `[operator]` sit in
+`TASKS.md` without consuming the slot, or writing the canon seed would block every code task for a
+fortnight.
+
+**§35 gained a phase grouping (A–G) to give "one phase at a time" a referent.** The steps and their
+order are unchanged; the phases are a name for the existing groups, and the unit a planning session
+works in. A and B are independent and may run in either order — B needs no Studio, so it is the
+phase to run while hardware is arriving.
