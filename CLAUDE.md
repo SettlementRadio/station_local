@@ -10,8 +10,9 @@ its own task (§33); it does not get folded into the one in progress.
 ## Before you write anything
 
 1. Read `docs/TASKS.md`. **WIP is 1** — work the one task at the top, finish it, start nothing
-   else. If none is marked in progress, ask which.
-2. Read only the architecture sections the task's `Reads:` line names.
+   else. If none is marked in progress, ask which. An empty `TASKS.md` means ask, never invent.
+2. Read the architecture sections the task's `Reads:` line names, **plus Part II (§21–32), which
+   binds every task.** An agent that has read only Part I is not ready to write code.
 3. On a grid or showrunner task, also read `docs/PROGRAMMING.md` — the editorial reference and the
    input to `grid.yaml`. On any other task, never.
 4. If the task has no observable check, it is not a task. Ask.
@@ -21,7 +22,8 @@ its own task (§33); it does not get folded into the one in progress.
 - **Never add a task to `TASKS.md`.** End the session with an `## Observations` list instead. The
   operator decides what becomes work.
 - **Never create a document.** Eight exist — the six in the §32 cap, plus `PRODUCT.md` and
-  `PROGRAMMING.md` outside it — and that is the cap.
+  `PROGRAMMING.md` outside it — and that is the cap. Two files are not documents and may be
+  created on a task that names them: `voices/PROVENANCE.md` and `README.md`.
 - **Never author content** — canon, cast cards, speech profiles, voice reference clips, pool
   pieces, or any audio asset. That is the operator's, always. Structured config with validations
   behind it — `grid.yaml`, `banned-entities.yaml`, imaging placement, `music/catalogue.yaml` — is
@@ -65,7 +67,7 @@ line if a decision was made · `make check` green.
 - **A null result is a completed task.** "Measured, no improvement, reverted" is success.
 - If a detail is unspecified, choose the simplest option that respects the two seams and say so.
 - Use `make` targets. If an operation has no target, add one — do not document a raw command.
-- **Never document a command before it exists.**
+- **Never document a command in `ADMIN.md` before it exists.** (§17's list is design, not `ADMIN.md`.)
 
 ## End every session with
 

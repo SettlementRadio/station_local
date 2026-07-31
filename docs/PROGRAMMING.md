@@ -16,9 +16,16 @@ much of its context comes from the living world versus the static bible.
 
 | Speed | Domains | Changes | Native shape |
 |---|---|---|---|
-| **Fast** | politics · finance · sport · conflict · crime | daily | Reports, two-ways, bulletins, magazines. Perishable |
-| **Medium** | technology · health · celebs · music (catalogue) · fashion | weekly | Explainers, reviews, interviews, profiles |
+| **Fast** | politics · finance · sport · conflict | daily | Reports, two-ways, bulletins, magazines. Perishable |
+| **Medium** | crime · technology · health · celebrity · fashion · music (catalogue) | weekly | Explainers, reviews, interviews, profiles |
 | **Slow** | history · religion · art · culture · music (heritage) | rarely | Features, essays, documentaries. Evergreen |
+
+**Every domain sits in exactly one of the three**, because the speed picks the `context_mix` and
+there is no ratio for "slow-medium". Where a domain has two speeds it is because it has two bodies
+of material — music is the only one, and it is split explicitly: the catalogue is medium, the
+heritage is slow, and the two are different programmes. The per-domain entries in §3 carry the same
+label as this table; if they ever disagree, this table is the one that is wrong, because §3 is where
+the editorial thinking happens.
 
 Three things fall straight out of this, and they line up exactly with the architecture:
 
@@ -68,10 +75,12 @@ Each entry: what it covers in-world, its best formats, where it sits, and its tr
 
 **This list is canonical — seventeen domains, and nothing may invent an eighteenth.**
 `facts.domain`, `domain_floor`, the 12-per-domain diversity cap and the Tier 1 canon summaries all
-key off it. Fourteen carry programmes; three exist only in canon and never do: **logistics**,
-**geography**, **peoples**. Canon's older names map on — `war` → `conflict`, `tech` →
-`technology`. `news` and `weather` are **programme types, not domains**: a bulletin's domain is
-whatever the bulletin is about.
+key off it. Fourteen carry a **strand of their own**; three do not, and appear only as items inside
+other programmes and as seats in a `domain_floor`: **logistics**, **geography**, **peoples**. That
+is why `Early Watch` can be `logistics · religion` without owning a logistics strand — it is a
+supply-and-recap magazine, not "the logistics programme". Canon's older names map on — `war` →
+`conflict`, `tech` → `technology`. `news` and `weather` are **programme types, not domains**: a
+bulletin's domain is whatever the bulletin is about.
 
 ### Politics — fast
 Council votes, tariffs, appointments, factional manoeuvre, settlement autonomy.
@@ -100,6 +109,7 @@ Border disputes, blockades, patrol incidents, veterans, the aftermath of the old
 tactics. Nothing here should read as thrilling.
 
 ### Crime — medium, sensitive
+*(the report is perishable; the case narrative is not, which is why the domain sits at medium)*
 Inquiries, tribunals, smuggling, salvage disputes, fraud.
 **Formats:** court/inquiry report · 25 min case narrative · interview with an investigator.
 **Daypart:** the report is daytime; the case narrative is **night** — the long-form true-crime shape
@@ -123,7 +133,7 @@ Sculpture in low gravity, light works, muralists, station architecture.
 **Daypart:** evening and night. **Trap:** describing visual work on radio. Talk about the maker, the
 argument and the room, not the image.
 
-### Culture — slow-medium
+### Culture — slow
 Customs, food, language drift, festivals, generational difference, life aboard.
 **Formats:** magazine item · vox pop · essay · 25 min feature.
 **Daypart:** midday and evening. **Trap:** anthropological tone. Culture is what people do without
@@ -151,7 +161,7 @@ Musicians, racers, presenters, officials with reputations; feuds, appearances, g
 station's own presenters can appear as subjects, which is one of the cheapest ways to make the
 station feel real.
 
-### Fashion and style — slow-medium
+### Fashion and style — medium
 What people wear in a place with fabric scarcity, salvage aesthetics, uniform, status.
 **Formats:** light magazine item · designer profile · essay.
 **Daypart:** afternoon and weekend. **Trap:** it only works when tied to material constraint. Style
@@ -177,8 +187,8 @@ by hour, with every minute accounted for.*
 | **11:00–14:00** Midday | Explanatory | culture · health · technology · a lighter magazine |
 | **14:00–17:00** Afternoon | Lighter talk, the chart | music (chart) · sport · fashion · celebrity |
 | **17:00–21:00** Evening | Considered | politics · conflict · discussion · art |
-| **21:00–00:00** Night | Long-form, reflective | religion · essay · analysis · music heritage |
-| **00:00–05:00** Overnight | Archive and narrative | **history** · crime narrative · features · religion |
+| **21:00–01:00** Night | Long-form, reflective | religion · essay · analysis · music heritage |
+| **01:00–05:00** Overnight | Archive and narrative | **history** · crime narrative · features · music |
 
 Fresh generation goes where listeners are (morning and evening). The overnight is slow-domain
 material that stays good, which is why it can be pre-built months ahead and reused — and it is the
@@ -266,10 +276,11 @@ same time, every weekday. That is what makes a schedule learnable, and being lea
 someone come back.
 
 **The junction is always four minutes; its content is not always four minutes of speech.** A daytime
-bulletin runs four to six stories and fills the slot. Overnight (01:00–05:00) the junction carries a
-summary — the clock, a recap, the disclosure — roughly two minutes of speech in the same four-minute
-slot, with imaging and a bed carrying the rest. The slot never varies; the writing does. This is why
-the capacity line in §9 reads `19 × 4 + 5 × 2` against 24 identical slots.
+bulletin runs four to six stories and fills the slot. The four overnight junctions — **01:00, 02:00,
+03:00 and 04:00** — carry a summary instead: the clock, a recap, the disclosure, roughly two minutes
+of speech in the same four-minute slot, with imaging and a bed carrying the rest. The 05:00 junction
+is a full bulletin again. The slot never varies; the writing does. This is why the capacity line in
+§9 reads `20 × 4 + 4 × 2 = 88` against 24 identical slots.
 
 **No music sequences.** This is a speech station. The only music programme in the daytime is the
 chart, and it is weekly. Music returns overnight, where it belongs.
@@ -278,85 +289,159 @@ chart, and it is weekly. Music returns overnight, where it belongs.
 
 ## 8. The grid
 
-Every programme the station airs. `F` = fresh daily · `W` = fresh weekly, repeats through the week ·
-`A` = archive, generated far in advance.
+**One clock, seven days** (`DECISIONS.md` D-001). The hour skeleton is identical every day of the
+week: the same junction at `:00`, the same slot lengths, the same daypart character. Only the
+*occupant* of a slot and its *freshness* vary by day.
 
-### Weekday
+**Slot lengths are day-invariant.** A 56-minute weekend programme may not sit in an hour that runs
+`4 + 28 + 28` on weekdays. This is the constraint that makes one clock possible, and it is what
+`grid-sync` validation 5 checks once instead of three times.
 
-`R` marks a repeat of a `W` programme aired earlier in the week — billed as a repeat on air.
+The weekend is still lighter — because **lightness is a freshness property, not a clock property**.
+The 17:04 slot holds a fresh flagship on Monday and a repeat on Sunday. Twelve slots carry weekend
+overrides; everything else is identical all week.
 
-| Time | Programme | Min | Domain | Format | Pace | Fresh |
+`F` = fresh daily · `W` = fresh weekly · `A` = archive, generated far in advance ·
+`R` = a repeat of a `W` edition aired earlier, billed as a repeat on air.
+
+The **`Type`** column carries a legal `programme_type` from ARCHITECTURE §11 and nothing else, so
+`grid.yaml` can be written from this table directly (D-005).
+
+### The clock, Monday to Friday
+
+| Time | Programme | Min | Domain | Type | Pace | Fresh |
 |---|---|---|---|---|---|---|
 | **05:00** | **NEWS** | 4 | — | bulletin | — | F |
-| 05:04 | **Early Watch** — overnight recap, supply, weather; closes with **Reflection** | 28 | logistics · religion | short items | slow | F |
-| 05:32 | Music to the hour | 28 | music | sequence | slow | A |
+| 05:04 | **Early Watch** — overnight recap, supply, weather; closes with **Reflection** | 28 | logistics · religion | magazine | slow | F |
+| 05:32 | **The Long Record** — history documentary | 28 | history | feature | slow | A |
 | **06:00** | **NEWS** | 4 | — | bulletin | brisk | F |
 | 06:04 | **First Shift** — the breakfast strand, part 1 | 56 | politics · finance | magazine | fast | F |
-| **07:00** | **NEWS** | 4 | | | | F |
+| **07:00** | **NEWS** | 4 | | bulletin | | F |
 | 07:04 | **First Shift** — part 2 | 56 | politics · sport · culture | magazine | fast | F |
-| **08:00** | **NEWS** | 4 | | | | F |
+| **08:00** | **NEWS** | 4 | | bulletin | | F |
 | 08:04 | **First Shift** — part 3 | 56 | politics · technology | magazine | fast | F |
-| **09:00** | **NEWS** | 4 | | | | F |
-| 09:04 | **The Long Question** — one guest, one subject | 28 | rotating | interview | measured | F |
-| 09:32 | **Relay** (M/W/F) · **Body & Air** (Tu/Th) | 28 | technology · health | explainer | measured | W |
-| **10:00** | **NEWS** | 4 | | | | F |
+| **09:00** | **NEWS** | 4 | | bulletin | | F |
+| 09:04 | **The Long Question** — one guest, one subject | 28 | rotating | interview_programme | measured | F |
+| 09:32 | **Relay** (M/W/F) · **Body & Air** (Tu/Th) | 28 | technology · health | magazine | measured | W |
+| **10:00** | **NEWS** | 4 | | bulletin | | F |
 | 10:04 | **The Common Table** — life aboard, customs, food, language | 56 | culture | magazine | warm | W |
-| **11:00** | **NEWS** | 4 | | | | F |
-| 11:04 | **Ledger** — tariffs, freight, labour, scarcity | 28 | finance | analysis | brisk | F |
-| 11:32 | **Dispatch** — from the borders and the patrol lines | 28 | conflict | package + two-way | grave | W |
-| **12:00** | **NEWS** | 4 | | | | F |
+| **11:00** | **NEWS** | 4 | | bulletin | | F |
+| 11:04 | **Ledger** — tariffs, freight, labour, scarcity | 28 | finance | newsreel | brisk | F |
+| 11:32 | **Dispatch** — from the borders and the patrol lines | 28 | conflict | newsreel | grave | W |
+| **12:00** | **NEWS** | 4 | | bulletin | | F |
 | 12:04 | **The Midday Report** — second news pillar of the day | 56 | politics · conflict | magazine | fast | F |
-| **13:00** | **NEWS** | 4 | | | | F |
-| 13:04 | **The Bench** — inquiries, tribunals, salvage disputes | 28 | crime | report + narrative | measured | W |
-| 13:32 | **Vantage** — a single voice, a single argument | 28 | rotating | essay | slow | A |
-| **14:00** | **NEWS** | 4 | | | | F |
-| 14:04 | **The Count** *(Fri)* — the chart, 20 down · **Dispatch** *(Mon–Thu)* | 28 | music · conflict | chart / package | bright | F · R |
+| **13:00** | **NEWS** | 4 | | bulletin | | F |
+| 13:04 | **The Bench** — inquiries, tribunals, salvage disputes | 28 | crime | feature | measured | W |
+| 13:32 | **Vantage** — a single voice, a single argument | 28 | rotating | feature | slow | A |
+| **14:00** | **NEWS** | 4 | | bulletin | | F |
+| 14:04 | **The Count** *(Fri)* — the chart, 20 down · **Dispatch** *(Mon–Thu)* | 28 | music · conflict | chart · newsreel | bright | W · R |
 | 14:32 | **Cut** — dress, salvage, status, scarcity | 28 | fashion | magazine | light | A |
-| **15:00** | **NEWS** | 4 | | | | F |
-| 15:04 | **Ice & Iron** — results, standings, the racing | 28 | sport | results + two-way | fast | F |
-| 15:32 | **Relay** · **Body & Air** *(repeat of 09:32)* | 28 | technology · health | explainer | measured | R |
-| **16:00** | **NEWS** | 4 | | | | F |
-| 16:04 | **The Gallery** — makers, light works, station architecture | 28 | art | review + profile | measured | A |
+| **15:00** | **NEWS** | 4 | | bulletin | | F |
+| 15:04 | **Ice & Iron** — results, standings, the racing | 28 | sport | newsreel | fast | F |
+| 15:32 | **Relay** · **Body & Air** *(repeat of 09:32)* | 28 | technology · health | magazine | measured | R |
+| **16:00** | **NEWS** | 4 | | bulletin | | F |
+| 16:04 | **The Gallery** — makers, light works, station architecture | 28 | art | magazine | measured | A |
 | 16:32 | **Names** — who is being talked about, and why | 28 | celebrity | magazine | light | A |
-| **17:00** | **NEWS** | 4 | | | | F |
+| **17:00** | **NEWS** | 4 | | bulletin | | F |
 | 17:04 | **The Evening Report** — the flagship | 56 | politics · conflict | magazine | fast | F |
-| **18:00** | **NEWS** | 4 | | | | F |
-| 18:04 | **The Six** — the main news programme of the day | 28 | politics · conflict | news programme | grave | F |
+| **18:00** | **NEWS** | 4 | | bulletin | | F |
+| 18:04 | **The Six** — the main news programme of the day | 28 | politics · conflict | news_programme | grave | F |
 | 18:32 | **Crossfire** — three voices who disagree | 28 | politics | discussion | fast | F |
-| **19:00** | **NEWS** | 4 | | | | F |
-| 19:04 | **Assembly** — the council, the factions, the manoeuvre | 56 | politics | discussion + interview | measured | W |
-| **20:00** | **NEWS** | 4 | | | | F |
+| **19:00** | **NEWS** | 4 | | bulletin | | F |
+| 19:04 | **Assembly** — the council, the factions, the manoeuvre | 56 | politics | discussion | measured | W |
+| **20:00** | **NEWS** | 4 | | bulletin | | F |
 | 20:04 | **The Documentary** — the station's long-form strand | 56 | rotating | feature | slow | W |
-| **21:00** | **NEWS** | 4 | | | | F |
-| 21:04 | **Faith in Transit** | 28 | religion | talk + interview | slow | A |
-| 21:32 | **The Bench** *(repeat of 13:04)* | 28 | crime | report + narrative | measured | R |
-| **22:00** | **NEWS** | 4 | | | | F |
-| 22:04 | **The Late Report** — the day analysed, not repeated | 56 | politics · conflict | analysis | measured | F |
-| **23:00** | **NEWS** | 4 | | | | F |
-| 23:04 | **Night Record** — heritage music, one label or one year | 56 | music | specialist | slow | A |
-| **00:00** | **NEWS** | 4 | | | | F |
-| 00:04 | **The Midnight Report** | 28 | politics · conflict | news programme | grave | F |
+| **21:00** | **NEWS** | 4 | | bulletin | | F |
+| 21:04 | **Faith in Transit** | 28 | religion | magazine | slow | A |
+| 21:32 | **The Bench** *(repeat of 13:04)* | 28 | crime | feature | measured | R |
+| **22:00** | **NEWS** | 4 | | bulletin | | F |
+| 22:04 | **The Late Report** — the day analysed, not repeated | 56 | politics · conflict | newsreel | measured | F |
+| **23:00** | **NEWS** | 4 | | bulletin | | F |
+| 23:04 | **Night Record** — heritage music, one label or one year | 56 | music | music_show | slow | A |
+| **00:00** | **NEWS** | 4 | | bulletin | | F |
+| 00:04 | **The Midnight Report** | 28 | politics · conflict | news_programme | grave | F |
 | 00:32 | **The Long Record** — history documentary | 28 | history | feature | slow | A |
-| **01:00–05:00** | **The Night Watch** — archive block, `4 + 56` each hour. Documentaries, retrospectives, essays, music. The `:00` junction is a 2-minute summary in a 4-minute slot | 4×60 | history · art · music | feature + sequence | slow | A |
+| **01:00** | **SUMMARY** | 4 | — | bulletin | — | F |
+| 01:04 | **The Night Watch** — documentary or essay | 56 | history · art · culture | feature | slow | A |
+| **02:00** | **SUMMARY** | 4 | | bulletin | | F |
+| 02:04 | **The Night Watch** — label retrospective, artist profile, album story | 56 | music | music_show | slow | A |
+| **03:00** | **SUMMARY** | 4 | | bulletin | | F |
+| 03:04 | **The Night Watch** — specialist music | 56 | music | music_show | slow | A |
+| **04:00** | **SUMMARY** | 4 | | bulletin | | F |
+| 04:04 | **The Night Watch** — music to the hour | 56 | music | music_sequence | slow | A |
+
+Every hour is `4 + 56` or `4 + 28 + 28`; every hour sums to 60; the day sums to 1,440. Twenty of the
+junctions are full bulletins and four (01:00–04:00) are 2-minute summaries in the same 4-minute
+slot (§7).
 
 **Reflection is an item, not a slot.** At five minutes it was never a programme; it closes
 `Early Watch`, which is where a reflective piece belongs in a 05:00 hour anyway.
 
-**Repeat slots, as validation 9 requires.** The three 28-minute `W` strands repeat in-week:
-`Relay`/`Body & Air` at 15:32, `The Bench` at 21:32, `Dispatch` at 14:04 Mon–Thu. The three
-56-minute `W` strands — `The Common Table`, `Assembly`, `The Documentary` — repeat at the weekend,
-which is where a long repeat belongs and what the weekend already implies.
+**The Night Watch is music-led in three of its four hours.** This is a cost decision, not a taste
+one: a talk archive hour costs ~42 speech-minutes to build, a music-led one ~6, and the archive pool
+is the most expensive single thing the station has to make (§9, `DECISIONS.md` D-003).
+`music_sequence` is legal here and nowhere else.
 
-### Weekend
+### Weekend overrides
 
-Same clock, different fixtures. `First Shift` becomes **Sixth Day** (lighter, 2 hours). The weekday
-strands are replaced by: **The Week in Ice** (sport round-up, 56), **The Count** full rundown,
-**The Long Question** long edition (56), **Observance** (religion, 28), and the three 56-minute `W`
-repeats. Saturday carries the chart's full rundown; Sunday is the quietest day on the station.
+Twelve slots differ. Everything not listed is identical to Monday–Friday.
 
-**The weekend is not yet a grid.** It has fixtures but no hour-by-hour clock, and validation 8
-covers Saturday and Sunday too — so `grid.yaml` cannot be completed until this table exists at the
-same resolution as the weekday one.
+| Slot | Mon–Fri | Saturday | Sunday |
+|---|---|---|---|
+| 06:04 | First Shift 1 | **Sixth Day** — lighter breakfast, 56, `F` | **Sixth Day**, `F` |
+| 07:04 | First Shift 2 | The Common Table `R` | The Common Table `R` |
+| 08:04 | First Shift 3 | archive feature `A` | archive feature `A` |
+| 09:04 | The Long Question | archive interview `A` | **Observance** — religion, `A` |
+| 09:32 | Relay · Body & Air | archive `A` | archive `A` |
+| 10:04 | The Common Table | archive feature `A` | archive feature `A` |
+| 11:04 | Ledger | archive `A` | archive `A` |
+| 12:04 | The Midday Report | **The Week in Ice** — sport round-up, 56, `W` | The Week in Ice `R` |
+| 14:04 | The Count · Dispatch | The Count `R` — Friday's countdown, billed as a repeat | archive `A` |
+| 15:32 | Relay · Body & Air repeat | archive `A` | archive `A` |
+| 18:32 | Crossfire | archive `A` | archive `A` |
+| 22:04 | The Late Report | archive feature `A` | archive feature `A` |
+
+`Assembly` (19:04) and `The Documentary` (20:04) keep their slots all week and air as `R` at the
+weekend; `Dispatch` (11:32) and `The Bench` (13:04) do the same. `Ice & Iron` stays fresh on both
+weekend days — sport belongs to the weekend (§3). The junctions, `The Evening Report`, `The Six` and
+`The Midnight Report` never vary.
+
+Sunday is the quietest day: it carries one fewer `W` slot than Saturday and no chart.
+
+### The weekly strands and where they repeat
+
+Validation 9 requires every `W` programme to declare a `production_day` and at least one
+`repeat_slot`. Production nights are two days ahead of first air (the D+2 rule, ARCHITECTURE §14),
+and no night carries more than two.
+
+| Strand | Min | Fresh | Repeats | Airings/wk | Produced |
+|---|---|---|---|---|---|
+| Relay | 28 | Mon 09:32 | Wed · Fri 09:32 · same-day 15:32 | 6 | Sat night |
+| Body & Air | 28 | Tue 09:32 | Thu 09:32 · same-day 15:32 | 4 | Sun night |
+| Dispatch | 28 | Mon 11:32 | 11:32 Tue–Sun · 14:04 Mon–Thu | 6 | Sat night |
+| The Bench | 28 | Tue 13:04 | 13:04 daily · 21:32 daily | 6 | Sun night |
+| The Common Table | 56 | Wed 10:04 | 07:04 Sat · Sun | 3 | Mon night |
+| Assembly | 56 | Thu 19:04 | 19:04 daily | 5 | Tue night |
+| The Documentary | 56 | Fri 20:04 | 20:04 daily | 5 | Wed night |
+| The Week in Ice | 56 | Sat 12:04 | Sun 12:04 | 2 | Thu night |
+| The Count | 28 | Fri 14:04 | Sat 14:04 | 2 | Wed night |
+
+**`The Count` is `W`, not `F`.** It is produced once a week and repeats — which is the definition of
+a weekly strand — and the Saturday airing is Friday's audio, billed as a repeat. It is not a second,
+longer edition: the chart computes 40 positions but 40 will not fit 28 minutes, so Saturday reruns
+the same top 20 (ARCHITECTURE §8).
+
+Production nights: Sat 2 · Sun 2 · Mon 1 · Tue 1 · Wed 2 · Thu 1 · Fri 0 — all within the cap, and
+weighted onto the two weekend nights, which is exactly the render slack the lighter weekend creates.
+
+**Nine strands, 364 minutes of production a week.** `Relay` and `Body & Air` share the 09:32 slot
+but are two separate productions, which is easy to miscount as one and was, in the version of this
+table before `DECISIONS.md` D-002.
+
+**Repeat count is editorial, not architectural** (D-002). A `W` edition costs its production night
+once whether it airs twice or six times; a further airing costs only audible repetition. Same-day
+double-runs — `Relay` at 09:32 and 15:32, `Dispatch` at 11:32 and 14:04 — are standard practice for
+explainer and dispatch strands.
 
 ---
 
@@ -368,24 +453,47 @@ day with music, which quietly turned the product into something else.
 
 Speech is ~75% of a talk slot; the rest is imaging, beds and links.
 
-| | Slot min/day | Speech/day |
-|---|---|---|
-| 24 × 4-min junctions (19 bulletins + 5 overnight summaries) | 96 | 86 |
-| Fresh `F` programmes as listed, chart amortised | 536 | ~400 |
-| Weekly `W` programmes, amortised across the week | 36 | ~27 |
-| Archive `A` and repeats | 460 | 0 |
-| **Total fresh speech per day** | | **~515 min** |
+**A weekday**, in aired slot minutes, which must sum to 1,440:
 
-Against ~216 usable minutes at RTF 0.7× (ARCHITECTURE §36). **The grid is roughly two and a half
-times the budget** — down from three, because the chart went weekly and five slow strands went to
-archive. So it is built in tiers, and the tier is a capacity decision, not an editorial one:
+| | Slot min | Speech |
+|---|---|---|
+| 24 × 4-min junctions (20 bulletins + 4 overnight summaries) | 96 | 88 |
+| Fresh `F` programmes as listed | 532 | ~399 |
+| Weekly `W` editions aired | 252 | 0 |
+| Repeats `R` | 84 | 0 |
+| Archive `A` | 476 | 0 |
+| **Total slot minutes** | **1,440** | |
+| *plus* `W` production amortised across the week — 364 min/wk = 52 slot min/day | | ~39 |
+| **Fresh speech, weekday** | | **~526 min** |
+
+Airings cost nothing; **only production costs render time**, which is why the `W` and `R` rows carry
+zero and the amortised production line carries 27.
+
+**A weekend day** is the same 1,440 minutes with twelve slots overridden. `F` falls from 532 to 224
+slot minutes and archive rises to 784 (Sat) / 812 (Sun):
+
+| | Weekday | Saturday | Sunday |
+|---|---|---|---|
+| Fresh speech | ~526 min | ~295 min | ~295 min |
+| Archive consumed | 7.9 h | 13.1 h | 13.5 h |
+
+Across the week that averages **~460 fresh speech-minutes and ~9.5 archive hours per day**. The
+second number is the expensive one and it is what sets the archive pool at 135 hours
+(`DECISIONS.md` D-003) — lightness at the weekend is bought with archive, not for free.
+
+Against ~216 usable minutes at RTF 0.7× (ARCHITECTURE §36). **A weekday is roughly two and a half
+times the budget**, the week as a whole a little over two. So it is built in tiers, and the tier is
+a capacity decision, not an editorial one:
 
 | Capacity | What goes fresh |
 |---|---|
 | **~200 min** (RTF 0.7) | All junctions · `First Shift` cut to one hour · `The Evening Report` · `The Six` · `The Count` · everything else weekly or archive |
 | **~300 min** (RTF 1.0) | Add `The Midday Report`, `Ledger`, `Ice & Iron`, `The Midnight Report` |
 | **~460 min** (RTF 1.5) | Add `First Shift` full 3 hours, `The Late Report`, `Crossfire`, `The Long Question` |
-| **~515 min** | The grid as written |
+| **~526 min** | The weekday as written |
+
+Every tier costs less at the weekend, because the weekend overrides bite first: at the ~200 tier a
+Saturday runs on junctions, `Sixth Day`, `The Evening Report` and `The Six` alone.
 
 **Repeats are not a compromise, they are how radio works.** The BBC repeats constantly — Radio 4
 Extra is an entire station of it, and the World Service reruns its documentary strands several times
@@ -395,10 +503,15 @@ normal practice, not a shortfall, and it should be billed on air as a repeat.
 **The cut order, if capacity falls short of the tier you are on.** Each step costs a listener less
 than the one before:
 
-1. Move a `W` programme to fortnightly.
-2. Shorten a 56-minute programme to 28 — it is already two acts, so this is dropping one.
-3. Extend the overnight archive block to 06:00.
+1. Move an `F` programme to `W` with declared repeat slots — the cheapest cut there is, and the one
+   the listener notices least, because a repeat is announced rather than hidden.
+2. Move a `W` programme to fortnightly.
+3. Shorten a 56-minute programme to 28 — it is already two acts, so this is dropping one.
 4. Move `The Documentary` permanently to archive.
+
+**Extending the overnight archive block is not on this ladder**, though it looks like it belongs.
+It buys fresh render minutes by spending archive hours, and archive hours are the scarcer resource
+(§9, `DECISIONS.md` D-003). Reach for it only when the pool is above target.
 
 **Never cut**: the hourly junction, `The Evening Report`, or — from week three, when
 `requires_airplay_days: 21` first allows it on air — `The Count`. Those three are the station's
@@ -408,8 +521,9 @@ identity: the clock, the flagship, and the one thing that is fun.
 
 ## 10. Programme metadata
 
-Every programme in the grid needs six things defined before it can be scheduled. This is what
-`grid.yaml` encodes.
+These are the **editorial** fields — the ones this document owns and a schedule cannot be built
+without. ARCHITECTURE §17a holds the full `grid.yaml` schema, which adds the mechanical fields
+(`slot_minutes`, `format_class`, `register_kind`, `max_lead_hours`, `schedule`, `hour_clock`).
 
 | Field | Example |
 |---|---|
@@ -419,6 +533,7 @@ Every programme in the grid needs six things defined before it can be scheduled.
 | **Domain floor + context mix** | retrieval seats and the canon : world ratio (§1) |
 | **Item mix** | the running order shape (ARCHITECTURE §11) |
 | **Freshness** | `F` daily · `W` weekly with repeats · `A` archive |
+| **Days** | which days the strand occupies its slot, and where its repeats land (§8) |
 
 ---
 
@@ -432,6 +547,11 @@ Four to build first: **the hourly bulletin** (the spine, and the thing that make
 **The Evening Report** (the flagship magazine), **The Count** (the chart), and **The Long Record**
 (one history documentary for the archive). They cover the three clock speeds, the three context mixes and the three
 presenter roles, and they will tell you more about what works than a full grid of untested formats.
+
+**Build all four early; air `The Count` last.** `requires_airplay_days: 21` keeps the chart off air
+until three weeks of real airplay exist (ARCHITECTURE §8), which is why it is build step 19 rather
+than an opening-night programme. Building it early is still right — it is the format that exercises
+the discography, and its failure mode is only that it waits.
 
 Add a programme only when there is a domain producing more material than its current slot can hold.
 An empty programme is worse than no programme, and the world tick's output is the constraint —

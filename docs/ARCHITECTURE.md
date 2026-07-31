@@ -21,7 +21,7 @@ every task; an agent that has read only Part I is not ready to write code.
 | Studio | **Mac mini M4, 16GB, 256GB** + external Thunderbolt SSD (2TB) |
 | Transmitter | Hetzner CX32, ~€11/mo |
 | Generation | **Nightly batch, 20:00–06:50.** Nothing is generated near air time |
-| Broadcast | 24/7. Fresh talk in two blocks; archive and music elsewhere |
+| Broadcast | 24/7 speech. Fresh talk through the day, archive overnight and at the weekend |
 | Marginal cost | Electricity + VPS + domain. No per-token or per-character spend |
 | Jurisdiction | Poland / EU — **AI Act Art. 50 applies from 2 August 2026** |
 | Operator | One person, working through Claude Code |
@@ -46,11 +46,11 @@ Everything else in this document is solvable engineering. Those two are not.
 
 | Layer | Choice | Why |
 |---|---|---|
-| **Writer LLM** | 9–12B dense @ Q4 (~6–8GB + KV) | The only LLM. Does scripts, world tick, items, canon checks. Named candidate: Qwen 3.5 9B |
+| **Writer LLM** | 9–12B dense @ Q4 (**≤6GB** + KV, see the memory budget) | The only LLM. Does scripts, world tick, items, canon checks. Named candidate: Qwen 3.5 9B |
 | **LLM runtime** | **LM Studio (MLX backend)**, OpenAI-compatible on `:1234` | MLX is typically faster than GGUF on Apple Silicon. OpenAI-compatible keeps the seam honest |
 | **Cast TTS** | **Chatterbox Multilingual v3** (Resemble, MIT) | Emotion exaggeration + paralinguistic tags; built-in PerTh watermark, useful for Art. 50(2) |
 | **Second TTS** | **Qwen3-TTS** (Alibaba, Apache 2.0, 0.6B) | Different control vocabulary (natural-language direction). Two implementations is what proves the seam (§3) |
-| **Fallback TTS** | **Kokoro-82M** (Apache 2.0) | Circuit-breaker only, and CI smoke. Never scheduled on air |
+| **Fallback TTS** | **Kokoro-82M** (Apache 2.0) | Circuit-breaker spill and CI smoke. **Never *scheduled*** — it reaches air only when the cast lane trips, and the day is marked degraded (§20) |
 | **Database** | **Postgres 16** + `pgvector` + `tsvector` | One datastore for world, canon, music, retrieval, queue, metrics |
 | **Embeddings** | `bge-m3` | Multilingual, strong on short facts and paragraphs |
 | **Reranker** | `bge-reranker-v2-m3`, **on CPU** | Avoids GPU compute contention and a second Metal context. **Not** a RAM saving — Apple Silicon is unified memory, so the bytes cost the same either way. Latency is free in batch |
@@ -65,11 +65,14 @@ Everything else in this document is solvable engineering. Those two are not.
 >
 > | Slot | Profile | Current candidate | Verified |
 > |---|---|---|---|
-> | Writer | dense, ≤8GB at Q4, ≥32k context, OpenAI-compatible, passes the benchmark (§29) | `Qwen/Qwen3.5-9B` (released 2026-03-02) | name confirmed; MLX quant to be pinned |
+> | Writer | dense, **≤6GB at Q4**, ≥32k context, OpenAI-compatible, passes the benchmark (§29) | `Qwen/Qwen3.5-9B` (released 2026-03-02) | **unverified — task zero** |
 > | Cast TTS | zero-shot cloning, emotion control, ≤5GB | Chatterbox (Resemble, MIT, PerTh watermark) | base confirmed; the *Multilingual v3* revision must be verified |
-> | Second TTS | cloning + a *different* control vocabulary | `Qwen/Qwen3-TTS-12Hz-0.6B-Base` + `Qwen/Qwen3-TTS-Tokenizer-12Hz` (Apache 2.0, 2.52GB, 3-second cloning) | confirmed open-weight |
+> | Second TTS | cloning + a *different* control vocabulary | `Qwen/Qwen3-TTS-12Hz-0.6B-Base` + `Qwen/Qwen3-TTS-Tokenizer-12Hz` (Apache 2.0, 2.52GB, 3-second cloning) | **unverified — task zero** |
 > | Embeddings | multilingual, ≤1.5GB, dimension declared in config | `BAAI/bge-m3` | confirmed |
 > | Reranker | cross-encoder, CPU-viable at 60 candidates in <1.5s | `BAAI/bge-reranker-v2-m3` | confirmed |
+>
+> **"Verified" means downloaded, not read about.** Every row above marked unverified is a name from
+> a document, and a name from a document is not an artifact. Task zero resolves them.
 >
 > **Task zero, before the §36 measurements:** resolve all five slots to real downloadable artifacts
 > and record exact repo + revision + quantisation in `models.yaml`. If the Chatterbox revision does
@@ -100,9 +103,10 @@ total system pressure, baseline included.
 first, the embedder and reranker are unloaded, and only then does the writer load. Holding all three
 would cost ~14 GB and leave nothing for the machine — this ordering is what makes the phase fit.
 
-The writer profile is therefore **≤6 GB at Q4**, not 6–8: at 8 GB the Think phase reaches ~13.5 GB
-and the headroom target fails. Peak is ~11.5 GB against 16 GB, leaving **~4.5 GB headroom, and the
-target is never to go below 2 GB**.
+The writer profile is therefore **≤6 GB at Q4**, not 6–8: at 8 GB the Think phase reaches ~13.5 GB,
+leaving 2.5 GB — inside the 2 GB floor, but with nothing left for a re-render, a browser, or the
+KV growth of a long act. Peak at ≤6 GB is ~11.5 GB against 16 GB, leaving **~4.5 GB headroom, and
+the target is never to go below 2 GB**.
 
 **The §36 gate is stated as total system memory pressure, not process RSS** — the 5GB baseline is
 what determines whether the machine swaps, and swapping during a four-hour Think phase is the
@@ -129,7 +133,11 @@ Routing is per **job**, not per application, even though today every job points 
 # config/models.yaml
 jobs:
   writer:      { base_url: "http://localhost:1234/v1", model: "qwen3.5-9b-mlx-4bit",
-                 temperature: 0.9, max_tokens: 6000, timeout_s: 300 }
+                 temperature: 0.9, max_tokens: 10000, timeout_s: 300 }
+               # 10k, not 6k: a 25-minute act is ~3,750 words ≈ 5,000 tokens of *prose*,
+               # and the script schema (items, turns, emotions, offsets) roughly doubles
+               # it. A cap that truncates mid-JSON looks like a model failure, not a
+               # config one, and costs a day to find
   tick:        { base_url: "http://localhost:1234/v1", model: "qwen3.5-9b-mlx-4bit",
                  temperature: 1.0, max_tokens: 4000, timeout_s: 180 }
   items:       { base_url: "http://localhost:1234/v1", model: "qwen3.5-9b-mlx-4bit",
@@ -251,9 +259,10 @@ Listeners notice a changed voice far more than they notice better prosody.
 
 ### Conformance
 
-**Ship two implementations of every seam from day one.** Chatterbox *and* Qwen3-TTS — two
+**Ship two implementations of the TTS seam from day one.** Chatterbox *and* Qwen3-TTS — two
 expressive engines with genuinely different control vocabularies, which is a far better test of
-the seam than two similar ones. Kokoro is the third, fallback-only.
+the seam than two similar ones. Kokoro is the third, fallback-only. The LLM seam ships one
+implementation and is conformance-tested instead; the reasoning is at the end of this section.
 
 ```python
 @pytest.mark.parametrize("engine", all_registered_engines())
@@ -310,7 +319,7 @@ rather than a refactor. Only the TTS seam ships two implementations on day one.
 │    voices/  backups/  logs/                                           │
 │                                                                       │
 │  Postgres 16 (pgvector + tsvector)                                    │
-│    facts · domains · settlements · threads · beats · items            │
+│    facts · domains · dayparts · settlements · threads · beats · items │
 │    figures · quotes · coverage · thread_figures · thread_settlements  │
 │    artists · artist_members · albums · tracks · labels · charts       │
 │    chart_entries · airplay · track_credits · imaging · programmes     │
@@ -367,14 +376,15 @@ air. Fixed text, never retrieved, sits in the cached prompt prefix.
 
 ### Tier 1 — Domain summaries (always present, ~3k tokens)
 
-**This is the piece that prevents flatness.** Every canon domain (history, finance, religion, war,
-geography, peoples, tech, music, sport…) has a 150–200 word summary, regenerated whenever that
+**This is the piece that prevents flatness.** Every canon domain — the seventeen of
+`PROGRAMMING.md` §3, and only those — has a 150–200 word summary, regenerated whenever that
 domain's files change. **All summaries always ship.**
 
 The effect: the model always knows the *shape* of the world — that a religion exists, roughly what
 the war was about, that the currency is tied to relay time — even when no religion fact was
-retrieved. Detail is retrieved; structure is always resident. Scales logarithmically: 40 domains
-is still only ~8k tokens.
+retrieved. Detail is retrieved; structure is always resident. Seventeen domains is ~4k tokens, and
+the mechanism would still hold at twice that — but the domain list is closed at seventeen
+(`PROGRAMMING.md` §3), so this tier does not grow with the world. Only Tier 2 does.
 
 > **Plain text and retrieval are both used, deliberately.** Tiers 0 and 1 are *always* included
 > verbatim — they are small, fixed, and cacheable, and they are what gives the model a sense of the
@@ -382,7 +392,13 @@ is still only ~8k tokens.
 > sports.md") is what makes a world flat; shipping all of it is what stops scaling. The split is
 > the answer to both.
 
-### Tier 2 — Retrieved detail (hybrid + rerank, bounded to ~40 facts)
+### Tier 2 — Retrieved detail (hybrid + rerank)
+
+> **One budget of 40, shared with Tier 3.** Tiers 2 and 3 together contribute **40 entries** to the
+> assembled context, split by the programme's `context_mix` (§11): a slow-domain feature at
+> `{canon: 0.8}` takes 32 facts and 8 world entries, a fast-domain magazine at `{canon: 0.3}` takes
+> 12 and 28. The pipeline below always ranks down to 40 candidates; the `context_mix` decides how
+> many of them are actually seated. There is no second budget anywhere.
 
 ```
 query = programme brief  +  today's top beats  +  the show's declared angle
@@ -425,8 +441,8 @@ golden output.
 ### Tier 3 — World slice
 
 Ranked beats, items and coverage — the moving present. Recency (36h half-life) × thread stage ×
-domain floor × breaking-ness, plus a title-only tail. **There is one budget — 40 items, split
-by `context_mix` (§11) — and no separate seat count.**
+domain floor × breaking-ness, plus a title-only tail. **It draws on the same 40-entry budget as
+Tier 2, split by `context_mix` (§11) — there is no separate seat count.**
 
 ### The embedding pipeline
 
@@ -536,7 +552,12 @@ domains(id, name, summary, prompt_version, source_tree_hash, updated_at)
 
 pool_items(id, kind, file_path, duration_sec, band, last_used_at, plays)
         -- band: '15_30' | '30_90' | '90_240' — what `make pool-check` counts
-        -- kind: trail | ident | letter | vignette | weather | travel
+        -- kind: trail | letter | vignette | weather | travel | archive_quote
+        -- NOT idents or sonic logos: anything carrying a programme or station
+        --   identity is an `imaging` row (§9), and one object may not live in
+        --   two tables. The boundary is ownership, not length:
+        --     imaging    = station furniture, placed by the hour clock
+        --     pool_items = back-timing filler, chosen by length (§13)
 ```
 
 **Precedence: the ceiling wins.** If the horizon floor is unmet but the open-beat ceiling is
@@ -587,11 +608,18 @@ needs a foreign key is a row; anything that is only ever named is a fact.
 ### Programmes, segments and charts
 
 ```sql
+dayparts(id, name, from_time, to_time, energy_lo, energy_hi, bpm_lo, bpm_hi)
+         -- the seven of PROGRAMMING.md §4; written by grid-sync from grid.yaml.
+         -- Drives rotation energy/tempo (§8) and modifier selection (§11a)
+
 programmes(id, slug, name, programme_type, format_class, brief, domain_floor,
            context_mix, slot_minutes, register_kind, pace, jingle_set,   -- slot_minutes: 4|28|56
            freshness, production_day, repeat_slots, chart_id,
-           item_mix jsonb, hour_clock jsonb,
+           item_mix jsonb, hour_clock jsonb, schedule jsonb,
            max_lead_hours, requires_airplay_days, active)
+           -- schedule: [{days: [...], at: "HH:MM"}] verbatim from grid.yaml — the
+           --   only place that says WHEN a programme airs, and what the playlist
+           --   builder reads. One clock, seven days: `days` is what varies (D-001)
            -- item_mix / hour_clock: stored verbatim from grid.yaml (§17a).
            --   item_mix is read by script validation 6; hour_clock by the mixer (§9)
            -- format_class: junction | floating | pool
@@ -612,6 +640,9 @@ segments(id, programme_id, air_date, air_time, format_class, status,
          -- status: planned|written|quarantined|rendered|mixed|pushed|aired|dropped
 
 charts(id, slug, name, size, cadence)      -- 'main' 40 weekly; specialist charts later
+                                           -- size is what is COMPUTED (40). The Count airs the
+                                           -- top 20 of it in 28 minutes; the rest exists so
+                                           -- positions 21–40 can move, re-enter and be referenced
 ```
 
 `segments` is the spine: `coverage.segment_id`, the quarantine path, and the `segment_id` logging
@@ -630,9 +661,11 @@ render_queue(id, job_type, target_id, air_date, priority, status,
 ### Figures and coverage
 
 ```sql
-figures(id, name, role, settlement_id, stance, first_seen)
+figures(id, name, role, settlement_id, stance, first_seen, voice_ref)
         -- no is_artist flag: artistry is expressed by artists.figure_id, and a
         -- duplicated boolean would drift
+        -- voice_ref: assigned from the stock voice bank on first speaking
+        --   appearance and NEVER changed (§3). Null until they speak
 thread_figures(thread_id, figure_id)         -- join tables, not int[] arrays:
 thread_settlements(thread_id, settlement_id) -- arrays make §7 link integrity much harder
 quotes(id, figure_id, text, said_at, thread_id)
@@ -703,12 +736,15 @@ supersedes: []
 
 ### `make canon-check` — the validation gate
 
-**Where it runs.** The deterministic passes (1, 4, 5, 7) run on **pre-commit** — they are fast and
-catch most mistakes. The model passes (2, 3, 6) need a loaded writer, so they run in `make canon-check` on **pre-push**
-and never inside `make check`, which stays fast and model-free so the definition of done means the
-same thing on every machine. Putting
-seven passes with per-fact LLM calls on pre-commit would violate §22's fast-hooks rule and get
-bypassed inside a week.
+**Where it runs.** The deterministic passes (1, 4, 5, 7) run on **pre-commit**, as
+`canon-check --fast` — they need no model and finish in seconds, and they are listed among the
+pre-commit hooks in §22. The model passes (2, 3, 6) need a loaded writer, so they run in the full
+`make canon-check` on **pre-push**, and never inside `make check`, which stays fast and model-free
+so the definition of done means the same thing on every machine. Putting seven passes with per-fact
+LLM calls on pre-commit would violate §22's fast-hooks rule and get bypassed inside a week.
+
+**Anything a model pass blocks, it blocks at push, not at commit** — including pass 3's summary
+review. The wording matters because the two hooks are different gates.
 
 Seven passes on the local model, cost zero:
 
@@ -739,7 +775,7 @@ Seven passes on the local model, cost zero:
    shifts *every prompt in the station at once* — the highest blast radius of any change in the
    system.
 
-   **A changed summary is an `error`, not a `warn`.** It blocks the commit until the diff is
+   **A changed summary is an `error`, not a `warn`.** It blocks the **push** until the diff is
    reviewed and explicitly accepted (`make canon-sync ACCEPT_SUMMARIES=1`). The same applies to a
    canon edit pushing a domain's aphorism density above the ceiling. This is the one place a review
    gate earns its cost, because the alternative is the whole station's voice shifting as a side
@@ -803,6 +839,9 @@ tracks(id, album_id, artist_id, title, track_no, duration_sec, file_path,
 
 track_credits(track_id, figure_id, role)         -- writer, player, producer
 airplay(id, track_id, aired_at, programme_id, context)
+                                                 -- context: rotation | chart_clip | specialist
+                                                 -- chart_clip counts for separation, NOT for
+                                                 -- the chart score — see "The chart" below
 chart_entries(chart_date, chart_id, position, track_id, prev_position, weeks_on, peak)
 ```
 
@@ -844,11 +883,22 @@ rotation weights — a real signal worth seeing rather than papering over.
 Computed nightly. Inertia is what makes it a chart rather than a random draw:
 
 ```
-score = 0.45 · airplay(7d, decayed)
+score = 0.45 · airplay(7d, decayed)     ← context != 'chart_clip'
       + 0.25 · in-world "requests"   (a generated figure with its own drift)
       + 0.20 · previous position
       + 0.10 · editorial nudge       (a beat: the artist died, the album dropped)
 ```
+
+**The chart's own plays are excluded from the chart's score**, and this is not a detail. The Count
+airs 20 tracks a week as clips; if those counted as airplay, this week's top 20 would arrive at next
+week's calculation carrying 20 free plays each, and the chart would promote whatever it played until
+nothing else could enter. That is a feedback loop, not inertia — inertia is the `previous position`
+term, which is bounded at 0.20 and decays.
+
+So `airplay` rows carry a `context`, and `context = 'chart_clip'` is written but not scored. The
+rows still exist because rotation separation must know the track was heard (§8) — playing it again
+an hour later is exactly the clash the separation rules prevent, whether the earlier play was a clip
+or not.
 
 Write the top 40 to `chart_entries` with `prev_position`, `weeks_on`, `peak`. The chart show then
 gets movement language for free — "up four", "new entry at eleven", "a re-entry after nine weeks".
@@ -892,11 +942,11 @@ imaging(id, kind, file_path, duration_sec, programme_id null,
 config, never logic:
 
 ```yaml
-the_circuit:
-  open: circuit_open              # 14s, sung station name over a bed
-  bed_under_links: workshop_bed
+evening_report:
+  open: evening_open              # 14s, sung station name over a bed
+  bed_under_links: report_bed
   sweeper_every_n_items: 2
-  close: circuit_close
+  close: evening_close
 news:
   sting: news_urgent              # 4s
   bed: news_bed_loop              # ducks to -12 dB under speech
@@ -981,12 +1031,19 @@ selection audibly clusters.
 | Show type | 60 broadcast minutes contain | Speech to render |
 |---|---|---|
 | Talk magazine (28 min) | ~21 min speech | ~21 min |
-| Music show | 14 tracks + links | ~12 min |
-| Chart show | 20 tracks + position links | ~18 min |
+| Music show (56 min) | 14 tracks + links | **~6 min** |
+| Chart show (28 min) | 20 positions, tracks played as clips | ~15 min |
 
-**A music hour costs roughly a fifth of the render time of a talk hour.** On TTS-bound hardware
-this moves the broadcast day further than any pipeline optimisation. When you run short of render
-capacity, the answer is usually a different grid, not a faster engine.
+**A music hour costs roughly a seventh of the render time of a talk hour** — ~6 speech-minutes
+against ~42. On TTS-bound hardware this moves the broadcast day further than any pipeline
+optimisation, and it is also what sets the archive pool's build cost (§14). When you run short of
+render capacity, the answer is usually a different grid, not a faster engine.
+
+**The chart is the exception among music formats.** 20 positions in 28 minutes means tracks are
+played as clips of roughly 30–40 seconds, not in full, and the speech-to-music ratio is closer to a
+talk show than a music show. A clip is still an `airplay` row with `context = 'chart_clip'`, because
+rotation separation must know the track was heard — but it is **excluded from the chart score**, or
+the chart would feed on its own output (§8).
 
 ### Generation order
 
@@ -1045,8 +1102,13 @@ programme_hosts(programme_id, cast_id, role, weight)
 
 Two, three or more speakers are all supported because rendering is per-turn (§12). Practical
 guidance: 2 is the default for conversation, 3 works for a panel if one has a clearly subordinate
-role, 4+ becomes mush without visual cues. Cap at 3 in conversation, with `discussion` the one
+role, 4+ becomes mush without visual cues. Cap at 3 **in conversation**, with `discussion` the one
 declared exception at 4 — a host plus three figures, and no further.
+
+**The cap counts voices in dialogue, not voices in an item.** `vox` runs 3–5 speakers and `package`
+runs a narrator plus clips, and neither breaches it: those voices never address each other, they are
+sequential monologue cut together. What the cap prevents is four people talking at once, which is
+where a listener with no faces to look at loses track of who is speaking.
 
 ### Personality is five concrete things, not adjectives
 
@@ -1114,9 +1176,9 @@ change.
 
 The grid uses **4**, **28** and **56** minutes only (`PROGRAMMING.md` §7). Acts are a
 **generation-time concept only** — one segment, one audio file, one cue sheet, and nothing
-downstream knows a programme was written in two passes. A 56-minute magazine is
-~50 minutes of speech, which exceeds what one generation call produces reliably — so it is written
-as **two acts** (§11's act mechanism), each ~25 minutes of speech, the second seeing the first.
+downstream knows a programme was written in two passes. A 56-minute magazine is ~42 minutes of
+speech, which exceeds the ~25 minutes one generation call produces reliably — so it is written as
+**two acts** (§11's act mechanism), each ~21 minutes of speech, the second seeing the first.
 Because `56 = 2 × 28`, an act is exactly a short programme and the mixer has no special case.
 
 | | Speech | Clock | Generation |
@@ -1128,9 +1190,10 @@ Because `56 = 2 × 28`, an act is exactly a short programme and the mixer has no
 | Music-led (overnight) | ~6 min/h | 56 min | one call |
 
 **The 2-act cap on 16GB (§11) puts a hard ceiling of ~50 minutes of speech on any single
-programme.** That is exactly a 56-minute slot, with no margin — so 56 is the longest slot the
-hardware supports, and a longer strand must be split into separate programmes with their own
-bulletins between them, which is what `First Shift` does across 06:00–09:00.
+programme.** A 56-minute slot needs ~42, so there is roughly 8 minutes of margin and no more — 56
+is the longest slot the hardware supports, and a longer strand must be split into separate
+programmes with their own bulletins between them, which is what `First Shift` does across
+06:00–09:00.
 
 **This is a speech station. Music does not fill gaps.** Every minute of the broadcast day belongs to
 a named programme; there is no default filler layer. The only music in the daytime is the chart
@@ -1201,7 +1264,7 @@ than by gate.
 
 Input: Tier 0 core + Tier 1 domain summaries + Tier 2 retrieved facts + Tier 3 world slice + last
 24h coverage + the programme brief. **The brief is where cross-domain connection comes from** —
-one authored sentence per programme: *"The Circuit treats results as economics and politics."*
+one authored sentence per programme: *"Ice & Iron treats results as economics and politics."*
 Retrieval cannot manufacture an editorial stance.
 
 **Length budget.** A 20-minute talk segment is ~3,000 words ≈ 4,000 output tokens — comfortable. A
@@ -1224,14 +1287,13 @@ fast-domain show fed mostly canon sounds like a lecture.
 **Tier 2 has a floor of 12 facts.** Twelve, not fifteen, because `context_mix` 0.3 — the standard
 fast-domain ratio (`PROGRAMMING.md` §1) — allocates exactly 12, and a floor that every politics,
 finance and sport programme breaches on allocation is not a floor. If trimming would go below it —
-which happens as Tier 1 grows
-toward 40 domains, or at act 2 with the carried summary and tail — the assembler logs WARNING and
+which happens at act 2 with the carried summary and verbatim tail — the assembler logs WARNING and
 surfaces it in the rundown. A silently starved retrieval slice looks exactly like a model that has
 stopped using the canon, and you would spend a week blaming the prompt.
 
-Acts compound this: act 3 carries acts 1 and 2. On 16GB, **cap at 2 acts** (≈45 minutes of speech),
-and have act 2 receive act 1 as **a 300-word summary plus the last 800 words verbatim** rather than
-the whole text. The verbatim tail is what preserves the handover and the running thread; the
+Acts compound this: each act carries what came before. On 16GB, **cap at 2 acts** (~42 minutes of
+speech, which is exactly a 56-minute slot), and have act 2 receive act 1 as **a 300-word summary
+plus the last 800 words verbatim** rather than the whole text. The verbatim tail is what preserves the handover and the running thread; the
 summary is what preserves the argument. Measure this at step 1 before relying on it.
 
 **Output validation** — schema, plus seven structural invariants:
@@ -1552,8 +1614,9 @@ Three failures live in structure, not wording, and hammering the instructions wi
   existing at all.
 - **A schema without a field has nowhere to put the behaviour.** No prompt yields `trail_off` if
   `Turn` lacks it.
-- **An engine without tags renders a perfect script flat.** This is why Kokoro is never scheduled on
-  air (§2), regardless of how good the writing is.
+- **An engine without tags renders a perfect script flat.** This is why Kokoro is never *scheduled*
+  (§2) regardless of how good the writing is, and why a night that spills to it is marked degraded
+  rather than treated as a normal night.
 
 ### The one measurement that counts
 
@@ -1600,12 +1663,19 @@ Script.turns ──▶ render_queue (priority) ──▶ TTS worker ──▶ pe
 
 The load-bearing rule. Everything about scheduling follows from it.
 
-**Class is about the clock, not about length.** A 30-minute news programme is junction-class because
-it states the time and is pinned; a 56-minute magazine is floating-class because it must not.
+**Class is about the clock, not about length.** A 28-minute news programme is junction-class because
+it states the time; a 56-minute magazine is floating-class because it must not.
+
+**"Junction-class" and "the pinned `:00` junction" are two different things** and the shared word
+causes trouble. *Junction-class* is a content property: this format may state the time and is
+generated for D+1. *Pinned* is a playout property: Liquidsoap starts this element at a wall-clock
+instant regardless of what is playing. **Only the `:00` junction is pinned.** `The Six` at 18:04 is
+junction-class and not pinned — it states the time, is written for D+1, and is scheduled behind the
+18:00 junction like any other programme.
 
 | Class | May state the time? | Generated for | Reused | Examples |
 |---|---|---|---|---|
-| **Junction** | Yes, must | **D+1** | never | 4-min bulletin, 2-min summary, **26–30 min news programmes** (`The Six`, `The Midnight Report`), time check, handover, disclosure |
+| **Junction** | Yes, must | **D+1** | never | 4-min bulletin, 2-min summary, **28-min news programmes** (`The Six`, `The Midnight Report`), time check, handover, disclosure |
 | **Floating** | **Never** | **D+2** | archive after 30d | shows, features, chart shows, interviews, music shows |
 | **Pool** | No | once | constantly | idents, generic trails, in-world weather, archive quotes, imaging |
 
@@ -1652,9 +1722,12 @@ than any other content shortage in the system. Minimum before going live:
 
 | Length band | Pieces |
 |---|---|
-| 15–30 s | 12 (idents, sonic logos, short trails) |
+| 15–30 s | 12 (short trails, station-voice tags) |
 | 30–90 s | 15 (generic trails, in-world weather, archive quotes) |
 | 90 s–4 min | 10 (short features, letters, evergreen vignettes) |
+
+Idents and sonic logos are **not** counted here — they are `imaging` (§9) and the mixer places them
+from the hour clock. `make pool-check` counts only what back-timing can draw on.
 
 Roughly 37 pieces, all rendered once, all reusable forever. `make pool-check` reports coverage per
 band and is part of the launch checklist.
@@ -1768,13 +1841,13 @@ the rule.
 ### The three freshness tiers
 
 The bottleneck is TTS: at RTF 0.7 one minute of speech takes ~90 seconds to render, and a 385-minute
-window yields **~216 minutes of new speech per day** after the 0.8 derate. The grid wants ~515
+window yields **~216 minutes of new speech per day** after the 0.8 derate. A weekday wants ~526
 (`PROGRAMMING.md` §9). Freshness tiers are how the gap closes — three lifecycles, not one.
 
 | Tier | Made | Airs | Retires | Daily cost |
 |---|---|---|---|---|
 | **F** | every night, for its air date | once | at air | full |
-| **W** | once a week, on its `production_day` | 2–3× that week | when next week's edition lands | ⅓ |
+| **W** | once a week, on its `production_day` | as declared in `repeat_slots` | when next week's edition lands | ⅐ |
 | **A** | in bulk, far ahead | many times over months | on plays, age, or staleness | ~0 |
 
 #### F — fresh
@@ -1782,8 +1855,14 @@ Bulletins, the flagship magazines, the chart, anything carrying today's news. Ge
 (junctions) or D+2 (floating), per §14's N+1 rule. No lifecycle: made, aired, done.
 
 #### W — weekly, with repeats
-A strand produces one edition a week and airs it two or three times. **No pool and no retirement
-logic** — next week's edition replaces this week's automatically, because the strand is weekly.
+A strand produces one edition a week and airs it as many times as its `repeat_slots` declare —
+typically two to six (`PROGRAMMING.md` §8). **No pool and no retirement logic** — next week's
+edition replaces this week's automatically, because the strand is weekly.
+
+**Airings are free; only production costs render time.** An edition aired six times costs exactly
+what an edition aired twice costs, so repeat count is an editorial dial with no capacity
+consequence, and the only thing it spends is audible repetition (`DECISIONS.md` D-002). The daily
+cost in the table above is therefore one seventh of production regardless of how often it airs.
 
 The one rule that matters is **spread the production nights.** Every W programme declares a
 `production_day`; `grid-sync` rejects a week where any night carries more than two, because eight
@@ -1814,14 +1893,32 @@ archive_items(segment_id, first_aired, last_aired, plays,
 | Separation | 14 days between plays | Below this, recurrence is audible |
 | Retire on plays | 12 | ≈6 months of life at 26 plays/year |
 | Retire on age | 18 months | Register and world drift |
-| Pool floor | **70 hours** | 5 h/night × 14-day separation |
-| Pool target | **90 hours** | Headroom so top-up is never urgent |
+| Pool floor | **135 hours** | 9.5 h/day × 14-day separation |
+| Pool target | **165 hours** | Headroom so top-up is never urgent |
 
-**Replenishment arithmetic.** A 90-hour pool at 14-day separation turns over about twice a year:
-~180 new archive hours annually, at ~25 speech minutes per archive hour, is **~12 minutes a day of
-steady-state generation — about 6% of the budget.** The cost is overwhelmingly upfront: ~2,250
-speech minutes to build 90 hours, which is ten days of pure archive work and realistically several
-weeks alongside everything else (§35 step 16).
+**Where 9.5 comes from.** The grid airs 7.9 archive hours on a weekday and 13.1–13.5 at the weekend,
+where lightness is bought with archive rather than with silence — 9.5 h/day averaged across the week
+(`PROGRAMMING.md` §9). The floor is simply consumption × the separation window: anything less and an
+item returns inside a fortnight.
+
+**Replenishment arithmetic.** An item retires at 12 plays, which at one play per 14 days is about
+five and a half months, so a 165-hour pool turns over roughly 2.2× a year: ~360 new archive hours
+annually. At the pool's blended density — roughly 50% speech, because three of the four Night Watch
+hours are music-led — that is **~30 minutes a day of steady-state generation, about 14% of the
+budget at the 0.7× tier.** Affordable, but not free, and it is why archive top-up sits last on the
+priority ladder.
+
+**The upfront cost is the longest pole in §35, and it is accepted.** 135 hours at ~50% speech
+density is **~4,000 speech-minutes** — about 19 nights of pure archive render at the 0.7× tier, and
+realistically a couple of months alongside everything else (§35 step 16). It is not 2,250; that
+figure assumed a 90-hour pool that the grid never supported. With no launch date the render time is
+free (`DECISIONS.md` D-006); what is not free is building the pool before the voice is settled.
+
+**The cost dial is the overnight music-led share.** A talk archive hour costs ~42 speech-minutes to
+build; a `music_show` or `music_sequence` hour costs ~6. Moving one more Night Watch hour to
+music-led takes ~350 speech-minutes off the build. Two further levers exist and are deliberately
+**not** taken: a shorter separation window at launch (10 days → ~96 h floor) and a shorter Night
+Watch, both of which buy build time with audible recurrence (`DECISIONS.md` D-003).
 
 **Staleness — the rule specific to this station.** Generic radio archive is timeless; yours is not,
 because the world moves. A documentary on the migration is safe forever. A profile of a musician is
@@ -1842,7 +1939,7 @@ The batch generates in strict order, and **archive is deliberately last so it ca
 3. **A** — top-up, **only if** the pool is below target *and* budget remains. One item, then stop.
 
 A night that runs long drops archive top-up and nothing else suffers. You can drop it for three
-weeks and no listener can tell, because the pool is 90 hours deep. That is what makes the schedule
+weeks and no listener can tell, because the pool is 165 hours deep. That is what makes the schedule
 resilient rather than brittle — and it is the reason the ladder is in this order rather than any
 other.
 
@@ -1898,9 +1995,11 @@ starting in seven hours, not the one being written for. Because of the N+1 split
 come from two different nights, and it says so per item:
 
 ```
-07:00  Morning Line   [banked 2626-07-28]   ← floating, written the night before last
+06:04  First Shift 1  [banked 2026-07-28]   ← floating, written the night before last
 07:00  junction       [written tonight]     ← D+1
 ```
+
+Dates inside the rundown body are **real UTC**, per §31 — only the header carries the in-world date.
 
 That distinction matters operationally: `make regen` on a banked show is cheap because there is
 still a night of render window ahead of it, while regenerating tonight's junction competes with
@@ -1934,22 +2033,24 @@ Batch run 4f2a · writing 20:05–23:45, used 3h33m of 3h40m · 24 junctions, 9 
 52  Cold Harbor water    active     ⚠ STALLED 6 days — no beat, no stage change
 
 ## Programmes
-07:00  Morning Line      Wren + Adu   22m  covers 44, 38 · angle: what the delay costs
-09:30  The Circuit       Adu solo     19m  covers 38 · angle: tender as politics
-11:00  The Count         chart voice  18m  20 tracks · 3 new entries, #1 unchanged 4w
-13:00  [ARCHIVE] Halcyon Sound: the first ten years        (specialist, 2626-06-02)
-17:00  Evening Report    Wren + Kel   26m  covers 44 resolved, 47 · angle: the label story
+06:04  First Shift 1     Wren + Kel   42m  covers 44, 38 · angle: what the delay costs
+09:04  The Long Question Adu solo     21m  covers 38 · angle: tender as politics
+11:04  Ledger            Wren + Kel   21m  covers 38 · angle: who pays the tariff
+13:04  [REPEAT] The Bench                          (W, first broadcast 2026-07-28)
+14:04  The Count         chart voice  15m  20 positions · 3 new entries, #1 unchanged 4w
+16:04  [ARCHIVE] Halcyon Sound: the first ten years   (music_show, made 2026-06-02)
+17:04  The Evening Report Wren + Kel  42m  covers 44 resolved, 47 · angle: the label story
 
 ## Junction leads
 07:00 convoy due early afternoon · 09:00 tender closes · 11:00 —
 13:00 convoy inbound · 15:00 convoy late, 40m · 17:00 convoy docked, cause
-19:00 council result · 21:00 Halcyon rumour · 23:00 recap
+19:00 council result · 21:00 Halcyon rumour · 23:00 recap · 01:00–04:00 summaries
 
 ## Flags
 ⚠ Thread 52 stalled 6 days — needs a beat or a stage change
 ℹ Archive pool 86 h / 90 target · 1 item retired (12 plays) · 1 stale (figure died, thread 47)
 ⚠ Rotation relaxed 3× (album ≥90m dropped) — catalogue thin for the 11:00 daypart
-⚠ 1 script quarantined: The Circuit draft 1, org/person name "Marren Institute" (the screen covers organisations as well as persons)
+⚠ 1 script quarantined: Ledger draft 1, org/person name "Marren Institute" (the screen covers organisations as well as persons)
 ℹ Horizon: 7 beats <24h, 11 <week, 4 <season (season floor is 5 — refill tomorrow)
 ℹ Register  Wren  hedges 24/1000 (profile 22, +9%) · interrupts 1 in 7 · trail-offs 1 in 22
             Adu   hedges 44/1000 (profile 48, −8%) · interrupts 1 in 15 · trail-offs 1 in 10
@@ -1985,8 +2086,8 @@ So the rundown has two halves: **tomorrow** (what will air in seven hours — ob
 Because audio does not exist yet, three cheap actions are available before 00:05:
 
 ```
-make hold PROGRAMME=the_circuit AIR=2026-07-30T09:30   # real UTC date, not in-world (§31)
-make regen PROGRAMME=the_circuit AIR=...               # rewrite before rendering
+make hold PROGRAMME=ledger AIR=2026-07-30T11:04       # real UTC date, not in-world (§31)
+make regen PROGRAMME=ledger AIR=...                   # rewrite before rendering
 make beat-cancel ID=...                                # kill a beat; dependent scripts regenerate
 ```
 
@@ -2014,8 +2115,9 @@ Fresh hours are limited by render capacity, not by anything else. Since everythi
 
 **`PROGRAMMING.md` §8 is the schedule; this section is only the principle behind it** (§32). Fresh
 generation goes where listeners are — the morning and evening blocks — and the slow-domain
-overnight is where reused material belongs. This section deliberately restates no hours; where the
-two disagree, `PROGRAMMING.md` wins.
+overnight is where reused material belongs. The same holds across the week: **one clock, seven
+days, with the weekend made lighter by freshness rather than by a different shape** (D-001). This
+section deliberately restates no hours; where the two disagree, `PROGRAMMING.md` wins.
 
 **Hourly pinned junctions run across all 24 hours**, including the archive block. A current
 bulletin, the correct time and the disclosure every hour is most of what makes an archive block
@@ -2177,47 +2279,54 @@ dayparts:                       # the seven of PROGRAMMING.md §4, which owns th
   - { id: midday,    from: "11:00", to: "14:00", energy: [0.3, 0.6], bpm: [70, 110] }
   - { id: afternoon, from: "14:00", to: "17:00", energy: [0.4, 0.7], bpm: [80, 120] }
   - { id: evening,   from: "17:00", to: "21:00", energy: [0.5, 0.9], bpm: [90, 140] }
-  - { id: night,     from: "21:00", to: "00:00", energy: [0.2, 0.5], bpm: [60, 100] }
-  - { id: overnight, from: "00:00", to: "05:00", energy: [0.1, 0.4], bpm: [50,  95] }
+  - { id: night,     from: "21:00", to: "01:00", energy: [0.2, 0.5], bpm: [60, 100] }
+  - { id: overnight, from: "01:00", to: "05:00", energy: [0.1, 0.4], bpm: [50,  95] }
+  # overnight starts at 01:00, not 00:00: it is defined by the block whose junctions
+  # are 2-minute summaries and whose programmes are archive (PROGRAMMING.md §8). The
+  # 00:00 hour carries The Midnight Report, which is fresh news and belongs to night
 
 imaging:                        # station-wide defaults; programmes may override
   sonic_logo: station_logo_3s
   disclosure_sting: ai_ident
 
 programmes:
-  - slug: morning_line
-    name: "The Morning Line"
+  - slug: evening_report
+    name: "The Evening Report"
     programme_type: magazine        # container shape — determines the item mix (§11)
     format_class: floating          # junction | floating | pool
-    register_kind: conversational   # selects the cast_profiles row (§11a)
-    slot_minutes: 28                # 4 | 28 | 56 only
+    register_kind: conversational   # the default a `host` slot inherits (§11a)
+    slot_minutes: 56                # 4 | 28 | 56 only — 56 is written as 2 acts (§11)
     pace: fast                      # sets link length, item count, emotion band
-    jingle_set: morning_line        # open/close/bed ids from `imaging`
+    jingle_set: evening_report      # open/close/bed ids from `imaging`
     freshness: F                    # F nightly | W weekly+repeats | A archive
     # W programmes additionally declare:
     # production_day: tue                            # max 2 per night across the grid
-    # repeat_slots: [{ days: [thu], at: "21:30" }]
-    item_mix:                       # the running order the showrunner must fill
-      - { kind: link,      count: 7,   sec: [25, 50] }
-      - { kind: two_way,   count: 2,   sec: [140, 240] }
-      - { kind: package,   count: 1,   sec: [180, 300] }
+    # repeat_slots: [{ days: [sat,sun], at: "07:04" }]
+    item_mix:                       # the running order the showrunner must fill.
+                                    # Midpoints sum to ~40 min against a 42-min speech
+                                    # budget (56 × 0.75) — validation 7
+      - { kind: link,      count: 12,  sec: [25, 50] }
+      - { kind: two_way,   count: 4,   sec: [140, 240] }
+      - { kind: package,   count: 2,   sec: [180, 300] }
       - { kind: interview, count: 1,   sec: [300, 480] }
-      - { kind: vox,       count: 1,   sec: [60, 90] }
+      - { kind: vox,       count: 2,   sec: [60, 90] }
       - { kind: letter,    count: 1,   sec: [60, 90] }
     max_lead_hours: 30              # granularity ladder cap (§13)
-    brief: "Treats the day's logistics as politics. Opens with what changed overnight."
-    domain_floor: [logistics, politics]   # seats the domain floor in retrieval (§5)
+    brief: "Treats the day's politics as consequence. Opens on who it lands on."
+    domain_floor: [politics, conflict]    # seats the domain floor in retrieval (§5)
     context_mix: { canon: 0.3, world: 0.7 }   # fast domain — mostly living world.
                                               # Slow domains invert this (PROGRAMMING.md §1)
     hosts:
       - { cast: wren, role: host }          # ONE host links the programme
-      - { cast: kel,  role: correspondent } # appears inside two-ways and packages only
+      - { cast: kel,  role: correspondent } # inside two-ways and packages only; needs a
+                                            # `scripted` profile, not this one (validation 1)
     hour_clock:
-      open: morning_open
-      bed_under_links: workshop_bed
+      open: evening_open
+      bed_under_links: report_bed
       sweeper_every_n_items: 2
-      close: morning_close
-    schedule: [{ days: [mon,tue,wed,thu,fri], at: "07:00" }]
+      close: evening_close
+    schedule: [{ days: [all], at: "17:04" }]  # one clock, seven days (D-001). Programmes
+                                              # start at :04 or :32 — :00 is the junction
 
   - slug: the_count
     name: "The Count"
@@ -2226,10 +2335,15 @@ programmes:
     register_kind: conversational
     slot_minutes: 28
     jingle_set: the_count
+    freshness: W                    # produced once a week and repeated — that is W, not F,
+    production_day: wed             # even though it carries this week's news (§14)
     requires_airplay_days: 21       # grid-sync refuses to schedule until satisfied (§8)
     chart_id: main
     hosts: [{ cast: adu, role: chart_voice }]
-    schedule: [{ days: [fri], at: "14:04" }]     # weekly, per PROGRAMMING.md §8
+    schedule: [{ days: [fri], at: "14:04" }]
+    repeat_slots: [{ days: [sat], at: "14:04" }]   # Saturday reruns Friday's audio, billed as a
+                                    # repeat. NOT a second, longer edition — 40 positions will not
+                                    # fit 28 minutes (PROGRAMMING.md §8)
 
   - slug: news
     name: "Settlement Radio News"
@@ -2248,26 +2362,40 @@ programmes:
 
 **The nine validations `grid-sync` performs**, all of which are errors:
 
-1. Every `hosts[].cast` has a `cast_profiles` row for the programme's `register_kind` (§11a).
+1. Every `hosts[].cast` has a `cast_profiles` row for the register kind **its role requires**, not
+   the programme's: `host` inherits `programmes.register_kind`; `correspondent` and `newsreader`
+   always need a `scripted` row, including inside a conversational magazine; `guest`, `vox` and
+   `chart_voice` need `conversational` (§11 invariant 7). Checking the programme's kind alone lets a
+   correspondent pass grid-sync and fail at generation.
 2. Conversational co-hosts satisfy the separation rule — ≥15 hedges/1000 apart, no shared
    `hedge_form`, no shared `disagreement` mode (§11a).
 3. A `requires_airplay_days` programme is not scheduled until `airplay` holds that history (§8).
-4. **Total *fresh* speech minutes ≤ measured capacity × 0.8** (§36) — `F` programmes counted daily,
-   `W` amortised across their repeat slots, `A` counted zero. Raw grid minutes are not the number.
+4. **Total *fresh* speech minutes ≤ `measured.yaml: usable_speech_minutes`**, evaluated **per day of
+   the week** and gated on the worst day. `F` programmes counted on the days they air, `W` counted
+   as production on its `production_day` only, `A` and `R` counted zero. Raw grid minutes are not
+   the number, and **the ×0.8 derate is not applied twice** — it is already inside
+   `usable_speech_minutes` (§36).
 5. `slot_minutes` is one of **4 · 28 · 56**, every hour is `4 + 56` or `4 + 28 + 28`, and every
-   hour's slots sum to exactly 60.
+   hour's slots sum to exactly 60. **The skeleton is day-invariant**: a slot has the same length on
+   every day of the week, so this is checked once rather than seven times (`DECISIONS.md` D-001).
 6. Every referenced `imaging` id, `jingle_set` and `chart_id` exists; every programme has a
    `jingle_set`.
-7. `item_mix` durations, **summed at the midpoint of each band**, land within ±15% of
-   `slot_minutes`; no single generation call exceeds ~25
-   minutes of speech (56-minute slots must declare 2 acts); every `kind` is legal for the declared
-   `programme_type` (§11).
-8. **The day accounts for all 1,440 minutes, and an uncovered span is an ERROR.** It is not
-   auto-filled. A speech station with holes in its grid has a scheduling bug, not a music policy.
+7. `item_mix` durations, **summed at the midpoint of each band**, land within ±15% of the slot's
+   **speech budget** — `slot_minutes × 0.75`, not `slot_minutes`, because the remaining quarter is
+   imaging, beds and music (§10). A 28-minute magazine must therefore declare ~18–24 minutes of
+   items, not 28. No single generation call exceeds ~25 minutes of speech (56-minute slots must
+   declare 2 acts); every `kind` is legal for the declared `programme_type` (§11).
+8. **Every day accounts for all 1,440 minutes exactly once.** Two failures, both ERRORs:
+   - **An uncovered span** — not auto-filled. A speech station with holes in its grid has a
+     scheduling bug, not a music policy. Checked for all seven days: a programme whose `schedule`
+     covers only `mon–fri` leaves a weekend hole unless another claims it.
+   - **A double-booked slot** — two programmes both claiming `sat 14:04`. Day patterns make this
+     easy to do by accident and impossible to hear until the playlist builder picks one arbitrarily.
+     Every `(day, start_time)` pair resolves to exactly one programme.
 9. Every `W` programme has at least one `repeat_slot` and a `production_day`. A `W` programme
    without a repeat is an `F` programme wearing the wrong label, and grid-sync says so. **No night
-   carries
-   more than two W productions**; every `A` programme has neither.
+   carries more than two W productions**; every `A` programme has neither. Repeat *count* is not
+   validated — it is editorial (D-002).
 
 ### The smaller files
 
@@ -2366,8 +2494,17 @@ everything regardless** — it is safer and simpler — and record the rule in `
 it is exactly the distinction the lawyer will ask whether you understood. Verify the wording
 against the adopted Guidelines rather than against this paragraph.
 
-**Two claims in this section are unverified** and should be checked before the lawyer does: the
-Digital Omnibus dates above, and that Annex I offers the EU icon in three variants.
+**Every date and instrument named in this section is unverified and must be checked against primary
+sources before the lawyer is engaged** — not just the two originally flagged (the Digital Omnibus
+dates and the three-variant EU icon). That includes the Article 50 application date, the Code of
+Practice publication and adequacy-assessment status, the Guidelines adoption date, the
+initial-signatory window, and the December 2026 transition. They were written down from public
+reporting by a non-lawyer and several are load-bearing.
+
+**This costs nothing to defer.** Step 15 is a hard gate with written sign-off before any public
+listener, so the verification happens there, with a professional, against the Official Journal and
+the Commission's own publications rather than against this paragraph. What this section is for is
+making sure the right questions get asked — not for being right about the answers.
 
 **The December 2026 transition probably does not help you.** Systems on the market before 2 August 2026 have
 until 2 December 2026 to bring marking into compliance. A station launched after that date does not
@@ -2445,13 +2582,29 @@ segment and every generated beat passes it.
   **Order matters and it is fixed: the gate runs on the world tick's *proposed* figures, before they
   are committed.** Running it after would make it toothless — the tick writes invented names into
   `figures`, and anything in `figures` is exempt. A proposed name that passes is committed and
-  permanently exempt thereafter; one that fails is regenerated.
+  permanently exempt thereafter.
+
+  **What counts as a match, because the naive rule is unusable.** Nearly every plausible human name
+  appears somewhere in a 1.5M-name list, so "matches the list → regenerate" would send the world
+  tick into a loop rewriting perfectly good invented people. The rule is therefore:
+
+  | Match | Action |
+  |---|---|
+  | **Full name, exact**, against an entity above the notability floor | **ERROR** — regenerate |
+  | Full name, exact, below the floor | pass, and log INFO |
+  | Surname only, or fuzzy on the full name | pass, and **flag in the rundown** for the operator |
+
+  **The notability floor is ≥5 Wikidata sitelinks** — roughly "has a real article in several
+  languages". Two people sharing a name is how names work; an invented council member sharing a
+  full name with someone notable is the actual risk, and it is a much smaller set than 1.5M.
+
   **The list is a build task with a real download**: Wikidata's `humans` subset filtered to those
-  with sitelinks (~1.5M names, CC0, refreshed quarterly). **Two structures, because one will not
-  do:** a bloom filter (~40MB on disk) answers the exact-match pass, and a separate trigram-indexed
-  surname table answers the fuzzy pass — a bloom filter answers membership only and cannot support
-  approximate matching. Organisations are checked against the same mechanism using
-  Wikidata's organisations subset
+  with sitelinks (~1.5M names, CC0, refreshed quarterly), carrying the sitelink count so the floor
+  is applied at query time rather than baked into the extract. **Two structures, because one will
+  not do:** a bloom filter (~40MB on disk) answers the exact-match pass, and a separate
+  trigram-indexed surname table answers the fuzzy pass — a bloom filter answers membership only and
+  cannot support approximate matching. Organisations are checked against the same mechanism, and the
+  same floor, using Wikidata's organisations subset
 - Profanity threshold per station policy
 - Structural: disclosure present in junction formats, no clock tokens in floating formats
 
@@ -2479,15 +2632,15 @@ Every gate decision is logged **including passes**, so you can audit what the st
 The degradation ladder, in order:
 
 1. **Batch overruns** → what was generated airs; the rest falls to archive. Short day, not broken.
-1b. **TTS circuit breaker trips** → remaining jobs render in Kokoro rather than failing. The station
+2. **TTS circuit breaker trips** → remaining jobs render in Kokoro rather than failing. The station
    stays on air but the voices are flat, so **the day is marked `degraded`** and that appears at the
    top of both the rundown and the digest. Silent quality loss is worse than an outage, because
    nothing tells you it happened.
-2. **Batch fails entirely** → D+2 shows already exist; only junctions are missing. Regenerate them
+3. **Batch fails entirely** → D+2 shows already exist; only junctions are missing. Regenerate them
    in the morning, or run the day on archive with junctions suppressed.
-3. **Studio dies** → the Transmitter plays its buffer, then archive, then music, indefinitely.
+4. **Studio dies** → the Transmitter plays its buffer, then archive, then music, indefinitely.
    Inaudible to listeners for days.
-4. **Transmitter dies** → the only true outage. Restore from a documented image.
+5. **Transmitter dies** → the only true outage. Restore from a documented image.
 
 **One alert, not a dashboard.** The batch writes a completion timestamp; if it is missing by 07:30,
 email. Everything else is the daily digest (§24).
@@ -2588,9 +2741,11 @@ spaces — which matters a great deal at 16GB.
   restarts it; leases (§25) make that safe.
 - **Restart is always safe** because jobs are idempotent and leased (§25). `kill -9` is a
   legitimate operator action and `ADMIN.md` says so in those words.
-- **Memory ceiling:** `batch.py` 10GB, `worker_tts.py` 7GB (`settings.limits.*`) — process
-  RSS, not total pressure, so both sit below the §2 budget once the 5GB baseline is added. A process
-  exceeding its ceiling logs ERROR and exits for the supervisor to restart it. Long-lived Python plus MLX will grow.
+- **Memory ceiling:** `batch.py` 7GB, `worker_tts.py` 6GB (`settings.limits.*`) — process RSS, set
+  so that RSS + the 5GB baseline stays inside the §2 phase budgets (~11.5GB Think, ~10GB Speak)
+  rather than merely inside 16GB. A ceiling that permits 15GB of total pressure is not a ceiling.
+  A process exceeding it logs ERROR and exits for the supervisor to restart it. Long-lived Python
+  plus MLX will grow.
 
 ### macOS hardening
 
@@ -2612,7 +2767,7 @@ This kills more overnight jobs than any software bug.
 | Package manager | **uv** — `uv sync --frozen`, `uv.lock` committed |
 | Lint + format | **ruff** (both), configured in `pyproject.toml` |
 | Types | **mypy** — `strict` on `providers/`, `clock.py`, `*/store.py`, `retrieval/` |
-| Hooks | **pre-commit**: ruff, ruff-format, gitleaks, mypy-on-changed, large-file guard. **Never the test suite** — slow hooks get bypassed |
+| Hooks | **pre-commit**: ruff, ruff-format, gitleaks, mypy-on-changed, large-file guard, `canon-check --fast` (the model-free passes, §7). **pre-push**: `make check` and full `make canon-check`. **Never the test suite on commit** — slow hooks get bypassed |
 | System tools | Homebrew: `ffmpeg`, `liquidsoap`, `icecast`, `postgresql@16` — versions in README |
 | JS | **pnpm**, Node version in `.nvmrc` |
 | Migrations | **alembic**, forward-only |
@@ -2694,7 +2849,8 @@ value must crash on boot, never at 02:00 mid-render.
 Bind context once at the top of a unit of work:
 
 ```python
-log = logger.bind(run_id=run_id, phase="shows", programme_id=7, air_date="2626-07-30")
+log = logger.bind(run_id=run_id, phase="shows", programme_id=7, air_date="2026-07-30")
+#                                          real UTC — never the in-world date (§31)
 ```
 
 Standard fields: `run_id`, `phase`, `programme_id`, `segment_id`, `job`, `engine`, `duration_ms`,
@@ -2910,13 +3066,21 @@ a backup — put it in the calendar.
 
 | Kind | Kept |
 |---|---|
-| Junctions | deleted after air |
+| **4-minute junctions** (bulletins and overnight summaries) | deleted after air |
+| **28-minute news programmes** (`The Six`, `The Midnight Report`) | 30 days, then archive pool |
 | Floating shows | 30 days on the Transmitter, then archive pool |
 | Pool + imaging | forever |
 | Archive items | until 12 plays, 18 months, or marked stale (§14) |
 | Threads, beats, coverage, figures, quotes | forever — the world's history |
 | Items | 7 days |
 | Logs | 30 days |
+
+**Retention is keyed on `slot_minutes == 4`, not on `format_class == junction`.** The two used to be
+the same thing; §13 made them different when 28-minute news programmes became junction-class, and
+keying on the class silently deleted the main news programme of the day — which `/archive` (§16)
+promises listeners they can browse. A `The Six` from last Tuesday is worth keeping for the same
+reason any other programme is; a bulletin from last Tuesday is not, because it is four minutes of a
+clock reading that no longer applies.
 
 **What must survive total loss:**
 
@@ -3046,7 +3210,9 @@ Rules:
 
 - **No phase packs.** Ever.
 - **An agent may not create a new document** without the operator asking for one.
-- **Do not document a command before it exists.**
+- **Do not document a command in `ADMIN.md` before it exists.** `ADMIN.md` is what you follow at
+  02:00 and every line in it must work. §17's target list is design — it says what the surface will
+  be — and a target moves from there to `ADMIN.md` when it runs.
 - **`CLAUDE.md` must stay one page.** Agents skim long documents — that is a fact about how they
   work, not a failing to design around. Claude Code loads it automatically, so the non-negotiables
   belong there and nowhere else: WIP 1 · agents may not add tasks · agents may not create documents
@@ -3149,15 +3315,15 @@ when the work is split into tasks.
 | # | Item | Gates |
 |---|---|---|
 | C1 | **Canon seed** — the bible at enough depth for retrieval to be meaningful (~150+ facts, all domains present) | eng 4, 6, 7 |
-| C2 | **Cast cards + speech profiles** for the 3–4 presenters the tier-1 grid needs, including one `scripted` newsreader (§11a). A host may carry several strands within a daypart, so the roster grows with the freshness tier rather than with the grid | eng 8 |
+| C2 | **Cast cards + speech profiles.** The tier-1 grid needs **six**, not three or four: a breakfast host, an evening host, a `scripted` newsreader, a chart voice, and **two beat correspondents** — correspondents are `cast` rows with authored `scripted` profiles, not `figures`, and every two-way needs one (§11a, `PROGRAMMING.md` §5). A host may carry several strands within a daypart, so the roster grows with the freshness tier rather than with the grid | eng 8 |
 | C3 | **Voice reference clips** — 10–20s synthetic WAV per presenter, committed, with `voices/PROVENANCE.md` (§3, §18) | eng 8 |
 | C4 | **`grid.yaml`** — programmes, hosts, dayparts, hour clocks (§17a) | eng 9, 10 |
 | C5 | **Suno catalogue** + `music/catalogue.yaml` + licence evidence | eng 13, 15 |
 | C6 | **Imaging pack** — logo, stings, beds, opens/closes, disclosure sting | eng 12 |
 | C7 | **Pool pieces** — 37 minimum across three length bands (§13) | eng 13c |
 | C8 | **`banned-entities.yaml` seed** | eng 4 |
-| C10 | **Stock voice bank** — 12–20 synthetic reference clips for `figures` (§3), varied by age, register and settlement. Required by every two-way, interview, vox pop and package, i.e. by most of the grid | eng 8 |
-| C9 | **LICENSE decision** — the repo is public. Code and canon/voices probably want different terms; MIT or Apache-2.0 for `src/`, a restrictive or all-rights-reserved statement for `canon/`, `voices/` and `music/` | before the repo is public |
+| C9 | **Stock voice bank** — 12–20 synthetic reference clips for `figures` (§3), varied by age, register and settlement. Required by every two-way, interview, vox pop and package, i.e. by most of the grid | eng 8 |
+| C10 | **LICENSE decision** — the repo is public. Code and canon/voices probably want different terms; MIT or Apache-2.0 for `src/`, a restrictive or all-rights-reserved statement for `canon/`, `voices/` and `music/` | before the repo is public |
 
 0. **Scaffold** — repo layout, toolchain, `config.py`, `log.py`, Makefile, hooks, CI (§21–22).
 0b. **Task zero: resolve the five model slots** to real downloadable artifacts and pin repo +
@@ -3204,13 +3370,18 @@ when the work is split into tasks.
     `DECISIONS.md` marking justification, the Suno licence evidence file, and a written statement
     of what the station broadcasts. **No public listener before this closes**, and the outcome is
     written down rather than remembered.
-16. **Pre-built overnight archive pool — 90 hours before launch (70 is the floor).** Five hours a night, seven nights
-    a week, means the archive is consumed at 35 h/week and cannot be built after going live. Lead
-    with history documentaries and music retrospectives (slow domains, §1 of `PROGRAMMING.md`) —
-    they are time-neutral and the cheapest per render-minute. ~2,250 speech minutes in total: ten
-    days of pure archive work, realistically several weeks alongside everything else. The 14-day
-    separation rule (§14) is what sets 70 as the floor; below it, recurrence is audible within a
-    fortnight. Keep the top-up phase running after launch — steady state is only ~12 min/day.
+16. **Pre-built archive pool — 165 hours before launch (135 is the floor).** The grid consumes
+    ~9.5 archive hours a day, seven days a week — ~66 h/week — and it cannot be built after going
+    live. The 14-day separation rule (§14) is what sets 135 as the floor; below it, recurrence is
+    audible within a fortnight. Lead with history documentaries and music retrospectives (slow
+    domains, §1 of `PROGRAMMING.md`) — time-neutral and the cheapest per render-minute.
+    **~4,000 speech-minutes in total: ~19 nights of pure archive render, realistically a couple of
+    months alongside everything else.** That is accepted: there is no launch date, so pre-launch
+    render time is free (`DECISIONS.md` D-006) and the levers in D-003 stay unused.
+    **What is not free is doing it too early.** 165 hours is ~165 programmes, well past the 50-show
+    line at step 13b, and the archive is the deepest lock-in in the system (§3) — build it after the
+    voice and register have survived real listening, not while waiting for them. Keep the top-up
+    phase running after launch; steady state is ~30 min/day.
 17. **Public site** — player, schedule, programmes, about, `/ai-transparency`.
 18. **Go live.**
 19. *(week 3+)* Chart show, once real airplay history exists.
@@ -3257,21 +3428,27 @@ The grid in `PROGRAMMING.md` §8 costs this much fresh speech per day:
 
 | | Total |
 |---|---|
-| 24 × 4-min junctions (19 bulletins + 5 overnight summaries) | 86 |
-| Fresh (`F`) programmes as listed, chart amortised | ~400 |
-| Weekly (`W`) programmes, amortised across their repeat slots | ~27 |
+| 24 × 4-min junctions (20 bulletins + 4 overnight summaries) | 88 |
+| Fresh (`F`) programmes as listed | ~399 |
+| Weekly (`W`) programmes — nine strands, 364 min/wk amortised | ~39 |
 | Archive (`A`) and repeats | 0 |
-| **Full grid, fresh speech per day** | **~515** |
+| **Weekday, fresh speech per day** | **~526** |
+| **Weekend day** (twelve slots overridden, §8) | **~295** |
+| **Weekly average** | **~460** |
 
-**The full grid is roughly two and a half times a 0.7× machine's budget**, which is why it ships in
-tiers:
+**A weekday is roughly two and a half times a 0.7× machine's budget** and the week as a whole a
+little over two, which is why it ships in tiers:
 
 | Capacity | Tier |
 |---|---|
 | ~200 min (RTF 0.7) | All junctions · one hour of breakfast · the flagship · the six · the chart. Everything else `W` or `A` |
 | ~300 min (RTF 1.0) | Add the midday report, finance, sport, the midnight report |
 | ~460 min (RTF 1.5) | Add full breakfast, late analysis, discussion, the long interview |
-| ~515 min | The grid as written |
+| ~526 min | The weekday as written |
+
+**Capacity is a per-night constraint, so the tier is judged against the weekday.** The two weekend
+nights come in at roughly half, which is where `W` production and archive top-up are scheduled
+(`PROGRAMMING.md` §8).
 
 `PROGRAMMING.md` §9 holds the cut ladder and the three programmes that are never cut.
 
@@ -3281,7 +3458,7 @@ their airtime.
 
 | Sustained RTF | Speech in 385 min | After ×0.8 derate | Verdict against `PROGRAMMING.md` §9 |
 |---|---|---|---|
-| 1.5× | 578 | 462 | The ~460 tier. ~50 short of the grid as written (~515) |
+| 1.5× | 578 | 462 | The ~460 tier. ~64 short of the weekday as written (~526) |
 | 1.2× | 462 | 370 | Between the ~300 and ~460 tiers |
 | **1.0×** | 385 | 308 | **The ~300 tier. This is the pass threshold** |
 | 0.7× | 270 | 216 | The ~200 tier: bulletins, one breakfast hour, the flagship, the chart |
@@ -3313,8 +3490,9 @@ and the blocks shrink.
 
 **Measure context and KV growth at the same time.** The Think phase is the tight one at 16GB, and
 KV grows with context. Record peak memory at a realistic assembled context (Tier 0 + all domain
-summaries + 40 facts + world slice ≈ 20–24k tokens) and again at act 3 of a multi-act script, which
-is the largest context the system ever builds.
+summaries + the 40-item Tier 2/3 budget ≈ 20–24k tokens) and again at **act 2** carrying act 1's
+summary and verbatim tail — the 2-act cap (§11) makes that the largest context the system ever
+builds.
 
 **Written go/no-go, recorded in `DECISIONS.md` before any pipeline code:**
 
@@ -3376,9 +3554,15 @@ package, the canon pipeline, the transmitter, the working agreement.
 
 | Decision | The deciding test |
 |---|---|
-| Writer model | Same brief, same context, candidates write The Circuit. Read blind (§36.2) |
+| Writer model | Same brief, same context, candidates write `The Evening Report`. Read blind (§36.2) |
 | Chatterbox vs Qwen3-TTS for cast | Same 90-second two-hander through both. Listen |
-| Fresh hours, and where they sit | Falls out of the RTF measurement and the format mix |
-| Grid composition (talk : music) | Capacity from §36, then taste |
+| Which freshness tier the grid ships at | Falls out of the RTF measurement (§36) against `PROGRAMMING.md` §9 |
+| Archive pool: build 135 h, or shorten the separation window | Step 16, with measured RTF in hand (D-003) |
+| Voice identity when the archive is deep | Bulk re-render vs an in-world host change, forced at step 13b |
 | Sign the Code of Practice deployer section | Lawyer, at step 15 |
 | Panel screens | Whatever you actually reached for in the first 30 days |
+
+**Closed since v9:** grid composition (talk : music) — §11 settles it, this is a speech station and
+music does not fill gaps; where the fresh hours sit — `PROGRAMMING.md` §8 is the schedule; the
+real-person match threshold (D-009); the Saturday chart slot (D-010); and whether chart clips score
+(D-011).
