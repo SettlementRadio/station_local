@@ -495,6 +495,15 @@ a capacity decision, not an editorial one:
 Every tier costs less at the weekend, because the weekend overrides bite first: at the ~200 tier a
 Saturday runs on junctions, `Sixth Day`, `The Evening Report` and `The Six` alone.
 
+**These numbers are fresh speech only — the archive still has to be fed.** ARCHITECTURE §14 puts
+steady-state archive top-up at ~30 speech-min/day, which comes out of the same nightly budget, so
+each tier above is about 30 minutes more expensive than it looks (216 usable against ~200,
+308 against ~300, 462 against ~460). Retired daytime programmes refill the pool for free after 30
+days and probably cover most of it, but only the time-neutral ones survive the staleness rule, and
+nobody knows that fraction until the station has run. **Choose the tier one notch below what the
+measured RTF appears to buy**, and relax it when the digest shows what retirement actually
+contributes.
+
 **Repeats are not a compromise, they are how radio works.** The BBC repeats constantly — Radio 4
 Extra is an entire station of it, and the World Service reruns its documentary strands several times
 a week across time zones. A `W` programme aired Tuesday at 09:30 and again Thursday at 21:30 is

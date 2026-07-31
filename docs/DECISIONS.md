@@ -201,3 +201,88 @@ scope — YouTube's synthetic-content settings, Ko-fi, social presence, stream d
 the LICENSE decision were scattered across §18, PRODUCT §10 and C10, and never sequenced. And
 **Ko-fi is a compliance input**, not just a donations link: it is what puts the station outside the
 AI Act's purely-personal-use carve-out, which is why phase G gates phase J.
+
+### D-014 · §19's figure screen runs in C, not G — 2026-07-31
+
+`PHASES.md` assigned the whole of §19 to phase G. §19 fixes the opposite order: the real-person
+screen runs on the world tick's **proposed** figures, before they are committed, because anything
+already in `figures` is exempt from the screen permanently. A phase-C tick that commits unscreened
+names cannot be repaired in G — the exemption is the bug. **The deterministic screen therefore moves
+to C**; the model check, profanity, structural checks and the quarantine path stay in G, and G still
+reviews the whole gate with the lawyer.
+
+**The screen is engineering, not a config file**, and was reading as content because it sat beside
+C8. It is a ~1.5M-name Wikidata extract behind two structures — a bloom filter for exact match, a
+trigram-indexed surname table for the fuzzy pass — with the ≥5-sitelink floor applied at query time.
+Phase C now lists the download as a prerequisite in its own right.
+
+### D-015 · Phase H is measured in archive hours; there are two pools — 2026-07-31
+
+`PHASES.md` gave phase H the outcome "a pool deep enough that nothing recurs inside a fortnight,
+`make pool-check` green". Those are two different pools. `pool_items` is back-timing filler — 37
+pieces in three length bands, finished at step 13c in phase F, and the only thing `make pool-check`
+counts (§13). The **archive** is §14's `A` tier at a 135-hour floor and 165-hour target, counted in
+hours and reported by the digest and the rundown.
+
+`make pool-check` goes green in F and stays green through H whether or not one archive hour exists,
+so **the longest phase in the project had no valid observable check** — which under §33 means it was
+not yet a phase that could be planned. H's check is now the digest's archive line at or above the
+135-hour floor, held for a week without top-up falling behind.
+
+**No new `make` target was added.** §24 already reports archive hours against target in the nightly
+digest; inventing `make archive-check` would have been surface area for a number that is already
+printed every morning.
+
+### D-016 · Every architecture section has a phase, and every open decision has a closing phase — 2026-07-31
+
+An audit of `PHASES.md` against all thirty-eight architecture sections found nine with no phase at
+all. Five mattered: **§29 testing**, **§30 CI** and **§31 code standards** — which `CLAUDE.md`
+requires from the first task and which are inside build step 0 — now land in **A**; **§4's Studio
+half** splits, with the external volume layout and the Postgres mount guard in **C** and the process
+model in **E**; and **§26** beyond its indexes distributes across C, E and F. §27's Studio posture
+goes to E, §6's on-air writeback to E, and §36's planner budget enforcement — the mechanism that
+refuses a grid exceeding `measured × 0.8`, and which no phase owned — to E.
+
+**Two ordering conflicts are corrected.** §36.2's real measurement needs real canon and a real world
+slice, so only the cheap week-one version belongs to A; the honest one is C. And D depends on **B**,
+not just A and C, because its outcome is a show playing on the Transmitter.
+
+**§38 gained a row and a home.** Nothing in the architecture measures listeners, yet PRODUCT §9
+makes return listening and time in stream two of the five signals that matter — so it is recorded as
+an open decision closing at phase J rather than quietly assumed. `PHASES.md` now carries a table
+mapping all nine §38 rows to the phase that closes them; a register nothing references is a register
+that rots.
+
+### D-017 · The writer is 9–10B, not 9–12B — 2026-07-31
+
+§2 stated the writer slot as "9–12B dense @ Q4 (**≤6GB** + KV)". Those are not compatible. MLX
+4-bit costs ~0.56 bytes per parameter — 4 bits per weight plus a scale and bias per group of 64 —
+so 9B ≈ 5.1 GB and 10B ≈ 5.6 GB fit, while **11B ≈ 6.2 GB and 12B ≈ 6.8 GB are over the profile
+before any KV**. The band was written as 9–12B in three places (§1, §2, §36.2) and once in
+`PHASES.md`, all now 9–10B.
+
+**The profile wins, not the parameter count.** §2 already says "the commitment is the profile, not
+the name", and the ≤6 GB figure is derived with reasoning — at 8 GB the Think phase reaches
+~13.5 GB and leaves nothing for a re-render or the KV growth of a long act. The named candidate
+was always Qwen 3.5 **9B**, so nothing about the intended build changes; what changes is that task
+zero can no longer waste a day on a 12B that was never going to fit.
+
+### D-018 · Capacity tiers count fresh speech only, and must be read one notch down — 2026-07-31
+
+`PROGRAMMING.md` §9 and ARCHITECTURE §36 both tier the grid by fresh speech-minutes — ~200 at
+RTF 0.7, ~300 at 1.0, ~460 at 1.5 — against usable nightly budgets of 216, 308 and 462. **Neither
+table subtracts §14's ~30 speech-min/day of archive top-up, which comes out of the same budget.**
+Every tier is therefore about 30 minutes over-subscribed, and the ~200 tier at RTF 0.7 does not
+actually fit the machine it is named for.
+
+**It is less bad than the arithmetic suggests, and still worth fixing.** Archive sits last on the
+priority ladder and is built to be dropped on a long night, and retired floating shows and 28-minute
+news programmes enter the pool for free after 30 days (§28) — which is the same mechanism M4
+describes. At the ~300 tier the day makes ~300 broadcast minutes of programme material against an
+archive appetite of ~60, so a modest time-neutral fraction covers it.
+
+**But the fraction is unknown and news-shaped output goes stale fast**, so it is not safe to assume
+pre-launch. Both tier tables now say to plan one notch below what the measured RTF appears to buy,
+and to relax it once the digest shows what retirement actually contributes. **Recorded as a
+measurement to take, not an open decision** — it resolves with three months of real retirement data
+and needs no §38 row.

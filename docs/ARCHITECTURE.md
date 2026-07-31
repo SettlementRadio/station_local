@@ -36,7 +36,7 @@ forty seconds across an entire night.
 **The two numbers that gate everything** (measure before writing pipeline code, §36):
 
 1. Sustained TTS real-time factor over 60 minutes on this machine.
-2. Whether a 9–12B local model writes radio you want to broadcast.
+2. Whether a 9–10B local model writes radio you want to broadcast.
 
 Everything else in this document is solvable engineering. Those two are not.
 
@@ -46,7 +46,7 @@ Everything else in this document is solvable engineering. Those two are not.
 
 | Layer | Choice | Why |
 |---|---|---|
-| **Writer LLM** | 9–12B dense @ Q4 (**≤6GB** + KV, see the memory budget) | The only LLM. Does scripts, world tick, items, canon checks. Named candidate: Qwen 3.5 9B |
+| **Writer LLM** | dense, **≤6GB at Q4** + KV — which is **9–10B**, not 9–12B (see the memory budget) | The only LLM. Does scripts, world tick, items, canon checks. Named candidate: Qwen 3.5 9B |
 | **LLM runtime** | **LM Studio (MLX backend)**, OpenAI-compatible on `:1234` | MLX is typically faster than GGUF on Apple Silicon. OpenAI-compatible keeps the seam honest |
 | **Cast TTS** | **Chatterbox Multilingual v3** (Resemble, MIT) | Emotion exaggeration + paralinguistic tags; built-in PerTh watermark, useful for Art. 50(2) |
 | **Second TTS** | **Qwen3-TTS** (Alibaba, Apache 2.0, 0.6B) | Different control vocabulary (natural-language direction). Two implementations is what proves the seam (§3) |
@@ -107,6 +107,13 @@ The writer profile is therefore **≤6 GB at Q4**, not 6–8: at 8 GB the Think 
 leaving 2.5 GB — inside the 2 GB floor, but with nothing left for a re-render, a browser, or the
 KV growth of a long act. Peak at ≤6 GB is ~11.5 GB against 16 GB, leaving **~4.5 GB headroom, and
 the target is never to go below 2 GB**.
+
+**What ≤6 GB means in parameters, because the two were stated inconsistently.** MLX 4-bit costs
+about **0.56 bytes per parameter** — 4 bits per weight plus a scale and bias per group of 64, i.e.
+4.5 effective bits. So 9B ≈ 5.1 GB, 10B ≈ 5.6 GB, **11B ≈ 6.2 GB and 12B ≈ 6.8 GB — both already
+over the profile before a single KV token**. The band is therefore **9–10B**, and it was written
+as 9–12B in three places. Where a parameter count and the ≤6 GB profile ever disagree again, **the
+profile is the commitment** and the count is the thing that yields.
 
 **The §36 gate is stated as total system memory pressure, not process RSS** — the 5GB baseline is
 what determines whether the machine swaps, and swapping during a four-hour Think phase is the
@@ -1268,7 +1275,7 @@ one authored sentence per programme: *"Ice & Iron treats results as economics an
 Retrieval cannot manufacture an editorial stance.
 
 **Length budget.** A 20-minute talk segment is ~3,000 words ≈ 4,000 output tokens — comfortable. A
-50-minute programme is not: ~10,000 output tokens is beyond what a 9–12B model produces reliably.
+50-minute programme is not: ~10,000 output tokens is beyond what a 9–10B model produces reliably.
 **Cap a single generation call at ~25 minutes of speech.** Longer programmes are generated as
 **acts within one conversation**, each act seeing what came before — one context, one cache prefix,
 sequential calls. Coherence is preserved without requesting a length that degrades.
@@ -1908,6 +1915,20 @@ hours are music-led — that is **~30 minutes a day of steady-state generation, 
 budget at the 0.7× tier.** Affordable, but not free, and it is why archive top-up sits last on the
 priority ladder.
 
+**That 30 minutes assumes every archive hour is purpose-built, and it will not be.** Retired
+floating shows and 28-minute news programmes enter the pool for free after 30 days (§28) — the
+same mechanism PRODUCT's M4 describes as the overnight filling with the station's own past. At the
+~300 tier the day produces roughly 300 broadcast minutes of programme material against an archive
+appetite of ~60, so even a modest time-neutral fraction covers the hour, and purpose-built top-up
+becomes headroom rather than a requirement.
+
+**But only the time-neutral fraction survives**, and at the lower tiers most fresh output is
+news-shaped — bulletins, reports, `The Six`, `Ledger` — which the staleness rule below pulls
+quickly. **So the offset is real, unquantified, and not safe to assume before launch.** Size the
+tier against the full ~30 (§36), let the digest's archive line report what actually arrives for
+free, and revisit once three months of real retirement data exist. This is a measurement waiting to
+happen, not an open decision (§38).
+
 **The upfront cost is the longest pole in §35, and it is accepted.** 135 hours at ~50% speech
 density is **~4,000 speech-minutes** — about 19 nights of pure archive render at the 0.7× tier, and
 realistically a couple of months alongside everything else (§35 step 16). It is not 2,250; that
@@ -2048,7 +2069,7 @@ Batch run 4f2a · writing 20:05–23:45, used 3h33m of 3h40m · 24 junctions, 9 
 
 ## Flags
 ⚠ Thread 52 stalled 6 days — needs a beat or a stage change
-ℹ Archive pool 86 h / 90 target · 1 item retired (12 plays) · 1 stale (figure died, thread 47)
+ℹ Archive pool 152 h / 165 target · 1 item retired (12 plays) · 1 stale (figure died, thread 47)
 ⚠ Rotation relaxed 3× (album ≥90m dropped) — catalogue thin for the 11:00 daypart
 ⚠ 1 script quarantined: Ledger draft 1, org/person name "Marren Institute" (the screen covers organisations as well as persons)
 ℹ Horizon: 7 beats <24h, 11 <week, 4 <season (season floor is 5 — refill tomorrow)
@@ -3489,6 +3510,16 @@ little over two, which is why it ships in tiers:
 nights come in at roughly half, which is where `W` production and archive top-up are scheduled
 (`PROGRAMMING.md` §8).
 
+**The tiers count fresh speech only, and archive top-up is not free.** §14 puts steady-state
+replenishment at ~30 speech-min/day, so a tier is affordable when `fresh + archive ≤ usable`, not
+when `fresh ≤ usable` — and on that reading every tier above is roughly 30 minutes optimistic
+(216 usable against the ~200 tier, 308 against ~300, 462 against ~460). **Two things absorb it and
+neither is a reason to ignore it:** archive sits last on the priority ladder and is designed to be
+dropped on a long night, and retired daytime programmes enter the pool for free after 30 days
+(§28). How much the second covers depends on how time-neutral the day's output is, which is not
+known until the station has run — see §14. Until then, **plan the tier one notch below the RTF
+band it appears to buy.**
+
 `PROGRAMMING.md` §9 holds the cut ladder and the three programmes that are never cut.
 
 **Bulletins are the single largest line and the cheapest to make.** Music links are the second, and
@@ -3550,7 +3581,7 @@ reopens before code is written, not after.
 Generate one full 20-minute two-hander with real canon, a real world slice and a real brief. Print
 it. Read it away from the screen.
 
-This is the actual risk in the project. Everything else is solvable engineering; whether a 9–12B
+This is the actual risk in the project. Everything else is solvable engineering; whether a 9–10B
 local model writes radio you want to broadcast is not knowable in advance and not fixable by
 architecture.
 
@@ -3601,6 +3632,7 @@ package, the canon pipeline, the transmitter, the working agreement.
 | Voice identity when the archive is deep | Bulk re-render vs an in-world host change, forced at step 13b |
 | Sign the Code of Practice deployer section | Lawyer, at step 15 |
 | Panel screens | Whatever you actually reached for in the first 30 days |
+| **Listener telemetry — whether to collect it at all** | Nothing in this document measures listeners, yet `PRODUCT.md` §9 makes **return listening** and **time in stream** two of the five signals that matter. Icecast already emits per-mount connection durations, so the cost is collection and storage, not instrumentation. Decide at step 18 (phase J): collect and keep, or accept that the product thesis is unmeasured and say so |
 
 **Closed since v9:** grid composition (talk : music) — §11 settles it, this is a speech station and
 music does not fill gaps; where the fresh hours sit — `PROGRAMMING.md` §8 is the schedule; the

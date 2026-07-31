@@ -43,7 +43,7 @@ alone. A phase whose content is not started will not finish on time regardless o
 | **A** | Foundations | — | hardware |
 | **B** | The Transmitter | **M0** | — |
 | **C** | The World | — | A |
-| **D** | The Voice | *go/no-go* | A, C |
+| **D** | The Voice | *go/no-go* | A, B, C |
 | **E** | The Day | **M2** | B, D |
 | **F** | Music and Imaging | **M1** | E |
 | **G** | Compliance and Legal | *hard gate* | E, F |
@@ -58,6 +58,13 @@ run while hardware is in transit. Everything from C onward is serial.
 **M1 and M2 complete out of numerical order** — the batch learns to run itself (E) before the station
 sounds finished (F). PRODUCT §8 numbered the milestones as listener experience, not as build order,
 and that is fine.
+
+**D's question and M1's question are the same sentence about two different things.** Both ask
+*would you leave this playing while someone else was in the room?* — but D asks it of a bare show
+with no imaging and no music, where the only variables are the writing and the voices (§36.2), and
+**M1 asks it of the finished sound** in F, with the hour clock, the beds and the station furniture
+around it. Answering it once in D does not discharge it in F, and a no in D means something quite
+different from a no in F.
 
 ---
 
@@ -116,27 +123,69 @@ operator can make.
 
 ---
 
+## The open decisions and where they close
+
+ARCHITECTURE §38 keeps a register of what has not been decided, each with the test that decides it.
+Every one of them has a phase, and this table is the only place that says which — **a register
+nothing references is a register that rots.** §38 stays the authority on what each decision *is*;
+this says *when*.
+
+| §38 decision | Closes in |
+|---|---|
+| Chatterbox vs Qwen3-TTS for cast | **A** — the same 90-second two-hander through both |
+| Which freshness tier the grid ships at | **A** — falls out of the RTF measurement against `PROGRAMMING.md` §9 |
+| Writer model | **narrowed in A, settled in C** — `make benchmark` disqualifies candidates cheaply on synthetic context; choosing between the survivors is a blind read (§36.2) and needs real canon |
+| The catalogue's shape | **before F** — labels × artists × albums × tracks; C5 cannot start without it |
+| Voice identity when the archive is deep | **F**, at step 13b — before 50 shows exist, not 500 |
+| Sign the Code of Practice deployer section | **G** — the lawyer |
+| Archive pool: 135 h or a shorter separation window | **H** — with measured RTF in hand |
+| Panel screens | **K** — whatever was actually reached for in the first 30 days |
+| **Listener telemetry — whether to collect it at all** | **J** — added here; PRODUCT §9 wants return listening and time in stream, and no section of the architecture provides either |
+
+**A and C close four of the nine between them**, which is what makes the front of the project the
+part that can least afford to be rushed — the cast engine and the freshness tier are both
+irreversible in practice once content exists.
+
+---
+
 ## A · Foundations
 
 **Goal.** Establish that the machine can do the work at all, before any pipeline exists.
 
 **Outcome.** Two numbers written into `DECISIONS.md`: the measured sustained TTS real-time factor,
-and a written verdict on whether a 9–12B local model writes radio worth broadcasting. A repo that
-lints, types and tests green on an empty project.
+and a first verdict on whether a 9–10B local model writes radio worth broadcasting — taken on a
+hand-written brief, which is the cheap version of the test. A repo that lints, types and tests green
+on an empty project. **Two of §38's open decisions close here** — the cast TTS engine and which
+freshness tier the grid ships at — and the writer-model field is narrowed to the candidates
+`make benchmark` did not disqualify.
 
 - **Hardware** — Mac mini M4 16GB + external Thunderbolt SSD 2TB. Nothing in this phase starts
   without both.
-- **Accounts** — Hugging Face (model downloads).
+- **Accounts** — Hugging Face (model downloads) · **GitHub** (the repo and its three CI workflows).
 - **Content** — none.
 - **Depends on** — nothing.
 
 **Completes in ARCHITECTURE:** §21 repo layout · §22 toolchain · §23 config and secrets ·
-§2's model table resolved to real artifacts · §36 both measurements.
-**Build steps:** 0, 0b, 1, and §36.2's cold read.
+§29 the five kinds of test and `make benchmark`'s pass thresholds · §30 the three CI workflows ·
+§31 code standards · §2's model table resolved to real artifacts · **§36.1** the RTF measurement.
+**Build steps:** 0, 0b, 1, and §36.2's cheap week-one version.
 
-> **The cold read is model-bound, not hardware-bound.** Whether a 9–12B model writes usable radio is
+> **The cold read is model-bound, not hardware-bound.** Whether a 9–10B model writes usable radio is
 > a property of the model, so it can be answered on rented hardware months before the mini arrives.
 > The RTF measurement cannot — "on this machine" means the mini.
+>
+> **Only the cheap version of §36.2 lands here.** The real measurement needs real canon, a real
+> world slice and a real brief, so §36 puts it after build step 7 — it belongs to **C**, not to this
+> phase. Running the week-one hand-written version now is what stops the question waiting until
+> month three.
+>
+> **§29 and §30 are not deferrable.** `CLAUDE.md`'s definition of done requires the one kind of test
+> that applies to *every* task from the first one, and `make benchmark` is the gate the writer-model
+> decision is settled with — so the taxonomy and the workflows are built here, not retrofitted.
+>
+> **The repo stays private until J.** §27's public-repo hygiene and §30's no-secrets-on-forks rule
+> are built now and become load-bearing then; gitleaks runs from the first commit regardless. This
+> is why C10 sits in J rather than here.
 
 ---
 
@@ -154,11 +203,14 @@ Kill the source and it keeps playing.
 - **Depends on** — nothing. Fully parallel to A.
 
 **Completes in ARCHITECTURE:** §4's Transmitter half · §15 playout and the six-level failure
-chain · §27's transmitter firewall posture.
+chain, including the explicit 300-client Icecast cap · §27's transmitter firewall posture.
 **Build steps:** 2.
 
 > **Keep it unlisted and access-restricted until G closes.** A public stream before the legal review
 > raises a placing-on-the-market question that has not been asked yet (§18).
+>
+> **M0's URL is a bare host until I.** The domain and its DNS are I's account item; nothing here
+> needs a name, and buying one early only starts a clock on a public surface G has not cleared.
 
 ---
 
@@ -167,18 +219,40 @@ chain · §27's transmitter firewall posture.
 **Goal.** A world that keeps its own time, with a canon behind it that retrieval can actually reach.
 
 **Outcome.** `make tick` advances threads, schedules beats, and writes items — and the result is
-readable prose you can judge. Retrieval returns the right facts for a hand-written query.
+readable prose you can judge. Retrieval returns the right facts for a hand-written query. **The real
+§36.2 measurement is run and its verdict written down**, on retrieved context rather than
+hand-written context — which is also where **§38's writer-model decision closes**, between the
+candidates A did not disqualify.
 
 - **Hardware** — the Studio, from A.
-- **Accounts** — none new.
+- **Accounts** — none new. One **download**: Wikidata's `humans` and organisations subsets (CC0),
+  filtered to entities carrying sitelinks — the real-person screen, refreshed quarterly.
 - **Content** — **C1 canon seed** (~150 facts, all seventeen domains present) and **C8
   `banned-entities.yaml`**. C1 is the largest single operator item in the project and gates most of
   what follows; start it the moment A's cold read passes.
 - **Depends on** — A.
 
-**Completes in ARCHITECTURE:** §5 knowledge architecture · §6 the world · §7 canon ingestion ·
-§13's clock and phrase renderer · §26's indexes.
-**Build steps:** 3, 4, 5, 6, 7.
+**Completes in ARCHITECTURE:** §5 knowledge architecture · §6 the world, **less the on-air
+writeback, which belongs to E** · §7 canon ingestion · §13's clock and phrase renderer ·
+§19's deterministic screen on *proposed* figures · §26's indexes, its prompt-prefix ordering and
+the canon-side caches (embeddings, domain summaries) · §4's Studio half — the external volume
+layout and the Postgres mount guard.
+**Build steps:** 3, 4, 5, 6, 7, and **§36.2 in earnest**.
+
+> **§19's figure screen cannot wait for G.** §19 fixes the order: the gate runs on the world tick's
+> *proposed* figures, **before they are committed**, because anything already in `figures` is exempt
+> forever. A tick that commits unscreened names in this phase permanently exempts them, and G cannot
+> undo it. Only the deterministic screen moves here — the model check, profanity, structural checks
+> and the quarantine path stay in G with the rest of §19.
+>
+> **The real-person screen is a build task, not a config file.** ~1.5M names behind two structures,
+> because one will not do: a bloom filter for the exact-match pass and a trigram-indexed surname
+> table for the fuzzy pass, with the ≥5-sitelink notability floor applied at query time. Budget it
+> as engineering, separately from C8, which is a hand-written list.
+>
+> **Postgres must not start before `/Volumes/station` mounts**, or the database comes up empty and
+> the batch writes into nothing. That guard belongs with the schema, which is why §4's volume half
+> lands here rather than in E.
 
 ---
 
@@ -196,14 +270,27 @@ this playing while someone else was in the room?*
 - **Content** — **C2 cast cards and speech profiles** (six: breakfast host, evening host, scripted
   newsreader, chart voice, two beat correspondents) · **C3 voice reference clips** · **C9 stock
   voice bank** for guest figures · **C4 `grid.yaml`**.
-- **Depends on** — A, C.
+- **Depends on** — A, C, and **B** — the outcome is a show *playing on the Transmitter*.
 
 **Completes in ARCHITECTURE:** §3 both seams and their conformance · §11 shows and the script
-schema · §11a register, direction and DNA · §12 the voice pipeline · §17a `grid.yaml`.
+schema · §11a register, direction and DNA, including the distinctiveness check · §12 the voice
+pipeline · §17a `grid.yaml` · §17's `make sample`.
 **Build steps:** 8.
 
-> **This is the go/no-go.** If the answer is no, the choice is larger hardware or a small paid budget
-> for flagship scripts — not more architecture. Nothing in E onward is worth starting until it lands.
+> **This is the go/no-go.** If the answer is no, there are three moves and none of them is more
+> architecture: larger hardware, a small paid budget for flagship scripts, or — if the *voices*
+> rather than the writing are what failed — **fewer fresh hours**, which is a freshness-tier
+> decision against `PROGRAMMING.md` §9 and costs nothing but airtime. Nothing in E onward is worth
+> starting until it lands.
+>
+> **`make sample` is built here, not in E.** §17 calls it the one admin target worth having on day
+> one, and this is the phase whose entire outcome is a blind listening judgement. Deferring it to
+> E's `make` surface would mean making the project's largest decision without the instrument the
+> architecture nominates for it.
+>
+> **The mix here is bare.** §9's mix specification — beds, opens, closes, the hour clock — is F. A
+> show in this phase is voices concatenated with the §12 pipeline and nothing around them, which is
+> enough to judge writing and performance and is not yet what **M1** asks for.
 
 ---
 
@@ -218,13 +305,29 @@ rundown telling you what will air, and it airs. The hour lands on `:00`.
 - **Accounts** — offsite object storage for backups · an outbound email path for the daily digest
   and the one alert · a password manager entry for `BACKUP_ENCRYPTION_KEY`.
 - **Content** — **C7 pool pieces** (37 minimum across three length bands) — needed here because
-  back-timing draws on the pool roughly 24 times a day from the first night.
+  back-timing draws on the pool roughly 24 times a day from the first night. §35 gates C7 on step
+  13c; that step is where `make pool-check` goes green in **F**, but the pieces have to exist here
+  or the first night's hours cannot be back-timed at all.
 - **Depends on** — B (somewhere to push to), D (something worth pushing).
 
 **Completes in ARCHITECTURE:** §13 the clock contract and back-timing · §14 the nightly batch and
 freshness tiers · §14a the rundown · §17 the `make` surface · §20 failure behaviour ·
-§24 logging and the daily digest · §25 errors, timeouts, idempotency · §28 backups and retention.
+§24 logging and the daily digest · §25 errors, timeouts, idempotency · §26's performance budgets ·
+§28 backups and retention · §4's process model — the model load windows and the poller under
+launchd · §6's on-air writeback — the one-minute `now.json` poller, `coverage`, `airplay` and the
+`played.log` backfill · §27's Studio posture — no inbound, Tailscale only, services on `127.0.0.1` ·
+**§36's planner budget enforcement**.
 **Build steps:** 9, 10, 11, 11b.
+
+> **The planner must refuse a grid it cannot render.** §36 sets `planned_speech_minutes ≤ measured ×
+> 0.8` and requires the batch planner to fail with the overage named in minutes. A measured RTF that
+> nothing enforces is a number in a file; this is the mechanism that stops the station quietly
+> programming more talk than the machine can make and discovering it at 04:00.
+>
+> **`coverage` and `airplay` are written by polling, not by the playlist.** They land here rather
+> than in C because neither exists until something actually airs, and deriving them from the built
+> plan instead would be wrong in exactly the state you least observe — playout fallen through to
+> levels 2–5.
 
 ---
 
@@ -245,9 +348,20 @@ question is settled and written down before the archive makes it expensive.
   intro ramps by ear.
 - **Depends on** — E.
 
-**Completes in ARCHITECTURE:** §8 the music data model, rotation and the chart · §9 station imaging
-and the mix specification · §10 music shows and render economics.
+**Completes in ARCHITECTURE:** §8 the music data model, rotation and the chart's scoring — the
+chart *show* waits for K and three weeks of real airplay · §9 station imaging and the mix
+specification · §10 music shows and render economics · §26's remaining caches — track durations,
+which the hourly playlist build depends on never re-probing, and rendered pool and imaging, which
+are never invalidated because that is the point of rendering them once.
 **Build steps:** 12, 13, 13b, 13c.
+
+> **Two of §38's open decisions close in this phase**: the catalogue's shape, which must be settled
+> *before* F starts and is what makes C5 a structure rather than a track count, and voice identity
+> at step 13b — bulk re-render versus an in-world host change, forced before 50 shows exist.
+>
+> **Step 13c's `make pool-check` is the back-timing pool, not the archive.** It counts `pool_items`
+> per length band (§13) and says nothing about H's 165 hours. The two are different pools with
+> different floors and different checks; see H.
 
 ---
 
@@ -266,12 +380,17 @@ and why. Disclosure surviving all six playout levels, verified after push.
 - **Content** — the written statement of what the station broadcasts, for the lawyer to review.
 - **Depends on** — E (real output to gate), F (Suno licence evidence).
 
-**Completes in ARCHITECTURE:** §18 compliance in full · §19 the content safety gate ·
-§27's prompt-injection and public-repo posture.
+**Completes in ARCHITECTURE:** §18 compliance in full · §19's remaining limbs — the model check,
+profanity, structural checks and the quarantine path — plus the whole gate, C's figure screen
+included, reviewed end to end · §27's prompt-injection and public-repo posture.
 **Build steps:** 14, 15.
 
 > Every date and instrument named in §18 is unverified and gets checked here, against primary
 > sources, with the lawyer — not against the document.
+>
+> **§38's Code of Practice question closes here** — whether to sign the deployer section. The
+> initial-signatory window has closed; joining later remains possible, and it is a lawyer question,
+> not an engineering one.
 
 ---
 
@@ -279,8 +398,9 @@ and why. Disclosure surviving all six playout levels, verified after push.
 
 **Goal.** Build the 165 hours of reusable programming the grid consumes, before it is consumed.
 
-**Outcome.** A pool deep enough that nothing recurs inside a fortnight, and an overnight block with
-its own identity. `make pool-check` green.
+**Outcome.** An archive deep enough that nothing recurs inside a fortnight, and an overnight block
+with its own identity. **The check is the nightly digest's archive line reading at or above the
+135-hour floor, and holding there for a week without the top-up phase falling behind** (§24).
 
 - **Hardware** — the Studio, running most nights.
 - **Accounts** — none new.
@@ -291,6 +411,17 @@ its own identity. `make pool-check` green.
 
 **Completes in ARCHITECTURE:** §14's `A` tier and its lifecycle mechanics.
 **Build steps:** 16.
+
+> **This phase is not measured by `make pool-check`.** There are two pools and they are not the same
+> thing: `pool_items` is back-timing filler — 37 pieces in three length bands, finished in F, and
+> what `make pool-check` counts — while the **archive** is §14's `A` tier at a 135-hour floor and a
+> 165-hour target, counted in hours and reported by the digest and the rundown. `make pool-check`
+> goes green in F and stays green throughout this phase whether or not a single archive hour exists,
+> so it cannot be H's check.
+>
+> **§38's 135-versus-165 question closes here**, with measured RTF in hand: build the full target,
+> or shorten the separation window and accept earlier recurrence (D-003 declines the second lever;
+> D-006 says there is no launch date, so the render time is free).
 
 > **The longest phase by far: ~4,000 speech-minutes, roughly 19 nights of pure render and
 > realistically a couple of months alongside everything else.** There is no launch date, so this is
@@ -337,12 +468,20 @@ somewhere to support it, and a public repo with a licence that says what may be 
   devlog for the how-it's-made audience · stream directory listings.
 - **Content** — **C10 the LICENSE decision** (code and canon almost certainly want different terms)
   · launch copy · the first devlog entries.
-- **Depends on** — G (nothing public before sign-off), H (a pool deep enough to survive), I (a place
+- **Depends on** — G (nothing public before sign-off), H (an archive deep enough to survive), I (a place
   to point people).
 
-**Completes in ARCHITECTURE:** §15's YouTube relay path · §18's distribution-chain limb ·
-PRODUCT §10 sustainability.
+**Completes in ARCHITECTURE:** §15's YouTube relay path, including the static video card · §18's
+distribution-chain limb · §27's public-repo hygiene becoming load-bearing · PRODUCT §10
+sustainability, including the infrastructure and credit grant applications the About copy feeds.
 **Build steps:** 18.
+
+> **Nothing yet measures whether the station is working, and this is the phase where that stops
+> being free.** PRODUCT §9 names return listening and time in stream as two of the five signals that
+> matter — and the architecture has no listener telemetry of any kind. It does not need a dashboard:
+> Icecast already emits per-mount connection durations, so the question is whether to collect them
+> and where they land. **This is an open decision (§38), not a settled design**, and it is the one
+> §38 row that has no deciding test yet.
 
 > **Ko-fi is a compliance input, not only a donations link.** It is what puts the station outside the
 > AI Act's purely-personal-use carve-out (§18), which is why G comes first.
@@ -368,8 +507,9 @@ regulars — the only milestone that cannot be engineered.
 - **Content** — ongoing canon, and whatever the world turns out to need.
 - **Depends on** — J, and time.
 
-**Completes in ARCHITECTURE:** §8's chart, once three weeks of real airplay exist · §17's ops panel,
-built from what was actually reached for in the first thirty days · §37 if the hardware improves.
+**Completes in ARCHITECTURE:** §8's chart show, once three weeks of real airplay exist · §17's ops
+panel, built from what was actually reached for in the first thirty days — which is where §38's
+panel-screens question closes · §37 if the hardware improves.
 **Build steps:** 19, 20.
 
 ---
