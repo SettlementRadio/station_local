@@ -17,11 +17,16 @@ fondly.
 
 ## 1. What to write
 
-**Five pieces remain.** One is a new file, four are top-ups to files that already exist. Take them
-one at a time; do not attempt the world in one sitting.
+**Four pieces remain — all top-ups** to files that already exist. Every new file in this commission
+is done. Take them one at a time.
 
-> **Done and accepted: `72-celebrity.md`, `41-crime.md`, `36-logistics.md`, `11-earth.md`.** Read
-> them before starting anything else — they are the standard to match.
+> **Done and accepted: `72-celebrity.md`, `41-crime.md`, `36-logistics.md`, `11-earth.md`,
+> `12-crossings.md`.** Read them before starting anything else — they are the standard to match.
+>
+> - **`12-crossings.md` is the cleanest of the five.** It is the only one that restates nothing:
+>   every fact adds something canon did not already hold. It also makes an existing figure
+>   load-bearing rather than retelling her — Brekka Voss's rediscovery (`15-figures.md`) becomes the
+>   reason historians keep *unknown* distinct from *dead*. That is the §3 rule at its best.
 >
 > - **`11-earth.md` cleared the hardest bar in this document.** Earth is the one real-world subject
 >   §4E permits, and the file names no real nation, city, person, institution or work anywhere —
@@ -154,8 +159,8 @@ At the end of the file, a numbered list:
 
 ### Anchors
 
-Put a `{#anchor}` on any **named thing the world will refer back to** — a faction, a named ship, an
-institution, an observance, a legendary figure:
+Put a `{#anchor}` on any **named thing the world will refer back to** — an institution, an
+observance, a legendary figure, a named ship, a faction:
 
 ```markdown
 ### The Ashfall Minute {#the-ashfall-minute}
@@ -163,6 +168,18 @@ institution, an observance, a legendary figure:
 
 Lowercase, hyphens, no apostrophes. Once written, an anchor is permanent — the station may have
 already broadcast something that points at it. Adding is free; renaming breaks continuity.
+
+**Two kinds of thing take a prefix.** Named **ships** and **factions** are the only entities the
+validator resolves by pattern, because everything else it checks is a database row and these are
+not. Give them `ship:` or `faction:` before the slug — the one place a colon belongs in an anchor:
+
+```markdown
+### The Long Patience {#ship:long-patience}
+### The Halcyon Compact {#faction:halcyon-compact}
+```
+
+`12-crossings.md` has the first of these. If you name a vessel or an organised group the world will
+mention again, use the prefix; if you are unsure whether something counts, a plain anchor is safe.
 
 ### Cross-references
 

@@ -1,0 +1,47 @@
+# --- macOS / editor junk ---
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+
+# --- secrets (§23) ---
+# .env.example IS committed, always current, empty values. .env never is.
+.env
+.env.*
+!.env.example
+
+# --- derived artifacts (§7, §14a) ---
+# Everything a human edits is a file in git; everything generated is not.
+canon-report.md
+rundown/
+*.rundown.md
+
+# --- python (§21, §22) ---
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- node: web/ and panel/ (§21) ---
+node_modules/
+.next/
+out/
+.vercel/
+
+# --- media: audio lives on the external volume, never in git (§4) ---
+# music/ holds YAML manifests only; voices/ reference clips ARE committed (§3, C3).
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+!voices/**/*.wav
+
+# --- local runtime ---
+*.log
+*.sqlite
+*.db

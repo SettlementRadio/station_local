@@ -1,0 +1,99 @@
+# Settlement Radio — Licence
+
+Copyright (c) 2026 Settlement Radio. All rights reserved except as stated below.
+
+> **Replace "Settlement Radio" above with the copyright holder's legal name or entity before the
+> legal review** (ARCHITECTURE.md §35 step 15). This file implements the intent recorded as content
+> item **C10** and `DECISIONS.md` **D-032**. It is written by a non-lawyer from public sources and is
+> **not legal advice**; it is in scope for that review.
+
+This repository contains two kinds of material under two different sets of terms. **The default is
+"all rights reserved."** Only the paths named in Part 2 are open-source licensed.
+
+---
+
+## Part 1 — Creative content: ALL RIGHTS RESERVED
+
+This covers everything in the repository that is not named in Part 2, and in particular:
+
+| Path | What it is |
+|---|---|
+| `canon/` | the world bible — the settings, history, peoples, institutions and facts of the fiction |
+| `core/` | the station's identity and premise |
+| `cast/` | presenter cards and speech profiles |
+| `voices/` | voice reference clips |
+| `music/` | catalogue manifests and the recordings they describe |
+| `docs/` | design and editorial documentation |
+| `prompts/` | prompt templates, which encode the creative direction |
+
+**No licence is granted** to copy, publish, distribute, adapt, translate, perform, broadcast, train
+machine-learning models on, or make derivative works from this material, in whole or in part, by any
+means, without prior written permission from the copyright holder.
+
+This repository is public so that the project can be read and its methods learned from. **Public
+visibility is not a licence.** GitHub's Terms of Service grant users of that platform the right to
+view and fork this repository; nothing beyond that is granted here, and forking conveys no right to
+use the content.
+
+The names, places, characters, institutions, events and other original elements of the fictional
+setting are the copyright holder's. The setting is an original work written as a tribute to
+twentieth-century science fiction and is not derived from, endorsed by, or affiliated with any
+existing author, work, franchise or rightsholder.
+
+**Permission requests:** open an issue on this repository.
+
+---
+
+## Part 2 — Source code: MIT Licence
+
+This covers the following paths **only**, once they exist:
+
+`src/` · `tests/` · `migrations/` · `web/` · `panel/` · `Makefile` · `pyproject.toml` ·
+`alembic.ini` · `.pre-commit-config.yaml`
+
+It does **not** cover any creative content those paths may read, generate, embed or display.
+
+> At the time of writing, none of these paths contains code — the project is at the content stage.
+> This part is stated in advance so the boundary is settled before code exists, and may be changed
+> to Apache-2.0 (the alternative named in C10) at any time before the first code is committed.
+
+```
+MIT License
+
+Copyright (c) 2026 Settlement Radio
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## Third-party material
+
+- **Music** in `music/` is generated with a third-party service and used under that service's
+  commercial terms. Licence evidence is a required artefact of the legal review (§35 step 15); it is
+  not re-licensed here, and Part 1 does not grant rights in it.
+- **Models, datasets and dependencies** used by the project carry their own licences, recorded in
+  `pyproject.toml` and `config/models.yaml`. Nothing here overrides them.
+
+## A note on commissioned work
+
+Parts of `canon/` were written by commissioned writers. The all-rights-reserved statement in Part 1
+reflects the copyright holder's position; whether it is fully effective for a given file depends on
+the written agreement with its author. **Any commissioned contribution should carry a written
+assignment or licence of rights** — see `DECISIONS.md` D-032.

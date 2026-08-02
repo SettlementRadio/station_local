@@ -172,18 +172,18 @@ conflict: **keep both**, **supersede**, or **edit**.
 | `06-gazetteer.md` | `geography` | | `51-observances.md` | `culture` |
 | `10-history.md` | `history` | | `52-sports.md` | `sport` |
 | `11-earth.md` | `history` | | `54-health.md` | `health` |
-| `15-figures.md` | `history` | | `55-language.md` | `culture` |
-| `20-peoples.md` | `peoples` | | `56-style.md` | `fashion` |
-| `25-other-minds.md` | `technology` | | `58-knowledge.md` | `culture` |
-| `30-polities.md` | `politics` | | `60-faith.md` | `religion` |
-| `35-economy.md` | `finance` | | `65-arts.md` | `art` |
-| `36-logistics.md` | `logistics` | | `70-music.md` | `music` |
-| `40-law.md` | `crime` | | `72-celebrity.md` | `celebrity` |
-| `41-crime.md` | `crime` | | `75-technology.md` | `technology` |
-| `45-conflict.md` | `conflict` | | `78-communication.md` | `logistics` |
-| | | | `80-cosmos.md` | `geography` |
+| `12-crossings.md` | `history` | | `55-language.md` | `culture` |
+| `15-figures.md` | `history` | | `56-style.md` | `fashion` |
+| `20-peoples.md` | `peoples` | | `58-knowledge.md` | `culture` |
+| `25-other-minds.md` | `technology` | | `60-faith.md` | `religion` |
+| `30-polities.md` | `politics` | | `65-arts.md` | `art` |
+| `35-economy.md` | `finance` | | `70-music.md` | `music` |
+| `36-logistics.md` | `logistics` | | `72-celebrity.md` | `celebrity` |
+| `40-law.md` | `crime` | | `75-technology.md` | `technology` |
+| `41-crime.md` | `crime` | | `78-communication.md` | `logistics` |
+| `45-conflict.md` | `conflict` | | `80-cosmos.md` | `geography` |
 
-**All seventeen domains now carry canon** (27 files, 301 facts) — `celebrity` was the last empty one
+**All seventeen domains now carry canon** (28 files, 313 facts) — `celebrity` was the last empty one
 and closed with `72-celebrity.md`. Two domains are deliberately split across a principle file and a
 practice file: `40-law.md` / `41-crime.md` (rights, then cases), and `78-communication.md` /
 `36-logistics.md` (how word travels, then how mass does).

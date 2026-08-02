@@ -576,3 +576,40 @@ has to be a fact. This makes fact-list density an authoring lever rather than a 
 between (a Meridian racing patch and its mismatched Cold Harbor copy) is currently unreachable.
 
 No files moved and no content changed; this corrects a document, not the world.
+
+### D-032 · C10 closed: content all-rights-reserved, `src/` MIT — 2026-08-02
+
+§35 item **C10** required a licence decision "before the repo is public". The repo has been public
+since 2026-07-29 and canon was pushed into it on 2026-08-02, so the item was overdue rather than
+upcoming — 313 facts and five commissioned files were published under no stated terms at all.
+
+**The decision, implementing C10's split.** The repository default is **all rights reserved**,
+covering `canon/`, `core/`, `cast/`, `voices/`, `music/`, `docs/` and `prompts/` — no right to copy,
+adapt, broadcast, train models on, or make derivative works. **MIT** is stated in advance for the
+code paths (`src/`, `tests/`, `migrations/`, `web/`, `panel/` and the build files), none of which
+exist yet; C10 offered MIT or Apache-2.0 and MIT was taken as the simpler of the two. Because no code
+is committed, that half is still free to change.
+
+**Default-deny rather than default-permit** is the whole shape of it: a bare MIT file at the root
+would have been read as covering the world bible, which is the one asset that cannot be rebuilt.
+
+**Absence of a licence was not neutral, but it was not catastrophic either.** No licence means
+default copyright — the holder keeps everything, and GitHub's Terms grant platform users only view
+and fork. That is close to the posture C10 wanted for canon. What was missing was the *declaration*,
+and the code half, and the two things below.
+
+**Two things this cannot settle, both recorded rather than resolved:**
+
+1. **Commissioned work.** Five canon files were written by a commissioned writer. An
+   all-rights-reserved statement asserts the operator's position; whether it is effective per file
+   depends on the written agreement with the author. **Each commission should carry a written
+   assignment or licence of rights**, and that is cheapest to obtain while the relationship is
+   active.
+2. **It is not legal advice.** Written by a non-lawyer from public sources, in the same class as
+   §18. It is explicitly in scope for the §35 step 15 legal review, alongside the disclosure package
+   and the music licence evidence. The copyright line carries a placeholder until a legal name or
+   entity is set.
+
+**Also closed in the same pass:** a `.gitignore`, which the architecture had assumed since §7
+("`canon-report.md` — a derived artifact, gitignored like the rundown") and §23 (`.env` gitignored,
+`.env.example` committed) without one ever existing. Two `.DS_Store` files were untracked.
