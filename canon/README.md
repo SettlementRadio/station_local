@@ -183,13 +183,13 @@ conflict: **keep both**, **supersede**, or **edit**.
 | `41-crime.md` | `crime` | | `78-communication.md` | `logistics` |
 | `45-conflict.md` | `conflict` | | `80-cosmos.md` | `geography` |
 
-**All seventeen domains now carry canon** (28 files, 313 facts) — `celebrity` was the last empty one
+**All seventeen domains now carry canon** (28 files, 319 facts) — `celebrity` was the last empty one
 and closed with `72-celebrity.md`. Two domains are deliberately split across a principle file and a
 practice file: `40-law.md` / `41-crime.md` (rights, then cases), and `78-communication.md` /
 `36-logistics.md` (how word travels, then how mass does).
 
 What remains is depth, not coverage. Four domains still sit **below the 12-fact retrieval cap** —
-`fashion` 8, `sport` 9, `health` 10, `peoples` 10 — and below that line a `domain_floor` seat pulls
+`fashion` 8, `health` 10, `peoples` 10 — and below that line a `domain_floor` seat pulls
 in most of the domain every time it fires, so the same few facts recur on air. `COMMISSION.md` §1
 holds the open list. What remains is depth, not coverage: `COMMISSION.md` §1 holds the
 open list, and `DECISIONS.md` D-028 explains which domains are thinner than their airtime deserves.

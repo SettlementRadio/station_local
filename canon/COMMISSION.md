@@ -17,8 +17,18 @@ fondly.
 
 ## 1. What to write
 
-**Four pieces remain — all top-ups** to files that already exist. Every new file in this commission
+**Three pieces remain — all top-ups** to files that already exist. Every new file in this commission
 is done. Take them one at a time.
+
+> **A top-up may edit the facts already there, not only append to them.** `52-sports.md` did, and it
+> was right to: two existing facts gained the ratification rule and the honour-ledger detail the new
+> material needed. Editing a fact is safe — its identity is fixed and only its text changes.
+> Renaming a file or an anchor is not.
+>
+> **Match the existing file's line wrapping.** `52-sports.md` came back with paragraphs on single
+> 800-character lines. It reads fine and loads fine, but the bible lives in version control, where a
+> one-word change to an unwrapped paragraph shows up as the whole paragraph rewritten. Wrap at
+> roughly 100 characters, as every other file does.
 
 > **Done and accepted: `72-celebrity.md`, `41-crime.md`, `36-logistics.md`, `11-earth.md`,
 > `12-crossings.md`.** Read them before starting anything else — they are the standard to match.
@@ -63,7 +73,6 @@ the right answer.
 
 | File | Domain | Add | Note |
 |---|---|---|---|
-| `52-sports.md` | `sport` | +6 facts | A results desk needs persistent structure — leagues, standings, who plays whom. |
 | `56-style.md` | `fashion` | +6 facts | Only works tied to material constraint. Cloth is scarce; salvage is an aesthetic. |
 | `54-health.md` | `health` | +4 facts | Clinics, access, who gets care and who travels weeks for it. |
 | `20-peoples.md` | `peoples` | +4 facts | Peoples shaped by the worlds they live on. |
