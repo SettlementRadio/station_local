@@ -610,6 +610,12 @@ and the code half, and the two things below.
    and the music licence evidence. The copyright line carries a placeholder until a legal name or
    entity is set.
 
+**Music is the operator's own material, not third-party.** The library is generated under a **Suno
+Pro subscription**, whose terms grant the subscriber ownership of the output and commercial-use
+rights, so `music/` sits under Part 1's all-rights-reserved statement like the rest of the content
+rather than in a third-party carve-out. The subscription evidence remains a required step 15
+artefact (§35, C5) — that requirement is about proving the grant, not about who owns the result.
+
 **Also closed in the same pass:** a `.gitignore`, which the architecture had assumed since §7
 ("`canon-report.md` — a derived artifact, gitignored like the rundown") and §23 (`.env` gitignored,
 `.env.example` committed) without one ever existing. Two `.DS_Store` files were untracked.
