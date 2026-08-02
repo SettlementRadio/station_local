@@ -387,6 +387,23 @@ world grows** — this is what lets the canon expand for years without the promp
 The station's identity, the in-world premise, the register rules, the cast cards for whoever is on
 air. Fixed text, never retrieved, sits in the cached prompt prefix.
 
+**Where it comes from** (D-030 — this was previously unstated, and the text sat in `canon/` where
+retrieval could reach it):
+
+| Source | Loaded |
+|---|---|
+| `core/*.md` — station identity, premise, the clock concept | **whole and verbatim**, in filename order |
+| `cast/CAST.md` — cards for whoever is on air (§35 C2) | the cards for that programme's speakers only |
+| the register spec (§11a) | assembled from `grid.yaml` and the speech profile on the `cast` row |
+
+**`core/` is not canon and is never parsed.** No frontmatter, no atomising, no `fact_key`, no
+embedding — `canon-check` and `canon-sync` do not read it, and nothing in it is retrievable. It is
+prompt text. That is the whole contract, and it is what keeps this tier a fixed cost.
+
+**Tier 0 has no growth mechanism on purpose.** It is the only tier every call pays for in full, so
+a file added to `core/` raises the floor of every prompt in the station. Two files is the intended
+size; a third needs a reason.
+
 ### Tier 1 — Domain summaries (always present, ~3k tokens)
 
 **This is the piece that prevents flatness.** Every canon domain — the seventeen of
@@ -2748,7 +2765,11 @@ settlement-radio/
 │       ├── rsync.py  snapshots.py  credentials.py    # C2PA
 │
 ├── prompts/                    # jinja templates, versioned
-├── canon/                      # the bible — markdown, hand-authored
+├── core/                       # Tier 0 — station identity + the clock concept (§5).
+│                               # Loaded WHOLE and VERBATIM into the cached prefix.
+│                               # Never parsed, never embedded, never retrieved
+├── canon/                      # the bible — markdown, hand-authored, frontmatter = world content
+├── cast/                       # DJ cards + speech profiles (§11a, C2) — Tier 0, not canon
 ├── music/                      # yaml manifests (audio files on the external volume)
 ├── voices/                     # reference clips — COMMITTED, irreplaceable
 ├── config/                     # liquidsoap, icecast, grid.yaml (dayparts live in it),

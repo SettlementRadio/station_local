@@ -1,0 +1,59 @@
+---
+id: communication
+domain: logistics
+scope: universe
+status: active
+supersedes: []
+---
+
+# 78-communication.md — the relays & how word travels
+
+> **Cornerstone file — the premise-critical one: how word crosses the dark.** See
+> `README.md` for the authoring conventions.
+
+## The relay network
+
+The relays are not machines anyone built all at once. They grew like barnacles on the routes ships first traced, each one a consensus of need and available parts, maintained by whoever happened to be passing with the right skills and a willingness to climb out into the dark. The Relay Authority keeps the standards that make one node able to speak to the next, coordinates the yearly maintenance window, and trains the keepers — but it owns none of the relays, because no one does; its writ is technical, and the mending still falls to whoever is closest with parts. A relay is a tin can full of amplifiers and memory, solar panels fraying at the edges, spinning just enough to keep its antennae pointed. Some have been running for centuries. Some failed decades ago and nobody has gotten close enough to fix them yet.
+
+A signal leaves a world and hops from relay to relay, each handoff taking minutes or hours depending on alignment and traffic. The network has no centre. It has no map that is ever fully current. A message finds its way by the logic of proximity and luck, sometimes routing through a dozen relays, sometimes cutting across a shorter path that only exists because someone repaired a dead node years ago and forgot to log it.
+
+## Broadcast and the private voice
+
+The station rides the network like everything else, but it broadcasts wide — a signal anyone can catch. That is the romance of Settlement Radio: not a whisper between two people, but a voice that speaks to everyone at once, so no one has to listen alone.
+
+Personal messages travel differently. They compress into tight bursts, addressed, encrypted, queued. A letter to a lover might share a relay with a shipping manifest and a weather report from a mining station, all bundled and hurled across the dark together. Within the queue the relays do not distinguish between urgent and ordinary. Everything waits its turn.
+
+This is the network's two speeds, and every settled child knows the difference. The broadcast — wide, unaddressed, repeated by every node as a matter of course — crosses the settled worlds at something close to the raw speed of signal: hours to the core, a day or two to the far frontier, faint but direct into the dark zones. An addressed message rides the queue: it waits at every node for a routing window, for bandwidth, for its turn behind the manifests — days inside the core, weeks to the frontier, months into the dark zones. The physics is the same; the patience is not. That is why a listener can hear the station tell them the hour while holding a letter their sister sent six weeks ago.
+
+There is something intimate about the delay. A conversation by relay is not a conversation at all. It is correspondence. You write knowing the other person will read it weeks from now, will be a slightly different person in slightly different circumstances. You answer questions they have already forgotten asking. You speculate about futures that have already arrived or never did.
+
+## The lag and how people live with it
+
+The dense core is thick with relays. A queued message between neighbours might take a day. But the frontier is sparse, and the dark zones beyond it are sparser still. Out there, word travels in months. Birth announcements arrive after the child has learned to walk. Condolences cross paths with wedding invitations. People keep multiple conversations going simultaneously, threads of connection stretched so thin they are more like memory than dialogue.
+
+Some people treat the lag as a feature. They compose carefully, revise, send only their best selves across the dark. Others fire off raw transmissions, trusting the distance to forgive the rough edges. There are protocols, etiquettes, whole subcultures around how to manage a correspondence measured in seasons. The station's DJs read letters that arrived weeks ago and answer them live, bridging the gap with their own present-tense voice, pretending the lag does not exist for the length of a song.
+
+## The station's place in the network
+
+Settlement Radio does not originate from any single relay. The station drifts in its slow, calculated halo along the relay routes, always moving, always between, and its signal is handed from node to node as it goes. This is why it can speak to everyone: it is never too far from anyone. It is also why it sometimes fades, cuts out, reappears on a different frequency. The station is a guest in the network, not its master. It relies on the same fragile infrastructure as everyone else.
+
+The station's signal is unencrypted, unaddressed, open. In a universe of private messages and long delays, it is the one thing that happens in something like real time, shared across all the scattered settlements at once. It is not the fastest signal. It is not the most reliable. But it is the one that says: you are not alone out there. Someone is talking. Someone is listening.
+
+## Failures, dark zones, and the silence
+
+Relays fail. Solar panels degrade. Antennae misalign. Memory fills up and nobody clears it. A dark zone is not empty space. It is space where the network has gaps, where a signal must route around dead nodes or leap farther than the relays can manage. Some dark zones are temporary, awaiting repair. Some are permanent, the relays there long dead, their locations forgotten or too dangerous to reach.
+
+The station's signal reaches into some of these zones, faint, carrying farther than personal messages because it is broadcast wide and repeated. For the settlements at the edge, the ones the relays barely touch, Settlement Radio is often the only voice they hear that is not their own. They listen to music from worlds they will never visit, news that is already old, letters from strangers who do not know they have an audience. The station is a thin thread. It is enough.
+
+## Canon facts
+
+1. **The relay network grew organically over centuries, each node maintained by whoever passes with the skills and parts; no one owns it whole — the Relay Authority keeps its standards and coordinates the yearly repairs, but the mending is everyone's — and no map is ever fully current.**
+2. **Signals hop from relay to relay, each handoff taking minutes or hours depending on alignment and traffic; a message might route through a dozen nodes or find a shortcut through recent repairs no one logged.**
+3. **Personal messages compress into encrypted bursts that queue with shipping manifests and weather reports; within the queue the relays do not prioritise, and everything waits its turn.**
+4. **The network has two speeds: the wide broadcast, repeated by every node, crosses the worlds in hours (a day or two to the far frontier), while addressed messages ride the queue — days in the core, weeks to the frontier, months into the dark zones — conversations stretched across seasons into something more like memory than dialogue.**
+5. **People keep several correspondences going at once, answering questions the sender has forgotten and speculating about futures already arrived; etiquettes and whole subcultures have grown around managing a conversation measured in seasons.**
+6. **Settlement Radio drifts in a slow, calculated halo along the relay routes, never fixed, always between, its signal handed from node to node; the mobility lets it reach everyone but makes it occasionally fade, cut out, and reappear elsewhere.**
+7. **The station's signal is unencrypted and broadcast wide — the one thing that happens in something like shared real time across all the settlements at once, even where it arrives faint.**
+8. **Dark zones are gaps in the network — dead relays, misalignment, distance — some temporary and awaiting repair, some permanent; the station's wide, repeated broadcast reaches into them farther than any personal message can.**
+9. **For settlements at the settled edge, the station is often the only outside voice they hear — a thin thread of music, old news, and strangers' letters, precious precisely because it is faint.**
+10. **DJs read listener letters that arrived weeks ago and answer them live, bridging the gap with their present-tense voice — pretending, for the length of a song, that the lag does not exist.**

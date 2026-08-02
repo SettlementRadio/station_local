@@ -357,3 +357,194 @@ alone while `PHASES.md` needed pool pieces in phase E; it now names both steps a
 means. And **"pool" meant two unrelated things** — the 37-piece back-timing pool and the 135-hour
 archive pool — which had already produced one wrong phase check (D-015); §13 now carries a naming
 table, and the full name is used in code, tasks and prose.
+
+### D-023 · Canon lives at the repo root; frontmatter is what makes a file world content — 2026-08-01
+
+The bible was carried over from the previous app in `docs/canon/`, where a **numeric filename
+prefix** decided what the seeder loaded and an unprefixed name (`README.md`, `SPIRIT.md`,
+`TAGS.md`, `AUDIT.md`) marked an authoring guide. §21 puts canon at `canon/` and §7 gives every
+file YAML frontmatter, but **neither says what happens to a file in `canon/` that has none** — and
+`SPIRIT.md` has to live there and never reach the DJs.
+
+**The rule: frontmatter is the marker.** A file with `id / domain / scope / status / supersedes` is
+world content; a file without it is an authoring guide and `canon-check` and `canon-sync` skip it.
+This replaces the numeric-prefix rule, which now carries no meaning at all — prefixes are kept
+purely as human reading order, and `id` and `domain` do the work. Chosen over a hardcoded skip-list
+because a list has to be maintained and a missing entry silently seeds a brief into the world.
+
+Consequences applied in the same session: `docs/canon/` → **`canon/`**; all 25 content files given
+frontmatter; **`90-cast.md` → `cast/CAST.md`**, because cast cards are item C2, ship verbatim in
+Tier 0 and are never retrieved, so they must not be visible to canon tooling at all. `cast/` is a
+new root directory not named in §21, chosen to parallel `canon/`, `music/` and `voices/`.
+
+### D-024 · Canon carries no tags — 2026-08-01
+
+The inherited bible tagged every fact with 4–12 free-form words (286 bullets across 26 files) to
+feed a `store.canon_by_tags` set-overlap match. **No such mechanism exists in this architecture and
+none is planned.** §5 narrows canon by `facts.domain` (one of the seventeen, closed), BM25 over
+`tsvector` for proper nouns, dense bge-m3 embeddings for meaning, and a generated `context_prefix`
+that does what the tags were reaching for. `TAGS.md` and every tag bullet were removed.
+
+**This is not neutral cleanup.** A fact is indexed as `context_prefix + "\n" + text`, so a trailing
+twelve-word tag list inside a two-sentence fact lands in both the tsvector and the embedding as
+noise — on the shortest facts, outweighing the signal. Leaving them would have degraded retrieval
+while costing authoring time for no effect.
+
+### D-025 · A recurring observance is canon; a dated instance of it is a beat — 2026-08-01
+
+`95-events.md` hand-authored nine dated occurrences (`In-world datetime: 2627-06-24T20:00`) with a
+"roll-forward policy" requiring the operator to bump each year by hand after it passed. In this
+architecture dated occurrences are **beats**, written by the nightly tick (§6), and hand-authored
+events have no table to land in.
+
+The content itself is good world material and was kept in full: the file is now
+**`canon/51-observances.md`** (`domain: culture`), holding each observance as prose — its shape,
+its meaning, what people do — with the datetime and cadence-label bullets dropped and a stable
+`{#anchor}` added per entry. **Write the institution, never the instance**, which is the same rule
+that already forbids a fixed year anywhere in canon.
+
+This also settles the `fact_key` anchor syntax §7 leaves open: **`{#slug}` appended to the
+heading**. Needed because §7 makes `fact_key` permanent while a slugified subject line is not —
+anything the world refers back to needs a name the author controls.
+
+### D-026 · `canon/AUDIT.md` deleted; its screens are owed to `banned-entities.yaml` — 2026-08-01
+
+A 188-line agent runbook carried over from the previous app: "audit `docs/canon/<file>`" → validate
+against five gates → fix → overwrite the file → re-seed. Deleted, for three reasons.
+
+**It was redundant.** `canon-check` performs five of its six live gates mechanically on every commit
+and push, rather than when the operator remembers to invoke it: parse (pass 1), IP boundary and
+franchise echoes (pass 5), floating year (pass 7), tone and register (pass 6), and consistency with
+the rest of the bible (pass 2, which retrieves the 8 nearest facts and asks whether they clash). The
+sixth gate — tag conventions — died with D-024. Its Step 1 script imported `src.world.canon_source`,
+a module of the previous design.
+
+**It answered a question this project does not have.** The runbook is scoped to a file *an external
+writer has changed*. There is no external writer, and §33 puts canon in the never-delegated column —
+"Writing canon. Resolving canon conflicts." An agent overwriting a canon file is that delegation.
+
+**It is the shape §34 forbids first** — "no phase packs, no task-generating documents. The failure
+mode of the last attempt." A runbook whose output is findings and whose findings become edits is a
+work generator, and a stale one is a trap rather than a dead letter.
+
+**Owed to `config/banned-entities.yaml` when C8 is written** (an agent may edit it, §33) — these are
+the screens the file held that no pass currently covers:
+
+- **modern-AI tropes** (SPIRIT §2, not covered by any pass): `singularity`, `superintelligence`,
+  `upload(ing|ed|s)`, `chatbot`, `neural net`, `machine learning`, `LLM`
+- **franchise-echo proper nouns** (pass 5 fuzzy, needs the terms): `core worlds`, `outer worlds`,
+  `federation`, `the empire`, `jedi`, `terran`, `spice`, `ansible`, `foundation`
+- **author-name leak into prose** (pass 5 exact): Asimov, Clarke, Heinlein, Bradbury, Le Guin, Lem,
+  Butler, Herbert, Dick, Tolkien, Strugatsky, Miller, Brunner, Delany, Russ, Tiptree
+- **floating-year violations** (pass 7 has the rule, not the patterns): a bare `\b2[0-9]{3}\b` in
+  canon, and `(hundred|thousand|N) years? (since|ago|after|of counting)` — the `+600` is the gap to
+  *our* present, never an in-world count that goes stale
+
+One screen has no home and is not worth a document: British spelling normalisation (`honoured`,
+`neighbours`). If it matters, it is a pre-commit hook, not a runbook.
+
+### D-027 · `canon/COMMISSION.md` — a commissioned-writer brief, at the operator's request — 2026-08-02
+
+The operator asked for a single self-contained document to hand a writer producing the missing
+canon. §32 permits a new document when the operator asks for one; this is that. It carries no
+frontmatter, so it is invisible to `canon-check` and `canon-sync` (D-023).
+
+**Why not fold it into `canon/README.md`.** README is the authoring contract and already covers the
+header block and the format. Three things it cannot do: name what is *currently* missing (that
+changes per commission), consolidate the forbidden-fact rules — which are spread across
+`PROGRAMMING.md` §3's per-domain traps, `SPIRIT.md` §2 and §5a, and `75-technology.md`'s hard
+ceiling — and stand alone for a writer with no access to the repo or the architecture. `canon/` now
+holds three authoring guides and no more.
+
+**This partly reverses a reason given in D-026.** That entry argued `AUDIT.md` should go partly
+because "there is no external writer." There is one. The other two reasons hold and the deletion
+stands: `canon-check` performs five of its six live gates mechanically, and every mechanic in it
+was written against the previous design. What was actually missing was a brief for the *input* side,
+which is this file — not a runbook for auditing the output.
+
+**Note the standing tension, unresolved.** §33 puts canon in the never-delegated column — "Writing
+canon. Resolving canon conflicts." A commissioned writer is a delegation of exactly that. The
+operator has made the call; recorded here so nobody re-derives it as an inconsistency later. The
+mitigation is that `canon-check` gates everything a writer submits, and the operator still resolves
+every conflict it reports.
+
+### D-028 · The missing canon, named — 2026-08-02
+
+Fact-level coverage of the seventeen domains, measured across 267 facts in 25 files: `culture` 58
+and `technology` 28 are buckets holding several unrelated files; `celebrity` has **zero**; and two
+domains are covered on paper only — `crime` shows 12 facts but `40-law.md` is jurisprudence, of
+which perhaps three are crime-desk material, while `logistics` shows 10 but `78-communication.md` is
+signal routing, not freight (the convoy and cargo material sits in `35-economy.md` under `finance`).
+
+The commission in `COMMISSION.md` §1 follows from this: new `72-celebrity.md`, `41-crime.md`,
+`36-logistics.md`, `11-earth.md`, `12-crossings.md`, and top-ups to sport, fashion, health and
+peoples. History gets two new files despite already having 21 facts because it carries the overnight
+block and the bulk of the pre-launch archive — the heaviest load in the build order sits on one of
+the smaller piles.
+
+**Not fixed, and deliberately.** The `culture` and `technology` buckets cannot be split — the
+seventeen are closed — so each keeps one Tier 1 summary spanning unrelated material, and that
+summary ships on every call. And `40-law.md` keeps `domain: crime` rather than being re-filed to
+`politics`, so the domain is not left empty while `41-crime.md` is written.
+
+### D-029 · `80-cosmos.md` refiled to `geography`; the `culture` bucket is left alone — 2026-08-02
+
+D-028 recorded two domains holding unrelated files, each of which therefore gets one Tier 1 summary
+spanning material that does not cohere — and that summary ships on every generation call. Half of it
+is now fixed and half is deliberately not.
+
+**Fixed.** `80-cosmos.md` moves `technology` → `geography`. Its content is the shape of the settled
+region and its edge, the sky as seen from the worlds, reading the sky, the observatory — the map one
+zoom level out, sitting naturally beside `05-worlds.md` and `06-gazetteer.md`. `technology` drops
+28 → 18 and reads coherently as the made world and its limits; `geography` rises 20 → 30 across
+three files on a single axis. Frontmatter only; no prose touched.
+
+**Not fixed: `culture`, at 58 facts across six files.** Three of the six match `PROGRAMMING.md` §3's
+culture exactly (`50-daily-life`, `51-observances`, `55-language`); `58-knowledge` is education and
+research-as-custom, defensible and with no better home among the seventeen. The two that genuinely
+do not belong are `00-station.md` and `01-time.md` — station identity, the in-world premise and the
+clock concept, which §5 names as **Tier 0**: always-present cached prefix, never retrieved. Moving
+them is the correct answer and was declined anyway, for one reason:
+
+**§7 defines no source location for Tier 0 text, and no code exists yet.** Moving the premise facts
+out of `canon/` today would take them out of the only pipeline that is specified, and put them
+somewhere nothing is built to read — a regression dressed as a fix. `cast/` was moved because §35
+C2 and §5 together name cast cards as a distinct content item; station identity has the §5 half and
+not the C2 half. Resolving where Tier 0 text lives is an architecture decision and its own task
+(§33), not a frontmatter edit. Until then `culture` carries a summary broader than it should, which
+is a cost worth paying over a gap that hides the premise.
+
+Also considered and declined: `51-observances.md` → `religion`. §3's religion names "observances"
+and §3's culture names "festivals", so both have a claim; the file's content is largely civic
+remembrance rather than faith, it carries 0 facts (prose only), and the default on a judgment call
+is no change.
+
+### D-030 · Tier 0 text lives in `core/`, loaded whole and verbatim — 2026-08-02
+
+§5 defined Tier 0 — "the station's identity, the in-world premise, the register rules, the cast
+cards" — as fixed text in the cached prefix, but **never said where that text comes from.** In
+practice `00-station.md` and `01-time.md` sat in `canon/` carrying `domain: culture`, which made the
+station's own premise a *retrievable* fact competing for twelve seats against food and festivals,
+and forced the `culture` Tier 1 summary to cover both what people eat and what this station is
+(D-028, D-029). The gap surfaced three times before it was closed.
+
+**The rule.** `core/*.md` is Tier 0 source: loaded **whole and verbatim**, in filename order, into
+the cached prompt prefix, on every generation call. It is **not canon and is never parsed** — no
+frontmatter, no atomising, no `fact_key`, no embedding, no retrieval. `canon-check` and `canon-sync`
+do not read it. It is prompt text, and that is the entire contract.
+
+`00-station.md` → `core/STATION.md`; `01-time.md` → `core/TIME.md`. Canon frontmatter stripped (it
+was actively wrong), the `## Canon facts` headings retitled so neither file reads as parser input,
+and every assertion kept verbatim. `canon/` drops to 23 files; `culture` drops 58 → 38 facts across
+four files that all match `PROGRAMMING.md` §3's definition.
+
+**Tier 0 has no growth mechanism, deliberately.** It is the one tier every call pays for in full, so
+a file added to `core/` raises the floor of every prompt in the station. Two files is the intended
+size and the ~2–3k budget is shared with the cast cards; a third file needs a reason.
+
+**Why a folder rather than a config key.** Tier 0 is text a human writes and reads aloud in their
+head, not configuration — the same argument that puts canon in markdown. A directory also makes the
+boundary enforceable by looking: anything in `core/` always ships, anything in `canon/` is searched.
+
+§5 and §21 updated to name the source; `canon/README.md` §5 now carries the canon-vs-core boundary
+with the test — *if it would be embarrassing for the station not to know it, it belongs in `core/`*.
