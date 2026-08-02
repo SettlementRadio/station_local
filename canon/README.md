@@ -168,9 +168,10 @@ conflict: **keep both**, **supersede**, or **edit**.
 
 | File | Domain | | File | Domain |
 |---|---|---|---|---|
-| `05-worlds.md` | `geography` | | `51-observances.md` | `culture` |
-| `06-gazetteer.md` | `geography` | | `52-sports.md` | `sport` |
-| `10-history.md` | `history` | | `54-health.md` | `health` |
+| `05-worlds.md` | `geography` | | `50-daily-life.md` | `culture` |
+| `06-gazetteer.md` | `geography` | | `51-observances.md` | `culture` |
+| `10-history.md` | `history` | | `52-sports.md` | `sport` |
+| `11-earth.md` | `history` | | `54-health.md` | `health` |
 | `15-figures.md` | `history` | | `55-language.md` | `culture` |
 | `20-peoples.md` | `peoples` | | `56-style.md` | `fashion` |
 | `25-other-minds.md` | `technology` | | `58-knowledge.md` | `culture` |
@@ -180,12 +181,17 @@ conflict: **keep both**, **supersede**, or **edit**.
 | `40-law.md` | `crime` | | `72-celebrity.md` | `celebrity` |
 | `41-crime.md` | `crime` | | `75-technology.md` | `technology` |
 | `45-conflict.md` | `conflict` | | `78-communication.md` | `logistics` |
-| `50-daily-life.md` | `culture` | | `80-cosmos.md` | `geography` |
+| | | | `80-cosmos.md` | `geography` |
 
-**All seventeen domains now carry canon** (26 files, 289 facts) — `celebrity` was the last empty one
-and closed with `72-celebrity.md`. Three domains are deliberately split across a principle file and
-a practice file: `40-law.md` / `41-crime.md` (rights, then cases), and `78-communication.md` /
-`36-logistics.md` (how word travels, then how mass does). What remains is depth, not coverage: `COMMISSION.md` §1 holds the
+**All seventeen domains now carry canon** (27 files, 301 facts) — `celebrity` was the last empty one
+and closed with `72-celebrity.md`. Two domains are deliberately split across a principle file and a
+practice file: `40-law.md` / `41-crime.md` (rights, then cases), and `78-communication.md` /
+`36-logistics.md` (how word travels, then how mass does).
+
+What remains is depth, not coverage. Four domains still sit **below the 12-fact retrieval cap** —
+`fashion` 8, `sport` 9, `health` 10, `peoples` 10 — and below that line a `domain_floor` seat pulls
+in most of the domain every time it fires, so the same few facts recur on air. `COMMISSION.md` §1
+holds the open list. What remains is depth, not coverage: `COMMISSION.md` §1 holds the
 open list, and `DECISIONS.md` D-028 explains which domains are thinner than their airtime deserves.
 
 ## 8. Checklist

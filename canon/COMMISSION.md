@@ -17,11 +17,18 @@ fondly.
 
 ## 1. What to write
 
-**Six pieces remain.** Two are new files, four are top-ups to files that already exist. Take them
+**Five pieces remain.** One is a new file, four are top-ups to files that already exist. Take them
 one at a time; do not attempt the world in one sitting.
 
-> **Done and accepted: `72-celebrity.md`, `41-crime.md`, `36-logistics.md`.** Read all three before
-> starting anything else — they are the standard to match.
+> **Done and accepted: `72-celebrity.md`, `41-crime.md`, `36-logistics.md`, `11-earth.md`.** Read
+> them before starting anything else — they are the standard to match.
+>
+> - **`11-earth.md` cleared the hardest bar in this document.** Earth is the one real-world subject
+>   §4E permits, and the file names no real nation, city, person, institution or work anywhere —
+>   every hook is an invented in-world artefact (the Blue Lesson, the Carrying Lists, Earthwood, the
+>   Ordinary Box). That is how to write about something real.
+> - Its one weakness is the §3 rule now in bold above: two of its facts restate what
+>   `10-history.md` and `06-gazetteer.md` had already established, instead of building on them.
 >
 > - All three handle named places exactly right, and each anchors an event to existing canon
 >   **without using a year** — the hardest rule in §4A.
@@ -40,7 +47,6 @@ one at a time; do not attempt the world in one sitting.
 
 | Filename | `id:` | `domain:` | What it covers | Target |
 |---|---|---|---|---|
-| `11-earth.md` | `earth` | `history` | Earth as memory — what is remembered, what is myth, what was carried and what was lost. | 10–12 facts |
 | `12-crossings.md` | `crossings` | `history` | The migration and the founding: the generation-ships, the long scattering, settlements that failed. | 10–12 facts |
 
 **Why two history files when history already has 21 facts.** History is the station's overnight
@@ -58,6 +64,11 @@ the right answer.
 | `20-peoples.md` | `peoples` | +4 facts | Peoples shaped by the worlds they live on. |
 
 Read the existing file first and match it. You are extending someone's world, not restarting it.
+
+**Do the four top-ups before `12-crossings.md`.** Each of those domains currently sits below twelve
+facts, which is the number the station can draw on for a single programme — so it reaches for the
+same handful every time and listeners hear the repetition. Six new facts in `56-style.md` fixes
+something audible; a fifth strong history file does not.
 
 **Write texture, not just structure.** The one criticism of the accepted `72-celebrity.md` is that
 it explains how its domain *works* — the customs, the rules, the institutions — more than it gives
@@ -126,6 +137,17 @@ At the end of the file, a numbered list:
   station understands the domain; the facts are what it can actually reach for and say. A detail
   left in a paragraph will colour the station's sense of the world and never be spoken. **If it
   should reach the microphone, make it a fact.**
+- **Extend a neighbouring fact; never restate it.** Before writing, search the other files for your
+  subject. If canon already establishes something, do not say it again in your own words — add the
+  part nobody has written yet. `36-logistics.md` is the model: `70-music.md` had already made burn
+  day the great occasion of lane-rock, so the logistics file left that alone and wrote the freight
+  crew's side of the same day — the restraint checks, the meal, the object that escaped across the
+  common room.
+
+  This matters more than it sounds. Two facts saying the same thing do not contradict each other, so
+  validation will not catch them, and both then compete for the same twelve retrieval seats — so a
+  restatement quietly costs the domain a slot forever. **A fact that is already true somewhere in
+  canon is not yours to write.**
 - **Name things, and name them the same way twice.** Proper nouns are how the retrieval system finds
   anything — a world, a league, a ship, a company. Invent names freely; then be consistent.
 - **Plain and concrete.** See §4G — this is the rule writers break most.
@@ -291,4 +313,5 @@ authors and your canon cannot.
 - [ ] FTL, instant messaging and medical miracles all still absent.
 - [ ] No real author, work, character, franchise, place, brand or person anywhere.
 - [ ] Read the facts aloud. If they sound like poetry, rewrite them as speech.
-- [ ] Read the neighbouring files and confirm you contradicted none of them.
+- [ ] Read the neighbouring files. Confirm you contradicted none of them — **and that you restated
+      none of them either.** Where canon already covers your subject, you extended it.
