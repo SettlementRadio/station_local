@@ -17,26 +17,29 @@ fondly.
 
 ## 1. What to write
 
-**Seven pieces remain.** Three are new files, four are top-ups to files that already exist. Take
-them one at a time; do not attempt the world in one sitting.
+**Six pieces remain.** Two are new files, four are top-ups to files that already exist. Take them
+one at a time; do not attempt the world in one sitting.
 
-> **Done and accepted: `72-celebrity.md`, `41-crime.md`.** Read both before starting anything else —
-> they are the standard to match.
+> **Done and accepted: `72-celebrity.md`, `41-crime.md`, `36-logistics.md`.** Read all three before
+> starting anything else — they are the standard to match.
 >
-> - Both handle named places exactly right, and each dates an event against existing canon
->   **without using a year** (Breathe Easy's unreliable first air plant, `06-gazetteer.md`) — the
->   hardest rule in §4A.
-> - **`41-crime.md` is the better model of the two.** It carries its texture *into the fact list*
->   rather than leaving it in prose: the basket of dry socks by the tribunal door is a canon fact,
->   so the station can actually say it. That is the §3 rule working. It also handles its domain's
->   trap (no method detail, no glorification, no victims as colour) more thoroughly than anything
->   else in the bible.
+> - All three handle named places exactly right, and each anchors an event to existing canon
+>   **without using a year** — the hardest rule in §4A.
+> - **`41-crime.md` and `36-logistics.md` are the models.** They carry their texture *into the fact
+>   list* rather than leaving it in prose: the basket of dry socks by the tribunal door, the
+>   children at Far Reach producing several container totals and no figure the loadmaster will
+>   sign. Both are canon facts, so the station can actually say them. That is §3's rule working.
+> - **`36-logistics.md` shows the best move available to you: extend, don't restate.** Its burn-day
+>   section builds on a fact `70-music.md` had already established (lane-rock's great occasion) and
+>   adds the freight crew's side of the same day. Reading the neighbouring files is not a
+>   consistency chore — it is where the strongest material comes from.
+> - `41-crime.md` also handles its domain's trap (no method detail, no glorification, no victims as
+>   colour) more thoroughly than anything else in the bible.
 
 ### New files
 
 | Filename | `id:` | `domain:` | What it covers | Target |
 |---|---|---|---|---|
-| `36-logistics.md` | `logistics` | `logistics` | Freight, convoys, cargo, ports, shipping cycles, what moves and how it gets there. | 10–12 facts |
 | `11-earth.md` | `earth` | `history` | Earth as memory — what is remembered, what is myth, what was carried and what was lost. | 10–12 facts |
 | `12-crossings.md` | `crossings` | `history` | The migration and the founding: the generation-ships, the long scattering, settlements that failed. | 10–12 facts |
 

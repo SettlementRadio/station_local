@@ -168,23 +168,24 @@ conflict: **keep both**, **supersede**, or **edit**.
 
 | File | Domain | | File | Domain |
 |---|---|---|---|---|
-| `05-worlds.md` | `geography` | | `52-sports.md` | `sport` |
-| `06-gazetteer.md` | `geography` | | `54-health.md` | `health` |
-| `10-history.md` | `history` | | `55-language.md` | `culture` |
-| `15-figures.md` | `history` | | `56-style.md` | `fashion` |
-| `20-peoples.md` | `peoples` | | `58-knowledge.md` | `culture` |
-| `25-other-minds.md` | `technology` | | `60-faith.md` | `religion` |
-| `30-polities.md` | `politics` | | `65-arts.md` | `art` |
-| `35-economy.md` | `finance` | | `70-music.md` | `music` |
+| `05-worlds.md` | `geography` | | `51-observances.md` | `culture` |
+| `06-gazetteer.md` | `geography` | | `52-sports.md` | `sport` |
+| `10-history.md` | `history` | | `54-health.md` | `health` |
+| `15-figures.md` | `history` | | `55-language.md` | `culture` |
+| `20-peoples.md` | `peoples` | | `56-style.md` | `fashion` |
+| `25-other-minds.md` | `technology` | | `58-knowledge.md` | `culture` |
+| `30-polities.md` | `politics` | | `60-faith.md` | `religion` |
+| `35-economy.md` | `finance` | | `65-arts.md` | `art` |
+| `36-logistics.md` | `logistics` | | `70-music.md` | `music` |
 | `40-law.md` | `crime` | | `72-celebrity.md` | `celebrity` |
 | `41-crime.md` | `crime` | | `75-technology.md` | `technology` |
 | `45-conflict.md` | `conflict` | | `78-communication.md` | `logistics` |
 | `50-daily-life.md` | `culture` | | `80-cosmos.md` | `geography` |
-| `51-observances.md` | `culture` | | | |
 
-**All seventeen domains now carry canon** (25 files, 277 facts) — `celebrity` was the last empty one
-and closed with `72-celebrity.md`. `40-law.md` holds the rights and principles; `41-crime.md` holds
-the cases and procedures built on them. What remains is depth, not coverage: `COMMISSION.md` §1 holds the
+**All seventeen domains now carry canon** (26 files, 289 facts) — `celebrity` was the last empty one
+and closed with `72-celebrity.md`. Three domains are deliberately split across a principle file and
+a practice file: `40-law.md` / `41-crime.md` (rights, then cases), and `78-communication.md` /
+`36-logistics.md` (how word travels, then how mass does). What remains is depth, not coverage: `COMMISSION.md` §1 holds the
 open list, and `DECISIONS.md` D-028 explains which domains are thinner than their airtime deserves.
 
 ## 8. Checklist
