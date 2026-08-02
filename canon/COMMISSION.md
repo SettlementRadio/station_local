@@ -17,8 +17,16 @@ fondly.
 
 ## 1. What to write
 
-**Three pieces remain — all top-ups** to files that already exist. Every new file in this commission
-is done. Take them one at a time.
+**One piece remains: `20-peoples.md`.** Every new file and every other top-up in this commission is
+done.
+
+> **`54-health.md` is the one to read before writing a sensitive domain.** Health's trap is that it
+> "must never read as actionable medical advice" (§4F), and the file sidesteps it completely by
+> writing about the *system* rather than the medicine: who gets treated (the Open Door), who
+> travels (the Passage Conference), who goes with them (care companions), where they stay
+> (Landing Houses). There is not one line of treatment in it, and it is still the most moving file
+> in the bible. **Write the system, not the procedure** — that is the move for any domain with a
+> trap.
 
 > **A top-up may edit the facts already there, not only append to them.** `52-sports.md` did, and it
 > was right to: two existing facts gained the ratification rule and the honour-ledger detail the new
@@ -73,8 +81,6 @@ the right answer.
 
 | File | Domain | Add | Note |
 |---|---|---|---|
-| `56-style.md` | `fashion` | +6 facts | Only works tied to material constraint. Cloth is scarce; salvage is an aesthetic. |
-| `54-health.md` | `health` | +4 facts | Clinics, access, who gets care and who travels weeks for it. |
 | `20-peoples.md` | `peoples` | +4 facts | Peoples shaped by the worlds they live on. |
 
 Read the existing file first and match it. You are extending someone's world, not restarting it.
