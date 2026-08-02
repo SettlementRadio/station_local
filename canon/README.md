@@ -86,17 +86,23 @@ is a version change and history survives. Where a fact is genuinely *replaced* r
 
 **So: editing a fact is always safe. Renaming a file or an anchor is not.**
 
-## 4. Prose and facts both count — write freely
+## 4. Prose and facts do different jobs
 
-There is no "this section is indexed, that one isn't". `canon-check` pass 1 atomises the **whole
-file**, and the prose you write feeds two tiers at once:
+The two halves of a file go to two different places, and it matters that you know which is which:
 
-- **Tier 1** — a generated 150–200 word **domain summary**, regenerated when the domain's files
-  change, and **always shipped** on every call. This is what stops the world feeling flat: the model
-  always knows a religion exists and roughly what the war was about, even when no religion fact was
-  retrieved.
-- **Tier 2** — individual facts, retrieved by hybrid search (BM25 for names + embeddings for
-  meaning), reranked, then capped at 12 per domain.
+| What you write | Where it goes | Reaches a script? |
+|---|---|---|
+| `## `/`### ` **prose** | **Tier 1** — a generated 150–200 word domain summary, regenerated when the domain changes, **shipped on every call** | only through the summary |
+| the `## Canon facts` list | **Tier 2** — retrieved by hybrid search (BM25 for names + embeddings for meaning), reranked, capped at 12 per domain | **yes, individually** |
+
+**The fact list is the only way a specific detail ever gets said on air.** Pass 1 parses that
+numbered list; it does not atomise your prose — it is one of the deterministic passes that runs
+without a model (§7 §"Where it runs"), which a model-free pass could not do to free-flowing text.
+So a lovely detail buried in a paragraph will shape the *summary* and never be quoted. **If it
+should reach the microphone, make it a fact.**
+
+This is why restating a prose point in the fact list is correct rather than redundant: the prose
+explains, the list declares what is searchable.
 
 Two consequences for how you write. **Proper nouns earn their keep** — BM25 is what makes "Cold
 Harbor" or a figure's name findable, so name things and name them consistently. And **the domain
@@ -162,23 +168,24 @@ conflict: **keep both**, **supersede**, or **edit**.
 
 | File | Domain | | File | Domain |
 |---|---|---|---|---|
-| `05-worlds.md` | `geography` | | `54-health.md` | `health` |
-| `06-gazetteer.md` | `geography` | | `55-language.md` | `culture` |
-| `10-history.md` | `history` | | `56-style.md` | `fashion` |
-| `15-figures.md` | `history` | | `58-knowledge.md` | `culture` |
-| `20-peoples.md` | `peoples` | | `60-faith.md` | `religion` |
-| `25-other-minds.md` | `technology` | | `65-arts.md` | `art` |
-| `30-polities.md` | `politics` | | `70-music.md` | `music` |
-| `35-economy.md` | `finance` | | `75-technology.md` | `technology` |
-| `40-law.md` | `crime` | | `78-communication.md` | `logistics` |
-| `45-conflict.md` | `conflict` | | `80-cosmos.md` | `geography` |
-| `50-daily-life.md` | `culture` | | | |
+| `05-worlds.md` | `geography` | | `52-sports.md` | `sport` |
+| `06-gazetteer.md` | `geography` | | `54-health.md` | `health` |
+| `10-history.md` | `history` | | `55-language.md` | `culture` |
+| `15-figures.md` | `history` | | `56-style.md` | `fashion` |
+| `20-peoples.md` | `peoples` | | `58-knowledge.md` | `culture` |
+| `25-other-minds.md` | `technology` | | `60-faith.md` | `religion` |
+| `30-polities.md` | `politics` | | `65-arts.md` | `art` |
+| `35-economy.md` | `finance` | | `70-music.md` | `music` |
+| `40-law.md` | `crime` | | `72-celebrity.md` | `celebrity` |
+| `41-crime.md` | `crime` | | `75-technology.md` | `technology` |
+| `45-conflict.md` | `conflict` | | `78-communication.md` | `logistics` |
+| `50-daily-life.md` | `culture` | | `80-cosmos.md` | `geography` |
 | `51-observances.md` | `culture` | | | |
-| `52-sports.md` | `sport` | | | |
 
-**`celebrity` has no canon behind it yet** — the one domain of seventeen still unwritten, and
-`PROGRAMMING.md` §3 calls it "one of the cheapest ways to make the station feel real". In-world
-figures only, always.
+**All seventeen domains now carry canon** (25 files, 277 facts) — `celebrity` was the last empty one
+and closed with `72-celebrity.md`. `40-law.md` holds the rights and principles; `41-crime.md` holds
+the cases and procedures built on them. What remains is depth, not coverage: `COMMISSION.md` §1 holds the
+open list, and `DECISIONS.md` D-028 explains which domains are thinner than their airtime deserves.
 
 ## 8. Checklist
 

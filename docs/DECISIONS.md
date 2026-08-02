@@ -548,3 +548,31 @@ boundary enforceable by looking: anything in `core/` always ships, anything in `
 
 §5 and §21 updated to name the source; `canon/README.md` §5 now carries the canon-vs-core boundary
 with the test — *if it would be embarrassing for the station not to know it, it belongs in `core/`*.
+
+### D-031 · Prose is not atomised; the `## Canon facts` list is the only source of Tier 2 facts — 2026-08-02
+
+Reviewing the first commissioned file raised what looked like a duplication problem: its prose
+subsections and its numbered facts state the same things about the same figures, as every inherited
+canon file does. If `canon-check` pass 1 atomised whole files — which is what `canon/README.md` §4
+claimed — each of those would yield two near-identical facts competing for the same twelve
+per-domain seats, and pass 2 would raise roughly fifteen duplicate conflicts per file across
+twenty-four files. That is the work-generating machine §34 exists to prevent.
+
+**It was never the design; the README was wrong.** §7's "Where it runs" puts pass 1 among the
+deterministic passes that "need no model and finish in seconds". A model-free pass cannot atomise
+free prose — deciding where one assertion ends is exactly a model judgement. Pass 1 can only be
+parsing an explicit structure, which is the `## Canon facts` numbered list. §5 says the same thing
+in one line: **"Detail is retrieved; structure is always resident."** Detail is the fact list →
+Tier 2; structure is the prose → the Tier 1 domain summary.
+
+So restating a prose point in the fact list is **correct, not redundant** — the prose explains, the
+list declares what is searchable — and the inherited files were right all along.
+
+**The consequence worth stating to authors, now in `README.md` §4 and `COMMISSION.md` §3:** the fact
+list is the only part of a canon file that can ever be quoted on air. A detail left in a paragraph
+shapes the station's sense of a domain and is never spoken. If it should reach the microphone, it
+has to be a fact. This makes fact-list density an authoring lever rather than a formality —
+`72-celebrity.md` turns 1,876 words of prose into 15 reachable facts, and the specific texture in
+between (a Meridian racing patch and its mismatched Cold Harbor copy) is currently unreachable.
+
+No files moved and no content changed; this corrects a document, not the world.

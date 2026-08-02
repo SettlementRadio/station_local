@@ -17,15 +17,25 @@ fondly.
 
 ## 1. What to write
 
-Nine pieces. Five are new files, four are top-ups to files that already exist. Take them one at a
-time; do not attempt the world in one sitting.
+**Seven pieces remain.** Three are new files, four are top-ups to files that already exist. Take
+them one at a time; do not attempt the world in one sitting.
+
+> **Done and accepted: `72-celebrity.md`, `41-crime.md`.** Read both before starting anything else —
+> they are the standard to match.
+>
+> - Both handle named places exactly right, and each dates an event against existing canon
+>   **without using a year** (Breathe Easy's unreliable first air plant, `06-gazetteer.md`) — the
+>   hardest rule in §4A.
+> - **`41-crime.md` is the better model of the two.** It carries its texture *into the fact list*
+>   rather than leaving it in prose: the basket of dry socks by the tribunal door is a canon fact,
+>   so the station can actually say it. That is the §3 rule working. It also handles its domain's
+>   trap (no method detail, no glorification, no victims as colour) more thoroughly than anything
+>   else in the bible.
 
 ### New files
 
 | Filename | `id:` | `domain:` | What it covers | Target |
 |---|---|---|---|---|
-| `72-celebrity.md` | `celebrity` | `celebrity` | Musicians, racers, presenters, officials with reputations. Feuds, appearances, who is talked about and why. **This is the only domain with nothing at all.** | 14–16 facts |
-| `41-crime.md` | `crime` | `crime` | Inquiries, tribunals, smuggling, salvage disputes, fraud. The raw material a court report and a long-form case narrative are built from. | 14–16 facts |
 | `36-logistics.md` | `logistics` | `logistics` | Freight, convoys, cargo, ports, shipping cycles, what moves and how it gets there. | 10–12 facts |
 | `11-earth.md` | `earth` | `history` | Earth as memory — what is remembered, what is myth, what was carried and what was lost. | 10–12 facts |
 | `12-crossings.md` | `crossings` | `history` | The migration and the founding: the generation-ships, the long scattering, settlements that failed. | 10–12 facts |
@@ -45,6 +55,13 @@ the right answer.
 | `20-peoples.md` | `peoples` | +4 facts | Peoples shaped by the worlds they live on. |
 
 Read the existing file first and match it. You are extending someone's world, not restarting it.
+
+**Write texture, not just structure.** The one criticism of the accepted `72-celebrity.md` is that
+it explains how its domain *works* — the customs, the rules, the institutions — more than it gives
+the station things to actually *talk about*. Structure is necessary and it got that right. But a
+domain also needs the small, concrete, human material a five-minute item is built from: the specific
+quarrel, the daft tradition, the thing someone always gets wrong. Aim for both, and lean toward the
+material.
 
 ---
 
@@ -102,6 +119,10 @@ At the end of the file, a numbered list:
 
 - **One atomic assertion each, 1–3 sentences.** Not a paragraph. Not a topic. One checkable thing
   the writers must stay consistent with.
+- **This list is the only part of your file that can be quoted on air.** The prose shapes how the
+  station understands the domain; the facts are what it can actually reach for and say. A detail
+  left in a paragraph will colour the station's sense of the world and never be spoken. **If it
+  should reach the microphone, make it a fact.**
 - **Name things, and name them the same way twice.** Proper nouns are how the retrieval system finds
   anything — a world, a league, a ship, a company. Invent names freely; then be consistent.
 - **Plain and concrete.** See §4G — this is the rule writers break most.
