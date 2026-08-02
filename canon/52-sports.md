@@ -8,10 +8,9 @@ supersedes: []
 
 # 52-sports.md — games, circuits & the stitched season
 
-> **Cornerstone file — how the settled worlds play, and how sport crosses the lag.** This backs
-> the sports desk (Kael, `../cast/CAST.md`) and the tick's `sports` domain; the general place of games
-> in ordinary life is in `50-daily-life.md` ("Games and the circuits"), and this file pins the
-> structures. See `README.md` for the authoring conventions.
+> **Cornerstone file — how the settled worlds play, and how sport crosses the lag.** This is the
+> `sport` domain; the general place of games in ordinary life is in `50-daily-life.md` ("Games and
+> the circuits"), and this file pins the structures. See `README.md` for the authoring conventions.
 
 ## The games themselves
 

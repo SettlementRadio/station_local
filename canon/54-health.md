@@ -9,7 +9,7 @@ supersedes: []
 # 54-health.md — medicine, clinics & the physician network
 
 > **Cornerstone file — how the settled worlds stay alive, and what illness means across the lag.**
-> This backs the health desk (The Ward) and the tick's `health` domain. The hard limits of the body
+> This is the `health` domain. The hard limits of the body
 > are pinned in `75-technology.md` ("Medicine and the body" — no miracles, and hold to that here);
 > how medicine is *taught* is in `58-knowledge.md` (apprenticeship, the relay casebooks); the Mercy
 > Round legend is in `15-figures.md`. See `README.md` for the authoring conventions.
