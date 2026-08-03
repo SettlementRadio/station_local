@@ -57,7 +57,7 @@ four, plus the breakfast strand. **Write these six and no others.**
 | 3 | **Newsreader** | `scripted` | — | All 24 hourly junctions, plus *The Six* (18:04) and *The Midnight Report* (00:04) |
 | 4 | **Chart voice** | `conversational` | `music` | *The Count* (Friday), and the overnight heritage-music strands |
 | 5 | **Politics/finance correspondent** | `scripted` | `politics` | Two-ways in every magazine, quoted in bulletins, narrates *The Long Record* when the subject is political |
-| 6 | **Conflict correspondent** | `scripted` | `conflict` | *Dispatch*, the evening and late reports, *The Six*. The grave voice |
+| 6 | **Conflict correspondent** | `scripted` | `conflict` | *Dispatch* (11:32 daily, repeated 14:04 Mon–Thu), the evening and late reports, *The Six*. The grave voice |
 
 **Names.** Propose them; the operator approves. Any of the names already in `CAST.md` may be
 carried over — the cards are rewritten regardless of who keeps a name.
