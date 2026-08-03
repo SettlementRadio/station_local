@@ -709,3 +709,75 @@ Fact counts unchanged at 370, all seventeen domains intact, and every linked ent
 both files of its pair. `COMMISSION.md` §3 now carries the rule with worked examples, and the
 closing test: **if a reader would not understand the link without the filename, the named thing is
 not established clearly enough yet — fix that instead.**
+
+### D-035 · `core/` carries the same music-station mismatch as the old cast; commissioned — 2026-08-03
+
+`cast/CAST.md` was rewritten because it described presenters for a music station rather than the
+speech service the grid actually schedules. **`core/` has the same defect, and it matters far more**,
+because Tier 0 ships whole and verbatim on *every* generation call rather than only when a given
+presenter is on air.
+
+Three passages in `STATION.md` contradict `PROGRAMMING.md` §8 outright: the premise says the station
+"plays music, reads the news"; fact 9 gives presenters "wide latitude in programming" when the
+schedule is fixed in config; and fact 9 reserves "the midnight hour" for listener requests when the
+grid has a 28-minute news programme at 00:04 and a history documentary at 00:32.
+
+**One line in `TIME.md` is worse than a mismatch — it teaches a rule violation.** *"The DJ gives
+real-feeling time checks ('coming up on two in the morning, settlement time')"* instructs the model
+to do the one thing §13's air-time rule forbids for floating content and enforces with a regex
+acceptance test that regenerates on failure. It has been shipping in every prompt, with a worked
+example, while `cast/COMMISSION.md` §4 correctly tells the writer never to state the clock.
+
+**Tier 0 is also over budget.** `STATION.md` 807 words + `TIME.md` 421 + two cast cards 682 is
+~2,578 tokens against §5's 2,000–3,000 ceiling — and `prompts/register.md`, the third Tier 0
+component (§11a), is not written yet. A three-voice programme breaches it today. The commission
+targets ~800 words for `core/`, roughly a third off, which is where the slack has to come from since
+D-030 gave Tier 0 no growth mechanism on purpose.
+
+**A standalone `core/COMMISSION.md` was created at the operator's request** (§32 permits a document
+when the operator asks). The recommendation had been a section inside `cast/COMMISSION.md`, because
+Tier 0 is a single budget shared between core text and cast cards and a writer needs to see that
+trade-off in one place; the operator chose separation for traceability, and the budget table is
+reproduced in the new file so the shared ceiling stays visible.
+
+**Standing observation:** this is the third place the previous app's music-station framing has
+surfaced — the cast cards, the canon header notes naming the non-existent programmes "The Fit" and
+"The Ward" (D-029 era), and now `core/`. Anything not yet re-read should be assumed to carry it.
+
+### D-036 · The cast is six speech presenters, not eight music DJs — 2026-08-03
+
+`cast/CAST.md` inherited eight character cards written for a music station: DJs with a `Logical
+voice:` registry key, wide programming latitude, night-shift framing and setlists. The station the
+grid actually schedules is a **speech service** — an hourly bulletin, a three-part breakfast strand,
+an evening flagship, correspondents, documentaries, and one weekly chart show, with music leading
+only overnight. The cards described a different product.
+
+**Replaced with the six the architecture specifies** (§35 C2): breakfast host, evening host,
+`scripted` newsreader, chart voice, and two beat correspondents — Wren, Vell, Thorn, Mira, Joss,
+Nera. Every card carries the nine required fields, and every speech profile sits inside §11a's
+bands. The `grid-sync` separation gate passes on all three conversational pairs before the gate
+exists: hedge rates 18 / 38 / 58, no shared `hedge_form`, no shared `disagreement` mode.
+
+**Five inherited fields were retired**, each for its own reason: `Logical voice:` (a voice is a
+committed WAV plus a fixed seed, both operator-owned — there is no registry key, §3); `Public bio:`
+(nothing publishes cards to the web, so it cost tokens on every call for no effect on air); `Tags:`
+(D-024); `Based: station | field` (superseded — see below); and `Voice (for TTS):` (timbre comes
+from the reference recording, not from a sentence describing it).
+
+**The finding that shaped the roster: a correspondent is at the station, not out in the worlds.**
+The commonest item in news radio is the two-way — host asks, correspondent answers, live, in the
+moment. In this world an *addressed* message takes days to weeks, so a genuinely field-based
+correspondent can never do one; they can only send finished dispatches. Correspondents therefore
+work the relay traffic for their beat from the newsroom, which is why `Based:` no longer does any
+work. Travelling correspondents remain possible and rare, and are not part of the roster.
+
+Two canon repairs were needed. Wren was "born aboard the generation ship *Long Patience*", which
+`12-crossings.md` writes in the past tense and whose next section establishes that generation ships
+were dismantled at landfall; she is now "born a Betweener, raised aboard ship", using the category
+`20-peoples.md` already defines and inventing no new entity. Thorn's card was left as written
+because `06-gazetteer.md` already says "the station's Thorn learned the news trade as a stringer"
+on Forge — the writer built on an existing canon reference rather than around it.
+
+**C2 is closed.** Engineering step 8 — one show, two speakers, rendered and mixed onto the
+transmitter, which §35 calls the go/no-go moment — is unblocked. C3 (reference clips plus
+`voices/PROVENANCE.md`) is the remaining content item before hardware.

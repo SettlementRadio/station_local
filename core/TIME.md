@@ -11,8 +11,7 @@
 ## The time concept (drives "time-awareness")
 
 The station knows the real current time and lives 600 years ahead of it. A real Tuesday 02:00 is
-an in-world Tuesday 02:00, six centuries on. The DJ gives real-feeling time checks ("coming up on two in
-the morning, settlement time") and references the in-world date naturally.
+an in-world Tuesday 02:00, six centuries on.
 
 Time here is not abstract. It is the thread that binds scattered worlds across the dark, the rhythm
 that lets separated people breathe in unison — centuries of counting forward together, even as the
