@@ -1,29 +1,32 @@
-# TIME.md — how the station relates to time
+# TIME.md — the shared clock
 
-> **Tier 0 — station core.** Loaded whole and verbatim into the cached prompt prefix, present on
-> every generation call, never retrieved (ARCHITECTURE §5, `DECISIONS.md` D-030). Not canon: this
-> file carries no frontmatter and `canon-check` / `canon-sync` never see it.
->
-> **The in-world year is always the real year plus 600, computed at generation time.** Never write a
-> year here. The clock contract itself is ARCHITECTURE §13; this file is what the station *says*
-> about time.
+## Settlement Time
 
-## The time concept (drives "time-awareness")
+Settlement Time is the civil clock shared across the settled worlds. The station's in-world date is
+the real current date carried six centuries forward; the weekday and time of day remain the same.
+This common count coordinates relays, travel, contracts and records between places whose natural
+days and seasons do not match.
 
-The station knows the real current time and lives 600 years ahead of it. A real Tuesday 02:00 is
-an in-world Tuesday 02:00, six centuries on.
+Every world also lives by local light and weather. Dawn, working hours, planting seasons and annual
+cycles differ from place to place, so local calendars continue beside Settlement Time. The two
+reckonings serve different purposes and are used together without being treated as rivals.
 
-Time here is not abstract. It is the thread that binds scattered worlds across the dark, the rhythm
-that lets separated people breathe in unison — centuries of counting forward together, even as the
-distances grow.
+## Standing facts
 
-## The standing facts about settlement time
-
-1. "Settlement time" is the shared clock everyone tunes to.
-2. Settlement Time began in the generation when the scattered worlds first agreed to keep one clock together; they kept Earth's old count of years rather than starting a new one, so the numbers run on unbroken — what changed was that everyone, everywhere, counted them together. Everything before the agreement is "Earth-time," spoken of in the past tense, like a childhood the worlds have half outgrown.
-3. Local solar time drifts on every world, but no one sets their clock by it. Dawn on Meridian might be midnight on the station; noon on Cold Harbor is irrelevant to the shipping schedules. Only Settlement Time coordinates the relays.
-4. The week is universal, but the names of days vary by world. The station uses the old names — Monday, Tuesday, Wednesday — out of courtesy to tradition, though no one remembers which god or ruler they once honoured.
-5. There are no time zones in Settlement Time. The clock shows the same hour everywhere, which means dawn comes at different numbers depending where you stand. Children on spinward worlds learn to read "14:00" as morning.
-6. The New Year is observed simultaneously across all worlds, a moment of artificial unity. Ships sound their bells, and the relays carry greetings for hours afterward, the lag making a chorus of belated well-wishes.
-7. Some worlds keep a "local calendar" for planting and harvest, but official business — contracts, births, deaths, the law — runs on Settlement Time. The dual reckoning is ordinary; a farmer might age 30 in local years and 45 by the shared clock.
-8. The station's clock is maintained by a mechanical consensus — three independent chronometers, none authoritative. If two agree and one drifts, the drift is noted but not corrected until the third confirms. Time-keeping is a social act, not a technical one.
+1. Settlement Time shows the same weekday and clock reading everywhere. It has no time zones, so
+   local morning and night occur at different clock readings on different worlds.
+2. Settlement Time began when the scattered worlds agreed to keep one civil count. They retained
+   Earth's inherited year count rather than beginning again from the agreement.
+3. Records from before the shared agreement are described as Earth-time. Later records use
+   Settlement Time even when the event follows a local season or calendar.
+4. The shared week is universal, although local names for its days vary. Settlement Radio uses the
+   inherited Earth names understood across the relay network.
+5. Local calendars govern planting, harvest, weather seasons and customary observances. Contracts,
+   births, deaths and public records use Settlement Time so their dates can be compared between
+   worlds.
+6. The New Year occurs at one shared clock reading across all worlds. Local celebrations begin
+   together by that count, ships sound their bells, and greetings arrive through the ordinary
+   relay lag.
+7. The station keeps its clock with three independent chronometers. None is authoritative; when one
+   diverges, the difference is recorded and continued comparison establishes which instrument has
+   drifted before any correction is made.
