@@ -29,19 +29,25 @@ one is about variation rather than coverage.**
 
 | File | Domain | Now | Target | Add |
 |---|---|---|---|---|
-| ~~`30-polities.md`~~ | `politics` | ~~13~~ **22** | ~22 | **done — accepted** |
-| `45-conflict.md` | `conflict` | 12 | ~22 | **+8, up to +10** |
+| *(none outstanding)* | | | | |
 
-> **`30-polities.md` is the model for the remaining file.** It answered its trap — *all process, no
-> consequence* — not by mentioning people occasionally but by building the rule into the
-> institutions themselves. The Burden Note requires every tariff proposal to name who absorbs it:
-> the shipper, the port, the settlement store, or the person at the counter. *"A committee may
-> choose the burden; it may not call the burden nobody's."* Every one of its nine new facts reaches
-> somebody it affects.
+**The second commission is complete.** `30-polities.md` 13 → 22 and `45-conflict.md` 12 → 22. Both
+fast domains now carry enough material that a programme drawing on them daily reaches for different
+facts each time.
+
+> **These two showed the strongest technique in the bible: build the trap's answer into the world's
+> own institutions**, rather than remembering to be tasteful while writing.
 >
-> Do the same for conflict. Its trap is **spectacle**, so build the restraint into how the world
-> works: what a blockade does to a clinic's stores, what a veteran came back to, who waits for the
-> patrol that did not report. Never the hardware, never the tactics.
+> - Politics' trap is *all process, no consequence*. The **Burden Note** makes every tariff proposal
+>   name who absorbs it — shipper, port, settlement store, or the person at the counter. *"A
+>   committee may choose the burden; it may not call the burden nobody's."*
+> - Conflict's trap is *spectacle*. The **Contact Record**'s public copy "does not grade equipment
+>   or reconstruct manoeuvres" — it names the injured worker, the cargo turned back, the family
+>   still waiting. The **No Parade Rule** lets a returning crew decline a welcome. The **Two Names
+>   Board** keeps the person who covered the job beside the person who left it.
+>
+> In both files the forbidden vocabulary appears only inside its own prohibition. That is the
+> standard: a domain that polices itself needs no external gate.
 
 **Why these two, and why so many.** Both are **fast** domains in the station's schedule — politics
 runs in the morning *and* evening magazines, conflict in the evening magazine — so they are drawn on

@@ -13,61 +13,213 @@ supersedes: []
 
 ## The arithmetic of distant war
 
-War in the settled worlds is not impossible, but it is expensive in ways that drain the will of those who contemplate it. A fleet dispatched from the core to put down a frontier rebellion will arrive weeks after the order is given, by which time the situation has changed, the grievances have evolved, the rebels have had time to prepare or to surrender or to die of other causes. The fleet must carry fuel for the return, food for the crew, ammunition that may never be fired, all weighed against the mass that could have carried trade goods, scientific equipment, colonists, hope. The calculation is relentless: war at distance consumes more than it can capture, destroys more than it can hold, costs more than any possible victory can repay.
+War remains possible, but distance denies it speed and certainty. An order leaves one world, people
+act on it elsewhere, and any reply describes circumstances already changed. Ships and crews sent
+toward a dispute are ships and crews absent from freight, rescue, repair, and home. The cost is
+counted first in work not done and supplies not carried, before anyone counts physical damage.
 
-This is the mathematics that governs conflict in the settled worlds. Force is not absent, but it is slow, visible, costly to deploy and more costly to maintain. A blockade is cheaper than a battle, an embargo more sustainable than an occupation. The worlds have learned, through hard experience, to measure their conflicts in seasons rather than days, to prefer the siege to the assault, to exhaust the enemy's will rather than defeat their army. The generals who understand this thrive; the generals who do not are remembered as cautionary tales, their names attached to disasters that taught the worlds the true price of haste.
+The Silence left the clearest warning. Settlements cut off from trade sometimes tried to take what
+they could no longer obtain, and several destroyed the systems and relationships they needed to
+survive. The lasting lesson is practical: force is an admission that politics failed, and its cost
+continues after the people who ordered it have stopped speaking.
 
-The Silence taught this lesson most brutally. When word failed between the worlds, when each settlement believed itself alone, some tried to seize what they could not produce, to take by force what they could not trade for. The wars of the Silence were fought with desperate intensity and ended in mutual ruin. The worlds that survived emerged with a shared understanding: force is the last resort, the final admission that negotiation has failed, the option that destroys what it seeks to save. This is not idealism; it is the hard-won wisdom of people who have counted the cost and found it unbearable.
+### Working Lines {#working-lines}
+
+Most border disputes concern an overlap between maps, access claims, or route records while people
+already live and work in the disputed space. Mediators draw a **Working Line** that preserves
+ordinary use without settling ownership. Farmers keep the same fields, a dock keeps serving the
+same crews, and neither side may turn a school, clinic, or ration office into proof of possession.
+The line is deliberately dull. Its success is that a person can finish a shift while governments
+continue arguing.
+
+### The Contact Record {#the-contact-record}
+
+A patrol incident produces a **Contact Record** before it produces a public conclusion. Each side
+submits the location it believed it occupied, the signals it received, the people harmed or delayed,
+and what remains disputed. The public copy does not grade equipment or reconstruct manoeuvres. It
+names the missing passenger connection, the injured worker, the cargo turned back, and the family
+still waiting for confirmed word. Settlement Radio reports the discrepancies rather than choosing
+the most dramatic account.
 
 ## The tools of slow conflict
 
-When force is too costly, other tools must serve. The blockade is the most common: the refusal to let ships enter or leave a world's orbit, the interdiction of trade, the slow strangling of an economy that depends on imports for survival. A blockade is patient work. It needs ships stationed on the approaches, crews rotated through months of tedious vigilance, the constant reckoning of whether the cost of maintenance exceeds the pressure applied. A blockade can last for years, its effects gathering slowly: shortages, rationing, the slow erosion of goodwill toward the government that cannot break the siege.
+Blockade and embargo replace open force without becoming humane. They turn political pressure into
+missing medicine, delayed filters, smaller meals, idle repair bays, and people unable to leave. The
+settlement under pressure suffers first, but the withholding side also loses markets, trust, and the
+labour tied up in maintaining refusal. Interdependence makes the pain unequal, never one-sided.
 
-The embargo is the economic twin of the blockade: the refusal to trade, the withholding of essential goods, the weaponisation of interdependence. An embargo hurts both sides; the worlds are bound by need, and to deny one is to deny oneself. But the pain is unequal, distributed by who needs whom more urgently. An embargo is a test of resilience, a measure of self-sufficiency, a gamble that the other side will break first. It is often paired with propaganda, with broadcasts explaining the justice of the cause, with appeals to the population to endure for the greater good.
+### The Blockade Ledger {#the-blockade-ledger}
 
-Attrition is the strategy of outlasting. It needs no decisive battle, no dramatic victory, only the continued spending of resources at a rate the enemy cannot sustain. Attrition is the favourite strategy of the wealthy against the poor, the established against the upstart, the patient against the desperate. It is ugly, unheroic, effective. The worlds that have survived attritional conflicts remember them with a particular bitterness: not the glory of combat, but the grind of endurance, the slow recognition that surrender is the only alternative to exhaustion.
+Every recognised blockade keeps a public **Blockade Ledger** of cargo refused, delayed, or admitted.
+Each entry carries the receiving consequence supplied by the affected settlement: the clinic stock
+that will run short, the ration that changes, the repair that stops, or the passenger whose journey
+ends at the wrong port. Authorities may dispute the claim, but they cannot replace it with a bare
+tonnage. The Ledger is the document mediators read when both sides insist pressure has remained
+limited.
 
-Mediation is the preferred resolution, though it is often reached only after the other methods have failed. Mediators travel between the disputing worlds, carrying messages, proposing compromises, seeking the face-saving formula that lets both sides claim victory without further cost. The best mediators have no stake in the outcome, can be trusted to carry proposals without distortion, understand that their reputation rests on their neutrality. The Settlement Council offers mediation, though its authority is voluntary and its enforcement nonexistent. A mediated settlement is only as stable as the parties' continued willingness to abide by it.
+### Civil Passages {#civil-passages}
+
+The Right to Breathe does not disappear during a dispute. Mediators therefore try to establish a
+**Civil Passage** for named life-support, clinic, ration, and evacuation cargo. Neutral clerks match
+what leaves to what arrives, and the receiving settlement publishes distribution afterward. A Civil
+Passage is not proof that a blockade is just; it is a refusal to make survival itself the bargaining
+chip. When one is denied, the refusal and the authority responsible remain in the public record.
 
 ## The scars of past wars
 
-The settled worlds bear the marks of conflicts that history remembers with sorrow rather than pride. The War of the Three Stations, generations back now, began as a dispute over mining rights and ended with two stations destroyed, their populations evacuated or dead, the third so damaged that it remains a monument to miscalculation. The war ran six years, measured in the time it took for fleets to arrive, to engage, to withdraw, to be replaced. By the end the original dispute was forgotten; the war went on because stopping required an admission of waste that neither side could make. The Treaty of Concordance, which ended it, set the principle that possession is provisional, that claims must be renewed by use rather than asserted by force, that the destruction of a station is a loss to all the worlds.
+### The War of the Three Stations {#war-of-the-three-stations}
 
-The Embargo of the Freeholds, closer to living memory, was a conflict without battles — a fourteen-year siege by economic means. The core, angered by frontier tax resistance, withheld manufactured goods; the Freeholds, in answer, grew their own industries, however rough, and learned to do without. When the embargo ended, the Freeholds were poorer but more self-sufficient, the core had lost a market it could not easily replace, and the relationship between centre and periphery was changed for good. The embargo taught that economic weapons cut both ways, that the pain of the wielder may exceed the pain of the target.
+The settled worlds remember conflicts through what had to be rebuilt and who did not return. The
+War of the Three Stations began as a claim dispute and continued after its original purpose had
+become smaller than the losses. Two stations were destroyed; the surviving station was left too
+damaged to pretend there had been a winner.
 
-The Pirate Wars, within living memory, were not wars in the formal sense, but they shaped the understanding of conflict nonetheless. Raiders working from hidden bases in the outer belt struck at merchant shipping, seizing cargo and sometimes ships, slipping away before any military response could arrive. The worlds answered with convoys, with armed merchant vessels, with the relays as an early-warning net. The pirates were never fully defeated; they were suppressed, contained, made unprofitable rather than eliminated. The lesson was that some threats cannot be ended, only managed — that the between is dangerous by nature and always will be.
+### The Treaty of Concordance {#treaty-of-concordance}
 
-## Piracy and the danger of the between
+Sef Varan-Idri's Treaty of Concordance ended the war with the principle that possession is
+provisional and that destroying a habitat is a loss to every world that may one day need shelter.
 
-The routes between worlds are vulnerable by their nature. Ships travel predictable paths, at speeds that make evasion difficult, carrying cargo valuable precisely because it is scarce. Pirates are the predators of this ecosystem: not nations with grievances, but individuals with ships and weapons and the willingness to use them against the unarmed. They work from hidden bases, from abandoned stations, from ships reported lost that go on functioning. They are hard to tell from honest traders until the moment of attack, hard to pursue once they have seized their prize, hard to root out without a military presence the worlds cannot afford to keep.
+### The Three Stations Roll {#the-three-stations-roll}
 
-The response to piracy has been systemic rather than military. Ships travel in convoys, protected by armed escorts. The relays watch the traffic, reporting the anomalies that might mean raider activity. Insurance spreads the risk, making the occasional loss bearable. Ports refuse to trade with suspected pirates, cutting off their markets, making captured goods worthless. These measures do not end piracy; they make it marginal, a cost of doing business rather than a threat to survival.
+The surviving station keeps the **Three Stations Roll** in three parts: people confirmed dead,
+people evacuated, and the households that received them. The last list is read because survival
+continued in borrowed bunks, crowded kitchens, and shifts divided with strangers. Descendants argue
+over spellings and duplicated names, but nobody proposes removing the receiving households. The
+Treaty is taught beside the Roll so its principle never becomes cleaner than the rooms that made it
+possible.
 
-The pirates themselves are a varied population. Some are former merchants, driven to desperation by debt or disaster. Some are the descendants of station populations abandoned in old crises, raised without law, knowing no other way. Some are political radicals, attacking trade as a protest against the economic order. Some are simply criminals, violent people who have found a niche where violence pays. The worlds do not romanticise them; they are killers and thieves, and their victims are ordinary people trying to make a living. But the worlds understand that piracy is a symptom of larger failures — of economic inequality, of political exclusion, of the sheer difficulty of keeping order across distances that defeat the reach of law.
+### The Embargo of the Freeholds {#embargo-of-the-freeholds}
+
+The Embargo of the Freeholds left a different scar. With manufactured goods withheld over tax
+resistance, Freehold workshops built rough substitutes and households learned which shortages the
+official speeches omitted. The core lost a market and the Freeholds kept industries that later
+became a source of pride. This extends the economic record in `35-economy.md`: conflict canon keeps
+the missed repairs, exhausted workers, and distrust that remained after trade resumed.
+
+### The Pirate Wars {#pirate-wars}
+
+The Pirate Wars were never a single campaign or a clean victory. Merchant crews disappeared,
+surviving workers changed routes or left the trade, and port communities absorbed families with no
+body to bury and no final account to settle. Convoys, mutual aid, and refusal to receive stolen
+cargo reduced the harm without ending it. The record treats piracy as injury tied to debt,
+abandonment, and political exclusion, never as romance or a contest of cleverness.
+
+## Returning and waiting
+
+Conflict divides a settlement into people sent away, people kept waiting, and people who took over
+the work. Return does not put the old arrangement back. A veteran may come home to a different
+household, a repaired workplace, a child who knows them from recordings, or a job now done well by
+someone else. The settled worlds treat this as part of conflict, not an awkward epilogue to it.
+
+### The No Parade Rule {#the-no-parade-rule}
+
+The **No Parade Rule** says a returning patrol or conflict crew chooses its welcome. A port offers a
+meal, a private message room, help reaching home, and the option of a public gathering; it does not
+stage triumph around people who may be grieving, ashamed, relieved, or simply tired. Families are
+asked to send one greeter first. The larger crowd waits until the returners say they want one.
+
+### The Two Names Board {#the-two-names-board}
+
+When conflict removes someone from a settlement job, the workplace puts both the absent worker and
+the person covering the post on a **Two Names Board**. On return, neither name erases the other.
+Hours, seniority, housing claims, and future work are negotiated with both records visible. The
+board prevents a veteran being discarded and prevents the person who kept the pumps, school, or
+kitchen running from being treated as a temporary inconvenience.
+
+### The Home and Away Record {#the-home-and-away-record}
+
+Conflict oral histories use a **Home and Away Record**: testimony from someone sent into the dispute
+is paired with testimony from someone who waited, covered work, received evacuees, or opened the
+message that changed a household. The accounts need not agree. Editors preserve the disagreement
+and ask what each person could know at the time. Settlement Radio uses this form for veteran
+interviews so service never becomes the only experience worth remembering.
+
+### The Unclosed Roll {#the-unclosed-roll}
+
+People missing after patrols, raids, or old wars remain on an **Unclosed Roll** until evidence says
+what happened. They are recorded as unreturned, not quietly converted into dead because an office
+wants a total. This extends the historians' distinction in `12-crossings.md` between unknown and
+dead. Households may hold memorials, divide work, and go on living without surrendering the accuracy
+of the name in the record.
 
 ## The long peace and its foundations
 
-The current era is one of long peace — not because conflict has been abolished, but because its costs have become too visible to ignore. The worlds have learned, through hard experience, to manage their disputes within the constraints of distance and time. The Settlement Council gives a forum for negotiation, however imperfect. The relays allow the communication that keeps misunderstandings from escalating. The economic interdependence of the worlds makes war costly for all parties, builds constituencies for peace in every society, gives the patient tools of blockade and embargo a chance to work before force is weighed.
+The settled worlds maintain a long peace through mutual vulnerability, voluntary mediation, shared
+trade, and relays that let accusations receive answers before ships arrive. None abolishes
+grievance. Together they make the cost of escalation visible to canteens, clinics, crews, and
+families before it can be disguised as a distant abstraction.
 
-The peace is held by mutual vulnerability. Every world depends on trade; every world can be blockaded; every world knows that its fleet, however powerful, cannot be everywhere at once. This vulnerability is not weakness but wisdom: the recognition that security lies not in the power to dominate but in the impossibility of being dominated, not in victory but in the shared interest in avoiding the costs of conflict. The peace is not guaranteed; it is a daily practice, a continuous negotiation, a choice made again and again in the face of grievances that might justify war.
+Mediators work slowly because a settlement must be livable after the signatures. A boundary may
+remain disputed under a Working Line; a blockade may lift in stages while the Ledger is checked; a
+missing-person record may remain open after officials want a conclusion. Sef Varan-Idri is
+remembered not for making every party right, but for leaving the Three Stations dispute with an
+agreement people could survive.
 
-The station serves this peace simply by existing. Its broadcasts remind the worlds of their shared humanity, of the voices that speak across the dark, of the common culture that persists despite distance. The music it plays, the stories it tells, the conversations it enables — these are not idle distractions but the fabric of connection that makes war unthinkable. A listener who has heard the voice of someone on a distant world, who has shared a song with them, who has argued with them about the meaning of a novel, is less likely to back the fleet that would destroy them. The station does not prevent conflict; it makes the cost of conflict visible in advance — personal, real.
+### The Ordinary Shift Test {#the-ordinary-shift-test}
 
-The peace is held, too, by memory. The wars of the past are not forgotten; they are taught in schools, kept in rituals, preserved in the names of stations and ships and the dead. The children of the settled worlds learn that their comfort was bought with suffering, that their security was hard-won, that the alternative to peace is not glory but the slow grinding ruin the Silence taught the worlds to fear. This memory is not militaristic; it does not celebrate victory but mourns loss, does not honour warriors but remembers victims, does not seek revenge but understands cost.
+A ceasefire record includes an **Ordinary Shift Test**. Clinics, schools, ferries, repair crews, and
+food stores report whether people completed ordinary work without being stopped, displaced, or
+made to wait for patrol permission. A quiet patrol report alone is not enough. Mediators keep the
+ceasefire provisional until daily life can cross the disputed space again.
 
-The long peace is not permanent. The settled worlds are no utopia; they are human societies with human grievances, human ambitions, human failures. Conflict will come again, in some form, at some time, for reasons that cannot now be foreseen. But the peace has lasted because it is grounded in reality — in the hard constraints of distance and cost, in the shared understanding that war in the settled worlds is not an extension of politics but a failure of it, not a solution but a surrender to the worst in human nature. The worlds keep their peace not because they are good but because they are wise, not because they are gentle but because they have learned what war truly costs.
+Settlement Radio supports the peace by keeping distant people audible to one another and by
+reporting the cost before the symbols. Past wars are taught through testimony, receiving lists,
+empty workplaces, and repairs rather than victory. Memory matters because it gives every new threat
+an old kitchen, an old waiting room, and an old name beside it.
 
 ## Canon facts
 
-1. **War at this distance is slow, ruinously costly, and rare; force measured in seasons seldom repays what it destroys, so the worlds mostly keep an uneasy long peace.**
-2. **Disputes are settled far more often by blockade, embargo, and patient mediation than by fast force.**
-3. **Piracy and raiding shadow the long routes — the chief danger of the between — and the relays double as the worlds' shared early warning.**
-4. **The War of the Three Stations established the principle that possession is provisional and the destruction of a station is a loss to all worlds.**
-5. **The Embargo of the Freeholds, a fourteen-year siege, taught that economic weapons cut both ways, permanently altering relations between core and frontier.**
-6. **The Pirate Wars were never fully won, only suppressed and managed through convoys, armed merchants, and systemic responses rather than military elimination.**
-7. **Pirates are diverse — desperate merchants, abandoned-station descendants, political radicals, plain criminals — and understood as a symptom of larger economic and political failures.**
-8. **Blockades are patient work: ships stationed on the approaches, crews rotated through months of vigilance, costs weighed against the pressure applied over years.**
-9. **The Silence taught that force is the last resort, that war destroys what it seeks to save — hard-won wisdom, not idealism.**
-10. **The long peace rests on mutual vulnerability, economic interdependence, the Settlement Council's voluntary mediation, and the relays' communication that prevents escalation.**
-11. **Memory of past wars keeps the peace through education, ritual, and commemoration that mourns loss rather than celebrating victory.**
-12. **The station serves peace by making the cost of conflict visible in advance — shared culture and voices across the dark turn an enemy into a person.**
+1. **War across the settled worlds is slow, costly, and rare; ships and crews sent into conflict are
+   absent from freight, rescue, repair, and home, and force seldom repays what it destroys.**
+2. **Blockade and embargo apply pressure through trade, but their effects reach clinics, canteens,
+   repair bays, and stranded travellers; mediation is preferred because ordinary life must continue
+   after an agreement.**
+3. **Piracy and raiding remain dangers on the long routes; relays carry warnings, while public
+   reporting names missing crews, interrupted cargo, and waiting households rather than presenting
+   pursuit as spectacle.**
+4. **The War of the Three Stations ended in Sef Varan-Idri's Treaty of Concordance, which established
+   that possession is provisional and destroying a habitat is a loss to all settled worlds.**
+5. **The Embargo of the Freeholds taught that economic pressure harms both sides; Freehold
+   households endured shortages, local workshops built substitutes, and the core lost a market it
+   expected to control.**
+6. **The Pirate Wars ended without a decisive victory; convoys, mutual aid, and ports refusing
+   stolen cargo reduced the harm while merchant communities continued carrying missing people and
+   unsettled losses.**
+7. **Piracy is recorded as harm and as a symptom of debt, abandoned settlements, and political
+   exclusion; reports centre affected crews and households rather than romanticising raiders.**
+8. **A blockade is measured through cargo refused and civilian consequences: clinic shortages,
+   changed rations, stopped repairs, lost work, and passengers unable to complete a journey.**
+9. **The Silence taught that isolated settlements could destroy systems and relationships they
+   still needed when they tried to replace failed trade with force.**
+10. **The long peace rests on mutual vulnerability, interdependent trade, voluntary mediation, and
+    relay communication that lets accusations receive answers before ships arrive.**
+11. **Past conflicts are taught through testimony, receiving lists, missing-person records, and
+    unfinished repairs; commemoration mourns loss rather than celebrating victory.**
+12. **Settlement Radio supports peace by keeping distant people audible to one another and reporting
+    the human cost of a dispute before its symbols or claims.**
+13. **A Working Line preserves ordinary use of disputed territory without deciding ownership, so
+    farms, docks, schools, clinics, and ration offices cannot be turned into proof of possession.**
+14. **A Contact Record for a patrol incident lists each side's claimed location and received signals,
+    then names people harmed or delayed and the facts still disputed; the public copy excludes
+    equipment assessment and manoeuvre detail.**
+15. **A Blockade Ledger records every cargo refused, delayed, or admitted together with the receiving
+    consequence claimed by the settlement; authorities may dispute that account but cannot replace
+    it with tonnage alone.**
+16. **A Civil Passage admits named life-support, clinic, ration, and evacuation cargo through a
+    blockade under neutral accounting; any refusal and the authority responsible remain public.**
+17. **Under the No Parade Rule, a returning conflict crew chooses whether it wants a public welcome;
+    the port first offers food, privacy, messages, and help reaching home.**
+18. **A Two Names Board records both the worker sent away by conflict and the person who kept the job
+    running, so return does not erase either person's work, housing claim, or seniority.**
+19. **A Home and Away Record pairs testimony from someone sent into a conflict with testimony from a
+    person who waited, covered work, or received evacuees; disagreements are preserved rather than
+    edited into one heroic account.**
+20. **The Unclosed Roll records people missing after patrols, raids, and wars as unreturned until
+    evidence establishes what happened; an office cannot convert unknown people into dead to close
+    its totals.**
+21. **The Three Stations Roll lists people confirmed dead, people evacuated, and the households that
+    received them, keeping the Treaty of Concordance tied to the crowded rooms that made survival
+    possible.**
+22. **The Ordinary Shift Test keeps a ceasefire provisional until clinics, schools, ferries, repair
+    crews, and food stores can complete ordinary work across the disputed space without
+    interruption or patrol permission.**
