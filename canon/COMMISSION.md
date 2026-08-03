@@ -17,85 +17,60 @@ fondly.
 
 ## 1. What to write
 
-**One piece remains: `20-peoples.md`.** Every new file and every other top-up in this commission is
-done.
+**Nothing is outstanding.** The first commission is complete — five new files and four top-ups — and
+every one of the seventeen domains now sits at or above the twelve facts the station can draw on for
+a single programme.
 
-> **`54-health.md` is the one to read before writing a sensitive domain.** Health's trap is that it
-> "must never read as actionable medical advice" (§4F), and the file sidesteps it completely by
-> writing about the *system* rather than the medicine: who gets treated (the Open Door), who
-> travels (the Passage Conference), who goes with them (care companions), where they stay
-> (Landing Houses). There is not one line of treatment in it, and it is still the most moving file
-> in the bible. **Write the system, not the procedure** — that is the move for any domain with a
-> trap.
-
-> **A top-up may edit the facts already there, not only append to them.** `52-sports.md` did, and it
-> was right to: two existing facts gained the ratification rule and the honour-ledger detail the new
-> material needed. Editing a fact is safe — its identity is fixed and only its text changes.
-> Renaming a file or an anchor is not.
->
-> **Match the existing file's line wrapping.** `52-sports.md` came back with paragraphs on single
-> 800-character lines. It reads fine and loads fine, but the bible lives in version control, where a
-> one-word change to an unwrapped paragraph shows up as the whole paragraph rewritten. Wrap at
-> roughly 100 characters, as every other file does.
-
-> **Done and accepted: `72-celebrity.md`, `41-crime.md`, `36-logistics.md`, `11-earth.md`,
-> `12-crossings.md`.** Read them before starting anything else — they are the standard to match.
->
-> - **`12-crossings.md` is the cleanest of the five.** It is the only one that restates nothing:
->   every fact adds something canon did not already hold. It also makes an existing figure
->   load-bearing rather than retelling her — Brekka Voss's rediscovery (`15-figures.md`) becomes the
->   reason historians keep *unknown* distinct from *dead*. That is the §3 rule at its best.
->
-> - **`11-earth.md` cleared the hardest bar in this document.** Earth is the one real-world subject
->   §4E permits, and the file names no real nation, city, person, institution or work anywhere —
->   every hook is an invented in-world artefact (the Blue Lesson, the Carrying Lists, Earthwood, the
->   Ordinary Box). That is how to write about something real.
-> - Its one weakness is the §3 rule now in bold above: two of its facts restate what
->   `10-history.md` and `06-gazetteer.md` had already established, instead of building on them.
->
-> - All three handle named places exactly right, and each anchors an event to existing canon
->   **without using a year** — the hardest rule in §4A.
-> - **`41-crime.md` and `36-logistics.md` are the models.** They carry their texture *into the fact
->   list* rather than leaving it in prose: the basket of dry socks by the tribunal door, the
->   children at Far Reach producing several container totals and no figure the loadmaster will
->   sign. Both are canon facts, so the station can actually say them. That is §3's rule working.
-> - **`36-logistics.md` shows the best move available to you: extend, don't restate.** Its burn-day
->   section builds on a fact `70-music.md` had already established (lane-rock's great occasion) and
->   adds the freight crew's side of the same day. Reading the neighbouring files is not a
->   consistency chore — it is where the strongest material comes from.
-> - `41-crime.md` also handles its domain's trap (no method detail, no glorification, no victims as
->   colour) more thoroughly than anything else in the bible.
-
-### New files
+**This file stays as the standing brief.** Sections 2–6 are the contract and do not change between
+commissions. When there is new work, it goes in the tables below. §2's domain list is closed, so a
+future commission is always *more depth in an existing domain*, never a new one.
 
 | Filename | `id:` | `domain:` | What it covers | Target |
 |---|---|---|---|---|
-| `12-crossings.md` | `crossings` | `history` | The migration and the founding: the generation-ships, the long scattering, settlements that failed. | 10–12 facts |
+| *(none outstanding)* | | | | |
 
-**Why two history files when history already has 21 facts.** History is the station's overnight
-backbone, its strongest format, and the lead content for a very large pre-built archive — the
-domain carrying the most hours on air has one of the smaller piles behind it. More history is always
-the right answer.
+---
 
-### Top-ups to existing files
+### What the first commission established — read these before writing
 
-| File | Domain | Add | Note |
-|---|---|---|---|
-| `20-peoples.md` | `peoples` | +4 facts | Peoples shaped by the worlds they live on. |
+`72-celebrity.md` · `41-crime.md` · `36-logistics.md` · `11-earth.md` · `12-crossings.md` ·
+and the top-ups to `52-sports.md`, `56-style.md`, `54-health.md`, `20-peoples.md`.
 
-Read the existing file first and match it. You are extending someone's world, not restarting it.
+Five lessons came out of them, in the order they matter:
 
-**Do the four top-ups before `12-crossings.md`.** Each of those domains currently sits below twelve
-facts, which is the number the station can draw on for a single programme — so it reaches for the
-same handful every time and listeners hear the repetition. Six new facts in `56-style.md` fixes
-something audible; a fifth strong history file does not.
+1. **Put the texture in the fact list, not the prose.** The fact list is the only part of a file the
+   station can quote (§3). `41-crime.md` made the basket of dry socks by the tribunal door a *fact*,
+   so the tribunal can be described on air; `72-celebrity.md` left its best details in paragraphs,
+   where they shape the domain summary and are never spoken.
 
-**Write texture, not just structure.** The one criticism of the accepted `72-celebrity.md` is that
-it explains how its domain *works* — the customs, the rules, the institutions — more than it gives
-the station things to actually *talk about*. Structure is necessary and it got that right. But a
-domain also needs the small, concrete, human material a five-minute item is built from: the specific
-quarrel, the daft tradition, the thing someone always gets wrong. Aim for both, and lean toward the
-material.
+2. **Extend a neighbouring fact; never restate it.** `36-logistics.md` took burn day — already
+   established in `70-music.md` as lane-rock's great occasion — and wrote the freight crew's side of
+   the same day. `12-crossings.md` made Brekka Voss's rediscovery (`15-figures.md`) the *reason*
+   historians keep *unknown* distinct from *dead*. Reading the neighbouring files is not a
+   consistency chore; it is where the strongest material comes from.
+
+3. **Write the system, not the procedure.** Every domain has a trap (§4F). `54-health.md` must never
+   read as medical advice, and it sidesteps that completely by writing about access rather than
+   treatment — who gets seen, who travels, who goes with them, where they stay. Not one line of
+   medicine, and still the most affecting file in the bible.
+
+4. **Anchor to canon without using a year.** `11-earth.md` and `72-celebrity.md` both date a figure
+   against Breathe Easy's unreliable first air plant (`06-gazetteer.md`) rather than a date. That is
+   the hardest rule in §4A and it is always solvable this way.
+
+5. **Ground the abstract in a named place.** `20-peoples.md` had ten facts about categories of
+   human; its top-up added four customs belonging to four specific worlds — Meridian's storm-kin,
+   Cold Harbor's Night Answer, the Forge knock, Ashfall's Second Address. A custom a world actually
+   keeps is worth more than a paragraph about what its people are like.
+
+**On real subjects:** `11-earth.md` cleared the hardest bar in this document. Earth is the one
+real-world subject §5 permits, and the file names no real nation, city, person, institution or work
+anywhere — every hook is an invented in-world artefact. That is how to write about something real.
+
+**Two mechanical notes.** A top-up may **edit** the facts already there, not only append; editing is
+safe because a fact's identity is fixed and only its text changes. And **match the existing file's
+line wrapping** — roughly 100 characters. `52-sports.md` came back with 800-character paragraphs,
+which load fine but make every future one-word change look like a full rewrite in version control.
 
 ---
 
