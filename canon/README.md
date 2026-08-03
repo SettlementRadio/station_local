@@ -183,7 +183,7 @@ conflict: **keep both**, **supersede**, or **edit**.
 | `41-crime.md` | `crime` | | `78-communication.md` | `logistics` |
 | `45-conflict.md` | `conflict` | | `80-cosmos.md` | `geography` |
 
-**All seventeen domains now carry canon** (28 files, 350 facts) — `celebrity` was the last empty one
+**All seventeen domains now carry canon** (28 files, 370 facts) — `celebrity` was the last empty one
 and closed with `72-celebrity.md`. Two domains are deliberately split across a principle file and a
 practice file: `40-law.md` / `41-crime.md` (rights, then cases), and `78-communication.md` /
 `36-logistics.md` (how word travels, then how mass does).

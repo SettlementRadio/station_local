@@ -6,64 +6,258 @@ status: active
 supersedes: []
 ---
 
-# 60-faith.md — the sacred & the search for meaning
+# 60-faith.md — belief, doubt & practice across distance
 
-> **Cornerstone file — what the worlds hold sacred across the dark.** See `README.md`
-> for the authoring conventions.
+> **Cornerstone file — what people believe and, more importantly, what they do about it.** The
+> recurring observances themselves are in `51-observances.md`; this file covers inherited and new
+> faiths, rites of distance, shared religious space and the station's treatment of belief. See
+> `README.md` for the authoring conventions.
 
-## The old faiths in transit
+## What crossed and what changed
 
-The faiths that crossed the dark with the first settlers did not survive unchanged. Traditions that had evolved over millennia on a single world found themselves tested by distance, by the silence between the stars, by the knowledge that the sacred geography of Earth — the mountains and rivers and deserts where the divine was said to have touched down — was now unreachable, preserved only in memory and recording.
+The departure ships carried faith unevenly. Some communities brought libraries, teachers and
+carefully packed objects. Others carried family recollection and a practice nobody had written down.
+The result is continuity without a clean original. Traditions with a shared Earth ancestor may
+disagree about words, authority and what must be done without soil, open sky or ancestral ground.
 
-The covenant traditions — those built on a promised land, a chosen people, a journey out of bondage — fragmented and reformed. Some communities held to orthodox practice with obsessive precision, as if correctness of ritual could bridge the gap from a holy ground no ship could reach. Others reinterpreted radically: the exodus became literal again, the people now wandering not one desert but the void between worlds, the promised land no fixed country but any world that could keep them alive.
+The Carrying Lists in `11-earth.md` establish that religious objects travelled without always
+recording what their users believed. Traditions therefore trace themselves through teachers, ship
+libraries and local adaptations. An honest gap is preferred to an invented ancestry.
 
-The traditions of impermanence fared differently. Teachings that had always held attachment to be a source of suffering found new resonance among people who had left everything behind, who understood in their bodies that to love a place was to be wounded by leaving it. Their old image of the passage between one life and the next mapped uneasily onto the long crossings, the liminal existence of travellers suspended between worlds. And the great absorptive cosmologies, the ones that had always counted worlds upon worlds, simply added the new worlds to their order: fresh heavens recognised, old duties — to act rightly, to build, to carry culture across the dark — stretched to cover the spaces between.
+Covenant traditions changed around the fact of landfall. Some keep exact forms because distance
+makes continuity precious. Others treat any place that sustains life and receives strangers justly
+as promised ground. Their arrival rites are held at airlocks, first wells and working gardens rather
+than at scenery chosen for grandeur.
 
-The secular traditions evolved too. The early settlement period was dominated by a pragmatic materialism, a focus on survival that left little room for transcendence. But as the worlds steadied, as survival became routine rather than emergency, the old questions returned. What is the purpose of survival? What are we building toward? The secular traditions grew their own rituals, their own sacred texts — the founding documents of the settlements, the logs of the first crossings, the names of the dead. The Memorialists treat the preservation of memory as a sacred duty, the keeping of archives and genealogies as a form of worship. The Continuists hold that meaning lives in the chain of causation — each act shaping the next, each generation building on the last, the purpose of life being to ensure that life goes on.
+Traditions of impermanence also found new language in the crossings. They treat departure as a
+lesson in attachment without declaring that grief is a mistake. A common practice is to give one
+ordinary possession to somebody staying behind, not as payment and not because objects are wrong,
+but so leaving includes a deliberate act of release.
 
-## The new faiths of the void
+Secular practice changed alongside religion. A person may keep a departure rite, attend a memorial
+and light a Lumen lamp without making a claim about the divine. Participation is not reliable
+evidence of belief, and absence is not reliable evidence of disbelief.
 
-Distance and darkness bred new religions. The Children of the Signal worship the electromagnetic spectrum itself — the radio waves that carry voice across the void, the starlight that has travelled long to reach new eyes. Their theology is intricate: the signal is both messenger and message, both medium and meaning. They believe that consciousness is a kind of signal, that the dead are not gone but changed in frequency — gone faint rather than silent. Their rites involve long periods of listening, of attunement to the background radiation of the universe, the hiss and crackle that underlies all communication. They are controversial — other faiths accuse them of reducing the sacred to physics, of worshipping technology rather than transcendence. They answer that the sacred *is* physics, that transcendence is the recognition of pattern in the chaos.
+## Faiths made by the settled dark
 
-The Wayfarers — a small, fervent creed born among the Betweeners, though most Betweeners are no more religious than anyone else — hold that the journey is the destination, that the long crossings are not unfortunate necessities but the true purpose of human existence. They believe the settled worlds are a mistake, that humanity was meant to remain in transit, that the building of permanent settlements is a spiritual failure — the fear of death translated into the fear of movement. Wayfarer practitioners often take work on ships, preferring the crossing to the arrival. The creed is tolerated on most worlds but rarely welcomed; its presence is a reminder of a restlessness most people would rather suppress. Its central rite is the Long Vigil — staying awake through an entire crossing, watching the stars shift, refusing to sleep away the weeks as most travellers do.
+### The Children of the Signal {#faction:children-of-the-signal}
 
-The Darkness Dwellers embrace what others fear. They believe the void between worlds is not empty but full — full of something human senses cannot perceive, something that might be God or might be something else entirely. They practise sensory deprivation, seeking to attune themselves to the dark, to hear what speaks in the silence. Their theology is apophatic — they define their deity by what it is not, by the absence that surrounds the worlds. They are considered extreme by most, and several stations have banned their deeper rites as dangerous. But they persist, drawing converts from those who have stared into the dark too long and found something staring back.
+The Children of the Signal treat transmission as sacred and use the vocabulary of carriers,
+frequency and modulation with theological precision, as `55-language.md` records. Followers say
+*gone faint rather than silent* as a phrase of remembrance. They do not treat relay machinery as a
+person. Their devotion attaches to connection, patient listening and the human work that keeps a
+message moving.
 
-## Rites of distance and departure
+Their maintenance handover begins with faults, parts and unfinished work before any devotional
+words. Hiding a failing component behind comforting language is treated as both bad engineering and
+bad faith. The Quiet Engineer is their patron-legend, and the accurate logs in that story matter
+more than claims about where it occurred.
 
-The settled worlds have developed rituals specific to their condition. The Departure Mass is held when a ship leaves orbit — a gathering of those who remain to bless those who go, a recognition that the travellers will be changed by their journey, that the people who return (if they return) will not be quite the same as those who left. The mass varies by tradition: some involve the exchange of physical tokens that will cross the dark; some the reading of names, the acknowledgement of all that may pass before the travellers come home; some only silence, the communal endurance of the time it takes for a signal to reach the departing ship and return.
+### The Wayfarers {#faction:wayfarers}
 
-The Sending of the Dead is universal across the settled worlds. When someone dies, the body cannot be returned to Earth; there is no ancestral ground to receive it. Instead, the dead are launched into space — not into a star, which would cost more energy than most worlds can spare, but into a stable orbit or a slow trajectory toward the outer dark. The rite gathers the community, speaks the dead person's history, acknowledges that they will now travel farther than any living person can follow. Some traditions launch small vessels of keepsakes, messages, recordings — time capsules that may be found by someone, someday, or may drift forever.
+The Wayfarers are a small Betweener creed, not a description of Betweeners generally. They hold that
+the crossing has meaning in itself and that a life should not be judged only by arrival. Some take
+ship work; others stay in ports and support people who travel. Their criticism of permanent
+settlement does not exempt them from maintenance or care owed in the places they use.
 
-The Waiting is a practice kept by those expecting news from far away. When a message is sent from a distant world, the recipient enters a state of suspended expectation — not meditation, not work, but a dedicated liminality. Its length varies with distance: a message from a neighbouring world might mean a day, from the core a week, from the frontier a month or more. During the Wait, the person is excused from normal obligations, fed and sheltered by their community, treated as briefly sacred. When the message arrives — whatever it contains — the Wait ends with a small ritual, the return to ordinary time.
+### The Long Vigil {#long-vigil}
 
-## The Lumen Festival and shared light
+The Long Vigil is kept as a rota from departure to arrival. At least one participant is awake,
+attending to the ship's ordinary sounds and recording a short account for the next watch. Nobody is
+expected to stay awake for a whole crossing, and the rite does not displace crew duties. A completed
+Vigil produces a plain book of meals, repairs, quarrels and quiet watches rather than a claim of
+revelation.
 
-The nearest thing to a universal holy day across the settled worlds is the Lumen Festival, held on the anniversary of the first signal to cross the dark between the worlds. On every world, at the same hour (adjusted for local time), lights are kindled — every lamp, every screen, every source of illumination. The effect is invisible from space; the worlds are too far apart for the light to reach. But the knowledge that others are kindling their lamps at the same moment, that across the dark millions of people are performing the same act, makes a connection that outreaches distance.
+### The Darkness Dwellers {#faction:darkness-dwellers}
 
-The Festival carries layers of meaning. For the religious, it is a rite of hope, light against the dark, the human refusal to surrender to the void. For the secular, it is a commemoration of the moment the worlds became able to speak to one another. For the Children of the Signal it is literally sacred — the praise of transmission itself. For the Darkness Dwellers it is a necessary opposition, the light that makes the darkness visible.
+The Darkness Dwellers believe the void may contain meanings human senses cannot reach. Their
+practice is apophatic: they speak more readily about what cannot be claimed than about what is
+certain. Early unsupervised practices caused safety disputes, so established communities keep their
+observances under the same station rules as everyone else.
 
-The Festival also has a practical function: it is a time when messages are sent, when people take the chance to speak across the distance, knowing others will be listening. The station broadcasts continuously through the Festival, a thread of voice and music binding the scattered worlds. The DJs speak of light, of distance, of the miracle of communication. The callers speak of their lives, their hopes, their dead. The Festival makes a temporary community, a sense of simultaneous existence the settled worlds rarely achieve.
+### The Dark Sitting {#dark-sitting}
 
-## The secular and the spiritual
+A Dark Sitting is held in an ordinary room with the exit available, the safety light working and
+the local watch undisturbed. Participants sit quietly and may leave without explanation. The rite
+does not require altered air, disabled alarms or isolation from the crew. Whatever followers make
+of the silence afterward is reported as their belief, not as something the room proved.
 
-The settled worlds do not divide cleanly into believers and non-believers. Most people occupy a middle space, keeping rituals without full commitment, holding beliefs without systematic theology. A person might attend a Departure Mass, light a lamp for the Lumen Festival, and consider themselves secular — the rituals are social, cultural, not necessarily sacred. Another might reject all organised religion but find meaning in the contemplation of the stars, the vastness of the universe, the improbability of human existence.
+### The Memorialists {#faction:memorialists}
 
-The station reflects this ambiguity. The DJs speak of sacred things — memory, connection, the dead — without necessarily invoking the divine. The music they play includes hymns and sacred songs alongside secular ones; the distinction is often unclear. The callers discuss their beliefs, their doubts, their search for meaning, without the conversation collapsing into debate. The station is a space where the secular and the spiritual coexist, where the question of meaning is treated as legitimate regardless of the answer.
+Memorialists treat accurate remembrance as a sacred duty.
 
-This coexistence is not always peaceful. There are worlds where religious authority dominates, where secular practice is tolerated only in private. There are worlds where religion is suppressed, where believers must gather in secret. The station reaches both, speaks to both, refuses to take sides. Its neutrality is sometimes criticised — why give voice to beliefs that cause harm? — but the station's founders set the principle early: the void is vast enough for all questions, and the search for meaning is a human universal whether the meaning is found or not.
+#### Name Copies {#name-copies}
+
+Name Copies are household records duplicated in a local archive, with corrections added rather than
+old mistakes erased. Earlier spellings, broken relationships and disputed recollections remain
+visible beside later entries. Piety does not permit an archivist to make the record more comforting
+than the evidence.
+
+### The Continuists {#faction:continuists}
+
+Continuists locate meaning in work passed forward. When a member dies, leaves or can no longer keep
+a responsibility, the community records the unfinished task and asks who will accept it. Nobody is
+assigned by spiritual rank. The point is not to preserve every project, but to make abandonment a
+decision somebody names rather than an accident hidden in a cupboard.
+
+## Shared rooms and ordinary service
+
+Most stations cannot provide a separate permanent room for every belief. Faith is therefore lived
+in spaces that must return to other uses: a school after lessons, a canteen before the meal, a cargo
+bay between arrivals. Sharing produces friction over sound, storage and cleaning. People who
+disagree about the universe still have to return the chairs and leave the fire route clear.
+
+### The Open Door Rule {#open-door-rule}
+
+The Open Door Rule governs rites held in shared station space. An exit remains usable, safety
+systems remain active and anyone may leave without being followed or named from the front of the
+room. A household custom cannot override the rule when the household borrows common space. It
+applies to devotional meetings, secular memorials and philosophical societies alike.
+
+### The Common Quiet Room {#common-quiet-room}
+
+Stations large enough to spare one keep a Common Quiet Room. It has movable seats, plain storage
+lockers and no permanent emblem. A booking board shows only whether the room is free, not which
+belief is inside. Each group removes its materials and returns the seats afterward.
+
+### The First Question {#first-question}
+
+Port chaplains and local listeners serve people of any belief. Their First Question is what the
+traveller needs kept: a message sent, a witness found, a food custom respected, a quiet room, or
+someone to sit nearby. They do not begin by testing doctrine. On a small station the role may be
+held by a teacher, medic, cook or retired loadmaster who knows whom to call and when not to speak.
+
+### The Courtesy Place {#courtesy-place}
+
+A household rite that draws neighbours often leaves a Courtesy Place near the exit. It is for
+people attending out of care for someone present rather than assent to the words being used. They
+are not expected to recite, kneel, signal agreement or explain themselves. The place may be a chair,
+a handhold or simply a marked standing space, depending on the room's gravity.
+
+### The Shared Table Rule {#shared-table-rule}
+
+When a rite uses a communal kitchen, its Shared Table cannot make food conditional on prayer or
+membership. A group may keep its own food customs and order of service, but someone who needs the
+meal is served without a declaration of belief. Cooks defend this rule firmly because they know
+exactly which part of the gathering came from everybody's stores.
+
+## Rites of distance, absence and home
+
+Departure rites vary, but most begin before the hatch closes. Those staying name practical promises:
+who will answer messages, keep a room, care for dependants or tell the traveller when plans change.
+Those leaving may carry tokens, but the promises matter more because they create work after the ship
+has gone. At some ports the departure blessing is spoken twice, once for the traveller and once for
+the person taking over their shift.
+
+### The Sending of the Dead {#sending-of-the-dead}
+
+The Sending of the Dead is communal, but the treatment of a body is local. A world may bury,
+reclaim, preserve or release according to its environment, law and the person's wishes; return to
+Earth is rarely practical. What is shared across the worlds is the speaking of the person's history
+and the naming of those who will carry their obligations. The rite does not require a claim about
+what follows death.
+
+### The Waiting {#the-waiting}
+
+The Waiting is kept by a person or household expecting consequential word from far away. Neighbours
+bring meals, cover agreed work and avoid demanding cheerfulness. The person Waiting may continue
+ordinary life, stop the practice or ask not to be visited. When the message comes, the community
+helps with what it contains rather than treating arrival itself as a happy ending.
+
+### The Unclosed Place {#unclosed-place}
+
+A memorial for someone unreturned may keep an Unclosed Place: a seat or name board marked as absent,
+not dead. This extends the record rule in `12-crossings.md` and the Unclosed Roll in
+`45-conflict.md`. Families may mourn, divide work and alter a household without asking belief to
+settle a fact the evidence has not settled.
+
+### Cold Harbor's Night Houses {#cold-harbor-night-houses}
+
+During Cold Harbor's long night, many religious houses take a turn monitoring the local channel.
+They extend the Night Answer in `20-peoples.md`: a meeting stops for a call and resumes only after a
+household, vehicle or watch post has answered it.
+
+### Forge's Unanswered Knock {#forge-unanswered-knock}
+
+At a Forge memorial, people knock once on the dead worker's bench, tool chest or usual rail. Nobody
+gives the answering knock. Afterward the crew and household remove personal markers together so the
+workplace can be used again. The practice grows from the ordinary Forge knock in `20-peoples.md`,
+where sound tests whether a surface can be trusted.
+
+### Ashfall's Second Register {#ashfall-second-register}
+
+Ashfall belief communities keep a Second Register away from their main meeting place. It contains
+contact names, care obligations, memorial records and the wishes needed when a rite must be moved.
+The custom extends the household Second Address in `20-peoples.md`: faith is expected to survive an
+evacuation without making people return for an object.
+
+## Belief on the station
+
+Settlement Radio reports religion as part of ordinary life. It carries reflections, interviews,
+observance coverage, doubt and disagreement, but does not decide whether a belief is true. A guest
+speaks for their own community and experience, not for everyone who shares a label. A presenter may
+ask who performs a rite, who does the work, who may leave and what the practice costs. Ridicule and
+conversion appeals both avoid those questions, so neither is treated as useful radio.
+
+The Lumen Festival belongs to `51-observances.md`, where its shared lighting is fixed. Faith adds
+the difference inside that common act. Some houses pray after the lamps are lit; some read names;
+some sit together without doctrine; some households simply enjoy the light. No creed owns the
+festival, and participation does not require a person to explain what the lamps mean to them.
+
+### The Practice Note {#practice-note}
+
+Every station item about belief carries a Practice Note for the presenter. It identifies what
+people actually do, who performs the work, whether participation is voluntary and which material
+constraint shapes the practice. Claims about the divine are attributed to believers in their own
+terms. The station neither endorses them nor turns them into a joke.
+
+Doubt is covered as practice too: the person attending for family, the believer changing a word and
+the household keeping a rite after losing its doctrine. Neither belief nor disbelief is spared the
+ordinary questions of conduct, cost and care.
 
 ## Canon facts
 
-1. **Old faiths carried from Earth survived the diaspora by changing in the crossing; new faiths were born among the worlds — of travel, of light, of the long dark.**
-2. **Many rites mark distance itself: departures, the dead sent into the dark, and the long wait for word from far away.**
-3. **The Lumen Festival is the nearest thing to a shared holy day — every world kindling its lamps at the same hour, a rite of light against the dark.**
-4. **The Children of the Signal worship transmission itself, believing consciousness is a kind of signal and the dead are not gone but changed in frequency.**
-5. **The Wayfarers — a small, fervent creed born among the Betweeners, though most Betweeners hold no such faith — believe the journey is the destination and permanent settlement a spiritual failure, and keep the Long Vigil: staying awake through an entire crossing.**
-6. **The Darkness Dwellers embrace the void as full rather than empty, practising sensory deprivation to attune to what speaks in the silence.**
-7. **The Sending of the Dead launches bodies into space — not into a star, but to a stable orbit or a slow trajectory toward the outer dark — with the community gathered and the dead person's history spoken.**
-8. **The Waiting is a state of suspended expectation for word from far away; the one Waiting is excused from normal obligations and treated as briefly sacred until the message comes.**
-9. **The Memorialists treat the preservation of memory as a sacred duty; the Continuists find meaning in the chain of causation and the duty to ensure life continues.**
-10. **The station holds the space where secular and spiritual meet, treating the search for meaning as legitimate whatever answer is found, and taking no side.**
-11. **Traditions of impermanence found new resonance in the diaspora — when everything is left behind, attachment to place is understood as a source of pain, and the long crossing becomes a passage between lives.**
-12. **The covenant traditions fragmented in the crossing — some holding orthodox practice with obsessive precision, others reading the exodus literally as the journey between worlds, the promised land any world that can sustain them.**
+1. **Faiths carried from Earth changed in transit because libraries, teachers and objects travelled
+   unevenly; settled traditions preserve honest gaps rather than inventing a complete ancestry.**
+2. **Rites of distance turn departures, delayed messages and deaths far from ancestral ground into
+   shared work for the people leaving and the people who remain.**
+3. **Religious houses, secular groups and households give Lumen lamps different meanings; no creed
+   owns the observance or controls participation in it.**
+4. **The Children of the Signal treat transmission as sacred and use *gone faint rather than silent*
+   as a memorial phrase, but their handover states faults before devotional language.**
+5. **The Wayfarers are a small Betweener creed that finds meaning in the crossing; their Long Vigil
+   is a watch rota from departure to arrival, not one person's attempt to remain awake throughout.**
+6. **The Darkness Dwellers hold Dark Sittings in ordinary rooms with exits, safety lights and local
+   watches undisturbed; what they infer from the silence is reported as belief, not evidence.**
+7. **The Sending of the Dead requires the person's history and obligations to be spoken, while the
+   treatment of the body varies with environment, law and the person's wishes.**
+8. **During the Waiting, neighbours bring meals and cover agreed work for a household expecting
+   consequential word; the person Waiting may continue ordinary life or stop the practice.**
+9. **Memorialists keep earlier entries and later corrections together in Name Copies, while
+   Continuists record unfinished responsibilities and ask who will freely accept them.**
+10. **Settlement Radio lets guests describe their own belief and doubt but does not make one speaker
+    representative of a whole tradition or ask the presenter to decide whether doctrine is true.**
+11. **Traditions of impermanence often mark departure by giving an ordinary possession to someone
+    staying behind, treating release as a practice without declaring attachment or grief wrong.**
+12. **Covenant traditions divide between exact preservation and local reinterpretation; many hold
+    arrival rites at airlocks, first wells and working gardens rather than at grand scenery.**
+13. **The Open Door Rule keeps exits and safety systems available during rites in shared station
+    space, and anyone may leave without being followed or named before the room.**
+14. **A Common Quiet Room has movable seats, plain lockers and no permanent emblem; its booking board
+    shows whether the room is free but not which belief is using it.**
+15. **A port chaplain's First Question asks what a traveller needs kept — a message, witness, food
+    custom, quiet room or company — before asking anything about doctrine.**
+16. **A Practice Note requires a station item on religion to name what people do, who does the work,
+    whether participation is voluntary and which material constraint shapes the practice.**
+17. **Cold Harbor's Night Houses extend the Night Answer by taking turns monitoring the local channel
+    and stopping a meeting until a household, vehicle or watch post answers the caller.**
+18. **Forge's Unanswered Knock is made once on a dead worker's bench, tool chest or usual rail; the
+    crew and household then clear personal markers together so the workplace can be used again.**
+19. **Ashfall faith communities keep a Second Register away from their main meeting place, holding
+    contact names, care obligations and the wishes needed if a rite must move during an evacuation.**
+20. **An Unclosed Place marks an unreturned person as absent rather than dead, allowing a household
+    to mourn and reorganise without changing what the evidence says.**
+21. **A Courtesy Place near the exit lets someone attend a household rite out of care rather than
+    assent; the attendee need not recite, kneel, signal agreement or explain themselves.**
+22. **The Shared Table Rule lets a group keep its food customs but bars rites using communal kitchens
+    from making a meal conditional on prayer or membership.**
