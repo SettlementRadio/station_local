@@ -781,3 +781,39 @@ on Forge — the writer built on an existing canon reference rather than around 
 **C2 is closed.** Engineering step 8 — one show, two speakers, rendered and mixed onto the
 transmitter, which §35 calls the go/no-go moment — is unblocked. C3 (reference clips plus
 `voices/PROVENANCE.md`) is the remaining content item before hardware.
+
+### D-037 · Voice reference clips are committed to the public repo; the cloning risk is accepted — 2026-08-03
+
+§3 requires a decision here rather than a default: *"anyone can clone your presenters' voices… the
+choice to accept it belongs in `DECISIONS.md` rather than being made by default."* Nothing had been
+recorded, the repo has been public since 2026-07-29, and **git history is permanent — once a
+reference WAV is committed publicly, deleting it later does not un-publish it.** The choice is free
+until the first clip lands and irreversible afterwards, so it is taken now, before C3.
+
+**Decision: commit the six reference WAVs to `voices/` in the public repository, and accept that
+they can be cloned.**
+
+**Why.** The clips are synthetic and reference no real person, so this is not a deepfake or
+compliance question — §18's rule is about never cloning a *real* voice, and that rule is unaffected.
+What remains is impersonation-of-the-station risk, and it is small: a fictional presenter's voice has
+little value to an attacker, the station's identity is protected by the all-rights-reserved terms
+covering `voices/` in `LICENSE` (D-032), and the disclosure layers in §18 — spoken ident, hourly
+sting, C2PA, watermark, stream metadata — are what actually distinguish genuine output.
+
+**Against the alternatives.** Gitignoring `voices/` was declined because §3 makes the WAV the
+canonical artifact — *"you own that file; a vendor voice ID is a dependency, a WAV is not"* — and
+§35 calls the directory irreplaceable; moving the least reproducible asset in the project out of
+version control to avoid a low-value attack is a bad trade. Making the repository private was
+declined because the public position is deliberate and now stated in `LICENSE`: the project can be
+read and its methods learned from, while nothing is licensed for reuse.
+
+**What this does not decide.** The voice-identity lock-in (§35 step 13b) is separate and still open:
+once an archive exists in a voice, changing it orphans every show in it, and the choice between bulk
+re-render and an in-world host change must be made **before 50 shows exist**. This entry is only
+about publication.
+
+**Consequence for C3.** `voices/PROVENANCE.md` still carries its full §18 burden — per clip: engine
+and model version, prompt or preset, seed, date, and an explicit statement that no real person's
+voice was used or referenced. That record must be written **at the moment each clip is made**; a
+seed or a model revision cannot be reconstructed six months later. C3 itself remains gated on phase
+A, because the engine must be chosen before a clip is worth making (`PHASES.md`).
