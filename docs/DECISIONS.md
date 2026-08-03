@@ -619,3 +619,33 @@ artefact (§35, C5) — that requirement is about proving the grant, not about w
 **Also closed in the same pass:** a `.gitignore`, which the architecture had assumed since §7
 ("`canon-report.md` — a derived artifact, gitignored like the rundown") and §23 (`.env` gitignored,
 `.env.example` committed) without one ever existing. Two `.DS_Store` files were untracked.
+
+### D-033 · Two duplicate canon facts resolved after the first global audit — 2026-08-03
+
+The first deterministic audit across the whole bible — all-pairs similarity over 353 facts, ~62,000
+comparisons — found two genuine duplicates. Both were in the **inherited** files, none in the nine
+commissioned ones, which is the expected shape: the new material was reviewed file by file as it
+arrived and the older material never had been.
+
+**Concordance was defined twice, in the same domain** (`05-worlds.md` #4 and `06-gazetteer.md` #1,
+both `geography`, similarity 0.38 — the highest in the corpus). Two facts competing for the same
+twelve retrieval seats to say the same thing. The gazetteer's version was richer on every point
+except one clause, so `05-worlds.md` #4 was removed and **"and the world others measure distance
+from" moved into the gazetteer fact** — the operator's own words relocated, nothing rewritten.
+
+**The station's observatory was stated in two tiers at once.** `80-cosmos.md` #8 compressed
+`core/STATION.md` #10 and #12 — the dome, the wall of photographs, the drift, the good-luck custom
+of sighting your home world. `core/` ships verbatim on **every** generation call, so the retrieved
+copy told the model nothing it did not already have, while occupying a `geography` seat. Removed.
+It also carried a small inconsistency worth losing: it had the dome tracking stars, where Tier 0 has
+the automated instruments tracking the relay network and only the telescope manual.
+
+Canon drops 333 → 331 facts; `geography` 30 → 28; no domain falls below the twelve-fact cap. Facts
+renumbered sequentially in both files, which is safe because `fact_key` derives from an anchor or
+the fact's subject, never from position (§7 pass 1).
+
+**The audit is worth keeping as a pass.** It is deterministic, model-free, and ran in seconds, and it
+found something nine individual file reviews had missed. §7's seven passes do not include it, and
+**pass 2 structurally cannot** — it detects contradictions, and near-identical facts do not
+contradict, they agree. Resolution stayed with the operator (§33); the deletions were mechanical
+once the choice was made.

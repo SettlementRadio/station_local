@@ -42,7 +42,6 @@ The DJs return to these themes: the distance between worlds, the time it takes l
 The correspondents in the field send back their own wonders. Sera, from the worlds she visits, describes skies no one has named. Orin records the sounds of places where no one lives. Zhe, from the farthest edge of the settled dark, speaks of the dark as something that speaks back, if you know how to listen. These are not answers. They are the texture of the question.
 
 ## Canon facts
-
 1. **The worlds understand their cosmos well but not wholly; the great open questions — what the dark holds, whether anyone else is in it — remain unanswered and much argued.**
 2. **From every settled world the same deep sky is a shared inheritance, and a settled child looks up at a night stranger and darker than Earth's.**
 3. **The era meets the sublime with optimism rather than dread — awe at a vast indifferent universe, held alongside the warmth of a human voice on the radio.**
@@ -50,6 +49,6 @@ The correspondents in the field send back their own wonders. Sera, from the worl
 5. **No alien signal has ever been received — no voice, no ancient beacon, no echo of other minds in the dark; the silence shapes the era's imagination but is not taken as proof of solitude.**
 6. **The oldest questions of physics — what most of the universe is made of, why its expansion quickens — remain unsolved, humbling reminders of the limits of knowledge.**
 7. **Children learn to read the sky: the steady light of a world, the flicker of a station's rotation, the slow traverse of a vessel between relays.**
-8. **The station's observatory dome tracks the stars and keeps the wall of photographs showing how the view has changed as the station drifts; it is considered good luck to sight one's home world.**
-9. **The settlements have developed local traditions for living with cosmic scale — the Storm on Meridian, the long night on Cold Harbor — not scientific beliefs but ways of being in the universe.**
-10. **The DJs speak of the cosmos with reverence that is not worship — awe without doctrine, humility without despair — and the station itself is a monument to this optimism.**
+8. **The settlements have developed local traditions for living with cosmic scale — the Storm on Meridian, the long night on Cold Harbor — not scientific beliefs but ways of being in the universe.**
+9. **The DJs speak of the cosmos with reverence that is not worship — awe without doctrine, humility without despair — and the station itself is a monument to this optimism.**
+

@@ -17,17 +17,61 @@ fondly.
 
 ## 1. What to write
 
-**Nothing is outstanding.** The first commission is complete — five new files and four top-ups — and
-every one of the seventeen domains now sits at or above the twelve facts the station can draw on for
-a single programme.
+**This file is the standing brief.** Sections 2–6 are the contract and do not change between
+commissions. §2's domain list is closed, so a commission is always *more depth in an existing
+domain*, never a new one.
 
-**This file stays as the standing brief.** Sections 2–6 are the contract and do not change between
-commissions. When there is new work, it goes in the tables below. §2's domain list is closed, so a
-future commission is always *more depth in an existing domain*, never a new one.
+The first commission — five new files and four top-ups — brought every one of the seventeen domains
+to at least twelve facts, the number the station can draw on for a single programme. **This second
+one is about variation rather than coverage.**
 
-| Filename | `id:` | `domain:` | What it covers | Target |
+### The current commission — two top-ups
+
+| File | Domain | Now | Target | Add |
 |---|---|---|---|---|
-| *(none outstanding)* | | | | |
+| ~~`30-polities.md`~~ | `politics` | ~~13~~ **22** | ~22 | **done — accepted** |
+| `45-conflict.md` | `conflict` | 12 | ~22 | **+8, up to +10** |
+
+> **`30-polities.md` is the model for the remaining file.** It answered its trap — *all process, no
+> consequence* — not by mentioning people occasionally but by building the rule into the
+> institutions themselves. The Burden Note requires every tariff proposal to name who absorbs it:
+> the shipper, the port, the settlement store, or the person at the counter. *"A committee may
+> choose the burden; it may not call the burden nobody's."* Every one of its nine new facts reaches
+> somebody it affects.
+>
+> Do the same for conflict. Its trap is **spectacle**, so build the restraint into how the world
+> works: what a blockade does to a clinic's stores, what a veteran came back to, who waits for the
+> patrol that did not report. Never the hardware, never the tactics.
+
+**Why these two, and why so many.** Both are **fast** domains in the station's schedule — politics
+runs in the morning *and* evening magazines, conflict in the evening magazine — so they are drawn on
+almost daily, while a slow domain with the same number of facts is used weekly. Twelve facts stops a
+domain repeating itself; it does not give it *variety*. Each of these domains has about five
+sub-areas, and at thirteen facts there are only two or three per area, so a programme about tariffs
+and one about appointments reach for nearly the same material. At around twenty-two, each sub-area
+has its own cluster.
+
+That number is not a guess: `41-crime.md` and `36-logistics.md` were built from almost nothing in
+the first commission and landed at 27 and 22 facts without anyone specifying a target. That is what
+a properly written domain turns out to weigh.
+
+**Format:** these are top-ups, not new files. Add new `## ` prose sections and append new numbered
+facts to the existing list. You may edit the facts already there if the new material needs it — see
+the mechanical notes below.
+
+### What each domain covers, and the trap in it
+
+**`30-polities.md` — politics.** Council votes, tariffs, appointments, factional manoeuvre,
+settlement autonomy.
+> **The trap: all process, no consequence.** Every political item must reach someone it affects. A
+> fact about a procedure is worth little; a fact about what the procedure does to a person is worth
+> a programme.
+
+**`45-conflict.md` — conflict and military.** Border disputes, blockades, patrol incidents,
+veterans, the aftermath of the old war. **This domain is sensitive.**
+> **The trap: spectacle.** Cover consequence and cost — never hardware, never tactics. **Nothing
+> here should read as thrilling.** The strongest form this domain takes is oral history: what the
+> old war did to the people who came back, and to the places that waited. Write that.
 
 ---
 

@@ -56,15 +56,14 @@ Sublight travel makes the distances crossable, but it does not shrink them. A jo
 The relays themselves are markers of this scale. They are set at intervals a signal can cross, that the station can receive and resend, that hold the network of communication against the dark. The distance between relays is measured in light-hours — in the time a signal takes to travel, in the patience a conversation across the void demands. The station is the hub of this network, the place where the signals converge, the point from which the settled worlds can hear themselves speak.
 
 ## Canon facts
-
 1. **The settled worlds fall loosely into a dense core of long-established worlds and a thin frontier at the settled edge, with the unmapped dark beyond.**
 2. **Neighbouring worlds lie a journey of weeks apart; the dark between is treated as a place in its own right, not mere empty space.**
 3. **The station holds no fixed world but drifts along the relay routes, which is why it can speak to all of them and belong to none.**
-4. **Concordance is the acknowledged centre of the core — seat of the Settlement Council and the largest Exchange Houses, the world others measure distance from.**
-5. **The core is self-sufficient in essentials, trading in luxuries and specialities, and serves as creditor to the frontier.**
-6. **The frontier is a zone of thinning settlement in degrees of remoteness — from monthly ship contact to the unmapped dark, where exploration is costly and risky.**
-7. **Routes between worlds follow the fuel-efficient lanes that orbital mechanics allow, mapped and maintained by the shipping lines, with most of the dark off the lanes.**
-8. **The station drifts strategically where traffic is densest, holding its neutrality through position and convention as a shared institution.**
-9. **The settled region spans months of sublight travel at the fastest — the better part of a year to its far edge; distance is crossed but never abolished.**
-10. **Most worlds were barren until humans greened them, but a few carry native life of their own — seas of simple creatures, slow native forests, shelled things on cold coasts, nothing that thinks — protected by compact and woven into local culture; life is not rare, minds are.**
-11. **The settled places number in the hundreds — worlds, moons, and major stations together, from planet-spanning core cities to ten-family outposts — and every settled child is taught that the count is approximate, because the far edge keeps its own ledger.**
+4. **The core is self-sufficient in essentials, trading in luxuries and specialities, and serves as creditor to the frontier.**
+5. **The frontier is a zone of thinning settlement in degrees of remoteness — from monthly ship contact to the unmapped dark, where exploration is costly and risky.**
+6. **Routes between worlds follow the fuel-efficient lanes that orbital mechanics allow, mapped and maintained by the shipping lines, with most of the dark off the lanes.**
+7. **The station drifts strategically where traffic is densest, holding its neutrality through position and convention as a shared institution.**
+8. **The settled region spans months of sublight travel at the fastest — the better part of a year to its far edge; distance is crossed but never abolished.**
+9. **Most worlds were barren until humans greened them, but a few carry native life of their own — seas of simple creatures, slow native forests, shelled things on cold coasts, nothing that thinks — protected by compact and woven into local culture; life is not rare, minds are.**
+10. **The settled places number in the hundreds — worlds, moons, and major stations together, from planet-spanning core cities to ten-family outposts — and every settled child is taught that the count is approximate, because the far edge keeps its own ledger.**
+

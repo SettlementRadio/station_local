@@ -51,7 +51,7 @@ Not a settlement — a catalogue entry. An empty world at the far edge of the se
 
 ## Canon facts
 
-1. **Concordance is the core's centre by accumulation — oldest continuous settlement, seat of the Settlement Council and the largest Exchange Houses, keeper of Standard speech, home of the synth-harpsichord.**
+1. **Concordance is the core's centre by accumulation — oldest continuous settlement, seat of the Settlement Council and the largest Exchange Houses, keeper of Standard speech, home of the synth-harpsichord, and the world others measure distance from.**
 2. **Meridian is a core world defined by its storm coast — working lighthouses, the Storm spoken of as a presence, pulse-dance born in its sealed storm seasons, an atmospheric racing league in the calms, and twin moons that eclipse its sun for seven minutes once every eleven years.**
 3. **Cold Harbor is an ice-and-ocean world at the frontier's near edge — a brief thaw when the frozen sea opens, a long night its people personify as something that waits, ice racing through the dark months, hard people with warm doors.**
 4. **Forge is the industrial world — builder of hulls, reactors, and the settled worlds' heavy machinery, birthplace of the resonance pipes, watched by everyone because what Forge makes, everyone eventually depends on.**
