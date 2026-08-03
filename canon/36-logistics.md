@@ -82,7 +82,7 @@ freight crew has a story about the item nobody wanted to carry and everybody was
 Burn day is the turnover point of a long crossing, when a hauler changes its working orientation
 and begins the braking half of the journey. Cargo teams inspect restraints before the burn and
 again after it, then eat together once the ship is steady. Freight crews sing lane-rock over the
-engine rhythm, which is why the form treats burn day as its great occasion in `70-music.md`.
+engine rhythm, which is why the form treats burn day as its great occasion.
 
 Nothing about the work stops being work. Someone is always assigned to the quiet watch while the
 others eat, and someone always discovers a cup, tool or loose personal item that crossed the common
@@ -157,7 +157,7 @@ missed opportunity.
 The Cold Harbor Thaw Turn begins when the frozen sea opens and surface settlements can move stored
 cargo to the orbital port. Goods accumulated through the long night arrive together: local food,
 repair work, family parcels, race equipment and the outward loads that will pay for incoming
-supplies. Dock shifts expand, spare rooms fill and the Thaw Docket from `41-crime.md` hears the
+supplies. Dock shifts expand, spare rooms fill and the Thaw Docket hears the
 manifests that did not survive the winter cleanly.
 
 The first outbound ships carry more farewells than ceremony. Some passengers have been waiting

@@ -221,9 +221,28 @@ not. Give them `ship:` or `faction:` before the slug — the one place a colon b
 `12-crossings.md` has the first of these. If you name a vessel or an organised group the world will
 mention again, use the prefix; if you are unsure whether something counts, a plain anchor is safe.
 
-### Cross-references
+### Cross-references — link by naming the thing, never the file
 
-Refer to another file plainly — `see 05-worlds.md`. Don't invent a linking syntax.
+When you build on something another file established, **name the thing**. Do not cite the filename.
+
+> ✅ "The practice grows from the ordinary Forge knock, where sound tests whether a surface can be
+> trusted."
+>
+> ❌ "The practice grows from the ordinary Forge knock in `20-peoples.md`, where sound tests…"
+
+Two reasons, and the second is the one that bites.
+
+1. **A name is findable; a filename is not.** Retrieval matches "the Forge knock" and "the Carrying
+   Lists" by their names (§3). A file path is invisible to it, and it breaks the moment anything is
+   renamed or merged.
+2. **Prose becomes the domain summary that ships on every call.** A paragraph reading *"as
+   `55-language.md` records"* puts a file path into the digest the station carries into **every
+   programme it makes**. Twenty-two of these accumulated across the bible before they were swept
+   out; the sweep was pure deletion, because in every case the named entity was already doing the
+   work and the path was decoration.
+
+If a reader would not understand the link without the filename, the named thing is not established
+clearly enough yet — fix that instead.
 
 ---
 

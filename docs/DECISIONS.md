@@ -649,3 +649,63 @@ found something nine individual file reviews had missed. §7's seven passes do n
 **pass 2 structurally cannot** — it detects contradictions, and near-identical facts do not
 contradict, they agree. Resolution stayed with the operator (§33); the deletions were mechanical
 once the choice was made.
+
+### D-034 · `cast/COMMISSION.md` — a cast-writer brief, at the operator's request — 2026-08-03
+
+The operator asked for a self-contained document to hand an external writer producing the C2 cast
+cards. §32 permits a new document when the operator asks for one; this is that, and it is the exact
+parallel of D-027's `canon/COMMISSION.md` — same class, same reason, sitting beside the thing it
+commissions. It is prose for a human and is never loaded by anything: §5 loads only the `### `
+presenter cards of `cast/CAST.md`, and `canon-check` / `canon-sync` do not see `cast/` at all.
+
+**Why not fold it into `CAST.md`'s header.** That header is Tier 0-adjacent text in a file whose
+whole cost model is "every word ships on every call". A 300-line brief cannot live there, and the
+brief has to stand alone for a writer with no repo access — restating the premise, the seventeen
+domains, the register bounds, the separation rule and the IP firewall, all of which currently sit in
+four different documents the writer will not have.
+
+**What the audit that produced it found**, recorded because it is the input to the next cast task
+and will otherwise be re-derived: the ten inherited cards carry none of §11's five concrete things;
+they describe a music station's dayparts (night shift, weekend afternoons, live sport) against
+`PROGRAMMING.md` §8's speech grid; four of them are field-based on a premise that structurally
+forbids the `two_way`, which is the workhorse item of every fresh daytime programme; the `D9.4` tag
+paragraph and its eleven-name `DOMAINS` list died with D-024 and never matched the seventeen; the
+`R7.0` public-bio contract is named in no document and no code path publishes it; and several sample
+lines are aphorisms or state the clock, which §11a and §13 invariant 2 respectively forbid — and
+sample lines are the strongest steer in the card, so a card that models the failure teaches it.
+
+**Note the same standing tension D-027 recorded.** §33 puts cast cards and speech profiles in the
+never-delegated column. A commissioned writer is a delegation of exactly that; the operator has made
+the call. The mitigation is weaker here than for canon — `canon-check` gates canon, and no
+equivalent gate exists for cards. What does gate them is `grid-sync` validations 1 and 2 (a profile
+for the register kind each role requires; the co-host separation rule), which catch a missing or
+undifferentiated profile but nothing about the writing. The register itself stays a judgement by ear.
+
+### D-034 · Canon links by naming the thing, never the filename — 2026-08-03
+
+Twenty-two filename references had accumulated inside canon **prose** sections — `"The Carrying
+Lists in \`11-earth.md\` establish…"`, `"as \`55-language.md\` records"`, `"the Thaw Docket from
+\`41-crime.md\`"`. Each marked a genuine cross-file extension, which is the strongest thing in the
+bible; the citation *form* was the problem.
+
+**Prose is what generates the Tier 1 domain summary, and that summary ships on every generation
+call** (§5). A file path in a paragraph therefore ends up inside the digest the station carries into
+every programme it makes. The count had reached 22 across eight files, and was rising by six or
+eight per new file as the writer's cross-referencing got better — the better the writing, the worse
+the leak.
+
+**The rule: name the thing, never the file.** A named entity is what retrieval matches on (§3, and
+§7 pass 4 resolves references by name), it survives any rename or merge, and it reads as world
+rather than as apparatus. A path is invisible to retrieval and breaks on contact with
+reorganisation.
+
+**All 22 removed. Twenty-one were pure deletions** — dropping " in `20-peoples.md`" from "the
+ordinary Forge knock in `20-peoples.md`, where sound tests whether a surface can be trusted" leaves
+the sentence intact and the link fully carried by the named custom. That is the proof the paths were
+decoration: in every case the entity was already doing the work. The twenty-second needed a real
+rewrite, because the sentence *was* the cross-reference, and the operator supplied it.
+
+Fact counts unchanged at 370, all seventeen domains intact, and every linked entity still appears in
+both files of its pair. `COMMISSION.md` §3 now carries the rule with worked examples, and the
+closing test: **if a reader would not understand the link without the filename, the named thing is
+not established clearly enough yet — fix that instead.**

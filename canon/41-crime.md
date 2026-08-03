@@ -27,7 +27,7 @@ That makes records part of daily survival. Manifests, maintenance books, cargo r
 accounts and relay acknowledgements are dull until two copies disagree. Then a clerk's careful
 notation may matter more than a forceful accusation. An inquiry begins by establishing what was
 expected, what was actually present and who absorbed the difference. The central question remains
-the one set by the Settlement Compacts in `40-law.md`: what harm was done, and what repair will let
+the one set by the Settlement Compacts: what harm was done, and what repair will let
 people continue living and trading together?
 
 The people doing this work are rarely professional investigators. A port inquiry usually combines

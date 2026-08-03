@@ -116,8 +116,7 @@ many bruised knuckles. A beautiful corridor still has to work in the dark.
 ### The Witness Patch {#witness-patch}
 
 When a station passage is repainted or given a new mural, a small patch of the previous surface is
-usually left beside a service panel. The custom is the wall-bound cousin of the witness seams in
-`56-style.md`: not every old layer is preserved, but its prior use is not erased without notice.
+usually left beside a service panel. The custom is the wall-bound cousin of the witness seams: not every old layer is preserved, but its prior use is not erased without notice.
 Children compare patches while adults argue that the best one was covered long ago.
 
 ## Copies, drift and local hands
@@ -161,8 +160,7 @@ they had assembled in their heads. The most common verdict is that the imagined 
 *The Latecomers* remains the most widely read novel in the settled worlds. Its anonymous author
 tells of a generation ship that learns its destination was settled by people from nearer shores
 while it was still crossing, and continues toward a world that no longer needs its mission. Schools
-argue over whether the book is about duty, pride, migration or the right to change one's mind. The
-Anonymous remains unnamed in `15-figures.md`; attribution games are part of the culture, not an
+argue over whether the book is about duty, pride, migration or the right to change one's mind. The Anonymous remains unnamed; attribution games are part of the culture, not an
 invitation for canon to settle them.
 
 ### The Silence Chronicles {#the-silence-chronicles}

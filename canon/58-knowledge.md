@@ -31,7 +31,7 @@ Between them travel the Circuit Scholars — teachers and researchers who ride t
 
 ## What the worlds refuse to study
 
-Some silences are chosen. No one researches faster-than-light, because the universe has spoken and the answer is no (`75-technology.md`) — proposing it is how a researcher stops being taken seriously. The engineering of minds is restricted, monitored, sometimes banned, pursued only at the edges (`25-other-minds.md`). And the Search for Others goes on precisely because it is *not* refused: patient, funded, centuries old, finding only more silence and counting that as knowledge too. The settled worlds are not incurious; they are careful about which questions can be safely loved.
+Some silences are chosen. No one researches faster-than-light, because the universe has spoken and the answer is no — proposing it is how a researcher stops being taken seriously. The engineering of minds is restricted, monitored, sometimes banned, pursued only at the edges. And the Search for Others goes on precisely because it is *not* refused: patient, funded, centuries old, finding only more silence and counting that as knowledge too. The settled worlds are not incurious; they are careful about which questions can be safely loved.
 
 ## Canon facts
 

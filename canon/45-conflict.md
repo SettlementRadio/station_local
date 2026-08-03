@@ -93,7 +93,7 @@ possible.
 The Embargo of the Freeholds left a different scar. With manufactured goods withheld over tax
 resistance, Freehold workshops built rough substitutes and households learned which shortages the
 official speeches omitted. The core lost a market and the Freeholds kept industries that later
-became a source of pride. This extends the economic record in `35-economy.md`: conflict canon keeps
+became a source of pride. This extends the economic record: conflict canon keeps
 the missed repairs, exhausted workers, and distrust that remained after trade resumed.
 
 ### The Pirate Wars {#pirate-wars}
@@ -138,7 +138,7 @@ interviews so service never becomes the only experience worth remembering.
 
 People missing after patrols, raids, or old wars remain on an **Unclosed Roll** until evidence says
 what happened. They are recorded as unreturned, not quietly converted into dead because an office
-wants a total. This extends the historians' distinction in `12-crossings.md` between unknown and
+wants a total. This extends the historians' distinction between unknown and
 dead. Households may hold memorials, divide work, and go on living without surrendering the accuracy
 of the name in the record.
 

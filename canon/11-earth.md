@@ -160,7 +160,7 @@ Not every inherited error needs a tribunal.
 
 New material still comes from the Old System. Music, reports, scholarship and personal messages
 arrive seasons late, proof that Earth and its neighbouring habitats did not freeze when the ships
-left. The old-system sessions in `70-music.md` are loved partly because their subjects are so
+left. The old-system sessions are loved partly because their subjects are so
 familiar: work, rent, weather, relatives, somebody far away. A new recording can sound ancient in
 the settled worlds and entirely ordinary to the people who made it.
 

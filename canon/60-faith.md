@@ -20,7 +20,7 @@ carefully packed objects. Others carried family recollection and a practice nobo
 The result is continuity without a clean original. Traditions with a shared Earth ancestor may
 disagree about words, authority and what must be done without soil, open sky or ancestral ground.
 
-The Carrying Lists in `11-earth.md` establish that religious objects travelled without always
+The Carrying Lists establish that religious objects travelled without always
 recording what their users believed. Traditions therefore trace themselves through teachers, ship
 libraries and local adaptations. An honest gap is preferred to an invented ancestry.
 
@@ -43,7 +43,7 @@ evidence of belief, and absence is not reliable evidence of disbelief.
 ### The Children of the Signal {#faction:children-of-the-signal}
 
 The Children of the Signal treat transmission as sacred and use the vocabulary of carriers,
-frequency and modulation with theological precision, as `55-language.md` records. Followers say
+frequency and modulation with theological precision. Followers say
 *gone faint rather than silent* as a phrase of remembrance. They do not treat relay machinery as a
 person. Their devotion attaches to connection, patient listening and the human work that keeps a
 message moving.
@@ -167,28 +167,26 @@ helps with what it contains rather than treating arrival itself as a happy endin
 ### The Unclosed Place {#unclosed-place}
 
 A memorial for someone unreturned may keep an Unclosed Place: a seat or name board marked as absent,
-not dead. This extends the record rule in `12-crossings.md` and the Unclosed Roll in
-`45-conflict.md`. Families may mourn, divide work and alter a household without asking belief to
+not dead. This extends the record rule and the Unclosed Roll. Families may mourn, divide work and alter a household without asking belief to
 settle a fact the evidence has not settled.
 
 ### Cold Harbor's Night Houses {#cold-harbor-night-houses}
 
 During Cold Harbor's long night, many religious houses take a turn monitoring the local channel.
-They extend the Night Answer in `20-peoples.md`: a meeting stops for a call and resumes only after a
+They extend the Night Answer: a meeting stops for a call and resumes only after a
 household, vehicle or watch post has answered it.
 
 ### Forge's Unanswered Knock {#forge-unanswered-knock}
 
 At a Forge memorial, people knock once on the dead worker's bench, tool chest or usual rail. Nobody
 gives the answering knock. Afterward the crew and household remove personal markers together so the
-workplace can be used again. The practice grows from the ordinary Forge knock in `20-peoples.md`,
-where sound tests whether a surface can be trusted.
+workplace can be used again. The practice grows from the ordinary Forge knock, where sound tests whether a surface can be trusted.
 
 ### Ashfall's Second Register {#ashfall-second-register}
 
 Ashfall belief communities keep a Second Register away from their main meeting place. It contains
 contact names, care obligations, memorial records and the wishes needed when a rite must be moved.
-The custom extends the household Second Address in `20-peoples.md`: faith is expected to survive an
+The custom extends the household Second Address: faith is expected to survive an
 evacuation without making people return for an object.
 
 ## Belief on the station
@@ -199,7 +197,7 @@ speaks for their own community and experience, not for everyone who shares a lab
 ask who performs a rite, who does the work, who may leave and what the practice costs. Ridicule and
 conversion appeals both avoid those questions, so neither is treated as useful radio.
 
-The Lumen Festival belongs to `51-observances.md`, where its shared lighting is fixed. Faith adds
+The Lumen Festival's shared lighting is fixed among the observances. Faith adds
 the difference inside that common act. Some houses pray after the lamps are lit; some read names;
 some sit together without doctrine; some households simply enjoy the light. No creed owns the
 festival, and participation does not require a person to explain what the lamps mean to them.
