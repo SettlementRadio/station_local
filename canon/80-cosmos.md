@@ -27,19 +27,19 @@ The sky a settled child grows up under is not Earth's sky. The old constellation
 
 For all that is mapped, the great questions remain open. No signal has ever been received from beyond the human settlements — no alien voice, no ancient beacon, no echo of other minds in the dark. The silence is not absolute proof of solitude, but it is a fact that shapes the era's imagination. Some believe humanity is alone. Others believe the others are simply quiet, or listening on frequencies the relays do not use, or avoiding contact for reasons that cannot be guessed.
 
-The oldest questions of physics are still open — what most of the universe is made of, why its expansion quickens — as mysterious now as they were to the astronomers of Earth. The settlements have not stopped wondering. The DJs sometimes mention this — the great open questions that outlive generations, the humility of knowing what you do not know.
+The oldest questions of physics are still open — what most of the universe is made of, why its expansion quickens — as mysterious now as they were to the astronomers of Earth. The settlements have not stopped wondering. The station's presenters sometimes mention this — the great open questions that outlive generations, the humility of knowing what you do not know.
 
 ## Cosmological beliefs
 
-Science and wonder meet in the settlements' relationship with the cosmos. There are no settled religions of the stars, no orthodoxies about the meaning of the dark. But there are practices: the Lumen Festival's lights against the void, the Founding Remembrance's silence, the habit of naming ships after stars they have not yet reached. The station's DJs speak of the sky with reverence that is not quite worship — awe without doctrine, humility without despair.
+Science and wonder meet in the settlements' relationship with the cosmos. There are no settled religions of the stars, no orthodoxies about the meaning of the dark. But there are practices: the Lumen Festival's lights against the void, the Founding Remembrance's silence, the habit of naming ships after stars they have not yet reached. The station's presenters speak of the sky with reverence that is not quite worship — awe without doctrine, humility without despair.
 
 Some settlements have developed their own traditions. On Meridian, they speak of the Storm as a presence, the great atmospheric disturbances that shaped their world. On Cold Harbor, the long night is personified, spoken of as something that waits. These are not scientific beliefs, but they are not opposed to science. They are ways of living with scale.
 
 ## The sublime in plain words
 
-The DJs return to these themes: the distance between worlds, the time it takes light to travel, the smallness of human lives against the span of the settlements. They do not despair. The wonder they cultivate is optimistic — not because the universe is kind, but because humans have learned to be kind within it. The station itself is a monument to this: a voice in the dark, speaking to whoever listens, expecting no answer but continuing anyway.
+The presenters return to these themes: the distance between worlds, the time it takes light to travel, the smallness of human lives against the span of the settlements. They do not despair. The wonder they cultivate is optimistic — not because the universe is kind, but because humans have learned to be kind within it. The station itself is a monument to this: a voice in the dark, speaking to whoever listens, expecting no answer but continuing anyway.
 
-The correspondents in the field send back their own wonders. Sera, from the worlds she visits, describes skies no one has named. Orin records the sounds of places where no one lives. Zhe, from the farthest edge of the settled dark, speaks of the dark as something that speaks back, if you know how to listen. These are not answers. They are the texture of the question.
+The dispatches that come down the relay carry their own wonders, and they arrive finished — nobody out there can be asked a follow-up question, so what the far edges send is what the station gets. A survey hand describes a sky nobody has named. Somebody sends back the sound of a place where no one lives. A keeper at the last relay before the dark writes that the dark answers, if you listen to it long enough. These are not answers. They are the texture of the question.
 
 ## Canon facts
 1. **The worlds understand their cosmos well but not wholly; the great open questions — what the dark holds, whether anyone else is in it — remain unanswered and much argued.**
@@ -50,5 +50,5 @@ The correspondents in the field send back their own wonders. Sera, from the worl
 6. **The oldest questions of physics — what most of the universe is made of, why its expansion quickens — remain unsolved, humbling reminders of the limits of knowledge.**
 7. **Children learn to read the sky: the steady light of a world, the flicker of a station's rotation, the slow traverse of a vessel between relays.**
 8. **The settlements have developed local traditions for living with cosmic scale — the Storm on Meridian, the long night on Cold Harbor — not scientific beliefs but ways of being in the universe.**
-9. **The DJs speak of the cosmos with reverence that is not worship — awe without doctrine, humility without despair — and the station itself is a monument to this optimism.**
+9. **The station's presenters speak of the cosmos with reverence that is not worship — awe without doctrine, humility without despair — and the station itself is a monument to this optimism.**
 

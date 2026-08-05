@@ -47,7 +47,7 @@ Earth's home system — Earth itself, the red-soil greenhouses of Mars, the ice-
 
 ## ES-447
 
-Not a settlement — a catalogue entry. An empty world at the far edge of the settled dark, known to listeners only because Zhe records there: no people, no lights, only the listening equipment and the wind. It stands in for all the places the charts name and no one has made home.
+Not a settlement — a catalogue entry. An empty world at the far edge of the settled dark, known to listeners only because the instruments left there keep reporting: no people, no lights, only the listening equipment and the wind. It stands in for all the places the charts name and no one has made home.
 
 ## Canon facts
 
@@ -58,5 +58,5 @@ Not a settlement — a catalogue entry. An empty world at the far edge of the se
 5. **Halcyon is an old, comfortable, garden-rich core world, locally convinced it should have been the seat of the Council — a conviction the rest of the core finds endearing.**
 6. **Ashfall is a volcanic world that rebuilt smaller after the eruption that buried its largest settlement generations ago; its people are known for steadiness, and the Ashfall Minute marks the hour its signal died.**
 7. **Far Reach is one of the last crewed stations before the dark zones; Breathe Easy is a frontier station named for a warning that became a joke that stuck — its air has been fine for generations.**
-8. **ES-447 is an empty catalogued world at the far edge of the settled dark, known only because Zhe records there — no settlement, only the listening equipment and the wind.**
+8. **ES-447 is an empty catalogued world at the far edge of the settled dark, known only because the instruments left there keep reporting — no settlement, no lights, only the listening equipment and the wind.**
 9. **The Old System — Earth, Mars, Europa, Titan, the Belt, the old Lagrange stations — is inhabited but not counted among the settled worlds; the relay road to it is the longest and thinnest in the network, so its word crosses in seasons and its records arrive late and treasured, and the journey itself takes years.**

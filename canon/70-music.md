@@ -17,7 +17,15 @@ Music in the settled worlds is not merely entertainment. It is memory, identity,
 
 The genres that emerge reflect these conditions. The Void Ballads of the outer stations are slow, spare, built around single voices and the drone of life-support machinery that forms their background. The Core Harmonies of the dense core are layered, complex, orchestral — the product of abundance and proximity, of musicians who can rehearse together without the lag. The Frontier Reels are fast, rhythmic, danceable — music for people who work hard and celebrate harder, who need songs that can be played on instruments carved from local wood and strung with wire salvaged from broken machinery.
 
-Each era has its sound. The early settlement period produced the Exodus Hymns — solemn, hopeful, carrying the weight of departure and the dream of arrival. The expansion era brought the Drift Songs, music made for the long crossings, songs that stretch and loop and reward patience. The consolidation era, when the worlds turned inward and the core grew distant from the frontier, produced the Divergence — a thousand local scenes flowering in isolation, each convinced they were the true inheritors of the musical tradition.
+Each era had its sound, but only the recent ones can still be heard. Recordings do not survive the Silence, the damp, the moves and the salvage crews; what reaches a listener from further back than living memory is repertoire rather than record — tunes that outlived the people who cut them, kept alive because somebody kept singing them, and re-cut in every generation by whoever is working that year. The consolidation era, when the worlds turned inward and the core grew distant from the frontier, produced the Divergence — a thousand local scenes flowering in isolation, each convinced they were the true inheritors of the musical tradition. That is the era the settled worlds are still living in, and its scenes are the ones the station plays.
+
+## What people actually put on
+
+Music is all of that. It is also, most of the time, just what somebody puts on while they work, or to fill a room, or because it is the record everyone is playing this season. The forms that carry the most listening are the young ones — the relay-pop songs about love across the lag, the lane-rock the freight crews shout along to, the reels that clear a floor — and they carry it because they are short, loud, cheerful and about ordinary things. A settlement's biggest record of the year is far more likely to be three minutes about somebody who isn't home than a cycle about the human condition.
+
+What the songs are about is what songs have always been about: someone far off, money, weather, a shift that won't end, a fight, a night out, wanting somebody. The distances do turn up, because the distances are the furniture of everyone's life — a standing hour on the relay, a burn day, a season sealed indoors — but they are the setting and not the subject. The Exodus is one of the great subjects for drama and is not a song subject at all: what holds a stage does not work in three minutes with a chorus, and the settled worlds do not dance to their own founding.
+
+Heritage listening is real and it is a minority taste. Most people, most of the time, are playing what is current, and the arguments about lineage and legacy belong to the enthusiasts, the late shows and the people who write in.
 
 ## Instruments and the material world
 
@@ -41,7 +49,7 @@ The settled worlds remember their great musicians the way earlier ages remembere
 
 Movements rise and fall. The Purists held that only acoustic instruments were legitimate, that electronic sound was a corruption of the tradition. The Synthesists embraced what technology made possible, music that could exist in no other form. The Localists argued that each world should grow its own musical language, independent of the core — a philosophy still alive on the frontier, where isolation makes it less a choice than a fact.
 
-These figures and movements are the vocabulary of the station's DJs. When a DJ plays a song they do not just announce the title; they tell its story, place it in the larger tapestry, connect it to what came before. And the listeners who call in do not just request songs — they argue lineage and legacy, debate the movements, share where they were when they first heard a piece that mattered.
+These figures and movements are the vocabulary of the station's music presenters. When a presenter plays a song they do not just announce the title; they tell its story, place it in the larger tapestry, connect it to what came before. And the listeners who write in do not just request songs — they argue lineage and legacy, debate the movements, and say where they were when they first heard a piece that mattered. The requests arrive by relay, days or weeks after the show that prompted them, which is its own kind of conversation.
 
 ## Scenes of the present day
 
@@ -80,7 +88,7 @@ still singing about the same things: work, weather, waiting, and somebody far aw
 
 ## The station's playlist as cultural memory
 
-The music Settlement Radio plays is not random. It is curated, selected to create a particular mood, to tell a particular story about the settled worlds. The playlist includes the hits of the core, the anthems of the frontier, the obscure local scenes that deserve wider attention. It includes new releases and ancient recordings, music weeks old and music centuries old, all treated as part of a continuous tradition.
+The music Settlement Radio plays is not random. It is curated, selected to create a particular mood, to tell a particular story about the settled worlds. The playlist includes the hits of the core, the anthems of the frontier, the obscure local scenes that deserve wider attention. It includes new releases and old standards, music weeks old and music older than anyone listening — and the oldest of it reaches the air as performances made since, because the records themselves are long gone. All of it is treated as part of a continuous tradition.
 
 For listeners on isolated stations, the playlist is a lifeline. It tells them what is happening in the wider world, what people are listening to, what they are thinking about. It provides a shared cultural reference point, a way of feeling connected to the larger human community despite the vast distances. A listener on a frontier station might never visit the core, but they can know the same songs, feel the same emotions, take part in the same conversation.
 
@@ -105,3 +113,11 @@ The playlist is also an argument. By choosing certain songs and not others, the 
 15. **The void-lounge is the core's late-club standard — slow, smoky songs for the deep hours after the last ferry, carried by relay to every night shift in the settled worlds.**
 16. **Relay-pop is the young bright form — harmony songs about love across the lag, sweethearts keeping a standing hour on the thread across weeks of distance.**
 17. **The old-system sessions are the records that arrive down the longest relay road, from Earth's home system where blues, rock, and the folk rounds never died — seasons late, old news at home and brand new on the settled worlds' air, the living kin of the Earth-roots tradition.**
+18. **Most listening is to current popular music — short, loud, cheerful records people put on to work, drink and dance to — and not to heritage.**
+19. **Relay-pop, lane-rock and the Frontier Reels carry more listening than any other forms, because they are short, cheerful and about ordinary things.**
+20. **Songs are about someone far off, money, weather, a shift that won't end, a fight or a night out; the distances of the settled worlds are the setting and never the subject.**
+21. **The Exodus is one of the great subjects for drama and is not a song subject — the settled worlds do not dance to their own founding.**
+22. **Recordings from beyond living memory do not survive; the deep past reaches listeners as repertoire — old tunes still sung and re-cut by whoever is working now — rather than as playable records.**
+23. **The Divergence, the consolidation era's flowering of a thousand isolated local scenes, is the era the settled worlds are still living in.**
+24. **Heritage listening is a real but minority taste; the arguments about lineage and legacy belong to enthusiasts, the late shows, and the listeners who write in.**
+25. **Requests reach the station by relay, days or weeks after the show that prompted them — no listener has ever spoken to the station live.**
