@@ -850,3 +850,44 @@ and it rewrote the examples in `ARCHITECTURE.md` on its first run — the docume
 their code is illustration. And §23's middle configuration layer, `config/*.yaml` between code
 defaults and `.env`, is not implemented: no such file exists yet, and the task that introduces the
 first one is where the loader for it belongs.
+
+### D-039 · CI installs gitleaks from a pinned release, and the nightly runs only what exists — 2026-08-06
+
+T-004 built the three workflows of §30. Four things had to be settled, and the constraint behind all
+four is the same: the repository is public, so a fork's pull request must never be able to reach a
+secret.
+
+**gitleaks is installed from its pinned release tarball, not from the marketplace action.** The
+official `gitleaks/gitleaks-action` requires a licence key for organisation-owned repositories, and
+a licence key is a secret — which is exactly what a fork-triggered run does not get. Wiring one in
+would either break the scan on forks or, worse, invite `pull_request_target` to make it work. So CI
+downloads `gitleaks_8.30.1_linux_x64.tar.gz`, verifies its SHA-256, and runs the same binary the
+pre-commit hook runs. Renovate can bump the version; the checksum moves with it.
+
+**The trigger is `pull_request`, never `pull_request_target`.** That is the whole of the "no secrets
+to forks" control (§30). `pull_request` runs the fork's code with a read-only token and no
+repository secrets; `pull_request_target` runs it with the base repository's secrets and would hand
+a stranger the keys. No workflow in this repository reads `secrets.*` at all, so there is nothing
+to leak even if the trigger were changed by mistake.
+
+**CI runs `make check`, not its own list of commands.** §30's table names ruff, mypy and the unit
+tests separately, and mirroring them as separate CI steps was the obvious reading. It was rejected:
+two lists of the same commands drift, and the moment CI checks something the local gate does not,
+`make check` passing stops meaning a push will pass. One step, one definition, and the pre-push hook
+and the pull request cannot disagree. `uv lock --check` and the secret scan sit outside it because
+neither belongs in a gate the operator runs a hundred times a day.
+
+**`nightly.yml` runs `make check` and a full-history secret scan, and nothing else.** §30 puts the
+CI smoke run, the conformance suite and the retrieval goldens in this file, but none of those
+pipelines exists yet. Writing the jobs now would mean either skipped jobs that are green for the
+wrong reason or a workflow that is red on the day it is created — and "never document a command
+before it exists" (§32) applies to a workflow step for the same reason. The jobs arrive with the
+pipelines, in phases C and D. What the nightly does add today is real: it builds without the uv
+cache, which is the only place a clean-machine install is proved daily, and it scans the whole
+history, which catches a key that was committed and then removed inside a single pull request.
+
+**`web.yml` exists before `web/` does.** Its path filters mean it never fires today, and each matrix
+leg checks for a `package.json` before doing anything, because `panel/` arrives about thirty days
+after `web/` (§16) and a run that touched only the application that exists is a pass. The Node
+version and the pnpm version come from the application's own `.nvmrc` and `packageManager` field
+(§22), so the workflow never has to be edited to follow them.

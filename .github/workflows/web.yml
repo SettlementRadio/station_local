@@ -1,0 +1,88 @@
+# The two Next.js applications (ARCHITECTURE §21, §30): `web/` is the public site, `panel/` is the
+# Tailscale-only ops panel. This workflow typechecks and lints them. It does not build and does not
+# deploy — Vercel builds `web/` on its own, and deployment is manual from the Studio (§30).
+#
+# Neither directory exists yet, so the path filters mean this file never fires. That is deliberate:
+# the check is in place before the code it guards, and it starts working the day the first
+# `package.json` lands. Budget: under three minutes.
+#
+# Trigger is `pull_request`, never `pull_request_target`, and nothing here reads `secrets.*` — a
+# fork gets a read-only token and no secrets (§30).
+
+name: web
+
+on:
+  pull_request:
+    paths:
+      - "web/**"
+      - "panel/**"
+      - ".github/workflows/web.yml"
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - "panel/**"
+      - ".github/workflows/web.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: web-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: ${{ matrix.app }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      # One application failing must not hide the state of the other.
+      fail-fast: false
+      matrix:
+        app: [web, panel]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # `panel/` arrives about thirty days after `web/` (§16), so for a while one of these exists
+      # and the other does not. A run that touched only the one that exists is a pass, not a
+      # failure — the absent application has nothing to be wrong with.
+      - name: is this application built yet
+        id: app
+        run: |
+          set -euo pipefail
+          if [ -f "${{ matrix.app }}/package.json" ]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            echo "${{ matrix.app }}/ does not exist yet — nothing to check."
+          fi
+
+      # pnpm and the Node version come from the application itself (§22): the `packageManager` field
+      # of its package.json, and its .nvmrc. One place to change them, and it is not this file.
+      - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6.0.10
+        if: steps.app.outputs.exists == 'true'
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        if: steps.app.outputs.exists == 'true'
+        with:
+          node-version-file: ${{ matrix.app }}/.nvmrc
+          cache: pnpm
+          cache-dependency-path: ${{ matrix.app }}/pnpm-lock.yaml
+
+      # --frozen-lockfile for the same reason as `uv sync --frozen` (§27 supply chain): CI installs
+      # what is committed, and fails rather than resolving something new.
+      - name: pnpm install
+        if: steps.app.outputs.exists == 'true'
+        working-directory: ${{ matrix.app }}
+        run: pnpm install --frozen-lockfile
+
+      - name: pnpm lint
+        if: steps.app.outputs.exists == 'true'
+        working-directory: ${{ matrix.app }}
+        run: pnpm run lint
+
+      - name: pnpm typecheck
+        if: steps.app.outputs.exists == 'true'
+        working-directory: ${{ matrix.app }}
+        run: pnpm run typecheck

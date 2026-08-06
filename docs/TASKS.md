@@ -15,20 +15,7 @@ after it is the next card in this file whose `Depends on:` line is satisfied.
 
 ## Agent track — one at a time, top to bottom
 
-### T-003 · Repo scaffold, toolchain, config and logging — **IN PROGRESS**
-Goal: A repo that installs from scratch on a clean machine and refuses to start when something is
-missing, rather than failing at 02:00. Everything else in both phases lands inside it, including the
-transmitter's config and `make deploy`.
-Reads: ARCHITECTURE §21, §22, §23, §24, §31
-Files: `pyproject.toml`, `uv.lock`, `.python-version`, `Makefile`, `.pre-commit-config.yaml`,
-`.env.example`, `README.md`, `src/station/config.py`, `src/station/log.py`, `src/station/cli.py`,
-`tests/{unit,conformance,golden,smoke,eval}/`
-Check: On a fresh clone, `make setup` installs everything and `make check` finishes green. Removing
-a required line from `.env` makes every command stop immediately and name the missing line.
-Committing a file with something that looks like a password is blocked before the commit completes.
-Note: `README.md` is one of the two files an agent may create, and this card names it.
-
-### T-004 · The three CI workflows
+### T-004 · The three CI workflows — **IN PROGRESS**
 Goal: Every push is checked by GitHub before it reaches you, and a leaked key cannot get in — the
 repo is already public.
 Reads: ARCHITECTURE §29, §30, §27

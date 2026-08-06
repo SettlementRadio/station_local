@@ -1,0 +1,71 @@
+# The scheduled run (ARCHITECTURE §30). It catches what a pull request cannot: a runner image that
+# changed under us, a dependency that moved, a secret committed and then removed inside a single
+# pull request. Nothing here is time-critical — a red nightly is read with the morning digest.
+#
+# Today it runs the suites that exist: the `make check` gate and a full-history secret scan. §30
+# also puts the CI smoke run (Kokoro on CPU), the conformance suite against stub engines, and the
+# retrieval goldens against pre-embedded fixture vectors in this file. Those pipelines do not exist
+# yet; the jobs arrive with them, in phases C and D. This file does not pretend they run.
+#
+# No models, no database, no Transmitter (§30). Budget: under fifteen minutes.
+
+name: nightly
+
+on:
+  schedule:
+    - cron: "30 5 * * *" # 05:30 UTC — before the 07:00 digest, so a failure is known by breakfast
+  workflow_dispatch: # and runnable by hand from the Actions tab
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nightly
+  cancel-in-progress: false
+
+jobs:
+  secrets:
+    name: secret scan (full history)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      GITLEAKS_VERSION: 8.30.1
+      GITLEAKS_SHA256: 551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: install gitleaks
+        run: |
+          set -euo pipefail
+          url="https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          curl -fsSL --retry 3 --max-time 120 -o gitleaks.tar.gz "$url"
+          echo "${GITLEAKS_SHA256}  gitleaks.tar.gz" | sha256sum --check --strict -
+          tar -xzf gitleaks.tar.gz gitleaks
+          ./gitleaks version
+
+      - name: gitleaks
+        run: ./gitleaks git --no-banner --redact --exit-code 1 .
+
+  check:
+    name: lint, types and unit tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.2"
+          # No cache: the point of the nightly is to prove a clean machine still builds this repo.
+          enable-cache: false
+
+      - name: uv lock --check
+        run: uv lock --check
+
+      - name: uv sync --frozen
+        run: uv sync --frozen
+
+      - name: make check
+        run: make check

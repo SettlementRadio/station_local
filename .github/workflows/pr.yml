@@ -1,0 +1,80 @@
+# Every push is checked before it reaches the operator (ARCHITECTURE §30).
+#
+# The trigger is `pull_request`, never `pull_request_target`: a run from someone else's fork gets a
+# read-only token, no repository secrets, and the fork's code — which is the whole point. Nothing in
+# this file reads `secrets.*`, so there is nothing for a fork to reach even by accident.
+#
+# No models, no database, no Transmitter (§30). Budget: under three minutes.
+
+name: pr
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# The default token is read-only for everything. Nothing here writes to the repository.
+permissions:
+  contents: read
+
+# A second push to the same branch cancels the first. Nobody waits on a superseded run.
+concurrency:
+  group: pr-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # §27 ranks "a leaked key in a public repo" as the first real risk, so it runs on its own and does
+  # not queue behind the toolchain. Same tool and same rules as the pre-commit hook (§22, §23).
+  secrets:
+    name: secret scan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      GITLEAKS_VERSION: 8.30.1
+      GITLEAKS_SHA256: 551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0 # the whole history: a key removed in a later commit is still published
+
+      # Installed from the pinned release rather than a marketplace action: the official
+      # gitleaks-action needs a licence key for organisation repositories, and a licence key is a
+      # secret — which fork pull requests must not have. Version and checksum are pinned (§27).
+      - name: install gitleaks
+        run: |
+          set -euo pipefail
+          url="https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          curl -fsSL --retry 3 --max-time 120 -o gitleaks.tar.gz "$url"
+          echo "${GITLEAKS_SHA256}  gitleaks.tar.gz" | sha256sum --check --strict -
+          tar -xzf gitleaks.tar.gz gitleaks
+          ./gitleaks version
+
+      - name: gitleaks
+        run: ./gitleaks git --no-banner --redact --exit-code 1 .
+
+  check:
+    name: lint, types and unit tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.2"
+          enable-cache: true
+
+      # The lockfile is the single source of dependencies (§22). This fails if pyproject.toml was
+      # edited without relocking, which is how a fresh clone stops matching this machine.
+      - name: uv lock --check
+        run: uv lock --check
+
+      # Python comes from .python-version; uv downloads it. --frozen refuses to touch the lockfile.
+      - name: uv sync --frozen
+        run: uv sync --frozen
+
+      # One step on purpose: `make check` is the gate the operator runs and the hook runs on push
+      # (§22). If CI ran its own list of commands the two would drift, and the local gate would stop
+      # meaning anything.
+      - name: make check
+        run: make check

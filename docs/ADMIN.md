@@ -32,6 +32,24 @@ and each system tool present. Ends in `ready`, or names what is missing.
 
 ---
 
+## What GitHub checks, and when
+
+Three workflows, in `.github/workflows/`. None of them touches the database, the Transmitter or a
+model, and none of them can reach a secret.
+
+| Workflow | Runs when | Does |
+|---|---|---|
+| `pr` | every pull request, and every push to `main` | the secret scan, and `make check` |
+| `nightly` | 05:30 UTC daily, or on demand from the Actions tab | the same two, without the build cache and over the whole history |
+| `web` | only when `web/` or `panel/` changes | lints and typechecks them; neither exists yet, so it never runs |
+
+`pr` finishes in about two minutes and is the one you wait for. `nightly` is read with the morning
+digest, not watched.
+
+To run the nightly by hand: the repository's **Actions** tab → **nightly** → **Run workflow**.
+
+---
+
 ## Recovery
 
 ### A command stops immediately saying configuration is incomplete
@@ -61,6 +79,21 @@ put it in `.env`, and add the line to `.env.example` with an empty value in the 
 
 Do not pass `--no-verify`. The repository is public: a committed secret is public the moment it is
 pushed, and deleting it later does not un-publish it.
+
+### A pull request check is red
+
+Open the failing check on GitHub and read the last lines of the step that failed.
+
+- **secret scan** — a key is in the branch's history. It is not enough to delete it in a new commit:
+  the scan reads every commit, and so does anyone who clones the repository. Treat the key as
+  published, rotate it, and rewrite the branch so the commit that carried it is gone.
+- **make check** — run `make check` on your Mac and you will see the same failure locally. It should
+  not normally get this far: the same gate runs before every `git push`.
+- **uv lock --check** — `pyproject.toml` changed without the lockfile being rebuilt. Run
+  `uv lock`, commit `uv.lock`, and push again.
+
+A pull request opened from somebody else's copy of the repository runs the same checks with no
+access to any secret. That is deliberate and cannot be granted per-pull-request.
 
 ### A commit is refused for a large file
 
