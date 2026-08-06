@@ -91,7 +91,7 @@ phase, so the person who has to write all of it can see it at once.
 | **`grid.yaml`** (C4) | **D** | ~30 programme entries from PROGRAMMING §8 | **now** — the grid is written and validated |
 | **Pool pieces** (C7) | **E** | 37 minimum across three length bands, all filler — idents are imaging (D-008) | after D |
 | **Imaging + jingles** (C6) | **F** | **~30 jingle sets** — one per strand, each an open, close and bed, plus a sting for news — and the station furniture on top. Call it 100+ pieces | after F's Suno account |
-| **Music catalogue** (C5) | **F** | *undecided — see below* | after F's Suno account |
+| **Music catalogue** (C5) | **F** | **7 labels · ~32 artists · ~68 releases · ~540 tracks** (D-040). Phase F ships on a floor of **140** — two complete labels | after F's Suno account |
 | **The archive** | **H** | ~4,000 speech-minutes, ~165 hours | **not before F** (D-006) |
 | **LICENSE decision** (C10) | **J** | code and canon almost certainly want different terms | **now** |
 
@@ -119,10 +119,14 @@ operator can make.
 >
 > > *n* labels × artists per label × albums per artist × tracks per album
 >
-> Six labels, three or four artists each, two or three albums apiece at eight to ten tracks lands
-> near **450–500 tracks** — and, more usefully, says to generate music in album-shaped batches with
-> credits rather than as singles. **Decide the structure before phase F starts** and record it;
-> the numbers above are an illustration, not a decision.
+> **Settled in D-040.** Seven labels — two flagship, four standard, one old-system import house —
+> ~32 artists, ~68 releases, **~540 tracks**, roughly 34 hours of music. The structure, the genre and
+> category allocations and the production workflow are recorded in `music/COMMISSION.md`.
+>
+> **The operative number is the staged floor, not the total.** Phase F ships on **140 tracks** — two
+> complete labels — because F's outcome is *one* music show whose host knows the discography, and
+> the point is to prove the pipeline before committing four hundred more tracks to it. The archive
+> (H) needs **450**. Below roughly **300** the §8 cold-start relaxations fire on most hours.
 
 ---
 
@@ -138,7 +142,7 @@ this says *when*.
 | Chatterbox vs Qwen3-TTS for cast | **A** — the same 90-second two-hander through both. **A listening test and nothing else** (D-019): watermarking is recorded, never weighed |
 | Which freshness tier the grid ships at | **A** — falls out of the RTF measurement against `PROGRAMMING.md` §9 |
 | Writer model | **narrowed in A, settled in C** — `make benchmark` disqualifies candidates cheaply on synthetic context; choosing between the survivors is a blind read (§36.2) and needs real canon |
-| The catalogue's shape | **before F** — labels × artists × albums × tracks; C5 cannot start without it |
+| ~~The catalogue's shape~~ | **closed 2026-08-04, D-040** — seven labels, ~540 tracks, staged floor of 140 for F |
 | Voice identity when the archive is deep | **F**, at step 13b — before 50 shows exist, not 500 |
 | Sign the Code of Practice deployer section | **G** — the lawyer |
 | Panel screens | **K** — whatever was actually reached for in the first 30 days |
@@ -366,9 +370,11 @@ which the hourly playlist build depends on never re-probing, and rendered pool a
 are never invalidated because that is the point of rendering them once.
 **Build steps:** 12, 13, 13b, 13c.
 
-> **Two of §38's open decisions close in this phase**: the catalogue's shape, which must be settled
-> *before* F starts and is what makes C5 a structure rather than a track count, and voice identity
-> at step 13b — bulk re-render versus an in-world host change, forced before 50 shows exist.
+> **The catalogue's shape was the prerequisite and is now closed** (D-040), so C5 is a structure
+> rather than a track count and F can start on the content whenever the account exists. **One §38
+> decision still closes inside this phase**: voice identity at step 13b — bulk re-render versus an
+> in-world host change, forced before 50 shows exist. D-043 notes that the *artist* personas in the
+> music catalogue carry the identical lock-in and reach it sooner.
 >
 > **Step 13c's `make pool-check` is the back-timing pool, not the archive.** It counts `pool_items`
 > per length band (§13) and says nothing about H's 165 hours. The two are different pools with

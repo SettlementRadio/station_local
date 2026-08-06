@@ -3729,7 +3729,6 @@ package, the canon pipeline, the transmitter, the working agreement.
 
 | Decision | The deciding test |
 |---|---|
-| **The catalogue's shape** | Never stated: §8 gives rotation weights and separation rules but no size. The binding constraint is structure, not count — a label retrospective needs a label with artists and albums behind it (§10). Specify labels × artists × albums × tracks, and let the count fall out. Decide before phase F |
 | Writer model | Same brief, same context, candidates write `The Evening Report`. Read blind (§36.2) |
 | Chatterbox vs Qwen3-TTS for cast | Same 90-second two-hander through both. Listen |
 | Which freshness tier the grid ships at | Falls out of the RTF measurement (§36) against `PROGRAMMING.md` §9 |
@@ -3743,4 +3742,6 @@ music does not fill gaps; where the fresh hours sit — `PROGRAMMING.md` §8 is 
 real-person match threshold (D-009); the Saturday chart slot (D-010); whether chart clips score
 (D-011); whether the cast engine must watermark (D-019 — it must not be chosen on that); and the
 archive pool size versus the separation window (D-021 — the pool is elastic, the window never
-moves, and the launch date absorbs the difference).
+moves, and the launch date absorbs the difference); and **the catalogue's shape** (D-040 — seven
+labels, ~32 artists, ~68 releases, ~540 tracks, with a staged floor of 140 for phase F and 450 for
+the archive; the structure is recorded in `music/COMMISSION.md`).

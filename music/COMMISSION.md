@@ -641,23 +641,126 @@ music/
       audio/<album>/NN.mp3
 ```
 
-### The loop — eight steps per label
+### Four nested levels — read this before the step list
 
-| # | Who | Step |
+Almost every ordering question answers itself once the nesting is clear. **Each level is a different
+unit of a different thing:**
+
+```
+LABEL     ← one batch, one working session, one style palette
+  ARTIST  ← one voice. The persona is pinned here and nowhere else
+    ALBUM ← one message to the writer. Lyrics arrive an album at a time
+      TRACK ← one generation
+```
+
+**You never invent a band.** You pick a *slot* — one row of §4 — and write ten lines of constraint.
+The writer invents the label, its roster, its albums and its titles inside that constraint. Your job
+is choosing, screening and listening; the writer's job is inventing; Suno's job is performing.
+
+### Stage 0 — the catalogue constants, decided once before batch 1
+
+**Two things cannot be decided per batch, and this is the gap that ruins a catalogue quietly.** If
+each label picks its own years and its own players independently, nothing ever lines up and two of
+the programmes in §5 become unmakeable.
+
+| Constant | Why it cannot wait |
+|---|---|
+| **The eight anchor years** | `Night Record` plays "one label or **one year**". A year is only a programme if ≥25 tracks across ≥4 artists and ≥2 labels landed in it. Labels written independently will scatter across eighty years and cluster in none |
+| **The 6–10 recurring session players** | §6 requires them to appear across **≥3 labels**. A player invented during batch 4 cannot retroactively have played on batches 1–3 |
+
+Both are one short conversation with the writer, before any label exists. Keep the results in a file
+you paste into **every** later brief, alongside the running list of names already used.
+
+```
+Brief 0 — the constants. Read COMMISSION.md first.
+
+Return two lists and nothing else:
+
+1. Eight anchor years, present = 2626. Five or six inside the last thirty-five
+   years, two or three in the old-standards window. One line each: what happened
+   in the world of music that year that made everyone release at once.
+
+2. Six to ten session players — name, instrument, one line of character. These
+   are the people who turn up on everybody's records. Spread the instruments;
+   include at least one resonance-pipe player and one synth-harpsichord player.
+```
+
+### The loop, per label
+
+| # | Who | Step | Level |
+|---|---|---|---|
+| 1 | you | **Write the slot card** — ten fields, below. This is the only creative decision you make per batch | label |
+| 2 | writer | **Brief A — the roster.** Returns the label, its artists, its albums, and every track *title* with its one-fact line. **No lyrics, no prompts, no durations** | label |
+| 3 | you | **Screen the names** (§8 rules 5–6). Search every artist, group, label and title. A collision costs one message now and a re-record later | label |
+| 4 | you | **Assign ids and file paths.** `t_0141`, `music/<label>/<album>/03.mp3`. Before generation, so the audio has somewhere to land | label |
+| | | **↓ then repeat 5–8 for each artist on the roster** | |
+| 5 | writer | **Brief B — the artist's first album.** Returns, per track: lyrics plus a style prompt from the §2 palette | album |
+| 6 | you | **Cast the voice.** Generate 3–5 of those tracks. Pick the best *voice*. Pin it as a persona named the artist's id | artist |
+| 7 | you | **Generate the rest of that album** with the persona applied. Log as you go | track |
+| 8 | writer→you | **Brief B for their next album, generate, repeat.** The persona is already fixed — no second audition | album |
+| | | **↑ next artist** | |
+| 9 | you | **Measure** every keeper: real duration, intro ramp to the vocal entry, outro type | track |
+| 10 | you | **Complete the catalogue entries** with the measured fields. Batch closed | label |
+
+**So the lyrics always exist before the audition** — they arrive at step 5 and the casting at step 6
+uses them. You are never generating against placeholder words, and the audition takes are usually
+keepers, so nothing is wasted.
+
+### Step 1 in detail — the slot card
+
+**Ten fields. Nothing else.** Eight of them you copy from §4 and §1; only two are a real judgement
+call, and those two are the ones that make this label different from the other six.
+
+| # | Field | Where it comes from |
 |---|---|---|
-| 1 | you | **Pick the slot.** One row from §4. Write ten lines: which label slot, which forms it carries, which era, what its house style is, whether it is defunct or in trouble |
-| 2 | writer | **Brief A — identities.** Returns the label, its artists, its albums and every track *title* with its one-fact line. **No lyrics yet** |
-| 3 | you | **Screen the names** (§8 rules 5–6) before anything is generated. Search each artist, group, label and title. A collision costs one message to fix now and a re-record later |
-| 4 | you | **Assign ids and file paths.** Mechanical: `t_0141`, `music/<label>/<album>/03.mp3`. Do it before generation so the audio has somewhere to land |
-| 5 | writer | **Brief B — songs.** One album at a time. Returns, per track: lyrics, plus a Suno style prompt built from the §2 palette |
-| 6 | you | **Generate**, album by album, one voice per artist. Log the prompt, persona, model version and date **as you go** |
-| 7 | you | **Measure.** Play each keeper and note the real duration, the intro ramp to the vocal entry, and the outro type |
-| 8 | you | **Complete the catalogue entry** with the measured fields. Batch closed |
+| 1 | **Slot** | the §4 row number |
+| 2 | **Home** | §4 — a world already in canon |
+| 3 | **Forms and the split** | §4, with track counts that respect §2's totals |
+| 4 | **Era** | §4 — founded when, still running or folded |
+| 5 | **Roster size** | §1 — flagship, standard or import |
+| 6 | **House style** | **yours.** One concrete production phrase |
+| 7 | **Standing** | Purist, Synthesist or Localist — and whether they moved (§2) |
+| 8 | **Its trouble** | **yours.** What is going wrong for it now |
+| 9 | **Anchor years** | which of Stage 0's eight this label lands on |
+| 10 | **Must make possible** | which §5 programmes this batch has to unlock |
 
-### Brief A — identities
+**Field 6 is the one that carries the sound.** "Warm" is not a house style; it tells the writer
+nothing and tells Suno less. A house style is a phrase an engineer could act on — the architecture's
+own example is *"close-mic, unhurried"*. Everything the label releases has to be recognisably that.
 
-> Paste after `COMMISSION.md`. Include the running list of names already used across earlier
-> batches, or the writer will reinvent the same three surnames every time.
+**Field 8 is what gives the world something to do with the label.** A label with no trouble generates
+no beats, no anniversaries and no retrospective worth 56 minutes.
+
+> **Worked example — slot 1. Copy the shape; replace every value with your own.** Fields 6 and 8
+> below are placeholders standing in for your decisions, not recommendations.
+
+```
+1  Slot            1 — flagship, core prestige
+2  Home            Concordance
+3  Forms           Core Harmonies ~40 (the whole world's supply — this is its home)
+                   relay-pop ~45 (its commercial half)
+                   void-lounge ~20 (the core's late clubs)
+4  Era             Old. Founded generations back, still running, still the incumbent
+5  Roster          5 artists · 2–3 albums each · 8–12 tracks · ~105 tracks total
+                   at least 2 artists with 18+ tracks (artist profiles)
+                   at least 1 cornerstone album of 12–14 (album story)
+6  House style     <yours> — e.g. "room mics, real players, nothing hurried,
+                   every record sounds like it was made in the same hall"
+7  Standing        Purist by conviction and Synthesist in practice; they deny this
+8  Its trouble     <yours> — e.g. not failing, just complacent: an ageing roster,
+                   and the young acts keep signing with the frontier instead
+9  Anchor years    lands on Stage 0 anchors <A>, <C>, <F>
+10 Must unlock     one label retrospective · two artist profiles · one album story
+```
+
+That is the whole of your creative input for a batch of a hundred tracks. Everything else — the
+label's name, its founders, its five artists, their albums, every title and every one-fact line —
+comes back from the writer in step 2.
+
+### Brief A — the roster
+
+> Paste after `COMMISSION.md`. Always include the Stage 0 constants and the running names list, or
+> the writer will scatter the years and reinvent the same three surnames every batch.
 
 ```
 Write batch <N>: label slot <#> from §4.
@@ -668,23 +771,37 @@ Return YAML only, in the §17a shape: one label, its artists, its albums, and ev
 track with title, track_no, and its one-fact line. Follow §3 for release years and
 §5 for how deep the roster has to be. No lyrics, no prompts, no durations.
 
+Anchor years — put most releases on these:
+<paste Stage 0 list 1>
+
+Session players available to credit:
+<paste Stage 0 list 2>
+
 Names already used elsewhere in the catalogue, do not reuse or echo:
-<paste list>
+<paste running list>
 ```
 
 ### Brief B — songs
 
-> One album per message. Smaller messages hold the palette better than one enormous one.
+> **One album per message**, in the same conversation as Brief A so the writer still has the roster.
+> Smaller messages hold the palette far better than one enormous one.
 
 ```
 Album: <title>, <artist>, <year>, <form>.
 
 For each track return:
-  1. lyrics — §6's subject rules and the swap-the-nouns test
-  2. a Suno style prompt from the §2 palette for this form, 
-     plus what to exclude
-Every track has a vocal. Nothing about leaving Earth.
+  1. lyrics — §6's subject rules and the swap-the-nouns test.
+     Open with an instrumental-intro tag before the first verse.
+  2. a Suno style prompt from the §2 palette for this form, and an
+     exclude-styles line.
+
+Every track has a vocal. Nothing about leaving Earth. Keep the label's
+house style audible across all of them — this is one label's record.
 ```
+
+**On the artist's *first* album, add one line:** `Order the tracks so the first three are the most
+typical of this singer` — those are the three you audition with, and you want them representative
+rather than the three strangest things on the record.
 
 ### The two-pass rule for track fields
 
@@ -702,10 +819,40 @@ two seconds long clips a vocal on air, every time that track plays, forever.
 ### Generating — what actually matters in the session
 
 - **Use custom mode** — your lyrics, your style prompt. Never let the tool write lyrics (§8 rule 3).
-- **One voice per artist, held across every album.** Whatever the current interface calls its voice
-  or persona feature, create one from the artist's first good track and reuse it. **This is the
-  single most important setting**, because an artist profile is 56 minutes of one artist and a voice
-  that drifts between albums makes the show unmakeable.
+
+#### One voice per artist — the audition, and why it comes first
+
+**The artist is the unit of voice identity, not the track.** An artist profile is 56 minutes of one
+artist and an album story is 12–14 tracks off one record. Generate those track by track without
+pinning a voice and you get fourteen different singers, the host says *"another one from her second
+record"* over a stranger, and the programme is unmakeable. This is the single most expensive mistake
+available in the whole commission, and it is invisible until you build the show.
+
+So, before generating an artist's catalogue, spend twenty minutes casting them:
+
+1. **Audition.** Generate three to five tracks for that artist on the label's style palette. Use real
+   lyrics from their album — this is not wasted work, one of these usually becomes a keeper.
+2. **Choose on voice, not on song.** You are casting a singer, not picking a single. The best song
+   with the wrong voice loses to a mediocre song with the right one.
+3. **Pin it.** Make that take into a reusable voice — whatever the current interface calls a
+   *persona* — and **name it exactly the artist's id** (`marren`, not "cool folk singer 2"), so the
+   log, the catalogue and the tool all say the same word.
+4. **Generate the artist's whole discography with it applied**, varying the style prompt per track
+   only *within* the label's palette. Push the prompt far from the persona's origin and the two
+   fight; you get drift, which is the thing the persona existed to prevent.
+5. **A group with two lead singers needs two personas.** Record which sings what in the credits —
+   "the other one sings this one" is exactly the detail the music presenter is written to notice.
+
+**Finish an artist inside one model version.** If the tool upgrades mid-catalogue, the same persona
+can come back subtly different, and an artist whose albums straddle two versions will not sound like
+one person. Record the version per track; if an upgrade lands mid-artist, finish that artist on the
+old version rather than starting the next album on the new one.
+
+> **This is the same trap as the presenters' voices, and it bites earlier.** The architecture forces
+> a decision at build step 13b — bulk re-render versus an in-world change — *before fifty shows exist
+> in a voice*, because after that it is unaffordable. Artist voices have the identical shape: losing
+> a persona means re-rendering that artist's **entire catalogue**, not one track. Decide how you are
+> storing and backing up persona ids at the pilot, not at label six.
 - **Force the intro ramp with a structure tag.** Put an explicit instrumental-intro tag at the top of
   the lyric before the first verse. This is the practical lever for §7's rule that 40% of tracks need
   a ramp of eight seconds or more — you cannot get there by hoping.
@@ -719,14 +866,32 @@ two seconds long clips a vocal on air, every time that track plays, forever.
   (§8 rule 8). Capture the plan's commercial-use terms as they read **at the start of each month you
   generate in**, not once at the end.
 
-### The batch log
+### Logging as you go — what that actually means
 
-One table per batch, at the top of `production.md`. It is the difference between a catalogue you can
-audit and one you have to trust.
+**Write the row at the moment you keep the take, not at the end of the session.** Two of these
+fields cannot be reconstructed afterwards: the exact prompt (you will have edited it six times) and
+the model version (an upgrade rewrites what "current" means). The tool's own history will not save
+you, because it cannot tell you *which* take you kept or why.
+
+Three things happen the moment a take is a keeper, in this order:
+
+1. **Download it and rename it to the assigned path immediately** —
+   `music/<label>/<album>/03.mp3`. The tool's default filenames are unusable and after forty tracks
+   you will not know which is which. This is the step people skip and regret.
+2. **Paste the prompt block into `production.md`** — the style prompt, the exclude-styles line, and
+   the persona used. Verbatim, not summarised.
+3. **Add the log row.**
+
+One table per batch, at the top of `production.md`:
 
 ```
-| track id | title | attempts | kept | persona | model ver | date | licence period |
+| track id | title | attempts | persona | model ver | date | licence period |
 ```
+
+Plus, once per batch rather than per track, the line §8 rule 8 requires: **an explicit statement
+that no real artist, work, band, label or voice was named, referenced or uploaded anywhere in this
+batch.** That sentence, and the prompts sitting underneath it as evidence, are what the phase G
+lawyer review is actually going to read.
 
 ### A batch is done when
 

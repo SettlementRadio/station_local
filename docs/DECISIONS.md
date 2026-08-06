@@ -891,3 +891,127 @@ leg checks for a `package.json` before doing anything, because `panel/` arrives 
 after `web/` (§16) and a run that touched only the application that exists is a pass. The Node
 version and the pnpm version come from the application's own `.nvmrc` and `packageManager` field
 (§22), so the workflow never has to be edited to follow them.
+
+### D-040 · The catalogue's shape — seven labels, ~540 tracks, and a staged floor — 2026-08-04
+
+§38 has carried "the catalogue's shape" as an open decision since v9, and `PHASES.md` gates the
+whole of phase F on it: **C5 cannot start without it.** It is closed here.
+
+**Decision: seven labels · ~32 artists · ~68 releases · ~540 tracks, roughly 34 hours of music.**
+Two flagship labels of ~215 tracks between them, four standard labels of ~250, one old-system import
+house of ~45, and ~30 unaffiliated one-offs. Genre allocation across the eight canon forms, category
+weights, duration bands, intro-ramp and outro proportions are all recorded in `music/COMMISSION.md`,
+which is the working brief for the commissioned writer and sits outside the §32 cap in the same
+class as `canon/COMMISSION.md` and `cast/COMMISSION.md`.
+
+**Why the count is derived rather than chosen.** A 56-minute artist profile is 14 tracks by one
+artist, so a profilable artist needs ~18 tracks, so two or three real albums. That single rule is
+what turns "generate 500 songs" into "generate sixty albums", and every other volume falls out of a
+programme in §10 that has to be makeable: a label retrospective needs a label with ≥3 artists and
+≥40 tracks; an album story needs a cornerstone album of 12–14; `Night Record`'s "one year" needs an
+anchor year carrying ≥25 tracks across ≥4 artists and ≥2 labels.
+
+**The staged floor is the operative part, not the total.** Phase F ships on **140 tracks** — two
+complete labels — because F's outcome is *one* music show whose host knows the discography, and
+proving the pipeline on two labels before committing 400 more tracks to it is the whole point. The
+archive (H) needs **450**. Below roughly **300** the cold-start relaxations in §8 fire on most hours
+and log a warning every time, which is the real floor signal and is mechanical rather than a matter
+of taste. Ongoing cost is **40–60 tracks a year** to keep the front end current as the in-world year
+advances.
+
+**What this does not decide.** The names of anything. Labels, artists, albums, titles and lyrics are
+the operator's and the commissioned writer's, per `CLAUDE.md`. This entry fixes only the structure
+and the volumes.
+
+### D-041 · Canon says the music is current and popular; two era-names are demoted — 2026-08-04
+
+`70-music.md` had two defects that only showed up when the catalogue was specified against it.
+
+**First, an era-scheme that could shape every prompt in the station while never being sayable.** The
+prose named the *Exodus Hymns* and the *Drift Songs*; neither ever entered the `## Canon facts` list.
+Per `canon/README.md`, prose feeds the generated domain summary — shipped on **every call** — while
+the fact list is the only route by which a specific detail reaches the microphone. So the two names
+were steering the whole station toward departure-grief and long patient crossing pieces, and no
+presenter could ever actually say either of them.
+
+**Second, canon gave no basis for popular music at all.** Every passage was elegiac. A writer reading
+only canon would produce a catalogue of solemn ballads, which is not a radio station.
+
+**Decision: eight forms, all of them living.** The prose now says that only recent eras can still be
+*heard* and that anything older reaches a listener as **repertoire rather than record**; a new section,
+"What people actually put on", establishes that most listening is current, short and cheerful, that
+songs are about someone far off, money, weather, a fight, a night out, and that the distances are
+the setting and never the subject. **The settled worlds do not dance to their own founding.** Facts
+18–25 added. The Exodus remains a great subject for *drama* — `65-arts.md` fact 4 — and fact 21
+scopes the exclusion to songs so the two do not collide.
+
+**Two premise breaks fixed in passing.** Listeners "called in" and requested songs, which the world
+forbids — there is no instant communication; they now write in, and requests arrive by relay days or
+weeks later. And the playlist held "music centuries old" as playable recordings, which contradicts
+the repertoire repair; the oldest material now reaches air as performances made since.
+
+**No fact was removed, renumbered or re-anchored**, so every `fact_key` is stable and nothing already
+aired is orphaned. **The `music` domain summary will change**, which is the highest blast radius in
+the system: `canon-check` pass 3 pins summaries and will block the push until it is reviewed. That is
+the correct behaviour and is why this was done *before* the catalogue rather than after.
+
+### D-042 · The retired presenters are out of canon — 2026-08-04
+
+D-036 replaced eight inherited music DJs with six speech presenters. Canon still named three of the
+retired ones: *Sera*, *Orin* and *Zhe* in `80-cosmos.md` prose, and *Zhe* in `06-gazetteer.md` — in
+the prose **and in fact 8**. A fact reaches the microphone directly, so the station could have named
+a presenter who does not exist, on air, as an assertion about its own staff.
+
+Fixed. ES-447 is now known by the instruments left there, which is a better line anyway — the place
+is defined by nobody being on it. `80-cosmos.md`'s passage no longer names anyone and no longer
+frames them as "correspondents in the field": the dispatches now **arrive finished, because nobody
+out there can be asked a follow-up question**, which repairs the same impossibility D-036 identified
+in the cast. Fact 9's "DJs" became "presenters", and the file's three remaining prose instances
+followed so it does not contradict itself.
+
+**This is the fourth site of the inherited music-station framing** — after `cast/CAST.md` (D-036),
+`core/` (D-035) and the standing observation D-035 records. The word "DJs" survives in five further
+canon files and in `core/COMMISSION.md`; most are harmless, and `15-figures.md`'s "night-shift DJs
+across the settled worlds" is correct, since those are *other* stations' presenters. One is not:
+`51-observances.md` has presenters choosing what fills the relay-maintenance hours, which
+`core/COMMISSION.md` states plainly is false — the schedule is fixed in config and presenters choose
+nothing. That remains open. A `banned-entities.yaml` line carrying the retired presenter names would
+make at least the cast half of this mechanical instead of a recurring discovery.
+
+### D-043 · The catalogue is produced by slot cards, global constants and one voice per artist — 2026-08-04
+
+No code exists yet, so C5 has to be runnable entirely by hand while producing artefacts that load
+unchanged once `make music-sync` is built. The workflow is recorded as §12 of `music/COMMISSION.md`.
+
+**Four decisions worth recording.**
+
+**Two artefacts per batch that never merge.** A `catalogue.yaml` fragment, which is read into the
+station and can reach the microphone, and a production sheet holding prompts, lyrics, persona ids,
+model versions and dates, which nothing ever parses. This split *is* the enforcement mechanism for
+§8's two vocabularies: real genre words — the ones that make the catalogue sound like pop and rock
+rather than like a concept album — are legal in prompts and illegal on air, and keeping them in a
+file nothing reads is what makes that hold.
+
+**Stage 0 constants, decided once before batch 1.** The eight anchor years and the six-to-ten
+recurring session players cannot be decided per batch. A year is only a `Night Record` if ≥25 tracks
+land on it across ≥2 labels, and labels written independently scatter across eighty years and cluster
+in none; a session player invented during batch 4 cannot retroactively have played on batches 1–3,
+which §6 requires. Both were previously implicit and would have failed silently at batch six.
+
+**One persona per artist, pinned by audition on the first album**, and an artist finished inside one
+model version. An artist profile is 56 minutes of one artist; generating track by track yields
+fourteen different singers and an unmakeable programme, and the failure is invisible until the hour
+is assembled.
+
+**The slot card is ten fields**, of which eight are transcription from §4 and §1 and only two — the
+house style and the label's trouble — are a creative decision. That is the operator's entire input
+per batch of ~100 tracks.
+
+**The lock-in, which is open.** Losing an artist's persona means re-rendering that artist's **entire
+catalogue**, not one track. This is identical in shape to the presenter voice-identity trap forced at
+build step 13b, and it bites earlier and more often. Persona ids live in a vendor account rather than
+in the repository, and there is no backup story; whether the audition take is archived locally as a
+recoverable seed is undecided. **Related: 540 tracks at several attempts per keeper will span more
+than one billing month**, so `licence_note` must record the period each track was actually made in
+and the plan's commercial-use terms must be captured at the start of each month generated in — §18
+makes that field mandatory and phase G's legal review is what reads it.
