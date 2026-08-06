@@ -817,3 +817,36 @@ and model version, prompt or preset, seed, date, and an explicit statement that 
 voice was used or referenced. That record must be written **at the moment each clip is made**; a
 seed or a model revision cannot be reconstructed six months later. C3 itself remains gated on phase
 A, because the engine must be chosen before a clip is worth making (`PHASES.md`).
+
+### D-038 · The scaffold's judgment calls: what is required at startup, and what `make setup` installs — 2026-08-06
+
+T-003 built the repository skeleton, and four details §21–§24 leave open had to be settled. All four
+took the smallest option that keeps the rules of §31 mechanical.
+
+**Two lines are required at startup, not five.** `DATABASE_URL` and `MEDIA_ROOT` have no defaults,
+so a missing one stops every command at process start and names itself. `ICECAST_SOURCE_PASSWORD`
+is optional and defaults to unset — it is a §23 secret, but the server it belongs to does not exist
+until T-010, and making it required would have blocked every command in Phase B behind a password
+for a machine nobody has yet. The command that needs it fails naming it. The rule: a value is
+required at startup when *any* command needs it, and optional when *one* does.
+
+**System tools split by machine rather than by §22's list.** §22 names ffmpeg, liquidsoap, icecast
+and postgresql@16 together, but §4 puts Liquidsoap and Icecast on the Transmitter. So `make doctor`
+treats `uv`, `gitleaks`, `ffmpeg` and `psql` as required on the Studio and reports the two
+Transmitter tools as "absent" without failing. A check that fails for a tool the machine does not
+need is a check the operator learns to ignore.
+
+**`make doctor` exists and is not in §17's list.** §17's `make setup` line says "check system
+tools"; that check is worth having on its own, because it is also how the operator sees the
+fail-fast behaviour of §23 working. `setup` calls it when a `.env` is already present.
+
+**Hooks run local tools, not mirrored ones.** `.pre-commit-config.yaml` invokes `uv run ruff`,
+`uv run mypy` and the Homebrew `gitleaks` rather than pinning separate hook repositories, so the
+version that gates a commit is the version in `uv.lock` and cannot drift from CI. The
+`canon-check --fast` hook §22 asks for is absent until that command exists.
+
+**Two smaller things.** ruff excludes `*.md`: ruff 0.16 formats Python inside markdown code blocks,
+and it rewrote the examples in `ARCHITECTURE.md` on its first run — the documents are prose and
+their code is illustration. And §23's middle configuration layer, `config/*.yaml` between code
+defaults and `.env`, is not implemented: no such file exists yet, and the task that introduces the
+first one is where the loader for it belongs.

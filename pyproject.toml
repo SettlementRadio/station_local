@@ -1,0 +1,111 @@
+[project]
+name = "settlement-radio"
+version = "0.1.0"
+description = "Settlement Radio — a 24/7 AI radio station."
+requires-python = "==3.12.*"
+dependencies = [
+    "pydantic>=2.9",
+    "pydantic-settings>=2.5",
+    "structlog>=24.4",
+    "typer>=0.12",
+]
+
+# Dependencies are added by the task that needs them (ARCHITECTURE §22): a dependency earns its
+# place by saving more than ~200 lines. No LangChain, no Celery/Redis, no Prometheus.
+
+[project.scripts]
+station = "station.cli:main"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.11",
+    "pre-commit>=3.8",
+    "pytest>=8.3",
+    "ruff>=0.6",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/station"]
+
+# --- ruff: lint and format (§22) --------------------------------------------------------------
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+# ruff formats python inside markdown code blocks; the documents are operator-authored prose and
+# their examples are illustrations, not code to be reformatted.
+extend-exclude = ["*.md"]
+
+[tool.ruff.lint]
+select = [
+    "E", "W",      # pycodestyle
+    "F",           # pyflakes
+    "I",           # import order
+    "UP",          # pyupgrade
+    "B",           # bugbear
+    "SIM",         # simplify
+    "ANN",         # annotations everywhere (§31)
+    "T20",         # no print() (§31)
+    "TID",         # banned APIs, below
+    "DTZ",         # naive datetimes (§31: UTC and tz-aware)
+    "PL",          # pylint subset; PLR0915 is the function-length proxy
+    "RUF",
+]
+ignore = [
+    "ANN401",      # typing.Any is occasionally the honest annotation
+    "E501",        # the formatter owns line length
+]
+
+[tool.ruff.lint.pylint]
+max-statements = 50   # §31: functions ≤ 50 lines, enforced as statements
+
+[tool.ruff.lint.flake8-tidy-imports.banned-api]
+# The §31 rules, mechanically. Each is lifted for exactly one location in per-file-ignores.
+"os.getenv" = { msg = "§31: environment is read only in config.py" }
+"os.environ" = { msg = "§31: environment is read only in config.py" }
+"datetime.datetime.now" = { msg = "§31: datetime.now() lives only in clock.py" }
+"datetime.datetime.utcnow" = { msg = "§31: use clock.py; utcnow() is naive" }
+"openai" = { msg = "§3: vendor SDKs are imported only inside providers/" }
+
+[tool.ruff.lint.per-file-ignores]
+# cli.py imports config inside a handler on purpose: that import is the fail-fast gate (§23) and
+# has to fail as a message, not as a traceback.
+"src/station/cli.py" = ["PLC0415"]
+"src/station/config.py" = ["TID251"]
+"src/station/clock.py" = ["TID251"]
+"src/station/providers/**" = ["TID251"]
+"tests/**" = ["TID251", "PLR2004"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+# --- mypy (§22: strict where correctness is load-bearing) --------------------------------------
+
+[tool.mypy]
+python_version = "3.12"
+files = ["src", "tests"]
+# warn_unused_configs stays off until the strict modules below exist: it reports every one of them
+# as unused on every run, which is noise that trains you to stop reading the output.
+warn_unused_configs = false
+warn_redundant_casts = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+
+[[tool.mypy.overrides]]
+module = [
+    "station.providers.*",
+    "station.clock",
+    "station.*.store",
+    "station.retrieval.*",
+]
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,47 @@
+# §22. Fast hooks on commit, the full gate on push — slow hooks on commit get bypassed, and a
+# bypassed hook protects nothing. Local hooks run the pinned tools from uv.lock, so the hook and
+# CI cannot drift apart.
+
+default_install_hook_types: [pre-commit, pre-push]
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+        args: [--maxkb=5120]   # voices/ reference clips are committed (§3); audio is not
+
+  - repo: local
+    hooks:
+      - id: ruff-format
+        name: ruff-format
+        entry: uv run ruff format
+        language: system
+        types: [python]
+
+      - id: ruff
+        name: ruff
+        entry: uv run ruff check --force-exclude --fix
+        language: system
+        types: [python]
+
+      - id: mypy
+        name: mypy (changed files)
+        entry: uv run mypy
+        language: system
+        types: [python]
+        require_serial: true
+
+      - id: gitleaks
+        name: gitleaks (staged)
+        entry: gitleaks git --staged --redact --no-banner .
+        language: system
+        pass_filenames: false
+
+      - id: make-check
+        name: make check
+        entry: make check
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-push]
