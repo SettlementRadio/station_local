@@ -860,12 +860,27 @@ artist_members(artist_id, figure_id, from_year, to_year, role)
 albums(id, artist_id, label_id, title, release_year, kind, notes)
                                                  -- kind: album|ep|single|live
 
-tracks(id, album_id, artist_id, title, track_no, duration_sec, file_path,
+tracks(id, album_id, artist_id, title, track_no, duration_sec, file_path null,
+       playable bool not null default false,
        mood text[], tempo, energy, language, category, licence_note,
        in_world_first_aired,
        intro_ramp_sec, outro_type, bpm, key)
                                                  -- category:   A|B|C|gold|new|specialist
                                                  -- outro_type: cold|fade|sustain
+                                                 -- playable:   audio exists (D-044)
+```
+
+**Most of the discography has no audio, and that is the design** (D-044). The catalogue is a wiki of
+roughly 1,700 songs of which ~500 are recorded; the rest exist so a presenter can reference a record
+the station does not hold, which is what real presenters do constantly. A third layer — musicians
+whose recordings are lost entirely — carries no tracks at all.
+
+**`playable` is therefore load-bearing, not decorative.** Retrieval and the writer may reach any
+track; **rotation, the playlist builder and the chart must filter on `playable = true`**, and
+`file_path` is null wherever it is false. A scheduler that selects an unplayable track produces dead
+air, so this belongs in the query rather than in a convention.
+
+```sql
 
 track_credits(track_id, figure_id, role)         -- writer, player, producer
 airplay(id, track_id, aired_at, programme_id, context)
@@ -3743,5 +3758,6 @@ real-person match threshold (D-009); the Saturday chart slot (D-010); whether ch
 (D-011); whether the cast engine must watermark (D-019 — it must not be chosen on that); and the
 archive pool size versus the separation window (D-021 — the pool is elastic, the window never
 moves, and the launch date absorbs the difference); and **the catalogue's shape** (D-040 — seven
-labels, ~32 artists, ~68 releases, ~540 tracks, with a staged floor of 140 for phase F and 450 for
-the archive; the structure is recorded in `music/COMMISSION.md`).
+labels, then superseded by **D-044** — the catalogue is a wiki of ~100 musicians, ~195 albums and
+~1,700 song titles spanning two hundred years, of which **500 songs are recorded**; the structure is
+in `music/COMMISSION.md` and the procedure in `music/RUNBOOK.md`).

@@ -1015,3 +1015,89 @@ recoverable seed is undecided. **Related: 540 tracks at several attempts per kee
 than one billing month**, so `licence_note` must record the period each track was actually made in
 and the plan's commercial-use terms must be captured at the start of each month generated in — §18
 makes that field mandatory and phase G's legal review is what reads it.
+
+### D-044 · The music catalogue is a wiki with a record library inside it — 2026-08-07
+
+D-040 fixed the catalogue's shape as ~540 tracks and treated the catalogue and the audio as the same
+thing. **They are not, and that conflation was the mistake.** Real presenters reference far more
+music than their station owns, and the thing that makes the overnight worth hearing is not the songs
+— it is a presenter who knows who played bass, which label folded, and why the singer stopped
+speaking to the drummer. Writing text is roughly a hundred times cheaper than generating and
+auditioning audio, so the reference material should be several times larger than the library.
+
+**Decision: three layers.**
+
+| Layer | What | Window | Size | Audio |
+|---|---|---|---|---|
+| **A — Played** | the record library | last ~60 years | ~25 bands · ~55 albums · **500 songs** | yes |
+| **B — Referenced** | records that exist in the world; the station does not hold them | last ~80 years | ~45 bands · ~140 albums · ~1,200 songs | no |
+| **C — Historical** | musicians whose recordings are lost | 80–200 years back | ~30 figures, scenes, movements | none survive |
+
+Roughly **100 named musicians, 195 albums, 1,700 song titles, and 500 of them recorded.** Layer A
+carries full album stories and the one-fact rule; layer B gets a line per album and titles only;
+layer C gets three sentences per figure and **no albums or track lists at all**.
+
+**Layer C is the operator's two hundred years, and it does not contradict D-041.** Canon fact 22 says
+recordings from beyond living memory do not survive — so going back two centuries means going back
+to *documented history without audio*, exactly as pre-1900 music reaches us. We know who they were
+and what was written about them; nobody has the record.
+
+**A `playable` flag is now load-bearing.** A presenter may discuss any layer; the scheduler may only
+select layer A. §8's `tracks.file_path` must be nullable and every rotation, chart and playlist query
+must filter on it. **This is a code requirement, not a documentation one**, and it lands before
+`rotation.py` is written.
+
+**Consequence for ordering: the wiki needs no vendor account and no hardware.** `PHASES.md` gated all
+of C5 on "after F's Suno account"; that is now only true of the audio half. The whole wiki — the
+largest part of the work and the part the presenters actually use — can start immediately.
+
+### D-045 · Band style cards replace voice personas — 2026-08-07
+
+D-043 made a persona per artist "the single most important setting", on the grounds that a
+56-minute artist profile is fourteen tracks by one band and a drifting voice makes the show
+unmakeable. **That was overstated and is reversed here.**
+
+**Three arguments against it, and the third is decisive.** The vendor's persona feature is a
+similarity nudge rather than a clone and promises no accuracy. Personas live in a vendor account
+rather than in the repository, which D-043 itself recorded as an unresolved lock-in with no backup
+story. And the vendor has announced that **the current models will be deprecated** as licensed
+replacements ship — so 500 tracks anchored to personas pinned to a retiring model is a bad bet on a
+known schedule.
+
+**Decision: every layer-A band gets a six-line style card** — voice, backing, instruments,
+production, tempo range, exclusions — fixed for the life of the band and pasted into every prompt for
+it, with per-song variation inside it. The voice line never changes between albums. The cards are
+text, live in `music/production/`, survive model upgrades, and cost no audition step. Personas may
+still be used opportunistically; **nothing may depend on them.**
+
+**What this gives up.** Vocal timbre will drift somewhat between songs. That is accepted: the
+station discloses hourly that it is machine-generated, and a band that is recognisably the same
+*band* across an hour is what the format actually needs. If the pilot hour reveals otherwise, the
+fallback is to build artist profiles as label or year shows instead — a scheduling change, not a
+re-render.
+
+### D-046 · The licence position is a perpetual commercial licence, not copyright — 2026-08-07
+
+Checked against current public sources rather than assumed, because D-032 states that music is "the
+operator's own material, not third-party" and puts `music/` under the repository's all-rights-reserved
+terms.
+
+**That is right about commercial rights and shaky about copyright.** A paid plan grants the right to
+use output commercially, including streaming, for material generated **while the subscription is
+active**. But the vendor remains the technical author and grants a perpetual licence to exploit; it
+makes **no warranty that any copyright vests** in the output, and US law may not grant one for purely
+machine-generated material. The station may broadcast and publish freely; whether it could stop a
+third party copying a track is a separate and weaker question. **The all-rights-reserved statement
+over `music/` may therefore assert more than it can enforce** — for the legal review at step 15, not
+for a fix now.
+
+**Litigation is live**: one major label settled and signed a licensing partnership in late 2025; two
+others remain in active suit, with a summary-judgment hearing set for mid-2026.
+
+**Three operational consequences, now recorded in `music/COMMISSION.md` §9 and `RUNBOOK.md` step 11.**
+Rights attach at the moment of generation, so licence evidence is captured **per generation month**
+as a dated PDF in `music/licence-evidence/`, not once for the project. Every song carries a
+`licence_note` naming its period. And the licence period, generation date, model version and an
+AI-generated marker are written **into the audio file's own tags** — the audio and the wiki will be
+separated eventually, by a backup or a move or a hand-off, and the file has to carry its own
+provenance.

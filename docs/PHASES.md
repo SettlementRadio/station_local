@@ -91,7 +91,8 @@ phase, so the person who has to write all of it can see it at once.
 | **`grid.yaml`** (C4) | **D** | ~30 programme entries from PROGRAMMING §8 | **now** — the grid is written and validated |
 | **Pool pieces** (C7) | **E** | 37 minimum across three length bands, all filler — idents are imaging (D-008) | after D |
 | **Imaging + jingles** (C6) | **F** | **~30 jingle sets** — one per strand, each an open, close and bed, plus a sting for news — and the station furniture on top. Call it 100+ pieces | after F's Suno account |
-| **Music catalogue** (C5) | **F** | **7 labels · ~32 artists · ~68 releases · ~540 tracks** (D-040). Phase F ships on a floor of **140** — two complete labels | after F's Suno account |
+| **Music wiki** (C5a) | **F** | **~100 musicians · ~195 albums · ~1,700 song titles**, spanning ~200 years in three layers (D-044) | **now** — text only, no account, no hardware |
+| **Music audio** (C5b) | **F** | **500 songs** — the playable layer of the wiki, plus lyrics and style cards | after F's Suno account |
 | **The archive** | **H** | ~4,000 speech-minutes, ~165 hours | **not before F** (D-006) |
 | **LICENSE decision** (C10) | **J** | code and canon almost certainly want different terms | **now** |
 
@@ -102,31 +103,28 @@ operator can make.
 > **Imaging is not "a pack."** The grid has around thirty named strands and ARCHITECTURE §17a makes
 > a `jingle_set` mandatory for every one of them, so this is a hundred-odd short pieces, not a dozen.
 
-> **The music catalogue has no stated size anywhere in the documentation**, and the missing number
-> is not a track count. §8 gives rotation weights and separation rules but never says how big the
-> catalogue must be — and the grid asks a harder question than "how many tracks".
+> **The music catalogue is not a pile of tracks; it is a wiki with a record library inside it**
+> (D-044). §8 gives rotation weights and separation rules but never said how big the catalogue must
+> be, and the grid asks a harder question than "how many tracks".
 >
-> The station airs **four music-led hours a day** (`Night Record` at 23:04 and three Night Watch
-> hours), and §10 puts a 56-minute music show at 14 tracks: **~56 track-plays a day**. But three of
-> those four hours are archive-class, so their tracks are chosen when the *show* is generated and
-> replayed with it — the pool bakes the selection in.
+> **The real constraint is shape, not size.** `Night Record` is "one label or one year"; the Night
+> Watch runs label retrospectives, artist profiles and single-album stories. None of those can be
+> made from a flat pile of unrelated tracks. But neither do they need audio for everything a
+> presenter *mentions* — real presenters reference far more music than their station owns, and text
+> is around a hundred times cheaper than generated and auditioned audio.
 >
-> **The real constraint is catalogue shape, not size.** `Night Record` is "one label or one year";
-> the Night Watch runs label retrospectives, artist profiles and single-album stories. None of those
-> can be made from a flat pile of unrelated tracks — they need labels with several artists, artists
-> with real discographies, and albums with enough tracks to carry a story. So C5 is specified as a
-> *structure*, and the track count falls out of it:
+> **So the catalogue splits in three.** ~500 songs with audio (last ~60 years); ~1,200 more that
+> exist in the world and the station does not hold; and ~30 historical figures whose recordings are
+> lost, reaching back two centuries. Roughly **100 named musicians, 195 albums, 1,700 song titles.**
+> Full detail is in `music/COMMISSION.md`; the operator's procedure is `music/RUNBOOK.md`.
 >
-> > *n* labels × artists per label × albums per artist × tracks per album
+> **This is why C5 splits into C5a and C5b in the table above.** The wiki — the larger part, and the
+> part the presenters actually use — is text and needs no vendor account and no hardware. It is
+> genuinely startable now, and it was previously and wrongly gated behind phase F's Suno account.
 >
-> **Settled in D-040.** Seven labels — two flagship, four standard, one old-system import house —
-> ~32 artists, ~68 releases, **~540 tracks**, roughly 34 hours of music. The structure, the genre and
-> category allocations and the production workflow are recorded in `music/COMMISSION.md`.
->
-> **The operative number is the staged floor, not the total.** Phase F ships on **140 tracks** — two
-> complete labels — because F's outcome is *one* music show whose host knows the discography, and
-> the point is to prove the pipeline before committing four hundred more tracks to it. The archive
-> (H) needs **450**. Below roughly **300** the §8 cold-start relaxations fire on most hours.
+> **A `playable` flag carries the split into the schema** (§8): retrieval may reach any song, but
+> rotation, the playlist builder and the chart filter on it. That is a code requirement, and it lands
+> before `rotation.py` is written.
 
 ---
 
@@ -142,7 +140,7 @@ this says *when*.
 | Chatterbox vs Qwen3-TTS for cast | **A** — the same 90-second two-hander through both. **A listening test and nothing else** (D-019): watermarking is recorded, never weighed |
 | Which freshness tier the grid ships at | **A** — falls out of the RTF measurement against `PROGRAMMING.md` §9 |
 | Writer model | **narrowed in A, settled in C** — `make benchmark` disqualifies candidates cheaply on synthetic context; choosing between the survivors is a blind read (§36.2) and needs real canon |
-| ~~The catalogue's shape~~ | **closed 2026-08-04, D-040** — seven labels, ~540 tracks, staged floor of 140 for F |
+| ~~The catalogue's shape~~ | **closed** — D-040, then superseded by **D-044**: a wiki of ~1,700 songs across three layers, of which **500** are recorded |
 | Voice identity when the archive is deep | **F**, at step 13b — before 50 shows exist, not 500 |
 | Sign the Code of Practice deployer section | **G** — the lawyer |
 | Panel screens | **K** — whatever was actually reached for in the first 30 days |
@@ -373,8 +371,9 @@ are never invalidated because that is the point of rendering them once.
 > **The catalogue's shape was the prerequisite and is now closed** (D-040), so C5 is a structure
 > rather than a track count and F can start on the content whenever the account exists. **One §38
 > decision still closes inside this phase**: voice identity at step 13b — bulk re-render versus an
-> in-world host change, forced before 50 shows exist. D-043 notes that the *artist* personas in the
-> music catalogue carry the identical lock-in and reach it sooner.
+> in-world host change, forced before 50 shows exist. **The music catalogue no longer shares this
+> trap** — D-045 replaced voice personas with text style cards held in the repository, precisely
+> because the vendor's models are on a published deprecation path.
 >
 > **Step 13c's `make pool-check` is the back-timing pool, not the archive.** It counts `pool_items`
 > per length band (§13) and says nothing about H's 165 hours. The two are different pools with

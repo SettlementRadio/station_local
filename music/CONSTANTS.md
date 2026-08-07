@@ -114,13 +114,50 @@ Odessa Vail · Corin Hale · Adra Pell · Lio Tern
 
 ---
 
-## 4. Track and id counters
+## 4. Id counters
 
-So two batches written weeks apart never collide.
+So two genres written weeks apart never collide.
 
 | | Next free |
 |---|---|
-| Track id | `t_0001` |
-| Batch number | `01` |
+| Song id | `s_0001` |
+| Album id | `al_001` |
+| Band id | `b_001` |
 
-**Labels claimed so far:** none.
+---
+
+## 5. The label tally — fill in at Step 3, tick off as genres land
+
+**Layer A only.** Every label needs **≥3 bands, ≥6 albums and ≥40 playable songs** or its
+retrospective cannot be made. This table is the early-warning system: a shortfall spotted at genre
+three is free to fix, and the same shortfall found after 500 songs exist is not.
+
+| # | Label | Forms | Bands planned | Bands so far | Songs planned | Songs so far |
+|---|---|---|---|---|---|---|
+| 1 | Concordance, prestige | Core Harmonies · relay-pop | | 0 | | 0 |
+| 2 | Cold Harbor, frontier | Frontier Reels · Void Ballads | | 0 | | 0 |
+| 3 | Meridian, dance | pulse-dance | | 0 | | 0 |
+| 4 | Forge, industrial | lane-rock · Core Harmonies | | 0 | | 0 |
+| 5 | haulers, co-op | lane-rock · relay-pop | | 0 | | 0 |
+| 6 | late-club, **folded 2612** | void-lounge | | 0 | | 0 |
+| 7 | old-system importer | old-system sessions | | 0 | | 0 |
+| | | | **25** | | **500** | |
+
+## 6. The genre tally
+
+Layer A songs per form, against `COMMISSION.md` §2.
+
+| Form | Target | Written |
+|---|---|---|
+| Relay-pop | 105 | 0 |
+| Lane-rock | 85 | 0 |
+| Frontier Reels | 75 | 0 |
+| Old-system sessions | 65 | 0 |
+| Pulse-dance | 60 | 0 |
+| Void-lounge | 55 | 0 |
+| Core Harmonies | 35 | 0 |
+| Void Ballads | 20 | 0 |
+| | **500** | **0** |
+
+**Layers B and C are not tallied.** They have no hard floor — more is better, and nothing breaks if
+one genre carries more history than another.
