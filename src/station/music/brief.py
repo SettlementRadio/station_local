@@ -18,6 +18,8 @@ from typing import Literal
 import yaml
 from pydantic import BaseModel, Field
 
+from station.music import wiki
+
 Kind = Literal["write", "check"]
 
 # `music/wiki/<genre>.yaml` is where a checked genre lands; `check` reads it back.
@@ -165,6 +167,98 @@ End with PASS or FAIL.
 --- the {name} wiki as returned ---
 
 {returned}"""
+
+
+def _style_instruction(genre_wiki: wiki.GenreWiki, name: str) -> str:
+    """Ask for one style card per layer-A band, from the line-up the writer already invented."""
+    rosters = "\n\n".join(
+        f"{b.name}  (id: {b.id}, {b.kind}, {b.label}, {b.active_from}-{b.active_to or 'now'})\n"
+        f"  movement: {b.movement_line}\n{b.line_up()}"
+        for b in genre_wiki.bands
+    )
+    return f"""\
+Write a style card for each of these {name} bands. Six lines each, exactly the
+format in COMMISSION.md section 7:
+
+  voice / backing / instruments / production / tempo range / exclude
+
+Use the production palette for {name}. Build the instruments line from the
+line-up below — these players are already fixed.
+
+THE VOICE LINE IS FIXED FOR THE LIFE OF THE BAND. It never changes between
+albums. State the lead singer's gender, register, texture and delivery.
+
+Return YAML: band id at the top level, the six lines beneath it. Nothing else.
+
+--- the bands ---
+
+{rosters}"""
+
+
+def _songs_instruction(album: wiki.Album, band: wiki.Band, card: str) -> str:
+    """Everything needed to write one album: the story, the line-up, the titles and their facts."""
+    songs = "\n".join(
+        f"{s.track_number:>3}. {s.title}\n"
+        f"     mood: {', '.join(s.mood_tags) or 'unstated'}\n"
+        f"     fact: {s.fact or 'MISSING — flag this'}"
+        for s in album.playable_songs
+    )
+    style = card or "  MISSING — run `make music-style` for this genre first."
+    return f"""\
+Album: "{album.title}" — {band.name}, {album.release_year}, {album.genre}.
+Label: {album.label}. {"Cornerstone album." if album.cornerstone else ""}
+
+What this record is:
+  {album.notes}
+
+The band's style card — every prompt below must obey it, especially the voice line:
+{style}
+
+For each of the {len(album.playable_songs)} songs, return:
+  1. lyrics — COMMISSION.md section 3 subject rules and the swap-the-nouns test.
+     Open with an instrumental-intro tag before the first verse. The song's
+     existing fact is already true of it; write lyrics that fit that fact.
+  2. a generation prompt — the style card, plus this song's mood, tempo and one
+     arrangement note — and an exclude line.
+
+Every song has a vocal. Nothing about leaving Earth. Keep the album coherent:
+this is one band, in one room, in one year.
+
+Return YAML keyed by song id.
+
+--- the songs ---
+
+{songs}"""
+
+
+def build_style(name: str, root: Path) -> str:
+    """The style-card brief for one genre's layer-A bands."""
+    music = root / "music"
+    genre_wiki = wiki.load_genre(music / WIKI_DIR / f"{name}.yaml")
+    if not genre_wiki.bands:
+        raise BriefError(f"{name} has no layer-A bands to write style cards for")
+    return (
+        "\n\n".join(
+            [_read(music / "COMMISSION.md"), "\n---\n", _style_instruction(genre_wiki, name)]
+        )
+        + "\n"
+    )
+
+
+def build_songs(album_id: str, root: Path) -> str:
+    """The lyrics-and-prompts brief for one album."""
+    music = root / "music"
+    try:
+        album, band, _ = wiki.find_album(music / WIKI_DIR, album_id)
+    except wiki.WikiError as exc:
+        raise BriefError(str(exc)) from None
+    card = wiki.load_styles(music / "production" / "styles.yaml").get(band.id, "")
+    return (
+        "\n\n".join(
+            [_read(music / "COMMISSION.md"), "\n---\n", _songs_instruction(album, band, card)]
+        )
+        + "\n"
+    )
 
 
 def build(kind: Kind, name: str, root: Path) -> str:

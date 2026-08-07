@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import shutil
 import sys
+from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 from typing import TYPE_CHECKING
@@ -58,7 +59,7 @@ def _boot() -> Settings:
 # Commands that read only files already in the repository and touch no environment. §23's gate
 # exists to stop the *station* running mis-configured; it must not stop the operator writing
 # content. The music wiki is deliberately buildable before any hardware or volume exists (D-044).
-CONFIG_FREE = frozenset({"version", "music-brief"})
+CONFIG_FREE = frozenset({"version", "music-brief", "music-style", "music-songs"})
 
 
 @app.callback()
@@ -117,6 +118,23 @@ def doctor(ctx: typer.Context) -> None:
     typer.secho("\nready", fg="green")
 
 
+def _emit(build: Callable[[], str], out: Path | None) -> None:
+    """Render a brief to stdout or a file, turning BriefError into a message rather than a trace."""
+    from station.music.brief import BriefError
+
+    try:
+        text = build()
+    except BriefError as exc:
+        typer.secho(f"\n{exc}\n", fg="red", err=True)
+        raise typer.Exit(code=2) from None
+    if out is None:
+        typer.echo(text)
+        return
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(text, encoding="utf-8")
+    typer.secho(f"{out}  ({len(text.split())} words)", fg="green")
+
+
 # typer needs its defaults as call results; B008 forbids that inline, so they are singletons.
 _GENRE_ARG = typer.Argument(..., help="genre slug, e.g. relay-pop")
 _KIND_OPT = typer.Option("write", "--kind", help="write | check")
@@ -131,18 +149,26 @@ def music_brief(genre: str = _GENRE_ARG, kind: str = _KIND_OPT, out: Path = _OUT
     if kind not in ("write", "check"):
         typer.secho(f"--kind must be write or check, not {kind!r}", fg="red", err=True)
         raise typer.Exit(code=2)
-    try:
-        text = brief.build(kind, genre, Path.cwd())  # type: ignore[arg-type]
-    except brief.BriefError as exc:
-        typer.secho(f"\n{exc}\n", fg="red", err=True)
-        raise typer.Exit(code=2) from None
+    _emit(lambda: brief.build(kind, genre, Path.cwd()), out)  # type: ignore[arg-type]
 
-    if out is None:
-        typer.echo(text)
-        return
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(text, encoding="utf-8")
-    typer.secho(f"{out}  ({len(text.split())} words)", fg="green")
+
+_ALBUM_ARG = typer.Argument(..., help="album id, e.g. al_001")
+
+
+@app.command("music-style")
+def music_style(genre: str = _GENRE_ARG, out: Path = _OUT_OPT) -> None:
+    """Assemble the style-card brief for one genre's bands (`music/RUNBOOK.md` step 7)."""
+    from station.music import brief
+
+    _emit(lambda: brief.build_style(genre, Path.cwd()), out)
+
+
+@app.command("music-songs")
+def music_songs(album: str = _ALBUM_ARG, out: Path = _OUT_OPT) -> None:
+    """Assemble the lyrics-and-prompts brief for one album (`music/RUNBOOK.md` step 8)."""
+    from station.music import brief
+
+    _emit(lambda: brief.build_songs(album, Path.cwd()), out)
 
 
 def main() -> None:

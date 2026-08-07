@@ -75,6 +75,28 @@ def test_unknown_genre_names_the_valid_ones() -> None:
         brief.build("write", "jazz", ROOT)
 
 
-def test_check_brief_refuses_when_the_genre_has_not_been_written() -> None:
+def test_check_brief_refuses_when_the_genre_has_not_been_written(tmp_path: Path) -> None:
+    """Against an empty root, so the result does not depend on which genres happen to be written."""
+    music = tmp_path / "music"
+    (music / "wiki").mkdir(parents=True)
+    for name in ("COMMISSION.md", "CONSTANTS.md", "plan.yaml"):
+        (music / name).write_text((ROOT / "music" / name).read_text(encoding="utf-8"))
     with pytest.raises(brief.BriefError, match=re.escape("wiki/relay-pop.yaml")):
-        brief.build("check", "relay-pop", ROOT)
+        brief.build("check", "relay-pop", tmp_path)
+
+
+def test_songs_brief_carries_the_album_story_titles_and_facts() -> None:
+    """The lyric writer needs the record's story and each song's existing fact, or it invents both."""
+    if not (ROOT / "music" / "wiki" / "relay-pop.yaml").is_file():
+        pytest.skip("relay-pop has not been written yet")
+    text = brief.build_songs("al_001", ROOT)
+    assert "Terms of Arrival" in text  # the album
+    assert "Measure Kindly" in text  # the band
+    assert "2619" in text  # the year
+    assert "fact:" in text  # every song's fact came through
+    assert "swap-the-nouns test" in text  # the subject rules came through
+
+
+def test_songs_brief_names_the_valid_albums_when_the_id_is_wrong() -> None:
+    with pytest.raises(brief.BriefError, match="no album"):
+        brief.build_songs("al_999", ROOT)

@@ -1,0 +1,1771 @@
+section:
+  genre: relay-pop
+  present_year: 2626
+  layers:
+    played: A
+    referenced: B
+    historical: C
+
+labels:
+  - id: label_1
+    name: Civic Lantern
+    home: Concordance
+    tier: flagship
+    status: operating
+    genre: relay-pop
+  - id: label_3
+    name: Stormline Issue
+    home: Meridian
+    tier: standard
+    status: operating
+    genre: relay-pop
+  - id: label_5
+    name: Common Wake Cooperative
+    home: the between
+    tier: standard
+    status: operating
+    genre: relay-pop
+  - id: label_6
+    name: Lower Bell Editions
+    home: Concordance late-club quarter
+    tier: standard
+    status: folded
+    folded_year: 2612
+    catalogue_status: disputed
+    founder_comment: The founder has refused every catalogue interview since 2612.
+    genre: relay-pop
+
+session_players:
+  - id: sp_ivena_sorn
+    name: Ivena Sorn
+    instrument: resonance pipes
+    active_from: 2594
+    active_to: 2626
+    genre: relay-pop
+  - id: sp_miro_olt
+    name: Miro Olt
+    instrument: synth-harpsichord
+    active_from: 2598
+    active_to: 2626
+    genre: relay-pop
+  - id: sp_nessa_dray
+    name: Nessa Dray
+    instrument: composite fiddle
+    active_from: 2592
+    active_to: 2624
+    genre: relay-pop
+  - id: sp_brin_noll
+    name: Brin Noll
+    instrument: oxygen-tank drums and stripped-wire chimes
+    active_from: 2596
+    active_to: 2626
+    genre: relay-pop
+  - id: sp_oren_saye
+    name: Oren Saye
+    instrument: upright bass
+    active_from: 2588
+    active_to: 2622
+    genre: relay-pop
+  - id: sp_talla_venn
+    name: Talla Venn
+    instrument: fretted composite guitar
+    active_from: 2591
+    active_to: 2625
+    genre: relay-pop
+  - id: sp_calo_meret
+    name: Calo Meret
+    instrument: piano and compact studio keyboards
+    active_from: 2595
+    active_to: 2626
+    genre: relay-pop
+  - id: sp_sel_ardin
+    name: Sel Ardin
+    instrument: backing vocals and vocal arrangement
+    active_from: 2593
+    active_to: 2626
+    genre: relay-pop
+
+layer_a:
+  bands:
+    - id: b_001
+      name: Measure Kindly
+      kind: group
+      home_settlement: Concordance
+      label: label_1
+      genre: relay-pop
+      active_from: 2615
+      active_to: 2626
+      members:
+        - id: p_vara_ennel
+          name: Vara Ennel
+          genre: relay-pop
+          instruments: [lead vocal, hand percussion]
+          active_from: 2615
+          active_to: 2626
+        - id: p_odo_kest
+          name: Odo Kest
+          genre: relay-pop
+          instruments: [synth-harpsichord, backing vocal]
+          active_from: 2615
+          active_to: 2626
+        - id: p_rian_torc
+          name: Rian Torc
+          genre: relay-pop
+          instruments: [fretted composite bass, backing vocal]
+          active_from: 2615
+          active_to: 2626
+        - id: p_pevi_marr
+          name: Pevi Marr
+          genre: relay-pop
+          instruments: [compact drum kit, chimes]
+          active_from: 2615
+          active_to: 2626
+      movement:
+        initial: Synthesist
+        changed_to: Localist
+        changed_year: 2622
+        detail: The group kept electronic strings but began writing arrangements around Concordance public-hall acoustics in 2622.
+      bio: >-
+        Measure Kindly formed from four clerks who sang together while checking public-hall accounts in 2615. Vara Ennel writes direct songs about manners, money, and the point where patience runs out. The group moved from strict Synthesist practice to a Localist position in 2622 after discovering that the repaired Concordance halls changed the balance of every chorus. They rehearse at lunch, keep written votes on arrangements, and discard any part that two members cannot remember the next day.
+      album_ids: [al_001, al_002]
+
+    - id: b_002
+      name: Open Parallax
+      kind: group
+      home_settlement: Concordance
+      label: label_1
+      genre: relay-pop
+      active_from: 2603
+      active_to: 2626
+      members:
+        - id: p_sena_quill
+          name: Sena Quill
+          genre: relay-pop
+          instruments: [lead vocal, composite guitar]
+          active_from: 2603
+          active_to: 2626
+        - id: p_ivo_cern
+          name: Ivo Cern
+          genre: relay-pop
+          instruments: [composite guitar, backing vocal]
+          active_from: 2603
+          active_to: 2626
+        - id: p_keli_vos
+          name: Keli Vos
+          genre: relay-pop
+          instruments: [compact keyboards, backing vocal]
+          active_from: 2603
+          active_to: 2626
+        - id: p_arum_den
+          name: Arum Den
+          genre: relay-pop
+          instruments: [drum kit, metal blocks]
+          active_from: 2603
+          active_to: 2626
+      movement:
+        initial: Purist
+        changed_to: Synthesist
+        changed_year: 2607
+        detail: The abandoned 2607 sessions convinced the group that repaired electronic instruments could preserve an idea instead of weakening it.
+      bio: >-
+        Open Parallax began as a Purist quartet playing unamplified lunch rooms in Concordance in 2603. Sena Quill changes a line whenever an audience sings it more cleanly than she does, so several accepted versions differ from the first issues. Studio closures in 2607 pushed the group toward repaired compact keyboards, and it has identified as Synthesist since that year. Ivo Cern handles the money, which is why the group has survived three expensive disagreements without missing a release.
+      album_ids: [al_003, al_004]
+
+    - id: b_003
+      name: Rain Ledger
+      kind: group
+      home_settlement: Meridian storm coast
+      label: label_3
+      genre: relay-pop
+      active_from: 2601
+      active_to: 2626
+      members:
+        - id: p_nara_veck
+          name: Nara Veck
+          genre: relay-pop
+          instruments: [lead vocal]
+          active_from: 2601
+          active_to: 2626
+        - id: p_pelo_dain
+          name: Pelo Dain
+          genre: relay-pop
+          instruments: [compact keyboards, backing vocal]
+          active_from: 2601
+          active_to: 2626
+        - id: p_sumi_orl
+          name: Sumi Orl
+          genre: relay-pop
+          instruments: [synth bass, backing vocal]
+          active_from: 2601
+          active_to: 2626
+        - id: p_kerr_aven
+          name: Kerr Aven
+          genre: relay-pop
+          instruments: [electronic drum kit, metal percussion]
+          active_from: 2601
+          active_to: 2626
+      movement:
+        initial: Synthesist
+        changed_to: Synthesist
+        changed_year: null
+        detail: Rain Ledger argues that storm-season power limits are part of Meridian's musical language rather than a constraint to hide.
+      bio: >-
+        Rain Ledger formed in a storm-coast civic shelter in 2601 and still schedules sessions around the local power allotment. Nara Veck writes choruses first and refuses to record a verse until the whole group can sing the hook while packing equipment. The band is firmly Synthesist and treats power limits, damaged circuits, and compressed rehearsal time as useful arranging rules. Kerr Aven keeps a written list of every machine failure and brings the failed sound back on the next record if it can be played deliberately.
+      album_ids: [al_005, al_006]
+
+    - id: b_004
+      name: Cabin Treaty
+      kind: group
+      home_settlement: freight circuit of the between
+      label: label_5
+      genre: relay-pop
+      active_from: 2590
+      active_to: 2623
+      members:
+        - id: p_ressa_morn
+          name: Ressa Morn
+          genre: relay-pop
+          instruments: [lead vocal, composite guitar]
+          active_from: 2590
+          active_to: 2623
+        - id: p_jalen_rook
+          name: Jalen Rook
+          genre: relay-pop
+          instruments: [composite bass, backing vocal]
+          active_from: 2590
+          active_to: 2623
+        - id: p_cado_veir
+          name: Cado Veir
+          genre: relay-pop
+          instruments: [oxygen-tank drums, stripped-wire chimes]
+          active_from: 2590
+          active_to: 2623
+        - id: p_emi_soll
+          name: Emi Soll
+          genre: relay-pop
+          instruments: [fretted composite guitar, backing vocal]
+          active_from: 2590
+          active_to: 2623
+      movement:
+        initial: Purist
+        changed_to: Localist
+        changed_year: 2600
+        detail: The group rejected the Purist ban on ship-built percussion in 2600 and described every repairable freight instrument as local practice.
+      bio: >-
+        Cabin Treaty formed after four crew members settled a cabin-allocation dispute by agreeing to sing at the next port hall in 2590. Ressa Morn writes about pay, small favors, and relationships conducted around shift boards, while the band keeps freight detail as background rather than subject. The group began as Purist but adopted a Localist position in 2600 when Cado Veir proved that repaired oxygen tanks could be tuned consistently. Every member has a co-operative vote, and two planned tours were cancelled because the vote on ticket prices failed.
+      album_ids: [al_007, al_008, al_009]
+
+    - id: b_005
+      name: Evening Claim
+      kind: group
+      home_settlement: Concordance late-club quarter
+      label: label_6
+      genre: relay-pop
+      active_from: 2578
+      active_to: 2612
+      members:
+        - id: p_mela_jorn
+          name: Mela Jorn
+          genre: relay-pop
+          instruments: [lead vocal, piano]
+          active_from: 2578
+          active_to: 2612
+        - id: p_tovin_ashe
+          name: Tovin Ashe
+          genre: relay-pop
+          instruments: [upright bass, backing vocal]
+          active_from: 2578
+          active_to: 2612
+        - id: p_elo_vara
+          name: Elo Vara
+          genre: relay-pop
+          instruments: [brushed drum kit, hand percussion]
+          active_from: 2578
+          active_to: 2612
+        - id: p_pira_nemm
+          name: Pira Nemm
+          genre: relay-pop
+          instruments: [synth-harpsichord, backing vocal]
+          active_from: 2578
+          active_to: 2612
+      movement:
+        initial: Synthesist
+        changed_to: Purist
+        changed_year: 2605
+        detail: Evening Claim stopped using stored sequence parts in 2605 after a royalty audit could not establish who owned them.
+      bio: >-
+        Evening Claim was the early-evening act at a late-club room in 2578 and made compact harmony songs for people who had not decided whether to go home. Mela Jorn records a guide at the piano, then removes any phrase that sounds cleverer than the complaint behind it. The group moved from Synthesist to Purist practice in 2605 after a royalty audit could not identify the owners of its stored sequence parts. Lower Bell Editions folded in 2612 with the band's final account unpaid, and the four members have declined every offer to recreate the missing paperwork.
+      album_ids: [al_010, al_011]
+
+  albums:
+    - id: al_001
+      title: Terms of Arrival
+      band: b_001
+      label: label_1
+      release_year: 2619
+      kind: album
+      genre: relay-pop
+      cornerstone: true
+      notes: >-
+        Measure Kindly booked a small committee chamber after the public halls became unavailable during the altered-credit rush of 2619. Vara Ennel brought twelve songs about ordinary negotiations and asked every guest player to accept the same fee. Odo Kest nearly left when the label proposed replacing his parts, but a blind vote kept the original takes. The record sold steadily, and its plain account sheet became part of the group's reputation.
+      songs:
+        - id: s_0001
+          title: Meet Me at Noon
+          track_number: 1
+          genre: relay-pop
+          mood_tags: [bright, expectant, brisk]
+          playable: true
+          fact: Vara Ennel wrote the chorus on the back of a room-booking refusal and kept the clerk's stamped time as the title.
+          credits: {writers: [p_vara_ennel], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_sel_ardin], producer: p_odo_kest}
+        - id: s_0002
+          title: Paper Cup Promise
+          track_number: 2
+          genre: relay-pop
+          mood_tags: [warm, playful, midtempo]
+          playable: true
+          fact: Pevi Marr plays the opening rhythm on four stacked drinking cups because the booked hand drum arrived cracked.
+          credits: {writers: [p_vara_ennel, p_pevi_marr], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr], producer: p_odo_kest}
+        - id: s_0003
+          title: Halfway to Morning
+          track_number: 3
+          genre: relay-pop
+          mood_tags: [yearning, buoyant, late-night]
+          playable: true
+          fact: Sel Ardin built the answering chorus from a mistaken entrance that the group voted to keep.
+          credits: {writers: [p_vara_ennel, p_rian_torc], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_sel_ardin], producer: p_odo_kest}
+        - id: s_0004
+          title: Your Spare Key
+          track_number: 4
+          genre: relay-pop
+          mood_tags: [tender, direct, midtempo]
+          playable: true
+          fact: The lyric concerns Vara Ennel returning a key after an argument that ended before either person moved out.
+          credits: {writers: [p_vara_ennel], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_miro_olt], producer: p_odo_kest}
+        - id: s_0005
+          title: Weather on Glass
+          track_number: 5
+          genre: relay-pop
+          mood_tags: [wistful, luminous, steady]
+          playable: true
+          fact: Miro Olt left the lowest electronic strings silent so the room's ventilation rattle could sit under the lead vocal.
+          credits: {writers: [p_vara_ennel, p_odo_kest], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_miro_olt], producer: p_odo_kest}
+        - id: s_0006
+          title: Nothing Owed Tonight
+          track_number: 6
+          genre: relay-pop
+          mood_tags: [relieved, bright, brisk]
+          playable: true
+          fact: Rian Torc suggested the title after the four members closed their shared meal account without finding the expected shortfall.
+          credits: {writers: [p_vara_ennel, p_rian_torc], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr], producer: p_odo_kest}
+        - id: s_0007
+          title: The Smallest Argument
+          track_number: 7
+          genre: relay-pop
+          mood_tags: [wry, tense, quick]
+          playable: true
+          fact: The second verse lists the two different ways the band remembered a fight over an empty chair.
+          credits: {writers: [p_vara_ennel, p_pevi_marr], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_brin_noll], producer: p_odo_kest}
+        - id: s_0008
+          title: Borrowed Blue Coat
+          track_number: 8
+          genre: relay-pop
+          mood_tags: [romantic, light, midtempo]
+          playable: true
+          fact: Brin Noll strikes a coat-rail fitting on every chorus after matching its pitch to the electronic strings.
+          credits: {writers: [p_vara_ennel], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_brin_noll], producer: p_odo_kest}
+        - id: s_0009
+          title: Leave the Light Low
+          track_number: 9
+          genre: relay-pop
+          mood_tags: [intimate, calm, slow]
+          playable: true
+          fact: Vara Ennel sang the accepted take from the corridor because the committee chamber made every quiet consonant too sharp.
+          credits: {writers: [p_vara_ennel, p_odo_kest], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_oren_saye], producer: p_odo_kest}
+        - id: s_0010
+          title: Two Seats Apart
+          track_number: 10
+          genre: relay-pop
+          mood_tags: [restless, catchy, brisk]
+          playable: true
+          fact: Oren Saye changed the bass figure after watching two former partners avoid one another through the entire session.
+          credits: {writers: [p_vara_ennel, p_rian_torc], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_oren_saye], producer: p_odo_kest}
+        - id: s_0011
+          title: Call Before Closing
+          track_number: 11
+          genre: relay-pop
+          mood_tags: [urgent, hopeful, quick]
+          playable: true
+          fact: The group recorded the handclaps in a stairwell while a caretaker counted down the remaining room time.
+          credits: {writers: [p_vara_ennel, p_pevi_marr], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_sel_ardin], producer: p_odo_kest}
+        - id: s_0012
+          title: Terms of Arrival
+          track_number: 12
+          genre: relay-pop
+          mood_tags: [resolute, warm, building]
+          playable: true
+          fact: The final chorus uses the exact four conditions the members agreed before signing with Civic Lantern.
+          credits: {writers: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_sel_ardin], producer: p_odo_kest}
+
+    - id: al_002
+      title: Rooms With Windows
+      band: b_001
+      label: label_1
+      release_year: 2624
+      kind: album
+      genre: relay-pop
+      cornerstone: false
+      notes: >-
+        Civic Lantern placed Measure Kindly in the reopened Concordance public hall for eleven days in 2624. The group found that the restored high windows pulled the backing voices away from the lead microphone and rewrote the arrangements around that effect. A fee dispute stopped work for two days, after which all four members accepted less money to retain control of the session ledger. Demand for the hall forced the final mixes into a smaller room, and the difference is audible between the two halves of the record.
+      songs:
+        - id: s_0013
+          title: Rooms With Windows
+          track_number: 1
+          genre: relay-pop
+          mood_tags: [open, bright, expansive]
+          playable: true
+          fact: Sel Ardin placed the backing singers beneath separate windows so each answer arrived with a different room reflection.
+          credits: {writers: [p_vara_ennel, p_odo_kest], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_sel_ardin], producer: p_rian_torc}
+        - id: s_0014
+          title: Better Than Silence
+          track_number: 2
+          genre: relay-pop
+          mood_tags: [defiant, buoyant, brisk]
+          playable: true
+          fact: Vara Ennel replaced a polished lead with the rehearsal take after hearing herself laugh before the first chorus.
+          credits: {writers: [p_vara_ennel], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_nessa_dray], producer: p_rian_torc}
+        - id: s_0015
+          title: Tuesday at the Ferry
+          track_number: 3
+          genre: relay-pop
+          mood_tags: [fond, waiting, midtempo]
+          playable: true
+          fact: Nessa Dray plays the short answering figure on a composite fiddle borrowed from the hall's locked teaching cabinet.
+          credits: {writers: [p_vara_ennel, p_pevi_marr], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_nessa_dray], producer: p_rian_torc}
+        - id: s_0016
+          title: Honest Change
+          track_number: 4
+          genre: relay-pop
+          mood_tags: [wry, warm, quick]
+          playable: true
+          fact: Rian Torc wrote the bridge after a vendor returned too much money and looked offended when he pointed it out.
+          credits: {writers: [p_rian_torc, p_vara_ennel], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr], producer: p_rian_torc}
+        - id: s_0017
+          title: Keep the Table
+          track_number: 5
+          genre: relay-pop
+          mood_tags: [tender, patient, steady]
+          playable: true
+          fact: The lead vocal was recorded in one take while the other members moved chairs in time beyond the microphone.
+          credits: {writers: [p_vara_ennel], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_calo_meret], producer: p_rian_torc}
+        - id: s_0018
+          title: No One Saw Us
+          track_number: 6
+          genre: relay-pop
+          mood_tags: [secretive, playful, brisk]
+          playable: true
+          fact: Calo Meret removed every chord under the title line to make the group's whispered answer carry the turn.
+          credits: {writers: [p_vara_ennel, p_odo_kest], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_calo_meret], producer: p_rian_torc}
+        - id: s_0019
+          title: One Good Jacket
+          track_number: 7
+          genre: relay-pop
+          mood_tags: [cheerful, affectionate, quick]
+          playable: true
+          fact: Pevi Marr's jacket buttons supply the dry clicks before the first drum entrance.
+          credits: {writers: [p_vara_ennel, p_pevi_marr], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_brin_noll], producer: p_rian_torc}
+        - id: s_0020
+          title: The Quiet Queue
+          track_number: 8
+          genre: relay-pop
+          mood_tags: [observant, restrained, midtempo]
+          playable: true
+          fact: Brin Noll tuned three loose rail panels in the public hall and used them for the ascending chorus rhythm.
+          credits: {writers: [p_vara_ennel, p_rian_torc], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_brin_noll], producer: p_rian_torc}
+        - id: s_0021
+          title: After the Streetlights
+          track_number: 9
+          genre: relay-pop
+          mood_tags: [wistful, nocturnal, slow]
+          playable: true
+          fact: Ivena Sorn holds one resonance-pipe note beneath the final verse, her only appearance on a Measure Kindly record.
+          credits: {writers: [p_vara_ennel, p_odo_kest], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_ivena_sorn], producer: p_rian_torc}
+        - id: s_0022
+          title: Say It Plainly
+          track_number: 10
+          genre: relay-pop
+          mood_tags: [direct, bright, brisk]
+          playable: true
+          fact: The group cut six lines from the second verse after a hall cleaner said the complaint made sense without them.
+          credits: {writers: [p_vara_ennel], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr], producer: p_rian_torc}
+        - id: s_0023
+          title: Morning Takes Its Time
+          track_number: 11
+          genre: relay-pop
+          mood_tags: [patient, hopeful, building]
+          playable: true
+          fact: Odo Kest played the electronic-string pattern live for seven minutes, and the edit uses its first and final passes.
+          credits: {writers: [p_vara_ennel, p_odo_kest], players: [p_vara_ennel, p_odo_kest, p_rian_torc, p_pevi_marr, sp_sel_ardin], producer: p_rian_torc}
+
+    - id: al_003
+      title: Useful Trouble
+      band: b_002
+      label: label_1
+      release_year: 2607
+      kind: album
+      genre: relay-pop
+      cornerstone: false
+      notes: >-
+        Open Parallax started Useful Trouble in a Concordance room fitted only for unamplified performance. Meridian's closures in 2607 sent repaired compact keyboards into the core market, and Keli Vos persuaded the group to use one after its second session failed. The decision ended the band's Purist period and prompted a month of letters from its lunch-room audience. Civic Lantern recovered the modest cost within the release year, largely because the objections made listeners curious.
+      songs:
+        - id: s_0024
+          title: Useful Trouble
+          track_number: 1
+          genre: relay-pop
+          mood_tags: [mischievous, bright, brisk]
+          playable: true
+          fact: Keli Vos plays the repaired compact keyboard that caused the band's public break with Purist practice.
+          credits: {writers: [p_sena_quill, p_keli_vos], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_sel_ardin], producer: p_ivo_cern}
+        - id: s_0025
+          title: Bad at Goodbye
+          track_number: 2
+          genre: relay-pop
+          mood_tags: [wry, yearning, quick]
+          playable: true
+          fact: Sena Quill rewrote the chorus after an audience supplied a shorter final line during a lunch-room test.
+          credits: {writers: [p_sena_quill], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den], producer: p_ivo_cern}
+        - id: s_0026
+          title: The Door Sticks
+          track_number: 3
+          genre: relay-pop
+          mood_tags: [frustrated, catchy, midtempo]
+          playable: true
+          fact: Arum Den copied the rehearsal-room door's three-part knock on metal blocks for the opening figure.
+          credits: {writers: [p_sena_quill, p_arum_den], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_brin_noll], producer: p_ivo_cern}
+        - id: s_0027
+          title: Twenty Empty Chairs
+          track_number: 4
+          genre: relay-pop
+          mood_tags: [lonely, restrained, slow]
+          playable: true
+          fact: The title counts the unused seats at the group's smallest paid Concordance performance in 2606.
+          credits: {writers: [p_sena_quill, p_ivo_cern], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_oren_saye], producer: p_ivo_cern}
+        - id: s_0028
+          title: Raincheck Money
+          track_number: 5
+          genre: relay-pop
+          mood_tags: [restless, comic, brisk]
+          playable: true
+          fact: Ivo Cern wrote the second verse from the refund terms on a cancelled room booking.
+          credits: {writers: [p_ivo_cern, p_sena_quill], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den], producer: p_ivo_cern}
+        - id: s_0029
+          title: Nobody's Favorite Shift
+          track_number: 6
+          genre: relay-pop
+          mood_tags: [tired, companionable, steady]
+          playable: true
+          fact: Oren Saye recorded the bass part after finishing a separate overnight session and asked to keep its uneven final bar.
+          credits: {writers: [p_sena_quill, p_arum_den], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_oren_saye], producer: p_ivo_cern}
+        - id: s_0030
+          title: A Little Too Loud
+          track_number: 7
+          genre: relay-pop
+          mood_tags: [defiant, exuberant, quick]
+          playable: true
+          fact: The accepted lead is the test recording that triggered the building's level alarm.
+          credits: {writers: [p_sena_quill, p_keli_vos], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_sel_ardin], producer: p_ivo_cern}
+        - id: s_0031
+          title: The Clean Plate
+          track_number: 8
+          genre: relay-pop
+          mood_tags: [tender, domestic, midtempo]
+          playable: true
+          fact: Sena Quill wrote the song for a neighbor who always returned borrowed dishes before speaking about the argument.
+          credits: {writers: [p_sena_quill], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den], producer: p_ivo_cern}
+        - id: s_0032
+          title: Coins for Tomorrow
+          track_number: 9
+          genre: relay-pop
+          mood_tags: [hopeful, lean, brisk]
+          playable: true
+          fact: Ivo Cern shakes the group's unpaid meal tokens beside the microphone during the second chorus.
+          credits: {writers: [p_sena_quill, p_ivo_cern], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_brin_noll], producer: p_ivo_cern}
+        - id: s_0033
+          title: Still at the Counter
+          track_number: 10
+          genre: relay-pop
+          mood_tags: [waiting, warm, midtempo]
+          playable: true
+          fact: Keli Vos left two faulty notes from the repaired keyboard because Sena Quill answered them in the same take.
+          credits: {writers: [p_sena_quill, p_keli_vos], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den], producer: p_ivo_cern}
+        - id: s_0034
+          title: Take the Longer Way
+          track_number: 11
+          genre: relay-pop
+          mood_tags: [romantic, easy, building]
+          playable: true
+          fact: Sel Ardin arranged the final chorus for four voices after hearing the band sing while carrying equipment home.
+          credits: {writers: [p_sena_quill, p_ivo_cern], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_sel_ardin], producer: p_ivo_cern}
+
+    - id: al_004
+      title: Open Until Dawn
+      band: b_002
+      label: label_1
+      release_year: 2619
+      kind: album
+      genre: relay-pop
+      cornerstone: false
+      notes: >-
+        The altered-credit edition circulating in 2619 made Open Parallax audit every shared line before recording Open Until Dawn. The arguments produced eleven songs about ownership in small daily forms: receipts, seats, coats, and promises. Ivo Cern posted the final split beside the studio door, and no session began until every participant signed it. The record was the group's largest seller and also its cheapest because no credit challenge reached the label.
+      songs:
+        - id: s_0035
+          title: Open Until Dawn
+          track_number: 1
+          genre: relay-pop
+          mood_tags: [eager, nocturnal, brisk]
+          playable: true
+          fact: Sena Quill sang the title line differently on every chorus, and all four versions remain in the accepted take.
+          credits: {writers: [p_sena_quill, p_keli_vos], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_calo_meret], producer: p_keli_vos}
+        - id: s_0036
+          title: Across Your Market
+          track_number: 2
+          genre: relay-pop
+          mood_tags: [yearning, bright, midtempo]
+          playable: true
+          fact: Calo Meret reduced the keyboard part to two chords after the first arrangement covered the joke in the second verse.
+          credits: {writers: [p_sena_quill, p_ivo_cern], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_calo_meret], producer: p_keli_vos}
+        - id: s_0037
+          title: Gloves on the Radiator
+          track_number: 3
+          genre: relay-pop
+          mood_tags: [cozy, playful, quick]
+          playable: true
+          fact: Arum Den taps the radiator cover heard in the opening after the gloves muffled its usual rattle.
+          credits: {writers: [p_sena_quill, p_arum_den], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_brin_noll], producer: p_keli_vos}
+        - id: s_0038
+          title: Back Room Summer
+          track_number: 4
+          genre: relay-pop
+          mood_tags: [nostalgic, warm, steady]
+          playable: true
+          fact: The backing voices were recorded around the table where the group played its first paid meal-room booking in 2603.
+          credits: {writers: [p_sena_quill, p_ivo_cern], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_sel_ardin], producer: p_keli_vos}
+        - id: s_0039
+          title: One More Receipt
+          track_number: 5
+          genre: relay-pop
+          mood_tags: [irritated, witty, brisk]
+          playable: true
+          fact: Ivo Cern reads an actual equipment total under the final chorus, but the amount is obscured by the handclaps.
+          credits: {writers: [p_ivo_cern, p_sena_quill], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den], producer: p_keli_vos}
+        - id: s_0040
+          title: Nothing Broke at Supper
+          track_number: 6
+          genre: relay-pop
+          mood_tags: [reassuring, buoyant, quick]
+          playable: true
+          fact: Talla Venn plays the same scarred composite guitar used on three other Civic Lantern releases from 2619.
+          credits: {writers: [p_sena_quill, p_keli_vos], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_talla_venn], producer: p_keli_vos}
+        - id: s_0041
+          title: Keep My Place
+          track_number: 7
+          genre: relay-pop
+          mood_tags: [tender, patient, midtempo]
+          playable: true
+          fact: Sena Quill wrote the title line for Ivo Cern while he spent six sessions resolving the guest-credit list.
+          credits: {writers: [p_sena_quill], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_oren_saye], producer: p_keli_vos}
+        - id: s_0042
+          title: Somebody Else's Umbrella
+          track_number: 8
+          genre: relay-pop
+          mood_tags: [comic, romantic, brisk]
+          playable: true
+          fact: Oren Saye switches to the wrong written key for eight bars, and the band follows him without stopping.
+          credits: {writers: [p_sena_quill, p_arum_den], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_oren_saye], producer: p_keli_vos}
+        - id: s_0043
+          title: The Polite Refusal
+          track_number: 9
+          genre: relay-pop
+          mood_tags: [sharp, controlled, midtempo]
+          playable: true
+          fact: The lyric uses three phrases from Civic Lantern's rejected first contract, with the amounts removed.
+          credits: {writers: [p_sena_quill, p_ivo_cern], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_miro_olt], producer: p_keli_vos}
+        - id: s_0044
+          title: Long Way Past Closing
+          track_number: 10
+          genre: relay-pop
+          mood_tags: [weary, hopeful, building]
+          playable: true
+          fact: Miro Olt arranged the electronic strings to leave a full bar empty before each answer from the group.
+          credits: {writers: [p_sena_quill, p_keli_vos], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_miro_olt, sp_sel_ardin], producer: p_keli_vos}
+        - id: s_0045
+          title: Put It in Writing
+          track_number: 11
+          genre: relay-pop
+          mood_tags: [decisive, celebratory, quick]
+          playable: true
+          fact: All eight credited performers speak their own names before the final sung chorus to close the record's argument about ownership.
+          credits: {writers: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den], players: [p_sena_quill, p_ivo_cern, p_keli_vos, p_arum_den, sp_sel_ardin, sp_brin_noll, sp_talla_venn, sp_miro_olt], producer: p_keli_vos}
+
+    - id: al_005
+      title: Pressure Weather
+      band: b_003
+      label: label_3
+      release_year: 2607
+      kind: album
+      genre: relay-pop
+      cornerstone: false
+      notes: >-
+        Rain Ledger recorded Pressure Weather across the Meridian storm-coast closures of 2607, moving between a shelter room and a repair depot whenever power became available. Stormline Issue paid for portable storage but not additional room time, so the band finished several vocals beside working crews. The stop-start method gave the record its short verses and large repeated choruses. It became the label's first release to recover a storm-season budget before the coast reopened.
+      songs:
+        - id: s_0046
+          title: Pressure Weather
+          track_number: 1
+          genre: relay-pop
+          mood_tags: [urgent, bright, driving]
+          playable: true
+          fact: Kerr Aven built the opening pulse from the shelter's power-warning pattern after maintenance approved the timing.
+          credits: {writers: [p_nara_veck, p_kerr_aven], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_sel_ardin], producer: p_pelo_dain}
+        - id: s_0047
+          title: Dance Floor Apology
+          track_number: 2
+          genre: relay-pop
+          mood_tags: [apologetic, exuberant, quick]
+          playable: true
+          fact: Nara Veck addresses the song to a friend whose shoes she ruined at a shelter social in 2606.
+          credits: {writers: [p_nara_veck, p_sumi_orl], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_miro_olt], producer: p_pelo_dain}
+        - id: s_0048
+          title: Three Floors Down
+          track_number: 3
+          genre: relay-pop
+          mood_tags: [yearning, playful, brisk]
+          playable: true
+          fact: Miro Olt makes the electronic strings descend three steps each time the title is sung.
+          credits: {writers: [p_nara_veck, p_pelo_dain], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_miro_olt], producer: p_pelo_dain}
+        - id: s_0049
+          title: Better in the Rain
+          track_number: 4
+          genre: relay-pop
+          mood_tags: [romantic, bright, midtempo]
+          playable: true
+          fact: The accepted backing vocals were recorded under a depot awning after the shelter room lost power.
+          credits: {writers: [p_nara_veck], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_sel_ardin], producer: p_pelo_dain}
+        - id: s_0050
+          title: Late Fee Heart
+          track_number: 5
+          genre: relay-pop
+          mood_tags: [wry, tense, quick]
+          playable: true
+          fact: Sumi Orl copied the bass accents from the overdue notices clicking through the label's office printer.
+          credits: {writers: [p_nara_veck, p_sumi_orl], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_brin_noll], producer: p_pelo_dain}
+        - id: s_0051
+          title: Hold the Lift
+          track_number: 6
+          genre: relay-pop
+          mood_tags: [urgent, affectionate, brisk]
+          playable: true
+          fact: Brin Noll plays a loose service-panel latch that matched Kerr Aven's drum pitch without retuning.
+          credits: {writers: [p_nara_veck, p_kerr_aven], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_brin_noll], producer: p_pelo_dain}
+        - id: s_0052
+          title: Dry Shoes Tomorrow
+          track_number: 7
+          genre: relay-pop
+          mood_tags: [hopeful, comic, midtempo]
+          playable: true
+          fact: Nara Veck kept the guide vocal because water dripped into a bucket exactly between the verse lines.
+          credits: {writers: [p_nara_veck, p_pelo_dain], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven], producer: p_pelo_dain}
+        - id: s_0053
+          title: Window Seat Fever
+          track_number: 8
+          genre: relay-pop
+          mood_tags: [restless, bright, quick]
+          playable: true
+          fact: Talla Venn plays the clipped composite-guitar answers while standing in the repair depot's only dry window recess.
+          credits: {writers: [p_nara_veck, p_sumi_orl], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_talla_venn], producer: p_pelo_dain}
+        - id: s_0054
+          title: Half a Conversation
+          track_number: 9
+          genre: relay-pop
+          mood_tags: [uncertain, tender, steady]
+          playable: true
+          fact: The second singer's answers were lost in a storage fault, so Sel Ardin taught them to the whole band for the replacement session.
+          credits: {writers: [p_nara_veck, p_pelo_dain], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_sel_ardin], producer: p_pelo_dain}
+        - id: s_0055
+          title: Storm Door Smile
+          track_number: 10
+          genre: relay-pop
+          mood_tags: [relieved, celebratory, building]
+          playable: true
+          fact: The final chorus includes depot workers who had held the storm door shut during the first recording attempt.
+          credits: {writers: [p_nara_veck, p_kerr_aven], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_sel_ardin, sp_ivena_sorn], producer: p_pelo_dain}
+
+    - id: al_006
+      title: Clear by Closing
+      band: b_003
+      label: label_3
+      release_year: 2619
+      kind: album
+      genre: relay-pop
+      cornerstone: false
+      notes: >-
+        Stormline Issue asked Rain Ledger for a reply to the altered-credit edition circulating in 2619. The band answered by keeping the Meridian power allotment unchanged and printing every guest beside the exact part performed. A proposed featured credit for the lead singer was defeated by the four members before the sessions began. The record sold strongly beyond Meridian and made the band's Synthesist argument easier to explain than any interview had.
+      songs:
+        - id: s_0056
+          title: Clear by Closing
+          track_number: 1
+          genre: relay-pop
+          mood_tags: [optimistic, bright, brisk]
+          playable: true
+          fact: Nara Veck finished the lead two minutes before the hall's booked power allotment ended.
+          credits: {writers: [p_nara_veck, p_pelo_dain], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_sel_ardin], producer: p_sumi_orl}
+        - id: s_0057
+          title: Borrow My Evening
+          track_number: 2
+          genre: relay-pop
+          mood_tags: [flirtatious, warm, midtempo]
+          playable: true
+          fact: Sel Ardin split the title between six voices so Nara Veck never sings the full request alone.
+          credits: {writers: [p_nara_veck, p_sumi_orl], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_sel_ardin, sp_nessa_dray], producer: p_sumi_orl}
+        - id: s_0058
+          title: Queue for the Roof
+          track_number: 3
+          genre: relay-pop
+          mood_tags: [restless, social, quick]
+          playable: true
+          fact: Kerr Aven copied the rhythm of folding seats being stacked after a Meridian roof-room inspection.
+          credits: {writers: [p_nara_veck, p_kerr_aven], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_brin_noll], producer: p_sumi_orl}
+        - id: s_0059
+          title: Please Stay Seated
+          track_number: 4
+          genre: relay-pop
+          mood_tags: [teasing, bright, brisk]
+          playable: true
+          fact: Brin Noll plays the opening on the same roof-room seat frames heard being stacked on the previous track.
+          credits: {writers: [p_nara_veck, p_pelo_dain], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_brin_noll], producer: p_sumi_orl}
+        - id: s_0060
+          title: Heat in the Hallway
+          track_number: 5
+          genre: relay-pop
+          mood_tags: [sultry, tense, steady]
+          playable: true
+          fact: Ivena Sorn's resonance-pipe note was recorded in the Meridian studio hallway because it overloaded the main-room microphone at the planned distance.
+          credits: {writers: [p_nara_veck, p_sumi_orl], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_ivena_sorn], producer: p_sumi_orl}
+        - id: s_0061
+          title: One Clean Answer
+          track_number: 6
+          genre: relay-pop
+          mood_tags: [direct, defiant, quick]
+          playable: true
+          fact: Nara Veck rejected the prepared lyric sheet and sang the accepted verse from a three-line note in her pocket.
+          credits: {writers: [p_nara_veck], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_miro_olt], producer: p_sumi_orl}
+        - id: s_0062
+          title: Spare Me the Forecast
+          track_number: 7
+          genre: relay-pop
+          mood_tags: [impatient, playful, brisk]
+          playable: true
+          fact: Miro Olt leaves a deliberate gap each time the singer refuses another prediction.
+          credits: {writers: [p_nara_veck, p_pelo_dain], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_miro_olt], producer: p_sumi_orl}
+        - id: s_0063
+          title: Under the Awning
+          track_number: 8
+          genre: relay-pop
+          mood_tags: [romantic, sheltered, midtempo]
+          playable: true
+          fact: Talla Venn repeats the composite-guitar figure she played at the depot awning sessions in 2607.
+          credits: {writers: [p_nara_veck, p_sumi_orl], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_talla_venn], producer: p_sumi_orl}
+        - id: s_0064
+          title: This Could Be Easy
+          track_number: 9
+          genre: relay-pop
+          mood_tags: [hopeful, buoyant, quick]
+          playable: true
+          fact: The group recorded the entire song in one pass after spending two sessions arguing about its four-bar introduction.
+          credits: {writers: [p_nara_veck, p_kerr_aven], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_calo_meret], producer: p_sumi_orl}
+        - id: s_0065
+          title: Closing Time Weather
+          track_number: 10
+          genre: relay-pop
+          mood_tags: [wistful, communal, building]
+          playable: true
+          fact: Calo Meret plays Stormline Issue's office piano while the band's compact keyboard remains switched off beside it.
+          credits: {writers: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven], players: [p_nara_veck, p_pelo_dain, p_sumi_orl, p_kerr_aven, sp_calo_meret, sp_sel_ardin], producer: p_sumi_orl}
+
+    - id: al_007
+      title: Crew Rates
+      band: b_004
+      label: label_5
+      release_year: 2594
+      kind: EP
+      genre: relay-pop
+      cornerstone: false
+      notes: >-
+        Cabin Treaty cut Crew Rates during the first freight-circuit burn festival in 2594, using a port meeting room between co-operative votes. The six songs addressed pay and private obligations without turning the festival into their subject. Common Wake Cooperative charged each member one equal share of the pressing cost, and the first run sold from a meal cart before the closing vote. The EP established the group's whole-crew chorus even though Ressa Morn remained its clear lead voice.
+      songs:
+        - id: s_0066
+          title: Crew Rates
+          track_number: 1
+          genre: relay-pop
+          mood_tags: [assertive, bright, driving]
+          playable: true
+          fact: The four members sing the figures from a rejected pay offer before Ressa Morn answers with the accepted rate.
+          credits: {writers: [p_ressa_morn, p_jalen_rook], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_nessa_dray], producer: p_emi_soll}
+        - id: s_0067
+          title: Better Pay by Morning
+          track_number: 2
+          genre: relay-pop
+          mood_tags: [hopeful, communal, brisk]
+          playable: true
+          fact: Jalen Rook wrote the bass turn while waiting for the co-operative's overnight wage vote to finish.
+          credits: {writers: [p_ressa_morn, p_jalen_rook], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_oren_saye], producer: p_emi_soll}
+        - id: s_0068
+          title: Cup in the Sink
+          track_number: 3
+          genre: relay-pop
+          mood_tags: [domestic, annoyed, quick]
+          playable: true
+          fact: Cado Veir plays the opening beat on the unwashed metal cup that started the cabin argument in the lyric.
+          credits: {writers: [p_ressa_morn, p_cado_veir], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_nessa_dray], producer: p_emi_soll}
+        - id: s_0069
+          title: Burn Day Promise
+          track_number: 4
+          genre: relay-pop
+          mood_tags: [romantic, eager, driving]
+          playable: true
+          fact: Ressa Morn wrote the song about two people reserving the same free hour before their shift boards changed.
+          credits: {writers: [p_ressa_morn], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_talla_venn], producer: p_emi_soll}
+        - id: s_0070
+          title: Hold My Place in Line
+          track_number: 5
+          genre: relay-pop
+          mood_tags: [affectionate, patient, midtempo]
+          playable: true
+          fact: Talla Venn plays a bright composite-guitar answer copied from Emi Soll's tuning check.
+          credits: {writers: [p_ressa_morn, p_emi_soll], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_talla_venn], producer: p_emi_soll}
+        - id: s_0071
+          title: Don't Wake the Cook
+          track_number: 6
+          genre: relay-pop
+          mood_tags: [mischievous, hushed, quick]
+          playable: true
+          fact: The band sings the first chorus at half volume because the meeting-room wall adjoined the festival kitchen rest area.
+          credits: {writers: [p_ressa_morn, p_cado_veir], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_oren_saye], producer: p_emi_soll}
+
+    - id: al_008
+      title: Shared Format
+      band: b_004
+      label: label_5
+      release_year: 2600
+      kind: EP
+      genre: relay-pop
+      cornerstone: false
+      notes: >-
+        The shared shipboard pressing format of 2600 let Cabin Treaty issue seven short songs beyond its usual freight circuit. Emi Soll standardized the group's session notes, but Cado Veir refused to replace percussion that other ships could not duplicate exactly. That argument ended the band's Purist claim and produced its Localist statement: a format could travel while an instrument remained tied to its room. The release reached more ports than the group's preceding work and returned every member's pressing share.
+      songs:
+        - id: s_0072
+          title: Shared Format
+          track_number: 1
+          genre: relay-pop
+          mood_tags: [confident, communal, brisk]
+          playable: true
+          fact: Cado Veir demonstrates three different oxygen-tank tunings before the first sung line to make the Localist argument audible.
+          credits: {writers: [p_ressa_morn, p_cado_veir, p_emi_soll], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_nessa_dray], producer: p_emi_soll}
+        - id: s_0073
+          title: Add My Name in Pencil
+          track_number: 2
+          genre: relay-pop
+          mood_tags: [eager, bright, quick]
+          playable: true
+          fact: Nessa Dray gives the count with her bow against the composite fiddle body rather than speaking it.
+          credits: {writers: [p_ressa_morn, p_jalen_rook], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_nessa_dray], producer: p_emi_soll}
+        - id: s_0074
+          title: Two Stops Early
+          track_number: 3
+          genre: relay-pop
+          mood_tags: [romantic, restless, midtempo]
+          playable: true
+          fact: Ressa Morn based the lyric on leaving a crew shuttle early to prolong a walk with another passenger.
+          credits: {writers: [p_ressa_morn], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_talla_venn], producer: p_emi_soll}
+        - id: s_0075
+          title: Loan Me Your Coat
+          track_number: 4
+          genre: relay-pop
+          mood_tags: [flirtatious, warm, brisk]
+          playable: true
+          fact: Talla Venn recorded the composite-guitar break in the narrow loading passage where the lyric's request took place.
+          credits: {writers: [p_ressa_morn, p_emi_soll], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_talla_venn], producer: p_emi_soll}
+        - id: s_0076
+          title: The Galley Light
+          track_number: 5
+          genre: relay-pop
+          mood_tags: [wistful, intimate, steady]
+          playable: true
+          fact: Oren Saye plays upright bass with a cloth under the strings so the sleeping crew could remain in the adjoining cabin.
+          credits: {writers: [p_ressa_morn, p_jalen_rook], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_oren_saye], producer: p_emi_soll}
+        - id: s_0077
+          title: Quieter Than Engines
+          track_number: 6
+          genre: relay-pop
+          mood_tags: [secretive, tender, slow]
+          playable: true
+          fact: The first take was rejected because all four singers dropped below the life-support noise and lost the final line.
+          credits: {writers: [p_ressa_morn, p_cado_veir], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_sel_ardin], producer: p_emi_soll}
+        - id: s_0078
+          title: Everybody Knows the Fare
+          track_number: 7
+          genre: relay-pop
+          mood_tags: [wry, communal, driving]
+          playable: true
+          fact: Sel Ardin arranged the crew chorus so each singer enters with a different fare complaint collected at three ports.
+          credits: {writers: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_sel_ardin], producer: p_emi_soll}
+
+    - id: al_009
+      title: Same Berth Twice
+      band: b_004
+      label: label_5
+      release_year: 2619
+      kind: album
+      genre: relay-pop
+      cornerstone: true
+      notes: >-
+        Same Berth Twice followed a 2619 co-operative rule change that let Cabin Treaty hold one room for an entire route instead of rebuilding a session at each stop. The altered-credit dispute made the members unusually formal: every chorus contribution was logged before the next take. Ressa Morn and Jalen Rook stopped speaking outside performance after a disagreement over the title track, but both completed the record. The album became Common Wake Cooperative's strongest seller and financed repairs to three member-owned pressing units.
+      songs:
+        - id: s_0079
+          title: Same Berth Twice
+          track_number: 1
+          genre: relay-pop
+          mood_tags: [romantic, triumphant, driving]
+          playable: true
+          fact: Ressa Morn and Jalen Rook recorded their answering lines on opposite shifts after their credit argument.
+          credits: {writers: [p_ressa_morn, p_jalen_rook], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_sel_ardin], producer: p_cado_veir}
+        - id: s_0080
+          title: Payday Flowers
+          track_number: 2
+          genre: relay-pop
+          mood_tags: [joyful, affectionate, brisk]
+          playable: true
+          fact: Cado Veir taps the empty wrapping tubes from the flowers bought for the session meal table.
+          credits: {writers: [p_ressa_morn, p_cado_veir], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_brin_noll], producer: p_cado_veir}
+        - id: s_0081
+          title: Your Name on the Locker
+          track_number: 3
+          genre: relay-pop
+          mood_tags: [tender, proud, midtempo]
+          playable: true
+          fact: Brin Noll turns a locker latch into the offbeat chime after retuning its loose plate.
+          credits: {writers: [p_ressa_morn, p_emi_soll], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_brin_noll], producer: p_cado_veir}
+        - id: s_0082
+          title: Last Ferry Home
+          track_number: 4
+          genre: relay-pop
+          mood_tags: [urgent, yearning, driving]
+          playable: true
+          fact: Emi Soll plays the composite-guitar break at the faster tempo the band used when a ferry notice shortened the session.
+          credits: {writers: [p_ressa_morn, p_emi_soll], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_talla_venn], producer: p_cado_veir}
+        - id: s_0083
+          title: The Better Bunk
+          track_number: 5
+          genre: relay-pop
+          mood_tags: [comic, affectionate, quick]
+          playable: true
+          fact: Talla Venn plays both composite guitars because Emi Soll lost the band vote over who should take the short break.
+          credits: {writers: [p_ressa_morn, p_jalen_rook], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_talla_venn], producer: p_cado_veir}
+        - id: s_0084
+          title: Don't Spend It All
+          track_number: 6
+          genre: relay-pop
+          mood_tags: [cautionary, buoyant, brisk]
+          playable: true
+          fact: The handclaps come from the co-operative treasurer and two pressing-unit mechanics who were checking the session budget.
+          credits: {writers: [p_ressa_morn, p_jalen_rook], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_sel_ardin], producer: p_cado_veir}
+        - id: s_0085
+          title: Half Shift Holiday
+          track_number: 7
+          genre: relay-pop
+          mood_tags: [carefree, bright, quick]
+          playable: true
+          fact: Nessa Dray increases the composite-fiddle pace when Ressa Morn names the extra free hour in the second verse.
+          credits: {writers: [p_ressa_morn, p_cado_veir], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_nessa_dray], producer: p_cado_veir}
+        - id: s_0086
+          title: Someone Saved a Seat
+          track_number: 8
+          genre: relay-pop
+          mood_tags: [grateful, warm, midtempo]
+          playable: true
+          fact: Nessa Dray wrote the brief answering figure after finding her own chair marked at the crowded route meeting.
+          credits: {writers: [p_ressa_morn, p_emi_soll], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_nessa_dray], producer: p_cado_veir}
+        - id: s_0087
+          title: Coffee After Turnover
+          track_number: 9
+          genre: relay-pop
+          mood_tags: [tired, flirtatious, steady]
+          playable: true
+          fact: Ivena Sorn's low resonance-pipe note begins only after the lyric's shift handover is complete.
+          credits: {writers: [p_ressa_morn, p_jalen_rook], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_ivena_sorn], producer: p_cado_veir}
+        - id: s_0088
+          title: Leave the Ramp Lit
+          track_number: 10
+          genre: relay-pop
+          mood_tags: [hopeful, nocturnal, driving]
+          playable: true
+          fact: The band recorded the crew chorus at the open loading ramp after the room ventilation stopped for inspection.
+          credits: {writers: [p_ressa_morn, p_cado_veir], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_brin_noll, sp_sel_ardin], producer: p_cado_veir}
+        - id: s_0089
+          title: Nothing Wrong With Wanting
+          track_number: 11
+          genre: relay-pop
+          mood_tags: [defiant, tender, building]
+          playable: true
+          fact: Ressa Morn kept the cracked word on the final chorus because it followed the record's only fully silent bar.
+          credits: {writers: [p_ressa_morn], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_calo_meret], producer: p_cado_veir}
+        - id: s_0090
+          title: Meet Me Off the Clock
+          track_number: 12
+          genre: relay-pop
+          mood_tags: [romantic, celebratory, brisk]
+          playable: true
+          fact: Calo Meret removed half the keyboard arrangement after the whole crew chorus arrived without rehearsal.
+          credits: {writers: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll], players: [p_ressa_morn, p_jalen_rook, p_cado_veir, p_emi_soll, sp_calo_meret, sp_sel_ardin], producer: p_cado_veir}
+
+    - id: al_010
+      title: Soft Closing
+      band: b_005
+      label: label_6
+      release_year: 2583
+      kind: album
+      genre: relay-pop
+      cornerstone: false
+      notes: >-
+        Evening Claim recorded Soft Closing after the complete Station Cycles entered general circulation in 2583 and late-club rooms asked for quieter early sets. Mela Jorn answered the fashion with seven compact songs about bills, coats, and people delaying a departure. Lower Bell Editions paid for three nights but charged the group for a fourth after the founder attended a rehearsal and called it a session. The record sold slowly until club workers began requesting it before their rooms opened.
+      songs:
+        - id: s_0091
+          title: Soft Closing
+          track_number: 1
+          genre: relay-pop
+          mood_tags: [intimate, restrained, midtempo]
+          playable: true
+          fact: Mela Jorn sings the accepted lead while closing the piano lid one step at a time between verses.
+          credits: {writers: [p_mela_jorn, p_pira_nemm], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm], producer: p_pira_nemm}
+        - id: s_0092
+          title: Table Near the Door
+          track_number: 2
+          genre: relay-pop
+          mood_tags: [watchful, romantic, steady]
+          playable: true
+          fact: Tovin Ashe wrote the bass answer for two customers who chose the same visible table through an entire season.
+          credits: {writers: [p_mela_jorn, p_tovin_ashe], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm], producer: p_pira_nemm}
+        - id: s_0093
+          title: One Drink Behind
+          track_number: 3
+          genre: relay-pop
+          mood_tags: [wry, wistful, midtempo]
+          playable: true
+          fact: Elo Vara uses a serving tray for the brushed rhythm because the regular kit sounded too formal in the empty room.
+          credits: {writers: [p_mela_jorn, p_elo_vara], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm], producer: p_pira_nemm}
+        - id: s_0094
+          title: Keep Your Voice Down
+          track_number: 4
+          genre: relay-pop
+          mood_tags: [secretive, tense, slow]
+          playable: true
+          fact: The backing singers stand behind the closed club door, making their answers sound like the conversation the lead is trying to hide.
+          credits: {writers: [p_mela_jorn, p_pira_nemm], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm], producer: p_pira_nemm}
+        - id: s_0095
+          title: The Coat Check Smile
+          track_number: 5
+          genre: relay-pop
+          mood_tags: [flirtatious, light, quick]
+          playable: true
+          fact: Pira Nemm plays the electronic-string figure with one hand while sorting the group's coats with the other during the guide take.
+          credits: {writers: [p_mela_jorn, p_pira_nemm], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm], producer: p_pira_nemm}
+        - id: s_0096
+          title: If the Piano Stops
+          track_number: 6
+          genre: relay-pop
+          mood_tags: [uneasy, tender, slow]
+          playable: true
+          fact: Mela Jorn leaves the piano silent under the second verse after a pedal repair interrupted the first take.
+          credits: {writers: [p_mela_jorn], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm], producer: p_pira_nemm}
+        - id: s_0097
+          title: Closed for Counting
+          track_number: 7
+          genre: relay-pop
+          mood_tags: [tired, warm, building]
+          playable: true
+          fact: The club's closing staff sing the final answer while counting the room's empty cups into storage bins.
+          credits: {writers: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm], producer: p_pira_nemm}
+
+    - id: al_011
+      title: Catalogue of Small Debts
+      band: b_005
+      label: label_6
+      release_year: 2612
+      kind: album
+      genre: relay-pop
+      cornerstone: false
+      notes: >-
+        Evening Claim entered the studio in 2612 while Lower Bell Editions was already refusing ordinary payment requests. The band turned eight disputed invoices into songs about favors, trust, and the discomfort of asking for what is owed. The label folded before manufacturing finished, and two catalogue claimants issued different track orders from the same masters. The station's order follows the signed session ledger, although ownership of that ledger remains part of the dispute.
+      songs:
+        - id: s_0098
+          title: Catalogue of Small Debts
+          track_number: 1
+          genre: relay-pop
+          mood_tags: [wry, controlled, midtempo]
+          playable: true
+          fact: Mela Jorn sings from the band's unpaid-invoice list but replaces every amount with the favor it was meant to purchase.
+          credits: {writers: [p_mela_jorn, p_tovin_ashe], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm, sp_oren_saye], producer: p_mela_jorn}
+        - id: s_0099
+          title: Called in a Favor
+          track_number: 2
+          genre: relay-pop
+          mood_tags: [urgent, intimate, brisk]
+          playable: true
+          fact: Oren Saye played the accepted bass part without a fee after the label's payment desk closed during the session.
+          credits: {writers: [p_mela_jorn, p_elo_vara], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm, sp_oren_saye], producer: p_mela_jorn}
+        - id: s_0100
+          title: Your Usual Corner
+          track_number: 3
+          genre: relay-pop
+          mood_tags: [nostalgic, affectionate, steady]
+          playable: true
+          fact: Sel Ardin arranged the chorus for the four singers who still met at the band's first club table in 2612.
+          credits: {writers: [p_mela_jorn, p_pira_nemm], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm, sp_sel_ardin], producer: p_mela_jorn}
+        - id: s_0101
+          title: One Honest Minute
+          track_number: 4
+          genre: relay-pop
+          mood_tags: [direct, spare, slow]
+          playable: true
+          fact: The group removed every backing voice until the final line, where Sel Ardin adds a single unison answer.
+          credits: {writers: [p_mela_jorn], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm, sp_sel_ardin], producer: p_mela_jorn}
+        - id: s_0102
+          title: Make It Someone Else
+          track_number: 5
+          genre: relay-pop
+          mood_tags: [bitter, brisk, sharp]
+          playable: true
+          fact: Miro Olt plays the bright electronic-string figure that Lower Bell Editions tried to credit to an absent arranger.
+          credits: {writers: [p_mela_jorn, p_pira_nemm], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm, sp_miro_olt], producer: p_mela_jorn}
+        - id: s_0103
+          title: The Founder Won't Call
+          track_number: 6
+          genre: relay-pop
+          mood_tags: [angry, restrained, midtempo]
+          playable: true
+          fact: Calo Meret plays the office piano beneath a lyric drafted after the label founder missed three scheduled account meetings.
+          credits: {writers: [p_mela_jorn, p_tovin_ashe], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm, sp_calo_meret], producer: p_mela_jorn}
+        - id: s_0104
+          title: Receipt Without a Name
+          track_number: 7
+          genre: relay-pop
+          mood_tags: [mysterious, wounded, steady]
+          playable: true
+          fact: The percussion is Elo Vara tapping the unsigned meal receipt that appeared inside the session account.
+          credits: {writers: [p_mela_jorn, p_elo_vara], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm, sp_brin_noll], producer: p_mela_jorn}
+        - id: s_0105
+          title: After the Final Bell
+          track_number: 8
+          genre: relay-pop
+          mood_tags: [resigned, warm, building]
+          playable: true
+          fact: Ivena Sorn sustains the final resonance-pipe note while each band member reads one settled debt into the room ledger.
+          credits: {writers: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm], players: [p_mela_jorn, p_tovin_ashe, p_elo_vara, p_pira_nemm, sp_ivena_sorn, sp_sel_ardin], producer: p_mela_jorn}
+
+layer_b:
+  bands:
+    - id: b_006
+      name: Pell and Tern
+      kind: partnership
+      home_settlement: separate relay settlements
+      label: label_1
+      genre: relay-pop
+      active_from: 2549
+      active_to: 2583
+      members:
+        - id: p_adra_pell
+          name: Adra Pell
+          genre: relay-pop
+          role: separated lead and answering voice
+          active_from: 2549
+          active_to: 2583
+          status: deceased
+        - id: p_lio_tern
+          name: Lio Tern
+          genre: relay-pop
+          role: separated lead and answering voice
+          active_from: 2549
+          active_to: 2583
+          status: deceased
+      bio: >-
+        Adra Pell and Lio Tern recorded apart, passing verses between two settlements until editors could assemble the shared performances. Their quarrel over an altered credit remained unresolved, and their final shared recording has no spoken introduction.
+      albums:
+        - id: al_012
+          title: Rooms Between Voices
+          label: label_1
+          release_year: 2559
+          kind: album
+          genre: relay-pop
+          notes: The record established their separated-voice method and became the partnership's most copied set of arrangements.
+          songs:
+            - {id: s_0106, title: Written in Transit, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0107, title: Across the Supper Hour, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0108, title: Your Half First, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0109, title: Window Light Reply, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0110, title: A Better Delay, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0111, title: Keep the Second Verse, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0112, title: Credit in Pencil, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0113, title: No Spoken Introduction, track_number: 8, genre: relay-pop, playable: false}
+        - id: al_013
+          title: Tables Kept Apart
+          label: label_1
+          release_year: 2583
+          kind: album
+          genre: relay-pop
+          notes: Compiled from the partnership's final exchanged sessions, it carries the disputed altered credit and ends without an announcement.
+          songs:
+            - {id: s_0114, title: Tables Kept Apart, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0115, title: Repeat the Courtyard Line, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0116, title: The Unchanged Line, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0117, title: Courtyard Answer, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0118, title: Two Different Clocks, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0119, title: Return My Copy, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0120, title: Neither Takes the Blame, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0121, title: End Without Announcement, track_number: 8, genre: relay-pop, playable: false}
+
+    - id: b_007
+      name: Gentle Receipts
+      kind: group
+      home_settlement: freight exchange at Low Span
+      label: label_5
+      genre: relay-pop
+      active_from: 2597
+      active_to: 2621
+      bio: >-
+        Gentle Receipts made quick harmony songs for co-operative dining rooms and printed every contributor on the same line. The group stayed Localist throughout its career and broke up when its three singers accepted incompatible route contracts in 2621.
+      albums:
+        - id: al_014
+          title: Paid in Kindness
+          label: label_5
+          release_year: 2600
+          kind: album
+          genre: relay-pop
+          notes: Its careful division of writing shares became a model for small co-operative groups using the shared pressing format.
+          songs:
+            - {id: s_0122, title: Paid in Kindness, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0123, title: Supper Shift Favor, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0124, title: Keep the Change Slip, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0125, title: Three Cups Waiting, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0126, title: Name the Small Price, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0127, title: Shared Meal Ticket, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0128, title: Kindness Is Accounted, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0129, title: Fold the Invoice, track_number: 8, genre: relay-pop, playable: false}
+        - id: al_015
+          title: Route Contract Hearts
+          label: label_5
+          release_year: 2619
+          kind: album
+          genre: relay-pop
+          notes: The group's final full record placed private breakups beside the route assignments that made reconciliation impractical.
+          songs:
+            - {id: s_0130, title: Route Contract Hearts, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0131, title: One Port Difference, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0132, title: Sign Beside Mine, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0133, title: Empty Chair Clause, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0134, title: Ask the Next Crew, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0135, title: Your Copy Stayed, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0136, title: Parting at Low Span, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0137, title: Equal Shares Apart, track_number: 8, genre: relay-pop, playable: false}
+
+    - id: b_008
+      name: Ajar Almanac
+      kind: group
+      home_settlement: Concordance archive quarter
+      label: label_1
+      genre: relay-pop
+      active_from: 2586
+      active_to: 2614
+      bio: >-
+        Ajar Almanac wrote domestic songs with dates, prices, and room numbers left visible in the verses. The band argued for Purist recording but hired Synthesist guest players whenever a Civic Lantern deadline became expensive.
+      albums:
+        - id: al_016
+          title: Calendar Left Open
+          label: label_1
+          release_year: 2594
+          kind: album
+          genre: relay-pop
+          notes: The record is remembered for turning exact appointment entries into choruses that freight crews adopted during the burn festival.
+          songs:
+            - {id: s_0138, title: Calendar Left Open, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0139, title: Thursday Room Booking, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0140, title: Price Beside the Date, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0141, title: Early Supper Entry, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0142, title: Marked for the Ferry, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0143, title: Cross Out My Name, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0144, title: Page for Bad Weather, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0145, title: Tomorrow Has a Number, track_number: 8, genre: relay-pop, playable: false}
+        - id: al_017
+          title: Notices on the Fridge
+          label: label_1
+          release_year: 2612
+          kind: album
+          genre: relay-pop
+          notes: Its clipped household notices were widely read as comments on the Lower Bell collapse even though the band denied the connection.
+          songs:
+            - {id: s_0146, title: Notices on the Fridge, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0147, title: Milk for the Meeting, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0148, title: Please Lock Gently, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0149, title: Somebody Moved Tuesday, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0150, title: Pen on a String, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0151, title: Dinner After Repairs, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0152, title: Leave One Shelf Empty, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0153, title: Read Before Removing, track_number: 8, genre: relay-pop, playable: false}
+
+    - id: b_009
+      name: Common Lattice
+      kind: collective
+      home_settlement: Concordance west galleries
+      label: label_1
+      genre: relay-pop
+      active_from: 2609
+      active_to: 2626
+      bio: >-
+        Common Lattice is a nine-singer collective whose lead changes by song while its low female anchor remains on every recording. The collective is Localist, rehearses in public galleries, and assigns every arrangement by a written draw before the first session.
+      albums:
+        - id: al_018
+          title: Nine Ways Home
+          label: label_1
+          release_year: 2619
+          kind: album
+          genre: relay-pop
+          notes: Each singer led one piece, but the shared low anchor made the nine arrangements sound like a single argument.
+          songs:
+            - {id: s_0154, title: Nine Ways Home, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0155, title: Gallery Door Number, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0156, title: Your Turn to Choose, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0157, title: Low Voice Waiting, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0158, title: Draw the Short Mark, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0159, title: All the Same Table, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0160, title: West Gallery Evening, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0161, title: Everybody Takes a Line, track_number: 8, genre: relay-pop, playable: false}
+        - id: al_019
+          title: Hall Rules Apply
+          label: label_1
+          release_year: 2624
+          kind: album
+          genre: relay-pop
+          notes: Recorded around the reopened public hall's booking rules, it made the collective's voting process more famous than any member.
+          songs:
+            - {id: s_0162, title: Hall Rules Apply, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0163, title: Keep the Aisle Open, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0164, title: Voices by Appointment, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0165, title: Chair Count First, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0166, title: Quiet During Repairs, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0167, title: Signed for the Room, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0168, title: Windows Take the Chorus, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0169, title: Leave Together Slowly, track_number: 8, genre: relay-pop, playable: false}
+
+    - id: b_010
+      name: Vela Domestic
+      kind: duo
+      home_settlement: Meridian inland shelters
+      label: label_3
+      genre: relay-pop
+      active_from: 2602
+      active_to: 2626
+      bio: >-
+        Vela Domestic pairs one low lead voice with a high answering voice and records arguments from opposite ends of the room. The duo is Synthesist but limits every song to equipment that can run through a shelter power cut.
+      albums:
+        - id: al_020
+          title: Kitchen Pressure Map
+          label: label_3
+          release_year: 2607
+          kind: album
+          genre: relay-pop
+          notes: Finished during the studio closures, the record mapped eight household disputes onto Meridian's shelter power schedule.
+          songs:
+            - {id: s_0170, title: Kitchen Pressure Map, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0171, title: Bowl Left Dry, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0172, title: Opposite Ends Talking, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0173, title: Power Cut Supper, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0174, title: Two Towels Missing, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0175, title: Your Cup Is Chipped, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0176, title: Leave the Vent Open, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0177, title: Settle Before Breakfast, track_number: 8, genre: relay-pop, playable: false}
+        - id: al_021
+          title: Shelter Guest List
+          label: label_3
+          release_year: 2624
+          kind: album
+          genre: relay-pop
+          notes: The duo invited a different neighbor onto every track and printed the room position of each voice beside the credit.
+          songs:
+            - {id: s_0178, title: Shelter Guest List, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0179, title: Neighbor at the Table, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0180, title: Bring One More Chair, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0181, title: Names Beside the Door, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0182, title: Quiet Room Visitor, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0183, title: Share the Dry Towels, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0184, title: Storm Passes at Supper, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0185, title: Everyone Signed Out, track_number: 8, genre: relay-pop, playable: false}
+
+    - id: b_011
+      name: Soft Tariff
+      kind: group
+      home_settlement: Old Span freight market
+      label: label_5
+      genre: relay-pop
+      active_from: 2565
+      active_to: 2599
+      bio: >-
+        Soft Tariff wrote sweet group refrains around freight-market prices and the private bargains hidden behind them. The group claimed Purist discipline, although its brightest release depended on a borrowed electronic-string case used as percussion.
+      albums:
+        - id: al_022
+          title: Market Voice Kindly
+          label: label_5
+          release_year: 2583
+          kind: album
+          genre: relay-pop
+          notes: Its courteous language disguised a detailed complaint about stall fees and made the title phrase common at Old Span.
+          songs:
+            - {id: s_0186, title: Market Voice Kindly, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0187, title: Price for Two, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0188, title: Stall Near the Heater, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0189, title: Count the Good Change, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0190, title: Hold This Parcel, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0191, title: Courteous Until Closing, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0192, title: Same Price Tomorrow, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0193, title: Carry It Together, track_number: 8, genre: relay-pop, playable: false}
+        - id: al_023
+          title: Bright Case Dispute
+          label: label_5
+          release_year: 2594
+          kind: album
+          genre: relay-pop
+          notes: The borrowed case heard throughout the record prompted the group's unresolved argument over whether the sessions remained Purist.
+          songs:
+            - {id: s_0194, title: Bright Case Dispute, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0195, title: Borrowed Until Portfall, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0196, title: Tap the Empty Latch, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0197, title: Who Signed the Loan, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0198, title: Carry No Grudge, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0199, title: Return It Unmarked, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0200, title: Better Than the Deposit, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0201, title: Close the Case Gently, track_number: 8, genre: relay-pop, playable: false}
+
+    - id: b_012
+      name: Morrow Parcel
+      kind: group
+      home_settlement: Concordance east sorting halls
+      label: label_1
+      genre: relay-pop
+      active_from: 2574
+      active_to: 2608
+      bio: >-
+        Morrow Parcel built close group refrains around delayed notes, misdirected gifts, and workplace gossip in the east sorting halls. The band changed from Localist to Synthesist in 2583 when a compact editing desk let its six singers exchange lead lines without sharing one shift.
+      albums:
+        - id: al_024
+          title: Sorting Hall Affection
+          label: label_1
+          release_year: 2583
+          kind: album
+          genre: relay-pop
+          notes: The six separately scheduled voices demonstrated the editing method that ended the band's Localist period.
+          songs:
+            - {id: s_0202, title: Sorting Hall Affection, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0203, title: Parcel for the Wrong Desk, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0204, title: Write the Bay Number, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0205, title: Ribbon in the Intake, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0206, title: Six Shifts Singing, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0207, title: Leave It at East Sort, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0208, title: Gossip With a Stamp, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0209, title: Collected Before Supper, track_number: 8, genre: relay-pop, playable: false}
+        - id: al_025
+          title: Pressed for Delivery
+          label: label_1
+          release_year: 2600
+          kind: album
+          genre: relay-pop
+          notes: The shared pressing format carried the group's sorting-hall stories beyond Concordance and exhausted its remaining contract.
+          songs:
+            - {id: s_0210, title: Pressed for Delivery, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0211, title: Send My Coat Ahead, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0212, title: Address in Blue Pencil, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0213, title: Queue at East Sort, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0214, title: Delivery Window Smile, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0215, title: Keep the Wrapping Plain, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0216, title: Signed by Someone Else, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0217, title: Empty Cart Home, track_number: 8, genre: relay-pop, playable: false}
+
+    - id: b_013
+      name: Signal Courtesy
+      kind: duo
+      home_settlement: Meridian civic towers
+      label: label_3
+      genre: relay-pop
+      active_from: 2606
+      active_to: 2626
+      bio: >-
+        Signal Courtesy makes bright split-vocal songs in which one singer always waits for the other's full line before answering. The duo is Synthesist and turned that restraint into a public rebuke of the overlapping reply records released in 2619.
+      albums:
+        - id: al_026
+          title: Wait for the Answer
+          label: label_3
+          release_year: 2607
+          kind: album
+          genre: relay-pop
+          notes: Recorded during Meridian's reopening, the record made deliberate gaps sound more energetic than crowded arrangements.
+          songs:
+            - {id: s_0218, title: Wait for the Answer, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0219, title: Your Line Finishes, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0220, title: Tower Window Pause, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0221, title: Clear Signal Manners, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0222, title: Speak After the Chime, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0223, title: Leave Room for Yes, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0224, title: Polite Across the Lag, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0225, title: Neither Voice Crowds, track_number: 8, genre: relay-pop, playable: false}
+        - id: al_027
+          title: Courtesy Holds the Credit
+          label: label_3
+          release_year: 2619
+          kind: album
+          genre: relay-pop
+          notes: Its evenly divided lines and alphabetical credits offered the clearest formal answer to the Pell and Tern controversy.
+          songs:
+            - {id: s_0226, title: Courtesy Holds the Credit, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0227, title: Alphabetical at Supper, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0228, title: Half the Room Each, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0229, title: Sign Both Copies, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0230, title: No Verse Goes Missing, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0231, title: Answer Without Altering, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0232, title: Equal Type Size, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0233, title: Close on the Same Word, track_number: 8, genre: relay-pop, playable: false}
+
+    - id: b_014
+      name: Warm Fraction
+      kind: group
+      home_settlement: Concordance late-club quarter
+      label: label_6
+      genre: relay-pop
+      active_from: 2580
+      active_to: 2612
+      bio: >-
+        Warm Fraction played short early-room sets with a low lead and three soft answering voices. The group moved from Synthesist to Purist practice in 2604, then spent 2612 contesting Lower Bell Editions' claim to its stored session parts.
+      albums:
+        - id: al_028
+          title: Before the Tables Fill
+          label: label_6
+          release_year: 2583
+          kind: album
+          genre: relay-pop
+          notes: Written for empty late-club rooms, its small complaints became more durable than the elaborate stored arrangements.
+          songs:
+            - {id: s_0234, title: Before the Tables Fill, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0235, title: First Coat Arrives, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0236, title: Warm Glass Waiting, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0237, title: Early Room Promise, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0238, title: Three Voices Low, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0239, title: Keep the Door Unlatched, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0240, title: Your Table Is Ready, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0241, title: Empty Room Farewell, track_number: 8, genre: relay-pop, playable: false}
+        - id: al_029
+          title: Fractions in Dispute
+          label: label_6
+          release_year: 2612
+          kind: album
+          genre: relay-pop
+          notes: Two rival issues use different stored parts and assign incompatible ownership fractions to the same eight songs.
+          songs:
+            - {id: s_0242, title: Fractions in Dispute, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0243, title: Four Claims Waiting, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0244, title: Stored Under Another Name, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0245, title: Divide the Empty Room, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0246, title: Founder Keeps the Copy, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0247, title: Who Owns the Answer, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0248, title: One Share Unwritten, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0249, title: Close Without Settlement, track_number: 8, genre: relay-pop, playable: false}
+
+    - id: b_015
+      name: Patient Weather
+      kind: group
+      home_settlement: Concordance north concourse
+      label: label_1
+      genre: relay-pop
+      active_from: 2555
+      active_to: 2589
+      bio: >-
+        Patient Weather sang slow-building harmony songs about waiting rooms, delayed meals, and affections that survived poor timing. Its Purist members refused electronic accompaniment but welcomed new singers whenever a former member's work schedule became incompatible.
+      albums:
+        - id: al_030
+          title: Concourse Takes Its Time
+          label: label_1
+          release_year: 2559
+          kind: album
+          genre: relay-pop
+          notes: Released during the Lanternlight season, its modest public-room refrains became a quiet counterweight to large formal performances.
+          songs:
+            - {id: s_0250, title: Concourse Takes Its Time, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0251, title: Wait Beside the Kettle, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0252, title: North Window Patience, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0253, title: Meal Delayed Kindly, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0254, title: Your Shift Ends First, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0255, title: Four Chairs Nearer, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0256, title: Keep the Water Warm, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0257, title: Nothing Lost by Waiting, track_number: 8, genre: relay-pop, playable: false}
+        - id: al_031
+          title: Work Schedule Hearts
+          label: label_1
+          release_year: 2583
+          kind: album
+          genre: relay-pop
+          notes: Three departing singers and two replacements appear across the record, making its credits a guide to the group's changing membership.
+          songs:
+            - {id: s_0258, title: Work Schedule Hearts, track_number: 1, genre: relay-pop, playable: false}
+            - {id: s_0259, title: Change at the Concourse, track_number: 2, genre: relay-pop, playable: false}
+            - {id: s_0260, title: Different Shift Same Table, track_number: 3, genre: relay-pop, playable: false}
+            - {id: s_0261, title: Leave Your Cup Ready, track_number: 4, genre: relay-pop, playable: false}
+            - {id: s_0262, title: New Voice Tuesday, track_number: 5, genre: relay-pop, playable: false}
+            - {id: s_0263, title: Former Name on the List, track_number: 6, genre: relay-pop, playable: false}
+            - {id: s_0264, title: Trade the Window Seat, track_number: 7, genre: relay-pop, playable: false}
+            - {id: s_0265, title: Timing Was the Trouble, track_number: 8, genre: relay-pop, playable: false}
+
+layer_c:
+  recordings: none survive
+  figures:
+    - id: f_001
+      name: Edda Corven
+      kind: solo
+      genre: relay-pop
+      active_from: 2432
+      active_to: 2461
+      played: lead voice and portable keyed strings
+      history: >-
+        Edda Corven sang compact call-and-answer pieces in communal meal rooms between 2432 and 2461. Written accounts describe her stopping mid-performance whenever a listener joined the answer too early, then beginning the whole piece again. Musicians still mention her because the pause before a reply in relay-pop is traditionally called a Corven space.
+
+    - id: f_002
+      name: Marn Ilex
+      kind: group leader
+      genre: relay-pop
+      active_from: 2468
+      active_to: 2502
+      played: lead voice and struck metal frame
+      history: >-
+        Marn Ilex led a rotating group of shift workers from 2468 to 2502 and used a struck meal-room frame to keep their entries together. Surviving notices complain that Ilex credited every singer equally even when a room manager demanded a single author. Ilex remains important because later co-operative groups adopted that equal-line credit custom.
+
+    - id: f_003
+      name: Sola Dren
+      kind: duo singer
+      genre: relay-pop
+      active_from: 2497
+      active_to: 2524
+      played: high answering voice and hand chimes
+      history: >-
+        Sola Dren exchanged verses with an unnamed low singer between 2497 and 2524, but no account agrees on whether they ever occupied the same settlement. Dren's hand chimes marked the expected arrival of each reply according to descriptions preserved in teaching notes. Presenters mention Dren because separated partners still call a precisely timed answer a Dren return.
+
+    - id: f_004
+      name: Tovin Karr
+      kind: composer and singer
+      genre: relay-pop
+      active_from: 2511
+      active_to: 2543
+      played: low lead voice and composite table strings
+      history: >-
+        Tovin Karr wrote plain courtship pieces for a bright composite-string instrument from 2511 to 2543. A surviving contract shows that Karr refused a prestige hall unless the cleaners and room clerks could attend without charge. Karr is still cited when a relay-pop performer chooses a working room over a formal stage.

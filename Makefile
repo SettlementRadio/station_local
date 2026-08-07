@@ -3,7 +3,7 @@
 
 SHELL := /bin/bash
 .DEFAULT_GOAL := help
-.PHONY: help setup check doctor music-brief music-check
+.PHONY: help setup check doctor music-brief music-check music-style music-songs
 
 help:  ## list the targets that exist today
 	@echo "Settlement Radio — make targets"
@@ -48,3 +48,13 @@ music-check:  ## build one genre's checker brief → clipboard (GENRE=relay-pop)
 	@test -n "$(GENRE)" || { echo "usage: make music-check GENRE=relay-pop"; exit 2; }
 	@uv run station music-brief "$(GENRE)" --kind check --out music/briefs/$(GENRE)-check.md
 	@pbcopy < music/briefs/$(GENRE)-check.md && echo "  → on your clipboard. Paste it into a DIFFERENT chat."
+
+music-style:  ## build the style-card brief for one genre's bands → clipboard (GENRE=relay-pop)
+	@test -n "$(GENRE)" || { echo "usage: make music-style GENRE=relay-pop"; exit 2; }
+	@uv run station music-style "$(GENRE)" --out music/briefs/$(GENRE)-style.md
+	@pbcopy < music/briefs/$(GENRE)-style.md && echo "  → on your clipboard. Save the reply to music/production/styles.yaml"
+
+music-songs:  ## build one album's lyrics + prompts brief → clipboard (ALBUM=al_001)
+	@test -n "$(ALBUM)" || { echo "usage: make music-songs ALBUM=al_001"; exit 2; }
+	@uv run station music-songs "$(ALBUM)" --out music/briefs/$(ALBUM)-songs.md
+	@pbcopy < music/briefs/$(ALBUM)-songs.md && echo "  → on your clipboard."

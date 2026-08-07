@@ -56,6 +56,24 @@ the twelve checks from `music/COMMISSION.md`.
 **Paste it into a different conversation from the one that wrote the genre.** A writer marking its
 own homework always passes. It fails, naming the file, if that genre has not been written yet.
 
+### `make music-style GENRE=<genre>`
+
+Builds the style-card brief for that genre's bands and copies it to the clipboard. It reads the
+line-ups the writer already invented, so each card is asked for against real players rather than in
+the abstract.
+
+Save the reply to `music/production/styles.yaml`, keyed by band id. `make music-songs` reads it from
+there; without it, an album brief still builds but says the style card is missing.
+
+### `make music-songs ALBUM=<album_id>`
+
+Builds one album's lyrics-and-prompts brief: the record's story, the band's style card, and every
+playable song with its mood tags and its one fact. Album ids look like `al_001`; naming an unknown
+one lists the ids that exist.
+
+**Run `make music-style` for the genre first.** The style card is what keeps a band sounding like one
+band across three albums (`DECISIONS.md` D-045).
+
 ## What GitHub checks, and when
 
 Three workflows, in `.github/workflows/`. None of them touches the database, the Transmitter or a

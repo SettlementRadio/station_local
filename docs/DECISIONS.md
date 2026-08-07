@@ -1136,3 +1136,33 @@ startable before any hardware exists, and the gate was quietly contradicting tha
 `pre-commit`, so importing it in `src/` worked by luck and would have broken a production install.
 It earns its place regardless: `grid.yaml`, `models.yaml`, `catalogue.yaml` and `banned-entities.yaml`
 are all YAML by design.
+
+### D-048 · The lyric and style briefs are assembled from the wiki, not from the operator — 2026-08-07
+
+D-047 automated the brief that produces a genre. The two steps after it were still manual: choosing
+which songs to record, and telling the writer what each one should sound like.
+
+**Choosing needs no step at all.** `playable: true` *is* the selection, decided when the genre was
+written. There is no second pass in which songs are picked; the wiki already says which 500 exist as
+audio and which 1,200 only exist as references.
+
+**Two more targets, following D-047's pattern.** `make music-style GENRE=<genre>` asks for one style
+card per layer-A band, built from the line-ups the writer already invented — so a card is written
+against real players rather than in the abstract. `make music-songs ALBUM=<id>` assembles one
+album's lyric brief: the record's story, the band's style card, and every playable song with its
+mood tags and its existing fact. That last join is the point — **a song's fact is already true of
+it, so the lyric must fit the fact**, and a lyric writer who cannot see the fact will contradict
+what a presenter is going to say on air.
+
+**`src/station/music/wiki.py` reads the writer's output back as typed objects**, and earned its place
+immediately: it rejected three real shape mismatches on the first genre — `movement` given as a
+mapping recording a change of sides, `section` as a header block, and label ids given as numbers in
+one file and slugs in another. All three are *correct* things for a writer to have written, so the
+models now accept them rather than the wiki being made to conform. The one field that was genuinely
+over-specified — `section`, which nothing reads — was deleted instead: declaring fields nothing uses
+only creates ways for a valid wiki to be rejected.
+
+**A test was wrong and was fixed rather than the code.** `test_check_brief_refuses_when_the_genre_has_not_been_written`
+asserted against the real repository and started failing the moment the first genre was actually
+written. It now builds a temporary root, so it tests the behaviour rather than the state of the
+working tree.
