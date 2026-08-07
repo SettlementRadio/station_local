@@ -8,7 +8,7 @@ Run everything from the repository root.
 
 ---
 
-## The three commands that exist
+## The commands that exist
 
 ### `make setup`
 
@@ -31,6 +31,30 @@ and each system tool present. Ends in `ready`, or names what is missing.
 `make help` lists the targets.
 
 ---
+
+### `make music-brief GENRE=<genre>`
+
+Builds the complete brief for one genre of the music wiki and **copies it to your clipboard**. Paste
+it into a new conversation with the writer; it is self-contained and needs nothing else pasted after
+it.
+
+It assembles three files you own — `music/COMMISSION.md`, `music/CONSTANTS.md`, and that genre's row
+of `music/plan.yaml` — into one block, so there is nothing to stitch together by hand. It calls no
+model and invents nothing.
+
+Genres are the eight slugs in `music/plan.yaml`; naming an unknown one lists the valid ones. The
+output is also left in `music/briefs/`, which is derived and git-ignored.
+
+**This command needs no `.env` and no external volume.** The music wiki is deliberately buildable
+before any hardware exists (`DECISIONS.md` D-044).
+
+### `make music-check GENRE=<genre>`
+
+The same, but builds the *checker* brief: it reads back `music/wiki/<genre>.yaml` and wraps it in
+the twelve checks from `music/COMMISSION.md`.
+
+**Paste it into a different conversation from the one that wrote the genre.** A writer marking its
+own homework always passes. It fails, naming the file, if that genre has not been written yet.
 
 ## What GitHub checks, and when
 

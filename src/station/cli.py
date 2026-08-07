@@ -10,6 +10,7 @@ from __future__ import annotations
 import shutil
 import sys
 from dataclasses import dataclass
+from pathlib import Path
 from typing import TYPE_CHECKING
 
 import typer
@@ -54,11 +55,20 @@ def _boot() -> Settings:
     return settings
 
 
+# Commands that read only files already in the repository and touch no environment. §23's gate
+# exists to stop the *station* running mis-configured; it must not stop the operator writing
+# content. The music wiki is deliberately buildable before any hardware or volume exists (D-044).
+CONFIG_FREE = frozenset({"version", "music-brief"})
+
+
 @app.callback()
 def _main(ctx: typer.Context) -> None:
     """Validate configuration before any command runs, then configure logging once."""
     from station import log
 
+    if ctx.invoked_subcommand in CONFIG_FREE:
+        log.configure()
+        return
     settings = _boot()
     log.configure(settings.log_level)
     ctx.obj = settings
@@ -105,6 +115,34 @@ def doctor(ctx: typer.Context) -> None:
         typer.secho(f"\n{problems} required tool(s) missing. Run `make setup`.", fg="red", err=True)
         raise typer.Exit(code=1)
     typer.secho("\nready", fg="green")
+
+
+# typer needs its defaults as call results; B008 forbids that inline, so they are singletons.
+_GENRE_ARG = typer.Argument(..., help="genre slug, e.g. relay-pop")
+_KIND_OPT = typer.Option("write", "--kind", help="write | check")
+_OUT_OPT = typer.Option(None, "--out", help="write here instead of stdout")
+
+
+@app.command("music-brief")
+def music_brief(genre: str = _GENRE_ARG, kind: str = _KIND_OPT, out: Path = _OUT_OPT) -> None:
+    """Assemble the writer or checker brief for one genre (`music/RUNBOOK.md`)."""
+    from station.music import brief
+
+    if kind not in ("write", "check"):
+        typer.secho(f"--kind must be write or check, not {kind!r}", fg="red", err=True)
+        raise typer.Exit(code=2)
+    try:
+        text = brief.build(kind, genre, Path.cwd())  # type: ignore[arg-type]
+    except brief.BriefError as exc:
+        typer.secho(f"\n{exc}\n", fg="red", err=True)
+        raise typer.Exit(code=2) from None
+
+    if out is None:
+        typer.echo(text)
+        return
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(text, encoding="utf-8")
+    typer.secho(f"{out}  ({len(text.split())} words)", fg="green")
 
 
 def main() -> None:

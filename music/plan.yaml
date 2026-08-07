@@ -1,0 +1,85 @@
+# music/plan.yaml — how the 500 playable songs divide (D-044, and RUNBOOK.md step 3).
+#
+# Read by `make music-brief`. Hand-edited; nothing writes to it.
+#
+# Every number here is arithmetic from constraints already fixed elsewhere:
+#   songs per genre  → COMMISSION.md §2
+#   labels per genre → COMMISSION.md §4, plus the rule that relay-pop appears on >=4 labels,
+#                      lane-rock on >=3 and Frontier Reels on >=3
+#   bands per label  → COMMISSION.md §5: every label needs >=3 bands and >=40 playable songs
+#                      or its retrospective cannot be made
+#
+# Totals, checked by tests/unit/test_brief.py: 500 songs, 25 bands, every label >=3 bands.
+
+labels:
+  1: Concordance, prestige
+  2: Cold Harbor, frontier
+  3: Meridian, dance
+  4: Forge, industrial
+  5: haulers, co-op
+  6: late-club, folded 2612
+  7: old-system importer
+
+genres:
+  relay-pop:
+    title: Relay-pop
+    layer_b_bands: 10
+    layer_c_figures: 4
+    labels:
+      - { label: 1, songs: 45, bands: 2 }
+      - { label: 3, songs: 20, bands: 1 }
+      - { label: 5, songs: 25, bands: 1 }
+      - { label: 6, songs: 15, bands: 1 }
+
+  lane-rock:
+    title: Lane-rock
+    layer_b_bands: 8
+    layer_c_figures: 4
+    labels:
+      - { label: 2, songs: 15, bands: 1 }
+      - { label: 4, songs: 45, bands: 2 }
+      - { label: 5, songs: 25, bands: 1 }
+
+  frontier-reels:
+    title: Frontier Reels
+    layer_b_bands: 7
+    layer_c_figures: 4
+    labels:
+      - { label: 2, songs: 45, bands: 2 }
+      - { label: 4, songs: 15, bands: 1 }
+      - { label: 5, songs: 15, bands: 1 }
+
+  old-system-sessions:
+    title: Old-system sessions
+    layer_b_bands: 6
+    layer_c_figures: 5
+    labels:
+      - { label: 7, songs: 65, bands: 3 }
+
+  pulse-dance:
+    title: Pulse-dance
+    layer_b_bands: 5
+    layer_c_figures: 3
+    labels:
+      - { label: 3, songs: 60, bands: 3 }
+
+  void-lounge:
+    title: Void-lounge
+    layer_b_bands: 5
+    layer_c_figures: 4
+    labels:
+      - { label: 6, songs: 55, bands: 3 }
+
+  core-harmonies:
+    title: Core Harmonies
+    layer_b_bands: 3
+    layer_c_figures: 4
+    labels:
+      - { label: 1, songs: 35, bands: 2 }
+
+  void-ballads:
+    title: Void Ballads
+    layer_b_bands: 1
+    layer_c_figures: 2
+    labels:
+      - { label: 2, songs: 20, bands: 1 }

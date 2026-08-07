@@ -3,7 +3,7 @@
 
 SHELL := /bin/bash
 .DEFAULT_GOAL := help
-.PHONY: help setup check doctor
+.PHONY: help setup check doctor music-brief music-check
 
 help:  ## list the targets that exist today
 	@echo "Settlement Radio — make targets"
@@ -38,3 +38,13 @@ check:  ## ruff + mypy + module sizes + unit tests (fast, model-free; the pre-pu
 
 doctor:  ## check config and system tools on this machine
 	@uv run station doctor
+
+music-brief:  ## build one genre's writer brief → clipboard (GENRE=relay-pop)
+	@test -n "$(GENRE)" || { echo "usage: make music-brief GENRE=relay-pop"; exit 2; }
+	@uv run station music-brief "$(GENRE)" --out music/briefs/$(GENRE)-write.md
+	@pbcopy < music/briefs/$(GENRE)-write.md && echo "  → on your clipboard. Paste it into a NEW chat."
+
+music-check:  ## build one genre's checker brief → clipboard (GENRE=relay-pop)
+	@test -n "$(GENRE)" || { echo "usage: make music-check GENRE=relay-pop"; exit 2; }
+	@uv run station music-brief "$(GENRE)" --kind check --out music/briefs/$(GENRE)-check.md
+	@pbcopy < music/briefs/$(GENRE)-check.md && echo "  → on your clipboard. Paste it into a DIFFERENT chat."

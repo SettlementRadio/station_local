@@ -1101,3 +1101,38 @@ as a dated PDF in `music/licence-evidence/`, not once for the project. Every son
 AI-generated marker are written **into the audio file's own tags** — the audio and the wiki will be
 separated eventually, by a backup or a move or a hand-off, and the file has to carry its own
 provenance.
+
+### D-047 · The music brief is assembled by a make target, not by hand — 2026-08-07
+
+The operator was assembling each genre's brief by copying between `COMMISSION.md`, `CONSTANTS.md`
+and a label plan held in conversation. That is three files stitched by hand, eight times, and it is
+where the thread was repeatedly being lost — the reported symptom was "I still have no idea how the
+whole thing will work", which is a fair verdict on a procedure that exists only as prose.
+
+**Decision: `make music-brief GENRE=<genre>` and `make music-check GENRE=<genre>`.** Each assembles
+one complete, self-contained block and copies it to the clipboard: the whole brief, the fixed
+points, and that genre's allocation, with nothing left to paste afterwards. The operator triggers
+one command and passes one word.
+
+**The allocation moves out of prose and into `music/plan.yaml`** — 500 songs and 25 bands across
+eight genres and seven labels. Every number is arithmetic from constraints already fixed in
+`COMMISSION.md`; none of it is content, so it is config in the sense §33 allows. `tests/unit/
+test_brief.py` asserts the totals and, more usefully, that **every label ends with ≥3 bands and ≥40
+playable songs** — the condition that decides whether a label retrospective can be made at all, and
+one that is free to fix now and very expensive once 500 songs exist.
+
+**No model is called.** The command concatenates files the operator owns and fills in fixed numbers.
+The writing stays with the operator's writer and the checking stays in a second conversation,
+because a writer marking its own homework always passes.
+
+**A latent bug surfaced and was fixed.** The CLI callback validated configuration before *every*
+command, so building a text brief demanded a filled `.env` and a mounted media volume — and
+`version` was equally blocked. §23's gate exists to stop the *station* running mis-configured, not
+to stop the operator writing content, so a `CONFIG_FREE` set now skips it for commands that read
+only files already in the repository. This matters beyond convenience: D-044 makes the wiki
+startable before any hardware exists, and the gate was quietly contradicting that.
+
+**`pyyaml` is now a declared dependency.** It was already resolvable, but only transitively through
+`pre-commit`, so importing it in `src/` worked by luck and would have broken a production install.
+It earns its place regardless: `grid.yaml`, `models.yaml`, `catalogue.yaml` and `banned-entities.yaml`
+are all YAML by design.
