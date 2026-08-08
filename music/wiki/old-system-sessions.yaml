@@ -1,0 +1,43 @@
+# Old-system sessions — PLACEHOLDER. Nothing here is content yet.
+#
+# Fill it by pasting the writer's YAML over everything below the `section:` block:
+#     make music-brief GENRE=old-system-sessions      -> the brief, on your clipboard
+#     make music-check GENRE=old-system-sessions      -> the checker, after you have pasted the reply back here
+#
+# Allocation, from music/plan.yaml (the authority — do not retype it here):
+#   LAYER A — 60 songs across 3 band(s)
+#     label 7 (old-system importer): 60 songs / 3 band(s)
+#   LAYER B — about 5 more bands the station does not hold
+#   LAYER C — about 4 figures, 2426-2546, no albums and no track lists
+#
+# Labels this genre sits on:
+#   - label_7  (old-system importer)
+
+section:
+  genre: old-system-sessions
+  present_year: 2626
+  layers:
+    played: A
+    referenced: B
+    historical: C
+
+# The labels above, as the writer names them.
+labels: []
+
+# From music/CONSTANTS.md section 2 — only the players who appear on this genre,
+# and only inside their active years.
+session_players: []
+
+# LAYER A — playable: true. Full bios, full album stories, one fact per song.
+layer_a:
+  bands: []
+  albums: []
+
+# LAYER B — playable: false. Two-sentence bios, one-line album notes, titles only, no facts.
+layer_b:
+  bands: []
+
+# LAYER C — recordings are lost. Three sentences per figure. Never an album or a track list.
+layer_c:
+  recordings: none survive
+  figures: []

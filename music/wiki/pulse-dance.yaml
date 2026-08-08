@@ -1,0 +1,43 @@
+# Pulse-dance — PLACEHOLDER. Nothing here is content yet.
+#
+# Fill it by pasting the writer's YAML over everything below the `section:` block:
+#     make music-brief GENRE=pulse-dance      -> the brief, on your clipboard
+#     make music-check GENRE=pulse-dance      -> the checker, after you have pasted the reply back here
+#
+# Allocation, from music/plan.yaml (the authority — do not retype it here):
+#   LAYER A — 60 songs across 2 band(s)
+#     label 3 (Meridian, dance): 60 songs / 2 band(s)
+#   LAYER B — about 5 more bands the station does not hold
+#   LAYER C — about 3 figures, 2426-2546, no albums and no track lists
+#
+# Labels this genre sits on:
+#   - label_3  (Meridian, dance)
+
+section:
+  genre: pulse-dance
+  present_year: 2626
+  layers:
+    played: A
+    referenced: B
+    historical: C
+
+# The labels above, as the writer names them.
+labels: []
+
+# From music/CONSTANTS.md section 2 — only the players who appear on this genre,
+# and only inside their active years.
+session_players: []
+
+# LAYER A — playable: true. Full bios, full album stories, one fact per song.
+layer_a:
+  bands: []
+  albums: []
+
+# LAYER B — playable: false. Two-sentence bios, one-line album notes, titles only, no facts.
+layer_b:
+  bands: []
+
+# LAYER C — recordings are lost. Three sentences per figure. Never an album or a track list.
+layer_c:
+  recordings: none survive
+  figures: []
