@@ -23,8 +23,8 @@ labels:
 genres:
   relay-pop:
     title: Relay-pop
-    layer_b_bands: 10
-    layer_c_figures: 4
+    layer_b_bands: 9
+    layer_c_figures: 5
     labels:
       - { label: 1, songs: 45, bands: 2 }
       - { label: 3, songs: 20, bands: 1 }
@@ -33,53 +33,63 @@ genres:
 
   lane-rock:
     title: Lane-rock
-    layer_b_bands: 8
+    layer_b_bands: 7
     layer_c_figures: 4
     labels:
-      - { label: 2, songs: 15, bands: 1 }
-      - { label: 4, songs: 45, bands: 2 }
+      - { label: 2, songs: 10, bands: 1 }
+      - { label: 4, songs: 35, bands: 2 }
+      - { label: 5, songs: 30, bands: 1 }
+
+  deck-talk:
+    title: Deck-talk
+    layer_b_bands: 7
+    layer_c_figures: 4
+    labels:
+      - { label: 2, songs: 25, bands: 1 }
+      - { label: 4, songs: 20, bands: 1 }
       - { label: 5, songs: 25, bands: 1 }
 
   frontier-reels:
     title: Frontier Reels
-    layer_b_bands: 7
+    layer_b_bands: 6
     layer_c_figures: 4
     labels:
-      - { label: 2, songs: 45, bands: 2 }
+      - { label: 2, songs: 30, bands: 1 }
       - { label: 4, songs: 15, bands: 1 }
-      - { label: 5, songs: 15, bands: 1 }
+      - { label: 5, songs: 20, bands: 1 }
 
   old-system-sessions:
     title: Old-system sessions
-    layer_b_bands: 6
-    layer_c_figures: 5
+    layer_b_bands: 5
+    layer_c_figures: 4
     labels:
-      - { label: 7, songs: 65, bands: 3 }
+      - { label: 7, songs: 60, bands: 3 }
 
   pulse-dance:
     title: Pulse-dance
     layer_b_bands: 5
     layer_c_figures: 3
     labels:
-      - { label: 3, songs: 60, bands: 3 }
+      - { label: 3, songs: 60, bands: 2 }
 
   void-lounge:
     title: Void-lounge
-    layer_b_bands: 5
-    layer_c_figures: 4
+    layer_b_bands: 4
+    layer_c_figures: 3
     labels:
-      - { label: 6, songs: 55, bands: 3 }
+      - { label: 1, songs: 10, bands: 1 }
+      - { label: 6, songs: 30, bands: 2 }
 
   core-harmonies:
     title: Core Harmonies
-    layer_b_bands: 3
-    layer_c_figures: 4
+    layer_b_bands: 1
+    layer_c_figures: 2
     labels:
-      - { label: 1, songs: 35, bands: 2 }
+      - { label: 1, songs: 15, bands: 1 }
 
   void-ballads:
     title: Void Ballads
     layer_b_bands: 1
-    layer_c_figures: 2
+    layer_c_figures: 1
     labels:
-      - { label: 2, songs: 20, bands: 1 }
+      - { label: 2, songs: 10, bands: 1 }

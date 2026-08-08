@@ -21,8 +21,8 @@ TOTAL_SONGS = 500
 TOTAL_BANDS = 25
 MIN_BANDS_PER_LABEL = 3
 MIN_SONGS_PER_LABEL = 40
-# COMMISSION.md §4: the three big forms may not be the property of one label.
-SPREAD = {"relay-pop": 4, "lane-rock": 3, "frontier-reels": 3}
+# COMMISSION.md §4: the big forms may not be the property of one label.
+SPREAD = {"relay-pop": 4, "lane-rock": 3, "deck-talk": 3, "frontier-reels": 3}
 
 
 @pytest.fixture(scope="module")
@@ -54,8 +54,9 @@ def test_big_forms_are_spread_across_labels(plan: brief.Plan, genre: str, least:
     assert len(plan.genres[genre].labels) >= least
 
 
-def test_genre_slugs_match_the_eight_canon_forms(plan: brief.Plan) -> None:
-    assert len(plan.genres) == 8
+def test_genre_slugs_match_the_nine_canon_forms(plan: brief.Plan) -> None:
+    """§2 is a closed list. A tenth genre is a canon edit, never a plan edit."""
+    assert len(plan.genres) == 9
 
 
 def test_write_brief_carries_commission_constants_and_the_numbers(plan: brief.Plan) -> None:
@@ -63,7 +64,7 @@ def test_write_brief_carries_commission_constants_and_the_numbers(plan: brief.Pl
     genre = plan.genres["relay-pop"]
     # the whole brief is embedded, not referenced: a phrase from deep inside each source file
     assert "swap-the-nouns test" in text  # COMMISSION.md §3 came through
-    assert "the eight canon forms" in text  # §8 came through
+    assert "the nine canon forms" in text  # §8 came through
     assert "anchor years" in text.lower()  # CONSTANTS came through
     assert f"LAYER A — {genre.songs} songs" in text
     assert "Label 1 (Concordance, prestige): 45 songs" in text

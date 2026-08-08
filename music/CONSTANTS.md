@@ -126,37 +126,40 @@ So two genres written weeks apart never collide.
 
 ---
 
-## 5. The label tally — fill in at Step 3, tick off as genres land
+## 5. The tallies — tick off as genres land
 
-**Layer A only.** Every label needs **≥3 bands, ≥6 albums and ≥40 playable songs** or its
-retrospective cannot be made. This table is the early-warning system: a shortfall spotted at genre
-three is free to fix, and the same shortfall found after 500 songs exist is not.
+**The planned numbers are not here.** They live in `music/plan.yaml`, which `make music-brief` reads
+and `tests/unit/test_brief.py` enforces — 500 songs, 25 bands, and every label ending with at least
+3 bands and 40 playable songs. Keeping a second copy in this file would only let the two drift.
 
-| # | Label | Forms | Bands planned | Bands so far | Songs planned | Songs so far |
-|---|---|---|---|---|---|---|
-| 1 | Concordance, prestige | Core Harmonies · relay-pop | | 0 | | 0 |
-| 2 | Cold Harbor, frontier | Frontier Reels · Void Ballads | | 0 | | 0 |
-| 3 | Meridian, dance | pulse-dance | | 0 | | 0 |
-| 4 | Forge, industrial | lane-rock · Core Harmonies | | 0 | | 0 |
-| 5 | haulers, co-op | lane-rock · relay-pop | | 0 | | 0 |
-| 6 | late-club, **folded 2612** | void-lounge | | 0 | | 0 |
-| 7 | old-system importer | old-system sessions | | 0 | | 0 |
-| | | | **25** | | **500** | |
+Run `make check` to confirm the plan still adds up; run `uv run station music-brief <genre>` to see
+any single genre's allocation. **This section tracks only what has actually been written.**
+
+| # | Label | Bands written | Songs written |
+|---|---|---|---|
+| 1 | Concordance, prestige | 0 | 0 |
+| 2 | Cold Harbor, frontier | 0 | 0 |
+| 3 | Meridian, dance | 0 | 0 |
+| 4 | Forge, industrial | 0 | 0 |
+| 5 | haulers, co-op | 0 | 0 |
+| 6 | late-club, folded 2612 | 0 | 0 |
+| 7 | old-system importer | 0 | 0 |
 
 ## 6. The genre tally
 
-Layer A songs per form, against `COMMISSION.md` §2.
+Layer A songs per form. `music/plan.yaml` is the authority; this is the running count.
 
 | Form | Target | Written |
 |---|---|---|
 | Relay-pop | 105 | 0 |
-| Lane-rock | 85 | 0 |
-| Frontier Reels | 75 | 0 |
-| Old-system sessions | 65 | 0 |
+| Lane-rock | 75 | 0 |
+| **Deck-talk** | 70 | 0 |
+| Frontier Reels | 65 | 0 |
+| Old-system sessions | 60 | 0 |
 | Pulse-dance | 60 | 0 |
-| Void-lounge | 55 | 0 |
-| Core Harmonies | 35 | 0 |
-| Void Ballads | 20 | 0 |
+| Void-lounge | 40 | 0 |
+| Core Harmonies | 15 | 0 |
+| Void Ballads | 10 | 0 |
 | | **500** | **0** |
 
 **Layers B and C are not tallied.** They have no hard floor — more is better, and nothing breaks if

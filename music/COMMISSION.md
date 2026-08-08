@@ -55,22 +55,27 @@ may only play layer A.** Getting this wrong is dead air.
 
 ---
 
-## 2. The eight genres — a closed list
+## 2. The nine genres — a closed list
 
-The world's musical forms are fixed. **There are eight and you may not invent a ninth.**
+The world's musical forms are fixed. **There are nine and you may not invent a tenth.**
 
 | Form | What it is | Layer A songs |
 |---|---|---|
-| **Relay-pop** | bright hooky harmony songs about love across the lag; the young form and the biggest | ~105 |
-| **Lane-rock** | freight-crew driving music, engine rhythms, whole-crew choruses; its occasion is *burn day* | ~85 |
-| **Frontier Reels** | fast, rhythmic, danceable, played on salvaged and improvised instruments | ~75 |
-| **Old-system sessions** | current releases arriving down the longest relay road from Earth's home system | ~65 |
+| **Relay-pop** | the young form and the biggest: hooks, harmony, heavy production, songs about love across the lag | ~105 |
+| **Lane-rock** | freight-crew driving music, engine rhythms, whole-crew choruses; its occasion is *burn day* | ~75 |
+| **Deck-talk** | rhythmic spoken verse over salvage percussion; competitive, cheap to make, travels furthest | ~70 |
+| **Frontier Reels** | fast, rhythmic, danceable, played on salvaged and improvised instruments | ~65 |
+| **Old-system sessions** | current releases arriving down the longest relay road from Earth's home system | ~60 |
 | **Pulse-dance** | four-on-the-floor from Meridian's sealed storm season | ~60 |
-| **Void-lounge** | the core's late-club standard, slow and smoky, after the last ferry | ~55 |
-| **Core Harmonies** | big, layered, many-voiced; musicians who can rehearse in the same room | ~35 |
-| **Void Ballads** | slow and spare, single voices over the drone of life support | ~20 |
+| **Void-lounge** | the core's late-club standard, slow and smoky, after the last ferry | ~40 |
+| **Core Harmonies** | big, many-voiced, unashamedly grand — the sound of a room full of singers | ~15 |
+| **Void Ballads** | one voice, one instrument, close to the microphone | ~10 |
 
-Layers B and C spread across the same eight, roughly in proportion.
+Layers B and C spread across the same nine, roughly in proportion.
+
+**The top four are 60% of everything.** That is deliberate. This is the record library of a living
+station, not a survey of a tradition — the forms people actually put on outnumber the forms people
+admire, and the last two are a spice measured in tens of songs, not hundreds.
 
 ### The production palette
 
@@ -79,19 +84,33 @@ The left column is what the station says. The right column is what goes in a gen
 
 | Form | Prompt palette |
 |---|---|
-| **Relay-pop** | pop. Close-harmony, hook-first, three minutes, big chorus. Girl-group and Merseybeat shapes, power-pop, sunshine pop, modern radio pop |
+| **Relay-pop** | **contemporary pop, produced.** Modern radio pop, dance-pop, big manufactured groups with several vocalists trading lines, stacked harmony, sharp production, a chorus engineered to be sung back. Power-pop and sunshine-pop at the acoustic end |
 | **Lane-rock** | rock. Driving four-piece, riff-led, singalong chorus. Pub rock, heartland rock, boogie, hard rock at the edges |
+| **Deck-talk** | **rhythmic spoken verse over a beat.** Dense rhyme, conversational delivery, call-and-response, crews trading verses. Percussion built from struck metal and found objects, sparse bass, a sung hook only sometimes |
 | **Frontier Reels** | rock and roll and its roots. Rockabilly, skiffle, jump blues, bluegrass and reel tempos, upright bass, slapback |
 | **Old-system sessions** | blues and early rock and roll — twelve-bar, slide guitar, piano triplets, shuffle — plus folk rounds and country blues |
 | **Pulse-dance** | dance pop. Four-on-the-floor, synth bass, big vocal hook. Italo, hi-NRG, house, synth-pop |
 | **Void-lounge** | torch songs and slow blues. Smoky standards, brushed drums, late piano, soul ballads |
-| **Core Harmonies** | choral and vocal-led large ensemble. Gospel mass, doo-wop stacked harmony, orchestral pop, big-band vocal |
-| **Void Ballads** | spare solo song. Single voice and one instrument, drone underneath, country-gothic and folk-ballad shapes |
+| **Core Harmonies** | **big vocal pop.** Wall-of-sound production, stacked doo-wop harmony, orchestral pop, big-band vocal — gospel *lift* rather than gospel liturgy. Grand and warm, never devotional |
+| **Void Ballads** | one voice and one instrument, close-mic'd and intimate. Folk ballad, country-gothic, torch. A held note underneath at most — **never an ambient drone piece** |
 
-**The three movements cut across all eight.** The Purists (acoustic only), the Synthesists (embrace
-what technology allows), the Localists (every world grows its own language). Every band should be
-placeable in that argument and some should have changed sides. It is the richest source of presenter
-talk in the whole wiki and costs nothing.
+**Nothing in that right-hand column is ever spoken on air**, with one canon exception in §8.
+
+**Deck-talk is the newest form here and the one most likely to be got wrong.** It is not a novelty
+and not a frontier curiosity — it is the second-biggest thing the station plays. Canon gives it two
+parents: the Freeholds' percussion built from survival, and the older habit of reading a ledger
+aloud so a whole room can hear it and nobody can claim afterwards they did not. Counting turned into
+competing. The skill people admire is carrying a long list furthest without dropping the beat.
+**Write it as current, confident and popular** — made by the people who had least of everything else
+and know exactly what they built.
+
+**The three movements are biography, not a subject.** The Purists (acoustic only), the Synthesists
+(embrace what technology allows), the Localists (every world grows its own language). Note where a
+band stands and whether they changed sides: it explains a split, a sound, a sacked player. **Do not
+make it the point.** Canon's register rule is explicit that interest comes from concrete stakes —
+prices, disputes, someone's bad day — and a wiki in which every band is a philosophy seminar
+produces exactly the overnight nobody wants. The richest presenter talk is people and consequences:
+who left, who paid, who would not play.
 
 **Signature instruments, from canon, and they must be audible.** Forge's **resonance pipes** — long
 alloy tubes, deep organ tones. Concordance's **synth-harpsichord** — plucked electronic strings. The
@@ -137,7 +156,7 @@ them as archive.**
 Eight in-world years where a great many records happen to have been released, given to you by the
 operator. `Night Record` plays *"one label or one year"*, and a year is only a programme if **≥25
 playable songs across ≥4 bands and ≥2 labels** land on it. **Put most releases on the anchors** and
-never invent a ninth.
+never invent a ninth anchor year.
 
 ---
 
@@ -163,8 +182,8 @@ label that no longer exists, or to none.
 **At least one label defunct, at least one in trouble.** A folded label has a disputed
 back-catalogue, a founder who will not talk about it, and a reason for a 56-minute programme.
 
-**The three big forms belong to no single label.** Relay-pop appears on at least four of the seven,
-lane-rock on three, Frontier Reels on three.
+**The big forms belong to no single label.** Relay-pop appears on at least four of the seven;
+lane-rock, deck-talk and Frontier Reels on at least three each.
 
 ### Four musicians canon already fixed
 
@@ -330,7 +349,7 @@ records and will happily be steered toward one.
 | | Used in | May contain |
 |---|---|---|
 | **Production vocabulary** | generation prompts, the production sheet | real **genre and technique** words — "brushed drums", "close-mic'd fiddle reel", "four-on-the-floor synth". A sound is not property |
-| **In-world vocabulary** | the wiki, the air, the website | **only the eight canon forms** |
+| **In-world vocabulary** | the wiki, the air, the website | **only the nine canon forms** |
 
 **Prompts and style cards never enter the wiki**, because the wiki is read into the station and can
 reach the microphone.
@@ -386,7 +405,7 @@ presenter says about it, it has crossed the line.
 - Never name a real artist, band, label, producer, album or song, anywhere.
 - Never let the tool write the lyrics.
 - Never put a prompt or a style card in the wiki.
-- Never invent a ninth musical form.
+- Never invent a tenth musical form.
 - Never write a song about leaving Earth, the crossing, the cradle or the long dark.
 - Never present an old-system record as archive.
 - Never write an instrumental.
@@ -403,8 +422,8 @@ presenter says about it, it has crossed the line.
 
 ## 11. Before you hand it back
 
-- [ ] All eight forms present, roughly in the stated proportions.
-- [ ] Relay-pop, lane-rock and Frontier Reels together are about half of layer A.
+- [ ] All nine forms present, roughly in the stated proportions.
+- [ ] Relay-pop, lane-rock, deck-talk and Frontier Reels together are about 60% of layer A.
 - [ ] Every song has a `playable` flag, and `true` appears exactly 500 times.
 - [ ] Every layer-A song has one concrete fact. No layer-B song has one.
 - [ ] No layer-C figure has an album or a track list.

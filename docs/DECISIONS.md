@@ -1166,3 +1166,56 @@ only creates ways for a valid wiki to be rejected.
 asserted against the real repository and started failing the moment the first genre was actually
 written. It now builds a temporary root, so it tests the behaviour rather than the state of the
 working tree.
+
+### D-049 · A ninth form, deck-talk; the palette is modernised; the movements are demoted — 2026-08-08
+
+The operator's reality check on the catalogue: is it boring, is Core Harmonies too heavy, and where
+is anything resembling the dominant popular music of the present day. Three findings, of which the
+first is the one that mattered.
+
+**The palette had no rhythmic spoken form, and that dated the world to about 1985.** The eight canon
+forms mapped to pop, rock, rockabilly, blues, dance, torch, choral and folk ballad — a record
+collection that stops before hip-hop exists. Over six centuries a form built on spoken rhythm over a
+beat is *more* likely to survive than choral music: it needs one voice and something to hit, and it
+travels. Its absence was a hole, not a choice.
+
+**Canon had already built the derivation without anyone noticing.** `70-music.md` gives the Freeholds
+percussion made from survival — oxygen-tank drums, stripped-wire chimes; `35-economy.md` gives
+Clearing Day, where *"the old ledgers are **read aloud** one last time and struck through"*; and the
+Embargo left Freehold workshops with rough self-built industry "worn with enormous pride". Salvage
+drums, a ceremony of reciting a list aloud, and competitive pride in what you made yourself.
+
+**Decision: `deck-talk` is the ninth form** — rhythmic spoken verse over salvage percussion, born on
+the station decks and in the Freehold workshops, where counting turned into competing and the
+admired skill is carrying a long list furthest without dropping the beat. Canon facts 26–28 added;
+fact 19 and the "what people actually put on" prose updated to name it among the forms carrying most
+listening. At **70 songs it is the second-largest form in layer A**, which is the point: it is not a
+curiosity. The name was chosen over "tally" — which collides with *The Count* on air — and over
+"lane-talk", which would wrongly imply freight lanes.
+
+**Relay-pop's palette was sixty years old.** Canon calls it "the young form"; the brief described it
+as "girl-group and Merseybeat shapes". A 2626 teenager listening to 1963-shaped pop is exactly the
+museum effect the catalogue is supposed to avoid, so the palette now reads contemporary produced
+pop — big groups, several vocalists trading lines, sharp production. **No canon change was needed**;
+`72-celebrity.md` already carries the fandom machinery. The governing principle, stated once here:
+**retro setting, contemporary music.** The world is imagined the golden-age way because that is the
+tribute; the music is the one thing in it that has to sound alive.
+
+**Core Harmonies and Void Ballads were not the problem the operator thought, but the wording was.**
+At 55 of 500 they were 11% — a spice level. But "gospel mass" and "drone underneath" read as organ
+music when the intent was wall-of-sound vocal pop and one voice close to a microphone. Palettes
+retuned, and both trimmed — to 15 and 10 — taking the difficult share to 5%.
+
+**The three movements are demoted from "the richest source of presenter talk" to biography.** That
+claim was mine and it was wrong: it invited a wiki in which every band is a philosophy seminar, and
+it contradicts `SPIRIT.md` R1, which says interest comes from concrete stakes rather than
+meditation. Purist/Synthesist/Localist now explains a split, a sound or a sacked player, and nothing
+more. **This is the change that would have quietly made the overnight sound like a lecture.**
+
+**Consequence: `relay-pop.yaml` was written under the old palette** and needs a revisit. Cheap now —
+it is text, and no audio exists.
+
+**`CONSTANTS.md` stopped duplicating the plan.** Its tally tables carried planned figures already
+held in `music/plan.yaml` and enforced by tests; the planned columns were removed and replaced with
+a pointer, leaving only the running count of what has actually been written. Two copies of a number
+are one copy too many.

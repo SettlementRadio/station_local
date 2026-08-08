@@ -21,7 +21,7 @@ Each era had its sound, but only the recent ones can still be heard. Recordings 
 
 ## What people actually put on
 
-Music is all of that. It is also, most of the time, just what somebody puts on while they work, or to fill a room, or because it is the record everyone is playing this season. The forms that carry the most listening are the young ones — the relay-pop songs about love across the lag, the lane-rock the freight crews shout along to, the reels that clear a floor — and they carry it because they are short, loud, cheerful and about ordinary things. A settlement's biggest record of the year is far more likely to be three minutes about somebody who isn't home than a cycle about the human condition.
+Music is all of that. It is also, most of the time, just what somebody puts on while they work, or to fill a room, or because it is the record everyone is playing this season. The forms that carry the most listening are the young ones — the relay-pop songs about love across the lag, the deck-talk two crews trade until one of them runs out of verse, the lane-rock the freight crews shout along to, the reels that clear a floor — and they carry it because they are short, loud, direct and about ordinary things. A settlement's biggest record of the year is far more likely to be three minutes about somebody who isn't home than a cycle about the human condition.
 
 What the songs are about is what songs have always been about: someone far off, money, weather, a shift that won't end, a fight, a night out, wanting somebody. The distances do turn up, because the distances are the furniture of everyone's life — a standing hour on the relay, a burn day, a season sealed indoors — but they are the setting and not the subject. The Exodus is one of the great subjects for drama and is not a song subject at all: what holds a stage does not work in three minutes with a chorus, and the settled worlds do not dance to their own founding.
 
@@ -73,6 +73,17 @@ goes, brushed drums and patient keys for the hour the honest and the hopeless rh
 travel the relays to every night shift in the settled worlds; the deep hours, the lounge players
 say, are the same on every world — same brave lamps, different star.
 
+On the station decks and in the Freehold workshops there is **deck-talk** — rhythmic spoken verse
+over percussion built from what the place had. Its two parents are both older than music: the
+salvage drums, tanks and stripped wire and hands on metal, and the older habit of reading a ledger
+out loud so a whole room can hear it and no one can claim afterwards they did not. Clearing Day is
+where most people first hear it done properly. What began as counting turned into competing: who
+can carry a list furthest without dropping the beat, who can answer another crew's verse with a
+better one, who can name what was owed and what was paid and make a room laugh doing it. It is the
+cheapest music there is to make — one voice and something to hit — which is exactly why the places
+with least of everything else made it, and why it travels better than anything on the relays. The
+core spent a generation calling it not-music and now signs it.
+
 And everywhere the relays reach, there is **relay-pop** — bright, hooky harmony songs about love
 across the lag: sweethearts on worlds weeks apart who keep a standing hour on the thread, letters
 answered in slow motion, the distance doing its part. It is the young form, sweet and a little
@@ -114,10 +125,13 @@ The playlist is also an argument. By choosing certain songs and not others, the 
 16. **Relay-pop is the young bright form — harmony songs about love across the lag, sweethearts keeping a standing hour on the thread across weeks of distance.**
 17. **The old-system sessions are the records that arrive down the longest relay road, from Earth's home system where blues, rock, and the folk rounds never died — seasons late, old news at home and brand new on the settled worlds' air, the living kin of the Earth-roots tradition.**
 18. **Most listening is to current popular music — short, loud, cheerful records people put on to work, drink and dance to — and not to heritage.**
-19. **Relay-pop, lane-rock and the Frontier Reels carry more listening than any other forms, because they are short, cheerful and about ordinary things.**
+19. **Relay-pop, deck-talk and lane-rock carry more listening than any other forms, because they are short, direct and about ordinary things.**
 20. **Songs are about someone far off, money, weather, a shift that won't end, a fight or a night out; the distances of the settled worlds are the setting and never the subject.**
 21. **The Exodus is one of the great subjects for drama and is not a song subject — the settled worlds do not dance to their own founding.**
 22. **Recordings from beyond living memory do not survive; the deep past reaches listeners as repertoire — old tunes still sung and re-cut by whoever is working now — rather than as playable records.**
 23. **The Divergence, the consolidation era's flowering of a thousand isolated local scenes, is the era the settled worlds are still living in.**
 24. **Heritage listening is a real but minority taste; the arguments about lineage and legacy belong to enthusiasts, the late shows, and the listeners who write in.**
 25. **Requests reach the station by relay, days or weeks after the show that prompted them — no listener has ever spoken to the station live.**
+26. **Deck-talk is rhythmic spoken verse over salvage percussion — born on the station decks and in the Freehold workshops from drums built of tanks and stripped wire and from the habit of reading a ledger aloud so a whole room can hear it.**
+27. **Deck-talk is competitive: crews answer one another's verses, and the skill admired is carrying a long list furthest without dropping the beat.**
+28. **Deck-talk is the cheapest music to make — one voice and something to hit — which is why the places with least of everything else made it, and why it travels the relays better than anything else; the core called it not-music for a generation and now signs it.**
