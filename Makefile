@@ -3,7 +3,7 @@
 
 SHELL := /bin/bash
 .DEFAULT_GOAL := help
-.PHONY: help setup check doctor music-brief music-check music-style music-songs
+.PHONY: help setup check doctor music-brief music-check music-style music-songs music-albums
 
 help:  ## list the targets that exist today
 	@echo "Settlement Radio — make targets"
@@ -42,7 +42,7 @@ doctor:  ## check config and system tools on this machine
 music-brief:  ## build one genre's writer brief → clipboard (GENRE=relay-pop)
 	@test -n "$(GENRE)" || { echo "usage: make music-brief GENRE=relay-pop"; exit 2; }
 	@uv run station music-brief "$(GENRE)" --out music/briefs/$(GENRE)-write.md
-	@pbcopy < music/briefs/$(GENRE)-write.md && echo "  → on your clipboard. Paste it into a NEW chat."
+	@pbcopy < music/briefs/$(GENRE)-write.md && echo "  → on your clipboard. Paste into a NEW chat, save the reply to music/wiki/$(GENRE).yaml"
 
 music-check:  ## build one genre's checker brief → clipboard (GENRE=relay-pop)
 	@test -n "$(GENRE)" || { echo "usage: make music-check GENRE=relay-pop"; exit 2; }
@@ -57,4 +57,7 @@ music-style:  ## build the style-card brief for one genre's bands → clipboard 
 music-songs:  ## build one album's lyrics + prompts brief → clipboard (ALBUM=al_001)
 	@test -n "$(ALBUM)" || { echo "usage: make music-songs ALBUM=al_001"; exit 2; }
 	@uv run station music-songs "$(ALBUM)" --out music/briefs/$(ALBUM)-songs.md
-	@pbcopy < music/briefs/$(ALBUM)-songs.md && echo "  → on your clipboard."
+	@pbcopy < music/briefs/$(ALBUM)-songs.md && echo "  → on your clipboard. Save the reply to music/production/lyrics/$(ALBUM).yaml"
+
+music-albums:  ## list every album in the wiki, with its id for music-songs (GENRE= optional)
+	@uv run station music-albums $(if $(GENRE),--genre $(GENRE),)

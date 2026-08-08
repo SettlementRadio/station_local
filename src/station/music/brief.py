@@ -231,9 +231,36 @@ Return YAML keyed by song id.
 {songs}"""
 
 
+STYLES_STUB = """\
+# Band style cards. Paste the reply to `make music-style GENRE=<genre>` below this line.
+#
+# One entry per band, keyed by band id. Six lines each. The voice line is fixed for the life of
+# the band and never changes between albums (COMMISSION.md section 7).
+#
+# b_001:
+#   voice: ...
+#   backing: ...
+#   instruments: ...
+#   production: ...
+#   tempo range: ...
+#   exclude: ...
+"""
+
+
+def prepare_production(root: Path) -> Path:
+    """Make the place the operator saves replies to, so they never have to create it by hand."""
+    production = root / "music" / "production"
+    (production / "lyrics").mkdir(parents=True, exist_ok=True)
+    styles = production / "styles.yaml"
+    if not styles.exists():
+        styles.write_text(STYLES_STUB, encoding="utf-8")
+    return production
+
+
 def build_style(name: str, root: Path) -> str:
     """The style-card brief for one genre's layer-A bands."""
     music = root / "music"
+    prepare_production(root)
     genre_wiki = wiki.load_genre(music / WIKI_DIR / f"{name}.yaml")
     if not genre_wiki.bands:
         raise BriefError(f"{name} has no layer-A bands to write style cards for")
@@ -248,6 +275,7 @@ def build_style(name: str, root: Path) -> str:
 def build_songs(album_id: str, root: Path) -> str:
     """The lyrics-and-prompts brief for one album."""
     music = root / "music"
+    prepare_production(root)
     try:
         album, band, _ = wiki.find_album(music / WIKI_DIR, album_id)
     except wiki.WikiError as exc:

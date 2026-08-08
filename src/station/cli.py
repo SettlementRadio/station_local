@@ -59,7 +59,7 @@ def _boot() -> Settings:
 # Commands that read only files already in the repository and touch no environment. §23's gate
 # exists to stop the *station* running mis-configured; it must not stop the operator writing
 # content. The music wiki is deliberately buildable before any hardware or volume exists (D-044).
-CONFIG_FREE = frozenset({"version", "music-brief", "music-style", "music-songs"})
+CONFIG_FREE = frozenset({"version", "music-brief", "music-style", "music-songs", "music-albums"})
 
 
 @app.callback()
@@ -169,6 +169,58 @@ def music_songs(album: str = _ALBUM_ARG, out: Path = _OUT_OPT) -> None:
     from station.music import brief
 
     _emit(lambda: brief.build_songs(album, Path.cwd()), out)
+
+
+_GENRE_FILTER = typer.Option(None, "--genre", help="only this genre")
+
+
+@app.command("music-albums")
+def music_albums(genre: str = _GENRE_FILTER) -> None:
+    """List every album in the wiki, so `music-songs` has an id to take."""
+    from station.music import wiki
+
+    music = Path.cwd() / "music"
+    try:
+        styles = wiki.load_styles(music / "production" / "styles.yaml")
+        rows = wiki.album_rows(music / "wiki", styles)
+    except wiki.WikiError as exc:
+        typer.secho(f"\n{exc}\n", fg="red", err=True)
+        raise typer.Exit(code=2) from None
+
+    rows = [r for r in rows if genre is None or r.genre == genre]
+    if not rows:
+        typer.secho("no albums yet — write a genre first (music/RUNBOOK.md)", fg="yellow")
+        return
+
+    typer.echo(
+        f"{'ALBUM':<8} {'L':<2} {'BAND':<20} {'YEAR':<6} {'SONGS':<6} {'PLAY':<5} {'STYLE':<6} TITLE"
+    )
+    current = ""
+    for row in rows:
+        if row.genre != current:
+            current = row.genre
+            typer.secho(f"\n{current}", bold=True)
+        style = "yes" if row.has_style else ("-" if row.layer == "B" else "--")
+        mark = " *" if row.cornerstone else ""
+        line = (
+            f"{row.album_id:<8} {row.layer:<2} {row.band:<20} {row.year:<6} "
+            f"{row.songs:<6} {row.playable:<5} {style:<6} {row.title}{mark}"
+        )
+        typer.secho(line, fg=None if row.layer == "A" else "bright_black")
+
+    playable = [r for r in rows if r.layer == "A"]
+    typer.echo(
+        f"\n{len(playable)} playable albums (L=A), {len(rows) - len(playable)} referenced only (L=B)."
+        "\n  L=B is written about but never recorded — `make music-songs` will refuse it."
+        "\n  * cornerstone, long enough to carry a whole 56-minute programme."
+    )
+    missing = sorted({r.band for r in playable if not r.has_style})
+    if missing:
+        typer.secho(
+            f"\nno style card yet: {', '.join(missing)}"
+            "\n  run `make music-style GENRE=<genre>` before `make music-songs`.",
+            fg="yellow",
+        )
 
 
 def main() -> None:

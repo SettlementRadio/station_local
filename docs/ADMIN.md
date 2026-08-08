@@ -74,6 +74,17 @@ one lists the ids that exist.
 **Run `make music-style` for the genre first.** The style card is what keeps a band sounding like one
 band across three albums (`DECISIONS.md` D-045).
 
+### `make music-albums`
+
+Lists every album in the wiki with its id, band, year, song counts and whether that band has a style
+card yet. **This is where the `ALBUM=` id for `make music-songs` comes from.** `GENRE=` limits it to
+one genre.
+
+The **L** column is the layer: `A` is recorded, `B` is written about and never recorded. **PLAY** is
+how many of the album's songs become audio, and is always 0 for layer B. `make music-songs` refuses
+a layer-B id and explains why. `*` marks a cornerstone album — long enough to carry a 56-minute
+single-album programme.
+
 ## What GitHub checks, and when
 
 Three workflows, in `.github/workflows/`. None of them touches the database, the Transmitter or a

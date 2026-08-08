@@ -13,7 +13,7 @@ from pathlib import Path
 
 import pytest
 
-from station.music import brief
+from station.music import brief, wiki
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -101,3 +101,37 @@ def test_songs_brief_carries_the_album_story_titles_and_facts() -> None:
 def test_songs_brief_names_the_valid_albums_when_the_id_is_wrong() -> None:
     with pytest.raises(brief.BriefError, match="no album"):
         brief.build_songs("al_999", ROOT)
+
+
+def test_album_listing_reports_which_bands_still_need_a_style_card() -> None:
+    """`music-albums` is how the operator finds an id for `music-songs`; the style column is why."""
+    if not (ROOT / "music" / "wiki" / "relay-pop.yaml").is_file():
+        pytest.skip("relay-pop has not been written yet")
+    rows = wiki.album_rows(ROOT / "music" / "wiki", styles={})
+    assert rows, "relay-pop has albums, so the listing must not be empty"
+    assert all(not r.has_style for r in rows), "no style card was passed, so none may report one"
+    one = next(r for r in rows if r.album_id == "al_001")
+    assert one.band == "Measure Kindly" and one.cornerstone and one.playable == 12
+
+    with_style = wiki.album_rows(ROOT / "music" / "wiki", styles={one.band_id: "voice: ..."})
+    assert next(r for r in with_style if r.album_id == "al_001").has_style
+
+
+def test_listing_shows_layer_b_albums_and_marks_them_unplayable() -> None:
+    """Layer B is most of the discography; a listing that hides it hides what the presenters use."""
+    if not (ROOT / "music" / "wiki" / "relay-pop.yaml").is_file():
+        pytest.skip("relay-pop has not been written yet")
+    rows = wiki.album_rows(ROOT / "music" / "wiki", styles={})
+    layer_b = [r for r in rows if r.layer == "B"]
+    assert layer_b, "relay-pop has layer-B albums, so they must appear"
+    assert all(r.playable == 0 for r in layer_b), "a layer-B album has no playable songs"
+    assert all(r.songs > 0 for r in layer_b), "but it does have songs, which is the point of it"
+    assert all(r.band != "?" for r in layer_b), "layer-B albums nest inside their band"
+
+
+def test_songs_brief_refuses_a_layer_b_album_and_says_why() -> None:
+    """The failure a listing invites: picking an id that can never become audio."""
+    if not (ROOT / "music" / "wiki" / "relay-pop.yaml").is_file():
+        pytest.skip("relay-pop has not been written yet")
+    with pytest.raises(brief.BriefError, match="layer-B"):
+        brief.build_songs("al_012", ROOT)

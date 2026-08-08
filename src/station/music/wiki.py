@@ -53,7 +53,9 @@ class Song(_Entry):
 class Album(_Labelled):
     id: str
     title: str
-    band: str
+    # Layer A lists albums beside the bands and points back with `band`; layer B nests them inside
+    # the band that made them, so the reference is implied. Both are natural YAML and both occur.
+    band: str = ""
     release_year: int
     kind: str = "album"
     genre: str
@@ -85,6 +87,7 @@ class Band(_Labelled):
     movement: str | dict[str, object] = ""
     bio: str = ""
     members: list[Member] = Field(default_factory=list)
+    albums: list[Album] = Field(default_factory=list)  # layer B nests them here
 
     @property
     def movement_line(self) -> str:
@@ -109,12 +112,13 @@ class _Layer(_Entry):
 class GenreWiki(_Entry):
     """One `music/wiki/<genre>.yaml`.
 
-    Only `layer_a` is modelled. Layers B and C are never read by a brief — they exist so a presenter
-    can reference music the station does not hold — and `section` is the writer's own header block.
-    Declaring fields nothing uses only creates ways for a valid wiki to be rejected.
+    Layer C is not modelled: its figures have no albums by definition, so nothing here can read it.
+    `section` is the writer's own header block and is likewise ignored — declaring fields nothing
+    uses only creates ways for a valid wiki to be rejected.
     """
 
     layer_a: _Layer = Field(default_factory=_Layer)
+    layer_b: _Layer = Field(default_factory=_Layer)
 
     @property
     def bands(self) -> list[Band]:
@@ -123,6 +127,15 @@ class GenreWiki(_Entry):
     @property
     def albums(self) -> list[Album]:
         return self.layer_a.albums
+
+    def every_album(self) -> list[tuple[Album, Band | None, str]]:
+        """(album, its band, its layer) across A and B, so a listing can show both."""
+        bands = {b.id: b for b in self.layer_a.bands}
+        out: list[tuple[Album, Band | None, str]] = [
+            (a, bands.get(a.band), "A") for a in self.layer_a.albums
+        ]
+        out += [(a, b, "B") for b in self.layer_b.bands for a in b.albums]
+        return out
 
 
 def load_genre(path: Path) -> GenreWiki:
@@ -151,17 +164,64 @@ def find_album(wiki_dir: Path, album_id: str) -> tuple[Album, Band, str]:
     seen: list[str] = []
     for slug in written_genres(wiki_dir):
         genre = load_genre(wiki_dir / f"{slug}.yaml")
-        bands = {b.id: b for b in genre.bands}
-        for album in genre.albums:
-            seen.append(album.id)
+        for album, band, layer in genre.every_album():
             if album.id != album_id:
+                if layer == "A":
+                    seen.append(album.id)
                 continue
-            band = bands.get(album.band)
+            if layer == "B":
+                raise WikiError(
+                    f"{album_id} is a layer-B album — the station references it but does not hold "
+                    f"it, so it has no lyrics and never becomes audio. Pick a layer-A album: "
+                    f"run `make music-albums`."
+                )
             if band is None:
                 raise WikiError(f"album {album_id} names band {album.band}, which is not in {slug}")
             return album, band, slug
     known = ", ".join(seen[:12]) or "none — no genre has been written yet"
-    raise WikiError(f"no album {album_id!r}. Albums found: {known}")
+    raise WikiError(f"no album {album_id!r}. Playable albums: {known}")
+
+
+class AlbumRow(_Entry):
+    """One line of `make music-albums` — enough to choose an album without opening a file."""
+
+    album_id: str
+    title: str
+    band: str
+    band_id: str
+    genre: str
+    layer: str
+    year: int
+    songs: int
+    playable: int
+    cornerstone: bool
+    has_style: bool
+
+
+def album_rows(wiki_dir: Path, styles: dict[str, str]) -> list[AlbumRow]:
+    """Every album in the wiki — layer A and layer B both, so the listing shows what is playable."""
+    rows: list[AlbumRow] = []
+    for slug in written_genres(wiki_dir):
+        genre = load_genre(wiki_dir / f"{slug}.yaml")
+        found = genre.every_album()
+        for album, band, layer in sorted(found, key=lambda t: (t[2], t[0].id)):
+            band_id = album.band or (band.id if band else "")
+            rows.append(
+                AlbumRow(
+                    album_id=album.id,
+                    title=album.title,
+                    band=band.name if band else "?",
+                    band_id=band_id,
+                    genre=slug,
+                    layer=layer,
+                    year=album.release_year,
+                    songs=len(album.songs),
+                    playable=len(album.playable_songs),
+                    cornerstone=album.cornerstone,
+                    has_style=bool(band_id) and band_id in styles,
+                )
+            )
+    return rows
 
 
 def load_styles(path: Path) -> dict[str, str]:
