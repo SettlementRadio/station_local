@@ -1389,3 +1389,37 @@ one: five of them are now `make check` (D-054), the name screen becomes M-03, an
 "bios are plain speech, not lyrical", "no song is about leaving Earth" — were always judgements a
 model marking its own homework passed anyway. They stay in `COMMISSION.md` §3 and §8, where the
 agent writing the genre reads them, and they are checked by the operator reading the result.
+
+### D-056 · The music name screen queries Wikidata live, and screens for people and organisations only — 2026-08-09
+
+**M-03 asks the query service, it does not download the 1.5M-name extract.** D-014 specifies an
+extract behind a bloom filter and a trigram table for §19's figure screen, and that is right for
+that screen: it runs inside the nightly batch, on every figure the world tick proposes, and cannot
+depend on somebody else's uptime. `make music-screen` is the opposite case — an operator command
+run nine times in the life of the catalogue, on about 320 names a genre, where a stale extract and
+the machinery to refresh it cost more than they save. One genre is seven SPARQL requests and under
+a minute. If the two screens ever want to share code, the extract is the direction to move in, not
+the query service.
+
+**The rule is D-009's, unchanged**: exact match on the full name, entity with ≥5 sitelinks. What
+this card adds is a type filter — the match only counts if the entity is a human or an organisation
+(`wdt:P31/wdt:P279*` up to `Q5` or `Q43229`), with administrative and geographic entities excluded.
+Without that exclusion every one-word title matches a village in Turkey, because administrative
+areas reach `organization` through the subclass tree, and a report nobody can read is a screen
+nobody runs. Places, films, species and songs sharing a name are therefore silent: the risk §19
+names is an invented person or band colliding with a real notable one.
+
+**Layer B is screened as hard as layer A.** A presenter says a layer-B title on air exactly as
+readily as a layer-A one. Whether the record was ever made has nothing to do with whether its name
+belongs to somebody.
+
+**It is not a gate and `make check` does not run it.** It exits 0 whatever it finds, because every
+finding is a judgement — replace the name, or record why it stays. What it must never do is print
+an empty report when the endpoint was unreachable: that reads as "every name is clear", so a screen
+that could not run raises after three attempts (§25) instead.
+
+**Where it does not live.** The HTTP call sits in `src/station/music/screen.py`, not in
+`providers/`. §3's two seams are the LLM and TTS; §21's rule is that vendor *SDKs* stay in
+`providers/`, and this is 20 lines of `urllib` against a public endpoint with no SDK and no seam to
+protect. If a second caller ever wants Wikidata — §19's screen is the candidate — that is the point
+at which it earns a provider module.

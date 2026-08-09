@@ -19,6 +19,7 @@ from station import __version__
 
 if TYPE_CHECKING:
     from station.config import Settings
+    from station.music.screen import Report
 
 app = typer.Typer(add_completion=False, help="Settlement Radio — operator commands (§17).")
 
@@ -58,7 +59,7 @@ def _boot() -> Settings:
 # Commands that read only files already in the repository and touch no environment. §23's gate
 # exists to stop the *station* running mis-configured; it must not stop the operator writing
 # content. The music wiki is deliberately buildable before any hardware or volume exists (D-044).
-CONFIG_FREE = frozenset({"version", "music-albums"})
+CONFIG_FREE = frozenset({"version", "music-albums", "music-screen"})
 
 
 @app.callback()
@@ -167,6 +168,60 @@ def music_albums(genre: str = _GENRE_FILTER) -> None:
             "\n  style cards come from M-16 and M-20 in music/MUSIC_TASKS.md, before any lyrics.",
             fg="yellow",
         )
+
+
+@app.command("music-screen")
+def music_screen(genre: str = _GENRE_FILTER) -> None:
+    """Screen every invented name in the wiki against real notable people and organisations."""
+    from station.music import screen, wiki
+
+    wiki_dir = Path.cwd() / "music" / wiki.WIKI_DIR
+    slugs = [genre] if genre else wiki.written_genres(wiki_dir)
+    if not slugs:
+        typer.secho("no genre has been written yet (music/RUNBOOK.md)", fg="yellow")
+        return
+
+    typer.echo(
+        f"Wikidata: exact name match, at least {screen.SITELINK_FLOOR} sitelinks, people and "
+        f"organisations only.\nSurname-only echoes and near-misses are not reported — those stay "
+        f"yours (music/RUNBOOK.md step 3).\n"
+    )
+    total = 0
+    for slug in slugs:
+        typer.secho(f"{slug}  ", bold=True, nl=False)
+        try:
+            report = screen.screen_genre(
+                wiki_dir, slug, on_batch=lambda: typer.secho("·", fg="bright_black", nl=False)
+            )
+        except (wiki.WikiError, screen.ScreenError) as exc:
+            typer.secho(f"\n\n{exc}\n", fg="red", err=True)
+            raise typer.Exit(code=2) from None
+        total += _print_screen(report)
+
+    if total:
+        typer.echo(
+            "\nRecord the verdict on each of these in music/CONSTANTS.md §3 — cleared and "
+            "rejected both, or the same collision gets proposed again next genre."
+        )
+
+
+def _print_screen(report: Report) -> int:
+    """One genre's findings. Returns how many names need looking at."""
+    typer.echo(f"\n  {report.screened} distinct names, used in {report.uses} places")
+    if not report.findings:
+        typer.secho("  nothing matched. Every name is clear on the mechanical test.\n", fg="green")
+        return 0
+
+    for finding in report.findings:
+        typer.secho(f"\n  {finding.name}", fg="yellow", bold=True)
+        for use in finding.uses:
+            typer.echo(f"      used as {use.kind} — {use.where}")
+        for match in finding.matches:
+            what = " — ".join(x for x in (match.kinds, match.description) if x)
+            typer.echo(f"      {match.qid:<10} {match.sitelinks:>3} sitelinks  {what}")
+            typer.secho(f"      {' ' * 10} {match.url}", fg="bright_black")
+    typer.echo(f"\n  {len(report.findings)} name(s) to look at.\n")
+    return len(report.findings)
 
 
 def main() -> None:

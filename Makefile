@@ -3,7 +3,7 @@
 
 SHELL := /bin/bash
 .DEFAULT_GOAL := help
-.PHONY: help setup check doctor music-albums
+.PHONY: help setup check doctor music-albums music-screen
 
 help:  ## list the targets that exist today
 	@echo "Settlement Radio — make targets"
@@ -41,3 +41,6 @@ doctor:  ## check config and system tools on this machine
 
 music-albums:  ## list every album in the wiki, with its id and layer (GENRE= optional)
 	@uv run station music-albums $(if $(GENRE),--genre $(GENRE),)
+
+music-screen:  ## screen a genre's invented names against Wikidata (GENRE= optional)
+	@uv run station music-screen $(if $(GENRE),--genre $(GENRE),)

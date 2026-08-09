@@ -51,6 +51,32 @@ album — long enough to carry a 56-minute single-album programme.
 **This command needs no `.env` and no external volume.** The music wiki is deliberately readable
 before any hardware exists (`DECISIONS.md` D-044).
 
+### `make music-screen`
+
+Puts every invented name in a genre — every band, label, person, album title and song title, layer
+B included — to Wikidata, and lists the ones that are **exactly** the name of a real notable person
+or organisation. `GENRE=lane-rock` limits it to one genre; without it, every genre written so far.
+This is step 3 of `music/RUNBOOK.md`, and it replaces searching several hundred names one at a time.
+
+A genre is about 320 names, seven requests and under a minute; a dot appears for each request. The
+normal result is `nothing matched`.
+
+What it reports and what it does not:
+
+| | |
+|---|---|
+| Exact full name, real person or organisation, ≥5 Wikidata sitelinks | **reported** |
+| The same name below the notability floor — a forum user, a private person | not reported |
+| Surname only, or a famous name with a letter changed | **not reported — still yours** (`DECISIONS.md` D-009) |
+| A place, a song, a film, a species sharing the name | not reported: the screen is people and organisations |
+
+**It is not a gate.** It always exits 0 and `make check` never runs it — it narrows the pile, and
+the verdict on each name is yours. Record both the clearances and the rejections in
+`music/CONSTANTS.md` §3, or the next genre proposes the same collision again.
+
+If Wikidata cannot be reached it stops and says so rather than printing an empty report, because an
+empty report reads as "every name is clear". Run it again when the connection is back.
+
 **There are no other music commands.** The wiki, the style cards and the lyrics are written by an
 agent working one card of `music/MUSIC_TASKS.md` — you open a session and say the card number
 (D-055). Nothing is copied to a clipboard and nothing is pasted anywhere.

@@ -42,8 +42,8 @@ marked **NEXT**.
 
 | Stage | Cards | Status |
 |---|---|---|
-| 0 · Tooling | M-01 … M-06 | M-01, M-02 done · **M-03 next** (M-04–M-06 wait on audio) |
-| 1 · The wiki — 8 genres | M-07 … M-15 | relay-pop already done |
+| 0 · Tooling | M-01 … M-06 | M-01, M-02, M-03 done · M-04–M-06 wait on audio |
+| 1 · The wiki — 8 genres | M-07 … M-15 | **M-07 next** · relay-pop already done and screened |
 | 2 · The pilot — 45 songs end to end | M-16 … M-19 | not started |
 | 3 · Style cards — the other 20 bands | M-20 | not started |
 | 4 · Lyrics and prompts — 51 albums | M-21 … M-29 | not started |
@@ -82,7 +82,7 @@ describes copying anything to a clipboard.
 Depends on: M-07 (the first agent-written genre proves the loop is unnecessary) — **done ahead of
 it by operator instruction; the brief carried nothing an in-repo agent cannot read (D-055)**
 
-### M-03 · `[agent]` Name screening against Wikidata — **NEXT**
+### M-03 · `[agent]` Name screening against Wikidata — **DONE 2026-08-09**
 Goal: You stop googling several hundred invented names one at a time.
 Files: `src/station/music/screen.py`, `Makefile`, `docs/ADMIN.md`
 Check: `make music-screen GENRE=<x>` reports every band, label, album, song title and person in that
@@ -90,6 +90,9 @@ genre that has an exact-title match on a real notable person or organisation, an
 the rest. Run against relay-pop it returns a short list you can read in two minutes.
 Note: exact matches only. "Reads like a famous name with a letter changed" stays a human judgement —
 the tool narrows the pile, it does not clear it.
+Result: relay-pop's 319 distinct names return **nothing at all** — the whole genre is clear on the
+mechanical test. The screen is people and organisations only, live against the query service rather
+than a downloaded extract (D-056).
 Depends on: M-01
 
 ### M-04 · `[agent]` `make music-analyse` — the three numbers, measured not estimated
@@ -133,7 +136,7 @@ unique in sequence, and the biggest genres first means a problem shows up while 
 Each card is the same three steps — agent writes the file, `make check` counts it, you screen the
 names. relay-pop is already done: 105 songs, 5 bands, 11 albums.
 
-### M-07 · `[agent]` lane-rock — 75 songs, 4 bands
+### M-07 · `[agent]` lane-rock — 75 songs, 4 bands — **NEXT**
 Files: `music/wiki/lane-rock.yaml`, `music/CONSTANTS.md`
 Check: 75 playable songs split 10 / 35 / 30 across labels 2, 4 and 5; 4 layer-A bands; about 7
 layer-B bands and 4 layer-C figures. `make check` green. Names screened and recorded.

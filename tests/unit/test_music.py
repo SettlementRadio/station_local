@@ -15,7 +15,7 @@ from typing import Any
 import pytest
 import yaml
 
-from station.music import check, wiki
+from station.music import check, screen, wiki
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -267,3 +267,104 @@ def test_a_missing_anchor_table_stops_the_check_rather_than_passing_it(tmp_path:
     (root / "music" / "CONSTANTS.md").write_text("# no table here\n")
     with pytest.raises(check.CheckError, match="anchor years"):
         check.check_wiki(root)
+
+
+# --- the name screen (M-03) -------------------------------------------------------------------
+#
+# No test here touches the network: `screen()` takes the fetcher, and these pass a stub. What is
+# worth testing is that every kind of invented name reaches the query, and that a screen which
+# could not run says so instead of reporting a clean genre.
+
+
+def _one_hit(name: str, qid: str = "Q313258", sitelinks: int = 42) -> dict[str, Any]:
+    return {
+        "results": {
+            "bindings": [
+                {
+                    "name": {"value": name},
+                    "item": {"value": f"http://www.wikidata.org/entity/{qid}"},
+                    "sitelinks": {"value": str(sitelinks)},
+                    "kinds": {"value": "human"},
+                    "desc": {"value": "United States Secretary of State (1909-1994)"},
+                }
+            ]
+        }
+    }
+
+
+def _screened(tmp_path: Path) -> list[screen.Name]:
+    root = _root_with(tmp_path, core_harmonies=_fixture_genre())
+    return screen.names_in(wiki.load_genre(root / "music" / "wiki" / "core-harmonies.yaml"))
+
+
+def test_every_kind_of_invented_name_is_screened(tmp_path: Path) -> None:
+    """§19's list: bands, labels, people, album titles and song titles — layer B included."""
+    names = _screened(tmp_path)
+    by_name = {n.name: n.kind for n in names}
+    assert by_name["Civic Lantern"] == "label"
+    assert by_name["Held Note"] == "band" and by_name["The Slow Room"] == "band"
+    assert by_name["Ivena Sorn"] == "person" and by_name["Tenn Ruso"] == "person"
+    assert by_name["Edda Corven"] == "person", "layer C figures are invented names too"
+    assert by_name["Album al_001"] == "album" and by_name["Album al_002"] == "album"
+    assert by_name["Song 1"] == "song" and by_name["Song 16"] == "song"
+
+
+def test_a_name_is_put_to_wikidata_once_however_often_it_is_used(tmp_path: Path) -> None:
+    """A session player on four albums is one name to screen and one line to read."""
+    names = [*_screened(tmp_path), screen.Name(name="Ivena Sorn", kind="person", where="again")]
+    asked: list[str] = []
+
+    def fetch(query: str) -> dict[str, Any]:
+        asked.append(query)
+        return _one_hit("Ivena Sorn")
+
+    findings = screen.screen(names, fetch=fetch)
+    assert sum(q.count('"Ivena Sorn"@en') for q in asked) == 1
+    assert len(findings) == 1
+    assert [u.where for u in findings[0].uses] == ["session player", "again"]
+
+
+def test_the_query_asks_for_exact_matches_above_the_notability_floor() -> None:
+    """D-009: below the floor every plausible name matches something and the screen means nothing."""
+    query = screen.build_query(['Held "Note"', "Civic Lantern"])
+    assert f"FILTER(?sitelinks >= {screen.SITELINK_FLOOR})" in query
+    assert '"Held \\"Note\\""@en' in query, "a quote in a title must not break out of the query"
+    assert "wd:Q5" in query and "wd:Q43229" in query, "people and organisations, not every string"
+
+
+def test_names_are_screened_in_bounded_batches(tmp_path: Path) -> None:
+    many = [
+        screen.Name(name=f"Name {n}", kind="song", where="x") for n in range(screen.BATCH * 2 + 1)
+    ]
+    sizes: list[int] = []
+
+    def fetch(query: str) -> dict[str, Any]:
+        sizes.append(query.count("@en"))
+        return {"results": {"bindings": []}}
+
+    assert screen.screen(many, fetch=fetch) == []
+    assert len(sizes) == 3 == screen.requests_for(len(many))
+    assert max(sizes) <= screen.BATCH
+
+
+def test_a_screen_that_could_not_run_is_never_reported_as_clear(tmp_path: Path) -> None:
+    """§25's unbreakable rule. An empty report reads as 'every name is clear', which is the one
+    answer this tool must never give by accident."""
+
+    def fetch(query: str) -> dict[str, Any]:
+        raise screen.ScreenError("Wikidata did not answer after 3 attempts")
+
+    with pytest.raises(screen.ScreenError):
+        screen.screen(_screened(tmp_path), fetch=fetch)
+
+
+def test_matches_are_reported_worst_first(tmp_path: Path) -> None:
+    payload = _one_hit("Held Note", qid="Q1", sitelinks=7)
+    payload["results"]["bindings"] += _one_hit("Held Note", qid="Q2", sitelinks=90)["results"][
+        "bindings"
+    ]
+    finding = screen.screen(
+        [screen.Name(name="Held Note", kind="band", where="b_001")], fetch=lambda _: payload
+    )[0]
+    assert [m.qid for m in finding.matches] == ["Q2", "Q1"]
+    assert finding.matches[0].url == "https://www.wikidata.org/wiki/Q2"
