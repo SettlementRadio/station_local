@@ -3,6 +3,9 @@
 Current work only, maximum 10 items (ARCHITECTURE §33). WIP is 1 for agent tasks; `[operator]`
 items sit alongside them and do not consume the slot.
 
+**The music content track is not here. It lives in `music/MUSIC_TASKS.md`** — one long sequence of
+42 cards that does not fit a ten-item window (D-053). Nothing on this page depends on it.
+
 **Phase B · The Transmitter**, running beside the part of **Phase A** that needs no hardware
 (`docs/PHASES.md`: A and B are independent, and B is the phase to run while hardware is in transit).
 A's five hardware-bound cards — T-005, T-006, T-008, T-009 — are out until the machine arrives and
@@ -77,9 +80,13 @@ Depends on: T-012, T-013
 
 ---
 
-## Operator track — yours, any time, in any order
+## Content track — runs beside the agent track and never blocks it
 
-These do not consume the WIP slot. T-001 and T-010 unblock agent cards; the other two do not.
+None of these consume the WIP slot (§33: content work must not queue every code task behind it).
+Each card says who does the work. `[operator]` is yours to do. `[agent writes]` means an agent
+produces it and **you approve it, piece by piece** — authorship moves, authority does not.
+
+T-001 and T-010 unblock agent cards; the rest do not.
 
 ### T-001 · [operator] Order the Studio, and open the three accounts
 Goal: The machine is ordered now so it arrives while Phase B is being built, and the accounts the
@@ -116,13 +123,3 @@ and what the programme is about. No retrieval, no canon pipeline, no grid.
 Note: `PHASES.md` says Phase A needs no content. It does — neither piece has a C-number in the
 content track, and the phase document needs the correction.
 
-### T-015 · [operator] The music pilot — one flagship label
-Goal: Find out whether the catalogue's approach works while it still costs one label's work to redo,
-rather than after 540 tracks are committed to it.
-Reads: `music/COMMISSION.md` §12 (the loop), §1, §4, §5
-Files: `music/batches/01-<label>/{catalogue.yaml,production.md,audio/}`
-Check: One flagship label is complete — roughly seventy tracks with lyrics, credits, measured intro
-ramps and a one-fact line each — and you have listened to fourteen of them back to back as if it
-were the hour. That listen decides everything about the remaining 470.
-Note: runs in parallel with everything; it needs no code and no hardware. C5 is formally due in
-Phase F, and this card is the pilot only, not the catalogue.

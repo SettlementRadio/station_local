@@ -110,10 +110,14 @@ def _label_lines(genre: GenreSlice, plan: Plan) -> str:
     )
 
 
-def _write_instruction(name: str, genre: GenreSlice, plan: Plan) -> str:
+def _write_instruction(name: str, genre: GenreSlice, plan: Plan, next_ids: dict[str, str]) -> str:
     """The one instruction that follows COMMISSION.md in the writer's chat."""
+    ids = " · ".join(f"first {kind} id: {id_}" for kind, id_ in next_ids.items())
     return f"""\
 Write the {genre.title} section of the wiki.
+
+IDS — start numbering at these and never reuse one from another genre:
+  {ids}
 
 LAYER A — {genre.songs} songs, {genre.bands} bands, distributed exactly like this:
 {_label_lines(genre, plan)}
@@ -305,7 +309,7 @@ def build(kind: Kind, name: str, root: Path) -> str:
         "\n---\n",
     ]
     if kind == "write":
-        parts.append(_write_instruction(name, genre, plan))
+        parts.append(_write_instruction(name, genre, plan, wiki.next_free_ids(music / WIKI_DIR)))
     else:
         returned = _read(music / WIKI_DIR / f"{name}.yaml")
         parts.append(_check_instruction(name, genre, plan, returned))

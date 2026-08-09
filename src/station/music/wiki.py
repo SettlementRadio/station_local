@@ -40,6 +40,12 @@ class _Labelled(_Entry):
     def _as_text(cls, value: object) -> str:
         return str(value)
 
+    @property
+    def label_number(self) -> int | None:
+        """`label_3` and `3` are the same label; `plan.yaml` counts by number. None if unreadable."""
+        digits = self.label.rsplit("_", 1)[-1]
+        return int(digits) if digits.isdigit() else None
+
 
 class Song(_Entry):
     id: str
@@ -69,8 +75,18 @@ class Album(_Labelled):
 
 
 class Member(_Entry):
+    # Members carry an id because the credits point at them by id, and because a player who turns
+    # up in two genres has to be the same person and not two people sharing a number.
+    id: str = ""
     name: str
     instruments: list[str] = Field(default_factory=list)
+
+
+class Named(_Entry):
+    """A label, a session player or a lost figure: an id and a name, and nothing this file reads."""
+
+    id: str
+    name: str
 
 
 class Band(_Labelled):
@@ -109,16 +125,26 @@ class _Layer(_Entry):
     albums: list[Album] = Field(default_factory=list)
 
 
+class _LayerC(_Entry):
+    """Only the figures' identities. Their history is prose no code reads."""
+
+    figures: list[Named] = Field(default_factory=list)
+
+
 class GenreWiki(_Entry):
     """One `music/wiki/<genre>.yaml`.
 
-    Layer C is not modelled: its figures have no albums by definition, so nothing here can read it.
-    `section` is the writer's own header block and is likewise ignored — declaring fields nothing
-    uses only creates ways for a valid wiki to be rejected.
+    `section` is the writer's own header block and is ignored — declaring fields nothing uses only
+    creates ways for a valid wiki to be rejected. Labels, session players and layer C are modelled
+    for one reason only: they mint ids, and an id used twice is the failure this file exists to
+    catch (`check.py`).
     """
 
+    labels: list[Named] = Field(default_factory=list)
+    session_players: list[Named] = Field(default_factory=list)
     layer_a: _Layer = Field(default_factory=_Layer)
     layer_b: _Layer = Field(default_factory=_Layer)
+    layer_c: _LayerC = Field(default_factory=_LayerC)
 
     @property
     def bands(self) -> list[Band]:
@@ -129,12 +155,17 @@ class GenreWiki(_Entry):
         return self.layer_a.albums
 
     def every_album(self) -> list[tuple[Album, Band | None, str]]:
-        """(album, its band, its layer) across A and B, so a listing can show both."""
-        bands = {b.id: b for b in self.layer_a.bands}
-        out: list[tuple[Album, Band | None, str]] = [
-            (a, bands.get(a.band), "A") for a in self.layer_a.albums
-        ]
-        out += [(a, b, "B") for b in self.layer_b.bands for a in b.albums]
+        """(album, its band, its layer) across A and B, so a listing can show both.
+
+        Both placements are accepted in both layers — beside the bands with a `band:` pointing
+        back, or nested inside the band — because a checker that misses an album placed the other
+        way passes a genre it never read.
+        """
+        bands = {b.id: b for b in self.layer_a.bands + self.layer_b.bands}
+        out: list[tuple[Album, Band | None, str]] = []
+        for layer, group in (("A", self.layer_a), ("B", self.layer_b)):
+            out += [(a, bands.get(a.band), layer) for a in group.albums]
+            out += [(a, b, layer) for b in group.bands for a in b.albums]
         return out
 
 
@@ -157,6 +188,80 @@ def written_genres(wiki_dir: Path) -> list[str]:
     if not wiki_dir.is_dir():
         return []
     return sorted(p.stem for p in wiki_dir.glob("*.yaml"))
+
+
+class Entity(_Entry):
+    """One id a genre file mints, with enough context to name it in a failure message.
+
+    `shared` marks the entities that are the *same* thing in every genre they touch: a label, a
+    session player, a musician who plays in two bands. Those ids repeat by design (§6 wants players
+    across three labels), so only a repeat that disagrees about who it is counts as a collision.
+    """
+
+    id: str
+    name: str
+    kind: str
+    where: str
+    shared: bool = False
+
+
+def _album_entities(albums: list[Album], layer: str) -> list[Entity]:
+    out: list[Entity] = []
+    for album in albums:
+        out.append(Entity(id=album.id, name=album.title, kind="album", where=f"layer {layer}"))
+        out += [
+            Entity(id=s.id, name=s.title, kind="song", where=f"layer {layer}, {album.id}")
+            for s in album.songs
+        ]
+    return out
+
+
+def defined_ids(genre: GenreWiki) -> list[Entity]:
+    """Every id one genre file defines — the input to the duplicate check."""
+    out = [
+        Entity(id=x.id, name=x.name, kind="label", where="labels", shared=True)
+        for x in genre.labels
+    ]
+    out += [
+        Entity(id=x.id, name=x.name, kind="session player", where="session_players", shared=True)
+        for x in genre.session_players
+    ]
+    for layer, group in (("A", genre.layer_a), ("B", genre.layer_b)):
+        out += _album_entities(group.albums, layer)
+        for band in group.bands:
+            out.append(Entity(id=band.id, name=band.name, kind="band", where=f"layer {layer}"))
+            out += [
+                Entity(id=m.id, name=m.name, kind="person", where=f"in {band.name}", shared=True)
+                for m in band.members
+                if m.id
+            ]
+            out += _album_entities(band.albums, layer)
+    out += [
+        Entity(id=x.id, name=x.name, kind="figure", where="layer C") for x in genre.layer_c.figures
+    ]
+    return out
+
+
+# The three counted id series, and the width each is written to (`s_0001`, `al_001`, `b_001`).
+COUNTERS = (("song", "s_", 4), ("album", "al_", 3), ("band", "b_", 3))
+
+
+def next_free_ids(wiki_dir: Path) -> dict[str, str]:
+    """The next id in each counted series — derived from what is written, never hand-kept.
+
+    `CONSTANTS.md` used to carry these three numbers by hand, which is exactly how the second genre
+    written comes to reuse the first one's ids (D-053 note on M-01). No id is ever renumbered
+    (`COMMISSION.md` §10), so the counter can only ever be the high-water mark plus one.
+    """
+    highest = dict.fromkeys((kind for kind, _, _ in COUNTERS), 0)
+    for slug in written_genres(wiki_dir):
+        for entity in defined_ids(load_genre(wiki_dir / f"{slug}.yaml")):
+            if entity.kind not in highest:
+                continue
+            digits = entity.id.rsplit("_", 1)[-1]
+            if digits.isdigit():
+                highest[entity.kind] = max(highest[entity.kind], int(digits))
+    return {kind: f"{prefix}{highest[kind] + 1:0{width}d}" for kind, prefix, width in COUNTERS}
 
 
 def find_album(wiki_dir: Path, album_id: str) -> tuple[Album, Band, str]:

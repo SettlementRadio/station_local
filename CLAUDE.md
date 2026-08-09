@@ -11,6 +11,8 @@ its own task (§33); it does not get folded into the one in progress.
 
 1. Read `docs/TASKS.md`. **WIP is 1** — work the one task at the top, finish it, start nothing
    else. If none is marked in progress, ask which. An empty `TASKS.md` means ask, never invent.
+   **`M-` numbers are music and live in `music/MUSIC_TASKS.md`** (D-053), which holds the whole
+   music content track. Read that file instead, work the one card named, and mark it done there.
 2. Read the architecture sections the task's `Reads:` line names, **plus Part II (§21–32), which
    binds every task.** An agent that has read only Part I is not ready to write code.
 3. On a grid or showrunner task, also read `docs/PROGRAMMING.md` — the editorial reference and the

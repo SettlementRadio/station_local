@@ -28,6 +28,11 @@ them.
 **Window check** (§3): six anchors inside the last thirty-five years, two in the old-standards
 window. Correct as specified.
 
+**This table is read by `make check`.** The eight years in the first column are the only release
+years any album in any genre may carry, and `src/station/music/check.py` takes them from here
+rather than keeping a second copy. Each row must keep its `| **YYYY** |` shape; if it stops
+matching, `make check` stops with a message saying so rather than quietly finding no anchors.
+
 **Consequences to carry into the slot cards.** Four anchors have already committed facts about labels
 that do not exist yet, and those commitments are binding:
 
@@ -114,15 +119,23 @@ Odessa Vail · Corin Hale · Adra Pell · Lio Tern
 
 ---
 
-## 4. Id counters
+## 4. Id counters — derived, never written down here
 
 So two genres written weeks apart never collide.
 
-| | Next free |
-|---|---|
-| Song id | `s_0001` |
-| Album id | `al_001` |
-| Band id | `b_001` |
+**There is no number to keep in this section.** The next free song, album and band id is the
+highest one already in `music/wiki/` plus one, worked out by `station.music.wiki.next_free_ids()`
+and printed at the top of every `make music-brief` writer brief. A hand-kept counter is exactly
+how the second genre comes to reuse the first one's ids: it goes stale the moment someone forgets
+to edit it.
+
+`make check` fails, naming both uses, if any song, album, band or figure id appears twice across
+the nine genre files. Label ids, session players and band members are allowed to repeat — the same
+label and the same hired player turn up in every genre they worked in — provided every use gives
+them the same name.
+
+**An id is never renumbered once committed** (`COMMISSION.md` §10). Titles can be edited; identity
+cannot. A correction takes the next free id, never a recycled one.
 
 ---
 

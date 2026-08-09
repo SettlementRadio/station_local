@@ -23,6 +23,12 @@ Run it after a fresh clone, and after any change to `pyproject.toml` or `uv.lock
 Formatting, lint, types, the module-size rule and the unit tests. Model-free and fast. This is the
 gate: it also runs automatically before every `git push`.
 
+**It also counts the music wiki.** Every written genre in `music/wiki/` is checked against
+`music/plan.yaml` and `music/CONSTANTS.md`, and the failure names the genre and both numbers: a
+label with the wrong number of playable songs, a layer-A song with no fact, a layer-B song that has
+one, a release year that is not one of the eight anchors, or an id used twice. A genre file that is
+still an empty placeholder is skipped, not failed.
+
 ### `make doctor`
 
 Says whether this machine can run the station: configuration loaded, the external volume mounted,
@@ -41,6 +47,10 @@ it.
 It assembles three files you own — `music/COMMISSION.md`, `music/CONSTANTS.md`, and that genre's row
 of `music/plan.yaml` — into one block, so there is nothing to stitch together by hand. It calls no
 model and invents nothing.
+
+It also prints the first free song, album and band id, counted from what is already in
+`music/wiki/`. Nothing keeps those numbers by hand any more, which is what stops the next genre
+overwriting the last one.
 
 Genres are the eight slugs in `music/plan.yaml`; naming an unknown one lists the valid ones. The
 output is also left in `music/briefs/`, which is derived and git-ignored.
