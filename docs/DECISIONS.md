@@ -1509,3 +1509,21 @@ while every audio card was printed after every lyrics card. A take distribution 
 COMMISSION §7 is now found at 60 songs instead of 455, and the fix for that is choosing different
 takes, so finding it late is finding it useless. Generating one band per sitting (§9) is unaffected:
 the pairing decides which genre you sit down to, never how a band is made.
+
+### D-061 · Where the wiki does not fix a lead singer's voice, the style card does — 2026-08-09
+
+M-16's five voice lines are fixed for the life of each band (`COMMISSION.md` §7), so each one had to
+be decided now rather than at generation time. Three of the five were already decided: `relay-pop.yaml`
+uses female pronouns for Vara Ennel (`b_001`), Sena Quill (`b_002`) and Nara Veck (`b_003`), and a
+style card that contradicted the wiki would put the presenter and the record in disagreement.
+
+**Ressa Morn (`b_004`) and Mela Jorn (`b_005`) carry no pronoun anywhere in the wiki.** Their cards
+read *male lead* and *female lead* respectively. Cabin Treaty takes the male voice because its
+signature is the whole-crew unison chorus and five female leads in a row is one relay-pop voice
+wearing five band names — §2 makes this genre 105 songs, the largest in the catalogue, and the
+station plays them in the same hour.
+
+**This is a production decision, not a wiki edit.** Nothing was written into `music/wiki/`, and
+`styles.yaml` never reaches the air (§8). It is reversible for exactly as long as no audio exists:
+`b_004`'s songs are generated at M-30, in stage 5, behind M-15, M-19, M-20 and M-21. If the operator
+hears Ressa Morn differently, the fix before then is one word in one line.

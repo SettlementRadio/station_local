@@ -61,7 +61,7 @@ marked **NEXT**.
 | Stage | Cards | Last done | Status |
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
-| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | — nothing yet | **M-16 next** |
+| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-16** style cards · 2026-08-09 | **M-17 next** |
 | 2 · The wiki — 7 genres left | M-07 … M-15 | **M-08** deck-talk · 2026-08-09 | 250 of 500 songs written |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
@@ -132,16 +132,23 @@ The point of this stage is to find out whether the approach works while it costs
 redo, not 470 songs. It uses relay-pop's four Concordance albums, which are already written — so
 **nothing here waits on the rest of the wiki.**
 
-### M-16 · `[agent]` Style cards for relay-pop's five bands — **NEXT**
+### M-16 · `[agent]` Style cards for relay-pop's five bands — **DONE 2026-08-09**
 Goal: Each band has the six lines that make it sound like the same band across three albums.
 Files: `music/production/styles.yaml`
 Check: `b_001`–`b_005` each have voice / backing / instruments / production / tempo range / exclude,
 built from the line-ups already in the wiki. `make music-albums` shows `yes` in the STYLE column for
 every relay-pop album.
 Note: the voice line is fixed for the life of the band and never changes between albums.
+Result: all five bands carded, and `make music-albums GENRE=relay-pop` shows `yes` on all eleven
+layer-A albums. The five are spread across the form's palette on purpose — hall-recorded pop
+(`b_001`), dry jangling guitars (`b_002`), the electronic end (`b_003`), a live room and hand-built
+percussion (`b_004`), compact early-evening harmony (`b_005`) — because five bands in one hour on
+the station's largest genre otherwise arrive as one sound. Three voice lines were already fixed by
+the wiki's pronouns; **Ressa Morn (`b_004`) and Mela Jorn (`b_005`) carry none, so the cards decided
+them — male and female respectively (D-061), reversible until M-30 generates them.**
 Depends on: M-01 — **satisfied since 2026-08-09; this card has been runnable ever since**
 
-### M-17 · `[agent]` Lyrics and prompts — al_001 … al_004, 45 songs
+### M-17 · `[agent]` Lyrics and prompts — al_001 … al_004, 45 songs — **NEXT**
 Goal: Four complete albums of words, each song fitting the fact the wiki already states about it.
 Files: `music/production/lyrics/al_001.yaml` … `al_004.yaml`
 Check: 45 songs, each with lyrics opening on an instrumental-intro tag, a generation prompt built

@@ -10,3 +10,67 @@
 #   production: ...
 #   tempo range: ...
 #   exclude: ...
+#
+# This file is production vocabulary (COMMISSION.md section 8). It never enters the wiki and
+# nothing here is ever said on air. No real artist, band, producer or label is named in it.
+#
+# Each card is built from that band's line-up, home, label and movement as the wiki states them,
+# and the five relay-pop cards are deliberately spread across the form's palette so that five
+# bands on the same station do not arrive as one sound: hall-recorded and acoustic-leaning
+# (b_001), dry jangling guitars (b_002), the electronic end (b_003), a live room and hand-built
+# percussion (b_004), and the compact early-evening end (b_005).
+
+# Measure Kindly — Concordance, Civic Lantern, 2615–. Four clerks; Synthesist until 2622, then
+# Localist, writing around the reopened public halls. Vara Ennel leads; Sel Ardin arranges the
+# answering voices.
+b_001:
+  voice: female lead, mid register, clear and unforced, plain conversational diction, sings just ahead of the beat and never belts
+  backing: three group voices answering the lead line for line across the chorus, a low harmony under the last chorus, all four voices on the final refrain
+  instruments: harpsichord-toned electric keyboard, fretted electric bass, compact drum kit, hand percussion, tuned chimes
+  production: bright produced pop tracked live in a large reflective hall, backing voices carrying the room, lead close but a step off the microphone, minimal overdub
+  tempo range: 96-132
+  exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+
+# Open Parallax — Concordance, Civic Lantern, 2603–. Purist until the 2607 closures, Synthesist
+# since. Two guitars and a repaired compact keyboard; no bass player in the line-up, so the
+# keyboard carries the bottom.
+b_002:
+  voice: female lead, light high register, quick and wry, clipped consonants, drops into plain speech at the end of a line
+  backing: two close harmony voices under the lead through the verses, all four voices shouting the hook together
+  instruments: two jangling electric guitars, compact electric keyboard carrying the bass part, drum kit with struck metal blocks
+  production: dry small-room power-pop, tight and close-mic'd, lead double-tracked on choruses only, guitars hard apart, very little reverb
+  tempo range: 112-152
+  exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+
+# Rain Ledger — Meridian storm coast, Stormline Issue, 2601–. Firmly Synthesist; sessions built
+# around the power allotment, which is where the short verses and the very large choruses come
+# from. Electronic kit, synth bass, no guitars anywhere in the line-up.
+b_003:
+  voice: female lead, low alto, strong and level, holds the long notes in the hook, sings the chorus twice the size of the verse
+  backing: two voices doubling the hook in octaves, a repeated group chorus, one call-and-response answer in the last third of the song
+  instruments: synth bass, electronic drum kit, layered compact synthesizers, struck metal percussion
+  production: sharp synth-pop production, gated electronic drums, dry verses opening into a wide reverberant chorus, hook engineered to be sung back
+  tempo range: 100-128
+  exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning
+
+# Cabin Treaty — freight circuit of the between, Common Wake Cooperative, 2590–2623. Purist until
+# 2600, Localist after; the whole-crew chorus is the band's signature and Cado Veir's tuned
+# oxygen-tank drums are the argument that made them Localist.
+b_004:
+  voice: male lead, warm baritone that roughens at the top of the range, plain and a shade behind the beat, no vibrato
+  backing: whole-crew chorus of four to six voices in unison rather than harmony, mixed registers, answering the lead; one high harmony only on the final chorus
+  instruments: two composite guitars, one acoustic-toned and one electric, electric bass, hand-built percussion from struck metal tanks and hanging wire chimes
+  production: warm live-room pop, the whole band tracked together, handmade percussion left ringing, light compression, loose rather than gridded
+  tempo range: 100-138
+  exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals
+
+# Evening Claim — Concordance late-club quarter, Lower Bell Editions, 2578–2612. The early-evening
+# act: compact harmony songs, piano first. Synthesist until the 2605 royalty audit, Purist after,
+# so the harpsichord-toned keyboard is played by hand and never sequenced.
+b_005:
+  voice: female lead, low and warm, close to the microphone, understated and conversational, letting phrases fall away rather than holding them
+  backing: three-part close harmony stacked behind the lead on every chorus, the whole group on the last one, never shouted
+  instruments: upright piano, upright bass, brushed drum kit, harpsichord-toned keyboard played by hand, light hand percussion
+  production: compact close early-radio pop, dry and small, short songs, gentle tape warmth, no large reverb
+  tempo range: 76-116
+  exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections
