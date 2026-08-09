@@ -1423,3 +1423,27 @@ that could not run raises after three attempts (§25) instead.
 `providers/`, and this is 20 lines of `urllib` against a public endpoint with no SDK and no seam to
 protect. If a second caller ever wants Wikidata — §19's screen is the candidate — that is the point
 at which it earns a provider module.
+
+### D-058 · `CONSTANTS.md` §3 records screen results, not a copy of every used name — 2026-08-09
+
+Section 3 was written as *"the running names list — paste this into every Brief A"*, to be extended
+after every batch. Writing lane-rock (M-07) is the first time that instruction came due, and it was
+not followed. The section now keeps the eight session players and the canon four, and beside them a
+table of what `make music-screen` returned per genre and when. The names themselves stay in
+`music/wiki/<genre>.yaml`.
+
+**Why.** The instruction is left over from the brief-and-paste loop, which D-055 retired. Its
+purpose was to stop a writer with no repository access reinventing the same three surnames; an agent
+working in the repository reads the genre files directly, and `make check` already fails on a
+duplicate id. Copying 228 lane-rock names into a second file would add 550 names by the ninth genre,
+each one a place the two copies can disagree, and nothing would read them — the same argument D-054
+made against the hand-kept id counter, which is the failure this file has already had once.
+
+**What is kept is the thing the files do not hold**: that a genre was screened, on what date, over
+how many distinct names, and with what result. That is a fact about an action, not a copy of data,
+so there is no second copy to go stale.
+
+**Sections 5 and 6 were also brought up to date** in the same pass. They read 0 for every label and
+every form while relay-pop had been written and screened, which makes a table nobody trusts. They
+now count layer-A bands and playable songs actually in the wiki, and §5 gained the label's name as
+written so the seven slots can be matched to the seven invented labels without opening nine files.

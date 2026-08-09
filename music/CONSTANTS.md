@@ -95,6 +95,15 @@ after every batch. Without it the writer reinvents the same three surnames all y
 
 Ivena Sorn · Miro Olt · Nessa Dray · Brin Noll · Oren Saye · Talla Venn · Sel Ardin
 
+**The written genres are screened by `make music-screen GENRE=<x>`, not by this list.** Every name a
+genre uses is in its own `music/wiki/<genre>.yaml`, so a second copy here would only go stale. What
+is recorded is the result:
+
+| Genre | Screened | Distinct names | Result |
+|---|---|---|---|
+| relay-pop | 2026-08-09 | 319 | nothing matched |
+| lane-rock | 2026-08-09 | 228 | nothing matched |
+
 Notes kept because §19 says fuzzy and surname-only matches are flagged, never blocked:
 
 | Name | What came up | Verdict |
@@ -148,15 +157,17 @@ Keeping a second copy in this file would only let the two drift.
 Run `make check`: it confirms both that the plan adds up and that every written genre matches it.
 **This section tracks only what has actually been written.**
 
-| # | Label | Bands written | Songs written |
-|---|---|---|---|
-| 1 | Concordance, prestige | 0 | 0 |
-| 2 | Cold Harbor, frontier | 0 | 0 |
-| 3 | Meridian, dance | 0 | 0 |
-| 4 | Forge, industrial | 0 | 0 |
-| 5 | haulers, co-op | 0 | 0 |
-| 6 | late-club, folded 2612 | 0 | 0 |
-| 7 | old-system importer | 0 | 0 |
+Layer-A bands and playable songs only. §5 needs every label to end on ≥3 bands and ≥40 songs.
+
+| # | Label | Name as written | Bands written | Songs written |
+|---|---|---|---|---|
+| 1 | Concordance, prestige | Civic Lantern | 2 | 45 |
+| 2 | Cold Harbor, frontier | Harbor Standard | 1 | 10 |
+| 3 | Meridian, dance | Stormline Issue | 1 | 20 |
+| 4 | Forge, industrial | Deep Register | 2 | 35 |
+| 5 | haulers, co-op | Common Wake Cooperative | 2 | 55 |
+| 6 | late-club, folded 2612 | Lower Bell Editions | 1 | 15 |
+| 7 | old-system importer | — | 0 | 0 |
 
 ## 6. The genre tally
 
@@ -164,8 +175,8 @@ Layer A songs per form. `music/plan.yaml` is the authority; this is the running 
 
 | Form | Target | Written |
 |---|---|---|
-| Relay-pop | 105 | 0 |
-| Lane-rock | 75 | 0 |
+| Relay-pop | 105 | 105 |
+| Lane-rock | 75 | 75 |
 | **Deck-talk** | 70 | 0 |
 | Frontier Reels | 65 | 0 |
 | Old-system sessions | 60 | 0 |
@@ -173,7 +184,7 @@ Layer A songs per form. `music/plan.yaml` is the authority; this is the running 
 | Void-lounge | 40 | 0 |
 | Core Harmonies | 15 | 0 |
 | Void Ballads | 10 | 0 |
-| | **500** | **0** |
+| | **500** | **180** |
 
 **Layers B and C are not tallied.** They have no hard floor — more is better, and nothing breaks if
 one genre carries more history than another.

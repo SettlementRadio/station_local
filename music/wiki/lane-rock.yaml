@@ -1,21 +1,3 @@
-# Lane-rock — PLACEHOLDER. Nothing here is content yet.
-#
-# Written by its card in music/MUSIC_TASKS.md: open a session and say the number. The agent
-# replaces everything below the `section:` block, and `make check` counts what it wrote.
-#
-# Allocation, from music/plan.yaml (the authority — do not retype it here):
-#   LAYER A — 75 songs across 4 band(s)
-#     label 2 (Cold Harbor, frontier): 10 songs / 1 band(s)
-#     label 4 (Forge, industrial): 35 songs / 2 band(s)
-#     label 5 (haulers, co-op): 30 songs / 1 band(s)
-#   LAYER B — about 7 more bands the station does not hold
-#   LAYER C — about 4 figures, 2426-2546, no albums and no track lists
-#
-# Labels this genre sits on:
-#   - label_2  (Cold Harbor, frontier)
-#   - label_4  (Forge, industrial)
-#   - label_5  (haulers, co-op)
-
 section:
   genre: lane-rock
   present_year: 2626
@@ -24,23 +6,1369 @@ section:
     referenced: B
     historical: C
 
-# The labels above, as the writer names them.
-labels: []
+labels:
+  - id: label_2
+    name: Harbor Standard
+    home: Cold Harbor
+    tier: flagship
+    status: operating
+    founded_year: 2571
+    genre: lane-rock
+  - id: label_4
+    name: Deep Register
+    home: Forge
+    tier: standard
+    status: operating
+    genre: lane-rock
+  - id: label_5
+    name: Common Wake Cooperative
+    home: the between
+    tier: standard
+    status: operating
+    genre: lane-rock
 
-# From music/CONSTANTS.md section 2 — only the players who appear on this genre,
-# and only inside their active years.
-session_players: []
+session_players:
+  - id: sp_ivena_sorn
+    name: Ivena Sorn
+    instrument: resonance pipes
+    active_from: 2594
+    active_to: 2626
+    genre: lane-rock
+  - id: sp_nessa_dray
+    name: Nessa Dray
+    instrument: composite fiddle
+    active_from: 2592
+    active_to: 2624
+    genre: lane-rock
+  - id: sp_brin_noll
+    name: Brin Noll
+    instrument: oxygen-tank drums and stripped-wire chimes
+    active_from: 2596
+    active_to: 2626
+    genre: lane-rock
+  - id: sp_oren_saye
+    name: Oren Saye
+    instrument: upright bass
+    active_from: 2588
+    active_to: 2622
+    genre: lane-rock
+  - id: sp_talla_venn
+    name: Talla Venn
+    instrument: fretted composite guitar
+    active_from: 2591
+    active_to: 2625
+    genre: lane-rock
+  - id: sp_calo_meret
+    name: Calo Meret
+    instrument: piano and compact studio keyboards
+    active_from: 2595
+    active_to: 2626
+    genre: lane-rock
 
-# LAYER A — playable: true. Full bios, full album stories, one fact per song.
 layer_a:
-  bands: []
-  albums: []
+  bands:
+    - id: b_016
+      name: Second Hitch
+      kind: group
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: lane-rock
+      active_from: 2619
+      active_to: 2626
+      members:
+        - id: p_wen_arbo
+          name: Wen Arbo
+          genre: lane-rock
+          instruments: [lead vocal, rhythm composite guitar]
+          active_from: 2619
+          active_to: 2626
+        - id: p_dessa_kelm
+          name: Dessa Kelm
+          genre: lane-rock
+          instruments: [lead composite guitar, backing vocal]
+          active_from: 2619
+          active_to: 2626
+        - id: p_orl_mance
+          name: Orl Mance
+          genre: lane-rock
+          instruments: [composite bass, backing vocal]
+          active_from: 2619
+          active_to: 2626
+        - id: p_teff_onda
+          name: Teff Onda
+          genre: lane-rock
+          instruments: [drum kit]
+          active_from: 2619
+          active_to: 2626
+      movement: Localist
+      bio: >-
+        Second Hitch are four Cold Harbor transfer-shed loaders who started playing in the bay they
+        still record in. Wen Arbo writes in the words the crew actually uses on shift and throws out
+        any line he would not say out loud at the gate. Harbor Standard offered them a core studio in
+        2623 and the band turned it down twice, which the label now puts on the sleeve. They rehearse
+        after night shift and have never played a room they could not walk home from.
+      album_ids: [al_032]
 
-# LAYER B — playable: false. Two-sentence bios, one-line album notes, titles only, no facts.
+    - id: b_017
+      name: Pipe and Hammer
+      kind: group
+      home_settlement: Forge
+      label: label_4
+      genre: lane-rock
+      active_from: 2592
+      active_to: 2626
+      members:
+        - id: p_havel_ost
+          name: Havel Ost
+          genre: lane-rock
+          instruments: [lead vocal, rhythm composite guitar]
+          active_from: 2592
+          active_to: 2626
+        - id: p_juno_kerrick
+          name: Juno Kerrick
+          genre: lane-rock
+          instruments: [resonance pipes, compact keyboards]
+          active_from: 2592
+          active_to: 2626
+        - id: p_saul_ravik
+          name: Saul Ravik
+          genre: lane-rock
+          instruments: [composite bass]
+          active_from: 2592
+          active_to: 2612
+        - id: p_ade_prosk
+          name: Ade Prosk
+          genre: lane-rock
+          instruments: [composite bass, backing vocal]
+          active_from: 2612
+          active_to: 2626
+        - id: p_tor_dolo
+          name: Tor Dolo
+          genre: lane-rock
+          instruments: [drum kit, struck alloy]
+          active_from: 2592
+          active_to: 2626
+      movement:
+        initial: Localist
+        changed_to: Synthesist
+        changed_year: 2612
+        detail: >-
+          Juno Kerrick amplified the resonance pipes for the first time in 2612, after Saul Ravik
+          left and the band could no longer fill a hall on four unamplified players.
+      bio: >-
+        Pipe and Hammer have played Forge halls since 2592 and are the band the settlement's younger
+        groups measure themselves against. Havel Ost sings every take standing, and refuses to record
+        a song the band has not already played to a paying room. Saul Ravik left over the amplified
+        pipes in 2612 and Ade Prosk has held the bass since. Juno Kerrick tunes the pipes to whatever
+        hall they are in and makes the guitars follow, which is why no two of their records sit in
+        the same key.
+      album_ids: [al_033, al_034]
+
+    - id: b_018
+      name: Ballast Weather
+      kind: group
+      home_settlement: Forge
+      label: label_4
+      genre: lane-rock
+      active_from: 2597
+      active_to: 2626
+      members:
+        - id: p_isa_lorne
+          name: Isa Lorne
+          genre: lane-rock
+          instruments: [lead vocal, composite guitar]
+          active_from: 2597
+          active_to: 2626
+        - id: p_perin_dask
+          name: Perin Dask
+          genre: lane-rock
+          instruments: [lead composite guitar]
+          active_from: 2597
+          active_to: 2626
+        - id: p_kolm_estry
+          name: Kolm Estry
+          genre: lane-rock
+          instruments: [composite bass, resonance pipes]
+          active_from: 2597
+          active_to: 2626
+        - id: p_neve_atlin
+          name: Neve Atlin
+          genre: lane-rock
+          instruments: [drum kit]
+          active_from: 2597
+          active_to: 2626
+      movement: Synthesist
+      bio: >-
+        Ballast Weather have kept the same four players since 2597 and have never taken a break
+        longer than a season. Isa Lorne runs the band's money herself and will not sign anything at
+        the table it is offered at. Kolm Estry doubles on resonance pipes, which is the only reason
+        Deep Register signed a second Forge band at all. They play the same four settlements every
+        year in the same order and have said they intend to keep doing so.
+      album_ids: [al_035, al_036]
+
+    - id: b_019
+      name: Burn Day Wages
+      kind: group
+      home_settlement: the between
+      label: label_5
+      genre: lane-rock
+      active_from: 2596
+      active_to: 2626
+      members:
+        - id: p_dov_reyland
+          name: Dov Reyland
+          genre: lane-rock
+          instruments: [lead vocal, rhythm composite guitar]
+          active_from: 2596
+          active_to: 2626
+        - id: p_ryke_alden
+          name: Ryke Alden
+          genre: lane-rock
+          instruments: [lead composite guitar, backing vocal]
+          active_from: 2596
+          active_to: 2626
+        - id: p_bel_corrow
+          name: Bel Corrow
+          genre: lane-rock
+          instruments: [composite bass, backing vocal]
+          active_from: 2596
+          active_to: 2626
+        - id: p_hess_vantry
+          name: Hess Vantry
+          genre: lane-rock
+          instruments: [drum kit, oxygen-tank drums]
+          active_from: 2596
+          active_to: 2626
+        - id: p_una_brack
+          name: Una Brack
+          genre: lane-rock
+          instruments: [backing vocal, stripped-wire chimes]
+          active_from: 2604
+          active_to: 2626
+      movement: Localist
+      bio: >-
+        Burn Day Wages are a hauler crew who record between runs and have been the Common Wake
+        Cooperative's biggest act since 2600. Dov Reyland will not take a decision the co-operative
+        has not voted on, including the running order of the records. Una Brack joined as a fifth
+        voice in 2604 and nearly resigned in 2619 over how backing singers were paid. Every one of
+        their records prints all its players on a single line, which was the band's condition for
+        signing.
+      album_ids: [al_037, al_038, al_039]
+
+  albums:
+    - id: al_032
+      title: Nothing Loose
+      band: b_016
+      label: label_2
+      release_year: 2624
+      kind: album
+      genre: lane-rock
+      cornerstone: false
+      notes: >-
+        Second Hitch recorded over eleven nights in a cleared Cold Harbor transfer shed in 2624,
+        after refusing Harbor Standard's offer of a core studio for the second time. Teff Onda broke
+        a wrist two days in and played the rest of the sessions strapped. A pay dispute with the shed
+        operator stopped work for one night and was settled by the band paying the fee themselves.
+        The label pressed it exactly as delivered, including the shed door, and it is the record that
+        made the near frontier take the band seriously.
+      songs:
+        - id: s_0266
+          title: Nothing Loose
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [driving, blunt, fast]
+          playable: true
+          fact: Wen Arbo built the chorus out of the check the crew shouts before a bay door opens, and the band kept the counting-in shout on the take.
+          credits: {writers: [p_wen_arbo], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda], producer: p_dessa_kelm}
+        - id: s_0267
+          title: Count Me on the Manifest
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [defiant, singalong, brisk]
+          playable: true
+          fact: Dessa Kelm refused to record a solo lead on a song about being listed with everybody else, so all four members sing the last chorus.
+          credits: {writers: [p_wen_arbo, p_dessa_kelm], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda], producer: p_dessa_kelm}
+        - id: s_0268
+          title: Wrong Bay, Right Crew
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [wry, rowdy, midtempo]
+          playable: true
+          fact: The second verse names the four loading errors the band made during one night shift in 2623.
+          credits: {writers: [p_wen_arbo, p_orl_mance], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda], producer: p_dessa_kelm}
+        - id: s_0269
+          title: Hold the Sheet Down
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [urgent, hard, fast]
+          playable: true
+          fact: Teff Onda plays the whole track with a strapped wrist, and the band declined the label's offer to bring in a session drummer.
+          credits: {writers: [p_wen_arbo], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda], producer: p_dessa_kelm}
+        - id: s_0270
+          title: Sleep on the Ride Back
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [tired, warm, slow]
+          playable: true
+          fact: Sel Ardin arranged the backing voices to drop out one at a time in the order the crew usually falls asleep.
+          credits: {writers: [p_wen_arbo, p_dessa_kelm], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda, sp_sel_ardin], producer: p_dessa_kelm}
+        - id: s_0271
+          title: Weather at the Gate
+          track_number: 6
+          genre: lane-rock
+          mood_tags: [tense, building, midtempo]
+          playable: true
+          fact: The band recorded with the shed door open and the wind under the second verse was not added afterwards.
+          credits: {writers: [p_wen_arbo], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda], producer: p_dessa_kelm}
+        - id: s_0272
+          title: You Left the Light On
+          track_number: 7
+          genre: lane-rock
+          mood_tags: [tender, plain, midtempo]
+          playable: true
+          fact: Orl Mance wrote it for a partner working the opposite shift, and the band cut the guitar solo to keep it under three minutes.
+          credits: {writers: [p_orl_mance], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda], producer: p_dessa_kelm}
+        - id: s_0273
+          title: Cheap Coffee, Loud Room
+          track_number: 8
+          genre: lane-rock
+          mood_tags: [rowdy, comic, fast]
+          playable: true
+          fact: Talla Venn played the lead figure on a borrowed instrument after her own left Cold Harbor on a transfer that had already departed.
+          credits: {writers: [p_wen_arbo, p_dessa_kelm], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda, sp_talla_venn], producer: p_dessa_kelm}
+        - id: s_0274
+          title: Twelve Hours to Say It
+          track_number: 9
+          genre: lane-rock
+          mood_tags: [regretful, driving, brisk]
+          playable: true
+          fact: The lyric is the argument Wen Arbo did not have before a twelve-hour run, written down in the order he had rehearsed it.
+          credits: {writers: [p_wen_arbo], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda], producer: p_dessa_kelm}
+        - id: s_0275
+          title: Everything Rattles
+          track_number: 10
+          genre: lane-rock
+          mood_tags: [triumphant, loud, fast]
+          playable: true
+          fact: Brin Noll retuned the shed's loose panel fixings before the session so the room would rattle with the chorus instead of against it.
+          credits: {writers: [p_wen_arbo, p_teff_onda], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda, sp_brin_noll], producer: p_dessa_kelm}
+
+    - id: al_033
+      title: Burn Day Overtime
+      band: b_017
+      label: label_4
+      release_year: 2594
+      kind: album
+      genre: lane-rock
+      cornerstone: false
+      notes: >-
+        Deep Register funded four hundred copies so that Pipe and Hammer would have a record to sell
+        at the first freight-circuit burn festival in 2594. The band were still a shed act and
+        recorded in the hall they rehearsed in, over four consecutive nights, because it was the only
+        time the room was free. The festival crowd learned the chorus of the title track on the first
+        night and sang it back with a change the band then adopted. It sold out during the festival
+        and the label has reissued it in every year it has had press time since.
+      songs:
+        - id: s_0276
+          title: Burn Day Overtime
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [driving, celebratory, fast]
+          playable: true
+          fact: Havel Ost wrote it during a shift he had volunteered for and finished the second verse walking home from it.
+          credits: {writers: [p_havel_ost], players: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0277
+          title: Four Hundred Copies
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [proud, wry, brisk]
+          playable: true
+          fact: The title is the size of the only pressing Deep Register would pay for before the festival.
+          credits: {writers: [p_havel_ost, p_juno_kerrick], players: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0278
+          title: Pipes Before Sunrise
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [heavy, solemn, midtempo]
+          playable: true
+          fact: Ivena Sorn and Juno Kerrick played the two resonance-pipe parts in the same take, standing at opposite ends of the hall.
+          credits: {writers: [p_juno_kerrick], players: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_tor_dolo, sp_ivena_sorn], producer: p_juno_kerrick}
+        - id: s_0279
+          title: Hold the Circuit Open
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [defiant, loud, fast]
+          playable: true
+          fact: The recorded chorus is the version the festival crowd sang back on the first night, not the one the band arrived with.
+          credits: {writers: [p_havel_ost, p_tor_dolo], players: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0280
+          title: Whose Route Is It
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [angry, rowdy, fast]
+          playable: true
+          fact: Saul Ravik built the bass figure out of an argument between two crews that he had refused to take a side in.
+          credits: {writers: [p_saul_ravik, p_havel_ost], players: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0281
+          title: Ash on the Windows
+          track_number: 6
+          genre: lane-rock
+          mood_tags: [weary, warm, slow]
+          playable: true
+          fact: The issued take keeps a false start, because Tor Dolo's count-in landed with the hall's ventilation and the band could not repeat it.
+          credits: {writers: [p_havel_ost], players: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0282
+          title: Nobody Sleeps Through It
+          track_number: 7
+          genre: lane-rock
+          mood_tags: [rowdy, comic, fast]
+          playable: true
+          fact: Oren Saye played the whole track after one run-through, having discarded the chart as he does on every session.
+          credits: {writers: [p_havel_ost, p_juno_kerrick], players: [p_havel_ost, p_juno_kerrick, p_tor_dolo, sp_oren_saye], producer: p_juno_kerrick}
+        - id: s_0283
+          title: Take the Long Way In
+          track_number: 8
+          genre: lane-rock
+          mood_tags: [expansive, hopeful, midtempo]
+          playable: true
+          fact: Everyone in the hall sings the closing chorus, including the two engineers, who are credited on the sleeve by first name only.
+          credits: {writers: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_tor_dolo], players: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_tor_dolo], producer: p_juno_kerrick}
+
+    - id: al_034
+      title: Hammer Down the Line
+      band: b_017
+      label: label_4
+      release_year: 2619
+      kind: album
+      genre: lane-rock
+      cornerstone: true
+      notes: >-
+        Pipe and Hammer took eleven days in Forge's largest pipe hall in 2619 and came out with the
+        record that fixed their reputation. Havel Ost lost his voice on the sixth day and the band
+        spent two days recording beds around him rather than stop. The altered-credit dispute
+        circulating that year turned an evening of the sessions into an argument about writing
+        shares, which the band settled by printing every share on the sleeve. Deep Register asked for
+        a shorter record on the last day and got two verses cut instead of two songs.
+      songs:
+        - id: s_0284
+          title: Hammer Down the Line
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [driving, anthemic, fast]
+          playable: true
+          fact: The band recorded the opening riff twenty-two times and chose the second take after playing all twenty-two back in one sitting.
+          credits: {writers: [p_havel_ost, p_juno_kerrick], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0285
+          title: Six Days In
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [hoarse, defiant, midtempo]
+          playable: true
+          fact: Havel Ost sings the whole track on the voice he had left after losing it on the sixth day of the sessions.
+          credits: {writers: [p_havel_ost], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0286
+          title: Put My Name Beside It
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [angry, hard, brisk]
+          playable: true
+          fact: Ade Prosk wrote the verse the evening the band argued about writing shares, and it is the first song of theirs he is credited on.
+          credits: {writers: [p_ade_prosk, p_havel_ost], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0287
+          title: Long Alloy
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [heavy, solemn, slow]
+          playable: true
+          fact: Juno Kerrick and Ivena Sorn tuned the hall's largest pipe to the room rather than to the band, and every guitar was retuned to match it.
+          credits: {writers: [p_juno_kerrick], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo, sp_ivena_sorn], producer: p_juno_kerrick}
+        - id: s_0288
+          title: Everything Runs Hot
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [urgent, loud, fast]
+          playable: true
+          fact: Tor Dolo plays a cracked cymbal for the whole take because the replacement did not arrive before the hall booking ended.
+          credits: {writers: [p_havel_ost, p_tor_dolo], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0289
+          title: The Shift You Don't Come Back From
+          track_number: 6
+          genre: lane-rock
+          mood_tags: [ominous, building, midtempo]
+          playable: true
+          fact: The lyric was assembled from a list of near-misses the band collected from the pipe hall's own maintenance crew.
+          credits: {writers: [p_havel_ost], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0290
+          title: Second Bass Player
+          track_number: 7
+          genre: lane-rock
+          mood_tags: [wry, rowdy, brisk]
+          playable: true
+          fact: Ade Prosk asked for the title to be changed and the rest of the band voted to keep it.
+          credits: {writers: [p_havel_ost, p_tor_dolo], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0291
+          title: Wages and Weather
+          track_number: 8
+          genre: lane-rock
+          mood_tags: [weary, warm, midtempo]
+          playable: true
+          fact: Calo Meret plays the piano part with one hand so that the resonance pipes could keep the low register to themselves.
+          credits: {writers: [p_havel_ost, p_juno_kerrick], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo, sp_calo_meret], producer: p_juno_kerrick}
+        - id: s_0292
+          title: Don't Wait Up for the Yard
+          track_number: 9
+          genre: lane-rock
+          mood_tags: [tender, plain, slow]
+          playable: true
+          fact: Havel Ost recorded the vocal sitting down, which he had refused to do on any previous record.
+          credits: {writers: [p_havel_ost], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0293
+          title: Straight Through Meridian
+          track_number: 10
+          genre: lane-rock
+          mood_tags: [driving, bright, fast]
+          playable: true
+          fact: Two verses were cut on the last day, after Deep Register asked for a record that would fit one side of a pressing.
+          credits: {writers: [p_havel_ost, p_ade_prosk], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_0294
+          title: Count the Loud Ones
+          track_number: 11
+          genre: lane-rock
+          mood_tags: [rowdy, comic, fast]
+          playable: true
+          fact: Brin Noll built the percussion out of the hall's loose railing fittings, retuning them between takes.
+          credits: {writers: [p_havel_ost, p_tor_dolo], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo, sp_brin_noll], producer: p_juno_kerrick}
+        - id: s_0295
+          title: Nothing Sounds Like That Room
+          track_number: 12
+          genre: lane-rock
+          mood_tags: [nostalgic, expansive, midtempo]
+          playable: true
+          fact: Sel Ardin assembled the closing harmony from eleven separate takes sung by five different people in the hall.
+          credits: {writers: [p_juno_kerrick, p_havel_ost], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo, sp_sel_ardin], producer: p_juno_kerrick}
+        - id: s_0296
+          title: Home on the Slow Circuit
+          track_number: 13
+          genre: lane-rock
+          mood_tags: [warm, resolute, midtempo]
+          playable: true
+          fact: The final chorus is the one the band had closed every performance with since 2594 and had never put on a record.
+          credits: {writers: [p_havel_ost, p_juno_kerrick, p_tor_dolo], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
+
+    - id: al_035
+      title: Nothing Rides Free
+      band: b_018
+      label: label_4
+      release_year: 2600
+      kind: album
+      genre: lane-rock
+      cornerstone: false
+      notes: >-
+        Ballast Weather cut their first record in the week Forge's shipboard presses changed to the
+        shared format, and chose to record to the new timing rather than wait for a slot in the old
+        one. The kit arrived incomplete and Neve Atlin played a ballast plate for most of the
+        sessions. The band had just lost a disputed haulage invoice, which is where the title and
+        half the words came from. Deep Register expected a Forge house record and got one that mostly
+        sold on the hauler routes instead.
+      songs:
+        - id: s_0297
+          title: Nothing Rides Free
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [blunt, driving, brisk]
+          playable: true
+          fact: Isa Lorne took the chorus straight from the wording of a haulage invoice the band had disputed and lost.
+          credits: {writers: [p_isa_lorne], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_0298
+          title: Pressed in One Week
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [proud, rowdy, fast]
+          playable: true
+          fact: The band recorded to the new shared press timing in the week Forge adopted it, rather than wait for a slot on the old format.
+          credits: {writers: [p_isa_lorne, p_kolm_estry], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_0299
+          title: Ballast and Bad Coffee
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [wry, warm, midtempo]
+          playable: true
+          fact: Neve Atlin plays a ballast plate instead of a floor tom for the whole song, because the kit arrived without one.
+          credits: {writers: [p_isa_lorne, p_neve_atlin], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_0300
+          title: Where the Line Bends
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [tense, building, midtempo]
+          playable: true
+          fact: Perin Dask plays the lead figure a half-step against the pipes, which Kolm Estry insisted on keeping over the label's objection.
+          credits: {writers: [p_perin_dask, p_kolm_estry], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_0301
+          title: Say It at the Gate
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [urgent, hard, fast]
+          playable: true
+          fact: The lyric names the three things Isa Lorne says out loud before every shift and had never told the rest of the band about.
+          credits: {writers: [p_isa_lorne], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_0302
+          title: Two Bunks, One Window
+          track_number: 6
+          genre: lane-rock
+          mood_tags: [tender, plain, slow]
+          playable: true
+          fact: Oren Saye remembered Isa Lorne's original key from a rehearsal two years earlier and played it back to her when she could not find it.
+          credits: {writers: [p_isa_lorne], players: [p_isa_lorne, p_perin_dask, p_neve_atlin, sp_oren_saye], producer: p_isa_lorne}
+        - id: s_0303
+          title: Everyone Off the Deck
+          track_number: 7
+          genre: lane-rock
+          mood_tags: [triumphant, loud, fast]
+          playable: true
+          fact: The buzz under the last chorus is the cracked bridge of the scarred instrument Talla Venn has been repairing between sessions since 2591.
+          credits: {writers: [p_isa_lorne, p_perin_dask], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin, sp_talla_venn], producer: p_isa_lorne}
+
+    - id: al_036
+      title: Slow Yard
+      band: b_018
+      label: label_4
+      release_year: 2624
+      kind: album
+      genre: lane-rock
+      cornerstone: false
+      notes: >-
+        Ballast Weather booked a Forge yard building for a season in 2624 and worked in it on the
+        days it was not in use, which is why the record took longer to make than any of their others.
+        Isa Lorne wanted a slower record and the band tracked most of it under the tempo they play it
+        at live. A loader the band knew from the yard gate plays one of the solos. Deep Register
+        released it without a single and it has outsold everything else they have made.
+      songs:
+        - id: s_0304
+          title: Slow Yard
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [weary, heavy, slow]
+          playable: true
+          fact: The band tracked the whole song under the tempo they play it at live, and Isa Lorne has said it is the only recording of theirs she prefers to the performance.
+          credits: {writers: [p_isa_lorne], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_0305
+          title: Same Route Every Year
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [nostalgic, warm, midtempo]
+          playable: true
+          fact: The second verse lists the four settlements Ballast Weather have played every year since 2600, in the order the route takes them.
+          credits: {writers: [p_isa_lorne, p_kolm_estry], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_0306
+          title: Rust Doesn't Argue
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [blunt, driving, brisk]
+          playable: true
+          fact: Kolm Estry wrote the title on the back of a maintenance report and the band recorded the song before anyone had written a second verse.
+          credits: {writers: [p_kolm_estry, p_isa_lorne], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_0307
+          title: Give the Solo Away
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [generous, rowdy, fast]
+          playable: true
+          fact: Perin Dask stood down and the solo is played by a loader the band met at the yard gate, credited on the sleeve by name.
+          credits: {writers: [p_perin_dask], players: [p_isa_lorne, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_0308
+          title: Ask Me When I'm Off
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [wry, warm, midtempo]
+          playable: true
+          fact: Calo Meret arrived with the arrangement copied out in full and removed most of it once the band started playing, as he does.
+          credits: {writers: [p_isa_lorne], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin, sp_calo_meret], producer: p_isa_lorne}
+        - id: s_0309
+          title: Last Bell at the Hall
+          track_number: 6
+          genre: lane-rock
+          mood_tags: [reflective, sustained, slow]
+          playable: true
+          fact: Ivena Sorn ends the track alone on the pipes and marked the tuning on her cuff, and it is the tuning the band have used ever since.
+          credits: {writers: [p_kolm_estry], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin, sp_ivena_sorn], producer: p_isa_lorne}
+        - id: s_0310
+          title: Everything Still Moves
+          track_number: 7
+          genre: lane-rock
+          mood_tags: [resolute, loud, fast]
+          playable: true
+          fact: Sel Ardin built the closing chorus around Isa Lorne's guide vocal without telling her, and the guide take is the one on the record.
+          credits: {writers: [p_isa_lorne, p_perin_dask], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin, sp_sel_ardin], producer: p_isa_lorne}
+
+    - id: al_037
+      title: Every Crew Signs
+      band: b_019
+      label: label_5
+      release_year: 2600
+      kind: album
+      genre: lane-rock
+      cornerstone: false
+      notes: >-
+        The Common Wake Cooperative made this the first record it sent past its own routes, using the
+        shared press format adopted that year. Burn Day Wages recorded it in cargo bays at four ports
+        during a single run and would not begin until the co-operative agreed to print every player
+        on one line. Hess Vantry missed one session and a relief hauler played the drums on that
+        track. It is the record that turned a crew band into the co-operative's biggest act.
+      songs:
+        - id: s_0311
+          title: Every Crew Signs
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [defiant, singalong, brisk]
+          playable: true
+          fact: The song is about the argument that produced the band's one-line credit, which the co-operative agreed to before recording began.
+          credits: {writers: [p_dov_reyland, p_bel_corrow], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry], producer: p_ryke_alden}
+        - id: s_0312
+          title: Beyond the Usual Lanes
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [expansive, driving, fast]
+          playable: true
+          fact: The second verse names the four ports the record reached first once the shared press format let it travel past the band's own route.
+          credits: {writers: [p_dov_reyland], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry], producer: p_ryke_alden}
+        - id: s_0313
+          title: Burn Day Wages
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [celebratory, rowdy, fast]
+          playable: true
+          fact: The chorus is the one the crew shouted on the band's first burn day, and Dov Reyland has refused every suggestion to change a word of it.
+          credits: {writers: [p_dov_reyland, p_ryke_alden], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry], producer: p_ryke_alden}
+        - id: s_0314
+          title: Split It Nine Ways
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [wry, warm, midtempo]
+          playable: true
+          fact: Bel Corrow wrote the verse as an accurate account of how the band's earnings were divided in 2600.
+          credits: {writers: [p_bel_corrow], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry], producer: p_ryke_alden}
+        - id: s_0315
+          title: Somebody's Cousin on the Kit
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [comic, loud, fast]
+          playable: true
+          fact: Hess Vantry is not on this track; a relief hauler who had never recorded before plays the drums and is credited on the same line as everyone else.
+          credits: {writers: [p_dov_reyland, p_hess_vantry], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow], producer: p_ryke_alden}
+        - id: s_0316
+          title: Fiddle on the Long Run
+          track_number: 6
+          genre: lane-rock
+          mood_tags: [bright, rowdy, fast]
+          playable: true
+          fact: Nessa Dray changed the tempo halfway through the take with a look across the bay and the band followed her without stopping.
+          credits: {writers: [p_ryke_alden], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, sp_nessa_dray], producer: p_ryke_alden}
+        - id: s_0317
+          title: Cold Bunk, Warm Letter
+          track_number: 7
+          genre: lane-rock
+          mood_tags: [tender, plain, slow]
+          playable: true
+          fact: Dov Reyland sings the last verse an octave down because he had been awake through the whole of the previous night's session.
+          credits: {writers: [p_dov_reyland], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry], producer: p_ryke_alden}
+        - id: s_0318
+          title: Nobody Owns the Road
+          track_number: 8
+          genre: lane-rock
+          mood_tags: [anthemic, driving, midtempo]
+          playable: true
+          fact: The title was chosen by a vote of the co-operative's members rather than by the band.
+          credits: {writers: [p_dov_reyland, p_bel_corrow], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry], producer: p_ryke_alden}
+        - id: s_0319
+          title: Sign Off and Go Home
+          track_number: 9
+          genre: lane-rock
+          mood_tags: [warm, resolute, midtempo]
+          playable: true
+          fact: Oren Saye plays the closing figure in the key Dov Reyland had used at the audition rather than the one written on the chart.
+          credits: {writers: [p_dov_reyland, p_ryke_alden], players: [p_dov_reyland, p_ryke_alden, p_hess_vantry, sp_oren_saye], producer: p_ryke_alden}
+
+    - id: al_038
+      title: Ten Ports Out
+      band: b_019
+      label: label_5
+      release_year: 2612
+      kind: album
+      genre: lane-rock
+      cornerstone: false
+      notes: >-
+        Written across a single ten-port run and recorded in a covered bay with the doors open, this
+        is the record the band made in the year a core late-club label folded and took a booking of
+        theirs with it. Una Brack sings a lead line on it for the first time. Bel Corrow spent the
+        sessions collecting contract wording, four lines of which ended up in the middle of a song.
+        The co-operative pressed twice as many copies as it had for the previous record and sold
+        every one.
+      songs:
+        - id: s_0320
+          title: Ten Ports Out
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [driving, restless, fast]
+          playable: true
+          fact: Dov Reyland wrote one verse at each of the first four ports of a single run and finished the rest at the fifth.
+          credits: {writers: [p_dov_reyland], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0321
+          title: The Year the Room Closed
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [angry, heavy, midtempo]
+          playable: true
+          fact: The band wrote it after a late-club room cancelled their booking without notice when its label folded in 2612.
+          credits: {writers: [p_dov_reyland, p_ryke_alden], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0322
+          title: Whose Catalogue Is It
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [bitter, hard, brisk]
+          playable: true
+          fact: Ryke Alden wrote the riff the night the band heard a label's back catalogue had become disputed, and the words were added a month later.
+          credits: {writers: [p_ryke_alden], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0323
+          title: Four Voices, One Line
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [warm, singalong, midtempo]
+          playable: true
+          fact: Una Brack sings the top line alone here for the first time, having refused to do it on the band's previous record.
+          credits: {writers: [p_una_brack, p_dov_reyland], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0324
+          title: Load Out in the Rain
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [weary, driving, brisk]
+          playable: true
+          fact: The band kept the take in which the weather changed the sound of the covered bay halfway through the song.
+          credits: {writers: [p_dov_reyland], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0325
+          title: Don't Read the Contract Aloud
+          track_number: 6
+          genre: lane-rock
+          mood_tags: [wry, rowdy, fast]
+          playable: true
+          fact: Bel Corrow reads four lines of a real haulage contract in the middle of the song, chosen because they contradict one another.
+          credits: {writers: [p_bel_corrow, p_ryke_alden], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0326
+          title: Slow Berth
+          track_number: 7
+          genre: lane-rock
+          mood_tags: [reflective, sustained, slow]
+          playable: true
+          fact: Calo Meret played the whole piano part with the lid closed, after the band asked for something quieter than the bay.
+          credits: {writers: [p_dov_reyland, p_una_brack], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_una_brack, sp_calo_meret], producer: p_ryke_alden}
+        - id: s_0327
+          title: Keep the Kit Loud
+          track_number: 8
+          genre: lane-rock
+          mood_tags: [rowdy, loud, fast]
+          playable: true
+          fact: Brin Noll retuned the bay's loose metal before the engineers were allowed to place a microphone, which is the only condition he works under.
+          credits: {writers: [p_hess_vantry, p_dov_reyland], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, sp_brin_noll], producer: p_ryke_alden}
+        - id: s_0328
+          title: Home Port Eventually
+          track_number: 9
+          genre: lane-rock
+          mood_tags: [hopeful, warm, midtempo]
+          playable: true
+          fact: Sel Ardin wrote the answering chorus during a session break and the band learned it in one pass.
+          credits: {writers: [p_dov_reyland, p_ryke_alden], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack, sp_sel_ardin], producer: p_ryke_alden}
+
+    - id: al_039
+      title: Hold the Whole Chorus
+      band: b_019
+      label: label_5
+      release_year: 2619
+      kind: album
+      genre: lane-rock
+      cornerstone: true
+      notes: >-
+        Burn Day Wages recorded this across three ports inside one run in 2619, tracking the rhythm
+        section at the first, the guitars at the second and the vocals at the third. A copy reached
+        the band with a different writer's name printed on the label, which produced both a song and
+        a formal complaint the co-operative is still cited for. Una Brack had written a resignation
+        before the sessions and stayed after a members' vote changed how backing singers were paid.
+        The running order was decided by that same membership, and the record is the one every
+        hauler settlement plays on burn day.
+      songs:
+        - id: s_0329
+          title: Hold the Whole Chorus
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [anthemic, singalong, midtempo]
+          playable: true
+          fact: Thirty-one members of the co-operative sing the final chorus, recorded in a transfer hall between two departures.
+          credits: {writers: [p_dov_reyland, p_ryke_alden], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0330
+          title: Three Ports, One Take
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [driving, restless, fast]
+          playable: true
+          fact: The drums were recorded at one port, the guitars at the second and the vocals at the third, all inside a single run.
+          credits: {writers: [p_dov_reyland], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0331
+          title: Altered Credit
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [bitter, hard, brisk]
+          playable: true
+          fact: Ryke Alden wrote it after a copy of the band's own record reached them with a different writer's name printed on the label.
+          credits: {writers: [p_ryke_alden, p_dov_reyland], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0332
+          title: The Between
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [reflective, expansive, midtempo]
+          playable: true
+          fact: Dov Reyland recorded the lead vocal alone in a sealed bay because he could not sing the second verse with the band watching.
+          credits: {writers: [p_dov_reyland], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry], producer: p_ryke_alden}
+        - id: s_0333
+          title: Talk to the Crew, Not Me
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [wry, rowdy, fast]
+          playable: true
+          fact: The verse is what Bel Corrow says to anyone who asks the band to decide something the co-operative has not voted on.
+          credits: {writers: [p_bel_corrow], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0334
+          title: Fourteen Hours to Meridian
+          track_number: 6
+          genre: lane-rock
+          mood_tags: [urgent, driving, fast]
+          playable: true
+          fact: The tempo was set by the departure timer in the hall, which the band left running through the take.
+          credits: {writers: [p_dov_reyland, p_hess_vantry], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0335
+          title: The Notice She Didn't Give
+          track_number: 7
+          genre: lane-rock
+          mood_tags: [tense, warm, midtempo]
+          playable: true
+          fact: Una Brack sang this the morning after the members' vote that changed how backing singers were paid, with her resignation already written.
+          credits: {writers: [p_una_brack, p_dov_reyland], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0336
+          title: Two Bows, Neither Lent
+          track_number: 8
+          genre: lane-rock
+          mood_tags: [bright, rowdy, fast]
+          playable: true
+          fact: Nessa Dray plays both fiddle parts herself, having refused to lend either bow to the guest player the co-operative had booked.
+          credits: {writers: [p_ryke_alden], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, sp_nessa_dray], producer: p_ryke_alden}
+        - id: s_0337
+          title: Everything on the Manifest
+          track_number: 9
+          genre: lane-rock
+          mood_tags: [blunt, driving, brisk]
+          playable: true
+          fact: The lyric lists what the crew was carrying on the run the record was made during, in the manifest's own order.
+          credits: {writers: [p_dov_reyland, p_bel_corrow], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0338
+          title: Pipes at the Turnaround
+          track_number: 10
+          genre: lane-rock
+          mood_tags: [solemn, sustained, slow]
+          playable: true
+          fact: Ivena Sorn played the pipe part in a hall she had not worked in since 2600 and refused a second take once the room had settled around the instrument.
+          credits: {writers: [p_dov_reyland, p_una_brack], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_una_brack, sp_ivena_sorn], producer: p_ryke_alden}
+        - id: s_0339
+          title: Hold Your Own Line
+          track_number: 11
+          genre: lane-rock
+          mood_tags: [defiant, loud, fast]
+          playable: true
+          fact: The membership vote on the running order moved this track from last to eleventh by two votes.
+          credits: {writers: [p_ryke_alden, p_hess_vantry], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack], producer: p_ryke_alden}
+        - id: s_0340
+          title: Wages at the End of It
+          track_number: 12
+          genre: lane-rock
+          mood_tags: [warm, resolute, midtempo]
+          playable: true
+          fact: Calo Meret copied out a full arrangement and then cut it to a single sustained chord, which is what the record uses.
+          credits: {writers: [p_dov_reyland, p_ryke_alden], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack, sp_calo_meret], producer: p_ryke_alden}
+
 layer_b:
-  bands: []
+  bands:
+    - id: b_020
+      name: Hardline Sundays
+      kind: group
+      home_settlement: Forge
+      label: label_4
+      genre: lane-rock
+      active_from: 2549
+      active_to: 2583
+      bio: >-
+        Hardline Sundays played Forge's shed halls on two unamplified guitars and were the first
+        lane-rock group anyone outside Forge could name. They stopped in 2583 when their singer took
+        a maintenance post and turned down every offer to come back.
+      albums:
+        - id: al_040
+          title: First Shed Hall
+          label: label_4
+          release_year: 2559
+          kind: album
+          genre: lane-rock
+          notes: The record that gave the form its whole-crew chorus, and still the one older Forge players name first.
+          songs:
+            - {id: s_0341, title: First Shed Hall, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0342, title: Sunday on the Line, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0343, title: Two Guitars, No Room, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0344, title: Loud Enough to Carry, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0345, title: Wages Before Dark, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0346, title: Nobody Hired Us, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0347, title: The Door Stayed Open, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0348, title: Walk Back Singing, track_number: 8, genre: lane-rock, playable: false}
+        - id: al_041
+          title: Maintenance Post
+          label: label_4
+          release_year: 2583
+          kind: album
+          genre: lane-rock
+          notes: Their last record, issued in the year their singer took the steady job and stopped performing.
+          songs:
+            - {id: s_0349, title: Maintenance Post, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0350, title: Last Shed Standing, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0351, title: Take the Steady Job, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0352, title: One More Burn Day, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0353, title: Nothing to Prove Now, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0354, title: Empty Bay Sunday, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0355, title: Older Than the Route, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0356, title: Turn the Lights Off, track_number: 8, genre: lane-rock, playable: false}
 
-# LAYER C — recordings are lost. Three sentences per figure. Never an album or a track list.
+    - id: b_021
+      name: Coupling Gear
+      kind: group
+      home_settlement: the between
+      label: label_5
+      genre: lane-rock
+      active_from: 2578
+      active_to: 2612
+      bio: >-
+        Coupling Gear were a hauler crew who recorded between runs and refused to play any settlement
+        they had not delivered to. They ended in 2612 when two members signed contracts on opposite
+        circuits and neither would give theirs up.
+      albums:
+        - id: al_042
+          title: Between Runs
+          label: label_5
+          release_year: 2583
+          kind: album
+          genre: lane-rock
+          notes: Recorded in cargo bays across a single circuit and remembered for putting a full-crew chorus on every track.
+          songs:
+            - {id: s_0357, title: Between Runs, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0358, title: Couple and Go, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0359, title: Slow Freight Sunday, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0360, title: Whose Turn to Drive, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0361, title: The Long Way Around, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0362, title: Bay Doors Open, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0363, title: Count Us All In, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0364, title: Sleep When It's Loaded, track_number: 8, genre: lane-rock, playable: false}
+        - id: al_043
+          title: Opposite Circuits
+          label: label_5
+          release_year: 2600
+          kind: album
+          genre: lane-rock
+          notes: Their last full record, and the one the shared press format carried further than the band ever travelled.
+          songs:
+            - {id: s_0365, title: Opposite Circuits, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0366, title: Sign the Other Contract, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0367, title: Two Routes From Here, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0368, title: Nothing Left to Load, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0369, title: Send It Ahead, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0370, title: Different Ports Now, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0371, title: Keep My Half, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0372, title: Last Coupling, track_number: 8, genre: lane-rock, playable: false}
+
+    - id: b_022
+      name: Ninth Bay Loud
+      kind: group
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: lane-rock
+      active_from: 2588
+      active_to: 2619
+      bio: >-
+        Ninth Bay Loud built their sound out of amplified transfer-shed noise and were the first
+        lane-rock band Harbor Standard ever signed. They stopped in 2619 when their guitarist was
+        told to stop playing and the band refused to continue with a replacement.
+      albums:
+        - id: al_044
+          title: Ninth Bay
+          label: label_2
+          release_year: 2594
+          kind: album
+          genre: lane-rock
+          notes: Made for the first freight-circuit burn festival and the record that carried lane-rock to the near frontier.
+          songs:
+            - {id: s_0373, title: Ninth Bay, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0374, title: Burn Day at Cold Harbor, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0375, title: Louder Than the Doors, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0376, title: Transfer Shed Sunday, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0377, title: Ask the Night Crew, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0378, title: Everything Amplified, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0379, title: Wrong Side of the Gate, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0380, title: Hold the Noise, track_number: 8, genre: lane-rock, playable: false}
+        - id: al_045
+          title: The Quiet Year
+          label: label_2
+          release_year: 2612
+          kind: album
+          genre: lane-rock
+          notes: Cut in one week and remembered as the record on which the band began playing below their own volume.
+          songs:
+            - {id: s_0381, title: The Quiet Year, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0382, title: Turn It Down Once, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0383, title: Last Loud Chorus, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0384, title: Nobody Replaces Him, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0385, title: Half the Volume, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0386, title: Play It From Memory, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0387, title: Cold Harbor Winter, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0388, title: Close the Ninth Bay, track_number: 8, genre: lane-rock, playable: false}
+
+    - id: b_023
+      name: The Slow Hitch
+      kind: group
+      home_settlement: Forge
+      label: label_4
+      genre: lane-rock
+      active_from: 2566
+      active_to: 2600
+      bio: >-
+        The Slow Hitch played at half the tempo of everyone around them and argued for years that the
+        form did not have to be fast. Forge audiences disagreed until they did not, which is the only
+        reason the band lasted long enough to be copied.
+      albums:
+        - id: al_046
+          title: Half the Tempo
+          label: label_4
+          release_year: 2583
+          kind: album
+          genre: lane-rock
+          notes: Ignored when it was issued and cited by most of the heavy Forge bands that came after it.
+          songs:
+            - {id: s_0389, title: Half the Tempo, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0390, title: No Hurry at the Gate, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0391, title: Wait for the Weight, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0392, title: Slow Hitch Sunday, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0393, title: Let the Room Catch Up, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0394, title: Two Beats Behind, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0395, title: Nothing Moves Fast Here, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0396, title: Take the Long Coupling, track_number: 8, genre: lane-rock, playable: false}
+        - id: al_047
+          title: Everyone Slowed Down
+          label: label_4
+          release_year: 2600
+          kind: album
+          genre: lane-rock
+          notes: Released as younger bands started copying them, and the only record of theirs that sold on issue.
+          songs:
+            - {id: s_0397, title: Everyone Slowed Down, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0398, title: Told You at the Time, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0399, title: Same Speed as Before, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0400, title: Late to Our Own Room, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0401, title: Heavy Is a Choice, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0402, title: Ask the Old Crew, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0403, title: Nothing We Changed, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0404, title: Slow Out, track_number: 8, genre: lane-rock, playable: false}
+
+    - id: b_024
+      name: Vantage Freight
+      kind: collective
+      home_settlement: the between
+      label: label_5
+      genre: lane-rock
+      active_from: 2594
+      active_to: 2624
+      bio: >-
+        Vantage Freight were a co-operative band with a rotating line-up who printed every player who
+        ever appeared on one of their records. They ended in 2624 when the last founding member left
+        haulage and refused to keep the name going without a crew behind it.
+      albums:
+        - id: al_048
+          title: Rotating Crew
+          label: label_5
+          release_year: 2600
+          kind: album
+          genre: lane-rock
+          notes: Twenty-two named players appear on it, which is the thing about it everybody remembers.
+          songs:
+            - {id: s_0405, title: Rotating Crew, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0406, title: Whoever Shows Up, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0407, title: New Voice Every Port, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0408, title: Print Every Name, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0409, title: Shared Format Sunday, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0410, title: Learn It on the Way, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0411, title: Nobody Is the Leader, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0412, title: Same Song, Different Crew, track_number: 8, genre: lane-rock, playable: false}
+        - id: al_049
+          title: Last Founder
+          label: label_5
+          release_year: 2619
+          kind: album
+          genre: lane-rock
+          notes: Its running order follows one final circuit, port by port, and it was made as the band's remaining founder prepared to leave haulage.
+          songs:
+            - {id: s_0413, title: Last Founder, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0414, title: One Circuit Left, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0415, title: Hand It to the Next Crew, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0416, title: Everything I Signed, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0417, title: Thirty Ports Behind, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0418, title: Keep the Name Going, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0419, title: Retire at the Gate, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0420, title: Final Manifest, track_number: 8, genre: lane-rock, playable: false}
+
+    - id: b_025
+      name: Kettle Row
+      kind: group
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: lane-rock
+      active_from: 2600
+      active_to: 2626
+      bio: >-
+        Kettle Row write short loud songs about the near frontier and have never issued a record
+        longer than half an hour. They play constantly and have turned down every offer to record in
+        the core, which Harbor Standard has stopped making.
+      albums:
+        - id: al_050
+          title: Short and Loud
+          label: label_2
+          release_year: 2607
+          kind: album
+          genre: lane-rock
+          notes: Eight songs and twenty-four minutes, which the band have said is the correct length for anything.
+          songs:
+            - {id: s_0421, title: Short and Loud, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0422, title: Kettle Row Saturday, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0423, title: Never Play the Core, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0424, title: Twenty-Four Minutes, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0425, title: Cheap Room, Full House, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0426, title: Say It and Stop, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0427, title: Nothing to Add, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0428, title: Out Before the Encore, track_number: 8, genre: lane-rock, playable: false}
+        - id: al_051
+          title: Still Refusing
+          label: label_2
+          release_year: 2624
+          kind: album
+          genre: lane-rock
+          notes: A second short record, made after the band declined a core booking for what the sleeve calls the eleventh time.
+          songs:
+            - {id: s_0429, title: Still Refusing, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0430, title: Eleventh Time Asking, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0431, title: Frontier Rooms Only, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0432, title: Keep the Set Short, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0433, title: We Like It Here, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0434, title: Don't Send the Contract, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0435, title: Louder on the Frontier, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0436, title: Same Answer, track_number: 8, genre: lane-rock, playable: false}
+
+    - id: b_026
+      name: Ordinary Loud
+      kind: group
+      home_settlement: Concordance late-club quarter
+      label: label_6
+      genre: lane-rock
+      active_from: 2583
+      active_to: 2612
+      bio: >-
+        Ordinary Loud were the only lane-rock band Lower Bell Editions ever signed, brought in to
+        give a late-club label something to sell in daylight. They folded with the label in 2612 and
+        their second record has been caught in the catalogue dispute ever since.
+      albums:
+        - id: al_052
+          title: Daytime Record
+          label: label_6
+          release_year: 2594
+          kind: album
+          genre: lane-rock
+          notes: Commissioned to widen a late-club label's catalogue and disowned by half of that label's own roster.
+          songs:
+            - {id: s_0437, title: Daytime Record, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0438, title: Wrong Label, Right Songs, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0439, title: Loud in a Quiet Room, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0440, title: Nobody Asked for This, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0441, title: After the Last Ferry, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0442, title: Play It Twice as Fast, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0443, title: Late Club, Early Shift, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0444, title: Ordinary and Loud, track_number: 8, genre: lane-rock, playable: false}
+        - id: al_053
+          title: Unavailable Since
+          label: label_6
+          release_year: 2612
+          kind: album
+          genre: lane-rock
+          notes: Issued in the year the label folded, caught immediately in the catalogue dispute, and never reissued.
+          songs:
+            - {id: s_0445, title: Unavailable Since, track_number: 1, genre: lane-rock, playable: false}
+            - {id: s_0446, title: Catalogue Dispute, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0447, title: Nobody Owns These Songs, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0448, title: Last Record Standing, track_number: 4, genre: lane-rock, playable: false}
+            - {id: s_0449, title: Ask the Founder, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0450, title: Paid in Nothing, track_number: 6, genre: lane-rock, playable: false}
+            - {id: s_0451, title: Locked Away Loud, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0452, title: Close the Door Behind Us, track_number: 8, genre: lane-rock, playable: false}
+
 layer_c:
   recordings: none survive
-  figures: []
+  figures:
+    - id: f_005
+      name: Berrin Solt
+      kind: shed singer
+      genre: lane-rock
+      active_from: 2441
+      active_to: 2474
+      played: shouting lead voice and struck engine plate
+      history: >-
+        Berrin Solt sang over the maintenance sheds of an early freight settlement between 2441 and
+        2474, keeping time on a plate cut out of a scrapped engine housing. Accounts describe him
+        refusing to perform anything a full shift could not learn in one hearing, and rewriting
+        whatever failed that test on the spot. Lane-rock crews still call a chorus the whole room has
+        by the second verse a Solt chorus.
+
+    - id: f_006
+      name: Corr Ashcart
+      kind: crew leader and singer
+      genre: lane-rock
+      active_from: 2468
+      active_to: 2499
+      played: lead voice and two-string haul fiddle
+      history: >-
+        Corr Ashcart led a loading crew that sang its way through night work from 2468 to 2499 and
+        never performed for anybody who was not working at the time. Surviving complaints from
+        settlement clerks call the noise unmanageable and, in the same sentence, call the crews the
+        fastest on the docks. Ashcart is still mentioned because singing the work rather than singing
+        about it is the oldest habit lane-rock kept.
+
+    - id: f_007
+      name: Delia Ovrin
+      kind: solo singer
+      genre: lane-rock
+      active_from: 2495
+      active_to: 2528
+      played: lead voice and struck alloy frame
+      history: >-
+        Delia Ovrin travelled the early freight circuits between 2495 and 2528 and sang in whichever
+        bay would let her stand in it. Written notices record that she charged nothing and took a
+        share of whatever the crew was paid that day, which some settlements refused to allow. The
+        co-operative bands still divide their money the way Ovrin did, and say so.
+
+    - id: f_008
+      name: Matten Broe
+      kind: group leader
+      genre: lane-rock
+      active_from: 2513
+      active_to: 2546
+      played: low lead voice and long alloy tubes
+      history: >-
+        Matten Broe led a shed group that built long alloy tubes into its arrangements from 2513 to
+        2546, well before Forge made a finished instrument of them. Descriptions survive of a group
+        loud enough that neighbouring workshops moved their shift times rather than argue about it.
+        Broe matters because the resonance pipe's place in lane-rock starts with that group and not
+        with the instrument's makers.

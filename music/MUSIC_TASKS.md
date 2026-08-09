@@ -43,7 +43,7 @@ marked **NEXT**.
 | Stage | Cards | Status |
 |---|---|---|
 | 0 · Tooling | M-01 … M-06 | M-01, M-02, M-03 done · M-04–M-06 wait on audio |
-| 1 · The wiki — 8 genres | M-07 … M-15 | **M-07 next** · relay-pop already done and screened |
+| 1 · The wiki — 8 genres | M-07 … M-15 | M-07 done · **M-08 next** · 180 of 500 songs written |
 | 2 · The pilot — 45 songs end to end | M-16 … M-19 | not started |
 | 3 · Style cards — the other 20 bands | M-20 | not started |
 | 4 · Lyrics and prompts — 51 albums | M-21 … M-29 | not started |
@@ -136,13 +136,21 @@ unique in sequence, and the biggest genres first means a problem shows up while 
 Each card is the same three steps — agent writes the file, `make check` counts it, you screen the
 names. relay-pop is already done: 105 songs, 5 bands, 11 albums.
 
-### M-07 · `[agent]` lane-rock — 75 songs, 4 bands — **NEXT**
+### M-07 · `[agent]` lane-rock — 75 songs, 4 bands — **DONE 2026-08-09**
 Files: `music/wiki/lane-rock.yaml`, `music/CONSTANTS.md`
 Check: 75 playable songs split 10 / 35 / 30 across labels 2, 4 and 5; 4 layer-A bands; about 7
 layer-B bands and 4 layer-C figures. `make check` green. Names screened and recorded.
+Result: 75 playable songs across 8 layer-A albums — Second Hitch 10 (label 2), Pipe and Hammer 21
+and Ballast Weather 14 (label 4), Burn Day Wages 30 (label 5). Two cornerstones, `al_034` at 13 and
+`al_039` at 12. 7 layer-B bands carrying 14 albums and 112 titles, 4 layer-C figures. Labels 2 and 4
+are named here for the first time — **Harbor Standard** and **Deep Register** — and every later
+genre on those labels uses those names. `make music-screen` returned nothing on 228 distinct names.
+Note: `CONSTANTS.md` §3's "paste the running names list into every brief" instruction was not
+followed; it records screen results instead (D-058). §5 and §6 were counting 0 with relay-pop
+already written, and now count what is in the wiki.
 Depends on: M-01
 
-### M-08 · `[agent]` deck-talk — 70 songs, 3 bands
+### M-08 · `[agent]` deck-talk — 70 songs, 3 bands — **NEXT**
 Check: 70 playable songs split 25 / 20 / 25 across labels 2, 4 and 5; 3 layer-A bands; ~7 layer-B,
 ~4 layer-C. `make check` green. Names screened.
 Depends on: M-07
