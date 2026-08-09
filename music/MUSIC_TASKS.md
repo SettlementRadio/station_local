@@ -42,7 +42,7 @@ marked **NEXT**.
 
 | Stage | Cards | Status |
 |---|---|---|
-| 0 · Tooling | M-01 … M-06 | M-01 done · **M-03 next** (M-02 waits on M-07; M-04–M-06 wait on audio) |
+| 0 · Tooling | M-01 … M-06 | M-01, M-02 done · **M-03 next** (M-04–M-06 wait on audio) |
 | 1 · The wiki — 8 genres | M-07 … M-15 | relay-pop already done |
 | 2 · The pilot — 45 songs end to end | M-16 … M-19 | not started |
 | 3 · Style cards — the other 20 bands | M-20 | not started |
@@ -73,13 +73,14 @@ Note: no existing id is ever renumbered — COMMISSION §10 forbids it. The coun
 duplicates become an error.
 Depends on: —
 
-### M-02 · `[agent]` Retire the paste loop
+### M-02 · `[agent]` Retire the paste loop — **DONE 2026-08-09**
 Goal: Six music commands become two, and the runbook stops describing a process you no longer use.
 Files: `Makefile`, `src/station/cli.py`, `src/station/music/brief.py`, `music/RUNBOOK.md`, `docs/ADMIN.md`
 Check: `make music-brief`, `music-check`, `music-style` and `music-songs` are gone, along with
 `music/briefs/`. `make check` and `make music-albums` remain and work. `RUNBOOK.md` part 1 no longer
 describes copying anything to a clipboard.
-Depends on: M-07 (the first agent-written genre proves the loop is unnecessary)
+Depends on: M-07 (the first agent-written genre proves the loop is unnecessary) — **done ahead of
+it by operator instruction; the brief carried nothing an in-repo agent cannot read (D-055)**
 
 ### M-03 · `[agent]` Name screening against Wikidata — **NEXT**
 Goal: You stop googling several hundred invented names one at a time.

@@ -124,10 +124,10 @@ Odessa Vail · Corin Hale · Adra Pell · Lio Tern
 So two genres written weeks apart never collide.
 
 **There is no number to keep in this section.** The next free song, album and band id is the
-highest one already in `music/wiki/` plus one, worked out by `station.music.wiki.next_free_ids()`
-and printed at the top of every `make music-brief` writer brief. A hand-kept counter is exactly
-how the second genre comes to reuse the first one's ids: it goes stale the moment someone forgets
-to edit it.
+highest one already in `music/wiki/` plus one — `station.music.wiki.next_free_ids()`, which any
+agent writing a genre reads before it numbers anything. A hand-kept counter is exactly how the
+second genre comes to reuse the first one's ids: it goes stale the moment someone forgets to edit
+it.
 
 `make check` fails, naming both uses, if any song, album, band or figure id appears twice across
 the nine genre files. Label ids, session players and band members are allowed to repeat — the same
@@ -141,12 +141,12 @@ cannot. A correction takes the next free id, never a recycled one.
 
 ## 5. The tallies — tick off as genres land
 
-**The planned numbers are not here.** They live in `music/plan.yaml`, which `make music-brief` reads
-and `tests/unit/test_brief.py` enforces — 500 songs, 25 bands, and every label ending with at least
-3 bands and 40 playable songs. Keeping a second copy in this file would only let the two drift.
+**The planned numbers are not here.** They live in `music/plan.yaml`, which `tests/unit/test_music.py`
+enforces — 500 songs, 25 bands, and every label ending with at least 3 bands and 40 playable songs.
+Keeping a second copy in this file would only let the two drift.
 
-Run `make check` to confirm the plan still adds up; run `uv run station music-brief <genre>` to see
-any single genre's allocation. **This section tracks only what has actually been written.**
+Run `make check`: it confirms both that the plan adds up and that every written genre matches it.
+**This section tracks only what has actually been written.**
 
 | # | Label | Bands written | Songs written |
 |---|---|---|---|

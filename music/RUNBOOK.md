@@ -1,10 +1,9 @@
 # RUNBOOK.md — the music, start to finish
 
-> **Everything you need is on this page.** Every step says what to type, what to do with the
-> result, and which file to save it in. Every file and folder already exists — **you never create
-> anything by hand.**
+> **`music/MUSIC_TASKS.md` is the sequence. This page is the method.** That file says which card is
+> next; this one says what actually happens when you run it, and what only you can do.
 >
-> Do the next unticked step. That is the whole method.
+> Do the card marked **NEXT**. That is the whole method.
 
 ---
 
@@ -12,14 +11,12 @@
 
 | Command | What it does |
 |---|---|
-| `make music-brief GENRE=<genre>` | Brief for writing one genre → **clipboard** |
-| `make music-check GENRE=<genre>` | Brief for checking that genre → **clipboard** |
-| `make music-albums` | Lists every album with its id (use `GENRE=` to filter) |
-| `make music-style GENRE=<genre>` | Brief for that genre's band style cards → **clipboard** |
-| `make music-songs ALBUM=<id>` | Brief for one album's lyrics + Suno prompts → **clipboard** |
-| `make check` | Confirms the plan still adds up |
+| `make check` | Counts the wiki against the plan. Green means it adds up |
+| `make music-albums` | Lists every album with its id and layer (use `GENRE=` to filter) |
 
-**Every one of them puts the result on your clipboard.** You paste it into a chat. That's it.
+**Two commands, and neither one asks you to paste anything anywhere.** The wiki, the style cards
+and the lyrics are written by an agent in this repository, one card at a time. You open a session
+and say the number — "Do M-07" — and the file lands in git where it belongs.
 
 ## The nine genres
 
@@ -30,44 +27,52 @@
 
 | File | What goes in it |
 |---|---|
-| `music/wiki/<genre>.yaml` | the writer's genre reply. **All nine files already exist, empty** |
-| `music/production/styles.yaml` | the band style cards. **Already exists, empty** |
-| `music/production/lyrics/<album>.yaml` | one file per album, lyrics + prompts. Save as you go |
-| `music/briefs/` | the briefs the commands generate. Ignore it, it looks after itself |
+| `music/wiki/<genre>.yaml` | one genre's bands, albums and songs. **All nine files exist** |
+| `music/CONSTANTS.md` | anchor years, session players, the used-names list |
+| `music/plan.yaml` | how the 500 songs divide. The authority for every count |
+| `music/production/styles.yaml` | the band style cards, keyed by band id |
+| `music/production/lyrics/<album>.yaml` | one file per album, lyrics + prompts |
+| `music/audio/<label>/<album>/NN.mp3` | the audio. Not in git — it lives on the volume |
 
 ---
 
 # Part 1 — the wiki
 
-**Nine genres × one round each. No Suno, no hardware, nothing to buy.** This is the bulk of the work
-and the part the presenters actually use.
+**Nine genres. No Suno, no hardware, nothing to buy.** This is the bulk of the work and the part
+the presenters actually use.
 
-## Step 1 · Fix two loose ends
-**One message to your writer.** Paste `music/COMMISSION.md` first, then:
+## Step 0 · Two loose ends in `CONSTANTS.md`, still open
 
-```
-Three fixes to the session players in CONSTANTS.md.
+Neither has a card, and both are cheap now and awkward once eight more genres cite them:
 
-1. Replace "Deym Rusk". It reads as a filed-off Dean Rusk, a real and very
-   well-known person. Same instrument, same character, new name.
+- **"Deym Rusk" reads as a filed-off Dean Rusk** (§3 flags it and recommends replacing). Same
+  instrument, same character, new name.
+- **The session players in §2 have no dates, and there are no elders.** The eight are one
+  generation working roughly 2592–2626; the old-standards window (2546–2591) needs three or four
+  of its own. Without dates, a batch will credit someone to a session they were eleven for.
 
-2. Give each of the eight an active_from and active_to. They are one generation
-   working roughly 2592-2626 (present = 2626). Vary the spans.
+`music/wiki/relay-pop.yaml` already gave its seven players dates — §2 has not caught up.
 
-3. Add three or four ELDERS who worked before 2592, and one player whose
-   instrument suits deck-talk — a beat maker or a hook singer. Same format,
-   with dates.
-```
+## Step 1 · Run the card
 
-**Save into:** `music/CONSTANTS.md`, section 2.
+Open a session in this repository and say the card number. The agent reads `MUSIC_TASKS.md`,
+`COMMISSION.md`, `CONSTANTS.md` and that genre's row of `plan.yaml`, writes
+`music/wiki/<genre>.yaml`, and runs `make check` before it finishes.
 
-- [ ] done
+**One card per session.** Two cards in one session is how the thread gets lost.
 
-## Step 2 · Check the new names
-**Google each new name in quotes.** `"Ivena Sorn"` — like that.
+## Step 2 · Read `make check`
 
-**Finding nothing is a pass.** You are checking the name is *not already taken* by a real famous
-person. Most searches return nothing, and that is the good result.
+Green means the counting is right: every label has its share of playable songs, every layer-A song
+has a fact, no layer-B song has one, every album is dated to an anchor year, and no id is used
+twice. Red names the genre and both numbers.
+
+**Green is not "good".** It means nothing is miscounted. Whether the bios read well is yours.
+
+## Step 3 · Screen the names
+
+Every band, label, album title, song title and person the genre invented. `make music-screen`
+(M-03) narrows the pile to exact matches against real notable names; the rest is your judgement.
 
 | What you find | Verdict |
 |---|---|
@@ -77,42 +82,15 @@ person. Most searches return nothing, and that is the good result.
 | A real notable person with that **exact full name** | ❌ replace |
 | A name that reads as a famous name with a letter changed | ❌ replace |
 
-**Save into:** `music/CONSTANTS.md`, section 3.
+**Record what you cleared** in `music/CONSTANTS.md` §3, so the next genre does not reuse it. Record
+what you rejected too — otherwise the same collision gets proposed twice.
 
-- [ ] done
+## Step 4 · The catalogue-wide pass
 
-## Step 3 · Write a genre
-**Two chats. Repeat nine times.**
-
-```
-make music-brief GENRE=relay-pop
-```
-
-1. Open a **new chat**. Paste. It writes.
-2. **Save the reply into `music/wiki/relay-pop.yaml`**, replacing everything below the `section:`
-   block. The file is already there with the numbers in its header.
-
-```
-make music-check GENRE=relay-pop
-```
-
-3. Open a **different chat**. Paste. It reports failures.
-4. Send the failures back to the first chat, get a fix, re-save, re-check until it passes.
-
-> **Why two chats:** a writer marking its own homework always says it's fine.
-
-**Do `relay-pop` first** — it's the biggest genre, so a writer who can't do the job shows up on
-round one. Then the other eight.
-
-- [ ] relay-pop  · [ ] lane-rock · [ ] deck-talk · [ ] frontier-reels · [ ] old-system-sessions
-- [ ] pulse-dance · [ ] void-lounge · [ ] core-harmonies · [ ] void-ballads
-
-## Step 4 · Screen the names in each genre
-Same as Step 2, on every band, label, album title and song title the writer invented. Do it **after
-each genre**, not at the end of all nine. Record cleared names in `music/CONSTANTS.md` section 3 so
-the next genre doesn't reuse them.
-
-- [ ] done for every genre
+After the ninth genre, M-15 checks the things that are properties of the whole catalogue rather
+than of one genre: 500 songs, 25 bands, every anchor year carrying enough records, every label able
+to make a retrospective. **The wiki freezes when that card closes**, and no lyrics are written
+before it does — moving a release year is free until songs exist against it.
 
 ---
 
@@ -120,61 +98,19 @@ the next genre doesn't reuse them.
 
 **Only after Part 1 is finished.** Now you need a Suno account.
 
-## Step 5 · Style cards
-**Once per genre.** A style card is what makes a band sound like the same band across three albums.
+## Step 5 · Style cards and lyrics
 
-```
-make music-style GENRE=relay-pop
-```
-
-Paste into a chat. **Save the reply into `music/production/styles.yaml`** — the file is already
-there, with the format in its header.
-
-- [ ] done for every genre
-
-## Step 6 · Pick an album
-```
-make music-albums
-```
-
-```
-ALBUM    L  BAND                 YEAR   SONGS  PLAY  STYLE  TITLE
-al_001   A  Measure Kindly       2619   12     12    yes    Terms of Arrival *
-al_012   B  Pell and Tern        2559   8      0     -      Rooms Between Voices
-```
-
-| Column | Means |
-|---|---|
-| **L** | the layer. **A** = recorded. **B** = written about, never recorded |
-| **SONGS** | how many songs are on the record |
-| **PLAY** | how many of them become audio. Always 0 for layer B |
-| **STYLE** | does that band have a style card yet? `--` means do Step 5 first |
-| **`*`** | a cornerstone album, long enough to carry a whole 56-minute programme |
-
-**Only layer A can be recorded.** `make music-songs` refuses a layer-B id and tells you so — those
-albums exist so a presenter can mention a record the station doesn't own, which is most of the
-discography.
-
-**The album id is the thing you need.** `al_001`.
-
-## Step 7 · Lyrics and Suno prompts
-```
-make music-songs ALBUM=al_001
-```
-
-Paste into a chat. It already contains the album's story, the band's style card, and every song's
-title, mood and one fact — so the lyrics will fit what the presenters already say about them.
-
-**Save the reply into `music/production/lyrics/al_001.yaml`** — the command tells you this too.
+M-16 and M-20 write the style cards; M-17 and M-21 … M-29 write the lyrics and generation prompts,
+a whole album at a time. Both are agent cards. `make music-albums` shows a `yes` in the STYLE
+column once a band has its card.
 
 > **These files are yours and they stay in git.** Suno only turns them into audio; it is not where
 > your work lives. Lyrics, prompts and style cards are all committed text, so a year from now you
 > can change one line of one song and regenerate just that song. Nothing important is stored inside
 > the tool.
 
-- [ ] repeat per album
+## Step 6 · Generate in Suno
 
-## Step 8 · Generate in Suno
 **Custom mode** — your lyrics, your prompt. Never let Suno write the lyrics.
 
 The moment a take is a keeper, in this order:
@@ -187,21 +123,18 @@ The moment a take is a keeper, in this order:
 **Finish a band in as few sittings as possible** — Suno's current models are being retired, and a
 band split across two model versions won't sound like one band.
 
-## Step 9 · Measure by ear
-Play each keeper and write down three numbers:
+## Step 7 · Measure and tag
 
-- **duration** — real length
-- **intro ramp** — seconds until the **first sung word** (the presenter talks across this)
-- **outro** — `cold`, `fade` or `sustain`
+`make music-analyse` (M-04) measures each song's duration, the seconds until the first sung word,
+and its outro type. `make music-tag` (M-05) writes the licence period, generation date, model
+version and AI marker into every file.
 
-**Never estimate the intro ramp.** Two seconds too long clips a vocal on air, on every play, forever.
+**Never estimate the intro ramp by eye.** Two seconds too long clips a vocal on air, on every play,
+forever. The tool measures and flags the borderline ones; you re-listen only to those.
 
-## Step 10 · Tag and file
-- Write into each audio file's own tags: licence period, generation date, model version, and an
-  AI-generated marker.
-- At the **start of every month you generate in**, save Suno's commercial-use terms as a dated PDF
-  into `music/licence-evidence/`. Rights attach at the moment of generation, so the evidence is per
-  month, not per project.
+At the **start of every month you generate in**, save Suno's commercial-use terms as a dated PDF
+into `music/licence-evidence/`. Rights attach at the moment of generation, so the evidence is per
+month, not per project. It cannot be reconstructed later.
 
 ---
 
@@ -220,11 +153,11 @@ That last one is the only quality gate in this project. Nothing automated grades
 
 | It says | Do this |
 |---|---|
-| `unknown genre 'x'` | Use one of the nine slugs above |
-| `no album 'al_xxx'` | Run `make music-albums` for the real ids |
-| `missing music/wiki/x.yaml` | That genre hasn't been written — Step 3 |
-| `MISSING — run make music-style` | Step 5 for that genre first |
-| `make check` fails | The plan no longer adds up. It names what broke |
+| `make check` red, naming a genre and a number | The wiki does not match `plan.yaml`. The message says which label, which song, which id |
+| `make check` red on the anchor years | `CONSTANTS.md` §1's table lost its `\| **YYYY** \|` row shape |
+| `missing music/wiki/x.yaml` | That genre has not been written — its card in `MUSIC_TASKS.md` |
+| `no style card yet` | That band's style card is missing — M-16 or M-20 |
+| You do not know where you are | Ask "what's next in music". The answer is the card marked **NEXT** |
 
 ## The words
 
@@ -232,7 +165,7 @@ That last one is the only quality gate in this project. Nothing automated grades
 station doesn't own; a presenter can mention it, the scheduler can never play it. **Layer C** —
 musicians whose recordings are lost; history only, no albums.
 
-**Band** — a singer or group with albums and a career. The writer invents these.
+**Band** — a singer or group with albums and a career.
 
 **Session player** — a hired musician who plays on *other people's* records. No albums of their
 own, no career, no voice. They exist only as credits, so a presenter can say *"that's Ivena Sorn on
@@ -241,4 +174,4 @@ pipes — she's on half the Forge catalogue too."*
 **Style card** — six lines fixing how a band sounds. Written once per band, reused in every prompt.
 
 **Anchor year** — one of eight years when a lot of records happened to come out, so the overnight
-show can do "one label or one year".
+show can do "one label or one year". Every album in the wiki is dated to one of them.

@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import shutil
 import sys
-from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 from typing import TYPE_CHECKING
@@ -59,7 +58,7 @@ def _boot() -> Settings:
 # Commands that read only files already in the repository and touch no environment. §23's gate
 # exists to stop the *station* running mis-configured; it must not stop the operator writing
 # content. The music wiki is deliberately buildable before any hardware or volume exists (D-044).
-CONFIG_FREE = frozenset({"version", "music-brief", "music-style", "music-songs", "music-albums"})
+CONFIG_FREE = frozenset({"version", "music-albums"})
 
 
 @app.callback()
@@ -118,78 +117,25 @@ def doctor(ctx: typer.Context) -> None:
     typer.secho("\nready", fg="green")
 
 
-def _emit(build: Callable[[], str], out: Path | None) -> None:
-    """Render a brief to stdout or a file, turning BriefError into a message rather than a trace."""
-    from station.music.brief import BriefError
-
-    try:
-        text = build()
-    except BriefError as exc:
-        typer.secho(f"\n{exc}\n", fg="red", err=True)
-        raise typer.Exit(code=2) from None
-    if out is None:
-        typer.echo(text)
-        return
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(text, encoding="utf-8")
-    typer.secho(f"{out}  ({len(text.split())} words)", fg="green")
-
-
-# typer needs its defaults as call results; B008 forbids that inline, so they are singletons.
-_GENRE_ARG = typer.Argument(..., help="genre slug, e.g. relay-pop")
-_KIND_OPT = typer.Option("write", "--kind", help="write | check")
-_OUT_OPT = typer.Option(None, "--out", help="write here instead of stdout")
-
-
-@app.command("music-brief")
-def music_brief(genre: str = _GENRE_ARG, kind: str = _KIND_OPT, out: Path = _OUT_OPT) -> None:
-    """Assemble the writer or checker brief for one genre (`music/RUNBOOK.md`)."""
-    from station.music import brief
-
-    if kind not in ("write", "check"):
-        typer.secho(f"--kind must be write or check, not {kind!r}", fg="red", err=True)
-        raise typer.Exit(code=2)
-    _emit(lambda: brief.build(kind, genre, Path.cwd()), out)  # type: ignore[arg-type]
-
-
-_ALBUM_ARG = typer.Argument(..., help="album id, e.g. al_001")
-
-
-@app.command("music-style")
-def music_style(genre: str = _GENRE_ARG, out: Path = _OUT_OPT) -> None:
-    """Assemble the style-card brief for one genre's bands (`music/RUNBOOK.md` step 7)."""
-    from station.music import brief
-
-    _emit(lambda: brief.build_style(genre, Path.cwd()), out)
-
-
-@app.command("music-songs")
-def music_songs(album: str = _ALBUM_ARG, out: Path = _OUT_OPT) -> None:
-    """Assemble the lyrics-and-prompts brief for one album (`music/RUNBOOK.md` step 8)."""
-    from station.music import brief
-
-    _emit(lambda: brief.build_songs(album, Path.cwd()), out)
-
-
 _GENRE_FILTER = typer.Option(None, "--genre", help="only this genre")
 
 
 @app.command("music-albums")
 def music_albums(genre: str = _GENRE_FILTER) -> None:
-    """List every album in the wiki, so `music-songs` has an id to take."""
+    """List every album in the wiki — the id, the layer, and whether the band has a style card."""
     from station.music import wiki
 
     music = Path.cwd() / "music"
     try:
         styles = wiki.load_styles(music / "production" / "styles.yaml")
-        rows = wiki.album_rows(music / "wiki", styles)
+        rows = wiki.album_rows(music / wiki.WIKI_DIR, styles)
     except wiki.WikiError as exc:
         typer.secho(f"\n{exc}\n", fg="red", err=True)
         raise typer.Exit(code=2) from None
 
     rows = [r for r in rows if genre is None or r.genre == genre]
     if not rows:
-        typer.secho("no albums yet — write a genre first (music/RUNBOOK.md)", fg="yellow")
+        typer.secho("no albums yet — no genre has been written (music/RUNBOOK.md)", fg="yellow")
         return
 
     typer.echo(
@@ -211,14 +157,14 @@ def music_albums(genre: str = _GENRE_FILTER) -> None:
     playable = [r for r in rows if r.layer == "A"]
     typer.echo(
         f"\n{len(playable)} playable albums (L=A), {len(rows) - len(playable)} referenced only (L=B)."
-        "\n  L=B is written about but never recorded — `make music-songs` will refuse it."
+        "\n  L=B is written about but never recorded, and never becomes audio."
         "\n  * cornerstone, long enough to carry a whole 56-minute programme."
     )
     missing = sorted({r.band for r in playable if not r.has_style})
     if missing:
         typer.secho(
             f"\nno style card yet: {', '.join(missing)}"
-            "\n  run `make music-style GENRE=<genre>` before `make music-songs`.",
+            "\n  style cards come from M-16 and M-20 in music/MUSIC_TASKS.md, before any lyrics.",
             fg="yellow",
         )
 

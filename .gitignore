@@ -14,7 +14,6 @@
 # --- derived artifacts (§7, §14a) ---
 # Everything a human edits is a file in git; everything generated is not.
 canon-report.md
-music/briefs/
 music/audio/
 rundown/
 *.rundown.md

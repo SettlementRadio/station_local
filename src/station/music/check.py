@@ -1,4 +1,4 @@
-"""Count the wiki against the plan, so nobody counts 105 songs by hand.
+"""`music/plan.yaml`, and the wiki counted against it — so nobody counts 105 songs by hand.
 
 Five things are decided here, and every one of them is arithmetic or identity rather than
 judgement: a label whose song count does not match `plan.yaml`, a layer-A song with no fact, a
@@ -6,12 +6,12 @@ layer-B song that has one, a release year that is not one of the eight anchors, 
 twice. Everything else about a genre — whether the bios read well, whether a name is too close to a
 real one — is a human judgement and stays one (`COMMISSION.md` §19, and M-03 for the screen).
 
-Why not leave this to `make music-check`: that brief asks a model to count 105 songs across eleven
-albums, and a model that miscounts is indistinguishable from a wiki that is wrong. The counting
-half moves here; the reading half stays with the operator.
+Why this is code: a checker prompt asks a model to count 105 songs across eleven albums, and a
+model that miscounts is indistinguishable from a wiki that is wrong (D-054). The counting half
+lives here; the reading half stays with the operator.
 
 Nothing here fixes anything. It returns problems, each naming the genre and the number, and
-`tests/unit/test_brief.py` turns them into a red `make check`.
+`tests/unit/test_music.py` turns them into a red `make check`.
 """
 
 from __future__ import annotations
@@ -21,7 +21,10 @@ from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
-from station.music import brief, wiki
+import yaml
+from pydantic import BaseModel, Field
+
+from station.music import wiki
 
 # `CONSTANTS.md` §1 is the one place the anchor years are written down. They are read out of that
 # table rather than copied into code, because two copies of eight numbers is two copies too many.
@@ -31,6 +34,72 @@ _ANCHOR_ROW = re.compile(r"^\|\s*\*\*(\d{4})\*\*\s*\|", re.MULTILINE)
 
 class CheckError(RuntimeError):
     """The check could not run at all — a file it reads is missing or has changed shape."""
+
+
+class LabelSlice(BaseModel):
+    """One label's share of a genre: how many songs, spread over how many bands."""
+
+    label: int
+    songs: int = Field(gt=0)
+    bands: int = Field(gt=0)
+
+
+class GenreSlice(BaseModel):
+    """One genre's whole allocation across the three layers."""
+
+    title: str
+    layer_b_bands: int = Field(ge=0)
+    layer_c_figures: int = Field(ge=0)
+    labels: list[LabelSlice] = Field(min_length=1)
+
+    @property
+    def songs(self) -> int:
+        return sum(s.songs for s in self.labels)
+
+    @property
+    def bands(self) -> int:
+        return sum(s.bands for s in self.labels)
+
+
+class Plan(BaseModel):
+    """`music/plan.yaml` — the allocation of playable songs across genres and labels."""
+
+    labels: dict[int, str]
+    genres: dict[str, GenreSlice]
+
+    @property
+    def total_songs(self) -> int:
+        return sum(g.songs for g in self.genres.values())
+
+    @property
+    def total_bands(self) -> int:
+        return sum(g.bands for g in self.genres.values())
+
+    def bands_per_label(self) -> dict[int, int]:
+        """Bands each label ends up with. §5 requires at least three, or no retrospective."""
+        counts = dict.fromkeys(self.labels, 0)
+        for genre in self.genres.values():
+            for slice_ in genre.labels:
+                counts[slice_.label] += slice_.bands
+        return counts
+
+    def songs_per_label(self) -> dict[int, int]:
+        counts = dict.fromkeys(self.labels, 0)
+        for genre in self.genres.values():
+            for slice_ in genre.labels:
+                counts[slice_.label] += slice_.songs
+        return counts
+
+
+def load_plan(path: Path) -> Plan:
+    """Read and validate `plan.yaml`, or fail naming the file."""
+    try:
+        raw = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        raise CheckError(f"missing {path} — it is the authority for every count") from None
+    except yaml.YAMLError as exc:
+        raise CheckError(f"{path} is not valid YAML: {exc}") from None
+    return Plan.model_validate(raw)
 
 
 @dataclass(frozen=True)
@@ -68,7 +137,7 @@ def _layer_a_albums(genre: wiki.GenreWiki) -> list[wiki.Album]:
     return [album for album, _, layer in genre.every_album() if layer == "A"]
 
 
-def _counts(slug: str, genre: wiki.GenreWiki, plan: brief.Plan) -> list[Problem]:
+def _counts(slug: str, genre: wiki.GenreWiki, plan: Plan) -> list[Problem]:
     """§5: a label that does not get its share of songs cannot carry its retrospective."""
     allocation = plan.genres[slug]
     expected = {slice_.label: slice_.songs for slice_ in allocation.labels}
@@ -173,9 +242,9 @@ def _duplicate_ids(found: list[tuple[str, wiki.Entity]]) -> list[Problem]:
 def check_wiki(root: Path) -> list[Problem]:
     """Every problem in every written genre. An empty list is a wiki that matches the plan."""
     music = root / "music"
-    plan = brief.load_plan(music / "plan.yaml")
+    plan = load_plan(music / "plan.yaml")
     anchors = anchor_years(music / "CONSTANTS.md")
-    wiki_dir = music / brief.WIKI_DIR
+    wiki_dir = music / wiki.WIKI_DIR
 
     problems: list[Problem] = []
     found: list[tuple[str, wiki.Entity]] = []

@@ -1,6 +1,6 @@
 # music/plan.yaml — how the 500 playable songs divide (D-044, and RUNBOOK.md step 3).
 #
-# Read by `make music-brief`. Hand-edited; nothing writes to it.
+# The authority for every count. Hand-edited; nothing writes to it.
 #
 # Every number here is arithmetic from constraints already fixed elsewhere:
 #   songs per genre  → COMMISSION.md §2
@@ -9,7 +9,8 @@
 #   bands per label  → COMMISSION.md §5: every label needs >=3 bands and >=40 playable songs
 #                      or its retrospective cannot be made
 #
-# Totals, checked by tests/unit/test_brief.py: 500 songs, 25 bands, every label >=3 bands.
+# Totals, checked by tests/unit/test_music.py: 500 songs, 25 bands, every label >=3 bands.
+# The same file checks every written genre against the allocation below (`make check`).
 
 labels:
   1: Concordance, prestige

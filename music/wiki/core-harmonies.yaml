@@ -1,8 +1,7 @@
 # Core Harmonies — PLACEHOLDER. Nothing here is content yet.
 #
-# Fill it by pasting the writer's YAML over everything below the `section:` block:
-#     make music-brief GENRE=core-harmonies      -> the brief, on your clipboard
-#     make music-check GENRE=core-harmonies      -> the checker, after you have pasted the reply back here
+# Written by its card in music/MUSIC_TASKS.md: open a session and say the number. The agent
+# replaces everything below the `section:` block, and `make check` counts what it wrote.
 #
 # Allocation, from music/plan.yaml (the authority — do not retype it here):
 #   LAYER A — 15 songs across 1 band(s)

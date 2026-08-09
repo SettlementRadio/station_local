@@ -1,12 +1,13 @@
-"""Read `music/wiki/*.yaml` — the writer's output — back into typed objects.
+"""Read `music/wiki/*.yaml` — the nine genre files — back into typed objects.
 
-Why models rather than dicts: the wiki is hand-produced by a writer working from a prose brief, so
+Why models rather than dicts: each genre is written in one long pass against `COMMISSION.md`, so
 its shape is *nearly* uniform and never exactly so. Validating on the way in means a missing field
-fails here, naming the file and the entry, rather than three steps later inside a rendered prompt
-that quietly says "None" (§31: dataclasses across boundaries, never bare dicts).
+fails here, naming the file and the entry, rather than three steps later inside something that
+quietly says "None" (§31: dataclasses across boundaries, never bare dicts).
 
 Extra keys are ignored on purpose. A writer who adds a field is not an error; a writer who omits a
-required one is.
+required one is. Most of the world in these files — bios, album stories, movements, the lost
+figures' histories — is prose no code reads, and is deliberately not modelled here.
 """
 
 from __future__ import annotations
@@ -15,6 +16,10 @@ from pathlib import Path
 
 import yaml
 from pydantic import BaseModel, ConfigDict, Field, field_validator
+
+# `music/wiki/<genre>.yaml` — one file per genre, written by an agent working one card of
+# `music/MUSIC_TASKS.md`.
+WIKI_DIR = "wiki"
 
 
 class WikiError(RuntimeError):
@@ -104,20 +109,6 @@ class Band(_Labelled):
     bio: str = ""
     members: list[Member] = Field(default_factory=list)
     albums: list[Album] = Field(default_factory=list)  # layer B nests them here
-
-    @property
-    def movement_line(self) -> str:
-        if isinstance(self.movement, str):
-            return self.movement or "unstated"
-        return "; ".join(f"{k}: {v}" for k, v in self.movement.items())
-
-    def line_up(self) -> str:
-        """One line per member, for a style-card brief. Solo acts often have no member list."""
-        if not self.members:
-            return "  (solo — no member list given)"
-        return "\n".join(
-            f"  {m.name}: {', '.join(m.instruments) or 'unspecified'}" for m in self.members
-        )
 
 
 class _Layer(_Entry):
@@ -262,29 +253,6 @@ def next_free_ids(wiki_dir: Path) -> dict[str, str]:
             if digits.isdigit():
                 highest[entity.kind] = max(highest[entity.kind], int(digits))
     return {kind: f"{prefix}{highest[kind] + 1:0{width}d}" for kind, prefix, width in COUNTERS}
-
-
-def find_album(wiki_dir: Path, album_id: str) -> tuple[Album, Band, str]:
-    """Locate an album across every written genre. Returns the album, its band, and the genre."""
-    seen: list[str] = []
-    for slug in written_genres(wiki_dir):
-        genre = load_genre(wiki_dir / f"{slug}.yaml")
-        for album, band, layer in genre.every_album():
-            if album.id != album_id:
-                if layer == "A":
-                    seen.append(album.id)
-                continue
-            if layer == "B":
-                raise WikiError(
-                    f"{album_id} is a layer-B album — the station references it but does not hold "
-                    f"it, so it has no lyrics and never becomes audio. Pick a layer-A album: "
-                    f"run `make music-albums`."
-                )
-            if band is None:
-                raise WikiError(f"album {album_id} names band {album.band}, which is not in {slug}")
-            return album, band, slug
-    known = ", ".join(seen[:12]) or "none — no genre has been written yet"
-    raise WikiError(f"no album {album_id!r}. Playable albums: {known}")
 
 
 class AlbumRow(_Entry):

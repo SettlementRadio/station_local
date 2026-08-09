@@ -1358,3 +1358,34 @@ is the operator's, and two copies of eight numbers is one copy too many; if the 
 changes, `make check` stops with a message saying so rather than silently finding no anchors and
 passing everything. Note that `COMMISSION.md`'s checker prompt allows an off-anchor year "or a
 stated reason" — the code allows none, per M-01's check line.
+
+### D-055 · The paste loop is retired; the music track is worked in the repository — 2026-08-09
+
+**Six music commands become two.** `make music-brief`, `music-check`, `music-style` and
+`music-songs` are gone, with `src/station/music/brief.py` and the git-ignored `music/briefs/`.
+`make check` and `make music-albums` remain. `RUNBOOK.md` no longer describes copying anything to a
+clipboard, because nothing is copied anywhere any more.
+
+**What the loop was for.** Every one of those targets concatenated files the operator already owns
+— `COMMISSION.md`, `CONSTANTS.md`, a row of `plan.yaml`, a band's line-up — and put the result on
+the clipboard so it could be pasted into an external chat. An agent working a card in this
+repository reads those files directly. The brief carried no information the agent lacks, so it was
+a transport mechanism for a workflow that has been replaced by `music/MUSIC_TASKS.md`: open a
+session, say the card number, the file lands in git.
+
+**M-02 depended on M-07 — the first agent-written genre — and was done before it.** The dependency
+existed to prove the loop unnecessary. Nothing about relay-pop or lane-rock changes what the brief
+contained, so the proof was not worth blocking on; git holds the deleted module if the judgement
+turns out wrong.
+
+**`plan.yaml` moves to `check.py` and `brief.py` is deleted rather than emptied.** `Plan` was the
+only part of the brief module with a life after the briefs, and a module called `brief.py`
+containing no briefs is how dead concepts survive. `wiki.find_album`, `Band.line_up` and
+`Band.movement_line` went the same way: their only callers were the deleted commands.
+`tests/unit/test_brief.py` is now `tests/unit/test_music.py`.
+
+**What was lost, and is not.** The checker brief's twelve prose checks are not replaced one for
+one: five of them are now `make check` (D-054), the name screen becomes M-03, and the rest —
+"bios are plain speech, not lyrical", "no song is about leaving Earth" — were always judgements a
+model marking its own homework passed anyway. They stay in `COMMISSION.md` §3 and §8, where the
+agent writing the genre reads them, and they are checked by the operator reading the result.

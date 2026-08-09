@@ -38,62 +38,22 @@ and each system tool present. Ends in `ready`, or names what is missing.
 
 ---
 
-### `make music-brief GENRE=<genre>`
-
-Builds the complete brief for one genre of the music wiki and **copies it to your clipboard**. Paste
-it into a new conversation with the writer; it is self-contained and needs nothing else pasted after
-it.
-
-It assembles three files you own — `music/COMMISSION.md`, `music/CONSTANTS.md`, and that genre's row
-of `music/plan.yaml` — into one block, so there is nothing to stitch together by hand. It calls no
-model and invents nothing.
-
-It also prints the first free song, album and band id, counted from what is already in
-`music/wiki/`. Nothing keeps those numbers by hand any more, which is what stops the next genre
-overwriting the last one.
-
-Genres are the eight slugs in `music/plan.yaml`; naming an unknown one lists the valid ones. The
-output is also left in `music/briefs/`, which is derived and git-ignored.
-
-**This command needs no `.env` and no external volume.** The music wiki is deliberately buildable
-before any hardware exists (`DECISIONS.md` D-044).
-
-### `make music-check GENRE=<genre>`
-
-The same, but builds the *checker* brief: it reads back `music/wiki/<genre>.yaml` and wraps it in
-the twelve checks from `music/COMMISSION.md`.
-
-**Paste it into a different conversation from the one that wrote the genre.** A writer marking its
-own homework always passes. It fails, naming the file, if that genre has not been written yet.
-
-### `make music-style GENRE=<genre>`
-
-Builds the style-card brief for that genre's bands and copies it to the clipboard. It reads the
-line-ups the writer already invented, so each card is asked for against real players rather than in
-the abstract.
-
-Save the reply to `music/production/styles.yaml`, keyed by band id. `make music-songs` reads it from
-there; without it, an album brief still builds but says the style card is missing.
-
-### `make music-songs ALBUM=<album_id>`
-
-Builds one album's lyrics-and-prompts brief: the record's story, the band's style card, and every
-playable song with its mood tags and its one fact. Album ids look like `al_001`; naming an unknown
-one lists the ids that exist.
-
-**Run `make music-style` for the genre first.** The style card is what keeps a band sounding like one
-band across three albums (`DECISIONS.md` D-045).
-
 ### `make music-albums`
 
 Lists every album in the wiki with its id, band, year, song counts and whether that band has a style
-card yet. **This is where the `ALBUM=` id for `make music-songs` comes from.** `GENRE=` limits it to
-one genre.
+card yet. `GENRE=` limits it to one genre. This is how you see the catalogue without opening nine
+YAML files.
 
 The **L** column is the layer: `A` is recorded, `B` is written about and never recorded. **PLAY** is
-how many of the album's songs become audio, and is always 0 for layer B. `make music-songs` refuses
-a layer-B id and explains why. `*` marks a cornerstone album — long enough to carry a 56-minute
-single-album programme.
+how many of the album's songs become audio, and is always 0 for layer B. `*` marks a cornerstone
+album — long enough to carry a 56-minute single-album programme.
+
+**This command needs no `.env` and no external volume.** The music wiki is deliberately readable
+before any hardware exists (`DECISIONS.md` D-044).
+
+**There are no other music commands.** The wiki, the style cards and the lyrics are written by an
+agent working one card of `music/MUSIC_TASKS.md` — you open a session and say the card number
+(D-055). Nothing is copied to a clipboard and nothing is pasted anywhere.
 
 ## What GitHub checks, and when
 

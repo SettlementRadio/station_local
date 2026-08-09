@@ -1,8 +1,7 @@
 # Void-lounge — PLACEHOLDER. Nothing here is content yet.
 #
-# Fill it by pasting the writer's YAML over everything below the `section:` block:
-#     make music-brief GENRE=void-lounge      -> the brief, on your clipboard
-#     make music-check GENRE=void-lounge      -> the checker, after you have pasted the reply back here
+# Written by its card in music/MUSIC_TASKS.md: open a session and say the number. The agent
+# replaces everything below the `section:` block, and `make check` counts what it wrote.
 #
 # Allocation, from music/plan.yaml (the authority — do not retype it here):
 #   LAYER A — 40 songs across 3 band(s)
