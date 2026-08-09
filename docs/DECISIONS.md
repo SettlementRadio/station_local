@@ -1447,3 +1447,65 @@ so there is no second copy to go stale.
 every form while relay-pop had been written and screened, which makes a table nobody trusts. They
 now count layer-A bands and playable songs actually in the wiki, and §5 gained the label's name as
 written so the seven slots can be matched to the seven invented labels without opening nine files.
+
+### D-059 · A layer-B band may carry no label, written as `label: unsigned` — 2026-08-09
+
+Deck-talk's `Half a Shift` (`b_036`) presses its own records and has turned down every label. It is
+written with `label: unsigned` on the band and on both of its albums, which is the first non-numeric
+label reference anywhere in `music/wiki/`.
+
+**Why it is allowed.** `COMMISSION.md` §4 says in terms that layer B and C artists "may belong to any
+label, to a label that no longer exists, or to none", and §2 says deck-talk is the form that is cheap
+to make and travels furthest. A wiki in which every crew in that form has a contract does not have
+the form in it. The crew nobody's catalogue lists is the fact a presenter can actually say.
+
+**Why it is safe.** `check.py` counts songs per label from layer A only (`_layer_a_albums`), so an
+unlabelled layer-B album is never compared against `plan.yaml`, and `wiki.py`'s `label_number`
+already returns `None` for anything that does not end in digits rather than failing. The count that
+matters — 70 playable songs split 25 / 20 / 25 — is unaffected.
+
+**The scope.** Layer A always carries a real label, because §4's floor of three bands and forty songs
+per label is what makes a retrospective possible and an unsigned layer-A band would be forty songs
+nobody can programme. This is a layer-B affordance and nothing else.
+
+### D-060 · `MUSIC_TASKS.md` is ordered by dependency; the M- numbers stay identities — 2026-08-09
+
+The file was written grouped by *kind of work* — tooling, wiki, pilot, style cards, lyrics, audio,
+measurement — and numbered straight down that grouping. The dependencies run across the grouping,
+so the two could not both hold, and it was the dependencies that gave way:
+
+| Card | Printed at | Actually needs | Consequence |
+|---|---|---|---|
+| M-04, M-05, M-06 | 4–6, top of file | M-18 | three tooling cards at the top that cannot run until the pilot is generated |
+| M-02 | 2 | M-07 | resolved by doing it early (D-055), but the inversion stayed on the page |
+| M-16 … M-19 | 16–19 | only M-01 | **the decision point parked behind seven wiki cards it does not depend on** |
+| M-40 | 40 | M-18 | its own note says do it at the start of the first generation month |
+| M-30 … M-38 | after all of M-21 … M-29 | one lyrics card each | M-30 needs M-21, not M-29 |
+
+The operator hit this directly: reading top to bottom made M-05 look like the next card, and it is
+blocked behind four others and an unwritten metadata block.
+
+**The file is now printed in dependency order and the numbers were left alone.** `M-05` names one
+card for the life of the project — four commit messages, six references in `RUNBOOK.md`, seven in
+this file, plus `styles.yaml`, `check.py`, `wiki.py` and `test_music.py`. Renumbering would make the
+git history point at different cards than it did on the day it was written, and commit messages
+cannot be edited. `TASKS.md` already resolves this the same way — *"numbers are identities, not
+order"* — so the music file now says it too, and the card to work is the one marked **NEXT**.
+
+**Two things changed besides the order.**
+
+**The pilot moved ahead of the wiki.** M-16 depends on M-01 alone and the pilot uses relay-pop's four
+albums, which were written before any of this. So M-19 — the project's only quality gate — was
+reachable the whole time and was scheduled nineteenth. It now comes fifth. Stage 2's wiki cards are
+all `[agent]` and M-18 is `[you]`, so the seven remaining genres get written *during* the Suno
+sittings rather than before them, which is what the `[you]`/`[agent]` split in *Who does what* is
+for. Writing 330 more songs of text before knowing whether the approach sounds right is the risk the
+pilot exists to remove.
+
+**Lyrics and audio are paired per genre.** A genre goes lyrics → audio → measured before the next
+begins, because M-30 depends on M-21 and on nothing else. M-39 already asked for this in its own
+note — *"run after each genre's audio lands rather than once at the end"* — and could not get it
+while every audio card was printed after every lyrics card. A take distribution that misses
+COMMISSION §7 is now found at 60 songs instead of 455, and the fix for that is choosing different
+takes, so finding it late is finding it useless. Generating one band per sitting (§9) is unaffected:
+the pairing decides which genre you sit down to, never how a band is made.

@@ -90,13 +90,18 @@ what you rejected too — otherwise the same collision gets proposed twice.
 After the ninth genre, M-15 checks the things that are properties of the whole catalogue rather
 than of one genre: 500 songs, 25 bands, every anchor year carrying enough records, every label able
 to make a retrospective. **The wiki freezes when that card closes**, and no lyrics are written
-before it does — moving a release year is free until songs exist against it.
+before it does — moving a release year is free until songs exist against it. **The pilot is the one
+exception** (M-17): it uses relay-pop's four albums, which were written and checked before any of
+the rest, and its release years are already fixed.
 
 ---
 
 # Part 2 — the songs
 
-**Only after Part 1 is finished.** Now you need a Suno account.
+**The pilot runs beside Part 1, not after it** (D-060). M-16 needs only relay-pop, so the pilot's
+45 songs — style cards, lyrics, Suno, and the fourteen-song listen at M-19 — are reachable now, and
+the remaining seven genres get written while you are generating them. **Everything past M-19 waits
+for Part 1 to finish.** Now you need a Suno account.
 
 ## Step 5 · Style cards and lyrics
 

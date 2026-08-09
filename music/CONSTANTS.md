@@ -103,6 +103,7 @@ is recorded is the result:
 |---|---|---|---|
 | relay-pop | 2026-08-09 | 319 | nothing matched |
 | lane-rock | 2026-08-09 | 228 | nothing matched |
+| deck-talk | 2026-08-09 | 215 | nothing matched |
 
 Notes kept because §19 says fuzzy and surname-only matches are flagged, never blocked:
 
@@ -162,10 +163,10 @@ Layer-A bands and playable songs only. §5 needs every label to end on ≥3 band
 | # | Label | Name as written | Bands written | Songs written |
 |---|---|---|---|---|
 | 1 | Concordance, prestige | Civic Lantern | 2 | 45 |
-| 2 | Cold Harbor, frontier | Harbor Standard | 1 | 10 |
+| 2 | Cold Harbor, frontier | Harbor Standard | 2 | 35 |
 | 3 | Meridian, dance | Stormline Issue | 1 | 20 |
-| 4 | Forge, industrial | Deep Register | 2 | 35 |
-| 5 | haulers, co-op | Common Wake Cooperative | 2 | 55 |
+| 4 | Forge, industrial | Deep Register | 3 | 55 |
+| 5 | haulers, co-op | Common Wake Cooperative | 3 | 80 |
 | 6 | late-club, folded 2612 | Lower Bell Editions | 1 | 15 |
 | 7 | old-system importer | — | 0 | 0 |
 
@@ -177,14 +178,14 @@ Layer A songs per form. `music/plan.yaml` is the authority; this is the running 
 |---|---|---|
 | Relay-pop | 105 | 105 |
 | Lane-rock | 75 | 75 |
-| **Deck-talk** | 70 | 0 |
+| **Deck-talk** | 70 | 70 |
 | Frontier Reels | 65 | 0 |
 | Old-system sessions | 60 | 0 |
 | Pulse-dance | 60 | 0 |
 | Void-lounge | 40 | 0 |
 | Core Harmonies | 15 | 0 |
 | Void Ballads | 10 | 0 |
-| | **500** | **180** |
+| | **500** | **250** |
 
 **Layers B and C are not tallied.** They have no hard floor — more is better, and nothing breaks if
 one genre carries more history than another.

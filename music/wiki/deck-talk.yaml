@@ -1,21 +1,3 @@
-# Deck-talk — PLACEHOLDER. Nothing here is content yet.
-#
-# Written by its card in music/MUSIC_TASKS.md: open a session and say the number. The agent
-# replaces everything below the `section:` block, and `make check` counts what it wrote.
-#
-# Allocation, from music/plan.yaml (the authority — do not retype it here):
-#   LAYER A — 70 songs across 3 band(s)
-#     label 2 (Cold Harbor, frontier): 25 songs / 1 band(s)
-#     label 4 (Forge, industrial): 20 songs / 1 band(s)
-#     label 5 (haulers, co-op): 25 songs / 1 band(s)
-#   LAYER B — about 7 more bands the station does not hold
-#   LAYER C — about 4 figures, 2426-2546, no albums and no track lists
-#
-# Labels this genre sits on:
-#   - label_2  (Cold Harbor, frontier)
-#   - label_4  (Forge, industrial)
-#   - label_5  (haulers, co-op)
-
 section:
   genre: deck-talk
   present_year: 2626
@@ -24,23 +6,1318 @@ section:
     referenced: B
     historical: C
 
-# The labels above, as the writer names them.
-labels: []
+labels:
+  - id: label_2
+    name: Harbor Standard
+    home: Cold Harbor
+    tier: flagship
+    status: operating
+    founded_year: 2571
+    genre: deck-talk
+  - id: label_4
+    name: Deep Register
+    home: Forge
+    tier: standard
+    status: operating
+    genre: deck-talk
+  - id: label_5
+    name: Common Wake Cooperative
+    home: the between
+    tier: standard
+    status: operating
+    genre: deck-talk
 
-# From music/CONSTANTS.md section 2 — only the players who appear on this genre,
-# and only inside their active years.
-session_players: []
+session_players:
+  - id: sp_brin_noll
+    name: Brin Noll
+    instrument: oxygen-tank drums and stripped-wire chimes
+    active_from: 2596
+    active_to: 2626
+    genre: deck-talk
+  - id: sp_oren_saye
+    name: Oren Saye
+    instrument: upright bass
+    active_from: 2588
+    active_to: 2622
+    genre: deck-talk
+  - id: sp_sel_ardin
+    name: Sel Ardin
+    instrument: backing vocals and vocal arrangement
+    active_from: 2593
+    active_to: 2626
+    genre: deck-talk
+  - id: sp_ivena_sorn
+    name: Ivena Sorn
+    instrument: resonance pipes
+    active_from: 2594
+    active_to: 2626
+    genre: deck-talk
+  - id: sp_talla_venn
+    name: Talla Venn
+    instrument: fretted composite guitar
+    active_from: 2591
+    active_to: 2625
+    genre: deck-talk
 
-# LAYER A — playable: true. Full bios, full album stories, one fact per song.
 layer_a:
-  bands: []
-  albums: []
+  bands:
+    - id: b_027
+      name: Read It Back
+      kind: crew
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: deck-talk
+      active_from: 2609
+      active_to: 2626
+      members:
+        - id: p_vess_arun
+          name: Vess Arun
+          genre: deck-talk
+          instruments: [lead verse]
+          active_from: 2609
+          active_to: 2626
+        - id: p_dob_ferrin
+          name: Dob Ferrin
+          genre: deck-talk
+          instruments: [answering verse]
+          active_from: 2609
+          active_to: 2626
+        - id: p_ilma_torre
+          name: Ilma Torre
+          genre: deck-talk
+          instruments: [oxygen-tank drums, stripped-wire chimes]
+          active_from: 2609
+          active_to: 2626
+        - id: p_kal_denn
+          name: Kal Denn
+          genre: deck-talk
+          instruments: [composite bass, sung hook]
+          active_from: 2609
+          active_to: 2626
+      movement: Localist
+      bio: >-
+        Read It Back are four Cold Harbor dockers who started calling shift totals across a transfer
+        bay because the posted sheet was too far from the floor to read. Vess Arun and Dob Ferrin
+        trade the verses and have never recorded one in a single voice. Ilma Torre builds the
+        percussion out of whatever the bay is throwing away that month and refuses to carry an
+        instrument between sessions. Harbor Standard signed them in 2611 after a bay supervisor
+        complained about the noise in writing and the complaint was read out at a hearing.
+      album_ids: [al_054, al_055, al_056]
 
-# LAYER B — playable: false. Two-sentence bios, one-line album notes, titles only, no facts.
+    - id: b_028
+      name: The Long Tally
+      kind: crew
+      home_settlement: Forge
+      label: label_4
+      genre: deck-talk
+      active_from: 2603
+      active_to: 2626
+      members:
+        - id: p_onn_karvel
+          name: Onn Karvel
+          genre: deck-talk
+          instruments: [lead verse, struck alloy]
+          active_from: 2603
+          active_to: 2626
+        - id: p_sudi_farrow
+          name: Sudi Farrow
+          genre: deck-talk
+          instruments: [answering verse, sung hook]
+          active_from: 2603
+          active_to: 2626
+        - id: p_juda_ness
+          name: Juda Ness
+          genre: deck-talk
+          instruments: [composite bass]
+          active_from: 2603
+          active_to: 2615
+        - id: p_emel_prise
+          name: Emel Prise
+          genre: deck-talk
+          instruments: [resonance pipes, composite bass]
+          active_from: 2615
+          active_to: 2626
+        - id: p_tova_ilm
+          name: Tova Ilm
+          genre: deck-talk
+          instruments: [oxygen-tank drums, stripped-wire chimes]
+          active_from: 2603
+          active_to: 2626
+      movement:
+        initial: Localist
+        changed_to: Synthesist
+        changed_year: 2615
+        detail: >-
+          Emel Prise joined in 2615 and put amplified resonance pipes under the whole record, which
+          Juda Ness had refused to allow for twelve years and left rather than play with.
+      bio: >-
+        The Long Tally have called Forge's floor counts since 2603 and are the crew every younger
+        Forge crew is measured against. Onn Karvel writes his verses out as a numbered list and
+        crosses off lines he cannot say in one breath. Juda Ness left in 2615 over the amplified
+        pipes and has not spoken to the crew since, which Deep Register printed on the sleeve without
+        asking. Sudi Farrow sings the hooks and is the only member who will take a second take.
+      album_ids: [al_057, al_058, al_059]
+
+    - id: b_029
+      name: The Wake Count
+      kind: crew
+      home_settlement: the between
+      label: label_5
+      genre: deck-talk
+      active_from: 2596
+      active_to: 2626
+      members:
+        - id: p_hesta_orlow
+          name: Hesta Orlow
+          genre: deck-talk
+          instruments: [lead verse]
+          active_from: 2596
+          active_to: 2626
+        - id: p_alto_renn
+          name: Alto Renn
+          genre: deck-talk
+          instruments: [answering verse]
+          active_from: 2596
+          active_to: 2609
+        - id: p_pim_calder
+          name: Pim Calder
+          genre: deck-talk
+          instruments: [answering verse, struck cargo plate]
+          active_from: 2609
+          active_to: 2626
+        - id: p_odri_vane
+          name: Odri Vane
+          genre: deck-talk
+          instruments: [oxygen-tank drums, struck cargo plate]
+          active_from: 2596
+          active_to: 2626
+        - id: p_sten_halvo
+          name: Sten Halvo
+          genre: deck-talk
+          instruments: [composite bass, sung hook]
+          active_from: 2596
+          active_to: 2626
+      movement: Localist
+      bio: >-
+        The Wake Count are a hauler crew who record in cargo bays between runs and have never made a
+        record in a room they were not working in. Hesta Orlow keeps the running order on the same
+        clipboard she uses for the load sheet and has been photographed with both. Alto Renn answered
+        the verses until 2609, when he took a berth on a circuit that does not come back, and Pim
+        Calder has answered them since. Common Wake Cooperative pays them the same share it pays its
+        loaders, which the crew has said in public is the only reason they are still on it.
+      album_ids: [al_060, al_061, al_062, al_063]
+
+  albums:
+    - id: al_054
+      title: Whole Bay Listening
+      band: b_027
+      label: label_2
+      release_year: 2612
+      kind: album
+      genre: deck-talk
+      cornerstone: false
+      notes: >-
+        Harbor Standard could not book a studio that would take Ilma Torre's tank drums, so the label
+        cleared a Cold Harbor transfer bay for six nights in 2612 and recorded there. The bay was
+        still in use during the day and every session started after the last door closed. A supervisor
+        billed the label for a cracked wall panel, and the label paid it and kept the invoice, which
+        it later reproduced on the reissue sleeve. It sold better on the near frontier than anything
+        Harbor Standard had put out in three years, and it is the record that made the label take the
+        form seriously.
+      songs:
+        - id: s_0453
+          title: Whole Bay Listening
+          track_number: 1
+          genre: deck-talk
+          mood_tags: [driving, plain, midtempo]
+          playable: true
+          fact: Vess Arun wrote the opening verse as the shift-total call he had been making across the bay for two years, and the crew recorded it at the same speed he called it.
+          credits: {writers: [p_vess_arun], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0454
+          title: Say It at the Gate
+          track_number: 2
+          genre: deck-talk
+          mood_tags: [defiant, hard, brisk]
+          playable: true
+          fact: Dob Ferrin answers every line of the second verse with the same four words, which the crew had used on the floor to make a supervisor repeat an instruction.
+          credits: {writers: [p_vess_arun, p_dob_ferrin], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0455
+          title: Nine Names on the Sheet
+          track_number: 3
+          genre: deck-talk
+          mood_tags: [insistent, cold, midtempo]
+          playable: true
+          fact: The nine names are the nine dockers left off a Cold Harbor pay sheet in 2611, and Harbor Standard's lawyer asked for them to be changed before release and was refused.
+          credits: {writers: [p_vess_arun], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0456
+          title: Ask Me Again Slower
+          track_number: 4
+          genre: deck-talk
+          mood_tags: [wry, sparse, slow]
+          playable: true
+          fact: Ilma Torre plays the whole track on one stripped-wire chime because the tank drums were still being repaired after the second night.
+          credits: {writers: [p_dob_ferrin], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0457
+          title: Half the Rent
+          track_number: 5
+          genre: deck-talk
+          mood_tags: [tense, blunt, midtempo]
+          playable: true
+          fact: Kal Denn sings the hook, and it is the only sung line on the record that was written before the sessions rather than during them.
+          credits: {writers: [p_kal_denn, p_vess_arun], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0458
+          title: Two Doors Down From Work
+          track_number: 6
+          genre: deck-talk
+          mood_tags: [warm, tired, slow]
+          playable: true
+          fact: Vess Arun wrote it about the room he was living in at the time, and the crew cut the last verse because he would not say the street out loud.
+          credits: {writers: [p_vess_arun], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0459
+          title: Nobody Wrote It Down
+          track_number: 7
+          genre: deck-talk
+          mood_tags: [angry, loud, fast]
+          playable: true
+          fact: Brin Noll retuned the bay's loose door fixings before the last night so the room would answer the chorus, and the crew kept the door in the mix.
+          credits: {writers: [p_vess_arun, p_dob_ferrin], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn, sp_brin_noll], producer: p_kal_denn}
+
+    - id: al_055
+      title: Count It Twice
+      band: b_027
+      label: label_2
+      release_year: 2619
+      kind: album
+      genre: deck-talk
+      cornerstone: true
+      notes: >-
+        Read It Back spent most of 2618 in a pay dispute that stopped work at three Cold Harbor bays,
+        and wrote the record while it was running. Harbor Standard offered them a core studio and a
+        larger advance on condition that the dispute went unmentioned; the crew took the studio,
+        turned down the advance, and mentioned it on eight of the thirteen tracks. Vess Arun lost his
+        voice for four days in the middle of the sessions and Dob Ferrin carried both parts on two
+        tracks rather than wait. Sel Ardin was brought in to arrange the sung hooks and stayed for the
+        whole run. It is the crew's longest record, the one the label reissues, and the only deck-talk
+        album a settlement council has ever formally objected to.
+      songs:
+        - id: s_0460
+          title: Count It Twice
+          track_number: 1
+          genre: deck-talk
+          mood_tags: [driving, confident, fast]
+          playable: true
+          fact: The verse carries forty-one items without a break, and the crew recorded it in one take on the second night after failing it eleven times on the first.
+          credits: {writers: [p_vess_arun], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0461
+          title: The Long List
+          track_number: 2
+          genre: deck-talk
+          mood_tags: [relentless, cold, fast]
+          playable: true
+          fact: Dob Ferrin sings both parts because Vess Arun had lost his voice, and the crew never re-recorded it.
+          credits: {writers: [p_dob_ferrin], players: [p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0462
+          title: Answer on the Turn
+          track_number: 3
+          genre: deck-talk
+          mood_tags: [competitive, sharp, fast]
+          playable: true
+          fact: It is written as a straight exchange with no hook, and the two verses were recorded facing each other across one microphone.
+          credits: {writers: [p_vess_arun, p_dob_ferrin], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0463
+          title: Money Before Weather
+          track_number: 4
+          genre: deck-talk
+          mood_tags: [bitter, hard, midtempo]
+          playable: true
+          fact: The title is the phrase a Cold Harbor bay used to decide whether a shift went ahead, and the crew put it on the sleeve as well.
+          credits: {writers: [p_vess_arun], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0464
+          title: Everything I Owe You
+          track_number: 5
+          genre: deck-talk
+          mood_tags: [tender, sparse, slow]
+          playable: true
+          fact: Sel Ardin built the backing voices out of one held note under the whole verse, and Kal Denn's bass drops out entirely for the last minute.
+          credits: {writers: [p_kal_denn], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn, sp_sel_ardin], producer: p_kal_denn}
+        - id: s_0465
+          title: Stand Where I Can See
+          track_number: 6
+          genre: deck-talk
+          mood_tags: [wary, tense, midtempo]
+          playable: true
+          fact: Ilma Torre plays a cargo strap against the frame of the tank drum throughout, which she has said she has never managed to reproduce live.
+          credits: {writers: [p_vess_arun, p_ilma_torre], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0466
+          title: Keep the Docket
+          track_number: 7
+          genre: deck-talk
+          mood_tags: [wry, plain, midtempo]
+          playable: true
+          fact: Dob Ferrin wrote it after keeping a paper docket that a bay office said did not exist, and the docket is reproduced inside the sleeve.
+          credits: {writers: [p_dob_ferrin], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0467
+          title: Trade Me a Verse
+          track_number: 8
+          genre: deck-talk
+          mood_tags: [playful, rowdy, fast]
+          playable: true
+          fact: A visiting Forge crew answered the second verse on the night it was cut, and Harbor Standard could not clear the credit, so the answer was re-recorded by Kal Denn.
+          credits: {writers: [p_vess_arun, p_dob_ferrin], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0468
+          title: Cold Harbor Answers
+          track_number: 9
+          genre: deck-talk
+          mood_tags: [proud, loud, midtempo]
+          playable: true
+          fact: The last chorus is sung by twenty-two people from the disputing bays, recorded in the studio corridor because the room would not hold them.
+          credits: {writers: [p_vess_arun], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn, sp_sel_ardin], producer: p_kal_denn}
+        - id: s_0469
+          title: Not in Front of the Crew
+          track_number: 10
+          genre: deck-talk
+          mood_tags: [regretful, quiet, slow]
+          playable: true
+          fact: It is the only track on the record with a single voice on it, and Vess Arun asked for the others to leave the room before he recorded it.
+          credits: {writers: [p_vess_arun], players: [p_vess_arun, p_kal_denn], producer: p_kal_denn}
+        - id: s_0470
+          title: Drop It and I Win
+          track_number: 11
+          genre: deck-talk
+          mood_tags: [competitive, comic, fast]
+          playable: true
+          fact: The two verses speed up by a fifth over the length of the track, and the crew set the rule that whoever stumbled first would have their name left off the writing credit.
+          credits: {writers: [p_dob_ferrin], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0471
+          title: Louder Than the Complaint
+          track_number: 12
+          genre: deck-talk
+          mood_tags: [defiant, triumphant, fast]
+          playable: true
+          fact: The verse quotes the written noise complaint that got the crew signed in 2611, in the order the complaint made its points.
+          credits: {writers: [p_vess_arun, p_dob_ferrin], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0472
+          title: Read the Whole Thing
+          track_number: 13
+          genre: deck-talk
+          mood_tags: [insistent, building, midtempo]
+          playable: true
+          fact: It runs the full pay-sheet dispute end to end and is the track a Cold Harbor settlement council formally objected to, which Harbor Standard answered by pressing more copies.
+          credits: {writers: [p_vess_arun, p_dob_ferrin, p_kal_denn], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn, sp_sel_ardin], producer: p_kal_denn}
+
+    - id: al_056
+      title: Nothing Off the List
+      band: b_027
+      label: label_2
+      release_year: 2624
+      kind: ep
+      genre: deck-talk
+      cornerstone: false
+      notes: >-
+        Five tracks cut in two nights in 2624, in the same transfer bay the crew made their first
+        record in, after Harbor Standard asked for a full album and was told it would get what fitted
+        in the time. Ilma Torre had moved settlements and travelled back for the sessions with no
+        instruments at all, building the kit again out of what the bay had. The label released it
+        exactly as delivered and it is the shortest record on Harbor Standard's current catalogue.
+      songs:
+        - id: s_0473
+          title: Nothing Off the List
+          track_number: 1
+          genre: deck-talk
+          mood_tags: [driving, confident, fast]
+          playable: true
+          fact: Vess Arun refused to cut a single item from the verse to make room for a chorus, and the track has no chorus.
+          credits: {writers: [p_vess_arun], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0474
+          title: Winter Rate
+          track_number: 2
+          genre: deck-talk
+          mood_tags: [cold, bitter, midtempo]
+          playable: true
+          fact: The figures in the second verse are the actual seasonal rates posted at the bay that month, and the crew checked them against the board before recording.
+          credits: {writers: [p_vess_arun, p_dob_ferrin], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0475
+          title: You Said the Fourth Shift
+          track_number: 3
+          genre: deck-talk
+          mood_tags: [frustrated, sparse, midtempo]
+          playable: true
+          fact: Dob Ferrin wrote it about waiting for someone who did not come, and it is the only track the crew have said is not about work.
+          credits: {writers: [p_dob_ferrin], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0476
+          title: Give Me the Short Version
+          track_number: 4
+          genre: deck-talk
+          mood_tags: [comic, brisk, wry]
+          playable: true
+          fact: It is under two and a half minutes and was written as an answer to critics who said the crew could only do long lists.
+          credits: {writers: [p_vess_arun, p_kal_denn], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+        - id: s_0477
+          title: Last One Still Counting
+          track_number: 5
+          genre: deck-talk
+          mood_tags: [weary, warm, slow]
+          playable: true
+          fact: Ilma Torre built the kit for these sessions out of the bay's own scrap in one afternoon, and this is the track where she plays all of it.
+          credits: {writers: [p_vess_arun, p_ilma_torre], players: [p_vess_arun, p_dob_ferrin, p_ilma_torre, p_kal_denn], producer: p_kal_denn}
+
+    - id: al_057
+      title: Count the Whole Floor
+      band: b_028
+      label: label_4
+      release_year: 2607
+      kind: album
+      genre: deck-talk
+      cornerstone: false
+      notes: >-
+        Deep Register recorded The Long Tally over three nights in a Forge assembly hall in 2607,
+        between shifts, with the machinery cold. Onn Karvel had been calling floor counts there for
+        four years and insisted the record be made in the room the counts were made in, which meant
+        working at the temperature the room held overnight. Juda Ness played the whole record on an
+        unamplified bass and would not allow a microphone closer than two metres. It is the crew's
+        first record, it took eleven years to sell out its pressing, and Deep Register has never
+        reissued it.
+      songs:
+        - id: s_0478
+          title: Count the Whole Floor
+          track_number: 1
+          genre: deck-talk
+          mood_tags: [relentless, cold, midtempo]
+          playable: true
+          fact: Onn Karvel names sixty-three stations on the Forge floor in order, and one of them had closed by the time the record came out.
+          credits: {writers: [p_onn_karvel], players: [p_onn_karvel, p_sudi_farrow, p_juda_ness, p_tova_ilm], producer: p_onn_karvel}
+        - id: s_0479
+          title: Pipe Comes In Late
+          track_number: 2
+          genre: deck-talk
+          mood_tags: [tense, sparse, slow]
+          playable: true
+          fact: Ivena Sorn plays a single unamplified resonance pipe line that does not enter until the third verse, at Juda Ness's insistence.
+          credits: {writers: [p_onn_karvel, p_sudi_farrow], players: [p_onn_karvel, p_sudi_farrow, p_juda_ness, p_tova_ilm, sp_ivena_sorn], producer: p_onn_karvel}
+        - id: s_0480
+          title: Every Bolt Accounted
+          track_number: 3
+          genre: deck-talk
+          mood_tags: [insistent, dry, brisk]
+          playable: true
+          fact: The verse is a stock count Onn Karvel had been made to read aloud at an inquiry, reproduced in the order the inquiry asked for it.
+          credits: {writers: [p_onn_karvel], players: [p_onn_karvel, p_sudi_farrow, p_juda_ness, p_tova_ilm], producer: p_onn_karvel}
+        - id: s_0481
+          title: What the Foreman Missed
+          track_number: 4
+          genre: deck-talk
+          mood_tags: [wry, hard, midtempo]
+          playable: true
+          fact: Tova Ilm keeps time on a cut section of conveyor rail that the hall's maintenance crew took back the following week.
+          credits: {writers: [p_onn_karvel, p_tova_ilm], players: [p_onn_karvel, p_sudi_farrow, p_juda_ness, p_tova_ilm], producer: p_onn_karvel}
+        - id: s_0482
+          title: Take It From the Top Row
+          track_number: 5
+          genre: deck-talk
+          mood_tags: [competitive, brisk, plain]
+          playable: true
+          fact: Sudi Farrow answers each of Onn Karvel's lines a row lower down the same stock list, and the crew rehearsed it as a game before it was a song.
+          credits: {writers: [p_sudi_farrow], players: [p_onn_karvel, p_sudi_farrow, p_juda_ness, p_tova_ilm], producer: p_onn_karvel}
+        - id: s_0483
+          title: Cold Start Morning
+          track_number: 6
+          genre: deck-talk
+          mood_tags: [tired, warm, slow]
+          playable: true
+          fact: It was cut at the end of the third night with the hall's heating still off, and Sudi Farrow's breath is audible under the sung hook.
+          credits: {writers: [p_sudi_farrow, p_onn_karvel], players: [p_onn_karvel, p_sudi_farrow, p_juda_ness, p_tova_ilm], producer: p_onn_karvel}
+
+    - id: al_058
+      title: Pipe Under Everything
+      band: b_028
+      label: label_4
+      release_year: 2619
+      kind: album
+      genre: deck-talk
+      cornerstone: false
+      notes: >-
+        The first record with Emel Prise, made four years after Juda Ness left, and the one that
+        settled the argument he left over. Prise put amplified resonance pipes under every track,
+        which Deep Register had wanted since 2607 and had never been able to get past the crew. Onn
+        Karvel wrote the verses at the same length as always and has said publicly that he did not
+        change a line for the pipes. It doubled the crew's audience outside Forge and is the reason
+        younger Forge crews record with pipes as a matter of course.
+      songs:
+        - id: s_0484
+          title: Pipe Under Everything
+          track_number: 1
+          genre: deck-talk
+          mood_tags: [heavy, driving, midtempo]
+          playable: true
+          fact: Emel Prise plays the pipe line and the bass part at once by leaving the pipes ringing under the whole verse, which is the arrangement Juda Ness left rather than play.
+          credits: {writers: [p_onn_karvel, p_emel_prise], players: [p_onn_karvel, p_sudi_farrow, p_emel_prise, p_tova_ilm], producer: p_emel_prise}
+        - id: s_0485
+          title: Nine Hundred Units
+          track_number: 2
+          genre: deck-talk
+          mood_tags: [relentless, cold, fast]
+          playable: true
+          fact: Onn Karvel carries the count from one to nine hundred in threes without a break, and it is the longest single verse the crew have recorded.
+          credits: {writers: [p_onn_karvel], players: [p_onn_karvel, p_sudi_farrow, p_emel_prise, p_tova_ilm], producer: p_emel_prise}
+        - id: s_0486
+          title: Answer Me in Order
+          track_number: 3
+          genre: deck-talk
+          mood_tags: [competitive, sharp, fast]
+          playable: true
+          fact: Sudi Farrow answers in reverse order and the two verses meet exactly in the middle of the track, which took the crew nine takes to land.
+          credits: {writers: [p_onn_karvel, p_sudi_farrow], players: [p_onn_karvel, p_sudi_farrow, p_emel_prise, p_tova_ilm], producer: p_emel_prise}
+        - id: s_0487
+          title: The Floor Owes Me
+          track_number: 4
+          genre: deck-talk
+          mood_tags: [angry, hard, midtempo]
+          playable: true
+          fact: It was written about a Forge overtime claim that took two years to pay, and the crew released it in the year the claim was settled.
+          credits: {writers: [p_onn_karvel], players: [p_onn_karvel, p_sudi_farrow, p_emel_prise, p_tova_ilm], producer: p_emel_prise}
+        - id: s_0488
+          title: Somebody Else's Shift
+          track_number: 5
+          genre: deck-talk
+          mood_tags: [wry, sparse, midtempo]
+          playable: true
+          fact: Tova Ilm plays only stripped-wire chimes on this track and the pipes are absent, which Emel Prise agreed to as a condition of joining.
+          credits: {writers: [p_sudi_farrow], players: [p_onn_karvel, p_sudi_farrow, p_tova_ilm], producer: p_emel_prise}
+        - id: s_0489
+          title: Hold the Low Note
+          track_number: 6
+          genre: deck-talk
+          mood_tags: [heavy, building, slow]
+          playable: true
+          fact: The pipe note under the verse is a single sustained tone held for the whole track, recorded in one pass with the hall doors shut.
+          credits: {writers: [p_emel_prise, p_onn_karvel], players: [p_onn_karvel, p_sudi_farrow, p_emel_prise, p_tova_ilm], producer: p_emel_prise}
+        - id: s_0490
+          title: Don't Round It Off
+          track_number: 7
+          genre: deck-talk
+          mood_tags: [dry, insistent, brisk]
+          playable: true
+          fact: Onn Karvel says every figure to two decimal places for four minutes, which Deep Register asked him to shorten and he refused.
+          credits: {writers: [p_onn_karvel], players: [p_onn_karvel, p_sudi_farrow, p_emel_prise, p_tova_ilm], producer: p_emel_prise}
+        - id: s_0491
+          title: Walk Out Counting
+          track_number: 8
+          genre: deck-talk
+          mood_tags: [triumphant, loud, fast]
+          playable: true
+          fact: Sel Ardin arranged the closing voices so that one drops out at each repeat until only Sudi Farrow is left.
+          credits: {writers: [p_onn_karvel, p_sudi_farrow], players: [p_onn_karvel, p_sudi_farrow, p_emel_prise, p_tova_ilm, sp_sel_ardin], producer: p_emel_prise}
+
+    - id: al_059
+      title: Say the Numbers Slower
+      band: b_028
+      label: label_4
+      release_year: 2624
+      kind: album
+      genre: deck-talk
+      cornerstone: false
+      notes: >-
+        Deep Register gave the crew a full season of studio time in 2624 and they used six weeks of
+        it, most of that on one track. Onn Karvel had begun losing the top of his range and wrote the
+        whole record at a slower call than the crew had ever recorded, which Sudi Farrow has said was
+        the hardest thing they have done. Emel Prise mixed it himself after the label's engineer left
+        over the pipe levels. It is the crew's best-selling record and the one Forge halls play at
+        closing.
+      songs:
+        - id: s_0492
+          title: Say the Numbers Slower
+          track_number: 1
+          genre: deck-talk
+          mood_tags: [heavy, deliberate, slow]
+          playable: true
+          fact: Onn Karvel calls at roughly half the speed of the crew's earlier records, after finding he could no longer hold the fast call for a full verse.
+          credits: {writers: [p_onn_karvel], players: [p_onn_karvel, p_sudi_farrow, p_emel_prise, p_tova_ilm], producer: p_emel_prise}
+        - id: s_0493
+          title: Third Time Through
+          track_number: 2
+          genre: deck-talk
+          mood_tags: [patient, warm, midtempo]
+          playable: true
+          fact: The crew spent nineteen days on this track alone and the released take is the ninth complete one.
+          credits: {writers: [p_onn_karvel, p_sudi_farrow], players: [p_onn_karvel, p_sudi_farrow, p_emel_prise, p_tova_ilm], producer: p_emel_prise}
+        - id: s_0494
+          title: Rent and the Rest
+          track_number: 3
+          genre: deck-talk
+          mood_tags: [bitter, plain, midtempo]
+          playable: true
+          fact: The verse is a household budget read in the order it is paid, and Sudi Farrow has said it is her own.
+          credits: {writers: [p_sudi_farrow], players: [p_onn_karvel, p_sudi_farrow, p_emel_prise, p_tova_ilm], producer: p_emel_prise}
+        - id: s_0495
+          title: She Runs the Room
+          track_number: 4
+          genre: deck-talk
+          mood_tags: [admiring, brisk, warm]
+          playable: true
+          fact: It was written for the Forge hall manager who kept the crew's rehearsal slot open through the four years they had no bass player.
+          credits: {writers: [p_onn_karvel], players: [p_onn_karvel, p_sudi_farrow, p_emel_prise, p_tova_ilm], producer: p_emel_prise}
+        - id: s_0496
+          title: Long Way to the Total
+          track_number: 5
+          genre: deck-talk
+          mood_tags: [building, heavy, slow]
+          playable: true
+          fact: The pipes climb a single step per verse across the whole track, and Emel Prise has said the part is unplayable by one person live.
+          credits: {writers: [p_emel_prise, p_onn_karvel], players: [p_onn_karvel, p_sudi_farrow, p_emel_prise, p_tova_ilm], producer: p_emel_prise}
+        - id: s_0497
+          title: Quiet After the Count
+          track_number: 6
+          genre: deck-talk
+          mood_tags: [weary, tender, slow]
+          playable: true
+          fact: Sudi Farrow sings it alone with one pipe underneath, and it is the only track on any Long Tally record with no called verse at all.
+          credits: {writers: [p_sudi_farrow], players: [p_sudi_farrow, p_emel_prise], producer: p_emel_prise}
+
+    - id: al_060
+      title: Between Ports Talking
+      band: b_029
+      label: label_5
+      release_year: 2600
+      kind: album
+      genre: deck-talk
+      cornerstone: false
+      notes: >-
+        Recorded in four different cargo bays on one circuit in 2600 and issued the same year the
+        shared press format arrived, which is the only reason it left the route at all. Common Wake
+        Cooperative pressed three hundred copies and sold them off the ship. Alto Renn was answering
+        the verses and Hesta Orlow has said the two of them worked out the whole record standing up,
+        because there was nowhere on board to sit down with it. It is the earliest deck-talk record
+        the station holds.
+      songs:
+        - id: s_0498
+          title: Between Ports Talking
+          track_number: 1
+          genre: deck-talk
+          mood_tags: [restless, plain, midtempo]
+          playable: true
+          fact: Each verse was recorded in a different bay on the same circuit, and the four rooms are audibly different sizes.
+          credits: {writers: [p_hesta_orlow, p_alto_renn], players: [p_hesta_orlow, p_alto_renn, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0499
+          title: Whose Load Is It
+          track_number: 2
+          genre: deck-talk
+          mood_tags: [wry, brisk, dry]
+          playable: true
+          fact: The verse names fourteen consignments and the settlements that disputed them, and one of those disputes was still open when the record was pressed.
+          credits: {writers: [p_hesta_orlow], players: [p_hesta_orlow, p_alto_renn, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0500
+          title: Sign for the Lot
+          track_number: 3
+          genre: deck-talk
+          mood_tags: [insistent, hard, midtempo]
+          playable: true
+          fact: Odri Vane plays the whole track on a struck cargo plate still bolted to the bay wall, which is why the tempo drifts down twice.
+          credits: {writers: [p_hesta_orlow, p_odri_vane], players: [p_hesta_orlow, p_alto_renn, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0501
+          title: Talk Me Through the Route
+          track_number: 4
+          genre: deck-talk
+          mood_tags: [patient, warm, midtempo]
+          playable: true
+          fact: Alto Renn answers with the stops in the order the circuit takes them, and he had not yet been on the last three of them.
+          credits: {writers: [p_alto_renn], players: [p_hesta_orlow, p_alto_renn, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0502
+          title: Nothing Spoils on Board
+          track_number: 5
+          genre: deck-talk
+          mood_tags: [comic, rowdy, brisk]
+          playable: true
+          fact: Sten Halvo sings the hook and the crew recorded it while actually loading, which is why the verse stops twice for a door.
+          credits: {writers: [p_sten_halvo, p_hesta_orlow], players: [p_hesta_orlow, p_alto_renn, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+
+    - id: al_061
+      title: Everything on the Sheet
+      band: b_029
+      label: label_5
+      release_year: 2612
+      kind: album
+      genre: deck-talk
+      cornerstone: false
+      notes: >-
+        The first record with Pim Calder answering, made three years after Alto Renn took a berth on a
+        circuit that does not return. Hesta Orlow refused to re-record any of Renn's parts from the
+        crew's live set and instead wrote six new tracks in a month. Oren Saye came aboard for two
+        stops and played on four of them. The co-operative's members voted on the sleeve and chose a
+        photograph of the load sheet.
+      songs:
+        - id: s_0503
+          title: Everything on the Sheet
+          track_number: 1
+          genre: deck-talk
+          mood_tags: [driving, plain, midtempo]
+          playable: true
+          fact: Hesta Orlow reads an entire real load sheet as the verse, with the crew's own names left in.
+          credits: {writers: [p_hesta_orlow], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0504
+          title: Short by Two
+          track_number: 2
+          genre: deck-talk
+          mood_tags: [tense, cold, midtempo]
+          playable: true
+          fact: Oren Saye plays upright bass on this track, and it is the only Wake Count recording where the bass carries the count instead of the percussion.
+          credits: {writers: [p_hesta_orlow, p_sten_halvo], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, sp_oren_saye], producer: p_hesta_orlow}
+        - id: s_0505
+          title: Ask the Loader
+          track_number: 3
+          genre: deck-talk
+          mood_tags: [wry, brisk, dry]
+          playable: true
+          fact: Pim Calder's first recorded answer with the crew, cut on his second day aboard.
+          credits: {writers: [p_pim_calder, p_hesta_orlow], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0506
+          title: I Kept Your Half
+          track_number: 4
+          genre: deck-talk
+          mood_tags: [regretful, sparse, slow]
+          playable: true
+          fact: Hesta Orlow wrote it for Alto Renn and has never said so on stage, though the co-operative printed his name in the credits anyway.
+          credits: {writers: [p_hesta_orlow], players: [p_hesta_orlow, p_odri_vane, p_sten_halvo, sp_oren_saye], producer: p_hesta_orlow}
+        - id: s_0507
+          title: Weather Held Us Up
+          track_number: 5
+          genre: deck-talk
+          mood_tags: [patient, warm, slow]
+          playable: true
+          fact: It was recorded during a four-day hold at a frontier port, and the crew added a verse for each day they were stuck.
+          credits: {writers: [p_hesta_orlow, p_pim_calder], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo, sp_oren_saye], producer: p_hesta_orlow}
+        - id: s_0508
+          title: Say It Before We Cast
+          track_number: 6
+          genre: deck-talk
+          mood_tags: [urgent, loud, fast]
+          playable: true
+          fact: Odri Vane cracked the cargo plate she had used since 2596 on the last take, and the crew kept that take.
+          credits: {writers: [p_hesta_orlow, p_odri_vane], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo, sp_oren_saye], producer: p_hesta_orlow}
+
+    - id: al_062
+      title: Longest List We Carry
+      band: b_029
+      label: label_5
+      release_year: 2619
+      kind: album
+      genre: deck-talk
+      cornerstone: false
+      notes: >-
+        Made in one bay over nine days in 2619, the first Wake Count record cut in a single room, after
+        the co-operative agreed to hold the ship in port so it could be. Hesta Orlow and Pim Calder
+        had by then been trading verses for ten years and the record is built almost entirely on
+        exchanges with no hook at all. Two tracks were cut and replaced on the last day because a
+        member vote found them too close to a Cold Harbor crew's record. It is the one Common Wake
+        Cooperative sends out when anyone asks what the label does.
+      songs:
+        - id: s_0509
+          title: Longest List We Carry
+          track_number: 1
+          genre: deck-talk
+          mood_tags: [relentless, confident, fast]
+          playable: true
+          fact: The verse names every stop on the co-operative's longest circuit in order, and Hesta Orlow gets through it in one breath group per stop.
+          credits: {writers: [p_hesta_orlow], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0510
+          title: Four Ports in a Row
+          track_number: 2
+          genre: deck-talk
+          mood_tags: [driving, brisk, plain]
+          playable: true
+          fact: One of the two tracks written on the last day to replace a take the co-operative's members voted down.
+          credits: {writers: [p_hesta_orlow, p_pim_calder], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0511
+          title: Answer Back Faster
+          track_number: 3
+          genre: deck-talk
+          mood_tags: [competitive, sharp, fast]
+          playable: true
+          fact: Pim Calder answers on the half-beat throughout and the crew recorded it with no percussion at all until the final verse.
+          credits: {writers: [p_pim_calder], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0512
+          title: Somebody Owes the Crew
+          track_number: 4
+          genre: deck-talk
+          mood_tags: [angry, hard, midtempo]
+          playable: true
+          fact: The figures are from a settlement that had not paid the co-operative in fourteen months, and the settlement paid within a season of the record.
+          credits: {writers: [p_hesta_orlow], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0513
+          title: Miss the Turn, Miss the Verse
+          track_number: 5
+          genre: deck-talk
+          mood_tags: [playful, rowdy, fast]
+          playable: true
+          fact: The crew recorded it as a straight contest and Sten Halvo, who lost, sings the hook as the forfeit.
+          credits: {writers: [p_pim_calder, p_sten_halvo], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0514
+          title: Waiting on the Gate
+          track_number: 6
+          genre: deck-talk
+          mood_tags: [restless, sparse, slow]
+          playable: true
+          fact: Odri Vane keeps time on a cargo latch for the whole track after refusing to bring the tank drums into a room this small.
+          credits: {writers: [p_hesta_orlow, p_odri_vane], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0515
+          title: Home Circuit Only
+          track_number: 7
+          genre: deck-talk
+          mood_tags: [warm, proud, midtempo]
+          playable: true
+          fact: Sel Ardin arranged the last chorus for eleven co-operative members who happened to be in port, none of whom are named on the sleeve at their own request.
+          credits: {writers: [p_hesta_orlow, p_pim_calder], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo, sp_sel_ardin], producer: p_hesta_orlow}
+
+    - id: al_063
+      title: Read It at the Gate
+      band: b_029
+      label: label_5
+      release_year: 2624
+      kind: album
+      genre: deck-talk
+      cornerstone: false
+      notes: >-
+        The crew's fourth record, made in 2624 across two circuits after Common Wake Cooperative put
+        the question of another single-room record to a member vote and lost it. Hesta Orlow has said
+        she preferred it that way. Talla Venn played on three tracks during a stop and left her
+        instrument aboard by accident, which the crew returned by freight and mentioned in the notes.
+        It is the record that finally put the co-operative's deck-talk on stations off the route.
+      songs:
+        - id: s_0516
+          title: Read It at the Gate
+          track_number: 1
+          genre: deck-talk
+          mood_tags: [driving, confident, midtempo]
+          playable: true
+          fact: The title is the co-operative's own rule that a load is read aloud at the gate before it is signed for, and the verse is one of those readings.
+          credits: {writers: [p_hesta_orlow], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0517
+          title: Every Name in Order
+          track_number: 2
+          genre: deck-talk
+          mood_tags: [insistent, warm, midtempo]
+          playable: true
+          fact: Hesta Orlow names every member the co-operative had that year, and the crew re-cut it twice because two names were added between sessions.
+          credits: {writers: [p_hesta_orlow, p_pim_calder], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0518
+          title: Ten Minutes to Load
+          track_number: 3
+          genre: deck-talk
+          mood_tags: [urgent, hard, fast]
+          playable: true
+          fact: It is timed to the ten minutes a hauler crew gets at a short stop, and the crew cut it in exactly that long with the doors open.
+          credits: {writers: [p_pim_calder], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+        - id: s_0519
+          title: Take the Slow Route
+          track_number: 4
+          genre: deck-talk
+          mood_tags: [patient, wry, slow]
+          playable: true
+          fact: Talla Venn plays the figure that runs under the whole verse, on the instrument she then left aboard when the crew departed.
+          credits: {writers: [p_hesta_orlow], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo, sp_talla_venn], producer: p_hesta_orlow}
+        - id: s_0520
+          title: What I Meant to Say
+          track_number: 5
+          genre: deck-talk
+          mood_tags: [regretful, tender, slow]
+          playable: true
+          fact: Pim Calder wrote it about an argument he did not finish before a departure, and it is the only track he calls alone.
+          credits: {writers: [p_pim_calder], players: [p_pim_calder, p_sten_halvo, sp_talla_venn], producer: p_hesta_orlow}
+        - id: s_0521
+          title: Half the Crew Agrees
+          track_number: 6
+          genre: deck-talk
+          mood_tags: [comic, rowdy, brisk]
+          playable: true
+          fact: It is a verse-for-verse argument about a co-operative vote, and both sides of it are quoted from the actual minutes.
+          credits: {writers: [p_hesta_orlow, p_pim_calder], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo, sp_talla_venn], producer: p_hesta_orlow}
+        - id: s_0522
+          title: Still Counting at the End
+          track_number: 7
+          genre: deck-talk
+          mood_tags: [weary, triumphant, midtempo]
+          playable: true
+          fact: Odri Vane and Sten Halvo are the only two members who have played on every Wake Count record, and this is the track where the two of them finish alone.
+          credits: {writers: [p_hesta_orlow, p_odri_vane, p_sten_halvo], players: [p_hesta_orlow, p_pim_calder, p_odri_vane, p_sten_halvo], producer: p_hesta_orlow}
+
 layer_b:
-  bands: []
+  bands:
+    - id: b_030
+      name: Gate Shift Callers
+      kind: crew
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: deck-talk
+      active_from: 2578
+      active_to: 2607
+      bio: >-
+        Gate Shift Callers were the first crew anyone recorded calling a shift total over percussion,
+        and they made both their records for a Cold Harbor freight office rather than a label. They
+        stopped in 2607 when the office was closed and the two callers took posts on opposite sides of
+        the settlement.
+      albums:
+        - id: al_064
+          title: Gate Shift
+          label: label_2
+          release_year: 2583
+          kind: album
+          genre: deck-talk
+          notes: The oldest deck-talk record anyone can produce a copy of, and the one every crew on the near frontier claims to have heard first.
+          songs:
+            - {id: s_0523, title: Gate Shift, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0524, title: Call the Bay Total, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0525, title: Nobody Signed for It, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0526, title: Stand at the Board, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0527, title: Loud Enough to Settle It, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0528, title: Two Callers, One Sheet, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0529, title: Late Again, Same Name, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0530, title: Say It Where It Counts, track_number: 8, genre: deck-talk, playable: false}
+        - id: al_065
+          title: Office Hours
+          label: label_2
+          release_year: 2594
+          kind: album
+          genre: deck-talk
+          notes: Recorded for the freight office that employed them and remembered for putting a real wage dispute on a record for the first time.
+          songs:
+            - {id: s_0531, title: Office Hours, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0532, title: Read Me the Column, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0533, title: Short in the Envelope, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0534, title: Ask the Clerk Twice, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0535, title: Nothing in Writing, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0536, title: Wait at the Counter, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0537, title: Burn Day Overtime Sheet, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0538, title: Close the Ledger, track_number: 8, genre: deck-talk, playable: false}
 
-# LAYER C — recordings are lost. Three sentences per figure. Never an album or a track list.
+    - id: b_031
+      name: Open Ledger
+      kind: crew
+      home_settlement: the between
+      label: label_5
+      genre: deck-talk
+      active_from: 2586
+      active_to: 2612
+      bio: >-
+        Open Ledger were three haulers who called the manifest aloud on every run and started
+        recording it because a settlement clerk kept disputing what had been delivered. They stopped in
+        2612 when their lead caller took a shore post and told the co-operative he had run out of
+        lists.
+      albums:
+        - id: al_066
+          title: Open Ledger
+          label: label_5
+          release_year: 2594
+          kind: album
+          genre: deck-talk
+          notes: The record that carried the form off the near frontier, sold hand to hand at the first freight-circuit burn festival.
+          songs:
+            - {id: s_0539, title: Open Ledger, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0540, title: Everything Delivered, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0541, title: Count It at the Door, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0542, title: The Clerk Says No, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0543, title: Three Runs Behind, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0544, title: Whose Signature, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0545, title: Load It and Go, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0546, title: Nothing Missing Here, track_number: 8, genre: deck-talk, playable: false}
+        - id: al_067
+          title: Ran Out of Lists
+          label: label_5
+          release_year: 2607
+          kind: album
+          genre: deck-talk
+          notes: Their last record, made in the years the lead caller was already refusing new material, and the one that named the crew's own dispute.
+          songs:
+            - {id: s_0547, title: Ran Out of Lists, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0548, title: Same Route Again, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0549, title: Take the Shore Post, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0550, title: I Have Said It All, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0551, title: Somebody Else Can Call, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0552, title: Last Manifest, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0553, title: Sign It Yourself, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0554, title: Off the Circuit, track_number: 8, genre: deck-talk, playable: false}
+
+    - id: b_032
+      name: Struck Metal Union
+      kind: collective
+      home_settlement: Forge
+      label: label_4
+      genre: deck-talk
+      active_from: 2590
+      active_to: 2619
+      bio: >-
+        Struck Metal Union were a rotating group of Forge floor workers with no fixed line-up, who
+        held that anyone who could carry the count could record with them. They ended in 2619 after an
+        argument about whether a paid member could be turned away, which nobody would put in writing.
+      albums:
+        - id: al_068
+          title: Anyone Who Can Carry It
+          label: label_4
+          release_year: 2600
+          kind: album
+          genre: deck-talk
+          notes: Nineteen different people call on it and the sleeve lists none of them, which is still how Forge crews argue about who was there.
+          songs:
+            - {id: s_0555, title: Anyone Who Can Carry It, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0556, title: Take the Next Row, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0557, title: Struck Metal, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0558, title: No Names on This, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0559, title: Floor Rate, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0560, title: Cold Metal Morning, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0561, title: Hold the Line Open, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0562, title: Everybody Counts Once, track_number: 8, genre: deck-talk, playable: false}
+        - id: al_069
+          title: Who Was in the Room
+          label: label_4
+          release_year: 2612
+          kind: album
+          genre: deck-talk
+          notes: Made under the argument that ended them, and remembered because Deep Register printed the disputed line-up on the sleeve without agreement.
+          songs:
+            - {id: s_0563, title: Who Was in the Room, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0564, title: Turned Away at the Door, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0565, title: Put It in Writing, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0566, title: Half a Line-up, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0567, title: Pay Everyone the Same, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0568, title: One Voice Short, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0569, title: Nobody Owns the Count, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0570, title: Last Floor Session, track_number: 8, genre: deck-talk, playable: false}
+
+    - id: b_033
+      name: Corner Bay Crew
+      kind: crew
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: deck-talk
+      active_from: 2598
+      active_to: 2624
+      bio: >-
+        Corner Bay Crew worked the smallest bay in Cold Harbor and built a whole style out of calling
+        quietly, because the room they used was too small to shout in. They stopped in 2624 when their
+        percussionist was told she could no longer work the docks and the crew declined to replace her.
+      albums:
+        - id: al_070
+          title: Small Room Rules
+          label: label_2
+          release_year: 2607
+          kind: album
+          genre: deck-talk
+          notes: The record that proved the form did not need volume, and the one quieter crews across the near frontier still name first.
+          songs:
+            - {id: s_0571, title: Small Room Rules, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0572, title: Say It Under Your Breath, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0573, title: Corner Bay, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0574, title: Close the Hatch First, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0575, title: Nobody Has to Shout, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0576, title: Count in a Whisper, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0577, title: Two of Us Fit, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0578, title: Quiet Bay Total, track_number: 8, genre: deck-talk, playable: false}
+        - id: al_071
+          title: She Kept the Kit
+          label: label_2
+          release_year: 2619
+          kind: album
+          genre: deck-talk
+          notes: Their last full record, named for the percussionist whose kit the crew refused to hand to anyone else.
+          songs:
+            - {id: s_0579, title: She Kept the Kit, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0580, title: Off the Dock List, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0581, title: No Replacement, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0582, title: Small Bay Closing, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0583, title: Told Her to Stop, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0584, title: Twenty Years of Quiet, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0585, title: Take the Kit Home, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0586, title: Nothing More to Call, track_number: 8, genre: deck-talk, playable: false}
+
+    - id: b_034
+      name: Tally and Answer
+      kind: crew
+      home_settlement: the between
+      label: label_5
+      genre: deck-talk
+      active_from: 2601
+      active_to: 2626
+      bio: >-
+        Tally and Answer are two haulers who have recorded nothing but exchanges since 2601 and have
+        never put a sung line on a record. They are the crew other crews on the circuits challenge,
+        and they have said in public that they have never turned a challenge down.
+      albums:
+        - id: al_072
+          title: Tally and Answer
+          label: label_5
+          release_year: 2612
+          kind: album
+          genre: deck-talk
+          notes: Eight straight exchanges with no hooks at all, and the record that made the form's contests a thing crews travelled for.
+          songs:
+            - {id: s_0587, title: Tally and Answer, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0588, title: Your Turn, Longer, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0589, title: Match That Count, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0590, title: Nothing Sung Here, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0591, title: Faster Than the Answer, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0592, title: Say It Without Stopping, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0593, title: Come and Take It, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0594, title: Both of Us Still Going, track_number: 8, genre: deck-talk, playable: false}
+        - id: al_073
+          title: Never Turned One Down
+          label: label_5
+          release_year: 2624
+          kind: album
+          genre: deck-talk
+          notes: Recorded against six visiting crews on one circuit, and the only deck-talk record on which the challengers are credited by name.
+          songs:
+            - {id: s_0595, title: Never Turned One Down, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0596, title: Six Crews, One Bay, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0597, title: Bring the Whole Sheet, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0598, title: We Kept Count, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0599, title: Beaten on the Turn, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0600, title: Ask Us Again Next Year, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0601, title: Longer Than Yours, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0602, title: Still the Same Two, track_number: 8, genre: deck-talk, playable: false}
+
+    - id: b_035
+      name: Short Rope Crew
+      kind: crew
+      home_settlement: Forge
+      label: label_4
+      genre: deck-talk
+      active_from: 2605
+      active_to: 2626
+      bio: >-
+        Short Rope Crew came out of a Forge apprentice intake and were the first crew Deep Register
+        signed off the strength of a hall contest rather than a recording. They record rarely and have
+        said they will not release anything they cannot perform in full on the floor they work on.
+      albums:
+        - id: al_074
+          title: Apprentice Intake
+          label: label_4
+          release_year: 2612
+          kind: album
+          genre: deck-talk
+          notes: Made the year after they won the Forge hall contest, and remembered for naming the whole intake that started with them.
+          songs:
+            - {id: s_0603, title: Apprentice Intake, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0604, title: Short Rope, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0605, title: First Year on the Floor, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0606, title: Learn It or Leave, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0607, title: Nobody Told Us That, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0608, title: Hall Contest Night, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0609, title: Count Us In Now, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0610, title: Twelve of Us Started, track_number: 8, genre: deck-talk, playable: false}
+        - id: al_075
+          title: Only What We Can Play
+          label: label_4
+          release_year: 2624
+          kind: album
+          genre: deck-talk
+          notes: Their second record in twelve years, and the one that stated the rule they are known for on the sleeve.
+          songs:
+            - {id: s_0611, title: Only What We Can Play, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0612, title: No Second Take, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0613, title: Same Floor, Same Four, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0614, title: Twelve Years Between, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0615, title: Ask the Hall, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0616, title: We Still Work Here, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0617, title: Nothing We Cannot Carry, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0618, title: End of the Intake, track_number: 8, genre: deck-talk, playable: false}
+
+    - id: b_036
+      name: Half a Shift
+      kind: crew
+      home_settlement: Cold Harbor
+      label: unsigned
+      genre: deck-talk
+      active_from: 2610
+      active_to: 2626
+      bio: >-
+        Half a Shift have turned down every label that has approached them and press their own records
+        in runs of two hundred, which is how the form spread before any label was interested. They are
+        the most widely traded deck-talk crew nobody's catalogue lists.
+      albums:
+        - id: al_076
+          title: Two Hundred Copies
+          label: unsigned
+          release_year: 2619
+          kind: album
+          genre: deck-talk
+          notes: Pressed by the crew themselves and traded across four settlements without ever being sold in a shop.
+          songs:
+            - {id: s_0619, title: Two Hundred Copies, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0620, title: We Press Our Own, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0621, title: No Contract Reading, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0622, title: Hand to Hand, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0623, title: Half a Shift, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0624, title: Keep the Whole Take, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0625, title: Nobody's Catalogue, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0626, title: Ask Around For It, track_number: 8, genre: deck-talk, playable: false}
+        - id: al_077
+          title: Still Not Signing
+          label: unsigned
+          release_year: 2624
+          kind: album
+          genre: deck-talk
+          notes: Made after a third refused offer, and remembered for reading the offer aloud on the opening track.
+          songs:
+            - {id: s_0627, title: Still Not Signing, track_number: 1, genre: deck-talk, playable: false}
+            - {id: s_0628, title: Read Us the Terms, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0629, title: Third Time Asked, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0630, title: Keep Your Advance, track_number: 4, genre: deck-talk, playable: false}
+            - {id: s_0631, title: We Set the Price, track_number: 5, genre: deck-talk, playable: false}
+            - {id: s_0632, title: Off Every List, track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0633, title: Cheaper Than the Room, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0634, title: Travels Further Anyway, track_number: 8, genre: deck-talk, playable: false}
+
 layer_c:
   recordings: none survive
-  figures: []
+  figures:
+    - id: f_009
+      name: Anse Duro
+      kind: ledger caller
+      genre: deck-talk
+      active_from: 2431
+      active_to: 2464
+      played: calling voice and struck ration tin
+      history: >-
+        Anse Duro called the stores ledger aloud in a Freehold settlement between 2431 and 2464, at a
+        time when doing so was a legal requirement and not a performance. Settlement records describe
+        a caller who kept time on a ration tin so that a room of two hundred could follow a list to the
+        end, and complaints survive from clerks who wanted the readings shortened. Duro is named
+        because every account of deck-talk starts with the reading being made audible on purpose, and
+        this is the earliest reading anybody wrote down.
+    - id: f_010
+      name: Lubek Yarrow
+      kind: instrument maker and caller
+      genre: deck-talk
+      active_from: 2459
+      active_to: 2492
+      played: calling voice, cut oxygen tanks and wire chimes
+      history: >-
+        Lubek Yarrow cut the first oxygen tanks into a tuned set between 2459 and 2492 and taught
+        several settlements to make their own, charging nothing and refusing to keep a design to
+        himself. Written orders survive in which a Freehold committee tried to stop the practice on
+        safety grounds and was ignored. Yarrow matters because the percussion the form is built on is
+        an instrument somebody deliberately made, not scrap that happened to be there.
+    - id: f_011
+      name: Ossa Wend
+      kind: counting singer
+      genre: deck-talk
+      active_from: 2488
+      active_to: 2521
+      played: calling voice and struck plate
+      history: >-
+        Ossa Wend worked the transfer halls of an early frontier port from 2488 to 2521 and was the
+        first caller anyone described as having a style rather than a duty. Accounts from three
+        settlements agree that she would take on any caller who claimed a longer list, and that she
+        was beaten twice and said so herself both times. The contest that deck-talk is built around is
+        first recorded as a contest in the arguments about her.
+    - id: f_012
+      name: Torrel Byce
+      kind: crew answerer
+      genre: deck-talk
+      active_from: 2513
+      active_to: 2546
+      played: answering voice and stripped-wire chimes
+      history: >-
+        Torrel Byce answered other people's calls for thirty-three years and is not recorded as having
+        ever led one. Contemporary notices treat the answering part as the harder job and name him
+        ahead of the callers he worked with, which no later account does. He is still mentioned
+        because every crew since has been built on two voices rather than one, and the answer is the
+        part that decides whether the exchange works.
