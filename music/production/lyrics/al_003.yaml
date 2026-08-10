@@ -1,0 +1,733 @@
+# al_003 — Useful Trouble · Open Parallax (b_002) · Civic Lantern · 2607 · 11 songs
+#
+# Written by M-17. **The file shape and every field is documented in al_001.yaml — read that
+# header once.** Production vocabulary (COMMISSION.md §8): never enters the wiki, never said on
+# air. Lyrics written by hand; Suno Custom mode only.
+
+album:
+  id: al_003
+  title: Useful Trouble
+  band: b_002
+  band_name: Open Parallax
+  label: label_1
+  release_year: 2607
+  genre: relay-pop
+  cornerstone: false
+  song_count: 11
+  style_card: b_002
+  room: >-
+    A Concordance room fitted only for unamplified performance, which is where the record's dryness
+    comes from. The repaired compact keyboard that ends the band's Purist period arrives partway
+    through the sessions, so it is present on every song here and is deliberately not hidden — a
+    slightly out-of-repair keyboard carrying the bass part, with two faulty notes kept on track 10.
+
+generation:
+  # M-18 fills this in. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true
+  notes: null
+
+songs:
+  - id: s_0024
+    title: Useful Trouble
+    track_number: 1
+    mood: [mischievous, bright, brisk]
+    fact: >-
+      Keli Vos plays the repaired compact keyboard that caused the band's public break with Purist
+      practice.
+    arrangement_note: the repaired keyboard opens the record alone and is the loudest thing in every chorus
+    intro: 8
+    outro: cold
+    target_duration: "3:00"
+    prompt: >-
+      Power-pop, 138 BPM, mischievous and bright, brisk. Female lead vocal in a light high
+      register, quick and wry, clipped consonants, dropping into plain speech at the end of a line.
+      Two close harmony voices under the lead through the verses, all four voices shouting the hook
+      together. Two jangling electric guitars panned hard apart, a compact electric keyboard
+      carrying the bass part and sitting loudest in the choruses, drum kit with struck metal
+      blocks. Dry small-room production, tight and close-mic'd, lead double-tracked on choruses
+      only, very little reverb. Eight seconds of the keyboard alone before the first sung word.
+      Cold stop.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+    lyrics: |
+      [Intro - 8 seconds, compact electric keyboard alone, guitars in on the last bar, no vocal]
+
+      [Verse 1]
+      Everybody's very sorry that we did it,
+      Everybody's written in to say so twice.
+      Nobody was in the room when the room went quiet,
+      Nobody had to find another way to make a Tuesday work.
+
+      [Chorus]
+      It's useful trouble (useful trouble)
+      The kind that gets a thing done (gets it done)
+      It's useful trouble (useful trouble)
+      Sorry about the noise, we'll be gone in a minute.
+
+      [Verse 2]
+      You can be right and be no earthly good,
+      You can keep your hands clean and keep them empty too.
+      I would rather be argued with than agreed with quietly
+      By somebody who has never once had to decide.
+
+      [Chorus]
+      It's useful trouble (useful trouble)
+      The kind that gets a thing done (gets it done)
+      It's useful trouble (useful trouble)
+      Sorry about the noise, we'll be gone in a minute.
+
+      [Bridge - all four shouting]
+      Write us a letter! Write us another!
+      We'll read them out when the record's done!
+
+      [Final Chorus - all four voices]
+      It's useful trouble (useful trouble)
+      The kind that gets a thing done (gets it done)
+      It's useful trouble (useful trouble)
+      Sorry about the noise, we'll be gone in a minute.
+
+      [Outro - cold stop, keyboard cutting off mid-phrase]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0025
+    title: Bad at Goodbye
+    track_number: 2
+    mood: [wry, yearning, quick]
+    fact: >-
+      Sena Quill rewrote the chorus after an audience supplied a shorter final line during a
+      lunch-room test.
+    arrangement_note: the last line of every chorus is four words long and the band stops dead after it
+    intro: 4
+    outro: fade
+    target_duration: "2:40"
+    prompt: >-
+      Power-pop, 146 BPM, wry and yearning, quick. Female lead vocal in a light high register, quick
+      and wry, clipped consonants, dropping into plain speech at the end of a line. Two close
+      harmony voices under the lead through the verses, all four voices shouting the hook. Two
+      jangling electric guitars panned hard apart, compact electric keyboard carrying the bass
+      part, drum kit with struck metal blocks. Dry small-room production, tight and close-mic'd,
+      lead double-tracked on choruses only. The last line of every chorus is four words long and
+      the whole band stops dead on it before the next section. Fade.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+    lyrics: |
+      [Intro - 4 seconds, guitars and metal blocks, no vocal]
+
+      [Verse 1]
+      I put my coat on twenty minutes ago,
+      I've said the same three sentences four times.
+      There's a bus I could have caught and a bus after that,
+      And I'm still standing in your doorway saying right, well, anyway.
+
+      [Chorus]
+      I'm bad at goodbye (bad at goodbye)
+      Give me an hour and I'll have another go (another go)
+      I'm bad at goodbye -
+      Don't make me leave. (band stops)
+
+      [Verse 2]
+      You're worse than me and that's the whole trouble,
+      You keep starting a story when my hand's on the door.
+      Neither of us is going to be the one who's sensible,
+      So we'll be here at midnight talking about the tram.
+
+      [Chorus]
+      I'm bad at goodbye (bad at goodbye)
+      Give me an hour and I'll have another go (another go)
+      I'm bad at goodbye -
+      Don't make me leave. (band stops)
+
+      [Bridge]
+      Somebody in the lunch room said it shorter than I wrote it.
+      She was right and I have used her line ever since.
+
+      [Final Chorus - all four voices]
+      I'm bad at goodbye (bad at goodbye)
+      Give me an hour and I'll have another go (another go)
+      I'm bad at goodbye -
+      Don't make me leave. (band stops, then back in for the fade)
+
+      [Outro - fade on the guitars and the repeated "another go"]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0026
+    title: The Door Sticks
+    track_number: 3
+    mood: [frustrated, catchy, midtempo]
+    fact: >-
+      Arum Den copied the rehearsal-room door's three-part knock on metal blocks for the opening
+      figure.
+    arrangement_note: a three-part knock on struck metal blocks opens the song and returns as the hook every chorus
+    intro: 9
+    outro: fade
+    target_duration: "3:15"
+    prompt: >-
+      Power-pop, 124 BPM, frustrated and catchy. Female lead vocal in a light high register, quick
+      and wry, clipped consonants, dropping into plain speech at the end of a line. Two close
+      harmony voices under the lead through the verses, all four voices shouting the hook. Two
+      jangling electric guitars panned hard apart, compact electric keyboard carrying the bass
+      part, drum kit with struck metal blocks playing a three-part knock figure that opens the song
+      and returns in every chorus. Dry small-room production, tight and close-mic'd. Nine seconds
+      of the knock figure and guitars before the first sung word. Fade.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+    lyrics: |
+      [Intro - 9 seconds, three-part knock on metal blocks, guitars joining at five seconds, no vocal]
+
+      [Verse 1]
+      Lift it and pull it and lean on the frame,
+      Everybody who works here knows the trick.
+      There's a form you can fill in about it downstairs
+      And it has been filled in eleven times.
+
+      [Chorus]
+      The door sticks (knock knock knock)
+      Everybody knows and nobody's fixing it (nobody's fixing it)
+      The door sticks (knock knock knock)
+      And that's the state of the whole arrangement, isn't it.
+
+      [Verse 2]
+      Same with you and me and the thing we don't discuss,
+      Lift it and pull it and lean on the frame.
+      It opens in the end if you know how to stand,
+      And that is not the same as it working.
+
+      [Chorus]
+      The door sticks (knock knock knock)
+      Everybody knows and nobody's fixing it (nobody's fixing it)
+      The door sticks (knock knock knock)
+      And that's the state of the whole arrangement, isn't it.
+
+      [Bridge - all four shouting over the knock]
+      Take it off the hinges! Take the whole wall!
+      Or say out loud that we like it this way!
+
+      [Final Chorus - all four voices]
+      The door sticks (knock knock knock)
+      Everybody knows and nobody's fixing it (nobody's fixing it)
+      The door sticks (knock knock knock)
+      And that's the state of the whole arrangement, isn't it.
+
+      [Outro - fade on the knock figure alone]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0027
+    title: Twenty Empty Chairs
+    track_number: 4
+    mood: [lonely, restrained, slow]
+    fact: >-
+      The title counts the unused seats at the group's smallest paid Concordance performance in 2606.
+    arrangement_note: guest upright bass takes the bottom for this song instead of the keyboard, and the drums stay on brushes until the last chorus
+    intro: 17
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      Power-pop played slow, 84 BPM, lonely and restrained. Female lead vocal in a light high
+      register, quick and wry, clipped consonants, dropping into plain speech at the end of a line,
+      unhurried here. Two close harmony voices under the lead through the verses. Two jangling
+      electric guitars panned hard apart, played cleanly, guest upright bass taking the bottom
+      instead of the keyboard, drum kit brushed until the last chorus and then struck. Dry
+      small-room production, tight and close-mic'd, very little reverb. Seventeen seconds of
+      upright bass and one guitar before the first sung word. Ends sustained.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+    lyrics: |
+      [Intro - 17 seconds, upright bass and one clean guitar, second guitar at eleven seconds, no vocal]
+
+      [Verse 1]
+      We counted them from the stage because there was time,
+      Twenty empty chairs and eleven that weren't.
+      The man on the door had gone home at the interval
+      And we played the whole thing anyway, right to the end.
+
+      [Chorus]
+      Twenty empty chairs (twenty empty chairs)
+      And the best night we ever had (best night we had)
+      Twenty empty chairs -
+      Ask me again in ten years which one I'd keep.
+
+      [Verse 2]
+      Somebody's aunt, somebody's neighbour, a man with a bag,
+      Two who came in for the warmth and stayed for the second half.
+      They clapped like a room four times their size,
+      Which is a kindness I have not forgotten and won't.
+
+      [Chorus]
+      Twenty empty chairs (twenty empty chairs)
+      And the best night we ever had (best night we had)
+      Twenty empty chairs -
+      Ask me again in ten years which one I'd keep.
+
+      [Bridge]
+      You can play to a full room and mean nothing at all.
+      You can play to eleven and go home changed.
+
+      [Final Chorus - all four voices, drums struck now]
+      Twenty empty chairs (twenty empty chairs)
+      And the best night we ever had (best night we had)
+      Twenty empty chairs -
+      Ask me again in ten years which one I'd keep.
+
+      [Outro - sustain, guitars ringing over the upright bass]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0028
+    title: Raincheck Money
+    track_number: 5
+    mood: [restless, comic, brisk]
+    fact: >-
+      Ivo Cern wrote the second verse from the refund terms on a cancelled room booking.
+    arrangement_note: the second verse is sung fast and flat over a single held guitar chord, like reading small print, before the band comes back for the chorus
+    intro: 3
+    outro: cold
+    target_duration: "2:50"
+    prompt: >-
+      Power-pop, 150 BPM, restless and comic, brisk. Female lead vocal in a light high register,
+      quick and wry, clipped consonants, dropping into plain speech at the end of a line. Two close
+      harmony voices under the lead through the verses, all four shouting the hook. Two jangling
+      electric guitars panned hard apart, compact electric keyboard carrying the bass part, drum
+      kit with struck metal blocks. Dry small-room production, tight and close-mic'd. The second
+      verse is sung fast and flat over one held guitar chord like somebody reading small print,
+      then the full band returns for the chorus. Cold stop.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+    lyrics: |
+      [Intro - 3 seconds, drum count and guitars, no vocal]
+
+      [Verse 1]
+      You said next week and you meant it at the time,
+      You said next week the week after that as well.
+      I have a small collection of your next weeks now,
+      I keep them in a tin with the other things that didn't happen.
+
+      [Chorus]
+      Raincheck money (raincheck money)
+      Spends like nothing, weighs like lead (weighs like lead)
+      Raincheck money (raincheck money)
+      I'd rather have a no I can put in the bank.
+
+      [Verse 2 - fast and flat over one held chord]
+      Cancellation inside four days, no refund;
+      Inside ten days, half; outside ten days, in full,
+      Less an administration charge, non-transferable,
+      Which is the most honest thing anybody's said to me all month.
+
+      [Chorus]
+      Raincheck money (raincheck money)
+      Spends like nothing, weighs like lead (weighs like lead)
+      Raincheck money (raincheck money)
+      I'd rather have a no I can put in the bank.
+
+      [Bridge - all four shouting]
+      Say it! Say the short word!
+      I'll like you better for it in the morning!
+
+      [Final Chorus - all four voices]
+      Raincheck money (raincheck money)
+      Spends like nothing, weighs like lead (weighs like lead)
+      Raincheck money (raincheck money)
+      I'd rather have a no I can put in the bank.
+
+      [Outro - cold stop on "bank"]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0029
+    title: Nobody's Favorite Shift
+    track_number: 6
+    mood: [tired, companionable, steady]
+    fact: >-
+      Oren Saye recorded the bass part after finishing a separate overnight session and asked to
+      keep its uneven final bar.
+    arrangement_note: guest upright bass again, dragging very slightly behind the kit, and the final bar of the song is uneven and kept
+    intro: 12
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      Power-pop, 112 BPM, tired and companionable, steady. Female lead vocal in a light high
+      register, quick and wry, clipped consonants, dropping into plain speech at the end of a line.
+      Two close harmony voices under the lead through the verses. Two jangling electric guitars
+      panned hard apart, guest upright bass sitting very slightly behind the kit, drum kit with
+      struck metal blocks played lightly. Dry small-room production, tight and close-mic'd, nothing
+      gridded or corrected. Twelve seconds of upright bass and guitars before the first sung word.
+      The last bar is uneven and stays that way. Fade.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, quantised timing
+    lyrics: |
+      [Intro - 12 seconds, upright bass with brushed kit, guitars at eight seconds, no vocal]
+
+      [Verse 1]
+      Nobody picks this one, it picks you,
+      Half the lights off and the good machine broken.
+      There's four of us on and one of us is asleep standing up,
+      And the clock does the thing where it goes backwards for an hour.
+
+      [Chorus]
+      Nobody's favourite shift (nobody's favourite)
+      And I'd not swap the company (not swap the company)
+      Nobody's favourite shift (nobody's favourite)
+      Somehow the worst of them are the ones I can still name.
+
+      [Verse 2]
+      You brought the terrible coffee and the good news,
+      You told me the whole thing twice because I missed the middle.
+      We got it done. We always get it done.
+      Nobody writes that down anywhere and nobody should have to.
+
+      [Chorus]
+      Nobody's favourite shift (nobody's favourite)
+      And I'd not swap the company (not swap the company)
+      Nobody's favourite shift (nobody's favourite)
+      Somehow the worst of them are the ones I can still name.
+
+      [Bridge]
+      In a year we'll be somewhere else and we'll say
+      remember that one - and we'll both mean it kindly.
+
+      [Final Chorus - all four voices]
+      Nobody's favourite shift (nobody's favourite)
+      And I'd not swap the company (not swap the company)
+      Nobody's favourite shift (nobody's favourite)
+      Somehow the worst of them are the ones I can still name.
+
+      [Outro - fade, ending on the uneven bar of upright bass]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0030
+    title: A Little Too Loud
+    track_number: 7
+    mood: [defiant, exuberant, quick]
+    fact: >-
+      The accepted lead is the test recording that triggered the building's level alarm.
+    arrangement_note: the loudest thing on the record, the lead pushed to the edge of the microphone, and the shortest song
+    intro: 2
+    outro: cold
+    target_duration: "2:20"
+    prompt: >-
+      Power-pop, 152 BPM, defiant and exuberant, quick. Female lead vocal in a light high register,
+      quick and wry, clipped consonants, pushed right to the edge of the microphone and slightly
+      overloading it. Two close harmony voices under the lead, all four voices shouting the hook.
+      Two jangling electric guitars panned hard apart, compact electric keyboard carrying the bass
+      part, drum kit with struck metal blocks, everything played hard. Dry small-room production,
+      tight and close-mic'd, no reverb. Two seconds of count-in only. Cold stop.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+    lyrics: |
+      [Intro - 2 seconds, sticks counting in, no vocal]
+
+      [Verse 1]
+      Somebody's put a notice on the wall about us,
+      Two paragraphs and a number to call.
+      We have been described as a persistent disturbance,
+      Which is the nicest thing anyone's written about this band.
+
+      [Chorus]
+      A little too loud (too loud!)
+      For a room that would rather be asleep (rather be asleep)
+      A little too loud (too loud!)
+      And if you can hear it, come down, there's space at the front.
+
+      [Verse 2]
+      The alarm went off in the middle of the second take
+      And we kept going because we were nearly there.
+      You can have quiet or you can have the thing itself,
+      You cannot have the thing itself in a whisper.
+
+      [Chorus]
+      A little too loud (too loud!)
+      For a room that would rather be asleep (rather be asleep)
+      A little too loud (too loud!)
+      And if you can hear it, come down, there's space at the front.
+
+      [Bridge - all four shouting]
+      Turn it up! Turn it up!
+      We'll pay the fine, we've paid it before!
+
+      [Final Chorus - all four voices]
+      A little too loud (too loud!)
+      For a room that would rather be asleep (rather be asleep)
+      A little too loud (too loud!)
+      And if you can hear it, come down, there's space at the front.
+
+      [Outro - cold stop, one guitar note left ringing and cut]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0031
+    title: The Clean Plate
+    track_number: 8
+    mood: [tender, domestic, midtempo]
+    fact: >-
+      Sena Quill wrote the song for a neighbor who always returned borrowed dishes before speaking
+      about the argument.
+    arrangement_note: guitars played clean and quiet with no strumming in the verses, only single notes, so the words carry
+    intro: 8
+    outro: sustain
+    target_duration: "3:30"
+    prompt: >-
+      Power-pop, 116 BPM, tender and domestic. Female lead vocal in a light high register, quick and
+      wry, clipped consonants, dropping into plain speech at the end of a line. Two close harmony
+      voices under the lead through the verses, all four on the last chorus. Two jangling electric
+      guitars panned hard apart, playing single clean notes rather than chords through the verses,
+      compact electric keyboard carrying the bass part, drum kit with struck metal blocks played
+      lightly. Dry small-room production, tight and close-mic'd. Eight seconds of clean single-note
+      guitar before the first sung word. Ends sustained.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+    lyrics: |
+      [Intro - 8 seconds, clean single-note guitars, keyboard bass entering at five seconds, no vocal]
+
+      [Verse 1]
+      She brings it back washed and she brings it back early,
+      Stands in the door with it and talks about the weather.
+      Neither of us mentions the thing that was said,
+      And the plate goes back on the shelf where it lives.
+
+      [Chorus]
+      A clean plate (a clean plate)
+      Is a whole apology in this house (whole apology)
+      A clean plate (a clean plate)
+      And I take it, and I take it, and I say thank you.
+
+      [Verse 2]
+      My mother did it too and I swore I'd say things out,
+      And here I am with a tea towel making peace.
+      There are worse languages to have been taught,
+      And I have not yet learned a better one, in fairness.
+
+      [Chorus]
+      A clean plate (a clean plate)
+      Is a whole apology in this house (whole apology)
+      A clean plate (a clean plate)
+      And I take it, and I take it, and I say thank you.
+
+      [Bridge]
+      One of these days I'll keep the plate
+      And make her stand there long enough to say it.
+
+      [Final Chorus - all four voices]
+      A clean plate (a clean plate)
+      Is a whole apology in this house (whole apology)
+      A clean plate (a clean plate)
+      And I take it, and I take it, and I say thank you.
+
+      [Outro - sustain, guitars ringing out together]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0032
+    title: Coins for Tomorrow
+    track_number: 9
+    mood: [hopeful, lean, brisk]
+    fact: >-
+      Ivo Cern shakes the group's unpaid meal tokens beside the microphone during the second chorus.
+    arrangement_note: a handful of loose metal tokens is shaken beside the microphone through the second chorus and nowhere else
+    intro: 6
+    outro: fade
+    target_duration: "3:05"
+    prompt: >-
+      Power-pop, 134 BPM, hopeful and lean, brisk. Female lead vocal in a light high register, quick
+      and wry, clipped consonants, dropping into plain speech at the end of a line. Two close
+      harmony voices under the lead through the verses, all four shouting the hook. Two jangling
+      electric guitars panned hard apart, compact electric keyboard carrying the bass part, drum
+      kit with struck metal blocks, and a handful of loose metal tokens shaken close to the
+      microphone through the second chorus only. Dry small-room production, tight and close-mic'd.
+      Six seconds of guitars before the first sung word. Fade.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+    lyrics: |
+      [Intro - 6 seconds, both guitars and kit, no vocal]
+
+      [Verse 1]
+      Four of us and one week's money on the table,
+      Sorted into little piles with a job written on each.
+      This one eats, this one gets us there,
+      And this one is not to be touched, whatever happens.
+
+      [Chorus]
+      Coins for tomorrow (coins for tomorrow)
+      Don't spend them on tonight (not on tonight)
+      Coins for tomorrow (coins for tomorrow)
+      We have been hungry cleverer than this before.
+
+      [Verse 2 - tokens shaken here]
+      Somebody's owed us since the winter and won't pay,
+      Somebody else paid twice and never said.
+      It comes out about level if you don't look too hard,
+      And looking too hard is how a band stops being one.
+
+      [Chorus]
+      Coins for tomorrow (coins for tomorrow)
+      Don't spend them on tonight (not on tonight)
+      Coins for tomorrow (coins for tomorrow)
+      We have been hungry cleverer than this before.
+
+      [Bridge - all four shouting]
+      Two more months! Two more months!
+      Then we'll be wrong about something else!
+
+      [Final Chorus - all four voices]
+      Coins for tomorrow (coins for tomorrow)
+      Don't spend them on tonight (not on tonight)
+      Coins for tomorrow (coins for tomorrow)
+      We have been hungry cleverer than this before.
+
+      [Outro - fade on the guitars and the shaken tokens]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0033
+    title: Still at the Counter
+    track_number: 10
+    mood: [waiting, warm, midtempo]
+    fact: >-
+      Keli Vos left two faulty notes from the repaired keyboard because Sena Quill answered them in
+      the same take.
+    arrangement_note: two notes of the keyboard part fail audibly in the second verse and the lead sings a phrase back at them in the same take
+    intro: 13
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      Power-pop, 118 BPM, waiting and warm. Female lead vocal in a light high register, quick and
+      wry, clipped consonants, dropping into plain speech at the end of a line. Two close harmony
+      voices under the lead through the verses. Two jangling electric guitars panned hard apart, a
+      repaired compact electric keyboard carrying the bass part with two notes audibly failing in
+      the second verse, drum kit with struck metal blocks. Dry small-room production, tight and
+      close-mic'd, faults left in. Thirteen seconds of keyboard and guitars before the first sung
+      word. Fade.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, repaired or corrected keyboard notes
+    lyrics: |
+      [Intro - 13 seconds, repaired keyboard and guitars, kit at nine seconds, no vocal]
+
+      [Verse 1]
+      They put the shutters half down an hour ago,
+      The girl mopping round my feet has stopped asking.
+      I said I'd wait and I did not say how long,
+      And now it's a matter of pride and it wasn't before.
+
+      [Chorus]
+      Still at the counter (still at the counter)
+      Coat on, cup empty, hand on the sill (hand on the sill)
+      Still at the counter (still at the counter)
+      You'll come in that door or you won't.
+
+      [Verse 2 - two keyboard notes fail; lead answers them]
+      That's the keyboard going again - hello, yes, I heard you -
+      Everything in this town is held together with somebody's patience.
+      Mine's holding. It's holding. It's been holding since six.
+      Ask me at closing and I'll tell you something different.
+
+      [Chorus]
+      Still at the counter (still at the counter)
+      Coat on, cup empty, hand on the sill (hand on the sill)
+      Still at the counter (still at the counter)
+      You'll come in that door or you won't.
+
+      [Bridge]
+      There is a version of tonight where you're just late.
+      I'm going to live in that one until they turn the lights off.
+
+      [Final Chorus - all four voices]
+      Still at the counter (still at the counter)
+      Coat on, cup empty, hand on the sill (hand on the sill)
+      Still at the counter (still at the counter)
+      You'll come in that door or you won't.
+
+      [Outro - fade on the faulty keyboard figure]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0034
+    title: Take the Longer Way
+    track_number: 11
+    mood: [romantic, easy, building]
+    fact: >-
+      Sel Ardin arranged the final chorus for four voices after hearing the band sing while carrying
+      equipment home.
+    arrangement_note: the record's closer; the final chorus is arranged for four voices in unison with the instruments dropping away underneath until only the guitars remain
+    intro: 16
+    outro: sustain
+    target_duration: "4:50"
+    prompt: >-
+      Power-pop, 114 BPM, romantic and easy, building across nearly five minutes. Female lead vocal
+      in a light high register, quick and wry, clipped consonants, dropping into plain speech at the
+      end of a line. Two close harmony voices under the lead through the verses; the final chorus is
+      four voices in unison with the instruments dropping away underneath until only the two guitars
+      remain. Two jangling electric guitars panned hard apart, compact electric keyboard carrying
+      the bass part, drum kit with struck metal blocks. Dry small-room production, tight and
+      close-mic'd. Sixteen seconds of both guitars before the first sung word. Ends sustained.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+    lyrics: |
+      [Intro - 16 seconds, both guitars, keyboard bass at ten seconds, kit at fourteen, no vocal]
+
+      [Verse 1]
+      There's a road that gets you home in nine minutes
+      And a road that takes the long side of the water.
+      You have never once taken the first one with me,
+      And it took me two years to work out that this was on purpose.
+
+      [Chorus]
+      Take the longer way (take the longer way)
+      Nothing's waiting for us at that end (nothing's waiting)
+      Take the longer way (take the longer way)
+      I've got a coat and no reason to be anywhere.
+
+      [Verse 2]
+      We carried the whole lot home on our backs one night,
+      Singing something stupid to keep the load moving.
+      Somebody's window went up and somebody laughed,
+      And you said that's the best we've ever sounded, and it was.
+
+      [Chorus]
+      Take the longer way (take the longer way)
+      Nothing's waiting for us at that end (nothing's waiting)
+      Take the longer way (take the longer way)
+      I've got a coat and no reason to be anywhere.
+
+      [Bridge]
+      One day the nine-minute road will be the only one I've time for.
+      Not this year. Not tonight.
+
+      [Final Chorus - four voices in unison, instruments dropping away to guitars alone]
+      Take the longer way (take the longer way)
+      Nothing's waiting for us at that end (nothing's waiting)
+      Take the longer way (take the longer way)
+      I've got a coat and no reason to be anywhere.
+      No reason to be anywhere.
+
+      [Outro - sustain, both guitars ringing out]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null

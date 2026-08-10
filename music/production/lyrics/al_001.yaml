@@ -1,0 +1,866 @@
+# al_001 — Terms of Arrival · Measure Kindly (b_001) · Civic Lantern · 2619 · 12 songs
+#
+# Written by M-17. THIS FILE FIXES THE SHAPE every other lyrics file uses (al_002 … al_004 and,
+# later, M-21 … M-29). Read this header once; the other files point back to it.
+#
+# What this file is, and is not
+# -----------------------------
+# Production vocabulary (COMMISSION.md §8): it names real genre and technique words so that a
+# generation prompt can be written. **It never enters the wiki and nothing in it is ever said on
+# air.** No real artist, band, producer, album, song or label is named anywhere in it.
+#
+# Lyrics are written by hand (COMMISSION.md §6, §10). Suno is never asked to write them — Custom
+# mode only, always.
+#
+# The shape
+# ---------
+# album:       what record this is. Identity only; the wiki is the authority for every field.
+# generation:  the per-album metadata block. **Empty until M-18 fills it in at the Suno sitting.**
+#              `make music-tag` (M-05) reads it and writes licence period, generation date, model
+#              version and the AI marker into every audio file's own tags.
+# songs[]:     one entry per song, in track order, keyed by the wiki's song id.
+#   mood       copied from the wiki's mood_tags — the prompt is built from it
+#   fact       copied from the wiki. The lyric has to fit it; it is why the song is this song
+#   arrangement_note  the one per-song instruction inside the fixed style card (COMMISSION.md §7)
+#   intro      the instrumental ramp, in seconds, before the first sung word (§7: ≥40% of songs
+#              need ≥8s, ≥15% need ≥15s). Stated here as the intent; measured for real by M-04
+#   outro      cold | fade | sustain — the intended shape (§7: roughly 30 / 45 / 25 across all 500)
+#   target_duration  what the take should come out near (§7's duration bands). Judged by ear
+#   prompt     the exact text to paste into Suno's style box. Built from the band's six-line style
+#              card in music/production/styles.yaml plus this song's mood and arrangement note
+#   exclude    the style card's exclude line, plus anything this song needs kept out
+#   lyrics     the words. Opens on an instrumental-intro tag, always
+#   take       **M-18 fills this in.** One block per song: attempts, date, model version, and the
+#              prompt actually used if it differed from `prompt` above
+#
+# Resolution rule for M-05: read the song's `take:` first, fall back to `generation:` for anything
+# null there. A band generated in one sitting fills `generation:` once and leaves the song blocks
+# carrying only `attempts`.
+
+album:
+  id: al_001
+  title: Terms of Arrival
+  band: b_001
+  band_name: Measure Kindly
+  label: label_1
+  release_year: 2619
+  genre: relay-pop
+  cornerstone: true
+  song_count: 12
+  style_card: b_001
+  room: >-
+    The wiki puts this record in a small committee chamber, booked because the Concordance public
+    halls were unavailable in 2619, and the group was still Synthesist — the Localist turn and the
+    reopened halls both come later, on al_002. So the style card's "large reflective hall" is the
+    one line the arrangement notes bend here: every prompt asks for a small hard-walled room,
+    tracked live, bright and close. Voice, backing, instruments and exclude are untouched.
+
+generation:
+  # M-18 fills this in. Nothing below is guessed, and nothing here is written by an agent.
+  model_version: null           # the exact version string Suno shows, e.g. v4-5
+  licence_period: null          # e.g. suno-pro-2026-08 — becomes each song's licence_note
+  generated_on: null            # YYYY-MM-DD of the sitting the keeper takes came from
+  sittings: []                  # one line per sitting: date, songs covered
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0001
+    title: Meet Me at Noon
+    track_number: 1
+    mood: [bright, expectant, brisk]
+    fact: >-
+      Vara Ennel wrote the chorus on the back of a room-booking refusal and kept the clerk's stamped
+      time as the title.
+    arrangement_note: keyboard figure alone for the first six seconds, hand percussion joining on the last bar before the verse
+    intro: 6
+    outro: cold
+    target_duration: "3:05"
+    prompt: >-
+      Contemporary produced pop, 124 BPM, bright and expectant. Female lead vocal in mid register,
+      clear and unforced, plain conversational diction, sung just ahead of the beat and never
+      belted. Three group voices answering the lead line for line across the chorus, a low harmony
+      under the last chorus, all four voices on the final refrain. Harpsichord-toned electric
+      keyboard, fretted electric bass, compact drum kit, hand percussion, tuned chimes. Tracked
+      live in a small hard-walled room, bright and close, lead a step off the microphone, minimal
+      overdub. Keyboard figure alone for the first six seconds, hand percussion joining on the last
+      bar before the verse. Cold stop on the downbeat.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+    lyrics: |
+      [Intro - 6 seconds, keyboard figure alone, hand percussion on the last bar, no vocal]
+
+      [Verse 1]
+      They stamped the paper and they wrote me a no,
+      Nine tidy words with the time at the top.
+      I read it twice on the stairs in the cold
+      And the only good thing on it was the clock.
+
+      [Pre-Chorus]
+      I don't need the room, I don't need the hall,
+      I don't need a signature to keep an afternoon at all.
+
+      [Chorus]
+      Meet me at noon (meet me at noon)
+      Out where the light comes through the glass (through the glass)
+      Meet me at noon (meet me at noon)
+      I'll be there early, let the whole queue pass.
+      And they can have their paper back, I'm done with it -
+      I kept the hour, I kept the hour.
+
+      [Verse 2]
+      You're never late, you're carefully slow,
+      You check the time like it might have moved.
+      I've got a pocket full of official no
+      And an afternoon with nothing to prove.
+
+      [Pre-Chorus]
+      I don't need the room, I don't need the hall,
+      Just the middle of the day they didn't own at all.
+
+      [Chorus]
+      Meet me at noon (meet me at noon)
+      Out where the light comes through the glass (through the glass)
+      Meet me at noon (meet me at noon)
+      I'll be there early, let the whole queue pass.
+      And they can have their paper back, I'm done with it -
+      I kept the hour, I kept the hour.
+
+      [Bridge]
+      Twelve is twelve wherever you stand (wherever you stand)
+      Nobody puts a stamp on a hand (nobody, nobody)
+
+      [Final Chorus - all four voices]
+      Meet me at noon (meet me at noon)
+      Out where the light comes through the glass (through the glass)
+      Meet me at noon (meet me at noon)
+      I'll be there early, let the whole queue pass.
+      They can have their paper back, I'm done with it -
+      I kept the hour, I kept the hour.
+
+      [Outro - cold stop on the downbeat, no ring]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0002
+    title: Paper Cup Promise
+    track_number: 2
+    mood: [warm, playful, midtempo]
+    fact: >-
+      Pevi Marr plays the opening rhythm on four stacked drinking cups because the booked hand drum
+      arrived cracked.
+    arrangement_note: opens on a dry rhythm played on stacked drinking cups, nine seconds before the bass enters, and the cups stay under the whole verse
+    intro: 9
+    outro: fade
+    target_duration: "2:50"
+    prompt: >-
+      Contemporary produced pop, 112 BPM, warm and playful. Female lead vocal in mid register,
+      clear and unforced, plain conversational diction, sung just ahead of the beat and never
+      belted. Three group voices answering the lead line for line across the chorus. Harpsichord-toned
+      electric keyboard, fretted electric bass, compact drum kit, hand percussion, tuned chimes.
+      Tracked live in a small hard-walled room, bright and close, minimal overdub. Opens on a dry
+      rhythm tapped on stacked drinking cups, nine seconds alone before the bass enters, and the
+      cups stay under the whole verse. Fade on the repeated hook.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+    lyrics: |
+      [Intro - 9 seconds, dry rhythm on stacked drinking cups alone, no vocal]
+
+      [Verse 1]
+      Four cups upside down on a canteen tray,
+      You said give me one minute, I'll say what I mean.
+      The kettle was empty, the lights were grey,
+      And you promised me something on the back of a receipt at seventeen past.
+
+      [Chorus]
+      It was a paper cup promise (paper cup promise)
+      Cheap in the hand and it held (and it held)
+      Everyone laughed when you made it (when you made it)
+      Nobody's laughing now - it held, it held.
+
+      [Verse 2]
+      You'd think a thing like that would go soft in the rain,
+      Something you'd throw in the bin by the door.
+      But I've had good paper come apart in my hands
+      And that one's still standing on the shelf where you left it.
+
+      [Chorus]
+      It was a paper cup promise (paper cup promise)
+      Cheap in the hand and it held (and it held)
+      Everyone laughed when you made it (when you made it)
+      Nobody's laughing now - it held, it held.
+
+      [Bridge]
+      Not a ring, not a room, not a name on a line,
+      Just a tray and a table and the last of your time.
+
+      [Final Chorus - all four voices]
+      It was a paper cup promise (paper cup promise)
+      Cheap in the hand and it held (and it held)
+      Everyone laughed when you made it (when you made it)
+      Nobody's laughing now - it held, it held.
+      It held, it held.
+
+      [Outro - fade on the cup rhythm and the repeated "it held"]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0003
+    title: Halfway to Morning
+    track_number: 3
+    mood: [yearning, buoyant, late-night]
+    fact: >-
+      Sel Ardin built the answering chorus from a mistaken entrance that the group voted to keep.
+    arrangement_note: sixteen-second intro on keyboard and chimes; the answering voices come in a full bar early on the first chorus and the arrangement keeps the mistake every time after
+    intro: 16
+    outro: sustain
+    target_duration: "3:40"
+    prompt: >-
+      Contemporary produced pop, 118 BPM, yearning and buoyant, late-night. Female lead vocal in
+      mid register, clear and unforced, plain conversational diction, sung just ahead of the beat
+      and never belted. Three group voices answering the lead line for line, entering a full bar
+      early on every chorus so the answer overlaps the end of the lead's phrase. Harpsichord-toned
+      electric keyboard, fretted electric bass, compact drum kit, hand percussion, tuned chimes.
+      Tracked live in a small hard-walled room, bright and close, minimal overdub. Sixteen seconds
+      of keyboard and chimes before the first sung word. Ends on a sustained keyboard chord.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+    lyrics: |
+      [Intro - 16 seconds, keyboard and tuned chimes, bass entering at eleven seconds, no vocal]
+
+      [Verse 1]
+      We are past the hour where anyone is clever,
+      Past the part where either of us tries.
+      You've taken your shoes off, I've stopped checking the weather,
+      There's a whole day waiting and we're spending it tonight.
+
+      [Chorus]
+      Halfway to morning (halfway to morning)
+      Nobody's coming to move us on (to move us on)
+      Halfway to morning (halfway to morning)
+      Say the next thing slowly, make it long.
+
+      [Verse 2]
+      You tell me the story I already know
+      And I let you, because you tell it better late.
+      The chairs are stacked, the corridor's dark,
+      And the caretaker gave up on us an hour ago.
+
+      [Chorus]
+      Halfway to morning (halfway to morning)
+      Nobody's coming to move us on (to move us on)
+      Halfway to morning (halfway to morning)
+      Say the next thing slowly, make it long.
+
+      [Bridge]
+      I don't want the sun, I want the bit before it,
+      The grey and the quiet and you not going yet.
+
+      [Final Chorus - all four voices, answers overlapping the lead]
+      Halfway to morning (halfway to morning)
+      Nobody's coming to move us on (to move us on)
+      Halfway to morning (halfway to morning)
+      Say the next thing slowly, make it long.
+      Make it long, make it long.
+
+      [Outro - sustain, keyboard holding under the last chimes]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0004
+    title: Your Spare Key
+    track_number: 4
+    mood: [tender, direct, midtempo]
+    fact: >-
+      The lyric concerns Vara Ennel returning a key after an argument that ended before either
+      person moved out.
+    arrangement_note: bass and lead vocal alone for the whole first verse, the rest of the band entering only at the first chorus
+    intro: 5
+    outro: fade
+    target_duration: "3:20"
+    prompt: >-
+      Contemporary produced pop, 106 BPM, tender and direct. Female lead vocal in mid register,
+      clear and unforced, plain conversational diction, sung just ahead of the beat and never
+      belted. Three group voices answering the lead line for line across the chorus. Harpsichord-toned
+      electric keyboard, fretted electric bass, compact drum kit, hand percussion, tuned chimes.
+      Tracked live in a small hard-walled room, bright and close, minimal overdub. Fretted electric
+      bass and the lead vocal alone through the whole first verse, the rest of the band entering
+      only at the first chorus. Fade on the last chorus.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+    lyrics: |
+      [Intro - 5 seconds, bass figure alone, no vocal]
+
+      [Verse 1 - bass and lead only]
+      I put it on the table where you'd see it going out,
+      Small and warm from being in my hand.
+      We finished the argument, we finished it well,
+      Which is why I can't tell you what I'm doing standing here.
+
+      [Chorus]
+      Here's your spare key (here's your spare key)
+      I'm not asking for anything back (anything back)
+      We never packed a box, we never moved a chair,
+      So tell me why this little bit of metal feels like that.
+
+      [Verse 2]
+      You said we were fine and I believed you then,
+      You made the tea, I laughed at the right part.
+      And somewhere between the door and the stair
+      I decided I would give you back the one thing that fits.
+
+      [Chorus]
+      Here's your spare key (here's your spare key)
+      I'm not asking for anything back (anything back)
+      We never packed a box, we never moved a chair,
+      So tell me why this little bit of metal feels like that.
+
+      [Bridge]
+      Take it or don't. Leave it where it is.
+      I'll know which one you did by the end of the week.
+
+      [Final Chorus - all four voices]
+      Here's your spare key (here's your spare key)
+      I'm not asking for anything back (anything back)
+      We never packed a box, we never moved a chair -
+      Tell me why this little bit of metal feels like that.
+
+      [Outro - fade, group answering "here's your spare key" twice more]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0005
+    title: Weather on Glass
+    track_number: 5
+    mood: [wistful, luminous, steady]
+    fact: >-
+      Miro Olt left the lowest electronic strings silent so the room's ventilation rattle could sit
+      under the lead vocal.
+    arrangement_note: no low keyboard register anywhere in the song; the room's ventilation rattle is left audible under the lead vocal and functions as the bottom of the arrangement
+    intro: 18
+    outro: sustain
+    target_duration: "4:10"
+    prompt: >-
+      Contemporary produced pop, 98 BPM, wistful and luminous, steady. Female lead vocal in mid
+      register, clear and unforced, plain conversational diction, sung just ahead of the beat and
+      never belted. Three group voices answering the lead line for line across the chorus.
+      Harpsichord-toned electric keyboard played only in its middle and upper register with the low
+      end left empty, fretted electric bass, compact drum kit brushed and quiet, tuned chimes.
+      Tracked live in a small hard-walled room, bright and close, the room's own low mechanical
+      rattle audible under the lead vocal and left in as the bottom of the arrangement. Eighteen
+      seconds of keyboard and room before the first sung word. Ends on a sustained chord.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, low synth bass, sub-bass
+    lyrics: |
+      [Intro - 18 seconds, keyboard in the upper register over the room's low rattle, chimes at twelve seconds, no vocal]
+
+      [Verse 1]
+      Rain came in sideways and stopped at the sill,
+      Made a map of a place that we've never been.
+      I traced it with a finger and it went cold and still,
+      And it looked like the road out and it looked like nothing at all.
+
+      [Chorus]
+      It's just weather on glass (weather on glass)
+      Somebody else's afternoon (somebody else's)
+      It's just weather on glass (weather on glass)
+      And you'll be back before it dries, or soon.
+
+      [Verse 2]
+      Your side of the room keeps the shape that you left,
+      A cup, a coat, an argument half done.
+      I've been reasonable all week and I'm sick of it now,
+      I want the door to open in the middle of a sentence.
+
+      [Chorus]
+      It's just weather on glass (weather on glass)
+      Somebody else's afternoon (somebody else's)
+      It's just weather on glass (weather on glass)
+      And you'll be back before it dries, or soon.
+
+      [Bridge]
+      Nothing has happened. Nothing has happened.
+      That's the whole trouble with a week like this.
+
+      [Final Chorus - all four voices, low harmony underneath]
+      It's just weather on glass (weather on glass)
+      Somebody else's afternoon (somebody else's)
+      It's just weather on glass (weather on glass)
+      And you'll be back before it dries, or soon.
+
+      [Outro - sustain, keyboard holding while the room rattle runs on underneath]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0006
+    title: Nothing Owed Tonight
+    track_number: 6
+    mood: [relieved, bright, brisk]
+    fact: >-
+      Rian Torc suggested the title after the four members closed their shared meal account without
+      finding the expected shortfall.
+    arrangement_note: full band from the top with a four-count on chimes, no build; every chorus arrives at the same size
+    intro: 4
+    outro: cold
+    target_duration: "2:45"
+    prompt: >-
+      Contemporary produced pop, 132 BPM, relieved and bright, brisk. Female lead vocal in mid
+      register, clear and unforced, plain conversational diction, sung just ahead of the beat and
+      never belted. Three group voices answering the lead line for line across the chorus, all four
+      voices on the final refrain. Harpsichord-toned electric keyboard, fretted electric bass,
+      compact drum kit, hand percussion, tuned chimes. Tracked live in a small hard-walled room,
+      bright and close, minimal overdub. Four-count on chimes and then the full band from the top,
+      no build, every chorus the same size. Cold stop.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+    lyrics: |
+      [Intro - 4 seconds, four-count on tuned chimes, band in on the fifth, no vocal]
+
+      [Verse 1]
+      We sat down expecting to be short,
+      Pencil out, four faces, one long page.
+      Went through the whole thing twice for sport
+      And the number at the bottom was a zero, plain as day.
+
+      [Chorus]
+      Nothing owed tonight (nothing owed tonight)
+      Nobody's carrying anyone home (carrying anyone)
+      Nothing owed tonight (nothing owed tonight)
+      Put the pencil down and leave the book alone.
+
+      [Verse 2]
+      Somebody always pays a bit more,
+      Somebody always says it's fine, forget it.
+      But not this time, and it's strange how it feels -
+      Like a coat coming off in a warm room.
+
+      [Chorus]
+      Nothing owed tonight (nothing owed tonight)
+      Nobody's carrying anyone home (carrying anyone)
+      Nothing owed tonight (nothing owed tonight)
+      Put the pencil down and leave the book alone.
+
+      [Bridge]
+      Come out, come out, it's clear and it's cheap,
+      And I'd rather spend an evening than count one.
+
+      [Final Chorus - all four voices]
+      Nothing owed tonight (nothing owed tonight)
+      Nobody's carrying anyone home (carrying anyone)
+      Nothing owed tonight (nothing owed tonight)
+      Put the pencil down and leave the book alone.
+
+      [Outro - cold stop, all four voices cutting off together on "alone"]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0007
+    title: The Smallest Argument
+    track_number: 7
+    mood: [wry, tense, quick]
+    fact: >-
+      The second verse lists the two different ways the band remembered a fight over an empty chair.
+    arrangement_note: the second verse is sung twice through with a different lyric each time, the same music underneath both, and the band plays the repeat slightly harder
+    intro: 3
+    outro: cold
+    target_duration: "2:35"
+    prompt: >-
+      Contemporary produced pop, 138 BPM, wry and tense, quick. Female lead vocal in mid register,
+      clear and unforced, plain conversational diction, sung just ahead of the beat and never
+      belted. Three group voices answering the lead line for line across the chorus. Harpsichord-toned
+      electric keyboard, fretted electric bass, compact drum kit, hand percussion, tuned chimes.
+      Tracked live in a small hard-walled room, bright and close, minimal overdub. The second verse
+      runs twice with a different lyric over identical music, the repeat played slightly harder.
+      Cold stop.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+    lyrics: |
+      [Intro - 3 seconds, snare pickup and keyboard stab, no vocal]
+
+      [Verse 1]
+      It was a chair. It was an empty chair.
+      Nobody wanted it, nobody sat there.
+      Six months on and we're still not agreed
+      On a piece of furniture nobody needs.
+
+      [Chorus]
+      It's the smallest argument (smallest argument)
+      With the longest legs in town (longest legs)
+      It's the smallest argument (smallest argument)
+      And neither of us is putting it down.
+
+      [Verse 2a]
+      You said: I asked you politely and twice,
+      You said: I offered and you rolled your eyes,
+      You said: I moved it back where it was before,
+      You said: and then you didn't speak to me for four days.
+
+      [Verse 2b - same music, harder]
+      I said: you never asked me at all,
+      I said: you moved it across the hall,
+      I said: I was standing right there in the door,
+      I said: and you're the one who didn't speak for four days.
+
+      [Chorus]
+      It's the smallest argument (smallest argument)
+      With the longest legs in town (longest legs)
+      It's the smallest argument (smallest argument)
+      And neither of us is putting it down.
+
+      [Bridge]
+      Take the chair. Take the whole set.
+      I'll be right about this when we're old.
+
+      [Final Chorus - all four voices]
+      It's the smallest argument (smallest argument)
+      With the longest legs in town (longest legs)
+      It's the smallest argument (smallest argument)
+      And neither of us is putting it down.
+
+      [Outro - cold stop on "down"]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0008
+    title: Borrowed Blue Coat
+    track_number: 8
+    mood: [romantic, light, midtempo]
+    fact: >-
+      Brin Noll strikes a coat-rail fitting on every chorus after matching its pitch to the
+      electronic strings.
+    arrangement_note: a struck metal coat-rail fitting rings on the first beat of every chorus bar, tuned to the keyboard
+    intro: 8
+    outro: fade
+    target_duration: "3:30"
+    prompt: >-
+      Contemporary produced pop, 110 BPM, romantic and light. Female lead vocal in mid register,
+      clear and unforced, plain conversational diction, sung just ahead of the beat and never
+      belted. Three group voices answering the lead line for line across the chorus. Harpsichord-toned
+      electric keyboard, fretted electric bass, compact drum kit, hand percussion, tuned chimes,
+      and a single struck metal fitting tuned to the keyboard that rings on the first beat of every
+      chorus bar. Tracked live in a small hard-walled room, bright and close, minimal overdub.
+      Eight seconds of keyboard and struck metal before the first sung word. Fade.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+    lyrics: |
+      [Intro - 8 seconds, keyboard with a struck metal fitting ringing on the downbeats, no vocal]
+
+      [Verse 1]
+      It was hanging by the door and it wasn't mine,
+      Too big in the shoulder, too long in the sleeve.
+      You said take it, it's cold, don't argue with me,
+      And I have not given it back and I don't intend to.
+
+      [Chorus]
+      Borrowed blue coat (borrowed blue coat)
+      Smells like the room where you work (where you work)
+      Borrowed blue coat (borrowed blue coat)
+      I'll bring it back the day I run out of nerve.
+
+      [Verse 2]
+      I've worn it to places you'd hate on a wet afternoon,
+      I've had it under my head on the last bench going home.
+      Somebody asked me whose it was and I said a friend's,
+      Which is true, and it's less than true, and you'd have laughed.
+
+      [Chorus]
+      Borrowed blue coat (borrowed blue coat)
+      Smells like the room where you work (where you work)
+      Borrowed blue coat (borrowed blue coat)
+      I'll bring it back the day I run out of nerve.
+
+      [Bridge]
+      There's a button gone and I sewed it wrong on purpose,
+      So you'd have to notice. So you'd have to say something.
+
+      [Final Chorus - all four voices]
+      Borrowed blue coat (borrowed blue coat)
+      Smells like the room where you work (where you work)
+      Borrowed blue coat (borrowed blue coat)
+      I'll bring it back the day I run out of nerve.
+
+      [Outro - fade on the struck fitting and the group's answer]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0009
+    title: Leave the Light Low
+    track_number: 9
+    mood: [intimate, calm, slow]
+    fact: >-
+      Vara Ennel sang the accepted take from the corridor because the committee chamber made every
+      quiet consonant too sharp.
+    arrangement_note: the lead vocal is recorded away from the band down a corridor, softer and slightly distant, and the band plays quietly enough to let it stay that way
+    intro: 20
+    outro: sustain
+    target_duration: "4:20"
+    prompt: >-
+      Contemporary produced pop, 76 BPM, intimate and calm, slow. Female lead vocal in mid register,
+      clear and unforced, plain conversational diction, sung just ahead of the beat and never
+      belted, recorded away from the band down a corridor so it sits softer and slightly distant.
+      Three group voices answering the lead quietly across the chorus, close to their own
+      microphone. Harpsichord-toned electric keyboard, fretted electric bass, brushed compact drum
+      kit, hand percussion, tuned chimes, all played quietly. Tracked live in a small hard-walled
+      room. Twenty seconds of keyboard and upright bass before the first sung word. Ends on a
+      sustained chord.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, belted vocals
+    lyrics: |
+      [Intro - 20 seconds, keyboard and upright bass, chimes entering at fourteen seconds, no vocal]
+
+      [Verse 1]
+      Don't put the big light on, we're nearly done,
+      There's enough coming under the door.
+      You've been talking all evening about somebody else's trouble
+      And I've been listening, and I'd listen to more.
+
+      [Chorus]
+      Leave the light low (leave the light low)
+      Nothing needs looking at yet (nothing yet)
+      Leave the light low (leave the light low)
+      Whatever's tomorrow, it isn't here.
+
+      [Verse 2]
+      I know the whole shape of your day by the sound of your coat,
+      I know when it's gone badly by how neat you put things down.
+      You don't have to make an announcement of it,
+      Sit where you are and let the room get dark.
+
+      [Chorus]
+      Leave the light low (leave the light low)
+      Nothing needs looking at yet (nothing yet)
+      Leave the light low (leave the light low)
+      Whatever's tomorrow, it isn't here.
+
+      [Bridge]
+      I'm not being kind. I'd rather be here in the dark with you
+      Than anywhere at all with the lights up.
+
+      [Final Chorus - all four voices, quiet]
+      Leave the light low (leave the light low)
+      Nothing needs looking at yet (nothing yet)
+      Leave the light low (leave the light low)
+      Whatever's tomorrow, it isn't here.
+
+      [Outro - sustain, keyboard and one held group note fading into the room]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0010
+    title: Two Seats Apart
+    track_number: 10
+    mood: [restless, catchy, brisk]
+    fact: >-
+      Oren Saye changed the bass figure after watching two former partners avoid one another through
+      the entire session.
+    arrangement_note: a walking bass figure that moves against the vocal line for the whole song and never lands with it until the last chorus
+    intro: 7
+    outro: fade
+    target_duration: "3:10"
+    prompt: >-
+      Contemporary produced pop, 128 BPM, restless and catchy, brisk. Female lead vocal in mid
+      register, clear and unforced, plain conversational diction, sung just ahead of the beat and
+      never belted. Three group voices answering the lead line for line across the chorus.
+      Harpsichord-toned electric keyboard, guest upright bass playing a busy walking figure that
+      moves against the vocal line and only lands with it on the final chorus, compact drum kit,
+      hand percussion, tuned chimes. Tracked live in a small hard-walled room, bright and close,
+      minimal overdub. Seven seconds of bass and drums before the first sung word. Fade.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+    lyrics: |
+      [Intro - 7 seconds, walking upright bass with brushed kit, no vocal]
+
+      [Verse 1]
+      You came in first and you took the far end,
+      They came in second and they took the door.
+      Everyone else in the room understood
+      And spent the whole night talking a little too much.
+
+      [Chorus]
+      Two seats apart (two seats apart)
+      All evening long and neither one moved (neither moved)
+      Two seats apart (two seats apart)
+      You can hear it in the room, you can hear it in the room.
+
+      [Verse 2]
+      Nobody says a name, nobody asks,
+      We pass the plates around and we talk about the weather.
+      And the one thing everybody's thinking of
+      Sits between two people who won't look up.
+
+      [Chorus]
+      Two seats apart (two seats apart)
+      All evening long and neither one moved (neither moved)
+      Two seats apart (two seats apart)
+      You can hear it in the room, you can hear it in the room.
+
+      [Bridge]
+      One of you is going to stand up soon
+      And whichever it is, that's the answer.
+
+      [Final Chorus - all four voices, bass landing with the vocal]
+      Two seats apart (two seats apart)
+      All evening long and neither one moved (neither moved)
+      Two seats apart (two seats apart)
+      You can hear it in the room, you can hear it in the room.
+
+      [Outro - fade on the walking bass and the repeated answer]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0011
+    title: Call Before Closing
+    track_number: 11
+    mood: [urgent, hopeful, quick]
+    fact: >-
+      The group recorded the handclaps in a stairwell while a caretaker counted down the remaining
+      room time.
+    arrangement_note: handclaps recorded in a hard stairwell carry the backbeat from the first chorus onward and are louder than the snare
+    intro: 5
+    outro: cold
+    target_duration: "2:40"
+    prompt: >-
+      Contemporary produced pop, 136 BPM, urgent and hopeful, quick. Female lead vocal in mid
+      register, clear and unforced, plain conversational diction, sung just ahead of the beat and
+      never belted. Three group voices answering the lead line for line across the chorus, all four
+      on the last refrain. Harpsichord-toned electric keyboard, fretted electric bass, compact drum
+      kit, hand percussion, tuned chimes, and hard reverberant handclaps recorded in a stairwell
+      that carry the backbeat from the first chorus onward and sit louder than the snare. Tracked
+      live in a small hard-walled room, bright and close. Cold stop on the last word.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+    lyrics: |
+      [Intro - 5 seconds, keyboard and a bar of stairwell handclaps, no vocal]
+
+      [Verse 1]
+      Twelve minutes left and the lights are half off,
+      Somebody's counting it down out loud.
+      I have been sensible all of my life
+      And I am about to stop being sensible right now.
+
+      [Pre-Chorus]
+      If I get it wrong I'll get it wrong at speed -
+
+      [Chorus]
+      Call before closing (call before closing)
+      Say it while the door's still open (still open)
+      Call before closing (call before closing)
+      There isn't a version of this where I wait.
+
+      [Verse 2]
+      I had the whole speech ready in my head last week,
+      Then I made tea instead and let it go cold.
+      You'd think a person learns from that once
+      But here we are with the lights going off again.
+
+      [Pre-Chorus]
+      If I get it wrong I'll get it wrong at speed -
+
+      [Chorus]
+      Call before closing (call before closing)
+      Say it while the door's still open (still open)
+      Call before closing (call before closing)
+      There isn't a version of this where I wait.
+
+      [Bridge - handclaps and voices only]
+      Ten. Nine. I'm not counting with you.
+      Eight. Seven. I'm already halfway there.
+
+      [Final Chorus - all four voices]
+      Call before closing (call before closing)
+      Say it while the door's still open (still open)
+      Call before closing (call before closing)
+      There isn't a version of this where I wait.
+
+      [Outro - cold stop, handclaps cutting off dead]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null
+
+  - id: s_0012
+    title: Terms of Arrival
+    track_number: 12
+    mood: [resolute, warm, building]
+    fact: >-
+      The final chorus uses the exact four conditions the members agreed before signing with Civic
+      Lantern.
+    arrangement_note: the record's closer and its longest song; one voice on the first chorus, two on the second, all four with the low harmony on the last, and the four conditions are sung one to a line
+    intro: 12
+    outro: sustain
+    target_duration: "5:30"
+    prompt: >-
+      Contemporary produced pop, 104 BPM, resolute and warm, building across five and a half
+      minutes. Female lead vocal in mid register, clear and unforced, plain conversational diction,
+      sung just ahead of the beat and never belted. Backing voices build across the song: lead
+      alone on the first chorus, two voices on the second, all four with a low harmony underneath
+      on the last. Harpsichord-toned electric keyboard, fretted electric bass, compact drum kit,
+      hand percussion, tuned chimes. Tracked live in a small hard-walled room, bright and close,
+      minimal overdub. Twelve seconds of keyboard and chimes before the first sung word. Ends on a
+      long sustained chord.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+    lyrics: |
+      [Intro - 12 seconds, keyboard alone, chimes and bass entering at eight seconds, no vocal]
+
+      [Verse 1]
+      We wrote it out before we signed a thing,
+      Four lines on a page in four different hands.
+      Everyone laughed at us for being slow -
+      Well, we're still here, and we know what we agreed.
+
+      [Chorus 1 - lead alone]
+      These are the terms of arrival,
+      Plain as a hand on a table.
+      Say them out where the room can hear,
+      Then let's begin.
+
+      [Verse 2]
+      You can have my time and you can have it cheap,
+      You cannot have the part that isn't yours.
+      I've watched what happens to the ones who don't ask,
+      Smiling in the corridor with nothing in their pocket.
+
+      [Chorus 2 - two voices]
+      These are the terms of arrival,
+      Plain as a hand on a table.
+      Say them out where the room can hear,
+      Then let's begin.
+
+      [Bridge]
+      It isn't cold to want it written.
+      The kindest thing I ever did was ask.
+
+      [Final Chorus - all four voices, low harmony underneath, one condition to a line]
+      The same fee for everyone who plays (for everyone)
+      Nobody's name comes off the page (nobody's name)
+      The room stays open till the work is done (till it's done)
+      And we say what it cost us when they ask (we say what it cost)
+      These are the terms of arrival -
+      Now let's begin.
+
+      [Outro - sustain, all four voices holding under the keyboard, chimes last]
+    take:
+      attempts: null
+      model_version: null
+      generated_on: null
+      prompt_used: null

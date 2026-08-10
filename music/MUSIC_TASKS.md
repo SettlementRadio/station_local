@@ -61,8 +61,8 @@ marked **NEXT**.
 | Stage | Cards | Last done | Status |
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
-| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-16** style cards · 2026-08-09 | **M-17 next** |
-| 2 · The wiki — 7 genres left | M-07 … M-15 | **M-08** deck-talk · 2026-08-09 | 250 of 500 songs written |
+| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-17** lyrics and prompts · 2026-08-09 | **M-18 next — yours, at Suno** |
+| 2 · The wiki — 7 genres left | M-07 … M-15 | **M-08** deck-talk · 2026-08-09 | 250 of 500 songs written · **M-09 next** |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
@@ -148,7 +148,7 @@ the wiki's pronouns; **Ressa Morn (`b_004`) and Mela Jorn (`b_005`) carry none, 
 them — male and female respectively (D-061), reversible until M-30 generates them.**
 Depends on: M-01 — **satisfied since 2026-08-09; this card has been runnable ever since**
 
-### M-17 · `[agent]` Lyrics and prompts — al_001 … al_004, 45 songs — **NEXT**
+### M-17 · `[agent]` Lyrics and prompts — al_001 … al_004, 45 songs — **DONE 2026-08-09**
 Goal: Four complete albums of words, each song fitting the fact the wiki already states about it.
 Files: `music/production/lyrics/al_001.yaml` … `al_004.yaml`
 Check: 45 songs, each with lyrics opening on an instrumental-intro tag, a generation prompt built
@@ -156,9 +156,19 @@ from the band's style card plus that song's mood and one arrangement note, and a
 Every lyric passes the swap-the-nouns test. Nothing about leaving Earth. Every song has a vocal.
 Note: written a whole album at a time, never song by song — one band, one room, one year. **This
 card also fixes the shape of the per-album metadata block** that M-18 fills in and M-05 later reads.
+Result: 45 songs of lyrics and prompts across four files. Every song carries its wiki fact, an
+arrangement note, the exact Suno prompt, an exclude line, an intended intro ramp in seconds, an
+intended outro type and a target duration. The three §7 distributions are aimed rather than left to
+chance and land as written: 56% of songs ramp ≥8s and 20% ≥15s (§7 asks ≥40% and ≥15%), outros 31
+cold / 42 fade / 27 sustain against 30/45/25, average target 3:30 exactly. **The metadata block is
+one `generation:` block per album plus one `take:` per song, and M-05 reads the song first and falls
+back to the album (D-062)** — so a band done in one sitting is recorded once. `al_001.yaml` carries
+the field-by-field description and the other three point at it. The style card's *production* line is
+bent by arrangement note where the wiki puts a record in a different room (al_001's committee
+chamber, al_002's smaller second half); voice, backing, instruments and exclude are never bent.
 Depends on: M-16
 
-### M-18 · `[you]` Suno — Measure Kindly and Open Parallax, 45 songs
+### M-18 · `[you]` Suno — Measure Kindly and Open Parallax, 45 songs — **NEXT**
 Goal: The pilot's audio exists.
 Files: `music/audio/`
 Check: 45 keeper takes downloaded and named `music/audio/<label>/<album>/NN.mp3`. Each album's
@@ -222,7 +232,7 @@ the last eight years, because §2 makes deck-talk the newest form and it has no 
 Note: labels 4 and 5 now clear §5's three-band floor, and label 2 reaches two.
 Depends on: M-07
 
-### M-09 · `[agent]` frontier-reels — 65 songs, 3 bands
+### M-09 · `[agent]` frontier-reels — 65 songs, 3 bands — **NEXT (the agent front)**
 Check: 65 playable songs split 30 / 15 / 20 across labels 2, 4 and 5; 3 layer-A bands; ~6 layer-B,
 ~4 layer-C. `make check` green. Names screened.
 Note: anchor year 2583 stands at 7 playable songs and needs 25 (COMMISSION §5). This is one of the

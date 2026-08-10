@@ -1527,3 +1527,29 @@ station plays them in the same hour.
 `styles.yaml` never reaches the air (§8). It is reversible for exactly as long as no audio exists:
 `b_004`'s songs are generated at M-30, in stage 5, behind M-15, M-19, M-20 and M-21. If the operator
 hears Ressa Morn differently, the fix before then is one word in one line.
+
+### D-062 · The per-album lyrics file, and where M-18's generation metadata lives — 2026-08-09
+
+M-17 was asked to fix the shape of the block M-18 fills in at Suno and M-05 later reads into the
+audio files' own tags. It is **one `generation:` block per album plus one `take:` block per song**,
+and the resolution rule is: M-05 reads the song's `take:` first and falls back to the album's
+`generation:` for anything null there. A band generated in one sitting — which `COMMISSION.md` §9
+asks for, because a band split across two model versions will not sound like one band — fills the
+album block once and leaves the song blocks carrying only `attempts`. Per-song fields exist for the
+song that had to be regenerated three months later against a newer model, which is the case that
+makes a single album-level record wrong.
+
+`al_001.yaml` carries the full field-by-field description of the file and the other three point at
+it. Every lyrics file from M-21 onward uses this shape.
+
+**The style card's production line is the one line an arrangement note may bend; the voice line is
+never bent.** `al_001` was recorded in a small committee chamber and `b_001`'s card says *large
+reflective hall*, because the card was written from the band's later records. The prompts ask for
+the room the wiki states and leave voice, backing, instruments and exclude untouched — which is what
+§7 means by *"then per song, inside that card"*. The same applies to the second half of `al_002`,
+which the wiki says was mixed in a smaller room and audibly differs.
+
+**No test was written.** §29 lists five kinds and none covers a hand-written content file that no
+code reads yet; the counts, the id and title agreement with the wiki, and the §7 distributions were
+checked with a throwaway script rather than a committed one. `make music-analyse` (M-04) measures
+the real ramps and durations once audio exists, and M-39 is where the distribution is enforced.
