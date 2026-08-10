@@ -1553,3 +1553,51 @@ which the wiki says was mixed in a smaller room and audibly differs.
 code reads yet; the counts, the id and title agreement with the wiki, and the §7 distributions were
 checked with a throwaway script rather than a committed one. `make music-analyse` (M-04) measures
 the real ramps and durations once audio exists, and M-39 is where the distribution is enforced.
+
+### D-063 · Layer-A records made before 2592 carry no session players — 2026-08-10
+
+Frontier Reels puts three layer-A albums in 2583 — `al_078`, `al_081` and `al_083`, twenty-six
+playable songs. None of them credits a session player. The players appear only from `al_079` (2594)
+onward, and the 2583 records are played by their four band members alone.
+
+**Why.** `CONSTANTS.md` §2 is explicit that the eight session players are *one generation* who work
+**2592–2626**, and that the old-standards window needs its own set of three or four elders,
+commissioned separately as Brief 0b. That brief has not been written. The earliest date any player
+carries is Oren Saye's 2588, and the rest start 2591–2596. Crediting any of them to a 2583 session is
+the exact failure §2 warns about — "a batch will credit someone to a session they were eleven years
+old for."
+
+**Why it is not a hole.** §6 says to use the session players; it does not say every album has one,
+and a first record made by four people in a rented hall with two microphones is the more likely
+artefact anyway. The three 2583 albums are the band alone, which is what their notes describe.
+
+**What it costs.** Frontier Reels is the first genre whose layer A sits mostly before 2592, so it is
+the first to hit this. Every genre still to be written that aims at 2583 will hit it too —
+old-system sessions (M-10) most of all, since §4 makes label 7 old and thin. Until the elders exist,
+pre-2592 layer A has band members and nothing else, and §11's "every session player appears across
+≥3 labels" is carried entirely by the post-2592 records.
+
+### D-064 · Brief 0b is declined; the pre-2592 window keeps no session players — 2026-08-10
+
+D-063 recorded that the three 2583 frontier-reels albums credit no session player, and left open
+whether `CONSTANTS.md` §2's *elders* — the three or four players it reserves for the old-standards
+window, as "Brief 0b" — would ever be commissioned. **They will not be.** The operator was given the
+choice on 2026-08-10 and chose to leave it.
+
+**What that settles.** A layer-A record dated before 2592 carries its band members and nobody else,
+permanently. That is **33 playable songs across 4 albums** — frontier-reels `al_078`, `al_081` and
+`al_083` (26 songs) and relay-pop's one label-6 album at 2583 (7 songs). §2 has been edited to say
+so, because a working file that reserves a brief nobody intends to write is how a later agent comes
+to invent a cast member to fill it.
+
+**Why it costs nothing measurable.** All four albums are debut records made by young bands in
+borrowed rooms, which is precisely where hired players would not be. §11's requirement that every
+session player appear across ≥3 labels inside their active years is carried entirely by the 282
+songs on 2592-or-later records and passes today.
+
+**Why it will not grow.** COMMISSION §3 wants half the catalogue inside the last eight years: 250
+songs on 2619 and 2624, of which 144 are written, leaving 106 of the remaining 185 songs pinned to
+those two years. The five genres still to write are under pressure toward recent releases, not old
+ones — and old-system sessions, the genre that reads oldest, is by §3 and §10 a set of *current*
+releases that took a season to arrive and must never be presented as archive. The 33 is close to the
+final number.

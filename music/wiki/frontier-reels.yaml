@@ -1,21 +1,3 @@
-# Frontier Reels — PLACEHOLDER. Nothing here is content yet.
-#
-# Written by its card in music/MUSIC_TASKS.md: open a session and say the number. The agent
-# replaces everything below the `section:` block, and `make check` counts what it wrote.
-#
-# Allocation, from music/plan.yaml (the authority — do not retype it here):
-#   LAYER A — 65 songs across 3 band(s)
-#     label 2 (Cold Harbor, frontier): 30 songs / 1 band(s)
-#     label 4 (Forge, industrial): 15 songs / 1 band(s)
-#     label 5 (haulers, co-op): 20 songs / 1 band(s)
-#   LAYER B — about 6 more bands the station does not hold
-#   LAYER C — about 4 figures, 2426-2546, no albums and no track lists
-#
-# Labels this genre sits on:
-#   - label_2  (Cold Harbor, frontier)
-#   - label_4  (Forge, industrial)
-#   - label_5  (haulers, co-op)
-
 section:
   genre: frontier-reels
   present_year: 2626
@@ -24,23 +6,1201 @@ section:
     referenced: B
     historical: C
 
-# The labels above, as the writer names them.
-labels: []
+labels:
+  - id: label_2
+    name: Harbor Standard
+    home: Cold Harbor
+    tier: flagship
+    status: operating
+    founded_year: 2571
+    genre: frontier-reels
+  - id: label_4
+    name: Deep Register
+    home: Forge
+    tier: standard
+    status: operating
+    genre: frontier-reels
+  - id: label_5
+    name: Common Wake Cooperative
+    home: the between
+    tier: standard
+    status: operating
+    genre: frontier-reels
 
-# From music/CONSTANTS.md section 2 — only the players who appear on this genre,
-# and only inside their active years.
-session_players: []
+# Only five of the eight appear here, and none of them before 2592. Frontier Reels is the first
+# genre whose layer A sits mostly in the old-standards window, and the session generation
+# CONSTANTS.md section 2 gives runs 2592-2626. The 2583 records are played by their bands alone.
+session_players:
+  - id: sp_nessa_dray
+    name: Nessa Dray
+    instrument: composite fiddle
+    active_from: 2592
+    active_to: 2624
+    genre: frontier-reels
+  - id: sp_oren_saye
+    name: Oren Saye
+    instrument: upright bass
+    active_from: 2588
+    active_to: 2622
+    genre: frontier-reels
+  - id: sp_talla_venn
+    name: Talla Venn
+    instrument: fretted composite guitar
+    active_from: 2591
+    active_to: 2625
+    genre: frontier-reels
+  - id: sp_brin_noll
+    name: Brin Noll
+    instrument: oxygen-tank drums and stripped-wire chimes
+    active_from: 2596
+    active_to: 2626
+    genre: frontier-reels
+  - id: sp_ivena_sorn
+    name: Ivena Sorn
+    instrument: resonance pipes
+    active_from: 2594
+    active_to: 2626
+    genre: frontier-reels
 
-# LAYER A — playable: true. Full bios, full album stories, one fact per song.
 layer_a:
-  bands: []
-  albums: []
+  bands:
+    - id: b_037
+      name: Wire and Rosin
+      kind: group
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: frontier-reels
+      active_from: 2578
+      active_to: 2610
+      members:
+        - id: p_hessa_lund
+          name: Hessa Lund
+          genre: frontier-reels
+          instruments: [composite fiddle, lead vocal]
+          active_from: 2578
+          active_to: 2610
+        - id: p_arel_tocke
+          name: Arel Tocke
+          genre: frontier-reels
+          instruments: [upright bass]
+          active_from: 2578
+          active_to: 2610
+        - id: p_finn_derrow
+          name: Finn Derrow
+          genre: frontier-reels
+          instruments: [fretted composite guitar, harmony vocal]
+          active_from: 2578
+          active_to: 2604
+        - id: p_marda_kell
+          name: Marda Kell
+          genre: frontier-reels
+          instruments: [cut-stock kit, brushes]
+          active_from: 2578
+          active_to: 2610
+        - id: p_suli_orley
+          name: Suli Orley
+          genre: frontier-reels
+          instruments: [fretted composite guitar, harmony vocal]
+          active_from: 2604
+          active_to: 2610
+      movement: Localist
+      bio: >-
+        Wire and Rosin played Cold Harbor dance halls for thirty-two years and were the band the
+        settlement hired when it wanted a floor filled rather than a concert. Hessa Lund sings and
+        plays fiddle at the same time and has never recorded the two parts separately, which is why
+        her takes are short and why the band stopped using a click. Arel Tocke built the group's
+        upright bass out of composite drum stock in 2578 and repaired the same instrument for the
+        rest of the band's life. Finn Derrow left in 2604 after an argument about payment for a
+        cancelled run of dances, and Suli Orley took the guitar chair without an audition because
+        she already knew every tune from the floor.
+      album_ids: [al_078, al_079, al_080]
 
-# LAYER B — playable: false. Two-sentence bios, one-line album notes, titles only, no facts.
+    - id: b_038
+      name: The Foundry Set
+      kind: group
+      home_settlement: Forge
+      label: label_4
+      genre: frontier-reels
+      active_from: 2579
+      active_to: 2599
+      members:
+        - id: p_dane_verrow
+          name: Dane Verrow
+          genre: frontier-reels
+          instruments: [lead vocal, composite fiddle]
+          active_from: 2579
+          active_to: 2599
+        - id: p_orsa_lipp
+          name: Orsa Lipp
+          genre: frontier-reels
+          instruments: [resonance pipes]
+          active_from: 2579
+          active_to: 2599
+        - id: p_toller_grange
+          name: Toller Grange
+          genre: frontier-reels
+          instruments: [upright bass]
+          active_from: 2579
+          active_to: 2599
+        - id: p_bree_hollan
+          name: Bree Hollan
+          genre: frontier-reels
+          instruments: [struck alloy, cut-stock kit]
+          active_from: 2579
+          active_to: 2599
+      movement:
+        initial: Purist
+        changed_to: Synthesist
+        changed_year: 2591
+        detail: >-
+          Orsa Lipp argued for years that the resonance pipes were an acoustic instrument and
+          therefore Purist, then agreed in 2591 that running them through the shop's amplification
+          made the argument dishonest, and the band stopped claiming the label.
+      bio: >-
+        The Foundry Set were four Forge shop workers who played reel tempos underneath the
+        settlement's resonance pipes, which nobody had tried before and several people objected to.
+        Dane Verrow sings every lead and plays fiddle against Orsa Lipp's pipes, a pairing that is
+        either the best or the worst thing about the band depending on who is asked. They rehearsed
+        in a working pipe shop and recorded there twice because Deep Register could not book a room
+        with the same reverberation. The band stopped in 2599 when Bree Hollan took a supervisor's
+        post and refused to keep playing for a wage lower than the one she was now paying others.
+      album_ids: [al_081, al_082]
+
+    - id: b_039
+      name: Loose Cargo
+      kind: group
+      home_settlement: the between
+      label: label_5
+      genre: frontier-reels
+      active_from: 2580
+      active_to: 2612
+      members:
+        - id: p_wend_amory
+          name: Wend Amory
+          genre: frontier-reels
+          instruments: [lead vocal, fretted composite guitar]
+          active_from: 2580
+          active_to: 2612
+        - id: p_col_sennet
+          name: Col Sennet
+          genre: frontier-reels
+          instruments: [composite fiddle]
+          active_from: 2580
+          active_to: 2612
+        - id: p_ilsa_brack
+          name: Ilsa Brack
+          genre: frontier-reels
+          instruments: [upright bass, harmony vocal]
+          active_from: 2580
+          active_to: 2612
+        - id: p_reddin_vosk
+          name: Reddin Vosk
+          genre: frontier-reels
+          instruments: [improvised kit, stripped-wire chimes]
+          active_from: 2580
+          active_to: 2612
+      movement: Localist
+      bio: >-
+        Loose Cargo were a hauler crew who played the dances at both ends of their own route and
+        joined the co-operative in 2584 because it was the only label that would take a band which
+        could not promise to be in one place. Wend Amory writes everything and sings it in a register
+        low enough that the co-operative twice asked for a higher key and was twice refused. Col
+        Sennet learned fiddle from recordings played in a hold and has an unusual bowing hand as a
+        result, which every review mentions and which he says is simply how he was taught. They kept
+        working the route the whole time and never once toured without cargo.
+      album_ids: [al_083, al_084, al_085]
+
+  albums:
+    - id: al_078
+      title: Nobody Sat Down
+      band: b_037
+      label: label_2
+      release_year: 2583
+      kind: album
+      genre: frontier-reels
+      cornerstone: true
+      notes: >-
+        Harbor Standard had never recorded a dance band and did not have a room that could hold one,
+        so in 2583 it rented the Cold Harbor exchange hall on the six nights it was not booked and
+        recorded Wire and Rosin playing to an actual floor. Everything was cut live with two
+        microphones because the label owned two. The dancers are audible throughout and the label
+        argued for a month about whether to remove them before deciding it could not be done without
+        losing the band. It became the record that established what a frontier reel record sounds
+        like, and every band in this file has been compared to it at least once; Harbor Standard has
+        never let it go out of print.
+      songs:
+        - id: s_0635
+          title: Nobody Sat Down
+          track_number: 1
+          genre: frontier-reels
+          mood_tags: [fast, bright, driving]
+          playable: true
+          fact: Hessa Lund counted the tune in at the speed the hall was already clapping rather than the speed the band had rehearsed, and it is about four beats a minute faster than every later performance.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0636
+          title: Two Coats to the Door
+          track_number: 2
+          genre: frontier-reels
+          mood_tags: [brisk, wry, warm]
+          playable: true
+          fact: The tune is the one Wire and Rosin used to clear a hall at the end of a night, and it is the only track on the record the band had never played from the stage.
+          credits: {writers: [p_hessa_lund, p_finn_derrow], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0637
+          title: Short Money Reel
+          track_number: 3
+          genre: frontier-reels
+          mood_tags: [fast, hard, defiant]
+          playable: true
+          fact: Written about a dance promoter who paid the band in two instalments and never made the second, and Harbor Standard checked with a lawyer before agreeing to the title.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0638
+          title: Ask Her While the Band Plays
+          track_number: 4
+          genre: frontier-reels
+          mood_tags: [warm, quick, hopeful]
+          playable: true
+          fact: Finn Derrow sings the harmony a full line behind Hessa Lund because he could not hear her over the floor, and the band kept the mistake after the second night made it deliberate.
+          credits: {writers: [p_finn_derrow], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0639
+          title: Hall Fee Paid
+          track_number: 5
+          genre: frontier-reels
+          mood_tags: [driving, plain, midtempo]
+          playable: true
+          fact: Arel Tocke plays the whole track without the low string, which had broken on the third night and could not be replaced until the sessions were over.
+          credits: {writers: [p_hessa_lund, p_arel_tocke], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0640
+          title: The Long Way Round the Floor
+          track_number: 6
+          genre: frontier-reels
+          mood_tags: [bright, rolling, generous]
+          playable: true
+          fact: It runs longer than anything else on the record because the dancers would not stop and the band did not want to be the ones who did.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0641
+          title: Weather Off the Water
+          track_number: 7
+          genre: frontier-reels
+          mood_tags: [cold, quick, restless]
+          playable: true
+          fact: Marda Kell plays the whole track with brushes on a single cut drum because the hall's floor was already carrying the rest of the rhythm.
+          credits: {writers: [p_hessa_lund, p_marda_kell], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0642
+          title: Standing at the Wrong End
+          track_number: 8
+          genre: frontier-reels
+          mood_tags: [wry, midtempo, plain]
+          playable: true
+          fact: Hessa Lund wrote it about arriving late to a dance she had been hired to play, and she names the hall in the second verse.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0643
+          title: Half the Town Was There
+          track_number: 9
+          genre: frontier-reels
+          mood_tags: [bright, loud, communal]
+          playable: true
+          fact: The chorus is sung by the floor rather than the band, which is why it is the only track on the record with no credited harmony vocal.
+          credits: {writers: [p_hessa_lund, p_finn_derrow], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0644
+          title: Rosin and Rain
+          track_number: 10
+          genre: frontier-reels
+          mood_tags: [slow, warm, close]
+          playable: true
+          fact: The slowest thing Wire and Rosin ever recorded, and it was put on the record to give the dancers somewhere to stop, which the band resented and the label insisted on.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0645
+          title: Come Back Through the Side Door
+          track_number: 11
+          genre: frontier-reels
+          mood_tags: [quick, sly, warm]
+          playable: true
+          fact: Finn Derrow wrote it about getting into dances without paying, and he refused to say whether the route he describes was a real one.
+          credits: {writers: [p_finn_derrow], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0646
+          title: One More Before the Doors
+          track_number: 12
+          genre: frontier-reels
+          mood_tags: [fast, urgent, bright]
+          playable: true
+          fact: This is the sixth night's last tune and the last thing recorded, and the hall keeper can be heard asking the band to finish before the first verse.
+          credits: {writers: [p_hessa_lund, p_arel_tocke], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0647
+          title: Walk Home Cold
+          track_number: 13
+          genre: frontier-reels
+          mood_tags: [tired, warm, midtempo]
+          playable: true
+          fact: The band played it to an empty hall after the dancers had gone, and it is the only track on the record with no audience on it at all.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+
+    - id: al_079
+      title: Second Set, Same Room
+      band: b_037
+      label: label_2
+      release_year: 2594
+      kind: album
+      genre: frontier-reels
+      cornerstone: false
+      notes: >-
+        Harbor Standard wanted the exchange hall record made again and Wire and Rosin agreed on the
+        condition that the label pay the dancers, which it did, and which set a rate other Cold
+        Harbor bands used afterwards. The band was eleven years further into its working life and
+        the tempos are noticeably lower. Nessa Dray and Oren Saye were hired for three of the nights
+        and it is the first time the group recorded with anyone outside it. It sold about half what
+        the first record did and the band always said it was the better one.
+      songs:
+        - id: s_0648
+          title: Second Set, Same Room
+          track_number: 1
+          genre: frontier-reels
+          mood_tags: [midtempo, warm, knowing]
+          playable: true
+          fact: Hessa Lund opens by naming the hall and the year, which the label asked her to remove and she recorded again identically the following night.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0649
+          title: Paid at the Door
+          track_number: 2
+          genre: frontier-reels
+          mood_tags: [brisk, plain, satisfied]
+          playable: true
+          fact: Written about the arrangement that got the dancers paid for these sessions, and the band played it on the first night before the money had actually arrived.
+          credits: {writers: [p_hessa_lund, p_arel_tocke], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0650
+          title: Two Fiddles Arguing
+          track_number: 3
+          genre: frontier-reels
+          mood_tags: [fast, competitive, bright]
+          playable: true
+          fact: Nessa Dray plays the answering fiddle and takes the last exchange, which Hessa Lund had written for herself and gave away during the take.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell, sp_nessa_dray], producer: p_arel_tocke}
+        - id: s_0651
+          title: Nothing Left in the Kettle
+          track_number: 4
+          genre: frontier-reels
+          mood_tags: [wry, midtempo, tired]
+          playable: true
+          fact: Oren Saye plays bass so that Arel Tocke could sit in the hall and listen to the band from the floor for the first time in sixteen years.
+          credits: {writers: [p_hessa_lund, p_finn_derrow], players: [p_hessa_lund, p_finn_derrow, p_marda_kell, sp_oren_saye], producer: p_arel_tocke}
+        - id: s_0652
+          title: She Works the Late Gate
+          track_number: 5
+          genre: frontier-reels
+          mood_tags: [warm, rolling, fond]
+          playable: true
+          fact: Hessa Lund wrote it for a gate clerk who had let the band's equipment through after hours for eleven years and had never been thanked in public.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0653
+          title: Turn It Over Twice
+          track_number: 6
+          genre: frontier-reels
+          mood_tags: [fast, insistent, hard]
+          playable: true
+          fact: The band plays the tune through twice at different speeds and joins them without a break, which took nine takes and is the reason the sessions ran a night over.
+          credits: {writers: [p_hessa_lund, p_marda_kell], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0654
+          title: Ask the Same Question
+          track_number: 7
+          genre: frontier-reels
+          mood_tags: [midtempo, plain, patient]
+          playable: true
+          fact: Finn Derrow sings the lead, the only time he did on record, because Hessa Lund had lost her voice on the fourth night and would not cancel.
+          credits: {writers: [p_finn_derrow], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0655
+          title: Money for the Room
+          track_number: 8
+          genre: frontier-reels
+          mood_tags: [brisk, blunt, driving]
+          playable: true
+          fact: It replaced a tune about the same dispute that named the hall keeper directly, and Harbor Standard refused to press that version.
+          credits: {writers: [p_hessa_lund, p_arel_tocke], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell, sp_nessa_dray], producer: p_arel_tocke}
+        - id: s_0656
+          title: Last One Standing Up
+          track_number: 9
+          genre: frontier-reels
+          mood_tags: [fast, communal, bright]
+          playable: true
+          fact: Marda Kell counts the band out loud at the end because the hall was too loud for anyone to hear the kit, and the count is on the record.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_finn_derrow, p_marda_kell, sp_oren_saye], producer: p_arel_tocke}
+
+    - id: al_080
+      title: Rosin on Everything
+      band: b_037
+      label: label_2
+      release_year: 2607
+      kind: album
+      genre: frontier-reels
+      cornerstone: false
+      notes: >-
+        The band's last record, made three years after Finn Derrow left and with Suli Orley on
+        guitar. Harbor Standard put them in a studio this time, which Wire and Rosin had spent
+        twenty-nine years avoiding, and the difference is the whole argument of the record. Hessa
+        Lund insisted the dancers be brought in for four of the eight tracks and the label agreed
+        rather than lose the sessions. It is the quietest thing the band made and the only one on
+        which the fiddle is ever double-tracked.
+      songs:
+        - id: s_0657
+          title: Rosin on Everything
+          track_number: 1
+          genre: frontier-reels
+          mood_tags: [warm, midtempo, worn]
+          playable: true
+          fact: Hessa Lund plays both fiddle parts, the first time the band ever overdubbed anything, and she has said she would not do it again.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_suli_orley, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0658
+          title: New Hand on the Guitar
+          track_number: 2
+          genre: frontier-reels
+          mood_tags: [brisk, bright, generous]
+          playable: true
+          fact: Written for Suli Orley by the band that hired her, and she plays the introduction alone because none of the others would record it for her.
+          credits: {writers: [p_hessa_lund, p_arel_tocke], players: [p_hessa_lund, p_arel_tocke, p_suli_orley, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0659
+          title: The Room With No Floor
+          track_number: 3
+          genre: frontier-reels
+          mood_tags: [cold, sparse, restless]
+          playable: true
+          fact: The title is what Hessa Lund called the studio, and the band left the phrase in the lyric after the label's engineer asked twice for it to go.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_suli_orley, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0660
+          title: Bring Them In From the Street
+          track_number: 4
+          genre: frontier-reels
+          mood_tags: [fast, loud, communal]
+          playable: true
+          fact: This is the first of the four tracks recorded with dancers present, and the band would not begin until there were more than forty of them in the room.
+          credits: {writers: [p_hessa_lund, p_marda_kell], players: [p_hessa_lund, p_arel_tocke, p_suli_orley, p_marda_kell, sp_brin_noll], producer: p_arel_tocke}
+        - id: s_0661
+          title: Every Tune She Knew
+          track_number: 5
+          genre: frontier-reels
+          mood_tags: [rolling, fond, midtempo]
+          playable: true
+          fact: Suli Orley learned the tune from the floor rather than from the band and plays a version of it that Hessa Lund has said is wrong and better.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_suli_orley, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0662
+          title: Twenty-Nine Winters
+          track_number: 6
+          genre: frontier-reels
+          mood_tags: [slow, warm, weathered]
+          playable: true
+          fact: Arel Tocke's bass is the instrument he built in 2578 and it is audibly failing, which the band decided to record rather than repair.
+          credits: {writers: [p_hessa_lund, p_arel_tocke], players: [p_hessa_lund, p_arel_tocke, p_suli_orley, p_marda_kell], producer: p_arel_tocke}
+        - id: s_0663
+          title: Nobody Asked Us to Stop
+          track_number: 7
+          genre: frontier-reels
+          mood_tags: [fast, defiant, bright]
+          playable: true
+          fact: Talla Venn plays second guitar against Suli Orley and the two parts were cut facing each other in one take with no separation.
+          credits: {writers: [p_hessa_lund], players: [p_hessa_lund, p_arel_tocke, p_suli_orley, p_marda_kell, sp_talla_venn], producer: p_arel_tocke}
+        - id: s_0664
+          title: Put the Chairs Back
+          track_number: 8
+          genre: frontier-reels
+          mood_tags: [tired, warm, slow]
+          playable: true
+          fact: The last thing Wire and Rosin recorded, cut with the dancers still in the room, and the sound at the end is the hall being put back in order.
+          credits: {writers: [p_hessa_lund, p_arel_tocke, p_marda_kell], players: [p_hessa_lund, p_arel_tocke, p_suli_orley, p_marda_kell], producer: p_arel_tocke}
+
+    - id: al_081
+      title: Hot Floor, Cold Shop
+      band: b_038
+      label: label_4
+      release_year: 2583
+      kind: album
+      genre: frontier-reels
+      cornerstone: false
+      notes: >-
+        Deep Register could not find a room in Forge with the pipe shop's reverberation, so it
+        recorded The Foundry Set in the shop itself across four nights in 2583 with the machines
+        shut down. The building has an eleven-second decay and every tempo on the record was chosen
+        against it. Orsa Lipp tuned the settlement's own resonance pipes down for the sessions and
+        had to tune them back before the morning shift each time, which is why there are only four
+        nights. It is the first record anyone made of reel tempos under pipes and it was reviewed on
+        the frontier as a novelty and in Forge as an argument.
+      songs:
+        - id: s_0665
+          title: Hot Floor, Cold Shop
+          track_number: 1
+          genre: frontier-reels
+          mood_tags: [fast, cavernous, driving]
+          playable: true
+          fact: Dane Verrow sings against an eleven-second decay and had to leave gaps he later described as the hardest thing he ever learned to do.
+          credits: {writers: [p_dane_verrow], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_0666
+          title: Shut the Machines Down
+          track_number: 2
+          genre: frontier-reels
+          mood_tags: [brisk, hard, plain]
+          playable: true
+          fact: The tune is timed to the shop's shutdown sequence, which takes ninety seconds, and the band rehearsed to it for a month before recording.
+          credits: {writers: [p_dane_verrow, p_bree_hollan], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_0667
+          title: Pipes Down a Tone
+          track_number: 3
+          genre: frontier-reels
+          mood_tags: [deep, rolling, strange]
+          playable: true
+          fact: Orsa Lipp tuned the settlement pipes a full tone below their working pitch for this track alone and a shop steward filed a complaint about it.
+          credits: {writers: [p_orsa_lipp], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_0668
+          title: Dance in Your Work Boots
+          track_number: 4
+          genre: frontier-reels
+          mood_tags: [fast, blunt, communal]
+          playable: true
+          fact: Bree Hollan plays struck alloy taken off the shop's own scrap rack and put back the same night, and the piece she used is named in the sleeve.
+          credits: {writers: [p_dane_verrow], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_0669
+          title: Nothing Here Is Quiet
+          track_number: 5
+          genre: frontier-reels
+          mood_tags: [loud, insistent, bright]
+          playable: true
+          fact: Toller Grange plays the bass line an octave higher than written because the low notes disappeared entirely into the room.
+          credits: {writers: [p_dane_verrow, p_toller_grange], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_0670
+          title: Second Shift Sweetheart
+          track_number: 6
+          genre: frontier-reels
+          mood_tags: [warm, midtempo, fond]
+          playable: true
+          fact: Dane Verrow wrote it about someone he only ever saw at shift changeover, and it is the only song on the record with no pipes on it at all.
+          credits: {writers: [p_dane_verrow], players: [p_dane_verrow, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_0671
+          title: Back Before the Morning
+          track_number: 7
+          genre: frontier-reels
+          mood_tags: [urgent, fast, tired]
+          playable: true
+          fact: Recorded last on the fourth night with forty minutes left before the pipes had to be retuned, and it is a single take with no repairs.
+          credits: {writers: [p_dane_verrow, p_orsa_lipp], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+
+    - id: al_082
+      title: Take the Weight Off
+      band: b_038
+      label: label_4
+      release_year: 2594
+      kind: album
+      genre: frontier-reels
+      cornerstone: false
+      notes: >-
+        Made eleven years after the first record and three years after the band stopped calling
+        itself Purist, which is audible from the opening bar. Deep Register put the pipes through
+        the shop's amplification for the first time and Orsa Lipp, who had argued against exactly
+        this for a decade, ran the desk himself. Ivena Sorn was brought in for two tracks and it is
+        the only time two pipe players appear on the same frontier reel record. The band broke up
+        five years later and never made a third.
+      songs:
+        - id: s_0672
+          title: Take the Weight Off
+          track_number: 1
+          genre: frontier-reels
+          mood_tags: [midtempo, warm, generous]
+          playable: true
+          fact: The first sound on the record is the shop amplifier being switched on, which Orsa Lipp put there deliberately as an admission.
+          credits: {writers: [p_dane_verrow, p_orsa_lipp], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_0673
+          title: I Was Wrong About the Pipes
+          track_number: 2
+          genre: frontier-reels
+          mood_tags: [rolling, wry, deep]
+          playable: true
+          fact: Orsa Lipp wrote the lyric and made Dane Verrow sing it, and the two of them have given different accounts of whose idea the title was.
+          credits: {writers: [p_orsa_lipp], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_0674
+          title: Two Sets of Pipes
+          track_number: 3
+          genre: frontier-reels
+          mood_tags: [deep, fast, strange]
+          playable: true
+          fact: Ivena Sorn plays the second set against Orsa Lipp and marked both tunings on her cuffs, which is the only written record of what the shop pipes were tuned to that year.
+          credits: {writers: [p_dane_verrow, p_orsa_lipp], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan, sp_ivena_sorn], producer: p_orsa_lipp}
+        - id: s_0675
+          title: Wage Packet Reel
+          track_number: 4
+          genre: frontier-reels
+          mood_tags: [fast, hard, defiant]
+          playable: true
+          fact: Bree Hollan refused to record it until the band agreed to split the writing four ways, which they did, and every song after this one is credited the same way.
+          credits: {writers: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_0676
+          title: Warm Room, Late Start
+          track_number: 5
+          genre: frontier-reels
+          mood_tags: [slow, warm, patient]
+          playable: true
+          fact: Recorded at four in the morning after a failed evening, and Dane Verrow's voice is an octave lower than anywhere else in the band's catalogue.
+          credits: {writers: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_0677
+          title: Nobody Here Is Pure
+          track_number: 6
+          genre: frontier-reels
+          mood_tags: [brisk, blunt, bright]
+          playable: true
+          fact: The title was the sentence Orsa Lipp used to end the band's argument about the movement in 2591, and Bree Hollan wrote it on the shop wall.
+          credits: {writers: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan, sp_ivena_sorn], producer: p_orsa_lipp}
+        - id: s_0678
+          title: Ask Me at the Gate
+          track_number: 7
+          genre: frontier-reels
+          mood_tags: [midtempo, fond, plain]
+          playable: true
+          fact: Toller Grange plays a bowed bass part here and nowhere else on either record, having borrowed the bow from a visiting fiddle player and not given it back.
+          credits: {writers: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_0679
+          title: Last Set Before the Whistle
+          track_number: 8
+          genre: frontier-reels
+          mood_tags: [fast, urgent, communal]
+          playable: true
+          fact: The shift whistle sounds forty seconds before the end and the band played through it rather than stop, which is why the take was kept.
+          credits: {writers: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+
+    - id: al_083
+      title: Between Two Ports
+      band: b_039
+      label: label_5
+      release_year: 2583
+      kind: album
+      genre: frontier-reels
+      cornerstone: false
+      notes: >-
+        Loose Cargo's first record, made in a hold on the co-operative's own route because the band
+        would not stop working to make it. The Common Wake Cooperative had no recording equipment
+        and borrowed two microphones from Harbor Standard, which is why this record and Nobody Sat
+        Down sound like they were made in the same year by the same people, and they were. Six
+        tracks is all the route allowed. It is the record that proved to the co-operative that a
+        band which could not stand still could still be recorded.
+      songs:
+        - id: s_0680
+          title: Between Two Ports
+          track_number: 1
+          genre: frontier-reels
+          mood_tags: [rolling, restless, midtempo]
+          playable: true
+          fact: Recorded in a loaded hold with the cargo still in it, and Wend Amory has said the crates are the reason the record sounds the way it does.
+          credits: {writers: [p_wend_amory], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0681
+          title: Dance at Both Ends
+          track_number: 2
+          genre: frontier-reels
+          mood_tags: [fast, bright, communal]
+          playable: true
+          fact: The two halves of the tune are the dances at either end of the band's route, and they are in different keys because the two halls tuned differently.
+          credits: {writers: [p_wend_amory, p_col_sennet], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0682
+          title: Nothing Tied Down Properly
+          track_number: 3
+          genre: frontier-reels
+          mood_tags: [quick, wry, driving]
+          playable: true
+          fact: Reddin Vosk plays a kit built out of the hold's own loose fittings and the take was stopped twice by the ship moving.
+          credits: {writers: [p_wend_amory], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0683
+          title: She Waits at the Far End
+          track_number: 4
+          genre: frontier-reels
+          mood_tags: [warm, slow, longing]
+          playable: true
+          fact: Ilsa Brack sings the harmony and it is the only vocal on the record not recorded on the same microphone as the lead, because there was not room.
+          credits: {writers: [p_wend_amory], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0684
+          title: Short Run, Long Night
+          track_number: 5
+          genre: frontier-reels
+          mood_tags: [fast, tired, defiant]
+          playable: true
+          fact: Col Sennet plays the whole tune with the unusual bowing hand he learned from recordings, and the co-operative asked him to play it conventionally and he declined.
+          credits: {writers: [p_wend_amory, p_col_sennet], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0685
+          title: Sign for the Load
+          track_number: 6
+          genre: frontier-reels
+          mood_tags: [brisk, plain, satisfied]
+          playable: true
+          fact: The band recorded it while the hold was being signed off and the manifest is being read aloud underneath the first verse.
+          credits: {writers: [p_wend_amory], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+
+    - id: al_084
+      title: Everything Not Tied Down
+      band: b_039
+      label: label_5
+      release_year: 2600
+      kind: album
+      genre: frontier-reels
+      cornerstone: false
+      notes: >-
+        The shared press format reached the co-operative in 2600 and Loose Cargo were the first band
+        it recorded under it, which meant the record travelled past the route for the first time.
+        They made it in a transfer hall rather than a hold because the co-operative now had somewhere
+        to put them. Wend Amory has always said the band lost something in the move and the record
+        sold four times what the first one did. Oren Saye and Nessa Dray both play on it.
+      songs:
+        - id: s_0686
+          title: Everything Not Tied Down
+          track_number: 1
+          genre: frontier-reels
+          mood_tags: [fast, bright, driving]
+          playable: true
+          fact: The opening figure is the one Reddin Vosk had been playing on loose fittings for seventeen years, transcribed for a real kit for the first time.
+          credits: {writers: [p_wend_amory, p_reddin_vosk], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0687
+          title: Past the End of the Route
+          track_number: 2
+          genre: frontier-reels
+          mood_tags: [rolling, hopeful, midtempo]
+          playable: true
+          fact: Written about the record itself reaching settlements the band had never worked, and Wend Amory recorded the vocal before knowing whether it would.
+          credits: {writers: [p_wend_amory], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0688
+          title: A Room With Doors
+          track_number: 3
+          genre: frontier-reels
+          mood_tags: [warm, midtempo, wry]
+          playable: true
+          fact: The title is what Ilsa Brack called the transfer hall, having spent seventeen years recording in places you could not leave.
+          credits: {writers: [p_wend_amory, p_ilsa_brack], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0689
+          title: Two Bows on One Tune
+          track_number: 4
+          genre: frontier-reels
+          mood_tags: [fast, competitive, bright]
+          playable: true
+          fact: Nessa Dray plays against Col Sennet and lent him neither of her bows, which he mentioned in every interview about the record for the next decade.
+          credits: {writers: [p_wend_amory, p_col_sennet], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk, sp_nessa_dray], producer: p_wend_amory}
+        - id: s_0690
+          title: Hold the Low End
+          track_number: 5
+          genre: frontier-reels
+          mood_tags: [deep, driving, plain]
+          playable: true
+          fact: Oren Saye played it after one run-through and remembered Ilsa Brack's original key when the band had written the chart in another.
+          credits: {writers: [p_wend_amory], players: [p_wend_amory, p_col_sennet, p_reddin_vosk, sp_oren_saye], producer: p_wend_amory}
+        - id: s_0691
+          title: Weather at the Transfer
+          track_number: 6
+          genre: frontier-reels
+          mood_tags: [cold, restless, quick]
+          playable: true
+          fact: The hall's roof was leaking during the sessions and the band moved three times in one night, which is why the track changes room tone halfway through.
+          credits: {writers: [p_wend_amory, p_reddin_vosk], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0692
+          title: Still Working the Route
+          track_number: 7
+          genre: frontier-reels
+          mood_tags: [warm, communal, midtempo]
+          playable: true
+          fact: Recorded on the last day before the crew went back to work, and all four of them are singing because the co-operative's members were in the room.
+          credits: {writers: [p_wend_amory], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+
+    - id: al_085
+      title: Dance It Off the Deck
+      band: b_039
+      label: label_5
+      release_year: 2607
+      kind: album
+      genre: frontier-reels
+      cornerstone: false
+      notes: >-
+        Loose Cargo's last record and the only one made after they stopped working the route full
+        time. The co-operative wanted a third and the band agreed on the condition that it be
+        recorded in a hold again, which meant hiring one that was not going anywhere. Wend Amory
+        described that decision afterwards as the most expensive joke the band ever made. It is
+        looser and slower than anything else they did, and Brin Noll retuned the hold's fittings
+        before the engineers set anything up.
+      songs:
+        - id: s_0693
+          title: Dance It Off the Deck
+          track_number: 1
+          genre: frontier-reels
+          mood_tags: [fast, loose, bright]
+          playable: true
+          fact: Brin Noll retuned the hold's loose metal before the sessions so the room would answer the chorus, and three of those fittings are audible on the take.
+          credits: {writers: [p_wend_amory], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk, sp_brin_noll], producer: p_wend_amory}
+        - id: s_0694
+          title: A Hold Going Nowhere
+          track_number: 2
+          genre: frontier-reels
+          mood_tags: [midtempo, wry, warm]
+          playable: true
+          fact: Written about the hired hold the record was made in, which the co-operative paid for by the night and which never left its berth.
+          credits: {writers: [p_wend_amory, p_ilsa_brack], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0695
+          title: Slower Than We Used To
+          track_number: 3
+          genre: frontier-reels
+          mood_tags: [slow, fond, weathered]
+          playable: true
+          fact: The tempo is the one Col Sennet asked for after twenty-seven years of playing it faster, and the band recorded it his way on the first take.
+          credits: {writers: [p_wend_amory, p_col_sennet], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0696
+          title: Who Is Paying for the Room
+          track_number: 4
+          genre: frontier-reels
+          mood_tags: [brisk, blunt, wry]
+          playable: true
+          fact: The lyric is a version of the argument the band had with the co-operative about the cost of the hold, and both sides agreed it was accurate.
+          credits: {writers: [p_wend_amory], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0697
+          title: Take the Long Berth Home
+          track_number: 5
+          genre: frontier-reels
+          mood_tags: [rolling, warm, tired]
+          playable: true
+          fact: Ilsa Brack sings the lead for the only time in the band's life, and Wend Amory does not appear on the track at all.
+          credits: {writers: [p_ilsa_brack], players: [p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_0698
+          title: One More Around the Hold
+          track_number: 6
+          genre: frontier-reels
+          mood_tags: [fast, communal, bright]
+          playable: true
+          fact: Talla Venn plays second guitar on the scarred instrument he has repaired between sessions for thirty years, and he tuned it down to match the hold.
+          credits: {writers: [p_wend_amory, p_reddin_vosk], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk, sp_talla_venn], producer: p_wend_amory}
+        - id: s_0699
+          title: Off at the Last Stop
+          track_number: 7
+          genre: frontier-reels
+          mood_tags: [midtempo, warm, final]
+          playable: true
+          fact: The last thing Loose Cargo recorded, and the four of them played it twice through without stopping because nobody wanted to be the one to call the end.
+          credits: {writers: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+
 layer_b:
-  bands: []
+  bands:
+    - id: b_040
+      name: Kettle Hall Four
+      kind: group
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: frontier-reels
+      active_from: 2551
+      active_to: 2585
+      bio: >-
+        Kettle Hall Four played the same Cold Harbor room for thirty-four years and are the earliest
+        frontier reel band anyone can produce a recording of. They stopped in 2585 when the hall was
+        converted to storage and the fiddle player refused to move to another room.
+      albums:
+        - id: al_086
+          title: The Kettle Hall
+          label: label_2
+          release_year: 2559
+          kind: album
+          genre: frontier-reels
+          notes: The oldest frontier reel record in circulation, cut in one night on borrowed equipment and reissued twice since.
+          songs:
+            - {id: s_0700, title: The Kettle Hall, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0701, title: Fast Water Reel, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0702, title: Two Doors and a Stove, track_number: 3, genre: frontier-reels, playable: false}
+            - {id: s_0703, title: Ask the Fiddler First, track_number: 4, genre: frontier-reels, playable: false}
+            - {id: s_0704, title: Coats on the Rail, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0705, title: Nobody Rests Here, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0706, title: The Short Way Home, track_number: 7, genre: frontier-reels, playable: false}
+            - {id: s_0707, title: Last Kettle On, track_number: 8, genre: frontier-reels, playable: false}
+        - id: al_087
+          title: Thirty Years in One Room
+          label: label_2
+          release_year: 2583
+          kind: album
+          genre: frontier-reels
+          notes: Recorded in the band's final years and remembered for being the record Wire and Rosin were compared to on release.
+          songs:
+            - {id: s_0708, title: Thirty Years in One Room, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0709, title: Same Floor, Same Feet, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0710, title: The Hall Is Cold Tonight, track_number: 3, genre: frontier-reels, playable: false}
+            - {id: s_0711, title: Turn at the Far Wall, track_number: 4, genre: frontier-reels, playable: false}
+            - {id: s_0712, title: Money Under the Cup, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0713, title: She Danced With Everyone, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0714, title: Play It Once More, track_number: 7, genre: frontier-reels, playable: false}
+            - {id: s_0715, title: Lock the Kettle Hall, track_number: 8, genre: frontier-reels, playable: false}
 
-# LAYER C — recordings are lost. Three sentences per figure. Never an album or a track list.
+    - id: b_041
+      name: The Rope Walk
+      kind: group
+      home_settlement: Forge
+      label: label_4
+      genre: frontier-reels
+      active_from: 2570
+      active_to: 2600
+      bio: >-
+        The Rope Walk were Forge shop workers who played reels on composite instruments a decade
+        before The Foundry Set added pipes to them, and they are the band The Foundry Set were
+        accused of copying. They kept working shifts the whole time and never made a record outside
+        the settlement.
+      albums:
+        - id: al_088
+          title: Down the Rope Walk
+          label: label_4
+          release_year: 2583
+          kind: album
+          genre: frontier-reels
+          notes: Remembered for being made in the same year and settlement as Hot Floor, Cold Shop and selling roughly a tenth as much.
+          songs:
+            - {id: s_0716, title: Down the Rope Walk, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0717, title: Composite and Wire, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0718, title: Shift Change Reel, track_number: 3, genre: frontier-reels, playable: false}
+            - {id: s_0719, title: Nothing in the Shop, track_number: 4, genre: frontier-reels, playable: false}
+            - {id: s_0720, title: Bright Strings, Cold Hands, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0721, title: Dance Before the Whistle, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0722, title: Two Names on the Rota, track_number: 7, genre: frontier-reels, playable: false}
+            - {id: s_0723, title: Walk It Back, track_number: 8, genre: frontier-reels, playable: false}
+        - id: al_089
+          title: We Were Here First
+          label: label_4
+          release_year: 2594
+          kind: album
+          genre: frontier-reels
+          notes: A direct answer to The Foundry Set, made the same year as Take the Weight Off, and the title was the whole argument.
+          songs:
+            - {id: s_0724, title: We Were Here First, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0725, title: Ask Who Played It, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0726, title: No Pipes Required, track_number: 3, genre: frontier-reels, playable: false}
+            - {id: s_0727, title: Ten Years of This, track_number: 4, genre: frontier-reels, playable: false}
+            - {id: s_0728, title: Same Shop, Different Wage, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0729, title: Play It Plain, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0730, title: The Long Rope, track_number: 7, genre: frontier-reels, playable: false}
+            - {id: s_0731, title: Nobody Asked Us, track_number: 8, genre: frontier-reels, playable: false}
+
+    - id: b_042
+      name: Saltbox Reelers
+      kind: group
+      home_settlement: Cold Harbor
+      label: unsigned
+      genre: frontier-reels
+      active_from: 2558
+      active_to: 2592
+      bio: >-
+        Saltbox Reelers never signed to anything and pressed both their records themselves out of
+        dance takings, which is why so few copies exist and why every one of them is in a different
+        sleeve. They played the near frontier settlements that had no hall and set up in whatever
+        room was offered.
+      albums:
+        - id: al_090
+          title: Out of the Saltbox
+          label: unsigned
+          release_year: 2559
+          kind: album
+          genre: frontier-reels
+          notes: Self-pressed in an edition nobody has ever counted, and the reason the band is remembered at all.
+          songs:
+            - {id: s_0732, title: Out of the Saltbox, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0733, title: Any Room Will Do, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0734, title: Carry the Kit In, track_number: 3, genre: frontier-reels, playable: false}
+            - {id: s_0735, title: Six Settlements Out, track_number: 4, genre: frontier-reels, playable: false}
+            - {id: s_0736, title: Pay at the End, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0737, title: Cold Floor Reel, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0738, title: Nobody Booked Us, track_number: 7, genre: frontier-reels, playable: false}
+            - {id: s_0739, title: Home on the Long Road, track_number: 8, genre: frontier-reels, playable: false}
+        - id: al_091
+          title: Still No Label
+          label: unsigned
+          release_year: 2583
+          kind: album
+          genre: frontier-reels
+          notes: Made in the year the form became a commercial proposition, by the band that had refused every offer to make it one.
+          songs:
+            - {id: s_0740, title: Still No Label, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0741, title: We Print Our Own, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0742, title: Turn Down the Offer, track_number: 3, genre: frontier-reels, playable: false}
+            - {id: s_0743, title: Twenty-Five Years Out, track_number: 4, genre: frontier-reels, playable: false}
+            - {id: s_0744, title: Dance Where They Ask, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0745, title: Short Sleeve, Long Night, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0746, title: Count It at the Door, track_number: 7, genre: frontier-reels, playable: false}
+            - {id: s_0747, title: Last of the Saltbox, track_number: 8, genre: frontier-reels, playable: false}
+
+    - id: b_043
+      name: Nine Mile Turn
+      kind: group
+      home_settlement: the between
+      label: label_5
+      genre: frontier-reels
+      active_from: 2590
+      active_to: 2620
+      bio: >-
+        Nine Mile Turn were the co-operative's second reel band and the one that took the route
+        dances after Loose Cargo stopped travelling. They are remembered for playing a single dance
+        that ran eleven hours and for never recording anything that fast again.
+      albums:
+        - id: al_092
+          title: Nine Mile Turn
+          label: label_5
+          release_year: 2594
+          kind: album
+          genre: frontier-reels
+          notes: The record the co-operative made to prove Loose Cargo were not the only band it had.
+          songs:
+            - {id: s_0748, title: Nine Mile Turn, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0749, title: Take the Outside Lane, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0750, title: Eleven Hours Standing, track_number: 3, genre: frontier-reels, playable: false}
+            - {id: s_0751, title: Freight and Fiddle, track_number: 4, genre: frontier-reels, playable: false}
+            - {id: s_0752, title: Two Ports, No Sleep, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0753, title: Ask the Other Crew, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0754, title: Wide Turn Home, track_number: 7, genre: frontier-reels, playable: false}
+            - {id: s_0755, title: Sign It Off, track_number: 8, genre: frontier-reels, playable: false}
+        - id: al_093
+          title: The Long Way to Everywhere
+          label: label_5
+          release_year: 2612
+          kind: album
+          genre: frontier-reels
+          notes: Their last, and the record that ends the co-operative's run of reel releases.
+          songs:
+            - {id: s_0756, title: The Long Way to Everywhere, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0757, title: Slow Down the Set, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0758, title: Nobody Dances Now, track_number: 3, genre: frontier-reels, playable: false}
+            - {id: s_0759, title: Empty Hall Reel, track_number: 4, genre: frontier-reels, playable: false}
+            - {id: s_0760, title: Keep the Route Open, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0761, title: One Bow Left, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0762, title: Pay the Last Crew, track_number: 7, genre: frontier-reels, playable: false}
+            - {id: s_0763, title: Turn for the Last Time, track_number: 8, genre: frontier-reels, playable: false}
+
+    - id: b_044
+      name: The Turning Room
+      kind: group
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: frontier-reels
+      active_from: 2596
+      active_to: 2626
+      bio: >-
+        The Turning Room are the band Harbor Standard signed to replace Wire and Rosin and have
+        never been forgiven for it by anyone who was at the exchange hall in 2583. They are the only
+        frontier reel band still working and they play the same halls their predecessors did.
+      albums:
+        - id: al_094
+          title: The Turning Room
+          label: label_2
+          release_year: 2600
+          kind: album
+          genre: frontier-reels
+          notes: A first record made under the shared press format and sold further than any frontier reel record before it.
+          songs:
+            - {id: s_0764, title: The Turning Room, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0765, title: New Band, Old Hall, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0766, title: Faster Than Last Year, track_number: 3, genre: frontier-reels, playable: false}
+            - {id: s_0767, title: Ask for the Old Tune, track_number: 4, genre: frontier-reels, playable: false}
+            - {id: s_0768, title: Bright Composite, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0769, title: The Floor Decides, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0770, title: Nobody Remembers Us Yet, track_number: 7, genre: frontier-reels, playable: false}
+            - {id: s_0771, title: Turn It Loose, track_number: 8, genre: frontier-reels, playable: false}
+        - id: al_095
+          title: Same Hall, New Feet
+          label: label_2
+          release_year: 2619
+          kind: album
+          genre: frontier-reels
+          notes: Recorded in the exchange hall Wire and Rosin used, which the band has said was either a tribute or a mistake.
+          songs:
+            - {id: s_0772, title: Same Hall, New Feet, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0773, title: Standing Where She Stood, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0774, title: Two Microphones Again, track_number: 3, genre: frontier-reels, playable: false}
+            - {id: s_0775, title: Not a Tribute, track_number: 4, genre: frontier-reels, playable: false}
+            - {id: s_0776, title: Ask a Younger Room, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0777, title: Cold Harbor Quickstep, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0778, title: Play Past the Doors, track_number: 7, genre: frontier-reels, playable: false}
+            - {id: s_0779, title: Still Nobody Sitting, track_number: 8, genre: frontier-reels, playable: false}
+
+    - id: b_045
+      name: The Long Ferry
+      kind: group
+      home_settlement: Concordance
+      label: label_1
+      genre: frontier-reels
+      active_from: 2598
+      active_to: 2624
+      bio: >-
+        The Long Ferry are the only frontier reel band a core label ever signed, and Concordance
+        signed them after a committee decided the form had become respectable enough to hold. They
+        are better regarded in the core than on the frontier, where the usual complaint is that
+        nobody in the band has ever worked a route.
+      albums:
+        - id: al_096
+          title: A Core Room Full of Reels
+          label: label_1
+          release_year: 2607
+          kind: album
+          genre: frontier-reels
+          notes: The first frontier reel record made in a Concordance studio, and the one the frontier press treated as an intrusion.
+          songs:
+            - {id: s_0780, title: A Core Room Full of Reels, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0781, title: Clean Floor Reel, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0782, title: Nobody Here Has Worked, track_number: 3, genre: frontier-reels, playable: false}
+            - {id: s_0783, title: Borrowed Bowing Hand, track_number: 4, genre: frontier-reels, playable: false}
+            - {id: s_0784, title: Play It Properly, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0785, title: The Committee Approves, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0786, title: Late Ferry Home, track_number: 7, genre: frontier-reels, playable: false}
+            - {id: s_0787, title: Softer Than the Frontier, track_number: 8, genre: frontier-reels, playable: false}
+        - id: al_097
+          title: We Went and Looked
+          label: label_1
+          release_year: 2624
+          kind: album
+          genre: frontier-reels
+          notes: Made after the band spent a year working the near frontier halls, and the record that finally quieted the complaint.
+          songs:
+            - {id: s_0788, title: We Went and Looked, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0789, title: Cold Harbor in Winter, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0790, title: Different Floor Entirely, track_number: 3, genre: frontier-reels, playable: false}
+            - {id: s_0791, title: Ask Them What It Cost, track_number: 4, genre: frontier-reels, playable: false}
+            - {id: s_0792, title: Rosin From the Hall, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0793, title: A Year on the Route, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0794, title: Nobody Sat Down Either, track_number: 7, genre: frontier-reels, playable: false}
+            - {id: s_0795, title: The Long Way Back, track_number: 8, genre: frontier-reels, playable: false}
+
 layer_c:
   recordings: none survive
-  figures: []
+  figures:
+    - id: f_013
+      name: Tam Rickett
+      kind: dance fiddler
+      genre: frontier-reels
+      active_from: 2438
+      active_to: 2471
+      played: gut-strung fiddle and stamped board
+      history: >-
+        Tam Rickett worked the earliest near-frontier settlements between 2438 and 2471, playing for
+        dances in rooms that had been built for something else. Settlement minutes record payments
+        to him in rations rather than money and one dispute in which a committee argued that dancing
+        wasted heat. He is named because every account of the form begins with a single fiddler and
+        a board to stamp on, and Rickett is the first one anybody wrote a payment down for.
+    - id: f_014
+      name: Ordell Mave
+      kind: instrument maker
+      genre: frontier-reels
+      active_from: 2466
+      active_to: 2499
+      played: composite fiddle, of her own making
+      history: >-
+        Ordell Mave cut the first fiddles from engineered composite between 2466 and 2499 after wood
+        stopped arriving on the near frontier, and the thin bright tone every reel band has since is
+        hers. She made instruments to order and kept no pattern, so no two survive that measure the
+        same. She matters because the sound of the form is a material shortage that somebody turned
+        into a decision.
+    - id: f_015
+      name: Bessel Kroy
+      kind: caller and dancing master
+      genre: frontier-reels
+      active_from: 2491
+      active_to: 2524
+      played: calling voice, no instrument
+      history: >-
+        Bessel Kroy travelled eleven near-frontier settlements between 2491 and 2524 teaching the
+        figures that dancers still walk through, and he never played an instrument in his life.
+        Three settlements kept his written sets and two of them disagree about the same dance,
+        which is an argument callers still have. He is remembered because the tunes were never the
+        difficult part and the figures were.
+    - id: f_016
+      name: Ivet Sallow
+      kind: dance fiddler and hall keeper
+      genre: frontier-reels
+      active_from: 2513
+      active_to: 2546
+      played: composite fiddle
+      history: >-
+        Ivet Sallow kept a hall on the near frontier from 2513 to 2546 and played in it every week
+        she owned it, which is the first time anyone combined the two jobs. Her ledgers survive and
+        are the earliest record of what a dance cost to put on and what a band was paid for it. She
+        is mentioned whenever anybody argues about door money, and the argument has not changed.

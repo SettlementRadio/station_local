@@ -28,6 +28,11 @@ them.
 **Window check** (§3): six anchors inside the last thirty-five years, two in the old-standards
 window. Correct as specified.
 
+**State after frontier-reels (2026-08-10): seven of the eight are satisfied** — ≥25 playable songs
+across ≥4 bands and ≥2 labels. **2559 is the exception and cannot be fixed by writing more.**
+COMMISSION §3 puts layer A in 2566–2626, so no playable song can carry 2559 at all; it stands at
+zero and every other anchor is met. M-15 is where that contradiction gets resolved.
+
 **This table is read by `make check`.** The eight years in the first column are the only release
 years any album in any genre may carry, and `src/station/music/check.py` takes them from here
 rather than keeping a second copy. Each row must keep its `| **YYYY** |` shape; if it stops
@@ -61,10 +66,11 @@ overlooked player before giving an opinion.
 > eighty-year span. **The eight below are one generation: they work 2592–2626** — the current and
 > last-generation windows, which hold roughly 85% of the catalogue.
 >
-> **The old-standards window (2546–2591) needs its own set** — three or four *elders*, commissioned
-> separately as Brief 0b. Best case, one or two of the eight below started very young at the tail of
-> that window and are still working now: a forty-year career is plausible, and a player who is on
-> both a 2585 record and a 2624 one is a living legend the presenters can build a whole hour around.
+> **Brief 0b — the elders — will not be written. Operator decision, 2026-08-10 (D-064).** The
+> old-standards window (2546–2591) was to get its own set of three or four players. It does not get
+> one. **A layer-A record made before 2592 credits its band members and nobody else** — that is 33
+> songs across 4 albums, and it is the finished state, not a gap waiting to be filled. Do not invent
+> an elder to fill it and do not credit any of the eight below outside their dates.
 >
 > **Nobody has dates yet.** Every player needs an `active_from` and `active_to` before the first
 > credit is written, or a batch will credit someone to a session they were eleven years old for.
@@ -104,6 +110,7 @@ is recorded is the result:
 | relay-pop | 2026-08-09 | 319 | nothing matched |
 | lane-rock | 2026-08-09 | 228 | nothing matched |
 | deck-talk | 2026-08-09 | 215 | nothing matched |
+| frontier-reels | 2026-08-10 | 194 | nothing matched |
 
 Notes kept because §19 says fuzzy and surname-only matches are flagged, never blocked:
 
@@ -163,12 +170,16 @@ Layer-A bands and playable songs only. §5 needs every label to end on ≥3 band
 | # | Label | Name as written | Bands written | Songs written |
 |---|---|---|---|---|
 | 1 | Concordance, prestige | Civic Lantern | 2 | 45 |
-| 2 | Cold Harbor, frontier | Harbor Standard | 2 | 35 |
+| 2 | Cold Harbor, frontier | Harbor Standard | 3 | 65 |
 | 3 | Meridian, dance | Stormline Issue | 1 | 20 |
-| 4 | Forge, industrial | Deep Register | 3 | 55 |
-| 5 | haulers, co-op | Common Wake Cooperative | 3 | 80 |
+| 4 | Forge, industrial | Deep Register | 4 | 70 |
+| 5 | haulers, co-op | Common Wake Cooperative | 4 | 100 |
 | 6 | late-club, folded 2612 | Lower Bell Editions | 1 | 15 |
 | 7 | old-system importer | — | 0 | 0 |
+
+**Labels 2, 4 and 5 now clear §5's floor** — ≥3 bands, ≥6 albums and ≥40 playable songs — so three
+of the seven label retrospectives can be made. Labels 1, 3 and 6 are still short of bands, and 7 has
+nothing at all until M-10.
 
 ## 6. The genre tally
 
@@ -179,13 +190,13 @@ Layer A songs per form. `music/plan.yaml` is the authority; this is the running 
 | Relay-pop | 105 | 105 |
 | Lane-rock | 75 | 75 |
 | **Deck-talk** | 70 | 70 |
-| Frontier Reels | 65 | 0 |
+| **Frontier Reels** | 65 | 65 |
 | Old-system sessions | 60 | 0 |
 | Pulse-dance | 60 | 0 |
 | Void-lounge | 40 | 0 |
 | Core Harmonies | 15 | 0 |
 | Void Ballads | 10 | 0 |
-| | **500** | **250** |
+| | **500** | **315** |
 
 **Layers B and C are not tallied.** They have no hard floor — more is better, and nothing breaks if
 one genre carries more history than another.
