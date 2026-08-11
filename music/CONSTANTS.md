@@ -28,10 +28,12 @@ them.
 **Window check** (§3): six anchors inside the last thirty-five years, two in the old-standards
 window. Correct as specified.
 
-**State after frontier-reels (2026-08-10): seven of the eight are satisfied** — ≥25 playable songs
-across ≥4 bands and ≥2 labels. **2559 is the exception and cannot be fixed by writing more.**
-COMMISSION §3 puts layer A in 2566–2626, so no playable song can carry 2559 at all; it stands at
-zero and every other anchor is met. M-15 is where that contradiction gets resolved.
+**State after old-system-sessions (2026-08-10): seven of the eight are satisfied** — ≥25 playable
+songs across ≥4 bands and ≥2 labels. In order: 2583 · 33/4/4 · 2594 · 31/4/3 · 2600 · 44/6/3 ·
+2607 · 49/6/6 · 2612 · 38/5/4 · 2619 · 116/11/6 · 2624 · 64/8/5. **2559 is the exception and cannot
+be fixed by writing more.** COMMISSION §3 puts layer A in 2566–2626, so no playable song can carry
+2559 at all; it stands at zero and every other anchor is met. M-15 is where that contradiction gets
+resolved.
 
 **This table is read by `make check`.** The eight years in the first column are the only release
 years any album in any genre may carry, and `src/station/music/check.py` takes them from here
@@ -74,6 +76,13 @@ overlooked player before giving an opinion.
 >
 > **Nobody has dates yet.** Every player needs an `active_from` and `active_to` before the first
 > credit is written, or a batch will credit someone to a session they were eleven years old for.
+>
+> **The eight work in the settled worlds, and old-system sessions credits none of them (D-065).**
+> Every record in that genre was cut on Mars, Titan or Europa, and none of the eight has been down
+> the road. It is the second permanent hole after D-064's pre-2592 window — 60 songs across 7
+> albums — and it is not one to fill: a second roster for the home system is the same brief D-064
+> declined. What carries the industry feel there is the genre's own three bands guesting on each
+> other's records.
 
 | Name | Instrument | Character |
 |---|---|---|
@@ -111,6 +120,7 @@ is recorded is the result:
 | lane-rock | 2026-08-09 | 228 | nothing matched |
 | deck-talk | 2026-08-09 | 215 | nothing matched |
 | frontier-reels | 2026-08-10 | 194 | nothing matched |
+| old-system-sessions | 2026-08-10 | 165 | nothing matched |
 
 Notes kept because §19 says fuzzy and surname-only matches are flagged, never blocked:
 
@@ -120,6 +130,8 @@ Notes kept because §19 says fuzzy and surname-only matches are flagged, never b
 | **Oren Saye** | *Owen Saye*, a hockey player, one letter away | keep — below the notability floor and a different first name |
 | **Miro Olt** | *Miro* is a well-known software company; Joan Miró surname-only | keep — organisations are screened too, but "Miro Olt" is clear |
 | Nessa Dray · Brin Noll · Talla Venn · Sel Ardin | surname-only echoes only | keep, unremarkable |
+| **Corah Ames** · **Kell Moray** | *Ames* and *Moray* are both real places; neither is a person | keep — surname-only, and the first names are invented |
+| **Saira Dunn** · **Bran Teale** | common surnames, nothing notable at the full name | keep, unremarkable |
 
 **Flagged — operator decision, not yet cleared:**
 
@@ -175,11 +187,13 @@ Layer-A bands and playable songs only. §5 needs every label to end on ≥3 band
 | 4 | Forge, industrial | Deep Register | 4 | 70 |
 | 5 | haulers, co-op | Common Wake Cooperative | 4 | 100 |
 | 6 | late-club, folded 2612 | Lower Bell Editions | 1 | 15 |
-| 7 | old-system importer | — | 0 | 0 |
+| 7 | old-system importer | Relay Road Import | 3 | 60 |
 
-**Labels 2, 4 and 5 now clear §5's floor** — ≥3 bands, ≥6 albums and ≥40 playable songs — so three
-of the seven label retrospectives can be made. Labels 1, 3 and 6 are still short of bands, and 7 has
-nothing at all until M-10.
+**Labels 2, 4, 5 and 7 now clear §5's floor** — ≥3 bands, ≥6 albums and ≥40 playable songs — so four
+of the seven label retrospectives can be made. **Label 7 is finished**: old-system sessions is the
+only genre that feeds it and it lands exactly on the floor, 3 bands and 7 albums, with no genre left
+to add to it. Labels 1, 3 and 6 are still short of bands and are carried by genres not yet written —
+1 by void-lounge and core-harmonies, 3 by pulse-dance, 6 by void-lounge.
 
 ## 6. The genre tally
 
@@ -191,12 +205,12 @@ Layer A songs per form. `music/plan.yaml` is the authority; this is the running 
 | Lane-rock | 75 | 75 |
 | **Deck-talk** | 70 | 70 |
 | **Frontier Reels** | 65 | 65 |
-| Old-system sessions | 60 | 0 |
+| **Old-system sessions** | 60 | 60 |
 | Pulse-dance | 60 | 0 |
 | Void-lounge | 40 | 0 |
 | Core Harmonies | 15 | 0 |
 | Void Ballads | 10 | 0 |
-| | **500** | **315** |
+| | **500** | **375** |
 
 **Layers B and C are not tallied.** They have no hard floor — more is better, and nothing breaks if
 one genre carries more history than another.

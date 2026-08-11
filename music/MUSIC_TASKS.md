@@ -62,7 +62,7 @@ marked **NEXT**.
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
 | 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-17** lyrics and prompts · 2026-08-09 | **M-18 next — yours, at Suno** |
-| 2 · The wiki — 7 genres left | M-07 … M-15 | **M-09** frontier-reels · 2026-08-10 | 315 of 500 songs written · **M-10 next** |
+| 2 · The wiki — 7 genres left | M-07 … M-15 | **M-10** old-system-sessions · 2026-08-10 | 375 of 500 songs written · **M-11 next** |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
@@ -250,15 +250,29 @@ session player (D-063)** — `CONSTANTS.md` §2's generation starts 2592 and the
 has never been commissioned.
 Depends on: M-08
 
-### M-10 · `[agent]` old-system-sessions — 60 songs, 3 bands — **NEXT (the agent front)**
+### M-10 · `[agent]` old-system-sessions — 60 songs, 3 bands — **DONE 2026-08-10**
+Files: `music/wiki/old-system-sessions.yaml`, `music/CONSTANTS.md`
 Check: 60 playable songs, all on label 7; 3 layer-A bands; ~5 layer-B, ~4 layer-C. `make check`
 green. Names screened.
 Note: §10 forbids presenting an old-system record as archive. These are current releases that took a
 long time to arrive. **Label 7 has no margin** — this is the only genre that feeds it, and 60 songs
 across 3 bands is exactly §5's floor. A shortfall here cannot be made up elsewhere.
+Result: 60 playable songs across 7 layer-A albums — Terrace Road Four 24 (Mars), The Shore Rounds 20
+(Titan), Undershore Local 16 (Europa), all on label 7, which is **named here for the first time and
+finished here: Relay Road Import**, 3 bands / 7 albums / 60 songs, exactly §5's floor with no genre
+left to add to it. One cornerstone, `al_098` at 13, bringing the catalogue to 7 and still inside
+§5's 6–8 band. 5 layer-B bands carrying 10 albums and 80 titles, 4 layer-C figures.
+`make music-screen` returned nothing on 165 distinct names. 36 of the 60 songs land on 2619 and
+2624, which is the share COMMISSION §3's *half inside the last eight years* needs from the genres
+that remain; 2600 gains a third label and 2612 a fourth. **Two conventions are now fixed for this
+label (D-066):** `release_year` is the year the importer put the record on sale out here and the
+notes name the year it was cut in the home system, and layer-B bands whose records never came down
+the road carry `label: not imported`. **The genre credits no session player (D-065)** — the eight
+work in the settled worlds and these records were cut on Mars, Titan and Europa; the three layer-A
+bands guest on each other's records instead.
 Depends on: M-09
 
-### M-11 · `[agent]` pulse-dance — 60 songs, 2 bands
+### M-11 · `[agent]` pulse-dance — 60 songs, 2 bands — **NEXT (the agent front)**
 Check: 60 playable songs, all on label 3; 2 layer-A bands; ~5 layer-B, ~3 layer-C. `make check`
 green. Names screened.
 Depends on: M-10

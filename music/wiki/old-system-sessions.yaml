@@ -1,16 +1,19 @@
-# Old-system sessions — PLACEHOLDER. Nothing here is content yet.
+# Old-system sessions — written by M-10.
 #
-# Written by its card in music/MUSIC_TASKS.md: open a session and say the number. The agent
-# replaces everything below the `section:` block, and `make check` counts what it wrote.
+# Two conventions this genre needs and no other genre has:
 #
-# Allocation, from music/plan.yaml (the authority — do not retype it here):
-#   LAYER A — 60 songs across 3 band(s)
-#     label 7 (old-system importer): 60 songs / 3 band(s)
-#   LAYER B — about 5 more bands the station does not hold
-#   LAYER C — about 4 figures, 2426-2546, no albums and no track lists
+# 1. `release_year` is the year the importer put the record on sale in the settled worlds, never
+#    the year it was cut. Every record here was made in the home system and took a season to reach
+#    the road head, so the notes name the cut year as well. Both are facts a presenter can say, and
+#    the eight anchor years are issue years — which is what `make check` counts.
+# 2. `session_players` is empty, and that is the finished state. CONSTANTS.md section 2's eight
+#    work in the settled worlds; every record in this file was cut on Mars, Titan or Europa by
+#    people who have never been out here (D-065). What carries the industry texture instead is the
+#    three layer-A bands guesting on each other's records — the same piano, the same harmonica,
+#    turning up across two thousand million kilometres of the same home system.
 #
-# Labels this genre sits on:
-#   - label_7  (old-system importer)
+# Label 7 is named here for the first time — Relay Road Import — and every later genre that touches
+# it uses that name. It is the only genre on the label: 60 songs, 3 bands, 7 albums, and no margin.
 
 section:
   genre: old-system-sessions
@@ -20,23 +23,1081 @@ section:
     referenced: B
     historical: C
 
-# The labels above, as the writer names them.
-labels: []
+labels:
+  - id: label_7
+    name: Relay Road Import
+    home: Concordance, at the road head
+    tier: import
+    status: operating
+    founded_year: 2541
+    genre: old-system-sessions
+    note: >-
+      Two people and a rented press. The house licenses masters from home-system labels, waits a
+      season for the crate, and sells what it can out of one shipment a year. It has come close to
+      closing twice, most recently in 2622 when a crate went astray between the road head and the
+      press, and it survives on the strength of records it did not make.
 
-# From music/CONSTANTS.md section 2 — only the players who appear on this genre,
-# and only inside their active years.
+# Empty on purpose — see the header. A record cut on Titan cannot credit a player who works the
+# frontier, and inventing a second roster to fill the gap is the failure D-064 closed.
 session_players: []
 
-# LAYER A — playable: true. Full bios, full album stories, one fact per song.
 layer_a:
-  bands: []
-  albums: []
+  bands:
+    - id: b_046
+      name: Terrace Road Four
+      kind: group
+      home_settlement: Mars
+      label: label_7
+      genre: old-system-sessions
+      active_from: 2606
+      active_to: 2626
+      members:
+        - id: p_wesla_tarn
+          name: Wesla Tarn
+          genre: old-system-sessions
+          instruments: [lead vocal, slide guitar]
+          active_from: 2606
+          active_to: 2626
+        - id: p_amon_furlow
+          name: Amon Furlow
+          genre: old-system-sessions
+          instruments: [piano]
+          active_from: 2606
+          active_to: 2626
+        - id: p_del_marran
+          name: Del Marran
+          genre: old-system-sessions
+          instruments: [upright bass, second vocal]
+          active_from: 2606
+          active_to: 2626
+        - id: p_nan_sudell
+          name: Nan Sudell
+          genre: old-system-sessions
+          instruments: [drums, brushes]
+          active_from: 2606
+          active_to: 2622
+        - id: p_orin_lask
+          name: Orin Lask
+          genre: old-system-sessions
+          instruments: [drums]
+          active_from: 2622
+          active_to: 2626
+      movement: outside it
+      bio: >-
+        Terrace Road Four have played the same tram works canteen on Mars every week since 2606 and
+        have never played anywhere else for money. Wesla Tarn sings and plays the slide with a
+        length of brake shoe off the works floor, which is the sound the band is known for and which
+        she has never replaced. All four kept their shifts at the works the whole time, so the
+        sessions happen between shifts and every record they have made was cut in the canteen. Nan
+        Sudell left in 2622 over a dispute about who was owed what from the first record and Orin
+        Lask took the kit. Asked in 2621 which of the three movements they belonged to, Wesla Tarn
+        said she had not heard of any of them and that Mars had arguments of its own.
+      album_ids: [al_099, al_098]
 
-# LAYER B — playable: false. Two-sentence bios, one-line album notes, titles only, no facts.
+    - id: b_047
+      name: The Shore Rounds
+      kind: group
+      home_settlement: Titan
+      label: label_7
+      genre: old-system-sessions
+      active_from: 2596
+      active_to: 2626
+      members:
+        - id: p_effa_lomm
+          name: Effa Lomm
+          genre: old-system-sessions
+          instruments: [lead vocal, reed organ]
+          active_from: 2596
+          active_to: 2626
+        - id: p_bran_teale
+          name: Bran Teale
+          genre: old-system-sessions
+          instruments: [guitar, harmony vocal]
+          active_from: 2596
+          active_to: 2626
+        - id: p_kell_moray
+          name: Kell Moray
+          genre: old-system-sessions
+          instruments: [upright bass, harmony vocal]
+          active_from: 2598
+          active_to: 2626
+        - id: p_ilva_reske
+          name: Ilva Reske
+          genre: old-system-sessions
+          instruments: [harmony vocal, hand percussion]
+          active_from: 2596
+          active_to: 2626
+      movement: outside it
+      bio: >-
+        The Shore Rounds work the Titan lake yards and sing the rounds the yards have always sung,
+        four voices entering a line apart with the instruments kept underneath. Effa Lomm takes most
+        of the leads because she is the one who can be heard across water, and the band has no
+        singer's name on any sleeve it controls. They record where they happen to be standing — a
+        hall, a lamp room, a meeting room with one microphone — and have refused a studio twice on
+        the grounds that a round needs a room that answers. Kell Moray joined two years after the
+        others and asked for the last entrance in the round, which he has kept ever since. The band
+        found out in 2616 that the edition sold in the settled worlds was one song shorter than
+        theirs, and Bran Teale has raised it in every letter since.
+      album_ids: [al_100, al_101, al_102]
+
+    - id: b_048
+      name: Undershore Local
+      kind: group
+      home_settlement: Europa
+      label: label_7
+      genre: old-system-sessions
+      active_from: 2588
+      active_to: 2612
+      members:
+        - id: p_hob_venner
+          name: Hob Venner
+          genre: old-system-sessions
+          instruments: [lead vocal, guitar]
+          active_from: 2588
+          active_to: 2612
+        - id: p_saira_dunn
+          name: Saira Dunn
+          genre: old-system-sessions
+          instruments: [piano]
+          active_from: 2588
+          active_to: 2612
+        - id: p_tel_brask
+          name: Tel Brask
+          genre: old-system-sessions
+          instruments: [harmonica, second vocal]
+          active_from: 2588
+          active_to: 2612
+        - id: p_marta_ospel
+          name: Marta Ospel
+          genre: old-system-sessions
+          instruments: [drums]
+          active_from: 2588
+          active_to: 2612
+      movement:
+        standing: outside it
+        detail: >-
+          Relay Road Import's sleeves file the band as Purist because it uses no electric
+          instruments. Hob Venner, told this by letter in 2604, wrote back that the band used
+          whatever the yard had and that the yard had never had anything.
+      bio: >-
+        Undershore Local took their name from the union branch they all belonged to in the Europa
+        under-ice works, and they played the canteens of that yard and no others. Hob Venner wrote
+        the words on yard paperwork and Saira Dunn arranged everything, including the parts she was
+        not playing. Tel Brask played the harmonica through a lamp horn so it would carry down a
+        gallery, which is the band's most copied trick and the one thing about them everybody out
+        here can name. They stopped in 2612 when the works went to a shift pattern that never put
+        the four of them off duty together, which Marta Ospel has said is a stupid way for a band to
+        end and the true one.
+      album_ids: [al_103, al_104]
+
+  albums:
+    - id: al_098
+      title: The Room at Terrace Road
+      band: b_046
+      label: label_7
+      release_year: 2624
+      kind: album
+      genre: old-system-sessions
+      cornerstone: true
+      notes: >-
+        Cut over three nights in the tram works canteen on Mars in 2623 and issued at the road head
+        in 2624. Relay Road Import had nearly closed the year before, when a crate went astray, and
+        it put the whole capacity of one crossing behind this record — nothing else came down the
+        road that season, which is a decision the house has never had to defend because the record
+        sold better than anything it has imported. The canteen is free only between shifts, so the
+        sessions ran from the end of one and stopped at the start of the next, and the works bell is
+        audible on four tracks. Orin Lask is on drums, his first record with the band; the song Nan
+        Sudell left behind when she went in 2622 is on it too, and the band recorded it without her.
+        Terrace Road Four did not know the record had been issued in the settled worlds until a
+        letter reached Mars a season later, and Wesla Tarn's reply asking who exactly had been
+        buying it is framed in the importer's office.
+      songs:
+        - id: s_0796
+          title: The Room at Terrace Road
+          track_number: 1
+          genre: old-system-sessions
+          mood_tags: [rolling, warm, midtempo]
+          playable: true
+          fact: The works' shift bell rings twice during the take and the band played through it both times, because the canteen was theirs only until it rang the third.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+        - id: s_0797
+          title: Don't Wait Up for the Late Car
+          track_number: 2
+          genre: old-system-sessions
+          mood_tags: [shuffling, wry, tired]
+          playable: true
+          fact: Del Marran built the bass figure out of the rhythm the last tram makes over the joints outside the canteen, and he has never played it any other way.
+          credits: {writers: [p_wesla_tarn, p_del_marran], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+        - id: s_0798
+          title: Two Cups and No Sugar
+          track_number: 3
+          genre: old-system-sessions
+          mood_tags: [dry, slow, funny]
+          playable: true
+          fact: Amon Furlow plays the whole track with his left hand because he would not put the cup down, and the band kept the take rather than have the argument.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+        - id: s_0799
+          title: She Took the Other Line
+          track_number: 4
+          genre: old-system-sessions
+          mood_tags: [slow, aching, blue]
+          playable: true
+          fact: Nan Sudell wrote it and left it behind when she went in 2622, and it is the only song on any of the band's records Wesla Tarn did not write.
+          credits: {writers: [p_nan_sudell], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+        - id: s_0800
+          title: Nobody Counts It In
+          track_number: 5
+          genre: old-system-sessions
+          mood_tags: [loose, late, warm]
+          playable: true
+          fact: It starts with Wesla Tarn's foot on the canteen floor because nobody had settled who would count the band in now that Orin Lask was on the kit.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+        - id: s_0801
+          title: Working Both Ends
+          track_number: 6
+          genre: old-system-sessions
+          mood_tags: [driving, hard, shuffling]
+          playable: true
+          fact: Written about holding the works shift and the canteen night at the same time, which all four of them were still doing when the record was made.
+          credits: {writers: [p_wesla_tarn, p_amon_furlow], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+        - id: s_0802
+          title: The Water's Off Again
+          track_number: 7
+          genre: old-system-sessions
+          mood_tags: [wry, plain, midtempo]
+          playable: true
+          fact: The verse listing what the district is short of was chalked on the canteen wall and Wesla Tarn read it off the wall during the take.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+        - id: s_0803
+          title: Long Way to the Yard
+          track_number: 8
+          genre: old-system-sessions
+          mood_tags: [rolling, steady, patient]
+          playable: true
+          fact: Wesla Tarn plays the slide with the length of tram brake shoe she has used since 2606, and it is the track the band point at when anyone asks what the sound is.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+        - id: s_0804
+          title: Nobody Asked for Quiet
+          track_number: 9
+          genre: old-system-sessions
+          mood_tags: [fast, loud, defiant]
+          playable: true
+          fact: The loudest thing the band has recorded, and the canteen steward can be heard telling them to stop before the last chorus arrives.
+          credits: {writers: [p_wesla_tarn, p_del_marran], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+        - id: s_0805
+          title: Cold Toast and an Argument
+          track_number: 10
+          genre: old-system-sessions
+          mood_tags: [funny, brisk, dry]
+          playable: true
+          fact: The argument in the second verse is one Del Marran and Amon Furlow had about the money for these sessions, and both of them agreed to it going on the record.
+          credits: {writers: [p_wesla_tarn, p_amon_furlow], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+        - id: s_0806
+          title: Sit Down, You're Blocking the Door
+          track_number: 11
+          genre: old-system-sessions
+          mood_tags: [fast, communal, bright]
+          playable: true
+          fact: There were more people in the canteen than it holds and this is the track on which the band stopped asking them to move.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+        - id: s_0807
+          title: Play the One About the Rain
+          track_number: 12
+          genre: old-system-sessions
+          mood_tags: [warm, generous, midtempo]
+          playable: true
+          fact: The title is what one regular shouted at the band every week for eleven years, and this is the song they eventually wrote to answer him.
+          credits: {writers: [p_wesla_tarn, p_del_marran], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+        - id: s_0808
+          title: Turn the Lamps Down
+          track_number: 13
+          genre: old-system-sessions
+          mood_tags: [slow, close, final]
+          playable: true
+          fact: Cut at the end of the third night with the canteen lights already off, which is why the piano is the loudest thing on it.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_orin_lask], producer: p_amon_furlow}
+
+    - id: al_099
+      title: Later Than Advertised
+      band: b_046
+      label: label_7
+      release_year: 2619
+      kind: album
+      genre: old-system-sessions
+      cornerstone: false
+      notes: >-
+        The band's first record, cut in the canteen in 2618 for a Mars house that pressed four
+        hundred copies and did nothing else with them. Relay Road Import bought the master unheard on
+        the recommendation of a clerk at the road head who had a cousin on Mars, which is the whole
+        of the house's acquisition process and the reason it has the band at all. Nan Sudell is on
+        drums throughout and plays with brushes on most of it because the room next to the canteen
+        was still working. Tel Brask, of Undershore Local, is on one track; he was on Mars for a
+        fortnight for someone else's wedding and walked in during the second night. It sold slowly
+        for five years and then sold out entirely in the season after the second record landed.
+      songs:
+        - id: s_0809
+          title: Later Than Advertised
+          track_number: 1
+          genre: old-system-sessions
+          mood_tags: [shuffling, wry, brisk]
+          playable: true
+          fact: Named for the band's habit of starting an hour after the notice said, and the notice from 2617 is reproduced on the sleeve.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_nan_sudell], producer: p_amon_furlow}
+        - id: s_0810
+          title: Half the Fare Home
+          track_number: 2
+          genre: old-system-sessions
+          mood_tags: [midtempo, plain, tired]
+          playable: true
+          fact: Nan Sudell plays the whole track with brushes because the machine shop next door was on a night run and the band could not be louder than it.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_nan_sudell], producer: p_amon_furlow}
+        - id: s_0811
+          title: Ask Me Again on Payday
+          track_number: 3
+          genre: old-system-sessions
+          mood_tags: [dry, rolling, wry]
+          playable: true
+          fact: Written across two pay weeks, and the second verse names the exact sum the band was paid for these sessions.
+          credits: {writers: [p_wesla_tarn, p_del_marran], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_nan_sudell], producer: p_amon_furlow}
+        - id: s_0812
+          title: Wrong Side of the Works
+          track_number: 4
+          genre: old-system-sessions
+          mood_tags: [driving, hard, blunt]
+          playable: true
+          fact: Tel Brask plays harmonica, the only person from outside the band on any of their records, and he had never heard the song before that night.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_nan_sudell, p_tel_brask], producer: p_amon_furlow}
+        - id: s_0813
+          title: Nothing to Report
+          track_number: 5
+          genre: old-system-sessions
+          mood_tags: [slow, blue, weary]
+          playable: true
+          fact: Wesla Tarn wrote it about the works accident book and sings it without touching the slide, which she does nowhere else on either record.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_nan_sudell], producer: p_amon_furlow}
+        - id: s_0814
+          title: Two Streets Over
+          track_number: 6
+          genre: old-system-sessions
+          mood_tags: [warm, midtempo, fond]
+          playable: true
+          fact: About somebody who lived two streets from the canteen for nine years, and Wesla Tarn has always refused to say whether they ever met.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_nan_sudell], producer: p_amon_furlow}
+        - id: s_0815
+          title: Small Money, Loud Room
+          track_number: 7
+          genre: old-system-sessions
+          mood_tags: [brisk, defiant, hard]
+          playable: true
+          fact: The band's first attempt was faster and Amon Furlow talked them down to this tempo, which he can be heard doing at the top of the take.
+          credits: {writers: [p_wesla_tarn, p_amon_furlow], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_nan_sudell], producer: p_amon_furlow}
+        - id: s_0816
+          title: Don't Sing That One Here
+          track_number: 8
+          genre: old-system-sessions
+          mood_tags: [fast, funny, sly]
+          playable: true
+          fact: The works foreman asked the band not to play it in the canteen, which is why they opened with it every week for the rest of that year.
+          credits: {writers: [p_wesla_tarn, p_nan_sudell], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_nan_sudell], producer: p_amon_furlow}
+        - id: s_0817
+          title: Under the Terrace
+          track_number: 9
+          genre: old-system-sessions
+          mood_tags: [slow, close, late]
+          playable: true
+          fact: Recorded at four in the morning after a shift, and the works generator runs underneath the whole track.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_nan_sudell], producer: p_amon_furlow}
+        - id: s_0818
+          title: A Word With the Steward
+          track_number: 10
+          genre: old-system-sessions
+          mood_tags: [midtempo, wry, plain]
+          playable: true
+          fact: Del Marran sings the second verse, the only lead vocal on either record not sung by Wesla Tarn.
+          credits: {writers: [p_del_marran], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_nan_sudell], producer: p_amon_furlow}
+        - id: s_0819
+          title: Lights Out on the Line
+          track_number: 11
+          genre: old-system-sessions
+          mood_tags: [final, warm, slow]
+          playable: true
+          fact: The only tune the band recorded twice; the first attempt was wiped at Nan Sudell's insistence and this is the second, cut an hour later.
+          credits: {writers: [p_wesla_tarn], players: [p_wesla_tarn, p_amon_furlow, p_del_marran, p_nan_sudell], producer: p_amon_furlow}
+
+    - id: al_100
+      title: Nobody Sings It Alone
+      band: b_047
+      label: label_7
+      release_year: 2612
+      kind: album
+      genre: old-system-sessions
+      cornerstone: false
+      notes: >-
+        Cut in a Titan lake yard's hall over two evenings in 2611 and issued at the road head in
+        2612, the first Shore Rounds record to leave the home system. The edition the station holds
+        is not the one Titan bought: the crate had room for eight songs and the importer dropped the
+        ninth, told nobody, and the band learned of it in 2616 from a letter written by a listener
+        who had heard both. Relay Road Import has never argued that it was right, only that the
+        alternative was leaving the record behind altogether. The four voices are recorded on one
+        microphone at the distances they stand at when they sing in the yard, which took most of the
+        first evening to arrange. Bran Teale plays with two fingers taped after a yard injury and the
+        guitar parts were simplified in the room to suit it.
+      songs:
+        - id: s_0820
+          title: Nobody Sings It Alone
+          track_number: 1
+          genre: old-system-sessions
+          mood_tags: [warm, rolling, communal]
+          playable: true
+          fact: The four enter a line apart and the last voice in is Kell Moray's, the place he asked for when he joined and has kept on every record since.
+          credits: {writers: [p_effa_lomm], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0821
+          title: Count the Boats Back
+          track_number: 2
+          genre: old-system-sessions
+          mood_tags: [steady, patient, cold]
+          playable: true
+          fact: The counting verse is the yard's return list and Effa Lomm sings the boats in the order they actually came in that evening.
+          credits: {writers: [p_effa_lomm, p_ilva_reske], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0822
+          title: Wet Rope, Cold Hands
+          track_number: 3
+          genre: old-system-sessions
+          mood_tags: [plain, midtempo, hard]
+          playable: true
+          fact: Bran Teale plays it with two fingers taped together after a yard injury, and the part was cut down to what he could reach on the evening.
+          credits: {writers: [p_bran_teale], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0823
+          title: Lamp Room Round
+          track_number: 4
+          genre: old-system-sessions
+          mood_tags: [close, warm, communal]
+          playable: true
+          fact: Sung in the yard's lamp room rather than the hall because the band wanted the walls, and the door being opened halfway through is on the take.
+          credits: {writers: [p_effa_lomm], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0824
+          title: The Far Shore Boat
+          track_number: 5
+          genre: old-system-sessions
+          mood_tags: [slow, longing, sparse]
+          playable: true
+          fact: Effa Lomm sings it with nothing behind her, the only unaccompanied track the band has recorded, and she asked the others to leave the hall for it.
+          credits: {writers: [p_effa_lomm], players: [p_effa_lomm], producer: p_effa_lomm}
+        - id: s_0825
+          title: Two Kinds of Cold
+          track_number: 6
+          genre: old-system-sessions
+          mood_tags: [blue, slow, still]
+          playable: true
+          fact: Ilva Reske's low harmony was sung again after the others had gone home and laid over the take, which is the only overdub on any Shore Rounds record.
+          credits: {writers: [p_ilva_reske], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0826
+          title: Money in the Wrong Pocket
+          track_number: 7
+          genre: old-system-sessions
+          mood_tags: [wry, brisk, blunt]
+          playable: true
+          fact: About a yard clerk who paid the crews late for a year, and the importer had the name in the third verse taken out before pressing it at the road head.
+          credits: {writers: [p_effa_lomm, p_bran_teale], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0827
+          title: Round for the Last Boat
+          track_number: 8
+          genre: old-system-sessions
+          mood_tags: [final, warm, communal]
+          playable: true
+          fact: The last track of the imported edition, and on Titan it is followed by a ninth song the crate had no room for.
+          credits: {writers: [p_effa_lomm], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+
+    - id: al_101
+      title: Two Lamps and a Table
+      band: b_047
+      label: label_7
+      release_year: 2619
+      kind: album
+      genre: old-system-sessions
+      cornerstone: false
+      notes: >-
+        Made in 2618 in the lake yard's meeting room, which had a table, two lamps and one
+        microphone, and issued at the road head in 2619. The band had refused a studio in the
+        settlement for the second time and the importer stopped offering. Saira Dunn, of Undershore
+        Local, came from Europa for it and spent two days tuning the yard office piano, which had
+        not been touched since it was installed. This is the record on which the Shore Rounds began
+        naming who sang which part on the sleeve, after four years of arguing that a round has no
+        lead — Effa Lomm's position was that the importer would put a name on it anyway and it might
+        as well be the right ones.
+      songs:
+        - id: s_0828
+          title: Two Lamps and a Table
+          track_number: 1
+          genre: old-system-sessions
+          mood_tags: [close, warm, slow]
+          playable: true
+          fact: Recorded around one table with two lamps and a single microphone, which is everything the yard's meeting room had in it.
+          credits: {writers: [p_effa_lomm], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0829
+          title: Everybody Take a Line
+          track_number: 2
+          genre: old-system-sessions
+          mood_tags: [communal, bright, midtempo]
+          playable: true
+          fact: The four sing a verse each in the order they joined the band, which Bran Teale insisted on and Effa Lomm has called the only rule they have.
+          credits: {writers: [p_effa_lomm, p_bran_teale], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0830
+          title: The Borrowed Piano
+          track_number: 3
+          genre: old-system-sessions
+          mood_tags: [rolling, warm, generous]
+          playable: true
+          fact: Saira Dunn plays the yard office piano she had spent two days tuning, and the band wrote the song around it once she had finished.
+          credits: {writers: [p_effa_lomm, p_bran_teale], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske, p_saira_dunn], producer: p_effa_lomm}
+        - id: s_0831
+          title: Ice on the Steps
+          track_number: 4
+          genre: old-system-sessions
+          mood_tags: [cold, sparse, restless]
+          playable: true
+          fact: Kell Moray bows the bass for the only time on any of the band's records, having borrowed the bow from a yard hand who played nothing else.
+          credits: {writers: [p_kell_moray], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0832
+          title: Ask the Lamp Man
+          track_number: 5
+          genre: old-system-sessions
+          mood_tags: [wry, midtempo, plain]
+          playable: true
+          fact: The yard's lamp keeper was in the room for the take and objected to two lines, both of which stayed in.
+          credits: {writers: [p_bran_teale], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske, p_saira_dunn], producer: p_effa_lomm}
+        - id: s_0833
+          title: A Long Wait at the Gate
+          track_number: 6
+          genre: old-system-sessions
+          mood_tags: [patient, tired, steady]
+          playable: true
+          fact: Written waiting for a boat that never came, and Effa Lomm set the tempo by walking the length of the room while the others found it.
+          credits: {writers: [p_effa_lomm], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0834
+          title: Last One Off the Water
+          track_number: 7
+          genre: old-system-sessions
+          mood_tags: [final, warm, close]
+          playable: true
+          fact: The four turn away from the microphone for the last round, so it gets quieter as it goes, and nobody asked them to do it again.
+          credits: {writers: [p_effa_lomm, p_ilva_reske], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+
+    - id: al_102
+      title: Whatever Fits the Crate
+      band: b_047
+      label: label_7
+      release_year: 2624
+      kind: EP
+      genre: old-system-sessions
+      cornerstone: false
+      notes: >-
+        The first record anybody in the home system made because the settled worlds asked for one.
+        Relay Road Import wrote to the Shore Rounds in 2622 asking for more and, being an importer
+        rather than a label, specified the request in minutes of crate space rather than songs. The
+        band cut five in 2623 and the record runs to within a minute of the length the letter named.
+        Amon Furlow came from Mars to play piano on one track, invited by the same letter, and met
+        the band on the morning of the session. It is the only Shore Rounds record made in a hired
+        room, and Effa Lomm has said that agreeing to the length was the concession and the room was
+        merely the consequence.
+      songs:
+        - id: s_0835
+          title: Whatever Fits the Crate
+          track_number: 1
+          genre: old-system-sessions
+          mood_tags: [wry, brisk, warm]
+          playable: true
+          fact: The title is what Effa Lomm wrote back to the importer, and the record runs to within a minute of the length that letter asked for.
+          credits: {writers: [p_effa_lomm], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0836
+          title: Sing It Twice Over
+          track_number: 2
+          genre: old-system-sessions
+          mood_tags: [communal, bright, rolling]
+          playable: true
+          fact: The round goes through twice because the band arrived with four songs and had been asked for five.
+          credits: {writers: [p_effa_lomm, p_bran_teale], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0837
+          title: A Letter and a Number
+          track_number: 3
+          genre: old-system-sessions
+          mood_tags: [dry, midtempo, knowing]
+          playable: true
+          fact: The importer's letter asked for songs with fewer names in them, and Bran Teale put the request itself into the second verse.
+          credits: {writers: [p_bran_teale], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+        - id: s_0838
+          title: Cold Meal, Warm Room
+          track_number: 4
+          genre: old-system-sessions
+          mood_tags: [warm, slow, generous]
+          playable: true
+          fact: Amon Furlow plays piano, having crossed from Mars on the strength of a letter, and the band had never heard him play before that morning.
+          credits: {writers: [p_effa_lomm], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske, p_amon_furlow], producer: p_effa_lomm}
+        - id: s_0839
+          title: Same Four Voices
+          track_number: 5
+          genre: old-system-sessions
+          mood_tags: [final, close, communal]
+          playable: true
+          fact: The four sing it with no instruments at all, which is what they do at the end of every night in the yard and had never put on a record.
+          credits: {writers: [p_effa_lomm, p_ilva_reske], players: [p_effa_lomm, p_bran_teale, p_kell_moray, p_ilva_reske], producer: p_effa_lomm}
+
+    - id: al_103
+      title: Nothing Dries Down Here
+      band: b_048
+      label: label_7
+      release_year: 2600
+      kind: album
+      genre: old-system-sessions
+      cornerstone: false
+      notes: >-
+        Cut in 2599 in the canteens and galleries of the Europa under-ice works, where the band had
+        played for eleven years, and issued at the road head in 2600. The union local paid for the
+        recording out of its own funds after the works refused, which is why the sleeve of the Europa
+        pressing carries a branch number instead of a producer's name. The cold defeated the piano —
+        it could not be brought to pitch and Saira Dunn played it flat rather than move rooms — and
+        the yard's four-second decay is on the tracks cut in the gallery. Relay Road Import took it
+        because it was cheap and because the house had nothing else that season, and it is the oldest
+        record in the station's import catalogue.
+      songs:
+        - id: s_0840
+          title: Nothing Dries Down Here
+          track_number: 1
+          genre: old-system-sessions
+          mood_tags: [wry, rolling, midtempo]
+          playable: true
+          fact: Hob Venner wrote the chorus on the back of a grievance form and the form is reproduced on the sleeve of the Europa pressing.
+          credits: {writers: [p_hob_venner], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0841
+          title: The Long Ladder
+          track_number: 2
+          genre: old-system-sessions
+          mood_tags: [driving, hard, steady]
+          playable: true
+          fact: Marta Ospel plays it on a kit with no cymbals, which she took off because the gallery's echo made them unusable and never put back.
+          credits: {writers: [p_hob_venner, p_marta_ospel], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0842
+          title: Wages in Two Halves
+          track_number: 3
+          genre: old-system-sessions
+          mood_tags: [blunt, brisk, defiant]
+          playable: true
+          fact: The local's committee asked the band not to record it during a live dispute about split payments, the only time it ever asked them for anything.
+          credits: {writers: [p_hob_venner], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0843
+          title: Saltwater Boots
+          track_number: 4
+          genre: old-system-sessions
+          mood_tags: [plain, midtempo, cold]
+          playable: true
+          fact: Saira Dunn's piano is a quarter-tone flat for the whole track because it would not hold pitch in the cold and the band would not move rooms.
+          credits: {writers: [p_hob_venner, p_saira_dunn], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0844
+          title: Ask Me When I'm Dry
+          track_number: 5
+          genre: old-system-sessions
+          mood_tags: [funny, shuffling, warm]
+          playable: true
+          fact: Tel Brask plays the harmonica through a lamp horn, which is how he played it in the canteens so it would carry down a gallery.
+          credits: {writers: [p_tel_brask], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0845
+          title: The Second Gate
+          track_number: 6
+          genre: old-system-sessions
+          mood_tags: [slow, blue, still]
+          playable: true
+          fact: About a man who worked the second gate for thirty years; he heard the record when it came out and told the band he did not recognise himself in it.
+          credits: {writers: [p_hob_venner], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0846
+          title: Two Shifts, No Sleep
+          track_number: 7
+          genre: old-system-sessions
+          mood_tags: [tired, driving, hard]
+          playable: true
+          fact: Cut at the end of a double shift and Hob Venner's voice fails on the last verse, which the band kept on the grounds that it was accurate.
+          credits: {writers: [p_hob_venner, p_marta_ospel], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0847
+          title: Under the Ice Yard
+          track_number: 8
+          genre: old-system-sessions
+          mood_tags: [cold, spacious, slow]
+          playable: true
+          fact: Recorded in the gallery rather than the canteen, and the four-second decay on it is the room and not anything the recording did.
+          credits: {writers: [p_saira_dunn], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0848
+          title: Walk Out Together
+          track_number: 9
+          genre: old-system-sessions
+          mood_tags: [communal, final, warm]
+          playable: true
+          fact: The local's whole night shift sings the last chorus, about forty people, and the sleeve credits them under the branch number rather than by name.
+          credits: {writers: [p_hob_venner], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+
+    - id: al_104
+      title: Second Shift Blues
+      band: b_048
+      label: label_7
+      release_year: 2607
+      kind: album
+      genre: old-system-sessions
+      cornerstone: false
+      notes: >-
+        The band's second and last record, cut in 2606 across four nights in the same canteen and
+        issued at the road head in 2607. The works had gone to a rolling shift pattern that never put
+        the four of them off duty together, and the sessions were arranged around the two nights a
+        month it did — which is why it took four nights spread over a season to make a record of
+        seven songs. Saira Dunn arranged all of it, including the harmonica parts, and played in
+        cut-off gloves that are audible on the keys. Undershore Local knew this was the last one
+        while they were making it and said so on the sleeve, in one line, without explanation.
+      songs:
+        - id: s_0849
+          title: Second Shift Blues
+          track_number: 1
+          genre: old-system-sessions
+          mood_tags: [slow, blue, weary]
+          playable: true
+          fact: The only song the band gave their own form's name to, and Hob Venner said he used the word because it was the plainest one available.
+          credits: {writers: [p_hob_venner], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0850
+          title: Nobody Off at the Same Time
+          track_number: 2
+          genre: old-system-sessions
+          mood_tags: [wry, midtempo, tired]
+          playable: true
+          fact: Written about the shift pattern that ended the band, and recorded on one of the two nights a month that pattern left them all free.
+          credits: {writers: [p_hob_venner, p_marta_ospel], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0851
+          title: Cold Store, Late Hour
+          track_number: 3
+          genre: old-system-sessions
+          mood_tags: [slow, close, cold]
+          playable: true
+          fact: Saira Dunn plays in gloves with the fingers cut off, which can be heard on the keys throughout, because the canteen heating was off after midnight.
+          credits: {writers: [p_saira_dunn], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0852
+          title: Half the Local Left
+          track_number: 4
+          genre: old-system-sessions
+          mood_tags: [blunt, driving, hard]
+          playable: true
+          fact: The membership numbers in the second verse are the branch's real ones, read off the noticeboard on the night of the take.
+          credits: {writers: [p_hob_venner], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0853
+          title: Nothing Warm to Drink
+          track_number: 5
+          genre: old-system-sessions
+          mood_tags: [dry, shuffling, funny]
+          playable: true
+          fact: Tel Brask sings the lead, the only time he does on either record, because Hob Venner was on shift and came in after it was finished.
+          credits: {writers: [p_tel_brask], players: [p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0854
+          title: The Last Grievance
+          track_number: 6
+          genre: old-system-sessions
+          mood_tags: [hard, defiant, brisk]
+          playable: true
+          fact: Played once at the branch's final meeting and once for the record, and the band refused a second take on the grounds that they had already done it twice.
+          credits: {writers: [p_hob_venner, p_saira_dunn], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+        - id: s_0855
+          title: Nobody Locks It Behind Us
+          track_number: 7
+          genre: old-system-sessions
+          mood_tags: [final, slow, warm]
+          playable: true
+          fact: The last thing Undershore Local recorded, and the sound at the end is the yard gate, which nobody had ever locked and which is on the take anyway.
+          credits: {writers: [p_hob_venner], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
+
 layer_b:
-  bands: []
+  bands:
+    - id: b_049
+      name: Sandhouse Trio
+      kind: group
+      home_settlement: Mars
+      label: label_7
+      genre: old-system-sessions
+      active_from: 2550
+      active_to: 2584
+      bio: >-
+        Sandhouse Trio played the terrace rooms of the same Mars district Terrace Road Four came out
+        of, thirty years earlier, and are the oldest thing Relay Road Import ever brought down the
+        road. They stopped in 2584 when the piano player went blind and refused to be led on to a
+        stage.
+      albums:
+        - id: al_105
+          title: Low Terrace Nights
+          label: label_7
+          release_year: 2559
+          kind: album
+          genre: old-system-sessions
+          notes: The oldest record in the importer's catalogue and the one it reissues whenever it needs money.
+          songs:
+            - {id: s_0856, title: Low Terrace Nights, track_number: 1, genre: old-system-sessions, playable: false}
+            - {id: s_0857, title: Sand in the Piano, track_number: 2, genre: old-system-sessions, playable: false}
+            - {id: s_0858, title: Ask the Night Clerk, track_number: 3, genre: old-system-sessions, playable: false}
+            - {id: s_0859, title: Two Trams Late, track_number: 4, genre: old-system-sessions, playable: false}
+            - {id: s_0860, title: Nobody Came Out, track_number: 5, genre: old-system-sessions, playable: false}
+            - {id: s_0861, title: The Dust Gets In, track_number: 6, genre: old-system-sessions, playable: false}
+            - {id: s_0862, title: One Room, Three Players, track_number: 7, genre: old-system-sessions, playable: false}
+            - {id: s_0863, title: Shut the Terrace Door, track_number: 8, genre: old-system-sessions, playable: false}
+        - id: al_106
+          title: Ten Years of Dust
+          label: label_7
+          release_year: 2583
+          kind: album
+          genre: old-system-sessions
+          notes: Remembered for the run of tram works songs on its second half, which every Mars band since has been measured against.
+          songs:
+            - {id: s_0864, title: Ten Years of Dust, track_number: 1, genre: old-system-sessions, playable: false}
+            - {id: s_0865, title: The Old Line Closed, track_number: 2, genre: old-system-sessions, playable: false}
+            - {id: s_0866, title: Nothing on the Board, track_number: 3, genre: old-system-sessions, playable: false}
+            - {id: s_0867, title: She Left by Rail, track_number: 4, genre: old-system-sessions, playable: false}
+            - {id: s_0868, title: The Sandhouse Door, track_number: 5, genre: old-system-sessions, playable: false}
+            - {id: s_0869, title: Cold Pipes, Warm Room, track_number: 6, genre: old-system-sessions, playable: false}
+            - {id: s_0870, title: Ask for the Old Tune, track_number: 7, genre: old-system-sessions, playable: false}
+            - {id: s_0871, title: Last Car Out, track_number: 8, genre: old-system-sessions, playable: false}
 
-# LAYER C — recordings are lost. Three sentences per figure. Never an album or a track list.
+    - id: b_050
+      name: The Bell Yard Rounds
+      kind: group
+      home_settlement: Earth
+      label: not imported
+      genre: old-system-sessions
+      active_from: 2568
+      active_to: 2600
+      bio: >-
+        The Bell Yard Rounds sing on Earth itself, in the river yards where the form is generally
+        agreed to have started, and are the band every account of the rounds gets round to
+        eventually. Nothing of theirs has ever come down the road, so what is known out here is
+        entirely second-hand and the settled worlds have argued about the running order of their
+        second record without anybody having heard it.
+      albums:
+        - id: al_107
+          title: The Bell Yard
+          label: not imported
+          release_year: 2583
+          kind: album
+          genre: old-system-sessions
+          notes: Named for the yard the band sang in and remembered out here as the record nobody at the road head has ever held a copy of.
+          songs:
+            - {id: s_0872, title: The Bell Yard, track_number: 1, genre: old-system-sessions, playable: false}
+            - {id: s_0873, title: Four in a Row, track_number: 2, genre: old-system-sessions, playable: false}
+            - {id: s_0874, title: Water Under the Wall, track_number: 3, genre: old-system-sessions, playable: false}
+            - {id: s_0875, title: Sing the Names Back, track_number: 4, genre: old-system-sessions, playable: false}
+            - {id: s_0876, title: Nobody Rang It Twice, track_number: 5, genre: old-system-sessions, playable: false}
+            - {id: s_0877, title: The Long Field, track_number: 6, genre: old-system-sessions, playable: false}
+            - {id: s_0878, title: Come In on Three, track_number: 7, genre: old-system-sessions, playable: false}
+            - {id: s_0879, title: Bell Yard Evening, track_number: 8, genre: old-system-sessions, playable: false}
+        - id: al_108
+          title: Rounds for a Full Room
+          label: not imported
+          release_year: 2594
+          kind: album
+          genre: old-system-sessions
+          notes: The record whose running order the settled worlds argue about, none of them having heard it.
+          songs:
+            - {id: s_0880, title: Rounds for a Full Room, track_number: 1, genre: old-system-sessions, playable: false}
+            - {id: s_0881, title: Take the Second Part, track_number: 2, genre: old-system-sessions, playable: false}
+            - {id: s_0882, title: The Road Past the Mill, track_number: 3, genre: old-system-sessions, playable: false}
+            - {id: s_0883, title: Two Fields Over, track_number: 4, genre: old-system-sessions, playable: false}
+            - {id: s_0884, title: Everybody Knows It, track_number: 5, genre: old-system-sessions, playable: false}
+            - {id: s_0885, title: Wet Grass, Bare Feet, track_number: 6, genre: old-system-sessions, playable: false}
+            - {id: s_0886, title: A Full Room and No Chairs, track_number: 7, genre: old-system-sessions, playable: false}
+            - {id: s_0887, title: Sing Us Out, track_number: 8, genre: old-system-sessions, playable: false}
+
+    - id: b_051
+      name: The Long Ridge
+      kind: group
+      home_settlement: the Belt
+      label: label_7
+      genre: old-system-sessions
+      active_from: 2578
+      active_to: 2610
+      bio: >-
+        The Long Ridge were a cutting crew who worked the same Belt rock for eleven years and played
+        the shift rooms of everything they were sent to afterwards. Both their records reached the
+        road head and neither sold, which the importer has said is the fault of the sleeves and
+        nothing else.
+      albums:
+        - id: al_109
+          title: Cut and Carry
+          label: label_7
+          release_year: 2594
+          kind: album
+          genre: old-system-sessions
+          notes: Made in a shift room with the crew still in it and remembered for the counting song that opens the second half.
+          songs:
+            - {id: s_0888, title: Cut and Carry, track_number: 1, genre: old-system-sessions, playable: false}
+            - {id: s_0889, title: The Long Ridge, track_number: 2, genre: old-system-sessions, playable: false}
+            - {id: s_0890, title: Rock in the Teeth, track_number: 3, genre: old-system-sessions, playable: false}
+            - {id: s_0891, title: Short Rope, Long Drop, track_number: 4, genre: old-system-sessions, playable: false}
+            - {id: s_0892, title: Ore Train Nights, track_number: 5, genre: old-system-sessions, playable: false}
+            - {id: s_0893, title: Payload and Payday, track_number: 6, genre: old-system-sessions, playable: false}
+            - {id: s_0894, title: Ask the Cutter, track_number: 7, genre: old-system-sessions, playable: false}
+            - {id: s_0895, title: Both Hands Full, track_number: 8, genre: old-system-sessions, playable: false}
+        - id: al_110
+          title: Nothing Grows Out Here
+          label: label_7
+          release_year: 2607
+          kind: album
+          genre: old-system-sessions
+          notes: The band's last, cut after the crew was broken up and remembered for being funnier than its title.
+          songs:
+            - {id: s_0896, title: Nothing Grows Out Here, track_number: 1, genre: old-system-sessions, playable: false}
+            - {id: s_0897, title: Dust in the Seal, track_number: 2, genre: old-system-sessions, playable: false}
+            - {id: s_0898, title: The Ridge at Night, track_number: 3, genre: old-system-sessions, playable: false}
+            - {id: s_0899, title: Nobody Signs Off, track_number: 4, genre: old-system-sessions, playable: false}
+            - {id: s_0900, title: Three Days to the Next Rock, track_number: 5, genre: old-system-sessions, playable: false}
+            - {id: s_0901, title: Cold Cargo, track_number: 6, genre: old-system-sessions, playable: false}
+            - {id: s_0902, title: Half a Crew, track_number: 7, genre: old-system-sessions, playable: false}
+            - {id: s_0903, title: Ride It Down, track_number: 8, genre: old-system-sessions, playable: false}
+
+    - id: b_052
+      name: The Lamp Room Four
+      kind: group
+      home_settlement: Titan
+      label: not imported
+      genre: old-system-sessions
+      active_from: 2590
+      active_to: 2619
+      bio: >-
+        The Lamp Room Four sang the same Titan lake yards as the Shore Rounds and are the band the
+        Shore Rounds learned half their rounds from, which Effa Lomm says at every opportunity.
+        Nothing of theirs was ever imported, because the importer took the younger band instead and
+        has admitted in writing that it could only afford one.
+      albums:
+        - id: al_111
+          title: The Lamp Room
+          label: not imported
+          release_year: 2600
+          kind: album
+          genre: old-system-sessions
+          notes: Cut in the lamp room the band is named after and known out here only from the Shore Rounds' versions of four of its songs.
+          songs:
+            - {id: s_0904, title: The Lamp Room, track_number: 1, genre: old-system-sessions, playable: false}
+            - {id: s_0905, title: Off the Water Early, track_number: 2, genre: old-system-sessions, playable: false}
+            - {id: s_0906, title: One Lamp Between Us, track_number: 3, genre: old-system-sessions, playable: false}
+            - {id: s_0907, title: The Cold Comes In, track_number: 4, genre: old-system-sessions, playable: false}
+            - {id: s_0908, title: Boats at the Steps, track_number: 5, genre: old-system-sessions, playable: false}
+            - {id: s_0909, title: Sing It Low, track_number: 6, genre: old-system-sessions, playable: false}
+            - {id: s_0910, title: Nothing on the Lake, track_number: 7, genre: old-system-sessions, playable: false}
+            - {id: s_0911, title: Last Lamp Lit, track_number: 8, genre: old-system-sessions, playable: false}
+        - id: al_112
+          title: Late Boat Home
+          label: not imported
+          release_year: 2619
+          kind: album
+          genre: old-system-sessions
+          notes: The band's last record, made nineteen years after their first, and the reason two Titan yards still argue about who taught whom.
+          songs:
+            - {id: s_0912, title: Late Boat Home, track_number: 1, genre: old-system-sessions, playable: false}
+            - {id: s_0913, title: The Shore Is Closer Than It Looks, track_number: 2, genre: old-system-sessions, playable: false}
+            - {id: s_0914, title: Wet Coats in the Hall, track_number: 3, genre: old-system-sessions, playable: false}
+            - {id: s_0915, title: Count Us In, track_number: 4, genre: old-system-sessions, playable: false}
+            - {id: s_0916, title: She Waits at the Steps, track_number: 5, genre: old-system-sessions, playable: false}
+            - {id: s_0917, title: Cold Water Rounds, track_number: 6, genre: old-system-sessions, playable: false}
+            - {id: s_0918, title: The Long Jetty, track_number: 7, genre: old-system-sessions, playable: false}
+            - {id: s_0919, title: Tie It Off, track_number: 8, genre: old-system-sessions, playable: false}
+
+    - id: b_053
+      name: Ring Ferry Trio
+      kind: group
+      home_settlement: Saturn
+      label: label_7
+      genre: old-system-sessions
+      active_from: 2596
+      active_to: 2624
+      bio: >-
+        Ring Ferry Trio play the Saturn ring ferries themselves, on the crossing, for whoever is
+        aboard, and have never once played a room that stayed still. Both their records were imported
+        and both sold steadily to people who liked the idea, which the band has said is the least
+        insulting reason anybody has given.
+      albums:
+        - id: al_113
+          title: Ferry Money
+          label: label_7
+          release_year: 2612
+          kind: album
+          genre: old-system-sessions
+          notes: Recorded across eleven crossings and remembered for the announcements left in between the songs.
+          songs:
+            - {id: s_0920, title: Ferry Money, track_number: 1, genre: old-system-sessions, playable: false}
+            - {id: s_0921, title: Two Crossings a Shift, track_number: 2, genre: old-system-sessions, playable: false}
+            - {id: s_0922, title: The Slow Ring, track_number: 3, genre: old-system-sessions, playable: false}
+            - {id: s_0923, title: Nobody Rides Free, track_number: 4, genre: old-system-sessions, playable: false}
+            - {id: s_0924, title: Cold Deck, Warm Cabin, track_number: 5, genre: old-system-sessions, playable: false}
+            - {id: s_0925, title: Ask at the Rail, track_number: 6, genre: old-system-sessions, playable: false}
+            - {id: s_0926, title: Short Crossing, track_number: 7, genre: old-system-sessions, playable: false}
+            - {id: s_0927, title: Money on the Rail, track_number: 8, genre: old-system-sessions, playable: false}
+        - id: al_114
+          title: Both Ways Every Day
+          label: label_7
+          release_year: 2624
+          kind: album
+          genre: old-system-sessions
+          notes: The band's last, made on the route they had worked for twenty-eight years, and the only import that season besides the Terrace Road record.
+          songs:
+            - {id: s_0928, title: Both Ways Every Day, track_number: 1, genre: old-system-sessions, playable: false}
+            - {id: s_0929, title: The Last Crossing Out, track_number: 2, genre: old-system-sessions, playable: false}
+            - {id: s_0930, title: Change at the Ring, track_number: 3, genre: old-system-sessions, playable: false}
+            - {id: s_0931, title: Nothing to Declare, track_number: 4, genre: old-system-sessions, playable: false}
+            - {id: s_0932, title: She Works the Ferry Bar, track_number: 5, genre: old-system-sessions, playable: false}
+            - {id: s_0933, title: Ice on the Rail, track_number: 6, genre: old-system-sessions, playable: false}
+            - {id: s_0934, title: Turn the Boat Around, track_number: 7, genre: old-system-sessions, playable: false}
+            - {id: s_0935, title: Down to the Waterline, track_number: 8, genre: old-system-sessions, playable: false}
+
 layer_c:
   recordings: none survive
-  figures: []
+  figures:
+    - id: f_017
+      name: Adley Prewitt
+      kind: yard singer and guitar player
+      genre: old-system-sessions
+      active_from: 2431
+      active_to: 2465
+      played: six-string guitar and voice
+      history: >-
+        Adley Prewitt worked the Earth river yards between 2431 and 2465 and is the name every
+        account of the form begins with, on the strength of a yard's payment ledger and two written
+        descriptions of him playing. The descriptions disagree with each other about almost
+        everything, including whether he sang at all or only played while somebody else did. He
+        matters out here because what reached the settled worlds was never a recording but an
+        account of an account, and the argument about him is the oldest argument the form has.
+    - id: f_018
+      name: Corah Ames
+      kind: piano player and teacher
+      genre: old-system-sessions
+      active_from: 2468
+      active_to: 2500
+      played: upright piano
+      history: >-
+        Corah Ames taught in a Mars terrace room from 2468 until 2500 and is credited with bringing
+        the form to that world, mostly by people who were taught by people she taught. The rolling
+        triplet figure every Mars piano player still uses is attributed to her and cannot be
+        demonstrated to be hers. She is remembered because three generations of players learned in
+        the same room and each of them said so.
+    - id: f_019
+      name: Tobin Oller
+      kind: travelling player and caller
+      genre: old-system-sessions
+      active_from: 2489
+      active_to: 2521
+      played: harmonica and calling voice
+      history: >-
+        Tobin Oller worked the early Belt diggings between 2489 and 2521, moving between them as
+        often as the crews did and playing wherever a crew would feed him. Crew records show him
+        paid in passage rather than money on at least nine occasions, which is the earliest written
+        instance of an arrangement Belt bands still use. He is mentioned whenever anybody asks how a
+        band without money gets to a job, and the answer has not improved.
+    - id: f_020
+      name: Vessa Dunlow
+      kind: round-singer and yard organiser
+      genre: old-system-sessions
+      active_from: 2512
+      active_to: 2546
+      played: voice, no instrument
+      history: >-
+        Vessa Dunlow organised the Titan lake yards' singing into fixed parts between 2512 and 2546,
+        writing out who came in where so that a shift of forty could sing the same round without
+        rehearsal. Nothing she made was ever recorded and the yards have never needed it to be,
+        because the parts are still sung the way she set them. Half the rounds the Shore Rounds
+        sing are hers, and the band credits her on every sleeve they control.

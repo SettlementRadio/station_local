@@ -1601,3 +1601,43 @@ those two years. The five genres still to write are under pressure toward recent
 ones — and old-system sessions, the genre that reads oldest, is by §3 and §10 a set of *current*
 releases that took a season to arrive and must never be presented as archive. The 33 is close to the
 final number.
+
+### D-065 · Old-system sessions credits no session player, permanently — 2026-08-10
+
+`CONSTANTS.md` §2's eight players work in the settled worlds. Every record in
+`music/wiki/old-system-sessions.yaml` was cut on Mars, Titan or Europa, by people who have never
+been down the road, and COMMISSION §2 defines the whole genre that way — *current releases arriving
+down the longest relay road from Earth's home system*. So the genre's `session_players:` block is
+empty and stays empty: **60 playable songs across 7 albums with no hired credit on any of them.**
+
+**Why not commission a home-system set.** That is Brief 0b again, and D-064 declined it. A second
+roster invented to fill a gap is exactly the failure that decision closed, and it would buy nothing
+§6 asks for — the rule is that *each player* appears across ≥3 labels, not that each label has
+players. Nothing in §11's checklist goes red.
+
+**What replaces it.** The genre's three layer-A bands guest on each other's records: Tel Brask of
+Undershore Local plays harmonica on the Mars record, Saira Dunn plays piano on the Titan one, Amon
+Furlow crosses from Mars for the Shore Rounds' EP. Same effect as a session roster and truer to the
+world — the home system is dense and connected, and it is the road *out here* that is long.
+
+**Two permanent holes now.** D-064's pre-2592 window (33 songs) and this (60). Together that is 93
+of 500 playable songs with band credits only, and both are stable rather than pending.
+
+### D-066 · Label 7 is Relay Road Import, and `release_year` there is the year it was *imported* — 2026-08-10
+
+Three conventions were fixed writing M-10, all of them binding on every later card that touches
+label 7 — M-06's catalogue, M-20's style cards, M-25's lyrics.
+
+**The name.** Label 7 is **Relay Road Import**: two people, a rented press at the road head, one
+shipment a year, and a catalogue it did not make. §4 asks for a label in trouble and this is it.
+
+**`release_year` is the issue year, not the cut year.** A record cut on Mars in 2623 and sold at the
+road head in 2624 carries 2624, and its notes name 2623. This is the only genre where the two
+differ, and it has to be the issue year because the anchor years are years in which *the settled
+worlds* saw a lot of records — that is what `Night Record` plays. Both dates are sayable facts and
+the album notes carry them.
+
+**Layer B uses `label: not imported`.** Two of the five layer-B bands are records that exist in the
+home system and never came down the road at all — a distinction only this genre can make, and the
+most useful thing its layer B does. `check.py` reads labels on layer-A albums only, so the string is
+free text there and nothing counts it.
