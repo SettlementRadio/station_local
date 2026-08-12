@@ -1,16 +1,23 @@
-# Pulse-dance — PLACEHOLDER. Nothing here is content yet.
+# Pulse-dance — written by M-11.
 #
-# Written by its card in music/MUSIC_TASKS.md: open a session and say the number. The agent
-# replaces everything below the `section:` block, and `make check` counts what it wrote.
+# The genre is label 3's own: 60 of Stormline Issue's 80 playable songs are here, and the house is
+# described in full in this file for the first time (relay-pop named it and nothing more).
 #
-# Allocation, from music/plan.yaml (the authority — do not retype it here):
-#   LAYER A — 60 songs across 2 band(s)
-#     label 3 (Meridian, dance): 60 songs / 2 band(s)
-#   LAYER B — about 5 more bands the station does not hold
-#   LAYER C — about 3 figures, 2426-2546, no albums and no track lists
+# Two things shape everything below:
 #
-# Labels this genre sits on:
-#   - label_3  (Meridian, dance)
+# 1. **The seal.** Meridian's storm coast closes for a season every year. Nothing ships, nobody
+#    leaves, and the halls run all night — which is what the form is. Every album note either
+#    happens inside a seal or is arranged around one, and the 2607 anchor is this coast's own:
+#    CONSTANTS.md section 1 puts the storm-coast studios reopening that year.
+# 2. **The two layer-A bands disagree about export.** Cordon Hours make records for one hall in one
+#    season and have refused three times to master louder for the relay; Bright Hazard make records
+#    to travel and time them to leave before the seal. Stormline Issue put both on one crate sleeve
+#    in 2618 with Bright Hazard's name larger, and that is the running argument the genre carries.
+#    It is people and consequences rather than a philosophy seminar, which is what COMMISSION.md
+#    section 2 asks for.
+#
+# `labels:` lists label_3 only. Layer B reaches label_1, label_6 and `unsigned`, all of which are
+# already named elsewhere in the wiki, and check.py reads labels on layer-A albums only.
 
 section:
   genre: pulse-dance
@@ -20,23 +27,1034 @@ section:
     referenced: B
     historical: C
 
-# The labels above, as the writer names them.
-labels: []
+labels:
+  - id: label_3
+    name: Stormline Issue
+    home: Meridian storm coast
+    tier: standard
+    status: operating
+    founded_year: 2597
+    genre: pulse-dance
+    note: >-
+      The youngest house in the catalogue and the fastest-growing. It presses on the coast, sells up
+      the relay, and times its whole year to the storm calendar — nothing leaves during a seal, so
+      the house either has its crates loaded by the week the coast closes or it has no year. It lost
+      a season to the 2607 closures and made it back by issuing everything it had already paid for
+      in one spring. Its office holds a piano nobody at the house plays, which is on more Meridian
+      records than any instrument the house owns.
 
-# From music/CONSTANTS.md section 2 — only the players who appear on this genre,
-# and only inside their active years.
-session_players: []
+# From CONSTANTS.md section 2, and only inside their dates. Five of the eight fit this genre: a
+# vocal arranger for a form built on hooks, two keyboard players, and two whose instruments the
+# coast has no equivalent of. The seal is why several of these credits exist at all — a hired player
+# caught on the coast when it closes is on the coast until it opens.
+session_players:
+  - id: sp_sel_ardin
+    name: Sel Ardin
+    instrument: backing vocals and vocal arrangement
+    active_from: 2593
+    active_to: 2626
+    genre: pulse-dance
+  - id: sp_miro_olt
+    name: Miro Olt
+    instrument: synth-harpsichord
+    active_from: 2598
+    active_to: 2626
+    genre: pulse-dance
+  - id: sp_calo_meret
+    name: Calo Meret
+    instrument: piano and compact studio keyboards
+    active_from: 2595
+    active_to: 2626
+    genre: pulse-dance
+  - id: sp_brin_noll
+    name: Brin Noll
+    instrument: oxygen-tank drums and stripped-wire chimes
+    active_from: 2596
+    active_to: 2626
+    genre: pulse-dance
+  - id: sp_ivena_sorn
+    name: Ivena Sorn
+    instrument: resonance pipes
+    active_from: 2594
+    active_to: 2626
+    genre: pulse-dance
 
-# LAYER A — playable: true. Full bios, full album stories, one fact per song.
 layer_a:
-  bands: []
-  albums: []
+  bands:
+    - id: b_054
+      name: Cordon Hours
+      kind: group
+      home_settlement: Meridian storm coast
+      label: label_3
+      genre: pulse-dance
+      active_from: 2603
+      active_to: 2626
+      members:
+        - id: p_anje_roul
+          name: Anje Roul
+          genre: pulse-dance
+          instruments: [lead vocal]
+          active_from: 2603
+          active_to: 2626
+        - id: p_peran_dask
+          name: Peran Dask
+          genre: pulse-dance
+          instruments: [synth bass, sequencers]
+          active_from: 2603
+          active_to: 2626
+        - id: p_ossa_brill
+          name: Ossa Brill
+          genre: pulse-dance
+          instruments: [keyboards, backing vocal]
+          active_from: 2603
+          active_to: 2626
+        - id: p_kir_adnall
+          name: Kir Adnall
+          genre: pulse-dance
+          instruments: [drum machines, floor percussion]
+          active_from: 2603
+          active_to: 2618
+        - id: p_wen_prile
+          name: Wen Prile
+          genre: pulse-dance
+          instruments: [drum machines, floor percussion]
+          active_from: 2618
+          active_to: 2626
+      movement:
+        standing: Localist
+        detail: >-
+          Stormline Issue's sleeves filed the band as Synthesist for four years on the grounds that
+          they play machines. Anje Roul's position, stated in 2616 and not since revised, is that
+          the machines are beside the point and the hall is the instrument, and that a record made
+          for the Longwall hall in a sealed season is a local thing whatever it is played on.
+      bio: >-
+        Cordon Hours have played the Longwall hall on Meridian's storm coast every sealed season
+        since 2603 and have never taken a booking that would put them off the coast when it closes.
+        Anje Roul sings without a monitor, on the grounds that the hall tells her where the beat is
+        and a monitor only tells her where the machine is. Peran Dask builds the bass parts on a
+        rack of repaired sequencers that has never left the settlement, cannot be insured, and is
+        carried to the hall by hand. The band has refused three times to have a record re-mastered
+        louder for export and Stormline Issue has stopped asking; the argument about it is the
+        reason they have not shared a sleeve with Bright Hazard since 2618. Kir Adnall ran the
+        machines until 2618 and left over money rather than over any of that, and Wen Prile has run
+        them since.
+      album_ids: [al_115, al_116, al_117]
 
-# LAYER B — playable: false. Two-sentence bios, one-line album notes, titles only, no facts.
+    - id: b_055
+      name: Bright Hazard
+      kind: duo
+      home_settlement: Meridian storm coast
+      label: label_3
+      genre: pulse-dance
+      active_from: 2609
+      active_to: 2626
+      members:
+        - id: p_denn_ashery
+          name: Denn Ashery
+          genre: pulse-dance
+          instruments: [lead vocal, sequencers]
+          active_from: 2609
+          active_to: 2626
+        - id: p_sela_vint
+          name: Sela Vint
+          genre: pulse-dance
+          instruments: [synth bass, programming, harmony vocal]
+          active_from: 2609
+          active_to: 2626
+      movement: Synthesist
+      bio: >-
+        Bright Hazard are two people and a rack of machines in a room above the hazard-board office
+        in Bight Row, and they are named after the board's top warning because that is the level at
+        which nobody works and everybody dances. Denn Ashery sings everything and writes nothing
+        down; Sela Vint programmes everything and writes all of it down, including what Ashery sang,
+        and her session notes are printed on the inner sleeve of every record they have made. They
+        build records to travel — cut short, mastered loud, and timed so the crate leaves before the
+        coast seals — which is the whole of their quarrel with Cordon Hours and has been since 2618.
+        Neither of them has played a sealed season since 2620, because they are always off the coast
+        when it starts, and Bight Row has not let them forget it.
+      album_ids: [al_118, al_119, al_120]
+
+  albums:
+    - id: al_115
+      title: The Seal Comes Down
+      band: b_054
+      label: label_3
+      release_year: 2607
+      kind: album
+      genre: pulse-dance
+      cornerstone: false
+      notes: >-
+        Cut in the Longwall hall during the closed season of 2606 on the machine the hall keeps for
+        lost-property announcements, and issued in 2607 when the coast reopened and Stormline Issue
+        had a season of finished records to put out at once. It was the third of those the house
+        issued that spring and the one it had not expected anything from; the other two had studios
+        and this had a hall with a wet floor. The label had paid for four songs and got eight,
+        because the band did not stop when the tape did and Ossa Brill kept a second machine
+        running from the stage. Kir Adnall's floor drum on it is a length of sea-wall shuttering,
+        which the band has used on every record since and has never replaced. Anje Roul has said
+        the record is out of tune in two places and that she would not change either.
+      songs:
+        - id: s_0936
+          title: The Seal Comes Down
+          track_number: 1
+          genre: pulse-dance
+          mood_tags: [urgent, driving, bright]
+          playable: true
+          fact: The first eight seconds are the Longwall hall's own room tone, left on because the lost-property machine was already running when the band started.
+          credits: {writers: [p_anje_roul, p_peran_dask], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_kir_adnall], producer: p_peran_dask}
+        - id: s_0937
+          title: Wet Floor, Full Room
+          track_number: 2
+          genre: pulse-dance
+          mood_tags: [sweaty, communal, insistent]
+          playable: true
+          fact: The hall had taken water the night before and four hundred people moving on wet boards are audible throughout, which the band counted as percussion and kept.
+          credits: {writers: [p_anje_roul], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_kir_adnall], producer: p_peran_dask}
+        - id: s_0938
+          title: Ask the Wall Office
+          track_number: 3
+          genre: pulse-dance
+          mood_tags: [wry, brisk, hard]
+          playable: true
+          fact: Anje Roul reads the settlement's 2606 seal notice out word for word in the middle of it, off the copy that was pinned to the hall door.
+          credits: {writers: [p_anje_roul], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_kir_adnall], producer: p_peran_dask}
+        - id: s_0939
+          title: Two Weeks of Warning
+          track_number: 4
+          genre: pulse-dance
+          mood_tags: [tense, cold, building]
+          playable: true
+          fact: Peran Dask built the bass figure out of the two-note sound the hazard boards make, slowed until it sat at the tempo of the room.
+          credits: {writers: [p_peran_dask], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_kir_adnall], producer: p_peran_dask}
+        - id: s_0940
+          title: Nobody Books a Boat
+          track_number: 5
+          genre: pulse-dance
+          mood_tags: [wry, buoyant, bright]
+          playable: true
+          fact: Kir Adnall plays the whole track on a length of sea-wall shuttering, which became the band's floor drum and is on every record they have made.
+          credits: {writers: [p_anje_roul, p_kir_adnall], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_kir_adnall], producer: p_peran_dask}
+        - id: s_0941
+          title: Stay In, Stay Up
+          track_number: 6
+          genre: pulse-dance
+          mood_tags: [euphoric, driving, communal]
+          playable: true
+          fact: The chorus was the hall's before it was the band's — the room had been shouting it at them for two seasons before anybody wrote a verse for it.
+          credits: {writers: [p_anje_roul, p_ossa_brill], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_kir_adnall], producer: p_peran_dask}
+        - id: s_0942
+          title: The Light Above the Door
+          track_number: 7
+          genre: pulse-dance
+          mood_tags: [aching, slow-building, warm]
+          playable: true
+          fact: Anje Roul had been singing for six hours and takes the last verse an octave down, which is the lowest she has been recorded on any record.
+          credits: {writers: [p_anje_roul], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_kir_adnall], producer: p_peran_dask}
+        - id: s_0943
+          title: Open the Coast
+          track_number: 8
+          genre: pulse-dance
+          mood_tags: [bright, hopeful, hard]
+          playable: true
+          fact: Cut on the morning the 2606 seal lifted with the hall doors standing open, and the wind off the coast is under the last chorus.
+          credits: {writers: [p_anje_roul, p_peran_dask], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_kir_adnall], producer: p_peran_dask}
+
+    - id: al_116
+      title: Nobody Leaves Before Six
+      band: b_054
+      label: label_3
+      release_year: 2619
+      kind: album
+      genre: pulse-dance
+      cornerstone: false
+      notes: >-
+        Made in the Longwall hall across the sealed season of 2618 and issued in 2619, into a
+        release calendar full of answers to the altered-credit edition — the year the band would
+        least have chosen and the one Stormline Issue insisted on. Sel Ardin came out from
+        Concordance for eleven days and built the backing vocals on eight of the eleven tracks; it
+        is the only time Cordon Hours have used a hired voice and Anje Roul has said it is the only
+        time she has been out-sung in her own hall. The record was mastered twice, once by the label
+        for export and once by the band, and the band's is what was pressed after a fortnight of
+        letters. The crate that carried it out also carried Bright Hazard, whose name the sleeve put
+        above Cordon Hours', which is where the argument between the two bands starts and it has not
+        stopped since. Kir Adnall's last session is track four and Wen Prile's first is track five.
+      songs:
+        - id: s_0944
+          title: Nobody Leaves Before Six
+          track_number: 1
+          genre: pulse-dance
+          mood_tags: [euphoric, driving, communal]
+          playable: true
+          fact: Named for the Longwall hall's own rule during a seal — the doors stay bolted until six, so nothing can end early and nothing ever has.
+          credits: {writers: [p_anje_roul], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_kir_adnall, sp_sel_ardin], producer: p_peran_dask}
+        - id: s_0945
+          title: Count the Hall Down
+          track_number: 2
+          genre: pulse-dance
+          mood_tags: [insistent, hard, bright]
+          playable: true
+          fact: Sel Ardin arranged the counting chorus in three parts and taught it to the room, which took an evening the band had not budgeted for.
+          credits: {writers: [p_anje_roul, p_ossa_brill], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_kir_adnall, sp_sel_ardin], producer: p_peran_dask}
+        - id: s_0946
+          title: Every Light on the Board
+          track_number: 3
+          genre: pulse-dance
+          mood_tags: [tense, glittering, urgent]
+          playable: true
+          fact: The eight backing voices are all Sel Ardin's own, laid one at a time in the hall stairwell because the hall itself was too live to stack them in.
+          credits: {writers: [p_anje_roul], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_kir_adnall, sp_sel_ardin], producer: p_peran_dask}
+        - id: s_0947
+          title: The Machine Room Door
+          track_number: 4
+          genre: pulse-dance
+          mood_tags: [cold, restless, driving]
+          playable: true
+          fact: Kir Adnall's last session with the band; he programmed the pattern and had left the settlement before the record was finished.
+          credits: {writers: [p_peran_dask, p_kir_adnall], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_kir_adnall], producer: p_peran_dask}
+        - id: s_0948
+          title: Harder Than the Weather
+          track_number: 5
+          genre: pulse-dance
+          mood_tags: [defiant, pounding, hard]
+          playable: true
+          fact: Wen Prile's first track with the band, played on the machines Kir Adnall had left set up and which nobody had touched in the fortnight between.
+          credits: {writers: [p_anje_roul, p_peran_dask], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile, sp_sel_ardin], producer: p_peran_dask}
+        - id: s_0949
+          title: Second Hand on the Clock
+          track_number: 6
+          genre: pulse-dance
+          mood_tags: [hypnotic, patient, cold]
+          playable: true
+          fact: The pulse is the Longwall hall clock, which loses two seconds an hour, so the track drifts across its own bar lines and was kept that way.
+          credits: {writers: [p_peran_dask], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile, sp_sel_ardin], producer: p_peran_dask}
+        - id: s_0950
+          title: Don't Master It Louder
+          track_number: 7
+          genre: pulse-dance
+          mood_tags: [wry, blunt, brisk]
+          playable: true
+          fact: Written during the fortnight of letters about the export master, and Stormline Issue pressed it without ever asking what it was about.
+          credits: {writers: [p_anje_roul, p_peran_dask], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile], producer: p_peran_dask}
+        - id: s_0951
+          title: Someone Else's Sleeve
+          track_number: 8
+          genre: pulse-dance
+          mood_tags: [bitter, driving, sharp]
+          playable: true
+          fact: Anje Roul wrote it the day she saw the export crate carrying both bands' names, and she has not signed a joint sleeve since.
+          credits: {writers: [p_anje_roul], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile, sp_sel_ardin], producer: p_peran_dask}
+        - id: s_0952
+          title: Out Past the Cordon
+          track_number: 9
+          genre: pulse-dance
+          mood_tags: [longing, warm, midtempo]
+          playable: true
+          fact: The only song the band has written about leaving the coast, and Anje Roul sang it standing in the open doorway because she said it needed the outside in it.
+          credits: {writers: [p_anje_roul, p_ossa_brill], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile], producer: p_peran_dask}
+        - id: s_0953
+          title: All Night Allotment
+          track_number: 10
+          genre: pulse-dance
+          mood_tags: [euphoric, glittering, breathless]
+          playable: true
+          fact: Recorded on the one night of the season the settlement lifts the power allotment, and the band spent the whole of it on this track.
+          credits: {writers: [p_anje_roul, p_peran_dask], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile, sp_sel_ardin], producer: p_peran_dask}
+        - id: s_0954
+          title: Six in the Morning
+          track_number: 11
+          genre: pulse-dance
+          mood_tags: [warm, final, tired]
+          playable: true
+          fact: Cut at six with the hall doors being unbolted behind the band, which is the sound the record ends on and the only edit Sel Ardin argued against.
+          credits: {writers: [p_anje_roul], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile, sp_sel_ardin], producer: p_peran_dask}
+
+    - id: al_117
+      title: The Long Cordon
+      band: b_054
+      label: label_3
+      release_year: 2624
+      kind: album
+      genre: pulse-dance
+      cornerstone: true
+      notes: >-
+        The sealed season of 2623 ran eleven weeks, the longest the storm coast has recorded. Cordon
+        Hours played the Longwall hall on forty of those nights and recorded thirty of them, and
+        what was issued in 2624 is thirteen songs cut out of that — chosen by the hall rather than
+        the band, because Ossa Brill kept a tally of what the room stayed for and the record is the
+        top of the tally in the order it was played. Concordance's largest hall reopened the same
+        year and every house in the settled worlds was booking live sessions into it; Stormline
+        Issue put its season's money into a wet hall on the storm coast instead and has said in
+        print that it would do it again. Miro Olt is on three tracks and Calo Meret on two, both of
+        them caught on the coast when it closed and both, by their own account, bored. Sela Vint of
+        Bright Hazard plays the synth bass on one track after Peran Dask went into a splint in the
+        eighth week; the two bands were not speaking and she came anyway.
+      songs:
+        - id: s_0955
+          title: The Long Cordon
+          track_number: 1
+          genre: pulse-dance
+          mood_tags: [driving, euphoric, communal]
+          playable: true
+          fact: Named for the eleven-week seal of 2623, the longest the coast has on record, and the bass figure under it is eleven notes long for that reason.
+          credits: {writers: [p_anje_roul, p_peran_dask], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile], producer: p_peran_dask}
+        - id: s_0956
+          title: Forty Nights at Longwall
+          track_number: 2
+          genre: pulse-dance
+          mood_tags: [insistent, bright, tireless]
+          playable: true
+          fact: The band played the hall forty nights that season and this is the take from the thirty-first, which Ossa Brill's tally records as the fullest room of the run.
+          credits: {writers: [p_anje_roul], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile], producer: p_peran_dask}
+        - id: s_0957
+          title: Play It With One Hand
+          track_number: 3
+          genre: pulse-dance
+          mood_tags: [hard, wry, driving]
+          playable: true
+          fact: Sela Vint of Bright Hazard plays the synth bass, Peran Dask having gone into a splint in the eighth week, and the two bands had not spoken since 2618.
+          credits: {writers: [p_anje_roul, p_peran_dask], players: [p_anje_roul, p_sela_vint, p_ossa_brill, p_wen_prile], producer: p_peran_dask}
+        - id: s_0958
+          title: Every Room Answers
+          track_number: 4
+          genre: pulse-dance
+          mood_tags: [warm, glittering, hypnotic]
+          playable: true
+          fact: Miro Olt's synth-harpsichord is the only thing on the track not made in the settlement, and he was playing it on the coast because the seal had shut before he could get it home.
+          credits: {writers: [p_anje_roul, p_ossa_brill], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile, sp_miro_olt], producer: p_peran_dask}
+        - id: s_0959
+          title: Nothing Ships Tonight
+          track_number: 5
+          genre: pulse-dance
+          mood_tags: [tense, cold, driving]
+          playable: true
+          fact: Written the night the last crate out failed to leave, at the tempo the hall was already dancing at when the news reached the door.
+          credits: {writers: [p_anje_roul, p_peran_dask], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile], producer: p_peran_dask}
+        - id: s_0960
+          title: Hold the Room Warm
+          track_number: 6
+          genre: pulse-dance
+          mood_tags: [euphoric, communal, sweaty]
+          playable: true
+          fact: Cut with the hall heating switched off to protect the machines, and the four hundred people in the room are the only reason the take is in tune.
+          credits: {writers: [p_anje_roul], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile, sp_miro_olt], producer: p_peran_dask}
+        - id: s_0961
+          title: Ask Me in Eleven Weeks
+          track_number: 7
+          genre: pulse-dance
+          mood_tags: [wry, buoyant, hard]
+          playable: true
+          fact: Anje Roul improvised the second verse on the night and it is the only lyric on any Cordon Hours record that has never been written down.
+          credits: {writers: [p_anje_roul], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile, sp_calo_meret], producer: p_peran_dask}
+        - id: s_0962
+          title: The Board Says Bright
+          track_number: 8
+          genre: pulse-dance
+          mood_tags: [urgent, glittering, breathless]
+          playable: true
+          fact: The two-note figure under the chorus is the hazard board's top warning, which is also where Bright Hazard got their name, and Anje Roul has never said whether that was the joke.
+          credits: {writers: [p_anje_roul, p_peran_dask], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile], producer: p_peran_dask}
+        - id: s_0963
+          title: Money After the Season
+          track_number: 9
+          genre: pulse-dance
+          mood_tags: [blunt, dry, driving]
+          playable: true
+          fact: The band is paid once a season and the second verse names the 2623 figure, which Stormline Issue asked to have taken out and which stayed in.
+          credits: {writers: [p_anje_roul, p_ossa_brill], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile], producer: p_peran_dask}
+        - id: s_0964
+          title: The Office Piano
+          track_number: 10
+          genre: pulse-dance
+          mood_tags: [warm, slow-building, generous]
+          playable: true
+          fact: Calo Meret plays Stormline Issue's office piano, wheeled the length of the sea wall to the hall on a fish trolley and wheeled back the same night.
+          credits: {writers: [p_anje_roul], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile, sp_calo_meret], producer: p_peran_dask}
+        - id: s_0965
+          title: Count Us Back In
+          track_number: 11
+          genre: pulse-dance
+          mood_tags: [hard, pounding, defiant]
+          playable: true
+          fact: Wen Prile counts the band in out loud, which no machine operator of theirs had been allowed to do, and it stayed because nobody in the room could hear the click.
+          credits: {writers: [p_anje_roul, p_wen_prile], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile], producer: p_peran_dask}
+        - id: s_0966
+          title: Under the Sea Wall
+          track_number: 12
+          genre: pulse-dance
+          mood_tags: [cold, spacious, hypnotic]
+          playable: true
+          fact: Ivena Sorn plays resonance pipes in the shuttering gallery under the sea wall, where the whole track was cut, and the water on the far side of it is on the take.
+          credits: {writers: [p_peran_dask, p_ossa_brill], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile, sp_ivena_sorn], producer: p_peran_dask}
+        - id: s_0967
+          title: The Seal Lifts at Noon
+          track_number: 13
+          genre: pulse-dance
+          mood_tags: [warm, final, euphoric]
+          playable: true
+          fact: The last night of the season, cut hours before the coast opened, and the hall's own bell is what ends the record.
+          credits: {writers: [p_anje_roul, p_peran_dask], players: [p_anje_roul, p_peran_dask, p_ossa_brill, p_wen_prile, sp_miro_olt], producer: p_peran_dask}
+
+    - id: al_118
+      title: Top of the Board
+      band: b_055
+      label: label_3
+      release_year: 2612
+      kind: album
+      genre: pulse-dance
+      cornerstone: false
+      notes: >-
+        Bright Hazard's first record, made in the room above the hazard-board office in Bight Row in
+        2611 and issued in 2612. Stormline Issue signed the duo on one track that had already been
+        played in four settlements before the house heard it, which it has since called the only
+        signing it ever made in a hurry. The year the record landed was the year Lower Bell Editions
+        folded in the core and the settled worlds filled up with cheap catalogue; the duo's answer
+        was to make the shortest and loudest record on the house's list and get it onto a crate
+        before the coast sealed. Sela Vint's session notes — every pattern, every tempo, every
+        change — are printed on the inner sleeve, which was her condition for signing and has been
+        on every record since. Nobody but the two of them plays on it, a rule fixed during these
+        sessions and broken once in twelve years.
+      songs:
+        - id: s_0968
+          title: Top of the Board
+          track_number: 1
+          genre: pulse-dance
+          mood_tags: [urgent, glittering, hard]
+          playable: true
+          fact: The figure that opens it was recorded off the hazard board outside the duo's own window, at the warning level the band took their name from.
+          credits: {writers: [p_denn_ashery, p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0969
+          title: Nothing Higher to Post
+          track_number: 2
+          genre: pulse-dance
+          mood_tags: [driving, cold, defiant]
+          playable: true
+          fact: Sela Vint built the pattern out of the office shutter motor downstairs, which runs for ninety seconds every time the board changes.
+          credits: {writers: [p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0970
+          title: Bight Row at Two
+          track_number: 3
+          genre: pulse-dance
+          mood_tags: [breathless, euphoric, glittering]
+          playable: true
+          fact: Named for the hour the Bight Row rooms fill, and every mix of it was tested by playing it out of the window into that street at that hour.
+          credits: {writers: [p_denn_ashery], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0971
+          title: Get It on the Crate
+          track_number: 4
+          genre: pulse-dance
+          mood_tags: [insistent, brisk, hard]
+          playable: true
+          fact: Written and finished inside one day because the season's crate left the next, and the duo has never disputed that it sounds like it.
+          credits: {writers: [p_denn_ashery, p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0972
+          title: Cheap Catalogue
+          track_number: 5
+          genre: pulse-dance
+          mood_tags: [wry, cold, sharp]
+          playable: true
+          fact: About the folded core house's records arriving on the coast for almost nothing in 2612, and Denn Ashery sings most of it off a dealer's price list.
+          credits: {writers: [p_denn_ashery], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0973
+          title: Say It Once, Loudly
+          track_number: 6
+          genre: pulse-dance
+          mood_tags: [pounding, bright, blunt]
+          playable: true
+          fact: The only vocal Denn Ashery has ever finished in one take, which he offers as proof that he is right not to write anything down.
+          credits: {writers: [p_denn_ashery], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0974
+          title: Nobody Else in the Room
+          track_number: 7
+          genre: pulse-dance
+          mood_tags: [hypnotic, cold, restless]
+          playable: true
+          fact: A hired drummer was sent home in the middle of these sessions and the duo's rule that nobody else plays on their records dates from that afternoon.
+          credits: {writers: [p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0975
+          title: The Motor and the Wind
+          track_number: 8
+          genre: pulse-dance
+          mood_tags: [tense, driving, glassy]
+          playable: true
+          fact: The wind took part of the office roof during the take and the pattern gains two counts at the point where both of them flinched.
+          credits: {writers: [p_sela_vint, p_denn_ashery], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0976
+          title: Sell It Up the Relay
+          track_number: 9
+          genre: pulse-dance
+          mood_tags: [buoyant, sly, driving]
+          playable: true
+          fact: Denn Ashery wrote the hook to be singable by somebody who had never been to Meridian, has said so at every opportunity, and Cordon Hours have held it against him at every opportunity since.
+          credits: {writers: [p_denn_ashery], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0977
+          title: Before the Coast Seals
+          track_number: 10
+          genre: pulse-dance
+          mood_tags: [urgent, final, breathless]
+          playable: true
+          fact: The last thing cut before the 2611 seal, finished at the dock with the crate already loaded, and mixed on the boat out.
+          credits: {writers: [p_denn_ashery, p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+
+    - id: al_119
+      title: Export Grade
+      band: b_055
+      label: label_3
+      release_year: 2619
+      kind: album
+      genre: pulse-dance
+      cornerstone: false
+      notes: >-
+        Made in 2618 in a hired room off the coast, the first Bright Hazard record not built in the
+        Bight Row room, and issued in 2619 on a crate that also carried Cordon Hours. That sleeve
+        put Bright Hazard's name above Cordon Hours' and the two bands have not shared one since;
+        Sela Vint has stated in writing that neither of them saw the sleeve before it shipped, and
+        has also said it made no difference to anybody's opinion. The record is the duo's answer to
+        the altered-credit edition that filled the 2619 calendar: every sound on it is credited to
+        whichever of them made it, down to which one pressed the key, and the inner sleeve runs to
+        four pages. Sel Ardin sings on three tracks and is credited by name, part and take count,
+        the first person besides the two of them to appear on a Bright Hazard record. It is the
+        record that took the duo off the coast, and they have not played a sealed season since 2620.
+      songs:
+        - id: s_0978
+          title: Export Grade
+          track_number: 1
+          genre: pulse-dance
+          mood_tags: [hard, glittering, driving]
+          playable: true
+          fact: The title is Stormline Issue's own term for a master cut loud enough to survive the relay, and the duo asked for it to be stamped on the disc label.
+          credits: {writers: [p_denn_ashery, p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0979
+          title: Whose Name Goes First
+          track_number: 2
+          genre: pulse-dance
+          mood_tags: [sharp, cold, insistent]
+          playable: true
+          fact: Written months before the crate sleeve that made the question famous, which Sela Vint has offered as the only defence the duo has ever needed.
+          credits: {writers: [p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0980
+          title: Every Part, Every Hand
+          track_number: 3
+          genre: pulse-dance
+          mood_tags: [breathless, bright, precise]
+          playable: true
+          fact: Every sound on it is credited to whichever of the two made it, except two the duo could not agree about, which are credited to both.
+          credits: {writers: [p_denn_ashery, p_sela_vint], players: [p_denn_ashery, p_sela_vint, sp_sel_ardin], producer: p_sela_vint}
+        - id: s_0981
+          title: Three Takes, No More
+          track_number: 4
+          genre: pulse-dance
+          mood_tags: [driving, wry, hard]
+          playable: true
+          fact: Sel Ardin is credited on the sleeve by name, part and number of takes, and this is the track where the number is three.
+          credits: {writers: [p_denn_ashery], players: [p_denn_ashery, p_sela_vint, sp_sel_ardin], producer: p_sela_vint}
+        - id: s_0982
+          title: A Room With a Rate
+          track_number: 5
+          genre: pulse-dance
+          mood_tags: [cold, restless, glassy]
+          playable: true
+          fact: The duo's first record made in a hired room and the second verse is what that room cost by the hour.
+          credits: {writers: [p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0983
+          title: Don't Wait for the Season
+          track_number: 6
+          genre: pulse-dance
+          mood_tags: [euphoric, urgent, bright]
+          playable: true
+          fact: Denn Ashery's argument for working off the coast, and the last thing the duo finished before deciding to stop playing sealed seasons altogether.
+          credits: {writers: [p_denn_ashery], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0984
+          title: The Credit Line
+          track_number: 7
+          genre: pulse-dance
+          mood_tags: [tense, sly, hypnotic]
+          playable: true
+          fact: Written about the altered-credit edition that filled the 2619 calendar and it names nobody at all, which Sela Vint insisted on before agreeing to record it.
+          credits: {writers: [p_denn_ashery, p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0985
+          title: Loud All the Way Out
+          track_number: 8
+          genre: pulse-dance
+          mood_tags: [pounding, buoyant, glittering]
+          playable: true
+          fact: Mastered four times, each louder than the last, and the third was pressed because the fourth had lost Sel Ardin's harmony entirely.
+          credits: {writers: [p_denn_ashery], players: [p_denn_ashery, p_sela_vint, sp_sel_ardin], producer: p_sela_vint}
+        - id: s_0986
+          title: Two Names on the Crate
+          track_number: 9
+          genre: pulse-dance
+          mood_tags: [final, blunt, driving]
+          playable: true
+          fact: Sela Vint's harmony is mixed above Denn Ashery's lead for the last chorus, the only time on any of their records, and it was what she asked for instead of arguing about the sleeve.
+          credits: {writers: [p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+
+    - id: al_120
+      title: Everywhere but Here
+      band: b_055
+      label: label_3
+      release_year: 2624
+      kind: album
+      genre: pulse-dance
+      cornerstone: false
+      notes: >-
+        Cut in 2623 in four hired rooms across three settlements while the storm coast was sealed
+        for eleven weeks behind them, and issued in 2624. Bright Hazard were the only Stormline
+        Issue act working that season and this record is the whole of the house's export list for
+        the year. Denn Ashery's vocals were recorded in one settlement and Sela Vint's programming
+        finished in another, the two of them working a fortnight and two crossings apart and sending
+        parts by relay, which is why the duo calls it the first record they made without being in a
+        room together. Brin Noll plays stripped-wire chimes on two tracks — the only person besides
+        Sel Ardin to appear on a Bright Hazard record and the first to play an instrument on one —
+        hired because Sela Vint wanted a sound she could not programme and would not fake. It sold
+        better off Meridian than on it and Bight Row has said so at length.
+      songs:
+        - id: s_0987
+          title: Everywhere but Here
+          track_number: 1
+          genre: pulse-dance
+          mood_tags: [driving, glittering, restless]
+          playable: true
+          fact: Made in four hired rooms across three settlements while the coast was sealed behind the duo, and no two tracks on the record were finished in the same place.
+          credits: {writers: [p_denn_ashery, p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0988
+          title: A Fortnight Apart
+          track_number: 2
+          genre: pulse-dance
+          mood_tags: [cold, hypnotic, longing]
+          playable: true
+          fact: Denn Ashery's vocal and Sela Vint's programming were recorded fourteen days and two settlements apart and sent to each other by relay.
+          credits: {writers: [p_denn_ashery], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0989
+          title: Something I Can't Build
+          track_number: 3
+          genre: pulse-dance
+          mood_tags: [glassy, tense, bright]
+          playable: true
+          fact: Brin Noll plays stripped-wire chimes, hired because Sela Vint wanted a sound she could not programme and refused to imitate with a machine.
+          credits: {writers: [p_sela_vint], players: [p_denn_ashery, p_sela_vint, sp_brin_noll], producer: p_sela_vint}
+        - id: s_0990
+          title: The Room Next Door
+          track_number: 4
+          genre: pulse-dance
+          mood_tags: [restless, insistent, hard]
+          playable: true
+          fact: The wall of the hired room backed onto another session and the bleed from it is on the take, because the duo had paid for the hour and could not stop.
+          credits: {writers: [p_denn_ashery, p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0991
+          title: Nobody Waits Eleven Weeks
+          track_number: 5
+          genre: pulse-dance
+          mood_tags: [urgent, defiant, pounding]
+          playable: true
+          fact: Written about the 2623 seal the duo spent off the coast, and Bight Row has held the song against them more than the absence.
+          credits: {writers: [p_denn_ashery], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0992
+          title: Send It by Relay
+          track_number: 6
+          genre: pulse-dance
+          mood_tags: [buoyant, glittering, breathless]
+          playable: true
+          fact: The hook was sung down a relay line and what the line did to Denn Ashery's voice was kept, because Sela Vint could not reproduce it afterwards.
+          credits: {writers: [p_denn_ashery, p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0993
+          title: Cheaper by the Hour
+          track_number: 7
+          genre: pulse-dance
+          mood_tags: [wry, brisk, driving]
+          playable: true
+          fact: Every room on the record is named on the inner sleeve with what it cost, which is a habit the duo has kept since their first release.
+          credits: {writers: [p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+        - id: s_0994
+          title: Two Takes and Out
+          track_number: 8
+          genre: pulse-dance
+          mood_tags: [hard, cold, precise]
+          playable: true
+          fact: Brin Noll's second track, cut in twenty minutes at the end of a day he had been paid for in full, and he returned the rest of the fee.
+          credits: {writers: [p_denn_ashery, p_sela_vint], players: [p_denn_ashery, p_sela_vint, sp_brin_noll], producer: p_sela_vint}
+        - id: s_0995
+          title: Back Before the Seal
+          track_number: 9
+          genre: pulse-dance
+          mood_tags: [final, warm, euphoric]
+          playable: true
+          fact: The last thing recorded, finished in the settlement they had started in, and the only track on the record with both of them in the room.
+          credits: {writers: [p_denn_ashery, p_sela_vint], players: [p_denn_ashery, p_sela_vint], producer: p_sela_vint}
+
 layer_b:
-  bands: []
+  bands:
+    - id: b_056
+      name: Tidegate Six
+      kind: group
+      home_settlement: Meridian storm coast
+      label: label_3
+      genre: pulse-dance
+      active_from: 2596
+      active_to: 2620
+      bio: >-
+        Tidegate Six ran the first all-night sealed-season dances on the storm coast, in a tide-gate
+        machine room with the pumps still working, and every Meridian band since has played a room
+        they opened. They stopped in 2620 when the gate was rebuilt and the room was filled in.
+      albums:
+        - id: al_121
+          title: The First Sealed Season
+          label: label_3
+          release_year: 2600
+          kind: album
+          genre: pulse-dance
+          notes: The record that turned the coast's sealed-season nights into something a label would pay for.
+          songs:
+            - {id: s_0996, title: The First Sealed Season, track_number: 1, genre: pulse-dance, playable: false}
+            - {id: s_0997, title: Pumps Still Running, track_number: 2, genre: pulse-dance, playable: false}
+            - {id: s_0998, title: Gate Room Nights, track_number: 3, genre: pulse-dance, playable: false}
+            - {id: s_0999, title: Nobody Sleeps in Here, track_number: 4, genre: pulse-dance, playable: false}
+            - {id: s_1000, title: Salt on the Floor, track_number: 5, genre: pulse-dance, playable: false}
+            - {id: s_1001, title: Two Hours to Open, track_number: 6, genre: pulse-dance, playable: false}
+            - {id: s_1002, title: Cold Iron, Warm Room, track_number: 7, genre: pulse-dance, playable: false}
+            - {id: s_1003, title: Wait for the Tide, track_number: 8, genre: pulse-dance, playable: false}
+        - id: al_122
+          title: Gate Money
+          label: label_3
+          release_year: 2612
+          kind: album
+          genre: pulse-dance
+          notes: The band's last, made after the settlement began charging for the gate room, and remembered chiefly for the argument about the door.
+          songs:
+            - {id: s_1004, title: Gate Money, track_number: 1, genre: pulse-dance, playable: false}
+            - {id: s_1005, title: Who Owns the Room, track_number: 2, genre: pulse-dance, playable: false}
+            - {id: s_1006, title: Pay at the Door, track_number: 3, genre: pulse-dance, playable: false}
+            - {id: s_1007, title: The Second Pump, track_number: 4, genre: pulse-dance, playable: false}
+            - {id: s_1008, title: Long Way Round the Wall, track_number: 5, genre: pulse-dance, playable: false}
+            - {id: s_1009, title: Nothing Runs for Nothing, track_number: 6, genre: pulse-dance, playable: false}
+            - {id: s_1010, title: Down to the Last Hour, track_number: 7, genre: pulse-dance, playable: false}
+            - {id: s_1011, title: Fill It In, track_number: 8, genre: pulse-dance, playable: false}
 
-# LAYER C — recordings are lost. Three sentences per figure. Never an album or a track list.
+    - id: b_057
+      name: The Salt Circuit
+      kind: group
+      home_settlement: Meridian storm coast
+      label: label_3
+      genre: pulse-dance
+      active_from: 2604
+      active_to: 2626
+      bio: >-
+        The Salt Circuit play the small settlements up and down the storm coast rather than the
+        halls, forty nights a season, and have never had a record that sold badly or one anybody
+        argued about. Stormline Issue keeps them because they cost little and arrive on time, which
+        the house has said in print and the band has never minded.
+      albums:
+        - id: al_123
+          title: Round the Salt
+          label: label_3
+          release_year: 2607
+          kind: album
+          genre: pulse-dance
+          notes: The record the house put out while the storm-coast studios were still shut, made in the back of the band's own transport.
+          songs:
+            - {id: s_1012, title: Round the Salt, track_number: 1, genre: pulse-dance, playable: false}
+            - {id: s_1013, title: Every Small Hall, track_number: 2, genre: pulse-dance, playable: false}
+            - {id: s_1014, title: Forty Nights a Season, track_number: 3, genre: pulse-dance, playable: false}
+            - {id: s_1015, title: The Van Runs Warm, track_number: 4, genre: pulse-dance, playable: false}
+            - {id: s_1016, title: Somebody's Cousin's Room, track_number: 5, genre: pulse-dance, playable: false}
+            - {id: s_1017, title: Play It Again for the Back, track_number: 6, genre: pulse-dance, playable: false}
+            - {id: s_1018, title: Salt in the Speakers, track_number: 7, genre: pulse-dance, playable: false}
+            - {id: s_1019, title: Home by the Weekend, track_number: 8, genre: pulse-dance, playable: false}
+        - id: al_124
+          title: Steady Trade
+          label: label_3
+          release_year: 2619
+          kind: album
+          genre: pulse-dance
+          notes: Remembered as the only Stormline Issue record of 2619 that had nothing to do with anybody's dispute.
+          songs:
+            - {id: s_1020, title: Steady Trade, track_number: 1, genre: pulse-dance, playable: false}
+            - {id: s_1021, title: Nothing to Argue About, track_number: 2, genre: pulse-dance, playable: false}
+            - {id: s_1022, title: The Same Nine Rooms, track_number: 3, genre: pulse-dance, playable: false}
+            - {id: s_1023, title: Ask for Us by Name, track_number: 4, genre: pulse-dance, playable: false}
+            - {id: s_1024, title: Paid on the Night, track_number: 5, genre: pulse-dance, playable: false}
+            - {id: s_1025, title: Two Sets and a Break, track_number: 6, genre: pulse-dance, playable: false}
+            - {id: s_1026, title: Counted at the Door, track_number: 7, genre: pulse-dance, playable: false}
+            - {id: s_1027, title: Still Out Here, track_number: 8, genre: pulse-dance, playable: false}
+
+    - id: b_058
+      name: Perren Vane
+      kind: solo
+      home_settlement: Meridian storm coast
+      label: unsigned
+      genre: pulse-dance
+      active_from: 2610
+      active_to: 2626
+      bio: >-
+        Perren Vane makes records alone in a decommissioned pump house and gives them away at hall
+        doors, which he has done since 2610 and has twice refused money for in writing. Every band
+        on the coast has taken something off one of his tapes and about half of them say so.
+      albums:
+        - id: al_125
+          title: Pump House Tapes
+          label: unsigned
+          release_year: 2612
+          kind: album
+          genre: pulse-dance
+          notes: Handed out at hall doors in runs of thirty and the most copied record the storm coast has.
+          songs:
+            - {id: s_1028, title: Pump House Tapes, track_number: 1, genre: pulse-dance, playable: false}
+            - {id: s_1029, title: One Man and a Rack, track_number: 2, genre: pulse-dance, playable: false}
+            - {id: s_1030, title: Nothing to Sell, track_number: 3, genre: pulse-dance, playable: false}
+            - {id: s_1031, title: Take It, It's Yours, track_number: 4, genre: pulse-dance, playable: false}
+            - {id: s_1032, title: The Pump Still Turns, track_number: 5, genre: pulse-dance, playable: false}
+            - {id: s_1033, title: Copy It Twice, track_number: 6, genre: pulse-dance, playable: false}
+            - {id: s_1034, title: Nobody Signed Anything, track_number: 7, genre: pulse-dance, playable: false}
+            - {id: s_1035, title: Leave It at the Door, track_number: 8, genre: pulse-dance, playable: false}
+        - id: al_126
+          title: Given Away Again
+          label: unsigned
+          release_year: 2624
+          kind: album
+          genre: pulse-dance
+          notes: Released during the eleven-week seal, when it was the only new record on the coast and nobody could buy it.
+          songs:
+            - {id: s_1036, title: Given Away Again, track_number: 1, genre: pulse-dance, playable: false}
+            - {id: s_1037, title: Eleven Weeks Indoors, track_number: 2, genre: pulse-dance, playable: false}
+            - {id: s_1038, title: The Only New Thing, track_number: 3, genre: pulse-dance, playable: false}
+            - {id: s_1039, title: Ask Me What It Cost, track_number: 4, genre: pulse-dance, playable: false}
+            - {id: s_1040, title: Under the Pump Floor, track_number: 5, genre: pulse-dance, playable: false}
+            - {id: s_1041, title: Nothing Ships, Nothing Sells, track_number: 6, genre: pulse-dance, playable: false}
+            - {id: s_1042, title: Play It in the Doorway, track_number: 7, genre: pulse-dance, playable: false}
+            - {id: s_1043, title: Out When It Opens, track_number: 8, genre: pulse-dance, playable: false}
+
+    - id: b_059
+      name: Late Bell Set
+      kind: group
+      home_settlement: Concordance late-club quarter
+      label: label_6
+      genre: pulse-dance
+      active_from: 2600
+      active_to: 2612
+      bio: >-
+        Late Bell Set were a late-club act who turned to the coast's form in 2607 and were the only
+        thing Lower Bell Editions signed that year that made the house money. Both their records
+        went into the disputed catalogue when it folded in 2612 and neither has been pressed since.
+      albums:
+        - id: al_127
+          title: Nothing After Midnight
+          label: label_6
+          release_year: 2607
+          kind: album
+          genre: pulse-dance
+          notes: The core's first serious attempt at the coast's form, and the record Meridian bands still say got the tempo wrong.
+          songs:
+            - {id: s_1044, title: Nothing After Midnight, track_number: 1, genre: pulse-dance, playable: false}
+            - {id: s_1045, title: The Late Bell, track_number: 2, genre: pulse-dance, playable: false}
+            - {id: s_1046, title: Off the Last Ferry, track_number: 3, genre: pulse-dance, playable: false}
+            - {id: s_1047, title: Four Floors Up, track_number: 4, genre: pulse-dance, playable: false}
+            - {id: s_1048, title: Colder Than the Club, track_number: 5, genre: pulse-dance, playable: false}
+            - {id: s_1049, title: Nobody Dances Here, track_number: 6, genre: pulse-dance, playable: false}
+            - {id: s_1050, title: Take the Long Stair, track_number: 7, genre: pulse-dance, playable: false}
+            - {id: s_1051, title: Closing at Four, track_number: 8, genre: pulse-dance, playable: false}
+        - id: al_128
+          title: The Last Pressing
+          label: label_6
+          release_year: 2612
+          kind: album
+          genre: pulse-dance
+          notes: Pressed in the month the house folded and remembered as the record nobody has been able to reissue since.
+          songs:
+            - {id: s_1052, title: The Last Pressing, track_number: 1, genre: pulse-dance, playable: false}
+            - {id: s_1053, title: Who Holds the Master, track_number: 2, genre: pulse-dance, playable: false}
+            - {id: s_1054, title: Money in a Locked Room, track_number: 3, genre: pulse-dance, playable: false}
+            - {id: s_1055, title: The House Is Shut, track_number: 4, genre: pulse-dance, playable: false}
+            - {id: s_1056, title: Ask the Receiver, track_number: 5, genre: pulse-dance, playable: false}
+            - {id: s_1057, title: Nothing to Collect, track_number: 6, genre: pulse-dance, playable: false}
+            - {id: s_1058, title: One More Before It Goes, track_number: 7, genre: pulse-dance, playable: false}
+            - {id: s_1059, title: Turn the Lights Off Behind You, track_number: 8, genre: pulse-dance, playable: false}
+
+    - id: b_060
+      name: Vantage Rooms
+      kind: group
+      home_settlement: Concordance
+      label: label_1
+      genre: pulse-dance
+      active_from: 2614
+      active_to: 2626
+      bio: >-
+        Vantage Rooms are Civic Lantern's answer to the storm coast, formed in Concordance in 2614
+        by people who had heard the records and never been in the halls. They sell well in the core
+        and have played Meridian twice, both times to rooms that were polite.
+      albums:
+        - id: al_129
+          title: Rooms at Vantage
+          label: label_1
+          release_year: 2619
+          kind: album
+          genre: pulse-dance
+          notes: The prestige house's first release in the form, and the one Meridian was rudest about.
+          songs:
+            - {id: s_1060, title: Rooms at Vantage, track_number: 1, genre: pulse-dance, playable: false}
+            - {id: s_1061, title: A Clean Floor, track_number: 2, genre: pulse-dance, playable: false}
+            - {id: s_1062, title: Everybody Faces Front, track_number: 3, genre: pulse-dance, playable: false}
+            - {id: s_1063, title: Booked for the Evening, track_number: 4, genre: pulse-dance, playable: false}
+            - {id: s_1064, title: The Hall Has Seats, track_number: 5, genre: pulse-dance, playable: false}
+            - {id: s_1065, title: Nothing Gets Wet, track_number: 6, genre: pulse-dance, playable: false}
+            - {id: s_1066, title: Polite Applause, track_number: 7, genre: pulse-dance, playable: false}
+            - {id: s_1067, title: Home Before Twelve, track_number: 8, genre: pulse-dance, playable: false}
+        - id: al_130
+          title: Come Down the Coast
+          label: label_1
+          release_year: 2624
+          kind: album
+          genre: pulse-dance
+          notes: Recorded in Concordance's reopened hall and remembered for the sleeve note apologising to Meridian.
+          songs:
+            - {id: s_1068, title: Come Down the Coast, track_number: 1, genre: pulse-dance, playable: false}
+            - {id: s_1069, title: We Heard the Records, track_number: 2, genre: pulse-dance, playable: false}
+            - {id: s_1070, title: Ask Us Again in a Season, track_number: 3, genre: pulse-dance, playable: false}
+            - {id: s_1071, title: The Big Room Reopens, track_number: 4, genre: pulse-dance, playable: false}
+            - {id: s_1072, title: Two Nights on the Wall, track_number: 5, genre: pulse-dance, playable: false}
+            - {id: s_1073, title: Learning It Properly, track_number: 6, genre: pulse-dance, playable: false}
+            - {id: s_1074, title: Nobody Told Us to Stop, track_number: 7, genre: pulse-dance, playable: false}
+            - {id: s_1075, title: Straight Back Up the Relay, track_number: 8, genre: pulse-dance, playable: false}
+
 layer_c:
   recordings: none survive
-  figures: []
+  figures:
+    - id: f_021
+      name: Ilse Corran
+      kind: hall keeper and lamp signaller
+      genre: pulse-dance
+      active_from: 2451
+      active_to: 2488
+      played: hand-cranked signal lamp, no instrument
+      history: >-
+        Ilse Corran kept a tide-gate hall on Meridian's storm coast between 2451 and 2488 and ran
+        its sealed-season nights by lamp, cranking a signal light on the beat so that a room too
+        loud to hear a caller could still stay together. Nothing she did was ever recorded and the
+        lamp went for scrap with the gate. She is named every time a coast band talks about holding
+        a hall in time, because putting the beat in the light rather than the sound started with her
+        and has never stopped.
+    - id: f_022
+      name: Doran Ekke
+      kind: pump machinist
+      genre: pulse-dance
+      active_from: 2489
+      active_to: 2523
+      played: tide-pump machinery
+      history: >-
+        Doran Ekke worked the storm coast's tide pumps from 2489 to 2523 and wired a hall's lights
+        to the pump stroke so that the room lit on the beat the machinery already had. Two written
+        complaints from the settlement office survive and no account at all of what it sounded like.
+        He matters because the coast's whole form takes its pulse off machinery that was already
+        running, and he is the first person written down as having done it on purpose.
+    - id: f_023
+      name: Nell Varrow
+      kind: caller and singer
+      genre: pulse-dance
+      active_from: 2510
+      active_to: 2544
+      played: voice and a hand drum
+      history: >-
+        Nell Varrow called the sealed-season nights in three storm-coast settlements between 2510
+        and 2544 and is remembered for one of them, a power failure in a full hall that she carried
+        for two hours on her voice and a hand drum. Nobody wrote down what she called and everybody
+        on the coast has an opinion about it. She comes up whenever the machines fail out there,
+        which is often, and what every band says about her is that somebody has to be able to do it
+        without them.

@@ -11,6 +11,17 @@
 #
 # Totals, checked by tests/unit/test_music.py: 500 songs, 25 bands, every label >=3 bands.
 # The same file checks every written genre against the allocation below (`make check`).
+#
+# --- the re-weight, 2026-08-12 (D-068, D-069) --------------------------------------------------
+#
+# Deck-talk and pulse-dance keep every band, album and story and stop being pressed: they carry no
+# playable songs and no `labels:` block at all. Lane-rock, Frontier Reels, old-system sessions,
+# void-lounge and void-ballads grow into the 130 songs they give up.
+#
+# `owed_to:` marks a genre whose written file does not match the numbers below yet, and names the
+# card that closes the gap. While it is there, `make check` does not count that genre against the
+# plan — and it goes red if the card it names is marked DONE in MUSIC_TASKS.md, so the marker
+# cannot outlive the work. Removing it is part of that card, not a tidy-up afterwards.
 
 labels:
   1: Concordance, prestige
@@ -34,51 +45,52 @@ genres:
 
   lane-rock:
     title: Lane-rock
+    owed_to: M-46 # 75 songs and 4 bands written; 110 and 5 planned
     layer_b_bands: 7
     layer_c_figures: 4
     labels:
-      - { label: 2, songs: 10, bands: 1 }
-      - { label: 4, songs: 35, bands: 2 }
-      - { label: 5, songs: 30, bands: 1 }
+      - { label: 2, songs: 15, bands: 1 }
+      - { label: 4, songs: 50, bands: 2 }
+      - { label: 5, songs: 45, bands: 2 }
 
   deck-talk:
     title: Deck-talk
+    owed_to: M-44 # 70 playable songs written; layer B carries all of them after M-44
     layer_b_bands: 7
     layer_c_figures: 4
-    labels:
-      - { label: 2, songs: 25, bands: 1 }
-      - { label: 4, songs: 20, bands: 1 }
-      - { label: 5, songs: 25, bands: 1 }
+    labels: [] # layer B only (D-068) — every band, album and story stays, nothing is pressed
 
   frontier-reels:
     title: Frontier Reels
+    owed_to: M-48 # 65 songs and 3 bands written; 95 and 4 planned
     layer_b_bands: 6
     layer_c_figures: 4
     labels:
-      - { label: 2, songs: 30, bands: 1 }
-      - { label: 4, songs: 15, bands: 1 }
-      - { label: 5, songs: 20, bands: 1 }
+      - { label: 2, songs: 45, bands: 2 }
+      - { label: 4, songs: 25, bands: 1 }
+      - { label: 5, songs: 25, bands: 1 }
 
   old-system-sessions:
     title: Old-system sessions
+    owed_to: M-49 # 60 songs and 3 bands written; 90 and 4 planned
     layer_b_bands: 5
     layer_c_figures: 4
     labels:
-      - { label: 7, songs: 60, bands: 3 }
+      - { label: 7, songs: 90, bands: 4 }
 
   pulse-dance:
     title: Pulse-dance
+    owed_to: M-44 # 60 playable songs written; layer B carries all of them after M-44
     layer_b_bands: 5
     layer_c_figures: 3
-    labels:
-      - { label: 3, songs: 60, bands: 2 }
+    labels: [] # layer B only (D-068) — the sealed-season records still exist, unpressed
 
   void-lounge:
     title: Void-lounge
     layer_b_bands: 4
     layer_c_figures: 3
     labels:
-      - { label: 1, songs: 10, bands: 1 }
+      - { label: 3, songs: 25, bands: 2 } # Meridian's layer A after the re-weight (D-068)
       - { label: 6, songs: 30, bands: 2 }
 
   core-harmonies:
@@ -86,11 +98,11 @@ genres:
     layer_b_bands: 1
     layer_c_figures: 2
     labels:
-      - { label: 1, songs: 15, bands: 1 }
+      - { label: 1, songs: 20, bands: 1 }
 
   void-ballads:
     title: Void Ballads
     layer_b_bands: 1
     layer_c_figures: 1
     labels:
-      - { label: 2, songs: 10, bands: 1 }
+      - { label: 2, songs: 25, bands: 2 }

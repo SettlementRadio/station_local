@@ -1641,3 +1641,109 @@ the album notes carry them.
 home system and never came down the road at all — a distinction only this genre can make, and the
 most useful thing its layer B does. `check.py` reads labels on layer-A albums only, so the string is
 free text there and nothing counts it.
+
+### D-067 · The eighth and last cornerstone is `al_117`; the list is closed — 2026-08-11
+
+COMMISSION §5 wants **6–8 cornerstone albums of 12–14 songs**, one per album-story hour. Seven
+existed before M-11. Pulse-dance designates the eighth — `al_117` *The Long Cordon*, Cordon Hours,
+2624, thirteen songs — and **that is the last one the catalogue gets.**
+
+**Why pulse-dance gets one.** Every genre of comparable size already has one or two: relay-pop 2 in
+105 songs, lane-rock 2 in 75, deck-talk 1 in 70, frontier-reels 1 in 65, old-system sessions 1 in
+60. Pulse-dance is 60 songs and 12% of the played catalogue. Leaving it without one would be the
+single largest form in the library that cannot carry an album-story hour, and the album-story is one
+of only five programme formats §5 defines.
+
+**Why it closes the list.** Eight is the ceiling, not a target with room above it. The three genres
+still to write are void-lounge (40 songs), core-harmonies (15) and void-ballads (10) — the whole
+remaining catalogue is 65 songs, and none of the three needs an hour built on one record. Label 6's
+programme is the **retrospective** built out of its disputed catalogue, which is a label hour and
+not an album hour, so M-12 loses nothing by having no cornerstone available.
+
+**What this binds.** M-12, M-13 and M-14 set `cornerstone: false` on every album they write. M-15
+inherits eight and may move one, never add a ninth. Recorded in `CONSTANTS.md` §5 so the next agent
+reads it before numbering anything.
+
+### D-068 · The library becomes rock, blues, folk and jazz; deck-talk and pulse-dance stop being pressed — 2026-08-12
+
+**The station's record library was 47% pop, hip-hop and house** — relay-pop 105, deck-talk 70,
+pulse-dance 60 of 500 — and 54% of the 435 songs actually written. The operator does not listen to
+any of the three. `PRODUCT.md` §9 makes *"does the world feel alive to its own operator at 90 days"*
+a success metric and §11 names operator boredom as the most likely failure of the whole project, so
+a library half-built from music he would never put on is that risk already realised, not a matter of
+taste.
+
+**The new split**, in `plan.yaml` and `COMMISSION.md` §2: relay-pop 105 · lane-rock 110 · Frontier
+Reels 95 · old-system sessions 90 · void-lounge 55 · void-ballads 25 · core harmonies 20 ·
+deck-talk 0 · pulse-dance 0.
+
+**Relay-pop keeps its size and changes its sound.** Its prompt palette moves from produced dance-pop
+to power-pop, jangle, sunshine and soft rock. This was the cheapest large win available: the wiki
+never names a real genre, so 105 songs change character through one table edit and no wiki entry
+moves. It is also what saves the pilot — `al_001`–`al_004` are relay-pop, and rewriting the form's
+size would have thrown away the four albums M-18 is about to generate.
+
+**Deck-talk and pulse-dance stay in the world.** Both keep their canon, their bands, their albums,
+their credits and their stories, and become layer B — records the world knows about and the station
+does not hold. `COMMISSION.md` §1 designed exactly this: *"most of the music you invent will never
+be recorded, and that is correct."* Two reasons beyond taste, and they are independent: competitive
+spoken verse over salvage percussion is the least leave-it-on music there is, and `PRODUCT.md` §5
+puts music overnight only for background listeners; and it is the hardest form for a generator to
+produce without the result being unintentionally funny — 14% of the library on the riskiest form.
+
+**The canon edit came first and is already made.** `70-music.md` line 24 and fact 19 now name
+lane-rock, Frontier Reels and old-system sessions as the most-listened forms; fact 28 and the
+deck-talk paragraph drop the claim that it travels furthest, replacing it with a positive reason it
+*doesn't* — a verse that could only have come from its own deck. Nothing else in `canon/` needed
+changing: `06-gazetteer.md` states only where pulse-dance was born, which stays true.
+
+**What it costs.** 130 written layer-A songs demote (their facts are deleted; everything else
+survives), 95 new ones get written across three finished genre files, and two labels break §5's
+floor. Label 2 falls to two bands and is repaired by M-48. **Label 3 is the real casualty** —
+Meridian's house is left with 20 songs and one band — and it takes void-lounge's Meridian share
+instead: a Synthesist core house pressing late-club torch, with its dance records still in layer B.
+
+**One tension is kept on purpose.** Canon fact 19 now ranks old-system sessions among the three
+most-listened forms while `COMMISSION.md` §4 keeps its import house *"old, thin, precarious"*. The
+most-loved music in the settled worlds arriving on the most fragile route is what fact 17 already
+implies, and it is a better permanent stake for the station than making the house comfortable.
+
+**Cards:** stage R — M-43 (re-weight) · M-44 (demote) · M-45 (the writing rules in `make check`) ·
+M-47 (redo the pilot's lyrics) · M-46, M-48, M-49 (the three genres grow). M-18 now depends on M-47
+rather than M-17. M-15 gains four catalogue-wide jobs. **M-12 loses its NEXT marker** — void-lounge
+grows from 40 to 55 and writing it first would mean writing it twice.
+
+### D-069 · Where the re-weight's 130 songs go, and the `owed_to:` marker — 2026-08-12
+
+D-068 fixed the nine genre totals. M-43 had to turn them into `plan.yaml`, which allocates by
+**label**, and two constraints did the deciding: 500 songs and 25 bands, and COMMISSION §5's floor
+of **≥3 layer-A bands and ≥40 playable songs on every one of the seven labels**. Three of those
+labels lost a band when deck-talk and pulse-dance stopped being pressed.
+
+**The four new bands.** Lane-rock takes a fifth on the hauler co-operative, Frontier Reels a fourth
+on Cold Harbor — which is where label 2's third band comes back — old-system sessions a fourth
+importer, and **void-ballads a second solo voice**. The last is the least obvious: 25 songs of one
+voice and one instrument from a single artist is one texture, and §5's rotation rule separates by
+band, so the form arrives on air as the same record twice a night. Two voices cost nothing to write
+and fix it. Everything else grows inside bands that already exist.
+
+**Void-lounge leaves Concordance and takes Meridian instead.** It was 10 songs on label 1 and 30 on
+label 6; it is now 25 on label 3 and 30 on label 6, and label 1's third band comes from
+core-harmonies, which grows to 20. That is what D-068's *"Meridian takes void-lounge's share"* costs
+elsewhere, and it is a better trade than it looks: void-lounge on the prestige core label was the
+one place it was competing with a genre that label already owns.
+
+**Nobody's floor is met by accident.** Concordance 65 songs / 3 bands · Cold Harbor 85 / 5 ·
+Meridian 45 / 3 · Forge 75 / 3 · the haulers 95 / 4 · the folded house 45 / 3 · the importer 90 / 4.
+The two thinnest, Meridian and the folded house, are both finished by **M-12 alone**, which is why
+that card now carries four bands and a note saying so.
+
+**The `owed_to:` marker, and why the count check needed one.** `plan.yaml` now describes a catalogue
+that five written genre files do not match — lane-rock is 35 songs short, Frontier Reels 30,
+old-system sessions 30, and deck-talk and pulse-dance are 130 songs too many until M-44 demotes
+them. `make check` had to stay green through that without the counting quietly going away for
+weeks. So a genre may carry `owed_to: M-46`, naming the card that closes the gap; while it stands,
+`check.py` does not count that genre against the plan — **and it goes red the moment that card is
+marked DONE in `MUSIC_TASKS.md`, or if the card does not exist.** The marker and the card have to be
+retired in the same edit, which makes removing it part of the growing card rather than a tidy-up
+nobody owns. It is the same principle as M-45: the rules that survive are the ones that go red.

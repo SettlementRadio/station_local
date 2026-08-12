@@ -29,6 +29,11 @@ label with the wrong number of playable songs, a layer-A song with no fact, a la
 one, a release year that is not one of the eight anchors, or an id used twice. A genre file that is
 still an empty placeholder is skipped, not failed.
 
+A genre `plan.yaml` marks `owed_to: M-46` is a genre a card has not finished growing yet: its counts
+are not compared while that marker stands. The check reads `music/MUSIC_TASKS.md` to see whether the
+card is still open, **and goes red if the card is marked DONE with the marker still there** — so the
+counting cannot stay switched off by accident (D-069).
+
 ### `make doctor`
 
 Says whether this machine can run the station: configuration loaded, the external volume mounted,

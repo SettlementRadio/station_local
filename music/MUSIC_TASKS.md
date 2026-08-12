@@ -61,8 +61,9 @@ marked **NEXT**.
 | Stage | Cards | Last done | Status |
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
-| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-17** lyrics and prompts · 2026-08-09 | **M-18 next — yours, at Suno** |
-| 2 · The wiki — 7 genres left | M-07 … M-15 | **M-10** old-system-sessions · 2026-08-10 | 375 of 500 songs written · **M-11 next** |
+| **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-43** the commission and the plan · 2026-08-12 | **M-44 next.** The files say the new numbers; the wiki does not yet |
+| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-17** lyrics and prompts · 2026-08-09 | M-17's words are being redone by M-47; M-18 waits |
+| 2 · The wiki — 7 genres left | M-07 … M-15 | **M-11** pulse-dance · 2026-08-11 | 435 songs written, 130 of them demoting at M-44 · M-12 is now 55 songs and waits its turn |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
@@ -72,7 +73,13 @@ marked **NEXT**.
 finished" is a fact about a stage, not about the project.
 
 **Totals when this file is finished:** 9 genres · 25 bands · ~55 albums · 500 playable songs ·
-~1,200 more songs that exist as text only.
+~1,330 more songs that exist as text only.
+
+**Stage R changed what the 500 are** (D-068, 2026-08-12). Deck-talk and pulse-dance stop being
+records the station holds and stay in the world as text; lane-rock, Frontier Reels, old-system
+sessions, void-lounge and void-ballads grow to take their place; relay-pop keeps its size and
+changes its sound. **Every card printed before stage R was written against the old split** — read
+its numbers as history and take the live ones from `plan.yaml`.
 
 **M-19 is the decision point,** and it now comes fifth rather than nineteenth. Everything after it
 assumes the pilot sounded right; if it did not, stages 3–6 get rewritten before they run. The pilot
@@ -126,6 +133,117 @@ Depends on: M-01
 
 ---
 
+# Stage R · The re-weight — what kind of station this is
+
+**Drafted in a planning session, 2026-08-12, and accepted whole.** The station's library was 47%
+pop, hip-hop and house — 54% of what had actually been written — in genres the operator would never
+put on. `PRODUCT.md` §9 makes the operator's own interest at ninety days a success metric and §11
+names his boredom as the most likely failure of the project, so this is not a taste footnote.
+
+The canon edit is already made: `70-music.md` no longer ranks deck-talk among the most-listened
+forms, and no longer claims it travels furthest. **Everything in this stage follows that edit.**
+
+**Nothing is deleted.** All nine forms stay canon; two of them stop being pressed. That is what
+COMMISSION §1's layer B is for — *"most of the music you invent will never be recorded, and that is
+correct."*
+
+### M-43 · `[agent]` Re-weight the commission and the plan — **DONE 2026-08-12**
+Goal: The files that say how much of each kind of music the station holds say the new numbers, and
+stop describing deck-talk as the biggest thing on air.
+Files: `music/COMMISSION.md`, `music/plan.yaml`, `src/station/music/check.py`,
+`tests/unit/test_music.py`, `music/CONSTANTS.md`, `music/MUSIC_TASKS.md`
+Check: `COMMISSION.md` §2's two tables read — relay-pop 105, lane-rock 110, Frontier Reels 95,
+old-system sessions 90, void-lounge 55, void-ballads 25, core harmonies 20, deck-talk 0, pulse-dance
+0. Relay-pop's prompt palette is power-pop, jangle, sunshine and soft rock rather than dance-pop.
+The three sentences that now contradict canon are gone — §2's *"travels furthest"*, *"the
+second-biggest thing the station plays"*, and *"the top four are 60% of everything"*. `plan.yaml`
+adds to 500. M-12, M-13 and M-14 carry their new song counts. `make check` green.
+Note: carries the **label 3 decision**. Demoting pulse-dance leaves Meridian's house with 20 songs
+and one band, well under §5's floor of three bands and forty songs. It takes void-lounge's Meridian
+share — a Synthesist core house pressing late-club torch is coherent, and its dance records still
+exist in layer B. Label 2 drops to two bands and is repaired by M-48.
+Result: `plan.yaml` re-cut to the new nine — deck-talk and pulse-dance carry no `labels:` block at
+all, and the 130 songs they give up are spread as lane-rock +35, Frontier Reels +30, old-system
+sessions +30, void-lounge +15, void-ballads +15, core harmonies +5. **500 songs and 25 bands still,
+and every label still clears §5's floor**: void-lounge takes Meridian (25 songs, 2 bands) and the
+folded house (30, 2), void-ballads takes a second Cold Harbor voice (25, 2), and the three growing
+genres each add a band (D-069). `COMMISSION.md` §2 is reordered — lane-rock is now the biggest form
+and relay-pop the second — and relay-pop's palette is power-pop, jangle, sunshine and soft rock with
+*never dance-pop* written into it. **The three contradicting sentences are gone**, and so is §11's
+60% line, which said the same thing a fourth time; the top four are 80% now. `check.py` gained one
+rule: a genre may carry `owed_to: M-46` while its file is behind the plan, the count check stands
+down for it, and **`make check` goes red the moment that card is marked DONE** — so a re-weight
+cannot quietly disable the counting for good. Five genres carry a marker today.
+Depends on: —
+
+### M-44 · `[agent]` Demote deck-talk and pulse-dance to layer B — **NEXT**
+Goal: 130 songs stop being records the station holds and become records the world merely knows about.
+Files: `music/wiki/deck-talk.yaml`, `music/wiki/pulse-dance.yaml`, `music/CONSTANTS.md`,
+`music/plan.yaml`
+Check: neither file contains `playable: true`. No song in either carries a fact. Every band, album,
+credit, bio and album story survives as text. **Both `owed_to: M-44` lines are gone from
+`plan.yaml`** — `make check` goes red if they are left behind. `CONSTANTS.md` §1's anchor-year
+counts and §5's label table are recounted against what is left. `make check` green.
+Note: nothing is deleted. The Clearing Day origin, the disputed 2612 catalogue, the two bands who
+have not shared a sleeve since 2618 — all still there for a presenter to talk about. A station that
+can discuss records it does not own is the whole point of the three layers.
+Depends on: M-43
+
+### M-45 · `[agent]` The writing rules, and `make check` enforcing them
+Goal: The next 400 songs cannot be the same song 400 times, because the command goes red when they are.
+Files: `music/COMMISSION.md`, `src/station/music/check.py`, `tests/unit/test_music.py`
+Check: `make check` goes red, naming the album, on any of — more than 40% of an album's songs sharing
+a structure · fewer than 3 songs per album in third person or carrying a named character · the
+echoed-answer device in more than a third · the title used as the hook in more than half · a lyric
+carrying fewer than 2 of the world's own nouns · a band whose facts are more than half studio
+anecdotes · layer-B albums spanning fewer than 40 distinct years · a genre file naming fewer than 3
+bands that live in other genre files. Green on the wiki as it stands.
+Note: **this is the anti-degradation card.** Across six sessions the counting rules in `check.py`
+held perfectly — no id collision, no wrong count, no album off an anchor. The prose rules in
+`COMMISSION.md` failed completely over the same span. Same agents, same instructions; the difference
+is that one set went red. This moves the quality rules to the mechanism that works.
+Depends on: M-43
+
+### M-47 · `[agent]` Redo the pilot's 45 lyrics
+Goal: The four pilot albums are 45 different songs instead of one song 36 times, and they sound like
+the new relay-pop.
+Files: `music/production/lyrics/al_001.yaml` … `al_004.yaml`, `music/production/styles.yaml`
+Check: all 45 pass M-45's rules. The five style cards carry the power-pop and soft-rock palette
+instead of produced dance-pop. Every song still fits the fact the wiki states about it. No band's
+voice line changes.
+Note: replaces M-17's output and nothing is lost — no audio exists and every `take:` block is still
+null. **This is the card that unblocks you**: M-18 has nothing to generate until it lands.
+Depends on: M-43, M-45
+
+### M-46 · `[agent]` lane-rock grows to 110
+Files: `music/wiki/lane-rock.yaml`, `music/CONSTANTS.md`, `music/plan.yaml`
+Check: 110 playable songs split 15 / 50 / 45 across labels 2, 4 and 5; 5 layer-A bands, the fifth on
+label 5. `plan.yaml`'s `owed_to: M-46` line is gone. `make check` green including M-45's rules.
+Names screened.
+Note: 35 new songs. Second Hitch gains a short record on label 2, the two Forge bands gain 15
+between them, and label 5 gets a second hauler band beside Burn Day Wages.
+Depends on: M-44, M-45
+
+### M-48 · `[agent]` Frontier Reels grows to 95 — and label 2 gets its third band
+Files: `music/wiki/frontier-reels.yaml`, `music/CONSTANTS.md`, `music/plan.yaml`
+Check: 95 playable songs split 45 / 25 / 25 across labels 2, 4 and 5; 4 layer-A bands, the fourth on
+label 2. Harbor Standard is back to ≥3 layer-A bands. `plan.yaml`'s `owed_to: M-48` line is gone.
+`make check` green. Names screened.
+Note: label 2 lost its deck-talk band in M-44 and this is where it is repaired.
+Depends on: M-46
+
+### M-49 · `[agent]` old-system sessions grows to 90
+Files: `music/wiki/old-system-sessions.yaml`, `music/CONSTANTS.md`, `music/plan.yaml`
+Check: 90 playable songs on label 7, across 4 layer-A bands — a fourth importer band joins the
+three. `plan.yaml`'s `owed_to: M-49` line is gone. `make check` green. Names screened.
+Note: canon fact 19 now names old-system sessions among the three most-listened forms while
+COMMISSION §4 keeps its import house *"old, thin, precarious"*. **That tension is deliberate and
+stays** — the most-loved music in the settled worlds arrives on the most fragile route, which is
+what fact 17 already says and is a permanent live stake for the station.
+Depends on: M-48
+
+---
+
 # Stage 1 · The pilot — 45 songs, end to end
 
 The point of this stage is to find out whether the approach works while it costs four albums to
@@ -168,15 +286,16 @@ bent by arrangement note where the wiki puts a record in a different room (al_00
 chamber, al_002's smaller second half); voice, backing, instruments and exclude are never bent.
 Depends on: M-16
 
-### M-18 · `[you]` Suno — Measure Kindly and Open Parallax, 45 songs — **NEXT**
+### M-18 · `[you]` Suno — Measure Kindly and Open Parallax, 45 songs — **waits for M-47**
 Goal: The pilot's audio exists.
 Files: `music/audio/`
 Check: 45 keeper takes downloaded and named `music/audio/<label>/<album>/NN.mp3`. Each album's
 lyrics file records the exact prompt used, the attempt count, the model version and the date.
 Note: Custom mode only — never let Suno write the lyrics. Finish each band in as few sittings as
 possible; a band split across two model versions will not sound like one band. **While this runs,
-the agent front works stage 2** — M-09 onward.
-Depends on: M-17
+the agent front works stage R** — M-46 onward.
+Depends on: M-47 (**not M-17** — the pilot's words are being rewritten under the new brief and the
+new relay-pop palette; generating M-17's lyrics would waste the sitting)
 
 ### M-40 · `[you]` Licence evidence
 Goal: Rights attach at the moment of generation, so the evidence is per month, not per project.
@@ -272,28 +391,50 @@ work in the settled worlds and these records were cut on Mars, Titan and Europa;
 bands guest on each other's records instead.
 Depends on: M-09
 
-### M-11 · `[agent]` pulse-dance — 60 songs, 2 bands — **NEXT (the agent front)**
+### M-11 · `[agent]` pulse-dance — 60 songs, 2 bands — **DONE 2026-08-11**
+Files: `music/wiki/pulse-dance.yaml`, `music/CONSTANTS.md`
 Check: 60 playable songs, all on label 3; 2 layer-A bands; ~5 layer-B, ~3 layer-C. `make check`
 green. Names screened.
+Result: 60 playable songs across 6 layer-A albums — Cordon Hours 32 and Bright Hazard 28, both on
+label 3, which is **finished here: Stormline Issue, 3 bands / 8 albums / 80 songs**, comfortably
+past §5's floor and with no genre left to add to it. 5 layer-B bands carrying 10 albums and 80
+titles, 3 layer-C figures. `make music-screen` returned nothing on 163 distinct names. 42 of the 60
+songs land on 2619 and 2624, which takes the catalogue to 222 of 435 inside the last eight years and
+keeps COMMISSION §3's half-recent rule reachable — **it is now only just reachable**, because
+void-lounge's 30 label-6 songs cannot be dated later than the 2612 fold. **The eighth and last
+cornerstone is designated here** — `al_117` *The Long Cordon*, 13 songs — and §5's 6–8 band is now
+full (D-067): M-12, M-13 and M-14 write no cornerstones. The genre is built on two facts a presenter
+can lean on all night: the coast seals for a season, and the two bands have not shared a sleeve
+since 2618 because one of them makes records to travel and the other makes them for one hall.
+Five session players appear, several of them because the seal shut with them on the wrong side of it.
 Depends on: M-10
 
-### M-12 · `[agent]` void-lounge — 40 songs, 3 bands
-Check: 40 playable songs split 10 / 30 across labels 1 and 6; 3 layer-A bands; ~4 layer-B, ~3
-layer-C. `make check` green. Names screened.
+### M-12 · `[agent]` void-lounge — 55 songs, 4 bands, and Meridian's whole layer A
+Check: 55 playable songs split 25 / 30 across labels 3 and 6; 4 layer-A bands, two on each label;
+at least four albums on each of the two labels, so both reach §5's six; ~4 layer-B, ~3 layer-C.
+`make check` green. Names screened.
 Note: label 6 folded in 2612 with a disputed catalogue — that dispute is the retrospective, so it
-has to be in the album notes here.
+has to be in the album notes here. **This card finishes two labels on its own** — 6, which stands at
+1 band and 15 songs, and 3, which stage R left at 1 band and 20 songs. **Meridian is the change**
+(D-068): the storm-coast Synthesist house pressed the pulse-dance the station no longer holds, and
+its layer A is now late-club torch. Nothing about the label's Synthesist character changes; what it
+presses does. **No cornerstone** (D-067). Pulse-dance's layer B already puts one band on the folded
+house, `b_059` Late Bell Set, whose two records are in the disputed catalogue.
 Depends on: M-11
 
-### M-13 · `[agent]` core-harmonies — 15 songs, 1 band
-Check: 15 playable songs on label 1; 1 layer-A band; ~1 layer-B, ~2 layer-C. `make check` green.
-Names screened.
+### M-13 · `[agent]` core-harmonies — 20 songs, 1 band
+Check: 20 playable songs on label 1 across at least two albums; 1 layer-A band; ~1 layer-B, ~2
+layer-C. `make check` green. Names screened.
+Note: this is label 1's third band, and Concordance cannot make a retrospective without it.
 Note: Odessa Vail's *Lanternlight* is fixed canon and sits in deep layer B; later performances of it
 may be layer A.
 Depends on: M-12
 
-### M-14 · `[agent]` void-ballads — 10 songs, 1 band
-Check: 10 playable songs on label 2; 1 layer-A band; ~1 layer-B, ~1 layer-C. `make check` green.
+### M-14 · `[agent]` void-ballads — 25 songs, 2 bands
+Check: 25 playable songs on label 2; 2 layer-A bands; ~1 layer-B, ~1 layer-C. `make check` green.
 Names screened.
+Note: two solo voices rather than one (D-069). The whole form is one voice and one instrument, and
+25 songs from a single artist is one texture the rotation cannot separate.
 Note: Corin Hale's *Station Cycles* is fixed canon and belongs here.
 Depends on: M-13
 
@@ -307,6 +448,26 @@ the eight anchor years carries ≥25 playable songs across ≥4 bands and ≥2 l
 cornerstone albums of 12–14 songs. Every label has ≥3 bands, ≥6 albums and ≥40 songs. At least four
 bands have ≥18 songs. Every session player appears across ≥3 labels and inside their active years.
 `make check` green on all of it.
+**Four jobs added by the stage R planning session (2026-08-12).** All text-only, all far cheaper
+before the wiki freezes than after:
+
+1. **Spread layer B across the calendar.** All 80 layer-B albums sit on the same eight anchor years,
+   so two hundred years of music history happened on eight days. `COMMISSION.md` §3 only ever asked
+   for *most* releases on the anchors; `CONSTANTS.md` §1 hardened that to *only*, and `check.py`
+   enforces it on both layers. Layer B has no floor to hit and should be carrying the other years.
+2. **Make the genre files reference each other.** 60 named bands across the written genres and
+   **zero** cross-file mentions — each genre is a sealed world, which is why the wiki reads as a
+   database rather than an industry.
+3. **Move the anchor-year stories into the wiki.** `CONSTANTS.md` §1 already holds eight good
+   accounts of what happened in each anchor year, but that file is a working file the station never
+   reads — `check.py` takes only the eight numbers out of it. A `Night Record` year programme is
+   supposed to be built on those stories and currently cannot reach them.
+4. **Decide the missing present.** Nothing in the catalogue is dated later than 2624 while the
+   present is 2626, and because the present is the real year plus six hundred, that gap widens every
+   January. The chart needs ≥80 current songs (§5) and has none. Either give a small tier a derived
+   release year — the `clock.py` rule applied to the catalogue — or redefine the chart in
+   `PROGRAMMING.md` as most-played rather than new-release.
+
 Note: fixes here are edits to release years and label assignments — text only, no lyrics affected.
 **The wiki freezes when this card closes.** No lyrics are written before it does, other than the
 pilot's, which are already frozen by M-19. **Anchor year 2559 is unsatisfiable as written** —

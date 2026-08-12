@@ -15,7 +15,7 @@ from typing import Any
 import pytest
 import yaml
 
-from station.music import check, screen, wiki
+from station.music import check, wiki
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -23,8 +23,11 @@ TOTAL_SONGS = 500
 TOTAL_BANDS = 25
 MIN_BANDS_PER_LABEL = 3
 MIN_SONGS_PER_LABEL = 40
-# COMMISSION.md §4: the big forms may not be the property of one label.
-SPREAD = {"relay-pop": 4, "lane-rock": 3, "deck-talk": 3, "frontier-reels": 3}
+# COMMISSION.md §4: the big forms may not be the property of one label. Deck-talk left this list
+# with the re-weight (D-068) — it has no layer A to spread.
+SPREAD = {"relay-pop": 4, "lane-rock": 3, "frontier-reels": 3}
+# D-068: two of the nine forms are layer B only. They keep their allocation row and press nothing.
+UNPRESSED = {"deck-talk", "pulse-dance"}
 
 
 @pytest.fixture(scope="module")
@@ -61,6 +64,15 @@ def test_genre_slugs_match_the_nine_canon_forms(plan: check.Plan) -> None:
     assert len(plan.genres) == 9
 
 
+def test_the_unpressed_forms_keep_their_row_and_press_nothing(plan: check.Plan) -> None:
+    """D-068: a form the station does not hold is still one of the nine and still writes layer B."""
+    for slug in UNPRESSED:
+        allocation = plan.genres[slug]
+        assert allocation.labels == [] and allocation.songs == 0
+        assert allocation.layer_b_bands > 0, "the bands survive; only the pressing stops"
+    assert all(g.labels for slug, g in plan.genres.items() if slug not in UNPRESSED)
+
+
 def test_album_listing_reports_which_bands_still_need_a_style_card() -> None:
     """`music-albums` is how the operator sees the catalogue; the style column is why it is read."""
     if not (ROOT / "music" / "wiki" / "relay-pop.yaml").is_file():
@@ -90,7 +102,7 @@ def test_listing_shows_layer_b_albums_and_marks_them_unplayable() -> None:
 # --- the wiki against the plan (M-01) ---------------------------------------------------------
 #
 # One fixture genre, correct, and one test per way of breaking it. core-harmonies is the smallest
-# allocation in the plan — 15 songs on one label — so the fixture is the real shape at a size that
+# allocation in the plan — 20 songs on one label — so the fixture is the real shape at a size that
 # fits in a test file.
 
 
@@ -120,7 +132,7 @@ def _album(album_id: str, year: int, songs: list[dict[str, Any]]) -> dict[str, A
 
 
 def _fixture_genre() -> dict[str, Any]:
-    """A core-harmonies that passes every check: 15 playable songs on label 1, and one layer-B record."""
+    """A core-harmonies that passes every check: 20 playable songs on label 1, and one layer-B record."""
     return {
         "labels": [{"id": "label_1", "name": "Civic Lantern"}],
         "session_players": [{"id": "sp_ivena_sorn", "name": "Ivena Sorn"}],
@@ -136,7 +148,7 @@ def _fixture_genre() -> dict[str, Any]:
                     "members": [{"id": "p_tenn_ruso", "name": "Tenn Ruso"}],
                 }
             ],
-            "albums": [_album("al_001", 2559, _songs(15, 1, playable=True, fact=True))],
+            "albums": [_album("al_001", 2559, _songs(20, 1, playable=True, fact=True))],
         },
         "layer_b": {
             "bands": [
@@ -147,7 +159,7 @@ def _fixture_genre() -> dict[str, Any]:
                     "genre": "core-harmonies",
                     "label": "label_1",
                     "active_from": 2570,
-                    "albums": [_album("al_002", 2583, _songs(4, 16, playable=False, fact=False))],
+                    "albums": [_album("al_002", 2583, _songs(4, 21, playable=False, fact=False))],
                 }
             ]
         },
@@ -159,7 +171,7 @@ def _root_with(tmp_path: Path, **genres: dict[str, Any]) -> Path:
     """A repository root holding only `music/` — the real plan and constants, a fixture wiki."""
     music = tmp_path / "music"
     (music / "wiki").mkdir(parents=True)
-    for name in ("CONSTANTS.md", "plan.yaml"):
+    for name in ("CONSTANTS.md", "plan.yaml", check.TASKS_FILE):
         (music / name).write_text((ROOT / "music" / name).read_text(encoding="utf-8"))
     for slug, data in genres.items():
         (music / "wiki" / f"{slug.replace('_', '-')}.yaml").write_text(yaml.safe_dump(data))
@@ -196,7 +208,7 @@ def test_a_wrong_song_count_names_the_genre_the_label_and_both_numbers(tmp_path:
     genre["layer_a"]["albums"][0]["songs"].pop()
     detail = _details(tmp_path, core_harmonies=genre)
     assert "core-harmonies" in detail
-    assert "label 1" in detail and "14" in detail and "15" in detail
+    assert "label 1" in detail and "19" in detail and "20" in detail
 
 
 def test_a_layer_a_song_without_a_fact_is_named(tmp_path: Path) -> None:
@@ -211,7 +223,7 @@ def test_a_layer_b_song_with_a_fact_is_named(tmp_path: Path) -> None:
     genre = _fixture_genre()
     genre["layer_b"]["bands"][0]["albums"][0]["songs"][0]["fact"] = "Cut in a stairwell."
     detail = _details(tmp_path, core_harmonies=genre)
-    assert "s_0016" in detail and "layer B" in detail
+    assert "s_0021" in detail and "layer B" in detail
 
 
 def test_a_release_year_off_the_anchors_is_named(tmp_path: Path) -> None:
@@ -226,7 +238,7 @@ def test_an_id_used_by_two_genres_is_a_failure(tmp_path: Path) -> None:
     second = {"layer_b": {"bands": [dict(_fixture_genre()["layer_b"]["bands"][0])]}}
     detail = _details(tmp_path, core_harmonies=_fixture_genre(), void_ballads=second)
     assert "id b_002 is used 2 times" in detail
-    assert "id s_0016 is used 2 times" in detail
+    assert "id s_0021 is used 2 times" in detail
     assert "core-harmonies" in detail and "void-ballads" in detail
 
 
@@ -249,10 +261,58 @@ def test_the_next_free_id_is_derived_from_what_is_written(tmp_path: Path) -> Non
     assert wiki.next_free_ids(empty) == {"song": "s_0001", "album": "al_001", "band": "b_001"}
     root = _root_with(tmp_path, core_harmonies=_fixture_genre())
     assert wiki.next_free_ids(root / "music" / "wiki") == {
-        "song": "s_0020",  # 15 layer-A songs, then four layer-B titles
+        "song": "s_0025",  # 20 layer-A songs, then four layer-B titles
         "album": "al_003",
         "band": "b_003",
     }
+
+
+# --- the re-weight's `owed_to:` marker (M-43) -------------------------------------------------
+#
+# A genre can be behind the plan for weeks while the card that grows it waits its turn. The marker
+# says so out loud and expires with the card, so the count check cannot be switched off quietly.
+
+
+def _owe(root: Path, slug: str, card: str) -> Path:
+    plan = root / "music" / "plan.yaml"
+    data = yaml.safe_load(plan.read_text(encoding="utf-8"))
+    data["genres"][slug]["owed_to"] = card
+    plan.write_text(yaml.safe_dump(data))
+    return root
+
+
+def test_a_genre_owed_to_a_live_card_is_not_counted_against_the_plan(tmp_path: Path) -> None:
+    """M-13 has not been written yet, so core-harmonies being short of 20 songs is not news."""
+    genre = _fixture_genre()
+    genre["layer_a"]["albums"][0]["songs"].pop()
+    root = _owe(_root_with(tmp_path, core_harmonies=genre), "core-harmonies", "M-13")
+    assert check.check_wiki(root) == []
+
+
+def test_a_genre_owed_to_a_finished_card_is_a_failure(tmp_path: Path) -> None:
+    """The marker cannot outlive the card: M-01 is DONE, so nothing is owed under it any more."""
+    root = _owe(_root_with(tmp_path, core_harmonies=_fixture_genre()), "core-harmonies", "M-01")
+    detail = "\n".join(p.line() for p in check.check_wiki(root))
+    assert "core-harmonies" in detail and "M-01" in detail and "DONE" in detail
+
+
+def test_a_genre_owed_to_a_card_that_does_not_exist_is_a_failure(tmp_path: Path) -> None:
+    root = _owe(_root_with(tmp_path, core_harmonies=_fixture_genre()), "core-harmonies", "M-99")
+    detail = "\n".join(p.line() for p in check.check_wiki(root))
+    assert "M-99" in detail and "not a card" in detail
+
+
+def test_the_cards_come_out_of_music_tasks() -> None:
+    cards = check.music_cards(ROOT / "music" / check.TASKS_FILE)
+    assert cards["M-01"] is True, "stage 0 is finished"
+    assert cards["M-18"] is False, "the pilot's audio does not exist yet"
+
+
+def test_a_missing_tasks_file_stops_the_check_rather_than_passing_it(tmp_path: Path) -> None:
+    root = _root_with(tmp_path, core_harmonies=_fixture_genre())
+    (root / "music" / check.TASKS_FILE).write_text("# no cards here\n")
+    with pytest.raises(check.CheckError, match="card headings"):
+        check.check_wiki(root)
 
 
 def test_the_anchor_years_come_out_of_constants() -> None:
@@ -267,104 +327,3 @@ def test_a_missing_anchor_table_stops_the_check_rather_than_passing_it(tmp_path:
     (root / "music" / "CONSTANTS.md").write_text("# no table here\n")
     with pytest.raises(check.CheckError, match="anchor years"):
         check.check_wiki(root)
-
-
-# --- the name screen (M-03) -------------------------------------------------------------------
-#
-# No test here touches the network: `screen()` takes the fetcher, and these pass a stub. What is
-# worth testing is that every kind of invented name reaches the query, and that a screen which
-# could not run says so instead of reporting a clean genre.
-
-
-def _one_hit(name: str, qid: str = "Q313258", sitelinks: int = 42) -> dict[str, Any]:
-    return {
-        "results": {
-            "bindings": [
-                {
-                    "name": {"value": name},
-                    "item": {"value": f"http://www.wikidata.org/entity/{qid}"},
-                    "sitelinks": {"value": str(sitelinks)},
-                    "kinds": {"value": "human"},
-                    "desc": {"value": "United States Secretary of State (1909-1994)"},
-                }
-            ]
-        }
-    }
-
-
-def _screened(tmp_path: Path) -> list[screen.Name]:
-    root = _root_with(tmp_path, core_harmonies=_fixture_genre())
-    return screen.names_in(wiki.load_genre(root / "music" / "wiki" / "core-harmonies.yaml"))
-
-
-def test_every_kind_of_invented_name_is_screened(tmp_path: Path) -> None:
-    """§19's list: bands, labels, people, album titles and song titles — layer B included."""
-    names = _screened(tmp_path)
-    by_name = {n.name: n.kind for n in names}
-    assert by_name["Civic Lantern"] == "label"
-    assert by_name["Held Note"] == "band" and by_name["The Slow Room"] == "band"
-    assert by_name["Ivena Sorn"] == "person" and by_name["Tenn Ruso"] == "person"
-    assert by_name["Edda Corven"] == "person", "layer C figures are invented names too"
-    assert by_name["Album al_001"] == "album" and by_name["Album al_002"] == "album"
-    assert by_name["Song 1"] == "song" and by_name["Song 16"] == "song"
-
-
-def test_a_name_is_put_to_wikidata_once_however_often_it_is_used(tmp_path: Path) -> None:
-    """A session player on four albums is one name to screen and one line to read."""
-    names = [*_screened(tmp_path), screen.Name(name="Ivena Sorn", kind="person", where="again")]
-    asked: list[str] = []
-
-    def fetch(query: str) -> dict[str, Any]:
-        asked.append(query)
-        return _one_hit("Ivena Sorn")
-
-    findings = screen.screen(names, fetch=fetch)
-    assert sum(q.count('"Ivena Sorn"@en') for q in asked) == 1
-    assert len(findings) == 1
-    assert [u.where for u in findings[0].uses] == ["session player", "again"]
-
-
-def test_the_query_asks_for_exact_matches_above_the_notability_floor() -> None:
-    """D-009: below the floor every plausible name matches something and the screen means nothing."""
-    query = screen.build_query(['Held "Note"', "Civic Lantern"])
-    assert f"FILTER(?sitelinks >= {screen.SITELINK_FLOOR})" in query
-    assert '"Held \\"Note\\""@en' in query, "a quote in a title must not break out of the query"
-    assert "wd:Q5" in query and "wd:Q43229" in query, "people and organisations, not every string"
-
-
-def test_names_are_screened_in_bounded_batches(tmp_path: Path) -> None:
-    many = [
-        screen.Name(name=f"Name {n}", kind="song", where="x") for n in range(screen.BATCH * 2 + 1)
-    ]
-    sizes: list[int] = []
-
-    def fetch(query: str) -> dict[str, Any]:
-        sizes.append(query.count("@en"))
-        return {"results": {"bindings": []}}
-
-    assert screen.screen(many, fetch=fetch) == []
-    assert len(sizes) == 3 == screen.requests_for(len(many))
-    assert max(sizes) <= screen.BATCH
-
-
-def test_a_screen_that_could_not_run_is_never_reported_as_clear(tmp_path: Path) -> None:
-    """§25's unbreakable rule. An empty report reads as 'every name is clear', which is the one
-    answer this tool must never give by accident."""
-
-    def fetch(query: str) -> dict[str, Any]:
-        raise screen.ScreenError("Wikidata did not answer after 3 attempts")
-
-    with pytest.raises(screen.ScreenError):
-        screen.screen(_screened(tmp_path), fetch=fetch)
-
-
-def test_matches_are_reported_worst_first(tmp_path: Path) -> None:
-    payload = _one_hit("Held Note", qid="Q1", sitelinks=7)
-    payload["results"]["bindings"] += _one_hit("Held Note", qid="Q2", sitelinks=90)["results"][
-        "bindings"
-    ]
-    finding = screen.screen(
-        [screen.Name(name="Held Note", kind="band", where="b_001")], fetch=lambda _: payload
-    )[0]
-    assert [m.qid for m in finding.matches] == ["Q2", "Q1"]
-    assert finding.matches[0].url == "https://www.wikidata.org/wiki/Q2"

@@ -28,12 +28,17 @@ them.
 **Window check** (§3): six anchors inside the last thirty-five years, two in the old-standards
 window. Correct as specified.
 
-**State after old-system-sessions (2026-08-10): seven of the eight are satisfied** — ≥25 playable
+**State after pulse-dance (2026-08-11): seven of the eight are satisfied** — ≥25 playable
 songs across ≥4 bands and ≥2 labels. In order: 2583 · 33/4/4 · 2594 · 31/4/3 · 2600 · 44/6/3 ·
-2607 · 49/6/6 · 2612 · 38/5/4 · 2619 · 116/11/6 · 2624 · 64/8/5. **2559 is the exception and cannot
+2607 · 57/7/6 · 2612 · 48/6/5 · 2619 · 136/13/6 · 2624 · 86/10/6. **2559 is the exception and cannot
 be fixed by writing more.** COMMISSION §3 puts layer A in 2566–2626, so no playable song can carry
 2559 at all; it stands at zero and every other anchor is met. M-15 is where that contradiction gets
 resolved.
+
+**Stage R moves every one of those counts** (D-068). The 130 deck-talk and pulse-dance songs leave
+layer A at M-44 and 95 new ones arrive at M-46, M-48 and M-49, so the line above describes the
+catalogue as it stands today and not the one being built. **M-44 recounts it**, and M-15 is where
+the finished state is checked against §5.
 
 **This table is read by `make check`.** The eight years in the first column are the only release
 years any album in any genre may carry, and `src/station/music/check.py` takes them from here
@@ -121,6 +126,7 @@ is recorded is the result:
 | deck-talk | 2026-08-09 | 215 | nothing matched |
 | frontier-reels | 2026-08-10 | 194 | nothing matched |
 | old-system-sessions | 2026-08-10 | 165 | nothing matched |
+| pulse-dance | 2026-08-11 | 163 | nothing matched |
 
 Notes kept because §19 says fuzzy and surname-only matches are flagged, never blocked:
 
@@ -174,7 +180,8 @@ cannot. A correction takes the next free id, never a recycled one.
 enforces — 500 songs, 25 bands, and every label ending with at least 3 bands and 40 playable songs.
 Keeping a second copy in this file would only let the two drift.
 
-Run `make check`: it confirms both that the plan adds up and that every written genre matches it.
+Run `make check`: it confirms both that the plan adds up and that every written genre matches it —
+except a genre `plan.yaml` marks `owed_to:`, which a card has not finished growing yet (D-069).
 **This section tracks only what has actually been written.**
 
 Layer-A bands and playable songs only. §5 needs every label to end on ≥3 bands and ≥40 songs.
@@ -183,34 +190,55 @@ Layer-A bands and playable songs only. §5 needs every label to end on ≥3 band
 |---|---|---|---|---|
 | 1 | Concordance, prestige | Civic Lantern | 2 | 45 |
 | 2 | Cold Harbor, frontier | Harbor Standard | 3 | 65 |
-| 3 | Meridian, dance | Stormline Issue | 1 | 20 |
+| 3 | Meridian, dance | Stormline Issue | 3 | 80 |
 | 4 | Forge, industrial | Deep Register | 4 | 70 |
 | 5 | haulers, co-op | Common Wake Cooperative | 4 | 100 |
 | 6 | late-club, folded 2612 | Lower Bell Editions | 1 | 15 |
 | 7 | old-system importer | Relay Road Import | 3 | 60 |
 
-**Labels 2, 4, 5 and 7 now clear §5's floor** — ≥3 bands, ≥6 albums and ≥40 playable songs — so four
-of the seven label retrospectives can be made. **Label 7 is finished**: old-system sessions is the
-only genre that feeds it and it lands exactly on the floor, 3 bands and 7 albums, with no genre left
-to add to it. Labels 1, 3 and 6 are still short of bands and are carried by genres not yet written —
-1 by void-lounge and core-harmonies, 3 by pulse-dance, 6 by void-lounge.
+**The table above is what is written today, and stage R changes five of its rows** (D-068). When
+M-44 demotes deck-talk and pulse-dance, label 2 loses a band and 25 songs, label 4 a band and 20,
+label 5 a band and 25, and **label 3 falls to 1 band and 20 songs** — its whole layer A was
+pulse-dance. M-44 is the card that rewrites these numbers.
+
+**Which card finishes which label**, once the re-weight is done — the numbers are in
+`music/plan.yaml` and are not repeated here:
+
+| Label | Short of | Finished by |
+|---|---|---|
+| 1 Concordance | a third band | **M-13** core-harmonies |
+| 2 Cold Harbor | a third band, as soon as M-44 lands | **M-48** frontier-reels, then **M-14** void-ballads |
+| 3 Meridian | two bands and twenty songs | **M-12** void-lounge, which now presses for Meridian |
+| 4 Forge · 5 haulers | nothing — both clear the floor without help | **M-46**, **M-48** add to them |
+| 6 late-club | two bands and twenty-five songs | **M-12** void-lounge, on its own |
+| 7 Relay Road Import | nothing, but it grows | **M-49** old-system sessions |
+
+**The cornerstone list is full at eight** (D-067). `al_117` *The Long Cordon* is the last one; §5
+allows 6–8 and no genre after pulse-dance may designate another.
 
 ## 6. The genre tally
 
-Layer A songs per form. `music/plan.yaml` is the authority; this is the running count.
+Layer A songs per form. `music/plan.yaml` is the authority; this is the running count. **Every
+target below is the stage R target** (D-068), and the last column names the card that closes the
+gap. The five genres already written at the wrong size carry that card as `owed_to:` in
+`plan.yaml`; the three not written at all need no marker, because an empty file is skipped.
 
-| Form | Target | Written |
-|---|---|---|
-| Relay-pop | 105 | 105 |
-| Lane-rock | 75 | 75 |
-| **Deck-talk** | 70 | 70 |
-| **Frontier Reels** | 65 | 65 |
-| **Old-system sessions** | 60 | 60 |
-| Pulse-dance | 60 | 0 |
-| Void-lounge | 40 | 0 |
-| Core Harmonies | 15 | 0 |
-| Void Ballads | 10 | 0 |
-| | **500** | **375** |
+| Form | Target | Written | Owed to |
+|---|---|---|---|
+| Lane-rock | 110 | 75 | M-46 |
+| Relay-pop | 105 | 105 | — |
+| Frontier Reels | 95 | 65 | M-48 |
+| Old-system sessions | 90 | 60 | M-49 |
+| Void-lounge | 55 | 0 | M-12 |
+| Void Ballads | 25 | 0 | M-14 |
+| Core Harmonies | 20 | 0 | M-13 |
+| **Deck-talk** | **0 — layer B** | 70 | M-44 |
+| **Pulse-dance** | **0 — layer B** | 60 | M-44 |
+| | **500** | **435, and 130 of them demote** | |
+
+435 playable songs are written and 130 of them stop being playable at M-44, which leaves **305 of
+the 500 standing**. The other 195 are 95 across the three growing genres and 100 in the three genres
+not yet written.
 
 **Layers B and C are not tallied.** They have no hard floor — more is better, and nothing breaks if
 one genre carries more history than another.

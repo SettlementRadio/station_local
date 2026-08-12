@@ -1,10 +1,11 @@
 """`music/plan.yaml`, and the wiki counted against it — so nobody counts 105 songs by hand.
 
-Five things are decided here, and every one of them is arithmetic or identity rather than
+Six things are decided here, and every one of them is arithmetic or identity rather than
 judgement: a label whose song count does not match `plan.yaml`, a layer-A song with no fact, a
-layer-B song that has one, a release year that is not one of the eight anchors, and an id used
-twice. Everything else about a genre — whether the bios read well, whether a name is too close to a
-real one — is a human judgement and stays one (`COMMISSION.md` §19, and M-03 for the screen).
+layer-B song that has one, a release year that is not one of the eight anchors, an id used twice,
+and an `owed_to:` marker that has outlived the card it names. Everything else about a genre —
+whether the bios read well, whether a name is too close to a real one — is a human judgement and
+stays one (`COMMISSION.md` §19, and M-03 for the screen).
 
 Why this is code: a checker prompt asks a model to count 105 songs across eleven albums, and a
 model that miscounts is indistinguishable from a wiki that is wrong (D-054). The counting half
@@ -31,6 +32,11 @@ from station.music import wiki
 ANCHOR_COUNT = 8
 _ANCHOR_ROW = re.compile(r"^\|\s*\*\*(\d{4})\*\*\s*\|", re.MULTILINE)
 
+# `MUSIC_TASKS.md` card headings — `### M-46 · [agent] lane-rock grows to 110`, and DONE when the
+# heading says so. Range headings (`### M-21 … M-29 ·`) are not cards and do not match.
+TASKS_FILE = "MUSIC_TASKS.md"
+_CARD_HEADING = re.compile(r"^###\s+(M-\d+)\s+·(.*)$", re.MULTILINE)
+
 
 class CheckError(RuntimeError):
     """The check could not run at all — a file it reads is missing or has changed shape."""
@@ -45,12 +51,18 @@ class LabelSlice(BaseModel):
 
 
 class GenreSlice(BaseModel):
-    """One genre's whole allocation across the three layers."""
+    """One genre's whole allocation across the three layers.
+
+    `labels` may be empty: a form the station does not press has no layer A at all, and every
+    band, album and story it owns lives in layer B (`COMMISSION.md` §1, D-068). `owed_to` names
+    the card that will bring a written genre up to the numbers here — see `_owed_cards()`.
+    """
 
     title: str
+    owed_to: str | None = None
     layer_b_bands: int = Field(ge=0)
     layer_c_figures: int = Field(ge=0)
-    labels: list[LabelSlice] = Field(min_length=1)
+    labels: list[LabelSlice] = Field(default_factory=list)
 
     @property
     def songs(self) -> int:
@@ -126,6 +138,47 @@ def anchor_years(constants: Path) -> list[int]:
             f"starts `| **YYYY** |` and that shape is what makes the table readable from here."
         )
     return years
+
+
+def music_cards(tasks: Path) -> dict[str, bool]:
+    """Every music card and whether it is marked DONE, read from `MUSIC_TASKS.md`."""
+    try:
+        text = tasks.read_text(encoding="utf-8")
+    except FileNotFoundError:
+        raise CheckError(f"missing {tasks} — it is where the music cards are marked DONE") from None
+    cards = {number: "**DONE" in rest for number, rest in _CARD_HEADING.findall(text)}
+    if not cards:
+        raise CheckError(
+            f"{tasks} has no card headings. Each one starts `### M-NN ·` and that shape is what "
+            f"makes `owed_to:` in plan.yaml readable from here."
+        )
+    return cards
+
+
+def _owed_cards(plan: Plan, tasks: Path) -> list[Problem]:
+    """A genre may be behind the plan while a card owes it songs — but not once that card is DONE.
+
+    This is what stops a re-weight from quietly disabling the count check for good: the marker in
+    `plan.yaml` and the card in `MUSIC_TASKS.md` have to be retired in the same edit (D-069).
+    """
+    cards = music_cards(tasks)
+    out: list[Problem] = []
+    for slug, allocation in sorted(plan.genres.items()):
+        card = allocation.owed_to
+        if card is None:
+            continue
+        if card not in cards:
+            out.append(Problem(slug, f"plan.yaml says it is owed to {card}, which is not a card"))
+        elif cards[card]:
+            out.append(
+                Problem(
+                    slug,
+                    f"plan.yaml still says it is owed to {card}, and {card} is marked DONE — "
+                    f"either the genre now matches the plan and the `owed_to:` line goes, or the "
+                    f"card is not finished",
+                )
+            )
+    return out
 
 
 def _is_written(genre: wiki.GenreWiki) -> bool:
@@ -246,7 +299,7 @@ def check_wiki(root: Path) -> list[Problem]:
     anchors = anchor_years(music / "CONSTANTS.md")
     wiki_dir = music / wiki.WIKI_DIR
 
-    problems: list[Problem] = []
+    problems: list[Problem] = _owed_cards(plan, music / TASKS_FILE)
     found: list[tuple[str, wiki.Entity]] = []
     for slug in wiki.written_genres(wiki_dir):
         genre = wiki.load_genre(wiki_dir / f"{slug}.yaml")
@@ -257,7 +310,8 @@ def check_wiki(root: Path) -> list[Problem]:
             known = ", ".join(sorted(plan.genres))
             problems.append(Problem(slug, f"has no allocation in plan.yaml, which has: {known}"))
             continue
-        problems += _counts(slug, genre, plan)
+        if not plan.genres[slug].owed_to:
+            problems += _counts(slug, genre, plan)
         problems += _facts(slug, genre)
         problems += _years(slug, genre, anchors)
     return problems + _duplicate_ids(found)

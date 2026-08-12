@@ -34,7 +34,7 @@ is correct** — real presenters reference far more music than any station owns.
 | Layer | What it is | When | Size | Audio |
 |---|---|---|---|---|
 | **A — Played** | the station's record library | last ~60 years | ~25 bands · ~55 albums · **500 songs** | ✅ |
-| **B — Referenced** | records that exist in the world; the station does not hold them | last ~80 years | ~45 bands · ~140 albums · ~1,200 songs | ❌ |
+| **B — Referenced** | records that exist in the world; the station does not hold them | last ~80 years | ~50 bands · ~155 albums · ~1,330 songs | ❌ |
 | **C — Historical** | musicians whose recordings are lost | 80–200 years back | ~30 figures, scenes, movements | ❌ none survive |
 
 **Roughly 100 named musicians, 195 albums, 1,700 song titles — and 500 of those songs get made.**
@@ -61,21 +61,29 @@ The world's musical forms are fixed. **There are nine and you may not invent a t
 
 | Form | What it is | Layer A songs |
 |---|---|---|
-| **Relay-pop** | the young form and the biggest: hooks, harmony, heavy production, songs about love across the lag | ~105 |
-| **Lane-rock** | freight-crew driving music, engine rhythms, whole-crew choruses; its occasion is *burn day* | ~75 |
-| **Deck-talk** | rhythmic spoken verse over salvage percussion; competitive, cheap to make, travels furthest | ~70 |
-| **Frontier Reels** | fast, rhythmic, danceable, played on salvaged and improvised instruments | ~65 |
-| **Old-system sessions** | current releases arriving down the longest relay road from Earth's home system | ~60 |
-| **Pulse-dance** | four-on-the-floor from Meridian's sealed storm season | ~60 |
-| **Void-lounge** | the core's late-club standard, slow and smoky, after the last ferry | ~40 |
-| **Core Harmonies** | big, many-voiced, unashamedly grand — the sound of a room full of singers | ~15 |
-| **Void Ballads** | one voice, one instrument, close to the microphone | ~10 |
+| **Lane-rock** | freight-crew driving music, engine rhythms, whole-crew choruses; its occasion is *burn day* | 110 |
+| **Relay-pop** | the young bright form: hooks, harmony, songs about love across the lag | 105 |
+| **Frontier Reels** | fast, rhythmic, danceable, played on salvaged and improvised instruments | 95 |
+| **Old-system sessions** | current releases arriving down the longest relay road from Earth's home system | 90 |
+| **Void-lounge** | the core's late-club standard, slow and smoky, after the last ferry | 55 |
+| **Void Ballads** | one voice, one instrument, close to the microphone | 25 |
+| **Core Harmonies** | big, many-voiced, unashamedly grand — the sound of a room full of singers | 20 |
+| **Deck-talk** | rhythmic spoken verse over salvage percussion; competitive, cheap to make, and specific to the deck that made it | **0 — layer B** |
+| **Pulse-dance** | four-on-the-floor from Meridian's sealed storm season | **0 — layer B** |
 
-Layers B and C spread across the same nine, roughly in proportion.
+`music/plan.yaml` holds the same numbers label by label and `make check` counts the wiki against
+them. Layers B and C spread across the same nine, and are thickest where layer A is thinnest.
 
-**The top four are 60% of everything.** That is deliberate. This is the record library of a living
-station, not a survey of a tradition — the forms people actually put on outnumber the forms people
-admire, and the last two are a spice measured in tens of songs, not hundreds.
+**The top four are 80% of everything, and two of the nine are not pressed at all.** That is
+deliberate. This is the record library of a living station, not a survey of a tradition — the forms
+people actually put on outnumber the forms people admire, and the small forms are a spice measured
+in tens of songs, not hundreds.
+
+**Deck-talk and pulse-dance are the two the station does not hold.** Both stay canon and both keep
+everything they have — bands, albums, credits, feuds, album stories — and none of it is recorded.
+That is §1's layer B working exactly as designed: *most of the music you invent will never be
+recorded, and that is correct.* A presenter may talk all night about a record the station cannot
+play. **Write both forms as fully as any other; simply give their songs no facts and no audio.**
 
 ### The production palette
 
@@ -84,7 +92,7 @@ The left column is what the station says. The right column is what goes in a gen
 
 | Form | Prompt palette |
 |---|---|
-| **Relay-pop** | **contemporary pop, produced.** Modern radio pop, dance-pop, big manufactured groups with several vocalists trading lines, stacked harmony, sharp production, a chorus engineered to be sung back. Power-pop and sunshine-pop at the acoustic end |
+| **Relay-pop** | **guitar pop, sung in harmony.** Power-pop, jangle, sunshine pop and soft rock: chiming twelve-string, ringing bass, several voices trading lines, stacked harmony, a chorus engineered to be sung back. Electric piano and organ at the keyboard end, acoustic guitar at the soft end. **Never dance-pop, never modern produced radio pop** |
 | **Lane-rock** | rock. Driving four-piece, riff-led, singalong chorus. Pub rock, heartland rock, boogie, hard rock at the edges |
 | **Deck-talk** | **rhythmic spoken verse over a beat.** Dense rhyme, conversational delivery, call-and-response, crews trading verses. Percussion built from struck metal and found objects, sparse bass, a sung hook only sometimes |
 | **Frontier Reels** | rock and roll and its roots. Rockabilly, skiffle, jump blues, bluegrass and reel tempos, upright bass, slapback |
@@ -96,13 +104,18 @@ The left column is what the station says. The right column is what goes in a gen
 
 **Nothing in that right-hand column is ever spoken on air**, with one canon exception in §8.
 
+**Two of those palettes are never used.** Nothing is generated from the deck-talk or pulse-dance
+rows, because neither form has a layer-A song. They stay in the table because the forms stay in the
+world and a writer still has to know what they sound like.
+
 **Deck-talk is the newest form here and the one most likely to be got wrong.** It is not a novelty
-and not a frontier curiosity — it is the second-biggest thing the station plays. Canon gives it two
-parents: the Freeholds' percussion built from survival, and the older habit of reading a ledger
-aloud so a whole room can hear it and nobody can claim afterwards they did not. Counting turned into
-competing. The skill people admire is carrying a long list furthest without dropping the beat.
-**Write it as current, confident and popular** — made by the people who had least of everything else
-and know exactly what they built.
+and not a frontier curiosity. Canon gives it two parents: the Freeholds' percussion built from
+survival, and the older habit of reading a ledger aloud so a whole room can hear it and nobody can
+claim afterwards they did not. Counting turned into competing. The skill people admire is carrying a
+long list furthest without dropping the beat, and a verse that could only have come from its own
+deck. **Write it as current, confident and popular** — made by the people who had least of
+everything else and know exactly what they built. The station holds none of it, and that changes
+nothing about how it is written: the presenters talk about it, they just cannot play it.
 
 **The three movements are biography, not a subject.** The Purists (acoustic only), the Synthesists
 (embrace what technology allows), the Localists (every world grows its own language). Note where a
@@ -169,7 +182,7 @@ the artist profile and the album story.
 |---|---|---|---|---|
 | 1 | Flagship | **Concordance** (core) | Core Harmonies and relay-pop; the establishment | old, still running |
 | 2 | Flagship | **Cold Harbor** / near frontier | Frontier Reels and Void Ballads | founded in living memory |
-| 3 | Standard | **Meridian** storm coast | pulse-dance, Synthesist | recent, fast-growing |
+| 3 | Standard | **Meridian** storm coast | Synthesist: the pulse-dance house, and it presses late-club torch | recent, fast-growing |
 | 4 | Standard | **Forge** | resonance pipes, heavy, lane-rock adjacent | industrial, long-lived |
 | 5 | Standard | **the between** — a hauler co-operative | lane-rock | member-owned, awkward, beloved |
 | 6 | Standard | core late-club | void-lounge | **folded 2612**, catalogue disputed |
@@ -183,7 +196,8 @@ label that no longer exists, or to none.
 back-catalogue, a founder who will not talk about it, and a reason for a 56-minute programme.
 
 **The big forms belong to no single label.** Relay-pop appears on at least four of the seven;
-lane-rock, deck-talk and Frontier Reels on at least three each.
+lane-rock and Frontier Reels on at least three each. Deck-talk left this rule when its layer A went
+— its crews are still spread across three labels, in layer B, where nothing counts them.
 
 ### Four musicians canon already fixed
 
@@ -422,8 +436,9 @@ presenter says about it, it has crossed the line.
 
 ## 11. Before you hand it back
 
-- [ ] All nine forms present, roughly in the stated proportions.
-- [ ] Relay-pop, lane-rock, deck-talk and Frontier Reels together are about 60% of layer A.
+- [ ] All nine forms present; the seven that are pressed carry layer-A songs in the stated
+      proportions, and deck-talk and pulse-dance carry none.
+- [ ] Lane-rock, relay-pop, Frontier Reels and old-system sessions together are about 80% of layer A.
 - [ ] Every song has a `playable` flag, and `true` appears exactly 500 times.
 - [ ] Every layer-A song has one concrete fact. No layer-B song has one.
 - [ ] No layer-C figure has an album or a track list.
