@@ -28,17 +28,20 @@ them.
 **Window check** (§3): six anchors inside the last thirty-five years, two in the old-standards
 window. Correct as specified.
 
-**State after pulse-dance (2026-08-11): seven of the eight are satisfied** — ≥25 playable
-songs across ≥4 bands and ≥2 labels. In order: 2583 · 33/4/4 · 2594 · 31/4/3 · 2600 · 44/6/3 ·
-2607 · 57/7/6 · 2612 · 48/6/5 · 2619 · 136/13/6 · 2624 · 86/10/6. **2559 is the exception and cannot
-be fixed by writing more.** COMMISSION §3 puts layer A in 2566–2626, so no playable song can carry
-2559 at all; it stands at zero and every other anchor is met. M-15 is where that contradiction gets
-resolved.
+**State after M-44 (2026-08-12): six of the eight are satisfied** — ≥25 playable songs across ≥4
+bands and ≥2 labels. In order: 2583 · 33/4/4 · 2594 · 31/4/3 · 2600 · 39/5/3 · 2607 · 43/5/5 ·
+2612 · 25/3/3 · 2619 · 88/8/5 · 2624 · 46/5/4. Two fall short, for opposite reasons:
 
-**Stage R moves every one of those counts** (D-068). The 130 deck-talk and pulse-dance songs leave
-layer A at M-44 and 95 new ones arrive at M-46, M-48 and M-49, so the line above describes the
-catalogue as it stands today and not the one being built. **M-44 recounts it**, and M-15 is where
-the finished state is checked against §5.
+- **2612 lost its fourth band in the demotion.** It stands at 25 songs across 3 bands and 3 labels —
+  the song count still clears, and it is one band short of a programme. Nothing else is wrong with
+  it and it is cheap to fix while the growing genres are still being written: **M-46, M-48 and M-49
+  should each land a release on 2612 with a band not already on it.**
+- **2559 cannot be fixed by writing more.** COMMISSION §3 puts layer A in 2566–2626, so no playable
+  song can carry 2559 at all; it stands at zero. M-15 is where that contradiction gets resolved.
+
+**These counts move again.** M-46, M-48 and M-49 add 95 playable songs between them and M-12, M-13
+and M-14 add 100 more, so the line above is where the catalogue stands today rather than where it
+is going. M-15 is where the finished state is checked against §5.
 
 **This table is read by `make check`.** The eight years in the first column are the only release
 years any album in any genre may carry, and `src/station/music/check.py` takes them from here
@@ -189,17 +192,18 @@ Layer-A bands and playable songs only. §5 needs every label to end on ≥3 band
 | # | Label | Name as written | Bands written | Songs written |
 |---|---|---|---|---|
 | 1 | Concordance, prestige | Civic Lantern | 2 | 45 |
-| 2 | Cold Harbor, frontier | Harbor Standard | 3 | 65 |
-| 3 | Meridian, dance | Stormline Issue | 3 | 80 |
-| 4 | Forge, industrial | Deep Register | 4 | 70 |
-| 5 | haulers, co-op | Common Wake Cooperative | 4 | 100 |
+| 2 | Cold Harbor, frontier | Harbor Standard | 2 | 40 |
+| 3 | Meridian, dance | Stormline Issue | 1 | 20 |
+| 4 | Forge, industrial | Deep Register | 3 | 50 |
+| 5 | haulers, co-op | Common Wake Cooperative | 3 | 75 |
 | 6 | late-club, folded 2612 | Lower Bell Editions | 1 | 15 |
 | 7 | old-system importer | Relay Road Import | 3 | 60 |
 
-**The table above is what is written today, and stage R changes five of its rows** (D-068). When
-M-44 demotes deck-talk and pulse-dance, label 2 loses a band and 25 songs, label 4 a band and 20,
-label 5 a band and 25, and **label 3 falls to 1 band and 20 songs** — its whole layer A was
-pulse-dance. M-44 is the card that rewrites these numbers.
+**The table above is what is written today, recounted after M-44** (2026-08-12, D-068). The demotion
+took a band and 25 songs off label 2, a band and 20 off label 4, a band and 25 off label 5, and all
+of label 3's layer A but one band and 20 songs — the rest of it was pulse-dance. **Four labels are
+now short of §5's floor** of three bands and forty songs — 1, 2, 3 and 6 — and labels 4, 5 and 7
+clear it already.
 
 **Which card finishes which label**, once the re-weight is done — the numbers are in
 `music/plan.yaml` and are not repeated here:
@@ -213,8 +217,13 @@ pulse-dance. M-44 is the card that rewrites these numbers.
 | 6 late-club | two bands and twenty-five songs | **M-12** void-lounge, on its own |
 | 7 Relay Road Import | nothing, but it grows | **M-49** old-system sessions |
 
-**The cornerstone list is full at eight** (D-067). `al_117` *The Long Cordon* is the last one; §5
-allows 6–8 and no genre after pulse-dance may designate another.
+**The cornerstone list stands at six** (D-067, recounted at M-44). It was full at eight until
+`al_055` *Count It Twice* and `al_117` *The Long Cordon* went down to layer B with their genres — a
+record the station does not hold cannot carry a 56-minute programme, so neither is a cornerstone any
+more. What is left is `al_001`, `al_009`, `al_034`, `al_039`, `al_078` and `al_098`, all 12 or 13
+songs, which is inside §5's 6–8 band **with no margin under it**. D-067 stands unchanged: M-12, M-13
+and M-14 designate none. Whether the two freed slots are handed to a later genre is the operator's
+call and has not been made.
 
 ## 6. The genre tally
 
@@ -232,13 +241,13 @@ gap. The five genres already written at the wrong size carry that card as `owed_
 | Void-lounge | 55 | 0 | M-12 |
 | Void Ballads | 25 | 0 | M-14 |
 | Core Harmonies | 20 | 0 | M-13 |
-| **Deck-talk** | **0 — layer B** | 70 | M-44 |
-| **Pulse-dance** | **0 — layer B** | 60 | M-44 |
-| | **500** | **435, and 130 of them demote** | |
+| **Deck-talk** | **0 — layer B** | **0 — demoted at M-44** | — |
+| **Pulse-dance** | **0 — layer B** | **0 — demoted at M-44** | — |
+| | **500** | **305** | |
 
-435 playable songs are written and 130 of them stop being playable at M-44, which leaves **305 of
-the 500 standing**. The other 195 are 95 across the three growing genres and 100 in the three genres
-not yet written.
+**305 of the 500 are written.** The other 195 are 95 across the three growing genres — M-46, M-48,
+M-49 — and 100 in the three genres not yet written. The 130 songs deck-talk and pulse-dance gave up
+are still in the wiki and still readable; they are titles now, like the rest of layer B.
 
 **Layers B and C are not tallied.** They have no hard floor — more is better, and nothing breaks if
 one genre carries more history than another.

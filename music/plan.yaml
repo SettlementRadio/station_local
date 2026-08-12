@@ -55,8 +55,7 @@ genres:
 
   deck-talk:
     title: Deck-talk
-    owed_to: M-44 # 70 playable songs written; layer B carries all of them after M-44
-    layer_b_bands: 7
+    layer_b_bands: 10 # 7 written as layer B, plus the 3 crews M-44 brought down
     layer_c_figures: 4
     labels: [] # layer B only (D-068) — every band, album and story stays, nothing is pressed
 
@@ -80,8 +79,7 @@ genres:
 
   pulse-dance:
     title: Pulse-dance
-    owed_to: M-44 # 60 playable songs written; layer B carries all of them after M-44
-    layer_b_bands: 5
+    layer_b_bands: 7 # 5 written as layer B, plus the 2 bands M-44 brought down
     layer_c_figures: 3
     labels: [] # layer B only (D-068) — the sealed-season records still exist, unpressed
 

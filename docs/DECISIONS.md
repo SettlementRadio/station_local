@@ -1747,3 +1747,29 @@ weeks. So a genre may carry `owed_to: M-46`, naming the card that closes the gap
 marked DONE in `MUSIC_TASKS.md`, or if the card does not exist.** The marker and the card have to be
 retired in the same edit, which makes removing it part of the growing card rather than a tidy-up
 nobody owns. It is the same principle as M-45: the rules that survive are the ones that go red.
+
+### D-070 · What "demote to layer B" actually did — and the cornerstone list falls to six — 2026-08-12
+
+M-44 said *demote deck-talk and pulse-dance to layer B* and *nothing is deleted*. Three things had
+to be decided to carry that out.
+
+**The five bands moved with their records.** Read It Back, The Long Tally, The Wake Count, Cordon
+Hours and Bright Hazard are now layer-B bands, sitting beside the crews that were always layer B,
+and their sixteen albums sit under `layer_b.albums` pointing back at them by `band:`. The
+alternative — leaving them in layer A with unplayable songs — is what a band that has records but no
+recordings would look like, and there is no such thing: layer A *is* what the station holds. Both
+files now open with `layer_a: {bands: [], albums: []}` and a comment saying why.
+
+**The song facts went; everything else stayed.** 130 `fact:` lines are gone, because a fact is the
+one sentence a presenter says over a record that is playing and there is no record to play. The
+bios, the album stories, the credits, the mood tags, the release years and every title are untouched
+— 182 deck-talk songs and 140 pulse-dance songs still exist as text, which is 322 titles a presenter
+can name and 24 + 16 albums they can tell the story of.
+
+**`al_055` and `al_117` stop being cornerstones, and the list falls from eight to six.** D-067 closed
+the list at eight; two of those eight were in the demoted genres. A cornerstone is an album that
+carries a whole 56-minute programme, so a record the station does not hold cannot be one — leaving
+the flag set would have put an album with no audio in front of the operator building a *Night
+Record*. §5 allows 6–8 and six is inside it, **with no margin under it**. D-067's instruction to
+M-12, M-13 and M-14 is unchanged: they designate none. Whether the two freed slots go to a later
+genre is the operator's call and is not made here.

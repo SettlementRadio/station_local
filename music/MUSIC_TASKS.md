@@ -61,9 +61,9 @@ marked **NEXT**.
 | Stage | Cards | Last done | Status |
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
-| **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-43** the commission and the plan · 2026-08-12 | **M-44 next.** The files say the new numbers; the wiki does not yet |
+| **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-44** deck-talk and pulse-dance demoted · 2026-08-12 | **M-45 next.** The plan and the wiki agree again at 305 songs; the writing rules are not enforced yet |
 | 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-17** lyrics and prompts · 2026-08-09 | M-17's words are being redone by M-47; M-18 waits |
-| 2 · The wiki — 7 genres left | M-07 … M-15 | **M-11** pulse-dance · 2026-08-11 | 435 songs written, 130 of them demoting at M-44 · M-12 is now 55 songs and waits its turn |
+| 2 · The wiki — 7 genres left | M-07 … M-15 | **M-11** pulse-dance · 2026-08-11 | 305 playable songs written of 500 · M-12 is now 55 songs and waits its turn |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
@@ -176,7 +176,7 @@ down for it, and **`make check` goes red the moment that card is marked DONE** �
 cannot quietly disable the counting for good. Five genres carry a marker today.
 Depends on: —
 
-### M-44 · `[agent]` Demote deck-talk and pulse-dance to layer B — **NEXT**
+### M-44 · `[agent]` Demote deck-talk and pulse-dance to layer B — **DONE 2026-08-12**
 Goal: 130 songs stop being records the station holds and become records the world merely knows about.
 Files: `music/wiki/deck-talk.yaml`, `music/wiki/pulse-dance.yaml`, `music/CONSTANTS.md`,
 `music/plan.yaml`
@@ -187,9 +187,21 @@ counts and §5's label table are recounted against what is left. `make check` gr
 Note: nothing is deleted. The Clearing Day origin, the disputed 2612 catalogue, the two bands who
 have not shared a sleeve since 2618 — all still there for a presenter to talk about. A station that
 can discuss records it does not own is the whole point of the three layers.
+Result: both files carry an empty layer A and a comment saying why; the five layer-A bands moved
+down whole and their sixteen albums with them (D-070). **322 songs survive as titles** — 182
+deck-talk, 140 pulse-dance — with every bio, album story, credit and mood tag intact; the 130
+`fact:` lines are the only prose that went, because a fact is what a presenter says over a record
+that is playing. `plan.yaml` is clear of both `owed_to: M-44` lines and now records the layer-B band
+counts the demotion produced, 10 and 7. **305 of the 500 playable songs stand**, exactly as
+`CONSTANTS.md` §6 predicted, and §5's label table lands on the four rows it predicted too — label 3
+down to 1 band and 20 songs, labels 2, 4 and 5 each down a band. **Two things the card did not
+foresee.** `al_055` and `al_117` stop being cornerstones, so **the list falls from eight to six** and
+sits on §5's floor with no margin (D-070). And **anchor year 2612 lost its fourth band** — it is
+25 songs across 3 bands and 3 labels, one band short of a programme, so M-46, M-48 and M-49 are each
+now asked in `CONSTANTS.md` §1 to land a release there. `make check` green.
 Depends on: M-43
 
-### M-45 · `[agent]` The writing rules, and `make check` enforcing them
+### M-45 · `[agent]` The writing rules, and `make check` enforcing them — **NEXT**
 Goal: The next 400 songs cannot be the same song 400 times, because the command goes red when they are.
 Files: `music/COMMISSION.md`, `src/station/music/check.py`, `tests/unit/test_music.py`
 Check: `make check` goes red, naming the album, on any of — more than 40% of an album's songs sharing
