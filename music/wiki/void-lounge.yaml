@@ -1,18 +1,29 @@
-# Void-lounge — PLACEHOLDER. Nothing here is content yet.
+# Void-lounge — written by M-12.
 #
-# Written by its card in music/MUSIC_TASKS.md: open a session and say the number. The agent
-# replaces everything below the `section:` block, and `make check` counts what it wrote.
+# 55 playable songs on two labels, and the card that finishes both of them: label 6, the late-club
+# house that folded in 2612 with its catalogue disputed, and label 3, the storm-coast house that
+# picked the form up afterwards (D-068).
 #
-# Allocation, from music/plan.yaml (the authority — do not retype it here):
-#   LAYER A — 40 songs across 3 band(s)
-#     label 1 (Concordance, prestige): 10 songs / 1 band(s)
-#     label 6 (late-club, folded 2612): 30 songs / 2 band(s)
-#   LAYER B — about 4 more bands the station does not hold
-#   LAYER C — about 3 figures, 2426-2546, no albums and no track lists
+# Three things shape everything below:
 #
-# Labels this genre sits on:
-#   - label_1  (Concordance, prestige)
-#   - label_6  (late-club, folded 2612)
+# 1. **The form's own house folded.** Lower Bell Editions existed to press what the Concordance
+#    late-club rooms played after the last ferry. It went under in 2612 owing the Gantry Street
+#    plant two years of pressing, and its masters have been in a receiver's room ever since. Both
+#    layer-A bands here are inside that catalogue, which is why one of them has made no record since
+#    2612 and still plays every week. CONSTANTS.md section 1 puts the fold on the 2612 anchor and
+#    calls the dispute the retrospective; this file is where the dispute is written down.
+# 2. **The coast took the form up.** Stormline Issue presses the storm coast's dance music and, from
+#    2617, the slow hour at the end of it — because Juna Carrow came out of the folded house looking
+#    for work and could not get home before the season sealed. She is in two bands in this file,
+#    b_065 and b_066, and she is the only person in the wiki who is.
+# 3. **The two coast bands disagree about whose music it is.** The Quiet Half play the core's form on
+#    the coast and say so. Nine Lamps play the slow hour too and will not use the core's name for it;
+#    Stormline Issue files them as void-lounge over their objection, and prints the objection.
+#
+# `labels:` lists label_3 and label_6, the two the layer A sits on. Layer B reaches label_1, label_2
+# and `unsigned`, all named elsewhere in the wiki, and check.py reads labels on layer-A albums only.
+#
+# **No cornerstone** (D-067): the list is full at six and this card designates none.
 
 section:
   genre: void-lounge
@@ -22,23 +33,1148 @@ section:
     referenced: B
     historical: C
 
-# The labels above, as the writer names them.
-labels: []
+labels:
+  - id: label_3
+    name: Stormline Issue
+    home: Meridian storm coast
+    tier: standard
+    status: operating
+    founded_year: 2597
+    genre: void-lounge
+    note: >-
+      The house that presses the storm coast's dance music began pressing its slow hour in 2619, for
+      the reason houses usually do: it had a singer on the coast, a sealed season, and nothing else
+      to put out. It has kept doing it because the slow records sell up the relay in months the dance
+      records cannot ship, and because the two acts cost it almost nothing. The house pays the slow
+      hour at the same rate as the dancing, which it has been asked about in print and has never
+      explained. It files both acts under the core's name for the form and one of them has objected
+      to that in writing every year since 2620.
+  - id: label_6
+    name: Lower Bell Editions
+    home: Concordance late-club quarter
+    tier: standard
+    status: folded
+    founded_year: 2589
+    folded_year: 2612
+    catalogue_status: disputed
+    founder: p_maro_deyn
+    founder_comment: The founder has refused every catalogue interview since 2612.
+    genre: void-lounge
+    note: >-
+      Maro Deyn founded the house in 2589 out of the Lower Bell room, where his own band had played
+      three nights a week for eleven years, on the argument that the quarter's music was being
+      pressed by houses that had never sat through an hour of it. For twenty-three years it was the
+      only house in the settled worlds that existed for this form and nothing else. In 2610 Deyn
+      borrowed against the catalogue to buy the Lower Bell room outright, the quarter's rents moved
+      against him, and in 2612 the house folded owing the Gantry Street plant two years of pressing
+      and its distributor a season paid in advance. Both claimed the catalogue, both were right about
+      part of it, and the masters have sat in a receiver's room since. Everything the house ever
+      pressed is inside that — After the Ferry, Coldwater Court, Evening Claim's last record, Warm
+      Fraction's contested session parts, and Late Bell Set's two dance records, which went in with
+      the rest and have not been pressed since.
 
-# From music/CONSTANTS.md section 2 — only the players who appear on this genre,
-# and only inside their active years.
-session_players: []
+# From CONSTANTS.md section 2, and only inside their dates. Five of the eight fit this form: a vocal
+# arranger, two keyboard players, a bassist for the older core records and a guitarist. Brin Noll,
+# Nessa Dray and Ivena Sorn play instruments no late-club room has ever wanted.
+session_players:
+  - id: sp_sel_ardin
+    name: Sel Ardin
+    instrument: backing vocals and vocal arrangement
+    active_from: 2593
+    active_to: 2626
+    genre: void-lounge
+  - id: sp_calo_meret
+    name: Calo Meret
+    instrument: piano and compact studio keyboards
+    active_from: 2595
+    active_to: 2626
+    genre: void-lounge
+  - id: sp_miro_olt
+    name: Miro Olt
+    instrument: synth-harpsichord
+    active_from: 2598
+    active_to: 2626
+    genre: void-lounge
+  - id: sp_oren_saye
+    name: Oren Saye
+    instrument: upright bass
+    active_from: 2588
+    active_to: 2622
+    genre: void-lounge
+  - id: sp_talla_venn
+    name: Talla Venn
+    instrument: fretted composite guitar
+    active_from: 2591
+    active_to: 2625
+    genre: void-lounge
 
-# LAYER A — playable: true. Full bios, full album stories, one fact per song.
 layer_a:
-  bands: []
-  albums: []
+  bands:
+    - id: b_064
+      name: After the Ferry
+      kind: group
+      home_settlement: Concordance late-club quarter
+      label: label_6
+      genre: void-lounge
+      active_from: 2594
+      active_to: 2626
+      members:
+        - id: p_nesta_vire
+          name: Nesta Vire
+          genre: void-lounge
+          instruments: [lead vocal]
+          active_from: 2594
+          active_to: 2626
+        - id: p_ollan_beke
+          name: Ollan Beke
+          genre: void-lounge
+          instruments: [piano]
+          active_from: 2594
+          active_to: 2626
+        - id: p_tarrin_meel
+          name: Tarrin Meel
+          genre: void-lounge
+          instruments: [upright bass]
+          active_from: 2594
+          active_to: 2626
+        - id: p_deran_shale
+          name: Deran Shale
+          genre: void-lounge
+          instruments: [brushed drum kit]
+          active_from: 2594
+          active_to: 2626
+        - id: p_hessa_lin
+          name: Hessa Lin
+          genre: void-lounge
+          instruments: [synth-harpsichord, backing vocal]
+          active_from: 2600
+          active_to: 2626
+      movement:
+        initial: Purist
+        changed_to: Synthesist
+        changed_year: 2600
+        detail: >-
+          The band took Hessa Lin and her synth-harpsichord in for the first record and Lower Bell
+          Editions filed it as a change of side. Nesta Vire's position is that a plucked electronic
+          string in a room that small is a piano the band could afford, and she has never accepted
+          the word for it.
+      bio: >-
+        After the Ferry have played the Lower Bell room three nights a week since 2594 and have never
+        held a booking anywhere else in the quarter. Nesta Vire sings low and quietly enough that the
+        room has to stop talking, which is a working method rather than a style, and she learned it
+        from a room that would not. Ollan Beke writes at the room's own piano between the last ferry
+        and the first, and the band's arrangements are what four people can carry up a stair. They
+        have made no record since 2612, because everything they own is in the receiver's room with
+        the rest of the house, and they play the same three nights anyway. Tarrin Meel keeps the
+        band's accounts in the same book he kept them in when the house was paying.
+      album_ids: [al_144, al_145, al_146]
 
-# LAYER B — playable: false. Two-sentence bios, one-line album notes, titles only, no facts.
+    - id: b_065
+      name: Coldwater Court
+      kind: group
+      home_settlement: Concordance late-club quarter
+      label: label_6
+      genre: void-lounge
+      active_from: 2578
+      active_to: 2612
+      members:
+        - id: p_maro_deyn
+          name: Maro Deyn
+          genre: void-lounge
+          instruments: [piano]
+          active_from: 2578
+          active_to: 2612
+        - id: p_bela_runn
+          name: Bela Runn
+          genre: void-lounge
+          instruments: [lead vocal]
+          active_from: 2578
+          active_to: 2604
+        - id: p_juna_carrow
+          name: Juna Carrow
+          genre: void-lounge
+          instruments: [lead vocal]
+          active_from: 2605
+          active_to: 2612
+        - id: p_toben_alt
+          name: Toben Alt
+          genre: void-lounge
+          instruments: [upright bass]
+          active_from: 2578
+          active_to: 2612
+        - id: p_odell_prine
+          name: Odell Prine
+          genre: void-lounge
+          instruments: [brushed drum kit, hand percussion]
+          active_from: 2578
+          active_to: 2612
+      movement:
+        standing: Purist
+        detail: >-
+          Maro Deyn's line, printed on every sleeve the house issued, was that the form needs a room,
+          a piano and somebody willing to stay up, and that anything else is a house trying to make
+          the record louder than the night it came from. He kept to it in his own band and did not
+          enforce it on the ones he signed.
+      bio: >-
+        Coldwater Court played the Lower Bell room for eleven years before Maro Deyn founded a house
+        to press it, and they are the reason there is a house at all. Bela Runn sang the first
+        twenty-six years and stopped in 2604 over a set of accounts she asked to see twice; Juna
+        Carrow replaced her the following year and was told to sing it her own way, which she did
+        not do for two years. Toben Alt has never played a song faster than the first time he played
+        it, and the band's whole tempo is his. They made one record in 2594 and nothing else until
+        2612, because Deyn was running the house and would not book his own band ahead of anybody
+        he had signed.
+      album_ids: [al_147, al_148]
+
+    - id: b_066
+      name: The Quiet Half
+      kind: group
+      home_settlement: Meridian storm coast
+      label: label_3
+      genre: void-lounge
+      active_from: 2617
+      active_to: 2626
+      members:
+        - id: p_juna_carrow
+          name: Juna Carrow
+          genre: void-lounge
+          instruments: [lead vocal]
+          active_from: 2617
+          active_to: 2626
+        - id: p_teme_hollick
+          name: Teme Hollick
+          genre: void-lounge
+          instruments: [piano, compact keyboards]
+          active_from: 2617
+          active_to: 2626
+        - id: p_ivor_sanne
+          name: Ivor Sanne
+          genre: void-lounge
+          instruments: [upright bass]
+          active_from: 2617
+          active_to: 2626
+        - id: p_dessa_roan
+          name: Dessa Roan
+          genre: void-lounge
+          instruments: [brushed drum kit]
+          active_from: 2617
+          active_to: 2626
+      movement:
+        standing: Purist
+        detail: >-
+          Juna Carrow kept Maro Deyn's line about a room and a piano and took it to the most
+          Synthesist house in the settled worlds, which finds it useful because it costs nothing.
+          Teme Hollick plays the house's compact keyboards when the hall's piano is unplayable and
+          says every time that it is the hall's fault and not the argument's.
+      bio: >-
+        The Quiet Half formed on Meridian's storm coast in 2617, four months after Juna Carrow took
+        a hall job out there and the season sealed with her on the wrong side of it. They play the
+        hour after the dancing stops, in halls built for the opposite, and Dessa Roan sets every
+        tempo at half whatever was going on before them. Carrow will not sing anything from the
+        Coldwater Court records on stage, because every play of them pays the two claimants who hold
+        that catalogue, and she says so from the stage often enough that the coast is bored of it.
+        Ivor Sanne came off a hauler and had never heard the form before he joined; he learned it
+        off the records Carrow cannot get back, which she lent him and asked for back the same week.
+      album_ids: [al_149, al_150]
+
+    - id: b_067
+      name: Nine Lamps
+      kind: group
+      home_settlement: Meridian storm coast
+      label: label_3
+      genre: void-lounge
+      active_from: 2614
+      active_to: 2626
+      members:
+        - id: p_sabin_loch
+          name: Sabin Loch
+          genre: void-lounge
+          instruments: [lead vocal]
+          active_from: 2614
+          active_to: 2626
+        - id: p_emre_talt
+          name: Emre Talt
+          genre: void-lounge
+          instruments: [synth-harpsichord, compact keyboards]
+          active_from: 2614
+          active_to: 2626
+        - id: p_nera_bly
+          name: Nera Bly
+          genre: void-lounge
+          instruments: [upright bass]
+          active_from: 2614
+          active_to: 2626
+        - id: p_corle_sten
+          name: Corle Sten
+          genre: void-lounge
+          instruments: [brushed drum kit]
+          active_from: 2614
+          active_to: 2626
+      movement:
+        standing: Localist
+        detail: >-
+          The band's position, stated in 2620 and repeated in writing every year since, is that the
+          slow hour on the storm coast grew out of the coast's own nights and was not brought down
+          from the core with the crates. Stormline Issue files them under the core's name anyway and
+          prints their objection beside it, which both sides describe as settled.
+      bio: >-
+        Nine Lamps are named for the nine lamps on the Meridian sea wall and have played the last
+        hour of coast dance nights since 2614, mostly in halls that booked them because somebody has
+        to play while the room empties. Sabin Loch sings higher and quieter than anybody expects and
+        has never once used the core's word for what the band does. Emre Talt bought a second-hand
+        synth-harpsichord out of Concordance and tunes it to the sea wall's hum, which is a real
+        pitch and changes with the weather. They have never played off the coast, have never been
+        asked twice, and turned down the one hall in the core that asked once.
+      album_ids: [al_151, al_152]
+
+  albums:
+    - id: al_144
+      title: The Late Fare
+      band: b_064
+      label: label_6
+      release_year: 2600
+      kind: album
+      genre: void-lounge
+      cornerstone: false
+      notes: >-
+        Lower Bell Editions had been sitting on this band for six years and could not afford to press
+        it. What changed in 2600 was the shared format the shipboard presses adopted that year, which
+        cleared the plant's backlog and dropped the price of a short run far enough that Maro Deyn
+        could pay for one out of the Lower Bell room's takings. It was recorded across four nights
+        in the room itself, after the last ferry, with the band playing its ordinary set and stopping
+        when the room emptied. Hessa Lin had joined that spring and her synth-harpsichord is on every
+        track, which the house filed as the band changing sides and the band has never accepted.
+        Nesta Vire has said the record is the room and not the band, and that this is why it works.
+      songs:
+        - id: s_1171
+          title: The Late Fare
+          track_number: 1
+          genre: void-lounge
+          mood_tags: [wry, unhurried, warm]
+          playable: true
+          fact: The fare Nesta Vire names in the second verse is what the room's own staff were charged to get home after the last ferry, which Ollan Beke copied off the board on the wall.
+          credits: {writers: [p_nesta_vire, p_ollan_beke], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin], producer: p_ollan_beke}
+        - id: s_1172
+          title: Coats on the Chair Backs
+          track_number: 2
+          genre: void-lounge
+          mood_tags: [tender, hushed, slow]
+          playable: true
+          fact: Deran Shale plays the whole song with brushes on the back of a chair, because the room's kit had gone out on loan to a wedding and came back a night late.
+          credits: {writers: [p_nesta_vire], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale], producer: p_ollan_beke}
+        - id: s_1173
+          title: Same Round Again
+          track_number: 3
+          genre: void-lounge
+          mood_tags: [resigned, warm, midtempo]
+          playable: true
+          fact: Tarrin Meel's bass figure is Odile Prenn's, learned off a handwritten part that has been kept behind the Lower Bell's bar since before anyone working there was born.
+          credits: {writers: [p_ollan_beke, p_tarrin_meel], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin], producer: p_ollan_beke}
+        - id: s_1174
+          title: Who Waits Up
+          track_number: 4
+          genre: void-lounge
+          mood_tags: [aching, spare, slow]
+          playable: true
+          fact: Nesta Vire wrote it for the room's night porter, who waited up for a partner whose shift ended at a different hour every night of the week.
+          credits: {writers: [p_nesta_vire], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_hessa_lin], producer: p_ollan_beke}
+        - id: s_1175
+          title: Ferry Board Blank
+          track_number: 5
+          genre: void-lounge
+          mood_tags: [cold, patient, low]
+          playable: true
+          fact: Hessa Lin holds one chord under the whole first verse because the band played it the night the ferry board showed nothing at all and nobody knew whether the room would fill.
+          credits: {writers: [p_nesta_vire, p_hessa_lin], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin], producer: p_ollan_beke}
+        - id: s_1176
+          title: Turn the Lamps Down
+          track_number: 6
+          genre: void-lounge
+          mood_tags: [warm, final, hushed]
+          playable: true
+          fact: The closing line is the phrase the Lower Bell's staff used to clear the room, and Maro Deyn objected to putting it on a record and printed it on the sleeve anyway.
+          credits: {writers: [p_nesta_vire, p_ollan_beke], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin], producer: p_ollan_beke}
+
+    - id: al_145
+      title: Two Ferries Missed
+      band: b_064
+      label: label_6
+      release_year: 2607
+      kind: album
+      genre: void-lounge
+      cornerstone: false
+      notes: >-
+        The house's best year. Meridian's coast was shut for the season and the core's rooms filled
+        up with players who had nowhere to be, so Lower Bell Editions had its pick of hired hands for
+        the first and only time and spent the money on this record. Sel Ardin came down for three
+        nights and built the answering voices, and Nesta Vire has said she sang the rest of the
+        record differently once she had heard what a second voice could do underneath her. The house
+        booked three nights in the room and the band played a fourth; Evening Claim had been billed
+        for a fourth night in the same room in 2583 and After the Ferry refused to sign for theirs,
+        which is the first time anybody had refused Maro Deyn anything. Hessa Lin's own instrument
+        had been sold that spring to clear the band's back pay, so the last track is the room's
+        upright piano.
+      songs:
+        - id: s_1177
+          title: Two Ferries Missed
+          track_number: 1
+          genre: void-lounge
+          mood_tags: [wry, warm, midtempo]
+          playable: true
+          fact: Nesta Vire counted the two ferries she had actually missed that week into the opening line and refused to change the number afterwards, so the band has sung it wrong on purpose ever since.
+          credits: {writers: [p_nesta_vire], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin], producer: p_ollan_beke}
+        - id: s_1178
+          title: The Room Fills at One
+          track_number: 2
+          genre: void-lounge
+          mood_tags: [patient, glowing, slow]
+          playable: true
+          fact: Sel Ardin built the three answering voices around a lead she had heard once, standing at the bar with her coat still on.
+          credits: {writers: [p_nesta_vire, p_ollan_beke], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin, sp_sel_ardin], producer: p_ollan_beke}
+        - id: s_1179
+          title: Your Coat, My Fault
+          track_number: 3
+          genre: void-lounge
+          mood_tags: [rueful, tender, slow]
+          playable: true
+          fact: Ollan Beke wrote the piano part out of an argument he had in the coat room and has never said which half of it was his.
+          credits: {writers: [p_ollan_beke], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale], producer: p_ollan_beke}
+        - id: s_1180
+          title: Nothing Until Morning
+          track_number: 4
+          genre: void-lounge
+          mood_tags: [aching, hushed, spare]
+          playable: true
+          fact: Tarrin Meel plays Toben Alt's bass on this one, borrowed off Coldwater Court for a fortnight while his own was away being repaired, and it is a whole tone darker than the rest of the record.
+          credits: {writers: [p_nesta_vire, p_tarrin_meel], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, sp_sel_ardin], producer: p_ollan_beke}
+        - id: s_1181
+          title: The Fourth Night
+          track_number: 5
+          genre: void-lounge
+          mood_tags: [tired, warm, building]
+          playable: true
+          fact: The band played a fourth night the house had not paid for and would not sign for it, which is the only bill Maro Deyn ever wrote off.
+          credits: {writers: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin, sp_sel_ardin], producer: p_ollan_beke}
+        - id: s_1182
+          title: Down to the Last Lamp
+          track_number: 6
+          genre: void-lounge
+          mood_tags: [final, warm, slow]
+          playable: true
+          fact: Hessa Lin plays the closing figure on the room's upright piano because her own instrument had been sold that spring to pay the band what the house owed it.
+          credits: {writers: [p_nesta_vire, p_hessa_lin], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin], producer: p_ollan_beke}
+
+    - id: al_146
+      title: Everything on Account
+      band: b_064
+      label: label_6
+      release_year: 2612
+      kind: album
+      genre: void-lounge
+      cornerstone: false
+      notes: >-
+        Made in the spring of 2612 and pressed in the summer, by which time Lower Bell Editions was
+        paying everybody in credit notes against a catalogue it had already borrowed against. The
+        Gantry Street plant finished the run and then held it, as security for two years of unpaid
+        pressing, and every copy the station has came out of the four boxes the band collected in
+        person by arguing at the window for a day and a half. Nesta Vire wrote most of it out of the
+        band's own paperwork and none of it is about the house in general; it is about four specific
+        payments and one meeting. The record was not distributed, was never reviewed, and is the
+        thing the quarter means when it talks about what was lost — which is inaccurate, because the
+        band has it and plays it.
+      songs:
+        - id: s_1183
+          title: Everything on Account
+          track_number: 1
+          genre: void-lounge
+          mood_tags: [wry, bitter, midtempo]
+          playable: true
+          fact: The four amounts Nesta Vire sings are the four credit notes the band was last paid in, in the order they were issued.
+          credits: {writers: [p_nesta_vire], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin], producer: p_ollan_beke}
+        - id: s_1184
+          title: Who Signs for This
+          track_number: 2
+          genre: void-lounge
+          mood_tags: [cold, tense, slow]
+          playable: true
+          fact: Ollan Beke wrote it in the plant's waiting room while the band argued for its own copies, and the count-in is the number on the clerk's window.
+          credits: {writers: [p_ollan_beke, p_nesta_vire], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale], producer: p_ollan_beke}
+        - id: s_1185
+          title: Paid in Paper
+          track_number: 3
+          genre: void-lounge
+          mood_tags: [resigned, warm, slow]
+          playable: true
+          fact: Tarrin Meel was paid for the record in paper the plant would not accept, kept all of it, and has it framed on the wall of the room the band still plays.
+          credits: {writers: [p_nesta_vire, p_tarrin_meel], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin], producer: p_ollan_beke}
+        - id: s_1186
+          title: Keep the Room Open
+          track_number: 4
+          genre: void-lounge
+          mood_tags: [defiant, warm, building]
+          playable: true
+          fact: The chorus is what the Lower Bell's staff shouted at the founder's last meeting, and all five of the band sing it because Nesta Vire would not sing it on her own.
+          credits: {writers: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin], producer: p_ollan_beke}
+        - id: s_1187
+          title: Nobody Owns a Night
+          track_number: 5
+          genre: void-lounge
+          mood_tags: [aching, spacious, slow]
+          playable: true
+          fact: Hessa Lin's figure quotes the walking part Odile Prenn left behind, which is the only thing on the record neither claimant has ever tried to put a number on.
+          credits: {writers: [p_nesta_vire, p_hessa_lin], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_hessa_lin], producer: p_ollan_beke}
+        - id: s_1188
+          title: Last Thing Pressed
+          track_number: 6
+          genre: void-lounge
+          mood_tags: [final, cold, hushed]
+          playable: true
+          fact: Every copy that exists outside the receiver's room came out of the four boxes the band carried away from the Gantry Street plant themselves.
+          credits: {writers: [p_nesta_vire, p_ollan_beke], players: [p_nesta_vire, p_ollan_beke, p_tarrin_meel, p_deran_shale, p_hessa_lin], producer: p_ollan_beke}
+
+    - id: al_147
+      title: First Round Slow
+      band: b_065
+      label: label_6
+      release_year: 2594
+      kind: album
+      genre: void-lounge
+      cornerstone: false
+      notes: >-
+        The house's fifth record and the one that made it. Maro Deyn had founded Lower Bell Editions
+        in 2589 to press other people and had put off pressing his own band for five years on the
+        grounds that it would look exactly like what it was. He gave in the year the first burn
+        festival emptied the quarter of everybody with a lane job, because the room was half full for
+        a season and the band had nothing else to do with the nights. Talla Venn was hired for two of
+        them and spent both arguing with Deyn about whether the guitar should answer the piano's left
+        hand or stay out of its way; the record keeps both versions of the argument and settles
+        neither. Bela Runn sings all six, in the last stretch of the twenty-six years she gave the
+        band.
+      songs:
+        - id: s_1189
+          title: First Round Slow
+          track_number: 1
+          genre: void-lounge
+          mood_tags: [unhurried, warm, wry]
+          playable: true
+          fact: Bela Runn opens at the tempo the Lower Bell's staff pour at, which Maro Deyn timed against the bar clock one night and wrote on the back of a docket.
+          credits: {writers: [p_bela_runn, p_maro_deyn], players: [p_bela_runn, p_maro_deyn, p_toben_alt, p_odell_prine], producer: p_maro_deyn}
+        - id: s_1190
+          title: Everyone's on the Lanes
+          track_number: 2
+          genre: void-lounge
+          mood_tags: [wistful, spare, slow]
+          playable: true
+          fact: Written the week the first burn festival took the room's regulars out to the lanes, and the number of empty chairs in the second verse is the count Odell Prine made from behind the kit.
+          credits: {writers: [p_bela_runn], players: [p_bela_runn, p_maro_deyn, p_toben_alt, p_odell_prine], producer: p_maro_deyn}
+        - id: s_1191
+          title: The Court at Four
+          track_number: 3
+          genre: void-lounge
+          mood_tags: [hushed, cold, patient]
+          playable: true
+          fact: Toben Alt plays the whole song on two strings, after the stair door caught his hand on the way in and nobody wanted to lose the night.
+          credits: {writers: [p_maro_deyn, p_toben_alt], players: [p_bela_runn, p_maro_deyn, p_toben_alt, p_odell_prine], producer: p_maro_deyn}
+        - id: s_1192
+          title: Send a Card Instead
+          track_number: 4
+          genre: void-lounge
+          mood_tags: [tender, rueful, slow]
+          playable: true
+          fact: Bela Runn wrote it for her brother on the freight circuit and sings his reply as the second verse, which she has said is the only line of his she kept.
+          credits: {writers: [p_bela_runn], players: [p_bela_runn, p_maro_deyn, p_toben_alt, sp_talla_venn], producer: p_maro_deyn}
+        - id: s_1193
+          title: Nothing Opens Till Nine
+          track_number: 5
+          genre: void-lounge
+          mood_tags: [dry, warm, midtempo]
+          playable: true
+          fact: Talla Venn's guitar answers Maro Deyn's left hand all the way through, which is the opposite of what Deyn had written out and the two of them never agreed about it afterwards.
+          credits: {writers: [p_maro_deyn], players: [p_bela_runn, p_maro_deyn, p_toben_alt, p_odell_prine, sp_talla_venn], producer: p_maro_deyn}
+        - id: s_1194
+          title: Warm Glass, Cold Court
+          track_number: 6
+          genre: void-lounge
+          mood_tags: [final, tender, slow]
+          playable: true
+          fact: Sel Ardin sings the closing answer alone because the band's own harmony singers had gone home on the last ferry and nobody had thought to ask them to stay.
+          credits: {writers: [p_bela_runn, p_maro_deyn], players: [p_bela_runn, p_maro_deyn, p_toben_alt, p_odell_prine, sp_sel_ardin], producer: p_maro_deyn}
+
+    - id: al_148
+      title: The Founder's Room
+      band: b_065
+      label: label_6
+      release_year: 2612
+      kind: album
+      genre: void-lounge
+      cornerstone: false
+      notes: >-
+        The band's second record and the last thing Lower Bell Editions ever pressed. Nothing had
+        come between it and the first because Maro Deyn would not book his own band ahead of anybody
+        he had signed, and by 2612 there was nobody left to be ahead of. It was made in the Lower
+        Bell room he had bought in 2610 with a loan against the catalogue, which is what the title is
+        about and what the band, rather than Deyn, chose to call it. Juna Carrow had sung with them
+        for seven years by then and sings all six. The plant held the run against the debt within a
+        month of finishing it, so the record went from being made to being disputed without ever
+        being sold, and both claimants have listed it since.
+      songs:
+        - id: s_1195
+          title: The Founder's Room
+          track_number: 1
+          genre: void-lounge
+          mood_tags: [wry, cold, midtempo]
+          playable: true
+          fact: Juna Carrow chose the title and Maro Deyn approved it without saying anything, which the rest of the band took to mean the argument was over.
+          credits: {writers: [p_juna_carrow], players: [p_juna_carrow, p_maro_deyn, p_toben_alt, p_odell_prine], producer: p_maro_deyn}
+        - id: s_1196
+          title: Bela's Key
+          track_number: 2
+          genre: void-lounge
+          mood_tags: [tender, warm, slow]
+          playable: true
+          fact: Juna Carrow sings it in Bela Runn's key instead of her own and has never sung it in any other, including on the coast.
+          credits: {writers: [p_juna_carrow, p_maro_deyn], players: [p_juna_carrow, p_maro_deyn, p_toben_alt, p_odell_prine], producer: p_maro_deyn}
+        - id: s_1197
+          title: Borrowed Against Us
+          track_number: 3
+          genre: void-lounge
+          mood_tags: [bitter, tense, slow]
+          playable: true
+          fact: The second verse lists what the loan was secured on, in the order it appears on the paper the band was shown in 2611.
+          credits: {writers: [p_juna_carrow, p_toben_alt], players: [p_juna_carrow, p_maro_deyn, p_toben_alt, p_odell_prine], producer: p_maro_deyn}
+        - id: s_1198
+          title: Nothing Since the Festival
+          track_number: 4
+          genre: void-lounge
+          mood_tags: [wistful, spare, patient]
+          playable: true
+          fact: Odell Prine plays the brush pattern off the band's first record note for note, which is the only thing the four of them agreed on before they started.
+          credits: {writers: [p_maro_deyn], players: [p_juna_carrow, p_maro_deyn, p_toben_alt, p_odell_prine], producer: p_maro_deyn}
+        - id: s_1199
+          title: The Plant Keeps Ours
+          track_number: 5
+          genre: void-lounge
+          mood_tags: [cold, resigned, slow]
+          playable: true
+          fact: Toben Alt heard between the two nights that the plant intended to hold the run, and plays everything on the second night a whole tone lower than he had on the first.
+          credits: {writers: [p_juna_carrow, p_toben_alt], players: [p_juna_carrow, p_maro_deyn, p_toben_alt, p_odell_prine, sp_oren_saye], producer: p_maro_deyn}
+        - id: s_1200
+          title: Close the House
+          track_number: 6
+          genre: void-lounge
+          mood_tags: [final, aching, hushed]
+          playable: true
+          fact: Maro Deyn plays the closing figure alone, and he has not played in public since 2612.
+          credits: {writers: [p_maro_deyn], players: [p_juna_carrow, p_maro_deyn], producer: p_maro_deyn}
+
+    - id: al_149
+      title: Numbers on the Sleeve
+      band: b_066
+      label: label_3
+      release_year: 2619
+      kind: album
+      genre: void-lounge
+      cornerstone: false
+      notes: >-
+        Stormline Issue's first record in the form, made for the plainest reason a house ever makes
+        one: the coast had sealed, the crates had gone, the dance acts were off the coast, and there
+        was a singer in a hall with a band she had put together four months earlier. It went out into
+        the 2619 calendar, which was full of answers to the altered-credit edition, and every credit
+        on it names who played what down to the part — which the settled worlds read as the band
+        taking a side in somebody else's argument and which is about the two claimants who hold
+        Coldwater Court. The sleeve prints eleven Lower Bell catalogue numbers and nothing else on
+        the back. It sold better up the relay than anything Stormline Issue had pressed that was not
+        for dancing, which is the whole reason there is a second one.
+      songs:
+        - id: s_1201
+          title: Numbers on the Sleeve
+          track_number: 1
+          genre: void-lounge
+          mood_tags: [cold, wry, slow]
+          playable: true
+          fact: The eleven numbers Juna Carrow sings are the Lower Bell catalogue numbers of the records she cannot get back, in the order the receiver listed them.
+          credits: {writers: [p_juna_carrow], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan], producer: p_teme_hollick}
+        - id: s_1202
+          title: A Coast With No Ferry
+          track_number: 2
+          genre: void-lounge
+          mood_tags: [wistful, spacious, patient]
+          playable: true
+          fact: Juna Carrow wrote it in her first sealed season, on finding that a coast with no last ferry has no hour at which the night is agreed to be over.
+          credits: {writers: [p_juna_carrow, p_teme_hollick], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan], producer: p_teme_hollick}
+        - id: s_1203
+          title: The Hall Next Door Is Dancing
+          track_number: 3
+          genre: void-lounge
+          mood_tags: [wry, warm, midtempo]
+          playable: true
+          fact: What is on the other side of the wall is Cordon Hours playing to a full room, and Dessa Roan set the tempo at exactly half theirs.
+          credits: {writers: [p_juna_carrow, p_dessa_roan], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan], producer: p_teme_hollick}
+        - id: s_1204
+          title: Slow Set at Six
+          track_number: 4
+          genre: void-lounge
+          mood_tags: [tired, tender, slow]
+          playable: true
+          fact: Stormline Issue booked the band for the hour after the dancing stopped and paid it at the dancing's rate, which the house has never explained and has never repeated for anybody else.
+          credits: {writers: [p_juna_carrow], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan], producer: p_teme_hollick}
+        - id: s_1205
+          title: Somebody Else's Instrument
+          track_number: 5
+          genre: void-lounge
+          mood_tags: [glassy, cool, hypnotic]
+          playable: true
+          fact: Miro Olt plays a synth-harpsichord that had come down in a dance crate and could not go back before the coast sealed, and he charged the house for the season it spent there.
+          credits: {writers: [p_juna_carrow, p_teme_hollick], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan, sp_miro_olt], producer: p_teme_hollick}
+        - id: s_1206
+          title: Ask Me About the Core
+          track_number: 6
+          genre: void-lounge
+          mood_tags: [dry, bitter, midtempo]
+          playable: true
+          fact: Juna Carrow never answers the question in the chorus and Teme Hollick answers it for her, with the first four notes of Bela's Key.
+          credits: {writers: [p_juna_carrow, p_teme_hollick], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan], producer: p_teme_hollick}
+        - id: s_1207
+          title: Late Enough to Say It
+          track_number: 7
+          genre: void-lounge
+          mood_tags: [warm, aching, final]
+          playable: true
+          fact: Sel Ardin sings the answering line, and it is the only song the band has ever ended with two voices.
+          credits: {writers: [p_juna_carrow], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan, sp_sel_ardin], producer: p_teme_hollick}
+
+    - id: al_150
+      title: The Quarter Without Me
+      band: b_066
+      label: label_3
+      release_year: 2624
+      kind: album
+      genre: void-lounge
+      cornerstone: false
+      notes: >-
+        Concordance's largest hall reopened in 2624 and every house in the settled worlds booked
+        time in it. Stormline Issue did not: it had put its season's money into a wet hall on the
+        storm coast and said in print that it would do it again. So The Quiet Half paid the hall's
+        fee themselves, out of a season of hall work, and Stormline Issue paid for the sleeve and is
+        credited on it for the sleeve. It is the first time Juna Carrow had been back in the
+        late-club quarter since 2617, and she walked it for two days before the band played a note.
+        The record is the only one in the wiki where a singer re-records her own song to keep the
+        money away from the people who own the first version.
+      songs:
+        - id: s_1208
+          title: The Quarter Without Me
+          track_number: 1
+          genre: void-lounge
+          mood_tags: [aching, cold, slow]
+          playable: true
+          fact: Juna Carrow names four rooms in the second verse, all four of which closed between 2617 and 2624.
+          credits: {writers: [p_juna_carrow], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan], producer: p_teme_hollick}
+        - id: s_1209
+          title: Paid for It Ourselves
+          track_number: 2
+          genre: void-lounge
+          mood_tags: [wry, defiant, midtempo]
+          playable: true
+          fact: The band paid the reopened hall's fee out of a season of coast work, and the sleeve credits Stormline Issue with the sleeve and nothing else.
+          credits: {writers: [p_juna_carrow, p_teme_hollick], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan], producer: p_teme_hollick}
+        - id: s_1210
+          title: The Room Was Rebuilt
+          track_number: 3
+          genre: void-lounge
+          mood_tags: [wistful, warm, slow]
+          playable: true
+          fact: Ivor Sanne plays an upright bass the hall keeps in its own store, because the band's own did not survive the crossing out of Meridian.
+          credits: {writers: [p_juna_carrow, p_ivor_sanne], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan], producer: p_teme_hollick}
+        - id: s_1211
+          title: New Name, Old Song
+          track_number: 4
+          genre: void-lounge
+          mood_tags: [bruised, spare, slow]
+          playable: true
+          fact: This is Borrowed Against Us under another title, re-recorded because every play of the 2612 version pays the two claimants who hold the Coldwater Court catalogue.
+          credits: {writers: [p_juna_carrow, p_toben_alt], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan], producer: p_teme_hollick}
+        - id: s_1212
+          title: Back on the Last Ferry
+          track_number: 5
+          genre: void-lounge
+          mood_tags: [warm, tender, midtempo]
+          playable: true
+          fact: Dessa Roan plays the brushes against the ferry bell, which is still audible in the reopened hall through its loading door and is on the record twice.
+          credits: {writers: [p_juna_carrow, p_dessa_roan], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan, sp_calo_meret], producer: p_teme_hollick}
+        - id: s_1213
+          title: Leave It Lit
+          track_number: 6
+          genre: void-lounge
+          mood_tags: [final, warm, hushed]
+          playable: true
+          fact: The band asked the hall to leave its lamps on for the last song and the hall's keeper is named on the sleeve for agreeing to it.
+          credits: {writers: [p_juna_carrow], players: [p_juna_carrow, p_teme_hollick, p_ivor_sanne, p_dessa_roan, sp_calo_meret], producer: p_teme_hollick}
+
+    - id: al_151
+      title: When the Board Comes Down
+      band: b_067
+      label: label_3
+      release_year: 2619
+      kind: album
+      genre: void-lounge
+      cornerstone: false
+      notes: >-
+        Nine Lamps had been playing the last hour of coast dance nights for five years and had never
+        been offered a record, on the reasonable grounds that Stormline Issue is a house for dancing.
+        What changed is that the house had pressed one slow record that year and it had sold up the
+        relay, so it pressed a second by the band that had been doing it longest. The sessions were
+        six nights at the end of six dance nights, in the halls the band was already booked into,
+        with the doors shut behind the last of the room. The sleeve files them under the core's name
+        for the form and prints Sabin Loch's objection to that beside it, which is the first time a
+        house had printed a band's complaint about its own filing and is now the band's contract.
+      songs:
+        - id: s_1214
+          title: When the Board Comes Down
+          track_number: 1
+          genre: void-lounge
+          mood_tags: [cold, patient, slow]
+          playable: true
+          fact: The four levels Sabin Loch names are the hazard board's own, in the order the board posts them, and the top one is where Bright Hazard got their name.
+          credits: {writers: [p_sabin_loch], players: [p_sabin_loch, p_emre_talt, p_nera_bly, p_corle_sten], producer: p_emre_talt}
+        - id: s_1215
+          title: Nine Lamps Out
+          track_number: 2
+          genre: void-lounge
+          mood_tags: [spare, hushed, cold]
+          playable: true
+          fact: Nera Bly plays one note for each of the nine sea-wall lamps before the voice comes in, and the band counts them in that order on stage as well.
+          credits: {writers: [p_sabin_loch, p_nera_bly], players: [p_sabin_loch, p_emre_talt, p_nera_bly, p_corle_sten], producer: p_emre_talt}
+        - id: s_1216
+          title: Nothing to Dance To
+          track_number: 3
+          genre: void-lounge
+          mood_tags: [wry, dry, slow]
+          playable: true
+          fact: Sabin Loch wrote it the night a hall manager asked the band to play faster, and it is the slowest thing Stormline Issue has ever pressed.
+          credits: {writers: [p_sabin_loch], players: [p_sabin_loch, p_emre_talt, p_nera_bly, p_corle_sten], producer: p_emre_talt}
+        - id: s_1217
+          title: The Warm Hour
+          track_number: 4
+          genre: void-lounge
+          mood_tags: [tender, warm, midtempo]
+          playable: true
+          fact: Emre Talt tunes his second-hand Concordance synth-harpsichord to the sea wall's hum before every night, and the wall was half a tone flat the week this was made.
+          credits: {writers: [p_emre_talt, p_sabin_loch], players: [p_sabin_loch, p_emre_talt, p_nera_bly, p_corle_sten], producer: p_emre_talt}
+        - id: s_1218
+          title: Not the Core's Music
+          track_number: 5
+          genre: void-lounge
+          mood_tags: [defiant, blunt, midtempo]
+          playable: true
+          fact: The band will not use the core's word for what it plays, and this is the song the sleeve prints their objection next to.
+          credits: {writers: [p_sabin_loch, p_nera_bly], players: [p_sabin_loch, p_emre_talt, p_nera_bly, p_corle_sten], producer: p_emre_talt}
+        - id: s_1219
+          title: Salt on the Glass
+          track_number: 6
+          genre: void-lounge
+          mood_tags: [final, cold, spacious]
+          playable: true
+          fact: Corle Sten's brushes are on a drum head the salt had already ruined, which the band kept because it had stopped ringing and has not replaced since.
+          credits: {writers: [p_corle_sten, p_sabin_loch], players: [p_sabin_loch, p_emre_talt, p_nera_bly, p_corle_sten], producer: p_emre_talt}
+
+    - id: al_152
+      title: Lamps Left Burning
+      band: b_067
+      label: label_3
+      release_year: 2624
+      kind: album
+      genre: void-lounge
+      cornerstone: false
+      notes: >-
+        The sealed season of 2623 ran eleven weeks and Nine Lamps played the last hour of forty
+        nights of it in the Longwall hall, after Cordon Hours had finished and most of the room had
+        gone. Six of those hours were recorded and the record is what came out of them, issued in
+        2624 while the whole of the rest of the industry was in Concordance booking the reopened
+        hall. Sabin Loch has said the band would not have crossed for it if the crossing had been
+        free. The hall's keeper left the lamps on past his own hours for every one of the six and is
+        the only person outside the band named on the sleeve.
+      songs:
+        - id: s_1220
+          title: Lamps Left Burning
+          track_number: 1
+          genre: void-lounge
+          mood_tags: [warm, spacious, slow]
+          playable: true
+          fact: Recorded on the fortieth night of the sealed season of 2623, after Cordon Hours had finished and the hall's keeper had left the lamps on for it.
+          credits: {writers: [p_sabin_loch, p_emre_talt], players: [p_sabin_loch, p_emre_talt, p_nera_bly, p_corle_sten], producer: p_emre_talt}
+        - id: s_1221
+          title: The Last Hour Each Night
+          track_number: 2
+          genre: void-lounge
+          mood_tags: [tired, tender, patient]
+          playable: true
+          fact: The band played the last hour of every night of that seal, and Sabin Loch closed all forty of them with this one.
+          credits: {writers: [p_sabin_loch], players: [p_sabin_loch, p_emre_talt, p_nera_bly, p_corle_sten], producer: p_emre_talt}
+        - id: s_1222
+          title: Nobody Went Home
+          track_number: 3
+          genre: void-lounge
+          mood_tags: [warm, communal, slow]
+          playable: true
+          fact: Nera Bly counts the room in at the top of the song, and the number is the one the hall's door keeper handed her on a slip that night.
+          credits: {writers: [p_nera_bly, p_sabin_loch], players: [p_sabin_loch, p_emre_talt, p_nera_bly, p_corle_sten], producer: p_emre_talt}
+        - id: s_1223
+          title: The Slow Hour Pays
+          track_number: 4
+          genre: void-lounge
+          mood_tags: [dry, wry, midtempo]
+          playable: true
+          fact: The hall pays the dance bands by the night and Nine Lamps by the hour, which Sabin Loch has called the only honest arrangement on the coast.
+          credits: {writers: [p_sabin_loch], players: [p_sabin_loch, p_emre_talt, p_nera_bly, p_corle_sten], producer: p_emre_talt}
+        - id: s_1224
+          title: Salt and Sleep
+          track_number: 5
+          genre: void-lounge
+          mood_tags: [hushed, aching, spare]
+          playable: true
+          fact: Corle Sten fell asleep in the corner between two songs and the other three played this one without him, which is the only track on either record with no drums.
+          credits: {writers: [p_emre_talt, p_sabin_loch], players: [p_sabin_loch, p_emre_talt, p_nera_bly], producer: p_emre_talt}
+        - id: s_1225
+          title: Open the Doors Slowly
+          track_number: 6
+          genre: void-lounge
+          mood_tags: [final, warm, hopeful]
+          playable: true
+          fact: The last line is what the Longwall hall's keeper says when a seal lifts, and Emre Talt holds the closing chord until the doors are actually open.
+          credits: {writers: [p_sabin_loch, p_emre_talt], players: [p_sabin_loch, p_emre_talt, p_nera_bly, p_corle_sten], producer: p_emre_talt}
+
 layer_b:
-  bands: []
+  bands:
+    - id: b_068
+      name: The Coat Room
+      kind: group
+      home_settlement: Concordance late-club quarter
+      label: label_1
+      genre: void-lounge
+      active_from: 2551
+      active_to: 2585
+      bio: >-
+        The Coat Room played the quarter for thirty-four years and were pressed by the prestige house
+        because the quarter had no house of its own yet, which is the gap Lower Bell Editions was
+        founded in. Civic Lantern issued them as an evening act and would not put the word late on a
+        sleeve.
+      albums:
+        - id: al_153
+          title: The Last Ferry Goes
+          label: label_1
+          release_year: 2559
+          kind: album
+          genre: void-lounge
+          notes: The first record of the quarter's music anybody pressed, issued by a house that filed it under evening entertainment.
+          songs:
+            - {id: s_1226, title: The Last Ferry Goes, track_number: 1, genre: void-lounge, playable: false}
+            - {id: s_1227, title: Coats and Weather, track_number: 2, genre: void-lounge, playable: false}
+            - {id: s_1228, title: The Second Landing, track_number: 3, genre: void-lounge, playable: false}
+            - {id: s_1229, title: Nobody Hurries Out, track_number: 4, genre: void-lounge, playable: false}
+            - {id: s_1230, title: Warm Enough to Wait, track_number: 5, genre: void-lounge, playable: false}
+            - {id: s_1231, title: The Room Below, track_number: 6, genre: void-lounge, playable: false}
+            - {id: s_1232, title: Play Something Slower, track_number: 7, genre: void-lounge, playable: false}
+            - {id: s_1233, title: Lights on the Water, track_number: 8, genre: void-lounge, playable: false}
+        - id: al_154
+          title: Nobody Books Us Early
+          label: label_1
+          release_year: 2583
+          kind: album
+          genre: void-lounge
+          notes: Their last, made the year the Station Cycles went round and every house wanted something quiet, and the only one they were allowed to name themselves.
+          songs:
+            - {id: s_1234, title: Nobody Books Us Early, track_number: 1, genre: void-lounge, playable: false}
+            - {id: s_1235, title: The Late List, track_number: 2, genre: void-lounge, playable: false}
+            - {id: s_1236, title: Half a Room Full, track_number: 3, genre: void-lounge, playable: false}
+            - {id: s_1237, title: Ask for the Slow One, track_number: 4, genre: void-lounge, playable: false}
+            - {id: s_1238, title: After the Big Act, track_number: 5, genre: void-lounge, playable: false}
+            - {id: s_1239, title: Two Sets a Night, track_number: 6, genre: void-lounge, playable: false}
+            - {id: s_1240, title: The Kitchen Closes First, track_number: 7, genre: void-lounge, playable: false}
+            - {id: s_1241, title: Home in the Morning, track_number: 8, genre: void-lounge, playable: false}
 
-# LAYER C — recordings are lost. Three sentences per figure. Never an album or a track list.
+    - id: b_069
+      name: Harbor Late
+      kind: group
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: void-lounge
+      active_from: 2590
+      active_to: 2626
+      bio: >-
+        Harbor Late are the frontier's own version of the form, playing the hours after the reel
+        halls empty and taking the tempo from a port that never fully shuts. Harbor Standard keeps
+        them on the list because a frontier house with nothing slow on it loses its own night staff
+        to the relay.
+      albums:
+        - id: al_155
+          title: Slow at the Harbor
+          label: label_2
+          release_year: 2594
+          kind: album
+          genre: void-lounge
+          notes: Made the year the burn festival filled Cold Harbor with crews and somebody had to play them out at four in the morning.
+          songs:
+            - {id: s_1242, title: Slow at the Harbor, track_number: 1, genre: void-lounge, playable: false}
+            - {id: s_1243, title: Frost on the Rail, track_number: 2, genre: void-lounge, playable: false}
+            - {id: s_1244, title: The Cold End of the Bar, track_number: 3, genre: void-lounge, playable: false}
+            - {id: s_1245, title: Nothing Sails Tonight, track_number: 4, genre: void-lounge, playable: false}
+            - {id: s_1246, title: Wait for the Thaw, track_number: 5, genre: void-lounge, playable: false}
+            - {id: s_1247, title: A Hand on the Stove, track_number: 6, genre: void-lounge, playable: false}
+            - {id: s_1248, title: The Long Berth, track_number: 7, genre: void-lounge, playable: false}
+            - {id: s_1249, title: Last Boat Alongside, track_number: 8, genre: void-lounge, playable: false}
+        - id: al_156
+          title: Ice on the Glass
+          label: label_2
+          release_year: 2619
+          kind: album
+          genre: void-lounge
+          notes: Remembered for a sleeve that credits every part twice, once as played and once as written, in a year when nobody trusted a credit.
+          songs:
+            - {id: s_1250, title: Ice on the Glass, track_number: 1, genre: void-lounge, playable: false}
+            - {id: s_1251, title: Frontier Slow, track_number: 2, genre: void-lounge, playable: false}
+            - {id: s_1252, title: Somebody Signed It, track_number: 3, genre: void-lounge, playable: false}
+            - {id: s_1253, title: The Harbor Keeps Late, track_number: 4, genre: void-lounge, playable: false}
+            - {id: s_1254, title: Two Verses Apart, track_number: 5, genre: void-lounge, playable: false}
+            - {id: s_1255, title: Cold Bench Company, track_number: 6, genre: void-lounge, playable: false}
+            - {id: s_1256, title: Nobody Answers Back, track_number: 7, genre: void-lounge, playable: false}
+            - {id: s_1257, title: Out on the Ice, track_number: 8, genre: void-lounge, playable: false}
+
+    - id: b_070
+      name: The Ninth Table
+      kind: group
+      home_settlement: Concordance
+      label: label_1
+      genre: void-lounge
+      active_from: 2598
+      active_to: 2626
+      bio: >-
+        The Ninth Table play the form for the core's expensive rooms rather than its late ones, in
+        halls where the last ferry is something the staff catch and the audience does not. Civic
+        Lantern has issued them steadily for a generation and the quarter has never once claimed
+        them.
+      albums:
+        - id: al_157
+          title: Table for the Night
+          label: label_1
+          release_year: 2600
+          kind: album
+          genre: void-lounge
+          notes: The record that proved the form would sell to people who had never been in the quarter, and the one Lower Bell Editions was founded against.
+          songs:
+            - {id: s_1258, title: Table for the Night, track_number: 1, genre: void-lounge, playable: false}
+            - {id: s_1259, title: The Ninth Table, track_number: 2, genre: void-lounge, playable: false}
+            - {id: s_1260, title: Booked Under Another Name, track_number: 3, genre: void-lounge, playable: false}
+            - {id: s_1261, title: Quiet in the Good Room, track_number: 4, genre: void-lounge, playable: false}
+            - {id: s_1262, title: Order Something Warm, track_number: 5, genre: void-lounge, playable: false}
+            - {id: s_1263, title: Read the List Twice, track_number: 6, genre: void-lounge, playable: false}
+            - {id: s_1264, title: Nine Chairs Waiting, track_number: 7, genre: void-lounge, playable: false}
+            - {id: s_1265, title: Close the Curtains, track_number: 8, genre: void-lounge, playable: false}
+        - id: al_158
+          title: The Good Room
+          label: label_1
+          release_year: 2612
+          kind: album
+          genre: void-lounge
+          notes: Issued the month Lower Bell Editions folded, with a sleeve note about standards that the quarter has never forgiven.
+          songs:
+            - {id: s_1266, title: The Good Room, track_number: 1, genre: void-lounge, playable: false}
+            - {id: s_1267, title: Everyone Left Early, track_number: 2, genre: void-lounge, playable: false}
+            - {id: s_1268, title: The House Across the Street, track_number: 3, genre: void-lounge, playable: false}
+            - {id: s_1269, title: Ask What It Costs, track_number: 4, genre: void-lounge, playable: false}
+            - {id: s_1270, title: Two Houses Closing, track_number: 5, genre: void-lounge, playable: false}
+            - {id: s_1271, title: Nothing Cheap About It, track_number: 6, genre: void-lounge, playable: false}
+            - {id: s_1272, title: The Long Bill, track_number: 7, genre: void-lounge, playable: false}
+            - {id: s_1273, title: Turn Us Out Gently, track_number: 8, genre: void-lounge, playable: false}
+
+    - id: b_071
+      name: Marra Ostle
+      kind: solo
+      home_settlement: Concordance late-club quarter
+      label: unsigned
+      genre: void-lounge
+      active_from: 2604
+      active_to: 2626
+      bio: >-
+        Marra Ostle has sung the quarter's rooms without a house behind her since 2604 and pays for
+        her own runs out of what the rooms pay her, which is why there are two of them. She was
+        offered a Lower Bell contract in 2611 and turned it down over the term about stored parts,
+        which is the only decision anybody in the quarter still congratulates her for.
+      albums:
+        - id: al_159
+          title: Given a Room
+          label: unsigned
+          release_year: 2607
+          kind: album
+          genre: void-lounge
+          notes: Paid for out of one season's door money and sold at the door of the room it was made in.
+          songs:
+            - {id: s_1274, title: Given a Room, track_number: 1, genre: void-lounge, playable: false}
+            - {id: s_1275, title: One Voice Late, track_number: 2, genre: void-lounge, playable: false}
+            - {id: s_1276, title: Nobody Pays the Singer, track_number: 3, genre: void-lounge, playable: false}
+            - {id: s_1277, title: The Piano Is Not Mine, track_number: 4, genre: void-lounge, playable: false}
+            - {id: s_1278, title: Sing Until They Go, track_number: 5, genre: void-lounge, playable: false}
+            - {id: s_1279, title: A Coat for the Walk, track_number: 6, genre: void-lounge, playable: false}
+            - {id: s_1280, title: Half the Hour, track_number: 7, genre: void-lounge, playable: false}
+            - {id: s_1281, title: Ask Me Back, track_number: 8, genre: void-lounge, playable: false}
+        - id: al_160
+          title: Still Here at Four
+          label: unsigned
+          release_year: 2624
+          kind: album
+          genre: void-lounge
+          notes: The record the quarter points at when it argues that the house was never the reason any of this happened.
+          songs:
+            - {id: s_1282, title: Still Here at Four, track_number: 1, genre: void-lounge, playable: false}
+            - {id: s_1283, title: Every Song I Know, track_number: 2, genre: void-lounge, playable: false}
+            - {id: s_1284, title: Nobody Signed Me, track_number: 3, genre: void-lounge, playable: false}
+            - {id: s_1285, title: The Room Pays Cash, track_number: 4, genre: void-lounge, playable: false}
+            - {id: s_1286, title: Longer Than the House, track_number: 5, genre: void-lounge, playable: false}
+            - {id: s_1287, title: One Lamp Left, track_number: 6, genre: void-lounge, playable: false}
+            - {id: s_1288, title: What the Night Owes, track_number: 7, genre: void-lounge, playable: false}
+            - {id: s_1289, title: Walk Home Slowly, track_number: 8, genre: void-lounge, playable: false}
+
 layer_c:
   recordings: none survive
-  figures: []
+  figures:
+    - id: f_024
+      name: Ovin Halle
+      kind: transfer-hall pianist
+      genre: void-lounge
+      active_from: 2451
+      active_to: 2486
+      played: hall piano
+      history: >-
+        Ovin Halle played a Concordance transfer hall between 2451 and 2486, in the hours when the
+        hall had nobody in it but people who had missed the last connection and could not go home.
+        He was employed as a porter and paid nothing for the playing, and no account of it survives
+        beyond three lines in a hall roster and a complaint about the piano being moved. He is named
+        whenever anybody explains where the form's hours came from, because playing to a room of
+        people with nowhere to be is the whole of what it is and he is the first person recorded as
+        having done it on purpose.
+    - id: f_025
+      name: Tem Wray
+      kind: singer
+      genre: void-lounge
+      active_from: 2470
+      active_to: 2505
+      played: voice
+      history: >-
+        Tem Wray sang the core's late rooms from 2470 to 2505 and never once sang above the room's
+        own conversation, on the argument that a room that has to lean in has already stopped
+        talking. Nothing she sang was written down and the two songs everybody attributes to her
+        were almost certainly not hers. She matters because every singer in this file works the same
+        way, and because the quarter's rooms are still built quiet enough for it.
+    - id: f_026
+      name: Odile Prenn
+      kind: bass player
+      genre: void-lounge
+      active_from: 2498
+      active_to: 2531
+      played: upright bass
+      history: >-
+        Odile Prenn worked the Concordance late rooms from 2498 to 2531 and is the reason there is a
+        walking bass under everything the form has done since; before her the bass held the room
+        still and after her it moved the room along. One handwritten part in her hand survives,
+        behind the bar of the Lower Bell room, and two layer-A records quote it. She is the only
+        figure in this file whose actual playing anybody can still hear, at one remove, because
+        nobody has ever managed to claim ownership of a page nobody can date.

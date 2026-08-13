@@ -63,7 +63,7 @@ marked **NEXT**.
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
 | **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-49** old-system sessions grows to 90 · 2026-08-13 | **all done.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15. No genre carries an `owed_to:` marker any more |
 | 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-47** the pilot's 45 lyrics · 2026-08-13 | **M-18 is unblocked** — 45 songs of words and prompts are ready to generate |
-| 2 · The wiki — 3 genres left | M-07 … M-15 | **M-11** pulse-dance · 2026-08-11 | 400 playable songs written of 500 · **M-12 next**, 55 songs and two labels to finish |
+| 2 · The wiki — 2 genres left | M-07 … M-15 | **M-12** void-lounge · 2026-08-13 | 455 playable songs written of 500 · labels 3 and 6 finished · **M-13 next**, 20 songs and the last label short |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
@@ -516,7 +516,7 @@ since 2618 because one of them makes records to travel and the other makes them 
 Five session players appear, several of them because the seal shut with them on the wrong side of it.
 Depends on: M-10
 
-### M-12 · `[agent]` void-lounge — 55 songs, 4 bands, and Meridian's whole layer A — **NEXT**
+### M-12 · `[agent]` void-lounge — 55 songs, 4 bands, and Meridian's whole layer A — **DONE 2026-08-13**
 Check: 55 playable songs split 25 / 30 across labels 3 and 6; 4 layer-A bands, two on each label;
 at least four albums on each of the two labels, so both reach §5's six; ~4 layer-B, ~3 layer-C.
 `make check` green. Names screened.
@@ -527,9 +527,31 @@ has to be in the album notes here. **This card finishes two labels on its own** 
 its layer A is now late-club torch. Nothing about the label's Synthesist character changes; what it
 presses does. **No cornerstone** (D-067). Pulse-dance's layer B already puts one band on the folded
 house, `b_059` Late Bell Set, whose two records are in the disputed catalogue.
+Result: 55 playable songs across 9 layer-A albums, split exactly 25 / 30. **Both labels are finished
+and both land on exactly 3 bands, 6 albums and 45 songs** — §5's floor on all three counts with no
+margin, so six of the seven labels now clear it and only label 1 is short. **The two labels are
+written as one story** (D-076): Lower Bell Editions folded in 2612 owing the Gantry Street plant two
+years of pressing, and `p_juna_carrow`, who sang its second band, took a hall job on Meridian in
+2617 when she could not get the records back and was still there when the season sealed — which is
+why Stormline Issue started pressing the core's slow music in 2619. **She is the only person in the
+wiki in two layer-A bands.** The house's founder `p_maro_deyn` plays piano in one of them, so the
+fold happened to five named people rather than to a label. The four bands are `b_064` After the
+Ferry, who have played the Lower Bell room three nights a week since 2594 and have made no record
+since 2612 because everything they own is in a receiver's room; `b_065` Coldwater Court, whose two
+records are the house's first success and its last pressing; `b_066` The Quiet Half, who paid the
+reopened Concordance hall's fee themselves in 2624 after the house put its season's money into a wet
+hall on the coast; and `b_067` Nine Lamps, **who refuse the core's name for what they play** and
+whose objection Stormline Issue prints on the sleeve — an argument inside the world, not a tenth
+form. `s_1211` is `s_1197` re-recorded under a new title, because every play of the 2612 version
+pays the claimants who hold that catalogue. **Every label-6 song is dated 2612 or earlier and that
+was forced**, so all 25 label-3 songs are 2619 or 2624 and the catalogue stands at 227 of 455 inside
+the last eight years — one under half, and the remaining 45 need 23 recent, **51% against the 48%
+D-075 handed on.** Anchor 2612 goes 40/5/4 → 52/7/4 on the house's last two records and **2583 is
+now the thinnest anchor at 33/4/4**. Rule 6 reads **zero studio anecdotes across all four bands**.
+`make music-screen` returned nothing on 153 distinct names. No existing prose was edited.
 Depends on: M-11
 
-### M-13 · `[agent]` core-harmonies — 20 songs, 1 band
+### M-13 · `[agent]` core-harmonies — 20 songs, 1 band — **NEXT**
 Check: 20 playable songs on label 1 across at least two albums; 1 layer-A band; ~1 layer-B, ~2
 layer-C. `make check` green. Names screened.
 Note: this is label 1's third band, and Concordance cannot make a retrospective without it.

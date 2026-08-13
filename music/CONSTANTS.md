@@ -28,20 +28,20 @@ them.
 **Window check** (§3): six anchors inside the last thirty-five years, two in the old-standards
 window. Correct as specified.
 
-**State after M-49 (2026-08-13): seven of the eight are satisfied** — ≥25 playable songs across ≥4
-bands and ≥2 labels. In order: 2583 · 33/4/4 · 2594 · 36/5/3 · 2600 · 39/5/3 · 2607 · 50/6/5 ·
-2612 · 40/5/4 · 2619 · 133/14/6 · 2624 · 69/8/5. One falls short, and it is the one no card can fix:
+**State after M-12 (2026-08-13): seven of the eight are satisfied** — ≥25 playable songs across ≥4
+bands and ≥2 labels. In order: 2583 · 33/4/4 · 2594 · 42/6/4 · 2600 · 45/6/4 · 2607 · 56/7/6 ·
+2612 · 52/7/4 · 2619 · 146/16/6 · 2624 · 81/10/6. One falls short, and it is the one no card can fix:
 
-- **2612 has its margin back.** M-46 repaired it from 25 songs across 3 bands to 33/4/4, which sat
-  exactly on §5's floor of four bands; The Ninefoot Cut's *Everything Comes By Water* puts a fifth
-  band on it and it reads 40/5/4. **No anchor now stands on the floor**, and 2583 at 33/4/4 is the
-  thinnest of the seven.
+- **2612 is the fold year and now carries it.** It stood at 25/3/3 after M-44, was repaired to
+  33/4/4 by M-46 and 40/5/4 by M-49, and void-lounge's two 2612 records — the last two things Lower
+  Bell Editions ever pressed — take it to 52/7/4. **2583 at 33/4/4 is now the thinnest of the
+  seven**, and the only anchor still sitting on §5's floor for bands and labels.
 - **2559 cannot be fixed by writing more.** COMMISSION §3 puts layer A in 2566–2626, so no playable
   song can carry 2559 at all; it stands at zero. M-15 is where that contradiction gets resolved.
 
-**These counts move again.** M-12, M-13 and M-14 add 100 playable songs, so the line above is where
-the catalogue stands today rather than where it is going. M-15 is where the finished state is
-checked against §5.
+**These counts move again.** M-13 and M-14 add 45 playable songs, so the line above is where the
+catalogue stands today rather than where it is going. M-15 is where the finished state is checked
+against §5.
 
 **This table is read by `make check`.** The eight years in the first column are the only release
 years any album in any genre may carry, and `src/station/music/check.py` takes them from here
@@ -131,6 +131,7 @@ is recorded is the result:
 | frontier-reels | 2026-08-13 | 231 | nothing matched — rescreened whole after M-48 grew it to 95 |
 | old-system-sessions | 2026-08-13 | 201 | nothing matched — rescreened whole after M-49 grew it to 90 |
 | pulse-dance | 2026-08-11 | 163 | nothing matched |
+| void-lounge | 2026-08-13 | 153 | nothing matched |
 
 Notes kept because §19 says fuzzy and surname-only matches are flagged, never blocked:
 
@@ -194,38 +195,40 @@ Layer-A bands and playable songs only. §5 needs every label to end on ≥3 band
 |---|---|---|---|---|
 | 1 | Concordance, prestige | Civic Lantern | 2 | 45 |
 | 2 | Cold Harbor, frontier | Harbor Standard | 3 | 60 |
-| 3 | Meridian, dance | Stormline Issue | 1 | 20 |
+| 3 | Meridian, dance | Stormline Issue | 3 | 45 |
 | 4 | Forge, industrial | Deep Register | 3 | 75 |
 | 5 | haulers, co-op | Common Wake Cooperative | 4 | 95 |
-| 6 | late-club, folded 2612 | Lower Bell Editions | 1 | 15 |
+| 6 | late-club, folded 2612 | Lower Bell Editions | 3 | 45 |
 | 7 | old-system importer | Relay Road Import | 4 | 90 |
 
-**The table above is what is written today, recounted after M-49** (2026-08-13). M-44's demotion had
+**The table above is what is written today, recounted after M-12** (2026-08-13). M-44's demotion had
 taken a band and 25 songs off label 2, a band and 20 off label 4, a band and 25 off label 5, and all
 of label 3's layer A but one band and 20 songs (D-068); M-46 put 35 songs and one band back, M-48
-put 30 more, and M-49 adds 30 and a fourth band to label 7, which never lost anything and is the one
-label the re-weight grew rather than repaired. **Three labels are still short of §5's floor** of
-three bands and forty songs — label 1 by a band only, labels 3 and 6 by both. Labels 2, 4, 5 and 7
-clear it, and labels 5 and 7 now clear it twice over.
+put 30 more, M-49 added 30 and a fourth band to label 7, and M-12 puts two bands and 25 songs on
+label 3 and two bands and 30 songs on label 6 — the two labels the re-weight left standing on
+nothing. **Six of the seven labels now clear §5's floor** of three bands, six albums and forty
+songs; labels 3 and 6 clear it exactly, with six albums each and no margin. **Only label 1 is
+short**, by a band and two albums rather than by songs, and M-13 is what fixes it — which is why
+that card's check asks for its 20 songs across at least two albums.
 
 **Which card finishes which label**, once the re-weight is done — the numbers are in
 `music/plan.yaml` and are not repeated here:
 
 | Label | Short of | Finished by |
 |---|---|---|
-| 1 Concordance | a third band | **M-13** core-harmonies |
+| 1 Concordance | a third band and two albums | **M-13** core-harmonies |
 | 2 Cold Harbor | nothing — **M-48** landed its third band | **M-14** void-ballads adds two more |
-| 3 Meridian | two bands and twenty songs | **M-12** void-lounge, which now presses for Meridian |
+| 3 Meridian | nothing — **M-12** took it to 3 bands, 6 albums and 45 songs | finished |
 | 4 Forge · 5 haulers | nothing — both clear the floor without help | **M-46** and **M-48** added to both |
-| 6 late-club | two bands and twenty-five songs | **M-12** void-lounge, on its own |
+| 6 late-club | nothing — **M-12** took it to 3 bands, 6 albums and 45 songs | finished |
 | 7 Relay Road Import | nothing — **M-49** took it to 4 bands and 90 songs | finished |
 
 **The cornerstone list stands at six** (D-067, recounted at M-44). It was full at eight until
 `al_055` *Count It Twice* and `al_117` *The Long Cordon* went down to layer B with their genres — a
 record the station does not hold cannot carry a 56-minute programme, so neither is a cornerstone any
 more. What is left is `al_001`, `al_009`, `al_034`, `al_039`, `al_078` and `al_098`, all 12 or 13
-songs, which is inside §5's 6–8 band **with no margin under it**. D-067 stands unchanged: M-12, M-13
-and M-14 designate none. Whether the two freed slots are handed to a later genre is the operator's
+songs, which is inside §5's 6–8 band **with no margin under it**. D-067 stands unchanged: **M-12
+designated none**, and neither do M-13 or M-14. Void-lounge's longest album is seven songs. Whether the two freed slots are handed to a later genre is the operator's
 call and has not been made.
 
 ## 6. The genre tally
@@ -241,17 +244,20 @@ plan, and the three not written at all need no marker, because an empty file is 
 | Relay-pop | 105 | 105 | — |
 | Frontier Reels | 95 | 95 | — |
 | Old-system sessions | 90 | 90 | — |
-| Void-lounge | 55 | 0 | M-12 |
+| Void-lounge | 55 | 55 | — |
 | Void Ballads | 25 | 0 | M-14 |
 | Core Harmonies | 20 | 0 | M-13 |
 | **Deck-talk** | **0 — layer B** | **0 — demoted at M-44** | — |
 | **Pulse-dance** | **0 — layer B** | **0 — demoted at M-44** | — |
-| | **500** | **400** | |
+| | **500** | **455** | |
 
-**400 of the 500 are written, and stage R is finished.** The other 100 are all in the three genres
-not yet written — void-lounge, void-ballads and core harmonies. The 130 songs deck-talk and
-pulse-dance gave up are still in the wiki and still readable; they are titles now, like the rest of
-layer B.
+**455 of the 500 are written.** The other 45 are in the two genres not yet written — core harmonies
+and void ballads, one label each. The 130 songs deck-talk and pulse-dance gave up are still in the
+wiki and still readable; they are titles now, like the rest of layer B.
+
+**COMMISSION §3's half-recent rule stands at 227 of 455**, one song under half. Void-lounge could
+not do better: its 30 label-6 songs are inside a house that folded in 2612 and all 25 of its label-3
+songs are dated 2619 or 2624. The remaining 45 need **23 dated 2619 or 2624 — 51%** (D-076).
 
 **Layers B and C are not tallied.** They have no hard floor — more is better, and nothing breaks if
 one genre carries more history than another.

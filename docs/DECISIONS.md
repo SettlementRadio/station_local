@@ -1948,3 +1948,43 @@ eight years. COMMISSION §3's half-recent rule now needs 48 of the remaining 100
 49% D-074 handed on**, and the three genres left can supply at most 70 between them, because
 void-lounge's 30 label-6 songs cannot be dated later than the 2612 fold. **Anchor 2612 gains its
 margin**: it stood on §5's floor at 33/4/4 and reads 40/5/4, so no anchor now sits on the floor.
+
+### D-076 · Void-lounge is one story told twice — the house that folded and the coast that took the form up — 2026-08-13
+
+M-12 asked for 55 songs across two labels that had nothing in common except that stage R had left
+both of them standing on almost nothing: label 6, which folded in 2612, and label 3, which lost its
+whole layer A when pulse-dance went down to layer B. **They are written as one story rather than
+two.** Lower Bell Editions existed for this form and nothing else and went under owing the Gantry
+Street plant two years of pressing; Juna Carrow sang its second band, could not get the records
+back, took a hall job on Meridian in 2617, and the season sealed with her on the coast — which is
+why the most Synthesist house in the settled worlds started pressing the core's slow music in 2619.
+**She is the only person in the wiki who is in two layer-A bands** (`b_065` Coldwater Court and
+`b_066` The Quiet Half), and the crossing is what stops the two labels reading as two unrelated
+allocations.
+
+**The founder is in the band.** `p_maro_deyn` founded the house in 2589 out of the room his own band
+had played for eleven years, borrowed against the catalogue in 2610 to buy that room, and lost both.
+Relay-pop already said the founder has refused every catalogue interview since 2612; he now has a
+name, a piano, and a last recorded figure played alone. It makes the fold a thing that happened to
+five named people rather than an event in a label's history.
+
+**Every label-6 song is dated 2612 or earlier and that was forced**, not chosen — a house that
+folded cannot press afterwards. All 25 label-3 songs are therefore dated 2619 or 2624, which is the
+most the card could give COMMISSION §3. The catalogue stands at **227 of 455 inside the last eight
+years, one song under half**, and the remaining 45 need 23 of them recent — **51%, against the 48%
+D-075 handed on.** It is the first time the share a card hands on has gone up rather than down, and
+it is arithmetic rather than neglect.
+
+**Nine Lamps refuse the name of the form they are filed under.** `b_067` play the last hour of the
+coast's dance nights and hold that it grew out of those nights rather than arriving down the relay
+from the core; Stormline Issue files them as void-lounge and prints their objection on the sleeve.
+This is an argument inside the world and not a tenth form — COMMISSION §2's list of nine is
+untouched, and the house's filing is what the wiki records. It gives a presenter a live stake in a
+genre whose other three bands all agree with each other.
+
+**What the numbers did.** Labels 3 and 6 both land on exactly 3 bands, 6 albums and 45 songs, so
+**six of the seven labels now clear §5's floor and only label 1 is short** — by a band and two
+albums, which is M-13. Anchor 2612 goes 40/5/4 → 52/7/4 on the house's last two records, and **2583
+at 33/4/4 is now the thinnest anchor** and the only one still on the floor for bands and labels.
+Rule 6 reports **zero studio anecdotes across all four bands**, the safest reading of any genre so
+far; `make music-screen` returned nothing on 153 distinct names.
