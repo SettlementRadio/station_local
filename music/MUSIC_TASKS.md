@@ -61,8 +61,8 @@ marked **NEXT**.
 | Stage | Cards | Last done | Status |
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
-| **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-45** the writing rules · 2026-08-12 | **M-47 next.** The eight rules are `COMMISSION.md` §12 and `make check` counts them; rules 1–5 are owed to M-47 and 7–8 to M-15 |
-| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-17** lyrics and prompts · 2026-08-09 | M-17's 45 songs fail four of §12's rules apiece; M-47 redoes them and M-18 waits |
+| **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-47** the pilot's 45 lyrics · 2026-08-13 | **M-46 next.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15 |
+| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-47** the pilot's 45 lyrics · 2026-08-13 | **M-18 is unblocked** — 45 songs of words and prompts are ready to generate |
 | 2 · The wiki — 7 genres left | M-07 … M-15 | **M-11** pulse-dance · 2026-08-11 | 305 playable songs written of 500 · M-12 is now 55 songs and waits its turn |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
@@ -234,7 +234,7 @@ green on the wiki **with almost no margin**: the worst band is 10 studio anecdot
 against a ceiling of half.
 Depends on: M-43
 
-### M-47 · `[agent]` Redo the pilot's 45 lyrics — **NEXT**
+### M-47 · `[agent]` Redo the pilot's 45 lyrics — **DONE 2026-08-13**
 Goal: The four pilot albums are 45 different songs instead of one song 36 times, and they sound like
 the new relay-pop.
 Files: `music/production/lyrics/al_001.yaml` … `al_004.yaml`, `music/production/styles.yaml`
@@ -248,9 +248,23 @@ nobody; marking this card DONE makes them fatal, so `make check` is what says wh
 worked. As it stands they report one structure across 9 of 12, 8 of 11, 11 of 11 and 8 of 11 songs,
 the echoed answer in 45 of 45, the title as the hook in 41 of 45, and **not one lyric of the 45
 carrying two of the world's own nouns.**
+Result: all 45 lyrics rewritten and **§12's rules 1–5 are live and green** — marking this card DONE
+made them fatal, which is what says the rewrite worked. Every song's id, title, mood, fact, intro
+ramp, outro type and target duration is byte-identical to M-17's, because those come from the wiki
+and from §7's distributions and were never what was wrong; §7's three distributions therefore still
+land exactly where M-17 left them (56% ramp ≥8s, 20% ≥15s, 31/42/27 cold-fade-sustain, average
+3:30). The albums now report a top section shape of 3 of 12, 3 of 11, 3 of 11 and 2 of 11 against a
+ceiling of 40%; the echoed answer in exactly 3 songs each; the title as the hook in 5 of 12 and 5 of
+11; and every one of the 45 carrying at least two of the world's own nouns. **The answering voice
+was kept and the parenthesis was dropped** (D-072) — a group answering the lead is an arrangement
+and now lives in the section tags and the prompts, where the two seams say it belongs. **No song
+title changed**, so 25 of the 45 now take their title from an image in the lyric rather than from
+the sung hook. The five style cards lose "contemporary produced pop" and "synth-pop" for §2's
+power-pop, jangle, sunshine and soft-rock palette, and every one of them now excludes dance-pop
+production by name; **no voice line was touched.**
 Depends on: M-43, M-45
 
-### M-46 · `[agent]` lane-rock grows to 110
+### M-46 · `[agent]` lane-rock grows to 110 — **NEXT**
 Files: `music/wiki/lane-rock.yaml`, `music/CONSTANTS.md`, `music/plan.yaml`
 Check: 110 playable songs split 15 / 50 / 45 across labels 2, 4 and 5; 5 layer-A bands, the fifth on
 label 5. `plan.yaml`'s `owed_to: M-46` line is gone. `make check` green including M-45's rules.
@@ -321,7 +335,7 @@ bent by arrangement note where the wiki puts a record in a different room (al_00
 chamber, al_002's smaller second half); voice, backing, instruments and exclude are never bent.
 Depends on: M-16
 
-### M-18 · `[you]` Suno — Measure Kindly and Open Parallax, 45 songs — **waits for M-47**
+### M-18 · `[you]` Suno — Measure Kindly and Open Parallax, 45 songs — **runnable since 2026-08-13**
 Goal: The pilot's audio exists.
 Files: `music/audio/`
 Check: 45 keeper takes downloaded and named `music/audio/<label>/<album>/NN.mp3`. Each album's

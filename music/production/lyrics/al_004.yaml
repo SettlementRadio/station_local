@@ -1,8 +1,8 @@
 # al_004 — Open Until Dawn · Open Parallax (b_002) · Civic Lantern · 2619 · 11 songs
 #
-# Written by M-17. **The file shape and every field is documented in al_001.yaml — read that
-# header once.** Production vocabulary (COMMISSION.md §8): never enters the wiki, never said on
-# air. Lyrics written by hand; Suno Custom mode only.
+# Written by M-17, rewritten whole by M-47. **The file shape, and what M-47 changed and why, are
+# documented in al_001.yaml — read that header once.** Production vocabulary (COMMISSION.md §8):
+# never enters the wiki, never said on air. Lyrics written by hand; Suno Custom mode only.
 
 album:
   id: al_004
@@ -40,34 +40,34 @@ songs:
     fact: >-
       Sena Quill sang the title line differently on every chorus, and all four versions remain in the
       accepted take.
-    arrangement_note: the title line is phrased differently in each of the four choruses and no two are matched
+    arrangement_note: four choruses, and the title line is phrased differently in each of them with no two matched
     intro: 7
     outro: fade
     target_duration: "3:20"
     prompt: >-
       Power-pop, 140 BPM, eager and nocturnal, brisk. Female lead vocal in a light high register,
       quick and wry, clipped consonants, dropping into plain speech at the end of a line, phrasing
-      the title line differently in every chorus and never matching two of them. Two close harmony
-      voices under the lead through the verses, all four voices shouting the hook. Two jangling
-      electric guitars panned hard apart, compact electric keyboard carrying the bass part, drum kit
-      with struck metal blocks. Dry small-room production, tight and close-mic'd, lead
-      double-tracked on choruses only. Seven seconds of guitars and keyboard before the first sung
-      word. Fade.
-    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+      the title line differently in every one of the four choruses and never matching two of them.
+      Two close harmony voices under the lead through the verses, all four voices shouting the hook.
+      Two jangling electric guitars panned hard apart, compact electric keyboard carrying the bass
+      part, drum kit with struck metal blocks. Dry small-room production, tight and close-mic'd,
+      lead double-tracked on choruses only. Seven seconds of guitars and keyboard before the first
+      sung word. Fade.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, dance-pop production
     lyrics: |
       [Intro - 7 seconds, guitars and keyboard bass, kit at four seconds, no vocal]
 
       [Verse 1]
-      There's one place left with the lights still on
-      And a man behind it who has given up asking us to go.
+      There is one place left with the lights still on
+      And a man behind the counter who has given up asking us to go.
       Everybody in here is somebody's problem tomorrow,
       And tomorrow is a long way down the street.
 
       [Chorus 1]
       Open until dawn (until dawn)
-      That's not a promise, that's a warning (that's a warning)
-      Open until dawn (until dawn)
-      Sit down, you've got nowhere to be until seven.
+      That is not a promise, that is a warning (that's a warning)
+      You have missed the last ferry and you knew that you would -
+      Sit down, you have nowhere to be until seven.
 
       [Verse 2]
       You put your coat on the back of my chair, not yours,
@@ -77,19 +77,25 @@ songs:
 
       [Chorus 2 - title line phrased differently]
       Open until dawn (until dawn)
-      That's not a promise, that's a warning (that's a warning)
-      Open until dawn (until dawn)
-      Sit down, you've got nowhere to be until seven.
+      That is not a promise, that is a warning (that's a warning)
+      The transfer hall is shut and the rain has not let up -
+      Sit down, you have nowhere to be until seven.
 
       [Bridge - all four shouting]
       Last one out gets the chairs up!
-      Nobody's volunteering, nobody's moving!
+      Nobody is volunteering, nobody is moving!
 
-      [Final Chorus - all four voices, title line different again]
+      [Chorus 3 - title line phrased differently again]
       Open until dawn (until dawn)
-      That's not a promise, that's a warning (that's a warning)
+      That is not a promise, that is a warning (that's a warning)
+      There are four of us left and one of us is asleep -
+      Sit down, you have nowhere to be until seven.
+
+      [Final Chorus - all four voices, title line different a fourth time]
       Open until dawn (until dawn)
-      Sit down, you've got nowhere to be until seven.
+      That is not a promise, that is a warning (that's a warning)
+      He will lock it behind us and be back at eleven -
+      Sit down, you have nowhere to be until seven.
 
       [Outro - fade on the guitars and the group hook]
     take:
@@ -112,48 +118,41 @@ songs:
     prompt: >-
       Power-pop, 120 BPM, yearning and bright. Female lead vocal in a light high register, quick and
       wry, clipped consonants, dropping into plain speech at the end of a line. Two close harmony
-      voices under the lead through the verses, all four shouting the hook. Two jangling electric
-      guitars panned hard apart, compact electric keyboard carrying the bass part and reduced to two
-      chords and nothing else through the whole second verse, drum kit with struck metal blocks.
-      Dry small-room production, tight and close-mic'd. Ten seconds of keyboard and one guitar
-      before the first sung word. Fade.
-    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, busy keyboard fills
+      voices joining the single-line refrain. Two jangling electric guitars panned hard apart,
+      compact electric keyboard carrying the bass part and reduced to two chords and nothing else
+      through the whole second verse, drum kit with struck metal blocks. Dry small-room production,
+      tight and close-mic'd. Three verses and a one-line refrain, no chorus. Ten seconds of keyboard
+      and one guitar before the first sung word. Fade.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, busy keyboard fills, dance-pop production
     lyrics: |
       [Intro - 10 seconds, keyboard and one guitar, second guitar and kit at six seconds, no vocal]
 
       [Verse 1]
-      You've had the same stall on the same corner for years,
+      You have had the same stall on the same corner for years,
       Third from the end, the one with the good awning.
       I have bought things I did not need from you all season
       And carried them home and put them straight in a drawer.
 
-      [Chorus]
-      Across your market (across your market)
-      Twelve steps and I can't make them (can't make them)
-      Across your market (across your market)
-      I'll take another bag of whatever it is you're selling.
+      [Refrain]
+      Twelve steps across the port hall and I cannot make them.
 
       [Verse 2 - two chords only]
-      My sister says just ask her, she's not a magistrate.
-      My brother says you've spent enough with her to own the stall.
+      My sister says just ask her, she is not a magistrate.
+      My brother says I have spent enough with her to own the stall.
       And my mother, who is no help at all, says take her flowers -
       Which is difficult, because the flowers are two stalls down.
 
-      [Chorus]
-      Across your market (across your market)
-      Twelve steps and I can't make them (can't make them)
-      Across your market (across your market)
-      I'll take another bag of whatever it is you're selling.
+      [Refrain]
+      Twelve steps across the port hall and I cannot make them.
 
-      [Bridge]
-      One day the awning will come down for the last time
+      [Verse 3]
+      I will take another bag of whatever it is you are selling
+      And a ration book's worth of reasons to come back on Tuesday.
+      One day that awning will come down for the last time
       And I will still be standing here with the right change.
 
-      [Final Chorus - all four voices]
-      Across your market (across your market)
-      Twelve steps and I can't make them (can't make them)
-      Across your market (across your market)
-      I'll take another bag of whatever it is you're selling.
+      [Refrain]
+      Twelve steps across the port hall and I cannot make them.
 
       [Outro - fade on the two-chord keyboard figure]
     take:
@@ -179,44 +178,35 @@ songs:
       harmony voices under the lead through the verses, all four shouting the hook. Two jangling
       electric guitars panned hard apart, compact electric keyboard carrying the bass part, drum kit
       with struck metal blocks, and a dull tapped metal radiator cover opening the song and keeping
-      the backbeat under the verses. Dry small-room production, tight and close-mic'd. Cold stop.
-    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, ringing or bright metal percussion
+      the backbeat under the verses. Dry small-room production, tight and close-mic'd. Two verses,
+      two choruses, no bridge. Cold stop.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, ringing or bright metal percussion, dance-pop production
     lyrics: |
       [Intro - 5 seconds, dull tapped radiator cover alone, guitars in on the last beat, no vocal]
 
       [Verse 1]
-      Two pairs of gloves and only one of them's mine,
+      Two pairs of gloves and only one of them is mine,
       Steaming quietly, dripping on the floor.
-      You came in shouting about the weather and the tram
-      And you have not stopped talking since and I hope you don't.
+      You came in shouting about the ferry and the rain
+      And you have not stopped talking since, and I hope you don't.
 
       [Chorus]
-      Gloves on the radiator (on the radiator)
-      Boots in the doorway, coat on the chair (coat on the chair)
-      Gloves on the radiator (on the radiator)
-      This is the whole of what I wanted, and it's this.
+      Boots in the doorway, coat over the chair,
+      The pipes and the scrubber arguing all night.
+      This is the whole of what I wanted, and it is this.
+      Don't put them on yet. They are nowhere near dry.
 
       [Verse 2]
       I have been cold in better rooms than this one,
-      Rooms with a view and nobody in them.
+      Rooms with a view in them and nobody else.
       You can keep the view. Give me the noise of the pipes
-      And somebody arguing with the radio in the kitchen.
+      And somebody arguing with the weather in the kitchen.
 
       [Chorus]
-      Gloves on the radiator (on the radiator)
-      Boots in the doorway, coat on the chair (coat on the chair)
-      Gloves on the radiator (on the radiator)
-      This is the whole of what I wanted, and it's this.
-
-      [Bridge - all four shouting]
-      Don't put them on yet! They're not dry!
-      Sit down! Sit down! It's foul out there!
-
-      [Final Chorus - all four voices]
-      Gloves on the radiator (on the radiator)
-      Boots in the doorway, coat on the chair (coat on the chair)
-      Gloves on the radiator (on the radiator)
-      This is the whole of what I wanted, and it's this.
+      Boots in the doorway, coat over the chair,
+      The pipes and the scrubber arguing all night.
+      This is the whole of what I wanted, and it is this.
+      Don't put them on yet. They are nowhere near dry.
 
       [Outro - cold stop, one last dull tap on the radiator after the band]
     take:
@@ -237,50 +227,39 @@ songs:
     outro: sustain
     target_duration: "4:00"
     prompt: >-
-      Power-pop, 108 BPM, nostalgic and warm, steady. Female lead vocal in a light high register,
-      quick and wry, clipped consonants, dropping into plain speech at the end of a line. Backing
-      voices recorded together around one table on a single shared microphone rather than
-      close-mic'd separately, so they arrive as one slightly loose group sound. Two jangling
-      electric guitars panned hard apart, compact electric keyboard carrying the bass part, drum kit
-      with struck metal blocks brushed lightly. Dry small-room production, tight and close-mic'd on
-      the lead. Fourteen seconds of guitars and keyboard before the first sung word. Ends sustained.
-    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, stacked studio choir
+      Power-pop played warm and easy, 108 BPM, nostalgic and steady. Female lead vocal in a light
+      high register, quick and wry, clipped consonants, dropping into plain speech at the end of a
+      line. Backing voices recorded together around one table on a single shared microphone rather
+      than close-mic'd separately, so they arrive as one slightly loose group sound, and only on the
+      bridge. Two jangling electric guitars panned hard apart, compact electric keyboard carrying
+      the bass part, drum kit with struck metal blocks brushed lightly. Dry small-room production,
+      tight and close-mic'd on the lead. Three verses and a bridge, no chorus. Fourteen seconds of
+      guitars and keyboard before the first sung word. Ends sustained.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, stacked studio choir, dance-pop production
     lyrics: |
       [Intro - 14 seconds, both guitars over keyboard bass, kit at ten seconds, no vocal]
 
       [Verse 1]
       They gave us the back room and a meal each,
-      Four chairs, one table, a door to the kitchen.
-      We were paid in soup and we thought we'd arrived,
-      And in every way that has since turned out to matter, we had.
-
-      [Chorus]
-      Back room summer (back room summer)
-      Nobody watching and everything ahead (everything ahead)
-      Back room summer (back room summer)
-      I'd have signed anything they put in front of me.
+      Four chairs, one table, a door through to the kitchen.
+      We were paid in soup and a ration ticket apiece,
+      And in every way that has since turned out to matter, we had arrived.
 
       [Verse 2]
       The cook used to sing the second half from the doorway,
-      Better than any of us and she'd deny it now.
-      There's a mark on that table where the amplifier stood,
+      Better than any of us, and she would deny it now.
+      There is a mark on that table where the amplifier stood
       And they have never sanded it out, and I have checked.
 
-      [Chorus]
-      Back room summer (back room summer)
-      Nobody watching and everything ahead (everything ahead)
-      Back room summer (back room summer)
-      I'd have signed anything they put in front of me.
-
       [Bridge]
-      We know better now. We count what we're owed now.
-      I would not give the counting up. I miss the not knowing.
+      Nobody watching and everything still ahead.
+      I would have signed anything they put in front of me.
 
-      [Final Chorus - all four voices around one microphone]
-      Back room summer (back room summer)
-      Nobody watching and everything ahead (everything ahead)
-      Back room summer (back room summer)
-      I'd have signed anything they put in front of me.
+      [Verse 3]
+      We know better now. We count what we are owed now,
+      And the port hall pays on the night or it does not get us.
+      I would not give the counting up for anything.
+      I miss the not knowing, and that is a different thing.
 
       [Outro - sustain, guitars ringing under the group holding one note]
     take:
@@ -308,43 +287,44 @@ songs:
       with struck metal blocks, loud handclaps through the final chorus. Dry small-room production,
       tight and close-mic'd. A low male voice reads a list of figures under the final chorus,
       deliberately buried by the handclaps so no number is intelligible. Fade.
-    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, audible spoken figures in the clear
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, audible spoken figures in the clear, dance-pop production
     lyrics: |
       [Intro - 3 seconds, sticks and guitars, no vocal]
 
       [Verse 1]
       Keep everything, he says. Keep every scrap.
-      There's a box on the shelf and the box has a box in it.
+      There is a box on the shelf and the box has a box in it.
       I have a receipt for a cable I threw away
       And a receipt for the bag I keep the receipts in.
 
       [Chorus]
       One more receipt (one more receipt)
       Sign it, date it, put it in the tin (in the tin)
-      One more receipt (one more receipt)
-      That is how a friendship stays a friendship round here.
+      There is a manifest in there for a hauler that never sailed -
+      And that is how a friendship stays a friendship round here.
 
       [Verse 2]
       It sounds cold and it is not cold at all,
-      It's the opposite, it's the reason we still speak.
-      Nobody's lying awake doing sums about anybody,
-      Nobody's carrying a grudge with a number on it.
+      It is the opposite, it is the reason we still speak.
+      Nobody is lying awake doing sums about anybody,
+      Nobody is carrying a grudge with a number on it.
 
       [Chorus]
       One more receipt (one more receipt)
       Sign it, date it, put it in the tin (in the tin)
-      One more receipt (one more receipt)
-      That is how a friendship stays a friendship round here.
+      There is a manifest in there for a hauler that never sailed -
+      And that is how a friendship stays a friendship round here.
 
-      [Bridge - all four shouting]
-      Read it out! Go on, read the total!
-      Nobody wants to hear the total!
+      [Spoken - low, buried under the band and the handclaps]
+      Two guitars, one keyboard, kit and blocks, the room for the night,
+      Cable, strings, the loan of a van and the man who drove it,
+      Total as read, and everybody in this room has a copy.
 
-      [Final Chorus - all four voices, handclaps, figures read low underneath and buried]
+      [Final Chorus - all four voices, handclaps, the figures still being read underneath]
       One more receipt (one more receipt)
       Sign it, date it, put it in the tin (in the tin)
-      One more receipt (one more receipt)
-      That is how a friendship stays a friendship round here.
+      There is a manifest in there for a hauler that never sailed -
+      And that is how a friendship stays a friendship round here.
 
       [Outro - fade on the handclaps]
     take:
@@ -367,48 +347,48 @@ songs:
     prompt: >-
       Power-pop, 136 BPM, reassuring and buoyant, quick. Female lead vocal in a light high register,
       quick and wry, clipped consonants, dropping into plain speech at the end of a line. Two close
-      harmony voices under the lead through the verses, all four shouting the hook. Two jangling
-      electric guitars panned hard apart, the right-hand one an audibly worn instrument with a
-      slight buzz on the low strings, compact electric keyboard carrying the bass part, drum kit
-      with struck metal blocks. Dry small-room production, tight and close-mic'd. Six seconds of the
-      worn guitar before the first sung word. Fade.
-    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+      harmony voices under the lead through the verses, all four in unison on the last line of each
+      chorus. Two jangling electric guitars panned hard apart, the right-hand one an audibly worn
+      instrument with a slight buzz on the low strings, compact electric keyboard carrying the bass
+      part, drum kit with struck metal blocks. Dry small-room production, tight and close-mic'd. Six
+      seconds of the worn guitar before the first sung word. Fade.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, dance-pop production
     lyrics: |
       [Intro - 6 seconds, worn guitar alone, second guitar and kit on the last bar, no vocal]
 
       [Verse 1]
       Everybody came, everybody sat down,
       Your mother and my brother at the same end of the table.
-      I had a plan for four separate emergencies
-      And not one of them was required, which I'm still getting over.
+      Your mother brought a ration tin nobody had to open,
+      And I had a plan for four separate emergencies.
 
       [Chorus]
-      Nothing broke at supper (nothing broke)
-      Nobody said the thing they always say (nobody said it)
-      Nothing broke at supper (nothing broke)
-      And we cleared the plates like people who could do this again.
+      Nobody said the thing they always say.
+      Nobody counted anything out loud.
+      We cleared the plates like people who could do this again,
+      And that is the whole of the news out of this house.
 
       [Verse 2]
       Your father asked me a question and listened to the answer,
       Which I would not have believed if I had not been there.
-      Somebody laughed at the right moment out of kindness
-      And the whole evening turned on that and nobody noticed but me.
+      It was the first Clearing Day supper since the argument
+      And somebody laughed at the right moment out of kindness.
 
       [Chorus]
-      Nothing broke at supper (nothing broke)
-      Nobody said the thing they always say (nobody said it)
-      Nothing broke at supper (nothing broke)
-      And we cleared the plates like people who could do this again.
+      Nobody said the thing they always say.
+      Nobody counted anything out loud.
+      We cleared the plates like people who could do this again,
+      And that is the whole of the news out of this house.
 
       [Bridge]
       Small mercy. Enormous mercy.
-      Ask me next year and it'll still be the best of it.
+      Ask me next year and it will still be the best of it.
 
       [Final Chorus - all four voices]
-      Nothing broke at supper (nothing broke)
-      Nobody said the thing they always say (nobody said it)
-      Nothing broke at supper (nothing broke)
-      And we cleared the plates like people who could do this again.
+      Nobody said the thing they always say.
+      Nobody counted anything out loud.
+      We cleared the plates like people who could do this again,
+      And that is the whole of the news out of this house.
 
       [Outro - fade on the worn guitar]
     take:
@@ -424,55 +404,48 @@ songs:
     fact: >-
       Sena Quill wrote the title line for Ivo Cern while he spent six sessions resolving the
       guest-credit list.
-    arrangement_note: guest upright bass under a quiet arrangement, and the lead sings the last chorus alone with the harmony voices dropping out
+    arrangement_note: guest upright bass under a quiet arrangement, and the lead sings the last refrain alone with the harmony voices dropping out
     intro: 11
     outro: sustain
     target_duration: "3:45"
     prompt: >-
-      Power-pop, 110 BPM, tender and patient. Female lead vocal in a light high register, quick and
-      wry, clipped consonants, dropping into plain speech at the end of a line. Two close harmony
-      voices under the lead through the verses, dropping out entirely for the last chorus so the
-      lead is alone. Two jangling electric guitars panned hard apart played cleanly, guest upright
-      bass taking the bottom, drum kit with struck metal blocks played lightly. Dry small-room
-      production, tight and close-mic'd. Eleven seconds of upright bass and clean guitar before the
-      first sung word. Ends sustained.
-    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+      Power-pop played quietly, 110 BPM, tender and patient. Female lead vocal in a light high
+      register, quick and wry, clipped consonants, dropping into plain speech at the end of a line.
+      Two close harmony voices under the lead through the verses, dropping out entirely for the last
+      refrain so the lead is alone. Two jangling electric guitars panned hard apart played cleanly,
+      guest upright bass taking the bottom, drum kit with struck metal blocks played lightly. Dry
+      small-room production, tight and close-mic'd. Three verses and a one-line refrain, no chorus.
+      Eleven seconds of upright bass and clean guitar before the first sung word. Ends sustained.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, dance-pop production
     lyrics: |
       [Intro - 11 seconds, upright bass and one clean guitar, second guitar at seven seconds, no vocal]
 
       [Verse 1]
-      You're doing the dull half again, the part nobody thanks you for,
+      You are doing the dull half again, the part nobody thanks you for,
       Six evenings on a list of names and what each one is owed.
-      I brought you the good chair and you didn't look up,
-      And I sat with you anyway and read something else.
+      It reads like a manifest and it takes twice as long,
+      And you will get every name right and nobody will notice.
 
-      [Chorus]
-      Keep my place (keep my place)
-      I'll be back before you've finished (before you've finished)
-      Keep my place (keep my place)
-      Whatever room it is, put my coat on the seat.
+      [Refrain]
+      Keep my place. I will be back before you have finished.
 
       [Verse 2]
-      You will get every name right and no one will notice,
-      Which is what you want, and it is the only thing you want.
+      I brought you the good chair and you did not look up,
+      And I sat down with you anyway and read something else.
+      The vigil bell went at nine and neither of us moved.
+      Whatever room it is, put my coat on the seat.
+
+      [Refrain]
+      Keep my place. I will be back before you have finished.
+
+      [Verse 3]
       I have watched you refuse credit for four separate things
-      And take the blame for one that wasn't yours at all.
+      And take the blame for one that was not yours at all.
+      Somebody has to hold the boring end of this,
+      And I know who does it here. I have always known.
 
-      [Chorus]
-      Keep my place (keep my place)
-      I'll be back before you've finished (before you've finished)
-      Keep my place (keep my place)
-      Whatever room it is, put my coat on the seat.
-
-      [Bridge]
-      Somebody has to hold the boring end of it.
-      I know who does it here. I have always known.
-
-      [Final Chorus - lead alone, harmony voices out]
-      Keep my place (keep my place)
-      I'll be back before you've finished (before you've finished)
-      Keep my place (keep my place)
-      Whatever room it is, put my coat on the seat.
+      [Refrain - lead alone, harmony voices out]
+      Keep my place. I will be back before you have finished.
 
       [Outro - sustain, upright bass and one guitar holding]
     take:
@@ -500,43 +473,43 @@ songs:
       metal blocks. Dry small-room production, tight and close-mic'd. In the middle of the song the
       bass moves to the wrong key for eight bars and the whole band follows it without stopping,
       returning at the bridge. Fade.
-    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, dance-pop production
     lyrics: |
       [Intro - 8 seconds, upright bass and guitars, no vocal]
 
       [Verse 1]
-      It was hanging by the door and it wasn't anybody's,
+      It was hanging by the door of the transfer hall and it wasn't anybody's,
       Black, one spoke gone, and the handle taped up.
       I took it because it was pouring and I was late,
       And I have had it now for longer than its owner did.
 
       [Chorus]
-      Somebody else's umbrella (somebody else's)
-      Getting me home dry all season (all season)
-      Somebody else's umbrella (somebody else's)
-      I'd give it back tomorrow if I knew where to knock.
+      Somebody else's umbrella, getting me home dry all season.
+      I would give it back tomorrow if I knew where to knock.
+      It has been on the ferry and under every awning in this town
+      And it has never once let the rain through.
 
       [Verse 2 - band drifts into the wrong key here]
       Same way I got this job, same way I got this town,
-      Same way I got you, if we're being honest about it.
+      Same way I got you, if we are being honest about it.
       Somebody put a good thing down and turned away
       And I was standing there with my hands out, being lucky.
 
       [Bridge - band back in the right key]
-      I'm not proud. I'm not sorry either.
+      I am not proud. I am not sorry either.
       Come and take it off me and stay for the tea.
 
       [Chorus]
-      Somebody else's umbrella (somebody else's)
-      Getting me home dry all season (all season)
-      Somebody else's umbrella (somebody else's)
-      I'd give it back tomorrow if I knew where to knock.
+      Somebody else's umbrella, getting me home dry all season.
+      I would give it back tomorrow if I knew where to knock.
+      It has been on the ferry and under every awning in this town
+      And it has never once let the rain through.
 
       [Final Chorus - all four voices]
-      Somebody else's umbrella (somebody else's)
-      Getting me home dry all season (all season)
-      Somebody else's umbrella (somebody else's)
-      I'd give it back tomorrow if I knew where to knock.
+      Somebody else's umbrella, getting me home dry all season.
+      I would give it back tomorrow if I knew where to knock.
+      It has been on the ferry and under every awning in this town
+      And it has never once let the rain through.
 
       [Outro - fade on the upright bass and guitars]
     take:
@@ -565,45 +538,45 @@ songs:
       blocks. Dry small-room production, tight and close-mic'd. The band holds one chord under each
       of the three flat lines. Nine seconds of keyboard and guitars before the first sung word.
       Cold stop.
-    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, dance-pop production
     lyrics: |
       [Intro - 9 seconds, keyboard and guitars, kit at six seconds, no vocal]
 
       [Verse 1]
-      It came back in an envelope with a very kind note,
+      It came back down the relay in an envelope with a very kind note,
       Two lines about how much they admired the work.
       You have to read it twice to find the actual sentence,
       And when you find it, it is one word long.
 
       [Chorus]
-      That's a polite refusal (polite refusal)
-      Beautifully done, and it's still a no (still a no)
-      That's a polite refusal (polite refusal)
+      Beautifully done, and it is still a no.
       Thank you for your interest, thank you for your time.
+      Four days out and four days back and a season of the lag
+      For one short word they could have put at the top.
 
-      [Verse 2 - three lines flat and even, one held chord under each]
+      [Reading - three lines flat and even, one held chord under each]
       "The party of the second part accepts in perpetuity."
       "Such rights as remain shall be deemed to have been assigned."
       "This offer is made without prejudice and is not open to amendment."
-      And underneath it all, in pen: we do hope you'll say yes.
+      And underneath it all, in pen: we do hope you will say yes.
 
       [Chorus]
-      That's a polite refusal (polite refusal)
-      Beautifully done, and it's still a no (still a no)
-      That's a polite refusal (polite refusal)
+      Beautifully done, and it is still a no.
       Thank you for your interest, thank you for your time.
+      Four days out and four days back and a season of the lag
+      For one short word they could have put at the top.
 
       [Bridge - all four shouting]
       We said no! We said it in one word!
-      Took them four pages to hear it!
+      It took them four pages to hear it!
 
       [Final Chorus - all four voices]
-      That's a polite refusal (polite refusal)
-      Beautifully done, and it's still a no (still a no)
-      That's a polite refusal (polite refusal)
+      Beautifully done, and it is still a no.
       Thank you for your interest, thank you for your time.
+      Four days out and four days back and a season of the lag
+      For one short word they could have put at the top.
 
-      [Outro - cold stop on "time"]
+      [Outro - cold stop on the last word]
     take:
       attempts: null
       model_version: null
@@ -628,52 +601,52 @@ songs:
       the end. Two jangling electric guitars panned hard apart, harpsichord-toned electronic strings
       guesting alongside the compact electric keyboard, drum kit with struck metal blocks. The
       keyboard leaves a full bar empty before every group answer, all the way through. Dry
-      small-room production, tight and close-mic'd. Eighteen seconds of electronic strings and
-      guitar before the first sung word. Ends on a long sustain.
-    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals
+      small-room production, tight and close-mic'd. Three verses, a bridge and a final chorus.
+      Eighteen seconds of electronic strings and guitar before the first sung word. Ends on a long
+      sustain.
+    exclude: synth pads, four-on-the-floor kick, bass guitar, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, dance-pop production
     lyrics: |
       [Intro - 18 seconds, plucked electronic strings and one guitar, bass at twelve seconds, kit at sixteen, no vocal]
 
       [Verse 1]
       They put the chairs up round us an hour ago
-      And went on with their sweeping like we weren't here.
+      And went on with their sweeping as though we were not here.
       You have not finished the thing you started saying at nine
       And I am not going anywhere until you do.
 
       [Chorus 1]
-      Long way past closing (past closing)
-      Nobody's thrown us out yet (not yet)
-      Long way past closing (past closing)
-      Say the rest of it, I've got all night and no bus.
+      Nobody has thrown us out yet.
+      Say the rest of it. I have all night and no ferry.
+      The last ferry went while you were deciding how to start
+      And I have never been so glad to miss one.
 
       [Verse 2]
-      I know the ending. I've known it since the second bar.
+      I know the ending. I have known it since the second bar.
       I want to hear you get there in your own time.
       You do this thing where you look at the table and decide,
-      And then you say it plainly, and it's always worth the wait.
+      And then you say it plainly, and it is always worth the wait.
 
       [Chorus 2 - two voices]
-      Long way past closing (past closing)
-      Nobody's thrown us out yet (not yet)
-      Long way past closing (past closing)
-      Say the rest of it, I've got all night and no bus.
+      Nobody has thrown us out yet.
+      Say the rest of it. I have all night and no ferry.
+      The last ferry went while you were deciding how to start
+      And I have never been so glad to miss one.
 
       [Bridge]
       There is a kind of evening you only get about four times,
-      And you don't know it's one until the chairs go up.
+      And you do not know it is one of them until the chairs go up.
 
       [Verse 3]
-      So take the empty bar, take as long as you like,
-      The man with the keys has stopped looking at the clock.
-      Whatever it is, I've heard worse and stayed,
+      So take the empty bar, take as long as you like.
+      The man with the keys at the port hall has stopped watching the clock.
+      Whatever it is, I have heard worse and stayed,
       And I would like to be the person you say it to.
 
       [Final Chorus - all four voices]
-      Long way past closing (past closing)
-      Nobody's thrown us out yet (not yet)
-      Long way past closing (past closing)
-      Say the rest of it, I've got all night and no bus.
-      All night and no bus.
+      Nobody has thrown us out yet.
+      Say the rest of it. I have all night and no ferry.
+      The last ferry went while you were deciding how to start
+      And I have never been so glad to miss one.
 
       [Outro - sustain, electronic strings holding over the last guitar chord]
     take:
@@ -704,7 +677,7 @@ songs:
       struck metal blocks, struck metal percussion, handclaps. Dry small-room production, tight and
       close-mic'd. Before the final chorus, eight different voices - male and female, one after
       another over two bars of band - each speak a single short name aloud. Cold stop.
-    exclude: synth pads, four-on-the-floor kick, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, rapped sections
+    exclude: synth pads, four-on-the-floor kick, orchestral instruments, heavy distortion, vocal tuning, whispered vocals, rapped sections, dance-pop production
     lyrics: |
       [Intro - 6 seconds, full band, handclaps on the last bar, no vocal]
 
@@ -712,27 +685,27 @@ songs:
       Everybody remembers it differently by winter,
       Everybody's version has them holding the pen.
       I have watched two people who loved each other
-      Stop speaking over one line nobody wrote down.
+      Stop speaking over one line that nobody wrote down.
 
       [Chorus]
       Put it in writing (put it in writing)
       Not because I doubt you - because I don't (because I don't)
-      Put it in writing (put it in writing)
+      Put it on the manifest with everybody's name (everybody's name)
       So that in ten years we can both still be right.
 
       [Verse 2]
       It is not romance and it is not suspicion,
-      It's the same as leaving a light on in the hall.
-      Say who did what while everybody's pleased,
-      Because nobody's honest at the end of a bad year.
+      It is the same as leaving a light on in the hall.
+      Say who did what while everybody is still pleased,
+      Because the shipboard press will have it wrong by the spring.
 
       [Chorus]
       Put it in writing (put it in writing)
       Not because I doubt you - because I don't (because I don't)
-      Put it in writing (put it in writing)
+      Put it on the manifest with everybody's name (everybody's name)
       So that in ten years we can both still be right.
 
-      [Spoken roll-call - eight voices in turn over two bars of band, one short name each]
+      [Roll-call - eight voices in turn over two bars of band, one short name each]
       Sena Quill.
       Ivo Cern.
       Keli Vos.
@@ -745,8 +718,7 @@ songs:
       [Final Chorus - every voice on the record]
       Put it in writing (put it in writing)
       Not because I doubt you - because I don't (because I don't)
-      Put it in writing (put it in writing)
-      So that in ten years we can both still be right.
+      Put it on the manifest with everybody's name (everybody's name)
       Every name on the page, every name on the page.
 
       [Outro - cold stop, all instruments and voices ending together]

@@ -1812,3 +1812,29 @@ the 45 lyrics carries two of the world's own nouns.** §3 asks the world to supp
 the swap-the-nouns test to be survivable; these lyrics would read unchanged on Earth, which is the
 test passing so completely that it inverts. The wiki itself is green on rule 6 with **very little
 margin** — the worst band sits at 10 studio anecdotes in 21 facts against a ceiling of half.
+
+### D-072 · The answering voice stays, the parenthesis goes — 2026-08-13
+
+M-47 rewrote the pilot's 45 lyrics against `COMMISSION.md` §12's rules 1–5. Rule 3 counts the echoed
+answer — a parenthetical repeat inside a sung line — and M-17 had used it in 45 songs out of 45. But
+the answering voice is not a tic: `styles.yaml` fixes *"three group voices answering the lead line
+for line across the chorus"* as b_001's backing line, and b_002's is *"all four voices shouting the
+hook together."* Deleting the device from the arrangement would have changed what both bands sound
+like in order to pass a lyric rule.
+
+**So the arrangement moved out of the lyric and into the section tag and the prompt.** A chorus is
+now tagged `[Chorus - answers entering a bar early]` or `[Chorus - band stops dead under the title
+line, whispered answer only]`, and the prompt says the same thing in production vocabulary. The
+words in the lyric are the words that are sung; who answers them, and how, is the mixer's and the
+engine's business — the same seam §3 draws for timing. `writing.py` strips bracketed tags before
+counting, so this is not a way around the rule; it is the rule finding the right place to put the
+instruction. Three songs an album keep the written parenthetical, because the device is good and it
+is the failure mode that is bad.
+
+**Two smaller calls fell out of the same rewrite.** No song title changed: titles are the wiki's,
+`COMMISSION.md` §10 forbids renaming an id, and editing 45 titles to satisfy rule 4 would have
+edited the wiki from the production side. So 25 of the 45 songs now take their title from an image
+in the lyric and say something else in the chorus, which is what rule 4 was asking for anyway. And
+every song's mood, fact, intro ramp, outro type and target duration was left byte-identical, so
+§7's three distributions — which M-17 aimed rather than left to chance, and which land exactly — did
+not have to be re-derived to fix the words.

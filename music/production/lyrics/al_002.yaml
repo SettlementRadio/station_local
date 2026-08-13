@@ -1,8 +1,8 @@
 # al_002 — Rooms With Windows · Measure Kindly (b_001) · Civic Lantern · 2624 · 11 songs
 #
-# Written by M-17. **The file shape and every field is documented in al_001.yaml — read that
-# header once.** Production vocabulary (COMMISSION.md §8): never enters the wiki, never said on
-# air. Lyrics written by hand; Suno Custom mode only.
+# Written by M-17, rewritten whole by M-47. **The file shape, and what M-47 changed and why, are
+# documented in al_001.yaml — read that header once.** Production vocabulary (COMMISSION.md §8):
+# never enters the wiki, never said on air. Lyrics written by hand; Suno Custom mode only.
 
 album:
   id: al_002
@@ -45,41 +45,41 @@ songs:
     outro: fade
     target_duration: "3:50"
     prompt: >-
-      Contemporary produced pop, 116 BPM, open and bright, expansive. Female lead vocal in mid
-      register, clear and unforced, plain conversational diction, sung just ahead of the beat and
-      never belted, close to the microphone. Three group voices answering the lead line for line
-      across the chorus, spread wide and each carrying a different amount of room so the answers
-      arrive from three distinct places. Harpsichord-toned electric keyboard, fretted electric
-      bass, compact drum kit, hand percussion, tuned chimes. Bright produced pop tracked live in a
-      large reflective hall, the backing voices carrying the room, minimal overdub. Fifteen seconds
-      of keyboard and hall before the first sung word. Fade.
-    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+      Sunshine pop, 116 BPM, open and bright, expansive. Female lead vocal in mid register, clear
+      and unforced, plain conversational diction, sung just ahead of the beat and never belted,
+      close to the microphone. Three group voices answering the lead line for line across the
+      chorus, spread wide and each carrying a different amount of room so the answers arrive from
+      three distinct places. Harpsichord-toned electric keyboard, fretted electric bass, compact
+      drum kit, hand percussion, tuned chimes. Warm ringing pop tracked live in a large reflective
+      hall, the backing voices carrying the room, minimal overdub. Fifteen seconds of keyboard and
+      hall before the first sung word. Fade.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, dance-pop and modern radio pop production, four-on-the-floor kick
     lyrics: |
       [Intro - 15 seconds, keyboard alone in a large reflective hall, chimes at ten seconds, no vocal]
 
       [Verse 1]
       They shut it for repairs and we got used to small,
-      Low ceilings, close walls, everybody's elbow.
-      Now here's a hundred feet of nothing over my head
+      Low rooms, a bulkhead door, everybody's elbow.
+      Now here is a hundred feet of nothing over my head
       And I can hear my own voice coming back to me from three sides.
 
       [Chorus]
       Rooms with windows (rooms with windows)
       Everything sounds further than it is (further than it is)
-      Rooms with windows (rooms with windows)
-      Say a thing kindly and it goes round the whole place.
+      Say a thing kindly and it goes round the whole place (round the whole place)
+      And it gets back to you by the end of the week.
 
       [Verse 2]
-      You stand by the second one, she stands by the third,
+      You stand at the second one, she stands at the third,
       And each of you answers me from somewhere else.
-      It shouldn't work, it shouldn't hold together at all,
-      But it does, and it is better than the way we did it before.
+      It should not work, it should not hold together at all,
+      But the scrubber is off for the first time in years, and it does.
 
       [Chorus]
       Rooms with windows (rooms with windows)
       Everything sounds further than it is (further than it is)
-      Rooms with windows (rooms with windows)
-      Say a thing kindly and it goes round the whole place.
+      Say a thing kindly and it goes round the whole place (round the whole place)
+      And it gets back to you by the end of the week.
 
       [Bridge]
       Nobody built this for us. We got in on a form.
@@ -88,8 +88,8 @@ songs:
       [Final Chorus - all four voices, spread across the hall]
       Rooms with windows (rooms with windows)
       Everything sounds further than it is (further than it is)
-      Rooms with windows (rooms with windows)
-      Say a thing kindly and it goes round the whole place.
+      Say a thing kindly and it goes round the whole place (round the whole place)
+      And it gets back to you by the end of the week.
 
       [Outro - fade, the hall carrying the last group answer]
     take:
@@ -110,55 +110,48 @@ songs:
     outro: cold
     target_duration: "2:55"
     prompt: >-
-      Contemporary produced pop, 134 BPM, defiant and buoyant, brisk, with the looseness of a
-      rehearsal take rather than a polished one. Female lead vocal in mid register, clear and
-      unforced, plain conversational diction, sung just ahead of the beat and never belted, with a
-      short unforced laugh left in the bar before the first chorus. Three group voices answering
-      the lead line for line across the chorus. Harpsichord-toned electric keyboard, fretted
-      electric bass, compact drum kit, hand percussion, tuned chimes. Tracked live in a large
-      reflective hall, minimal overdub, nothing tidied. Cold stop.
-    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, studio polish, pitch correction
+      Power-pop, 134 BPM, defiant and buoyant, brisk, with the looseness of a rehearsal take rather
+      than a polished one. Female lead vocal in mid register, clear and unforced, plain
+      conversational diction, sung just ahead of the beat and never belted, with a short unforced
+      laugh left in the bar before the first chorus. Three group voices in harmony under the lead on
+      the chorus. Harpsichord-toned electric keyboard, fretted electric bass, compact drum kit, hand
+      percussion, tuned chimes. Tracked live in a large reflective hall, minimal overdub, nothing
+      tidied. Two verses, each into a one-line pre-chorus. Cold stop.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, studio polish, pitch correction, dance-pop and modern radio pop production
     lyrics: |
       [Intro - 4 seconds, drum count and keyboard, no vocal]
 
       [Verse 1]
       I sat on my hands for a year and a half
       Being careful, being fair, being no use at all.
-      You can't take back a thing you never said
-      But you can't do much with it either.
+      You can't take back a thing you never said,
+      But you can't do very much with it either.
 
       [Pre-Chorus - lead laughs here, keep it]
-      So here's the bad version, first time through -
+      So here is the bad version, first time through -
 
       [Chorus]
-      Better than silence (better than silence)
-      Wrong and out loud and alive (out loud)
-      Better than silence (better than silence)
-      I'd rather be corrected than be quiet.
+      Wrong and out loud and alive,
+      I would rather be corrected than be quiet.
+      It has been sitting on the relay unsent since the spring
+      And a year of the lag is a year I don't get back.
 
       [Verse 2]
-      You've got a face you make when you're deciding not to speak,
-      I've watched it across a table for longer than I'll admit.
-      Whatever it is, it's cheaper said than kept,
+      You have a face you make when you're deciding not to speak,
+      I have watched it across a table for longer than I'll admit.
+      Whatever it is, it is cheaper said than kept,
       And I have got the room and I have got the nerve today.
 
-      [Chorus]
-      Better than silence (better than silence)
-      Wrong and out loud and alive (out loud)
-      Better than silence (better than silence)
-      I'd rather be corrected than be quiet.
+      [Pre-Chorus]
+      So here is the bad version, first time through -
 
-      [Bridge]
+      [Chorus]
+      Wrong and out loud and alive,
+      I would rather be corrected than be quiet.
       Nobody ever fixed a thing by being tidy about it.
       Go on. Make the noise.
 
-      [Final Chorus - all four voices]
-      Better than silence (better than silence)
-      Wrong and out loud and alive (out loud)
-      Better than silence (better than silence)
-      I'd rather be corrected than be quiet.
-
-      [Outro - cold stop on "quiet"]
+      [Outro - cold stop on the last word]
     take:
       attempts: null
       model_version: null
@@ -172,55 +165,49 @@ songs:
     fact: >-
       Nessa Dray plays the short answering figure on a composite fiddle borrowed from the hall's
       locked teaching cabinet.
-    arrangement_note: a short composite-fiddle figure answers the end of every second line in the verses and never plays under the chorus
+    arrangement_note: a short composite-fiddle figure answers the end of every second line in the verses and plays the refrain with the lead
     intro: 10
     outro: fade
     target_duration: "3:35"
     prompt: >-
-      Contemporary produced pop, 108 BPM, fond and waiting. Female lead vocal in mid register,
-      clear and unforced, plain conversational diction, sung just ahead of the beat and never
-      belted. Three group voices answering the lead line for line across the chorus. Harpsichord-toned
-      electric keyboard, fretted electric bass, compact drum kit, hand percussion, tuned chimes,
-      and a guest composite fiddle playing a short bright answering figure at the end of every
-      second line of the verses and never under the chorus. Tracked live in a large reflective
-      hall, minimal overdub. Ten seconds of fiddle and keyboard before the first sung word. Fade.
-    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, fiddle in the choruses
+      Jangling sunshine pop, 108 BPM, fond and waiting. Female lead vocal in mid register, clear and
+      unforced, plain conversational diction, sung just ahead of the beat and never belted. Three
+      group voices joining the single-line refrain in harmony. Harpsichord-toned electric keyboard,
+      fretted electric bass, compact drum kit, hand percussion, tuned chimes, and a guest composite
+      fiddle playing a short bright answering figure at the end of every second line of the verses
+      and doubling the refrain. Tracked live in a large reflective hall, minimal overdub. Three
+      verses and a one-line refrain, no chorus. Ten seconds of fiddle and keyboard before the first
+      sung word. Fade.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, dance-pop and modern radio pop production, four-on-the-floor kick
     lyrics: |
       [Intro - 10 seconds, composite fiddle figure over keyboard, no vocal]
 
       [Verse 1]
       Same bench, same hour, same rain going sideways,
-      Same man selling the same bad tea.
+      Same man selling the same bad tea, and he knows my order now.
       I have got very good at the twenty minutes before,
-      And I would not give one of them away.
+      And I have never once been late for them.
 
-      [Chorus]
-      Tuesday at the ferry (Tuesday at the ferry)
-      You come off the ramp with your collar up (collar up)
-      Tuesday at the ferry (Tuesday at the ferry)
-      And the rest of the week is just the wait for it.
+      [Refrain]
+      The ferry comes in at ten past, and the rest of the week is the wait for it.
 
       [Verse 2]
-      They put a clock up but it runs a minute fast,
-      So everybody here is early and pretending not to be.
+      They put a clock up in the port hall but it runs a minute fast,
+      So everybody standing here is early and pretending not to be.
       I brought the good coat. I brought the other one back.
-      I have a whole list of things I'm not going to say.
+      I have a whole list of things I am not going to say.
 
-      [Chorus]
-      Tuesday at the ferry (Tuesday at the ferry)
-      You come off the ramp with your collar up (collar up)
-      Tuesday at the ferry (Tuesday at the ferry)
-      And the rest of the week is just the wait for it.
+      [Refrain]
+      The ferry comes in at ten past, and the rest of the week is the wait for it.
 
-      [Bridge]
-      One day you'll get off and stay off,
-      And I'll have to find something else to be good at.
+      [Verse 3]
+      You come off the ramp with your collar up, looking for me,
+      And every one of those twenty minutes was worth having.
+      One day you will get off and stay off,
+      And I will have to find something else to be good at.
 
-      [Final Chorus - all four voices]
-      Tuesday at the ferry (Tuesday at the ferry)
-      You come off the ramp with your collar up (collar up)
-      Tuesday at the ferry (Tuesday at the ferry)
-      And the rest of the week is just the wait for it.
+      [Refrain]
+      The ferry comes in at ten past, and the rest of the week is the wait for it.
 
       [Outro - fade on the fiddle figure alone]
     take:
@@ -241,49 +228,49 @@ songs:
     outro: cold
     target_duration: "2:30"
     prompt: >-
-      Contemporary produced pop, 140 BPM, wry and warm, quick. Female lead vocal in mid register,
-      clear and unforced, plain conversational diction, sung just ahead of the beat and never
-      belted. Three group voices answering the lead line for line across the chorus. Harpsichord-toned
+      Power-pop, 140 BPM, wry and warm, quick. Female lead vocal in mid register, clear and
+      unforced, plain conversational diction, sung just ahead of the beat and never belted. Three
+      group voices in unison with the lead on the last line of every chorus. Harpsichord-toned
       electric keyboard, fretted electric bass, compact drum kit, hand percussion, tuned chimes.
       Tracked live in a large reflective hall, minimal overdub. The bridge drops to bass and one
       voice, the only stop in the song, then the full band returns. Cold stop at the end.
-    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, dance-pop and modern radio pop production, four-on-the-floor kick
     lyrics: |
       [Intro - 3 seconds, keyboard stab and drum pickup, no vocal]
 
       [Verse 1]
-      He gave me too much back and I gave it him again,
-      And he looked at me like I'd said something about his mother.
+      He gave me too much back and I gave it to him again,
+      And he looked at me like I had said something about his mother.
       Nobody wants to be caught being generous by accident,
       Nobody wants to be told they got it wrong in their own shop.
 
       [Chorus]
-      Honest change (honest change)
-      Hardest thing to hand across a counter (hand it across)
-      Honest change (honest change)
+      It is the hardest thing to hand across a counter.
       Everybody wants it and nobody wants to be given it.
+      Put it down flat where I can count it,
+      And I promise I will not make a speech.
 
       [Verse 2]
       Same with an apology, same with a compliment,
-      Same with the thing you've been meaning to say to me all year.
-      Put it down flat where I can count it,
-      I promise I won't make a speech about it.
+      Same with the thing you have been meaning to say to me all year.
+      The ration stall at the port hall manages it twice a day
+      And the rest of us are still practising.
 
       [Chorus]
-      Honest change (honest change)
-      Hardest thing to hand across a counter (hand it across)
-      Honest change (honest change)
+      It is the hardest thing to hand across a counter.
       Everybody wants it and nobody wants to be given it.
+      Put it down flat where I can count it,
+      And I promise I will not make a speech.
 
       [Bridge - bass and one voice only]
       He kept the coin in the end. Put it in the tin by the door.
-      And I've thought about that man about forty times since.
+      And I have thought about that man about forty times since.
 
       [Final Chorus - all four voices]
-      Honest change (honest change)
-      Hardest thing to hand across a counter (hand it across)
-      Honest change (honest change)
+      It is the hardest thing to hand across a counter.
       Everybody wants it and nobody wants to be given it.
+      Put it down flat where I can count it,
+      And I promise I will not make a speech.
 
       [Outro - cold stop]
     take:
@@ -304,51 +291,39 @@ songs:
     outro: sustain
     target_duration: "4:05"
     prompt: >-
-      Contemporary produced pop, 92 BPM, tender and patient, steady. Female lead vocal in mid
-      register, clear and unforced, plain conversational diction, sung just ahead of the beat and
-      never belted, one continuous unedited take. Three group voices answering the lead line for
-      line across the chorus. Harpsichord-toned electric keyboard, fretted electric bass, compact
-      drum kit, hand percussion, tuned chimes, and the distant sound of wooden chairs being moved
-      in time at the far end of the hall, left in as part of the percussion. Tracked live in a
-      large reflective hall. Twelve seconds of keyboard and moving chairs before the first sung
+      Soft rock, 92 BPM, tender and patient, steady. Female lead vocal in mid register, clear and
+      unforced, plain conversational diction, sung just ahead of the beat and never belted, one
+      continuous unedited take. Three group voices in a low harmony on the bridge only.
+      Harpsichord-toned electric keyboard, fretted electric bass, compact drum kit, hand percussion,
+      tuned chimes, and the distant sound of wooden chairs being moved in time at the far end of the
+      hall, left in as part of the percussion. Tracked live in a large reflective hall. Three verses
+      and a bridge, no chorus. Twelve seconds of keyboard and moving chairs before the first sung
       word. Ends sustained.
-    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, vocal edits or comping
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, vocal edits or comping, dance-pop and modern radio pop production
     lyrics: |
       [Intro - 12 seconds, keyboard over chairs moving in time at the far end of the hall, no vocal]
 
       [Verse 1]
-      Sell the rest of it, I don't mind,
-      The shelf was never any good, the chairs don't match.
-      But whatever happens to this place,
-      Whatever happens to us, keep the table.
-
-      [Chorus]
-      Keep the table (keep the table)
-      It's had everything on it worth having (everything worth having)
-      Keep the table (keep the table)
-      Both of us have cried at it and both of us have laughed.
+      Sell the rest of it, I don't mind.
+      The shelf was never any good, the chairs don't match,
+      And half of it came up on a hauler that is not running now.
+      But whatever happens to this place - keep the table.
 
       [Verse 2]
-      It's got the ring from a cup that neither of us owns,
-      A dent from a night we don't talk about now.
-      Somebody's initials underneath from before we were here,
-      And they didn't keep it, and I would like us to be better than that.
-
-      [Chorus]
-      Keep the table (keep the table)
-      It's had everything on it worth having (everything worth having)
-      Keep the table (keep the table)
-      Both of us have cried at it and both of us have laughed.
+      It has the ring from a cup that neither of us owns,
+      A dent from a night we don't talk about now,
+      Somebody's initials underneath from before this was a berth,
+      And they did not keep it, and I would like us to be better than that.
 
       [Bridge]
-      I'm not saying stay. I'm saying if you go,
-      Don't let them put this out on the landing for anyone.
-
-      [Final Chorus - all four voices, low harmony underneath]
-      Keep the table (keep the table)
-      It's had everything on it worth having (everything worth having)
-      Keep the table (keep the table)
       Both of us have cried at it and both of us have laughed.
+      It has had everything on it worth having.
+
+      [Verse 3]
+      I am not saying stay. I am saying if you go,
+      Don't let them put it out on the landing for anyone.
+      Keep the table. Take it wherever you are taking it.
+      There is a chair here with your name worn into the arm.
 
       [Outro - sustain, keyboard holding, chairs stopping last]
     take:
@@ -369,51 +344,45 @@ songs:
     outro: fade
     target_duration: "2:50"
     prompt: >-
-      Contemporary produced pop, 126 BPM, secretive and playful, brisk. Female lead vocal in mid
-      register, clear and unforced, plain conversational diction, sung just ahead of the beat and
-      never belted. Three group voices answering the lead line for line across the chorus, dropping
-      to a close whispered answer at the title line. Harpsichord-toned electric keyboard, fretted
-      electric bass, compact drum kit, hand percussion, tuned chimes. Tracked live in a large
-      reflective hall, minimal overdub. Every instrument stops dead under the title line each time
-      it comes, leaving only the whispered group answer, then the band returns on the next bar.
-      Fade.
-    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+      Power-pop, 126 BPM, secretive and playful, brisk. Female lead vocal in mid register, clear and
+      unforced, plain conversational diction, sung just ahead of the beat and never belted. Three
+      group voices dropping to a close whispered answer at the title line and singing in unison
+      elsewhere. Harpsichord-toned electric keyboard, fretted electric bass, compact drum kit, hand
+      percussion, tuned chimes. Tracked live in a large reflective hall, minimal overdub. Every
+      instrument stops dead under the title line each time it comes, leaving only the whispered
+      group answer, then the band returns on the next bar. A spoken-quiet middle eight over keyboard
+      alone. Fade.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, dance-pop and modern radio pop production, four-on-the-floor kick
     lyrics: |
       [Intro - 6 seconds, keyboard and hand percussion, no vocal]
 
       [Verse 1]
       Out the side door while they were still clapping,
       Down the ramp with our coats half on.
-      Somebody's speech was going to go on for an hour
+      Somebody's Lumen Festival speech was going to run an hour
       And we were two streets away before the room noticed.
 
-      [Chorus]
-      No one saw us (no one saw us - band stops, whispered answer only)
+      [Chorus - band stops dead under the title line, whispered answer only]
       No one saw us (no one saw us)
-      Half the evening still in front of us
-      And nobody's got our names down anywhere.
+      Half the evening still in front of us,
+      And nobody has our names down anywhere,
+      And nobody is going to ask.
+
+      [Middle eight]
+      Somebody is counting the chairs by now.
+      Let them count. Let them count.
 
       [Verse 2]
       We had the good part and we left the rest,
-      That's not rudeness, that's arithmetic.
-      You said we'd be missed and I said we won't,
-      And we weren't, and that was the best of it.
+      That is not rudeness, that is arithmetic.
+      We got the late bench at the transfer hall to ourselves,
+      You said we would be missed, and we weren't, and that was the best of it.
 
-      [Chorus]
-      No one saw us (no one saw us - band stops, whispered answer only)
+      [Chorus - band stops dead under the title line, whispered answer only]
       No one saw us (no one saw us)
-      Half the evening still in front of us
-      And nobody's got our names down anywhere.
-
-      [Bridge]
-      Somebody's counting the chairs by now.
-      Let them count. Let them count.
-
-      [Final Chorus - all four voices]
-      No one saw us (no one saw us - band stops, whispered answer only)
-      No one saw us (no one saw us)
-      Half the evening still in front of us
-      And nobody's got our names down anywhere.
+      Half the evening still in front of us,
+      And nobody has our names down anywhere,
+      And nobody is going to ask.
 
       [Outro - fade on the whispered answer over the keyboard]
     take:
@@ -433,49 +402,48 @@ songs:
     outro: cold
     target_duration: "2:25"
     prompt: >-
-      Contemporary produced pop, 142 BPM, cheerful and affectionate, quick. Female lead vocal in
-      mid register, clear and unforced, plain conversational diction, sung just ahead of the beat
-      and never belted. Three group voices answering the lead line for line across the chorus.
-      Harpsichord-toned electric keyboard, fretted electric bass, compact drum kit, hand
-      percussion, tuned chimes, and dry clicking coat buttons carrying the first five seconds and
-      staying under the first verse before the kit enters. Tracked live, tighter and drier than the
-      full hall, close and bright. Cold stop.
-    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, long hall reverb
+      Power-pop, 142 BPM, cheerful and affectionate, quick. Female lead vocal in mid register, clear
+      and unforced, plain conversational diction, sung just ahead of the beat and never belted.
+      Three group voices answering the lead line for line across the short chorus. Harpsichord-toned
+      electric keyboard, fretted electric bass, compact drum kit, hand percussion, tuned chimes, and
+      dry clicking coat buttons carrying the first five seconds and staying under the first verse
+      before the kit enters. Tracked live, tighter and drier than the full hall, close and bright.
+      Three verses and three short choruses, no bridge. Cold stop.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, long hall reverb, dance-pop and modern radio pop production
     lyrics: |
       [Intro - 5 seconds, dry clicking coat buttons alone, no vocal]
 
       [Verse 1]
       One good jacket between the four of us
-      And whoever's got the interview gets it that day.
+      And whoever has the interview gets it that day.
       It has been to every important room in this town
       And it has never once been to the same one twice.
 
       [Chorus]
       One good jacket (one good jacket)
       Hanging on the back of whoever needs it (whoever needs it)
-      One good jacket (one good jacket)
       And a very good reason to stay friends.
 
       [Verse 2]
-      There's a mark on the cuff from a night that went well,
+      There is a mark on the cuff from a night that went well
       And a thread coming loose that we all keep meaning to fix.
-      You wore it to ask a question you'd been sitting on for months
-      And you came back and you wouldn't tell us what she said.
+      It went down to the relay office to ask for more time
+      And it came back with a month, which is more than I would have got.
 
       [Chorus]
       One good jacket (one good jacket)
       Hanging on the back of whoever needs it (whoever needs it)
-      One good jacket (one good jacket)
       And a very good reason to stay friends.
 
-      [Bridge]
-      When we're rich we'll get four. We won't, though.
-      We'll get one better one and start again.
+      [Verse 3]
+      You wore it on Clearing Day to ask a question you had sat on for months,
+      And you came back and you would not tell us what she said.
+      When we are rich we will get four. We won't, though.
+      We will get one better one and start again.
 
-      [Final Chorus - all four voices]
+      [Chorus]
       One good jacket (one good jacket)
       Hanging on the back of whoever needs it (whoever needs it)
-      One good jacket (one good jacket)
       And a very good reason to stay friends.
 
       [Outro - cold stop, one last button click after the band]
@@ -497,51 +465,50 @@ songs:
     outro: fade
     target_duration: "3:25"
     prompt: >-
-      Contemporary produced pop, 104 BPM, observant and restrained. Female lead vocal in mid
-      register, clear and unforced, plain conversational diction, sung just ahead of the beat and
-      never belted. Three group voices answering the lead line for line across the chorus.
-      Harpsichord-toned electric keyboard, fretted electric bass, compact drum kit, hand
-      percussion, tuned chimes, and three tuned struck metal rail panels playing an ascending
-      three-note figure through every chorus and nowhere else. Tracked live, drier than the full
-      hall, close and bright. Eleven seconds of struck metal and keyboard before the first sung
-      word. Fade.
-    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+      Soft rock, 104 BPM, observant and restrained. Female lead vocal in mid register, clear and
+      unforced, plain conversational diction, sung just ahead of the beat and never belted. Three
+      group voices in a close low harmony on the chorus. Harpsichord-toned electric keyboard,
+      fretted electric bass, compact drum kit, hand percussion, tuned chimes, and three tuned struck
+      metal rail panels playing an ascending three-note figure through every chorus and nowhere
+      else. Tracked live, drier than the full hall, close and bright. Eleven seconds of struck metal
+      and keyboard before the first sung word. Fade.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, dance-pop and modern radio pop production, four-on-the-floor kick
     lyrics: |
       [Intro - 11 seconds, three tuned metal panels ascending over keyboard, no vocal]
 
       [Verse 1]
       Nobody talks in a line like this,
       Everybody looks at the same bit of wall.
-      The man at the front has been here since the doors,
+      The man at the front has been here since the doors opened
       And the woman behind me has a folder she keeps straightening.
 
       [Chorus]
-      It's a quiet queue (quiet queue)
-      Everybody in it needs one thing (needs one thing)
-      It's a quiet queue (quiet queue)
+      Everybody in it needs one thing
       And not one of us will say what it is.
-
-      [Verse 2]
-      I know what I'm asking and I've rehearsed it twice,
-      Short sentences, nothing about how it happened.
       They give you four minutes and a form with a box,
       And the whole of the last two years goes in the box.
 
+      [Verse 2]
+      I know what I am asking and I have rehearsed it twice,
+      Short sentences, nothing about how it happened.
+      The ration desk shuts at four and the transfer hall at six
+      And whichever one I get to, somebody signs or doesn't.
+
       [Chorus]
-      It's a quiet queue (quiet queue)
-      Everybody in it needs one thing (needs one thing)
-      It's a quiet queue (quiet queue)
+      Everybody in it needs one thing
       And not one of us will say what it is.
+      They give you four minutes and a form with a box,
+      And the whole of the last two years goes in the box.
 
       [Bridge]
-      If you're behind me, I hope you get it.
-      That's all. I hope you get it.
+      If you are behind me, I hope you get it.
+      That is all. I hope you get it.
 
       [Final Chorus - all four voices]
-      It's a quiet queue (quiet queue)
-      Everybody in it needs one thing (needs one thing)
-      It's a quiet queue (quiet queue)
+      Everybody in it needs one thing
       And not one of us will say what it is.
+      They give you four minutes and a form with a box,
+      And the whole of the last two years goes in the box.
 
       [Outro - fade on the ascending metal figure]
     take:
@@ -557,57 +524,57 @@ songs:
     fact: >-
       Ivena Sorn holds one resonance-pipe note beneath the final verse, her only appearance on a
       Measure Kindly record.
-    arrangement_note: one long resonance-pipe note enters under the final verse and holds to the end, the only guest sound on the record
+    arrangement_note: one long resonance-pipe note enters under the third verse and holds to the end, the only guest sound on the record
     intro: 19
     outro: sustain
     target_duration: "4:40"
     prompt: >-
-      Contemporary produced pop, 74 BPM, wistful and nocturnal, slow. Female lead vocal in mid
-      register, clear and unforced, plain conversational diction, sung just ahead of the beat and
-      never belted. Three group voices answering the lead quietly across the chorus. Harpsichord-toned
-      electric keyboard, fretted electric bass, brushed compact drum kit, hand percussion, tuned
-      chimes, and one long deep alloy-pipe tone like a low organ note entering under the final
-      verse and holding to the end. Tracked live, dry and close. Nineteen seconds of keyboard and
-      brushed kit before the first sung word. Ends on the held pipe tone.
-    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, belted vocals, synth pads
+      Soft rock, 74 BPM, wistful and nocturnal, slow. Female lead vocal in mid register, clear and
+      unforced, plain conversational diction, sung just ahead of the beat and never belted. Three
+      group voices quietly under the lead on the chorus. Harpsichord-toned electric keyboard,
+      fretted electric bass, brushed compact drum kit, hand percussion, tuned chimes, and one long
+      deep alloy-pipe tone like a low organ note entering under the third verse and holding to the
+      end. Tracked live, dry and close. Three verses and three choruses, no bridge. Nineteen seconds
+      of keyboard and brushed kit before the first sung word. Ends on the held pipe tone.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, belted vocals, synth pads, dance-pop and modern radio pop production
     lyrics: |
       [Intro - 19 seconds, keyboard and brushed kit, bass at thirteen seconds, no vocal]
 
       [Verse 1]
       Everything shuts at once around here,
-      One minute it's a street and then it's a shape.
-      I walk it slower than I need to,
-      Because there is nobody waiting up and I have nowhere to be.
+      One minute it is a street and then it is a shape.
+      The last ferry went at eleven and took the noise with it,
+      And I walk it slower than I need to.
 
       [Chorus]
-      After the streetlights (after the streetlights)
-      The town is honest for an hour (honest for an hour)
-      After the streetlights (after the streetlights)
+      The town is honest for an hour once the lights go over,
       Nothing is dressed up and neither am I.
+      There is nobody waiting up and nowhere I have to be,
+      And that is not the worst way to be out.
 
       [Verse 2]
       I liked you better than I ever said,
       Which is the kind of sentence you can only get out in the dark.
-      You'd have laughed at me. You'd have been kind about it.
-      That's the worst of it, honestly. You'd have been kind.
+      You would have laughed at me. You would have been kind about it.
+      That is the worst of it, honestly. You would have been kind.
 
       [Chorus]
-      After the streetlights (after the streetlights)
-      The town is honest for an hour (honest for an hour)
-      After the streetlights (after the streetlights)
+      The town is honest for an hour once the lights go over,
       Nothing is dressed up and neither am I.
+      There is nobody waiting up and nowhere I have to be,
+      And that is not the worst way to be out.
 
-      [Final Verse - long low pipe tone enters here and holds]
-      There's a light on above the depot and a man locking up,
+      [Verse 3 - long low pipe tone enters here and holds]
+      There is a light on above the depot and a man locking up,
       And he nods at me the way you nod at somebody out too late.
-      I'll be fine in the morning, I'm always fine in the morning,
-      And I'd give the whole morning up to have the walk back with you.
+      The scrubber over the door is louder than the whole street.
+      I will be fine in the morning. I am always fine in the morning.
 
-      [Final Chorus - all four voices, quiet, over the held pipe tone]
-      After the streetlights (after the streetlights)
-      The town is honest for an hour (honest for an hour)
-      After the streetlights (after the streetlights)
+      [Chorus - quiet, over the held pipe tone]
+      The town is honest for an hour once the lights go over,
       Nothing is dressed up and neither am I.
+      I would give the whole morning up, and you know I would,
+      To have the walk back with you.
 
       [Outro - sustain, the pipe tone holding alone after the voices stop]
     take:
@@ -623,54 +590,45 @@ songs:
     fact: >-
       The group cut six lines from the second verse after a hall cleaner said the complaint made
       sense without them.
-    arrangement_note: the second verse is half the length of the first and the band does not fill the gap
+    arrangement_note: the second verse is two lines long where the first is four, and the band does not fill the gap
     intro: 4
     outro: cold
     target_duration: "3:00"
     prompt: >-
-      Contemporary produced pop, 130 BPM, direct and bright, brisk. Female lead vocal in mid
-      register, clear and unforced, plain conversational diction, sung just ahead of the beat and
-      never belted. Three group voices answering the lead line for line across the chorus.
-      Harpsichord-toned electric keyboard, fretted electric bass, compact drum kit, hand
-      percussion, tuned chimes. Tracked live, dry and close. The second verse is half the length of
-      the first and nothing fills the gap - the chorus simply arrives early. Cold stop.
-    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+      Power-pop, 130 BPM, direct and bright, brisk. Female lead vocal in mid register, clear and
+      unforced, plain conversational diction, sung just ahead of the beat and never belted. Three
+      group voices in unison with the lead on the last two lines of each chorus. Harpsichord-toned
+      electric keyboard, fretted electric bass, compact drum kit, hand percussion, tuned chimes.
+      Tracked live, dry and close. The second verse is two lines where the first is four and nothing
+      fills the gap — the chorus simply arrives early. Two verses, two choruses, no bridge. Cold
+      stop.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, dance-pop and modern radio pop production, four-on-the-floor kick
     lyrics: |
       [Intro - 4 seconds, keyboard and drum pickup, no vocal]
 
       [Verse 1]
-      You wrote me four pages and I read them all twice,
-      And I still could not tell you what it is you want.
-      There's a sentence in the middle of the third one somewhere
-      That I think is the whole thing, and it's wearing a hat and a coat.
+      You sent me four pages down the relay and I read them all twice
+      And I still could not tell you what it is that you want.
+      There is a sentence in the middle of the third one somewhere
+      That I think is the whole thing, and it is wearing a hat and a coat.
 
       [Chorus]
-      Say it plainly (say it plainly)
-      I'm not going to think less of you (not going to)
-      Say it plainly (say it plainly)
+      Say it plainly. I am not going to think less of you.
       Short words are not the same as small ones.
+      We have the lag between us and that is delay enough -
+      Don't put four pages on top of it.
 
-      [Verse 2 - half length]
-      I've done it too. I've done it for a year.
-      Here's mine, then, and it's five words long.
+      [Verse 2 - two lines only, nothing fills the gap]
+      The woman who cleans the hall read it over my shoulder.
+      She said: you had it in the first line, love. Cut the rest.
 
       [Chorus]
-      Say it plainly (say it plainly)
-      I'm not going to think less of you (not going to)
-      Say it plainly (say it plainly)
+      Say it plainly. I am not going to think less of you.
       Short words are not the same as small ones.
+      Here is mine, then, and it is five words long,
+      And I am not sending it - I am saying it.
 
-      [Bridge]
-      The woman who cleans the hall said it best:
-      "You had it in the first line, love. Cut the rest."
-
-      [Final Chorus - all four voices]
-      Say it plainly (say it plainly)
-      I'm not going to think less of you (not going to)
-      Say it plainly (say it plainly)
-      Short words are not the same as small ones.
-
-      [Outro - cold stop on "small ones"]
+      [Outro - cold stop on the last word]
     take:
       attempts: null
       model_version: null
@@ -689,57 +647,57 @@ songs:
     outro: fade
     target_duration: "5:50"
     prompt: >-
-      Contemporary produced pop, 88 BPM, patient and hopeful, building steadily across nearly six
-      minutes. Female lead vocal in mid register, clear and unforced, plain conversational diction,
-      sung just ahead of the beat and never belted. Backing voices build across the song from one
-      to all four. One continuous harpsichord-toned electric keyboard pattern runs from the first
-      second to the last, plain at the start and heavily decorated by the end, with fretted
-      electric bass, compact drum kit, hand percussion and tuned chimes built on top of it. Tracked
-      live in a large reflective hall, minimal overdub. Twenty-two seconds of the keyboard pattern
-      alone before the first sung word. Long fade on the pattern.
-    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections
+      Soft rock building into sunshine pop, 88 BPM, patient and hopeful, building steadily across
+      nearly six minutes. Female lead vocal in mid register, clear and unforced, plain
+      conversational diction, sung just ahead of the beat and never belted. Backing voices build
+      across the song from one to all four. One continuous harpsichord-toned electric keyboard
+      pattern runs from the first second to the last, plain at the start and heavily decorated by
+      the end, with fretted electric bass, compact drum kit, hand percussion and tuned chimes built
+      on top of it. Tracked live in a large reflective hall, minimal overdub. Three verses, a bridge
+      and a final chorus. Twenty-two seconds of the keyboard pattern alone before the first sung
+      word. Long fade on the pattern.
+    exclude: distorted guitars, stadium drums, orchestral strings, brass, heavy vocal tuning, spoken-word or rapped sections, dance-pop and modern radio pop production, four-on-the-floor kick
     lyrics: |
       [Intro - 22 seconds, keyboard pattern alone, bass at fifteen seconds, kit at nineteen, no vocal]
 
       [Verse 1]
       I have been awake since the middle of the night
       Doing arithmetic I already know the answer to.
-      The window's going grey at the bottom edge,
-      Which is the first honest thing that's happened for hours.
+      The window is going grey at the bottom edge,
+      Which is the first honest thing that has happened for hours.
 
       [Chorus 1 - lead alone]
-      Morning takes its time (takes its time)
-      It does not care that you were up (does not care)
-      Morning takes its time (takes its time)
-      And it comes anyway, and it comes anyway.
+      It does not hurry and it does not care that you were up.
+      It comes anyway. It comes anyway.
+      There is nothing anybody ever did to bring it on
+      And nothing anybody ever did to hold it off.
 
       [Verse 2]
       Somebody's boots on the stair at five,
-      Somebody's kettle, somebody's radio low.
+      Somebody's kettle, somebody's carrier wave down low.
       A whole building deciding to be a day again
       Without a vote, without a meeting, without one word from me.
 
       [Chorus 2 - two voices]
-      Morning takes its time (takes its time)
-      It does not care that you were up (does not care)
-      Morning takes its time (takes its time)
-      And it comes anyway, and it comes anyway.
+      It does not hurry and it does not care that you were up.
+      It comes anyway. It comes anyway.
+      There is nothing anybody ever did to bring it on
+      And nothing anybody ever did to hold it off.
 
       [Bridge]
       I used to think the trick was getting through the night.
       The trick is being here for the part after it.
 
       [Verse 3]
-      I'll be no good today and that is allowed,
-      I'll do the one job I can do and leave the rest.
-      And you'll come in at noon with your terrible news
-      And we will make it smaller between us, the way we do.
+      I will be no good today and that is allowed.
+      I will do the one job I can do and leave the rest,
+      And the scrubber will run and the hall will open at eight,
+      And you will come in at noon with your terrible news.
 
       [Final Chorus - all four voices, low harmony underneath]
-      Morning takes its time (takes its time)
-      It does not care that you were up (does not care)
-      Morning takes its time (takes its time)
-      And it comes anyway, and it comes anyway.
+      It does not hurry and it does not care that you were up.
+      It comes anyway. It comes anyway.
+      And we will make the day smaller between us, the way we do.
       It comes anyway.
 
       [Outro - long fade on the decorated keyboard pattern]
