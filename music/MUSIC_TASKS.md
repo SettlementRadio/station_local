@@ -61,9 +61,9 @@ marked **NEXT**.
 | Stage | Cards | Last done | Status |
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
-| **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-47** the pilot's 45 lyrics · 2026-08-13 | **M-46 next.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15 |
+| **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-48** Frontier Reels grows to 95 · 2026-08-13 | **M-49 next**, and it is the last card of the stage. §12's rules 1–6 are live and green; 7–8 stay owed to M-15 |
 | 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-47** the pilot's 45 lyrics · 2026-08-13 | **M-18 is unblocked** — 45 songs of words and prompts are ready to generate |
-| 2 · The wiki — 7 genres left | M-07 … M-15 | **M-11** pulse-dance · 2026-08-11 | 305 playable songs written of 500 · M-12 is now 55 songs and waits its turn |
+| 2 · The wiki — 7 genres left | M-07 … M-15 | **M-11** pulse-dance · 2026-08-11 | 370 playable songs written of 500 · M-12 is now 55 songs and waits its turn |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
@@ -264,24 +264,59 @@ power-pop, jangle, sunshine and soft-rock palette, and every one of them now exc
 production by name; **no voice line was touched.**
 Depends on: M-43, M-45
 
-### M-46 · `[agent]` lane-rock grows to 110 — **NEXT**
+### M-46 · `[agent]` lane-rock grows to 110 — **DONE 2026-08-13**
 Files: `music/wiki/lane-rock.yaml`, `music/CONSTANTS.md`, `music/plan.yaml`
 Check: 110 playable songs split 15 / 50 / 45 across labels 2, 4 and 5; 5 layer-A bands, the fifth on
 label 5. `plan.yaml`'s `owed_to: M-46` line is gone. `make check` green including M-45's rules.
 Names screened.
 Note: 35 new songs. Second Hitch gains a short record on label 2, the two Forge bands gain 15
 between them, and label 5 gets a second hauler band beside Burn Day Wages.
+Result: 110 playable songs across 13 layer-A albums, split exactly 15 / 50 / 45. Five new records —
+Second Hitch's five-song EP `al_131` *Bay Rate* (2619, label 2), Pipe and Hammer's `al_132` *Four
+Won't Fill It* (2612, 8 songs), Ballast Weather's `al_133` *The Route in Order* (2619, 7), and two
+for the new band. **The fifth band is `b_061` Turn and Burn** — five haulers on the co-operative's
+fastest circuit who have never stayed in a port longer than a turnaround, Synthesist, the first band
+the membership voted to buy amplification for. They carry `al_134` *One Day in Port* (2619, 7) and
+`al_135` *Paid by the Port* (2624, 8), and their running argument with Burn Day Wages about whether
+anything should be put to a vote is the thing a presenter can use all night. **Anchor year 2612 is
+repaired**: Pipe and Hammer's record of the year Saul Ravik left over the amplified pipes puts a
+fourth band and a fourth label on it, and the eight anchors now stand at seven satisfied and only
+2559 short — which no card can fix (`CONSTANTS.md` §1). **Rule 6 got safer, not tighter:** M-45
+reported Pipe and Hammer at 10 studio anecdotes in 21 facts against a ceiling of half, and the eight
+new facts are all about people, so the band now reads 10 in 29. No band in the genre is over 34%.
+`make music-screen` returned nothing on 267 distinct names. **27 of the 35 new songs land on 2619
+and 2624**, taking the catalogue to 161 of 340 inside the last eight years — COMMISSION §3's
+half-recent rule needs 89 of the remaining 160, or 56% of everything still to be written (D-073).
 Depends on: M-44, M-45
 
-### M-48 · `[agent]` Frontier Reels grows to 95 — and label 2 gets its third band
+### M-48 · `[agent]` Frontier Reels grows to 95 — and label 2 gets its third band — **DONE 2026-08-13**
 Files: `music/wiki/frontier-reels.yaml`, `music/CONSTANTS.md`, `music/plan.yaml`
 Check: 95 playable songs split 45 / 25 / 25 across labels 2, 4 and 5; 4 layer-A bands, the fourth on
 label 2. Harbor Standard is back to ≥3 layer-A bands. `plan.yaml`'s `owed_to: M-48` line is gone.
 `make check` green. Names screened.
 Note: label 2 lost its deck-talk band in M-44 and this is where it is repaired.
+Result: 95 playable songs across 12 layer-A albums, split exactly 45 / 25 / 25. **Label 2 is
+repaired and needs nothing further** — Harbor Standard now has 3 layer-A bands, 60 songs and 7
+albums, past §5's floor on all three counts, and void-ballads will only add to it. **The fourth band
+is `b_062` Board and Bow**, formed in Cold Harbor in 2612 by Suli Orley, the guitarist Wire and Rosin
+hired off the dance floor in 2604; she sings the lead now, Alis Doone calls the figures over the top
+of the band on every track, and they will not play a hall that charges the dancers more than it pays
+the band. Their two records are `al_138` *Learned Off the Floor* (2619, 7) and `al_139` *We Went the
+Other Way* (2624, 8), the second made in Concordance's reopened hall with four hundred Cold Harbor
+dancers brought along at the label's expense. **The Foundry Set could not make a new record** — the
+band stopped in 2599 and both anchors inside its life were spent — so label 4's ten are `al_136`
+*Played and Never Pressed*, dance tunes Orsa Lipp kept from 2591–2599 that Deep Register issued in
+2619 with a disputed credit, which is 2619's own anchor story (D-074). Label 5's five are `al_137`
+*Burn Festival Set*, Loose Cargo at the first burn festival in 2594, which gives that anchor a fifth
+band. **25 of the 30 new songs are dated 2619 or 2624**, so the catalogue stands at 186 of 370 inside
+the last eight years and COMMISSION §3's half-recent rule now needs 64 of the remaining 130 — **49%,
+against the 56% D-073 handed on.** `make music-screen` returned nothing on 231 distinct names. Rule 6
+got safer again: the new band reads 0 studio anecdotes in 15 facts and no band in the genre is over
+24%. **One line of existing prose changed** — `b_044` The Turning Room can no longer be the only reel
+band still working, and now shares the Cold Harbor halls with the band whose singer it tried to hire.
 Depends on: M-46
 
-### M-49 · `[agent]` old-system sessions grows to 90
+### M-49 · `[agent]` old-system sessions grows to 90 — **NEXT**
 Files: `music/wiki/old-system-sessions.yaml`, `music/CONSTANTS.md`, `music/plan.yaml`
 Check: 90 playable songs on label 7, across 4 layer-A bands — a fourth importer band joins the
 three. `plan.yaml`'s `owed_to: M-49` line is gone. `make check` green. Names screened.

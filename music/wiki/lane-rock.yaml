@@ -107,7 +107,7 @@ layer_a:
         any line he would not say out loud at the gate. Harbor Standard offered them a core studio in
         2623 and the band turned it down twice, which the label now puts on the sleeve. They rehearse
         after night shift and have never played a room they could not walk home from.
-      album_ids: [al_032]
+      album_ids: [al_131, al_032]
 
     - id: b_017
       name: Pipe and Hammer
@@ -162,7 +162,7 @@ layer_a:
         pipes in 2612 and Ade Prosk has held the bass since. Juno Kerrick tunes the pipes to whatever
         hall they are in and makes the guitars follow, which is why no two of their records sit in
         the same key.
-      album_ids: [al_033, al_034]
+      album_ids: [al_033, al_132, al_034]
 
     - id: b_018
       name: Ballast Weather
@@ -204,7 +204,7 @@ layer_a:
         the table it is offered at. Kolm Estry doubles on resonance pipes, which is the only reason
         Deep Register signed a second Forge band at all. They play the same four settlements every
         year in the same order and have said they intend to keep doing so.
-      album_ids: [al_035, al_036]
+      album_ids: [al_035, al_133, al_036]
 
     - id: b_019
       name: Burn Day Wages
@@ -255,7 +255,113 @@ layer_a:
         signing.
       album_ids: [al_037, al_038, al_039]
 
+    - id: b_061
+      name: Turn and Burn
+      kind: group
+      home_settlement: the between
+      label: label_5
+      genre: lane-rock
+      active_from: 2607
+      active_to: 2626
+      members:
+        - id: p_rhea_molt
+          name: Rhea Molt
+          genre: lane-rock
+          instruments: [lead vocal, rhythm composite guitar]
+          active_from: 2607
+          active_to: 2626
+        - id: p_cass_verrow
+          name: Cass Verrow
+          genre: lane-rock
+          instruments: [lead composite guitar, backing vocal]
+          active_from: 2607
+          active_to: 2626
+        - id: p_tem_osgar
+          name: Tem Osgar
+          genre: lane-rock
+          instruments: [composite bass, backing vocal]
+          active_from: 2607
+          active_to: 2626
+        - id: p_wyll_petrin
+          name: Wyll Petrin
+          genre: lane-rock
+          instruments: [drum kit, struck alloy]
+          active_from: 2607
+          active_to: 2626
+        - id: p_iber_tance
+          name: Iber Tance
+          genre: lane-rock
+          instruments: [compact keyboards, backing vocal]
+          active_from: 2614
+          active_to: 2626
+      movement: Synthesist
+      bio: >-
+        Turn and Burn are five haulers on the Common Wake Cooperative's fastest circuit and have
+        never spent longer than a turnaround in a port they played. Rhea Molt decides the set on the
+        walk from the berth to the hall and has never written one down. They were the first band the
+        co-operative voted to buy amplification for, which took three ballots and is still brought
+        up at meetings. Burn Day Wages and Turn and Burn are the co-operative's two lane-rock bands
+        and have not agreed about anything since 2619.
+      album_ids: [al_134, al_135]
+
   albums:
+    - id: al_131
+      title: Bay Rate
+      band: b_016
+      label: label_2
+      release_year: 2619
+      kind: EP
+      genre: lane-rock
+      cornerstone: false
+      notes: >-
+        Five songs cut in a Cold Harbor transfer shed in 2619, the year the four of them started
+        playing together, on a night the bay was out of use for a door repair and nobody needed it.
+        The band paid for it themselves and sold sixty copies at the gate over one winter. Harbor
+        Standard bought the recording afterwards and pressed it without changing a thing, which is
+        how a shed act came to be on a flagship label without ever auditioning for one. Wen Arbo has
+        said the whole record cost less than a night's wages.
+      songs:
+        - id: s_1076
+          title: Bay Rate
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [blunt, driving, fast]
+          playable: true
+          fact: Wen Arbo built the verse out of the four different rates the crew was paid for four different bays, which they had argued about all that week.
+          credits: {writers: [p_wen_arbo], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda], producer: p_wen_arbo}
+        - id: s_1077
+          title: Door Out of Use
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [wry, rowdy, brisk]
+          playable: true
+          fact: The band only had the bay that night because its door was out of use, and the take keeps the repair crew's radio under the second verse.
+          credits: {writers: [p_wen_arbo, p_orl_mance], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda], producer: p_wen_arbo}
+        - id: s_1078
+          title: Second Hitch
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [defiant, singalong, midtempo]
+          playable: true
+          fact: Dessa Kelm wrote it about being the crew called in when the first one does not turn up, and the band took their name from it rather than the other way round.
+          credits: {writers: [p_dessa_kelm], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda], producer: p_wen_arbo}
+        - id: s_1079
+          title: Walk Home After
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [tender, plain, slow]
+          playable: true
+          fact: Wen Arbo wrote it about the walk back from the shed, and the band have never played a room they could not walk home from since.
+          credits: {writers: [p_wen_arbo], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda], producer: p_wen_arbo}
+        - id: s_1080
+          title: Nobody Signed Us
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [proud, comic, fast]
+          playable: true
+          fact: Teff Onda counts the band in by shouting the number of copies they had money for, which was sixty.
+          credits: {writers: [p_wen_arbo, p_teff_onda], players: [p_wen_arbo, p_dessa_kelm, p_orl_mance, p_teff_onda], producer: p_wen_arbo}
+
     - id: al_032
       title: Nothing Loose
       band: b_016
@@ -433,6 +539,87 @@ layer_a:
           playable: true
           fact: Everyone in the hall sings the closing chorus, including the two engineers, who are credited on the sleeve by first name only.
           credits: {writers: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_tor_dolo], players: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_tor_dolo], producer: p_juno_kerrick}
+
+    - id: al_132
+      title: Four Won't Fill It
+      band: b_017
+      label: label_4
+      release_year: 2612
+      kind: album
+      genre: lane-rock
+      cornerstone: false
+      notes: >-
+        The record Pipe and Hammer made in the year Saul Ravik left over the amplified pipes and Ade
+        Prosk came in on the bass. Half of it was already written when the argument started and the
+        band would not go back and redo the early songs, so both bass players are on it and the
+        sound changes halfway through. Deep Register wanted one name on the sleeve and Havel Ost
+        refused, which is why it prints two. It sold slowly and it is still the record Forge players
+        argue about, because nobody agrees which half is the better one.
+      songs:
+        - id: s_1081
+          title: Four Won't Fill It
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [driving, defiant, fast]
+          playable: true
+          fact: The title is what Juno Kerrick said to the rest of the band the first night he put the resonance pipes through an amplifier.
+          credits: {writers: [p_juno_kerrick, p_havel_ost], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_1082
+          title: Argue It in the Hall
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [angry, hard, brisk]
+          playable: true
+          fact: Saul Ravik plays the bass here and it is the last song of the band's he ever played on, four days before he left over the amplification.
+          credits: {writers: [p_havel_ost, p_saul_ravik], players: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_1083
+          title: Whoever Stays Plays
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [wry, rowdy, midtempo]
+          playable: true
+          fact: Havel Ost wrote it in one sitting the week the band was down to three players, and Juno Kerrick plays the bass part on it.
+          credits: {writers: [p_havel_ost], players: [p_havel_ost, p_juno_kerrick, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_1084
+          title: New Hands on the Low End
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [warm, singalong, midtempo]
+          playable: true
+          fact: Ade Prosk learned the band's whole set in nine days and plays this one in the key Saul Ravik had written it in.
+          credits: {writers: [p_havel_ost, p_juno_kerrick], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_1085
+          title: Same Riff, More of It
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [heavy, loud, fast]
+          playable: true
+          fact: Tor Dolo refused to play any harder to keep up with the amplified pipes, and the rest of the band came down to him instead.
+          credits: {writers: [p_havel_ost, p_tor_dolo], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_1086
+          title: The Hall Answers Back
+          track_number: 6
+          genre: lane-rock
+          mood_tags: [expansive, solemn, slow]
+          playable: true
+          fact: Ivena Sorn plays the low pipe unamplified beside Juno Kerrick's amplified one, and it is the only place on the record the two can be heard against each other.
+          credits: {writers: [p_juno_kerrick], players: [p_havel_ost, p_juno_kerrick, p_ade_prosk, p_tor_dolo, sp_ivena_sorn], producer: p_juno_kerrick}
+        - id: s_1087
+          title: Count the Empty Seats
+          track_number: 7
+          genre: lane-rock
+          mood_tags: [weary, blunt, midtempo]
+          playable: true
+          fact: Havel Ost built the lyric out of the attendance figures for the band's own halls in 2610 and 2611, which he had kept.
+          credits: {writers: [p_havel_ost], players: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_tor_dolo], producer: p_juno_kerrick}
+        - id: s_1088
+          title: Still the Same Four
+          track_number: 8
+          genre: lane-rock
+          mood_tags: [resolute, warm, midtempo]
+          playable: true
+          fact: Saul Ravik and Ade Prosk both play the last chorus, and it is the only thing the two of them ever recorded together.
+          credits: {writers: [p_havel_ost, p_juno_kerrick, p_tor_dolo], players: [p_havel_ost, p_juno_kerrick, p_saul_ravik, p_ade_prosk, p_tor_dolo], producer: p_juno_kerrick}
 
     - id: al_034
       title: Hammer Down the Line
@@ -627,6 +814,79 @@ layer_a:
           playable: true
           fact: The buzz under the last chorus is the cracked bridge of the scarred instrument Talla Venn has been repairing between sessions since 2591.
           credits: {writers: [p_isa_lorne, p_perin_dask], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin, sp_talla_venn], producer: p_isa_lorne}
+
+    - id: al_133
+      title: The Route in Order
+      band: b_018
+      label: label_4
+      release_year: 2619
+      kind: album
+      genre: lane-rock
+      cornerstone: false
+      notes: >-
+        Ballast Weather made four of these songs in the four settlement halls they play every year,
+        in the order the route takes them, and the other three in a Forge yard afterwards. Deep
+        Register would only pay for four rooms and Isa Lorne paid for the yard days herself rather
+        than cut a song. Perin Dask broke a string in the third hall and finished on five, and it
+        is the running order, not the songs, that people talk about: it is the only one of their
+        records that follows the route rather than the label's idea of a first side.
+      songs:
+        - id: s_1089
+          title: The Route in Order
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [driving, warm, brisk]
+          playable: true
+          fact: The running order is the order the band's annual route visits the four settlements, and Isa Lorne refused every rearrangement Deep Register proposed.
+          credits: {writers: [p_isa_lorne], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_1090
+          title: First Hall of the Year
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [bright, resolute, fast]
+          playable: true
+          fact: Kolm Estry plays the hall's own resonance pipes rather than the band's, and Ivena Sorn spent the afternoon before it bringing them back into tune.
+          credits: {writers: [p_kolm_estry, p_isa_lorne], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin, sp_ivena_sorn], producer: p_isa_lorne}
+        - id: s_1091
+          title: Five Strings Will Do
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [rowdy, comic, fast]
+          playable: true
+          fact: Perin Dask broke a string two lines in and played the rest on five, and that is the take on the record.
+          credits: {writers: [p_perin_dask], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_1092
+          title: Nothing Signed at the Table
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [blunt, hard, midtempo]
+          playable: true
+          fact: Isa Lorne wrote the verse out of what she says to anyone who puts a contract in front of her at the end of an evening.
+          credits: {writers: [p_isa_lorne], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_1093
+          title: Yard Days
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [weary, plain, slow]
+          playable: true
+          fact: Isa Lorne paid for the three days in the Forge yard out of her own money after Deep Register declined to book a fifth room.
+          credits: {writers: [p_isa_lorne, p_kolm_estry], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_1094
+          title: Ask the Hall Keeper
+          track_number: 6
+          genre: lane-rock
+          mood_tags: [wry, warm, midtempo]
+          playable: true
+          fact: The verse is what the keeper of the second hall on the route has said to the band on arrival every year since 2600, word for word.
+          credits: {writers: [p_isa_lorne, p_perin_dask], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
+        - id: s_1095
+          title: Off Season
+          track_number: 7
+          genre: lane-rock
+          mood_tags: [reflective, sustained, slow]
+          playable: true
+          fact: Neve Atlin plays brushes here and nowhere else in the band's whole catalogue, at Isa Lorne's asking and after arguing against it for a week.
+          credits: {writers: [p_isa_lorne], players: [p_isa_lorne, p_perin_dask, p_kolm_estry, p_neve_atlin], producer: p_isa_lorne}
 
     - id: al_036
       title: Slow Yard
@@ -990,6 +1250,163 @@ layer_a:
           playable: true
           fact: Calo Meret copied out a full arrangement and then cut it to a single sustained chord, which is what the record uses.
           credits: {writers: [p_dov_reyland, p_ryke_alden], players: [p_dov_reyland, p_ryke_alden, p_bel_corrow, p_hess_vantry, p_una_brack, sp_calo_meret], producer: p_ryke_alden}
+
+    - id: al_134
+      title: One Day in Port
+      band: b_061
+      label: label_5
+      release_year: 2619
+      kind: album
+      genre: lane-rock
+      cornerstone: false
+      notes: >-
+        Turn and Burn made this across five ports in 2619 without staying anywhere longer than a
+        turnaround, and it is the first of their records to use the amplification the Common Wake
+        Cooperative had voted three times before it would buy. The membership then voted down the
+        band's request to be paid by the port rather than by the record, and two of these songs come
+        straight out of that. Rhea Molt has never written a set list down, so the running order here
+        is simply the order the songs were finished in. It travelled further than anything the
+        co-operative had issued since Burn Day Wages' last, which is where the bad feeling between
+        the two bands starts.
+      songs:
+        - id: s_1096
+          title: One Day in Port
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [driving, restless, fast]
+          playable: true
+          fact: Rhea Molt wrote it walking from the berth to the hall and the band played it that night without anyone else having heard it; the take on the record is from the following morning.
+          credits: {writers: [p_rhea_molt], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin, p_iber_tance], producer: p_cass_verrow}
+        - id: s_1097
+          title: Three Ballots for a Speaker
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [wry, rowdy, brisk]
+          playable: true
+          fact: The co-operative voted three times before it would pay for the band's amplification, and Cass Verrow's solo here is the first thing they ever played through it.
+          credits: {writers: [p_cass_verrow, p_rhea_molt], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin, p_iber_tance], producer: p_cass_verrow}
+        - id: s_1098
+          title: Paid by the Record
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [bitter, hard, fast]
+          playable: true
+          fact: Tem Osgar wrote it the evening the membership voted down the band's request to be paid by the port instead.
+          credits: {writers: [p_tem_osgar], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin, p_iber_tance], producer: p_cass_verrow}
+        - id: s_1099
+          title: Nothing to Unpack
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [comic, loud, fast]
+          playable: true
+          fact: Wyll Petrin has never carried more than one bag on a circuit, and the second verse is a list of what is in it.
+          credits: {writers: [p_wyll_petrin, p_rhea_molt], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin], producer: p_cass_verrow}
+        - id: s_1100
+          title: Berth Nineteen
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [tender, plain, slow]
+          playable: true
+          fact: Rhea Molt sings it to a partner who works the opposite circuit, and the two of them have been in the same port eleven times.
+          credits: {writers: [p_rhea_molt], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_iber_tance], producer: p_cass_verrow}
+        - id: s_1101
+          title: Faster Than the Freight
+          track_number: 6
+          genre: lane-rock
+          mood_tags: [triumphant, driving, fast]
+          playable: true
+          fact: Nessa Dray played the fiddle line an octave above where it was written, which Rhea Molt has said is the only change to one of her songs she has ever accepted.
+          credits: {writers: [p_rhea_molt, p_cass_verrow], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin, sp_nessa_dray], producer: p_cass_verrow}
+        - id: s_1102
+          title: Sign It on the Way Out
+          track_number: 7
+          genre: lane-rock
+          mood_tags: [defiant, singalong, midtempo]
+          playable: true
+          fact: The chorus is what the band say to the co-operative's clerks, and the clerks sing it back at them at the annual meeting.
+          credits: {writers: [p_rhea_molt, p_tem_osgar], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin, p_iber_tance], producer: p_cass_verrow}
+
+    - id: al_135
+      title: Paid by the Port
+      band: b_061
+      label: label_5
+      release_year: 2624
+      kind: album
+      genre: lane-rock
+      cornerstone: false
+      notes: >-
+        The Common Wake Cooperative reversed its own vote of 2619 and began paying Turn and Burn by
+        the port, which is where the title comes from and why the band could stay two days in three
+        of these halls instead of one. Cass Verrow left a guitar at a berth on the second port and
+        played the rest of the record on one bought from a stall for the price of a night's fee.
+        Iber Tance is credited as a writer on a Turn and Burn record for the first time. Rhea Molt
+        lost the band's long argument about set lists during it, and this is the only one of their
+        records made to a written order.
+      songs:
+        - id: s_1103
+          title: Paid by the Port
+          track_number: 1
+          genre: lane-rock
+          mood_tags: [triumphant, driving, fast]
+          playable: true
+          fact: The membership reversed its own vote of 2619, and Rhea Molt sings the new wording of it in the chorus.
+          credits: {writers: [p_rhea_molt, p_tem_osgar], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin, p_iber_tance], producer: p_cass_verrow}
+        - id: s_1104
+          title: Two Days in the Same Hall
+          track_number: 2
+          genre: lane-rock
+          mood_tags: [warm, expansive, midtempo]
+          playable: true
+          fact: It is the first song Turn and Burn ever played twice in one room, which the change to how they were paid is what allowed.
+          credits: {writers: [p_rhea_molt], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin, p_iber_tance], producer: p_cass_verrow}
+        - id: s_1105
+          title: Stall-Bought
+          track_number: 3
+          genre: lane-rock
+          mood_tags: [rowdy, comic, fast]
+          playable: true
+          fact: Cass Verrow plays the whole session on an instrument bought from a port stall for the price of one night's fee, having left the other at a berth.
+          credits: {writers: [p_cass_verrow], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin], producer: p_cass_verrow}
+        - id: s_1106
+          title: The Written Order
+          track_number: 4
+          genre: lane-rock
+          mood_tags: [wry, brisk, warm]
+          playable: true
+          fact: Rhea Molt lost the band's long argument about set lists, and the words are that argument as Tem Osgar remembers it.
+          credits: {writers: [p_tem_osgar, p_rhea_molt], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin, p_iber_tance], producer: p_cass_verrow}
+        - id: s_1107
+          title: Keys at the Back
+          track_number: 5
+          genre: lane-rock
+          mood_tags: [heavy, building, midtempo]
+          playable: true
+          fact: Iber Tance is credited as a writer on one of the band's songs for the first time here, having joined them in 2614.
+          credits: {writers: [p_iber_tance, p_rhea_molt], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin, p_iber_tance], producer: p_cass_verrow}
+        - id: s_1108
+          title: Cold Circuit
+          track_number: 6
+          genre: lane-rock
+          mood_tags: [weary, plain, slow]
+          playable: true
+          fact: Tem Osgar wrote it about the two ports the band's circuit stopped calling at in 2624, and names neither of them.
+          credits: {writers: [p_tem_osgar], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_iber_tance], producer: p_cass_verrow}
+        - id: s_1109
+          title: Nobody Waits for Us
+          track_number: 7
+          genre: lane-rock
+          mood_tags: [defiant, loud, fast]
+          playable: true
+          fact: Wyll Petrin plays struck alloy in place of a cymbal throughout, in a pattern copied from the co-operative's own departure schedule.
+          credits: {writers: [p_wyll_petrin, p_cass_verrow], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin], producer: p_cass_verrow}
+        - id: s_1110
+          title: Turn and Burn
+          track_number: 8
+          genre: lane-rock
+          mood_tags: [anthemic, singalong, fast]
+          playable: true
+          fact: The band had been playing since 2607 and this is the first of their songs to carry their own name; Rhea Molt has said she will not write a second one.
+          credits: {writers: [p_rhea_molt, p_cass_verrow], players: [p_rhea_molt, p_cass_verrow, p_tem_osgar, p_wyll_petrin, p_iber_tance], producer: p_cass_verrow}
 
 layer_b:
   bands:

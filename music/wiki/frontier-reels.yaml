@@ -164,7 +164,7 @@ layer_a:
         in a working pipe shop and recorded there twice because Deep Register could not book a room
         with the same reverberation. The band stopped in 2599 when Bree Hollan took a supervisor's
         post and refused to keep playing for a wage lower than the one she was now paying others.
-      album_ids: [al_081, al_082]
+      album_ids: [al_081, al_082, al_136]
 
     - id: b_039
       name: Loose Cargo
@@ -208,7 +208,58 @@ layer_a:
         Sennet learned fiddle from recordings played in a hold and has an unusual bowing hand as a
         result, which every review mentions and which he says is simply how he was taught. They kept
         working the route the whole time and never once toured without cargo.
-      album_ids: [al_083, al_084, al_085]
+      album_ids: [al_083, al_137, al_084, al_085]
+
+    - id: b_062
+      name: Board and Bow
+      kind: group
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: frontier-reels
+      active_from: 2612
+      active_to: 2626
+      members:
+        - id: p_suli_orley
+          name: Suli Orley
+          genre: frontier-reels
+          instruments: [lead vocal, fretted composite guitar]
+          active_from: 2612
+          active_to: 2626
+        - id: p_neve_torrin
+          name: Neve Torrin
+          genre: frontier-reels
+          instruments: [composite fiddle, harmony vocal]
+          active_from: 2612
+          active_to: 2626
+        - id: p_corr_ballan
+          name: Corr Ballan
+          genre: frontier-reels
+          instruments: [upright bass]
+          active_from: 2612
+          active_to: 2626
+        - id: p_tobe_marran
+          name: Tobe Marran
+          genre: frontier-reels
+          instruments: [cut-stock kit, stripped-wire chimes]
+          active_from: 2612
+          active_to: 2626
+        - id: p_alis_doone
+          name: Alis Doone
+          genre: frontier-reels
+          instruments: [calling voice, harmony vocal]
+          active_from: 2617
+          active_to: 2626
+      movement: Localist
+      bio: >-
+        Board and Bow are the band Suli Orley put together in Cold Harbor after Wire and Rosin
+        stopped, and three of the five had never been paid to play before she asked them. Orley
+        sings the lead now, having spent six years singing harmony behind Hessa Lund, and she still
+        takes tunes off the floor rather than off anybody's paper. Alis Doone calls the figures over
+        the top of the band on every record they have made, which older callers say is the wrong way
+        round and which the dancers decided for them. They will not play a hall that charges the
+        floor more than it pays the band, and have turned down the Cold Harbor exchange hall twice
+        over exactly that.
+      album_ids: [al_138, al_139]
 
   albums:
     - id: al_078
@@ -659,6 +710,105 @@ layer_a:
           fact: The shift whistle sounds forty seconds before the end and the band played through it rather than stop, which is why the take was kept.
           credits: {writers: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
 
+    - id: al_136
+      title: Played and Never Pressed
+      band: b_038
+      label: label_4
+      release_year: 2619
+      kind: live
+      genre: frontier-reels
+      cornerstone: false
+      notes: >-
+        Orsa Lipp recorded the band's Forge dances for himself between 2591 and 2599 on equipment
+        the shop already owned, and told nobody outside the band that he had them. Deep Register put
+        ten of them out in 2619, the year every label on the frontier was reopening its own
+        cupboards, and printed a sleeve crediting Dane Verrow as the writer throughout. Bree Hollan,
+        who had made the band split its writing four ways in 2594, disputed every track but one, and
+        the label has never issued a corrected sleeve. It is the only record of what The Foundry Set
+        sounded like in a hall rather than in the pipe shop, and the dancers on it are shop workers
+        who can be heard complaining about the heat.
+      songs:
+        - id: s_1111
+          title: Ask the Whole Shop
+          track_number: 1
+          genre: frontier-reels
+          mood_tags: [fast, communal, bright]
+          playable: true
+          fact: Dane Verrow shouts the first line as a question and the hall answers it, which is how the band opened every dance it ever played and never once did on a record.
+          credits: {writers: [p_dane_verrow], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_1112
+          title: Hollan's Reel
+          track_number: 2
+          genre: frontier-reels
+          mood_tags: [hard, fast, defiant]
+          playable: true
+          fact: Bree Hollan wrote it and would not let the band play it in front of the supervisor it is about, so it was only ever played at dances he did not attend.
+          credits: {writers: [p_bree_hollan], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_1113
+          title: Money on the Bench
+          track_number: 3
+          genre: frontier-reels
+          mood_tags: [brisk, plain, wry]
+          playable: true
+          fact: Forge halls paid a band by leaving the money on a workbench beside the door, and Toller Grange counts it out loud at the end of this one.
+          credits: {writers: [p_dane_verrow, p_toller_grange], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_1114
+          title: Three Halls in a Week
+          track_number: 4
+          genre: frontier-reels
+          mood_tags: [driving, tired, bright]
+          playable: true
+          fact: The band played three different Forge halls in one week in 2596 and this is the third of them, with Orsa Lipp's pipes still tuned for the second.
+          credits: {writers: [p_dane_verrow, p_orsa_lipp], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_1115
+          title: Every Tune Twice
+          track_number: 5
+          genre: frontier-reels
+          mood_tags: [rolling, generous, midtempo]
+          playable: true
+          fact: Dane Verrow announces the repeat before it arrives because the floor had already asked for the tune twice that night.
+          credits: {writers: [p_dane_verrow], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_1116
+          title: Pay Us in Order
+          track_number: 6
+          genre: frontier-reels
+          mood_tags: [blunt, midtempo, hard]
+          playable: true
+          fact: Toller Grange sings the second verse, the only time he sang anything in front of an audience, having lost an argument about which of them would.
+          credits: {writers: [p_dane_verrow, p_toller_grange], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_1117
+          title: Turn Under the Pipes
+          track_number: 7
+          genre: frontier-reels
+          mood_tags: [deep, strange, driving]
+          playable: true
+          fact: Forge dancers walk a figure to this one that appears in none of Bessel Kroy's written sets, which callers have been using as an argument ever since.
+          credits: {writers: [p_orsa_lipp], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_1118
+          title: Nobody Wrote It Down
+          track_number: 8
+          genre: frontier-reels
+          mood_tags: [quick, warm, loose]
+          playable: true
+          fact: Neither Dane Verrow nor Orsa Lipp could say afterwards which of them wrote it, so the 2619 sleeve credits the band, and it is the one track Bree Hollan did not dispute.
+          credits: {writers: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_1119
+          title: Cold Walk to the Shift
+          track_number: 9
+          genre: frontier-reels
+          mood_tags: [slow, weathered, warm]
+          playable: true
+          fact: Written about going from a dance straight to a morning shift, which all four of them did for twenty years and none of them stopped doing to make a record.
+          credits: {writers: [p_dane_verrow], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+        - id: s_1120
+          title: Last Dance in Forge
+          track_number: 10
+          genre: frontier-reels
+          mood_tags: [fast, final, communal]
+          playable: true
+          fact: The last thing The Foundry Set played in public, three weeks after Bree Hollan took the supervisor's post and told the other three she was finished.
+          credits: {writers: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], players: [p_dane_verrow, p_orsa_lipp, p_toller_grange, p_bree_hollan], producer: p_orsa_lipp}
+
     - id: al_083
       title: Between Two Ports
       band: b_039
@@ -723,6 +873,65 @@ layer_a:
           playable: true
           fact: The band recorded it while the hold was being signed off and the manifest is being read aloud underneath the first verse.
           credits: {writers: [p_wend_amory], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+
+    - id: al_137
+      title: Burn Festival Set
+      band: b_039
+      label: label_5
+      release_year: 2594
+      kind: EP
+      genre: frontier-reels
+      cornerstone: false
+      notes: >-
+        The first freight-circuit burn festival put crews, port halls and frontier dancers in one
+        place for a week in 2594, and the Common Wake Cooperative wanted a record out of it while
+        everybody was still talking about it. Loose Cargo were the only band on the label who could
+        reach the festival without dropping a run, so they played the last two nights of it and cut
+        five tunes in the port hall the next morning with the doors still open. It is the shortest
+        thing they made and the only one with other crews singing on it. The co-operative sold it
+        along the route for a season and then let it go out of print, which Wend Amory has called
+        the only sensible thing it ever did with a record of theirs.
+      songs:
+        - id: s_1121
+          title: Everybody's Circuit
+          track_number: 1
+          genre: frontier-reels
+          mood_tags: [fast, communal, bright]
+          playable: true
+          fact: Wend Amory wrote it on the run in and the second verse names four crews who were at the festival, three of whom asked afterwards to be taken out of it.
+          credits: {writers: [p_wend_amory], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_1122
+          title: Two Crews, One Tune
+          track_number: 2
+          genre: frontier-reels
+          mood_tags: [quick, competitive, warm]
+          playable: true
+          fact: Col Sennet plays it against a fiddler off another crew whose name nobody wrote down, and the co-operative has never been able to credit her.
+          credits: {writers: [p_wend_amory, p_col_sennet], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_1123
+          title: Somebody Else's Floor
+          track_number: 3
+          genre: frontier-reels
+          mood_tags: [rolling, warm, midtempo]
+          playable: true
+          fact: Ilsa Brack sings the harmony from the doorway because the hall was full and there was nowhere else to put her.
+          credits: {writers: [p_wend_amory], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_1124
+          title: Ration Week Reel
+          track_number: 4
+          genre: frontier-reels
+          mood_tags: [fast, hard, defiant]
+          playable: true
+          fact: Reddin Vosk built the kit for it out of fittings borrowed off three different crews and gave every piece back before the run out.
+          credits: {writers: [p_wend_amory, p_reddin_vosk], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+        - id: s_1125
+          title: Sign Off and Dance
+          track_number: 5
+          genre: frontier-reels
+          mood_tags: [brisk, satisfied, communal]
+          playable: true
+          fact: Cut with the doors open while the festival was being cleared, and the last voice on it is a port officer asking the band to move.
+          credits: {writers: [p_wend_amory, p_ilsa_brack], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
 
     - id: al_084
       title: Everything Not Tied Down
@@ -868,6 +1077,163 @@ layer_a:
           playable: true
           fact: The last thing Loose Cargo recorded, and the four of them played it twice through without stopping because nobody wanted to be the one to call the end.
           credits: {writers: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], players: [p_wend_amory, p_col_sennet, p_ilsa_brack, p_reddin_vosk], producer: p_wend_amory}
+
+    - id: al_138
+      title: Learned Off the Floor
+      band: b_062
+      label: label_2
+      release_year: 2619
+      kind: album
+      genre: frontier-reels
+      cornerstone: false
+      notes: >-
+        Harbor Standard signed Board and Bow after a Cold Harbor gate clerk told the label there was
+        a band worth hearing in a room with no licence, and it took the label two years to go and
+        find out. It was cut in the transfer shed the band had been playing in rather than in the
+        exchange hall, because Suli Orley would not record in a room the dancers are charged to walk
+        into. Alis Doone's calling is on every track and the label asked twice for it to come off. It
+        came out in the same year The Turning Room made a record in the exchange hall itself, and
+        Cold Harbor spent a winter arguing about which of the two was the tribute.
+      songs:
+        - id: s_1126
+          title: Learned Off the Floor
+          track_number: 1
+          genre: frontier-reels
+          mood_tags: [fast, bright, communal]
+          playable: true
+          fact: Suli Orley took this tune off the Cold Harbor floor while she was still playing guitar for Wire and Rosin, and she has never found out who wrote it.
+          credits: {writers: [p_suli_orley], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, p_alis_doone], producer: p_suli_orley}
+        - id: s_1127
+          title: Call It From the Side
+          track_number: 2
+          genre: frontier-reels
+          mood_tags: [driving, loud, communal]
+          playable: true
+          fact: Alis Doone calls the whole figure from the side of the room rather than the front, because that is where she stands at a dance and she would not do it differently for a record.
+          credits: {writers: [p_suli_orley, p_alis_doone], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, p_alis_doone], producer: p_suli_orley}
+        - id: s_1128
+          title: No Licence, No Stage
+          track_number: 3
+          genre: frontier-reels
+          mood_tags: [wry, brisk, defiant]
+          playable: true
+          fact: Written about the room Harbor Standard first heard the band in, which is the hall Ivet Sallow kept her ledgers for and which has held no licence since 2604.
+          credits: {writers: [p_suli_orley], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, p_alis_doone], producer: p_suli_orley}
+        - id: s_1129
+          title: Hold It Under
+          track_number: 4
+          genre: frontier-reels
+          mood_tags: [deep, insistent, rolling]
+          playable: true
+          fact: Corr Ballan plays one figure for the whole track without altering it, which he says is the entire job of a bass player and which the rest of the band disputes in public.
+          credits: {writers: [p_corr_ballan, p_suli_orley], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, p_alis_doone], producer: p_suli_orley}
+        - id: s_1130
+          title: Charge the Band, Not the Floor
+          track_number: 5
+          genre: frontier-reels
+          mood_tags: [hard, plain, defiant]
+          playable: true
+          fact: Suli Orley wrote it after a hall keeper offered the band a larger fee out of a raised door price, and she reads the offer out before the first verse.
+          credits: {writers: [p_suli_orley], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, p_alis_doone], producer: p_suli_orley}
+        - id: s_1131
+          title: We Did Not Go Back
+          track_number: 6
+          genre: frontier-reels
+          mood_tags: [midtempo, cold, knowing]
+          playable: true
+          fact: Neve Torrin sings the second verse about a hall she has never played, which is the exchange hall the band turned down that year.
+          credits: {writers: [p_suli_orley, p_neve_torrin], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, p_alis_doone], producer: p_suli_orley}
+        - id: s_1132
+          title: Doors at the Far End
+          track_number: 7
+          genre: frontier-reels
+          mood_tags: [fast, loose, bright]
+          playable: true
+          fact: Brin Noll retuned the shed's loose metal before the band played and then stayed to play the chimes on this one, having done the same thing in a hold for Loose Cargo.
+          credits: {writers: [p_suli_orley, p_tobe_marran], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, p_alis_doone, sp_brin_noll], producer: p_suli_orley}
+
+    - id: al_139
+      title: We Went the Other Way
+      band: b_062
+      label: label_2
+      release_year: 2624
+      kind: album
+      genre: frontier-reels
+      cornerstone: false
+      notes: >-
+        Harbor Standard had four nights in Concordance's reopened hall in 2624 and sent Board and
+        Bow to use them, which Suli Orley agreed to on the condition that Cold Harbor dancers were
+        brought along and not charged to get in. Four hundred of them were, and the hall's staff
+        have said they had never worked a night like it. It came out in the same year The Long Ferry
+        released the record they made after a year working frontier halls, and the two were reviewed
+        together everywhere, badly and in opposite directions. It is the loudest thing the band has
+        made, and Alis Doone's calling sits further forward than on the first record because she
+        asked for it.
+      songs:
+        - id: s_1133
+          title: We Went the Other Way
+          track_number: 1
+          genre: frontier-reels
+          mood_tags: [driving, bright, defiant]
+          playable: true
+          fact: Suli Orley wrote it on the way to the core and changed the last verse after seeing the hall, which she has described as a room built for people who are sitting down.
+          credits: {writers: [p_suli_orley], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, p_alis_doone], producer: p_suli_orley}
+        - id: s_1134
+          title: Four Hundred Off the Frontier
+          track_number: 2
+          genre: frontier-reels
+          mood_tags: [fast, loud, communal]
+          playable: true
+          fact: The dancers on it travelled from Cold Harbor at the label's expense, and the sleeve lists the hall's own staff by name as well, because they danced too.
+          credits: {writers: [p_suli_orley, p_alis_doone], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, p_alis_doone], producer: p_suli_orley}
+        - id: s_1135
+          title: Ask a Core Room to Turn
+          track_number: 3
+          genre: frontier-reels
+          mood_tags: [quick, wry, communal]
+          playable: true
+          fact: Alis Doone calls a figure the core dancers did not know and spends the first chorus teaching it to them, which the band kept rather than start again.
+          credits: {writers: [p_alis_doone, p_suli_orley], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, p_alis_doone], producer: p_suli_orley}
+        - id: s_1136
+          title: Bring Your Own Floor
+          track_number: 4
+          genre: frontier-reels
+          mood_tags: [fast, competitive, bright]
+          playable: true
+          fact: Nessa Dray plays the second fiddle part and lifts the tempo halfway through with a look, which Neve Torrin says she had not agreed to and has never asked her to undo.
+          credits: {writers: [p_suli_orley, p_neve_torrin], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, sp_nessa_dray], producer: p_suli_orley}
+        - id: s_1137
+          title: Paid Before We Played
+          track_number: 5
+          genre: frontier-reels
+          mood_tags: [blunt, midtempo, wry]
+          playable: true
+          fact: Corr Ballan made the label hand the fee over in front of the band before the first night, having been at three dances where nobody was paid after one.
+          credits: {writers: [p_corr_ballan, p_suli_orley], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran], producer: p_suli_orley}
+        - id: s_1138
+          title: Home on the Late Run
+          track_number: 6
+          genre: frontier-reels
+          mood_tags: [slow, warm, tired]
+          playable: true
+          fact: Tobe Marran plays it on chimes he built out of stage wire the hall was throwing away, and he asked the hall keeper for the wire before the band had played a note.
+          credits: {writers: [p_suli_orley, p_tobe_marran], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran], producer: p_suli_orley}
+        - id: s_1139
+          title: She Sang Behind for Six Years
+          track_number: 7
+          genre: frontier-reels
+          mood_tags: [warm, rolling, fond]
+          playable: true
+          fact: Neve Torrin sings the only lead Suli Orley has given away, for the reason Wire and Rosin once wrote Orley an introduction and made her play it alone.
+          credits: {writers: [p_suli_orley], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran], producer: p_suli_orley}
+        - id: s_1140
+          title: Last Turn in the Core
+          track_number: 8
+          genre: frontier-reels
+          mood_tags: [fast, final, communal]
+          playable: true
+          fact: The last thing played on the fourth night, after the hall's licensed hours had ended, and the hall keeper let it run rather than stop it as he had stopped everybody else that season.
+          credits: {writers: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, p_alis_doone], players: [p_suli_orley, p_neve_torrin, p_corr_ballan, p_tobe_marran, p_alis_doone], producer: p_suli_orley}
 
 layer_b:
   bands:
@@ -1067,8 +1433,9 @@ layer_b:
       active_to: 2626
       bio: >-
         The Turning Room are the band Harbor Standard signed to replace Wire and Rosin and have
-        never been forgiven for it by anyone who was at the exchange hall in 2583. They are the only
-        frontier reel band still working and they play the same halls their predecessors did.
+        never been forgiven for it by anyone who was at the exchange hall in 2583. They play the
+        same halls their predecessors did and share them now with Board and Bow, whose singer they
+        asked to join them first.
       albums:
         - id: al_094
           title: The Turning Room

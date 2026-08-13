@@ -1838,3 +1838,69 @@ in the lyric and say something else in the chorus, which is what rule 4 was aski
 every song's mood, fact, intro ramp, outro type and target duration was left byte-identical, so
 §7's three distributions — which M-17 aimed rather than left to chance, and which land exactly — did
 not have to be re-derived to fix the words.
+
+### D-073 · Where lane-rock's 35 new songs went, and what it costs M-48 and M-49 — 2026-08-13
+
+M-46 said 110 songs split 15 / 50 / 45 and named the shape — a short Second Hitch record, 15 between
+the two Forge bands, a second hauler band on label 5 — and left the years and the split inside label
+4 open. Both were decided against constraints outside the card.
+
+**Pipe and Hammer take 8 of the 15 and their record is dated 2612,** because `CONSTANTS.md` §1 asks
+M-46, M-48 and M-49 each to land a release on that anchor with a band not already on it: M-44's
+demotion had left 2612 at 25 songs across 3 bands, one band short of a programme. The band already
+owned the year — Saul Ravik left over the amplified pipes in 2612 and Ade Prosk replaced him — so
+the anchor repair and the best untold story in the genre are the same record. 2612 now reads 33
+songs / 4 bands / 4 labels, and **seven of the eight anchors are satisfied.** M-48 and M-49 are
+released from that instruction; 2612 sits on the four-band floor with no margin, so landing there is
+still worth doing and is no longer owed.
+
+**The other 27 songs went to 2619 and 2624**, which is not a preference. COMMISSION §3 wants half of
+layer A inside the last eight years; the catalogue stands at 161 of 340, 250 is the target, and the
+remaining 160 songs must supply 89 of them — **56% of everything M-48, M-49, M-12, M-13 and M-14
+write has to be dated 2619 or 2624.** M-11 recorded the rule as "only just reachable" and 27 of
+M-46's 35 landing recent is what has kept it that way rather than worse: the
+demotion took recent songs out, void-lounge's label-6 half cannot be dated past the 2612 fold, and
+M-15's job 4 still has nothing later than 2624 to work with. Any card that spends a slot on an old
+anchor for atmosphere makes the arithmetic worse for the ones after it.
+
+**Turn and Burn's lead voice is female**, fixed here rather than by M-20, because `b_061`'s bio and
+five of its facts use Rhea Molt's pronoun and §7 makes the voice line load-bearing and unchangeable.
+Same call as D-061 and reversible on the same terms — until M-31 generates the band, nothing depends
+on it.
+
+### D-074 · Frontier Reels' 30 new songs, and the one band that could not make them — 2026-08-13
+
+M-48 named the split — 45 / 25 / 25 across labels 2, 4 and 5, with a fourth band on label 2 — and
+left three things open that the wiki as written had already half-decided.
+
+**Label 2's fourth band is Suli Orley's, and she is the one player in the genre who could carry it.**
+`b_062` Board and Bow are Cold Harbor's current reel band, formed in 2612 by the guitarist Wire and
+Rosin hired off the dance floor in 2604 without an audition. A new band with no line into the
+existing file would have been a fifth sealed world inside a sealed genre; this one inherits Wire and
+Rosin's whole argument about halls that charge the dancers, and its two records are 2619 and 2624,
+which is where the calendar needed them. **Her voice line needs no decision** — `al_080` already
+uses her pronoun, so unlike D-061 and D-073 there is nothing here for M-20 to fix.
+
+**Label 4's ten songs are a live issue, because The Foundry Set stopped in 2599 and that is fixed.**
+The band's two anchors inside its own life, 2583 and 2594, are both already spent, and extending a
+band that broke up over a named argument would have rewritten committed prose to buy a release year.
+`al_136` *Played and Never Pressed* is instead ten dance tunes Orsa Lipp recorded for himself between
+2591 and 2599 and Deep Register issued in 2619 with a sleeve crediting Dane Verrow throughout, which
+Bree Hollan disputed on the strength of the four-way agreement she had forced in 2594 (`s_0675`).
+That lands on 2619's own anchor story — the altered-credit edition, the reply records, the competing
+versions — and it credits no session player, because nobody hires a fiddler for a dance they are
+playing anyway.
+
+**Label 5's five went to 2594 rather than to a recent anchor**, the only place in this card where
+the half-recent arithmetic was spent rather than served. `al_085` is written as Loose Cargo's last
+record and 2612 is their last year, so a recent release meant editing that line; 2594 is the first
+burn-festival year and Loose Cargo are a hauler crew who played the dances at both ends of their own
+route, so the record wrote itself and the year gained a fifth band. **The arithmetic still improved.**
+25 of the 30 new songs are dated 2619 or 2624, taking the catalogue to 186 of 370 inside the last
+eight years: the remaining 130 songs now need 64 of them to be recent, **49% against the 56% D-073
+handed on.** M-49, M-12, M-13 and M-14 inherit a rule that is easier than they were promised.
+
+**One line of existing prose was edited.** `b_044` The Turning Room claimed to be the only frontier
+reel band still working, which Board and Bow makes false. It now says the two share the Cold Harbor
+halls and that The Turning Room asked Suli Orley to join them first — a contradiction removed and a
+rivalry gained, in the same sentence count layer B allows (§6).

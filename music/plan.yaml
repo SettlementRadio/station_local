@@ -45,7 +45,6 @@ genres:
 
   lane-rock:
     title: Lane-rock
-    owed_to: M-46 # 75 songs and 4 bands written; 110 and 5 planned
     layer_b_bands: 7
     layer_c_figures: 4
     labels:
@@ -61,7 +60,6 @@ genres:
 
   frontier-reels:
     title: Frontier Reels
-    owed_to: M-48 # 65 songs and 3 bands written; 95 and 4 planned
     layer_b_bands: 6
     layer_c_figures: 4
     labels:
