@@ -1904,3 +1904,47 @@ handed on.** M-49, M-12, M-13 and M-14 inherit a rule that is easier than they w
 reel band still working, which Board and Bow makes false. It now says the two share the Cold Harbor
 halls and that The Turning Room asked Suli Orley to join them first — a contradiction removed and a
 rivalry gained, in the same sentence count layer B allows (§6).
+
+### D-075 · Old-system sessions' 30 new songs all went to one new band — 2026-08-13
+
+M-49 asked for 90 playable songs on label 7 across four bands, one of them new. **The three written
+bands could not take a single song of the 30**, and that is a property of the file rather than a
+choice. Every anchor year inside Terrace Road Four's and The Shore Rounds' lives is already spent —
+al_099 is written as the first record one band made and al_100 as the first the other sent down the
+road, so an earlier release contradicts committed prose, and both already hold 2624. Undershore
+Local stopped in 2612 and al_104 is written as its last. The one device that would have freed a
+release, an issue of unreleased material, is what COMMISSION §10 forbids for this genre by name:
+*never present an old-system record as archive.* So all 30 songs and all four albums belong to
+`b_063`, which makes the newest band the genre's largest at 30 songs, and that is the finished
+state.
+
+**The fourth band is from Earth, which no layer-A record had ever come from.** `b_063` The Ninefoot
+Cut work the locks on eleven miles of Earth canal, and their first record reached the road head in
+2607 because a clerk on Earth misread the address on a letter meant for the Bell Yard Rounds — the
+band every account of the form gets round to, and the one everybody out here assumed the first Earth
+import would be. **The argument about whether the importer landed the wrong band has run ever
+since**, which is the permanent live stake the card asked for, sitting on top of the one canon fact
+19 and COMMISSION §4 already hold in tension: the most-loved music arrives on the thinnest route.
+An Earth record takes two crossings rather than one, so all four are cut two years before they are
+issued, and the 2621 record only exists because its first copy was in the crate that went astray in
+2622 and Fenna Crole had kept a second on the lock house shelf.
+
+**Nobody guests on their records and nobody can.** D-065 fixed that this genre credits no session
+player and that what carries it instead is the three bands guesting on each other; Earth is too far
+for that, so the connection runs on paper and on repertoire — the importer sent a Shore Rounds
+pressing up the road in 2619 with no name on the sleeve, the band spent a season working out whose
+it was, and `s_1165` is that round sung with the four voices entering together where Titan enters a
+line apart. It is the only record in the house's list on which anything went the other way.
+
+**Two lines of existing prose were edited, both of them already false.** `al_098` claimed nothing
+else came down the road in its season while `al_102` and `al_114` were both dated to that same
+season, and it dated the near-closure as *"the year before"*, which §10 forbids outright; it now
+names 2622 and says the house put the largest part of one crossing behind the record. `al_114`'s
+*"the only import that season besides the Terrace Road record"* was the other half of the same
+contradiction and now says it shared the season.
+
+**16 of the 30 new songs are dated 2619 or 2624**, taking the catalogue to 202 of 400 inside the last
+eight years. COMMISSION §3's half-recent rule now needs 48 of the remaining 100 — **48%, against the
+49% D-074 handed on**, and the three genres left can supply at most 70 between them, because
+void-lounge's 30 label-6 songs cannot be dated later than the 2612 fold. **Anchor 2612 gains its
+margin**: it stood on §5's floor at 33/4/4 and reads 40/5/4, so no anchor now sits on the floor.

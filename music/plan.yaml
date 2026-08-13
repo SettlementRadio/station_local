@@ -69,7 +69,6 @@ genres:
 
   old-system-sessions:
     title: Old-system sessions
-    owed_to: M-49 # 60 songs and 3 bands written; 90 and 4 planned
     layer_b_bands: 5
     layer_c_figures: 4
     labels:

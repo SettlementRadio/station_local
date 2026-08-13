@@ -7,13 +7,15 @@
 #    the road head, so the notes name the cut year as well. Both are facts a presenter can say, and
 #    the eight anchor years are issue years — which is what `make check` counts.
 # 2. `session_players` is empty, and that is the finished state. CONSTANTS.md section 2's eight
-#    work in the settled worlds; every record in this file was cut on Mars, Titan or Europa by
-#    people who have never been out here (D-065). What carries the industry texture instead is the
-#    three layer-A bands guesting on each other's records — the same piano, the same harmonica,
-#    turning up across two thousand million kilometres of the same home system.
+#    work in the settled worlds; every record in this file was cut on Mars, Titan, Europa or Earth
+#    by people who have never been out here (D-065). What carries the industry texture instead is
+#    the layer-A bands guesting on each other's records — the same piano, the same harmonica,
+#    turning up across two thousand million kilometres of the same home system. The fourth band is
+#    too far out for anybody to guest on: what connects `b_063` is a round that came down the road
+#    and a record that went back up it (M-49).
 #
 # Label 7 is named here for the first time — Relay Road Import — and every later genre that touches
-# it uses that name. It is the only genre on the label: 60 songs, 3 bands, 7 albums, and no margin.
+# it uses that name. It is the only genre on the label: 90 songs, 4 bands, 11 albums.
 
 section:
   genre: old-system-sessions
@@ -190,6 +192,64 @@ layer_a:
         end and the true one.
       album_ids: [al_103, al_104]
 
+    - id: b_063
+      name: The Ninefoot Cut
+      kind: group
+      home_settlement: Earth
+      label: label_7
+      genre: old-system-sessions
+      active_from: 2598
+      active_to: 2626
+      members:
+        - id: p_fenna_crole
+          name: Fenna Crole
+          genre: old-system-sessions
+          instruments: [lead vocal, guitar]
+          active_from: 2598
+          active_to: 2626
+        - id: p_aldis_merrow
+          name: Aldis Merrow
+          genre: old-system-sessions
+          instruments: [piano]
+          active_from: 2598
+          active_to: 2626
+        - id: p_torr_bexley
+          name: Torr Bexley
+          genre: old-system-sessions
+          instruments: [upright bass, harmony vocal]
+          active_from: 2598
+          active_to: 2626
+        - id: p_sim_pallow
+          name: Sim Pallow
+          genre: old-system-sessions
+          instruments: [drums]
+          active_from: 2598
+          active_to: 2626
+        - id: p_wenna_ferrin
+          name: Wenna Ferrin
+          genre: old-system-sessions
+          instruments: [concertina, harmony vocal]
+          active_from: 2610
+          active_to: 2626
+      movement:
+        standing: outside it
+        detail: >-
+          Fenna Crole was asked by letter in 2621 where the band stood among the three movements and
+          wrote back that she had had all three explained to her twice and still could not see what
+          was being argued about. Relay Road Import printed the reply in its 2624 list with the
+          question left in.
+      bio: >-
+        The Ninefoot Cut work the locks and the lighters on the eleven miles of Earth canal the band
+        is named after, and play the lock houses and wharf rooms along it and nowhere else. Fenna
+        Crole writes almost everything and has kept the same guitar since 2598, on the grounds that
+        a new one would want playing differently. Aldis Merrow has recorded every song sitting on
+        the same folding stool, which is carried out of the lock house to whichever room the band is
+        working in. They learned that their first record was on sale in the settled worlds two years
+        after it went on sale there, and Torr Bexley's first question was whether anybody out there
+        had been paid for it. They have never played the river yards the form is agreed to have
+        started in, and Crole has written twice that they have never claimed to.
+      album_ids: [al_140, al_141, al_142, al_143]
+
   albums:
     - id: al_098
       title: The Room at Terrace Road
@@ -201,10 +261,10 @@ layer_a:
       cornerstone: true
       notes: >-
         Cut over three nights in the tram works canteen on Mars in 2623 and issued at the road head
-        in 2624. Relay Road Import had nearly closed the year before, when a crate went astray, and
-        it put the whole capacity of one crossing behind this record — nothing else came down the
-        road that season, which is a decision the house has never had to defend because the record
-        sold better than anything it has imported. The canteen is free only between shifts, so the
+        in 2624. Relay Road Import had nearly closed in 2622, when a crate went astray, and it put
+        the largest part of one crossing behind this record — everything else that came down that
+        season had been bought and paid for before the crate was lost, which is a decision the house
+        has never had to defend because the record sold better than anything it has imported. The canteen is free only between shifts, so the
         sessions ran from the end of one and stopped at the start of the next, and the works bell is
         audible on four tracks. Orin Lask is on drums, his first record with the band; the song Nan
         Sudell left behind when she went in 2622 is on it too, and the band recorded it without her.
@@ -807,6 +867,326 @@ layer_a:
           fact: The last thing Undershore Local recorded, and the sound at the end is the yard gate, which nobody had ever locked and which is on the take anyway.
           credits: {writers: [p_hob_venner], players: [p_hob_venner, p_saira_dunn, p_tel_brask, p_marta_ospel], producer: p_saira_dunn}
 
+    - id: al_140
+      title: Ten Locks to the Sea
+      band: b_063
+      label: label_7
+      release_year: 2607
+      kind: album
+      genre: old-system-sessions
+      cornerstone: false
+      notes: >-
+        Cut in 2605 in the lock house at the head of the cut and issued at the road head in 2607,
+        and it is the first record made on Earth that Relay Road Import has ever landed. The house
+        had been writing to Earth for eleven years and had been ignored every time or asked for
+        money in advance; this master reached it because a clerk on Earth read one of those letters
+        as the address of a district rather than of a yard, which is how a letter meant for the Bell
+        Yard Rounds arrived at a lock house. An Earth record takes two crossings rather than one, so
+        the band had been paid, once and flat, and had stopped thinking about the whole business
+        long before anybody out here heard a note of it. The argument about whether the importer
+        landed the wrong band from Earth started the season it went on sale and has not stopped
+        since. Fenna Crole's reply to the original letter, which opens by telling the house that
+        this is not the band it wrote for, hangs in the importer's office beside Wesla Tarn's.
+      songs:
+        - id: s_1141
+          title: Ten Locks to the Sea
+          track_number: 1
+          genre: old-system-sessions
+          mood_tags: [rolling, warm, midtempo]
+          playable: true
+          fact: Fenna Crole counts ten locks and there are eleven, because the eleventh was cut in after she wrote it and she has refused to change the number since.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow], producer: p_torr_bexley}
+        - id: s_1142
+          title: Wait for the Water
+          track_number: 2
+          genre: old-system-sessions
+          mood_tags: [patient, slow, wry]
+          playable: true
+          fact: Written in the hour and a half the top lock needs to fill, which Fenna Crole timed against the lock house clock before she would let the band shorten it.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow], producer: p_torr_bexley}
+        - id: s_1143
+          title: Nobody Walks the Towpath
+          track_number: 3
+          genre: old-system-sessions
+          mood_tags: [blue, midtempo, plain]
+          playable: true
+          fact: About the winter the towpath lamps were stripped off the posts for the metal in them, and the man the crews blamed lived four doors from Sim Pallow and never spoke to him again.
+          credits: {writers: [p_fenna_crole, p_sim_pallow], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow], producer: p_torr_bexley}
+        - id: s_1144
+          title: Half a Mile an Hour
+          track_number: 4
+          genre: old-system-sessions
+          mood_tags: [slow, steady, dry]
+          playable: true
+          fact: Aldis Merrow plays it at the speed a loaded boat moves and would not agree to the tempo until Torr Bexley had walked one alongside him.
+          credits: {writers: [p_aldis_merrow, p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow], producer: p_torr_bexley}
+        - id: s_1145
+          title: Two Boats Waiting
+          track_number: 5
+          genre: old-system-sessions
+          mood_tags: [funny, brisk, blunt]
+          playable: true
+          fact: The two crews who would not give way to one another for a whole afternoon in 2604 are both in the song, and both of them bought the record.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow], producer: p_torr_bexley}
+        - id: s_1146
+          title: Paid at the Wharf
+          track_number: 6
+          genre: old-system-sessions
+          mood_tags: [driving, hard, defiant]
+          playable: true
+          fact: The sum in the last verse is what the four of them were paid for this record, once and flat, and nothing has been added to it since.
+          credits: {writers: [p_fenna_crole, p_torr_bexley], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow], producer: p_torr_bexley}
+        - id: s_1147
+          title: Down to the Lock House
+          track_number: 7
+          genre: old-system-sessions
+          mood_tags: [close, warm, final]
+          playable: true
+          fact: Sim Pallow plays with his hands and no sticks the whole way through, because the lock house is joined to a house with a child asleep in it.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow], producer: p_torr_bexley}
+
+    - id: al_141
+      title: Everything Comes By Water
+      band: b_063
+      label: label_7
+      release_year: 2612
+      kind: album
+      genre: old-system-sessions
+      cornerstone: false
+      notes: >-
+        Made in 2610, the season the cut was drained for repair and nobody working on it earned
+        anything, and issued at the road head in 2612. The band had a concertina in it for the first
+        time — Wenna Ferrin had come off the next boat and joined that spring — and Relay Road
+        Import, which had written asking for more of the first record, got a slower one made by five
+        people with no wages coming in. The repair gang are on two of the choruses and were paid the
+        way the band was, out of a share of what the lock house had. Fenna Crole has said the record
+        is not about the closure and that it is simply the only time the five of them have ever been
+        in the same room for a whole season. It has never been off the importer's list.
+      songs:
+        - id: s_1148
+          title: Everything Comes By Water
+          track_number: 1
+          genre: old-system-sessions
+          mood_tags: [rolling, warm, communal]
+          playable: true
+          fact: Wenna Ferrin's concertina is on it from the first bar and she had been in the band three months when they recorded it.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1149
+          title: The Cut Is Closed
+          track_number: 2
+          genre: old-system-sessions
+          mood_tags: [still, cold, patient]
+          playable: true
+          fact: The gang who drained the cut sing the chorus, and they were paid for it out of the same share the band was.
+          credits: {writers: [p_fenna_crole, p_torr_bexley], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1150
+          title: A Winter Off the Boats
+          track_number: 3
+          genre: old-system-sessions
+          mood_tags: [slow, blue, close]
+          playable: true
+          fact: Fenna Crole wrote it in the four days her whole family were in the lock house together for the first time since 2599, which she has said was three days more than anybody needed.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1151
+          title: Nothing Moves Till the Thaw
+          track_number: 4
+          genre: old-system-sessions
+          mood_tags: [dry, tired, midtempo]
+          playable: true
+          fact: Torr Bexley plays with a boat rope wound round the neck of the bass to deaden it, which he began doing because of the cold and has never stopped.
+          credits: {writers: [p_fenna_crole, p_aldis_merrow], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1152
+          title: Owe It to the Shop
+          track_number: 5
+          genre: old-system-sessions
+          mood_tags: [wry, brisk, plain]
+          playable: true
+          fact: The woman who kept the crews in credit through the closure is in the second verse and asked the band to leave her name in it.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1153
+          title: Somebody Else's Kitchen
+          track_number: 6
+          genre: old-system-sessions
+          mood_tags: [warm, fond, slow]
+          playable: true
+          fact: Written about the fortnight the band spent eating in other people's kitchens, and Fenna Crole has never said whose.
+          credits: {writers: [p_fenna_crole, p_wenna_ferrin], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1154
+          title: Back on the Water
+          track_number: 7
+          genre: old-system-sessions
+          mood_tags: [bright, driving, final]
+          playable: true
+          fact: The first thing the five of them played on the day the water came back, standing on the lock beam, and the record ends where the closure did.
+          credits: {writers: [p_fenna_crole, p_torr_bexley], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+
+    - id: al_142
+      title: Not the Band You Wrote For
+      band: b_063
+      label: label_7
+      release_year: 2619
+      kind: album
+      genre: old-system-sessions
+      cornerstone: false
+      notes: >-
+        Cut in 2617 in the lock house and in a wharf room at the bottom of the cut, and issued at
+        the road head in 2619. Relay Road Import had sent the band, unasked, a bundle of the letters
+        printed out here arguing about whether the house had landed the wrong band from Earth, and
+        Fenna Crole read the whole bundle aloud in the lock house over one evening. The record is
+        the band's answer to it and it disappointed the people who had written the letters, because
+        it is not an angry record and only two songs on it are about the argument at all. Aldis
+        Merrow worked out on paper, twice, that a reply cannot reach the settled worlds in the same
+        year as the letter it answers, and the band would not believe him until the second time. It
+        is the longest record they have made and the only one made in two rooms.
+      songs:
+        - id: s_1155
+          title: Not the Band You Wrote For
+          track_number: 1
+          genre: old-system-sessions
+          mood_tags: [brisk, dry, knowing]
+          playable: true
+          fact: The title is the line Fenna Crole put at the top of her first reply to Relay Road Import in 2605, when she thought that would be the end of it.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1156
+          title: Letters Take a Season
+          track_number: 2
+          genre: old-system-sessions
+          mood_tags: [patient, blue, midtempo]
+          playable: true
+          fact: The second verse is Aldis Merrow's arithmetic about an answer that cannot arrive in the same year as the letter it answers, sung as he wrote it out.
+          credits: {writers: [p_aldis_merrow, p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1157
+          title: It Was Meant for Somebody Else
+          track_number: 3
+          genre: old-system-sessions
+          mood_tags: [wry, rolling, plain]
+          playable: true
+          fact: About a coat somebody left in the lock house and never came back for, which is still on the same hook.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1158
+          title: Eleven Miles of Water
+          track_number: 4
+          genre: old-system-sessions
+          mood_tags: [steady, warm, rolling]
+          playable: true
+          fact: Torr Bexley counts the eleven miles off by the bridges rather than by the locks, which is how the crews do it and why his numbers do not agree with the band's first record.
+          credits: {writers: [p_torr_bexley], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1159
+          title: The Bottom Gate Leaks
+          track_number: 5
+          genre: old-system-sessions
+          mood_tags: [blunt, hard, driving]
+          playable: true
+          fact: The bottom gate of the lowest lock has leaked since 2601 and the band sent this song to the navigation office with a copy of the record.
+          credits: {writers: [p_fenna_crole, p_torr_bexley], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1160
+          title: Two Names on the Bill
+          track_number: 6
+          genre: old-system-sessions
+          mood_tags: [midtempo, fond, plain]
+          playable: true
+          fact: The two names in the chorus belong to the lock keepers who worked the cut before Fenna Crole's family did, and both their daughters were in the room for it.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1161
+          title: Working Under the Bridge
+          track_number: 7
+          genre: old-system-sessions
+          mood_tags: [loud, defiant, fast]
+          playable: true
+          fact: Sim Pallow strikes the arch of the bridge with a lock key all the way through, because the band played this one standing underneath it.
+          credits: {writers: [p_fenna_crole, p_sim_pallow], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1162
+          title: She Never Wrote Back
+          track_number: 8
+          genre: old-system-sessions
+          mood_tags: [slow, aching, blue]
+          playable: true
+          fact: The only song on the record Fenna Crole did not write; Aldis Merrow wrote it, has never said who it is about, and the band have stopped asking him.
+          credits: {writers: [p_aldis_merrow], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1163
+          title: Stay Where the Water Is
+          track_number: 9
+          genre: old-system-sessions
+          mood_tags: [final, close, warm]
+          playable: true
+          fact: The last thing cut in the wharf room, sung with the doors on to the water standing open, and a boat goes past underneath the final verse.
+          credits: {writers: [p_fenna_crole, p_wenna_ferrin], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+
+    - id: al_143
+      title: Somebody Sent Us This
+      band: b_063
+      label: label_7
+      release_year: 2624
+      kind: album
+      genre: old-system-sessions
+      cornerstone: false
+      notes: >-
+        Cut in 2621 and issued at the road head in 2624, because the first copy was in the crate
+        that went astray in 2622 and very nearly closed the house. Fenna Crole had kept the band's
+        second copy on the lock house shelf and it went out on the first crossing after the loss was
+        worked out. The record exists at all because Relay Road Import had, in 2619, sent something
+        up the road for once — a Shore Rounds pressing with no letter and no name on the sleeve —
+        and the Ninefoot Cut spent a season finding out whose it was and then learned one of the
+        rounds off it. It is the only record in the house's list on which the road ran both ways,
+        and Effa Lomm has written that she would like to hear it and has not been sent one.
+      songs:
+        - id: s_1164
+          title: Somebody Sent Us This
+          track_number: 1
+          genre: old-system-sessions
+          mood_tags: [bright, warm, midtempo]
+          playable: true
+          fact: The record the importer sent to the lock house in 2619 arrived with no letter and no name on the sleeve, and the band wrote to the road head and waited a season to find out whose it was.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1165
+          title: Sing the One They Sent
+          track_number: 2
+          genre: old-system-sessions
+          mood_tags: [communal, rolling, close]
+          playable: true
+          fact: The round is the Shore Rounds', learned off that record, and the Ninefoot Cut come in together where the Titan band come in a line apart.
+          credits: {writers: [p_fenna_crole, p_wenna_ferrin], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1166
+          title: Nine Foot of Water
+          track_number: 3
+          genre: old-system-sessions
+          mood_tags: [dry, funny, brisk]
+          playable: true
+          fact: Fenna Crole gives the cut its depth in the first line and the navigation office wrote to the band to say that it is nine foot six.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1167
+          title: The Second Copy
+          track_number: 4
+          genre: old-system-sessions
+          mood_tags: [patient, wry, steady]
+          playable: true
+          fact: Written about the crate that went astray in 2622 with the band's first copy in it, and finished before anybody had told them the crate was gone.
+          credits: {writers: [p_fenna_crole, p_torr_bexley], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1168
+          title: The Same Eleven Miles
+          track_number: 5
+          genre: old-system-sessions
+          mood_tags: [slow, plain, fond]
+          playable: true
+          fact: Torr Bexley has worked the same eleven miles since 2598, and the song lists what has changed on them in order and ends on nothing.
+          credits: {writers: [p_torr_bexley], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1169
+          title: Who Taught You That
+          track_number: 6
+          genre: old-system-sessions
+          mood_tags: [warm, generous, midtempo]
+          playable: true
+          fact: Wenna Ferrin learned the concertina from a woman on the next boat who would not play a tune twice, and this is the one tune she went back and asked for three times.
+          credits: {writers: [p_wenna_ferrin, p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+        - id: s_1170
+          title: Leave the Gate Open
+          track_number: 7
+          genre: old-system-sessions
+          mood_tags: [final, communal, bright]
+          playable: true
+          fact: The band played it out through the open lock house door and the crews tied up outside sing the last chorus back at them.
+          credits: {writers: [p_fenna_crole], players: [p_fenna_crole, p_aldis_merrow, p_torr_bexley, p_sim_pallow, p_wenna_ferrin], producer: p_torr_bexley}
+
 layer_b:
   bands:
     - id: b_049
@@ -1034,7 +1414,7 @@ layer_b:
           release_year: 2624
           kind: album
           genre: old-system-sessions
-          notes: The band's last, made on the route they had worked for twenty-eight years, and the only import that season besides the Terrace Road record.
+          notes: The band's last, made on the route they had worked for twenty-eight years, and the record that shared a season with Terrace Road Four's and sold nothing beside it.
           songs:
             - {id: s_0928, title: Both Ways Every Day, track_number: 1, genre: old-system-sessions, playable: false}
             - {id: s_0929, title: The Last Crossing Out, track_number: 2, genre: old-system-sessions, playable: false}

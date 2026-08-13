@@ -28,21 +28,20 @@ them.
 **Window check** (§3): six anchors inside the last thirty-five years, two in the old-standards
 window. Correct as specified.
 
-**State after M-48 (2026-08-13): seven of the eight are satisfied** — ≥25 playable songs across ≥4
-bands and ≥2 labels. In order: 2583 · 33/4/4 · 2594 · 36/5/3 · 2600 · 39/5/3 · 2607 · 43/5/5 ·
-2612 · 33/4/4 · 2619 · 124/13/6 · 2624 · 62/7/5. One falls short, and it is the one no card can fix:
+**State after M-49 (2026-08-13): seven of the eight are satisfied** — ≥25 playable songs across ≥4
+bands and ≥2 labels. In order: 2583 · 33/4/4 · 2594 · 36/5/3 · 2600 · 39/5/3 · 2607 · 50/6/5 ·
+2612 · 40/5/4 · 2619 · 133/14/6 · 2624 · 69/8/5. One falls short, and it is the one no card can fix:
 
-- **2612 was repaired by M-46** and M-48 left it alone. The demotion left it at 25 songs across 3
-  bands, one band short of a programme; Pipe and Hammer's *Four Won't Fill It* — the record of the
-  year Saul Ravik left over the amplified pipes — puts a fourth band and a fourth label on it, and
-  it reads 33/4/4. **It sits on §5's floor of four bands with no margin**, so M-49 landing a release
-  there is still worth doing, and is no longer owed.
+- **2612 has its margin back.** M-46 repaired it from 25 songs across 3 bands to 33/4/4, which sat
+  exactly on §5's floor of four bands; The Ninefoot Cut's *Everything Comes By Water* puts a fifth
+  band on it and it reads 40/5/4. **No anchor now stands on the floor**, and 2583 at 33/4/4 is the
+  thinnest of the seven.
 - **2559 cannot be fixed by writing more.** COMMISSION §3 puts layer A in 2566–2626, so no playable
   song can carry 2559 at all; it stands at zero. M-15 is where that contradiction gets resolved.
 
-**These counts move again.** M-49 adds 30 playable songs and M-12, M-13 and M-14 add 100 more, so
-the line above is where the catalogue stands today rather than where it is going. M-15 is where the
-finished state is checked against §5.
+**These counts move again.** M-12, M-13 and M-14 add 100 playable songs, so the line above is where
+the catalogue stands today rather than where it is going. M-15 is where the finished state is
+checked against §5.
 
 **This table is read by `make check`.** The eight years in the first column are the only release
 years any album in any genre may carry, and `src/station/music/check.py` takes them from here
@@ -87,11 +86,12 @@ overlooked player before giving an opinion.
 > credit is written, or a batch will credit someone to a session they were eleven years old for.
 >
 > **The eight work in the settled worlds, and old-system sessions credits none of them (D-065).**
-> Every record in that genre was cut on Mars, Titan or Europa, and none of the eight has been down
-> the road. It is the second permanent hole after D-064's pre-2592 window — 60 songs across 7
-> albums — and it is not one to fill: a second roster for the home system is the same brief D-064
-> declined. What carries the industry feel there is the genre's own three bands guesting on each
-> other's records.
+> Every record in that genre was cut on Mars, Titan, Europa or Earth, and none of the eight has been
+> down the road. It is the second permanent hole after D-064's pre-2592 window — 90 songs across 11
+> albums after M-49 — and it is not one to fill: a second roster for the home system is the same
+> brief D-064 declined. What carries the industry feel there is the genre's own bands guesting on
+> each other's records, and, for the Earth band nobody can reach, a round that came down the road
+> and a record that went back up it.
 
 | Name | Instrument | Character |
 |---|---|---|
@@ -129,7 +129,7 @@ is recorded is the result:
 | lane-rock | 2026-08-13 | 267 | nothing matched — rescreened whole after M-46 grew it to 110 |
 | deck-talk | 2026-08-09 | 215 | nothing matched |
 | frontier-reels | 2026-08-13 | 231 | nothing matched — rescreened whole after M-48 grew it to 95 |
-| old-system-sessions | 2026-08-10 | 165 | nothing matched |
+| old-system-sessions | 2026-08-13 | 201 | nothing matched — rescreened whole after M-49 grew it to 90 |
 | pulse-dance | 2026-08-11 | 163 | nothing matched |
 
 Notes kept because §19 says fuzzy and surname-only matches are flagged, never blocked:
@@ -198,16 +198,15 @@ Layer-A bands and playable songs only. §5 needs every label to end on ≥3 band
 | 4 | Forge, industrial | Deep Register | 3 | 75 |
 | 5 | haulers, co-op | Common Wake Cooperative | 4 | 95 |
 | 6 | late-club, folded 2612 | Lower Bell Editions | 1 | 15 |
-| 7 | old-system importer | Relay Road Import | 3 | 60 |
+| 7 | old-system importer | Relay Road Import | 4 | 90 |
 
-**The table above is what is written today, recounted after M-48** (2026-08-13). M-44's demotion had
+**The table above is what is written today, recounted after M-49** (2026-08-13). M-44's demotion had
 taken a band and 25 songs off label 2, a band and 20 off label 4, a band and 25 off label 5, and all
-of label 3's layer A but one band and 20 songs (D-068); M-46 put 35 songs and one band back, and
-M-48 puts 30 more — 15 with a fourth frontier-reels band on label 2, 10 on label 4 and 5 on label 5.
-**Label 2 is repaired: Harbor Standard has 3 bands, 60 songs and 7 albums**, so its retrospective is
-makeable and it needs nothing further. **Three labels are still short of §5's floor** of three bands
-and forty songs — label 1 by a band only, labels 3 and 6 by both. Labels 4, 5 and 7 clear it, and
-label 5 now clears it twice over.
+of label 3's layer A but one band and 20 songs (D-068); M-46 put 35 songs and one band back, M-48
+put 30 more, and M-49 adds 30 and a fourth band to label 7, which never lost anything and is the one
+label the re-weight grew rather than repaired. **Three labels are still short of §5's floor** of
+three bands and forty songs — label 1 by a band only, labels 3 and 6 by both. Labels 2, 4, 5 and 7
+clear it, and labels 5 and 7 now clear it twice over.
 
 **Which card finishes which label**, once the re-weight is done — the numbers are in
 `music/plan.yaml` and are not repeated here:
@@ -219,7 +218,7 @@ label 5 now clears it twice over.
 | 3 Meridian | two bands and twenty songs | **M-12** void-lounge, which now presses for Meridian |
 | 4 Forge · 5 haulers | nothing — both clear the floor without help | **M-46** and **M-48** added to both |
 | 6 late-club | two bands and twenty-five songs | **M-12** void-lounge, on its own |
-| 7 Relay Road Import | nothing, but it grows | **M-49** old-system sessions |
+| 7 Relay Road Import | nothing — **M-49** took it to 4 bands and 90 songs | finished |
 
 **The cornerstone list stands at six** (D-067, recounted at M-44). It was full at eight until
 `al_055` *Count It Twice* and `al_117` *The Long Cordon* went down to layer B with their genres — a
@@ -233,26 +232,26 @@ call and has not been made.
 
 Layer A songs per form. `music/plan.yaml` is the authority; this is the running count. **Every
 target below is the stage R target** (D-068), and the last column names the card that closes the
-gap. The one genre still written at the wrong size — old-system sessions — carries that card as
-`owed_to:` in `plan.yaml`; the three not written at all need no marker, because an empty file is
-skipped.
+gap. **No genre now carries an `owed_to:` marker in `plan.yaml`** — every written genre matches the
+plan, and the three not written at all need no marker, because an empty file is skipped.
 
 | Form | Target | Written | Owed to |
 |---|---|---|---|
 | Lane-rock | 110 | 110 | — |
 | Relay-pop | 105 | 105 | — |
 | Frontier Reels | 95 | 95 | — |
-| Old-system sessions | 90 | 60 | M-49 |
+| Old-system sessions | 90 | 90 | — |
 | Void-lounge | 55 | 0 | M-12 |
 | Void Ballads | 25 | 0 | M-14 |
 | Core Harmonies | 20 | 0 | M-13 |
 | **Deck-talk** | **0 — layer B** | **0 — demoted at M-44** | — |
 | **Pulse-dance** | **0 — layer B** | **0 — demoted at M-44** | — |
-| | **500** | **370** | |
+| | **500** | **400** | |
 
-**370 of the 500 are written.** The other 130 are 30 in the one genre still growing — M-49 — and 100
-in the three genres not yet written. The 130 songs deck-talk and pulse-dance gave up are still in
-the wiki and still readable; they are titles now, like the rest of layer B.
+**400 of the 500 are written, and stage R is finished.** The other 100 are all in the three genres
+not yet written — void-lounge, void-ballads and core harmonies. The 130 songs deck-talk and
+pulse-dance gave up are still in the wiki and still readable; they are titles now, like the rest of
+layer B.
 
 **Layers B and C are not tallied.** They have no hard floor — more is better, and nothing breaks if
 one genre carries more history than another.

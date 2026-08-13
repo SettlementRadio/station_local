@@ -61,9 +61,9 @@ marked **NEXT**.
 | Stage | Cards | Last done | Status |
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
-| **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-48** Frontier Reels grows to 95 · 2026-08-13 | **M-49 next**, and it is the last card of the stage. §12's rules 1–6 are live and green; 7–8 stay owed to M-15 |
+| **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-49** old-system sessions grows to 90 · 2026-08-13 | **all done.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15. No genre carries an `owed_to:` marker any more |
 | 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-47** the pilot's 45 lyrics · 2026-08-13 | **M-18 is unblocked** — 45 songs of words and prompts are ready to generate |
-| 2 · The wiki — 7 genres left | M-07 … M-15 | **M-11** pulse-dance · 2026-08-11 | 370 playable songs written of 500 · M-12 is now 55 songs and waits its turn |
+| 2 · The wiki — 3 genres left | M-07 … M-15 | **M-11** pulse-dance · 2026-08-11 | 400 playable songs written of 500 · **M-12 next**, 55 songs and two labels to finish |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
@@ -316,7 +316,7 @@ got safer again: the new band reads 0 studio anecdotes in 15 facts and no band i
 band still working, and now shares the Cold Harbor halls with the band whose singer it tried to hire.
 Depends on: M-46
 
-### M-49 · `[agent]` old-system sessions grows to 90 — **NEXT**
+### M-49 · `[agent]` old-system sessions grows to 90 — **DONE 2026-08-13**
 Files: `music/wiki/old-system-sessions.yaml`, `music/CONSTANTS.md`, `music/plan.yaml`
 Check: 90 playable songs on label 7, across 4 layer-A bands — a fourth importer band joins the
 three. `plan.yaml`'s `owed_to: M-49` line is gone. `make check` green. Names screened.
@@ -324,6 +324,29 @@ Note: canon fact 19 now names old-system sessions among the three most-listened 
 COMMISSION §4 keeps its import house *"old, thin, precarious"*. **That tension is deliberate and
 stays** — the most-loved music in the settled worlds arrives on the most fragile route, which is
 what fact 17 already says and is a permanent live stake for the station.
+Result: 90 playable songs across 11 layer-A albums, all on label 7. **All 30 new songs went to the
+new band, because the three written ones could not take any** — every anchor inside Terrace Road
+Four's and The Shore Rounds' lives is spent and both already hold 2624, Undershore Local stopped in
+2612 with its last record written as its last, and the one device that would have freed a release is
+the archive issue COMMISSION §10 forbids for this genre by name (D-075). **The fourth band is
+`b_063` The Ninefoot Cut**, five lock and lighter crew on eleven miles of Earth canal, and the first
+band from Earth ever imported — their first record reached the road head in 2607 because a clerk on
+Earth misread the address on a letter meant for the Bell Yard Rounds, the band everybody out here
+assumed the first Earth import would be, **and the argument about whether the house landed the wrong
+band has run ever since.** Their four records are `al_140` *Ten Locks to the Sea* (2607, 7),
+`al_141` *Everything Comes By Water* (2612, 7), `al_142` *Not the Band You Wrote For* (2619, 9) and
+`al_143` *Somebody Sent Us This* (2624, 7), each cut two years before it was issued because Earth is
+two crossings out rather than one. **Nobody guests on them and nobody can** — Earth is too far for
+D-065's device, so what connects the band is a Shore Rounds pressing the importer sent up the road
+in 2619 with no name on the sleeve and the round the band learned off it. **Anchor 2612 gains its
+margin**: it stood on §5's floor at 33/4/4 and now reads 40/5/4, so no anchor sits on the floor
+except 2559, which cannot be fixed by writing. Rule 6 is safest here of any genre — the new band
+reads 0 studio anecdotes in 30 facts. `make music-screen` returned nothing on 201 distinct names.
+**16 of the 30 are dated 2619 or 2624**, so the catalogue stands at 202 of 400 inside the last eight
+years and COMMISSION §3's half-recent rule needs 48 of the remaining 100 — **48%, against the 49%
+D-074 handed on.** **Two lines of existing prose were edited, both already false before this card**
+— `al_098` claimed nothing else came down the road in a season two other records are dated to, and
+dated its near-closure as *"the year before"*, which §10 forbids.
 Depends on: M-48
 
 ---
@@ -493,7 +516,7 @@ since 2618 because one of them makes records to travel and the other makes them 
 Five session players appear, several of them because the seal shut with them on the wrong side of it.
 Depends on: M-10
 
-### M-12 · `[agent]` void-lounge — 55 songs, 4 bands, and Meridian's whole layer A
+### M-12 · `[agent]` void-lounge — 55 songs, 4 bands, and Meridian's whole layer A — **NEXT**
 Check: 55 playable songs split 25 / 30 across labels 3 and 6; 4 layer-A bands, two on each label;
 at least four albums on each of the two labels, so both reach §5's six; ~4 layer-B, ~3 layer-C.
 `make check` green. Names screened.
