@@ -61,8 +61,8 @@ marked **NEXT**.
 | Stage | Cards | Last done | Status |
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
-| **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-44** deck-talk and pulse-dance demoted · 2026-08-12 | **M-45 next.** The plan and the wiki agree again at 305 songs; the writing rules are not enforced yet |
-| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-17** lyrics and prompts · 2026-08-09 | M-17's words are being redone by M-47; M-18 waits |
+| **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-45** the writing rules · 2026-08-12 | **M-47 next.** The eight rules are `COMMISSION.md` §12 and `make check` counts them; rules 1–5 are owed to M-47 and 7–8 to M-15 |
+| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-17** lyrics and prompts · 2026-08-09 | M-17's 45 songs fail four of §12's rules apiece; M-47 redoes them and M-18 waits |
 | 2 · The wiki — 7 genres left | M-07 … M-15 | **M-11** pulse-dance · 2026-08-11 | 305 playable songs written of 500 · M-12 is now 55 songs and waits its turn |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
@@ -201,7 +201,7 @@ sits on §5's floor with no margin (D-070). And **anchor year 2612 lost its four
 now asked in `CONSTANTS.md` §1 to land a release there. `make check` green.
 Depends on: M-43
 
-### M-45 · `[agent]` The writing rules, and `make check` enforcing them — **NEXT**
+### M-45 · `[agent]` The writing rules, and `make check` enforcing them — **DONE 2026-08-12**
 Goal: The next 400 songs cannot be the same song 400 times, because the command goes red when they are.
 Files: `music/COMMISSION.md`, `src/station/music/check.py`, `tests/unit/test_music.py`
 Check: `make check` goes red, naming the album, on any of — more than 40% of an album's songs sharing
@@ -214,9 +214,27 @@ Note: **this is the anti-degradation card.** Across six sessions the counting ru
 held perfectly — no id collision, no wrong count, no album off an anchor. The prose rules in
 `COMMISSION.md` failed completely over the same span. Same agents, same instructions; the difference
 is that one set went red. This moves the quality rules to the mechanism that works.
+Result: the eight rules are `COMMISSION.md` **§12**, and `src/station/music/writing.py` reads its
+thresholds, its album floor and its two word lists out of that section rather than keeping a copy —
+so editing a number in the writer's brief changes what the command does (D-071). `make check` is
+green. **Three of the eight cannot be green on what is written today**, and each is owed to the card
+that fixes it, in a new **Owed to** column that works exactly like `plan.yaml`'s `owed_to:` (D-069):
+the rule is counted and reported, and it goes red the moment that card is marked DONE. **Rules 1–5
+are owed to M-47** — the only lyrics that exist are the pilot's, and M-47's own check already says
+*"all 45 pass M-45's rules."* **Rules 7 and 8 are owed to M-15**, whose job list states both in
+words. Marking those two cards done today turns `make check` red with **twenty named findings**, so
+the deferral cannot outlive the work. **Rule 7 replaced a rule rather than adding one:** `check.py`
+required both layers to sit on an anchor year, which is exactly why layer B spans eight years
+instead of forty, so `year_layers()` keys the swap to M-15 — anchors bind both layers until it
+lands, layer A only afterwards. **What the rules found is worse than this card assumed.** The pilot
+reports one structure across 9 of 12, 8 of 11, 11 of 11 and 8 of 11 songs; the echoed answer in 45
+of 45; the title as the hook in 41 of 45; and **not one of the 45 lyrics carries two of the world's
+own nouns** — §3's swap-the-nouns test passing so completely that it inverts. Rule 6 is live and
+green on the wiki **with almost no margin**: the worst band is 10 studio anecdotes in 21 facts
+against a ceiling of half.
 Depends on: M-43
 
-### M-47 · `[agent]` Redo the pilot's 45 lyrics
+### M-47 · `[agent]` Redo the pilot's 45 lyrics — **NEXT**
 Goal: The four pilot albums are 45 different songs instead of one song 36 times, and they sound like
 the new relay-pop.
 Files: `music/production/lyrics/al_001.yaml` … `al_004.yaml`, `music/production/styles.yaml`
@@ -225,6 +243,11 @@ instead of produced dance-pop. Every song still fits the fact the wiki states ab
 voice line changes.
 Note: replaces M-17's output and nothing is lost — no audio exists and every `take:` block is still
 null. **This is the card that unblocks you**: M-18 has nothing to generate until it lands.
+Note: **§12's rules 1–5 are owed to this card** (D-071). They are counted today and reported to
+nobody; marking this card DONE makes them fatal, so `make check` is what says whether the rewrite
+worked. As it stands they report one structure across 9 of 12, 8 of 11, 11 of 11 and 8 of 11 songs,
+the echoed answer in 45 of 45, the title as the hook in 41 of 45, and **not one lyric of the 45
+carrying two of the world's own nouns.**
 Depends on: M-43, M-45
 
 ### M-46 · `[agent]` lane-rock grows to 110
@@ -480,6 +503,11 @@ before the wiki freezes than after:
    release year — the `clock.py` rule applied to the catalogue — or redefine the chart in
    `PROGRAMMING.md` as most-played rather than new-release.
 
+Note: **jobs 1 and 2 above are §12's rules 7 and 8, and both are owed to this card** (D-071). They
+are counted today and reported to nobody; marking this card DONE makes them fatal, and job 1 also
+flips `check.py`'s `year_layers()` so the anchors stop binding layer B and rule 7 starts. Today the
+wiki reports 8 distinct layer-B years against the 40 rule 7 asks for, and every one of the six
+written genre files names **zero** bands that live in another file.
 Note: fixes here are edits to release years and label assignments — text only, no lyrics affected.
 **The wiki freezes when this card closes.** No lyrics are written before it does, other than the
 pilot's, which are already frozen by M-19. **Anchor year 2559 is unsatisfiable as written** —

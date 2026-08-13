@@ -1773,3 +1773,42 @@ the flag set would have put an album with no audio in front of the operator buil
 Record*. §5 allows 6–8 and six is inside it, **with no margin under it**. D-067's instruction to
 M-12, M-13 and M-14 is unchanged: they designate none. Whether the two freed slots go to a later
 genre is the operator's call and is not made here.
+
+### D-071 · The writing rules move into `COMMISSION.md` §12, and a rule may be owed to a card — 2026-08-12
+
+M-45 asked for eight prose rules and `make check` enforcing them, and said *"green on the wiki as it
+stands."* Measured against the repository, three of the eight cannot be green today and one of them
+contradicts a rule already in force. Three things were decided to carry the card out.
+
+**§12 is where the rules live, and it is the only part of `COMMISSION.md` a machine reads.**
+`writing.py` takes the eight thresholds, the album floor, the world-noun list and the
+studio-anecdote vocabulary out of §12's tables rather than keeping a copy, and stops with a message
+naming the table if one changes shape — the same arrangement as the anchor years in `CONSTANTS.md`
+§1. The alternative, numbers in code and numbers in the writer's brief, drifts inside a week, and
+the writer's copy is the one that gets read. The rules themselves are separated from `check.py` into
+`writing.py` because `check.py` is the counting of identity and arithmetic and would have gone past
+§31's 400 lines besides.
+
+**A rule may be owed to a card, exactly as a genre may be** (D-069). Rules 1–5 read
+`music/production/lyrics/`, where the only file is the pilot's 45 songs, and all four albums fail
+four rules apiece — which is not news, it is the finding M-47 was written to fix, and M-47's own
+check already reads *"all 45 pass M-45's rules."* Rules 7 and 8 are properties of the whole
+catalogue that no single genre can satisfy, and M-15's job list states both of them in words. So §12
+carries an **Owed to** column: the rule is counted and reported, and it becomes fatal the moment the
+card it names is marked DONE. **Marking M-47 and M-15 done today turns `make check` red with twenty
+named findings**, so the deferral cannot outlive the work and cannot quietly become permanent.
+
+**Rule 7 replaces a rule rather than adding one.** `check.py` required every album in both layers to
+sit on an anchor year, which is why all eighty layer-B albums sit on eight of them and two hundred
+years of music history happened on eight days. Rule 7 asks layer B for forty distinct years instead,
+and the two cannot both hold. `year_layers()` keys the swap to M-15: until it lands the anchors bind
+both layers, after it they bind layer A and rule 7 binds layer B. There is no window in which
+neither applies.
+
+**What the rules found, and it is worse than the card assumed.** With the deferrals lifted, the
+pilot's four albums report: one section structure across 9 of 12, 8 of 11, 11 of 11 and 8 of 11
+songs; the echoed answer in 45 of 45; the song's own title as the hook in 41 of 45; and **not one of
+the 45 lyrics carries two of the world's own nouns.** §3 asks the world to supply the furniture and
+the swap-the-nouns test to be survivable; these lyrics would read unchanged on Earth, which is the
+test passing so completely that it inverts. The wiki itself is green on rule 6 with **very little
+margin** — the worst band sits at 10 studio anecdotes in 21 facts against a ceiling of half.

@@ -3,9 +3,12 @@
 Six things are decided here, and every one of them is arithmetic or identity rather than
 judgement: a label whose song count does not match `plan.yaml`, a layer-A song with no fact, a
 layer-B song that has one, a release year that is not one of the eight anchors, an id used twice,
-and an `owed_to:` marker that has outlived the card it names. Everything else about a genre —
-whether the bios read well, whether a name is too close to a real one — is a human judgement and
-stays one (`COMMISSION.md` §19, and M-03 for the screen).
+and an `owed_to:` marker that has outlived the card it names. Whether a name is too close to a real
+one stays a human judgement (M-03 narrows the pile; it does not clear it).
+
+**Whether the writing is any good used to be a judgement too, and that is what failed.** The eight
+rules of `COMMISSION.md` §12 — the ways an album becomes one song sung eleven times — are counted
+in `writing.py`, which is a separate pass over the same files (M-45).
 
 Why this is code: a checker prompt asks a model to count 105 songs across eleven albums, and a
 model that miscounts is indistinguishable from a wiki that is wrong (D-054). The counting half
@@ -36,6 +39,9 @@ _ANCHOR_ROW = re.compile(r"^\|\s*\*\*(\d{4})\*\*\s*\|", re.MULTILINE)
 # heading says so. Range headings (`### M-21 … M-29 ·`) are not cards and do not match.
 TASKS_FILE = "MUSIC_TASKS.md"
 _CARD_HEADING = re.compile(r"^###\s+(M-\d+)\s+·(.*)$", re.MULTILINE)
+
+# The card that gives layer B its own calendar — see `year_layers()` and `COMMISSION.md` §12.
+LAYER_B_CALENDAR_CARD = "M-15"
 
 
 class CheckError(RuntimeError):
@@ -155,13 +161,12 @@ def music_cards(tasks: Path) -> dict[str, bool]:
     return cards
 
 
-def _owed_cards(plan: Plan, tasks: Path) -> list[Problem]:
+def _owed_cards(plan: Plan, cards: dict[str, bool]) -> list[Problem]:
     """A genre may be behind the plan while a card owes it songs — but not once that card is DONE.
 
     This is what stops a re-weight from quietly disabling the count check for good: the marker in
     `plan.yaml` and the card in `MUSIC_TASKS.md` have to be retired in the same edit (D-069).
     """
-    cards = music_cards(tasks)
     out: list[Problem] = []
     for slug, allocation in sorted(plan.genres.items()):
         card = allocation.owed_to
@@ -251,7 +256,7 @@ def _facts(slug: str, genre: wiki.GenreWiki) -> list[Problem]:
     return out
 
 
-def _years(slug: str, genre: wiki.GenreWiki, anchors: list[int]) -> list[Problem]:
+def _years(slug: str, genre: wiki.GenreWiki, anchors: list[int], layers: str) -> list[Problem]:
     """§1 of CONSTANTS: a year is only a programme if enough records landed on it."""
     listed = ", ".join(str(year) for year in anchors)
     return [
@@ -260,9 +265,25 @@ def _years(slug: str, genre: wiki.GenreWiki, anchors: list[int]) -> list[Problem
             f'{album.id} "{album.title}" is dated {album.release_year}, which is not one of the '
             f"eight anchor years ({listed})",
         )
-        for album, _, _ in genre.every_album()
-        if album.release_year not in anchors
+        for album, _, layer in genre.every_album()
+        if layer in layers and album.release_year not in anchors
     ]
+
+
+def year_layers(cards: dict[str, bool]) -> str:
+    """Which layers the anchors bind — and it changes exactly once, when M-15 lands.
+
+    A programme needs its records clustered, so today every album in both layers sits on an anchor.
+    That is also why two hundred years of history happened on eight days. `COMMISSION.md` §12's
+    rule 7 is the replacement: after M-15 the anchors bind layer A and layer B carries the rest of
+    the calendar. The swap is keyed to the card so there is no window in which neither rule applies.
+    """
+    if LAYER_B_CALENDAR_CARD not in cards:
+        raise CheckError(
+            f"{TASKS_FILE} has no {LAYER_B_CALENDAR_CARD}, which is the card that hands layer B "
+            f"its own calendar (COMMISSION.md §12 rule 7). It cannot be renumbered away."
+        )
+    return "A" if cards[LAYER_B_CALENDAR_CARD] else "AB"
 
 
 def _same_entity(uses: list[tuple[str, wiki.Entity]]) -> bool:
@@ -298,8 +319,10 @@ def check_wiki(root: Path) -> list[Problem]:
     plan = load_plan(music / "plan.yaml")
     anchors = anchor_years(music / "CONSTANTS.md")
     wiki_dir = music / wiki.WIKI_DIR
+    cards = music_cards(music / TASKS_FILE)
+    layers = year_layers(cards)
 
-    problems: list[Problem] = _owed_cards(plan, music / TASKS_FILE)
+    problems: list[Problem] = _owed_cards(plan, cards)
     found: list[tuple[str, wiki.Entity]] = []
     for slug in wiki.written_genres(wiki_dir):
         genre = wiki.load_genre(wiki_dir / f"{slug}.yaml")
@@ -313,5 +336,5 @@ def check_wiki(root: Path) -> list[Problem]:
         if not plan.genres[slug].owed_to:
             problems += _counts(slug, genre, plan)
         problems += _facts(slug, genre)
-        problems += _years(slug, genre, anchors)
+        problems += _years(slug, genre, anchors, layers)
     return problems + _duplicate_ids(found)

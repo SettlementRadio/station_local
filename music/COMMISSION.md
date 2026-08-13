@@ -452,3 +452,88 @@ presenter says about it, it has crossed the line.
 - [ ] No lyric is about leaving Earth; every lyric passes the swap-the-nouns test.
 - [ ] Every name has been screened.
 - [ ] The wiki contains no prompt text and no real genre word.
+- [ ] **`make check` is green, which is §12.**
+
+---
+
+## 12. The eight writing rules — the ones the command counts
+
+> **§1–§11 say what to write. This section says what `make check` refuses**, and it is the only part
+> of this file a machine reads. `src/station/music/writing.py` takes its numbers and its two word
+> lists out of the tables below rather than keeping a copy of them, so editing a number here changes
+> what the command does. Keep every table's shape; if one stops matching, `make check` stops with a
+> message saying so rather than quietly finding no rules.
+
+**Why this section exists.** Across six writing sessions the counting rules in `check.py` held
+perfectly — no id collision, no wrong count, no album off an anchor. The prose rules in §1–§11
+failed over the same span. Same writers, same instructions; the difference is that one set went red.
+Every rule below is a way the wiki or the pilot lyrics have already gone wrong once, rewritten as
+arithmetic. **A rule that cannot go red is a preference.**
+
+None of these are new advice. They are §3's swap-the-nouns test, §6's one-fact rule and §7's shape
+rules, counted instead of asked for.
+
+| # | Goes red on | Counted over | Owed to |
+|---|---|---|---|
+| 1 | more than `40%` of an album's songs sharing one section structure | album | `M-47` |
+| 2 | fewer than `3` of an album's songs in the third person or carrying a named character | album | `M-47` |
+| 3 | the echoed answer — a parenthetical repeat inside a sung line — in more than `33%` of an album's songs | album | `M-47` |
+| 4 | the song's own title used as the hook in more than `50%` of an album's songs | album | `M-47` |
+| 5 | a lyric carrying fewer than `2` of the world's own nouns | song | `M-47` |
+| 6 | a band more than `50%` of whose song facts are studio anecdotes | layer-A band | — |
+| 7 | layer-B albums spanning fewer than `40` distinct release years | the whole wiki | `M-15` |
+| 8 | a genre file naming fewer than `3` bands that live in other genre files | genre file | `M-15` |
+
+**Rules 1–4 are shares of an album and are counted only on albums of `5` songs or more.** A share of
+four songs is not a distribution, and a two-track single would fail rule 1 for existing.
+
+Rules 1–5 read `music/production/lyrics/`. Rules 6–8 read `music/wiki/`.
+
+### Owed to a card
+
+The last column works exactly like `owed_to:` in `plan.yaml` (D-069). A rule owed to a card is
+**counted but not fatal** until that card is marked `DONE` in `MUSIC_TASKS.md`, and it goes red the
+moment it is — so the card cannot be closed while the work it names is still undone, and the
+deferral cannot quietly become permanent. Both of the cards named below already say so themselves:
+M-47's check is *"all 45 pass M-45's rules"*, and M-15's job list is rules 7 and 8 in words.
+
+**Rules 1–5 · `M-47`.** The only lyrics that exist are the pilot's 45, and M-47 rewrites all of them.
+
+**Rules 7–8 · `M-15`.** Both are properties of the whole catalogue rather than of one genre, and
+neither can be satisfied by the genre being written today. **Rule 7 replaces an existing rule rather
+than adding to one**: until M-15 closes, every album in both layers must sit on an anchor year
+(§3, and `CONSTANTS.md` §1); after it, the anchors bind layer A and layer B has to carry the rest of
+the calendar instead. The swap happens with the card, so there is no window in which neither applies.
+
+### Rule 5 · the world's own nouns
+
+§3 gives the principle — *"the world supplies the furniture — the relay, burn day, the storm season,
+the last ferry — and never the subject"* — and a principle is what the pilot's 45 songs failed. This
+is the list, drawn from `canon/55-language.md`'s coined words and from the freight, dock and
+life-support vocabulary the wiki already runs on. Matched as written, whole words, any case.
+
+**It is a floor and not a vocabulary.** Add to it as the world grows; never write to it.
+
+> burn day · burn festival · lane · relay · relay road · the lag · last ferry · ferry · hauler ·
+> freight crew · hold · deck · berth · manifest · cargo · transfer hall · port hall · siding ·
+> storm season · storm coast · sealed season · airlock · bulkhead · scrubber · blowout · ration ·
+> oxygen tank · stripped wire · resonance pipe · synth-harpsichord · the dark · the drift ·
+> ground-sick · settlement · outpost · shipboard press · carrier wave · the core · the frontier ·
+> the between · Lumen Festival · Clearing Day · vigil
+
+### Rule 6 · what counts as a studio anecdote
+
+§6's one-fact rule lists what a fact can be: *who played the part everyone remembers, which take it
+is, what it was written about, where it was recorded and why that was a bad idea, what it replaced,
+which argument it settled.* Six of those seven are about people; one is about the room. A band whose
+facts are mostly the room has a discography a presenter cannot say anything human about.
+
+A fact counts as a studio anecdote when it uses any of these words. Matched as written, whole words,
+any case.
+
+> take · takes · overdub · overdubs · microphone · mic · studio · session · sessions · engineer ·
+> engineers · tape · playback · booth
+
+**Being a studio anecdote is not a fault.** *"The issued take keeps a false start, because Tor
+Dolo's count-in landed with the hall's ventilation and the band could not repeat it"* is a good
+fact. Half a band's records being one is the fault.
