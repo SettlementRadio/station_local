@@ -62,10 +62,10 @@ marked **NEXT**.
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
 | **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-49** old-system sessions grows to 90 · 2026-08-13 | **all done.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15. No genre carries an `owed_to:` marker any more |
-| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-47** the pilot's 45 lyrics · 2026-08-13 | **M-18 is unblocked** — 45 songs of words and prompts are ready to generate |
-| 2 · The wiki — the catalogue-wide pass | M-07 … M-15 | **M-14** void-ballads · 2026-08-14 | **all 500 playable songs are written**, across 9 genre files, 25 bands and 55 albums · every label clears §5's floor · **M-15 next**, and the wiki freezes when it closes |
+| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-47** the pilot's 45 lyrics · 2026-08-13 | **M-18 is NEXT and is the only runnable card in the file** — 45 songs of words and prompts are ready to generate |
+| 2 · The wiki — the catalogue-wide pass | M-07 … M-15 | **M-15** the catalogue-wide pass · 2026-08-14 | **finished. The wiki is frozen.** 500 playable songs across 9 genre files, 25 bands and 63 albums · every label clears §5's floor · layer B carries 55 release years · all eight of §12's rules live and green |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
-| 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
+| 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-19 — **M-15 is done, so the pilot's verdict is the only thing left in its way** |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
@@ -86,11 +86,14 @@ assumes the pilot sounded right; if it did not, stages 3–6 get rewritten befor
 needs only relay-pop, which is already written, so there is nothing to gain by writing 330 more
 songs of text first and a great deal to lose.
 
-### Stages 1 and 2 run at the same time
+### Stages 1 and 2 ran at the same time — and stage 2 finished first
 
-Stage 1's long card is **M-18 — you, at Suno, for 45 songs.** Stage 2 is all `[agent]`. So the wiki
-genres get written while you are generating the pilot, which is what the `[you]`/`[agent]` split in
-*Who does what* is for. Both chains have to finish before stage 4 either way.
+Stage 1's long card is **M-18 — you, at Suno, for 45 songs.** Stage 2 was all `[agent]`, so the wiki
+got written while the pilot waited, which is what the `[you]`/`[agent]` split in *Who does what* is
+for. **Stage 2 closed at M-15 on 2026-08-14 and the agent front is now out of work.** Every
+remaining `[agent]` card — M-20 and everything in stages 3 and 5 — sits behind M-18 and M-19, so
+**the project waits on you at Suno and on the fourteen-song listen.** Nothing an agent can do will
+shorten that, and there is nothing left to write ahead of it: the wiki is frozen.
 
 ---
 
@@ -393,7 +396,7 @@ bent by arrangement note where the wiki puts a record in a different room (al_00
 chamber, al_002's smaller second half); voice, backing, instruments and exclude are never bent.
 Depends on: M-16
 
-### M-18 · `[you]` Suno — Measure Kindly and Open Parallax, 45 songs — **runnable since 2026-08-13**
+### M-18 · `[you]` Suno — Measure Kindly and Open Parallax, 45 songs — **NEXT** · runnable since 2026-08-13
 Goal: The pilot's audio exists.
 Files: `music/audio/`
 Check: 45 keeper takes downloaded and named `music/audio/<label>/<album>/NN.mp3`. Each album's
@@ -617,7 +620,7 @@ names. **No existing prose was edited**; one wrong line in `CONSTANTS.md` §1 wa
 had said Cold Harbor carried no 2583 release when `al_078` has been one since M-09.
 Depends on: M-13
 
-### M-15 · `[agent]` The catalogue-wide pass — and the wiki freezes — **NEXT**
+### M-15 · `[agent]` The catalogue-wide pass — and the wiki freezes — **DONE 2026-08-14**
 Goal: The three rules that are properties of the whole catalogue, not of one genre, are satisfied.
 These cannot be checked a genre at a time, and fixing them is free now and expensive once songs
 exist against them.
@@ -658,6 +661,41 @@ Note: fixes here are edits to release years and label assignments — text only,
 pilot's, which are already frozen by M-19. **Anchor year 2559 is unsatisfiable as written** —
 COMMISSION §3 puts layer A in 2566–2626, so no playable song can carry that year, and §5 asks every
 anchor for 25 of them. One of the two rules has to give, and this card is where you decide which.
+Result: **the wiki is frozen.** The six catalogue-wide checks all pass and none needed a fix — 500
+playable songs, 25 bands, 63 layer-A albums, every label past §5's floor, 15 bands at ≥18 songs
+against the 4 asked for, six cornerstones of 12–13, and every session player inside their dates and
+across ≥3 labels. **What the card was really for is the four jobs, and all four landed.**
+**Job 1 — layer B has its own calendar.** 68 of the 106 layer-B albums were re-dated across
+2552–2626 and the wiki now carries **55 distinct layer-B release years** against rule 7's 40, up
+from 8. **38 albums stayed on an anchor because the anchor's event is their story** — the fold, the
+festival, the shared press format, the Cycles going round — so the anchors are still the busiest
+years in the file (2619 carries 7, 2624 7, 2612 6) and the other two hundred years are no longer
+empty. Every new year sits inside its band's own active window, and **three albums that looked
+movable were not**: `al_095`, `al_097` and `al_118` are each dated by another record's prose, which
+is the kind of tie only a catalogue-wide pass finds (D-081).
+**Job 2 — the files reference each other.** Six of the nine named no foreign band at all; all nine
+now name three or more, and every reference is a real connection rather than a name-drop —
+Pipe and Hammer taking The Long Tally's pipe rig as they found it, Nera Ostell learning to hold a
+list through the wall from Gate Shift Callers, The Turning Room buying nine copies off one crate and
+giving eight away. **Rule 8 reads raw file text, so a band name broken across a line break does not
+count**, which cost one round trip and is worth knowing before the next card writes prose.
+**Job 3 — the anchor stories are in the wiki.** They are `music/wiki/anchors.yaml`, one entry per
+year with the story, what the station actually holds from it, and the records a year edition would
+build on. **It is not a genre**, and `wiki.written_genres()` skips it by name so it can never be
+counted as a tenth form. `CONSTANTS.md` §1 keeps the eight years and the table shape `check.py`
+reads, and its long accounts are gone rather than duplicated.
+**Job 4 — the chart is most-played** (D-080), which is what ARCHITECTURE §8 already computed: 45%
+decayed airplay, 25% requests, 20% previous position, 10% editorial nudge, and no release-date term
+anywhere. It was `COMMISSION.md` §5 that read as new-release, and §5 was the file that was wrong.
+**2559 stays an anchor and stays unplayable** (D-079): §5's year edition is built from the seven
+anchors that carry layer A, and the way 2559 reaches the air is `al_163`, seven of *Lanternlight*'s
+twelve movements recorded in 2624.
+**One defect was found and fixed.** `al_161` and `al_078` were both called *Nobody Sat Down* — two
+layer-A records, two labels, one name — so `al_161` and its track 1 are now *Nobody Had a Seat*
+(§10 permits a title edit and forbids an id edit). It is the only new name in the catalogue and
+`make music-screen` returns nothing on it. **One false line was corrected**: `al_120` said Bright
+Hazard were the only Stormline Issue act working in 2624, which M-12 made untrue when it put The
+Quiet Half's 2624 record on that label.
 Depends on: M-14
 
 ---

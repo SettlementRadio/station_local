@@ -171,6 +171,13 @@ operator. `Night Record` plays *"one label or one year"*, and a year is only a p
 playable songs across ≥4 bands and ≥2 labels** land on it. **Put most releases on the anchors** and
 never invent a ninth anchor year.
 
+**The anchors bind layer A only** (§12 rule 7, D-081). Every playable album sits on one of the
+eight; layer B carries the rest of the calendar, because layer B has no floor to hit and something
+has to account for the other two hundred years. A layer-B record still lands on an anchor whenever
+the anchor's own event is its story — the fold, the festival, the reopening — and 38 of them do.
+The eight stories themselves are `music/wiki/anchors.yaml`, which is where a year edition reads
+them from.
+
 ---
 
 ## 4. Labels
@@ -225,9 +232,22 @@ Check layer A against these before declaring it finished. Everything here counts
 | **Label retrospective** | 56 min, 14 songs | a label with **≥3 bands, ≥6 albums, ≥40 songs** |
 | **Artist profile** | 56 min, 14 songs | a band with **≥18 songs** — 14 is the bare minimum and makes every edition identical |
 | **Album story** | 56 min | a **cornerstone album of 12–14 songs**. Designate **6–8** across the catalogue |
-| **One year** | 56 min, 14 songs | an **anchor year: ≥25 songs, ≥4 bands, ≥2 labels** |
+| **One year** | 56 min, 14 songs | an **anchor year: ≥25 songs, ≥4 bands, ≥2 labels** — of the eight, the seven that carry layer A |
 | **Music sequence** (unhosted) | 56 min | mood coherence — enough songs sharing a mood tag. Still songs; there is no instrumental hour |
-| **The chart** | weekly, 40 positions | **≥80 songs** current at any time, plus turnover |
+| **The chart** | weekly, 40 positions | **≥80 songs in rotation**, plus turnover. **Most-played, never new-release** |
+
+**The chart counts plays, not release years** (D-080). ARCHITECTURE §8 scores it on decayed airplay,
+in-world requests and previous position, with no release-date term at all, and nothing in this
+catalogue is dated later than 2624 while the present is 2626 and moves every January. *Current*
+here means in rotation. **Do not write records dated to the present year to feed it** — that is a
+ninth anchor by another name, and §3 forbids it. `PROGRAMMING.md` carries what it costs a presenter.
+
+**2559 is an anchor the station cannot play, and that is finished rather than outstanding** (D-079).
+§3 puts layer A in 2566–2626, so no playable song can carry 2559; the year is an anchor because it
+is when *Lanternlight* was premièred and when every competing house scheduled itself around it. The
+"one year" edition is therefore built from the other seven, all of which clear the floor above. The
+way 2559 reaches the air is a later performance — `al_163`, seven of the cycle's twelve movements,
+recorded in 2624 — which is what §4 has always allowed. **Do not widen §3's window to fill it.**
 | **Rotation** | separation: same song ≥4h, band ≥60min, album ≥90min, label ≥30min | ≥7 labels, ≥25 bands, ≥55 albums |
 
 **The artist-profile rule sets the shape.** Fourteen songs an hour means a band needs two or three
@@ -445,7 +465,8 @@ presenter says about it, it has crossed the line.
 - [ ] Each label has ≥3 layer-A bands, ≥6 albums and ≥40 playable songs.
 - [ ] At least four bands have ≥18 playable songs.
 - [ ] Six to eight cornerstone albums of 12–14 songs.
-- [ ] Every anchor year carries ≥25 playable songs across ≥4 bands and ≥2 labels.
+- [ ] Every anchor year that carries layer A at all — seven of the eight — carries ≥25 playable
+      songs across ≥4 bands and ≥2 labels. **2559 carries none and never can** (§5, D-079).
 - [ ] Every layer-A band has a style card, and its voice line never changes.
 - [ ] Every band and session player has active years, and nobody's career exceeds ~35 years.
 - [ ] No age, no relative date, no fixed "today" anywhere.

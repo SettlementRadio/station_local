@@ -227,12 +227,14 @@ layer_b:
         Gate Shift Callers were the first crew anyone recorded calling a shift total over percussion,
         and they made both their records for a Cold Harbor freight office rather than a label. They
         stopped in 2607 when the office was closed and the two callers took posts on opposite sides of
-        the settlement.
+        the settlement. Nera Ostell clerked the relay berth two gates along and has said she learned
+        to hold a long list from listening to them through a wall, which is the only thing anybody in
+        Cold Harbor agrees the crew are owed.
       albums:
         - id: al_064
           title: Gate Shift
           label: label_2
-          release_year: 2583
+          release_year: 2579
           kind: album
           genre: deck-talk
           notes: The oldest deck-talk record anyone can produce a copy of, and the one every crew on the near frontier claims to have heard first.
@@ -248,7 +250,7 @@ layer_b:
         - id: al_065
           title: Office Hours
           label: label_2
-          release_year: 2594
+          release_year: 2593
           kind: album
           genre: deck-talk
           notes: Recorded for the freight office that employed them and remembered for putting a real wage dispute on a record for the first time.
@@ -295,7 +297,7 @@ layer_b:
         - id: al_067
           title: Ran Out of Lists
           label: label_5
-          release_year: 2607
+          release_year: 2609
           kind: album
           genre: deck-talk
           notes: Their last record, made in the years the lead caller was already refusing new material, and the one that named the crew's own dispute.
@@ -325,7 +327,7 @@ layer_b:
         - id: al_068
           title: Anyone Who Can Carry It
           label: label_4
-          release_year: 2600
+          release_year: 2598
           kind: album
           genre: deck-talk
           notes: Nineteen different people call on it and the sleeve lists none of them, which is still how Forge crews argue about who was there.
@@ -341,7 +343,7 @@ layer_b:
         - id: al_069
           title: Who Was in the Room
           label: label_4
-          release_year: 2612
+          release_year: 2608
           kind: album
           genre: deck-talk
           notes: Made under the argument that ended them, and remembered because Deep Register printed the disputed line-up on the sleeve without agreement.
@@ -371,7 +373,7 @@ layer_b:
         - id: al_070
           title: Small Room Rules
           label: label_2
-          release_year: 2607
+          release_year: 2602
           kind: album
           genre: deck-talk
           notes: The record that proved the form did not need volume, and the one quieter crews across the near frontier still name first.
@@ -387,7 +389,7 @@ layer_b:
         - id: al_071
           title: She Kept the Kit
           label: label_2
-          release_year: 2619
+          release_year: 2622
           kind: album
           genre: deck-talk
           notes: Their last full record, named for the percussionist whose kit the crew refused to hand to anyone else.
@@ -417,7 +419,7 @@ layer_b:
         - id: al_072
           title: Tally and Answer
           label: label_5
-          release_year: 2612
+          release_year: 2603
           kind: album
           genre: deck-talk
           notes: Eight straight exchanges with no hooks at all, and the record that made the form's contests a thing crews travelled for.
@@ -433,7 +435,7 @@ layer_b:
         - id: al_073
           title: Never Turned One Down
           label: label_5
-          release_year: 2624
+          release_year: 2620
           kind: album
           genre: deck-talk
           notes: Recorded against six visiting crews on one circuit, and the only deck-talk record on which the challengers are credited by name.
@@ -463,7 +465,7 @@ layer_b:
         - id: al_074
           title: Apprentice Intake
           label: label_4
-          release_year: 2612
+          release_year: 2613
           kind: album
           genre: deck-talk
           notes: Made the year after they won the Forge hall contest, and remembered for naming the whole intake that started with them.
@@ -479,7 +481,7 @@ layer_b:
         - id: al_075
           title: Only What We Can Play
           label: label_4
-          release_year: 2624
+          release_year: 2625
           kind: album
           genre: deck-talk
           notes: Their second record in twelve years, and the one that stated the rule they are known for on the sleeve.
@@ -509,7 +511,7 @@ layer_b:
         - id: al_076
           title: Two Hundred Copies
           label: unsigned
-          release_year: 2619
+          release_year: 2617
           kind: album
           genre: deck-talk
           notes: Pressed by the crew themselves and traded across four settlements without ever being sold in a shop.
@@ -525,7 +527,7 @@ layer_b:
         - id: al_077
           title: Still Not Signing
           label: unsigned
-          release_year: 2624
+          release_year: 2626
           kind: album
           genre: deck-talk
           notes: Made after a third refused offer, and remembered for reading the offer aloud on the opening track.
@@ -544,18 +546,20 @@ layer_b:
       title: Whole Bay Listening
       band: b_027
       label: label_2
-      release_year: 2612
+      release_year: 2613
       kind: album
       genre: deck-talk
       cornerstone: false
       notes: >-
         Harbor Standard could not book a studio that would take Ilma Torre's tank drums, so the label
-        cleared a Cold Harbor transfer bay for six nights in 2612 and recorded there. The bay was
+        cleared a Cold Harbor transfer bay for six nights in 2613 and recorded there. The bay was
         still in use during the day and every session started after the last door closed. A supervisor
         billed the label for a cracked wall panel, and the label paid it and kept the invoice, which
         it later reproduced on the reissue sleeve. It sold better on the near frontier than anything
         Harbor Standard had put out in three years, and it is the record that made the label take the
-        form seriously.
+        form seriously. The label had cleared the exchange hall for Wire and Rosin on the same
+        argument in 2583 and said so in the press, which Ilma Torre has said was meant
+        as a compliment and did not arrive as one.
       songs:
         - id: s_0453
           title: Whole Bay Listening
@@ -721,12 +725,12 @@ layer_b:
       title: Nothing Off the List
       band: b_027
       label: label_2
-      release_year: 2624
+      release_year: 2625
       kind: ep
       genre: deck-talk
       cornerstone: false
       notes: >-
-        Five tracks cut in two nights in 2624, in the same transfer bay the crew made their first
+        Five tracks cut in two nights in 2625, in the same transfer bay the crew made their first
         record in, after Harbor Standard asked for a full album and was told it would get what fitted
         in the time. Ilma Torre had moved settlements and travelled back for the sessions with no
         instruments at all, building the kit again out of what the bay had. The label released it
@@ -772,12 +776,12 @@ layer_b:
       title: Count the Whole Floor
       band: b_028
       label: label_4
-      release_year: 2607
+      release_year: 2605
       kind: album
       genre: deck-talk
       cornerstone: false
       notes: >-
-        Deep Register recorded The Long Tally over three nights in a Forge assembly hall in 2607,
+        Deep Register recorded The Long Tally over three nights in a Forge assembly hall in 2605,
         between shifts, with the machinery cold. Onn Karvel had been calling floor counts there for
         four years and insisted the record be made in the room the counts were made in, which meant
         working at the temperature the room held overnight. Juda Ness played the whole record on an
@@ -832,7 +836,7 @@ layer_b:
       title: Pipe Under Everything
       band: b_028
       label: label_4
-      release_year: 2619
+      release_year: 2618
       kind: album
       genre: deck-talk
       cornerstone: false
@@ -842,7 +846,9 @@ layer_b:
         which Deep Register had wanted since 2607 and had never been able to get past the crew. Onn
         Karvel wrote the verses at the same length as always and has said publicly that he did not
         change a line for the pipes. It doubled the crew's audience outside Forge and is the reason
-        younger Forge crews record with pipes as a matter of course.
+        younger Forge crews record with pipes as a matter of course — Pipe and Hammer, who had the
+        hall next, have said they took the rig as they found it and that Prise never asked for it
+        back.
       songs:
         - id: s_0484
           title: Pipe Under Everything
@@ -905,12 +911,12 @@ layer_b:
       title: Say the Numbers Slower
       band: b_028
       label: label_4
-      release_year: 2624
+      release_year: 2626
       kind: album
       genre: deck-talk
       cornerstone: false
       notes: >-
-        Deep Register gave the crew a full season of studio time in 2624 and they used six weeks of
+        Deep Register gave the crew a full season of studio time in 2626 and they used six weeks of
         it, most of that on one track. Onn Karvel had begun losing the top of his range and wrote the
         whole record at a slower call than the crew had ever recorded, which Sudi Farrow has said was
         the hardest thing they have done. Emel Prise mixed it himself after the label's engineer left
@@ -1016,7 +1022,7 @@ layer_b:
       title: Everything on the Sheet
       band: b_029
       label: label_5
-      release_year: 2612
+      release_year: 2611
       kind: album
       genre: deck-talk
       cornerstone: false
@@ -1074,17 +1080,19 @@ layer_b:
       title: Longest List We Carry
       band: b_029
       label: label_5
-      release_year: 2619
+      release_year: 2621
       kind: album
       genre: deck-talk
       cornerstone: false
       notes: >-
-        Made in one bay over nine days in 2619, the first Wake Count record cut in a single room, after
+        Made in one bay over nine days in 2621, the first Wake Count record cut in a single room, after
         the co-operative agreed to hold the ship in port so it could be. Hesta Orlow and Pim Calder
         had by then been trading verses for ten years and the record is built almost entirely on
         exchanges with no hook at all. Two tracks were cut and replaced on the last day because a
-        member vote found them too close to a Cold Harbor crew's record. It is the one Common Wake
-        Cooperative sends out when anyone asks what the label does.
+        member vote found them too close to a Cold Harbor crew's record. Burn Day Wages had the ship
+        held for them the season before and voted against holding it again, which Hesta Orlow has
+        never let go of. It is the one Common Wake Cooperative sends out when anyone asks what the
+        label does.
       songs:
         - id: s_0509
           title: Longest List We Carry
@@ -1140,12 +1148,12 @@ layer_b:
       title: Read It at the Gate
       band: b_029
       label: label_5
-      release_year: 2624
+      release_year: 2623
       kind: album
       genre: deck-talk
       cornerstone: false
       notes: >-
-        The crew's fourth record, made in 2624 across two circuits after Common Wake Cooperative put
+        The crew's fourth record, made in 2623 across two circuits after Common Wake Cooperative put
         the question of another single-room record to a member vote and lost it. Hesta Orlow has said
         she preferred it that way. Talla Venn played on three tracks during a stop and left her
         instrument aboard by accident, which the crew returned by freight and mentioned in the notes.

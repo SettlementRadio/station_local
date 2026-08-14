@@ -2095,3 +2095,101 @@ bands**, and **rule 8 is satisfied by this file** — it names Wire and Rosin, T
 and Bow, Loose Cargo and Harbor Late, five bands that live in other genre files. The rule stays owed
 to M-15 because the other six written genres still name none. `make music-screen` returned nothing
 on 44 distinct names.
+
+---
+
+### D-079 · Anchor 2559 stays an anchor and stays unplayable — 2026-08-14
+
+M-15 asked which of two rules had to give. `COMMISSION.md` §3 puts layer A in 2566–2626, so no
+playable song can carry 2559; §5 asks every anchor year for ≥25 playable songs across ≥4 bands and
+≥2 labels. Both cannot hold. **Operator decision: §5 gives.** The year edition is built from the
+seven anchors that carry layer A, all seven of which clear the floor with margin.
+
+**Why not the other two options.** Widening §3's window to 2559 would mean pressing a record
+sixty-seven years old, which contradicts §1's *"last ~60 years"* and would reopen a wiki this card
+exists to freeze. Dropping the row would need `ANCHOR_COUNT` changed to seven and would delete the
+year *Lanternlight* was premièred — the record Civic Lantern's entire standing rests on, and the
+reason the other seven anchors have a calendar to be scheduled against at all.
+
+**What it costs is nothing the station notices.** 2559 was always a layer-B year: `al_164` is the
+première recording and `al_030` is Patient Weather answering it, and neither was ever going to be
+playable. The way the year reaches the air is a later performance, which §4 has allowed from the
+start — `al_163`, seven of the cycle's twelve movements, recorded in the reopened hall in 2624. So a
+`Night Record` on 2559 is makeable; it is simply made out of 2624's record and the story, which is
+what a programme about a year nobody has a copy of would be anywhere.
+
+`COMMISSION.md` §5 and §11 and `CONSTANTS.md` §1 now say so in those words, so the contradiction
+cannot be rediscovered and re-argued by the next card that counts the anchors.
+
+### D-080 · The chart counts plays, not release years — 2026-08-14
+
+M-15's fourth job: nothing in the catalogue is dated later than 2624 while the present is 2626, and
+because the present is the real year plus six hundred, that gap widens every January. §5 asked for
+*"≥80 songs current at any time"*, which reads as a standing commission for records dated this year.
+**Operator decision: the chart is most-played, and §5's wording was the thing that was wrong.**
+
+**ARCHITECTURE §8 already computed it this way.** The score is 45% decayed airplay, 25% in-world
+requests, 20% previous position and 10% editorial nudge — there is no release-date term in it and
+never was. So this decision changed two documents to match the code rather than changing any code,
+which is the direction CLAUDE.md requires when the architecture and a rule disagree.
+
+**The alternative was barred by rules already in force.** Giving a small tier a derived release year
+— the `clock.py` rule applied to the catalogue — would date layer-A albums 2625 and 2626, which are
+not anchor years, so `make check` would go red on every one of them; and §3 forbids inventing a
+ninth anchor by name. It would also mean a release year that moves, which §3's *"write the year,
+never the age"* exists to prevent.
+
+**What it costs a presenter** is one sentence they may not say: a record is not new because it
+entered the chart. *In at eleven*, *up four* and *a re-entry after nine weeks* all still work,
+because they are facts about plays. An actual new release enters through the editorial-nudge term
+and needs a beat behind it. `PROGRAMMING.md` carries that in the section on `The Count`.
+
+### D-081 · Layer B gets the calendar, and three albums could not move — 2026-08-14
+
+`COMMISSION.md` §12 rule 7, owed to M-15 since D-071, went live with this card. All 106 layer-B
+albums sat on the same eight anchor years, so two hundred years of music history had happened on
+eight days. 68 of them were re-dated across 2552–2626 and the wiki now carries **55 distinct
+layer-B release years** against the 40 the rule asks for.
+
+**38 albums stayed on an anchor, and that is the point rather than a shortfall.** §3 still says
+*put most releases on the anchors*, and a layer-B record keeps its anchor whenever the anchor's own
+event is its story: the fold took `al_053`, `al_128` and `al_158`, the burn festival took `al_044`,
+`al_066` and `al_155`, the shared press format took five, the Cycles took three. The anchors are
+still the busiest years in the file — 2619 carries seven layer-B albums, 2624 seven, 2612 six — and
+the years between them are no longer empty.
+
+**Three albums looked movable and were not, and only a catalogue-wide pass could tell.** `al_095`
+and `al_097` are each dated by a *different record's* prose — `al_138` says it came out the same
+year The Turning Room recorded in the exchange hall, and `al_139` says it was reviewed alongside The
+Long Ferry's record — and `al_118` says the year it landed was the year Lower Bell Editions folded.
+Moving any of the three would have made a layer-A album's story false, which is the failure mode a
+per-genre card cannot see. **Six more albums named their own release year in their own notes**, and
+those notes were edited with the year.
+
+**Rule 8 reads raw file text, and that is a real constraint on how prose is written.** Six of the
+nine genre files named no foreign band at all; all nine now name three or more. One reference did
+not count on the first attempt because *The Quiet Half* had been broken across a line by the folded
+scalar — a name split by a line wrap is invisible to the rule, and to anything else that greps the
+wiki. Worth knowing before the next card writes wiki prose.
+
+### D-082 · The anchor stories live in the wiki, in a file that is not a genre — 2026-08-14
+
+M-15's third job. `CONSTANTS.md` §1 held eight good accounts of what happened in each anchor year,
+and `CONSTANTS.md` is a working file the station never reads — `check.py` takes the eight numbers
+out of its first column and nothing else. `PROGRAMMING.md`'s `Night Record` year edition is supposed
+to be built on those accounts and had no way to reach them.
+
+They are now `music/wiki/anchors.yaml`: one entry per year with the story, what the station actually
+holds from it, and the records a programme would be built on. **They were moved, not copied** —
+§1's table keeps the eight years and the `| **YYYY** |` shape `check.py` reads, and its long
+accounts are replaced by a one-phrase index. Two copies of eight stories in a file nothing reads is
+how the two come to disagree, which is the same reasoning that keeps the anchor years and §12's
+thresholds out of code.
+
+**It is not a genre and is named as such.** `wiki.NOT_A_GENRE` holds `anchors`, and
+`written_genres()` skips it, so every pass that walks the wiki — the count check, the year check,
+rules 6, 7 and 8, `next_free_ids`, `make music-albums`, `make music-screen` — ignores it. The skip
+is by name rather than by shape on purpose: a genre file that failed to parse would otherwise be
+silently reclassified as "not a genre" instead of failing loudly. Three tests hold it: that every
+anchor year in `CONSTANTS.md` has a story, that the file is not counted as a genre, and that 2559 is
+the only year marked unprogrammable.

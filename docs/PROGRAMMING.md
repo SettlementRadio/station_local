@@ -334,7 +334,7 @@ The **`Type`** column carries a legal `programme_type` from ARCHITECTURE §11 an
 | 13:04 | **The Bench** — inquiries, tribunals, salvage disputes | 28 | crime | feature | measured | W |
 | 13:32 | **Vantage** — a single voice, a single argument | 28 | rotating | feature | slow | A |
 | **14:00** | **NEWS** | 4 | | bulletin | | F |
-| 14:04 | **The Count** *(Fri)* — the chart, 20 down · **Dispatch** *(Mon–Thu)* | 28 | music · conflict | chart · newsreel | bright | W · R |
+| 14:04 | **The Count** *(Fri)* — the chart, 20 down, most-played · **Dispatch** *(Mon–Thu)* | 28 | music · conflict | chart · newsreel | bright | W · R |
 | 14:32 | **Cut** — dress, salvage, status, scarcity | 28 | fashion | magazine | light | A |
 | **15:00** | **NEWS** | 4 | | bulletin | | F |
 | 15:04 | **Ice & Iron** — results, standings, the racing | 28 | sport | newsreel | fast | F |
@@ -561,6 +561,25 @@ presenter roles, and they will tell you more about what works than a full grid o
 until three weeks of real airplay exist (ARCHITECTURE §8), which is why it is build step 19 rather
 than an opening-night programme. Building it early is still right — it is the format that exercises
 the discography, and its failure mode is only that it waits.
+
+### `The Count` is a most-played chart, not a new-release chart
+
+**Nothing in the catalogue is dated later than 2624 and the present is 2626**, because the present
+is the real year plus six hundred and moves every January while a written release year does not.
+A chart of new releases would therefore have nothing to count, and would have less every year.
+
+It counts plays instead. ARCHITECTURE §8 already computes it that way — 45% decayed airplay, 25%
+in-world requests, 20% previous position, 10% editorial nudge, and no release-date term anywhere in
+the score — so this is a note saying out loud what the score already does, written because
+`COMMISSION.md` §5 asked the catalogue for *"≥80 songs current at any time"* and a writer could
+read that as a commissioning target for records dated this year. It is not one. **"Current" means
+in rotation, not newly released**, and 500 playable songs satisfy it on the day the station opens.
+
+What this costs: a presenter may not say a record is new because it entered the chart. **A new
+entry is a record that has started being played**, which is what movement language on a most-played
+chart means everywhere — "in at eleven", "up four", "a re-entry after nine weeks" all still work,
+and "out this week" does not. The editorial-nudge term is where an actual new release enters the
+chart, and it needs a beat behind it (M-15, D-080).
 
 Add a programme only when there is a domain producing more material than its current slot can hold.
 An empty programme is worse than no programme, and the world tick's output is the constraint —

@@ -1,0 +1,157 @@
+# The eight anchor years — written by M-15.
+#
+# **This file is not a genre.** It sits in `music/wiki/` because it is part of the wiki the station
+# reads, and `station.music.wiki.written_genres()` skips it by name for exactly that reason. It
+# mints no ids, holds no bands and holds no songs.
+#
+# Why it exists: `CONSTANTS.md` section 1 already held eight good accounts of what happened in each
+# anchor year, and `CONSTANTS.md` is a working file the station never reads — `check.py` takes the
+# eight numbers out of it and nothing else. `PROGRAMMING.md`'s `Night Record` plays "one label or
+# one year", and the year edition had no way to reach the story it is supposed to be built on. The
+# accounts below are moved, not invented; the numbers and the records beside them are counted out of
+# the nine genre files.
+#
+# `station_holds` is layer A only, because that is what the scheduler may play. `programme: true`
+# means the year clears COMMISSION.md section 5's floor for a "one year" edition — 25 playable songs
+# across 4 bands and 2 labels.
+#
+# **2559 is the one that cannot be programmed, and that is settled rather than outstanding.**
+# COMMISSION.md section 3 puts layer A in 2566-2626, so no playable song can carry 2559 at all. It
+# stays an anchor because it is the year the form's founding record was made and the year every
+# other house scheduled itself around; the station can talk about it all night and cannot play it.
+# Section 5's year edition applies to the seven that carry layer A. See DECISIONS.md D-079.
+
+section:
+  kind: anchor-years
+  present_year: 2626
+  counted_after: M-15
+
+anchor_years:
+  - year: 2559
+    programme: false
+    station_holds: {songs: 0, bands: 0, labels: 0}
+    story: >-
+      Odessa Vail's Lanternlight had its premiere and became the Lumen Festival's test piece.
+      Ensembles and singers across competing labels scheduled responses and rival readings around
+      it, which is why a year with almost nothing pressed in it is the year the core still dates
+      itself from. Vail wrote nothing else afterwards, so far as any record shows.
+    the_station_cannot_play_it: >-
+      Nothing playable carries this year and nothing ever will. The way to put 2559 on air is the
+      2624 performance: al_163 is seven of the cycle's twelve movements, sung in the reopened Long
+      Assembly, and it is the only record in the catalogue a presenter can both play and attribute
+      to a canon figure.
+    records:
+      - {id: al_164, layer: B, note: the premiere recording, and the record every core ensemble has been measured against since}
+      - {id: al_030, layer: B, note: Patient Weather's public-room refrains, issued into the Lanternlight season as a deliberate counterweight}
+      - {id: al_163, layer: A, year: 2624, note: seven of the twelve movements, and the only way this year reaches the air}
+
+  - year: 2583
+    programme: true
+    station_holds: {songs: 39, bands: 5, labels: 4}
+    story: >-
+      The complete Station Cycles entered general circulation. Stations commissioned new
+      performances while artists released answers to Corin Hale's life-support drone, and houses
+      that had never pressed a quiet record went looking for one. Cold Harbor could not buy the
+      Cycles at any price — the rota at Verrin Reach lets anybody copy them and nobody sell them —
+      so Harbor Standard went and found a voice of its own instead.
+    records:
+      - {id: al_169, layer: B, note: the Cycles themselves, never pressed by anybody and never out of circulation}
+      - {id: al_078, layer: A, note: Wire and Rosin recorded in the Cold Harbor exchange hall to an actual floor of dancers — a cornerstone}
+      - {id: al_165, layer: A, note: Nera Ostell at the relay berth, the record Harbor Standard made because it could not sell the Cycles}
+      - {id: al_081, layer: A, note: The Foundry Set cut in the pipe shop itself, for the eleven-second decay}
+      - {id: al_010, layer: A, note: Evening Claim answering the fashion for quieter early sets in the late-club rooms}
+
+  - year: 2594
+    programme: true
+    station_holds: {songs: 42, bands: 6, labels: 4}
+    story: >-
+      The first freight-circuit burn festival put crews, port halls and frontier dancers in one
+      place for a week, and labels on and off the lanes released records for the route. It is the
+      year the co-operative learned it could sell to people who did not work for it.
+    records:
+      - {id: al_137, layer: A, note: Loose Cargo at the festival itself, which the co-operative wanted out while everybody was still talking about it}
+      - {id: al_033, layer: A, note: Deep Register funded four hundred copies so Pipe and Hammer had something to sell there}
+      - {id: al_079, layer: A, note: Wire and Rosin made the exchange hall record again, on condition the label paid the dancers}
+      - {id: al_082, layer: A, note: The Foundry Set three years after they stopped calling themselves Purist, which is audible from the opening bar}
+      - {id: al_007, layer: A, note: Cabin Treaty in a port meeting room between co-operative votes}
+
+  - year: 2600
+    programme: true
+    station_holds: {songs: 51, bands: 7, labels: 5}
+    story: >-
+      Shipboard presses adopted a shared format, clearing years of recording backlogs and letting
+      hauler crews distribute releases beyond their usual lanes. More records left their own route
+      this year than in the twenty before it, and several bands are only known off the lanes at all
+      because of it.
+    records:
+      - {id: al_008, layer: A, note: Cabin Treaty, seven short songs issued beyond the freight circuit because the format allowed it}
+      - {id: al_037, layer: A, note: the first record the Common Wake Cooperative sent past its own routes}
+      - {id: al_084, layer: A, note: Loose Cargo, the first band the co-operative recorded under the new format}
+      - {id: al_103, layer: A, note: the oldest record in the import catalogue, paid for by a Europa union local after the works refused}
+      - {id: al_166, layer: A, note: Nera Ostell's second, and the year records started travelling}
+
+  - year: 2607
+    programme: true
+    station_holds: {songs: 62, bands: 8, labels: 6}
+    story: >-
+      Meridian's storm-coast studios reopened after a season of closures. Finished records,
+      postponed sessions and new Synthesist collaborations arrived together, and repaired equipment
+      the coast could no longer use went into the core market cheap — which is how at least one
+      Concordance group ended up with a keyboard it had refused to buy new.
+    records:
+      - {id: al_005, layer: A, note: Rain Ledger made across the closures themselves, moving between a shelter room and a repair depot as power allowed}
+      - {id: al_003, layer: A, note: Open Parallax, who used one of the repaired compact keyboards that the closures sent into the core}
+      - {id: al_080, layer: A, note: Wire and Rosin's last, and the only one they let a label put them in a studio for}
+      - {id: al_140, layer: A, note: the first record made on Earth that Relay Road Import ever landed}
+      - {id: al_161, layer: A, note: The Standing Gallery, recorded in two days Open Parallax had booked and not used}
+
+  - year: 2612
+    programme: true
+    station_holds: {songs: 52, bands: 7, labels: 4}
+    story: >-
+      Lower Bell Editions folded owing the Gantry Street plant two years of pressing, and its
+      catalogue became disputed. Former artists made new recordings while other labels issued
+      tributes, rebuttals and opportunistic signings. The fold happened to five named people rather
+      than to a label: everything After the Ferry owned went into a receiver's room and is still
+      there, and Juna Carrow took a hall job on the storm coast in 2617 when she could not get the
+      records back.
+    records:
+      - {id: al_146, layer: A, note: After the Ferry's last, and the reason they have made none since}
+      - {id: al_148, layer: A, note: Coldwater Court in the founder's own room, the house's last pressing}
+      - {id: al_011, layer: A, note: Evening Claim — the label folded before manufacturing finished and two claimants issued different track orders from the same masters}
+      - {id: al_132, layer: A, note: the record Pipe and Hammer made in the year Saul Ravik left over the amplified pipes}
+      - {id: al_100, layer: A, note: the first Shore Rounds record to leave the home system, one song lighter than the edition Titan bought}
+
+  - year: 2619
+    programme: true
+    station_holds: {songs: 160, bands: 18, labels: 6}
+    story: >-
+      The altered-credit edition of an Adra Pell and Lio Tern recording surfaced, and reply songs,
+      split-vocal partnerships and competing versions filled release calendars. Half the catalogue's
+      credit conventions were set this year by bands deciding in public how they would not be Pell
+      and Tern. It is the largest year in the catalogue by a distance and the one a year edition can
+      be built from twice without repeating itself.
+    records:
+      - {id: al_001, layer: A, note: Measure Kindly in a committee chamber, after the altered-credit rush took the public halls — a cornerstone}
+      - {id: al_004, layer: A, note: Open Parallax audited every shared line before recording, and got eleven songs about ownership out of the arguments}
+      - {id: al_034, layer: A, note: Pipe and Hammer settled a writing-shares argument by printing every share on the sleeve — a cornerstone}
+      - {id: al_039, layer: A, note: a copy reached Burn Day Wages with a different writer's name printed on it — a cornerstone}
+      - {id: al_136, layer: A, note: Deep Register opened its cupboards and printed a disputed credit throughout, which is this year in one sleeve}
+      - {id: al_162, layer: A, note: The Standing Gallery printed all thirty-one names, in the year refusing had become the story}
+      - {id: al_167, layer: A, note: Aro Vantry prints where the note came from, unasked, on every sleeve}
+
+  - year: 2624
+    programme: true
+    station_holds: {songs: 94, bands: 12, labels: 6}
+    story: >-
+      The Long Assembly — Concordance's largest public recording hall, shut in 2615 for structural
+      repairs — reopened, and labels booked a season of live sessions and released them before
+      demand for the room outran access. Houses with no business in the core bought nights in it,
+      and two of them brought their own audiences.
+    records:
+      - {id: al_002, layer: A, note: Measure Kindly took the eleven days left after the house promised The Standing Gallery the nights it wanted}
+      - {id: al_163, layer: A, note: seven movements of Lanternlight on the one night Civic Lantern held of that season}
+      - {id: al_139, layer: A, note: Harbor Standard sent Board and Bow and four hundred Cold Harbor dancers, at the label's expense}
+      - {id: al_098, layer: A, note: cut on Mars in 2623 and issued at the road head this year — a cornerstone}
+      - {id: al_150, layer: A, note: The Quiet Half paid the hall fee themselves after the house put its season's money into a wet hall on the coast}
+      - {id: al_168, layer: A, note: Aro Vantry at Hale's own outpost, where the plant had been replaced and the note was gone}

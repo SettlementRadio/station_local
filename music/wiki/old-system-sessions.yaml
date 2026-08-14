@@ -393,7 +393,9 @@ layer_a:
         drums throughout and plays with brushes on most of it because the room next to the canteen
         was still working. Tel Brask, of Undershore Local, is on one track; he was on Mars for a
         fortnight for someone else's wedding and walked in during the second night. It sold slowly
-        for five years and then sold out entirely in the season after the second record landed.
+        for five years and then sold out entirely in the season after the second record landed. The
+        Turning Room bought nine copies of it off one crate and gave eight of them away, which is how
+        most of Cold Harbor came to hear a Mars band at all.
       songs:
         - id: s_0809
           title: Later Than Advertised
@@ -501,7 +503,9 @@ layer_a:
         alternative was leaving the record behind altogether. The four voices are recorded on one
         microphone at the distances they stand at when they sing in the yard, which took most of the
         first evening to arrange. Bran Teale plays with two fingers taped after a yard injury and the
-        guitar parts were simplified in the room to suit it.
+        guitar parts were simplified in the room to suit it. Harbor Late have closed on the dropped
+        ninth song for years without ever having heard it, working from the letter alone, and Effa
+        Lomm has written to the road head twice to ask them to stop.
       songs:
         - id: s_0820
           title: Nobody Sings It Alone
@@ -718,7 +722,9 @@ layer_a:
         it could not be brought to pitch and Saira Dunn played it flat rather than move rooms — and
         the yard's four-second decay is on the tracks cut in the gallery. Relay Road Import took it
         because it was cheap and because the house had nothing else that season, and it is the oldest
-        record in the station's import catalogue.
+        record in the station's import catalogue. Nera Ostell clerked the berth the crate came in on
+        and has said this is the record that told her a voice and a room were enough, which is the
+        only time anybody on the frontier has credited an import with anything.
       songs:
         - id: s_0840
           title: Nothing Dries Down Here
@@ -1037,7 +1043,9 @@ layer_a:
         it is not an angry record and only two songs on it are about the argument at all. Aldis
         Merrow worked out on paper, twice, that a reply cannot reach the settled worlds in the same
         year as the letter it answers, and the band would not believe him until the second time. It
-        is the longest record they have made and the only one made in two rooms.
+        is the longest record they have made and the only one made in two rooms. Board and Bow put
+        one of its tunes into their sets the season it landed and call it by the wrong title on
+        stage, which the letters out here have since argued about at greater length than the record.
       songs:
         - id: s_1155
           title: Not the Band You Wrote For
@@ -1206,7 +1214,7 @@ layer_b:
         - id: al_105
           title: Low Terrace Nights
           label: label_7
-          release_year: 2559
+          release_year: 2556
           kind: album
           genre: old-system-sessions
           notes: The oldest record in the importer's catalogue and the one it reissues whenever it needs money.
@@ -1222,7 +1230,7 @@ layer_b:
         - id: al_106
           title: Ten Years of Dust
           label: label_7
-          release_year: 2583
+          release_year: 2566
           kind: album
           genre: old-system-sessions
           notes: Remembered for the run of tram works songs on its second half, which every Mars band since has been measured against.
@@ -1254,7 +1262,7 @@ layer_b:
         - id: al_107
           title: The Bell Yard
           label: not imported
-          release_year: 2583
+          release_year: 2572
           kind: album
           genre: old-system-sessions
           notes: Named for the yard the band sang in and remembered out here as the record nobody at the road head has ever held a copy of.
@@ -1270,7 +1278,7 @@ layer_b:
         - id: al_108
           title: Rounds for a Full Room
           label: not imported
-          release_year: 2594
+          release_year: 2589
           kind: album
           genre: old-system-sessions
           notes: The record whose running order the settled worlds argue about, none of them having heard it.
@@ -1301,7 +1309,7 @@ layer_b:
         - id: al_109
           title: Cut and Carry
           label: label_7
-          release_year: 2594
+          release_year: 2587
           kind: album
           genre: old-system-sessions
           notes: Made in a shift room with the crew still in it and remembered for the counting song that opens the second half.
@@ -1317,7 +1325,7 @@ layer_b:
         - id: al_110
           title: Nothing Grows Out Here
           label: label_7
-          release_year: 2607
+          release_year: 2606
           kind: album
           genre: old-system-sessions
           notes: The band's last, cut after the crew was broken up and remembered for being funnier than its title.
@@ -1348,7 +1356,7 @@ layer_b:
         - id: al_111
           title: The Lamp Room
           label: not imported
-          release_year: 2600
+          release_year: 2597
           kind: album
           genre: old-system-sessions
           notes: Cut in the lamp room the band is named after and known out here only from the Shore Rounds' versions of four of its songs.
@@ -1364,7 +1372,7 @@ layer_b:
         - id: al_112
           title: Late Boat Home
           label: not imported
-          release_year: 2619
+          release_year: 2616
           kind: album
           genre: old-system-sessions
           notes: The band's last record, made nineteen years after their first, and the reason two Titan yards still argue about who taught whom.
@@ -1395,7 +1403,7 @@ layer_b:
         - id: al_113
           title: Ferry Money
           label: label_7
-          release_year: 2612
+          release_year: 2614
           kind: album
           genre: old-system-sessions
           notes: Recorded across eleven crossings and remembered for the announcements left in between the songs.

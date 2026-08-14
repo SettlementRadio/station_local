@@ -376,7 +376,8 @@ layer_a:
         a wrist two days in and played the rest of the sessions strapped. A pay dispute with the shed
         operator stopped work for one night and was settled by the band paying the fee themselves.
         The label pressed it exactly as delivered, including the shed door, and it is the record that
-        made the near frontier take the band seriously.
+        made the near frontier take the band seriously. Harbor Late played the shed the week after it
+        was cleared and Teff Onda has said the two nights sounded like different buildings.
       songs:
         - id: s_0266
           title: Nothing Loose
@@ -635,7 +636,9 @@ layer_a:
         spent two days recording beds around him rather than stop. The altered-credit dispute
         circulating that year turned an evening of the sessions into an argument about writing
         shares, which the band settled by printing every share on the sleeve. Deep Register asked for
-        a shorter record on the last day and got two verses cut instead of two songs.
+        a shorter record on the last day and got two verses cut instead of two songs. The Long Tally
+        had the hall for the fortnight before and left the pipe rig standing, which is the only
+        reason eleven days were enough.
       songs:
         - id: s_0284
           title: Hammer Down the Line
@@ -973,7 +976,9 @@ layer_a:
         shared press format adopted that year. Burn Day Wages recorded it in cargo bays at four ports
         during a single run and would not begin until the co-operative agreed to print every player
         on one line. Hess Vantry missed one session and a relief hauler played the drums on that
-        track. It is the record that turned a crew band into the co-operative's biggest act.
+        track. The Wake Count were pressed in the same run and the two crews have argued ever since
+        about which of them the format was bought for. It is the record that turned a crew band into
+        the co-operative's biggest act.
       songs:
         - id: s_0311
           title: Every Crew Signs
@@ -1262,7 +1267,9 @@ layer_a:
       notes: >-
         Turn and Burn made this across five ports in 2619 without staying anywhere longer than a
         turnaround, and it is the first of their records to use the amplification the Common Wake
-        Cooperative had voted three times before it would buy. The membership then voted down the
+        Cooperative had voted three times before it would buy — Loose Cargo had asked for the same
+        rig for years and stopped working the route before the membership agreed to it. The
+        membership then voted down the
         band's request to be paid by the port rather than by the record, and two of these songs come
         straight out of that. Rhea Molt has never written a set list down, so the running order here
         is simply the order the songs were finished in. It travelled further than anything the
@@ -1426,7 +1433,7 @@ layer_b:
         - id: al_040
           title: First Shed Hall
           label: label_4
-          release_year: 2559
+          release_year: 2552
           kind: album
           genre: lane-rock
           notes: The record that gave the form its whole-crew chorus, and still the one older Forge players name first.
@@ -1442,7 +1449,7 @@ layer_b:
         - id: al_041
           title: Maintenance Post
           label: label_4
-          release_year: 2583
+          release_year: 2581
           kind: album
           genre: lane-rock
           notes: Their last record, issued in the year their singer took the steady job and stopped performing.
@@ -1472,7 +1479,7 @@ layer_b:
         - id: al_042
           title: Between Runs
           label: label_5
-          release_year: 2583
+          release_year: 2585
           kind: album
           genre: lane-rock
           notes: Recorded in cargo bays across a single circuit and remembered for putting a full-crew chorus on every track.
@@ -1534,7 +1541,7 @@ layer_b:
         - id: al_045
           title: The Quiet Year
           label: label_2
-          release_year: 2612
+          release_year: 2610
           kind: album
           genre: lane-rock
           notes: Cut in one week and remembered as the record on which the band began playing below their own volume.
@@ -1564,7 +1571,7 @@ layer_b:
         - id: al_046
           title: Half the Tempo
           label: label_4
-          release_year: 2583
+          release_year: 2573
           kind: album
           genre: lane-rock
           notes: Ignored when it was issued and cited by most of the heavy Forge bands that came after it.
@@ -1580,7 +1587,7 @@ layer_b:
         - id: al_047
           title: Everyone Slowed Down
           label: label_4
-          release_year: 2600
+          release_year: 2596
           kind: album
           genre: lane-rock
           notes: Released as younger bands started copying them, and the only record of theirs that sold on issue.
@@ -1610,7 +1617,7 @@ layer_b:
         - id: al_048
           title: Rotating Crew
           label: label_5
-          release_year: 2600
+          release_year: 2603
           kind: album
           genre: lane-rock
           notes: Twenty-two named players appear on it, which is the thing about it everybody remembers.
@@ -1626,7 +1633,7 @@ layer_b:
         - id: al_049
           title: Last Founder
           label: label_5
-          release_year: 2619
+          release_year: 2617
           kind: album
           genre: lane-rock
           notes: Its running order follows one final circuit, port by port, and it was made as the band's remaining founder prepared to leave haulage.
@@ -1656,7 +1663,7 @@ layer_b:
         - id: al_050
           title: Short and Loud
           label: label_2
-          release_year: 2607
+          release_year: 2604
           kind: album
           genre: lane-rock
           notes: Eight songs and twenty-four minutes, which the band have said is the correct length for anything.
@@ -1672,7 +1679,7 @@ layer_b:
         - id: al_051
           title: Still Refusing
           label: label_2
-          release_year: 2624
+          release_year: 2621
           kind: album
           genre: lane-rock
           notes: A second short record, made after the band declined a core booking for what the sleeve calls the eleventh time.
@@ -1702,7 +1709,7 @@ layer_b:
         - id: al_052
           title: Daytime Record
           label: label_6
-          release_year: 2594
+          release_year: 2590
           kind: album
           genre: lane-rock
           notes: Commissioned to widen a late-club label's catalogue and disowned by half of that label's own roster.

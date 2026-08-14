@@ -415,7 +415,7 @@ layer_a:
       genre: relay-pop
       cornerstone: false
       notes: >-
-        Civic Lantern placed Measure Kindly in the reopened Concordance public hall for eleven days in 2624. The group found that the restored high windows pulled the backing voices away from the lead microphone and rewrote the arrangements around that effect. A fee dispute stopped work for two days, after which all four members accepted less money to retain control of the session ledger. Demand for the hall forced the final mixes into a smaller room, and the difference is audible between the two halves of the record.
+        Measure Kindly asked Civic Lantern for the reopened Concordance public hall and were given the eleven days left after the house had promised The Standing Gallery the nights it wanted, which the group have never said anything about in print and have never been asked about without mentioning. The group found that the restored high windows pulled the backing voices away from the lead microphone and rewrote the arrangements around that effect. A fee dispute stopped work for two days, after which all four members accepted less money to retain control of the session ledger. Demand for the hall forced the final mixes into a smaller room, and the difference is audible between the two halves of the record.
       songs:
         - id: s_0013
           title: Rooms With Windows
@@ -807,7 +807,7 @@ layer_a:
       genre: relay-pop
       cornerstone: false
       notes: >-
-        Stormline Issue asked Rain Ledger for a reply to the altered-credit edition circulating in 2619. The band answered by keeping the Meridian power allotment unchanged and printing every guest beside the exact part performed. A proposed featured credit for the lead singer was defeated by the four members before the sessions began. The record sold strongly beyond Meridian and made the band's Synthesist argument easier to explain than any interview had.
+        Stormline Issue asked Rain Ledger for a reply to the altered-credit edition circulating in 2619. The band answered by keeping the Meridian power allotment unchanged and printing every guest beside the exact part performed. A proposed featured credit for the lead singer was defeated by the four members before the sessions began. Stormline Issue sent it off the storm coast on the same crate as a Cordon Hours record and has said since that pairing the coast's own music with a relay-pop group was what got both of them heard inland. The record sold strongly beyond Meridian and made the band's Synthesist argument easier to explain than any interview had.
       songs:
         - id: s_0056
           title: Clear by Closing
@@ -1203,7 +1203,7 @@ layer_a:
       genre: relay-pop
       cornerstone: false
       notes: >-
-        Evening Claim entered the studio in 2612 while Lower Bell Editions was already refusing ordinary payment requests. The band turned eight disputed invoices into songs about favors, trust, and the discomfort of asking for what is owed. The label folded before manufacturing finished, and two catalogue claimants issued different track orders from the same masters. The station's order follows the signed session ledger, although ownership of that ledger remains part of the dispute.
+        Evening Claim entered the studio in 2612 while Lower Bell Editions was already refusing ordinary payment requests. The band turned eight disputed invoices into songs about favors, trust, and the discomfort of asking for what is owed. The label folded before manufacturing finished, and two catalogue claimants issued different track orders from the same masters. The station's order follows the signed session ledger, although ownership of that ledger remains part of the dispute. Evening Claim got their masters out of the receiver's room because that ledger was signed; After the Ferry, who had played the house's own room three nights a week since 2594, did not, and have made no record since.
       songs:
         - id: s_0098
           title: Catalogue of Small Debts
@@ -1301,7 +1301,7 @@ layer_b:
         - id: al_012
           title: Rooms Between Voices
           label: label_1
-          release_year: 2559
+          release_year: 2554
           kind: album
           genre: relay-pop
           notes: The record established their separated-voice method and became the partnership's most copied set of arrangements.
@@ -1317,7 +1317,7 @@ layer_b:
         - id: al_013
           title: Tables Kept Apart
           label: label_1
-          release_year: 2583
+          release_year: 2581
           kind: album
           genre: relay-pop
           notes: Compiled from the partnership's final exchanged sessions, it carries the disputed altered credit and ends without an announcement.
@@ -1361,7 +1361,7 @@ layer_b:
         - id: al_015
           title: Route Contract Hearts
           label: label_5
-          release_year: 2619
+          release_year: 2616
           kind: album
           genre: relay-pop
           notes: The group's final full record placed private breakups beside the route assignments that made reconciliation impractical.
@@ -1389,7 +1389,7 @@ layer_b:
         - id: al_016
           title: Calendar Left Open
           label: label_1
-          release_year: 2594
+          release_year: 2592
           kind: album
           genre: relay-pop
           notes: The record is remembered for turning exact appointment entries into choruses that freight crews adopted during the burn festival.
@@ -1433,7 +1433,7 @@ layer_b:
         - id: al_018
           title: Nine Ways Home
           label: label_1
-          release_year: 2619
+          release_year: 2615
           kind: album
           genre: relay-pop
           notes: Each singer led one piece, but the shared low anchor made the nine arrangements sound like a single argument.
@@ -1477,7 +1477,7 @@ layer_b:
         - id: al_020
           title: Kitchen Pressure Map
           label: label_3
-          release_year: 2607
+          release_year: 2606
           kind: album
           genre: relay-pop
           notes: Finished during the studio closures, the record mapped eight household disputes onto Meridian's shelter power schedule.
@@ -1493,7 +1493,7 @@ layer_b:
         - id: al_021
           title: Shelter Guest List
           label: label_3
-          release_year: 2624
+          release_year: 2622
           kind: album
           genre: relay-pop
           notes: The duo invited a different neighbor onto every track and printed the room position of each voice beside the credit.
@@ -1521,7 +1521,7 @@ layer_b:
         - id: al_022
           title: Market Voice Kindly
           label: label_5
-          release_year: 2583
+          release_year: 2571
           kind: album
           genre: relay-pop
           notes: Its courteous language disguised a detailed complaint about stall fees and made the title phrase common at Old Span.
@@ -1537,7 +1537,7 @@ layer_b:
         - id: al_023
           title: Bright Case Dispute
           label: label_5
-          release_year: 2594
+          release_year: 2588
           kind: album
           genre: relay-pop
           notes: The borrowed case heard throughout the record prompted the group's unresolved argument over whether the sessions remained Purist.
@@ -1565,7 +1565,7 @@ layer_b:
         - id: al_024
           title: Sorting Hall Affection
           label: label_1
-          release_year: 2583
+          release_year: 2578
           kind: album
           genre: relay-pop
           notes: The six separately scheduled voices demonstrated the editing method that ended the band's Localist period.
@@ -1653,7 +1653,7 @@ layer_b:
         - id: al_028
           title: Before the Tables Fill
           label: label_6
-          release_year: 2583
+          release_year: 2586
           kind: album
           genre: relay-pop
           notes: Written for empty late-club rooms, its small complaints became more durable than the elaborate stored arrangements.
@@ -1713,7 +1713,7 @@ layer_b:
         - id: al_031
           title: Work Schedule Hearts
           label: label_1
-          release_year: 2583
+          release_year: 2576
           kind: album
           genre: relay-pop
           notes: Three departing singers and two replacements appear across the record, making its credits a guide to the group's changing membership.

@@ -962,7 +962,7 @@ layer_b:
         - id: al_153
           title: The Last Ferry Goes
           label: label_1
-          release_year: 2559
+          release_year: 2557
           kind: album
           genre: void-lounge
           notes: The first record of the quarter's music anybody pressed, issued by a house that filed it under evening entertainment.
@@ -1056,7 +1056,7 @@ layer_b:
         - id: al_157
           title: Table for the Night
           label: label_1
-          release_year: 2600
+          release_year: 2602
           kind: album
           genre: void-lounge
           notes: The record that proved the form would sell to people who had never been in the quarter, and the one Lower Bell Editions was founded against.
@@ -1103,7 +1103,7 @@ layer_b:
         - id: al_159
           title: Given a Room
           label: unsigned
-          release_year: 2607
+          release_year: 2609
           kind: album
           genre: void-lounge
           notes: Paid for out of one season's door money and sold at the door of the room it was made in.
@@ -1119,7 +1119,7 @@ layer_b:
         - id: al_160
           title: Still Here at Four
           label: unsigned
-          release_year: 2624
+          release_year: 2623
           kind: album
           genre: void-lounge
           notes: The record the quarter points at when it argues that the house was never the reason any of this happened.

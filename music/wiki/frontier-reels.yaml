@@ -399,7 +399,10 @@ layer_a:
         Harbor bands used afterwards. The band was eleven years further into its working life and
         the tempos are noticeably lower. Nessa Dray and Oren Saye were hired for three of the nights
         and it is the first time the group recorded with anyone outside it. It sold about half what
-        the first record did and the band always said it was the better one.
+        the first record did and the band always said it was the better one. Harbor Standard had
+        recorded Nera Ostell at the relay berth the year the first one was made and put the two out
+        as the whole of its frontier list, which is the only time the label has issued a dance record
+        and a single voice in the same season.
       songs:
         - id: s_0648
           title: Second Set, Same Room
@@ -726,7 +729,9 @@ layer_a:
         who had made the band split its writing four ways in 2594, disputed every track but one, and
         the label has never issued a corrected sleeve. It is the only record of what The Foundry Set
         sounded like in a hall rather than in the pipe shop, and the dancers on it are shop workers
-        who can be heard complaining about the heat.
+        who can be heard complaining about the heat. Pipe and Hammer were in Forge's largest pipe hall
+        the same year and put a verse about the sleeve into the record they were making, and Deep
+        Register pressed that too.
       songs:
         - id: s_1111
           title: Ask the Whole Shop
@@ -823,7 +828,8 @@ layer_a:
         and borrowed two microphones from Harbor Standard, which is why this record and Nobody Sat
         Down sound like they were made in the same year by the same people, and they were. Six
         tracks is all the route allowed. It is the record that proved to the co-operative that a
-        band which could not stand still could still be recorded.
+        band which could not stand still could still be recorded, and Burn Day Wages have said every
+        record they have made since was made on the strength of it.
       songs:
         - id: s_0680
           title: Between Two Ports
@@ -1253,7 +1259,7 @@ layer_b:
         - id: al_086
           title: The Kettle Hall
           label: label_2
-          release_year: 2559
+          release_year: 2553
           kind: album
           genre: frontier-reels
           notes: The oldest frontier reel record in circulation, cut in one night on borrowed equipment and reissued twice since.
@@ -1347,7 +1353,7 @@ layer_b:
         - id: al_090
           title: Out of the Saltbox
           label: unsigned
-          release_year: 2559
+          release_year: 2561
           kind: album
           genre: frontier-reels
           notes: Self-pressed in an edition nobody has ever counted, and the reason the band is remembered at all.
@@ -1393,7 +1399,7 @@ layer_b:
         - id: al_092
           title: Nine Mile Turn
           label: label_5
-          release_year: 2594
+          release_year: 2591
           kind: album
           genre: frontier-reels
           notes: The record the co-operative made to prove Loose Cargo were not the only band it had.
@@ -1409,7 +1415,7 @@ layer_b:
         - id: al_093
           title: The Long Way to Everywhere
           label: label_5
-          release_year: 2612
+          release_year: 2616
           kind: album
           genre: frontier-reels
           notes: Their last, and the record that ends the co-operative's run of reel releases.
@@ -1487,7 +1493,7 @@ layer_b:
         - id: al_096
           title: A Core Room Full of Reels
           label: label_1
-          release_year: 2607
+          release_year: 2603
           kind: album
           genre: frontier-reels
           notes: The first frontier reel record made in a Concordance studio, and the one the frontier press treated as an intrusion.

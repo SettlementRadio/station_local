@@ -159,7 +159,7 @@ layer_a:
 
   albums:
     - id: al_161
-      title: Nobody Sat Down
+      title: Nobody Had a Seat
       band: b_072
       label: label_1
       release_year: 2607
@@ -179,7 +179,7 @@ layer_a:
         core, which Civic Lantern has taken credit for in print and Sarra Lome has never contested.
       songs:
         - id: s_1290
-          title: Nobody Sat Down
+          title: Nobody Had a Seat
           track_number: 1
           genre: core-harmonies
           mood_tags: [grand, warm, rising]

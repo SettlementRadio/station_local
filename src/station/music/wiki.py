@@ -21,6 +21,12 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator
 # `music/MUSIC_TASKS.md`.
 WIKI_DIR = "wiki"
 
+# One file in there is not a genre. `anchors.yaml` carries the eight anchor years' own stories,
+# which belong to the catalogue rather than to any one form, and which `PROGRAMMING.md`'s year
+# edition is built on (M-15). It is named here rather than detected by shape, because a genre file
+# that failed to parse would otherwise be silently reclassified as this instead of failing.
+NOT_A_GENRE = frozenset({"anchors"})
+
 
 class WikiError(RuntimeError):
     """The wiki could not be read. The message names the file or id to fix."""
@@ -175,10 +181,10 @@ def load_genre(path: Path) -> GenreWiki:
 
 
 def written_genres(wiki_dir: Path) -> list[str]:
-    """Genre slugs that have a wiki file, in a stable order."""
+    """Genre slugs that have a wiki file, in a stable order. `NOT_A_GENRE` is skipped."""
     if not wiki_dir.is_dir():
         return []
-    return sorted(p.stem for p in wiki_dir.glob("*.yaml"))
+    return sorted(p.stem for p in wiki_dir.glob("*.yaml") if p.stem not in NOT_A_GENRE)
 
 
 class Entity(_Entry):

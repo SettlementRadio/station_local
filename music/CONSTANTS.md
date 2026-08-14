@@ -14,41 +14,51 @@
 ≥4 artists and ≥2 labels** landed on it, which is why these are fixed once and every batch aims at
 them.
 
-| Year | What happened | Binds to |
+**The accounts are `music/wiki/anchors.yaml` and are not repeated here** (M-15). What is left is the
+index: the year, the one phrase that names it, and the label it binds. A second copy of eight
+stories in a file nothing reads is how the two come to disagree.
+
+| Year | In a phrase | Binds to |
 |---|---|---|
-| **2559** | Odessa Vail's *Lanternlight* première became the Lumen Festival's test piece; ensembles and singers across competing labels scheduled responses and rival readings around it | slot 1 |
-| **2583** | The complete *Station Cycles* entered general circulation; stations commissioned new performances while artists released answers to Corin Hale's life-support drone | slot 2 |
-| **2594** | The first freight-circuit burn festival linked crews, port halls and frontier dancers, prompting labels on and off the lanes to release records for the route | slots 5, 2 |
-| **2600** | Shipboard presses adopted a shared format, clearing years of recording backlogs and letting hauler crews distribute releases beyond their usual lanes | slot 5 |
-| **2607** | Meridian's storm-coast studios reopened after a season of closures; finished records, postponed sessions and new Synthesist collaborations arrived together | slot 3 |
-| **2612** | A major late-club label folded and its catalogue became disputed; former artists made new recordings while other labels issued tributes, rebuttals and opportunistic signings | **slot 6 — this is its fold year** |
-| **2619** | The altered-credit edition of an Adra Pell and Lio Tern recording surfaced; reply songs, split-vocal partnerships and competing versions filled release calendars | many |
-| **2624** | Concordance's largest public recording hall reopened after structural repairs; labels booked a season of live sessions and released them before demand for the room outran access | slot 1 |
+| **2559** | the *Lanternlight* première — **layer B only, and permanently** (D-079) | slot 1 |
+| **2583** | the *Station Cycles* in general circulation | slot 2 |
+| **2594** | the first freight-circuit burn festival | slots 5, 2 |
+| **2600** | shipboard presses adopt a shared format | slot 5 |
+| **2607** | Meridian's storm-coast studios reopen | slot 3 |
+| **2612** | Lower Bell Editions folds, catalogue disputed | **slot 6 — this is its fold year** |
+| **2619** | the altered-credit edition surfaces | many |
+| **2624** | the Long Assembly reopens | slot 1 |
 
 **Window check** (§3): six anchors inside the last thirty-five years, two in the old-standards
 window. Correct as specified.
 
-**State after M-14 (2026-08-14): seven of the eight are satisfied** — ≥25 playable songs across ≥4
-bands and ≥2 labels. In order: 2583 · 39/5/4 · 2594 · 42/6/4 · 2600 · 51/7/5 · 2607 · 62/8/6 ·
-2612 · 52/7/4 · 2619 · 160/18/6 · 2624 · 94/12/6. **The wiki is written and these are the final
-counts**; only M-15 can move them now. One anchor falls short, and it is the one no card can fix:
+**Final state, M-15 (2026-08-14): the wiki is frozen and these counts cannot move.** Seven of the
+eight carry layer A and all seven are satisfied — ≥25 playable songs across ≥4 bands and ≥2 labels.
+In order: 2583 · 39/5/4 · 2594 · 42/6/4 · 2600 · 51/7/5 · 2607 · 62/8/6 · 2612 · 52/7/4 · 2619 ·
+160/18/6 · 2624 · 94/12/6. The thinnest is 2583, and it is clear of §5's floor on every count.
 
-- **2583 came off the floor.** It stood at 33/4/4 and M-14 put Nera Ostell's first record on it —
-  six songs, a fifth band, and Cold Harbor's second release of that year. It is now 39/5/4 and the
-  thinnest anchor is 2594 at 42/6/4, which is clear of §5's floor on every count.
-- **2559 cannot be fixed by writing more.** COMMISSION §3 puts layer A in 2566–2626, so no playable
-  song can carry 2559 at all; it stands at zero. M-15 is where that contradiction gets resolved.
-  Layer B does carry it — Odessa Vail's *Lanternlight* is dated 2559 and is the reason the year is
-  an anchor at all.
+- **2559 is settled, not short** (D-079). COMMISSION §3 puts layer A in 2566–2626, so no playable
+  song can carry that year and none ever will; it stands at zero and that is the finished state. It
+  stays an anchor because it is the year *Lanternlight* was premièred and the year every competing
+  house scheduled itself around — layer B carries it, and the way it reaches the air is `al_163`,
+  seven of the cycle's twelve movements recorded in 2624. §5's year edition is built from the other
+  seven. **Do not widen §3's window to fill it, and do not drop the row.**
 
-**One line here was wrong and is corrected.** Until M-14 this section said Cold Harbor had no 2583
-release; it has had one since M-09 — `al_078`, Wire and Rosin's *Nobody Sat Down*, thirteen songs.
-What was true is that 2583 needed a fifth band, and that is what it got.
+**The stories have moved out of this section** (M-15, job 3). The eight accounts of what happened in
+each year now live in `music/wiki/anchors.yaml`, with the records each year actually produced beside
+them, because `PROGRAMMING.md`'s year edition is built on those stories and could not reach them
+here — this is a working file the station never reads. **The table above stays**: `check.py` reads
+the eight years out of its first column, which is all it ever read.
+
+**The anchors now bind layer A only** (§12 rule 7, D-081). Every playable album sits on one of the
+eight; layer B was re-dated across 2552–2626 and now carries 55 distinct release years, with 38
+albums left on an anchor because the anchor's own event is their story.
 
 **This table is read by `make check`.** The eight years in the first column are the only release
-years any album in any genre may carry, and `src/station/music/check.py` takes them from here
-rather than keeping a second copy. Each row must keep its `| **YYYY** |` shape; if it stops
-matching, `make check` stops with a message saying so rather than quietly finding no anchors.
+years a **layer-A** album may carry — layer B carries the rest of the calendar (§12 rule 7) — and
+`src/station/music/check.py` takes them from here rather than keeping a second copy. Each row must
+keep its `| **YYYY** |` shape; if it stops matching, `make check` stops with a message saying so
+rather than quietly finding no anchors.
 
 **Consequences to carry into the slot cards.** Four anchors have already committed facts about labels
 that do not exist yet, and those commitments are binding:
@@ -103,7 +113,7 @@ overlooked player before giving an opinion.
 | **Brin Noll** | oxygen-tank drums, stripped-wire chimes | Retunes the room's loose metal before the engineers place a microphone |
 | **Oren Saye** | upright bass | Discards the chart after one run-through and remembers every singer's original key |
 | **Talla Venn** | fretted composite guitar | Repairs the same scarred instrument between sessions; keeps a handwritten record of every tuning |
-| **Deym Rusk** | piano, compact studio keyboards | Arrives with the arrangement copied out, then removes half of it once the band starts playing |
+| **Calo Meret** | piano, compact studio keyboards | Arrives with the arrangement copied out, then removes half of it once the band starts playing |
 | **Sel Ardin** | backing vocals, vocal arrangement | Says little in rehearsal but can build a full chorus around an uncertain lead before the session breaks |
 
 Both canon signature instruments are covered — resonance pipes and synth-harpsichord — and a vocal
@@ -134,7 +144,7 @@ is recorded is the result:
 | old-system-sessions | 2026-08-13 | 201 | nothing matched — rescreened whole after M-49 grew it to 90 |
 | pulse-dance | 2026-08-11 | 163 | nothing matched |
 | void-lounge | 2026-08-13 | 153 | nothing matched |
-| core-harmonies | 2026-08-14 | 43 | nothing matched |
+| core-harmonies | 2026-08-14 | 43 | nothing matched — rescreened after M-15 retitled `al_161` *Nobody Had a Seat*, the only new name in the catalogue |
 | void-ballads | 2026-08-14 | 44 | nothing matched |
 
 Notes kept because §19 says fuzzy and surname-only matches are flagged, never blocked:
@@ -148,11 +158,13 @@ Notes kept because §19 says fuzzy and surname-only matches are flagged, never b
 | **Corah Ames** · **Kell Moray** | *Ames* and *Moray* are both real places; neither is a person | keep — surname-only, and the first names are invented |
 | **Saira Dunn** · **Bran Teale** | common surnames, nothing notable at the full name | keep, unremarkable |
 
-**Flagged — operator decision, not yet cleared:**
+**Flagged — none outstanding.**
+
+**Rejected on screen, never reuse:**
 
 | Name | Why |
 |---|---|
-| **Deym Rusk** | Reads as a filed-off *Dean Rusk* — US Secretary of State, Wikipedia in dozens of languages. The search engine itself suggested the correction unprompted. Passes the mechanical rule (fuzzy, not exact) and fails the §8 litmus test, which asks whether a reader could name the source. **Recommend replacing.** |
+| **Deym Rusk** | Read as a filed-off *Dean Rusk* — US Secretary of State, Wikipedia in dozens of languages; the search engine suggested the correction unprompted. It passed the mechanical rule (fuzzy, not exact) and failed §8's litmus test, which asks whether a reader could name the source. **Replaced by Calo Meret**, who is the eighth player in the table above and appears across five labels in five genre files. Deym Rusk appears nowhere in `music/wiki/` and never did — the replacement was made as the genres were written and only the record of it was missing, which M-15 closed. |
 
 **From canon, already fixed and not to be reinvented:**
 Odessa Vail · Corin Hale · Adra Pell · Lio Tern
@@ -165,9 +177,7 @@ layer-A performance of it in 2624 (M-13). **Adra Pell and Lio Tern are `b_006` P
 rota at Verrin Reach lets anybody copy them and lets nobody sell them, so no house has ever pressed
 them and the station cannot hold them (M-14).
 
-**Rejected on screen, never reuse:**
-
-*(none yet — record every rejection here so the same collision is not proposed twice)*
+*(the rejection list is above, with the flags it came from.)*
 
 ---
 
@@ -213,8 +223,10 @@ Layer-A bands and playable songs only. §5 needs every label to end on ≥3 band
 | 6 | late-club, folded 2612 | Lower Bell Editions | 3 | 45 |
 | 7 | old-system importer | Relay Road Import | 4 | 90 |
 
-**The table above is the finished state, recounted after M-14** (2026-08-14). The wiki is written:
-500 playable songs, 25 layer-A bands, 55 layer-A albums, and every one of the seven labels clear of
+**The table above is the finished state, recounted after M-14 and confirmed unchanged by M-15**
+(2026-08-14) — the catalogue-wide pass moved release years and prose, and no song, band, album or
+label assignment with it. The wiki is written and frozen:
+500 playable songs, 25 layer-A bands, 63 layer-A albums, and every one of the seven labels clear of
 §5's floor of three bands, six albums and forty songs. M-44's demotion had taken a band and 25 songs
 off label 2, a band and 20 off label 4, a band and 25 off label 5, and all of label 3's layer A but
 one band and 20 songs (D-068); M-46 put 35 songs and one band back, M-48 put 30 more, M-49 added 30

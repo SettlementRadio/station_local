@@ -333,3 +333,39 @@ def test_a_missing_anchor_table_stops_the_check_rather_than_passing_it(tmp_path:
     (root / "music" / "CONSTANTS.md").write_text("# no table here\n")
     with pytest.raises(check.CheckError, match="anchor years"):
         check.check_wiki(root)
+
+
+def test_the_anchor_stories_live_in_the_wiki_and_cover_every_anchor() -> None:
+    """M-15 job 3: `Night Record`'s year edition is built on these, and could not reach them.
+
+    They used to live in `CONSTANTS.md`, which is a working file nothing reads — `check.py` takes
+    the eight numbers out of it and no more. This asserts the two stay in step: a year added to the
+    table without a story is a year edition with nothing behind it.
+    """
+    raw = yaml.safe_load((ROOT / "music" / "wiki" / "anchors.yaml").read_text(encoding="utf-8"))
+    stories = {entry["year"]: entry for entry in raw["anchor_years"]}
+    assert sorted(stories) == check.anchor_years(ROOT / "music" / "CONSTANTS.md")
+    for year, entry in stories.items():
+        assert entry["story"].strip(), f"{year} has no story"
+        assert entry["records"], f"{year} names no records"
+
+
+def test_the_anchor_file_is_not_read_as_a_genre() -> None:
+    """It lives in `music/wiki/` and mints no ids. Counting it as a tenth form would go red."""
+    assert "anchors" in wiki.NOT_A_GENRE
+    assert "anchors" not in wiki.written_genres(ROOT / "music" / "wiki")
+
+
+def test_only_2559_is_unprogrammable() -> None:
+    """D-079: section 3 puts layer A in 2566-2626, so the Vail year can never carry a playable song.
+
+    Every other anchor clears COMMISSION.md section 5's floor for a year edition, and this is what
+    says so out loud rather than leaving it to be rediscovered.
+    """
+    raw = yaml.safe_load((ROOT / "music" / "wiki" / "anchors.yaml").read_text(encoding="utf-8"))
+    unprogrammable = {e["year"] for e in raw["anchor_years"] if not e["programme"]}
+    assert unprogrammable == {2559}
+    for entry in raw["anchor_years"]:
+        held = entry["station_holds"]
+        if entry["programme"]:
+            assert held["songs"] >= 25 and held["bands"] >= 4 and held["labels"] >= 2, entry["year"]

@@ -198,7 +198,7 @@ layer_b:
         - id: al_121
           title: The First Sealed Season
           label: label_3
-          release_year: 2600
+          release_year: 2598
           kind: album
           genre: pulse-dance
           notes: The record that turned the coast's sealed-season nights into something a label would pay for.
@@ -214,7 +214,7 @@ layer_b:
         - id: al_122
           title: Gate Money
           label: label_3
-          release_year: 2612
+          release_year: 2610
           kind: album
           genre: pulse-dance
           notes: The band's last, made after the settlement began charging for the gate room, and remembered chiefly for the argument about the door.
@@ -245,7 +245,7 @@ layer_b:
         - id: al_123
           title: Round the Salt
           label: label_3
-          release_year: 2607
+          release_year: 2606
           kind: album
           genre: pulse-dance
           notes: The record the house put out while the storm-coast studios were still shut, made in the back of the band's own transport.
@@ -291,7 +291,7 @@ layer_b:
         - id: al_125
           title: Pump House Tapes
           label: unsigned
-          release_year: 2612
+          release_year: 2615
           kind: album
           genre: pulse-dance
           notes: Handed out at hall doors in runs of thirty and the most copied record the storm coast has.
@@ -337,10 +337,10 @@ layer_b:
         - id: al_127
           title: Nothing After Midnight
           label: label_6
-          release_year: 2607
+          release_year: 2605
           kind: album
           genre: pulse-dance
-          notes: The core's first serious attempt at the coast's form, and the record Meridian bands still say got the tempo wrong.
+          notes: The core's first serious attempt at the coast's form, made for the house After the Ferry played three nights a week for, and the record Meridian bands still say got the tempo wrong.
           songs:
             - {id: s_1044, title: Nothing After Midnight, track_number: 1, genre: pulse-dance, playable: false}
             - {id: s_1045, title: The Late Bell, track_number: 2, genre: pulse-dance, playable: false}
@@ -356,7 +356,7 @@ layer_b:
           release_year: 2612
           kind: album
           genre: pulse-dance
-          notes: Pressed in the month the house folded and remembered as the record nobody has been able to reissue since.
+          notes: Pressed in the month the house folded, alongside the last Coldwater Court record, and remembered as the one nobody has been able to reissue since.
           songs:
             - {id: s_1052, title: The Last Pressing, track_number: 1, genre: pulse-dance, playable: false}
             - {id: s_1053, title: Who Holds the Master, track_number: 2, genre: pulse-dance, playable: false}
@@ -383,7 +383,7 @@ layer_b:
         - id: al_129
           title: Rooms at Vantage
           label: label_1
-          release_year: 2619
+          release_year: 2617
           kind: album
           genre: pulse-dance
           notes: The prestige house's first release in the form, and the one Meridian was rudest about.
@@ -501,7 +501,9 @@ layer_b:
       notes: >-
         Made in the Longwall hall across the sealed season of 2618 and issued in 2619, into a
         release calendar full of answers to the altered-credit edition — the year the band would
-        least have chosen and the one Stormline Issue insisted on. Sel Ardin came out from
+        least have chosen and the one Stormline Issue insisted on, and the year the house started
+        pressing the core's slow music and signed Nine Lamps, which Anje Roul was asked about at
+        every door for a season. Sel Ardin came out from
         Concordance for eleven days and built the backing vocals on eight of the eleven tracks; it
         is the only time Cordon Hours have used a hired voice and Anje Roul has said it is the only
         time she has been out-sung in her own hall. The record was mastered twice, once by the label
@@ -886,9 +888,10 @@ layer_b:
       cornerstone: false
       notes: >-
         Cut in 2623 in four hired rooms across three settlements while the storm coast was sealed
-        for eleven weeks behind them, and issued in 2624. Bright Hazard were the only Stormline
-        Issue act working that season and this record is the whole of the house's export list for
-        the year. Denn Ashery's vocals were recorded in one settlement and Sela Vint's programming
+        for eleven weeks behind them, and issued in 2624. Bright Hazard were the only act the house
+        paid for that season — the year's money had gone into a wet hall on the coast, and
+        The Quiet Half paid the Concordance hall fee out of their own pockets rather than wait for
+        it — and this record is the whole of Stormline Issue's export list for the year. Denn Ashery's vocals were recorded in one settlement and Sela Vint's programming
         finished in another, the two of them working a fortnight and two crossings apart and sending
         parts by relay, which is why the duo calls it the first record they made without being in a
         room together. Brin Noll plays stripped-wire chimes on two tracks — the only person besides
