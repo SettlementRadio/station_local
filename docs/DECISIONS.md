@@ -2041,3 +2041,57 @@ it names Measure Kindly, Open Parallax, Pell and Tern and The Quiet Half, four b
 other genre files, against the three the rule asks for. The rule stays owed to M-15 because five of
 the other six written genres still name none. Rule 6 reads **2 studio anecdotes in 20 facts**.
 `make music-screen` returned nothing on 43 distinct names.
+
+### D-078 · The most-loved void ballad is one nobody may sell, and layer A exists because of it — 2026-08-14
+
+M-14 wrote `music/wiki/void-ballads.yaml`: 25 playable songs on label 2 across four albums, two
+layer-A bands, Corin Hale as the whole of layer B, and one lost figure. It is the last genre, and
+**the wiki's layer A is complete at 500 songs, 25 bands and 55 albums.**
+
+**Corin Hale is layer B, and the reason is permanent.** Canon fixes Hale — a lifetime on one relay
+outpost, the *Station Cycles*, the life-support drone left unrepaired because it had become the
+tonic note — and says nothing about who pressed them. This card decides that nobody did and nobody
+can: Hale left the recordings to the outpost's rota under one rule the rota has never bent, *anybody
+may copy them and nobody may sell them*. So what circulates is copies of copies, and the settled
+worlds' most-loved record in this form is one no station's library holds. That is a stronger use of
+layer B than the wiki has made anywhere else — COMMISSION §1 says most of the music invented will
+never be recorded, and this is the case where the presenter's inability to play it *is* the story
+rather than a limitation to work around.
+
+**Both layer-A voices are consequences of that rule**, which is what stops a 25-song genre from
+being two singers with nothing between them. In 2583 the Cycles reached general circulation, every
+house wanted the form, and Harbor Standard was not allowed to sell the one record everybody wanted —
+so it went to its own relay berth and recorded the gate clerk who sang to the night traffic. That is
+`b_074` **Nera Ostell**, who has never sung a Hale song and is asked every time, and who in 2612 put
+her name on a rota and went out to an outpost herself. `b_075` **Aro Vantry** built a box that holds
+one note, the note is the Cycles' tonic, and he prints where it came from on every sleeve unasked —
+which he first did in 2619, the year the whole industry was arguing about a credit. His 2624 record
+was made at Hale's own outpost, where the plant had been replaced and the note was gone. **They have
+never met and one will not answer the other.**
+
+**Two solo voices, per D-069, and the file fixes both textures.** Ostell is a low voice and a
+composite guitar strung with wire off a scrap yard; Vantry is a high one, a hand-pumped reed organ
+and the drone box. M-16's D-061 showed what happens when a band's voice is left for the style card
+to decide, so the pronouns and the instrument are settled in the bio here and M-20 has nothing to
+choose. **Exactly one session player appears in the whole file** — Ivena Sorn, holding one note on
+one song in 2600 — because COMMISSION §2's palette allows a held note underneath and nothing else,
+and a second player would be a different form.
+
+**2583 came off the floor and the recency rule closes satisfied.** The anchor stood at 33/4/4, the
+thinnest of the eight and the only one on §5's band floor; Ostell's first record takes it to 39/5/4,
+and 2600 gains a fifth label. 13 of the 25 songs are dated 2619 or 2624 against the 9 D-077 asked
+for, so COMMISSION §3's half-recent rule **ends at 254 of 500 — 51%**, and the chain of shares
+handed from card to card (56% → 49% → 48% → 51% → 36%) stops here. The two old records are old for
+reasons in the story: Cold Harbor's first void ballad could only be the year the Cycles went round,
+and its second could only be the year the shared press format let records travel.
+
+**One line of `CONSTANTS.md` was wrong and is corrected.** §1 said Cold Harbor carried no 2583
+release and used that to argue M-14 could lift the anchor; `al_078` — Wire and Rosin's *Nobody Sat
+Down*, thirteen songs — has been a 2583 label-2 release since M-09. What was true is that the year
+needed a fifth band, which is what it got. **No existing prose in any genre file was edited.**
+
+`make check` is green including §12's rules. Rule 6 reads **zero studio anecdotes across both
+bands**, and **rule 8 is satisfied by this file** — it names Wire and Rosin, The Turning Room, Board
+and Bow, Loose Cargo and Harbor Late, five bands that live in other genre files. The rule stays owed
+to M-15 because the other six written genres still name none. `make music-screen` returned nothing
+on 44 distinct names.

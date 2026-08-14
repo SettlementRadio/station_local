@@ -1,16 +1,32 @@
-# Void Ballads — PLACEHOLDER. Nothing here is content yet.
+# Void Ballads — written by M-14.
 #
-# Written by its card in music/MUSIC_TASKS.md: open a session and say the number. The agent
-# replaces everything below the `section:` block, and `make check` counts what it wrote.
+# 25 playable songs on label 2, the last genre in the wiki and the smallest layer A in it. Cold
+# Harbor needed nothing — M-48 took Harbor Standard past COMMISSION.md section 5's floor already —
+# so every song here is margin, and the card was free to spend all of it on the one thing this form
+# has that no other form has: a record the whole settled worlds knows and the station cannot play.
 #
-# Allocation, from music/plan.yaml (the authority — do not retype it here):
-#   LAYER A — 10 songs across 1 band(s)
-#     label 2 (Cold Harbor, frontier): 10 songs / 1 band(s)
-#   LAYER B — about 1 more bands the station does not hold
-#   LAYER C — about 1 figures, 2426-2546, no albums and no track lists
+# Four things shape everything below:
 #
-# Labels this genre sits on:
-#   - label_2  (Cold Harbor, frontier)
+# 1. **The famous record is layer B and always will be.** Corin Hale is fixed canon: a lifetime on
+#    one relay outpost, the Station Cycles, the life-support drone left unrepaired because it had
+#    become the tonic note. Hale left the recordings to the outpost's rota under a rule the rota has
+#    never bent — anybody may copy them, nobody may sell them — so no house has ever pressed them.
+#    That is why they are layer B, and it is a reason a presenter can use forever.
+# 2. **Both layer-A voices exist because of that.** In 2583 the Cycles went round every world and
+#    Harbor Standard had a form everybody suddenly wanted and nothing it was allowed to sell. So it
+#    went to the Cold Harbor relay berth and recorded the gate clerk who sang to the night traffic.
+# 3. **Two solo voices, not one** (D-069). Twenty-five songs from a single artist is one texture the
+#    rotation cannot separate. Nera Ostell is a low voice and a wire-strung composite guitar; Aro
+#    Vantry is a high one, a hand-pumped reed organ, and a box he built to hold one note. They have
+#    never met and one of them will not answer the other.
+# 4. **The form is one voice and one instrument** (COMMISSION.md section 2), so this is the thinnest
+#    layer A in the wiki by design. A held note underneath is the only thing allowed in, which is
+#    why exactly one session player appears in the whole file.
+#
+# `labels:` lists label_2 alone — the whole genre sits on it. Layer B is Corin Hale and nothing
+# else, per plan.yaml, and layer C is the one keeper the form comes from.
+#
+# **No cornerstone** (D-067): the list is full at six and the longest record here is seven songs.
 
 section:
   genre: void-ballads
@@ -20,23 +36,448 @@ section:
     referenced: B
     historical: C
 
-# The labels above, as the writer names them.
-labels: []
+labels:
+  - id: label_2
+    name: Harbor Standard
+    home: Cold Harbor
+    tier: flagship
+    status: operating
+    founded_year: 2571
+    genre: void-ballads
+    note: >-
+      Cold Harbor's own house, and the one that has to keep a quiet list beside a loud one. Harbor
+      Standard was built on halls — Wire and Rosin, then The Turning Room, then Board and Bow — and
+      on the lane-rock it signs off the freight gates, and it keeps Harbor Late for the hours after
+      the reel halls empty. Void ballads are the smallest thing on its list and the only thing on it
+      that sells the same number of copies every year. The house has been trying to press the
+      Station Cycles since 2583 and has been told no by the same eleven people every time it asks.
 
-# From music/CONSTANTS.md section 2 — only the players who appear on this genre,
-# and only inside their active years.
-session_players: []
+# One name, and it is the only one the form allows in. COMMISSION.md section 2 permits a held note
+# underneath a void ballad and nothing else, so a second player is either the drone or is a
+# different form. Ivena Sorn plays the held note on one song in this file, in 2600, inside her dates.
+session_players:
+  - id: sp_ivena_sorn
+    name: Ivena Sorn
+    instrument: resonance pipes
+    active_from: 2594
+    active_to: 2626
+    genre: void-ballads
 
-# LAYER A — playable: true. Full bios, full album stories, one fact per song.
 layer_a:
-  bands: []
-  albums: []
+  bands:
+    - id: b_074
+      name: Nera Ostell
+      kind: solo
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: void-ballads
+      active_from: 2578
+      active_to: 2612
+      members:
+        - id: p_nera_ostell
+          name: Nera Ostell
+          genre: void-ballads
+          instruments: [voice, wire-strung composite guitar]
+          active_from: 2578
+          active_to: 2612
+      movement:
+        standing: Purist
+        detail: >-
+          Filed Purist and has never claimed it. Everything she owns that makes a sound was made
+          from what the berth threw away, which is a habit from eleven years of logging anything
+          that drew power, not a position about instruments. Asked once whether she was on a side,
+          she said the gate does not have sides, it has a night shift.
+      bio: >-
+        Nera Ostell kept a gate at the Cold Harbor relay berth from 2578 and sang to the night
+        traffic because there were hours in a shift when nothing was due in and the alternative was
+        the beacon. Harbor Standard came looking for her in 2583, for the plainest reason there is:
+        the Station Cycles were in every room in the settled worlds that year and the house was not
+        allowed to sell them, so it found a voice at a relay berth of its own. She sings low and
+        close and plays one composite guitar strung with wire off the berth's scrap yard, in an open
+        tuning she has never changed, and she has never sung a Corin Hale song in her life — she is
+        asked every time and says no every time. In 2612 she put her name on a rota and went out to
+        Ashlin Reach, and there has been no record since; the house still lists both of hers and
+        still sends her the money.
+      album_ids: [al_165, al_166]
 
-# LAYER B — playable: false. Two-sentence bios, one-line album notes, titles only, no facts.
+    - id: b_075
+      name: Aro Vantry
+      kind: solo
+      home_settlement: Cold Harbor
+      label: label_2
+      genre: void-ballads
+      active_from: 2617
+      active_to: 2626
+      members:
+        - id: p_aro_vantry
+          name: Aro Vantry
+          genre: void-ballads
+          instruments: [voice, hand-pumped reed organ, drone box]
+          active_from: 2617
+          active_to: 2626
+      movement:
+        standing: Synthesist
+        detail: >-
+          Filed Synthesist for the box, which is a scrubber fan and a rank of reeds and does one
+          thing: it holds a note. He says a machine that can only hold a note is not a side of an
+          argument, and has stopped saying it because the filing has sold him records.
+      bio: >-
+        Aro Vantry sings high and thin over a hand-pumped reed organ, and under all of it sits a box
+        he built to hold the tonic of the Station Cycles, which he learned off a copy somebody at
+        the Cold Harbor gate had made off a copy. He is the only artist on Harbor Standard's list
+        who prints where his own note came from, on every sleeve, unasked. He put his name on the
+        relay rota in 2619 and has kept two watches since, which is how he came to be allowed to
+        make a record at Verrin Reach, and he sends a copy of everything he makes up the road to
+        Nera Ostell at Ashlin Reach. She has never answered.
+      album_ids: [al_167, al_168]
+
+  albums:
+    - id: al_165
+      title: Sung at the Gate
+      band: b_074
+      label: label_2
+      release_year: 2583
+      kind: album
+      genre: void-ballads
+      cornerstone: false
+      notes: >-
+        The year the complete Station Cycles reached general circulation, every house in the settled
+        worlds wanted the form and one of them had it. Harbor Standard asked the rota at Verrin
+        Reach for terms and was told the terms: anybody may copy them and nobody may sell them.
+        Bela Roon, who ran the house's list then, went down to its own relay berth instead, on the
+        word of a crew who had heard the gate clerk singing between arrivals, and made this over two
+        nights in a store room off the berth with the traffic still coming in. It is a house record
+        of the plainest commercial kind and it is the only one on Cold Harbor's list that names
+        nobody but the person on the sleeve — Ostell played everything on it, and the generation of
+        hired players that fills the rest of this catalogue had not started work. It has never been
+        out of print and it has never sold quickly.
+      songs:
+        - id: s_1322
+          title: Sung at the Gate
+          track_number: 1
+          genre: void-ballads
+          mood_tags: [spare, low, patient]
+          playable: true
+          fact: She had sung this at the berth gate for four years before anybody wrote it down, and the version here is the one the night crew corrected her on — they had heard it more often than she had sung it sober.
+          credits: {writers: [p_nera_ostell], players: [p_nera_ostell], producer: p_nera_ostell}
+        - id: s_1323
+          title: Nothing Due Till Morning
+          track_number: 2
+          genre: void-ballads
+          mood_tags: [still, plain, wry]
+          playable: true
+          fact: Written on a shift with nothing due in until morning, which she says is the only kind of shift anybody writes on, and the berth's own log for that night carries the last verse in the margin.
+          credits: {writers: [p_nera_ostell], players: [p_nera_ostell], producer: p_nera_ostell}
+        - id: s_1324
+          title: Two Crossings Out
+          track_number: 3
+          genre: void-ballads
+          mood_tags: [distant, aching, slow]
+          playable: true
+          fact: About Verrin Reach, the outpost two crossings out that Corin Hale kept, and it is the nearest Nera Ostell has ever come to the Cycles — she has been asked to sing one on air four times and has said no four times.
+          credits: {writers: [p_nera_ostell], players: [p_nera_ostell], producer: p_nera_ostell}
+        - id: s_1325
+          title: I Kept the Book
+          track_number: 4
+          genre: void-ballads
+          mood_tags: [dry, close, steady]
+          playable: true
+          fact: The book is the berth's arrival log, which she kept for eleven years, and in the middle of the song she reads four lines out of a real entry — a crew short one hand, a hold opened late, and the weather.
+          credits: {writers: [p_nera_ostell], players: [p_nera_ostell], producer: p_nera_ostell}
+        - id: s_1326
+          title: Wire Off the Yard
+          track_number: 5
+          genre: void-ballads
+          mood_tags: [rough, warm, unhurried]
+          playable: true
+          fact: The guitar is strung with wire off the berth's scrap yard and she has never put a bought string on it, which is why the low course sounds like something that was doing another job first.
+          credits: {writers: [p_nera_ostell], players: [p_nera_ostell], producer: p_nera_ostell}
+        - id: s_1327
+          title: Last One Through
+          track_number: 6
+          genre: void-ballads
+          mood_tags: [final, quiet, tender]
+          playable: true
+          fact: The gate shutting behind the night's last crew is the last thing on the record, and she asked the berth to leave it running because the song is about them going and she was not going to fake it.
+          credits: {writers: [p_nera_ostell], players: [p_nera_ostell], producer: p_nera_ostell}
+
+    - id: al_166
+      title: Further Than I Went
+      band: b_074
+      label: label_2
+      release_year: 2600
+      kind: album
+      genre: void-ballads
+      cornerstone: false
+      notes: >-
+        Seventeen years and one record, because Harbor Standard was busy with halls and Ostell was
+        busy with a gate, and because neither of them had a reason to hurry. What made this one is
+        the shared press format: from 2600 a hauler crew could carry a record off its own lane and
+        have it play at the other end, and the first record went further in a year than it had gone
+        in the whole time before. Ostell has still never left Cold Harbor. The whole album is about
+        that — things that travel, people who do not, and what it is like to be told by strangers
+        where your own voice has been. It was made in the same store room off the berth, with one
+        exception the house had to argue her into, and it is the record that put the form on lanes
+        that had never heard it.
+      songs:
+        - id: s_1328
+          title: Further Than I Went
+          track_number: 1
+          genre: void-ballads
+          mood_tags: [wondering, spare, warm]
+          playable: true
+          fact: The title is what she said out loud when a hauler crew told her they had heard the first record three ports past anywhere she has ever been, and she wrote the song before that crew's hold was shut.
+          credits: {writers: [p_nera_ostell], players: [p_nera_ostell], producer: p_nera_ostell}
+        - id: s_1329
+          title: Ask the Crew Who Carried It
+          track_number: 2
+          genre: void-ballads
+          mood_tags: [grateful, plain, rolling]
+          playable: true
+          fact: Two Common Wake Cooperative crews moved her first record along the lanes for nothing under the shared format, and she has printed both crew names on every sleeve since, above her own.
+          credits: {writers: [p_nera_ostell], players: [p_nera_ostell], producer: p_nera_ostell}
+        - id: s_1330
+          title: A Berth I Never Left
+          track_number: 3
+          genre: void-ballads
+          mood_tags: [rooted, aching, still]
+          playable: true
+          fact: The one song of hers the gate crew asked her not to put out, because they thought it made the berth sound like a place people are stuck in, and she put it out and then sang it to them.
+          credits: {writers: [p_nera_ostell], players: [p_nera_ostell], producer: p_nera_ostell}
+        - id: s_1331
+          title: Burn Day Comes Anyway
+          track_number: 4
+          genre: void-ballads
+          mood_tags: [wry, low, tired]
+          playable: true
+          fact: About the berth crews who work burn day and never get to the festival; Loose Cargo asked to make a fast version of it, she said yes and asked for nothing, and she has never heard the result.
+          credits: {writers: [p_nera_ostell], players: [p_nera_ostell], producer: p_nera_ostell}
+        - id: s_1332
+          title: The Note Under Everything
+          track_number: 5
+          genre: void-ballads
+          mood_tags: [deep, glowing, sustained]
+          playable: true
+          fact: Ivena Sorn holds one note on the resonance pipes under the whole song, the only time another player appears on a record of Ostell's, and she was paid out of the singer's share because Ostell would not ask the house for it.
+          credits: {writers: [p_nera_ostell], players: [p_nera_ostell, sp_ivena_sorn], producer: p_nera_ostell}
+        - id: s_1333
+          title: Keep the Copy
+          track_number: 6
+          genre: void-ballads
+          mood_tags: [firm, close, unadorned]
+          playable: true
+          fact: Written after somebody sold a copy of the Station Cycles at the Cold Harbor gate for the price of a shift, which the rota at Verrin Reach forbids and has no way on any world to stop.
+          credits: {writers: [p_nera_ostell], players: [p_nera_ostell], producer: p_nera_ostell}
+
+    - id: al_167
+      title: Same Note All Night
+      band: b_075
+      label: label_2
+      release_year: 2619
+      kind: album
+      genre: void-ballads
+      cornerstone: false
+      notes: >-
+        Harbor Standard had been without a void ballad voice since 2612 and found this one at the
+        same gate it found the last one, which the house has been teased about ever since. What
+        makes the record is the box: Vantry built a thing that holds one note, the note is the tonic
+        of the Station Cycles, and he printed where it came from on the back of the sleeve when
+        nobody had asked him to. He did that in the year the altered-credit edition of a Pell and
+        Tern recording surfaced and the whole industry spent twelve months arguing about whose name
+        belonged on what, which is why a small record about a note ended up being discussed in rooms
+        that do not otherwise discuss this form. The seventh song is not his. It is the one Nera
+        Ostell left behind when she went out to a rota, and the house had been sitting on it for
+        seven years waiting for somebody who could sing it.
+      songs:
+        - id: s_1334
+          title: Same Note All Night
+          track_number: 1
+          genre: void-ballads
+          mood_tags: [hypnotic, close, patient]
+          playable: true
+          fact: The held note under every song on this record comes out of a box Aro Vantry built, and the sleeve says whose note it is because he decided that it should, not because anyone asked.
+          credits: {writers: [p_aro_vantry], players: [p_aro_vantry], producer: p_aro_vantry}
+        - id: s_1335
+          title: Nobody's to Sell
+          track_number: 2
+          genre: void-ballads
+          mood_tags: [plain, pointed, slow]
+          playable: true
+          fact: The title is the rota's own rule about the Station Cycles — anybody may copy them, nobody may sell them — and Harbor Standard printed those words on the back of a record it was selling.
+          credits: {writers: [p_aro_vantry], players: [p_aro_vantry], producer: p_aro_vantry}
+        - id: s_1336
+          title: What the Box Does
+          track_number: 3
+          genre: void-ballads
+          mood_tags: [dry, mechanical, warm]
+          playable: true
+          fact: The box is a scrubber fan and a rank of reeds and does one thing; Suli Orley of Board and Bow called it the only instrument on the frontier nobody can play badly, and Vantry has said that is not a compliment.
+          credits: {writers: [p_aro_vantry], players: [p_aro_vantry], producer: p_aro_vantry}
+        - id: s_1337
+          title: Count Me on the Rota
+          track_number: 4
+          genre: void-ballads
+          mood_tags: [resolute, spare, rising]
+          playable: true
+          fact: He put his name on the relay rota in the year this came out and has kept two watches since, which is the only reason the keepers at Verrin Reach later let him make a record in their store room.
+          credits: {writers: [p_aro_vantry], players: [p_aro_vantry], producer: p_aro_vantry}
+        - id: s_1338
+          title: Between Two Beacons
+          track_number: 5
+          genre: void-ballads
+          mood_tags: [suspended, hushed, long]
+          playable: true
+          fact: The song is timed to the gap between a relay's maintenance beacons, which is nine seconds longer now than it was when Corin Hale kept it, because the equipment out there was changed and the interval went with it.
+          credits: {writers: [p_aro_vantry], players: [p_aro_vantry], producer: p_aro_vantry}
+        - id: s_1339
+          title: Sing It Back Down the Road
+          track_number: 6
+          genre: void-ballads
+          mood_tags: [open, hopeful, drifting]
+          playable: true
+          fact: He sends a copy of everything he makes up the relay to Verrin Reach and to Ashlin Reach at his own cost, and the only reply he has ever had was a maintenance acknowledgement with no words in it.
+          credits: {writers: [p_aro_vantry], players: [p_aro_vantry], producer: p_aro_vantry}
+        - id: s_1340
+          title: The Song She Left
+          track_number: 7
+          genre: void-ballads
+          mood_tags: [tender, plain, final]
+          playable: true
+          fact: Nera Ostell wrote it and left it with a gate clerk in 2612 on her way out to Ashlin Reach; the house held it for seven years because nobody on its list had a voice for it, and she took nothing for it.
+          credits: {writers: [p_nera_ostell], players: [p_aro_vantry], producer: p_aro_vantry}
+
+    - id: al_168
+      title: Nothing Left to Tune To
+      band: b_075
+      label: label_2
+      release_year: 2624
+      kind: album
+      genre: void-ballads
+      cornerstone: false
+      notes: >-
+        In the year every house in the settled worlds was booking nights in Concordance's reopened
+        hall, Harbor Standard paid for one crossing each way to Verrin Reach so that its quietest
+        artist could sing in a store room with eleven people in it. The idea was to make the record
+        against the life support Corin Hale would not let anybody repair. It was not there: the
+        outpost's plant had been replaced, the note had gone with it, and the only tonic on the
+        record is the box Vantry brought out with him. That is what the record is about, and the
+        house — which had expected a pilgrimage and got a wake — put it out unchanged. The eleven
+        keepers gave their permission on one condition, and it is printed on the back of the sleeve.
+      songs:
+        - id: s_1341
+          title: Nothing Left to Tune To
+          track_number: 1
+          genre: void-ballads
+          mood_tags: [bereft, spare, cold]
+          playable: true
+          fact: He crossed out to Verrin Reach to sing against the drone Corin Hale refused to have repaired and found the plant had been replaced, so the only note holding the record up is the one he brought with him.
+          credits: {writers: [p_aro_vantry], players: [p_aro_vantry], producer: p_aro_vantry}
+        - id: s_1342
+          title: Printed on the Back
+          track_number: 2
+          genre: void-ballads
+          mood_tags: [plain, defiant, steady]
+          playable: true
+          fact: The eleven keepers of Verrin Reach agreed to the record on one condition — that their rule be printed on the sleeve — so Harbor Standard now sells a record whose back cover says it may be copied.
+          credits: {writers: [p_aro_vantry], players: [p_aro_vantry], producer: p_aro_vantry}
+        - id: s_1343
+          title: Where He Sat
+          track_number: 3
+          genre: void-ballads
+          mood_tags: [reverent, hushed, close]
+          playable: true
+          fact: Sung in the room Corin Hale kept the vigil in, which is a store space with a fold-down bunk, a kettle and a board that still has a beacon interval chalked on it in somebody's hand.
+          credits: {writers: [p_aro_vantry], players: [p_aro_vantry], producer: p_aro_vantry}
+        - id: s_1344
+          title: The Long Way Out
+          track_number: 4
+          genre: void-ballads
+          mood_tags: [weary, wide, drifting]
+          playable: true
+          fact: The crossing out took a season each way and the house paid for it once and has said in print that it will not pay for it twice, which Vantry quotes from the stage.
+          credits: {writers: [p_aro_vantry], players: [p_aro_vantry], producer: p_aro_vantry}
+        - id: s_1345
+          title: Still Nobody Answers
+          track_number: 5
+          genre: void-ballads
+          mood_tags: [lonely, gentle, unresolved]
+          playable: true
+          fact: Nera Ostell has never answered a letter or a copy he has sent her, and he sings it as a fact rather than a complaint; the last verse is Ashlin Reach's own call sign, sung as it is spoken.
+          credits: {writers: [p_aro_vantry], players: [p_aro_vantry], producer: p_aro_vantry}
+        - id: s_1346
+          title: Keep the Interval
+          track_number: 6
+          genre: void-ballads
+          mood_tags: [final, calm, sustained]
+          playable: true
+          fact: The last sound on the record is the beacon at Verrin Reach on the interval it keeps now, and the keeper on watch that night counted him in to it with her hand.
+          credits: {writers: [p_aro_vantry], players: [p_aro_vantry], producer: p_aro_vantry}
+
 layer_b:
-  bands: []
+  bands:
+    - id: b_076
+      name: Corin Hale
+      kind: solo
+      home_settlement: Verrin Reach
+      label: not for sale
+      genre: void-ballads
+      active_from: 2549
+      active_to: 2584
+      members:
+        - id: p_corin_hale
+          name: Corin Hale
+          genre: void-ballads
+          instruments: [voice, and the outpost's life support]
+          active_from: 2549
+          active_to: 2584
+      bio: >-
+        Corin Hale kept the vigil at Verrin Reach, a relay outpost two crossings out from Cold
+        Harbor, for a working lifetime, and came out of it in old age with the Station Cycles — void
+        ballads sung against the actual drone of the outpost's life support, which Hale would not
+        have repaired because it had become the tonic note. The Cycles were left to the rota rather
+        than to a house, under one rule the rota has kept ever since: anybody may copy them and
+        nobody may sell them. Every house in the settled worlds has asked and every house has been
+        refused, so what circulates is copies of copies, passed hand to hand along the night shift,
+        and the settled worlds' most-loved record in this form is the one no station's library
+        holds.
+      albums:
+        - id: al_169
+          title: Station Cycles
+          label: not for sale
+          release_year: 2583
+          kind: album
+          genre: void-ballads
+          notes: The year the complete cycles reached general circulation, and the record the whole form is measured against — never pressed by anybody, and never out of anybody's reach.
+          songs:
+            - {id: s_1347, title: First Watch Alone, track_number: 1, genre: void-ballads, playable: false}
+            - {id: s_1348, title: The Board at Four, track_number: 2, genre: void-ballads, playable: false}
+            - {id: s_1349, title: The Tonic Note, track_number: 3, genre: void-ballads, playable: false}
+            - {id: s_1350, title: Hold the Tone, track_number: 4, genre: void-ballads, playable: false}
+            - {id: s_1351, title: The Rota Turns, track_number: 5, genre: void-ballads, playable: false}
+            - {id: s_1352, title: Everything Still Works, track_number: 6, genre: void-ballads, playable: false}
+            - {id: s_1353, title: Talk to the Machine, track_number: 7, genre: void-ballads, playable: false}
+            - {id: s_1354, title: Between Beacons, track_number: 8, genre: void-ballads, playable: false}
+            - {id: s_1355, title: Nobody Is Coming, track_number: 9, genre: void-ballads, playable: false}
+            - {id: s_1356, title: The Board Is Clear, track_number: 10, genre: void-ballads, playable: false}
+            - {id: s_1357, title: What the Drone Says, track_number: 11, genre: void-ballads, playable: false}
+            - {id: s_1358, title: Keep It Running, track_number: 12, genre: void-ballads, playable: false}
 
-# LAYER C — recordings are lost. Three sentences per figure. Never an album or a track list.
 layer_c:
   recordings: none survive
-  figures: []
+  figures:
+    - id: f_029
+      name: Maren Kist
+      kind: relay keeper
+      genre: void-ballads
+      active_from: 2461
+      active_to: 2495
+      played: voice, and the interval between one beacon and the next
+      history: >-
+        Maren Kist kept a relay through the worst of the Silence and left a written book of her
+        watches, which is why she has a name at all — the keeper the worlds remember best from those
+        years has none, and the Children of the Signal prefer it that way. Her book records that she
+        sang the interval between one maintenance beacon and the next in order to keep the count
+        without a clock, and that she went on doing it after the clock was fixed. Nothing of her
+        voice survives and nobody claims it does; what survives is the practice, and every keeper
+        who has sung to a machine's own note since — Corin Hale included, who is on record saying he
+        got it from a book and not from an idea — is doing what a clerk did to stay awake.

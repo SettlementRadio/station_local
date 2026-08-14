@@ -63,7 +63,7 @@ marked **NEXT**.
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
 | **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-49** old-system sessions grows to 90 · 2026-08-13 | **all done.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15. No genre carries an `owed_to:` marker any more |
 | 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-47** the pilot's 45 lyrics · 2026-08-13 | **M-18 is unblocked** — 45 songs of words and prompts are ready to generate |
-| 2 · The wiki — 1 genre left | M-07 … M-15 | **M-13** core-harmonies · 2026-08-14 | 475 playable songs written of 500 · **all seven labels clear §5's floor** · **M-14 next**, the last 25 songs, then M-15 freezes the wiki |
+| 2 · The wiki — the catalogue-wide pass | M-07 … M-15 | **M-14** void-ballads · 2026-08-14 | **all 500 playable songs are written**, across 9 genre files, 25 bands and 55 albums · every label clears §5's floor · **M-15 next**, and the wiki freezes when it closes |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
@@ -582,15 +582,42 @@ file** — it names four bands that live in other genre files. `make music-scree
 43 distinct names. No existing prose was edited.
 Depends on: M-12
 
-### M-14 · `[agent]` void-ballads — 25 songs, 2 bands — **NEXT**
+### M-14 · `[agent]` void-ballads — 25 songs, 2 bands — **DONE 2026-08-14**
 Check: 25 playable songs on label 2; 2 layer-A bands; ~1 layer-B, ~1 layer-C. `make check` green.
 Names screened.
 Note: two solo voices rather than one (D-069). The whole form is one voice and one instrument, and
 25 songs from a single artist is one texture the rotation cannot separate.
 Note: Corin Hale's *Station Cycles* is fixed canon and belongs here.
+Result: 25 playable songs across four layer-A albums on label 2, and **the wiki's layer A is now
+complete at 500 songs, 25 bands and 55 albums**. **Corin Hale is layer B and permanently
+unplayable** (D-078): the canon says the *Station Cycles* were built on a relay outpost's own
+life-support drone, and this file gives the reason no house has ever pressed them — Hale left them
+to the outpost's rota under a rule the rota has never bent, *anybody may copy them and nobody may
+sell them*. So the most-loved record in this form is one the station can talk about every night and
+never play, which is COMMISSION §1's layer B doing the largest job it has been given. **Both layer-A
+voices exist because of that rule.** `b_074` **Nera Ostell** was a gate clerk at the Cold Harbor
+relay berth whom Harbor Standard recorded in 2583 because it wanted the form, could not sell the
+Cycles, and went looking for a voice of its own; she has never sung a Hale song and is asked every
+time. Her records are `al_165` *Sung at the Gate* (2583, 6) and `al_166` *Further Than I Went*
+(2600, 6), and in 2612 she put her name on a rota and went out to an outpost herself. `b_075` **Aro
+Vantry** built a box that holds one note — the tonic of the Cycles — and prints on every sleeve
+where the note came from, unasked; `al_167` *Same Note All Night* (2619, 7) and `al_168` *Nothing
+Left to Tune To* (2624, 6), the second made at Hale's own outpost, where he found the plant had been
+replaced and the note was gone. **The two never meet and one will not answer the other**, which is
+the thing a presenter can use all night. **2583 came off the floor**: it stood at 33/4/4, the
+thinnest anchor and the only one on §5's band floor, and Ostell's first record takes it to 39/5/4 —
+so the thinnest anchor is now 2594 at 42/6/4 and every anchor but 2559 is clear on every count.
+2600 gains a fifth label. **13 of the 25 are dated 2619 or 2624 against the 9 D-077 asked for**, so
+COMMISSION §3's half-recent rule **closes satisfied at 254 of 500**. Harbor Standard finishes at 5
+bands, 11 albums and 85 songs, the furthest past §5's floor of any label. Rule 6 reads **zero studio
+anecdotes across both bands**, and **rule 8 is satisfied by this file** — it names Wire and Rosin,
+The Turning Room, Board and Bow, Loose Cargo and Harbor Late, five bands that live in other genre
+files against the three the rule asks for. `make music-screen` returned nothing on 44 distinct
+names. **No existing prose was edited**; one wrong line in `CONSTANTS.md` §1 was corrected, which
+had said Cold Harbor carried no 2583 release when `al_078` has been one since M-09.
 Depends on: M-13
 
-### M-15 · `[agent]` The catalogue-wide pass — and the wiki freezes
+### M-15 · `[agent]` The catalogue-wide pass — and the wiki freezes — **NEXT**
 Goal: The three rules that are properties of the whole catalogue, not of one genre, are satisfied.
 These cannot be checked a genre at a time, and fixing them is free now and expensive once songs
 exist against them.
@@ -623,8 +650,9 @@ before the wiki freezes than after:
 Note: **jobs 1 and 2 above are §12's rules 7 and 8, and both are owed to this card** (D-071). They
 are counted today and reported to nobody; marking this card DONE makes them fatal, and job 1 also
 flips `check.py`'s `year_layers()` so the anchors stop binding layer B and rule 7 starts. Today the
-wiki reports 8 distinct layer-B years against the 40 rule 7 asks for, and every one of the six
-written genre files names **zero** bands that live in another file.
+wiki reports 8 distinct layer-B years against the 40 rule 7 asks for. **Rule 8 is two thirds
+undone**: `core-harmonies.yaml` and `void-ballads.yaml` name four and five foreign bands, and the
+other six files name **zero**.
 Note: fixes here are edits to release years and label assignments — text only, no lyrics affected.
 **The wiki freezes when this card closes.** No lyrics are written before it does, other than the
 pilot's, which are already frozen by M-19. **Anchor year 2559 is unsatisfiable as written** —

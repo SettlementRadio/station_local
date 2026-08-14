@@ -28,22 +28,22 @@ them.
 **Window check** (§3): six anchors inside the last thirty-five years, two in the old-standards
 window. Correct as specified.
 
-**State after M-13 (2026-08-14): seven of the eight are satisfied** — ≥25 playable songs across ≥4
-bands and ≥2 labels. In order: 2583 · 33/4/4 · 2594 · 42/6/4 · 2600 · 45/6/4 · 2607 · 62/8/6 ·
-2612 · 52/7/4 · 2619 · 153/17/6 · 2624 · 88/11/6. One falls short, and it is the one no card can fix:
+**State after M-14 (2026-08-14): seven of the eight are satisfied** — ≥25 playable songs across ≥4
+bands and ≥2 labels. In order: 2583 · 39/5/4 · 2594 · 42/6/4 · 2600 · 51/7/5 · 2607 · 62/8/6 ·
+2612 · 52/7/4 · 2619 · 160/18/6 · 2624 · 94/12/6. **The wiki is written and these are the final
+counts**; only M-15 can move them now. One anchor falls short, and it is the one no card can fix:
 
-- **2583 is the thinnest of the seven, at 33/4/4**, and the only anchor still sitting on §5's floor
-  for both bands and labels. M-13 could not help it: core harmonies had 20 songs to place and
-  COMMISSION §3's half-recent rule needed them recent, so all three records went to 2607, 2619 and
-  2624. **M-14 is the last card that can put a band and a label on 2583** — void-ballads is on Cold
-  Harbor, which has no 2583 release, and one record there would take the anchor off the floor.
+- **2583 came off the floor.** It stood at 33/4/4 and M-14 put Nera Ostell's first record on it —
+  six songs, a fifth band, and Cold Harbor's second release of that year. It is now 39/5/4 and the
+  thinnest anchor is 2594 at 42/6/4, which is clear of §5's floor on every count.
 - **2559 cannot be fixed by writing more.** COMMISSION §3 puts layer A in 2566–2626, so no playable
   song can carry 2559 at all; it stands at zero. M-15 is where that contradiction gets resolved.
   Layer B does carry it — Odessa Vail's *Lanternlight* is dated 2559 and is the reason the year is
   an anchor at all.
 
-**These counts move again.** M-14 adds 25 playable songs, so the line above is where the catalogue
-stands today rather than where it is going. M-15 is where the finished state is checked against §5.
+**One line here was wrong and is corrected.** Until M-14 this section said Cold Harbor had no 2583
+release; it has had one since M-09 — `al_078`, Wire and Rosin's *Nobody Sat Down*, thirteen songs.
+What was true is that 2583 needed a fifth band, and that is what it got.
 
 **This table is read by `make check`.** The eight years in the first column are the only release
 years any album in any genre may carry, and `src/station/music/check.py` takes them from here
@@ -80,9 +80,9 @@ overlooked player before giving an opinion.
 >
 > **Brief 0b — the elders — will not be written. Operator decision, 2026-08-10 (D-064).** The
 > old-standards window (2546–2591) was to get its own set of three or four players. It does not get
-> one. **A layer-A record made before 2592 credits its band members and nobody else** — that is 33
-> songs across 4 albums, and it is the finished state, not a gap waiting to be filled. Do not invent
-> an elder to fill it and do not credit any of the eight below outside their dates.
+> one. **A layer-A record made before 2592 credits its band members and nobody else** — that is 39
+> songs across 5 albums after M-14, and it is the finished state, not a gap waiting to be filled. Do
+> not invent an elder to fill it and do not credit any of the eight below outside their dates.
 >
 > **Nobody has dates yet.** Every player needs an `active_from` and `active_to` before the first
 > credit is written, or a batch will credit someone to a session they were eleven years old for.
@@ -135,6 +135,7 @@ is recorded is the result:
 | pulse-dance | 2026-08-11 | 163 | nothing matched |
 | void-lounge | 2026-08-13 | 153 | nothing matched |
 | core-harmonies | 2026-08-14 | 43 | nothing matched |
+| void-ballads | 2026-08-14 | 44 | nothing matched |
 
 Notes kept because §19 says fuzzy and surname-only matches are flagged, never blocked:
 
@@ -156,10 +157,13 @@ Notes kept because §19 says fuzzy and surname-only matches are flagged, never b
 **From canon, already fixed and not to be reinvented:**
 Odessa Vail · Corin Hale · Adra Pell · Lio Tern
 
-Two of the four are now written into the wiki and are not to be written again. **Odessa Vail is
-`b_073` in `core-harmonies.yaml`**, layer B, with *Lanternlight* as `al_164` dated 2559 and a
-seven-movement layer-A performance of it in 2624 (M-13). **Adra Pell and Lio Tern are `b_006` Pell
-and Tern in `relay-pop.yaml`**, layer B. **Corin Hale is M-14's** and belongs in void-ballads.
+All four are now written into the wiki and are not to be written again. **Odessa Vail is `b_073` in
+`core-harmonies.yaml`**, layer B, with *Lanternlight* as `al_164` dated 2559 and a seven-movement
+layer-A performance of it in 2624 (M-13). **Adra Pell and Lio Tern are `b_006` Pell and Tern in
+`relay-pop.yaml`**, layer B. **Corin Hale is `b_076` in `void-ballads.yaml`**, layer B, with the
+*Station Cycles* as `al_169` dated 2583 — twelve songs, unplayable, and unplayable permanently: the
+rota at Verrin Reach lets anybody copy them and lets nobody sell them, so no house has ever pressed
+them and the station cannot hold them (M-14).
 
 **Rejected on screen, never reuse:**
 
@@ -202,22 +206,23 @@ Layer-A bands and playable songs only. §5 needs every label to end on ≥3 band
 | # | Label | Name as written | Bands written | Songs written |
 |---|---|---|---|---|
 | 1 | Concordance, prestige | Civic Lantern | 3 | 65 |
-| 2 | Cold Harbor, frontier | Harbor Standard | 3 | 60 |
+| 2 | Cold Harbor, frontier | Harbor Standard | 5 | 85 |
 | 3 | Meridian, dance | Stormline Issue | 3 | 45 |
 | 4 | Forge, industrial | Deep Register | 3 | 75 |
 | 5 | haulers, co-op | Common Wake Cooperative | 4 | 95 |
 | 6 | late-club, folded 2612 | Lower Bell Editions | 3 | 45 |
 | 7 | old-system importer | Relay Road Import | 4 | 90 |
 
-**The table above is what is written today, recounted after M-13** (2026-08-14). M-44's demotion had
-taken a band and 25 songs off label 2, a band and 20 off label 4, a band and 25 off label 5, and all
-of label 3's layer A but one band and 20 songs (D-068); M-46 put 35 songs and one band back, M-48
-put 30 more, M-49 added 30 and a fourth band to label 7, M-12 put two bands and 25 songs on label 3
-and two bands and 30 songs on label 6 — the two labels the re-weight left standing on nothing — and
-M-13 puts a third band and three albums on label 1. **All seven labels now clear §5's floor** of
-three bands, six albums and forty songs. Label 3 is the only one on it exactly, at 3 bands, 6 albums
-and 45 songs; label 1 finishes at 3 bands, 7 albums and 65 songs, and M-14 adds to no label that
-needs it — label 2 already clears the floor and its 25 void-ballad songs are margin.
+**The table above is the finished state, recounted after M-14** (2026-08-14). The wiki is written:
+500 playable songs, 25 layer-A bands, 55 layer-A albums, and every one of the seven labels clear of
+§5's floor of three bands, six albums and forty songs. M-44's demotion had taken a band and 25 songs
+off label 2, a band and 20 off label 4, a band and 25 off label 5, and all of label 3's layer A but
+one band and 20 songs (D-068); M-46 put 35 songs and one band back, M-48 put 30 more, M-49 added 30
+and a fourth band to label 7, M-12 put two bands and 25 songs on label 3 and two bands and 30 songs
+on label 6 — the two labels the re-weight left standing on nothing — M-13 put a third band and three
+albums on label 1, and M-14 put two bands, four albums and 25 songs on label 2, which needed none of
+them. **Label 3 is the only label sitting on the floor exactly**, at 3 bands, 6 albums and 45 songs.
+Label 2 finishes furthest past it, at 5 bands, 11 albums and 85 songs.
 
 **Which card finishes which label**, once the re-weight is done — the numbers are in
 `music/plan.yaml` and are not repeated here:
@@ -225,7 +230,7 @@ needs it — label 2 already clears the floor and its 25 void-ballad songs are m
 | Label | Short of | Finished by |
 |---|---|---|
 | 1 Concordance | nothing — **M-13** took it to 3 bands, 7 albums and 65 songs | finished |
-| 2 Cold Harbor | nothing — **M-48** landed its third band | **M-14** void-ballads adds two more |
+| 2 Cold Harbor | nothing — **M-48** landed its third band | **M-14** added two more and 25 songs |
 | 3 Meridian | nothing — **M-12** took it to 3 bands, 6 albums and 45 songs | finished |
 | 4 Forge · 5 haulers | nothing — both clear the floor without help | **M-46** and **M-48** added to both |
 | 6 late-club | nothing — **M-12** took it to 3 bands, 6 albums and 45 songs | finished |
@@ -235,10 +240,11 @@ needs it — label 2 already clears the floor and its 25 void-ballad songs are m
 `al_055` *Count It Twice* and `al_117` *The Long Cordon* went down to layer B with their genres — a
 record the station does not hold cannot carry a 56-minute programme, so neither is a cornerstone any
 more. What is left is `al_001`, `al_009`, `al_034`, `al_039`, `al_078` and `al_098`, all 12 or 13
-songs, which is inside §5's 6–8 band **with no margin under it**. D-067 stands unchanged: **M-12 and M-13
-designated none**, and neither does M-14. The longest album either has written is seven songs.
-Whether the two freed slots are handed to a later genre is the operator's call and has not been
-made.
+songs, which is inside §5's 6–8 band **with no margin under it**. D-067 stands unchanged: **M-12,
+M-13 and M-14 designated none**, and the longest album any of them wrote is seven songs. **The wiki
+is written, so six is now the finished number** unless the operator reopens it — the two freed slots
+can only be filled by promoting an existing album, which is an edit to `cornerstone:` and to nothing
+else. That call has not been made.
 
 ## 6. The genre tally
 
@@ -254,20 +260,22 @@ plan, and the three not written at all need no marker, because an empty file is 
 | Frontier Reels | 95 | 95 | — |
 | Old-system sessions | 90 | 90 | — |
 | Void-lounge | 55 | 55 | — |
-| Void Ballads | 25 | 0 | M-14 |
+| Void Ballads | 25 | 25 | — |
 | Core Harmonies | 20 | 20 | — |
 | **Deck-talk** | **0 — layer B** | **0 — demoted at M-44** | — |
 | **Pulse-dance** | **0 — layer B** | **0 — demoted at M-44** | — |
-| | **500** | **475** | |
+| | **500** | **500** | |
 
-**475 of the 500 are written.** The other 25 are void ballads, on label 2, and they are the last
-genre. The 130 songs deck-talk and pulse-dance gave up are still in the wiki and still readable;
-they are titles now, like the rest of layer B.
+**All 500 are written.** Nine genre files, seven of them carrying layer A, and no card owes any
+genre a song. The 130 songs deck-talk and pulse-dance gave up are still in the wiki and still
+readable; they are titles now, like the rest of layer B.
 
-**COMMISSION §3's half-recent rule stands at 241 of 475**, and it is over half for the first time
-since the re-weight. M-13 put 14 of its 20 on 2619 and 2624 — everything except the one 2607 record
-the ensemble's own history required — so the remaining 25 need **9 dated 2619 or 2624, which is 36%**
-(D-077), the easiest requirement any card has handed on.
+**COMMISSION §3's half-recent rule closes at 254 of 500** — 51%, over half, and no longer a running
+requirement handed from card to card. M-14 put 13 of its 25 on 2619 and 2624 against the 9 D-077
+asked for, because the two records that had to be old were old for reasons in the story: Cold
+Harbor's first void ballad record could only be the year the *Station Cycles* went round, and the
+second could only be the year records started travelling. The chain of shares ends here: 56%
+(D-073) → 49% → 48% → 51% (D-076) → 36% (D-077) → **satisfied**.
 
 **Layers B and C are not tallied.** They have no hard floor — more is better, and nothing breaks if
 one genre carries more history than another.
