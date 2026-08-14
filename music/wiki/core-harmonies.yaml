@@ -1,16 +1,30 @@
-# Core Harmonies — PLACEHOLDER. Nothing here is content yet.
+# Core Harmonies — written by M-13.
 #
-# Written by its card in music/MUSIC_TASKS.md: open a session and say the number. The agent
-# replaces everything below the `section:` block, and `make check` counts what it wrote.
+# 20 playable songs on label 1, and the card that finishes Concordance's own house. Civic Lantern
+# stood at 2 layer-A bands and 4 albums after the re-weight, one band and two albums short of the
+# retrospective COMMISSION.md section 5 asks for; the three records below take it to 3 bands, 7
+# albums and 65 songs.
 #
-# Allocation, from music/plan.yaml (the authority — do not retype it here):
-#   LAYER A — 15 songs across 1 band(s)
-#     label 1 (Concordance, prestige): 15 songs / 1 band(s)
-#   LAYER B — about 1 more bands the station does not hold
-#   LAYER C — about 2 figures, 2426-2546, no albums and no track lists
+# Four things shape everything here:
 #
-# Labels this genre sits on:
-#   - label_1  (Concordance, prestige)
+# 1. **The form is the core's grand one and the core's establishment owns it.** Civic Lantern has
+#    issued Core Harmonies since before anybody working there was born, and the one record its whole
+#    standing rests on is by a composer who made nothing else: Odessa Vail's Lanternlight, 2559,
+#    which is fixed canon and sits in deep layer B here.
+# 2. **The layer-A band came in through the cheap door.** The Standing Gallery formed in the upper
+#    rail of Concordance's largest public hall, out of people who could afford to stand and not to
+#    sit, and the whole of their argument with the house is about who gets named and who gets paid.
+# 3. **The hall is a character.** The Long Assembly shut in 2615 for structural repairs and reopened
+#    in 2624, which is that anchor's own story; the twelve years between the first record and the
+#    second are the twelve years the ensemble had nowhere its sound worked.
+# 4. **A later performance of Lanternlight may be layer A** (COMMISSION.md section 4). The 2624
+#    record is seven of the cycle's twelve movements, sung in the reopened hall on the one night
+#    Civic Lantern held of that season.
+#
+# `labels:` lists label_1 alone — the whole genre sits on it. Layer B is Odessa Vail and nothing
+# else, because canon says she wrote one work and stopped.
+#
+# **No cornerstone** (D-067): the list is full at six and this card designates none.
 
 section:
   genre: core-harmonies
@@ -20,23 +34,429 @@ section:
     referenced: B
     historical: C
 
-# The labels above, as the writer names them.
-labels: []
+labels:
+  - id: label_1
+    name: Civic Lantern
+    home: Concordance
+    tier: flagship
+    status: operating
+    founded_year: 2544
+    genre: core-harmonies
+    note: >-
+      Concordance's oldest house and the one every other house is measured against, which is a thing
+      it says about itself more often than anybody says it about the house. It was founded in 2544 to
+      press the core's formal music and it has never stopped; its catalogue runs from Odessa Vail to
+      Measure Kindly without anybody there being able to say when the second kind of record started
+      outselling the first. It files Core Harmonies under civic entertainment, which is a category it
+      invented and has never redefined, and until 2619 it paid a chorus a flat fee for a night and
+      printed no singer's name on any sleeve. The house has been asked in print whether Lanternlight
+      is a record it made or a record it was lucky enough to be handed, and its answer both times has
+      been to reprint the record.
 
-# From music/CONSTANTS.md section 2 — only the players who appear on this genre,
-# and only inside their active years.
-session_players: []
+# From CONSTANTS.md section 2, and only inside their dates. Five of the eight have anything to do
+# with a room full of singers: a vocal arranger, the core's own keyboard instrument, a piano, a bass
+# and — once, in 2624 — the resonance pipes, which is the first Forge instrument on this cycle.
+session_players:
+  - id: sp_sel_ardin
+    name: Sel Ardin
+    instrument: backing vocals and vocal arrangement
+    active_from: 2593
+    active_to: 2626
+    genre: core-harmonies
+  - id: sp_miro_olt
+    name: Miro Olt
+    instrument: synth-harpsichord
+    active_from: 2598
+    active_to: 2626
+    genre: core-harmonies
+  - id: sp_calo_meret
+    name: Calo Meret
+    instrument: piano and compact studio keyboards
+    active_from: 2595
+    active_to: 2626
+    genre: core-harmonies
+  - id: sp_oren_saye
+    name: Oren Saye
+    instrument: upright bass
+    active_from: 2588
+    active_to: 2622
+    genre: core-harmonies
+  - id: sp_ivena_sorn
+    name: Ivena Sorn
+    instrument: resonance pipes
+    active_from: 2594
+    active_to: 2626
+    genre: core-harmonies
 
-# LAYER A — playable: true. Full bios, full album stories, one fact per song.
 layer_a:
-  bands: []
-  albums: []
+  bands:
+    - id: b_072
+      name: The Standing Gallery
+      kind: collective
+      home_settlement: Concordance
+      label: label_1
+      genre: core-harmonies
+      active_from: 2601
+      active_to: 2626
+      members:
+        - id: p_sarra_lome
+          name: Sarra Lome
+          genre: core-harmonies
+          instruments: [lead voice, chorus direction]
+          active_from: 2601
+          active_to: 2626
+        - id: p_edrick_pol
+          name: Edrick Pol
+          genre: core-harmonies
+          instruments: [synth-harpsichord, chorus arrangement]
+          active_from: 2601
+          active_to: 2626
+        - id: p_perra_mull
+          name: Perra Mull
+          genre: core-harmonies
+          instruments: [section leader, copied parts]
+          active_from: 2601
+          active_to: 2626
+        - id: p_dovel_ashe
+          name: Dovel Ashe
+          genre: core-harmonies
+          instruments: [bass voice, upright bass]
+          active_from: 2601
+          active_to: 2626
+        - id: p_mena_thole
+          name: Mena Thole
+          genre: core-harmonies
+          instruments: [lead voice]
+          active_from: 2604
+          active_to: 2626
+        - id: p_tovan_reck
+          name: Tovan Reck
+          genre: core-harmonies
+          instruments: [section leader]
+          active_from: 2607
+          active_to: 2626
+      movement:
+        standing: Synthesist
+        detail: >-
+          Edrick Pol plays the core's own keyboard instrument and has been filed as a Synthesist for
+          it since the ensemble's first record, which he answers by pointing out that the thing has
+          been in Concordance's rooms longer than the argument has existed and that it belongs to the
+          hall rather than to a side. Sarra Lome has never given a position at all. What the ensemble
+          argues about in public is money and credit, not instruments.
+      bio: >-
+        The Standing Gallery are thirty-one voices and formed in 2601 in the upper rail of the Long
+        Assembly, Concordance's largest public hall, out of people who came to other acts' concerts
+        because the standing rail cost a tenth of a seat. They sang after the seats emptied, while
+        the hall staff stacked, and were doing it for six years before anybody put them on a bill.
+        Sarra Lome directs and sings the lead and will not start a piece until the rail is full,
+        which on one recorded night meant the whole hall waiting eleven minutes for her. Perra Mull
+        writes every part out by hand for singers who do not read music, in a shape-notation that has
+        been in the core's public rooms for two hundred years. The ensemble has one long argument
+        with its house and it is not about music: until 2619 no singer's name was printed on any
+        record of the form, and Civic Lantern paid a chorus a flat fee for a night and its hired
+        players by the hour.
+      album_ids: [al_161, al_162, al_163]
 
-# LAYER B — playable: false. Two-sentence bios, one-line album notes, titles only, no facts.
+  albums:
+    - id: al_161
+      title: Nobody Sat Down
+      band: b_072
+      label: label_1
+      release_year: 2607
+      kind: album
+      genre: core-harmonies
+      cornerstone: false
+      notes: >-
+        Civic Lantern did not go looking for this ensemble. What happened in 2607 is that Open
+        Parallax had the Long Assembly booked for a week and finished two days early, the hall was
+        paid for either way, and somebody at the house remembered that a chorus had been singing in
+        the upper rail after concerts for six years and could be had for the price of the night. So
+        the record was made in the room the ensemble already knew, by people who had never been on
+        its floor, in two days that belonged to somebody else. The house filed it under civic
+        entertainment, paid a flat fee for the night, printed the ensemble's name and the director's
+        and nobody else's, and considered the matter settled for the next twelve years. It sold
+        steadily and quietly for a decade and is the record that made the form current again in the
+        core, which Civic Lantern has taken credit for in print and Sarra Lome has never contested.
+      songs:
+        - id: s_1290
+          title: Nobody Sat Down
+          track_number: 1
+          genre: core-harmonies
+          mood_tags: [grand, warm, rising]
+          playable: true
+          fact: Sarra Lome will not begin until the standing rail is full, and on the night this was made the hall waited eleven minutes for her, which the hall's keeper timed and entered in the room's own book.
+          credits: {writers: [p_sarra_lome, p_edrick_pol], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole], producer: p_edrick_pol}
+        - id: s_1291
+          title: Hold the Last Chord
+          track_number: 2
+          genre: core-harmonies
+          mood_tags: [broad, patient, bright]
+          playable: true
+          fact: The chorus holds the closing chord until the Long Assembly's ventilation cycles, which Edrick Pol counts from the keyboard, and the issued take runs longer than the ensemble has managed on any night since.
+          credits: {writers: [p_edrick_pol], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole], producer: p_edrick_pol}
+        - id: s_1292
+          title: Everyone Knows the Second Verse
+          track_number: 3
+          genre: core-harmonies
+          mood_tags: [communal, buoyant, warm]
+          playable: true
+          fact: The second verse is sung by about thirty people who had stayed behind from Open Parallax's hall week and were asked from the rail whether they wanted to be on a record, and none of them are named on the sleeve either.
+          credits: {writers: [p_sarra_lome], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole], producer: p_edrick_pol}
+        - id: s_1293
+          title: Count Us From the Rail
+          track_number: 4
+          genre: core-harmonies
+          mood_tags: [bright, propulsive, grand]
+          playable: true
+          fact: Perra Mull wrote every part out by hand in the shape-notation Ilke Marran left behind, and the copies she made for this one are still in the Long Assembly's store with the ensemble's name on the box.
+          credits: {writers: [p_perra_mull, p_sarra_lome], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole], producer: p_edrick_pol}
+        - id: s_1294
+          title: The Cheap Half of the Hall
+          track_number: 5
+          genre: core-harmonies
+          mood_tags: [wry, defiant, big]
+          playable: true
+          fact: Sarra Lome sings the standing rail's own price in the chorus, which was a tenth of what a seat cost and is the only reason anybody in this ensemble ever heard music in that room.
+          credits: {writers: [p_sarra_lome], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, sp_oren_saye], producer: p_edrick_pol}
+        - id: s_1295
+          title: Walk Out Singing
+          track_number: 6
+          genre: core-harmonies
+          mood_tags: [final, warm, expansive]
+          playable: true
+          fact: The ensemble leaves the hall still singing and the record keeps forty seconds of it going down the stair, because Dovel Ashe would not stop and nobody was willing to be the one who asked him to.
+          credits: {writers: [p_sarra_lome, p_dovel_ashe], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole], producer: p_edrick_pol}
+
+    - id: al_162
+      title: Thirty-One Names
+      band: b_072
+      label: label_1
+      release_year: 2619
+      kind: album
+      genre: core-harmonies
+      cornerstone: false
+      notes: >-
+        Twelve years with no record, for two reasons that had nothing to do with each other. The
+        house's position was that the first one still sold and that a flat fee for a night is not a
+        thing you repeat annually. And the Long Assembly shut in 2615 for structural repairs, which
+        took the ensemble's whole sound away — thirty-one voices in a small room is a mistake, not a
+        style. What changed in 2619 is that the altered-credit edition of a Pell and Tern recording
+        surfaced and the entire settled worlds spent the year arguing about whose name belonged on
+        what. Sarra Lome asked Civic Lantern, in that year and not before it, to print the chorus by
+        name; the house agreed, because in 2619 refusing would have been the story. It was made in
+        the North Line transfer hall in the hours after the last connection had gone, which is the
+        only room in Concordance big enough that the ensemble could have for nothing, and the sleeve
+        carries thirty-one names in the order the singers were standing.
+      songs:
+        - id: s_1296
+          title: Thirty-One Names
+          track_number: 1
+          genre: core-harmonies
+          mood_tags: [defiant, grand, plain]
+          playable: true
+          fact: Every singer in the chorus is printed on the sleeve, which no record of this form had ever done, and Sarra Lome asked for it in the one year the whole industry was arguing about a credit.
+          credits: {writers: [p_sarra_lome], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck], producer: p_edrick_pol}
+        - id: s_1297
+          title: The Room We Were Let Into
+          track_number: 2
+          genre: core-harmonies
+          mood_tags: [warm, wistful, big]
+          playable: true
+          fact: Perra Mull found Ovin Halle's three lines in a transfer-hall roster and read them out to the chorus before they sang, because they were standing in the room he had played for nothing between 2451 and 2486.
+          credits: {writers: [p_perra_mull, p_sarra_lome], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck], producer: p_edrick_pol}
+        - id: s_1298
+          title: Ask Who Sang It
+          track_number: 3
+          genre: core-harmonies
+          mood_tags: [pointed, bright, rising]
+          playable: true
+          fact: Mena Thole sings the question and the chorus answers it with what each of them does for a living, in the order they were standing, and it is one take because the list cannot be stopped once it has started.
+          credits: {writers: [p_mena_thole, p_sarra_lome], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck], producer: p_edrick_pol}
+        - id: s_1299
+          title: A Hall With No Seats
+          track_number: 4
+          genre: core-harmonies
+          mood_tags: [spacious, wry, buoyant]
+          playable: true
+          fact: A transfer hall has nowhere to sit, so the whole record was sung standing, which is how the ensemble had always done it and is the first time it was true of the room as well.
+          credits: {writers: [p_sarra_lome, p_edrick_pol], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck, sp_sel_ardin], producer: p_edrick_pol}
+        - id: s_1300
+          title: Lend Us a Keyboard
+          track_number: 5
+          genre: core-harmonies
+          mood_tags: [warm, dry, grand]
+          playable: true
+          fact: Miro Olt brought his own synth-harpsichord across the city on a hand cart because the transfer hall had nothing in it, and he is the only person on this record Civic Lantern paid.
+          credits: {writers: [p_edrick_pol], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck, sp_miro_olt], producer: p_edrick_pol}
+        - id: s_1301
+          title: Nothing Between the Voices
+          track_number: 6
+          genre: core-harmonies
+          mood_tags: [hushed, close, aching]
+          playable: true
+          fact: The hall's night staff asked them to stop the keyboard and carry on anyway, so this is the only unaccompanied thing the ensemble has ever put out.
+          credits: {writers: [p_sarra_lome, p_mena_thole], players: [p_sarra_lome, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck, sp_sel_ardin], producer: p_edrick_pol}
+        - id: s_1302
+          title: Print It All
+          track_number: 7
+          genre: core-harmonies
+          mood_tags: [final, defiant, expansive]
+          playable: true
+          fact: The last line is the sentence Civic Lantern's own contracts use about chorus credit, word for word, and the house printed it on the back of the sleeve underneath the thirty-one names.
+          credits: {writers: [p_sarra_lome, p_edrick_pol], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck], producer: p_edrick_pol}
+
+    - id: al_163
+      title: Seven Lanterns
+      band: b_072
+      label: label_1
+      release_year: 2624
+      kind: album
+      genre: core-harmonies
+      cornerstone: false
+      notes: >-
+        The Long Assembly reopened in 2624 and every house in the settled worlds booked into it.
+        Civic Lantern held one night of that season and gave it to this ensemble rather than to
+        Measure Kindly, who had asked for it; the house has been asked why in print and answers by
+        pointing at what it was founded to press. What they sang is Lanternlight — Odessa Vail's
+        cycle, the Lumen Festival's test piece, the record Civic Lantern has never once let go out of
+        catalogue. Twelve movements do not fit a night, so Sarra Lome chose seven, and has never
+        said anything about the five she left out. Nobody had sung the cycle in a room this size
+        since Vail's own première, because there had been no room this size to sing it in, and the
+        ensemble that got to do it is the one that spent six years in the upper rail of it listening
+        to other people.
+      songs:
+        - id: s_1303
+          title: First Light Kept
+          track_number: 1
+          genre: core-harmonies
+          mood_tags: [grand, hushed, rising]
+          playable: true
+          fact: Sarra Lome chose seven of the cycle's twelve movements for the one night Civic Lantern held in the reopened hall, and has never given a reason for the five she left out.
+          credits: {writers: [p_odessa_vail], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck], producer: p_sarra_lome}
+        - id: s_1304
+          title: The Lamps Go Up Together
+          track_number: 2
+          genre: core-harmonies
+          mood_tags: [expansive, bright, communal]
+          playable: true
+          fact: The hall's keeper opened the loading door so that the people who could not get in could hear it from the street, and they are on the record, along with the traffic.
+          credits: {writers: [p_odessa_vail], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck, sp_calo_meret], producer: p_sarra_lome}
+        - id: s_1305
+          title: A Lamp for the Missing
+          track_number: 3
+          genre: core-harmonies
+          mood_tags: [aching, spare, solemn]
+          playable: true
+          fact: Dovel Ashe sings it alone against the chorus in place of Mena Thole, who had asked for it a year earlier and handed it to him the week a crew her brother was on failed to make the port.
+          credits: {writers: [p_odessa_vail], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck], producer: p_sarra_lome}
+        - id: s_1306
+          title: Hands Around the Glass
+          track_number: 4
+          genre: core-harmonies
+          mood_tags: [warm, deep, glowing]
+          playable: true
+          fact: Ivena Sorn's resonance pipes run under the whole movement, the first Forge instrument ever heard on this cycle, and Civic Lantern's own sleeve note calls it a departure without saying whether it approves.
+          credits: {writers: [p_odessa_vail], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck, sp_ivena_sorn], producer: p_sarra_lome}
+        - id: s_1307
+          title: Nobody Lights Alone
+          track_number: 5
+          genre: core-harmonies
+          mood_tags: [buoyant, grand, hopeful]
+          playable: true
+          fact: Edrick Pol plays Odessa Vail's keyboard part as written except for one chord in the last bar, and has said in print that he would put it back if the record could be made again.
+          credits: {writers: [p_odessa_vail], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck], producer: p_sarra_lome}
+        - id: s_1308
+          title: Answer From the Far Worlds
+          track_number: 6
+          genre: core-harmonies
+          mood_tags: [spacious, layered, patient]
+          playable: true
+          fact: The chorus stands in three groups at different depths of the hall so the answering lines reach the front at different moments, which is how the 2559 première was staged and had not been attempted since.
+          credits: {writers: [p_odessa_vail], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck, sp_sel_ardin], producer: p_sarra_lome}
+        - id: s_1309
+          title: Leave Them Burning Till Morning
+          track_number: 7
+          genre: core-harmonies
+          mood_tags: [final, warm, glowing]
+          playable: true
+          fact: The upright bass is the one the Long Assembly keeps in its own store, which The Quiet Half had used in the same room four nights earlier and left a quarter-tone down.
+          credits: {writers: [p_odessa_vail], players: [p_sarra_lome, p_edrick_pol, p_perra_mull, p_dovel_ashe, p_mena_thole, p_tovan_reck], producer: p_sarra_lome}
+
 layer_b:
-  bands: []
+  bands:
+    - id: b_073
+      name: Odessa Vail
+      kind: solo
+      home_settlement: Concordance
+      label: label_1
+      genre: core-harmonies
+      active_from: 2542
+      active_to: 2561
+      members:
+        - id: p_odessa_vail
+          name: Odessa Vail
+          genre: core-harmonies
+          instruments: [composition, voice]
+          active_from: 2542
+          active_to: 2561
+      bio: >-
+        Odessa Vail wrote one towering work and then, so far as any record shows, stopped: Lanternlight,
+        the Core Harmony cycle made for a Lumen Festival, which became the festival's test piece and
+        has never been out of Civic Lantern's catalogue since. The silence afterwards is argued in
+        every music programme the core has ever run — perfection reached, nerve lost, or a second
+        cycle sent by relay to somebody on the frontier and never received — and it is where the
+        worlds' phrase for a finished artist comes from, that they went to the lanterns.
+      albums:
+        - id: al_164
+          title: Lanternlight
+          label: label_1
+          release_year: 2559
+          kind: album
+          genre: core-harmonies
+          notes: The cycle itself, in the première recording, and the record every core ensemble has been measured against since.
+          songs:
+            - {id: s_1310, title: First Light Kept, track_number: 1, genre: core-harmonies, playable: false}
+            - {id: s_1311, title: The Lamps Go Up Together, track_number: 2, genre: core-harmonies, playable: false}
+            - {id: s_1312, title: What the Dark Is For, track_number: 3, genre: core-harmonies, playable: false}
+            - {id: s_1313, title: A Lamp for the Missing, track_number: 4, genre: core-harmonies, playable: false}
+            - {id: s_1314, title: Hands Around the Glass, track_number: 5, genre: core-harmonies, playable: false}
+            - {id: s_1315, title: The Distance Holds, track_number: 6, genre: core-harmonies, playable: false}
+            - {id: s_1316, title: Nobody Lights Alone, track_number: 7, genre: core-harmonies, playable: false}
+            - {id: s_1317, title: Carry It Outside, track_number: 8, genre: core-harmonies, playable: false}
+            - {id: s_1318, title: The Hour We Agreed, track_number: 9, genre: core-harmonies, playable: false}
+            - {id: s_1319, title: Windows Facing Out, track_number: 10, genre: core-harmonies, playable: false}
+            - {id: s_1320, title: Answer From the Far Worlds, track_number: 11, genre: core-harmonies, playable: false}
+            - {id: s_1321, title: Leave Them Burning Till Morning, track_number: 12, genre: core-harmonies, playable: false}
 
-# LAYER C — recordings are lost. Three sentences per figure. Never an album or a track list.
 layer_c:
   recordings: none survive
-  figures: []
+  figures:
+    - id: f_027
+      name: Oram Selck
+      kind: chamber clerk and chorus master
+      genre: core-harmonies
+      active_from: 2451
+      active_to: 2484
+      played: voice, and the direction of untrained rooms
+      history: >-
+        Oram Selck was a clerk in one of Concordance's council chambers between 2451 and 2484, whose
+        job was reading decisions aloud so that a full room could hear them and nobody could claim
+        afterwards they had not. Somewhere in those years he began having the room read the last line
+        back to him together, and then having it sung, and the practice spread to every public room
+        in the core within a generation. He is named whenever anybody explains why this form is
+        crowds rather than choirs: he never trained a singer in his life and never turned one away,
+        and the rule that anybody standing in the room may join the line is his.
+    - id: f_028
+      name: Ilke Marran
+      kind: copyist
+      genre: core-harmonies
+      active_from: 2489
+      active_to: 2523
+      played: nothing — she wrote the parts out
+      history: >-
+        Ilke Marran spent thirty-four years copying vocal parts for the core's public rooms and
+        invented the shape-notation that is still used for them, in which the marks show a singer
+        where the line goes rather than what it is called. Not one page in her own hand survives and
+        no piece of music is attributed to her at all. She is why the form belongs to people who
+        cannot read music: every chorus in the core still learns from her marks, and the ensembles
+        that use them mostly do not know there was a person.

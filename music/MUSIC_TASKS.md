@@ -63,7 +63,7 @@ marked **NEXT**.
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
 | **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-49** old-system sessions grows to 90 · 2026-08-13 | **all done.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15. No genre carries an `owed_to:` marker any more |
 | 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-47** the pilot's 45 lyrics · 2026-08-13 | **M-18 is unblocked** — 45 songs of words and prompts are ready to generate |
-| 2 · The wiki — 2 genres left | M-07 … M-15 | **M-12** void-lounge · 2026-08-13 | 455 playable songs written of 500 · labels 3 and 6 finished · **M-13 next**, 20 songs and the last label short |
+| 2 · The wiki — 1 genre left | M-07 … M-15 | **M-13** core-harmonies · 2026-08-14 | 475 playable songs written of 500 · **all seven labels clear §5's floor** · **M-14 next**, the last 25 songs, then M-15 freezes the wiki |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-15 **and** M-19 |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
@@ -551,15 +551,38 @@ now the thinnest anchor at 33/4/4**. Rule 6 reads **zero studio anecdotes across
 `make music-screen` returned nothing on 153 distinct names. No existing prose was edited.
 Depends on: M-11
 
-### M-13 · `[agent]` core-harmonies — 20 songs, 1 band — **NEXT**
+### M-13 · `[agent]` core-harmonies — 20 songs, 1 band — **DONE 2026-08-14**
 Check: 20 playable songs on label 1 across at least two albums; 1 layer-A band; ~1 layer-B, ~2
 layer-C. `make check` green. Names screened.
 Note: this is label 1's third band, and Concordance cannot make a retrospective without it.
 Note: Odessa Vail's *Lanternlight* is fixed canon and sits in deep layer B; later performances of it
 may be layer A.
+Result: 20 playable songs across **three** layer-A albums rather than the two the card asked for, so
+**Civic Lantern finishes at 3 bands, 7 albums and 65 songs** and **all seven labels now clear §5's
+floor** — M-12 left two of them sitting on it with no margin and this card had the room not to
+repeat that. The band is `b_072` **The Standing Gallery**, thirty-one voices who formed in the cheap
+standing rail of Concordance's largest public hall out of people who could not afford a seat, and
+whose argument with their house is about money and names rather than music: until 2619 Civic Lantern
+paid a chorus a flat fee for a night, printed no singer's name on any sleeve, and paid its hired
+players by the hour. `al_162` *Thirty-One Names* (2619, 7) prints all of them, and it happened in
+that year because the altered-credit edition had made refusing into the story. `al_161` *Nobody Sat
+Down* (2607, 6) was made in two days Open Parallax had booked and not used. **`al_163` *Seven
+Lanterns* (2624, 7) is seven of the twelve movements of Odessa Vail's *Lanternlight*** — COMMISSION
+§4 allows a later performance to be layer A, and this is the first record in the wiki a presenter can
+both play and attribute to a canon figure (D-077). Vail herself is the whole of layer B, `b_073`,
+with the 2559 cycle as `al_164`, unplayable. **The hall is named here for the first time** — the Long
+Assembly, which four anchors' worth of records refer to and no file had named — and it shut in 2615
+and reopened in 2624, which is what the twelve-year gap between the first two records is. **14 of the
+20 are dated 2619 or 2624**, so the catalogue stands at **241 of 475 inside the last eight years,
+over half for the first time since the re-weight**, and COMMISSION §3's half-recent rule leaves M-14
+needing 9 of 25 — **36%, against the 51% D-076 handed on.** **2583 got nothing and is now the
+thinnest anchor at 33/4/4**, on §5's floor for both bands and labels; M-14 is the last card that can
+lift it. Rule 6 reads 2 studio anecdotes in 20 facts, and **rule 8 is already satisfied by this
+file** — it names four bands that live in other genre files. `make music-screen` returned nothing on
+43 distinct names. No existing prose was edited.
 Depends on: M-12
 
-### M-14 · `[agent]` void-ballads — 25 songs, 2 bands
+### M-14 · `[agent]` void-ballads — 25 songs, 2 bands — **NEXT**
 Check: 25 playable songs on label 2; 2 layer-A bands; ~1 layer-B, ~1 layer-C. `make check` green.
 Names screened.
 Note: two solo voices rather than one (D-069). The whole form is one voice and one instrument, and

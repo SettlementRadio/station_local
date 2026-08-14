@@ -1988,3 +1988,56 @@ albums, which is M-13. Anchor 2612 goes 40/5/4 → 52/7/4 on the house's last tw
 at 33/4/4 is now the thinnest anchor** and the only one still on the floor for bands and labels.
 Rule 6 reports **zero studio anecdotes across all four bands**, the safest reading of any genre so
 far; `make music-screen` returned nothing on 153 distinct names.
+
+---
+
+### D-077 · Core harmonies is Concordance's own argument about credit, and *Lanternlight* becomes playable — 2026-08-14
+
+M-13 wrote `music/wiki/core-harmonies.yaml`: 20 playable songs on label 1 across three albums, one
+layer-A band, Odessa Vail as the whole of layer B, and two lost figures. It finishes Civic Lantern,
+which stood at 2 bands and 4 albums and is the last label that was short of §5's floor.
+
+**Three albums rather than the two the card asked for.** Label 1 needed a third band and two albums;
+a third album costs nothing at this stage and gives the house 7 albums instead of exactly 6. M-12
+left labels 3 and 6 sitting on the floor with no margin and that was noted at the time as the
+weakness of that card; this one had the room to avoid repeating it.
+
+**The recency split is 14 of 20.** The three records are dated 2607, 2619 and 2624, and only the
+first is old — it exists because the ensemble's first record has to come before the hall shut. That
+takes COMMISSION §3's half-recent rule to **241 of 475, over half for the first time since the
+re-weight**, and leaves M-14 needing 9 of its 25 recent, or 36%. The chain of shares handed on now
+reads 56% (D-073) → 49% → 48% → 51% (D-076) → **36%**. The cost is that **2583 got nothing** and
+stays the thinnest anchor at 33/4/4, on §5's floor for both bands and labels; M-14 is the last card
+that can lift it, and `CONSTANTS.md` §1 now says so.
+
+**Odessa Vail is written as a layer-B band with one member.** Canon fixes her and COMMISSION §4 puts
+her in the deep end of layer B, so `b_073` is a solo entry whose single member `p_odessa_vail`
+exists for one reason: the credits on the 2624 record have to point at a person id, and a composer
+who is only a band cannot be credited as a writer. *Lanternlight* is `al_164`, 2559, twelve
+movements, unplayable.
+
+**Seven of those twelve movements are layer A.** COMMISSION §4 says later performances of the cycle
+may be, and the 2624 anchor — Concordance's largest public hall reopening — is where one belongs.
+The layer-A songs carry the same titles as the layer-B originals, because it is the same piece and
+an id, not a title, is what identity means here. This is the first record in the wiki that a
+presenter can play *and* attribute to a canon figure who never made another.
+
+**The hall now has a name.** Four anchors' worth of records refer to Concordance's largest public
+recording hall and no file had named it; it is **the Long Assembly**, and the band is named for its
+standing rail. Naming it was additive rather than a correction — no existing line contradicts it —
+and the ensemble's whole story is that room, so leaving it anonymous would have made three album
+notes vaguer than the wiki can afford.
+
+**What the band is for.** The Standing Gallery formed in the cheap standing rail of that hall out of
+people who could not afford a seat, and their argument with Civic Lantern is about money and names
+rather than about music: until 2619 the house paid a chorus a flat fee for a night, printed no
+singer's name, and paid its hired players by the hour. The 2619 record prints all thirty-one, and it
+happened in that year because the altered-credit edition had made refusing into a story. That is the
+form's grandeur given a concrete stake, which is what COMMISSION §2 asks for and warns is usually
+lost to a philosophy seminar.
+
+`make check` is green including §12's rules, and **rule 8 is satisfied by this file already** —
+it names Measure Kindly, Open Parallax, Pell and Tern and The Quiet Half, four bands that live in
+other genre files, against the three the rule asks for. The rule stays owed to M-15 because five of
+the other six written genres still name none. Rule 6 reads **2 studio anecdotes in 20 facts**.
+`make music-screen` returned nothing on 43 distinct names.

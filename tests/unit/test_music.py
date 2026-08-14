@@ -282,10 +282,16 @@ def _owe(root: Path, slug: str, card: str) -> Path:
 
 
 def test_a_genre_owed_to_a_live_card_is_not_counted_against_the_plan(tmp_path: Path) -> None:
-    """M-13 has not been written yet, so core-harmonies being short of 20 songs is not news."""
+    """A genre short of the plan is not news while the card that grows it is still open.
+
+    The example is **M-42, the last card in the file**, and that is deliberate. This test named
+    M-13 until M-13 was written, at which point a green test went red because the work it
+    described as unfinished had been finished. The mechanism is what is under test, so the example
+    should be the card that can be finished last.
+    """
     genre = _fixture_genre()
     genre["layer_a"]["albums"][0]["songs"].pop()
-    root = _owe(_root_with(tmp_path, core_harmonies=genre), "core-harmonies", "M-13")
+    root = _owe(_root_with(tmp_path, core_harmonies=genre), "core-harmonies", "M-42")
     assert check.check_wiki(root) == []
 
 
