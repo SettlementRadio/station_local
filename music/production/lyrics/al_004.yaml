@@ -24,13 +24,16 @@ album:
     which closes the argument out loud.
 
 generation:
-  # M-18 fills this in. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # See al_001.yaml for what each field means. Suno Pro, remix disabled, model v5.5.
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-15
+  sittings:
+    - {date: 2026-08-15, from: '15:45:03', to: '15:50:06', tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}
   ai_generated: true
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW into music/audio/label_1/ by song id. Each song's
+    take: block carries the Suno id and creation timestamp the file itself reports.
 
 songs:
   - id: s_0035
@@ -99,10 +102,13 @@ songs:
 
       [Outro - fade on the guitars and the group hook]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: fec3bfd8-581b-41c2-9989-52727e2b9a15
+      suno_created: 2026-08-15T15:45:03Z
+      file: music/audio/label_1/al_004/01.mp3
 
   - id: s_0036
     title: Across Your Market
@@ -156,10 +162,13 @@ songs:
 
       [Outro - fade on the two-chord keyboard figure]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: e5abf33d-a60c-4f47-8917-0f8cd5ee6ca0
+      suno_created: 2026-08-15T15:45:36Z
+      file: music/audio/label_1/al_004/02.mp3
 
   - id: s_0037
     title: Gloves on the Radiator
@@ -210,10 +219,13 @@ songs:
 
       [Outro - cold stop, one last dull tap on the radiator after the band]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: e662193f-ab26-4b0d-9850-b77fd01009f0
+      suno_created: 2026-08-15T15:46:04Z
+      file: music/audio/label_1/al_004/03.mp3
 
   - id: s_0038
     title: Back Room Summer
@@ -263,10 +275,13 @@ songs:
 
       [Outro - sustain, guitars ringing under the group holding one note]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: e037a928-e2a3-4943-b4c0-5cefaf042def
+      suno_created: 2026-08-15T15:46:32Z
+      file: music/audio/label_1/al_004/04.mp3
 
   - id: s_0039
     title: One More Receipt
@@ -328,10 +343,13 @@ songs:
 
       [Outro - fade on the handclaps]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: ce1d7a79-c437-4f21-9743-11dfa787be30
+      suno_created: 2026-08-15T15:47:00Z
+      file: music/audio/label_1/al_004/05.mp3
 
   - id: s_0040
     title: Nothing Broke at Supper
@@ -392,10 +410,13 @@ songs:
 
       [Outro - fade on the worn guitar]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: df870cb5-1847-4ea1-bcf2-d15217e42b1d
+      suno_created: 2026-08-15T15:47:29Z
+      file: music/audio/label_1/al_004/06.mp3
 
   - id: s_0041
     title: Keep My Place
@@ -449,10 +470,13 @@ songs:
 
       [Outro - sustain, upright bass and one guitar holding]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 2620004d-5df1-498b-ab5a-176c291a40d8
+      suno_created: 2026-08-15T15:47:54Z
+      file: music/audio/label_1/al_004/07.mp3
 
   - id: s_0042
     title: Somebody Else's Umbrella
@@ -513,10 +537,13 @@ songs:
 
       [Outro - fade on the upright bass and guitars]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: f570f033-644d-470e-8486-3513fab7508c
+      suno_created: 2026-08-15T15:48:31Z
+      file: music/audio/label_1/al_004/08.mp3
 
   - id: s_0043
     title: The Polite Refusal
@@ -578,10 +605,13 @@ songs:
 
       [Outro - cold stop on the last word]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 348ddf04-5213-498f-96eb-7d743833bad0
+      suno_created: 2026-08-15T15:48:57Z
+      file: music/audio/label_1/al_004/09.mp3
 
   - id: s_0044
     title: Long Way Past Closing
@@ -650,10 +680,13 @@ songs:
 
       [Outro - sustain, electronic strings holding over the last guitar chord]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 16436904-2975-48b2-9463-5a6bf40c6dff
+      suno_created: 2026-08-15T15:49:23Z
+      file: music/audio/label_1/al_004/10.mp3
 
   - id: s_0045
     title: Put It in Writing
@@ -723,7 +756,10 @@ songs:
 
       [Outro - cold stop, all instruments and voices ending together]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 7c07204c-b92f-4b38-bea3-85c022763747
+      suno_created: 2026-08-15T15:50:06Z
+      file: music/audio/label_1/al_004/11.mp3

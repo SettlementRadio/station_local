@@ -24,13 +24,16 @@ album:
     The group is Localist from 2622 onward, writing around the hall rather than in spite of it.
 
 generation:
-  # M-18 fills this in. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # See al_001.yaml for what each field means. Suno Pro, remix disabled, model v5.5.
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-15
+  sittings:
+    - {date: 2026-08-15, from: '15:07:01', to: '15:17:15', tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}
   ai_generated: true
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW into music/audio/label_1/ by song id. Each song's
+    take: block carries the Suno id and creation timestamp the file itself reports.
 
 songs:
   - id: s_0013
@@ -93,10 +96,13 @@ songs:
 
       [Outro - fade, the hall carrying the last group answer]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: eed31f66-0e6c-48f1-a383-5e9258ef7b86
+      suno_created: 2026-08-15T15:07:01Z
+      file: music/audio/label_1/al_002/01.mp3
 
   - id: s_0014
     title: Better Than Silence
@@ -153,10 +159,13 @@ songs:
 
       [Outro - cold stop on the last word]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: c729a2ca-cc29-47bd-80c7-e3e300dcfa84
+      suno_created: 2026-08-15T15:07:42Z
+      file: music/audio/label_1/al_002/02.mp3
 
   - id: s_0015
     title: Tuesday at the Ferry
@@ -211,10 +220,13 @@ songs:
 
       [Outro - fade on the fiddle figure alone]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 483e272c-dc53-4080-ace5-8e2796ce3745
+      suno_created: 2026-08-15T15:12:57Z
+      file: music/audio/label_1/al_002/03.mp3
 
   - id: s_0016
     title: Honest Change
@@ -274,10 +286,13 @@ songs:
 
       [Outro - cold stop]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: e46bdd84-9770-4079-a979-d223c79ec40a
+      suno_created: 2026-08-15T15:13:30Z
+      file: music/audio/label_1/al_002/04.mp3
 
   - id: s_0017
     title: Keep the Table
@@ -327,10 +342,13 @@ songs:
 
       [Outro - sustain, keyboard holding, chairs stopping last]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 0fbbd04c-076c-4c92-87ce-9a55b57a3f79
+      suno_created: 2026-08-15T15:14:02Z
+      file: music/audio/label_1/al_002/05.mp3
 
   - id: s_0018
     title: No One Saw Us
@@ -386,10 +404,13 @@ songs:
 
       [Outro - fade on the whispered answer over the keyboard]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 2e8b2665-ced7-4398-9bbe-4a8c86f76040
+      suno_created: 2026-08-15T15:14:29Z
+      file: music/audio/label_1/al_002/06.mp3
 
   - id: s_0019
     title: One Good Jacket
@@ -448,10 +469,13 @@ songs:
 
       [Outro - cold stop, one last button click after the band]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: aa7e71b3-6615-4279-b897-7aa4a2675a8d
+      suno_created: 2026-08-15T15:14:58Z
+      file: music/audio/label_1/al_002/07.mp3
 
   - id: s_0020
     title: The Quiet Queue
@@ -512,10 +536,13 @@ songs:
 
       [Outro - fade on the ascending metal figure]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: a75c1989-21af-470f-a094-cd8baacbf395
+      suno_created: 2026-08-15T15:15:29Z
+      file: music/audio/label_1/al_002/08.mp3
 
   - id: s_0021
     title: After the Streetlights
@@ -578,10 +605,13 @@ songs:
 
       [Outro - sustain, the pipe tone holding alone after the voices stop]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: b5097bb2-c356-4d57-96c6-8d577c8db71b
+      suno_created: 2026-08-15T15:15:59Z
+      file: music/audio/label_1/al_002/09.mp3
 
   - id: s_0022
     title: Say It Plainly
@@ -630,10 +660,13 @@ songs:
 
       [Outro - cold stop on the last word]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 0e095750-663b-4ce4-8f14-514490d755fb
+      suno_created: 2026-08-15T15:16:28Z
+      file: music/audio/label_1/al_002/10.mp3
 
   - id: s_0023
     title: Morning Takes Its Time
@@ -702,7 +735,10 @@ songs:
 
       [Outro - long fade on the decorated keyboard pattern]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 0251af4b-229a-44b3-9fdb-ccd7463476f1
+      suno_created: 2026-08-15T15:17:15Z
+      file: music/audio/label_1/al_002/11.mp3

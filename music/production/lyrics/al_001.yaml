@@ -79,13 +79,19 @@ album:
     tracked live, bright and close. Voice, backing, instruments and exclude are untouched.
 
 generation:
-  # M-18 fills this in. Nothing below is guessed, and nothing here is written by an agent.
-  model_version: null           # the exact version string Suno shows, e.g. v4-5
-  licence_period: null          # e.g. suno-pro-2026-08 — becomes each song's licence_note
-  generated_on: null            # YYYY-MM-DD of the sitting the keeper takes came from
-  sittings: []                  # one line per sitting: date, songs covered
+  # Filled from the 2026-08-15 sitting. Suno Pro, remix disabled, model v5.5. The August
+  # terms are captured in music/licence-evidence/ — under the Pro tier Suno assigns the
+  # output to the account holder, and that assignment is scoped to the subscription term.
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-15
+  sittings:
+    - {date: 2026-08-15, from: '08:56:33', to: '09:01:39', tracks: [1, 2]}
+    - {date: 2026-08-15, from: '13:37:12', to: '13:50:04', tracks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW into music/audio/label_1/ by song id. Each song's
+    take: block carries the Suno id and creation timestamp the file itself reports.
 
 songs:
   - id: s_0001
@@ -144,10 +150,13 @@ songs:
 
       [Outro - cold stop on the downbeat, no ring]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: f478580a-5a10-4d84-8004-b53ba16a1245
+      suno_created: 2026-08-15T08:56:33Z
+      file: music/audio/label_1/al_001/01.mp3
 
   - id: s_0002
     title: Paper Cup Promise
@@ -208,10 +217,13 @@ songs:
 
       [Outro - fade on the cup rhythm and the repeated "it held"]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 9a02f9db-8a70-438f-a77f-8467b9d12919
+      suno_created: 2026-08-15T09:01:39Z
+      file: music/audio/label_1/al_001/02.mp3
 
   - id: s_0003
     title: Halfway to Morning
@@ -266,10 +278,13 @@ songs:
 
       [Outro - sustain, keyboard holding under the last chimes]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 29106acc-57fe-4d0b-ad30-8df65f2b0650
+      suno_created: 2026-08-15T13:37:12Z
+      file: music/audio/label_1/al_001/03.mp3
 
   - id: s_0004
     title: Your Spare Key
@@ -323,10 +338,13 @@ songs:
 
       [Outro - fade, the group humming the refrain twice more without words]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: fb76841c-be7b-4759-834a-079b67d19730
+      suno_created: 2026-08-15T13:38:15Z
+      file: music/audio/label_1/al_001/04.mp3
 
   - id: s_0005
     title: Weather on Glass
@@ -377,10 +395,13 @@ songs:
 
       [Outro - sustain, keyboard holding while the room rattle runs on underneath]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 0964697a-4f8c-4443-94fd-a2ea8dd94838
+      suno_created: 2026-08-15T13:40:38Z
+      file: music/audio/label_1/al_001/05.mp3
 
   - id: s_0006
     title: Nothing Owed Tonight
@@ -436,10 +457,13 @@ songs:
 
       [Outro - cold stop, all four voices cutting off together on the last word]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: c4dbc528-fe8a-405c-ad02-213d2559e88b
+      suno_created: 2026-08-15T13:41:18Z
+      file: music/audio/label_1/al_001/06.mp3
 
   - id: s_0007
     title: The Smallest Argument
@@ -492,10 +516,13 @@ songs:
 
       [Outro - cold stop on the last word]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: d1a1c090-5c86-41bb-b2bb-0af5a725a765
+      suno_created: 2026-08-15T13:42:14Z
+      file: music/audio/label_1/al_001/07.mp3
 
   - id: s_0008
     title: Borrowed Blue Coat
@@ -556,10 +583,13 @@ songs:
 
       [Outro - fade on the struck fitting and the group's answer]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: ffb0a4d3-7e2a-4ce2-9465-90d9c83d0d73
+      suno_created: 2026-08-15T13:43:14Z
+      file: music/audio/label_1/al_001/08.mp3
 
   - id: s_0009
     title: Leave the Light Low
@@ -614,10 +644,13 @@ songs:
 
       [Outro - sustain, keyboard and one held group note fading into the room]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 69209d76-378a-4d7b-b5d8-2948a493aa91
+      suno_created: 2026-08-15T13:44:32Z
+      file: music/audio/label_1/al_001/09.mp3
 
   - id: s_0010
     title: Two Seats Apart
@@ -681,10 +714,13 @@ songs:
 
       [Outro - fade on the walking bass]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 4816886d-54fe-4dd9-9eec-831e925a4b85
+      suno_created: 2026-08-15T13:45:17Z
+      file: music/audio/label_1/al_001/10.mp3
 
   - id: s_0011
     title: Call Before Closing
@@ -741,10 +777,13 @@ songs:
 
       [Outro - cold stop, handclaps cutting off dead]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: a1e27739-2a05-41cb-9040-5f7ed76b0b23
+      suno_created: 2026-08-15T13:49:18Z
+      file: music/audio/label_1/al_001/11.mp3
 
   - id: s_0012
     title: Terms of Arrival
@@ -807,7 +846,10 @@ songs:
 
       [Outro - sustain, all four voices holding under the keyboard, chimes last]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: ac8ad29d-0ff5-416b-9177-49f92049ee1e
+      suno_created: 2026-08-15T13:50:04Z
+      file: music/audio/label_1/al_001/12.mp3

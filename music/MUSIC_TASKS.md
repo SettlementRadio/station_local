@@ -62,9 +62,9 @@ marked **NEXT**.
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
 | **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-49** old-system sessions grows to 90 · 2026-08-13 | **all done.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15. No genre carries an `owed_to:` marker any more |
-| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-47** the pilot's 45 lyrics · 2026-08-13 | **M-18 is NEXT and is the only runnable card in the file** — 45 songs of words and prompts are ready to generate |
+| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-18** the pilot's 45 takes · 2026-08-15 | **the pilot's audio exists** — 45 takes on Suno Pro v5.5, filed and licensed · **M-19 is the last card here** and stage 4 waits on it |
 | 2 · The wiki — the catalogue-wide pass | M-07 … M-15 | **M-15** the catalogue-wide pass · 2026-08-14 | **finished. The wiki is frozen.** 500 playable songs across 9 genre files, 25 bands and 63 albums · every label clears §5's floor · layer B carries 55 release years · all eight of §12's rules live and green |
-| 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | blocked until M-18 |
+| 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | **unblocked — M-04 is NEXT**, and it is the only runnable `[agent]` card. It does not wait on M-19 |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-19 — **M-15 is done, so the pilot's verdict is the only thing left in its way** |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
@@ -86,14 +86,19 @@ assumes the pilot sounded right; if it did not, stages 3–6 get rewritten befor
 needs only relay-pop, which is already written, so there is nothing to gain by writing 330 more
 songs of text first and a great deal to lose.
 
-### Stages 1 and 2 ran at the same time — and stage 2 finished first
+### Where the two fronts are now
 
-Stage 1's long card is **M-18 — you, at Suno, for 45 songs.** Stage 2 was all `[agent]`, so the wiki
-got written while the pilot waited, which is what the `[you]`/`[agent]` split in *Who does what* is
-for. **Stage 2 closed at M-15 on 2026-08-14 and the agent front is now out of work.** Every
-remaining `[agent]` card — M-20 and everything in stages 3 and 5 — sits behind M-18 and M-19, so
-**the project waits on you at Suno and on the fourteen-song listen.** Nothing an agent can do will
-shorten that, and there is nothing left to write ahead of it: the wiki is frozen.
+Stage 2 closed at M-15 on 2026-08-14 and **stage 1's long card closed the next day**: the pilot's 45
+takes exist. So both fronts are moving again, and they are independent —
+
+- **`[agent]`: M-04, then M-05, then M-06.** Stage 3 only ever needed audio, not a verdict, so it
+  runs now. Three pieces of tooling, none of which touch the wiki.
+- **`[you]`: M-19, the fourteen-song listen.** It gates stage 4 and everything after it, and it is
+  the only quality gate in the project.
+
+**Do not let stage 3 stand in for M-19.** `make music-analyse` measures ramps and durations; it does
+not say whether an hour of this is worth hearing. Only the listen does, and stages 4–6 get rewritten
+rather than run if the answer is no.
 
 ---
 
@@ -396,7 +401,7 @@ bent by arrangement note where the wiki puts a record in a different room (al_00
 chamber, al_002's smaller second half); voice, backing, instruments and exclude are never bent.
 Depends on: M-16
 
-### M-18 · `[you]` Suno — Measure Kindly and Open Parallax, 45 songs — **NEXT** · runnable since 2026-08-13
+### M-18 · `[you]` Suno — Measure Kindly and Open Parallax, 45 songs — **DONE 2026-08-15**
 Goal: The pilot's audio exists.
 Files: `music/audio/`
 Check: 45 keeper takes downloaded and named `music/audio/<label>/<album>/NN.mp3`. Each album's
@@ -404,6 +409,33 @@ lyrics file records the exact prompt used, the attempt count, the model version 
 Note: Custom mode only — never let Suno write the lyrics. Finish each band in as few sittings as
 possible; a band split across two model versions will not sound like one band. **While this runs,
 the agent front works stage R** — M-46 onward.
+Result: **45 keeper takes exist** — 12 / 11 / 11 / 11 under `music/audio/label_1/al_001…al_004/`,
+named `NN.mp3` by track number. All generated on 2026-08-15 on **Suno Pro, model v5.5, remixing
+disabled**, and every one of the 45 was kept on the **first** generation (`attempts: 1` throughout).
+The four `generation:` blocks carry the model, the licence period `suno-pro-2026-08`, the date and
+the sittings; `al_001` took two sittings and the other three took one each.
+**The takes arrived as `RAW/01.mp3 … 45.mp3` with no titles**, so the mapping to song ids was
+verified rather than assumed — a silent mis-file would have put the wrong fact on the wrong record,
+which is the failure the wiki exists to prevent. Three independent signals agree: the embedded Suno
+timestamps run strictly in filename order; the four largest generation gaps fall exactly on the
+12/11/11/11 album boundaries; and tracks whose lyrics declare a `cold` outro end **11.7 dB** more
+abruptly than the rest at that alignment, while every neighbouring alignment is flat or negative.
+**Provenance went into the lyrics files, not just the audio** — `music/audio/` is gitignored, so
+each song's `take:` block carries its Suno id, the vendor's own creation timestamp and its file
+path. A `dispatch-manifest.json` in `RAW/` records every move.
+**M-40's August evidence is saved**: the complete 19-page terms PDF plus a note reading the clauses
+that matter. Pro tier assigns the output to the account holder and that assignment is scoped to the
+subscription term, so this evidence is what makes these 45 usable.
+**The operator accepts the pilot** (2026-08-15): *"They all 100% pop, similar, but sounds OK… The
+pilot works, the bands sound not identical."* Both halves are what the design predicted — the pilot
+is one genre on one label, and §2's palette for it is guitar pop, so uniformity here says nothing
+about the catalogue; and five bands sounding distinct is M-16's style cards doing their job.
+**One measured result the operator should carry into M-39.** §7 asks for an average near 3:30 and
+nothing under 2:00. The 45 average **2:29**, and **14 of them are under 2:00** — Suno missed the
+per-song `target_duration` by 61.7 seconds on average, always short. The bands land 31% under 2:00 /
+51% at 2:00–3:00 / 16% at 3:00–4:00 / 2% above, against §7's 0 / 28 / 42 / 30. **A fourteen-song
+hour of these is about 35 minutes, not 56.** The operator has accepted the short songs; what this
+changes is arithmetic downstream, not this card.
 Depends on: M-47 (**not M-17** — the pilot's words are being rewritten under the new brief and the
 new relay-pop palette; generating M-17's lyrics would waste the sitting)
 
@@ -415,6 +447,14 @@ terms are saved as a dated PDF.
 Note: do this at the **start** of each month you generate in. It cannot be reconstructed later,
 which is why it sits beside M-18 and not at the end of the file where it used to. **The card opens
 with your first Suno sitting and does not close until M-38.**
+**Open since 2026-08-15, and 2026-08 is covered.** `music/licence-evidence/2026-08-suno-terms.pdf`
+is the complete 19-page terms as of revision *March 26, 2026*, with
+`2026-08-suno-licence-note.md` beside it reading the clauses that decide the question: **Pro or
+Premier assigns the output to the account holder, scoped to the subscription term.** The account was
+Pro with remixing disabled, so the pilot's 45 are covered. Two things to watch, both in that note —
+**the page says the terms are changing soon**, so the successor needs its own dated file the moment
+it takes effect; and a **Remix-enabled track stays non-commercial even on a paid tier**, so remixing
+has to stay off.
 Depends on: M-18
 
 ### M-19 · `[you]` The fourteen-song listen — the decision point
@@ -422,6 +462,14 @@ Goal: Decide whether this approach is worth 455 more songs.
 Check: You have listened to fourteen of the pilot's songs back to back, as if it were the hour, and
 written down what you thought. **That listen decides everything after this card.**
 Note: this is the only quality gate in the project. Nothing automated grades the product.
+**The operator has given a verdict on the pilot but this card is not closed** (2026-08-15). What was
+said, recorded so it is not lost: *"I'm OK with the pilot songs. They all 100% pop, similar, but
+sounds OK. I do expect to have better variety in the future with more styles. The pilot works, the
+bands sound not identical."* Short songs accepted explicitly.
+**What is still owed is the listen this card actually describes** — fourteen of them back to back,
+as if it were the hour. That is a different test from judging songs one at a time, and it is the one
+that would surface the duration finding above: fourteen of these average 2:29, so the hour they make
+is about 35 minutes long. **Close this card only after that sitting.** Stage 4 depends on it.
 Depends on: M-18
 
 ---
@@ -706,7 +754,7 @@ Three pieces of code that could not be written before there were files to run th
 at the top of this file for a day under the numbers M-04 … M-06 and blocked nobody, because nothing
 depends on them until stage 5.
 
-### M-04 · `[agent]` `make music-analyse` — the three numbers, measured not estimated
+### M-04 · `[agent]` `make music-analyse` — the three numbers, measured not estimated — **NEXT**
 Goal: You never hand-time 500 intro ramps.
 Files: `src/station/music/analyse.py`, `Makefile`, `pyproject.toml`, `docs/ADMIN.md`
 Check: `make music-analyse` reads every file under `music/audio/` and writes each song's duration,

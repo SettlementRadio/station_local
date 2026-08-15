@@ -22,13 +22,16 @@ album:
     slightly out-of-repair keyboard carrying the bass part, with two faulty notes kept on track 10.
 
 generation:
-  # M-18 fills this in. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # See al_001.yaml for what each field means. Suno Pro, remix disabled, model v5.5.
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-15
+  sittings:
+    - {date: 2026-08-15, from: '15:23:00', to: '15:28:23', tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}
   ai_generated: true
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW into music/audio/label_1/ by song id. Each song's
+    take: block carries the Suno id and creation timestamp the file itself reports.
 
 songs:
   - id: s_0024
@@ -91,10 +94,13 @@ songs:
 
       [Outro - cold stop, keyboard cutting off mid-phrase]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 219d36bc-a42c-4c97-a806-d1dd52c83772
+      suno_created: 2026-08-15T15:23:00Z
+      file: music/audio/label_1/al_003/01.mp3
 
   - id: s_0025
     title: Bad at Goodbye
@@ -152,10 +158,13 @@ songs:
 
       [Outro - fade on the guitars]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: d2d852dc-2557-486c-8771-6bced151869a
+      suno_created: 2026-08-15T15:23:38Z
+      file: music/audio/label_1/al_003/02.mp3
 
   - id: s_0026
     title: The Door Sticks
@@ -212,10 +221,13 @@ songs:
 
       [Outro - fade on the knock figure alone]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: b740eda9-40a0-4b7d-ace2-ecde9f4081d7
+      suno_created: 2026-08-15T15:24:18Z
+      file: music/audio/label_1/al_003/03.mp3
 
   - id: s_0027
     title: Twenty Empty Chairs
@@ -278,10 +290,13 @@ songs:
 
       [Outro - sustain, guitars ringing over the upright bass]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 3ff2ac8d-285e-4b38-93e0-4986ef074120
+      suno_created: 2026-08-15T15:24:53Z
+      file: music/audio/label_1/al_003/04.mp3
 
   - id: s_0028
     title: Raincheck Money
@@ -341,10 +356,13 @@ songs:
 
       [Outro - cold stop on the last word]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: affb0c60-4da6-4277-ae52-0e6c7e47ef7f
+      suno_created: 2026-08-15T15:25:20Z
+      file: music/audio/label_1/al_003/05.mp3
 
   - id: s_0029
     title: Nobody's Favorite Shift
@@ -400,10 +418,13 @@ songs:
 
       [Outro - fade, ending on the uneven bar of upright bass]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: d7d36968-70db-4728-acee-367dea854e37
+      suno_created: 2026-08-15T15:25:47Z
+      file: music/audio/label_1/al_003/06.mp3
 
   - id: s_0030
     title: A Little Too Loud
@@ -453,10 +474,13 @@ songs:
 
       [Outro - cold stop, one guitar note left ringing and cut]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 87ffcb80-8c6c-424f-8450-6189c81cfa02
+      suno_created: 2026-08-15T15:26:15Z
+      file: music/audio/label_1/al_003/07.mp3
 
   - id: s_0031
     title: The Clean Plate
@@ -514,10 +538,13 @@ songs:
 
       [Outro - sustain, guitars ringing out together]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: e1611eb4-aff2-4d2d-8b3e-87f6b521231e
+      suno_created: 2026-08-15T15:26:40Z
+      file: music/audio/label_1/al_003/08.mp3
 
   - id: s_0032
     title: Coins for Tomorrow
@@ -577,10 +604,13 @@ songs:
 
       [Outro - fade on the guitars and the shaken tokens]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 1e8b426c-6202-4b8f-b7f9-5973a1d6a541
+      suno_created: 2026-08-15T15:27:08Z
+      file: music/audio/label_1/al_003/09.mp3
 
   - id: s_0033
     title: Still at the Counter
@@ -647,10 +677,13 @@ songs:
 
       [Outro - fade on the faulty keyboard figure]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: d0169d05-7758-4d17-abf4-eb4d5ae8088e
+      suno_created: 2026-08-15T15:27:37Z
+      file: music/audio/label_1/al_003/10.mp3
 
   - id: s_0034
     title: Take the Longer Way
@@ -718,7 +751,10 @@ songs:
 
       [Outro - sustain, both guitars ringing out]
     take:
-      attempts: null
-      model_version: null
-      generated_on: null
-      prompt_used: null
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-15
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: b24774f0-b8e4-41d8-b9a3-e0816581a97a
+      suno_created: 2026-08-15T15:28:23Z
+      file: music/audio/label_1/al_003/11.mp3
