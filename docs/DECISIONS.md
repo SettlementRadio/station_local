@@ -2193,3 +2193,44 @@ is by name rather than by shape on purpose: a genre file that failed to parse wo
 silently reclassified as "not a genre" instead of failing loudly. Three tests hold it: that every
 anchor year in `CONSTANTS.md` has a story, that the file is not counted as a genre, and that 2559 is
 the only year marked unprogrammable.
+
+### D-083 · The ramp is measured from what moves in the middle of the mix, and only claimed when the evidence is there — 2026-08-15
+
+M-04. `make music-analyse` had to find, in 500 finished mixes, the moment the singer comes in.
+Loudness cannot do it: on the pilot the band is already playing at full level when the voice
+arrives, and the mixture barely changes. What changes is that a sung note *moves* — its partials
+glide and shake where a keyboard's sit still — and that the voice is mixed dead centre. So the
+measurement is the energy-weighted rate of change of instantaneous frequency, taken from the phase
+vocoder's own phase advance across 250–3500 Hz, weighted by how equal the two channels are at each
+bin, and divided by all the energy in the band. That last denominator is not a detail: dividing by
+the *centred* energy instead was the first attempt, and in a passage with nothing in the middle of
+the mix it divides leakage by leakage and reports a singer who is not there.
+
+**A harmonic/percussive median filter was tried on top and removed.** It is the standard first move
+and it made the separation between an intro and a first verse *worse* — 1.98 against 2.41 robust
+standard deviations on one pilot take, 2.85 against 3.49 on another — while costing five times the
+runtime. The centre weighting was already doing the job the percussive filter was there to do.
+
+**numpy, not librosa.** ARCHITECTURE §9 names librosa, and §22 asks a dependency to save more than
+~200 lines. librosa would have supplied a spectrogram and a general onset detector, neither of
+which is the feature above; what it would actually have saved is the dozen lines of framed FFT in
+`analyse.py`, at the cost of eleven transitive packages including numba on the machine that also
+has to run MLX. The disagreement with §9 is recorded rather than silently taken: if the imaging
+pass in §9 later wants beat tracking and key detection, that is the card that should re-open it.
+
+**Nothing is claimed that is not measured.** A run-up is reported only where the opening of the
+record sits at least 1.8 of the curve's own standard deviations under the body of it *and* the rise
+out of it holds for fifteen seconds; everything else reads `0.0`, which the report and `ADMIN.md`
+both define as "no run-up you could talk over" rather than "the vocal starts at sample zero".
+Nothing here resolves an intro shorter than about two seconds, and two seconds is not a link. Every
+row carries `firm` or `check` with a reason, because §9 already says the last half-second is a
+listening judgement, and a tool that printed 500 confident numbers — some of them wrong — would be
+worse than no tool at all.
+
+**The ending is two measurements, not one.** The time the level takes to fall from 3 dB to 20 dB
+under the body of the song separates `cold` (under 0.6 s) from the two slow endings; the share of
+fresh attacks during that fall separates a `fade`, where the band plays on under the fader, from a
+`sustain`, where a chord is left to ring. On the pilot this agrees with what the brief asked for on
+11 of 14 cold endings and 10 of 12 sustains — and disagrees on the fades, because Suno mostly did
+not fade. That disagreement is a finding about the takes, not an error in the measurement, and it
+belongs to M-39.

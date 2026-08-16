@@ -82,6 +82,33 @@ the verdict on each name is yours. Record both the clearances and the rejections
 If Wikidata cannot be reached it stops and says so rather than printing an empty report, because an
 empty report reads as "every name is clear". Run it again when the connection is back.
 
+### `make music-analyse`
+
+Measures every audio file under `music/audio/` and prints three numbers per take: how long it runs,
+how many seconds of instrumental run-up there are before the first sung word, and how it ends —
+`cold`, `fade` or `sustain`. `ALBUM=al_001` limits it to one album. About a second a song, so the
+whole catalogue is roughly eight minutes.
+
+This is what the mixer needs and what nobody can hand-time 500 times: the run-up is how long a
+presenter may keep talking over the top of a record, and `cold` means the ending must not be talked
+over at all.
+
+**A ramp of `0.0` means there is no run-up you could talk over** — not that the vocal starts at
+sample zero. Nothing resolves an intro shorter than about two seconds, and two seconds is not a
+link. A run-up is only ever claimed where the opening of the record is measurably quieter in vocal
+evidence than the body of it.
+
+**Rows marked `check` in yellow are the ones to listen to, and the note says why.** Either the
+opening is ambiguous, or the ending sits within a fifth of a second of the line between a cold stop
+and a short ring. `ARCHITECTURE.md` §9 is the reason this exists: onset detection gets the
+ballpark, and the last half-second is a listening judgement. It is not a gate, it always exits 0,
+and nothing is written to a file — the measurements are read on screen and become
+`music/catalogue.yaml` later, in M-06.
+
+If a file cannot be decoded the pass keeps going, prints `UNREADABLE` with the file named, and
+counts it in the summary. A song that dropped out silently would become a track with no ramp and a
+link that clips the vocal.
+
 **There are no other music commands.** The wiki, the style cards and the lyrics are written by an
 agent working one card of `music/MUSIC_TASKS.md` — you open a session and say the card number
 (D-055). Nothing is copied to a clipboard and nothing is pasted anywhere.

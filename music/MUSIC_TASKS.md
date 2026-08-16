@@ -64,7 +64,7 @@ marked **NEXT**.
 | **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-49** old-system sessions grows to 90 · 2026-08-13 | **all done.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15. No genre carries an `owed_to:` marker any more |
 | 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-18** the pilot's 45 takes · 2026-08-15 | **the pilot's audio exists** — 45 takes on Suno Pro v5.5, filed and licensed · **M-19 is the last card here** and stage 4 waits on it |
 | 2 · The wiki — the catalogue-wide pass | M-07 … M-15 | **M-15** the catalogue-wide pass · 2026-08-14 | **finished. The wiki is frozen.** 500 playable songs across 9 genre files, 25 bands and 63 albums · every label clears §5's floor · layer B carries 55 release years · all eight of §12's rules live and green |
-| 3 · Tooling that needed audio | M-04 · M-05 · M-06 | — nothing yet | **unblocked — M-04 is NEXT**, and it is the only runnable `[agent]` card. It does not wait on M-19 |
+| 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-04** `make music-analyse` · 2026-08-15 | **M-05 is NEXT** and is the only runnable `[agent]` card. The pilot's 45 takes are measured: 8 have a run-up a presenter could talk over, 37 do not (D-083) |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-19 — **M-15 is done, so the pilot's verdict is the only thing left in its way** |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
@@ -754,7 +754,7 @@ Three pieces of code that could not be written before there were files to run th
 at the top of this file for a day under the numbers M-04 … M-06 and blocked nobody, because nothing
 depends on them until stage 5.
 
-### M-04 · `[agent]` `make music-analyse` — the three numbers, measured not estimated — **NEXT**
+### M-04 · `[agent]` `make music-analyse` — the three numbers, measured not estimated — **DONE 2026-08-15**
 Goal: You never hand-time 500 intro ramps.
 Files: `src/station/music/analyse.py`, `Makefile`, `pyproject.toml`, `docs/ADMIN.md`
 Check: `make music-analyse` reads every file under `music/audio/` and writes each song's duration,
@@ -764,9 +764,36 @@ Note: ARCHITECTURE:1008 already specifies this pass and says onset detection get
 the last half-second is a listening judgement. So the tool measures and flags the borderline ones;
 you re-listen only to those. **Not started** — the commit titled `M-04` (012a32e) contains M-07's
 work and the message is simply wrong.
+Result: `make music-analyse` reads every audio file under `music/audio/` and prints its duration,
+its intro ramp and its outro type, with `ALBUM=` to narrow it. **45 songs in 45 seconds**, so the
+whole catalogue is about eight minutes. Nothing is written to a file: the numbers are read on
+screen, and M-06 imports the module rather than a derived file.
+**The vocal is found by what moves in the middle of the mix, not by level** (D-083) — a sung note's
+partials glide and shake where a keyboard's sit still, and the voice is mixed centre, so the
+measure is the rate of change of instantaneous frequency weighted by how equal the two channels
+are. A harmonic/percussive filter, the standard first move, was tried and **made the separation
+worse at five times the runtime**, so it is not there. `numpy` is the one new dependency; librosa,
+which ARCHITECTURE §9 names, would have saved a dozen lines of FFT and cost eleven packages.
+**Nothing is claimed that is not measured.** A run-up is reported only where the opening of the
+record is clearly quieter in vocal evidence than the body of it and the rise holds; **`0.0` means
+"no run-up you could talk over", not "the vocal starts at sample zero"**, and nothing here resolves
+an intro under about two seconds. Every row is `firm` or `check` with the reason attached.
+**What the pilot measures.** Average 2:29, shortest 1:23, longest 4:12. **Eight of the 45 have a
+measurable run-up** — 6.3s to 13.3s, middle 9.9s — and 37 are singing from the top. Outros are
+**23 cold · 8 fade · 14 sustain**. Fourteen rows are flagged for a listen: seven because the opening
+is ambiguous, nine because the ending sits within a fifth of a second of the line between a cold
+stop and a short ring, and two carrying both.
+**Two things corroborate the ramps without an ear.** Six of the eight run-ups are among the nine
+songs written with the longest intros, while only two of the other 36 show one at all. And the
+measured ending agrees with what the brief asked for on 11 of 14 cold endings and 10 of 12
+sustains — but on only 3 of 19 fades, because **Suno mostly did not fade**, which is a finding
+about the takes for M-39 rather than an error in the measurement.
+**The card's own check is still yours.** The eight with a run-up are the ones worth the ear — there
+are not ten of them to spot-check, because the other 37 have nothing to time. `ALBUM=al_001` prints
+one album at a time.
 Depends on: M-18 (needs real audio to run against)
 
-### M-05 · `[agent]` `make music-tag` — licence and compliance into every file
+### M-05 · `[agent]` `make music-tag` — licence and compliance into every file — **NEXT**
 Goal: 500 files carry their own licence period, generation date, model version and AI marker without
 you touching one.
 Files: `src/station/music/tag.py`, `Makefile`, `docs/ADMIN.md`

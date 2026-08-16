@@ -19,6 +19,7 @@ from station import __version__
 
 if TYPE_CHECKING:
     from station.config import Settings
+    from station.music.analyse import Measurement
     from station.music.screen import Report
 
 app = typer.Typer(add_completion=False, help="Settlement Radio — operator commands (§17).")
@@ -59,7 +60,7 @@ def _boot() -> Settings:
 # Commands that read only files already in the repository and touch no environment. §23's gate
 # exists to stop the *station* running mis-configured; it must not stop the operator writing
 # content. The music wiki is deliberately buildable before any hardware or volume exists (D-044).
-CONFIG_FREE = frozenset({"version", "music-albums", "music-screen"})
+CONFIG_FREE = frozenset({"version", "music-albums", "music-screen", "music-analyse"})
 
 
 @app.callback()
@@ -202,6 +203,93 @@ def music_screen(genre: str = _GENRE_FILTER) -> None:
         typer.echo(
             "\nRecord the verdict on each of these in music/CONSTANTS.md §3 — cleared and "
             "rejected both, or the same collision gets proposed again next genre."
+        )
+
+
+@app.command("music-analyse")
+def music_analyse(album: str = typer.Option(None, "--album", help="only this album id")) -> None:
+    """Measure every take: duration, the run-up before the first sung word, and how it ends."""
+    from station.music import analyse
+
+    root = Path.cwd() / "music" / "audio"
+    if not root.is_dir():
+        typer.secho(
+            f"no audio yet — {root} does not exist (M-18 in music/MUSIC_TASKS.md)", fg="yellow"
+        )
+        return
+    paths = [p for p in analyse.audio_files(root) if album is None or p.parent.name == album]
+    if not paths:
+        typer.secho(
+            f"no audio files under {root}" + (f" for {album}" if album else ""), fg="yellow"
+        )
+        return
+
+    typer.echo(f"{len(paths)} file(s) under music/audio — about a second each\n")
+    typer.echo(f"{'TRACK':<10}{'DURATION':>9}{'RAMP':>7}  {'OUTRO':<9}")
+    measured, failed = [], []
+    current = ""
+    for path in paths:
+        one, problems = analyse.measure_all([path])
+        measured += one
+        failed += problems
+        if not one:
+            continue
+        if str(path.parent) != current:
+            current = str(path.parent)
+            typer.secho(f"\n{path.parent.relative_to(root)}", bold=True)
+        _print_measurement(one[0], path.stem)
+    _print_analyse_summary(measured, failed)
+
+
+def _print_measurement(m: Measurement, track: str) -> None:
+    """One row of the table, flagged in yellow when it needs an ear."""
+    minutes, seconds = divmod(round(m.duration_sec), 60)
+    line = (
+        f"{track:<10}{minutes:>6}:{seconds:02d}{m.intro_ramp_sec:>7.1f}  {m.outro_type:<9}"
+        f"{'check  ' + m.note if m.flagged else ''}"
+    )
+    typer.secho(line, fg="yellow" if m.flagged else None)
+
+
+def _print_analyse_summary(measured: list[Measurement], failed: list[str]) -> None:
+    """What the whole pass found, and what has to be listened to."""
+    if not measured:
+        typer.secho("\nnothing could be measured", fg="red", err=True)
+        raise typer.Exit(code=1)
+    ramps = [m.intro_ramp_sec for m in measured]
+    with_ramp = [r for r in ramps if r > 0]
+    total = sum(m.duration_sec for m in measured)
+    kinds = {k: sum(1 for m in measured if m.outro_type == k) for k in ("cold", "fade", "sustain")}
+    flagged = [m for m in measured if m.flagged]
+
+    typer.echo(f"\n{len(measured)} song(s) measured, {len(failed)} unreadable.")
+    typer.echo(
+        f"  duration    {total / len(measured) / 60:.2f} minutes average, "
+        f"{min(m.duration_sec for m in measured) / 60:.2f} shortest, "
+        f"{max(m.duration_sec for m in measured) / 60:.2f} longest"
+    )
+    typer.echo(
+        f"  intro ramp  {len(with_ramp)} with a measurable run-up, "
+        f"{len(measured) - len(with_ramp)} singing from the top"
+    )
+    ordered = sorted(with_ramp)
+    if len(ordered) == 1:
+        typer.echo(f"              the one runs {ordered[0]:.1f}s — worth an ear")
+    elif ordered:
+        typer.echo(
+            f"              those run {ordered[0]:.1f}s to {ordered[-1]:.1f}s, "
+            f"middle {ordered[len(ordered) // 2]:.1f}s — spot-check these by ear"
+        )
+    typer.echo(
+        f"  outro       {kinds['cold']} cold · {kinds['fade']} fade · {kinds['sustain']} sustain"
+    )
+    for problem in failed:
+        typer.secho(f"  UNREADABLE  {problem}", fg="red", err=True)
+    if flagged:
+        typer.secho(
+            f"\n{len(flagged)} to listen to — the ramp is a judgement in the last half-second "
+            "(ARCHITECTURE §9) and these are the ones the measurement is least sure of.",
+            fg="yellow",
         )
 
 

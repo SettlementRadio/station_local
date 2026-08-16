@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Settlement Radio — a 24/7 AI radio station."
 requires-python = "==3.12.*"
 dependencies = [
+    "numpy>=2.1",
     "pydantic>=2.9",
     "pydantic-settings>=2.5",
     "pyyaml>=6.0",
