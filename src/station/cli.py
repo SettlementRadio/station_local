@@ -19,9 +19,7 @@ from station import __version__
 
 if TYPE_CHECKING:
     from station.config import Settings
-    from station.music.analyse import Measurement
-    from station.music.screen import Report
-    from station.music.tag import Result, Song, Summary
+    from station.music.tag import Result
 
 app = typer.Typer(add_completion=False, help="Settlement Radio — operator commands (§17).")
 
@@ -61,7 +59,9 @@ def _boot() -> Settings:
 # Commands that read only files already in the repository and touch no environment. §23's gate
 # exists to stop the *station* running mis-configured; it must not stop the operator writing
 # content. The music wiki is deliberately buildable before any hardware or volume exists (D-044).
-CONFIG_FREE = frozenset({"version", "music-albums", "music-screen", "music-analyse", "music-tag"})
+CONFIG_FREE = frozenset(
+    {"version", "music-albums", "music-screen", "music-analyse", "music-tag", "music-catalogue"}
+)
 
 
 @app.callback()
@@ -175,7 +175,7 @@ def music_albums(genre: str = _GENRE_FILTER) -> None:
 @app.command("music-screen")
 def music_screen(genre: str = _GENRE_FILTER) -> None:
     """Screen every invented name in the wiki against real notable people and organisations."""
-    from station.music import screen, wiki
+    from station.music import console, screen, wiki
 
     wiki_dir = Path.cwd() / "music" / wiki.WIKI_DIR
     slugs = [genre] if genre else wiki.written_genres(wiki_dir)
@@ -198,7 +198,7 @@ def music_screen(genre: str = _GENRE_FILTER) -> None:
         except (wiki.WikiError, screen.ScreenError) as exc:
             typer.secho(f"\n\n{exc}\n", fg="red", err=True)
             raise typer.Exit(code=2) from None
-        total += _print_screen(report)
+        total += console.screen_report(report)
 
     if total:
         typer.echo(
@@ -210,7 +210,7 @@ def music_screen(genre: str = _GENRE_FILTER) -> None:
 @app.command("music-analyse")
 def music_analyse(album: str = typer.Option(None, "--album", help="only this album id")) -> None:
     """Measure every take: duration, the run-up before the first sung word, and how it ends."""
-    from station.music import analyse
+    from station.music import analyse, console
 
     root = Path.cwd() / "music" / "audio"
     if not root.is_dir():
@@ -238,13 +238,14 @@ def music_analyse(album: str = typer.Option(None, "--album", help="only this alb
         if str(path.parent) != current:
             current = str(path.parent)
             typer.secho(f"\n{path.parent.relative_to(root)}", bold=True)
-        _print_measurement(one[0], path.stem)
-    _print_analyse_summary(measured, failed)
+        console.measurement(one[0], path.stem)
+    console.analyse_summary(measured, failed)
 
 
 @app.command("music-tag")
 def music_tag(album: str = typer.Option(None, "--album", help="only this album id")) -> None:
     """Write the licence period, generation date, model version and AI marker into every take."""
+    from station.music import console
     from station.music import tag as tagger
 
     music = Path.cwd() / "music"
@@ -266,124 +267,33 @@ def music_tag(album: str = typer.Option(None, "--album", help="only this album i
             current = song.album_id
             typer.secho(f"\n{song.album_id}", bold=True)
         results.append(tagger.tag(song))
-        _print_tag_row(song, results[-1])
+        console.tag_row(song, results[-1])
     # "nothing under music/audio is left untagged" is a claim about the whole tree, so the sweep
     # for files no lyrics file claims only runs on a full pass. Narrowed to one album, every other
     # album's audio would read as unclaimed and the command would go red for no reason.
     left_out: list[Path] = (
         tagger.unclaimed(music / tagger.AUDIO_DIR, songs) if album is None else []
     )
-    _print_tag_summary(tagger.summarise(results, left_out), results, whole=album is None)
+    console.tag_summary(tagger.summarise(results, left_out), results, whole=album is None)
 
 
-def _print_tag_row(song: Song, result: Result) -> None:
-    """One file: what it now says, and whether this pass had to write it."""
-    colour = {"failed": "red", "pending": "yellow", "written": "green"}.get(result.action)
-    values = song.provenance
-    line = (
-        f"{song.track_number:<7}{values.licence_period:<20}{values.model_version:<8}"
-        f"{values.generated_on:<12}{result.action:<10}{result.note}"
-    )
-    typer.secho(line, fg=colour)
+@app.command("music-catalogue")
+def music_catalogue() -> None:
+    """Build `music/catalogue.yaml` — the wiki, the lyrics and the audio as one file (§17a)."""
+    from station.music import catalogue, catalogue_check, console
 
-
-def _print_tag_summary(summary: Summary, results: list[Result], whole: bool) -> None:
-    """The counts, one file's tags in full, and a non-zero exit if anything is still uncovered."""
-    from station.music import tag as tagger
-
-    typer.echo(
-        f"\n{summary.written} written · {summary.unchanged} already correct · "
-        f"{summary.pending} waiting for audio · {summary.failed} failed"
-    )
-    for result in (r for r in results if r.action == "failed"):
-        typer.secho(f"  FAILED      {result.note}", fg="red", err=True)
-    for path in summary.unclaimed:
-        typer.secho(f"  UNCLAIMED   {path} — no lyrics file records a take for it", fg="red")
-
-    done = next((r for r in results if r.action in ("written", "unchanged")), None)
-    if done:  # the card's check in one place: read one file, and it tells you what it is
-        typer.echo(f"\nwhat one file now says — {done.path}")
-        present = tagger.read_tags(Path(done.path))
-        for key in tagger.TAG_KEYS:
-            typer.echo(f"  {key:<18}{present.get(key, '—')}")
-
-    if not summary.complete:
+    root = Path.cwd()
+    path = root / "music" / catalogue.CATALOGUE_FILE
+    typer.echo("measuring every take that exists — about a second each\n")
+    try:
+        built = catalogue.build(root, on_measured=console.measuring)
+        catalogue.write(path, built.catalogue)
+        problems = built.problems + catalogue_check.validate(root)
+    except catalogue.CatalogueError as exc:
+        typer.secho(f"\n{exc}\n", err=True, fg="red")
+        raise typer.Exit(code=2) from None
+    if not console.catalogue_summary(built, problems, path):
         raise typer.Exit(code=1)
-    covered = f"all {summary.carrying_tags} file(s) under music/audio carry the four tags"
-    typer.secho(
-        f"\n{covered}" if whole else f"\n{summary.carrying_tags} file(s) tagged", fg="green"
-    )
-
-
-def _print_measurement(m: Measurement, track: str) -> None:
-    """One row of the table, flagged in yellow when it needs an ear."""
-    minutes, seconds = divmod(round(m.duration_sec), 60)
-    line = (
-        f"{track:<10}{minutes:>6}:{seconds:02d}{m.intro_ramp_sec:>7.1f}  {m.outro_type:<9}"
-        f"{'check  ' + m.note if m.flagged else ''}"
-    )
-    typer.secho(line, fg="yellow" if m.flagged else None)
-
-
-def _print_analyse_summary(measured: list[Measurement], failed: list[str]) -> None:
-    """What the whole pass found, and what has to be listened to."""
-    if not measured:
-        typer.secho("\nnothing could be measured", fg="red", err=True)
-        raise typer.Exit(code=1)
-    ramps = [m.intro_ramp_sec for m in measured]
-    with_ramp = [r for r in ramps if r > 0]
-    total = sum(m.duration_sec for m in measured)
-    kinds = {k: sum(1 for m in measured if m.outro_type == k) for k in ("cold", "fade", "sustain")}
-    flagged = [m for m in measured if m.flagged]
-
-    typer.echo(f"\n{len(measured)} song(s) measured, {len(failed)} unreadable.")
-    typer.echo(
-        f"  duration    {total / len(measured) / 60:.2f} minutes average, "
-        f"{min(m.duration_sec for m in measured) / 60:.2f} shortest, "
-        f"{max(m.duration_sec for m in measured) / 60:.2f} longest"
-    )
-    typer.echo(
-        f"  intro ramp  {len(with_ramp)} with a measurable run-up, "
-        f"{len(measured) - len(with_ramp)} singing from the top"
-    )
-    ordered = sorted(with_ramp)
-    if len(ordered) == 1:
-        typer.echo(f"              the one runs {ordered[0]:.1f}s — worth an ear")
-    elif ordered:
-        typer.echo(
-            f"              those run {ordered[0]:.1f}s to {ordered[-1]:.1f}s, "
-            f"middle {ordered[len(ordered) // 2]:.1f}s — spot-check these by ear"
-        )
-    typer.echo(
-        f"  outro       {kinds['cold']} cold · {kinds['fade']} fade · {kinds['sustain']} sustain"
-    )
-    for problem in failed:
-        typer.secho(f"  UNREADABLE  {problem}", fg="red", err=True)
-    if flagged:
-        typer.secho(
-            f"\n{len(flagged)} to listen to — the ramp is a judgement in the last half-second "
-            "(ARCHITECTURE §9) and these are the ones the measurement is least sure of.",
-            fg="yellow",
-        )
-
-
-def _print_screen(report: Report) -> int:
-    """One genre's findings. Returns how many names need looking at."""
-    typer.echo(f"\n  {report.screened} distinct names, used in {report.uses} places")
-    if not report.findings:
-        typer.secho("  nothing matched. Every name is clear on the mechanical test.\n", fg="green")
-        return 0
-
-    for finding in report.findings:
-        typer.secho(f"\n  {finding.name}", fg="yellow", bold=True)
-        for use in finding.uses:
-            typer.echo(f"      used as {use.kind} — {use.where}")
-        for match in finding.matches:
-            what = " — ".join(x for x in (match.kinds, match.description) if x)
-            typer.echo(f"      {match.qid:<10} {match.sitelinks:>3} sitelinks  {what}")
-            typer.secho(f"      {' ' * 10} {match.url}", fg="bright_black")
-    typer.echo(f"\n  {len(report.findings)} name(s) to look at.\n")
-    return len(report.findings)
 
 
 def main() -> None:

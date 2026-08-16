@@ -209,7 +209,7 @@ layer_b:
             - {id: s_0999, title: Nobody Sleeps in Here, track_number: 4, genre: pulse-dance, playable: false}
             - {id: s_1000, title: Salt on the Floor, track_number: 5, genre: pulse-dance, playable: false}
             - {id: s_1001, title: Two Hours to Open, track_number: 6, genre: pulse-dance, playable: false}
-            - {id: s_1002, title: Cold Iron, Warm Room, track_number: 7, genre: pulse-dance, playable: false}
+            - {id: s_1002, title: "Cold Iron, Warm Room", track_number: 7, genre: pulse-dance, playable: false}
             - {id: s_1003, title: Wait for the Tide, track_number: 8, genre: pulse-dance, playable: false}
         - id: al_122
           title: Gate Money
@@ -299,7 +299,7 @@ layer_b:
             - {id: s_1028, title: Pump House Tapes, track_number: 1, genre: pulse-dance, playable: false}
             - {id: s_1029, title: One Man and a Rack, track_number: 2, genre: pulse-dance, playable: false}
             - {id: s_1030, title: Nothing to Sell, track_number: 3, genre: pulse-dance, playable: false}
-            - {id: s_1031, title: Take It, It's Yours, track_number: 4, genre: pulse-dance, playable: false}
+            - {id: s_1031, title: "Take It, It's Yours", track_number: 4, genre: pulse-dance, playable: false}
             - {id: s_1032, title: The Pump Still Turns, track_number: 5, genre: pulse-dance, playable: false}
             - {id: s_1033, title: Copy It Twice, track_number: 6, genre: pulse-dance, playable: false}
             - {id: s_1034, title: Nobody Signed Anything, track_number: 7, genre: pulse-dance, playable: false}
@@ -317,7 +317,7 @@ layer_b:
             - {id: s_1038, title: The Only New Thing, track_number: 3, genre: pulse-dance, playable: false}
             - {id: s_1039, title: Ask Me What It Cost, track_number: 4, genre: pulse-dance, playable: false}
             - {id: s_1040, title: Under the Pump Floor, track_number: 5, genre: pulse-dance, playable: false}
-            - {id: s_1041, title: Nothing Ships, Nothing Sells, track_number: 6, genre: pulse-dance, playable: false}
+            - {id: s_1041, title: "Nothing Ships, Nothing Sells", track_number: 6, genre: pulse-dance, playable: false}
             - {id: s_1042, title: Play It in the Doorway, track_number: 7, genre: pulse-dance, playable: false}
             - {id: s_1043, title: Out When It Opens, track_number: 8, genre: pulse-dance, playable: false}
 

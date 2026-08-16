@@ -2267,3 +2267,76 @@ can afford to shrug at a file it could not read; a file with no licence attached
 broadcast, and the only moment it is cheap to notice is now. A song whose lyrics exist but whose
 audio does not is reported as `waiting for audio`, not as a failure — that is a Suno card that has
 not run yet.
+
+### D-085 · `catalogue.yaml` derives its rotation category, keeps `playable` meaning "there is a file", and is checked against the wiki rather than trusted — 2026-08-16
+
+M-06. The file `make music-sync` will ingest joins three sources that until now only a person could
+read. Four things had to be decided, and one defect turned up while deciding them.
+
+**`category` is derived from §8's own definitions and nothing else.** §8 names six rotation weights
+and defines exactly two of them by a rule: `new` is a record released within eight in-world weeks,
+`gold` is one five in-world years old or more. Release dates in this world are years, so `new`
+cannot be expressed at all and is never written. Everything old enough is `gold`, everything else is
+`A`, and **`B`, `C` and `specialist` are never written** — they are editorial demotions nobody has
+made, and choosing them here would be authoring content on the operator's behalf (CLAUDE.md). On the
+pilot that reads 11 in heavy rotation and 34 gold. Because an age is a fact about the present rather
+than about the record, `present_year` is written into the file, taken from the `section:` block every
+genre file already carries, and `make check` goes red if the wiki's present moves past it — which
+forces the yearly rebuild that `CONSTANTS.md` §1's "recomputed every year" already implies.
+
+**`playable` means the audio exists, and a layer-A song with no take is indistinguishable from a
+layer-B title.** §8 is explicit that `playable` is audio and that `file_path` is null wherever it is
+false, because a scheduler that picks an unplayable track produces dead air. So the 455 songs whose
+Suno card has not run yet are unplayable rows today, exactly like the 858 records the world knows and
+the station will never hold, and the distinction disappears when M-38 lands. A **track that could not
+be measured is left unplayable** rather than given a ramp of zero (§25's ffprobe rule): a guessed
+run-up is a link that clips the first sung word.
+
+**Where the wiki and §8 do not line up, the file carries what the wiki states and the report says
+so.** Three cases. `fact` is on the track row although §8's `tracks` table has no such column —
+the whole point of the card is a DJ able to say something about a record, and the fact is the only
+place that lives; the missing column is §8's to grow. `artists.kind` allows three words and the wiki
+writes six, so `crew`, `duo` and `partnership` are all written as `group`. And **no genre file states
+a house style**, which §8 gives every label, so all seven are null and the command says so every run.
+Twenty bands and albums carry `unsigned`, `not imported` or `not for sale` instead of a label; those
+are facts about the world (D-059, D-066, D-078) and become a null label, while anything else that
+fails to resolve is counted and named, so a typo cannot become a silent null.
+
+**The check is a separate pass, and it does not read the audio.** `catalogue.py` writes the file;
+`catalogue_check.py` reads it back — the same split as `writing.py` from `check.py` (M-45), for the
+same reason: a builder can only be wrong in ways it already believes. The file is committed, so the
+failure worth catching is not a bad build but a good one going stale, and the check compares every
+id and title against the wiki, resolves every reference, and asserts a row carries a whole take or
+none of one. Nothing under `music/audio/` is touched, so it runs in CI (§30) and on a fresh clone.
+
+**A defect the pass found, and fixed.** Twenty-five layer-B song titles were truncated in the wiki:
+songs are written as YAML flow mappings, and `{title: Two Callers, One Sheet, track_number: 6}`
+splits at the comma into the title `Two Callers` and a stray key. It is valid YAML and a valid
+title, so nothing had ever failed on it — and a truncated title is a record a presenter names
+wrongly on air. All twenty-five are re-quoted, in five genre files, with no other change; §10 permits
+a title edit, and restoring text already present in the file is less than that. `wiki.Song` now keeps
+what it does not recognise and the catalogue check reports it, so the same bug cannot return quietly.
+
+**Two housekeeping notes.** `cli.py` had reached 391 lines against §31's cap of 400, so the five
+music printers moved to `music/console.py` unchanged — the command output is byte-identical, and the
+next music target has room. And `music/catalogue.yaml` is 577KB of committed YAML; it is derived, but
+it is small enough that keeping it in git is what makes the staleness check possible at all.
+
+### D-086 · The pilot passed, so stages 4–6 run as written — 2026-08-16
+
+M-19, the only quality gate in the project. The operator listened to the pilot's songs and passed
+them: *"I listened to all the songs under M-19, it sounds OK."* Nothing automated grades the product
+and nothing was ever going to; `MUSIC_TASKS.md` made stages 4, 5 and 6 conditional on this sitting,
+and the answer is yes, so **they run as written rather than being rewritten.** M-20 is unblocked and
+455 songs of lyrics and audio follow it.
+
+**Two things carried forward rather than settled here.** The operator's standing expectation is
+*"better variety in the future with more styles"* — the pilot was one genre on one label and §2's
+palette for relay-pop is guitar pop, so uniformity there said nothing about the catalogue and could
+not have. Variety is stage 5's to deliver across eight more forms and twenty more bands, and the
+honest place to test it is after the second or third genre's audio lands, not at M-42 with 455 songs
+already made. And **the duration shortfall stands**: the 45 average 2:29 against COMMISSION §7's
+3:30 with fourteen under 2:00, so fourteen of them make about 35 minutes rather than 56. The
+operator has accepted the short songs twice. It is M-39's to fix by choosing different takes — the
+reason that card runs per genre — and downstream it is arithmetic for back-timing and for how many
+songs an hour needs, not a reason to stop.

@@ -1440,7 +1440,7 @@ layer_b:
           songs:
             - {id: s_0341, title: First Shed Hall, track_number: 1, genre: lane-rock, playable: false}
             - {id: s_0342, title: Sunday on the Line, track_number: 2, genre: lane-rock, playable: false}
-            - {id: s_0343, title: Two Guitars, No Room, track_number: 3, genre: lane-rock, playable: false}
+            - {id: s_0343, title: "Two Guitars, No Room", track_number: 3, genre: lane-rock, playable: false}
             - {id: s_0344, title: Loud Enough to Carry, track_number: 4, genre: lane-rock, playable: false}
             - {id: s_0345, title: Wages Before Dark, track_number: 5, genre: lane-rock, playable: false}
             - {id: s_0346, title: Nobody Hired Us, track_number: 6, genre: lane-rock, playable: false}
@@ -1629,7 +1629,7 @@ layer_b:
             - {id: s_0409, title: Shared Format Sunday, track_number: 5, genre: lane-rock, playable: false}
             - {id: s_0410, title: Learn It on the Way, track_number: 6, genre: lane-rock, playable: false}
             - {id: s_0411, title: Nobody Is the Leader, track_number: 7, genre: lane-rock, playable: false}
-            - {id: s_0412, title: Same Song, Different Crew, track_number: 8, genre: lane-rock, playable: false}
+            - {id: s_0412, title: "Same Song, Different Crew", track_number: 8, genre: lane-rock, playable: false}
         - id: al_049
           title: Last Founder
           label: label_5
@@ -1672,7 +1672,7 @@ layer_b:
             - {id: s_0422, title: Kettle Row Saturday, track_number: 2, genre: lane-rock, playable: false}
             - {id: s_0423, title: Never Play the Core, track_number: 3, genre: lane-rock, playable: false}
             - {id: s_0424, title: Twenty-Four Minutes, track_number: 4, genre: lane-rock, playable: false}
-            - {id: s_0425, title: Cheap Room, Full House, track_number: 5, genre: lane-rock, playable: false}
+            - {id: s_0425, title: "Cheap Room, Full House", track_number: 5, genre: lane-rock, playable: false}
             - {id: s_0426, title: Say It and Stop, track_number: 6, genre: lane-rock, playable: false}
             - {id: s_0427, title: Nothing to Add, track_number: 7, genre: lane-rock, playable: false}
             - {id: s_0428, title: Out Before the Encore, track_number: 8, genre: lane-rock, playable: false}
@@ -1715,12 +1715,12 @@ layer_b:
           notes: Commissioned to widen a late-club label's catalogue and disowned by half of that label's own roster.
           songs:
             - {id: s_0437, title: Daytime Record, track_number: 1, genre: lane-rock, playable: false}
-            - {id: s_0438, title: Wrong Label, Right Songs, track_number: 2, genre: lane-rock, playable: false}
+            - {id: s_0438, title: "Wrong Label, Right Songs", track_number: 2, genre: lane-rock, playable: false}
             - {id: s_0439, title: Loud in a Quiet Room, track_number: 3, genre: lane-rock, playable: false}
             - {id: s_0440, title: Nobody Asked for This, track_number: 4, genre: lane-rock, playable: false}
             - {id: s_0441, title: After the Last Ferry, track_number: 5, genre: lane-rock, playable: false}
             - {id: s_0442, title: Play It Twice as Fast, track_number: 6, genre: lane-rock, playable: false}
-            - {id: s_0443, title: Late Club, Early Shift, track_number: 7, genre: lane-rock, playable: false}
+            - {id: s_0443, title: "Late Club, Early Shift", track_number: 7, genre: lane-rock, playable: false}
             - {id: s_0444, title: Ordinary and Loud, track_number: 8, genre: lane-rock, playable: false}
         - id: al_053
           title: Unavailable Since

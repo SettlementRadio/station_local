@@ -27,6 +27,10 @@ WIKI_DIR = "wiki"
 # that failed to parse would otherwise be silently reclassified as this instead of failing.
 NOT_A_GENRE = frozenset({"anchors"})
 
+# Keys a song entry legitimately carries that nothing here reads. Anything outside this set and
+# `Song`'s own fields is a stray key rather than a field somebody chose not to model.
+SONG_KEYS_NOT_MODELLED = frozenset({"genre", "credits", "notes"})
+
 
 class WikiError(RuntimeError):
     """The wiki could not be read. The message names the file or id to fix."""
@@ -59,12 +63,25 @@ class _Labelled(_Entry):
 
 
 class Song(_Entry):
+    # The one entry that keeps what it does not recognise instead of ignoring it. Songs are the only
+    # part of the wiki written as flow mappings — `{id: s_0528, title: Two Callers, One Sheet, ...}`
+    # — and an unquoted comma inside one silently splits the title, leaving "Two Callers" and a
+    # stray key "One Sheet". Twenty-five titles were truncated that way and nothing could see it,
+    # because a truncated title is still a valid title. `catalogue.py` reports any song carrying a
+    # key it does not know, which is what that bug looks like from here.
+    model_config = ConfigDict(extra="allow")
+
     id: str
     title: str
     track_number: int
     playable: bool = False
     mood_tags: list[str] = Field(default_factory=list)
     fact: str | None = None
+
+    @property
+    def stray_keys(self) -> list[str]:
+        """Keys nothing in the wiki defines — almost always a comma that should have been quoted."""
+        return sorted(set(self.model_extra or {}) - SONG_KEYS_NOT_MODELLED)
 
 
 class Album(_Labelled):
@@ -100,6 +117,19 @@ class Named(_Entry):
     name: str
 
 
+class LabelEntry(Named):
+    """A house as the genre files write it, repeated once in every genre it presses (`_same_entity`).
+
+    §8 gives labels a settlement, a founding year, a defunct year and a house style. The first three
+    are here under the names the wiki uses; no genre file states a house style at all.
+    """
+
+    home: str = ""
+    founded_year: int | None = None
+    folded_year: int | None = None
+    status: str = ""
+
+
 class Band(_Labelled):
     id: str
     name: str
@@ -128,16 +158,29 @@ class _LayerC(_Entry):
     figures: list[Named] = Field(default_factory=list)
 
 
+class Section(_Entry):
+    """The writer's own header block. One field is read: the in-world year the file is written in.
+
+    `COMMISSION.md` puts the present at the real year plus six hundred and every genre file states
+    it, which makes the wiki — not the code — the place it is written down. `catalogue.py` needs it
+    because §8 defines `gold` as a record five in-world years old or more, and an age is a fact
+    about the present rather than about the record.
+    """
+
+    present_year: int | None = None
+
+
 class GenreWiki(_Entry):
     """One `music/wiki/<genre>.yaml`.
 
-    `section` is the writer's own header block and is ignored — declaring fields nothing uses only
-    creates ways for a valid wiki to be rejected. Labels, session players and layer C are modelled
-    for one reason only: they mint ids, and an id used twice is the failure this file exists to
-    catch (`check.py`).
+    The rest of `section` is ignored, as is everything else nothing reads — declaring fields nothing
+    uses only creates ways for a valid wiki to be rejected. Labels, session players and layer C are
+    modelled for one reason only: they mint ids, and an id used twice is the failure this file
+    exists to catch (`check.py`).
     """
 
-    labels: list[Named] = Field(default_factory=list)
+    section: Section = Field(default_factory=Section)
+    labels: list[LabelEntry] = Field(default_factory=list)
     session_players: list[Named] = Field(default_factory=list)
     layer_a: _Layer = Field(default_factory=_Layer)
     layer_b: _Layer = Field(default_factory=_Layer)

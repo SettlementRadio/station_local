@@ -244,8 +244,8 @@ layer_b:
             - {id: s_0525, title: Nobody Signed for It, track_number: 3, genre: deck-talk, playable: false}
             - {id: s_0526, title: Stand at the Board, track_number: 4, genre: deck-talk, playable: false}
             - {id: s_0527, title: Loud Enough to Settle It, track_number: 5, genre: deck-talk, playable: false}
-            - {id: s_0528, title: Two Callers, One Sheet, track_number: 6, genre: deck-talk, playable: false}
-            - {id: s_0529, title: Late Again, Same Name, track_number: 7, genre: deck-talk, playable: false}
+            - {id: s_0528, title: "Two Callers, One Sheet", track_number: 6, genre: deck-talk, playable: false}
+            - {id: s_0529, title: "Late Again, Same Name", track_number: 7, genre: deck-talk, playable: false}
             - {id: s_0530, title: Say It Where It Counts, track_number: 8, genre: deck-talk, playable: false}
         - id: al_065
           title: Office Hours
@@ -425,7 +425,7 @@ layer_b:
           notes: Eight straight exchanges with no hooks at all, and the record that made the form's contests a thing crews travelled for.
           songs:
             - {id: s_0587, title: Tally and Answer, track_number: 1, genre: deck-talk, playable: false}
-            - {id: s_0588, title: Your Turn, Longer, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0588, title: "Your Turn, Longer", track_number: 2, genre: deck-talk, playable: false}
             - {id: s_0589, title: Match That Count, track_number: 3, genre: deck-talk, playable: false}
             - {id: s_0590, title: Nothing Sung Here, track_number: 4, genre: deck-talk, playable: false}
             - {id: s_0591, title: Faster Than the Answer, track_number: 5, genre: deck-talk, playable: false}
@@ -441,7 +441,7 @@ layer_b:
           notes: Recorded against six visiting crews on one circuit, and the only deck-talk record on which the challengers are credited by name.
           songs:
             - {id: s_0595, title: Never Turned One Down, track_number: 1, genre: deck-talk, playable: false}
-            - {id: s_0596, title: Six Crews, One Bay, track_number: 2, genre: deck-talk, playable: false}
+            - {id: s_0596, title: "Six Crews, One Bay", track_number: 2, genre: deck-talk, playable: false}
             - {id: s_0597, title: Bring the Whole Sheet, track_number: 3, genre: deck-talk, playable: false}
             - {id: s_0598, title: We Kept Count, track_number: 4, genre: deck-talk, playable: false}
             - {id: s_0599, title: Beaten on the Turn, track_number: 5, genre: deck-talk, playable: false}
@@ -488,7 +488,7 @@ layer_b:
           songs:
             - {id: s_0611, title: Only What We Can Play, track_number: 1, genre: deck-talk, playable: false}
             - {id: s_0612, title: No Second Take, track_number: 2, genre: deck-talk, playable: false}
-            - {id: s_0613, title: Same Floor, Same Four, track_number: 3, genre: deck-talk, playable: false}
+            - {id: s_0613, title: "Same Floor, Same Four", track_number: 3, genre: deck-talk, playable: false}
             - {id: s_0614, title: Twelve Years Between, track_number: 4, genre: deck-talk, playable: false}
             - {id: s_0615, title: Ask the Hall, track_number: 5, genre: deck-talk, playable: false}
             - {id: s_0616, title: We Still Work Here, track_number: 6, genre: deck-talk, playable: false}

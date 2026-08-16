@@ -34,6 +34,11 @@ are not compared while that marker stands. The check reads `music/MUSIC_TASKS.md
 card is still open, **and goes red if the card is marked DONE with the marker still there** — so the
 counting cannot stay switched off by accident (D-069).
 
+**And it checks `music/catalogue.yaml` against that wiki.** Every label, band, album and song has to
+appear in both under the same name, every reference has to resolve, and a track either carries a
+whole take or none of one. Red here almost always means one thing: the wiki changed and
+`make music-catalogue` was not re-run. No audio is read, so this works on a fresh clone and in CI.
+
 ### `make doctor`
 
 Says whether this machine can run the station: configuration loaded, the external volume mounted,
@@ -102,8 +107,8 @@ evidence than the body of it.
 opening is ambiguous, or the ending sits within a fifth of a second of the line between a cold stop
 and a short ring. `ARCHITECTURE.md` §9 is the reason this exists: onset detection gets the
 ballpark, and the last half-second is a listening judgement. It is not a gate, it always exits 0,
-and nothing is written to a file — the measurements are read on screen and become
-`music/catalogue.yaml` later, in M-06.
+and nothing is written to a file — the measurements are read on screen, and
+`make music-catalogue` takes them again for the file the station reads.
 
 If a file cannot be decoded the pass keeps going, prints `UNREADABLE` with the file named, and
 counts it in the summary. A song that dropped out silently would become a track with no ramp and a
@@ -141,6 +146,33 @@ not rewritten at all. That is what lets it run after every genre rather than onc
 Unlike the other music commands **this one is a gate**: it exits red if any file failed, or if there
 is audio under `music/audio/` that no lyrics file records a take for. An untagged file is the one
 you would not find out about until it mattered.
+
+### `make music-catalogue`
+
+Builds `music/catalogue.yaml` — **the one file the station's database ingests**, and the only thing
+that makes any of the wiki reach the air. Everything else in `music/` is written for a person; this
+is written for the machine, in the shape `ARCHITECTURE.md` §17a fixes: labels, artists, albums and
+tracks, with each track's file, mood, measured run-up, ending, rotation category and licence.
+
+It joins three things, and re-measures the audio every run, so it takes about a second a song — the
+pilot's 45 in under a minute, the full 500 in roughly eight. Dots show it working.
+
+- the **wiki** — who exists, what it is called, and the one fact per song a presenter can say
+- the **lyrics files** — which take belongs to which song and what licence it was made under
+- the **audio** — duration, run-up and ending, measured, never remembered from a previous run
+
+Run it after anything changes in `music/wiki/`, after a Suno sitting, and after `make music-tag`.
+**Then commit the file**, because `make check` compares it against the wiki every time and goes red
+when the two have drifted apart. That red is the only thing standing between you and a station
+confidently describing last week's catalogue.
+
+**`playable: true` means the audio is on disk and measured.** Every other row is a title with no
+file — either a record the world knows and the station has never held (layer B), or a song whose
+Suno card has not run yet. Today that reads *45 playable, 1313 titles*; when the music job is
+finished it reads 500 and 858. A track that could not be measured is left unplayable and named in
+red rather than given a guessed run-up.
+
+**Nothing in the file is hand-edited.** The next run overwrites it whole.
 
 **There are no other music commands.** The wiki, the style cards and the lyrics are written by an
 agent working one card of `music/MUSIC_TASKS.md` — you open a session and say the card number

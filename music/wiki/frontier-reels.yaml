@@ -1281,7 +1281,7 @@ layer_b:
           notes: Recorded in the band's final years and remembered for being the record Wire and Rosin were compared to on release.
           songs:
             - {id: s_0708, title: Thirty Years in One Room, track_number: 1, genre: frontier-reels, playable: false}
-            - {id: s_0709, title: Same Floor, Same Feet, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0709, title: "Same Floor, Same Feet", track_number: 2, genre: frontier-reels, playable: false}
             - {id: s_0710, title: The Hall Is Cold Tonight, track_number: 3, genre: frontier-reels, playable: false}
             - {id: s_0711, title: Turn at the Far Wall, track_number: 4, genre: frontier-reels, playable: false}
             - {id: s_0712, title: Money Under the Cup, track_number: 5, genre: frontier-reels, playable: false}
@@ -1315,7 +1315,7 @@ layer_b:
             - {id: s_0717, title: Composite and Wire, track_number: 2, genre: frontier-reels, playable: false}
             - {id: s_0718, title: Shift Change Reel, track_number: 3, genre: frontier-reels, playable: false}
             - {id: s_0719, title: Nothing in the Shop, track_number: 4, genre: frontier-reels, playable: false}
-            - {id: s_0720, title: Bright Strings, Cold Hands, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0720, title: "Bright Strings, Cold Hands", track_number: 5, genre: frontier-reels, playable: false}
             - {id: s_0721, title: Dance Before the Whistle, track_number: 6, genre: frontier-reels, playable: false}
             - {id: s_0722, title: Two Names on the Rota, track_number: 7, genre: frontier-reels, playable: false}
             - {id: s_0723, title: Walk It Back, track_number: 8, genre: frontier-reels, playable: false}
@@ -1331,7 +1331,7 @@ layer_b:
             - {id: s_0725, title: Ask Who Played It, track_number: 2, genre: frontier-reels, playable: false}
             - {id: s_0726, title: No Pipes Required, track_number: 3, genre: frontier-reels, playable: false}
             - {id: s_0727, title: Ten Years of This, track_number: 4, genre: frontier-reels, playable: false}
-            - {id: s_0728, title: Same Shop, Different Wage, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0728, title: "Same Shop, Different Wage", track_number: 5, genre: frontier-reels, playable: false}
             - {id: s_0729, title: Play It Plain, track_number: 6, genre: frontier-reels, playable: false}
             - {id: s_0730, title: The Long Rope, track_number: 7, genre: frontier-reels, playable: false}
             - {id: s_0731, title: Nobody Asked Us, track_number: 8, genre: frontier-reels, playable: false}
@@ -1379,7 +1379,7 @@ layer_b:
             - {id: s_0742, title: Turn Down the Offer, track_number: 3, genre: frontier-reels, playable: false}
             - {id: s_0743, title: Twenty-Five Years Out, track_number: 4, genre: frontier-reels, playable: false}
             - {id: s_0744, title: Dance Where They Ask, track_number: 5, genre: frontier-reels, playable: false}
-            - {id: s_0745, title: Short Sleeve, Long Night, track_number: 6, genre: frontier-reels, playable: false}
+            - {id: s_0745, title: "Short Sleeve, Long Night", track_number: 6, genre: frontier-reels, playable: false}
             - {id: s_0746, title: Count It at the Door, track_number: 7, genre: frontier-reels, playable: false}
             - {id: s_0747, title: Last of the Saltbox, track_number: 8, genre: frontier-reels, playable: false}
 
@@ -1408,7 +1408,7 @@ layer_b:
             - {id: s_0749, title: Take the Outside Lane, track_number: 2, genre: frontier-reels, playable: false}
             - {id: s_0750, title: Eleven Hours Standing, track_number: 3, genre: frontier-reels, playable: false}
             - {id: s_0751, title: Freight and Fiddle, track_number: 4, genre: frontier-reels, playable: false}
-            - {id: s_0752, title: Two Ports, No Sleep, track_number: 5, genre: frontier-reels, playable: false}
+            - {id: s_0752, title: "Two Ports, No Sleep", track_number: 5, genre: frontier-reels, playable: false}
             - {id: s_0753, title: Ask the Other Crew, track_number: 6, genre: frontier-reels, playable: false}
             - {id: s_0754, title: Wide Turn Home, track_number: 7, genre: frontier-reels, playable: false}
             - {id: s_0755, title: Sign It Off, track_number: 8, genre: frontier-reels, playable: false}
@@ -1452,7 +1452,7 @@ layer_b:
           notes: A first record made under the shared press format and sold further than any frontier reel record before it.
           songs:
             - {id: s_0764, title: The Turning Room, track_number: 1, genre: frontier-reels, playable: false}
-            - {id: s_0765, title: New Band, Old Hall, track_number: 2, genre: frontier-reels, playable: false}
+            - {id: s_0765, title: "New Band, Old Hall", track_number: 2, genre: frontier-reels, playable: false}
             - {id: s_0766, title: Faster Than Last Year, track_number: 3, genre: frontier-reels, playable: false}
             - {id: s_0767, title: Ask for the Old Tune, track_number: 4, genre: frontier-reels, playable: false}
             - {id: s_0768, title: Bright Composite, track_number: 5, genre: frontier-reels, playable: false}
@@ -1467,7 +1467,7 @@ layer_b:
           genre: frontier-reels
           notes: Recorded in the exchange hall Wire and Rosin used, which the band has said was either a tribute or a mistake.
           songs:
-            - {id: s_0772, title: Same Hall, New Feet, track_number: 1, genre: frontier-reels, playable: false}
+            - {id: s_0772, title: "Same Hall, New Feet", track_number: 1, genre: frontier-reels, playable: false}
             - {id: s_0773, title: Standing Where She Stood, track_number: 2, genre: frontier-reels, playable: false}
             - {id: s_0774, title: Two Microphones Again, track_number: 3, genre: frontier-reels, playable: false}
             - {id: s_0775, title: Not a Tribute, track_number: 4, genre: frontier-reels, playable: false}

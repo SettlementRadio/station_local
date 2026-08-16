@@ -62,11 +62,11 @@ marked **NEXT**.
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
 | **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-49** old-system sessions grows to 90 · 2026-08-13 | **all done.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15. No genre carries an `owed_to:` marker any more |
-| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-18** the pilot's 45 takes · 2026-08-15 | **the pilot's audio exists** — 45 takes on Suno Pro v5.5, filed and licensed · **M-19 is the last card here** and stage 4 waits on it |
+| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-19** the fourteen-song listen · 2026-08-16 | **done, and the pilot passed.** 45 takes on Suno Pro v5.5, filed, licensed, measured and tagged · **the operator has listened and said yes**, so stages 4–6 run as written · only M-40 stays open, and it stays open until M-38 |
 | 2 · The wiki — the catalogue-wide pass | M-07 … M-15 | **M-15** the catalogue-wide pass · 2026-08-14 | **finished. The wiki is frozen.** 500 playable songs across 9 genre files, 25 bands and 63 albums · every label clears §5's floor · layer B carries 55 release years · all eight of §12's rules live and green |
-| 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-05** `make music-tag` · 2026-08-16 | **M-06 is NEXT** and is the only runnable `[agent]` card. The pilot's 45 takes are measured (8 have a run-up a presenter could talk over, 37 do not — D-083) and all 45 now carry their licence period, date, model version and AI marker in the file itself (D-084) |
-| 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-19 — **M-15 is done, so the pilot's verdict is the only thing left in its way** |
-| 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
+| 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-06** `music/catalogue.yaml` · 2026-08-16 | **all done.** The takes are measured (D-083), tagged (D-084), and joined into the one file the station's database ingests — 1,358 tracks, 45 of them playable, checked against the wiki by `make check` (D-085) |
+| 4 · Style cards — the other 20 bands | M-20 | — nothing yet | **M-20 is NEXT** and is the only runnable card in the file. Both things it waited on are done — the wiki froze on 2026-08-14 and the pilot passed on 2026-08-16 |
+| 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20. **This is the long stage** — 455 songs, nine lyrics cards and nine Suno cards, alternating |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -88,17 +88,27 @@ songs of text first and a great deal to lose.
 
 ### Where the two fronts are now
 
-Stage 2 closed at M-15 on 2026-08-14 and **stage 1's long card closed the next day**: the pilot's 45
-takes exist. So both fronts are moving again, and they are independent —
+**The two fronts have merged into one line, and it runs from here to the end.** Stages 0, R, 1, 2
+and 3 are all closed: the wiki is frozen, the tooling exists and is green on the pilot, and
+**M-19 passed on 2026-08-16**, which was the one decision everything after it was conditional on.
+Nothing is blocked on a judgement any more.
 
-- **`[agent]`: M-04, then M-05, then M-06.** Stage 3 only ever needed audio, not a verdict, so it
-  runs now. Three pieces of tooling, none of which touch the wiki.
-- **`[you]`: M-19, the fourteen-song listen.** It gates stage 4 and everything after it, and it is
-  the only quality gate in the project.
+**What is left is 455 songs, and it alternates.** M-20 gives the other twenty bands a fixed voice;
+then stage 5 goes genre by genre, an `[agent]` lyrics card and a `[you]` Suno card at a time, and a
+genre is finished before the next one starts. That pairing is the point — a problem shows up after
+about sixty songs instead of after 455. The two cards inside one genre cannot overlap, so from here
+**the sessions take turns rather than running side by side.**
 
-**Do not let stage 3 stand in for M-19.** `make music-analyse` measures ramps and durations; it does
-not say whether an hour of this is worth hearing. Only the listen does, and stages 4–6 get rewritten
-rather than run if the answer is no.
+**One thing the pilot did not settle**, and it is the operator's own words: *"I do expect to have
+better variety in the future with more styles."* The pilot is one genre on one label and could not
+have shown variety. Stage 5 is where it either arrives or does not, and the place to judge it is
+after the second or third genre's audio lands — not at M-42, when 455 songs exist.
+
+**Nothing automated will tell you.** `make music-analyse` measures ramps and durations and
+`make music-catalogue` puts them where the station can read them; neither says whether an hour of
+this is worth hearing. Only a listen does. That was true at M-19 and it stays true for every genre
+after it — which is why M-42 exists at the end, and why it should not be the first time you sit
+down with a whole hour of the bulk.
 
 ---
 
@@ -457,19 +467,25 @@ it takes effect; and a **Remix-enabled track stays non-commercial even on a paid
 has to stay off.
 Depends on: M-18
 
-### M-19 · `[you]` The fourteen-song listen — the decision point
+### M-19 · `[you]` The fourteen-song listen — the decision point — **DONE 2026-08-16**
 Goal: Decide whether this approach is worth 455 more songs.
 Check: You have listened to fourteen of the pilot's songs back to back, as if it were the hour, and
 written down what you thought. **That listen decides everything after this card.**
 Note: this is the only quality gate in the project. Nothing automated grades the product.
-**The operator has given a verdict on the pilot but this card is not closed** (2026-08-15). What was
-said, recorded so it is not lost: *"I'm OK with the pilot songs. They all 100% pop, similar, but
-sounds OK. I do expect to have better variety in the future with more styles. The pilot works, the
-bands sound not identical."* Short songs accepted explicitly.
-**What is still owed is the listen this card actually describes** — fourteen of them back to back,
-as if it were the hour. That is a different test from judging songs one at a time, and it is the one
-that would surface the duration finding above: fourteen of these average 2:29, so the hour they make
-is about 35 minutes long. **Close this card only after that sitting.** Stage 4 depends on it.
+Result: **the operator listened to the whole pilot and passed it** (2026-08-16): *"I listened to all
+the songs under M-19, it sounds OK."* That is the yes, and **stages 4, 5 and 6 run as written** —
+they were the ones that got rewritten if the answer had been no.
+Both halves of the earlier verdict stand and are kept here because they are the standing brief for
+everything after this card (2026-08-15): *"I'm OK with the pilot songs. They all 100% pop, similar,
+but sounds OK. I do expect to have better variety in the future with more styles. The pilot works,
+the bands sound not identical."* The uniformity is one genre on one label and §2's palette for it is
+guitar pop, so **the variety the operator expects is what stage 5 is for** — eight more forms, twenty
+more bands, nine style-card sets. If the catalogue still sounds like one record after M-31 or M-32,
+that is the moment to stop, not M-42.
+**The duration arithmetic is unchanged and is now M-39's to fix by choosing takes** (D-083, M-18):
+the 45 average 2:29 against §7's 3:30 and fourteen are under 2:00, so fourteen of these make about
+35 minutes, not 56. The operator has accepted the short songs twice. What it changes is back-timing
+and how many songs an hour needs, not whether to carry on.
 Depends on: M-18
 
 ---
@@ -820,7 +836,7 @@ quietly carry no licence at all. A song whose words exist but whose audio does n
 `waiting for audio`, not as a failure: that is a Suno card that has not run yet.
 Depends on: M-04
 
-### M-06 · `[agent]` `music/catalogue.yaml` — the file the station reads — **NEXT**
+### M-06 · `[agent]` `music/catalogue.yaml` — the file the station reads — **DONE 2026-08-16**
 Goal: The wiki, the lyrics and the audio become the one file the station's database ingests. **This
 is what makes a DJ able to say a fact about a record.** Without it the whole wiki is inert.
 Files: `src/station/music/catalogue.py`, `music/catalogue.yaml`, `Makefile`, `docs/ADMIN.md`
@@ -830,13 +846,44 @@ specifies — labels, artists, albums, tracks with `file`, `category`, `mood`, `
 `make check` validates it.
 Note: the database ingest (`make music-sync`) belongs to the phase that has a database. This card
 produces the file; nothing here needs Postgres.
+Result: `make music-catalogue` writes `music/catalogue.yaml` — **7 labels, 76 artists, 169 albums
+and 1,358 tracks**, of which **45 are playable** today and 1,313 are titles with no file. It joins
+the wiki, the lyrics files and the audio, re-measuring every take rather than reading M-04's numbers
+out of anything (a second a song, so the pilot takes under a minute and 500 will take eight). The
+file is 577KB, deterministic — two runs are byte-identical — and **committed**, which is what makes
+the check below possible.
+**`playable` means the audio exists and nothing else** (D-085). The 455 layer-A songs whose Suno
+card has not run yet are unplayable rows today, exactly like the 858 records the world knows and the
+station will never hold; the distinction disappears at M-38. `file`, `duration_sec`,
+`intro_ramp_sec`, `outro_type`, `licence_note` and `category` are null together on every other row,
+which is §8's invariant put in the row instead of in a convention.
+**`category` is derived from §8's own definitions and nothing else.** `gold` is five in-world years
+old or more, everything else is `A`, and `new`, `B`, `C` and `specialist` are never written —
+`new` cannot be said at year granularity and the other three are editorial demotions nobody has
+made. The pilot reads 11 heavy and 34 gold. The present year is written into the file, so
+**`make check` goes red the January the wiki's present moves past it**, which forces the yearly
+rebuild `CONSTANTS.md` §1 already implies.
+**`make check` validates it as a separate pass** (`catalogue_check.py`), reading no audio, so it
+runs in CI and on a fresh clone. It compares every id and title against the wiki, resolves every
+reference, and asserts each row carries a whole take or none of one. **The failure it exists for is
+a good build going stale** — a genre file edited without a rebuild, leaving the station's one source
+of truth describing last week's world. Verified by making the file wrong on purpose: it goes red and
+names the card to run.
+**One defect was found and fixed.** Twenty-five layer-B song titles were truncated in the wiki —
+`{title: Two Callers, One Sheet, track_number: 6}` splits at the comma, and valid YAML with a valid
+title is why nothing had ever failed on it. All twenty-five are re-quoted across five genre files
+with no other change, and `wiki.Song` now keeps what it does not recognise so the check reports the
+same bug rather than shipping it. **Three places the wiki and §8 do not line up** are carried as the
+wiki states them and reported on every run: `fact` is on the track row although §8's table has no
+such column, `crew`/`duo`/`partnership` are written as `group` because §8 allows three words, and
+**no genre file states a house style** for any of the seven labels.
 Depends on: M-04, M-05
 
 ---
 
 # Stage 4 · Style cards for the rest
 
-### M-20 · `[agent]` Style cards for the other 20 bands
+### M-20 · `[agent]` Style cards for the other 20 bands — **NEXT**
 Goal: Every layer-A band in the catalogue has a fixed voice.
 Files: `music/production/styles.yaml`
 Check: All 25 layer-A bands have a six-line card. `make music-albums` shows `yes` in the STYLE

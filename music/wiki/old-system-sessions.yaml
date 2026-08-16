@@ -1225,7 +1225,7 @@ layer_b:
             - {id: s_0859, title: Two Trams Late, track_number: 4, genre: old-system-sessions, playable: false}
             - {id: s_0860, title: Nobody Came Out, track_number: 5, genre: old-system-sessions, playable: false}
             - {id: s_0861, title: The Dust Gets In, track_number: 6, genre: old-system-sessions, playable: false}
-            - {id: s_0862, title: One Room, Three Players, track_number: 7, genre: old-system-sessions, playable: false}
+            - {id: s_0862, title: "One Room, Three Players", track_number: 7, genre: old-system-sessions, playable: false}
             - {id: s_0863, title: Shut the Terrace Door, track_number: 8, genre: old-system-sessions, playable: false}
         - id: al_106
           title: Ten Years of Dust
@@ -1240,7 +1240,7 @@ layer_b:
             - {id: s_0866, title: Nothing on the Board, track_number: 3, genre: old-system-sessions, playable: false}
             - {id: s_0867, title: She Left by Rail, track_number: 4, genre: old-system-sessions, playable: false}
             - {id: s_0868, title: The Sandhouse Door, track_number: 5, genre: old-system-sessions, playable: false}
-            - {id: s_0869, title: Cold Pipes, Warm Room, track_number: 6, genre: old-system-sessions, playable: false}
+            - {id: s_0869, title: "Cold Pipes, Warm Room", track_number: 6, genre: old-system-sessions, playable: false}
             - {id: s_0870, title: Ask for the Old Tune, track_number: 7, genre: old-system-sessions, playable: false}
             - {id: s_0871, title: Last Car Out, track_number: 8, genre: old-system-sessions, playable: false}
 
@@ -1288,7 +1288,7 @@ layer_b:
             - {id: s_0882, title: The Road Past the Mill, track_number: 3, genre: old-system-sessions, playable: false}
             - {id: s_0883, title: Two Fields Over, track_number: 4, genre: old-system-sessions, playable: false}
             - {id: s_0884, title: Everybody Knows It, track_number: 5, genre: old-system-sessions, playable: false}
-            - {id: s_0885, title: Wet Grass, Bare Feet, track_number: 6, genre: old-system-sessions, playable: false}
+            - {id: s_0885, title: "Wet Grass, Bare Feet", track_number: 6, genre: old-system-sessions, playable: false}
             - {id: s_0886, title: A Full Room and No Chairs, track_number: 7, genre: old-system-sessions, playable: false}
             - {id: s_0887, title: Sing Us Out, track_number: 8, genre: old-system-sessions, playable: false}
 
@@ -1317,7 +1317,7 @@ layer_b:
             - {id: s_0888, title: Cut and Carry, track_number: 1, genre: old-system-sessions, playable: false}
             - {id: s_0889, title: The Long Ridge, track_number: 2, genre: old-system-sessions, playable: false}
             - {id: s_0890, title: Rock in the Teeth, track_number: 3, genre: old-system-sessions, playable: false}
-            - {id: s_0891, title: Short Rope, Long Drop, track_number: 4, genre: old-system-sessions, playable: false}
+            - {id: s_0891, title: "Short Rope, Long Drop", track_number: 4, genre: old-system-sessions, playable: false}
             - {id: s_0892, title: Ore Train Nights, track_number: 5, genre: old-system-sessions, playable: false}
             - {id: s_0893, title: Payload and Payday, track_number: 6, genre: old-system-sessions, playable: false}
             - {id: s_0894, title: Ask the Cutter, track_number: 7, genre: old-system-sessions, playable: false}
@@ -1412,7 +1412,7 @@ layer_b:
             - {id: s_0921, title: Two Crossings a Shift, track_number: 2, genre: old-system-sessions, playable: false}
             - {id: s_0922, title: The Slow Ring, track_number: 3, genre: old-system-sessions, playable: false}
             - {id: s_0923, title: Nobody Rides Free, track_number: 4, genre: old-system-sessions, playable: false}
-            - {id: s_0924, title: Cold Deck, Warm Cabin, track_number: 5, genre: old-system-sessions, playable: false}
+            - {id: s_0924, title: "Cold Deck, Warm Cabin", track_number: 5, genre: old-system-sessions, playable: false}
             - {id: s_0925, title: Ask at the Rail, track_number: 6, genre: old-system-sessions, playable: false}
             - {id: s_0926, title: Short Crossing, track_number: 7, genre: old-system-sessions, playable: false}
             - {id: s_0927, title: Money on the Rail, track_number: 8, genre: old-system-sessions, playable: false}
