@@ -1,11 +1,13 @@
-"""`COMMISSION.md` §12's eight writing rules have to go red on the thing they name.
+"""`COMMISSION.md` §12's ten writing rules have to go red on the thing they name.
 
 The point of M-45 is that a prose rule nobody counts is a preference. So the tests that matter are
 the ones that break a correct album one way at a time and assert the command names it — the same
 shape as `test_music.py`'s wiki tests, and for the same reason: six sessions of evidence that the
 rules which survive are the ones with a number behind them.
 
-One fixture album of six songs, deliberately varied, and one test per way of flattening it.
+One fixture album of six songs, deliberately varied, and one test per way of flattening it. M-50
+added two rules about length, so the fixture is now a full-length lyric: three verses and past
+rule 10's word floor, with knobs that take away one of those without touching the other.
 """
 
 from __future__ import annotations
@@ -17,17 +19,22 @@ from typing import Any
 import pytest
 import yaml
 
-from station.music import check, writing
+from station.music import check, commission, writing
 
 ROOT = Path(__file__).resolve().parents[2]
 
 # A song built from parts, so a test can flatten exactly one of them. The default carries two
-# world nouns, a named third party, no parenthetical echo, and does not sing its own title.
+# world nouns, a named third party, no parenthetical echo, three verses, enough words to clear
+# rule 10, and does not sing its own title.
 LYRIC = """[Intro - 8 seconds, {intro}]
 
 [Verse 1]
 The {noun_one} came in short and Talla counted it again,
 She wrote the difference down and left it on the desk.
+Nobody asked her twice and nobody asked her once,
+And the paper sat all evening underneath the reading lamp.
+She has a way of writing numbers nobody can argue with,
+A small clear hand that never once has needed to be loud.
 
 [{middle}]
 {hook}
@@ -35,8 +42,39 @@ She wrote the difference down and left it on the desk.
 [Verse 2]
 By the {noun_two} she had stopped explaining what it cost,
 And nobody who owed her ever said the word out loud.
+The men who signed for it were somewhere warm and unavailable,
+The woman who did not sign for it was standing in the wet.
+She learned the trick of waiting where the argument would come to her,
+Which is cheaper than going out to meet it in the road.
+Everyone she works beside has told her she should let it go,
+And every one of them has asked her privately what the number was.
 
+[{middle}]
+{hook}
+
+[Verse 3]
+There is a version where she says it plainly to their faces,
+And a version where she writes it and says nothing else at all.
+She has written it so often that the writing does the arguing,
+And the faces are a thing she can decline to look at now.
+Whatever else is missing, the account of it is honest,
+And an honest empty column is worth more than a full one.
+The lamp is on the desk and the desk is where it happened,
+And the whole of it will still be there tomorrow if they want it.
+{extra}
 [Outro - 4 seconds, {intro}]
+"""
+
+# The lines rule 10 costs: the default lyric clears the floor, and without these it does not.
+EXTRA = """
+[{middle}]
+{hook}
+
+[Coda]
+Talla put the light out on the desk and left the total where it was,
+Because a number nobody disputes is a number nobody remembers,
+And she would rather be remembered for the one they all disputed,
+And she would rather leave it written than explain it in the morning.
 """
 
 NOUNS = ("manifest", "berth", "hauler", "airlock", "relay", "ration", "cargo", "hold")
@@ -45,17 +83,19 @@ MIDDLES = ("Chorus", "Refrain", "Bridge", "Pre-Chorus", "Turnaround", "Coda")
 
 def _song(number: int, **flat: Any) -> dict[str, Any]:
     """One song of the fixture. Keyword arguments flatten it the way one rule cares about."""
+    parts = {
+        "intro": "fiddle alone",
+        "noun_one": flat.get("noun_one", NOUNS[number % len(NOUNS)]),
+        "noun_two": flat.get("noun_two", NOUNS[(number + 3) % len(NOUNS)]),
+        "middle": flat.get("middle", MIDDLES[number % len(MIDDLES)]),
+        "hook": flat.get("hook", "And she kept the difference, and she kept the desk."),
+    }
+    lyric = LYRIC.format(extra=flat.get("extra", EXTRA), **parts).format(**parts)
     return {
         "id": f"s_{number:04d}",
         "title": f"Counted Twice {number}",
         "track_number": number,
-        "lyrics": LYRIC.format(
-            intro="fiddle alone",
-            noun_one=flat.get("noun_one", NOUNS[number % len(NOUNS)]),
-            noun_two=flat.get("noun_two", NOUNS[(number + 3) % len(NOUNS)]),
-            middle=flat.get("middle", MIDDLES[number % len(MIDDLES)]),
-            hook=flat.get("hook", "And she kept the difference, and she kept the desk."),
-        ),
+        "lyrics": lyric.replace("[Verse 3]", flat.get("third", "[Verse 3]")),
     }
 
 
@@ -72,7 +112,7 @@ def _root_with(tmp_path: Path, album: dict[str, Any] | None) -> Path:
     music = tmp_path / "music"
     (music / writing.LYRICS_DIR).mkdir(parents=True, exist_ok=True)
     (music / "wiki").mkdir(exist_ok=True)
-    for name in (writing.COMMISSION_FILE, check.TASKS_FILE):
+    for name in (commission.COMMISSION_FILE, check.TASKS_FILE):
         (music / name).write_text((ROOT / "music" / name).read_text(encoding="utf-8"))
     if album is not None:
         (music / writing.LYRICS_DIR / "al_900.yaml").write_text(yaml.safe_dump(album))
@@ -97,17 +137,20 @@ def _details(tmp_path: Path, album: dict[str, Any] | None, *, live: bool = True)
 
 def test_the_rules_come_out_of_the_commission() -> None:
     """Nothing is hard-coded here: change a number in §12 and the command changes with it."""
-    rules = writing.load_rules(ROOT / "music" / writing.COMMISSION_FILE)
-    assert sorted(rules.threshold) == list(writing.RULES)
+    rules = commission.load_rules(ROOT / "music" / commission.COMMISSION_FILE)
+    assert sorted(rules.threshold) == list(commission.RULES)
     assert rules.threshold[1] == pytest.approx(0.40)
     assert rules.threshold[2] == 3
+    assert rules.threshold[9] == 3, "M-50: three verses"
+    assert rules.threshold[10] >= 280, "M-50: the word floor, and it is not the pilot's mean"
     assert "burn day" in rules.world_nouns and "the lag" in rules.world_nouns
     assert "overdub" in rules.studio_words
+    assert rules.exempt_albums == ("al_001", "al_002", "al_003", "al_004")
 
 
 def test_a_commission_without_section_twelve_stops_the_check(tmp_path: Path) -> None:
     root = _root_with(tmp_path, _fixture_album())
-    (root / "music" / writing.COMMISSION_FILE).write_text("# no rules here\n")
+    (root / "music" / commission.COMMISSION_FILE).write_text("# no rules here\n")
     with pytest.raises(check.CheckError):
         writing.check_writing(root)
 
@@ -119,7 +162,7 @@ def test_rules_one_to_five_are_owed_to_the_card_that_rewrites_the_pilot(tmp_path
     assert _details(tmp_path, flat) != ""
 
 
-# --- the five lyric rules ---------------------------------------------------------------------
+# --- the seven lyric rules ---------------------------------------------------------------------
 
 
 def test_a_varied_album_reports_nothing(tmp_path: Path) -> None:
@@ -140,10 +183,7 @@ def test_an_album_with_nobody_in_it_is_named(tmp_path: Path) -> None:
     """§3: songs are about someone. Six first-person songs is one narrator, not an album."""
     album = _fixture_album()
     for song in album["songs"]:
-        song["lyrics"] = song["lyrics"].replace("Talla counted it again,", "I counted it again,")
-        song["lyrics"] = song["lyrics"].replace("She wrote", "I wrote").replace("she had", "I had")
-        song["lyrics"] = song["lyrics"].replace("who owed her", "who owed me")
-        song["lyrics"] = song["lyrics"].replace("she kept", "I kept")
+        song["lyrics"] = re.sub(r"\b(Talla|She|she|her|hers|he|him|his)\b", "I", song["lyrics"])
     detail = _details(tmp_path, album)
     assert "rule 2" in detail and "third person" in detail
 
@@ -177,6 +217,22 @@ def test_an_album_too_short_to_have_a_distribution_is_left_alone(tmp_path: Path)
     assert detail == ""
 
 
+def test_a_song_with_two_verses_is_named(tmp_path: Path) -> None:
+    """M-50 rule 9. The words are untouched, so only the verse count can be what went red."""
+    detail = _details(tmp_path, _fixture_album(third="[Bridge]"))
+    assert "al_900" in detail and "s_0001" in detail
+    assert "rule 9" in detail and "2 verse section(s)" in detail
+    assert "rule 10" not in detail, "taking a tag away must not also take the words away"
+
+
+def test_a_song_too_short_to_fill_the_hour_is_named(tmp_path: Path) -> None:
+    """M-50 rule 10. Three verses are still there; there are simply not enough words in them."""
+    detail = _details(tmp_path, _fixture_album(extra=""))
+    assert "al_900" in detail and "s_0001" in detail
+    assert "rule 10" in detail and "sung words" in detail
+    assert "rule 9" not in detail, "a short lyric is not a lyric missing a verse"
+
+
 # --- the three wiki rules, against the real wiki ----------------------------------------------
 
 
@@ -186,9 +242,25 @@ def test_the_written_wiki_passes_every_live_rule() -> None:
     assert not problems, "the writing rules are broken:\n" + "\n".join(p.line() for p in problems)
 
 
+def test_the_pilot_is_exempt_from_the_length_rules_and_still_counted() -> None:
+    """M-50's exemption is four ids in §12, and it is the opposite of a rule nobody counts.
+
+    The pilot's 45 are the only lyrics that exist and the only ones rules 9 and 10 will never
+    apply to, so this is where the floor can be watched working: every finding against those four
+    albums is counted, none of them is fatal, and `make check` stays green on all of it (D-087).
+    """
+    exempt = [f for f in writing.count_writing(ROOT) if f.exempt]
+    albums = {f.problem.genre for f in exempt}
+    assert albums == {"al_001", "al_002", "al_003", "al_004"}
+    assert {f.rule for f in exempt} == {9, 10}
+    assert not any(f.fatal for f in exempt)
+    short_on_words = [f for f in exempt if f.rule == 10]
+    assert len(short_on_words) == 45, "the floor is above every one of the pilot's lyrics"
+
+
 def test_rules_seven_and_eight_are_owed_to_the_catalogue_wide_card() -> None:
     """Neither can be satisfied by the genre being written today, which is why M-15 owns them."""
-    rules = writing.load_rules(ROOT / "music" / writing.COMMISSION_FILE)
+    rules = commission.load_rules(ROOT / "music" / commission.COMMISSION_FILE)
     assert rules.owed_to[7] == rules.owed_to[8] == check.LAYER_B_CALENDAR_CARD
 
 

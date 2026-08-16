@@ -2340,3 +2340,101 @@ already made. And **the duration shortfall stands**: the 45 average 2:29 against
 operator has accepted the short songs twice. It is M-39's to fix by choosing different takes — the
 reason that card runs per genre — and downstream it is arithmetic for back-timing and for how many
 songs an hour needs, not a reason to stop.
+
+### D-087 · Three verses and a two-hundred-word floor, and solos in three of the nine forms — 2026-08-16
+
+Operator instruction, taken immediately after M-19 passed: *"as a rule for all future songs we must
+have 3 verses per song minimum… also in songs like blues, jazz, rock, solos could be introduced more
+often to extend the duration."* Recorded here and carded as M-50; it is a change to the writing brief
+and its counted rules, so it runs before M-20 rather than inside it.
+
+**The measurement that shaped how it is written.** The pilot's 45 songs are the only ones with both a
+lyric and a measured duration, and correlating them says the lever is not the verse count — it is how
+many words Suno is given to sing. Words of lyric correlate **+0.76** with measured duration; verse
+count **+0.26**; the writer's own stated `target_duration` **+0.59**. Two-verse songs average 138.8s
+and three-verse songs 163.9s, worth +25s; lyrics under 200 words average 125.7s and lyrics of 200+
+average 174.4s, worth **+49s**, which is most of the 61.7s Suno was coming in short. So the rule is
+**both**: three verses fixes the shape the operator asked for, and the word floor is what actually
+buys the seconds and stops three two-line verses satisfying it. 27 of the pilot's 45 fall short on
+verses and 23 on words, so it is a real change and not a description of what is already happening.
+
+**The pilot is exempt by name, and it is settled rather than deferred.** The operator's own words,
+because the reason matters more than the rule that would have reached the same place: *"I'm OK with
+pilot songs. They will blend in among other songs we'll have, we won't redo them."* Forty-five short
+songs inside five hundred is nine per cent of the catalogue and rotation spreads them, so **this is
+not a debt to be repaid later** — no card should ever propose re-cutting `al_001` … `al_004`, and
+none of the 45 takes is to be regenerated. The four album ids go in §12 beside the rule. Their
+failures are still counted and reported — the D-071 mechanism that carried §12's rules 1–5 until
+M-47 landed — so the rule can be watched working on the only lyrics that exist.
+
+**What the exemption costs, in one number.** COMMISSION §7 wants the 500 to average 3:30 and the
+pilot is fixed at 2:29, so **the remaining 455 have to average 3:36** for the catalogue to land where
+§7 asks. M-39 measures it per genre.
+
+**And the floor is not two hundred words.** Fitting the pilot's 45 gives **duration ≈ 0.76 seconds
+per word** — about 79 sung words a minute, spread 26s either side — and that fit says a 200-word
+lyric runs 2:28, which is the pilot's own average. *A floor set at the mean changes nothing.* The
+figure that lands 3:36 is **about 288 words**, and three verses of the pilot's own length reach only
+around 215 words and 2:44, so **the verse rule alone does not get there either**. The pilot's longest
+lyric is 280 words and its longest take is 4:12, so this is inside what Suno has already done rather
+than an extrapolation past it. M-50 sets the exact number; what is settled here is that it is near
+three hundred, not two hundred, and that **the lyrics get about 40% longer than the pilot's**. Where
+a form takes a solo the break buys time with no words, so lane-rock, Frontier Reels and void-lounge
+should need less of the increase than the other five — untested, and M-39's to confirm.
+
+**Solos: lane-rock, Frontier Reels and void-lounge, and no others.** Blues, jazz and rock are
+real-world words and the station has its own nine forms, so the mapping was the operator's to make:
+the rock form, the dance-tune form where a fiddle break is idiomatic, and the late-club torch that
+is this station's jazz — 260 songs. **Not void-ballads and not core harmonies**: one voice with one
+instrument, and a thirty-one-voice chorus, are forms defined by not having a solo, and stretching
+them to fill an hour would cost the thing that makes them worth having. None of the pilot's 45
+carries an instrumental tag of any kind, so unlike the word floor **this lever is untested** — M-39
+measures it per genre, which is why that card runs after each genre's audio rather than at 500.
+
+### D-088 · The floor is 288 words, the pilot is exempt by id, and §7's stated targets do not move — 2026-08-16
+
+M-50, the card D-087 asked for. §12 gains two rules — **rule 9, three verse sections; rule 10, 288
+sung words** — and `writing.py` reads both numbers out of §12 like every other threshold, so editing
+the brief is what changes the command (D-071).
+
+**Why 288 and not 200 or 233.** Re-fitting the pilot's 45 with the counter's own definition of a word
+— anything on a line that is not a section tag, repeats included — gives **take ≈ 0.763 seconds a
+word**, and **288 words lands on 216 seconds, which is 3:36 exactly**. That is the number the 455
+still to be written have to average, because the pilot is fixed at 2:29 and §7 wants the 500 near
+3:30. A floor at 200 is the pilot's own mean and would change nothing; three verses of the pilot's
+length reach about 215 words and 2:44, so the verse rule does not get there alone. **The two rules do
+different jobs**: rule 9 fixes the shape the operator asked for and rule 10 buys the seconds.
+
+**A floor above the average is deliberate, and it costs §7's bottom band.** A lyric written at the
+floor comes back near 3:36 and the rest sit above it, so **the 2:00–3:00 band §7 asks 28% of the
+catalogue to fill is now fed by Suno's own spread rather than by design**. That is the trade: the
+failure this stage exists to fix is a fourteen-song hour running 35 minutes, and overshooting means
+an hour needs thirteen songs instead of fourteen, which the back-timer handles. Undershooting means
+the hour does not exist. §7 says so in those words rather than leaving the table looking unmet.
+
+**§7's stated per-song targets stay exactly as they are.** The alternative was to raise every
+`target_duration` by the 61.7 seconds Suno came in short, and that would have been a fiction: the
+stated target never reaches the model, and the pilot proved the take follows the word count and not
+the number in the file. So the target stays the honest intent for the take and the thing the operator
+judges by ear, and the length is bought with words. What §7 gains is the conversion table that turns
+one into the other, and the warning that **0.76 s/word is relay-pop's rate at 110–130 BPM and the
+only rate anyone has measured** — M-39 re-measures it as each genre's audio lands.
+
+**The exemption is four album ids in §12, not a flag in code** (D-087). `al_001` … `al_004` are
+exempt from rules 9 and 10 permanently. Their failures are counted and returned marked rather than
+dropped, which is how the floor can be watched working on the only lyrics that exist: **27 of the 45
+are short on verses and all 45 are short on words.** D-087 predicted 23 short on words, which was the
+count against a 200-word floor; against the floor this card actually sets it is every one of them.
+`count_writing()` returns every finding with `exempt` and `fatal` on it and `check_writing()` keeps
+only the fatal ones, so a rule that goes red for nobody is still visible to a test.
+
+**Solos are §7 prose and not a §12 rule.** Lane-rock, Frontier Reels and void-lounge take an
+instrumental break in roughly one song in three, never fewer than two on an album, written as a
+section tag in the lyric *and* an arrangement note in the prompt naming an instrument the band's
+style card already lists. Whether a break is a solo or a bar of vamping is a listening judgement and
+§12 counts arithmetic only, so nothing here goes red — M-20 is what puts the soloing instrument on
+twenty style cards, and M-39 is what confirms the break buys time.
+
+**One module became two.** M-50 took `writing.py` past §31's 400 lines, so the reading of §12 — the
+thresholds, the two word lists, the four exempt ids — is now `music/commission.py` and `writing.py`
+does the counting. One file reads the brief, one counts against it.

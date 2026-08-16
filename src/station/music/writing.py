@@ -1,4 +1,4 @@
-"""`COMMISSION.md` §12 — the eight writing rules, counted.
+"""`COMMISSION.md` §12 — the ten writing rules, counted.
 
 `check.py` counts identity and arithmetic: ids, song totals, release years. This module counts the
 things that make 500 songs 500 *different* songs, and it exists for one measured reason. Across six
@@ -8,22 +8,28 @@ one set went red (M-45, and D-069's closing line). So the quality rules move to 
 works.
 
 **Nothing here is a new rule.** Rule 5 is §3's swap-the-nouns test, rule 6 is §6's one-fact rule,
-rules 1 to 4 are §7's shape rules. Each was already written down and each was already ignored.
+rules 1 to 4 are §7's shape rules, and rules 9 and 10 are §7's duration table read backwards through
+the one measurement the pilot produced — 0.76 seconds of take per sung word (M-50, D-088). Each was
+already written down and each was already ignored.
 
-**The numbers and the two word lists are read out of §12, never kept here.** A threshold in code and
-a threshold in the writer's brief drift apart within a week, and the writer's copy is the one that
-gets read. Same reasoning as the anchor years in `check.py`.
+**The numbers, the two word lists and the exempt album ids are read out of §12, never kept here** —
+`commission.py` does that reading. A threshold in code and a threshold in the writer's brief drift
+apart within a week, and the writer's copy is the one that gets read.
 
-A rule may be **owed to a card** (§12): counted, reported, but not fatal until that card is marked
-DONE in `MUSIC_TASKS.md` — at which point it goes red, so the card cannot close over undone work.
-This is `plan.yaml`'s `owed_to:` mechanism (D-069) applied to prose instead of counts.
+A finding may fail to be fatal in two ways, and both are visible on it. A rule may be **owed to a
+card** (§12): counted but not fatal until that card is marked DONE in `MUSIC_TASKS.md`, at which
+point it goes red so the card cannot close over undone work — `plan.yaml`'s `owed_to:` mechanism
+(D-069) applied to prose. And an album may be **exempt**: the pilot's four are exempt from rules 9
+and 10 permanently, because the operator has accepted those 45 takes and no card will re-cut them
+(D-087). Neither kind is dropped — `count_writing()` returns both, marked, because a rule nobody can
+watch working is a rule nobody trusts.
 """
 
 from __future__ import annotations
 
 import re
 from collections import Counter, defaultdict
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from itertools import pairwise
 from pathlib import Path
 
@@ -32,82 +38,21 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from station.music import wiki
 from station.music.check import TASKS_FILE, CheckError, Problem, music_cards
+from station.music.commission import COMMISSION_FILE, Rules, load_rules
 
-COMMISSION_FILE = "COMMISSION.md"
 LYRICS_DIR = "production/lyrics"
-RULES = (1, 2, 3, 4, 5, 6, 7, 8)
 
-# §12's rule table: `| 1 | more than `40%` of an album's ... | album | `M-47` |`. The threshold is
-# the first backticked value in the description; the last column is the card that owes the rule.
-_RULE_ROW = re.compile(
-    r"^\|\s*([1-8])\s*\|([^|]*)\|[^|]*\|\s*(?:`(M-\d+)`|—)\s*\|\s*$", re.MULTILINE
-)
-_THRESHOLD = re.compile(r"`(\d+)(%?)`")
-_MIN_ALBUM = re.compile(r"counted only on albums of `(\d+)` songs or more")
+__all__ = ["Finding", "check_writing", "count_writing", "load_lyrics"]
 
 
 @dataclass(frozen=True)
-class Rules:
-    """§12, parsed. `threshold` is a share for the percentage rules and a count for the rest."""
+class Finding:
+    """One rule, broken — and the two reasons `make check` might still stay green on it."""
 
-    threshold: dict[int, float]
-    owed_to: dict[int, str]
-    min_album_songs: int
-    world_nouns: tuple[str, ...]
-    studio_words: tuple[str, ...]
-
-    def pattern(self, terms: tuple[str, ...]) -> re.Pattern[str]:
-        """§12's word lists are matched as written, whole words, any case."""
-        longest_first = sorted(terms, key=len, reverse=True)
-        return re.compile(r"\b(" + "|".join(re.escape(t) for t in longest_first) + r")\b", re.I)
-
-
-def _blockquote(text: str, heading: str) -> tuple[str, ...]:
-    """The `·`-separated word list under one `### ` heading in §12."""
-    body = text.split(f"\n### {heading}", 1)
-    if len(body) == 1:
-        raise CheckError(f"{COMMISSION_FILE} §12 has no `### {heading}` section")
-    quoted = re.search(r"^((?:> [^\n]*\n)+)", body[1], re.MULTILINE)
-    if not quoted:
-        raise CheckError(f"{COMMISSION_FILE} §12's `{heading}` has no `> ` word list under it")
-    joined = " ".join(line.lstrip("> ").strip() for line in quoted.group(1).splitlines())
-    return tuple(term.strip() for term in joined.split("·") if term.strip())
-
-
-def load_rules(commission: Path) -> Rules:
-    """Read §12, or fail naming what stopped matching."""
-    try:
-        text = commission.read_text(encoding="utf-8")
-    except FileNotFoundError:
-        raise CheckError(f"missing {commission} — section 12 holds the writing rules") from None
-    thresholds: dict[int, float] = {}
-    owed: dict[int, str] = {}
-    for number, description, card in _RULE_ROW.findall(text):
-        found = _THRESHOLD.search(description)
-        if not found:
-            raise CheckError(f"{COMMISSION_FILE} §12 rule {number} states no `number` to count to")
-        value, percent = found.groups()
-        thresholds[int(number)] = int(value) / 100 if percent else int(value)
-        if card:
-            owed[int(number)] = card
-    if sorted(thresholds) != list(RULES):
-        raise CheckError(
-            f"{COMMISSION_FILE} §12 gives rules {sorted(thresholds)}, not {list(RULES)}. Each row "
-            f"reads `| N | … `number` … | over | `M-NN` or — |` and that shape is what makes the "
-            f"table readable from here."
-        )
-    floor = _MIN_ALBUM.search(text)
-    if not floor:
-        raise CheckError(
-            f"{COMMISSION_FILE} §12 no longer says which albums are too short to count"
-        )
-    return Rules(
-        threshold=thresholds,
-        owed_to=owed,
-        min_album_songs=int(floor.group(1)),
-        world_nouns=_blockquote(text, "Rule 5 · the world's own nouns"),
-        studio_words=_blockquote(text, "Rule 6 · what counts as a studio anecdote"),
-    )
+    rule: int
+    problem: Problem
+    exempt: bool = False
+    fatal: bool = False
 
 
 # --- the lyrics -------------------------------------------------------------------------------
@@ -159,17 +104,30 @@ _TRAILING_NUMBER = re.compile(r"\s*\d+$")
 _ECHO = re.compile(r"\([^()\n]*\w[^()\n]*\)")
 _THIRD_PERSON = re.compile(r"\b(he|him|his|she|her|hers)\b", re.IGNORECASE)
 _PROPER_NAME = re.compile(r"[A-Z][a-z]{2,}")
+# A sung word: starts with a letter, and an apostrophe or hyphen inside it does not split it.
+_WORD = re.compile(r"[^\W\d_][\w'\u2019-]*")
+_VERSE = "verse"
+
+# §7: a lyric at rule 10's floor comes back near 3:36, which is what the remaining 455 have to
+# average. The floor itself is read from §12, so a shorter lyric is reported in proportion to it
+# rather than against a copy of §7's seconds-per-word.
+_FLOOR_TAKE_SEC = 216
 
 
-def _sections(lyric: str) -> str:
-    """A song's shape: its section tags in order, with the numbering and the staging stripped."""
+def _section_names(lyric: str) -> list[str]:
+    """The section tags in order, with the numbering and the staging stripped."""
     names = []
     for line in lyric.splitlines():
         tag = _TAG.match(line)
         if tag:
             head = tag.group(1).split(" - ")[0].split(",")[0].strip().lower()
             names.append(_TRAILING_NUMBER.sub("", head))
-    return " / ".join(names)
+    return names
+
+
+def _sections(lyric: str) -> str:
+    """A song's shape, as one string — what rule 1 counts repeats of."""
+    return " / ".join(_section_names(lyric))
 
 
 def _body(lyric: str) -> str:
@@ -193,33 +151,67 @@ def _has_named_character(body: str) -> bool:
     return False
 
 
-def _lyric_rules(music: Path, rules: Rules) -> list[tuple[int, Problem]]:
-    """Rules 1 to 5, over `music/production/lyrics/`."""
+def _take(words: float, rules: Rules) -> str:
+    """What §7 says a lyric of this length comes back as, scaled off rule 10's own floor."""
+    seconds = round(_FLOOR_TAKE_SEC * words / rules.threshold[10])
+    return f"{int(seconds) // 60}:{int(seconds) % 60:02d}"
+
+
+def _song_rules(
+    album_id: str, song: LyricSong, rules: Rules, nouns: re.Pattern[str]
+) -> list[Finding]:
+    """Rules 5, 9 and 10 — the three counted over one song rather than over an album."""
+    body = _body(song.lyrics)
+    named = f'{song.id} "{song.title}"'
+    carried = {m.group(0).lower() for m in nouns.finditer(body)}
+    verses = sum(1 for name in _section_names(song.lyrics) if name.startswith(_VERSE))
+    words = len(_WORD.findall(body))
+    counted: list[tuple[int, bool, str]] = [
+        (
+            5,
+            len(carried) < rules.threshold[5],
+            f"carries {len(carried)} of the world's own nouns, and §12 asks for "
+            f"{rules.threshold[5]:g}. The world supplies the furniture (§3); this lyric would "
+            f"read the same on Earth",
+        ),
+        (
+            9,
+            verses < rules.threshold[9],
+            f"has {verses} verse section(s), and §12 rule 9 asks for {rules.threshold[9]:g}",
+        ),
+        (
+            10,
+            words < rules.threshold[10],
+            f"is {words} sung words, and §12 rule 10 asks for {rules.threshold[10]:g} — this take "
+            f"comes back near {_take(words, rules)}, and the hour needs "
+            f"{_take(rules.threshold[10], rules)} (§7)",
+        ),
+    ]
+    return [
+        Finding(rule, Problem(album_id, f"{named} {detail}"))
+        for rule, red, detail in counted
+        if red
+    ]
+
+
+def _lyric_rules(music: Path, rules: Rules) -> list[Finding]:
+    """Rules 1 to 5 and 9 to 10, over `music/production/lyrics/`."""
     nouns = rules.pattern(rules.world_nouns)
-    out: list[tuple[int, Problem]] = []
+    out: list[Finding] = []
     for album in load_lyrics(music / LYRICS_DIR):
         where = f'{album.album.id} "{album.album.title}"'
+        exempt = album.album.id in rules.exempt_albums
         for song in album.songs:
-            body = _body(song.lyrics)
-            carried = {m.group(0).lower() for m in nouns.finditer(body)}
-            if len(carried) < rules.threshold[5]:
-                out.append(
-                    (
-                        5,
-                        Problem(
-                            album.album.id,
-                            f'{song.id} "{song.title}" carries {len(carried)} of the world\'s own '
-                            f"nouns, and §12 asks for {rules.threshold[5]:g}. The world supplies "
-                            f"the furniture (§3); this lyric would read the same on Earth",
-                        ),
-                    )
-                )
+            out += [
+                replace(found, exempt=exempt and found.rule in (9, 10))
+                for found in _song_rules(album.album.id, song, rules, nouns)
+            ]
         if len(album.songs) >= rules.min_album_songs:
             out += _album_shares(album, where, rules)
     return out
 
 
-def _album_shares(album: LyricsAlbum, where: str, rules: Rules) -> list[tuple[int, Problem]]:
+def _album_shares(album: LyricsAlbum, where: str, rules: Rules) -> list[Finding]:
     """Rules 1 to 4: the four ways an album turns into one song sung eleven times."""
     total = len(album.songs)
     shape, repeated = Counter(_sections(s.lyrics) for s in album.songs).most_common(1)[0]
@@ -253,7 +245,7 @@ def _album_shares(album: LyricsAlbum, where: str, rules: Rules) -> list[tuple[in
         ),
     ]
     return [
-        (rule, Problem(where, f"{detail} — §12 rule {rule}"))
+        Finding(rule, Problem(where, f"{detail} — §12 rule {rule}"))
         for rule, red, detail in counted
         if red
     ]
@@ -262,10 +254,10 @@ def _album_shares(album: LyricsAlbum, where: str, rules: Rules) -> list[tuple[in
 # --- the wiki ---------------------------------------------------------------------------------
 
 
-def _studio_facts(wiki_dir: Path, rules: Rules) -> list[tuple[int, Problem]]:
+def _studio_facts(wiki_dir: Path, rules: Rules) -> list[Finding]:
     """Rule 6: a band whose facts are mostly the room has nothing human for a presenter to say."""
     studio = rules.pattern(rules.studio_words)
-    out: list[tuple[int, Problem]] = []
+    out: list[Finding] = []
     for slug in wiki.written_genres(wiki_dir):
         genre = wiki.load_genre(wiki_dir / f"{slug}.yaml")
         tally: dict[str, list[int]] = defaultdict(lambda: [0, 0])
@@ -280,7 +272,7 @@ def _studio_facts(wiki_dir: Path, rules: Rules) -> list[tuple[int, Problem]]:
         for band_id, (anecdotes, songs) in sorted(tally.items()):
             if songs and anecdotes / songs > rules.threshold[6]:
                 out.append(
-                    (
+                    Finding(
                         6,
                         Problem(
                             slug,
@@ -292,7 +284,7 @@ def _studio_facts(wiki_dir: Path, rules: Rules) -> list[tuple[int, Problem]]:
     return out
 
 
-def _layer_b_calendar(wiki_dir: Path, rules: Rules) -> list[tuple[int, Problem]]:
+def _layer_b_calendar(wiki_dir: Path, rules: Rules) -> list[Finding]:
     """Rule 7: layer B has no floor to hit, so it is what carries the other two hundred years."""
     years = {
         album.release_year
@@ -303,7 +295,7 @@ def _layer_b_calendar(wiki_dir: Path, rules: Rules) -> list[tuple[int, Problem]]
     if not years or len(years) >= rules.threshold[7]:
         return []
     return [
-        (
+        Finding(
             7,
             Problem(
                 "the wiki",
@@ -315,7 +307,7 @@ def _layer_b_calendar(wiki_dir: Path, rules: Rules) -> list[tuple[int, Problem]]
     ]
 
 
-def _cross_genre_bands(wiki_dir: Path, rules: Rules) -> list[tuple[int, Problem]]:
+def _cross_genre_bands(wiki_dir: Path, rules: Rules) -> list[Finding]:
     """Rule 8: nine sealed worlds read as a database. An industry is bands who know each other."""
     slugs = wiki.written_genres(wiki_dir)
     loaded = {slug: wiki.load_genre(wiki_dir / f"{slug}.yaml") for slug in slugs}
@@ -323,7 +315,7 @@ def _cross_genre_bands(wiki_dir: Path, rules: Rules) -> list[tuple[int, Problem]
         slug: {b.name for b in genre.layer_a.bands + genre.layer_b.bands if b.name}
         for slug, genre in loaded.items()
     }
-    out: list[tuple[int, Problem]] = []
+    out: list[Finding] = []
     for slug in slugs:
         if not named[slug]:
             continue
@@ -333,7 +325,7 @@ def _cross_genre_bands(wiki_dir: Path, rules: Rules) -> list[tuple[int, Problem]
         }
         if len(foreign) < rules.threshold[8]:
             out.append(
-                (
+                Finding(
                     8,
                     Problem(
                         slug,
@@ -359,8 +351,13 @@ def _live(rules: Rules, cards: dict[str, bool], rule: int) -> bool:
     return cards[card]
 
 
-def check_writing(root: Path) -> list[Problem]:
-    """Every writing rule that is both broken and live. An empty list is a green `make check`."""
+def count_writing(root: Path) -> list[Finding]:
+    """Every broken rule, including the ones nothing goes red on — each marked with why.
+
+    The exempt and the owed findings are the point of returning them: M-50's word floor can be
+    watched working on the pilot's four albums today, which are the only lyrics that exist and the
+    only ones it will never apply to.
+    """
     music = root / "music"
     rules = load_rules(music / COMMISSION_FILE)
     cards = music_cards(music / TASKS_FILE)
@@ -371,4 +368,9 @@ def check_writing(root: Path) -> list[Problem]:
         + _layer_b_calendar(wiki_dir, rules)
         + _cross_genre_bands(wiki_dir, rules)
     )
-    return [problem for rule, problem in found if _live(rules, cards, rule)]
+    return [replace(f, fatal=not f.exempt and _live(rules, cards, f.rule)) for f in found]
+
+
+def check_writing(root: Path) -> list[Problem]:
+    """Every writing rule that is broken and red. An empty list is a green `make check`."""
+    return [f.problem for f in count_writing(root) if f.fatal]

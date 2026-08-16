@@ -6,9 +6,10 @@ layer-B song that has one, a release year that is not one of the eight anchors, 
 and an `owed_to:` marker that has outlived the card it names. Whether a name is too close to a real
 one stays a human judgement (M-03 narrows the pile; it does not clear it).
 
-**Whether the writing is any good used to be a judgement too, and that is what failed.** The eight
-rules of `COMMISSION.md` §12 — the ways an album becomes one song sung eleven times — are counted
-in `writing.py`, which is a separate pass over the same files (M-45).
+**Whether the writing is any good used to be a judgement too, and that is what failed.** The ten
+rules of `COMMISSION.md` §12 — the ways an album becomes one song sung eleven times, and the two
+ways it comes out too short to make an hour — are counted in `writing.py`, which is a separate pass
+over the same files (M-45, M-50).
 
 Why this is code: a checker prompt asks a model to count 105 songs across eleven albums, and a
 model that miscounts is indistinguishable from a wiki that is wrong (D-054). The counting half

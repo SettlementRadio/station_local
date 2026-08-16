@@ -360,6 +360,53 @@ A 56-minute music hour is 14 songs plus about six minutes of speech, so the aver
 
 **Most of this is pop and rock, so most of it is under four minutes.** Nothing under 2:00.
 
+**What decides the take is how many words it is given to sing, not the target you state.** Measured
+on the pilot's 45 — the only songs that have both a lyric and a duration — the take comes back at
+**0.76 seconds per sung word**, about 79 words a minute, spread 26 seconds either side; and it came
+in **61.7 seconds under the stated `target_duration` on all forty-five** (D-083, D-087). So the
+stated target stays exactly what it was — an honest statement of the take we want, and the thing the
+operator judges by ear — and the length is bought with words:
+
+| words of sung lyric | the take it comes out near |
+|---|---|
+| 200 — the pilot's own average | 2:29 |
+| 233 | 2:54 |
+| **288 — §12 rule 10's floor** | **3:36** |
+| 320 | 4:00 |
+
+**The 455 songs still to be written have to average 3:36**, because the pilot's 45 are fixed at 2:29
+and the 500 have to average 3:30 (D-087). A lyric written at the floor lands near 3:36 and the rest
+sit above it, so **the 2:00–3:00 band above is now fed by Suno's own spread rather than by design** —
+write past the floor and the bands look after themselves. *Nothing under 2:00* is unchanged, and a
+288-word lyric cannot get there.
+
+**That rate is relay-pop's, at 110–130 BPM, and it is the only rate anyone has measured.** M-39
+re-measures it as each genre's audio lands. A slow form will run longer per word, and so will a song
+with a solo in it — which is why the floor does not come down for the three forms that solo. The
+break is added to the words, not traded against them, until there is a measurement saying otherwise.
+
+### Instrumental solos
+
+**Three of the nine forms carry them: lane-rock, Frontier Reels and void-lounge** — the rock form,
+the dance-tune form where a fiddle break is idiomatic, and the late-club torch that is this station's
+jazz (D-087). 260 songs. **Roughly one song in three** on every album in those three forms takes an
+instrumental break, and never fewer than two songs on an album of five or more.
+
+A break is two things at once and one without the other produces nothing: **a section tag in the
+lyric** — `[Instrumental - fiddle break, 12 seconds]` — **and an arrangement note in the prompt**
+naming the instrument. The instrument has to be one the band's style card already lists. A solo is
+not an opportunity to hand a band an instrument it does not own; the card is fixed for the life of
+the band, and M-20 is where the soloing instrument gets named on it.
+
+**Not void-ballads and not core harmonies.** One voice with one instrument, and thirty-one voices,
+are forms defined by not having a solo, and stretching them to fill an hour costs the thing that
+makes them worth having. The other forms may take a break where the arrangement wants one; nothing
+asks them to.
+
+**`make check` does not count this.** Whether a break is a solo or a bar of vamping is a listening
+judgement, and §12 counts arithmetic only. None of the pilot's 45 carries an instrumental tag of any
+kind, so this is the untested half of the duration rule, and M-39 is what confirms it works.
+
 ### Everything else
 
 - **Every song has a vocal. No instrumentals.** Instrumental passages are wanted; wordless tracks are
@@ -477,7 +524,7 @@ presenter says about it, it has crossed the line.
 
 ---
 
-## 12. The eight writing rules — the ones the command counts
+## 12. The ten writing rules — the ones the command counts
 
 > **§1–§11 say what to write. This section says what `make check` refuses**, and it is the only part
 > of this file a machine reads. `src/station/music/writing.py` takes its numbers and its two word
@@ -504,11 +551,13 @@ rules, counted instead of asked for.
 | 6 | a band more than `50%` of whose song facts are studio anecdotes | layer-A band | — |
 | 7 | layer-B albums spanning fewer than `40` distinct release years | the whole wiki | `M-15` |
 | 8 | a genre file naming fewer than `3` bands that live in other genre files | genre file | `M-15` |
+| 9 | a lyric with fewer than `3` verse sections | song | — |
+| 10 | a lyric of fewer than `288` sung words, section tags not counted | song | — |
 
 **Rules 1–4 are shares of an album and are counted only on albums of `5` songs or more.** A share of
 four songs is not a distribution, and a two-track single would fail rule 1 for existing.
 
-Rules 1–5 read `music/production/lyrics/`. Rules 6–8 read `music/wiki/`.
+Rules 1–5, 9 and 10 read `music/production/lyrics/`. Rules 6–8 read `music/wiki/`.
 
 ### Owed to a card
 
@@ -558,3 +607,38 @@ any case.
 **Being a studio anecdote is not a fault.** *"The issued take keeps a false start, because Tor
 Dolo's count-in landed with the hall's ventilation and the band could not repeat it"* is a good
 fact. Half a band's records being one is the fault.
+
+### Rules 9 and 10 · the length of a lyric
+
+**A word is anything on a line that is not a section tag.** A line beginning `[` is staging and
+counts for nothing; everything else counts as written, repeats included — a chorus sung three times
+is sung three times. **A verse is a section tag whose name begins `Verse`**, so `[Verse 2]` and
+`[Verse 3 - half band]` both count and `[Pre-Chorus]` does not.
+
+**Why both, and why neither on its own.** The pilot's fourteen-song hour runs about 35 minutes where
+it needs 56, and M-18 measured the cause: Suno came in 61.7 seconds under the stated
+`target_duration` on all 45 takes, always short. §7 has the arithmetic — 0.76 seconds of take per
+sung word, so **288 words is 3:36**, which is what the 455 songs still to be written have to average.
+Three verses of the pilot's own length reach about 215 words and 2:44, so **the verse rule does not
+get there alone**; and the pilot's own average is 200 words, so **a 200-word floor would change
+nothing at all**. Rule 9 fixes the shape the operator asked for and rule 10 buys the seconds. The
+pilot's longest lyric is 280 words and its longest take is 4:12, so the floor is inside what has
+already been generated rather than an extrapolation past it.
+
+**Expect the lyrics to run about 40% longer than the pilot's.** A floor is a minimum the distribution
+sits above, not a target to write to.
+
+### Rules 9 and 10 · the four albums that are exempt
+
+The pilot's four albums, and no others:
+
+> al_001 · al_002 · al_003 · al_004
+
+**Settled, not deferred** (D-087). The operator: *"I'm OK with pilot songs. They will blend in among
+other songs we'll have, we won't redo them."* Forty-five short songs in five hundred is nine per cent
+of the catalogue and rotation spreads them. **No card proposes re-cutting them**, and this is not an
+`owed_to:` waiting for one — it is four ids, permanently.
+
+Their failures are still counted, because a rule nobody can see working is a rule nobody trusts:
+27 of the 45 are short on verses and every one of them is short on words. That is the same mechanism
+that carried rules 1–5 until M-47 landed, pointed at four albums instead of at a card.

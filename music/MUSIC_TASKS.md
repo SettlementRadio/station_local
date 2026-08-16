@@ -63,9 +63,10 @@ marked **NEXT**.
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
 | **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-49** old-system sessions grows to 90 · 2026-08-13 | **all done.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15. No genre carries an `owed_to:` marker any more |
 | 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-19** the fourteen-song listen · 2026-08-16 | **done, and the pilot passed.** 45 takes on Suno Pro v5.5, filed, licensed, measured and tagged · **the operator has listened and said yes**, so stages 4–6 run as written · only M-40 stays open, and it stays open until M-38 |
-| 2 · The wiki — the catalogue-wide pass | M-07 … M-15 | **M-15** the catalogue-wide pass · 2026-08-14 | **finished. The wiki is frozen.** 500 playable songs across 9 genre files, 25 bands and 63 albums · every label clears §5's floor · layer B carries 55 release years · all eight of §12's rules live and green |
+| 2 · The wiki — the catalogue-wide pass | M-07 … M-15 | **M-15** the catalogue-wide pass · 2026-08-14 | **finished. The wiki is frozen.** 500 playable songs across 9 genre files, 25 bands and 63 albums · every label clears §5's floor · layer B carries 55 release years · all eight of §12's rules as they then stood live and green (M-50 has since made it ten) |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-06** `music/catalogue.yaml` · 2026-08-16 | **all done.** The takes are measured (D-083), tagged (D-084), and joined into the one file the station's database ingests — 1,358 tracks, 45 of them playable, checked against the wiki by `make check` (D-085) |
-| 4 · Style cards — the other 20 bands | M-20 | — nothing yet | **M-20 is NEXT** and is the only runnable card in the file. Both things it waited on are done — the wiki froze on 2026-08-14 and the pilot passed on 2026-08-16 |
+| **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
+| **4 · Style cards — the other 20 bands** | M-20 | — nothing yet | **M-20 is NEXT.** Everything it waited on is done — the wiki froze on 2026-08-14, the pilot passed on 2026-08-16, and M-50 fixed the rules it has to apply |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20. **This is the long stage** — 455 songs, nine lyrics cards and nine Suno cards, alternating |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
@@ -93,11 +94,12 @@ and 3 are all closed: the wiki is frozen, the tooling exists and is green on the
 **M-19 passed on 2026-08-16**, which was the one decision everything after it was conditional on.
 Nothing is blocked on a judgement any more.
 
-**What is left is 455 songs, and it alternates.** M-20 gives the other twenty bands a fixed voice;
-then stage 5 goes genre by genre, an `[agent]` lyrics card and a `[you]` Suno card at a time, and a
-genre is finished before the next one starts. That pairing is the point — a problem shows up after
-about sixty songs instead of after 455. The two cards inside one genre cannot overlap, so from here
-**the sessions take turns rather than running side by side.**
+**What is left is 455 songs, and it alternates.** M-50 has fixed the writing rules the pilot showed
+were needed, M-20 gives the other twenty bands a fixed voice, and then stage 5 goes genre by genre — an
+`[agent]` lyrics card and a `[you]` Suno card at a time, a genre finished before the next one
+starts. That pairing is the point: a problem shows up after about sixty songs instead of after 455.
+The two cards inside one genre cannot overlap, so from here **the sessions take turns rather than
+running side by side.**
 
 **One thing the pilot did not settle**, and it is the operator's own words: *"I do expect to have
 better variety in the future with more styles."* The pilot is one genre on one label and could not
@@ -881,6 +883,94 @@ Depends on: M-04, M-05
 
 ---
 
+# Stage D · The duration rule
+
+**Added 2026-08-16 by operator instruction**, after M-19 passed. A lettered stage, like stage R, for
+the same reason: it is a mid-course correction that the numbered stages were written without.
+
+The pilot is fourteen songs of about 35 minutes where the hour needs 56, and M-18 measured why —
+Suno came in 61.7 seconds under the stated `target_duration` on average, *always* short, on all 45.
+**The catalogue cannot be fixed by asking for longer songs; it has to be given more to sing.**
+
+### M-50 · `[agent]` Three verses, a word floor, and solos where the form takes them — **DONE 2026-08-16**
+Goal: The 455 songs still to be written are long enough to make an hour, and `make check` says so
+before they are generated rather than after.
+Files: `music/COMMISSION.md` (§7 and §12), `src/station/music/writing.py`, `tests/unit/test_writing.py`
+Check: `make check` goes red, naming the album and the song, on any lyric with fewer than **3 verse
+sections** or fewer than **the word floor §12 states** (section tags not counted; the floor is set by
+this card, and the note below says it lands near 288). §12 gains the two rules and `writing.py` reads
+both thresholds *out of that section* rather than keeping a copy, as D-071 requires. §7 says which forms carry an instrumental solo and roughly how often. Green on
+everything that exists today.
+Note: **the pilot's four albums are exempt by name and this is settled, not deferred** (D-087). The
+operator: *"I'm OK with pilot songs. They will blend in among other songs we'll have, we won't redo
+them."* Forty-five short songs in five hundred is 9% and rotation spreads them. **No card proposes
+re-cutting `al_001` … `al_004`.** The exemption is four album ids written into §12, not a flag in
+code, and their failures are still *counted and reported* — 27 of 45 short on verses, 23 of 45 short
+on words — so the rule can be seen working today on the only lyrics that exist (D-071's mechanism,
+the same one that carried §12's rules 1–5 to M-47).
+Note: **the number to aim at is 3:36, and the floor is near 300 words, not 200.** §7 wants the 500 to
+average 3:30 and the pilot is fixed at 2:29, so the 455 still to be written have to average 3:36.
+Fitting the pilot's 45 gives **0.76 seconds per sung word** (≈79 words a minute, spread 26s either
+side), and that fit is what sets the floor:
+
+| words of sung lyric | predicted take |
+|---|---|
+| 200 — *the pilot's own average* | 2:28 |
+| 233 | 2:54 |
+| 281 | 3:30 |
+| **288** | **3:36** |
+
+So **a 200-word floor changes nothing** — it sits at the mean. Three verses of the pilot's own length
+reach about 215 words and 2:44, so the verse rule does not get there on its own either. The pilot's
+longest lyric is 280 words and its longest take is 4:12, so ~288 is inside what Suno has already
+done. **Expect the lyrics to be about 40% longer than the pilot's**, and set the floor knowing a
+floor is a minimum that the distribution sits above, not a target. Where a form takes a solo the
+break buys time with no words, so the three soloing forms should need less of the increase — but
+nothing measures that until lane-rock's audio lands, so do not discount the floor for it in advance.
+Note: **the solo rule covers lane-rock, Frontier Reels and void-lounge** — the rock form, the
+dance-tune form where a fiddle break is idiomatic, and the late-club torch that is this station's
+jazz. 260 songs. Not void-ballads or core harmonies: one voice with one instrument, and thirty-one
+voices, are both forms defined by not having a solo. An instrumental break is a section tag in the
+lyric *and* an arrangement note in the prompt; §7 is where how-often is stated.
+Note: **this card also decides what to do about §7's stated targets.** The writer aims at
+`target_duration` and Suno missed it by 61.7s on all 45. Either the stated targets rise to absorb
+that, or they stay the honest intent and the word floor does the work. Raise it; do not guess.
+Result: **§12 is ten rules.** Rule 9 goes red on a lyric with fewer than **3 verse sections**, rule 10
+on one of fewer than **288 sung words**, both naming the album and the song, and `writing.py` reads
+both numbers out of §12 rather than keeping a copy. `make check` is green.
+**288 is measured, not chosen** (D-088). Re-fitting the pilot's 45 with the counter's own definition
+of a word — anything on a line that is not a section tag, repeats included — gives **0.763 seconds of
+take per word**, and 288 words lands on **216 seconds, which is 3:36 exactly**: the average the 455
+still to be written have to hit for the 500 to reach §7's 3:30. §7 gains that conversion as a table,
+and the warning that the rate is relay-pop's at 110–130 BPM and the only one anyone has measured.
+**§7's stated per-song targets were left alone, deliberately.** Raising every `target_duration` by
+the 61.7s Suno came in short would have been a fiction — the stated target never reaches the model,
+and the pilot proved the take follows the word count instead. The target stays the honest intent and
+the thing you judge by ear; the words are what buy the seconds.
+**The floor sits above the average on purpose, and it costs §7's bottom band.** A lyric at the floor
+comes back near 3:36 and the rest sit above it, so **the 2:00–3:00 band §7 asks 28% of the catalogue
+to fill is now fed by Suno's own spread rather than by design.** §7 says so in those words. The trade
+is deliberate: overshooting means an hour needs thirteen songs instead of fourteen; undershooting
+means the hour does not exist.
+**The exemption is four ids in §12 and it is doing visible work.** `al_001` … `al_004` are exempt
+from rules 9 and 10 permanently, and their failures are counted and returned marked rather than
+dropped: **27 of the 45 are short on verses and all 45 are short on words.** The note above predicted
+23 short on words — that was the count against a 200-word floor, and against the floor this card
+actually sets it is every one of them. Nothing in the pilot changed and nothing about it will.
+**Solos are §7 prose, not an eleventh rule.** Lane-rock, Frontier Reels and void-lounge take a break
+in **roughly one song in three, never fewer than two on an album**, written as a section tag in the
+lyric *and* an arrangement note in the prompt naming an instrument the band's style card already
+lists. Whether a break is a solo or a bar of vamping is a listening judgement and §12 counts
+arithmetic only. **None of the pilot's 45 carries an instrumental tag of any kind**, so this is the
+untested half of the rule — M-20 puts the instrument on twenty style cards, M-39 confirms it works.
+**One module became two.** M-50 took `writing.py` past §31's 400 lines, so reading §12 — the
+thresholds, the two word lists, the four exempt ids — is now `src/station/music/commission.py`, and
+`writing.py` only counts against it.
+Depends on: M-19 — **the measurement this rests on is the pilot's, so it could not have been written
+before the pilot was measured and judged**
+
+---
+
 # Stage 4 · Style cards for the rest
 
 ### M-20 · `[agent]` Style cards for the other 20 bands — **NEXT**
@@ -889,7 +979,10 @@ Files: `music/production/styles.yaml`
 Check: All 25 layer-A bands have a six-line card. `make music-albums` shows `yes` in the STYLE
 column for every playable album in every genre.
 Note: this is the card both chains converge on — it needs the wiki frozen **and** the pilot judged.
-Depends on: M-15, M-19
+Note: **M-50 runs first and this card applies it.** A style card fixes a band's instruments for the
+life of the band, so a lane-rock, Frontier Reels or void-lounge band that solos needs the soloing
+instrument named on its card — doing M-50 afterwards would mean revisiting twenty cards.
+Depends on: M-15, M-19, M-50
 
 ---
 
