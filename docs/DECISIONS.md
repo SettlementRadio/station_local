@@ -2438,3 +2438,48 @@ twenty style cards, and M-39 is what confirms the break buys time.
 **One module became two.** M-50 took `writing.py` past §31's 400 lines, so the reading of §12 — the
 thresholds, the two word lists, the four exempt ids — is now `music/commission.py` and `writing.py`
 does the counting. One file reads the brief, one counts against it.
+
+### D-089 · The last two undecided voices, and one singer in two bands — 2026-08-16
+
+M-20 carded the other twenty layer-A bands, and `COMMISSION.md` §7 makes the voice line fixed for
+the life of the band — so every one of them had to be settled now rather than at generation time.
+**Eighteen were already settled by the wiki**, which uses a pronoun for the singer, and D-073 and
+D-078 had deliberately closed two more in prose so that this card would not have to guess.
+
+**Two were left, and both are written male: Wend Amory (`b_039` Loose Cargo) and Sabin Loch
+(`b_067` Nine Lamps).** Neither name carries a pronoun anywhere in `music/wiki/`. With the other
+twenty-three fixed the catalogue stood at 16 female leads to 7 male, and both of these sit where a
+fourth female lead would have cost the most. Void-lounge is the sharper case: three of its four
+bands are led by low female voices and **two of those are the same singer**, so a fourth would have
+made the form one voice on two labels. The wiki says Loch *"sings higher and quieter than anybody
+expects"*, which a high light male tenor delivers against three contraltos; and it says Amory sings
+*"in a register low enough that the co-operative twice asked for a higher key and was twice
+refused"*, which a bass-baritone under Col Sennet's fiddle delivers. **Same call as D-061 and
+reversible on the same terms** — nothing depends on either until M-33 and M-36 generate them, and
+the fix before then is one word in one line. Nothing was written into `music/wiki/`.
+
+**Juna Carrow holds two cards.** She is the only person in the wiki in two layer-A bands (D-076),
+and §7's rule is about the band, not the person, so `b_065` Coldwater Court and `b_066` The Quiet
+Half each get their own. `b_065`'s voice line covers **two singers thirty years apart** — Bela Runn
+to 2604 and Carrow from 2605 — which is admissible because both are low female voices and the wiki
+says Carrow did not sing it her own way for two years. `b_066`'s line names her as the same voice
+now singing her own way, and the two bands are separated by everything except the voice: a Purist
+room with a piano and nothing else, against a wide empty dance hall at half the tempo. A style card
+that pretended these were two different singers would have contradicted the presenter.
+
+**The break instrument is on the card, which is what M-50 asked M-20 for.** §7 requires a solo to
+name an instrument the band's style card already lists, so every band in the three soloing forms
+says which one takes it inside its own `instruments` line — lead guitar in four of the five
+lane-rock bands, amplified resonance pipes in `b_017` and pipes traded against fiddle in `b_038`,
+fiddle in all four reel bands, piano in three of the four void-lounge bands and the synth-harpsichord
+in `b_067`, which has no piano in its line-up at all. **The two forms §7 forbids a solo say so in
+the exclude line** rather than by omission, because an exclude line is what the generator reads.
+
+**No line-up gained a player.** Seven bands have no backing singer anywhere in the wiki, and their
+cards read `backing: none` and exclude backing vocals outright — which turned out to be a separator
+rather than a gap: `b_018` is the only lane-rock band with no voice but the lead's, and `b_038`
+answers its singer with resonance pipes because there is nobody else in the band to do it. Where the
+wiki gives a band an instrument the palette would never suggest, the card puts it where the model
+cannot ignore it, with a tone description beside the in-world word — M-16's own practice for
+`b_004`'s composite guitars, and the reason a prompt can reach a model that has never heard of a
+resonance pipe.

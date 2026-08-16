@@ -66,8 +66,8 @@ marked **NEXT**.
 | 2 · The wiki — the catalogue-wide pass | M-07 … M-15 | **M-15** the catalogue-wide pass · 2026-08-14 | **finished. The wiki is frozen.** 500 playable songs across 9 genre files, 25 bands and 63 albums · every label clears §5's floor · layer B carries 55 release years · all eight of §12's rules as they then stood live and green (M-50 has since made it ten) |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-06** `music/catalogue.yaml` · 2026-08-16 | **all done.** The takes are measured (D-083), tagged (D-084), and joined into the one file the station's database ingests — 1,358 tracks, 45 of them playable, checked against the wiki by `make check` (D-085) |
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
-| **4 · Style cards — the other 20 bands** | M-20 | — nothing yet | **M-20 is NEXT.** Everything it waited on is done — the wiki froze on 2026-08-14, the pilot passed on 2026-08-16, and M-50 fixed the rules it has to apply |
-| 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20. **This is the long stage** — 455 songs, nine lyrics cards and nine Suno cards, alternating |
+| **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
+| **5 · The bulk — 8 genres, lyrics → audio → measure** | M-21 … M-39 | — nothing yet | **M-21 is NEXT** — relay-pop's remaining 7 albums, 60 songs. **This is the long stage** — 455 songs, nine lyrics cards and nine Suno cards, alternating, a genre finished before the next one starts |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -95,7 +95,7 @@ and 3 are all closed: the wiki is frozen, the tooling exists and is green on the
 Nothing is blocked on a judgement any more.
 
 **What is left is 455 songs, and it alternates.** M-50 has fixed the writing rules the pilot showed
-were needed, M-20 gives the other twenty bands a fixed voice, and then stage 5 goes genre by genre — an
+were needed, M-20 has given the other twenty bands a fixed voice, and stage 5 now goes genre by genre — an
 `[agent]` lyrics card and a `[you]` Suno card at a time, a genre finished before the next one
 starts. That pairing is the point: a problem shows up after about sixty songs instead of after 455.
 The two cards inside one genre cannot overlap, so from here **the sessions take turns rather than
@@ -973,7 +973,7 @@ before the pilot was measured and judged**
 
 # Stage 4 · Style cards for the rest
 
-### M-20 · `[agent]` Style cards for the other 20 bands — **NEXT**
+### M-20 · `[agent]` Style cards for the other 20 bands — **DONE 2026-08-16**
 Goal: Every layer-A band in the catalogue has a fixed voice.
 Files: `music/production/styles.yaml`
 Check: All 25 layer-A bands have a six-line card. `make music-albums` shows `yes` in the STYLE
@@ -982,6 +982,32 @@ Note: this is the card both chains converge on — it needs the wiki frozen **an
 Note: **M-50 runs first and this card applies it.** A style card fixes a band's instruments for the
 life of the band, so a lane-rock, Frontier Reels or void-lounge band that solos needs the soloing
 instrument named on its card — doing M-50 afterwards would mean revisiting twenty cards.
+Result: **all 25 layer-A bands are carded and every one of the 63 playable albums reads `yes` in
+`make music-albums`.** The twenty new cards carry the same six lines in the same order as M-16's
+five, built from each band's line-up, home, label and movement as the frozen wiki states them.
+**M-50 is applied where it lands.** Every lane-rock, Frontier Reels and void-lounge band names the
+instrument that takes the instrumental break inside its own `instruments` line — lead guitar in four
+of the five lane-rock bands, the amplified resonance pipes in `b_017` and traded with the fiddle in
+`b_038`, the fiddle in all four reel bands, the piano in three of the four void-lounge bands and the
+synth-harpsichord in `b_067`, which has no piano in its line-up. The two forms §7 forbids a solo
+put **`instrumental solos` in the exclude line** rather than leaving it unsaid, so M-28 and M-29
+cannot be talked into one.
+**Two voices had to be decided and both are male** (D-089) — Wend Amory of `b_039` Loose Cargo and
+Sabin Loch of `b_067` Nine Lamps, the only two lead singers left in the wiki with no pronoun
+anywhere. Same call as D-061 and reversible on the same terms until their genre's Suno card runs.
+The 25 bands now read 16 female leads to 9 male, and both decisions went to the band where a fourth
+female lead would have cost the most: void-lounge would otherwise have been three low female voices,
+**two of them the same singer.**
+**Juna Carrow is one singer in two bands and the cards say so.** `b_065`'s voice line covers two
+women who held that chair thirty years apart, which works because both are low female voices and
+Carrow sang it Bela Runn's way for her first two years; `b_066`'s line names her as the same voice
+now singing her own way, and the two bands are separated by everything else — a Purist room with
+nothing but a piano in it against a wide empty dance hall at half the tempo.
+**No line-up gained a player.** Seven bands have no backing singer in the wiki, and their cards say
+`backing: none` and exclude backing vocals outright, which is a real separator rather than an
+omission: `b_018` is the only lane-rock band with no voice but the lead's, and `b_038` answers its
+singer with resonance pipes because there is nobody else in the band to do it. Nothing here names a
+real artist, band, producer or label (§8).
 Depends on: M-15, M-19, M-50
 
 ---
@@ -1012,7 +1038,7 @@ start of that month.
 | 8 | M-28 core-harmonies | M-37 core-harmonies — 1 band | 15 |
 | 9 | M-29 void-ballads | M-38 void-ballads — 1 band | 10 |
 
-### M-21 … M-29 · `[agent]` Lyrics and prompts — 51 albums, 455 songs
+### M-21 … M-29 · `[agent]` Lyrics and prompts — 51 albums, 455 songs — **M-21 is NEXT**
 Files: one file per album under `music/production/lyrics/`
 Check: every song has lyrics, a generation prompt and an exclude line; every lyric passes the
 swap-the-nouns test; every song has a vocal. M-21 writes `al_005.yaml` … `al_011.yaml`.

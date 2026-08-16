@@ -309,9 +309,13 @@ def test_a_genre_owed_to_a_card_that_does_not_exist_is_a_failure(tmp_path: Path)
 
 
 def test_the_cards_come_out_of_music_tasks() -> None:
+    """The unfinished example is **M-42, the last card in the file**, for the reason given in
+    `test_a_genre_owed_to_a_live_card_is_not_counted_against_the_plan`: this named M-20 until M-20
+    was written, at which point a green test went red because the work it called unfinished had
+    been finished. What is under test is that a card's state is read out of the file at all."""
     cards = check.music_cards(ROOT / "music" / check.TASKS_FILE)
     assert cards["M-01"] is True, "stage 0 is finished"
-    assert cards["M-20"] is False, "the other 20 bands have no style card yet"
+    assert cards["M-42"] is False, "the full listen is the last thing that happens"
 
 
 def test_a_missing_tasks_file_stops_the_check_rather_than_passing_it(tmp_path: Path) -> None:

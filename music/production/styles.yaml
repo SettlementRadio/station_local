@@ -24,6 +24,33 @@
 # jangle, sunshine pop and soft rock — never dance-pop and never modern produced radio pop. M-47
 # rewrote the production and exclude lines to say so. Voice, backing and instruments are the
 # wiki's line-ups and were not touched; a band's voice line is fixed for its life.
+#
+# M-20 added the other twenty, in wiki order: lane-rock (b_016 … b_061), Frontier Reels
+# (b_037 … b_062), old-system sessions (b_046 … b_063), void-lounge (b_064 … b_067), core
+# harmonies (b_072) and void ballads (b_074, b_075). Every one of them is built the same way —
+# the line-up, home, label and movement the wiki states, put into the form's own palette from
+# COMMISSION.md section 2, and then deliberately pushed apart from the other bands in its genre
+# so that a genre's hour is not one sound wearing several band names.
+#
+# Two rules from COMMISSION.md section 7 are visible in the cards themselves.
+#
+#   The break instrument. Lane-rock, Frontier Reels and void-lounge take an instrumental break in
+#   roughly one song in three, and the instrument has to be one the card already lists — so every
+#   band in those three forms says which instrument takes the break, in its own instruments line.
+#   The lyrics cards write the section tag and the arrangement note against that word. The other
+#   three forms here say nothing about breaks, except core harmonies and void ballads, which
+#   exclude them: thirty-one voices, and one voice with one instrument, are forms defined by not
+#   having a solo.
+#
+#   No line-up gains a player. Where the wiki gives a band no backing singer, its backing line says
+#   so and its exclude line keeps backing vocals out (b_018, b_038, b_065, b_066, b_067, b_074,
+#   b_075). Where the wiki gives it an instrument nobody would guess from the palette — resonance
+#   pipes in a rock band, a synth-harpsichord where the piano should be, a box that holds one note
+#   — the card puts that instrument where the generator cannot ignore it.
+#
+# In-world instrument names are kept only where a tone description follows them, which is M-16's
+# own practice for b_004's composite guitars: the prompt has to reach a model that has never heard
+# of a resonance pipe, so the card says what it sounds like as well as what it is.
 
 # Measure Kindly — Concordance, Civic Lantern, 2615–. Four clerks; Synthesist until 2622, then
 # Localist, writing around the reopened public halls. Vara Ennel leads; Sel Ardin arranges the
@@ -79,3 +106,312 @@ b_005:
   production: compact close sunshine pop and soft rock, dry and small, short songs, gentle tape warmth, no large reverb
   tempo range: 76-116
   exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+
+# --- lane-rock (M-20) --------------------------------------------------------------------------
+#
+# Five bands, three labels, and the two on the co-operative have not agreed about anything since
+# 2619 — so they are pushed furthest apart. Second Hitch are the small dry current band, Pipe and
+# Hammer the hall band with the pipes carrying the bottom, Ballast Weather the steady twin-guitar
+# band with no backing singer in the line-up at all, Burn Day Wages the whole-crew singalong on
+# hand-built drums, Turn and Burn the fast one with a keyboard in it. Every card names its break
+# instrument (COMMISSION.md section 7).
+
+# Second Hitch — Cold Harbor, Harbor Standard, 2619–. Four transfer-shed loaders, Localist, still
+# recording in the bay they started in and twice refused a core studio. Wen Arbo writes in the
+# words the crew uses on shift.
+b_016:
+  voice: male lead, plain mid baritone, conversational and unforced, sings hard on the beat, gets louder rather than higher at the end of a chorus, no vibrato
+  backing: two voices from the band on the chorus only, in unison under the lead rather than in harmony, all four shouting the hook on the last one
+  instruments: two bright thin-toned electric guitars, one rhythm and one lead — the lead guitar takes the instrumental break — electric bass, compact drum kit
+  production: dry pub rock tracked live in a small hard-walled shed bay, guitars close-mic'd and mid-forward, drums tight and untreated, nothing overdubbed but a doubled chorus vocal
+  tempo range: 120-158
+  exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production
+
+# Pipe and Hammer — Forge, Deep Register, 2592–. The band Forge measures itself against. Localist
+# until Juno Kerrick amplified the resonance pipes in 2612, Synthesist since. Havel Ost sings
+# standing; the pipes are tuned to the hall and the guitars follow, so no two records share a key.
+b_017:
+  voice: male lead, big hall baritone with a hard edge at the top of the range, pushes into the chorus rather than belting it, sings slightly ahead of the band, no vibrato
+  backing: one male harmony voice from the bass chair, low under the lead on choruses only, never a stack and never above him
+  instruments: amplified resonance pipes — long alloy tubes, deep organ tone, the low end of the band — and they take the instrumental break; rhythm electric guitar, electric bass, drum kit with struck alloy
+  production: riff-led hall rock at the hard-rock edge, tracked live in a large ringing hall, the alloy organ tone carrying the bottom under the guitar, drums roomy, guitars mid-range and unpolished
+  tempo range: 104-140
+  exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+
+# Ballast Weather — Forge, Deep Register, 2597–. The same four players since 2597, Synthesist,
+# playing the same four settlements every year in the same order. Isa Lorne runs the money. Kolm
+# Estry doubles on resonance pipes, which is why the label signed a second Forge band at all.
+# The wiki gives this band no backing singer, and the card keeps it that way.
+b_018:
+  voice: female lead, warm mid alto, level and unhurried, plain diction, ends lines flat rather than lifting them, never belts
+  backing: none — nobody in this band sings but the lead, and the second guitar answers her line where a harmony voice would be
+  instruments: two bright thin-toned electric guitars — the lead guitar takes the instrumental break — electric bass, resonance pipes doubling the bass under the chorus, drum kit
+  production: even mid-tempo heartland rock, tracked live on a shop floor, twin guitars hard apart, the alloy pipe tone thickening the low end where the chorus lands, steady unhurried drums, light compression
+  tempo range: 100-136
+  exclude: backing vocals of any kind, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+
+# Burn Day Wages — the between, Common Wake Cooperative, 2596–. A hauler crew, Localist, the
+# co-operative's biggest act since 2600, who put every player's name on one line as the condition
+# of signing. Hess Vantry's tuned oxygen-tank drums and Una Brack's stripped-wire chimes are the
+# Freeholds' percussion built from survival, and Brack is the fifth voice from 2604.
+b_019:
+  voice: male lead, high hard tenor, carrying and a shade nasal, pushes at the top of every chorus and stays there, plain and undecorated, no vibrato
+  backing: whole-crew chorus of four and five voices in unison rather than harmony, mixed registers with one woman's voice clearly audible above the men, answering the lead through the verses and singing the chorus as loud as he does
+  instruments: two electric guitars — the lead guitar takes the instrumental break — electric bass, drum kit with tuned oxygen-tank drums, stripped-wire chimes
+  production: boogie-driven rock tracked whole-band in one live room, tank drums left ringing rather than damped, the crew chorus mixed level with the lead, loose rather than gridded, light compression
+  tempo range: 112-150
+  exclude: synthesizers, electronic drums, brass, orchestral strings, stacked studio harmony, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+
+# Turn and Burn — the between, Common Wake Cooperative, 2607–. Five haulers on the fastest circuit,
+# Synthesist, never longer than a turnaround in a port. Rhea Molt decides the set on the walk from
+# the berth and has never written one down; her voice is female by D-073. Iber Tance's keyboards
+# join in 2614 and are on both records. The other co-operative band is b_019 and this one is its
+# opposite on purpose.
+b_061:
+  voice: female lead, bright hard mezzo, fast and clipped, sings ahead of the beat, cuts line ends off short instead of holding them, no vibrato
+  backing: two male voices answering short phrases on the chorus, blunt and unpolished, never close harmony, the whole band shouting the last one
+  instruments: two electric guitars — the lead guitar takes the instrumental break and the keyboard takes it where the arrangement asks — electric bass, drum kit with struck alloy, compact electric organ-toned keyboards
+  production: fast boogie rock at the hard-rock edge, amplified and loud, tracked quickly in whatever hall the berth was next to, keyboard high beside the guitars, first-take feel, very little overdub
+  tempo range: 132-172
+  exclude: acoustic instruments, orchestral strings, brass, ballad tempos, stacked harmony, vocal tuning, whispered or rapped sections, dance and electronic production
+
+# --- Frontier Reels (M-20) ---------------------------------------------------------------------
+#
+# Fast dance music on salvaged and improvised instruments, and the fiddle is the break instrument
+# in all four. Two of them are Cold Harbor bands on the same label thirty years apart, so they are
+# separated by what is in the room: Wire and Rosin is a singer playing fiddle at the same time in a
+# wooden hall, Board and Bow is a caller over the top of the band with the floor audible. The
+# Foundry Set play reels underneath resonance pipes in a working shop; Loose Cargo recorded in a
+# loaded hold and sound like it.
+
+# Wire and Rosin — Cold Harbor, Harbor Standard, 2578–2610. Thirty-two years of dance halls; the
+# band the settlement hired when it wanted a floor filled. Hessa Lund sings and plays fiddle at the
+# same time and never recorded the two separately, which is why the takes are short and the band
+# stopped using a click. The guitar chair changes hands in 2604, so the harmony voice is written
+# without a gender and survives the change.
+b_037:
+  voice: female lead, clear high soprano with a hard edge, sings in short phrases between fiddle passages and never holds a long note, plain and unornamented
+  backing: one harmony voice from the guitar chair, a third below the lead, chorus only, and nothing under the verses
+  instruments: bright thin-toned composite fiddle taking every instrumental break, fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit played with brushes and sticks
+  production: reel-tempo rockabilly and old-time dance music tracked live in a wooden dance hall with no click, takes short and slightly rushing, light slapback on the voice, the floor audible behind the band
+  tempo range: 132-180
+  exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production
+
+# The Foundry Set — Forge, Deep Register, 2579–2599. Four shop workers who played reel tempos
+# underneath the settlement's resonance pipes, which nobody had tried and several people objected
+# to. Purist until 2591, Synthesist after, once Orsa Lipp conceded the pipes were amplified. They
+# rehearsed and twice recorded in a working pipe shop. Nobody in this line-up sings but Dane Verrow.
+b_038:
+  voice: male lead, dry mid tenor, flat and matter-of-fact, clips the ends of lines, sings against the fiddle he is playing himself
+  backing: none — no vocal harmony anywhere in this band; the pipes answer the vocal line where a second voice would be
+  instruments: composite fiddle and amplified resonance pipes trading the instrumental break between them, upright bass, cut-stock kit and struck alloy
+  production: jump blues and reel tempos under long alloy organ tones, recorded in a working pipe shop with its own long reverberation, bass and kit kept dry against the ringing room, slapback on the voice
+  tempo range: 128-172
+  exclude: vocal harmony and backing vocals, electric guitar, synthesizers, drum machines, brass section, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production
+
+# Loose Cargo — the between, Common Wake Cooperative, 2580–2612. A hauler crew who played the
+# dances at both ends of their own route and never toured without cargo. Wend Amory writes
+# everything and sings low enough that the co-operative twice asked for a higher key and was twice
+# refused; his voice is male by decision of this card. Col Sennet learned fiddle off recordings
+# played in a hold and bows unlike anybody else. Ilsa Brack sings one lead in the band's whole life.
+b_039:
+  voice: male lead, low bass-baritone, unhurried and dry, sits under the fiddle rather than over it, stays in his own register and is never lifted into a brighter key
+  backing: one female harmony voice from the bass chair on choruses, and on one song in the band's life she takes the lead outright
+  instruments: composite fiddle taking every instrumental break, fretted composite guitar, upright bass, improvised kit built from crates and struck metal, stripped-wire chimes
+  production: skiffle and jump blues at reel tempo, tracked live in a loaded cargo hold — close, boxy and dead, the crates ringing behind the kit, bass big and woody, slapback kept short
+  tempo range: 120-168
+  exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production
+
+# Board and Bow — Cold Harbor, Harbor Standard, 2612–. The band Suli Orley built after Wire and
+# Rosin stopped, having spent six years singing harmony behind Hessa Lund. Alis Doone calls the
+# figures over the top of the band on every record, which older callers say is the wrong way round
+# and the dancers decided for them. They will not play a hall that charges the floor more than it
+# pays the band.
+b_062:
+  voice: female lead, plain mid register, strong and unornamented, phrases like somebody calling across a room, sits comfortably under the caller because she came up singing harmony
+  backing: one high harmony from the fiddle chair through the choruses, and a second woman calling the dance figures over the top of the band on every track — short rhythmic called phrases, never sung and never in place of the lead
+  instruments: composite fiddle taking every instrumental break, fretted composite guitar, upright bass, cut-stock kit, stripped-wire chimes
+  production: fast dance-hall reels and rockabilly with the floor in the room, live and loud, the caller close over the band, slapback on the lead, no click
+  tempo range: 138-184
+  exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production
+
+# --- old-system sessions (M-20) ----------------------------------------------------------------
+#
+# Four bands, one importer, four places that have never heard each other: a tram works canteen on
+# Mars, a Titan lake yard, a Europa under-ice works, eleven miles of Earth canal. The palette is
+# blues, early rock and roll and the folk rounds, and the separation is the room and the instrument
+# — a slide made from a brake shoe, four voices in a round with no kit at all, a harmonica played
+# through a lamp horn, a concertina in a lock house. This form does not take an instrumental break
+# by rule (COMMISSION.md section 7), so no card here names one.
+
+# Terrace Road Four — Mars, Relay Road Import, 2606–. The same tram works canteen every week since
+# 2606 and nowhere else for money; every record cut in that canteen between shifts. Wesla Tarn
+# plays the slide with a length of brake shoe off the works floor and has never replaced it. Nan
+# Sudell's brushes to 2622, Orin Lask's sticks after.
+b_046:
+  voice: female lead, low smoky contralto, worn and a little hoarse, sings behind the beat, bends the last note of a line downward, no vibrato
+  backing: one male second voice from the bass chair answering the last line of a verse, never harmony through a chorus
+  instruments: slide guitar played with a steel bar, upright piano, upright bass, drum kit played mostly with brushes
+  production: twelve-bar blues and shuffle cut live in a works canteen — one hard room, everybody audible on every microphone, no overdubs, the slide the loudest thing after the voice
+  tempo range: 62-116
+  exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production
+
+# The Shore Rounds — Titan, Relay Road Import, 2596–. Lake yard workers singing the rounds the
+# yards have always sung, four voices entering a line apart with the instruments underneath. No
+# singer's name on any sleeve they control. They record where they happen to be standing and have
+# refused a studio twice, on the grounds that a round needs a room that answers. Kell Moray asked
+# for the last entrance in 2598 and has kept it.
+b_047:
+  voice: female lead, plain clear mezzo with no vibrato, carries across a room without effort, sings the first line of every round alone
+  backing: three voices entering the same line one after another a bar apart and holding the round underneath her, the male bass voice entering last, the instruments kept under all four
+  instruments: hand-pumped reed organ, acoustic guitar, upright bass, hand percussion — no drum kit anywhere in this band
+  production: folk rounds and country blues, voices first and instruments beneath them, recorded on one microphone in whatever room they were standing in — a hall, a lamp room, a meeting room with a table and two lamps — natural room echo, no overdubs
+  tempo range: 58-104
+  exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, vocal tuning, whispered or rapped sections
+
+# Undershore Local — Europa, Relay Road Import, 2588–2612. A union branch in the under-ice works,
+# playing that yard's canteens and no others, until the works went to a shift pattern that never
+# put the four of them off duty together. Hob Venner wrote on yard paperwork; Saira Dunn arranged
+# everything including the parts she was not playing; Tel Brask's harmonica through a lamp horn is
+# the one thing about the band everybody out here can name.
+b_048:
+  voice: male lead, gravel baritone that tires audibly across a take, plain and unhurried, drops to plain speech at the end of a line, no vibrato
+  backing: one male second voice from the harmonica chair on the chorus only, blunt and unpolished, and on one song in the band's life he takes the lead
+  instruments: acoustic guitar lightly amplified, upright piano, harmonica played through a metal horn so it carries down a gallery, drum kit
+  production: twelve-bar blues and shuffle with piano triplets, cut in a cold under-ice canteen — hard room, long metal ring behind the harmonica, one take, tape hiss, no overdubs
+  tempo range: 66-124
+  exclude: electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, vocal tuning, whispered or rapped sections, modern studio production
+
+# The Ninefoot Cut — Earth, Relay Road Import, 2598–. Lock and lighter crew on eleven miles of
+# canal, playing the lock houses and wharf rooms along it and nowhere else, and the first band from
+# Earth ever imported. Fenna Crole has kept the same guitar since 2598 on the grounds that a new
+# one would want playing differently; Aldis Merrow records sitting on the same folding stool;
+# Wenna Ferrin's concertina joins in 2610 and is on three of the four records.
+b_063:
+  voice: female lead, light high register, clear and even, unhurried, ornaments the ends of lines slightly, sings quietly and lets the room carry it
+  backing: two harmony voices close under the lead on choruses, one male and one female, low in the mix and never above her
+  instruments: steel-strung acoustic guitar, upright piano, concertina, upright bass, drum kit played light
+  production: country blues and folk rounds recorded in a canal lock house and in wharf rooms — small wooden rooms with water and stone behind everything, one or two microphones, everything acoustic and close, nothing overdubbed
+  tempo range: 60-112
+  exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern studio production
+
+# --- void-lounge (M-20) ------------------------------------------------------------------------
+#
+# The core's late-club standard on two labels, and the four bands are the widest spread in this
+# file because three of the four are led by low female voices and one of the three is the same
+# singer twice. After the Ferry is a small club room with a synth-harpsichord added in 2600;
+# Coldwater Court is the Purist end — a room, a piano and one voice, and nothing else is allowed
+# in; The Quiet Half is Juna Carrow singing her own way in a wide empty dance hall; Nine Lamps is
+# a high male voice with plucked electronic strings where the piano should be. The break
+# instrument is the keyboard in all four (COMMISSION.md section 7); nobody in this form plays a
+# horn, so nothing here gets a saxophone.
+
+# After the Ferry — Concordance late-club quarter, Lower Bell Editions, 2594–. Three nights a week
+# in the Lower Bell room since 2594 and no booking anywhere else in the quarter. Purist until 2600,
+# Synthesist after, which is Hessa Lin's synth-harpsichord and an argument Nesta Vire has never
+# accepted the word for. No record since 2612: everything they own is in the receiver's room.
+b_064:
+  voice: female lead, low contralto, very quiet and close to the microphone, unhurried and almost conversational, never raises the volume to make a point
+  backing: one voice from the keyboard chair on the last chorus only, and nothing anywhere else
+  instruments: upright piano taking the instrumental break, upright bass, brushed drum kit, synth-harpsichord — plucked electronic strings — from 2600
+  production: late torch and slow blues tracked live in a small low-ceilinged club room after closing, voice close and quiet, the piano and the room audible behind it, no compression used to make it louder
+  tempo range: 52-84
+  exclude: saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production
+
+# Coldwater Court — Concordance late-club quarter, Lower Bell Editions, 2578–2612. The band the
+# house was founded to press, and the last thing it pressed. Purist, and Maro Deyn's printed line
+# is that the form needs a room, a piano and somebody willing to stay up. Two singers hold the
+# chair across the two records — Bela Runn to 2604, Juna Carrow from 2605, who was told to sing it
+# her own way and did not for two years — and both are low female voices, which is why one voice
+# line covers the band's whole life. Toben Alt has never played a song faster than the first time.
+b_065:
+  voice: female lead, low and grainy, slow and level, sings behind the piano rather than in front of it, no ornament and no vibrato, lets phrases fall away
+  backing: none — one voice, and the piano answers it where a second voice would be
+  instruments: upright piano taking every instrumental break, upright bass, brushed drum kit with light hand percussion
+  production: Purist torch — a room, a piano and one voice recorded live in a small club room with nothing added, the tempo never pushed, tape warmth and the room itself and no other treatment
+  tempo range: 48-78
+  exclude: keyboards and synthesizers of any kind, backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, added reverb, vocal tuning, whispered or rapped sections, modern studio production
+
+# The Quiet Half — Meridian storm coast, Stormline Issue, 2617–. Formed four months after Juna
+# Carrow took a hall job on the coast and the season sealed with her on the wrong side of it. They
+# play the hour after the dancing stops, in halls built for the opposite, and Dessa Roan sets every
+# tempo at half whatever was going on before. Purist by Carrow's own line, in the most Synthesist
+# house in the settled worlds. She will not sing anything from the Coldwater Court records on stage.
+# Same singer as b_065's later records, and the voice line says so.
+b_066:
+  voice: female lead, low and grainy, slow and level — the same singer as b_065's second record, now singing her own way, with more air in the tone, longer line ends and a small fall at the end of a phrase
+  backing: none — one voice; the piano answers her and the bass plays under her without doubling the line
+  instruments: upright piano taking every instrumental break, compact electric keyboards where the hall's piano will not hold its tuning, upright bass, brushed drum kit
+  production: slow torch played in halls built for dancing, after the dancing — a wide empty hall, the voice close and dry against it, the tempo set at half whatever came before, nothing sweetened
+  tempo range: 46-76
+  exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production
+
+# Nine Lamps — Meridian storm coast, Stormline Issue, 2614–. Named for the nine lamps on the sea
+# wall; the last hour of coast dance nights since 2614, mostly in halls that booked them because
+# somebody has to play while the room empties. Localist, and they refuse the core's name for what
+# they do, which the house prints beside its own filing. Sabin Loch sings higher and quieter than
+# anybody expects — a male voice by decision of this card. Emre Talt's second-hand
+# synth-harpsichord is tuned to the sea wall's hum. There is no piano in this line-up.
+b_067:
+  voice: male lead, high light tenor, quiet and unforced, almost breathy at the top, holds long notes without vibrato and lets them fade out rather than stopping them
+  backing: none — one voice and nothing behind it
+  instruments: synth-harpsichord — plucked electronic strings — taking every instrumental break, compact electric keyboards holding one long tone underneath, upright bass, brushed drum kit; no piano and no guitar
+  production: slow torch with plucked electronic strings where the piano would be, one held keyboard tone under everything, recorded in a large cold seafront hall at the end of the night, voice close with the room long behind it
+  tempo range: 44-72
+  exclude: piano, guitar, backing vocals, saxophone and brass, orchestral strings, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production
+
+# --- core harmonies (M-20) ---------------------------------------------------------------------
+#
+# One band, thirty-one voices, and the form is defined by not having a solo — so the exclude line
+# says so in words. Big warm vocal pop, the hall's own reverberation doing the work, gospel lift
+# and never gospel liturgy (COMMISSION.md section 2).
+
+# The Standing Gallery — Concordance, Civic Lantern, 2601–. Thirty-one voices formed in the upper
+# standing rail of the Long Assembly out of people who could not afford a seat, singing after the
+# seats emptied for six years before anybody put them on a bill. Sarra Lome directs and sings the
+# lead and will not start until the rail is full; Mena Thole is a second lead of the same weight
+# from 2604; Dovel Ashe's bass voice steps out alone against the chorus. Perra Mull writes every
+# part by hand for singers who do not read music. Their long argument with the house is about money
+# and names, not music.
+b_072:
+  voice: female lead, full warm mezzo, open and unforced, sings out into a large hall without belting, plain diction and no ornament; a second female lead of the same weight and register takes some songs
+  backing: thirty-one voices in four parts stacked close behind the lead, the whole chorus on every chorus, unison rather than harmony on the loudest lines, and one male bass voice stepping out alone against them where the arrangement asks
+  instruments: synth-harpsichord — plucked electronic strings — and upright bass, and nothing else; the voices are the arrangement
+  production: big warm vocal pop, wall-of-sound choral stacking recorded in a very large public hall with the room's own reverberation carrying the chorus, the lead close and dry against it, grand and warm and never a church recording
+  tempo range: 58-116
+  exclude: instrumental solos of any kind, drum kit, guitars, electric bass, brass, orchestral strings, church organ, liturgical or devotional phrasing, vocal tuning, whispered or rapped sections, dance and modern studio production
+
+# --- void ballads (M-20) -----------------------------------------------------------------------
+#
+# One voice and one instrument, close-mic'd, and the two artists are a low female voice with a
+# guitar and a high male voice with a reed organ. Neither takes a solo and neither gains a second
+# player: COMMISSION.md section 2 allows a held note underneath and nothing else, and section 2 is
+# equally clear that this is never an ambient drone piece.
+
+# Nera Ostell — Cold Harbor, Harbor Standard, 2578–2612. Kept a gate at the relay berth from 2578
+# and sang to the night traffic because there were hours when nothing was due in. Harbor Standard
+# came looking for her in 2583 because it could not sell the Station Cycles and wanted a voice of
+# its own. She has never sung a Corin Hale song and is asked every time. Filed Purist, has never
+# claimed it. One composite guitar strung with wire off the berth's scrap yard, in an open tuning
+# she has never changed. In 2612 she put her name on a rota and there has been no record since.
+b_074:
+  voice: female lead, low and close, plain and unhurried, almost spoken at the bottom of the range, no vibrato, breath audible between phrases
+  backing: none, ever — one voice, no harmony, no double-tracking anywhere on any record
+  instruments: one wire-strung composite guitar in an open tuning, fingerpicked, and nothing else but a single held note underneath on the one song whose arrangement asks for it
+  production: folk ballad and country-gothic, one voice and one guitar a hand's width from the microphone in a small room, no reverb added, string and fret noise left in, tape warmth and nothing else
+  tempo range: 54-82
+  exclude: instrumental solos, drums, bass, piano, a second melodic instrument, harmony or double-tracked vocals, orchestral strings, ambient drone or evolving pad pieces, vocal tuning, whispered or rapped sections, modern studio production
+
+# Aro Vantry — Cold Harbor, Harbor Standard, 2617–. Sings high and thin over a hand-pumped reed
+# organ, with a box he built underneath it that holds the tonic of the Station Cycles, learned off
+# a copy of a copy. He is the only artist on the house's list who prints where his own note came
+# from, on every sleeve, unasked. Filed Synthesist for the box, which is a scrubber fan and a rank
+# of reeds and does one thing. He sends a copy of everything up the road to Nera Ostell, who has
+# never answered.
+b_075:
+  voice: male lead, high thin tenor, quiet and unornamented, sings just above comfortable and lets notes thin out rather than swell, no vibrato
+  backing: none, ever — one voice, no harmony, no double-tracking anywhere on any record
+  instruments: hand-pumped reed organ, and one built box holding a single unchanging note underneath it; nothing else
+  production: torch and country-gothic, one voice and a wheezing hand-pumped reed organ close-mic'd in a small hard room, the held note constant under everything and never moving, bellows and mechanism audible, no reverb added
+  tempo range: 50-76
+  exclude: instrumental solos, guitar, drums, bass, piano, harmony or double-tracked vocals, orchestral strings, synth pads or drone that swells or changes, vocal tuning, whispered or rapped sections, modern studio production
