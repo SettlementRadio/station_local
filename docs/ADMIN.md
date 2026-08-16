@@ -109,6 +109,39 @@ If a file cannot be decoded the pass keeps going, prints `UNREADABLE` with the f
 counts it in the summary. A song that dropped out silently would become a track with no ramp and a
 link that clips the vocal.
 
+### `make music-tag`
+
+Writes four things into every audio file's own tags: the licence period it was generated under, the
+generation date, the model version, and a marker saying it is machine-generated. `ALBUM=al_001`
+limits it to one album. The whole pilot takes about eight seconds.
+
+**Why it matters more than it sounds.** `music/audio/` is not in git and the wiki is. One day the
+audio and the wiki will be apart — a backup, a move, a new machine — and a file that cannot say what
+licence it was made under is a file nobody may broadcast. `music/COMMISSION.md` §9 asks for this and
+it is the half of the licence evidence that travels with the music.
+
+Run it after every Suno sitting. It reads the `generation:` and `take:` blocks in
+`music/production/lyrics/`, so **a song only gets tagged once its take is recorded there.**
+
+What it prints at the end is the check: the counts, and then one file's four tags in full, so you
+can see what any of them now says. To read another file yourself:
+
+```bash
+ffprobe -v error -show_entries format_tags -of default music/audio/label_1/al_001/01.mp3
+```
+
+**Nothing already in the file is touched and the audio is never re-encoded.** Suno's own comment,
+with the generation id and timestamp, stays. Each file is copied with the audio passed through
+untouched, checked against the original, and only then moved over it — so an interrupted run leaves
+whole files behind, never a half-written one.
+
+**Running it twice is safe and nearly instant** — a file already carrying the right four values is
+not rewritten at all. That is what lets it run after every genre rather than once at the end.
+
+Unlike the other music commands **this one is a gate**: it exits red if any file failed, or if there
+is audio under `music/audio/` that no lyrics file records a take for. An untagged file is the one
+you would not find out about until it mattered.
+
 **There are no other music commands.** The wiki, the style cards and the lyrics are written by an
 agent working one card of `music/MUSIC_TASKS.md` — you open a session and say the card number
 (D-055). Nothing is copied to a clipboard and nothing is pasted anywhere.

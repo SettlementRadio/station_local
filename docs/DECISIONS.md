@@ -2234,3 +2234,36 @@ fresh attacks during that fall separates a `fade`, where the band plays on under
 11 of 14 cold endings and 10 of 12 sustains — and disagrees on the fades, because Suno mostly did
 not fade. That disagreement is a finding about the takes, not an error in the measurement, and it
 belongs to M-39.
+
+### D-084 · The four licence tags are written by ffmpeg, into a copy that is checked before it replaces the original — 2026-08-16
+
+M-05. `COMMISSION.md` §9 requires the licence period, the generation date, the model version and an
+AI-generated marker inside every audio file. Three things had to be decided.
+
+**No tagging library.** ffmpeg is already a required system tool and already decodes for
+`analyse.py`; it writes ID3 too, and maps any key it does not recognise onto a `TXXX` frame it and
+every tag editor read back unchanged. §22 asks a dependency to save more than ~200 lines and a
+tagging library here saves about thirty. Hand-writing ID3 frames was never on the table — that is
+the case the ffmpeg call avoids, not one it creates.
+
+**The four values are four plain keys, and nothing else in the file is touched.**
+`AI_GENERATED=true`, `AI_MODEL_VERSION`, `LICENCE_PERIOD` and `GENERATION_DATE` — one key per value
+the commission names, no fifth. In particular Suno's own `comment`, carrying the generation id and
+the vendor's creation timestamp, is left where it is: M-18 verified the whole 45-song dispatch
+against those timestamps and overwriting them would cost that evidence. The vendor and the tier are
+already inside the licence period itself (`suno-pro-2026-08`), so nothing about the tool is invented
+here that the metadata block did not already say.
+
+**A take is never edited in place.** ffmpeg cannot write tags in place, so each file is copied with
+`-c copy` — the mp3 bitstream passed through, not re-encoded — the copy's audio checksum and its
+four tags are checked against the original, and only then does it replace the original in one
+`os.replace`. An interrupted run leaves whole files behind. Measured over the pilot: all 45 audio
+streams are byte-identical before and after, and a re-run rewrites nothing at all, which is what
+lets M-39 run this after every genre rather than once at 500 songs.
+
+**It is a gate, unlike the other music commands.** It exits red if a file failed or if any audio
+under `music/audio/` is not recorded as a take in `music/production/lyrics/`. `make music-analyse`
+can afford to shrug at a file it could not read; a file with no licence attached is one nobody may
+broadcast, and the only moment it is cheap to notice is now. A song whose lyrics exist but whose
+audio does not is reported as `waiting for audio`, not as a failure — that is a Suno card that has
+not run yet.

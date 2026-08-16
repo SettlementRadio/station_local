@@ -21,6 +21,7 @@ if TYPE_CHECKING:
     from station.config import Settings
     from station.music.analyse import Measurement
     from station.music.screen import Report
+    from station.music.tag import Result, Song, Summary
 
 app = typer.Typer(add_completion=False, help="Settlement Radio — operator commands (§17).")
 
@@ -60,7 +61,7 @@ def _boot() -> Settings:
 # Commands that read only files already in the repository and touch no environment. §23's gate
 # exists to stop the *station* running mis-configured; it must not stop the operator writing
 # content. The music wiki is deliberately buildable before any hardware or volume exists (D-044).
-CONFIG_FREE = frozenset({"version", "music-albums", "music-screen", "music-analyse"})
+CONFIG_FREE = frozenset({"version", "music-albums", "music-screen", "music-analyse", "music-tag"})
 
 
 @app.callback()
@@ -239,6 +240,79 @@ def music_analyse(album: str = typer.Option(None, "--album", help="only this alb
             typer.secho(f"\n{path.parent.relative_to(root)}", bold=True)
         _print_measurement(one[0], path.stem)
     _print_analyse_summary(measured, failed)
+
+
+@app.command("music-tag")
+def music_tag(album: str = typer.Option(None, "--album", help="only this album id")) -> None:
+    """Write the licence period, generation date, model version and AI marker into every take."""
+    from station.music import tag as tagger
+
+    music = Path.cwd() / "music"
+    try:
+        songs = tagger.load_songs(music, album=album)
+    except tagger.TagError as exc:
+        typer.secho(f"\n{exc}\n", err=True, fg="red")
+        raise typer.Exit(code=1) from None
+    if not songs:
+        typer.secho("no takes recorded yet" + (f" for {album}" if album else ""), fg="yellow")
+        return
+
+    typer.echo(f"{len(songs)} take(s) recorded in music/production/lyrics\n")
+    typer.echo(f"{'TRACK':<7}{'LICENCE':<20}{'MODEL':<8}{'DATE':<12}{'':<10}")
+    results: list[Result] = []
+    current = ""
+    for song in songs:
+        if song.album_id != current:
+            current = song.album_id
+            typer.secho(f"\n{song.album_id}", bold=True)
+        results.append(tagger.tag(song))
+        _print_tag_row(song, results[-1])
+    # "nothing under music/audio is left untagged" is a claim about the whole tree, so the sweep
+    # for files no lyrics file claims only runs on a full pass. Narrowed to one album, every other
+    # album's audio would read as unclaimed and the command would go red for no reason.
+    left_out: list[Path] = (
+        tagger.unclaimed(music / tagger.AUDIO_DIR, songs) if album is None else []
+    )
+    _print_tag_summary(tagger.summarise(results, left_out), results, whole=album is None)
+
+
+def _print_tag_row(song: Song, result: Result) -> None:
+    """One file: what it now says, and whether this pass had to write it."""
+    colour = {"failed": "red", "pending": "yellow", "written": "green"}.get(result.action)
+    values = song.provenance
+    line = (
+        f"{song.track_number:<7}{values.licence_period:<20}{values.model_version:<8}"
+        f"{values.generated_on:<12}{result.action:<10}{result.note}"
+    )
+    typer.secho(line, fg=colour)
+
+
+def _print_tag_summary(summary: Summary, results: list[Result], whole: bool) -> None:
+    """The counts, one file's tags in full, and a non-zero exit if anything is still uncovered."""
+    from station.music import tag as tagger
+
+    typer.echo(
+        f"\n{summary.written} written · {summary.unchanged} already correct · "
+        f"{summary.pending} waiting for audio · {summary.failed} failed"
+    )
+    for result in (r for r in results if r.action == "failed"):
+        typer.secho(f"  FAILED      {result.note}", fg="red", err=True)
+    for path in summary.unclaimed:
+        typer.secho(f"  UNCLAIMED   {path} — no lyrics file records a take for it", fg="red")
+
+    done = next((r for r in results if r.action in ("written", "unchanged")), None)
+    if done:  # the card's check in one place: read one file, and it tells you what it is
+        typer.echo(f"\nwhat one file now says — {done.path}")
+        present = tagger.read_tags(Path(done.path))
+        for key in tagger.TAG_KEYS:
+            typer.echo(f"  {key:<18}{present.get(key, '—')}")
+
+    if not summary.complete:
+        raise typer.Exit(code=1)
+    covered = f"all {summary.carrying_tags} file(s) under music/audio carry the four tags"
+    typer.secho(
+        f"\n{covered}" if whole else f"\n{summary.carrying_tags} file(s) tagged", fg="green"
+    )
 
 
 def _print_measurement(m: Measurement, track: str) -> None:

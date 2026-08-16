@@ -64,7 +64,7 @@ marked **NEXT**.
 | **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-49** old-system sessions grows to 90 · 2026-08-13 | **all done.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15. No genre carries an `owed_to:` marker any more |
 | 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-18** the pilot's 45 takes · 2026-08-15 | **the pilot's audio exists** — 45 takes on Suno Pro v5.5, filed and licensed · **M-19 is the last card here** and stage 4 waits on it |
 | 2 · The wiki — the catalogue-wide pass | M-07 … M-15 | **M-15** the catalogue-wide pass · 2026-08-14 | **finished. The wiki is frozen.** 500 playable songs across 9 genre files, 25 bands and 63 albums · every label clears §5's floor · layer B carries 55 release years · all eight of §12's rules live and green |
-| 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-04** `make music-analyse` · 2026-08-15 | **M-05 is NEXT** and is the only runnable `[agent]` card. The pilot's 45 takes are measured: 8 have a run-up a presenter could talk over, 37 do not (D-083) |
+| 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-05** `make music-tag` · 2026-08-16 | **M-06 is NEXT** and is the only runnable `[agent]` card. The pilot's 45 takes are measured (8 have a run-up a presenter could talk over, 37 do not — D-083) and all 45 now carry their licence period, date, model version and AI marker in the file itself (D-084) |
 | 4 · Style cards — the other 20 bands | M-20 | — nothing yet | blocked until M-19 — **M-15 is done, so the pilot's verdict is the only thing left in its way** |
 | 5 · The bulk — 8 genres, lyrics → audio → measure | M-21 … M-39 | — nothing yet | blocked until M-20 |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
@@ -793,7 +793,7 @@ are not ten of them to spot-check, because the other 37 have nothing to time. `A
 one album at a time.
 Depends on: M-18 (needs real audio to run against)
 
-### M-05 · `[agent]` `make music-tag` — licence and compliance into every file — **NEXT**
+### M-05 · `[agent]` `make music-tag` — licence and compliance into every file — **DONE 2026-08-16**
 Goal: 500 files carry their own licence period, generation date, model version and AI marker without
 you touching one.
 Files: `src/station/music/tag.py`, `Makefile`, `docs/ADMIN.md`
@@ -801,9 +801,26 @@ Check: Every file under `music/audio/` carries all four tags. Reading any one fi
 what licence it was made under and that it is machine-generated.
 Note: the four values come from the per-album metadata block M-17 defines and M-18 fills in. There
 is nothing for this card to read until both have run.
+Result: `make music-tag` reads the `generation:` and `take:` blocks in `music/production/lyrics/`
+and writes four tags into every take — `AI_GENERATED`, `AI_MODEL_VERSION`, `LICENCE_PERIOD` and
+`GENERATION_DATE`. **All 45 of the pilot's files carry them, written in eight seconds.** The command
+ends by printing one file's four tags in full, which is the card's own check done for you; `ALBUM=`
+narrows it. **Suno's own comment — the generation id and the vendor's timestamp M-18 verified the
+whole dispatch against — is untouched**, as is everything else already in the file (D-084).
+**Nothing was risked to do it.** ffmpeg cannot tag in place, so each file is copied with the mp3
+bitstream passed through rather than re-encoded, the copy is checked against the original before it
+replaces it, and the replace is atomic — an interrupted run leaves whole files behind. Measured:
+**all 45 audio streams are byte-identical before and after.** No new dependency; ffmpeg was already
+required and already decoding for M-04 (§22).
+**Re-running rewrites nothing** — a second pass reports 45 already correct in under two seconds,
+which is what lets M-39 run this after every genre rather than once at 500 songs.
+**Unlike the other music commands this one is a gate.** It exits red if a file failed, or if audio
+sits under `music/audio/` that no lyrics file records a take for — the case where a file would
+quietly carry no licence at all. A song whose words exist but whose audio does not reads as
+`waiting for audio`, not as a failure: that is a Suno card that has not run yet.
 Depends on: M-04
 
-### M-06 · `[agent]` `music/catalogue.yaml` — the file the station reads
+### M-06 · `[agent]` `music/catalogue.yaml` — the file the station reads — **NEXT**
 Goal: The wiki, the lyrics and the audio become the one file the station's database ingests. **This
 is what makes a DJ able to say a fact about a record.** Without it the whole wiki is inert.
 Files: `src/station/music/catalogue.py`, `music/catalogue.yaml`, `Makefile`, `docs/ADMIN.md`
