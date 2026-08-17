@@ -2483,3 +2483,36 @@ wiki gives a band an instrument the palette would never suggest, the card puts i
 cannot ignore it, with a tone description beside the in-world word — M-16's own practice for
 `b_004`'s composite guitars, and the reason a prompt can reach a model that has never heard of a
 resonance pipe.
+
+### D-090 · The word floor is bought with repeated choruses, and an ungenerated album's take blocks are null — 2026-08-17
+
+M-21 wrote the first 60 lyrics under §12's rules 9 and 10, and three things came out of doing it that
+M-22 … M-29 should copy rather than rediscover.
+
+**The floor is met by repetition, not by longer verses.** 288 sung words is about 40% more than the
+pilot averaged, and writing 40% more *verse* would have produced eight-verse songs nobody wants. What
+the form already does is repeat: the verses stay the pilot's length, the chorus comes back three or
+four times, and a repeat counts as written (§12). The 60 lyrics land at **288 to 346 words, mean 308,
+median 309** — 18,507 sung words in total — with 3 verse sections in 51 of them and 4 in 9. The wiki
+had already asked for exactly this on `al_005`: *"short verses and large repeated choruses."*
+
+**Mean 308 words predicts a 3:51 take, which is above §7's 3:36, and that is the trade M-50 named.**
+A floor is a minimum the distribution sits above, so the mean cannot equal the floor; overshooting by
+15 seconds a song means **an hour needs thirteen songs rather than fourteen**, which is what §7 now
+says it prefers to the alternative. Nothing was written with a target under 3:00, so §7's 2:00–3:00
+band stays fed by Suno's own shortfall rather than by design (D-088).
+
+**An album whose Suno card has not run carries a null `generation:` block and `take: null` on every
+song.** That is what keeps `make music-tag` green: `tag.py` reads a song only when its take names a
+file, so the 60 songs written here are invisible to that command rather than counted as failures —
+and **"waiting for audio" is a state that begins when M-30 writes a file path**, not when the words
+exist. `music/catalogue.yaml` is byte-identical after this card for the same reason: the catalogue
+joins the wiki to the takes, and no take was added.
+
+**Rule 4 was the binding constraint, and it is a property of the wiki rather than of the writing.**
+The wiki's song titles are mostly hooks — that is what makes them good titles — so writing each
+chorus around its own title would have failed rule 4 on all seven albums. **24 of the 60 take their
+title from the sung hook and 36 take it from an image in the lyric**, which is M-47's finding
+repeated: the title fights the rule, and the fix is to name the record after something in the song
+instead. Rule 3 was cheap by comparison (6 of 60 use the echoed answer) and rule 2 was free (42 of
+60 carry a third person or a named character without being asked to).

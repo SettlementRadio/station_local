@@ -67,7 +67,7 @@ marked **NEXT**.
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-06** `music/catalogue.yaml` · 2026-08-16 | **all done.** The takes are measured (D-083), tagged (D-084), and joined into the one file the station's database ingests — 1,358 tracks, 45 of them playable, checked against the wiki by `make check` (D-085) |
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
 | **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
-| **5 · The bulk — 8 genres, lyrics → audio → measure** | M-21 … M-39 | — nothing yet | **M-21 is NEXT** — relay-pop's remaining 7 albums, 60 songs. **This is the long stage** — 455 songs, nine lyrics cards and nine Suno cards, alternating, a genre finished before the next one starts |
+| **5 · The bulk — 8 genres, lyrics → audio → measure** | M-21 … M-39 | **M-21** relay-pop's remaining 7 albums · 2026-08-17 | **M-30 is NEXT** — the Suno sitting for those 60 songs, three bands. Relay-pop's words are all written; 395 songs of lyrics to go. **This is the long stage** — nine lyrics cards and nine Suno cards, alternating, a genre finished before the next one starts |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -100,6 +100,10 @@ were needed, M-20 has given the other twenty bands a fixed voice, and stage 5 no
 starts. That pairing is the point: a problem shows up after about sixty songs instead of after 455.
 The two cards inside one genre cannot overlap, so from here **the sessions take turns rather than
 running side by side.**
+
+**It is your turn.** M-21 wrote relay-pop's remaining 60 songs on 2026-08-17, so the agent front has
+nothing to do until those 60 have audio: M-22 is blocked on M-30 by design. The next agent session in
+this file is M-22, and it starts the day you finish the Suno sitting.
 
 **One thing the pilot did not settle**, and it is the operator's own words: *"I do expect to have
 better variety in the future with more styles."* The pilot is one genre on one label and could not
@@ -1028,7 +1032,7 @@ start of that month.
 
 | Order | Lyrics `[agent]` | Audio `[you]` | Songs |
 |---|---|---|---|
-| 1 | M-21 relay-pop — the remaining 7 albums | M-30 relay-pop — the remaining 3 bands | 60 |
+| 1 | **M-21 relay-pop — done** | **M-30 relay-pop — the remaining 3 bands · NEXT** | 60 |
 | 2 | M-22 lane-rock | M-31 lane-rock — 4 bands | 75 |
 | 3 | M-23 deck-talk | M-32 deck-talk — 3 bands | 70 |
 | 4 | M-24 frontier-reels | M-33 frontier-reels — 3 bands | 65 |
@@ -1038,21 +1042,46 @@ start of that month.
 | 8 | M-28 core-harmonies | M-37 core-harmonies — 1 band | 15 |
 | 9 | M-29 void-ballads | M-38 void-ballads — 1 band | 10 |
 
-### M-21 … M-29 · `[agent]` Lyrics and prompts — 51 albums, 455 songs — **M-21 is NEXT**
+### M-21 … M-29 · `[agent]` Lyrics and prompts — 51 albums, 455 songs — **M-21 DONE 2026-08-17**
 Files: one file per album under `music/production/lyrics/`
 Check: every song has lyrics, a generation prompt and an exclude line; every lyric passes the
 swap-the-nouns test; every song has a vocal. M-21 writes `al_005.yaml` … `al_011.yaml`.
 Note: **extra passes go to the cornerstone albums.** Six to eight of them each carry a whole
 56-minute programme; the rest is rotation and nobody leans in. Weight the effort accordingly.
+Result (M-21): **relay-pop is written — 60 songs across `al_005.yaml` … `al_011.yaml`**, and the
+genre's 105 playable songs now all have words. Ten for Rain Ledger's `al_005` and `al_006`, six and
+seven for Cabin Treaty's two EPs, **twelve for the cornerstone `al_009`**, seven and eight for
+Evening Claim's two. Every song carries its wiki fact unchanged, an arrangement note, the exact Suno
+prompt built off its band's style card, an exclude line, an intended ramp, an outro type and a target
+duration. **`make check` is green on all ten of §12's rules**, which is the first time any lyrics have
+had to satisfy rules 9 and 10 — the pilot's four albums are exempt by id.
+**The songs are 40% longer than the pilot's and the length is bought with repeated choruses** rather
+than with more verses (D-090): 288 to 346 sung words, mean 308, 18,507 words in all, which predicts a
+**3:51 take against §7's 3:36 average** — the deliberate overshoot M-50 chose, and an hour of these is
+thirteen songs rather than fourteen. §7's three distributions are aimed and land: **57% of songs ramp
+≥8s and 17% ≥15s** (§7 asks ≥40% and ≥15%), outros **18 cold / 27 fade / 15 sustain**, which is
+30/45/25 exactly, and the stated targets average 3:45 with nothing under 3:00.
+**Rule 4 was the one that bound.** The wiki's titles are mostly hooks, so only 24 of the 60 choruses
+sing their own title and the other 36 take their title from an image in the lyric — M-47's finding
+again. Rule 3 cost little (6 of 60 use the echoed answer) and rule 2 came free (42 of 60).
+**Nothing was generated and nothing was measured**: every `generation:` block and every `take:` is
+null until M-30, `music/catalogue.yaml` is byte-identical, and `make music-tag` still reports 45 of 45.
 Depends on: M-20 for M-21; thereafter each genre's lyrics card depends on the previous genre's
-**audio** card being finished — that is what "one genre at a time" means.
+**audio** card being finished — that is what "one genre at a time" means. **M-22 is not runnable
+until M-30 is done.**
 
-### M-30 … M-38 · `[you]` Suno — 455 songs
+### M-30 … M-38 · `[you]` Suno — 455 songs — **M-30 is NEXT**
 Files: `music/audio/<label>/<album>/NN.mp3`
 Check: every song in that genre has a keeper take, downloaded and named, with the prompt, attempts,
 model version and date recorded in the album's lyrics file. Custom mode only.
 Note: **these are the long cards.** M-19 tells you how long 45 songs take you; multiply. Each
 depends on its own genre's lyrics card and on nothing else.
+Note (M-30): the words are ready as of 2026-08-17 — `al_005` … `al_011`, 60 songs, three bands.
+**Finish one band in as few sittings as possible** (COMMISSION §9): Rain Ledger is `al_005` and
+`al_006`, Cabin Treaty is `al_007`, `al_008` and `al_009`, Evening Claim is `al_010` and `al_011`.
+Each song's `prompt:` is the style box and its `lyrics:` is the lyric box, Custom mode, remixing off.
+Fill in that album's `generation:` block and each song's `take:` as M-18 did on the pilot. **September
+needs its own licence PDF the day you start generating in it** (M-40).
 Depends on: M-21 for M-30, M-22 for M-31, and so on down the table.
 
 ### M-39 · `[agent]` Measure and tag every song

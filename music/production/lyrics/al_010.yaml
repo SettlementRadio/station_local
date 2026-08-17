@@ -1,0 +1,529 @@
+# al_010 — Soft Closing · Evening Claim (b_005) · Lower Bell Editions · 2583 · 7 songs
+#
+# Written by M-21. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The band's style card calls for *short songs*, and rule 10's floor is 288 sung words. The two are
+# reconciled the way the form itself does it: slow tempos, 76 to 100, and a great deal of repetition
+# of very few images. A 300-word lyric at 84 BPM is not a long song; it is a quiet one that runs its
+# full length.
+#
+# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+
+album:
+  id: al_010
+  title: Soft Closing
+  band: b_005
+  band_name: Evening Claim
+  label: label_6
+  release_year: 2583
+  genre: relay-pop
+  cornerstone: false
+  song_count: 7
+  style_card: b_005
+  room: >-
+    The late-club room the band played in every evening, recorded across three booked nights and a
+    fourth the house charged them for after the founder walked in on a rehearsal and called it a
+    session. So the record is the room the songs were written in — dry, small, close, no reverb
+    anywhere — which is exactly what the style card asks for, and the card is followed straight.
+    **One period note.** The wiki puts the band inside its Synthesist years until 2605, and the card
+    fixes the harpsichord-toned keyboard as played by hand for the band's whole life. That is not
+    bent here: where the Synthesist period wants to be audible it is a figure that repeats without
+    varying, played by hand, rather than a sequence.
+
+generation:
+  # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0091
+    title: Soft Closing
+    track_number: 1
+    mood: [intimate, restrained, midtempo]
+    fact: >-
+      Mela Jorn sings the accepted lead while closing the piano lid one step at a time between
+      verses.
+    arrangement_note: the piano gets quieter and duller by one step between each verse as the lid comes down, and the last verse is played on a nearly closed instrument
+    intro: 10
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      Compact close sunshine pop and soft rock, 96 BPM, intimate and restrained. Female lead vocal,
+      low and warm, close to the microphone, understated and conversational, letting phrases fall
+      away rather than holding them. Three-part close harmony stacked behind the lead on every
+      chorus, the whole group on the last one, never shouted. Upright piano, upright bass, brushed
+      drum kit, harpsichord-toned keyboard played by hand, light hand percussion. Dry and small,
+      gentle tape warmth, no large reverb. The piano gets one step quieter and duller between each
+      verse, as though the lid were being closed by degrees, and the final verse is played on a
+      nearly closed instrument. Ten seconds of piano before the first sung word. Fade.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 10 seconds, upright piano with the lid fully open, brushed kit at seven seconds, no vocal]
+
+      [Verse 1]
+      Nothing is going to be settled tonight and we both know it.
+      The room is half full of people who have not decided
+      whether they are going home or having another one,
+      and the two of us have been in that condition since the spring.
+
+      [Chorus]
+      So we close it softly. We do not close it at all.
+      We let it stand there with the lamps down and the door on the latch
+      and neither of us says the sentence that would finish it,
+      and neither of us gets up, and neither of us leaves.
+
+      [Verse 2]
+      There is a way of putting a lid down over an hour
+      so gently that nobody in the room hears it go,
+      and I have watched you do it to whole years of your life
+      with a coat over your arm and a very kind face.
+
+      [Chorus]
+      So we close it softly. We do not close it at all.
+      We let it stand there with the lamps down and the door on the latch
+      and neither of us says the sentence that would finish it,
+      and neither of us gets up, and neither of us leaves.
+
+      [Bridge]
+      The last ferry has gone. It went at the quarter past.
+      Neither of us mentioned it and neither of us moved.
+
+      [Verse 3]
+      I would rather have this than the version with an ending in it.
+      I would rather sit in a shut room in the core all winter
+      with the piano nearly closed and the lamps nearly out
+      than be told plainly, tonight, by somebody kind.
+
+      [Chorus - whole group]
+      So we close it softly. We do not close it at all.
+      We let it stand there with the lamps down and the door on the latch.
+      Ask me in the spring. Ask me on the worst day of the year.
+      Do not ask me now. Now is the only good hour I have got.
+
+      [Outro - fade, the piano almost shut]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0092
+    title: Table Near the Door
+    track_number: 2
+    mood: [watchful, romantic, steady]
+    fact: >-
+      Tovin Ashe wrote the bass answer for two customers who chose the same visible table through an
+      entire season.
+    arrangement_note: the upright bass answers every vocal line with the same short figure all the way through, in the same place, exactly as the two customers took the same table
+    intro: 7
+    outro: cold
+    target_duration: "4:00"
+    prompt: >-
+      Compact close soft rock, 88 BPM, watchful and romantic, steady. Female lead vocal, low and
+      warm, close to the microphone, understated and conversational, letting phrases fall away
+      rather than holding them. Three-part close harmony stacked behind the lead on every chorus,
+      the whole group on the last one, never shouted. Upright piano, upright bass answering every
+      vocal line with the same short figure in the same place throughout, brushed drum kit,
+      harpsichord-toned keyboard played by hand, light hand percussion. Dry and small, gentle tape
+      warmth, no large reverb. Seven seconds of upright bass and piano before the first sung word.
+      Cold stop, the bass figure cut off in the middle of itself.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 7 seconds, upright bass figure with piano over it, no vocal]
+
+      [Verse 1]
+      They have the table by the door on a Tuesday and a Thursday
+      and they have had it since the storm season turned, without booking it.
+      She comes off the last ferry, he comes up from the port hall,
+      and the two of them are in that chair by the quarter past.
+      He gets here first. She comes in about ten minutes after
+      and does not look for him, because she knows exactly where he is.
+
+      [Chorus]
+      The table by the door, where the whole room can see you.
+      Anybody in this quarter could walk in and there you are.
+      That is not carelessness. That is the entire point.
+      Whatever this is, the two of you are not hiding it.
+
+      [Verse 2]
+      I have watched people take the corner and the back booth
+      and the seat behind the pillar with their coats still on,
+      and I have watched what happens to them by the winter,
+      and none of it happens to the two by the door.
+
+      [Chorus]
+      The table by the door, where the whole room can see you.
+      Anybody in this quarter could walk in and there you are.
+      That is not carelessness. That is the entire point.
+      Whatever this is, the two of you are not hiding it.
+
+      [Verse 3]
+      There is a woman at this piano who has been in the corner for years,
+      who takes the back booth, and keeps his coat, and is very careful,
+      and who would like it noted that he has watched two customers
+      teach him more about the whole subject than the whole quarter did.
+
+      [Bridge]
+      They pay, they go, they say goodnight to the woman on the coats.
+      Tuesday. Thursday. Same table. For a whole season.
+
+      [Chorus - whole group]
+      The table by the door, where the whole room can see you.
+      Anybody in this quarter could walk in and there you are.
+      I have got the corner table and a bill and a coat.
+      Next Tuesday I am sitting where the door is.
+
+      [Outro - cold stop, the bass figure cut off halfway through]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0093
+    title: One Drink Behind
+    track_number: 3
+    mood: [wry, wistful, midtempo]
+    fact: >-
+      Elo Vara uses a serving tray for the brushed rhythm because the regular kit sounded too formal
+      in the empty room.
+    arrangement_note: the whole rhythm is brushes on a metal serving tray, no drum kit anywhere in the song, and the tray is close and slightly rattling
+    intro: 5
+    outro: fade
+    target_duration: "3:35"
+    prompt: >-
+      Compact close sunshine pop and soft rock, 100 BPM, wry and wistful, midtempo. Female lead
+      vocal, low and warm, close to the microphone, understated and conversational, letting phrases
+      fall away rather than holding them. Three-part close harmony stacked behind the lead on every
+      chorus, the whole group on the last one, never shouted. Upright piano, upright bass,
+      harpsichord-toned keyboard played by hand, light hand percussion, and a rhythm played with
+      brushes on a metal serving tray in place of the drum kit, close and slightly rattling, with no
+      drum kit anywhere in the song. Dry and small, gentle tape warmth, no large reverb. Five
+      seconds of brushed tray and piano before the first sung word. Fade.
+    exclude: guitars, drum kit, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 5 seconds, brushes on a metal serving tray with piano, no vocal]
+
+      [Verse 1]
+      You are one drink behind me and you have been all evening,
+      which is not an accident and is not about the drink.
+      You are waiting to see how the whole thing goes
+      before you commit to being here for the rest of it.
+
+      [Refrain]
+      I have never once known you to catch up.
+      Not in two years. Not once.
+
+      [Verse 2]
+      It is the same with the coat. You keep it over the chair
+      instead of giving it in at the counter like a person
+      who intends to be in the room for another hour.
+      You sit where you can see the door and the transfer hall clock.
+      Every single thing you own is arranged for leaving.
+
+      [Refrain]
+      I have never once known you to catch up.
+
+      [Verse 3]
+      I am not complaining. I would like that on the record.
+      A person who keeps their coat is a person who has been caught out
+      in some settlement, in some winter, before I met them,
+      by somebody kind, on a Tuesday, with the lamps down,
+      and I would rather have the coat on the chair than not have you.
+
+      [Refrain]
+      I have never once known you to catch up.
+
+      [Bridge]
+      The woman on the counter has stopped asking you for it.
+      She just nods now. She has worked here nineteen years.
+
+      [Verse 4]
+      But you are still here at the second bell, which is new,
+      and the coat is on the back of the chair and not on you,
+      and the last ferry went twenty minutes ago without you,
+      and there is a drink in front of you that you have not touched
+      and I am not going to say a word about any of it.
+
+      [Refrain - whole group]
+      I have never once known you to catch up.
+      You are one behind. Stay one behind. Stay.
+
+      [Outro - fade on the brushed tray]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0094
+    title: Keep Your Voice Down
+    track_number: 4
+    mood: [secretive, tense, slow]
+    fact: >-
+      The backing singers stand behind the closed club door, making their answers sound like the
+      conversation the lead is trying to hide.
+    arrangement_note: the three harmony voices are recorded behind a closed door and are muffled and indistinct, so they sound like a conversation in the next room rather than a backing part
+    intro: 15
+    outro: cold
+    target_duration: "4:10"
+    prompt: >-
+      Compact close soft rock, 80 BPM, secretive and tense, slow. Female lead vocal, low and warm,
+      very close to the microphone, understated and conversational, letting phrases fall away rather
+      than holding them, quiet but never breathy. Three harmony voices recorded on the far side of a
+      closed door so that they are muffled and indistinct, like a conversation in the next room
+      rather than a backing part. Upright piano, upright bass, brushed drum kit, harpsichord-toned
+      keyboard played by hand, light hand percussion. Dry and small, gentle tape warmth, no large
+      reverb. Fifteen seconds of piano and bass before the first sung word. Cold stop.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, whispered vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 15 seconds, upright piano and bass, hand percussion at ten seconds, no vocal]
+
+      [Verse 1]
+      There are nine people in this room and four of them work here
+      and every one of the nine knows everybody we know.
+      You can say anything you like at this table tonight
+      and it will be in a different quarter of the core by Friday
+      and out on the relay to two settlements by the ninth.
+
+      [Chorus]
+      So keep your voice down. Keep it under the piano.
+      Say the important half of it towards the wall.
+      There is a whole conversation going on behind that door
+      and not one word of it is about us yet.
+
+      [Verse 2]
+      It is not shame and it is not anybody's business,
+      it is that a thing this new does not survive being handled.
+      Give it a month. Give it until the season changes.
+      Then let the whole quarter have it and I will not care at all.
+
+      [Chorus]
+      So keep your voice down. Keep it under the piano.
+      Say the important half of it towards the wall.
+      There is a whole conversation going on behind that door
+      and not one word of it is about us yet.
+
+      [Verse 3]
+      You said my name at the ordinary volume once tonight,
+      across a table, in a room with the lamps up,
+      and I have not been able to think about anything since.
+      Half the room heard it. The woman on the coats heard it.
+      She has not said anything and she is not going to.
+
+      [Bridge]
+      They are counting the till behind that door and talking.
+      Whatever they are saying, they are saying it about somebody.
+
+      [Chorus - muffled group behind the door]
+      So keep your voice down. Keep it under the piano.
+      Say the important half of it towards the wall.
+      Or do not. Say it here. Say it at the ordinary volume.
+      I have decided I do not mind what gets to Friday.
+
+      [Outro - cold stop, the door voices cutting off with the band]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0095
+    title: The Coat Check Smile
+    track_number: 5
+    mood: [flirtatious, light, quick]
+    fact: >-
+      Pira Nemm plays the electronic-string figure with one hand while sorting the group's coats with
+      the other during the guide take.
+    arrangement_note: the harpsichord-toned keyboard figure is played with one hand throughout, so it is thin and never fills, and the guide take is the one that was kept
+    intro: 4
+    outro: fade
+    target_duration: "3:20"
+    prompt: >-
+      Compact close sunshine pop, 112 BPM, flirtatious and light, quick. Female lead vocal, low and
+      warm, close to the microphone, understated and conversational, letting phrases fall away
+      rather than holding them. Three-part close harmony stacked behind the lead on every chorus,
+      the whole group on the last one, never shouted. Upright piano, upright bass, brushed drum kit,
+      light hand percussion, and a harpsichord-toned keyboard — plucked electronic strings — played
+      with one hand only, so the figure is thin and never fills the arrangement. Dry and small,
+      gentle tape warmth, no large reverb, a guide take kept rather than replaced. Four seconds of
+      that one-handed figure before the first sung word. Fade.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 4 seconds, one-handed keyboard figure, no vocal]
+
+      [Verse 1]
+      She has been on that counter since before the room was a room,
+      since before the last ferry ran this late on a Thursday.
+      She takes eleven coats a minute on a Thursday
+      and she has a face for each of them and none of them is the same
+      and everybody who comes in here thinks theirs is the real one.
+
+      [Chorus]
+      Everybody gets the smile at the counter.
+      Everybody. The whole quarter. Four nights a week.
+      I know exactly what it is and what it is worth
+      and I have been coming here on Thursdays for two years.
+
+      [Verse 2]
+      I have watched her do it to a man off the last ferry
+      with a bag and a bad week and no berth for the night,
+      and he stood up straighter, and he stayed for another hour,
+      and I do not think she has any idea that she does it.
+
+      [Chorus]
+      Everybody gets the smile at the counter.
+      Everybody. The whole quarter. Four nights a week.
+      I know exactly what it is and what it is worth
+      and I have been coming here on Thursdays for two years.
+
+      [Middle eight]
+      Nine on a Thursday. Ticket four hundred and six.
+      I have kept every one of them, which is not normal behaviour.
+
+      [Verse 3]
+      Tonight she said my name before I got to the counter
+      and had the ticket out and the hook ready and my coat over her arm
+      and said it is cold, and there is a seat by the piano,
+      and I have not recovered and it has been an hour and a half.
+
+      [Chorus - whole group]
+      Everybody gets the smile at the counter.
+      Everybody. The whole quarter. Four nights a week.
+      That one was not the counter smile. I have the set.
+      I have four hundred and six of them and that was not one.
+
+      [Outro - fade on the one-handed figure]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0096
+    title: If the Piano Stops
+    track_number: 6
+    mood: [uneasy, tender, slow]
+    fact: >-
+      Mela Jorn leaves the piano silent under the second verse after a pedal repair interrupted the
+      first take.
+    arrangement_note: the piano plays nothing at all under the second verse and the bass and hand percussion carry it alone, which is the take the repair produced
+    intro: 15
+    outro: sustain
+    target_duration: "4:25"
+    prompt: >-
+      Compact close soft rock, 76 BPM, uneasy and tender, slow. Female lead vocal, low and warm,
+      close to the microphone, understated and conversational, letting phrases fall away rather than
+      holding them. Three-part close harmony stacked behind the lead on the refrains, the whole
+      group on the last one, never shouted. Upright piano, upright bass, brushed drum kit,
+      harpsichord-toned keyboard played by hand, light hand percussion — and the piano completely
+      silent under the second verse, with the bass and hand percussion carrying it alone. Dry and
+      small, gentle tape warmth, no large reverb. Fifteen seconds of piano and bass before the first
+      sung word. Ends on a sustained chord.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 15 seconds, upright piano and bass, hand percussion at eleven seconds, no vocal]
+
+      [Verse 1]
+      There is a thing that happens in a room like this one
+      when the piano stops in the middle of an evening.
+      Everybody hears the room for the first time all night —
+      the counter, the door, the four conversations, the street,
+      the scrubber in the ceiling that has run all winter,
+      a hauler on the road outside that nobody would have heard.
+
+      [Refrain]
+      Nobody looks up. Everybody hears it.
+      And then somebody starts again and nobody says a word.
+
+      [Verse 2 - no piano]
+      That is what I am afraid of, if you want it plainly.
+      Not the argument. Not the being told. Not the winter.
+      Not the season sealing with the two of us on one side of it.
+      The bit where the noise we make together stops for a second
+      and we both find out what the room actually sounds like.
+
+      [Refrain]
+      Nobody looks up. Everybody hears it.
+      And then somebody starts again and nobody says a word.
+
+      [Verse 3]
+      We have been very good at keeping something going.
+      Four nights a week, the same table, the same walk after,
+      the same fourteen minutes to the transfer hall in the cold.
+      There is a version of that which is a life
+      and a version which is two people avoiding a quiet room,
+      and I have not been able to tell which of them this is.
+
+      [Refrain]
+      Nobody looks up. Everybody hears it.
+      And then somebody starts again and nobody says a word.
+
+      [Verse 4]
+      So somebody take their hands off the keys for a bar
+      and let us both listen to what is left underneath.
+      If there is nothing there we should probably know,
+      tonight, in this room, with the lamps still down.
+      If there is something there I would like to hear it once,
+      plainly, at the ordinary volume, with nothing playing.
+
+      [Refrain - whole group]
+      Nobody looks up. Everybody hears it.
+      Stop the piano. I am not afraid of the room.
+
+      [Outro - sustain, the piano returning under the last chord]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0097
+    title: Closed for Counting
+    track_number: 7
+    mood: [tired, warm, building]
+    fact: >-
+      The club's closing staff sing the final answer while counting the room's empty cups into
+      storage bins.
+    arrangement_note: the closer; the last chorus is answered by the room's own closing staff with cups going into bins audible behind them, and it is the only large sound on the record
+    intro: 9
+    outro: sustain
+    target_duration: "4:20"
+    prompt: >-
+      Compact close sunshine pop and soft rock, 92 BPM, tired and warm, building. Female lead vocal,
+      low and warm, close to the microphone, understated and conversational, letting phrases fall
+      away rather than holding them. Three-part close harmony stacked behind the lead on every
+      chorus, and on the final chorus a handful of untrained voices answering with the sound of cups
+      being stacked into bins behind them — the only large sound on the record. Upright piano,
+      upright bass, brushed drum kit, harpsichord-toned keyboard played by hand, light hand
+      percussion. Dry and small, gentle tape warmth, no large reverb. Nine seconds of piano and
+      brushed kit before the first sung word. Ends on a sustained chord under the room.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 9 seconds, upright piano with brushed kit, no vocal]
+
+      [Verse 1]
+      The lamps come up at one and the room looks like a room,
+      which is a thing nobody who comes here at nine ever sees.
+      Chairs on tables. A woman with a cloth and a list.
+      Two hundred cups going into a bin four at a time.
+
+      [Chorus]
+      Closed for counting. Everybody out.
+      That is what the sign says and the sign is nineteen years old
+      and the people who put it up went home in the spring
+      and the four of us are still here, counting, every night.
+
+      [Verse 2]
+      You are the last one at the table with your coat done up
+      and a cup you finished forty minutes ago in front of you,
+      and the woman with the cloth has come past twice
+      and not asked you to move, which she would ask anybody else.
+
+      [Chorus]
+      Closed for counting. Everybody out.
+      That is what the sign says and the sign is nineteen years old
+      and the people who put it up went home in the spring
+      and the four of us are still here, counting, every night.
+
+      [Bridge]
+      There is a whole shift of people in the settled worlds
+      who only ever see each other after somebody says everybody out.
+
+      [Verse 3]
+      So stay until the count is done and walk back with me.
+      The last ferry has gone and there is no reason to hurry.
+      It is fourteen minutes to the transfer hall and the lamps are on
+      and there is nothing in this quarter open at that hour
+      and I have never once minded the walk when you are on it.
+
+      [Final Chorus - closing staff answering, cups into bins behind them]
+      Closed for counting. Everybody out.
+      The bins are full, the till is short, the list is done.
+      Put the chairs up. Put the lamps down. Leave the last one.
+      Everybody out. Not you. You wait. I am nearly finished.
+
+      [Outro - sustain, the room and the cups still going]
+    take: null                    # M-30 fills this in at the Suno sitting

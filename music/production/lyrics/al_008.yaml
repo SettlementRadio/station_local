@@ -1,0 +1,528 @@
+# al_008 — Shared Format · Cabin Treaty (b_004) · Common Wake Cooperative · 2600 · 7 songs · EP
+#
+# Written by M-21. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# This is the record the band's Localist turn happens on. The wiki's argument — a format can travel,
+# an instrument stays tied to its room — is an arrangement fact, not a subject: Cado Veir's tuned
+# oxygen-tank drums arrive here and are on every track, and nothing in the words is about movements.
+#
+# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+
+album:
+  id: al_008
+  title: Shared Format
+  band: b_004
+  band_name: Cabin Treaty
+  label: label_5
+  release_year: 2600
+  genre: relay-pop
+  cornerstone: false
+  song_count: 7
+  style_card: b_004
+  room: >-
+    Cut for the shared shipboard pressing format of 2600, so the record had to travel further than
+    the band ever had. The style card is followed straight: this is where the hand-built percussion
+    becomes the tuned oxygen-tank drums the card names, because 2600 is the year Cado Veir proved
+    they could be tuned the same way twice. The per-song departures are the guests — a composite
+    fiddle counting with a bow rather than a voice, a guitar break cut in a loading passage, an
+    upright bass with a cloth under the strings so the next cabin could stay asleep.
+
+generation:
+  # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0072
+    title: Shared Format
+    track_number: 1
+    mood: [confident, communal, brisk]
+    fact: >-
+      Cado Veir demonstrates three different oxygen-tank tunings before the first sung line to make
+      the Localist argument audible.
+    arrangement_note: three tuned oxygen-tank drums are struck in turn before the first sung word, each a different pitch, and all three run under the choruses
+    intro: 16
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      Warm live-room jangle pop and soft rock, 126 BPM, confident and communal, brisk. Male lead
+      vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
+      no vibrato. Whole-crew chorus of four to six voices in unison rather than harmony, mixed
+      registers, answering the lead, one high harmony only on the final chorus. Two composite
+      guitars, one acoustic-toned and one electric, electric bass, and hand-built percussion of
+      three tuned metal tank drums at three distinct pitches, struck in turn before the first sung
+      word and all three running under every chorus, plus hanging wire chimes. Whole band tracked
+      together in a live room, percussion left ringing, light compression, loose rather than
+      gridded. Sixteen seconds of the three tank drums before the first sung word. Fade.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 16 seconds, three tuned tank drums struck in turn, chimes at eleven seconds, no vocal]
+
+      [Verse 1]
+      Somebody worked out that a sleeve is a size
+      and a size is a thing that a hundred ships can hold.
+      So the same crate fits the same shelf in every port
+      and a record made in one cabin gets as far as the road goes.
+
+      [Chorus]
+      Send it out. Send the whole of it out.
+      Let it turn up in a port hall nobody here has seen
+      and be sung wrong by people who have never met us.
+      That is not losing it. That is the point of making it.
+
+      [Verse 2]
+      There is a man on this crew who will not have it,
+      who says the drum is tuned to this room and no other,
+      that you can post the shape of a thing and not the thing,
+      and he is right, and he knows he is right, and he is still coming.
+
+      [Chorus]
+      Send it out. Send the whole of it out.
+      Let it turn up in a port hall nobody here has seen
+      and be sung wrong by people who have never met us.
+      That is not losing it. That is the point of making it.
+
+      [Verse 3]
+      I would like it to reach one particular berth
+      about four legs out from here on the long circuit,
+      where somebody I have not seen since the spring
+      will hear the second track and know exactly who it is for.
+
+      [Chorus]
+      Send it out. Send the whole of it out.
+      Let it turn up in a port hall nobody here has seen
+      and be sung wrong by people who have never met us.
+      That is not losing it. That is the point of making it.
+
+      [Chorus - whole crew, three drums together]
+      Send it out. Send the whole of it out.
+      Everything on this crate is the same size as everything else
+      and one of them has got your name written inside the sleeve.
+      Go and find it. It has gone further than I can.
+
+      [Outro - fade on the three drums]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0073
+    title: Add My Name in Pencil
+    track_number: 2
+    mood: [eager, bright, quick]
+    fact: >-
+      Nessa Dray gives the count with her bow against the composite fiddle body rather than speaking
+      it.
+    arrangement_note: the count-in is a bow tapped on the body of a composite fiddle, four beats, and it is left in at the top of the record and again after the middle eight
+    intro: 4
+    outro: cold
+    target_duration: "3:10"
+    prompt: >-
+      Warm live-room jangle pop, 136 BPM, eager and bright, quick. Male lead vocal, warm baritone
+      that roughens at the top of the range, plain and a shade behind the beat, no vibrato.
+      Whole-crew chorus of four to six voices in unison rather than harmony, answering the lead line
+      for line across the chorus. Two composite guitars, one acoustic-toned and one electric,
+      electric bass, tuned metal tank drums and hanging wire chimes, and a guest composite fiddle —
+      bright and thin-toned, one instrument and never a string section — whose bow tapped four times
+      on its own body is the count-in, kept in at the top of the record and again after the middle
+      eight. Whole band tracked together in a live room, light compression, loose rather than
+      gridded. Four seconds from that count to the first sung word. Cold stop.
+    exclude: synthesizers, electronic drums, orchestral string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 4 seconds, four beats of a bow tapped on a fiddle body, band in on the fifth, no vocal]
+
+      [Verse 1]
+      There is a list on the wall by the transfer hall door
+      for the trip out on the ninth, and it is nearly full.
+      Fourteen names in ink and a gap at the bottom
+      and a stub of pencil hanging off a bit of wire.
+
+      [Pre-Chorus]
+      I am not going to think about this for a week -
+
+      [Chorus]
+      Add my name in pencil (add my name in pencil)
+      Not in ink, not yet, but put it on the sheet (on the sheet)
+      If it is wrong I will rub it out on Thursday
+      and if it is right I will go over it in ink myself.
+
+      [Verse 2]
+      You put yours down at four this afternoon.
+      I know because I have looked at that list nine times
+      and I would have noticed a change in the weather sooner
+      than I noticed your handwriting on the second column.
+
+      [Pre-Chorus]
+      So here I am at the wall with a bit of wire and a stub -
+
+      [Chorus]
+      Add my name in pencil (add my name in pencil)
+      Not in ink, not yet, but put it on the sheet (on the sheet)
+      If it is wrong I will rub it out on Thursday
+      and if it is right I will go over it in ink myself.
+
+      [Middle eight]
+      Everybody I know decides everything twice.
+      Once at the desk, and once at the door with a coat on.
+
+      [Verse 3]
+      A hauler out on the ninth is eleven days of nothing
+      but the same four faces and whatever anybody brought.
+      I have been on worse trips with better reasons
+      and I have never once put my name down this fast.
+
+      [Chorus]
+      Add my name in pencil (add my name in pencil)
+      Not in ink, not yet, but put it on the sheet (on the sheet)
+      If it is wrong I will rub it out on Thursday
+      and if it is right I will go over it in ink myself.
+
+      [Outro - cold stop on a struck tank drum]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0074
+    title: Two Stops Early
+    track_number: 3
+    mood: [romantic, restless, midtempo]
+    fact: >-
+      Ressa Morn based the lyric on leaving a crew shuttle early to prolong a walk with another
+      passenger.
+    arrangement_note: everything drops out except the acoustic-toned guitar for the last verse, as though the band had got off two stops early with him
+    intro: 9
+    outro: sustain
+    target_duration: "4:00"
+    prompt: >-
+      Warm live-room jangle pop and soft rock, 110 BPM, romantic and restless, midtempo. Male lead
+      vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
+      no vibrato. Whole-crew chorus of four to six voices in unison rather than harmony, mixed
+      registers, and one high harmony on the final chorus. Two composite guitars, one acoustic-toned
+      and one electric, electric bass, tuned metal tank drums and hanging wire chimes. Whole band
+      tracked together in a live room, light compression, loose rather than gridded, and everything
+      dropping away but the acoustic-toned guitar for the entire last verse. Nine seconds of
+      acoustic-toned guitar and chimes before the first sung word. Ends on a sustained chord.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 9 seconds, acoustic-toned guitar with wire chimes, no vocal]
+
+      [Verse 1]
+      The crew shuttle runs the length of the yard and back
+      from the transfer hall to the last berth on the hard,
+      and it stops eleven times and everybody knows the stops.
+      Mine is the fourth. Yours is the second to last.
+      I have known that for two years and never once used it.
+
+      [Chorus]
+      So I got off at the fourth stop early with my bag on my shoulder
+      and said something about wanting the air, which was a lie,
+      and we walked the whole wet length of the service road
+      talking about nothing at about half the speed it takes.
+
+      [Verse 2]
+      Twenty minutes. Twenty-two if the gate is shut.
+      I have made that walk take twenty-eight before now
+      by asking a question I already had the answer to
+      just before we got to the turning by the pump house.
+      The whole freight crew goes past us on the shuttle
+      and every one of them has the sense not to wave.
+
+      [Chorus]
+      So I got off at the fourth stop early with my bag on my shoulder
+      and said something about wanting the air, which was a lie,
+      and we walked the whole wet length of the service road
+      talking about nothing at about half the speed it takes.
+
+      [Instrumental - both guitars, 10 seconds]
+
+      [Verse 3 - acoustic-toned guitar only]
+      You got off one stop early on the Tuesday after.
+      You did not say anything about the air.
+      You did not say anything at all, and neither did I,
+      and we walked the whole way in and it took thirty-one minutes.
+
+      [Chorus]
+      So I got off at the fourth stop early with my bag on my shoulder
+      and said something about wanting the air, which was a lie,
+      and we walked the whole wet length of the service road
+      talking about nothing at about half the speed it takes.
+
+      [Outro - sustain, guitar and chimes]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0075
+    title: Loan Me Your Coat
+    track_number: 4
+    mood: [flirtatious, warm, brisk]
+    fact: >-
+      Talla Venn recorded the composite-guitar break in the narrow loading passage where the lyric's
+      request took place.
+    arrangement_note: the guest guitar break is cut in a narrow loading passage and is the only part on the record with any room on it; everything else stays close and dry
+    intro: 7
+    outro: fade
+    target_duration: "3:30"
+    prompt: >-
+      Warm live-room jangle pop, 128 BPM, flirtatious and warm, brisk. Male lead vocal, warm
+      baritone that roughens at the top of the range, plain and a shade behind the beat, no vibrato.
+      Whole-crew chorus of four to six voices in unison rather than harmony, answering the lead, one
+      high harmony on the final chorus. Two composite guitars, one acoustic-toned and one electric,
+      electric bass, tuned metal tank drums and hanging wire chimes, and a guest bright composite
+      guitar taking a fourteen-second break recorded in a narrow metal passage so that it is the
+      only part on the record with any room sound on it — everything else close and dry. Whole band
+      tracked together, light compression, loose rather than gridded. Seven seconds of electric
+      composite guitar before the first sung word. Fade.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 7 seconds, electric composite guitar over tank drums, no vocal]
+
+      [Verse 1]
+      It is eleven degrees in the loading passage and dropping
+      and I have come out in a shirt like a person with a plan.
+      There is a queue for the lift and the queue is not moving,
+      there is cargo halfway down it that nobody will claim,
+      and you are at the front of it in the good coat, obviously.
+
+      [Chorus]
+      Loan me your coat. It is a straightforward request.
+      I am not asking for the year or the berth or the name.
+      Twenty minutes of somebody else's warm sleeve
+      and the whole passage watching to see what you do.
+
+      [Verse 2]
+      You made a performance of it, which I did expect.
+      You looked at me, and at the queue, and back at me,
+      and you took your time with the buttons on the way out
+      and handed it over like the manifest for a whole hold.
+
+      [Chorus]
+      Loan me your coat. It is a straightforward request.
+      I am not asking for the year or the berth or the name.
+      Twenty minutes of somebody else's warm sleeve
+      and the whole passage watching to see what you do.
+
+      [Instrumental - guest guitar break in the loading passage, 14 seconds]
+
+      [Verse 3]
+      It is three days later and I still have the thing.
+      I have worn it to the port hall and out to the hard,
+      I have had it over the back of a chair at four meals,
+      and every single person on this crew has noticed
+      and not one of them has said a word about it to me.
+
+      [Final Chorus - whole crew, one high harmony]
+      Loan me your coat. It is a straightforward request.
+      I am not asking for the year or the berth or the name.
+      Twenty minutes of somebody else's warm sleeve —
+      it is Thursday, it is still on the back of my chair, and you have not asked.
+
+      [Outro - fade on the guitar and the crew]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0076
+    title: The Galley Light
+    track_number: 5
+    mood: [wistful, intimate, steady]
+    fact: >-
+      Oren Saye plays upright bass with a cloth under the strings so the sleeping crew could remain
+      in the adjoining cabin.
+    arrangement_note: a guest upright bass is played with a cloth under the strings and every part on the record is played at the volume of a room where people are asleep next door
+    intro: 16
+    outro: sustain
+    target_duration: "4:20"
+    prompt: >-
+      Warm live-room soft rock, 96 BPM, wistful and intimate, steady. Male lead vocal, warm baritone
+      that roughens at the top of the range, plain and a shade behind the beat, no vibrato, sung
+      quietly throughout. Whole-crew chorus of four voices in unison rather than harmony, kept very
+      quiet, answering the refrain only. Acoustic-toned composite guitar, guest upright bass played
+      with a cloth under the strings so it is short and dull rather than ringing, hanging wire
+      chimes brushed rather than struck, no drums. Tracked together in a small cabin at the volume
+      of a room where people are asleep next door, light compression. Four verses and a two-line
+      refrain, no chorus anywhere. Sixteen seconds of muted upright bass and guitar before the first
+      sung word. Ends on a sustained chord.
+    exclude: synthesizers, electronic drums, drum kit, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, belted vocals, dance-pop production
+    lyrics: |
+      [Intro - 16 seconds, muted upright bass and acoustic-toned guitar, chimes at eleven seconds, no vocal]
+
+      [Verse 1]
+      There is one light left on in the galley all night
+      because somebody on every crew is always awake.
+      It is over the kettle and it is the colour of weak tea
+      and everybody who has ever worked a night knows it.
+      Nobody turns it off. Nobody has ever turned it off.
+      It is on in every hauler on this circuit at this hour.
+
+      [Refrain]
+      Leave the light on in the galley. Somebody is always coming in.
+
+      [Verse 2]
+      I came off watch at two and you were sitting there
+      with a cup gone cold and a manifest you were not reading.
+      You did not look surprised and you did not move up,
+      you just pushed the other chair out with your foot
+      and carried on not reading the same page of the same list
+      for about as long as it takes to boil a kettle.
+
+      [Refrain]
+      Leave the light on in the galley. Somebody is always coming in.
+
+      [Verse 3]
+      We are four berths from a cabin with six people asleep
+      so the whole of this has to be conducted quietly.
+      Every important thing I have ever said to you
+      has been said at about a quarter of my actual volume,
+      under a scrubber, over a kettle, with one eye on the door,
+      and it has still been the loudest part of my week.
+
+      [Refrain]
+      Leave the light on in the galley. Somebody is always coming in.
+
+      [Verse 4]
+      In a fortnight there is a port and after the port a road
+      and after the road a settlement where one of us gets off.
+      I know which one. You know which one. Nobody is saying.
+      Push the chair out with your foot again and I will sit down.
+
+      [Refrain - crew, very quiet]
+      Leave the light on in the galley. Somebody is always coming in.
+      Leave it on the whole way to the port.
+
+      [Outro - sustain, muted bass under the last chime]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0077
+    title: Quieter Than Engines
+    track_number: 6
+    mood: [secretive, tender, slow]
+    fact: >-
+      The first take was rejected because all four singers dropped below the life-support noise and
+      lost the final line.
+    arrangement_note: the crew answers sit deliberately just above the room's own low mechanical noise and never below it, and the last line is sung by the lead alone to be certain of it
+    intro: 12
+    outro: fade
+    target_duration: "4:10"
+    prompt: >-
+      Warm live-room soft rock, 92 BPM, secretive and tender, slow. Male lead vocal, warm baritone
+      that roughens at the top of the range, plain and a shade behind the beat, no vibrato, quiet
+      but never breathy. Whole-crew chorus of four voices in unison rather than harmony, pitched
+      deliberately just above the room's own low mechanical hum and never below it, and the final
+      line sung by the lead alone. Acoustic-toned composite guitar, electric composite guitar
+      played very softly, electric bass, tuned metal tank drums brushed rather than struck, hanging
+      wire chimes. Tracked together in a live room with its own audible low ventilation noise left
+      in. Twelve seconds of guitar over that hum before the first sung word. Fade.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, belted vocals, dance-pop production
+    lyrics: |
+      [Intro - 12 seconds, acoustic-toned guitar over the room's low hum, no vocal]
+
+      [Verse 1]
+      Everything on this ship is louder than a person.
+      The scrubber, the fans, the thing behind the panel
+      that nobody has fixed and everybody has stopped hearing,
+      the bulkhead door that has never once shut quietly.
+      You learn to talk under it or you do not talk.
+
+      [Verse 2]
+      So we have got about four notes of room to work in,
+      quieter than the engines and louder than the dark.
+      Anything said properly out loud in this corridor
+      is said to the whole crew whether it was meant for them or not.
+
+      [Chorus]
+      Say it quieter than the engines. I will hear it.
+      I have been listening for it for the whole of the last leg.
+      There is no privacy on a hauler and there never was
+      and the two of us have made a small one anyway.
+
+      [Verse 3]
+      You said it once at the wrong volume by mistake
+      and Emi looked up from the far end of the table
+      and said nothing at all, then, or ever, about it,
+      which is the kindest thing that crew has ever done.
+
+      [Chorus]
+      Say it quieter than the engines. I will hear it.
+      I have been listening for it for the whole of the last leg.
+      There is no privacy on a hauler and there never was
+      and the two of us have made a small one anyway.
+
+      [Bridge]
+      They will put the lights down at eleven the way they always do.
+      Everything worth saying on this ship gets said after that.
+
+      [Chorus - lead alone on the last line]
+      Say it quieter than the engines. I will hear it.
+      I have been listening for it for the whole of the last leg.
+      There is no privacy on a hauler and there never was.
+      Say it once, at any volume, and I will have it for good.
+
+      [Outro - fade, the room's hum left running]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0078
+    title: Everybody Knows the Fare
+    track_number: 7
+    mood: [wry, communal, driving]
+    fact: >-
+      Sel Ardin arranged the crew chorus so each singer enters with a different fare complaint
+      collected at three ports.
+    arrangement_note: the closer; each voice in the crew chorus enters one at a time with a different line, and by the last chorus all six are singing different words at once
+    intro: 6
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      Warm live-room jangle pop and soft rock, 132 BPM, wry and communal, driving. Male lead vocal,
+      warm baritone that roughens at the top of the range, plain and a shade behind the beat, no
+      vibrato. Whole-crew chorus of six voices in unison rather than harmony, entering one at a time
+      with a different line each and all six singing different words at once by the last chorus,
+      mixed registers, unpolished. Two composite guitars, one acoustic-toned and one electric,
+      electric bass, tuned metal tank drums and hanging wire chimes left ringing. Whole band tracked
+      together in a live room, light compression, loose rather than gridded. Six seconds of tank
+      drums and both guitars before the first sung word. Fade on six voices at once.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 6 seconds, tank drums and both guitars, no vocal]
+
+      [Chorus]
+      Everybody knows the fare (everybody knows the fare)
+      Everybody knows it is a shade more than it was (than it was)
+      Nobody has ever seen it written on a board
+      and every single person on this deck can tell you what it is.
+
+      [Verse 1]
+      A man at the first port says it went up in the spring.
+      A woman at the second says it went up in the spring
+      of a different year, and she has the receipt to prove it,
+      and the two of them have never met and never will.
+
+      [Chorus]
+      Everybody knows the fare (everybody knows the fare)
+      Everybody knows it is a shade more than it was (than it was)
+      Nobody has ever seen it written on a board
+      and every single person on this deck can tell you what it is.
+
+      [Verse 2]
+      I am not complaining about the fare. I am complaining
+      that the fare is the only thing anybody talks about
+      on a two-day crossing with nothing else to do
+      and somebody standing at the rail that I would rather talk to.
+
+      [Chorus]
+      Everybody knows the fare (everybody knows the fare)
+      Everybody knows it is a shade more than it was (than it was)
+      Nobody has ever seen it written on a board
+      and every single person on this deck can tell you what it is.
+
+      [Verse 3]
+      So here is what it costs, and I have done the sums.
+      It costs a whole crossing of standing in the wrong queue,
+      it costs looking like a fool in front of six of my crew,
+      and it is the cheapest thing I have ever paid for.
+
+      [Final Chorus - six voices, all different words]
+      Everybody knows the fare (everybody knows the fare)
+      Everybody knows it is a shade more than it was (than it was)
+      Nobody has ever seen it written on a board.
+      Pay it. Get on. She is at the rail and the ferry goes at four.
+
+      [Outro - fade on six voices at once]
+    take: null                    # M-30 fills this in at the Suno sitting

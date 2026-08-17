@@ -1,0 +1,880 @@
+# al_009 — Same Berth Twice · Cabin Treaty (b_004) · Common Wake Cooperative · 2619 · 12 songs
+#
+# **A cornerstone album** (COMMISSION.md §5): twelve songs that have to carry a whole 56-minute
+# programme on their own, so M-21's note — *"extra passes go to the cornerstone albums"* — lands
+# here. It got them.
+#
+# Written by M-21. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The wiki gives this record two facts a whole programme is built on: the 2619 rule change that let
+# the band hold one room for an entire route, and the argument over the title track that stopped
+# Ressa Morn and Jalen Rook speaking to each other outside performance. Neither is ever the subject
+# of a song — §3 — but the first is why every take on the record is the same room, and the second is
+# why the answering lines on track 1 were cut on opposite shifts.
+#
+# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+
+album:
+  id: al_009
+  title: Same Berth Twice
+  band: b_004
+  band_name: Cabin Treaty
+  label: label_5
+  release_year: 2619
+  genre: relay-pop
+  cornerstone: true
+  song_count: 12
+  style_card: b_004
+  room: >-
+    One room, held for the whole route, which is what the 2619 co-operative rule change bought. So
+    this record has a consistency the two EPs could not have: the same live room, the same tuned
+    tank drums, the same handmade chimes, and the whole band tracked together on every song. The
+    style card is followed straight. The departures are per song and each is a guest on exactly one
+    part — a resonance-pipe note that waits for the handover, a locker latch retuned into a chime, a
+    guest piano on the last two tracks, and one song where the same player takes both guitars
+    because the band voted on who got the break.
+
+generation:
+  # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0079
+    title: Same Berth Twice
+    track_number: 1
+    mood: [romantic, triumphant, driving]
+    fact: >-
+      Ressa Morn and Jalen Rook recorded their answering lines on opposite shifts after their credit
+      argument.
+    arrangement_note: the lead and the answering voice are never in the room at the same time and the two parts never overlap by a single beat, which is audible and deliberate
+    intro: 8
+    outro: cold
+    target_duration: "3:50"
+    prompt: >-
+      Warm live-room jangle pop and soft rock, 130 BPM, romantic and triumphant, driving. Male lead
+      vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
+      no vibrato. A single answering voice recorded separately that never overlaps the lead by a
+      beat, then the whole-crew chorus of four to six voices in unison rather than harmony on the
+      last two choruses, one high harmony over the final one. Two composite guitars, one
+      acoustic-toned and one electric, electric bass, tuned metal tank drums and hanging wire chimes
+      left ringing. Whole band tracked together in one live room, light compression, loose rather
+      than gridded. Eight seconds of both guitars and tank drums before the first sung word. Cold
+      stop.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 8 seconds, both composite guitars over tank drums, no vocal]
+
+      [Verse 1]
+      Eleven years on this circuit and I have never had the same berth twice.
+      A different bunk, a different wall, a different noise at three,
+      a locker with somebody else's name half scratched off it
+      and a shelf that is either too high or not there at all.
+
+      [Chorus]
+      And then they changed the rule and gave us the one room
+      for the whole route, out and back, the entire way round.
+      Same berth twice. Same berth eleven times.
+      You can put a photograph up. You can leave a cup out.
+
+      [Verse 2]
+      It sounds like nothing. Read it on a notice and it is nothing.
+      A line in a co-operative minute about room allocation.
+      But a person who has slept in forty rooms in a year
+      will tell you exactly what it is worth, and it is not nothing.
+
+      [Chorus]
+      And then they changed the rule and gave us the one room
+      for the whole route, out and back, the entire way round.
+      Same berth twice. Same berth eleven times.
+      You can put a photograph up. You can leave a cup out.
+
+      [Bridge]
+      The two of us cannot agree on who wrote this,
+      and we have both turned up, on opposite shifts, to sing it.
+
+      [Verse 3]
+      There is a hook by the door that has had my coat on it since spring
+      and the coat knows the hook now, which is more than I expected.
+      And you know which watch I am on without asking anybody,
+      and you leave the light off, and the kettle warm, and the door.
+
+      [Chorus - whole crew]
+      And then they changed the rule and gave us the one room
+      for the whole route, out and back, the entire way round.
+      Same berth twice. Same berth eleven times.
+      I have stopped counting the ports. I have started counting the weeks.
+
+      [Final Chorus - one high harmony over the crew]
+      Same berth twice, and a shelf, and a hook, and a wall.
+      It is not a settlement. It is not a name on a lease.
+      It is the first thing on this circuit I have not had to pack.
+      Leave the cup out. Leave it out the whole way round.
+
+      [Outro - cold stop, all voices together]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0080
+    title: Payday Flowers
+    track_number: 2
+    mood: [joyful, affectionate, brisk]
+    fact: >-
+      Cado Veir taps the empty wrapping tubes from the flowers bought for the session meal table.
+    arrangement_note: the percussion is empty paper wrapping tubes tapped against the table, dry and light, with the tank drums kept out of the verses entirely
+    intro: 5
+    outro: fade
+    target_duration: "3:20"
+    prompt: >-
+      Warm live-room jangle pop, 132 BPM, joyful and affectionate, brisk. Male lead vocal, warm
+      baritone that roughens at the top of the range, plain and a shade behind the beat, no vibrato.
+      Whole-crew chorus of four to six voices in unison rather than harmony, answering the lead
+      across the chorus. Two composite guitars, one acoustic-toned and one electric, electric bass,
+      and percussion played on empty paper wrapping tubes tapped against a table — dry and light,
+      with the tuned tank drums kept out of the verses entirely and arriving only in the choruses.
+      Whole band tracked together in one live room, light compression, loose rather than gridded.
+      Five seconds of tapped tubes and acoustic-toned guitar before the first sung word. Fade.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 5 seconds, tapped paper tubes and acoustic-toned guitar, no vocal]
+
+      [Verse 1]
+      There is a stall at the transfer hall that sells them off a crate,
+      grown under lamps two settlements up the relay road,
+      and they are expensive in a way that is frankly insulting
+      and everybody on this crew buys them on the day the money lands.
+
+      [Chorus]
+      Payday flowers. Four days of colour on a metal table
+      and then a week of a jar with nothing in it.
+      Nobody sensible would spend a shift's money on that.
+      Every sensible person I know does it anyway.
+
+      [Verse 2]
+      Jalen brings them for his mother, who says every year
+      that he should not have, and puts them where the whole hall sees.
+      Emi buys them for the cabin, which is a way of saying
+      something Emi has never said out loud in nine years.
+
+      [Chorus]
+      Payday flowers. Four days of colour on a metal table
+      and then a week of a jar with nothing in it.
+      Nobody sensible would spend a shift's money on that.
+      Every sensible person I know does it anyway.
+
+      [Verse 3]
+      I got you the cheap ones, the ones at the end of the crate,
+      because I have watched you all year with the good ones
+      and you never once looked at the price on the ticket,
+      you looked at the flowers, which is why I am spending the money.
+
+      [Chorus]
+      Payday flowers. Four days of colour on a metal table
+      and then a week of a jar with nothing in it.
+      Nobody sensible would spend a shift's money on that.
+      Every sensible person I know does it anyway.
+
+      [Chorus - whole crew, tank drums in]
+      Payday flowers, and the wrapping on the table,
+      and a whole crew pretending not to watch the door.
+      Four days of colour and a fortnight of the jar.
+      It is worth it. Ask anybody who is not sensible.
+
+      [Outro - fade on the tapped tubes]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0081
+    title: Your Name on the Locker
+    track_number: 3
+    mood: [tender, proud, midtempo]
+    fact: >-
+      Brin Noll turns a locker latch into the offbeat chime after retuning its loose plate.
+    arrangement_note: a locker latch with its plate retuned rings on every offbeat in place of the wire chimes, and the chimes are not used anywhere in this song
+    intro: 11
+    outro: cold
+    target_duration: "4:10"
+    prompt: >-
+      Warm live-room soft rock and jangle pop, 104 BPM, tender and proud, midtempo. Male lead vocal,
+      warm baritone that roughens at the top of the range, plain and a shade behind the beat, no
+      vibrato. Whole-crew chorus of four voices in unison rather than harmony entering only in the
+      second half, one high harmony on the final chorus. Two composite guitars, one acoustic-toned
+      and one electric, electric bass, tuned metal tank drums, and a struck metal locker latch with
+      a retuned plate ringing on every offbeat in place of the usual wire chimes, which are absent
+      from this song entirely. Whole band tracked together in one live room, light compression,
+      loose rather than gridded. Eleven seconds of that latch and the acoustic-toned guitar before
+      the first sung word. Cold stop on a struck latch.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 11 seconds, struck locker latch on the offbeat with acoustic-toned guitar, no vocal]
+
+      [Verse 1]
+      They do it with a strip of tape and a marker pen,
+      the same as they have done it since before I was on the freight crew.
+      Your name goes on at the start of a route and comes off at the end
+      and it hangs there by the berth for eleven weeks
+      and nobody has ever thought about it for a second.
+
+      [Verse 2]
+      I thought about it. I have thought about very little else
+      since the morning I walked past and saw the two of them,
+      mine at the end of the row where it has always been
+      and yours next to it, second from the door, in the same hand.
+
+      [Chorus]
+      Your name on that locker beside mine.
+      A strip of tape. Somebody in an office with a list.
+      Nobody in this building meant anything by it
+      and I have been walking past that row four times a day.
+
+      [Verse 3]
+      There is no message in it. I know there is no message in it.
+      A woman with a rota put us in alphabetical order
+      and the whole of my week has been arranged around a coincidence
+      that a person with a marker pen made on a Tuesday morning.
+
+      [Chorus]
+      Your name on that locker beside mine.
+      A strip of tape. Somebody in an office with a list.
+      Nobody in this building meant anything by it
+      and I have been walking past that row four times a day.
+
+      [Bridge]
+      At the end of the route they take the tape off with a thumbnail.
+      Both names, one after the other, in about four seconds.
+
+      [Final Chorus - whole crew, one high harmony]
+      Your name on that locker beside mine.
+      A strip of tape. Somebody in an office with a list.
+      When they come round with the marker for the next route
+      I am going to be standing there, and I am going to say something.
+
+      [Outro - cold stop, one struck latch and nothing after it]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0082
+    title: Last Ferry Home
+    track_number: 4
+    mood: [urgent, yearning, driving]
+    fact: >-
+      Emi Soll plays the composite-guitar break at the faster tempo the band used when a ferry notice
+      shortened the session.
+    arrangement_note: the instrumental break is played several beats a minute faster than the rest of the song and the band never quite catches up with it afterwards
+    intro: 4
+    outro: cold
+    target_duration: "3:25"
+    prompt: >-
+      Warm live-room jangle pop, 138 BPM, urgent and yearning, driving. Male lead vocal, warm
+      baritone that roughens at the top of the range, plain and a shade behind the beat, no vibrato.
+      Whole-crew chorus of four to six voices in unison rather than harmony, answering the lead,
+      louder each time. Two composite guitars, one acoustic-toned and one electric, electric bass,
+      tuned metal tank drums and hanging wire chimes. Whole band tracked together in one live room,
+      light compression, loose rather than gridded. A fourteen-second electric composite guitar
+      break played noticeably faster than the rest of the song, with the band not quite catching up
+      afterwards. Four seconds of tank drums before the first sung word. Cold stop.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 4 seconds, tank drums and a guitar pickup, no vocal]
+
+      [Verse 1]
+      The notice goes up at four and the whole hall reads it standing.
+      Last ferry moved forward, weather on the crossing,
+      and two hundred people work out in the same half second
+      whether the thing they were going to do tonight is still on.
+
+      [Pre-Chorus]
+      Mine was not on. Mine was very much not on -
+
+      [Chorus]
+      So it is the last ferry home or it is nothing at all,
+      it is the quarter past or a week on the wrong side of the water.
+      I have got eleven minutes and a bag and a bad plan
+      and I am going to spend all three of them badly.
+
+      [Verse 2]
+      You were at the far end of the hard with your back to me
+      talking to somebody from the yard about a hold of late cargo.
+      There is no dignified way to cross that much open ground
+      at speed, with a bag, in front of a hundred of your own crew.
+
+      [Pre-Chorus]
+      I did it anyway. I will hear about it for years -
+
+      [Chorus]
+      So it is the last ferry home or it is nothing at all,
+      it is the quarter past or a week on the wrong side of the water.
+      I have got eleven minutes and a bag and a bad plan
+      and I am going to spend all three of them badly.
+
+      [Instrumental - electric composite guitar break, 14 seconds, faster than the song]
+
+      [Verse 3]
+      I did not make it. Obviously I did not make it.
+      I stood on the hard and watched the lamps go round the point
+      and then I turned round and you were still standing there,
+      because you had not gone either, and you had not said so.
+
+      [Chorus]
+      So it is the last ferry home or it is nothing at all —
+      well, it was nothing at all, and here we both are.
+      A week on the wrong side of the water with you
+      is not the punishment the notice seemed to think it was.
+
+      [Outro - cold stop on the downbeat]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0083
+    title: The Better Bunk
+    track_number: 5
+    mood: [comic, affectionate, quick]
+    fact: >-
+      Talla Venn plays both composite guitars because Emi Soll lost the band vote over who should
+      take the short break.
+    arrangement_note: one guest player takes both guitar parts, so the two answer each other in exactly the same hand, and the short break is eight seconds and no longer
+    intro: 6
+    outro: fade
+    target_duration: "3:15"
+    prompt: >-
+      Warm live-room jangle pop, 136 BPM, comic and affectionate, quick. Male lead vocal, warm
+      baritone that roughens at the top of the range, plain and a shade behind the beat, no vibrato.
+      Whole-crew chorus of four to six voices in unison rather than harmony, answering the lead line
+      for line. Two composite guitars, one acoustic-toned and one electric, both played by the same
+      guest player so that they answer each other in an identical hand, electric bass, tuned metal
+      tank drums and hanging wire chimes. Whole band tracked together in one live room, light
+      compression, loose rather than gridded. An eight-second guitar break and no longer. Six
+      seconds of both guitars before the first sung word. Fade.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 6 seconds, two composite guitars in the same hand, no vocal]
+
+      [Verse 1]
+      There are two bunks in that cabin and one of them is better.
+      Not much better. About a hand's width from the scrubber vent,
+      which on a long leg is the whole difference between rooms.
+      Everybody who has ever been in there knows which one it is
+      and nobody has ever admitted knowing it out loud.
+
+      [Chorus]
+      You take the good one. I am not being noble.
+      I am building up a debt in a currency you cannot pay
+      and I intend to collect it at some point in the spring
+      in a port hall, in public, with your whole crew watching.
+
+      [Verse 2]
+      We put it to a vote once, which is this crew's answer to everything.
+      Four people, one bunk, a formal show of hands,
+      and a fifteen-minute discussion of the voting procedure
+      before anybody had established what the vote was for.
+
+      [Instrumental - eight-second guitar break]
+
+      [Verse 3]
+      I lost. I want that on the record. I lost the vote,
+      and I have slept by the vent for a year and a half
+      and been extremely gracious about it every single day
+      in a way that everybody in that cabin has found unbearable.
+
+      [Chorus]
+      You take the good one. I am not being noble.
+      I am building up a debt in a currency you cannot pay
+      and I intend to collect it at some point in the spring
+      in a port hall, in public, with your whole crew watching.
+
+      [Verse 4]
+      Last night I came off watch and you were in the wrong one.
+      You had moved. You had moved yourself, without a vote,
+      and you were asleep in the bad bunk with your back to the vent
+      and I stood in that doorway for a considerable length of time.
+
+      [Chorus - whole crew]
+      You take the good one. I am not being noble.
+      I am building up a debt in a currency you cannot pay.
+      Give it back. Take the good one. I will not ask twice.
+      I will ask about four hundred times. I am aware of that.
+
+      [Outro - fade on the two guitars]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0084
+    title: Don't Spend It All
+    track_number: 6
+    mood: [cautionary, buoyant, brisk]
+    fact: >-
+      The handclaps come from the co-operative treasurer and two pressing-unit mechanics who were
+      checking the session budget.
+    arrangement_note: the backbeat from the first chorus on is three people clapping who are not in the band, slightly out of time with each other and left that way
+    intro: 3
+    outro: fade
+    target_duration: "3:20"
+    prompt: >-
+      Warm live-room jangle pop, 134 BPM, cautionary and buoyant, brisk. Male lead vocal, warm
+      baritone that roughens at the top of the range, plain and a shade behind the beat, no vibrato.
+      Whole-crew chorus of four to six voices in unison rather than harmony, answering the lead. Two
+      composite guitars, one acoustic-toned and one electric, electric bass, tuned metal tank drums,
+      and three untrained people clapping the backbeat from the first chorus onward, slightly out of
+      time with one another and left that way. Whole band tracked together in one live room, light
+      compression, loose rather than gridded. Three seconds of acoustic-toned guitar before the
+      first sung word. Fade on the claps.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 3 seconds, acoustic-toned guitar, no vocal]
+
+      [Verse 1]
+      The money lands at once, which is the whole problem,
+      four months of a long lane paid out in one afternoon
+      to a whole freight crew standing in the same queue.
+      The hall fills up. The stalls put their prices up.
+      Everybody in this port has known the date for a fortnight.
+
+      [Chorus]
+      Do not spend it all. Do not spend it all tonight.
+      That is what the treasurer says at the top of the meeting
+      to a room of people who are already halfway out of it,
+      and she has said it eleven years and enjoys it every time.
+
+      [Verse 2]
+      There is a man who buys a coat every single payday
+      and a woman who has bought the same three things since 2611
+      and a lad on his first route who has gone very quiet
+      and is going to be lending money by the ninth.
+
+      [Chorus]
+      Do not spend it all. Do not spend it all tonight.
+      That is what the treasurer says at the top of the meeting
+      to a room of people who are already halfway out of it,
+      and she has said it eleven years and enjoys it every time.
+
+      [Bridge]
+      I am not going to buy a coat. I have got a coat.
+      I have got something in mind that costs about the same.
+
+      [Verse 3]
+      There is a room over the port hall with a floor and a fiddle player
+      and they charge what they charge and it is worth about half of it,
+      and if I take you there tonight it will be gone by Sunday,
+      the whole four months, and I have never wanted anything less back.
+
+      [Chorus - whole crew and the claps]
+      Do not spend it all. Do not spend it all tonight.
+      The treasurer is at the back of the room and she is watching me.
+      She has been watching all evening and she knows exactly what this is.
+      She has stopped saying it. She is clapping along with the rest of them.
+
+      [Outro - fade on the three out-of-time clappers]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0085
+    title: Half Shift Holiday
+    track_number: 7
+    mood: [carefree, bright, quick]
+    fact: >-
+      Nessa Dray increases the composite-fiddle pace when Ressa Morn names the extra free hour in the
+      second verse.
+    arrangement_note: the guest fiddle plays at one speed for the first verse and steps up when the extra hour is named, and it never comes back down
+    intro: 7
+    outro: cold
+    target_duration: "3:10"
+    prompt: >-
+      Warm live-room jangle pop, 134 BPM, carefree and bright, quick. Male lead vocal, warm baritone
+      that roughens at the top of the range, plain and a shade behind the beat, no vibrato.
+      Whole-crew chorus of four to six voices in unison rather than harmony, answering the lead. Two
+      composite guitars, one acoustic-toned and one electric, electric bass, tuned metal tank drums,
+      and a guest composite fiddle — bright and thin-toned, one instrument and never a string
+      section — playing at one pace through the first verse and stepping up to a faster one partway
+      through the second, never coming back down. Whole band tracked together in one live room,
+      light compression, loose rather than gridded. Seven seconds of fiddle and tank drums before
+      the first sung word. Cold stop.
+    exclude: synthesizers, electronic drums, orchestral string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 7 seconds, composite fiddle over tank drums, no vocal]
+
+      [Verse 1]
+      The board came out on the Thursday with a mistake in it.
+      A gap. A clean four hours on a working afternoon
+      between the end of the turnaround and the start of the count.
+      Four hours in a port hall town on a burn day, in daylight,
+      and nobody in the office has noticed it yet.
+
+      [Chorus]
+      Half a shift. Half a shift and the whole port to spend it in.
+      Do not tell anybody. Do not tell your own crew.
+      There is a rule about mistakes on a board and the rule is
+      you say nothing at all and you turn up where you are told.
+
+      [Verse 2 - fiddle stepping up]
+      Four hours. Four whole hours, in the middle of a route,
+      in daylight, on the same day, in the same port as you.
+      I have had leave that was worth less than this by a long way.
+      I have had a fortnight that was worth less than this.
+
+      [Chorus]
+      Half a shift. Half a shift and the whole port to spend it in.
+      Do not tell anybody. Do not tell your own crew.
+      There is a rule about mistakes on a board and the rule is
+      you say nothing at all and you turn up where you are told.
+
+      [Verse 3]
+      We got two of the four before somebody worked it out
+      and came down the ramp shouting my name across the yard.
+      Two hours out of a mistake on a piece of paper.
+      I would go back and take the same two again.
+
+      [Chorus - whole crew, fiddle at the faster pace]
+      Half a shift. Half a shift and the whole port to spend it in.
+      Somebody in an office is going to fix that board tonight.
+      Let them fix it. Let them put it back the way it was.
+      They cannot have the two hours. The two hours are gone.
+
+      [Outro - cold stop, fiddle cutting off mid-figure]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0086
+    title: Someone Saved a Seat
+    track_number: 8
+    mood: [grateful, warm, midtempo]
+    fact: >-
+      Nessa Dray wrote the brief answering figure after finding her own chair marked at the crowded
+      route meeting.
+    arrangement_note: the guest fiddle answers only at the end of each chorus, four notes and no more, and plays nothing anywhere else in the song
+    intro: 12
+    outro: cold
+    target_duration: "4:05"
+    prompt: >-
+      Warm live-room soft rock and jangle pop, 108 BPM, grateful and warm, midtempo. Male lead
+      vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
+      no vibrato. Whole-crew chorus of four to six voices in unison rather than harmony, one high
+      harmony on the final chorus. Two composite guitars, one acoustic-toned and one electric,
+      electric bass, tuned metal tank drums and hanging wire chimes, and a guest composite fiddle —
+      one instrument, never a string section — that answers with four notes at the end of each
+      chorus and plays nothing anywhere else in the song. Whole band tracked together in one live
+      room, light compression, loose rather than gridded. Twelve seconds of acoustic-toned guitar
+      and chimes before the first sung word. Cold stop on the four fiddle notes.
+    exclude: synthesizers, electronic drums, orchestral string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 12 seconds, acoustic-toned guitar with wire chimes, bass at eight seconds, no vocal]
+
+      [Verse 1]
+      Two hundred people in a port hall built for ninety
+      and a route meeting that every freight crew has to be at.
+      People on the window ledges, people on the floor,
+      people standing three deep at the back by the door.
+
+      [Chorus]
+      And there was a chair at the end of the fourth row
+      with a coat over the back of it and a hand up in the air.
+      Somebody saved a seat. In a room like that.
+      For me. Which is a very ordinary thing and it is not nothing.
+
+      [Verse 2]
+      You do not notice the ones who do it, that is the point.
+      They do not tell you afterwards. They do not bring it up.
+      Somebody moved a bag off a chair forty minutes before
+      and sat there in the noise being uncomfortable about it.
+
+      [Chorus]
+      And there was a chair at the end of the fourth row
+      with a coat over the back of it and a hand up in the air.
+      Somebody saved a seat. In a room like that.
+      For me. Which is a very ordinary thing and it is not nothing.
+
+      [Verse 3]
+      I have been on this circuit long enough to know the difference
+      between people who are kind and people who are kind at you.
+      One of them tells the room. One of them moves a bag.
+      I have got a whole list now and I have checked it twice.
+
+      [Bridge]
+      The meeting went on for two hours and settled nothing at all
+      and it is the best two hours I have spent in that hall.
+
+      [Final Chorus - whole crew, one high harmony]
+      And there was a chair at the end of the fourth row
+      with a coat over the back of it and a hand up in the air.
+      Somebody saved a seat. I am going to be saving one
+      at every meeting in every port for the rest of this route.
+
+      [Outro - cold stop, the four fiddle notes and nothing after them]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0087
+    title: Coffee After Turnover
+    track_number: 9
+    mood: [tired, flirtatious, steady]
+    fact: >-
+      Ivena Sorn's low resonance-pipe note begins only after the lyric's shift handover is complete.
+    arrangement_note: no resonance pipe anywhere until the handover is sung, and from that line to the end one long alloy note sits under everything
+    intro: 9
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      Warm live-room soft rock, 100 BPM, tired and flirtatious, steady. Male lead vocal, warm
+      baritone that roughens at the top of the range, plain and a shade behind the beat, no vibrato.
+      Whole-crew chorus of four voices in unison rather than harmony, kept low and tired. Two
+      composite guitars, one acoustic-toned and one electric, electric bass, tuned metal tank drums
+      brushed rather than struck, hanging wire chimes, and one guest resonance pipe — a long alloy
+      tube with a deep organ tone — which is absent for the whole first half and then holds a single
+      low note under everything from the middle of the song to the end. Whole band tracked together
+      in one live room, light compression, loose rather than gridded. Nine seconds of guitar and
+      brushed drums before the first sung word. Fade.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 9 seconds, acoustic-toned guitar and brushed tank drums, no vocal]
+
+      [Verse 1]
+      Turnover takes four hours if everything goes right
+      and nothing has gone right on this berth since Tuesday.
+      The hold is half out, the manifest has been redone twice,
+      and the crew coming on are standing about in the cold.
+
+      [Refrain]
+      And when it is signed for, it is not mine any more.
+
+      [Verse 2]
+      There is a moment at the end where the paper changes hands
+      and a whole shift's worth of somebody else's problems
+      stops being yours in the space of about a second.
+      Nobody outside this trade knows what that second is like.
+
+      [Refrain - resonance pipe entering]
+      And when it is signed for, it is not mine any more.
+
+      [Verse 3]
+      There is a place across from the gate that opens at five
+      for exactly this, for people at the end of a turnover,
+      and it is not good and it does not pretend to be
+      and there is nowhere in the settled worlds I would rather be at five.
+
+      [Chorus]
+      So come and have a bad cup of something with me
+      in a room full of people too tired to talk properly.
+      I will not be clever. I have not got it in me.
+      I would just like to be sitting down opposite you.
+
+      [Verse 4]
+      You said yes at the gate without looking up from the sheet,
+      which is the least romantic yes in the history of this port,
+      and I have been thinking about it for the whole walk over
+      and I am going to be thinking about it in the spring.
+
+      [Chorus - whole crew, low and tired]
+      So come and have a bad cup of something with me
+      in a room full of people too tired to talk properly.
+      I will not be clever. I have not got it in me.
+      Sit down. It is signed for. It is not mine any more.
+
+      [Outro - fade, the alloy note last]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0088
+    title: Leave the Ramp Lit
+    track_number: 10
+    mood: [hopeful, nocturnal, driving]
+    fact: >-
+      The band recorded the crew chorus at the open loading ramp after the room ventilation stopped
+      for inspection.
+    arrangement_note: the crew chorus is sung outdoors at an open loading ramp with the night behind it, so it is wider and further away than the lead on every chorus
+    intro: 8
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      Warm live-room jangle pop and soft rock, 128 BPM, hopeful and nocturnal, driving. Male lead
+      vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
+      no vibrato, close and dry. Whole-crew chorus of six voices in unison rather than harmony
+      recorded outdoors at an open loading ramp, wide and further away than the lead on every
+      chorus, with night air behind them. Two composite guitars, one acoustic-toned and one
+      electric, electric bass, tuned metal tank drums and hanging wire chimes. Whole band tracked
+      together in one live room, light compression, loose rather than gridded. Eight seconds of both
+      guitars and chimes before the first sung word. Fade.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 8 seconds, both guitars with wire chimes, no vocal]
+
+      [Verse 1]
+      They put the ramp lights out at midnight to save the allotment
+      and after that the whole berth is one lamp and the water
+      and a hauler's worth of cargo nobody can see the edge of.
+      Anybody coming in late has to find the edge by feel,
+      which is how three people went in the dock last winter.
+
+      [Chorus - crew at the open ramp]
+      So leave the ramp lit. Leave it lit till two.
+      Somebody is always coming in off a late leg
+      and the difference between a bad night and a good one
+      is whether there was a light on when they got here.
+
+      [Verse 2]
+      I have come up that ramp at one in the morning myself
+      with eleven days behind me and nothing much in front,
+      and the one time there was a light on and somebody in it
+      I have not forgotten, and it was nine years ago.
+
+      [Chorus - crew at the open ramp]
+      So leave the ramp lit. Leave it lit till two.
+      Somebody is always coming in off a late leg
+      and the difference between a bad night and a good one
+      is whether there was a light on when they got here.
+
+      [Bridge]
+      It costs about as much as a kettle running all night.
+      That is the entire argument and we have had it four times.
+
+      [Verse 3]
+      You are due in on the Thursday, late, on the long crossing,
+      and the ramp lights go off at midnight and the Thursday boat is one.
+      There is going to be a light on. I have made arrangements.
+      If they will not run it off the allotment I will stand there with a lamp.
+
+      [Chorus - whole crew, widest]
+      So leave the ramp lit. Leave it lit till two.
+      Somebody is always coming in off a late leg.
+      I will be at the top of it in the cold with my coat done up
+      and you will see it from the water and you will know whose it is.
+
+      [Outro - fade on the crew and the night behind them]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0089
+    title: Nothing Wrong With Wanting
+    track_number: 11
+    mood: [defiant, tender, building]
+    fact: >-
+      Ressa Morn kept the cracked word on the final chorus because it followed the record's only
+      fully silent bar.
+    arrangement_note: one completely silent bar before the last chorus, and the first word after it is audibly cracked and is not repaired
+    intro: 16
+    outro: sustain
+    target_duration: "4:35"
+    prompt: >-
+      Warm live-room soft rock building into jangle pop, 102 BPM, defiant and tender, building
+      across four and a half minutes. Male lead vocal, warm baritone that roughens at the top of the
+      range, plain and a shade behind the beat, no vibrato, and one audibly cracked word left
+      unrepaired at the start of the last chorus. Whole-crew chorus of four to six voices in unison
+      rather than harmony, arriving only in the last third, one high harmony over the final chorus.
+      Two composite guitars, one acoustic-toned and one electric, electric bass, tuned metal tank
+      drums, hanging wire chimes, and a guest upright piano low under the verses. One completely
+      silent bar — no instrument, no voice — immediately before the last chorus. Whole band tracked
+      together in one live room, light compression, loose rather than gridded. Sixteen seconds of
+      piano and acoustic-toned guitar before the first sung word. Ends on a sustained chord.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 16 seconds, upright piano and acoustic-toned guitar, chimes at eleven seconds, no vocal]
+
+      [Verse 1]
+      There is a way of talking out here about wanting things
+      that makes it sound like a fault you should be working on.
+      Wanting a room. Wanting a lane that comes back.
+      Wanting a berth in a settlement instead of a bunk on a hauler.
+      Wanting one particular person to be in the port when you dock.
+
+      [Verse 2]
+      My father wanted nothing publicly for forty years
+      and got most of it, and said so, and meant it,
+      and I have watched what that costs from about this distance
+      and I am not doing it, and this is me not doing it.
+
+      [Chorus]
+      There is nothing the matter with wanting. Say the thing out loud.
+      Nobody has ever been ruined by an answer.
+      They have been ruined by nine years of not asking
+      in a cabin four berths down from somebody who would have said yes.
+
+      [Verse 3]
+      I have been on this circuit since I was nineteen years old.
+      I have watched two people do the whole of it in silence
+      out of manners, out of shifts, out of not being sure,
+      and they are both still here and they are both still not sure.
+
+      [Chorus]
+      There is nothing the matter with wanting. Say the thing out loud.
+      Nobody has ever been ruined by an answer.
+      They have been ruined by nine years of not asking
+      in a cabin four berths down from somebody who would have said yes.
+
+      [Bridge]
+      So here it is, with the whole crew in the room,
+      and the tape running, and no way of taking it back.
+
+      [Silent bar]
+
+      [Final Chorus - cracked word, whole crew, one high harmony]
+      There is nothing the matter with wanting. I want the route with you.
+      Not the good version, not the one out of a song —
+      the actual route, the cold ramp, the bad coffee, the lot.
+      I have said it now. It is on the record. It is going out on a crate.
+
+      [Outro - sustain, piano under the crew]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0090
+    title: Meet Me Off the Clock
+    track_number: 12
+    mood: [romantic, celebratory, brisk]
+    fact: >-
+      Calo Meret removed half the keyboard arrangement after the whole crew chorus arrived without
+      rehearsal.
+    arrangement_note: the closer; the guest piano plays about half of what was written for it, because the crew chorus filled the space, and the last chorus is the largest thing on the record
+    intro: 10
+    outro: fade
+    target_duration: "4:15"
+    prompt: >-
+      Warm live-room jangle pop and soft rock, 126 BPM, romantic and celebratory, brisk. Male lead
+      vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
+      no vibrato. Whole-crew chorus of six voices in unison rather than harmony, mixed registers,
+      the largest and loudest thing on the record by the final chorus, one high harmony over it. Two
+      composite guitars, one acoustic-toned and one electric, electric bass, tuned metal tank drums
+      and hanging wire chimes left ringing, and a guest upright piano playing sparsely — about half
+      of what was written for it — because the voices fill the rest. Whole band tracked together in
+      one live room, light compression, loose rather than gridded. Ten seconds of piano, guitars and
+      tank drums before the first sung word. Fade on the whole crew.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 10 seconds, upright piano with both guitars and tank drums, no vocal]
+
+      [Verse 1]
+      There is an hour at the end of a route that belongs to nobody.
+      The load is off, the paper is signed, the crew is paid,
+      and for about sixty minutes you are not on anybody's board
+      and not one person in this port can ask you for a thing.
+
+      [Chorus]
+      Meet me off the clock. Not on a shift, not on a break.
+      Off it. Out of it. Nothing owed to anybody.
+      No manifest, no rota, no whistle at the end of it,
+      just the two of us and an hour that has not been allocated.
+
+      [Verse 2]
+      I have been on the clock since I was nineteen years old.
+      Every hour of my life has had a number beside it
+      in somebody's book, in somebody's office, in somebody's hand,
+      and I have never once minded it until this year.
+
+      [Chorus]
+      Meet me off the clock. Not on a shift, not on a break.
+      Off it. Out of it. Nothing owed to anybody.
+      No manifest, no rota, no whistle at the end of it,
+      just the two of us and an hour that has not been allocated.
+
+      [Verse 3]
+      The whole crew came into the room to sing this one.
+      Nobody asked them. Nobody wrote them a part.
+      They stood at the back and came in on the second chorus
+      and the piano player put down half of what he had written.
+
+      [Chorus - whole crew]
+      Meet me off the clock. Not on a shift, not on a break.
+      Off it. Out of it. Nothing owed to anybody.
+      No manifest, no rota, no whistle at the end of it,
+      just the two of us and an hour that has not been allocated.
+
+      [Final Chorus - six voices and a high harmony, the largest on the record]
+      Meet me off the clock. The route is done. The hold is empty.
+      There is a whole hour and it has got nobody's name on it.
+      Take the long way round from the gate. I will be at the water.
+      Off the clock. Off the clock. Nothing owed to anybody.
+
+      [Outro - fade on the crew, chimes ringing under it]
+    take: null                    # M-30 fills this in at the Suno sitting

@@ -1,0 +1,754 @@
+# al_005 — Pressure Weather · Rain Ledger (b_003) · Stormline Issue · 2607 · 10 songs
+#
+# Written by M-21, the first of stage 5's lyrics cards. **The file shape is fixed by al_001.yaml —
+# read that header once.** Production vocabulary (COMMISSION.md §8): never enters the wiki, never
+# said on air. Lyrics written by hand; Suno Custom mode only.
+#
+# Unlike the pilot's four albums this one is written under §12 rules 9 and 10 — three verse
+# sections and 288 sung words as a floor, not a target — so the songs are about 40% longer than
+# al_001's. The wiki says the stop-start 2607 sessions gave this record "short verses and large
+# repeated choruses", which is how the length is bought here: the verses stay short and the chorus
+# comes back four times rather than twice.
+#
+# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+
+album:
+  id: al_005
+  title: Pressure Weather
+  band: b_003
+  band_name: Rain Ledger
+  label: label_3
+  release_year: 2607
+  genre: relay-pop
+  cornerstone: false
+  song_count: 10
+  style_card: b_003
+  room: >-
+    The wiki puts this record in two rooms and neither of them was booked for it: a small concrete
+    storm-shelter room on the Meridian coast, and a repair depot the band moved to whenever the
+    power allotment came back on. Stormline Issue paid for portable storage and not for room time,
+    so several vocals were sung beside working crews. The style card's "dry verses opening into a
+    wide reverberant chorus" is therefore literal here — the verses are the shelter room and the
+    choruses are the depot's metal space — and it is the only line the arrangement notes bend.
+    Voice, backing, instruments and exclude are untouched.
+
+generation:
+  # Empty until M-30's Suno sitting. `make music-tag` (M-05) reads this block and each song's
+  # take: block and writes licence period, generation date, model version and the AI marker into
+  # every audio file's own tags.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0046
+    title: Pressure Weather
+    track_number: 1
+    mood: [urgent, bright, driving]
+    fact: >-
+      Kerr Aven built the opening pulse from the shelter's power-warning pattern after maintenance
+      approved the timing.
+    arrangement_note: opens on the shelter's four-knock power-warning pattern played on struck metal, the fourth knock late every time, and that pattern runs under every chorus
+    intro: 10
+    outro: cold
+    target_duration: "3:30"
+    prompt: >-
+      Bright electronic power-pop, 122 BPM, urgent and driving. Female lead vocal, low alto, strong
+      and level, holding the long notes in the hook and singing the chorus twice the size of the
+      verse. Two voices doubling the hook in octaves, a repeated group chorus, one call-and-response
+      answer in the last third of the song. Synth bass, electronic drum kit, layered compact
+      synthesizers, struck metal percussion. Ringing electric-piano and organ tones over the
+      synthesizers, gated electronic drums, dry close verses opening into a wide reverberant chorus,
+      hook engineered to be sung back. Ten seconds of a four-knock pattern on struck metal with the
+      fourth knock landing late, and that pattern kept under every chorus. Cold stop.
+    exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
+    lyrics: |
+      [Intro - 10 seconds, four knocks on struck metal with the fourth one late, synth bass under it, no vocal]
+
+      [Verse 1]
+      The wall starts counting before the lights go amber,
+      three short knocks and a fourth one always late.
+      Everybody in the room stands up at the same moment
+      and nobody says a word about why.
+
+      [Chorus]
+      Pressure weather, pressure weather,
+      the whole coast holding one breath at the same time.
+      I have got an hour and it is not a good one,
+      and I would rather spend it badly with you
+      than spend it well on my own.
+
+      [Verse 2]
+      You came the long way round by the sea wall to get here,
+      you were wet through before you were past the depot door.
+      You stood there dripping on the step and laughing at the state of you
+      and I forgot every sensible thing I had lined up to say.
+      The last ferry off the coast went out an hour ago
+      and you did not mention it and neither did I.
+
+      [Chorus]
+      Pressure weather, pressure weather,
+      the whole coast holding one breath at the same time.
+      I have got an hour and it is not a good one,
+      and I would rather spend it badly with you
+      than spend it well on my own.
+
+      [Verse 3]
+      They will seal the road at the end of the week
+      and after that it is the carrier wave and waiting.
+      Eight days of you saying something and me hearing it late,
+      which is a way of talking and it is not this.
+      I can do the lag. I have done the lag before.
+      I would just rather not start it on a Tuesday.
+
+      [Chorus]
+      Pressure weather, pressure weather,
+      the whole coast holding one breath at the same time.
+      I have got an hour and it is not a good one,
+      and I would rather spend it badly with you
+      than spend it well on my own.
+
+      [Chorus - group, the knocking pattern doubled]
+      Pressure weather, pressure weather,
+      let the lamps go down and let the kettle stay cold.
+      There is one dry evening left before the storm season
+      and we are not going to be sensible in it.
+      We are not going to be sensible in it.
+
+      [Outro - cold stop on the fourth knock]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0047
+    title: Dance Floor Apology
+    track_number: 2
+    mood: [apologetic, exuberant, quick]
+    fact: >-
+      Nara Veck addresses the song to a friend whose shoes she ruined at a shelter social in 2606.
+    arrangement_note: the group voices answer the lead in the choruses only, and the last chorus is sung a fourth higher with the whole room on it
+    intro: 6
+    outro: fade
+    target_duration: "3:15"
+    prompt: >-
+      Bright electronic power-pop, 128 BPM, exuberant and quick, apologetic in the words and not in
+      the playing. Female lead vocal, low alto, strong and level, holding the long notes in the hook
+      and singing the chorus twice the size of the verse. Two voices doubling the hook in octaves
+      and answering the lead line for line across the chorus, the last chorus a fourth higher with
+      the whole room singing it. Synth bass, electronic drum kit, layered compact synthesizers,
+      struck metal percussion. Ringing electric-piano tones over the synthesizers, gated electronic
+      drums, dry close verses opening into a wide reverberant chorus. Six seconds of synthesizer and
+      handclaps before the first sung word. Fade on the repeated hook.
+    exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
+    lyrics: |
+      [Intro - 6 seconds, synthesizer chord and handclaps, no vocal]
+
+      [Verse 1]
+      She had them a year and she kept them for good rooms,
+      pale as anything, wrong for the coast, wrong for the walk.
+      I said come out, it is only across the yard,
+      it is only ten minutes and the floor is dry inside.
+
+      [Pre-Chorus]
+      It was not dry inside -
+
+      [Chorus]
+      I am sorry about the shoes (sorry about the shoes)
+      I am sorry about the whole of it (all of it)
+      I would say it in a letter but a letter takes eight days
+      and I am saying it in the room, out loud, with the lights on.
+
+      [Verse 2]
+      There was a puddle where the seal had gone at the doorway,
+      half the port hall floor was under it by nine.
+      I walked her into the middle of it holding both her hands.
+      She did not shout. She looked down for a second.
+      Then she danced in them anyway till the allotment ran out.
+
+      [Pre-Chorus]
+      Which is worse, somehow -
+
+      [Chorus]
+      I am sorry about the shoes (sorry about the shoes)
+      I am sorry about the whole of it (all of it)
+      I would say it in a letter but a letter takes eight days
+      and I am saying it in the room, out loud, with the lights on.
+
+      [Verse 3]
+      I have offered her the money twice and she will not take it,
+      she says the story is worth more than the shoes were.
+      She will tell it in every port hall between here and the core
+      and she will tell it well, and the shoes will get paler each time.
+      So I have written her a chorus she can hold over me
+      for as long as either of us is still standing up.
+
+      [Chorus - a fourth higher, whole room]
+      I am sorry about the shoes (sorry about the shoes)
+      I am sorry about the whole of it (all of it)
+      I would say it in a letter but a letter takes eight days
+      and I am saying it in the room, out loud, with the lights on.
+      Out loud, with the lights on.
+
+      [Outro - fade on the group answer and the handclaps]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0048
+    title: Three Floors Down
+    track_number: 3
+    mood: [yearning, playful, brisk]
+    fact: >-
+      Miro Olt makes the electronic strings descend three steps each time the title is sung.
+    arrangement_note: the synth-harpsichord figure steps down three degrees under the title line every time it is sung, and the middle eight is the same three steps played alone
+    intro: 8
+    outro: fade
+    target_duration: "3:25"
+    prompt: >-
+      Bright electronic power-pop, 124 BPM, yearning and playful, brisk. Female lead vocal, low
+      alto, strong and level, holding the long notes in the hook and singing the chorus twice the
+      size of the verse. Two voices doubling the hook in octaves, a repeated group chorus, one
+      call-and-response answer in the last third of the song. Synth bass, electronic drum kit,
+      layered compact synthesizers, struck metal percussion, and a guest synth-harpsichord —
+      plucked electronic strings — whose figure steps down three degrees under the hook line every
+      time it is sung. Ringing electric-piano and organ tones, gated electronic drums, dry verses
+      opening into a wide reverberant chorus. Eight seconds of plucked electronic strings before the
+      first sung word. A middle eight of those three descending steps played alone. Fade.
+    exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
+    lyrics: |
+      [Intro - 8 seconds, plucked electronic strings stepping down three degrees twice, no vocal]
+
+      [Verse 1]
+      Your window is lit when I come off the late shift
+      and mine is dark and it is three floors down from yours.
+      I have counted the landings enough times to know them by the sound,
+      the loose one, the wet one, the one with the bulkhead door.
+
+      [Chorus]
+      Three floors down, three floors down,
+      near enough to hear the chair go back when you stand,
+      far enough that I have to want it before I climb.
+      And I want it. I have wanted it since the road sealed.
+
+      [Verse 2]
+      You knock on the pipe twice when the kettle is on,
+      which is a whole conversation in a building this thin.
+      I knock back once, which means I am coming up,
+      and twice, which means I am tired, and I never send twice.
+
+      [Chorus]
+      Three floors down, three floors down,
+      near enough to hear the chair go back when you stand,
+      far enough that I have to want it before I climb.
+      And I want it. I have wanted it since the road sealed.
+
+      [Middle eight - three descending steps alone]
+      Everybody in this settlement lives above or below somebody.
+      It is nothing. It is three flights and a handrail.
+      It is the longest distance I have ever not crossed.
+
+      [Verse 3]
+      So put the light on when you mean it and leave it off when you do not,
+      I will read it right, I have had the practice.
+      There is a landing between us with a lamp that never works
+      and I am standing on it now with the kettle going cold in my hand.
+
+      [Chorus]
+      Three floors down, three floors down,
+      near enough to hear the chair go back when you stand,
+      far enough that I have to want it before I climb.
+      And I want it. I have wanted it since the road sealed.
+
+      [Outro - fade on the descending figure]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0049
+    title: Better in the Rain
+    track_number: 4
+    mood: [romantic, bright, midtempo]
+    fact: >-
+      The accepted backing vocals were recorded under a depot awning after the shelter room lost
+      power.
+    arrangement_note: the backing voices are further from the microphone than the lead through the whole record and rain is audible behind them, which is the take that was kept
+    intro: 12
+    outro: sustain
+    target_duration: "4:05"
+    prompt: >-
+      Bright electronic power-pop at a soft-rock tempo, 108 BPM, romantic and bright. Female lead
+      vocal, low alto, strong and level, holding the long notes in the hook and singing the chorus
+      twice the size of the verse. Two voices doubling the hook in octaves, recorded further from
+      the microphone than the lead with rain audible behind them, and a group chorus at the end.
+      Synth bass, electronic drum kit, layered compact synthesizers, struck metal percussion.
+      Ringing electric-piano and organ tones, gated electronic drums, dry verses opening into a wide
+      reverberant chorus. Twelve seconds of synthesizer and rain on a metal awning before the first
+      sung word. Ends on a sustained chord with the rain still under it.
+    exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
+    lyrics: |
+      [Intro - 12 seconds, synthesizer pad with rain on a metal awning, struck metal at eight seconds, no vocal]
+
+      [Verse 1]
+      The power went at nine and we stood in the doorway
+      watching the yard turn into a shallow grey lake.
+      A hauler went past with its lamps on at the wrong angle
+      and lit the whole of it for about four seconds.
+      Somebody said we may as well go home and nobody moved,
+      and you put your hood up and you did not go either.
+
+      [Chorus]
+      Everything looks better in this weather.
+      The lamps, the wet road, the sign on the depot,
+      your face when you have given up on staying dry.
+      Everything looks better. It is not the rain. It is who I am standing with.
+
+      [Verse 2]
+      We had a whole plan and the plan needed lights,
+      it needed a room and an evening and a working allotment.
+      It needed the last ferry not to go until eleven
+      and it needed both of us to have thought of something to say.
+      What we had was an awning and forty minutes
+      and the sound of the coast doing what the coast does.
+
+      [Chorus]
+      Everything looks better in this weather.
+      The lamps, the wet road, the sign on the depot,
+      your face when you have given up on staying dry.
+      Everything looks better. It is not the rain. It is who I am standing with.
+
+      [Verse 3]
+      You sang the low part under mine and you got it wrong twice
+      and the third time you had it and you would not sing it again.
+      I said we could do it properly when the power comes back,
+      in a dry room, in the right key, with the whole band in it.
+      You said no. You said this is the one they will keep.
+
+      [Final Chorus - group voices back from the microphone]
+      Everything looks better in this weather.
+      The lamps, the wet road, the sign on the depot,
+      your face when you have given up on staying dry.
+      Everything looks better. It is not the rain.
+      It has never once been the rain.
+
+      [Outro - sustained chord, the awning still audible]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0050
+    title: Late Fee Heart
+    track_number: 5
+    mood: [wry, tense, quick]
+    fact: >-
+      Sumi Orl copied the bass accents from the overdue notices clicking through the label's office
+      printer.
+    arrangement_note: the synth bass plays the uneven click of an office printer through every verse and stops dead in the refrain, and there is no chorus in this song
+    intro: 4
+    outro: cold
+    target_duration: "3:10"
+    prompt: >-
+      Bright electronic power-pop, 126 BPM, wry and tense, quick. Female lead vocal, low alto,
+      strong and level, holding the long notes in the refrain. Two voices doubling the refrain in
+      octaves, one call-and-response answer in the last third of the song. Synth bass playing an
+      uneven mechanical click through the verses and stopping dead in each refrain, electronic drum
+      kit, layered compact synthesizers, struck metal percussion. Ringing electric-piano and organ
+      tones, gated electronic drums, dry verses. Four verses and a two-line refrain, no chorus
+      anywhere. Four seconds of the clicking bass figure before the first sung word. Cold stop.
+    exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
+    lyrics: |
+      [Intro - 4 seconds, synth bass clicking unevenly like an office printer, no vocal]
+
+      [Verse 1]
+      He sends the notice on the day the thing is due,
+      not the day after, the day, in case I had forgotten.
+      He has a machine for it and the machine has a rhythm,
+      an uneven little click and then a gap and then two,
+      and I have started hearing it in rooms where it is not.
+
+      [Refrain]
+      Everything I owe, I owe on time, and late.
+
+      [Verse 2]
+      I paid the room, I paid the storage, I paid the man
+      who let us in the depot when the shelter went dark.
+      I paid the berth, I paid the ration on the berth,
+      I have a receipt for every small thing I have done wrong.
+      What I have not paid is one honest afternoon
+      to the person who has been waiting on the end of my week.
+
+      [Refrain]
+      Everything I owe, I owe on time, and late.
+
+      [Verse 3]
+      You do not send notices. You do not keep a page.
+      You say it is fine, and you say it in a way that is fine.
+      That is worse than the machine and you know that it is worse,
+      because a machine tells you the number and you tell me nothing.
+
+      [Refrain]
+      Everything I owe, I owe on time, and late.
+
+      [Bridge - bass stopped, voice and struck metal only]
+      So here is the manifest with the last line filled in.
+      Tuesday. All of it. Nothing else in the book.
+      No storage, no fee, no notice on the day.
+      One afternoon, paid in full, and nothing carried over.
+
+      [Verse 4]
+      Do not be gracious about this, I could not stand it.
+      Be owed. Be owed loudly and out where people can hear.
+      Charge me the fee, charge me the interest on the fee,
+      and I will pay it in full and I will pay it in person.
+
+      [Refrain]
+      Everything I owe, I owe on time, and late.
+
+      [Outro - cold stop, the click cutting off mid-figure]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0051
+    title: Hold the Lift
+    track_number: 6
+    mood: [urgent, affectionate, brisk]
+    fact: >-
+      Brin Noll plays a loose service-panel latch that matched Kerr Aven's drum pitch without
+      retuning.
+    arrangement_note: a loose service-panel latch is struck on the offbeat all the way through, matched in pitch to the electronic snare, and the record opens on its chorus
+    intro: 3
+    outro: fade
+    target_duration: "3:20"
+    prompt: >-
+      Bright electronic power-pop, 128 BPM, urgent and affectionate, brisk. Female lead vocal, low
+      alto, strong and level, holding the long notes in the hook and singing the chorus twice the
+      size of the verse. Two voices doubling the hook in octaves, a repeated group chorus, one
+      call-and-response answer in the last third. Synth bass, electronic drum kit, layered compact
+      synthesizers, and a struck loose metal latch on every offbeat, pitched to match the electronic
+      snare. Ringing electric-piano and organ tones, gated electronic drums, dry verses opening into
+      a wide reverberant chorus. Three seconds of the latch alone and then straight into the chorus,
+      no build. Fade on the latch and the group.
+    exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
+    lyrics: |
+      [Intro - 3 seconds, loose service-panel latch struck on the offbeat, no vocal]
+
+      [Chorus]
+      Hold the lift, hold the lift,
+      put your hand across the door and count to five.
+      I am coming down the corridor with everything I own
+      and one thing I have been meaning to say since the spring.
+
+      [Verse 1]
+      There is a woman on the sixth floor who holds it for anybody
+      and a man on the third who has never once looked up.
+      The whole building knows which is which by now
+      and nobody has ever said a word to either of them.
+      You learn a settlement by who waits and who does not.
+      It is not written anywhere and everybody has it off by heart.
+
+      [Chorus]
+      Hold the lift, hold the lift,
+      put your hand across the door and count to five.
+      I am coming down the corridor with everything I own
+      and one thing I have been meaning to say since the spring.
+
+      [Verse 2]
+      You held it once for me when I was carrying a crate
+      and the crate was heavy and the reason was not the crate.
+      Eleven seconds, maybe twelve, with your arm out straight,
+      and I have built a fairly large amount on top of that.
+      A person could get through a whole sealed season on eleven seconds
+      if nobody came along and explained them to her.
+
+      [Chorus]
+      Hold the lift, hold the lift,
+      put your hand across the door and count to five.
+      I am coming down the corridor with everything I own
+      and one thing I have been meaning to say since the spring.
+
+      [Verse 3]
+      The last ferry off the coast goes at the quarter hour
+      and after it there is nothing until the season lets go.
+      I am not asking you to come. I am asking you to wait
+      the length of a held door while I get the words in order.
+
+      [Final Chorus - group, latch doubled]
+      Hold the lift, hold the lift,
+      put your hand across the door and count to five.
+      I am coming down the corridor with everything I own.
+      Count to five. That is all it has ever taken.
+
+      [Outro - fade on the latch]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0052
+    title: Dry Shoes Tomorrow
+    track_number: 7
+    mood: [hopeful, comic, midtempo]
+    fact: >-
+      Nara Veck kept the guide vocal because water dripped into a bucket exactly between the verse
+      lines.
+    arrangement_note: a bucket catching a roof drip falls exactly between the verse lines and is left in as percussion; the lead is the guide vocal and is never replaced
+    intro: 9
+    outro: fade
+    target_duration: "3:35"
+    prompt: >-
+      Bright electronic power-pop at a midtempo, 112 BPM, hopeful and comic. Female lead vocal, low
+      alto, strong and level, a guide take kept rather than replaced, holding the long notes in the
+      hook and singing the chorus twice the size of the verse. Two voices doubling the hook in
+      octaves and a repeated group chorus. Synth bass, electronic drum kit, layered compact
+      synthesizers, struck metal percussion, and a slow water drip into a metal bucket that lands
+      between the verse lines and is left in as percussion. Ringing electric-piano and organ tones,
+      gated electronic drums, dry verses opening into a wide reverberant chorus. Nine seconds of the
+      drip and a synthesizer chord before the first sung word. Fade.
+    exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
+    lyrics: |
+      [Intro - 9 seconds, a drip into a metal bucket with a synthesizer chord under it, no vocal]
+
+      [Verse 1]
+      Everything I own is drying on a rail
+      and the rail is in the corridor because the room has no heat.
+      There is a bucket under the join where the roof gave up
+      and it keeps better time than half the bands on this coast.
+      Third week of the storm season, second week of the leak,
+      and a ration of dry socks between the four of us.
+
+      [Chorus]
+      Dry shoes tomorrow. That is the whole plan.
+      Dry shoes tomorrow and an evening with the lamp on
+      and you in the chair complaining about the chair.
+      I have had worse plans. I have had them this week.
+
+      [Verse 2]
+      They say the season turns on Thursday, they said that last Thursday,
+      the forecast comes down the carrier wave with a schedule attached
+      and the schedule has been wrong four times in a row.
+      I do not believe a word of it and I am hanging up my coat
+      as if the coat has somewhere it is going to be needed.
+
+      [Chorus]
+      Dry shoes tomorrow. That is the whole plan.
+      Dry shoes tomorrow and an evening with the lamp on
+      and you in the chair complaining about the chair.
+      I have had worse plans. I have had them this week.
+
+      [Verse 3]
+      You laughed at me for the rail and the rail is now yours,
+      your good shirt is on it between my two wet ones.
+      Somebody looking in would think we had agreed something.
+      Nobody has agreed anything. The shirt is on the rail.
+
+      [Chorus]
+      Dry shoes tomorrow. That is the whole plan.
+      Dry shoes tomorrow and an evening with the lamp on
+      and you in the chair complaining about the chair.
+      I have had worse plans. I have had them this week.
+      I have had far worse plans than you.
+
+      [Outro - fade, the bucket left running on]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0053
+    title: Window Seat Fever
+    track_number: 8
+    mood: [restless, bright, quick]
+    fact: >-
+      Talla Venn plays the clipped composite-guitar answers while standing in the repair depot's
+      only dry window recess.
+    arrangement_note: a guest composite guitar answers the vocal in short clipped figures and plays the instrumental break, recorded in the depot's window recess and never used as a rhythm part
+    intro: 7
+    outro: cold
+    target_duration: "3:20"
+    prompt: >-
+      Bright electronic power-pop, 126 BPM, restless and bright, quick. Female lead vocal, low alto,
+      strong and level, holding the long notes in the hook and singing the chorus twice the size of
+      the verse. Two voices doubling the hook in octaves, one call-and-response answer in the last
+      third. Synth bass, electronic drum kit, layered compact synthesizers, struck metal percussion,
+      and one guest composite guitar — bright and thin-toned — playing short clipped answering
+      figures between the vocal lines and a twelve-second break, never strumming and never a rhythm
+      part. Ringing electric-piano and organ tones, gated electronic drums, dry verses opening into
+      a wide reverberant chorus. Seven seconds of synthesizer and struck metal before the first sung
+      word. Cold stop.
+    exclude: acoustic drum kit, rhythm guitar, strummed or chordal guitar, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
+    lyrics: |
+      [Intro - 7 seconds, synthesizer and struck metal, no vocal]
+
+      [Verse 1]
+      Third day in the same room with the same four walls
+      and the walls have started making suggestions.
+      There is one window in this depot that is dry
+      and everybody in the building takes a turn standing at it.
+      You can see the port hall roof and a corner of the water
+      and a hauler on the hard that has not moved since Tuesday.
+
+      [Pre-Chorus]
+      Somebody has to move first -
+
+      [Chorus]
+      I have got the fever you get standing at a window,
+      the kind you catch from looking at a road you cannot use.
+      Put your coat on. I do not care where.
+      The far side of the yard is a foreign country from here.
+
+      [Verse 2]
+      You said the season only lasts as long as it lasts
+      which is the least useful true thing anybody says.
+      I have counted the boats in the harbour twice this morning.
+      There are eleven. There were eleven yesterday.
+      I have read the cargo board on the wall until I know it,
+      and there is nothing on it that is going anywhere either.
+
+      [Pre-Chorus]
+      Somebody has to move first -
+
+      [Chorus]
+      I have got the fever you get standing at a window,
+      the kind you catch from looking at a road you cannot use.
+      Put your coat on. I do not care where.
+      The far side of the yard is a foreign country from here.
+
+      [Instrumental - guest composite guitar break, 12 seconds, clipped and dry]
+
+      [Verse 3]
+      When it opens I am going to be unbearable about it,
+      I am going to walk the whole length of the coast road talking.
+      And you will let me, because you have been in here too,
+      and because you want to see what I look like out of doors.
+
+      [Chorus]
+      I have got the fever you get standing at a window,
+      the kind you catch from looking at a road you cannot use.
+      Put your coat on. I do not care where.
+      The far side of the yard is a foreign country from here.
+
+      [Outro - cold stop on the guitar's last clipped figure]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0054
+    title: Half a Conversation
+    track_number: 9
+    mood: [uncertain, tender, steady]
+    fact: >-
+      The second singer's answers were lost in a storage fault, so Sel Ardin taught them to the whole
+      band for the replacement session.
+    arrangement_note: the answering line is sung by the whole band in unison rather than by one voice, because the single answering voice is the part that was lost
+    intro: 15
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      Bright electronic power-pop at a slow steady tempo, 100 BPM, uncertain and tender. Female lead
+      vocal, low alto, strong and level, holding the long notes in the hook and singing the chorus
+      twice the size of the verse. The answering line sung by the whole band in blunt unison rather
+      than by one voice, four mixed registers together, never in harmony. Synth bass, electronic
+      drum kit, layered compact synthesizers, struck metal percussion. Ringing electric-piano and
+      organ tones over the synthesizers, gated electronic drums held back, dry verses opening into a
+      wide reverberant chorus. Fifteen seconds of layered synthesizers and struck metal before the
+      first sung word. Ends on a sustained organ tone.
+    exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
+    lyrics: |
+      [Intro - 15 seconds, layered synthesizers with struck metal entering at ten seconds, no vocal]
+
+      [Verse 1]
+      You said the important part while the door was closing
+      and I got the shape of it and not the words.
+      I have been carrying the shape around for four days now
+      like a page with the middle of it gone.
+
+      [Chorus]
+      Half of a sentence is worse than none of it.
+      I would rather you had said nothing at all in the doorway
+      than left me the beginning and the tone of your voice
+      and eight days of the lag to fill the rest of it in.
+
+      [Verse 2]
+      He was there, he heard it, and he will not tell me,
+      he says it is not his to hand on and he is right.
+      So I have asked him about the weather instead, twice,
+      and he has answered about the weather, twice, very kindly.
+
+      [Chorus]
+      Half of a sentence is worse than none of it.
+      I would rather you had said nothing at all in the doorway
+      than left me the beginning and the tone of your voice
+      and eight days of the lag to fill the rest of it in.
+
+      [Bridge]
+      It is a small thing. I know it is a small thing.
+      Small things are what the sealed season is made of.
+
+      [Verse 3]
+      Say it again on the carrier wave, say it badly,
+      say it at the wrong hour with the interference in it.
+      I will take it in any state you can get it to me,
+      and if it is bad news I will take that in any state too.
+
+      [Chorus - whole band in unison]
+      Half of a sentence is worse than none of it.
+      I would rather you had said nothing at all in the doorway
+      than left me the beginning and the tone of your voice.
+      Finish the sentence. That is all I am asking for.
+
+      [Outro - sustained organ tone under the last unison line]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0055
+    title: Storm Door Smile
+    track_number: 10
+    mood: [relieved, celebratory, building]
+    fact: >-
+      The final chorus includes depot workers who had held the storm door shut during the first
+      recording attempt.
+    arrangement_note: the record's closer; the final chorus is sung by the band and by the depot crew who had held the storm door shut, and it is the only time the group is more than four voices
+    intro: 18
+    outro: sustain
+    target_duration: "4:40"
+    prompt: >-
+      Bright electronic power-pop building across four and a half minutes, 104 BPM, relieved and
+      celebratory. Female lead vocal, low alto, strong and level, holding the long notes in the hook
+      and singing the chorus twice the size of the verse. Two voices doubling the hook in octaves
+      through the record, and a final chorus sung by a dozen untrained voices together with the
+      band, mixed registers, unpolished. Synth bass, electronic drum kit, layered compact
+      synthesizers, struck metal percussion. Ringing electric-piano and organ tones, gated
+      electronic drums, dry verses opening into a very wide reverberant chorus. Eighteen seconds of
+      synthesizer, struck metal and a heavy metal door being unlatched before the first sung word.
+      Ends on a long sustained chord under the crowd.
+    exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
+    lyrics: |
+      [Intro - 18 seconds, synthesizer and struck metal, a heavy door unlatching at fourteen seconds, no vocal]
+
+      [Verse 1]
+      Two of them stood against it for a quarter of an hour
+      with their backs to the metal and their boots braced on the floor.
+      We were singing on the other side of that door
+      and not one of us knew until the take was done.
+
+      [Chorus]
+      And the season let go on a Tuesday afternoon
+      and the whole yard came out squinting like it had been asleep.
+      You had a face on you I have not seen since the spring.
+      Whatever that is, keep it. I am going to need it in the winter.
+
+      [Verse 2]
+      Nothing dramatic happened. That is what I want on the record.
+      The wind dropped, somebody opened a door, and there was light in the yard.
+      The depot crew went back to what they had been doing
+      and the coast road was a road again by four o'clock.
+
+      [Chorus]
+      And the season let go on a Tuesday afternoon
+      and the whole yard came out squinting like it had been asleep.
+      You had a face on you I have not seen since the spring.
+      Whatever that is, keep it. I am going to need it in the winter.
+
+      [Bridge]
+      They will not be credited by name and they should be.
+      Two people leaning on a door is why this record exists.
+
+      [Verse 3]
+      So come out and stand in the wet light with the rest of them,
+      the storm season is over and it will be back.
+      There is a ferry on Thursday and neither of us is on it
+      and I have never been so pleased to be staying where I am.
+
+      [Final Chorus - band and depot crew, a dozen voices]
+      And the season let go on a Tuesday afternoon
+      and the whole yard came out squinting like it had been asleep.
+      You had a face on you I have not seen since the spring.
+      Whatever that is, keep it.
+      Keep it. I am going to need it in the winter.
+
+      [Outro - sustain, the crowd holding under the last chord]
+    take: null                    # M-30 fills this in at the Suno sitting

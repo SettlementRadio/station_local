@@ -1,0 +1,453 @@
+# al_007 — Crew Rates · Cabin Treaty (b_004) · Common Wake Cooperative · 2594 · 6 songs · EP
+#
+# Written by M-21. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10 — three verse sections and 288 sung words
+# as a floor, not a target.
+#
+# **Rules 1 to 4 are shares of an album and §12 counts them only on albums of five songs or more**,
+# so they are live on this EP: with six songs, one shape may cover two of them and one song may
+# carry the echoed answer.
+#
+# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+
+album:
+  id: al_007
+  title: Crew Rates
+  band: b_004
+  band_name: Cabin Treaty
+  label: label_5
+  release_year: 2594
+  genre: relay-pop
+  cornerstone: false
+  song_count: 6
+  style_card: b_004
+  room: >-
+    A port meeting room taken between co-operative votes at the first freight-circuit burn festival,
+    with the kitchen rest area through one wall. **The band is still Purist here** — the wiki dates
+    its Localist turn to 2600 and al_008 — so the hand-built percussion on this EP is found metal off
+    the tables and the crates it came in on, not the tuned oxygen-tank drums Cado Veir wins the
+    argument with six years later, and the electric composite guitar is barely amplified. That is the
+    one line the arrangement notes bend. Voice, backing and exclude are untouched, and the whole-crew
+    chorus is already the band's signature on its first record.
+
+generation:
+  # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0066
+    title: Crew Rates
+    track_number: 1
+    mood: [assertive, bright, driving]
+    fact: >-
+      The four members sing the figures from a rejected pay offer before Ressa Morn answers with the
+      accepted rate.
+    arrangement_note: the whole crew sings the rejected figures in flat unison before the lead answers alone with the accepted one, and the crew never sings under him in that exchange
+    intro: 8
+    outro: cold
+    target_duration: "3:30"
+    prompt: >-
+      Warm live-room jangle pop, 128 BPM, assertive and driving. Male lead vocal, warm baritone that
+      roughens at the top of the range, plain and a shade behind the beat, no vibrato. Whole-crew
+      chorus of four to six voices in flat unison rather than harmony, mixed registers, answering
+      the lead and never singing underneath him, one high harmony only on the final chorus. Two
+      composite guitars, one acoustic-toned and one barely amplified, electric bass, hand-built
+      percussion struck off metal cups and packing crates and left ringing. Whole band tracked
+      together in a small meeting room, light compression, loose rather than gridded. Eight seconds
+      of struck metal and acoustic-toned guitar before the first sung word. Cold stop.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 8 seconds, struck metal cups and acoustic-toned guitar, no vocal]
+
+      [Verse 1]
+      They read it out to a room of forty people
+      with the door open and the kitchen going next door.
+      A number for the day, a smaller one for the night,
+      and a line at the bottom about what they call goodwill.
+
+      [Chorus]
+      And the crew says the rate, and the crew says it together,
+      four voices flat and no harmony in it at all.
+      You can have the tune. You cannot have the number.
+      The number was agreed by everybody in this room.
+
+      [Verse 2]
+      Nobody shouted. That is not how it went.
+      A woman at the back asked what goodwill was worth
+      in a hard season on a long circuit with a full hold,
+      and nobody at the front of the room could tell her.
+
+      [Chorus]
+      And the crew says the rate, and the crew says it together,
+      four voices flat and no harmony in it at all.
+      You can have the tune. You cannot have the number.
+      The number was agreed by everybody in this room.
+
+      [Verse 3]
+      I have been on both sides of a table like that one.
+      I have been the one with the paper and the reasonable voice.
+      It is easier at that end and it pays better too
+      and I would not go back to it for twice the rate.
+
+      [Chorus]
+      And the crew says the rate, and the crew says it together,
+      four voices flat and no harmony in it at all.
+      You can have the tune. You cannot have the number.
+      The number was agreed by everybody in this room.
+
+      [Final Chorus - one high harmony over the crew]
+      And the crew says the rate, and the crew says it together,
+      and the burn festival is on and the port hall is full
+      and we will sing it all the way to the vote at nine.
+      The number was agreed. Ask anybody here.
+
+      [Outro - cold stop, all voices together]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0067
+    title: Better Pay by Morning
+    track_number: 2
+    mood: [hopeful, communal, brisk]
+    fact: >-
+      Jalen Rook wrote the bass turn while waiting for the co-operative's overnight wage vote to
+      finish.
+    arrangement_note: a guest upright bass plays the same four-note turn under every chorus, written while the count ran, and it never changes shape
+    intro: 5
+    outro: fade
+    target_duration: "3:20"
+    prompt: >-
+      Warm live-room jangle pop and soft rock, 124 BPM, hopeful and communal, brisk. Male lead
+      vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
+      no vibrato. Whole-crew chorus of four to six voices in unison rather than harmony, mixed
+      registers, answering the lead line for line, one high harmony only on the final chorus. Two
+      composite guitars, one acoustic-toned and one barely amplified, guest upright bass playing an
+      unchanging four-note turn under every chorus, hand-built percussion off metal cups and crates
+      left ringing. Whole band tracked together in a small meeting room, light compression, loose
+      rather than gridded. Five seconds of upright bass before the first sung word. Fade on the turn.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 5 seconds, upright bass turn twice, no vocal]
+
+      [Verse 1]
+      The count went on till four and we sat outside it,
+      on the crates in the corridor with our coats over our knees.
+      Somebody's cousin came out twice with a number
+      and both times the number was different and both times it was wrong.
+
+      [Pre-Chorus]
+      So we did what a crew does with a long night -
+
+      [Chorus]
+      We might be better paid by morning (better paid by morning)
+      We might be exactly where we are (where we are)
+      Either way there is a walk down to the berth at six
+      and I would like to take it with you, whatever the count says.
+
+      [Verse 2]
+      You had the good sense to bring a flask and not an opinion.
+      Everybody else on that deck had brought the opposite.
+      There was a man doing the whole thing on a ration biscuit
+      and explaining, at volume, how a co-operative ought to work.
+      There was a man explaining shares to a woman who had drafted them
+      and she let him, and she has never let anybody since.
+
+      [Pre-Chorus]
+      And the corridor got colder and we did not go in -
+
+      [Chorus]
+      We might be better paid by morning (better paid by morning)
+      We might be exactly where we are (where we are)
+      Either way there is a walk down to the berth at six
+      and I would like to take it with you, whatever the count says.
+
+      [Verse 3]
+      They came out at ten past with a hand up for quiet.
+      I did not hear the number. I will tell you what I heard.
+      I heard you laugh before the room did, half a second early,
+      which is how I knew, and I would rather have that than the money.
+
+      [Chorus]
+      We might be better paid by morning (better paid by morning)
+      We might be exactly where we are (where we are)
+      Either way there is a walk down to the berth at six
+      and I would like to take it with you, whatever the count says.
+
+      [Outro - fade on the bass turn and the crew answer]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0068
+    title: Cup in the Sink
+    track_number: 3
+    mood: [domestic, annoyed, quick]
+    fact: >-
+      Cado Veir plays the opening beat on the unwashed metal cup that started the cabin argument in
+      the lyric.
+    arrangement_note: the beat is struck on one unwashed metal cup for the whole record and no other percussion is used anywhere in it; the song has a refrain and no chorus
+    intro: 3
+    outro: cold
+    target_duration: "3:05"
+    prompt: >-
+      Warm live-room jangle pop, 134 BPM, annoyed and quick, domestic. Male lead vocal, warm
+      baritone that roughens at the top of the range, plain and a shade behind the beat, no vibrato.
+      Whole-crew chorus of four to six voices in unison rather than harmony, answering the refrain
+      only. Two composite guitars, one acoustic-toned and one barely amplified, electric bass, and a
+      single struck metal cup as the only percussion in the entire song. Whole band tracked together
+      in a small meeting room, light compression, loose rather than gridded. Four verses and a
+      one-line refrain, no chorus anywhere. Three seconds of the struck cup before the first sung
+      word. Cold stop.
+    exclude: synthesizers, electronic drums, drum kit, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 3 seconds, one struck metal cup, no vocal]
+
+      [Verse 1]
+      There is a cup in the sink and it has been there since Tuesday
+      and everybody in this cabin knows exactly whose it is.
+      Nobody has moved it. Nobody is going to.
+      It has become a matter of principle in a room four metres long.
+
+      [Refrain]
+      It is not about the cup. It has never been about the cup.
+
+      [Verse 2]
+      Emi says leave it, Emi says it will resolve itself,
+      which is what Emi says about everything and it never has.
+      Jalen washed it on the Wednesday out of weakness
+      and had to be talked to, at length, by all of us.
+
+      [Refrain]
+      It is not about the cup. It has never been about the cup.
+
+      [Verse 3]
+      Four of us in a cabin on a circuit with no end to it,
+      sharing a shelf, a kettle, a shift board and a sink,
+      four berths, one lamp, and a hold full of somebody else's cargo.
+      You cannot say the big thing so you say the small thing,
+      and the small thing is a cup, and the cup is in the sink.
+
+      [Refrain]
+      It is not about the cup. It has never been about the cup.
+
+      [Bridge]
+      I would like to state, for the manifest, for the record,
+      that I have washed that cup nine times this year already
+      and I am not doing it again while anybody is watching.
+
+      [Verse 4]
+      You came in last night off the late deck watch and you washed it
+      without a word, and put it back on the shelf with the handle turned out.
+      I heard you do it. I lay there and I heard the whole thing.
+      And that is the nicest thing anybody has done for me all season.
+
+      [Refrain]
+      It is not about the cup. It has never been about the cup.
+
+      [Outro - cold stop, one last struck cup]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0069
+    title: Burn Day Promise
+    track_number: 4
+    mood: [romantic, eager, driving]
+    fact: >-
+      Ressa Morn wrote the song about two people reserving the same free hour before their shift
+      boards changed.
+    arrangement_note: the crew chorus comes in a bar late every time, as though catching up, and the last one arrives on time
+    intro: 6
+    outro: fade
+    target_duration: "3:35"
+    prompt: >-
+      Warm live-room jangle pop and soft rock, 130 BPM, romantic and eager, driving. Male lead
+      vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
+      no vibrato. Whole-crew chorus of four to six voices in unison rather than harmony, mixed
+      registers, entering a bar late on every chorus as though catching up and arriving on time only
+      on the last, one high harmony over that last one. Two composite guitars, one acoustic-toned
+      and one barely amplified, electric bass, hand-built percussion off metal cups and crates left
+      ringing. Whole band tracked together in a small meeting room, light compression, loose rather
+      than gridded. Six seconds of both guitars before the first sung word. Fade.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 6 seconds, both composite guitars, no vocal]
+
+      [Verse 1]
+      The boards go up on the Thursday and they change everything,
+      who is on nights, who is on the long leg, who is off.
+      You get about four minutes with the sheet in front of you
+      to work out whether the next month is any good.
+
+      [Chorus]
+      So we said the same hour out loud at the same time,
+      Sunday, second bell, the bench by the water.
+      It is not a plan. It is barely an arrangement.
+      It is the one hour neither of us will give away.
+
+      [Verse 2]
+      I have watched people lose whole years to a shift board.
+      Two of them working the same lane for a decade
+      and never once off at the same time in the same port,
+      passing it up and down the relay at four days a leg,
+      writing to each other about weather and the price of things.
+
+      [Chorus]
+      So we said the same hour out loud at the same time,
+      Sunday, second bell, the bench by the water.
+      It is not a plan. It is barely an arrangement.
+      It is the one hour neither of us will give away.
+
+      [Bridge]
+      Burn day is a working day. Nobody gets it off.
+      That is exactly why the hour before it is worth anything.
+
+      [Verse 3]
+      If the board changes, and the board always changes,
+      if they put me on the night leg or the long haul out,
+      I will be at the bench anyway at the second bell,
+      and I will sit there like a fool for the whole hour
+      on the reasonable chance that you are doing the same.
+
+      [Chorus]
+      So we said the same hour out loud at the same time,
+      Sunday, second bell, the bench by the water.
+      It is not a plan. It is barely an arrangement.
+      It is the one hour neither of us will give away.
+
+      [Outro - fade, crew chorus arriving on the beat at last]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0070
+    title: Hold My Place in Line
+    track_number: 5
+    mood: [affectionate, patient, midtempo]
+    fact: >-
+      Talla Venn plays a bright composite-guitar answer copied from Emi Soll's tuning check.
+    arrangement_note: the answering guitar figure is a tuning check played as a part, note for note, and it is the only thing that answers the lead until the crew comes in
+    intro: 11
+    outro: sustain
+    target_duration: "4:05"
+    prompt: >-
+      Warm live-room jangle pop and soft rock, 108 BPM, affectionate and patient. Male lead vocal,
+      warm baritone that roughens at the top of the range, plain and a shade behind the beat, no
+      vibrato. Whole-crew chorus of four to six voices in unison rather than harmony entering only
+      in the second half of the song, one high harmony on the last chorus. Two composite guitars,
+      one acoustic-toned and one bright and barely amplified playing an answering figure taken note
+      for note from a tuning check, electric bass, hand-built percussion off metal cups and crates.
+      Whole band tracked together in a small meeting room, light compression, loose rather than
+      gridded. Eleven seconds of that answering figure before the first sung word. A twelve-second
+      instrumental on the same figure. Ends on a sustained chord.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 11 seconds, a tuning check played as a figure on the bright guitar, no vocal]
+
+      [Verse 1]
+      There is a queue at the transfer hall from six in the morning,
+      four hundred people and one desk and a man with a stamp.
+      You get one place in it and you keep it all day
+      and you do not get it back if you step out of the line.
+
+      [Verse 2]
+      I had a place at forty from the front and you had nothing,
+      you came off a hauler at nine with a bag and a bad night.
+      I did not think about it. I have thought about it since.
+      I said stand here, and I went to the back, and that was that.
+
+      [Chorus]
+      Hold my place in line. That is all it is.
+      Not a ring, not a room, not a name on a berth.
+      Somebody keeps a space for you where a space is worth having
+      and you find out what you are to each other by half past eight.
+
+      [Verse 3]
+      You did the same for me at the port hall in the spring,
+      in the rain, for two hours, and you never said a word about it
+      until somebody asked, at a table, in front of people,
+      and you told it badly and I have not stopped thinking about it.
+
+      [Chorus]
+      Hold my place in line. That is all it is.
+      Not a ring, not a room, not a name on a berth.
+      Somebody keeps a space for you where a space is worth having
+      and you find out what you are to each other by half past eight.
+
+      [Instrumental - the tuning-check figure, 12 seconds]
+
+      [Final Chorus - whole crew, one high harmony]
+      Hold my place in line. That is all it is.
+      Not a ring, not a room, not a name on a berth.
+      Somebody keeps a space for you where a space is worth having.
+      I have got you at forty from the front. Take your time.
+
+      [Outro - sustain, the figure ringing on]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0071
+    title: Don't Wake the Cook
+    track_number: 6
+    mood: [mischievous, hushed, quick]
+    fact: >-
+      The band sings the first chorus at half volume because the meeting-room wall adjoined the
+      festival kitchen rest area.
+    arrangement_note: the record opens on its chorus sung at half volume with the whole band playing quietly, and the volume comes up a step at each chorus until the last one is full
+    intro: 4
+    outro: fade
+    target_duration: "3:15"
+    prompt: >-
+      Warm live-room jangle pop, 132 BPM, mischievous and hushed, quick. Male lead vocal, warm
+      baritone that roughens at the top of the range, plain and a shade behind the beat, no vibrato,
+      sung quietly at first and at full voice by the end. Whole-crew chorus of four to six voices in
+      unison rather than harmony, mixed registers, at half volume on the first chorus and a step
+      louder at each one after it. Two composite guitars, one acoustic-toned and one barely
+      amplified, electric bass, hand-built percussion off metal cups and crates played with the
+      hands rather than struck. Whole band tracked together in a small meeting room, light
+      compression, loose rather than gridded. Four seconds of muted guitar and then straight into
+      the chorus. Fade.
+    exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
+    lyrics: |
+      [Intro - 4 seconds, muted acoustic-toned guitar, no vocal]
+
+      [Chorus - half volume, whole band quiet]
+      Do not wake the cook, do not wake the cook,
+      she has been on since four and she is asleep through that wall.
+      Sing it if you want but sing it like a rumour,
+      and whatever else happens tonight, keep it down.
+
+      [Verse 1]
+      There are nine of us in a meeting room after the vote
+      with two guitars, a crate of cups and nowhere else to go.
+      The hall is shut, the port hall is worse than shut,
+      and the burn festival is officially over as of ten.
+
+      [Chorus - a step louder]
+      Do not wake the cook, do not wake the cook,
+      she has been on since four and she is asleep through that wall.
+      Sing it if you want but sing it like a rumour,
+      and whatever else happens tonight, keep it down.
+
+      [Verse 2]
+      You are sitting on the table with your boots off, laughing
+      into your sleeve, which is the quietest you can manage,
+      and every time somebody hits the crate too hard
+      the whole room stops dead and looks at the wall.
+
+      [Middle eight - almost spoken, band nearly silent]
+      She fed four hundred people today on a broken burner.
+      Whatever we think we are doing in here, she has done more of it.
+
+      [Verse 3]
+      At two in the morning the door goes and it is her.
+      She stands in it. She looks at the crate, and at the cups,
+      and she says: not that one, that one is the good crate.
+      And then she sits down and asks somebody to start again.
+
+      [Chorus - full voice, whole crew]
+      Do not wake the cook, do not wake the cook —
+      too late, she is up, she is holding a cup and singing.
+      Sing it now like it is the last hour of the festival.
+      It is the last hour of the festival. Nobody is keeping anything down.
+
+      [Outro - fade on the whole room]
+    take: null                    # M-30 fills this in at the Suno sitting

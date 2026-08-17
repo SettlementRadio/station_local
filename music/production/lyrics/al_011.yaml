@@ -1,0 +1,590 @@
+# al_011 — Catalogue of Small Debts · Evening Claim (b_005) · Lower Bell Editions · 2612 · 8 songs
+#
+# Written by M-21. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The wiki's story for this record is a house that had stopped paying and a band that turned eight
+# disputed invoices into songs. **The invoices are the furniture and not the subject** (§3): every
+# song here is about asking somebody for something and about what it costs to ask, which is what an
+# unpaid account feels like from the inside. Nothing in the words is about a label.
+#
+# The track order is the signed session ledger's, which is the order the wiki states and the one the
+# station holds — two claimants issued two different ones from the same masters.
+#
+# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+
+album:
+  id: al_011
+  title: Catalogue of Small Debts
+  band: b_005
+  band_name: Evening Claim
+  label: label_6
+  release_year: 2612
+  genre: relay-pop
+  cornerstone: false
+  song_count: 8
+  style_card: b_005
+  room: >-
+    The same late-club room as al_010, twenty-nine years on, with the house refusing ordinary
+    payment requests while the sessions ran. The band is Purist from 2605, so nothing here is
+    sequenced and the harpsichord-toned keyboard is played by hand — which is the style card as
+    written, unbent. The guests are all on one part each and several of them are in the wiki's story
+    rather than in the arrangement: an upright bass played for no fee after the payment desk shut,
+    the label's own office piano, and a single resonance-pipe note at the end of the record.
+
+generation:
+  # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0098
+    title: Catalogue of Small Debts
+    track_number: 1
+    mood: [wry, controlled, midtempo]
+    fact: >-
+      Mela Jorn sings from the band's unpaid-invoice list but replaces every amount with the favor it
+      was meant to purchase.
+    arrangement_note: the list in the second and third verses is sung on one repeated note, with the piano moving underneath it and the voice not moving at all
+    intro: 8
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      Compact close soft rock, 92 BPM, wry and controlled, midtempo. Female lead vocal, low and
+      warm, close to the microphone, understated and conversational, letting phrases fall away
+      rather than holding them, and singing the listed lines of the second and third verses on one
+      repeated note while the piano moves underneath. Three-part close harmony stacked behind the
+      lead on every chorus, the whole group on the last one, never shouted. Upright piano, upright
+      bass, brushed drum kit, harpsichord-toned keyboard played by hand, light hand percussion. Dry
+      and small, gentle tape warmth, no large reverb. Eight seconds of piano and bass before the
+      first sung word. Fade.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 8 seconds, upright piano with the bass entering at five seconds, no vocal]
+
+      [Verse 1]
+      I have kept a list since the spring and I am not proud of it.
+      Not amounts. I could not tell you what anything cost.
+      What is on the list is what the money was for,
+      which is a different page altogether and a longer one,
+      and I have been over it in the dark more often than I would admit
+      to anybody at all in a room with the lamps up.
+
+      [Chorus]
+      A catalogue of small debts, none of them worth naming,
+      every one of them still open at the end of the year.
+      Nobody in this quarter owes anybody anything much.
+      Everybody in this quarter is owed one thing.
+
+      [Verse 2 - listed, one repeated note]
+      A coat, one night, in the rain, off somebody's own back.
+      Nine minutes held at a transfer hall desk that was closing.
+      A berth for a fortnight and no mention of the rent.
+      Somebody standing in for a shift on the worst possible day.
+      A cup of something at four in the morning, twice.
+      One conversation nobody wanted to have and somebody had.
+
+      [Chorus]
+      A catalogue of small debts, none of them worth naming,
+      every one of them still open at the end of the year.
+      Nobody in this quarter owes anybody anything much.
+      Everybody in this quarter is owed one thing.
+
+      [Verse 3 - listed, one repeated note]
+      And the other page, the short one, is the things I have not done.
+      Two letters not written. One question not asked.
+      A woman at a table for a whole season, waiting,
+      while I was extremely busy being reasonable.
+
+      [Chorus - whole group]
+      A catalogue of small debts, none of them worth naming,
+      every one of them still open at the end of the year.
+      I am going to settle one of them tonight in person
+      and it is the only one on either page that matters.
+
+      [Outro - fade on the piano]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0099
+    title: Called in a Favor
+    track_number: 2
+    mood: [urgent, intimate, brisk]
+    fact: >-
+      Oren Saye played the accepted bass part without a fee after the label's payment desk closed
+      during the session.
+    arrangement_note: a guest upright bass takes the lead line's answers for the whole song, which is the part nobody was paid for, and it is mixed level with the voice
+    intro: 5
+    outro: cold
+    target_duration: "3:25"
+    prompt: >-
+      Compact close sunshine pop and soft rock, 108 BPM, urgent and intimate, brisk. Female lead
+      vocal, low and warm, close to the microphone, understated and conversational, letting phrases
+      fall away rather than holding them. Three-part close harmony stacked behind the lead on every
+      chorus, never shouted. Upright piano, brushed drum kit, harpsichord-toned keyboard played by
+      hand, light hand percussion, and a guest upright bass answering every lead line for the whole
+      song, mixed level with the voice rather than underneath it. Dry and small, gentle tape warmth,
+      no large reverb. Five seconds of upright bass alone before the first sung word. Cold stop.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 5 seconds, upright bass alone, no vocal]
+
+      [Verse 1]
+      There is a right way to ask and I have never learned it.
+      You want to sound like it is nothing, and it is not nothing,
+      and the person you are asking can hear the difference
+      in the first four words, however carefully you pick them.
+
+      [Pre-Chorus]
+      So I did it badly, at the door, at half past one -
+
+      [Chorus]
+      I asked you for something and I am not sorry that I did.
+      You came out in the cold on the strength of one bad sentence
+      with your coat over your shirt and your keys in your hand.
+      Whatever the going rate is for that, I cannot pay it.
+
+      [Verse 2]
+      The transfer hall desk had shut. It shuts at exactly the hour
+      when the thing you need doing becomes impossible to do,
+      and the last ferry had gone, and the road was down to one lamp.
+      Everybody who could have signed it had gone home
+      and I stood in a corridor working out who I could wake.
+
+      [Pre-Chorus]
+      And there were four names and I used the wrong one on purpose -
+
+      [Chorus]
+      I asked you for something and I am not sorry that I did.
+      You came out in the cold on the strength of one bad sentence
+      with your coat over your shirt and your keys in your hand.
+      Whatever the going rate is for that, I cannot pay it.
+
+      [Verse 3]
+      You did not mention it in the morning, which was worse.
+      You made the tea. You asked about the room booking.
+      A person who does a thing like that and does not mention it
+      has put a debt on me I intend to carry for good.
+
+      [Chorus]
+      I asked you for something and I am not sorry that I did.
+      You came out in the cold on the strength of one bad sentence
+      with your coat over your shirt and your keys in your hand.
+      Ask me for something. Anything. At any hour. Please.
+
+      [Outro - cold stop, the bass cutting off with the voice]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0100
+    title: Your Usual Corner
+    track_number: 3
+    mood: [nostalgic, affectionate, steady]
+    fact: >-
+      Sel Ardin arranged the chorus for the four singers who still met at the band's first club table
+      in 2612.
+    arrangement_note: the chorus is arranged for exactly four voices and no more, because four people still sit at that table, and one of the four is a step behind the others every time
+    intro: 12
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      Compact close soft rock, 84 BPM, nostalgic and affectionate, steady. Female lead vocal, low
+      and warm, close to the microphone, understated and conversational, letting phrases fall away
+      rather than holding them. A chorus arranged for exactly four voices in close harmony and no
+      more, with one of the four entering a step behind the others every time, never shouted.
+      Upright piano, upright bass, brushed drum kit, harpsichord-toned keyboard played by hand,
+      light hand percussion. Dry and small, gentle tape warmth, no large reverb. Twelve seconds of
+      piano and brushed kit before the first sung word. Ends on a sustained chord.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 12 seconds, upright piano with brushed kit, keyboard at eight seconds, no vocal]
+
+      [Verse 1]
+      Four of us took that corner the first winter we were here
+      because it was the coldest table and nobody wanted it,
+      under a scrubber vent that has never once been quiet.
+      We have had it every Thursday since, without arranging it,
+      through two changes of management, one new floor,
+      and every Clearing Day this quarter has had in between.
+
+      [Chorus]
+      Your usual corner. Same four chairs, same draught.
+      Nobody books it and nobody has ever had to.
+      There are people in this room who were not born
+      when the four of us started sitting in that corner on a Thursday.
+
+      [Verse 2]
+      One of us has stopped drinking and one of us has stopped talking
+      about the thing everybody at that table knows about,
+      and one of us comes in late every week from a shift
+      and one of us is always there first, which is me.
+
+      [Chorus]
+      Your usual corner. Same four chairs, same draught.
+      Nobody books it and nobody has ever had to.
+      There are people in this room who were not born
+      when the four of us started sitting in that corner on a Thursday.
+
+      [Bridge]
+      Nothing about that table has ever been said out loud.
+      Twenty-nine years of the four of us not saying it.
+
+      [Verse 3]
+      You were late tonight and I watched the door for an hour
+      like a fool, like a person with nothing else in his week,
+      and when you came in you looked at the corner first
+      and then at me, and you have never done that before.
+
+      [Chorus - four voices, one a step behind]
+      Your usual corner. Same four chairs, same draught.
+      Nobody books it and nobody has ever had to.
+      Sit where you always sit. I am not going anywhere.
+      I have got the whole of a Thursday and no other plans at all.
+
+      [Outro - sustain, piano holding under the four voices]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0101
+    title: One Honest Minute
+    track_number: 4
+    mood: [direct, spare, slow]
+    fact: >-
+      The group removed every backing voice until the final line, where Sel Ardin adds a single unison
+      answer.
+    arrangement_note: no backing voice anywhere in the song until the very last line, where one unison answer arrives and the song stops
+    intro: 16
+    outro: sustain
+    target_duration: "4:30"
+    prompt: >-
+      Compact close soft rock, 76 BPM, direct and spare, slow. Female lead vocal, low and warm,
+      close to the microphone, understated and conversational, letting phrases fall away rather than
+      holding them. No backing voice anywhere in the song until the very last line, where a single
+      unison answer arrives and the song ends. Upright piano, upright bass, brushed drum kit played
+      very lightly, harpsichord-toned keyboard played by hand, light hand percussion. Dry and small,
+      gentle tape warmth, no large reverb. Four verses and a two-line refrain, no chorus anywhere.
+      Sixteen seconds of piano alone before the first sung word. Ends on a sustained chord.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, backing vocals until the final line, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 16 seconds, upright piano alone, bass entering at twelve seconds, no vocal]
+
+      [Verse 1]
+      Give me one honest minute and I will give you the year.
+      Not the version for the table. Not the one for the room.
+      The one you would give somebody you were never going to see again
+      on a bench, in the cold, at the transfer hall, at the end of a bad week,
+      with the last ferry gone and nothing to be polite for.
+
+      [Refrain]
+      Sixty seconds. Then we can go back to being kind.
+
+      [Verse 2]
+      I have had nine years of being handled beautifully.
+      Everybody in this quarter of the core is good at it.
+      We are a settlement of people saying the near thing kindly.
+      Nobody has said a true thing to me since the spring
+      and I have not said one either and I started it.
+
+      [Refrain]
+      Sixty seconds. Then we can go back to being kind.
+
+      [Verse 3]
+      So here is mine, and it is not going to sound well.
+      I have been coming to this room four nights a week for you.
+      Not for the work, not for the money, which is not arriving,
+      not for the four chairs in the corner, much as I love them,
+      and not for the walk back afterwards, which I also love.
+      For you. Since about the second winter. That is the minute.
+
+      [Refrain]
+      Sixty seconds. Then we can go back to being kind.
+
+      [Verse 4]
+      That is the whole of it and the minute is nearly up
+      and I have spent about nine years getting to the end of it
+      and you have not said anything and the piano has stopped
+      and there is a woman at the counter pretending to count something
+      and I would like it noted that I have never done this before.
+
+      [Refrain - one unison answer on the last line]
+      Sixty seconds. Then we can go back to being kind.
+      Do not be kind. Say it badly. Say anything.
+
+      [Outro - sustain, one held chord and nothing else]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0102
+    title: Make It Someone Else
+    track_number: 5
+    mood: [bitter, brisk, sharp]
+    fact: >-
+      Miro Olt plays the bright electronic-string figure that Lower Bell Editions tried to credit to
+      an absent arranger.
+    arrangement_note: a guest synth-harpsichord plays one bright repeated figure that is the loudest thing in the song after the voice, and it is never doubled by the piano
+    intro: 4
+    outro: fade
+    target_duration: "3:20"
+    prompt: >-
+      Compact close sunshine pop, 116 BPM, bitter and sharp, brisk. Female lead vocal, low and warm,
+      close to the microphone, understated and conversational, letting phrases fall away rather than
+      holding them, clipped rather than warm here. Three-part close harmony stacked behind the lead
+      on every chorus, never shouted. Upright piano, upright bass, brushed drum kit, light hand
+      percussion, and a guest synth-harpsichord — plucked electronic strings — playing one bright
+      repeated figure that is the loudest thing in the song after the voice and is never doubled by
+      the piano. Dry and small, gentle tape warmth, no large reverb. Four seconds of that plucked
+      figure before the first sung word. Fade.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 4 seconds, plucked electronic strings, no vocal]
+
+      [Verse 1]
+      Somebody has to be the one who brings it up,
+      who says the number out loud in a port hall full of coats
+      while everybody else looks at the middle of the table
+      and works out how to be somewhere else by the second sentence.
+
+      [Chorus]
+      So let it be somebody else this time. Let it be anybody else.
+      I have done it three seasons running and I am tired of the face
+      people make at the person who mentions what is owed.
+      It is a good face. I have made it myself, at somebody braver.
+
+      [Verse 2]
+      There is a way this quarter of the core has of admiring the ones
+      who ask — afterwards, in the corridor, quietly, out of the way,
+      and never once in the room while the asking is going on,
+      and I have had a great deal of that particular admiration.
+
+      [Chorus]
+      So let it be somebody else this time. Let it be anybody else.
+      I have done it three seasons running and I am tired of the face
+      people make at the person who mentions what is owed.
+      It is a good face. I have made it myself, at somebody braver.
+
+      [Bridge]
+      They put a name to my part on the sleeve that was not mine.
+      Nobody in that office thought I would say anything about it.
+
+      [Verse 3]
+      And you stood up. In the room. With the coats on the chairs.
+      You said one sentence and you got it slightly wrong
+      and it was the best thing anybody has done for me in the core
+      and I have not found a way to tell you that since Tuesday.
+
+      [Chorus - whole group]
+      So let it be somebody else this time. Let it be anybody else —
+      you already did, and it was you, and you did not have to.
+      I have got the face I make at somebody braver.
+      I have been making it at you across a table all week.
+
+      [Outro - fade on the plucked figure]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0103
+    title: The Founder Won't Call
+    track_number: 6
+    mood: [angry, restrained, midtempo]
+    fact: >-
+      Calo Meret plays the office piano beneath a lyric drafted after the label founder missed three
+      scheduled account meetings.
+    arrangement_note: the piano is the label's own office upright, out of tune in two places, and neither note is avoided anywhere in the song
+    intro: 7
+    outro: cold
+    target_duration: "3:40"
+    prompt: >-
+      Compact close soft rock, 96 BPM, angry and restrained, midtempo — anger kept entirely out of
+      the volume. Female lead vocal, low and warm, close to the microphone, understated and
+      conversational, letting phrases fall away rather than holding them, never raised. Three-part
+      close harmony stacked behind the lead on the choruses, never shouted. A guest upright office
+      piano that is out of tune on two notes, with neither note avoided anywhere in the song, upright
+      bass, brushed drum kit, harpsichord-toned keyboard played by hand, light hand percussion. Dry
+      and small, gentle tape warmth, no large reverb. Seven seconds of that out-of-tune piano before
+      the first sung word. Cold stop.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 7 seconds, an out-of-tune office upright with bass under it, no vocal]
+
+      [Verse 1]
+      Three times now. Ten in the morning, a room booked,
+      a message out on the carrier wave the night before,
+      a chair with nobody in it and a woman at a desk
+      being extremely sorry about a thing that is not her fault
+      and doing it beautifully, for the third month running.
+
+      [Chorus]
+      He is not going to call. He was never going to call.
+      There is a version of this where I keep turning up at ten
+      in a good coat, with a folder, being reasonable,
+      until the whole of a year has gone into that empty chair.
+
+      [Verse 2]
+      I am not angry about the money. I would like that on the record.
+      The money is a number and a number can be argued down
+      the way a ration or a fare or a room rate can be argued down.
+      What I mind is the eleven mornings, and the good coat,
+      and the fact that I said nothing on any of them.
+
+      [Chorus]
+      He is not going to call. He was never going to call.
+      There is a version of this where I keep turning up at ten
+      in a good coat, with a folder, being reasonable,
+      until the whole of a year has gone into that empty chair.
+
+      [Verse 3]
+      You came with me the third time and you sat in the corridor
+      and you did not say I told you so, which you had, twice.
+      You asked me afterwards where I would like to have lunch
+      as though the morning had gone entirely to plan.
+
+      [Bridge]
+      There is one call I am going to make this afternoon
+      and it is not to that office and it is not about money.
+
+      [Chorus - whole group]
+      He is not going to call. He was never going to call.
+      I am not turning up at ten in a good coat again.
+      There is a whole day in it that I have never had free
+      and I know exactly who I am going to spend it with.
+
+      [Outro - cold stop on the out-of-tune note]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0104
+    title: Receipt Without a Name
+    track_number: 7
+    mood: [mysterious, wounded, steady]
+    fact: >-
+      The percussion is Elo Vara tapping the unsigned meal receipt that appeared inside the session
+      account.
+    arrangement_note: the rhythm is a folded paper receipt tapped against a table edge, with wire chimes behind it, and there is no drum kit in the song
+    intro: 11
+    outro: fade
+    target_duration: "4:00"
+    prompt: >-
+      Compact close soft rock, 88 BPM, mysterious and wounded, steady. Female lead vocal, low and
+      warm, close to the microphone, understated and conversational, letting phrases fall away
+      rather than holding them. Three-part close harmony stacked behind the lead on the choruses,
+      never shouted. Upright piano, upright bass, harpsichord-toned keyboard played by hand, a folded
+      paper receipt tapped against a table edge as the entire rhythm with hanging wire chimes behind
+      it, and no drum kit anywhere in the song. Dry and small, gentle tape warmth, no large reverb.
+      Eleven seconds of tapped paper, chimes and piano before the first sung word. Fade.
+    exclude: guitars, drum kit, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 11 seconds, a folded receipt tapped on a table edge with chimes and piano, no vocal]
+
+      [Verse 1]
+      Somebody paid for the meal on the eleventh of the month.
+      A whole table, nine of us, at the end of a long week,
+      the night the last ferry was cancelled and nobody could get home,
+      and the slip turned up in the account with no name on it
+      and nobody at that table has ever said a word.
+
+      [Chorus]
+      A slip with no name on it at all. Signed by nobody.
+      Somebody in this room went out to the counter quietly
+      while the rest of us were arguing about a room booking,
+      and came back, and sat down, and joined in with the argument.
+
+      [Verse 2]
+      I have gone through it four times like a person with a case.
+      Two of them could not have. Three of them would have said.
+      One of them would have said it twice and then again in the spring.
+      That leaves three, and one of the three is you.
+
+      [Chorus]
+      A slip with no name on it at all. Signed by nobody.
+      Somebody in this room went out to the counter quietly
+      while the rest of us were arguing about a room booking,
+      and came back, and sat down, and joined in with the argument.
+
+      [Verse 3]
+      It is not the money. It was not very much money,
+      about a fortnight of a ration and no more than that.
+      It is that somebody in a bad month, with the house not paying,
+      went and did a warm thing and arranged for nobody to know,
+      which is a way of loving a room full of people.
+
+      [Bridge]
+      I have put the slip in the ledger where it will not be found
+      and written nothing beside it, which is the only kind thing left.
+
+      [Chorus - whole group]
+      A slip with no name on it at all. Signed by nobody.
+      I am not going to ask you. I am never going to ask.
+      But I have kept it, and you know that I have kept it,
+      and you looked at me over the table when I put it away.
+
+      [Outro - fade on the tapped receipt and the chimes]
+    take: null                    # M-30 fills this in at the Suno sitting
+
+  - id: s_0105
+    title: After the Final Bell
+    track_number: 8
+    mood: [resigned, warm, building]
+    fact: >-
+      Ivena Sorn sustains the final resonance-pipe note while each band member reads one settled debt
+      into the room ledger.
+    arrangement_note: the closer; a guest resonance-pipe note is held under the whole last section while four voices read one settled item each, and the note outlasts all of them
+    intro: 17
+    outro: sustain
+    target_duration: "4:50"
+    prompt: >-
+      Compact close soft rock building to a large ending, 84 BPM, resigned and warm. Female lead
+      vocal, low and warm, close to the microphone, understated and conversational, letting phrases
+      fall away rather than holding them. Three-part close harmony stacked behind the lead on the
+      choruses, the whole group on the last one, and in the final section four voices in turn each
+      singing one plain line. Upright piano, upright bass, brushed drum kit, harpsichord-toned
+      keyboard played by hand, light hand percussion, and one guest resonance pipe — a long alloy
+      tube with a deep organ tone, unamplified — holding a single low note under the whole last
+      section and outlasting every voice. Dry and small, gentle tape warmth, no large reverb.
+      Seventeen seconds of piano and that low alloy note before the first sung word. Ends on the
+      sustained pipe note alone.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
+    lyrics: |
+      [Intro - 17 seconds, upright piano over one low alloy note, chimes at twelve seconds, no vocal]
+
+      [Verse 1]
+      They ring it at one and they have rung it at one
+      for as long as there has been a room in this building.
+      Everybody stands up. Everybody puts a coat on.
+      Nothing that has not been said by then is getting said.
+
+      [Chorus]
+      After the last bell of the night there is no more business.
+      The counter shuts, the ledger shuts, the room goes back to a room.
+      Whatever is still owed at one o'clock is owed for good
+      and everybody in this quarter has learned to live with that.
+
+      [Verse 2]
+      I have carried a page of it for nine years, and you have too,
+      through nine Clearing Days and one vigil and two bad winters,
+      and we have sat four feet apart through the whole of it
+      being pleasant about the weather and the price of a room
+      and letting the bell decide for us, four nights a week.
+
+      [Chorus]
+      After the last bell of the night there is no more business.
+      The counter shuts, the ledger shuts, the room goes back to a room.
+      Whatever is still owed at one o'clock is owed for good
+      and everybody in this quarter has learned to live with that.
+
+      [Bridge]
+      The house is going under. Everybody in here knows it.
+      There will not be a Thursday in this room by the spring.
+
+      [Verse 3]
+      So this is the last count and I am doing it out loud.
+      One coat, returned. One favor, called in and paid.
+      One list, closed. One question, finally asked at a table
+      in front of four people who have been waiting years for it.
+
+      [Final Chorus - four voices in turn, then the whole group]
+      After the last bell of the night there is no more business.
+      The counter shuts, the ledger shuts, the room goes back to a room.
+      There is a walk to the transfer hall and the lamps are still on
+      and nothing at all is owed by anybody. Put your coat on. Come on.
+
+      [Outro - sustain, the alloy note outlasting every voice]
+    take: null                    # M-30 fills this in at the Suno sitting
