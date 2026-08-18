@@ -5,9 +5,9 @@
 # Suno Custom mode only. Written under §12 rules 9 and 10.
 #
 # The band's style card calls for *short songs*, and rule 10's floor is 288 sung words. The two are
-# reconciled the way the form itself does it: slow tempos, 76 to 100, and a great deal of repetition
-# of very few images. A 300-word lyric at 84 BPM is not a long song; it is a quiet one that runs its
-# full length.
+# reconciled in the arrangements rather than on the stopwatch: the songs use few images, compact
+# sections and no extended instrumental passages. Tempos run 76 to 112 with the mood, and the slower
+# songs repeat small, ordinary details rather than opening out into larger arrangements.
 #
 # `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
 
@@ -78,7 +78,7 @@ songs:
       and neither of us says the sentence that would finish it,
       and neither of us gets up, and neither of us leaves.
 
-      [Verse 2]
+      [Verse 2 - piano lid one step down, quieter and duller]
       There is a way of putting a lid down over an hour
       so gently that nobody in the room hears it go,
       and I have watched you do it to whole years of your life
@@ -94,7 +94,7 @@ songs:
       The last ferry has gone. It went at the quarter past.
       Neither of us mentioned it and neither of us moved.
 
-      [Verse 3]
+      [Verse 3 - piano lid nearly closed]
       I would rather have this than the version with an ending in it.
       I would rather sit in a shut room in the core all winter
       with the piano nearly closed and the lamps nearly out
@@ -137,7 +137,7 @@ songs:
       They have the table by the door on a Tuesday and a Thursday
       and they have had it since the storm season turned, without booking it.
       She comes off the last ferry, he comes up from the port hall,
-      and the two of them are in that chair by the quarter past.
+      and the two of them are at that table by the quarter past.
       He gets here first. She comes in about ten minutes after
       and does not look for him, because she knows exactly where he is.
 
@@ -161,9 +161,9 @@ songs:
 
       [Verse 3]
       There is a woman at this piano who has been in the corner for years,
-      who takes the back booth, and keeps his coat, and is very careful,
-      and who would like it noted that he has watched two customers
-      teach him more about the whole subject than the whole quarter did.
+      who takes the back booth, and keeps her coat, and is very careful,
+      and who would like it noted that she has watched two customers
+      teach her more about the whole subject than the whole quarter did.
 
       [Bridge]
       They pay, they go, they say goodnight to the woman on the coats.
@@ -193,7 +193,7 @@ songs:
       Compact close sunshine pop and soft rock, 100 BPM, wry and wistful, midtempo. Female lead
       vocal, low and warm, close to the microphone, understated and conversational, letting phrases
       fall away rather than holding them. Three-part close harmony stacked behind the lead on every
-      chorus, the whole group on the last one, never shouted. Upright piano, upright bass,
+      refrain, the whole group on the last one, never shouted. Upright piano, upright bass,
       harpsichord-toned keyboard played by hand, light hand percussion, and a rhythm played with
       brushes on a metal serving tray in place of the drum kit, close and slightly rattling, with no
       drum kit anywhere in the song. Dry and small, gentle tape warmth, no large reverb. Five
@@ -280,7 +280,7 @@ songs:
       and it will be in a different quarter of the core by Friday
       and out on the relay to two settlements by the ninth.
 
-      [Chorus]
+      [Chorus - muffled group behind the closed door]
       So keep your voice down. Keep it under the piano.
       Say the important half of it towards the wall.
       There is a whole conversation going on behind that door
@@ -292,7 +292,7 @@ songs:
       Give it a month. Give it until the season changes.
       Then let the whole quarter have it and I will not care at all.
 
-      [Chorus]
+      [Chorus - muffled group behind the closed door]
       So keep your voice down. Keep it under the piano.
       Say the important half of it towards the wall.
       There is a whole conversation going on behind that door
@@ -335,9 +335,9 @@ songs:
       rather than holding them. Three-part close harmony stacked behind the lead on every chorus,
       the whole group on the last one, never shouted. Upright piano, upright bass, brushed drum kit,
       light hand percussion, and a harpsichord-toned keyboard — plucked electronic strings — played
-      with one hand only, so the figure is thin and never fills the arrangement. Dry and small,
-      gentle tape warmth, no large reverb, a guide take kept rather than replaced. Four seconds of
-      that one-handed figure before the first sung word. Fade.
+      with one hand only, repeating the same thin figure without variation and never filling the
+      arrangement. Dry and small, gentle tape warmth, no large reverb, a guide take kept rather than
+      replaced. Four seconds of that one-handed figure before the first sung word. Fade.
     exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
     lyrics: |
       [Intro - 4 seconds, one-handed keyboard figure, no vocal]
@@ -353,7 +353,7 @@ songs:
       Everybody gets the smile at the counter.
       Everybody. The whole quarter. Four nights a week.
       I know exactly what it is and what it is worth
-      and I have been coming here on Thursdays for two years.
+      and I have been coming here four nights a week for two years.
 
       [Verse 2]
       I have watched her do it to a man off the last ferry
@@ -365,7 +365,7 @@ songs:
       Everybody gets the smile at the counter.
       Everybody. The whole quarter. Four nights a week.
       I know exactly what it is and what it is worth
-      and I have been coming here on Thursdays for two years.
+      and I have been coming here four nights a week for two years.
 
       [Middle eight]
       Nine on a Thursday. Ticket four hundred and six.
@@ -509,7 +509,7 @@ songs:
       and the four of us are still here, counting, every night.
 
       [Bridge]
-      There is a whole shift of people in the settled worlds
+      There is a whole shift of people on this circuit
       who only ever see each other after somebody says everybody out.
 
       [Verse 3]

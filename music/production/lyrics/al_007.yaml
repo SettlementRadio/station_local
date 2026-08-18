@@ -27,9 +27,11 @@ album:
     with the kitchen rest area through one wall. **The band is still Purist here** — the wiki dates
     its Localist turn to 2600 and al_008 — so the hand-built percussion on this EP is found metal off
     the tables and the crates it came in on, not the tuned oxygen-tank drums Cado Veir wins the
-    argument with six years later, and the electric composite guitar is barely amplified. That is the
-    one line the arrangement notes bend. Voice, backing and exclude are untouched, and the whole-crew
-    chorus is already the band's signature on its first record.
+    argument with six years later, and the electric composite guitar is barely amplified. Guest
+    parts are printed exactly: Nessa Dray's composite fiddle on s_0066 and s_0068, Oren Saye's
+    upright bass on s_0067 and s_0071, and Talla Venn's bright composite guitar on s_0069 and
+    s_0070. Voice, backing and exclude remain fixed, and the whole-crew chorus is already the
+    band's signature on its first record.
 
 generation:
   # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
@@ -48,17 +50,20 @@ songs:
     fact: >-
       The four members sing the figures from a rejected pay offer before Ressa Morn answers with the
       accepted rate.
-    arrangement_note: the whole crew sings the rejected figures in flat unison before the lead answers alone with the accepted one, and the crew never sings under him in that exchange
+    arrangement_note: the four members sing the rejected figures in flat unison before the lead answers alone with the accepted rate; the crew never sings under him in that exchange, and Nessa Dray's guest composite fiddle plays a two-note answer after the accepted figure
     intro: 8
     outro: cold
-    target_duration: "3:30"
+    target_duration: "4:00"
     prompt: >-
       Warm live-room jangle pop, 128 BPM, assertive and driving. Male lead vocal, warm baritone that
       roughens at the top of the range, plain and a shade behind the beat, no vibrato. Whole-crew
-      chorus of four to six voices in flat unison rather than harmony, mixed registers, answering
-      the lead and never singing underneath him, one high harmony only on the final chorus. Two
+      chorus of exactly four voices in flat unison rather than harmony. The four voices sing the
+      rejected figures, then stop while the lead sings the accepted rate alone; one high harmony
+      appears only when the crew repeats the accepted rate in the final chorus. Two
       composite guitars, one acoustic-toned and one barely amplified, electric bass, hand-built
-      percussion struck off metal cups and packing crates and left ringing. Whole band tracked
+      percussion struck off metal cups and packing crates and left ringing. One guest composite
+      fiddle — a single bright, thin-toned instrument, never a string section — plays a two-note
+      answer after the accepted rate. Whole band tracked
       together in a small meeting room, light compression, loose rather than gridded. Eight seconds
       of struck metal and acoustic-toned guitar before the first sung word. Cold stop.
     exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
@@ -71,11 +76,14 @@ songs:
       A number for the day, a smaller one for the night,
       and a line at the bottom about what they call goodwill.
 
-      [Chorus]
-      And the crew says the rate, and the crew says it together,
-      four voices flat and no harmony in it at all.
-      You can have the tune. You cannot have the number.
-      The number was agreed by everybody in this room.
+      [Rejected offer - four voices in flat unison]
+      Seven shares by day. Five shares by night.
+      One more if the hold arrives complete.
+
+      [Accepted rate - lead alone, guest fiddle answers after the last line]
+      Nine shares either shift, and goodwill does not count.
+      No night discount. No goodwill written in for pay.
+      Nine shares either shift. Put that at the bottom.
 
       [Verse 2]
       Nobody shouted. That is not how it went.
@@ -83,11 +91,14 @@ songs:
       in a hard season on a long circuit with a full hold,
       and nobody at the front of the room could tell her.
 
-      [Chorus]
-      And the crew says the rate, and the crew says it together,
-      four voices flat and no harmony in it at all.
-      You can have the tune. You cannot have the number.
-      The number was agreed by everybody in this room.
+      [Rejected offer - four voices in flat unison]
+      Seven shares by day. Five shares by night.
+      One more if the hold arrives complete.
+
+      [Accepted rate - lead alone, guest fiddle answers after the last line]
+      Nine shares either shift, and goodwill does not count.
+      No night discount. No goodwill written in for pay.
+      Nine shares either shift. Put that at the bottom.
 
       [Verse 3]
       I have been on both sides of a table like that one.
@@ -95,17 +106,20 @@ songs:
       It is easier at that end and it pays better too
       and I would not go back to it for twice the rate.
 
-      [Chorus]
-      And the crew says the rate, and the crew says it together,
-      four voices flat and no harmony in it at all.
-      You can have the tune. You cannot have the number.
-      The number was agreed by everybody in this room.
+      [Rejected offer - four voices in flat unison]
+      Seven shares by day. Five shares by night.
+      One more if the hold arrives complete.
 
-      [Final Chorus - one high harmony over the crew]
-      And the crew says the rate, and the crew says it together,
-      and the burn festival is on and the port hall is full
+      [Accepted rate - lead alone, guest fiddle answers after the last line]
+      Nine shares either shift, and goodwill does not count.
+      No night discount. No goodwill written in for pay.
+      Nine shares either shift. Put that at the bottom.
+
+      [Final Chorus - whole crew on the accepted rate, one high harmony, guest fiddle answers]
+      Nine shares either shift, and goodwill does not count.
+      Nine shares either shift. Put that at the bottom.
+      The burn festival is on and the port hall is full
       and we will sing it all the way to the vote at nine.
-      The number was agreed. Ask anybody here.
 
       [Outro - cold stop, all voices together]
     take: null                    # M-30 fills this in at the Suno sitting
@@ -120,7 +134,7 @@ songs:
     arrangement_note: a guest upright bass plays the same four-note turn under every chorus, written while the count ran, and it never changes shape
     intro: 5
     outro: fade
-    target_duration: "3:20"
+    target_duration: "4:05"
     prompt: >-
       Warm live-room jangle pop and soft rock, 124 BPM, hopeful and communal, brisk. Male lead
       vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
@@ -188,16 +202,18 @@ songs:
     fact: >-
       Cado Veir plays the opening beat on the unwashed metal cup that started the cabin argument in
       the lyric.
-    arrangement_note: the beat is struck on one unwashed metal cup for the whole record and no other percussion is used anywhere in it; the song has a refrain and no chorus
+    arrangement_note: the beat is struck on one unwashed metal cup for the whole record and no other percussion is used anywhere in it; Nessa Dray's guest composite fiddle plays the same dry two-note answer after every refrain, and the song has no chorus
     intro: 3
     outro: cold
-    target_duration: "3:05"
+    target_duration: "3:45"
     prompt: >-
       Warm live-room jangle pop, 134 BPM, annoyed and quick, domestic. Male lead vocal, warm
       baritone that roughens at the top of the range, plain and a shade behind the beat, no vibrato.
       Whole-crew chorus of four to six voices in unison rather than harmony, answering the refrain
       only. Two composite guitars, one acoustic-toned and one barely amplified, electric bass, and a
-      single struck metal cup as the only percussion in the entire song. Whole band tracked together
+      single struck metal cup as the only percussion in the entire song. One guest composite fiddle
+      — bright and thin-toned, never a string section — plays a dry two-note answer after every
+      refrain and nothing else. Whole band tracked together
       in a small meeting room, light compression, loose rather than gridded. Four verses and a
       one-line refrain, no chorus anywhere. Three seconds of the struck cup before the first sung
       word. Cold stop.
@@ -211,7 +227,7 @@ songs:
       Nobody has moved it. Nobody is going to.
       It has become a matter of principle in a room four metres long.
 
-      [Refrain]
+      [Refrain - dry two-note guest fiddle answer after the line]
       It is not about the cup. It has never been about the cup.
 
       [Verse 2]
@@ -220,7 +236,7 @@ songs:
       Jalen washed it on the Wednesday out of weakness
       and had to be talked to, at length, by all of us.
 
-      [Refrain]
+      [Refrain - dry two-note guest fiddle answer after the line]
       It is not about the cup. It has never been about the cup.
 
       [Verse 3]
@@ -230,12 +246,12 @@ songs:
       You cannot say the big thing so you say the small thing,
       and the small thing is a cup, and the cup is in the sink.
 
-      [Refrain]
+      [Refrain - dry two-note guest fiddle answer after the line]
       It is not about the cup. It has never been about the cup.
 
       [Bridge]
-      I would like to state, for the manifest, for the record,
-      that I have washed that cup nine times this year already
+      I have washed that cup nine times since the circuit started,
+      once for everybody here and five times for you alone,
       and I am not doing it again while anybody is watching.
 
       [Verse 4]
@@ -244,7 +260,7 @@ songs:
       I heard you do it. I lay there and I heard the whole thing.
       And that is the nicest thing anybody has done for me all season.
 
-      [Refrain]
+      [Refrain - dry two-note guest fiddle answer after the line]
       It is not about the cup. It has never been about the cup.
 
       [Outro - cold stop, one last struck cup]
@@ -257,7 +273,7 @@ songs:
     fact: >-
       Ressa Morn wrote the song about two people reserving the same free hour before their shift
       boards changed.
-    arrangement_note: the crew chorus comes in a bar late every time, as though catching up, and the last one arrives on time
+    arrangement_note: the crew chorus comes in a bar late every time, as though catching up, and the last one arrives on time; Talla Venn's guest bright composite guitar rings one high chord under "second bell" in every chorus and plays nothing else
     intro: 6
     outro: fade
     target_duration: "3:35"
@@ -266,8 +282,9 @@ songs:
       vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
       no vibrato. Whole-crew chorus of four to six voices in unison rather than harmony, mixed
       registers, entering a bar late on every chorus as though catching up and arriving on time only
-      on the last, one high harmony over that last one. Two composite guitars, one acoustic-toned
-      and one barely amplified, electric bass, hand-built percussion off metal cups and crates left
+      on the last, one high harmony over that last one. Two band composite guitars, one acoustic-toned
+      and one barely amplified, plus one guest bright composite guitar ringing a single high chord
+      under every "second bell" line and playing nothing else. Electric bass, hand-built percussion off metal cups and crates left
       ringing. Whole band tracked together in a small meeting room, light compression, loose rather
       than gridded. Six seconds of both guitars before the first sung word. Fade.
     exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
@@ -280,7 +297,7 @@ songs:
       You get about four minutes with the sheet in front of you
       to work out whether the next month is any good.
 
-      [Chorus]
+      [Chorus - lead begins alone, crew enters one bar late, guest guitar marks "second bell"]
       So we said the same hour out loud at the same time,
       Sunday, second bell, the bench by the water.
       It is not a plan. It is barely an arrangement.
@@ -293,7 +310,7 @@ songs:
       passing it up and down the relay at four days a leg,
       writing to each other about weather and the price of things.
 
-      [Chorus]
+      [Chorus - lead begins alone, crew enters one bar late, guest guitar marks "second bell"]
       So we said the same hour out loud at the same time,
       Sunday, second bell, the bench by the water.
       It is not a plan. It is barely an arrangement.
@@ -310,7 +327,7 @@ songs:
       and I will sit there like a fool for the whole hour
       on the reasonable chance that you are doing the same.
 
-      [Chorus]
+      [Final Chorus - crew enters on the first beat, one high harmony, guest guitar marks "second bell"]
       So we said the same hour out loud at the same time,
       Sunday, second bell, the bench by the water.
       It is not a plan. It is barely an arrangement.
@@ -325,7 +342,7 @@ songs:
     mood: [affectionate, patient, midtempo]
     fact: >-
       Talla Venn plays a bright composite-guitar answer copied from Emi Soll's tuning check.
-    arrangement_note: the answering guitar figure is a tuning check played as a part, note for note, and it is the only thing that answers the lead until the crew comes in
+    arrangement_note: Talla Venn's guest bright composite-guitar answer is Emi Soll's tuning check played as a part, note for note; it is the only thing answering the lead in the first chorus, and the crew enters on the third line of the second
     intro: 11
     outro: sustain
     target_duration: "4:05"
@@ -333,9 +350,10 @@ songs:
       Warm live-room jangle pop and soft rock, 108 BPM, affectionate and patient. Male lead vocal,
       warm baritone that roughens at the top of the range, plain and a shade behind the beat, no
       vibrato. Whole-crew chorus of four to six voices in unison rather than harmony entering only
-      in the second half of the song, one high harmony on the last chorus. Two composite guitars,
-      one acoustic-toned and one bright and barely amplified playing an answering figure taken note
-      for note from a tuning check, electric bass, hand-built percussion off metal cups and crates.
+      in the second half of the song, one high harmony on the last chorus. Two band composite
+      guitars, one acoustic-toned and one barely amplified playing sparse rhythm, plus Talla Venn's
+      guest bright composite guitar playing an answering figure taken note for note from a tuning
+      check. Electric bass, hand-built percussion off metal cups and crates.
       Whole band tracked together in a small meeting room, light compression, loose rather than
       gridded. Eleven seconds of that answering figure before the first sung word. A twelve-second
       instrumental on the same figure. Ends on a sustained chord.
@@ -355,7 +373,7 @@ songs:
       I did not think about it. I have thought about it since.
       I said stand here, and I went to the back, and that was that.
 
-      [Chorus]
+      [Chorus - lead alone, guest guitar answers each line]
       Hold my place in line. That is all it is.
       Not a ring, not a room, not a name on a berth.
       Somebody keeps a space for you where a space is worth having
@@ -367,7 +385,7 @@ songs:
       until somebody asked, at a table, in front of people,
       and you told it badly and I have not stopped thinking about it.
 
-      [Chorus]
+      [Chorus - lead begins alone, crew enters on the third line, guest guitar answers]
       Hold my place in line. That is all it is.
       Not a ring, not a room, not a name on a berth.
       Somebody keeps a space for you where a space is worth having
@@ -391,7 +409,7 @@ songs:
     fact: >-
       The band sings the first chorus at half volume because the meeting-room wall adjoined the
       festival kitchen rest area.
-    arrangement_note: the record opens on its chorus sung at half volume with the whole band playing quietly, and the volume comes up a step at each chorus until the last one is full
+    arrangement_note: the record opens on its chorus sung at half volume with the whole band playing quietly, Oren Saye's guest upright bass replacing the electric bass; the volume comes up a step at each chorus until the last one is full
     intro: 4
     outro: fade
     target_duration: "3:15"
@@ -401,7 +419,7 @@ songs:
       sung quietly at first and at full voice by the end. Whole-crew chorus of four to six voices in
       unison rather than harmony, mixed registers, at half volume on the first chorus and a step
       louder at each one after it. Two composite guitars, one acoustic-toned and one barely
-      amplified, electric bass, hand-built percussion off metal cups and crates played with the
+      amplified, guest upright bass replacing the electric bass, hand-built percussion off metal cups and crates played with the
       hands rather than struck. Whole band tracked together in a small meeting room, light
       compression, loose rather than gridded. Four seconds of muted guitar and then straight into
       the chorus. Fade.
@@ -435,7 +453,7 @@ songs:
 
       [Middle eight - almost spoken, band nearly silent]
       She fed four hundred people today on a broken burner.
-      Whatever we think we are doing in here, she has done more of it.
+      Keep the crate down. She has earned one quiet hour without us in it.
 
       [Verse 3]
       At two in the morning the door goes and it is her.

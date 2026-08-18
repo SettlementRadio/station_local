@@ -7,7 +7,8 @@
 # The wiki's story for this record is a house that had stopped paying and a band that turned eight
 # disputed invoices into songs. **The invoices are the furniture and not the subject** (§3): every
 # song here is about asking somebody for something and about what it costs to ask, which is what an
-# unpaid account feels like from the inside. Nothing in the words is about a label.
+# unpaid account feels like from the inside. Offices, sleeves and accounts appear where a song's
+# fact requires them, but no label is named and none of those objects is the emotional subject.
 #
 # The track order is the signed session ledger's, which is the order the wiki states and the one the
 # station holds — two claimants issued two different ones from the same masters.
@@ -31,7 +32,8 @@ album:
     sequenced and the harpsichord-toned keyboard is played by hand — which is the style card as
     written, unbent. The guests are all on one part each and several of them are in the wiki's story
     rather than in the arrangement: an upright bass played for no fee after the payment desk shut,
-    the label's own office piano, and a single resonance-pipe note at the end of the record.
+    the label's own office piano, Brin Noll's wire chimes behind the tapped receipt, and a single
+    resonance-pipe note at the end of the record.
 
 generation:
   # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
@@ -125,10 +127,11 @@ songs:
       Compact close sunshine pop and soft rock, 108 BPM, urgent and intimate, brisk. Female lead
       vocal, low and warm, close to the microphone, understated and conversational, letting phrases
       fall away rather than holding them. Three-part close harmony stacked behind the lead on every
-      chorus, never shouted. Upright piano, brushed drum kit, harpsichord-toned keyboard played by
-      hand, light hand percussion, and a guest upright bass answering every lead line for the whole
-      song, mixed level with the voice rather than underneath it. Dry and small, gentle tape warmth,
-      no large reverb. Five seconds of upright bass alone before the first sung word. Cold stop.
+      chorus, the whole group on the last one, never shouted. Upright piano, brushed drum kit,
+      harpsichord-toned keyboard played by hand, light hand percussion, and a guest upright bass
+      answering every lead line for the whole song, mixed level with the voice rather than
+      underneath it. Dry and small, gentle tape warmth, no large reverb. Five seconds of upright
+      bass alone before the first sung word. Cold stop.
     exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
     lyrics: |
       [Intro - 5 seconds, upright bass alone, no vocal]
@@ -170,7 +173,7 @@ songs:
       A person who does a thing like that and does not mention it
       has put a debt on me I intend to carry for good.
 
-      [Chorus]
+      [Chorus - whole group]
       I asked you for something and I am not sorry that I did.
       You came out in the cold on the strength of one bad sentence
       with your coat over your shirt and your keys in your hand.
@@ -234,7 +237,7 @@ songs:
 
       [Verse 3]
       You were late tonight and I watched the door for an hour
-      like a fool, like a person with nothing else in his week,
+      like a fool, with nothing else in my week,
       and when you came in you looked at the corner first
       and then at me, and you have never done that before.
 
@@ -264,9 +267,10 @@ songs:
       holding them. No backing voice anywhere in the song until the very last line, where a single
       unison answer arrives and the song ends. Upright piano, upright bass, brushed drum kit played
       very lightly, harpsichord-toned keyboard played by hand, light hand percussion. Dry and small,
-      gentle tape warmth, no large reverb. Four verses and a two-line refrain, no chorus anywhere.
-      Sixteen seconds of piano alone before the first sung word. Ends on a sustained chord.
-    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, backing vocals until the final line, vocal tuning, rapped sections, dance-pop production
+      gentle tape warmth, no large reverb. Four verses, a one-line refrain after each that expands
+      to two lines at the end, no chorus anywhere. Sixteen seconds of piano alone before the first
+      sung word. Ends on a sustained chord.
+    exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
     lyrics: |
       [Intro - 16 seconds, upright piano alone, bass entering at twelve seconds, no vocal]
 
@@ -322,7 +326,7 @@ songs:
     fact: >-
       Miro Olt plays the bright electronic-string figure that Lower Bell Editions tried to credit to
       an absent arranger.
-    arrangement_note: a guest synth-harpsichord plays one bright repeated figure that is the loudest thing in the song after the voice, and it is never doubled by the piano
+    arrangement_note: a guest synth-harpsichord played by hand and never sequenced takes one bright repeated figure that is the loudest thing in the song after the voice, and it is never doubled by the piano
     intro: 4
     outro: fade
     target_duration: "3:20"
@@ -332,9 +336,9 @@ songs:
       holding them, clipped rather than warm here. Three-part close harmony stacked behind the lead
       on every chorus, never shouted. Upright piano, upright bass, brushed drum kit, light hand
       percussion, and a guest synth-harpsichord — plucked electronic strings — playing one bright
-      repeated figure that is the loudest thing in the song after the voice and is never doubled by
-      the piano. Dry and small, gentle tape warmth, no large reverb. Four seconds of that plucked
-      figure before the first sung word. Fade.
+      repeated figure by hand, never sequenced, that is the loudest thing in the song after the
+      voice and is never doubled by the piano. Dry and small, gentle tape warmth, no large reverb.
+      Four seconds of that plucked figure before the first sung word. Fade.
     exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
     lyrics: |
       [Intro - 4 seconds, plucked electronic strings, no vocal]
@@ -370,7 +374,7 @@ songs:
       [Verse 3]
       And you stood up. In the room. With the coats on the chairs.
       You said one sentence and you got it slightly wrong
-      and it was the best thing anybody has done for me in the core
+      and it was the best thing anybody has done for me all year
       and I have not found a way to tell you that since Tuesday.
 
       [Chorus - whole group]
@@ -423,7 +427,7 @@ songs:
       I am not angry about the money. I would like that on the record.
       The money is a number and a number can be argued down
       the way a ration or a fare or a room rate can be argued down.
-      What I mind is the eleven mornings, and the good coat,
+      What I mind is the three mornings, and the good coat,
       and the fact that I said nothing on any of them.
 
       [Chorus]
@@ -458,7 +462,7 @@ songs:
     fact: >-
       The percussion is Elo Vara tapping the unsigned meal receipt that appeared inside the session
       account.
-    arrangement_note: the rhythm is a folded paper receipt tapped against a table edge, with wire chimes behind it, and there is no drum kit in the song
+    arrangement_note: the rhythm is a folded paper receipt tapped against a table edge, with Brin Noll's guest wire chimes behind it, and there is no drum kit in the song
     intro: 11
     outro: fade
     target_duration: "4:00"
@@ -467,9 +471,9 @@ songs:
       warm, close to the microphone, understated and conversational, letting phrases fall away
       rather than holding them. Three-part close harmony stacked behind the lead on the choruses,
       never shouted. Upright piano, upright bass, harpsichord-toned keyboard played by hand, a folded
-      paper receipt tapped against a table edge as the entire rhythm with hanging wire chimes behind
-      it, and no drum kit anywhere in the song. Dry and small, gentle tape warmth, no large reverb.
-      Eleven seconds of tapped paper, chimes and piano before the first sung word. Fade.
+      paper receipt tapped against a table edge as the entire rhythm with guest hanging wire chimes
+      behind it, and no drum kit anywhere in the song. Dry and small, gentle tape warmth, no large
+      reverb. Eleven seconds of tapped paper, chimes and piano before the first sung word. Fade.
     exclude: guitars, drum kit, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
     lyrics: |
       [Intro - 11 seconds, a folded receipt tapped on a table edge with chimes and piano, no vocal]
@@ -501,7 +505,7 @@ songs:
 
       [Verse 3]
       It is not the money. It was not very much money,
-      about a fortnight of a ration and no more than that.
+      about what one person's ration costs for a fortnight.
       It is that somebody in a bad month, with the house not paying,
       went and did a warm thing and arranged for nobody to know,
       which is a way of loving a room full of people.
@@ -537,13 +541,13 @@ songs:
       choruses, the whole group on the last one, and in the final section four voices in turn each
       singing one plain line. Upright piano, upright bass, brushed drum kit, harpsichord-toned
       keyboard played by hand, light hand percussion, and one guest resonance pipe — a long alloy
-      tube with a deep organ tone, unamplified — holding a single low note under the whole last
-      section and outlasting every voice. Dry and small, gentle tape warmth, no large reverb.
-      Seventeen seconds of piano and that low alloy note before the first sung word. Ends on the
-      sustained pipe note alone.
+      tube with a deep organ tone, unamplified — completely absent until the final ledger section,
+      then holding a single low note under that whole section and outlasting every voice. Dry and
+      small, gentle tape warmth, no large reverb. Seventeen seconds of piano and bass before the
+      first sung word. Ends on the sustained pipe note alone.
     exclude: guitars, synth pads, electronic drums, saxophone and smoky late-club arrangement, orchestral strings, belted vocals, vocal tuning, rapped sections, dance-pop production
     lyrics: |
-      [Intro - 17 seconds, upright piano over one low alloy note, chimes at twelve seconds, no vocal]
+      [Intro - 17 seconds, upright piano, bass at nine seconds, brushed kit at twelve seconds, no vocal]
 
       [Verse 1]
       They ring it at one and they have rung it at one
@@ -575,12 +579,22 @@ songs:
       There will not be a Thursday in this room by the spring.
 
       [Verse 3]
-      So this is the last count and I am doing it out loud.
-      One coat, returned. One favor, called in and paid.
-      One list, closed. One question, finally asked at a table
-      in front of four people who have been waiting years for it.
+      So this is the last count and I am not doing it alone.
+      The ledger is open on the piano where all four of us can see it.
+      We have each brought one plain line and nothing more,
+      and when the pipe comes in we are going to put them down in order.
 
-      [Final Chorus - four voices in turn, then the whole group]
+      [Final Ledger - resonance pipe enters, four band voices in turn]
+      [Mela]
+      One coat, returned.
+      [Tovin]
+      One favor, called in and paid.
+      [Elo]
+      One list, closed.
+      [Pira]
+      One question, finally asked at a table after nine years.
+
+      [Final Chorus - whole group, resonance pipe continuing]
       After the last bell of the night there is no more business.
       The counter shuts, the ledger shuts, the room goes back to a room.
       There is a walk to the transfer hall and the lamps are still on

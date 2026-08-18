@@ -1056,11 +1056,11 @@ prompt built off its band's style card, an exclude line, an intended ramp, an ou
 duration. **`make check` is green on all ten of §12's rules**, which is the first time any lyrics have
 had to satisfy rules 9 and 10 — the pilot's four albums are exempt by id.
 **The songs are 40% longer than the pilot's and the length is bought with repeated choruses** rather
-than with more verses (D-090): 288 to 346 sung words, mean 308, 18,507 words in all, which predicts a
+than with more verses (D-090): 288 to 346 sung words, mean 308, 18,471 words in all, which predicts a
 **3:51 take against §7's 3:36 average** — the deliberate overshoot M-50 chose, and an hour of these is
 thirteen songs rather than fourteen. §7's three distributions are aimed and land: **57% of songs ramp
 ≥8s and 17% ≥15s** (§7 asks ≥40% and ≥15%), outros **18 cold / 27 fade / 15 sustain**, which is
-30/45/25 exactly, and the stated targets average 3:45 with nothing under 3:00.
+30/45/25 exactly, and the stated targets average 3:55 with nothing under 3:00.
 **Rule 4 was the one that bound.** The wiki's titles are mostly hooks, so only 24 of the 60 choruses
 sing their own title and the other 36 take their title from an image in the lyric — M-47's finding
 again. Rule 3 cost little (6 of 60 use the echoed answer) and rule 2 came free (42 of 60).

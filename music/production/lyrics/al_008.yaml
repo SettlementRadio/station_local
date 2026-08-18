@@ -65,28 +65,28 @@ songs:
       [Intro - 16 seconds, three tuned tank drums struck in turn, chimes at eleven seconds, no vocal]
 
       [Verse 1]
-      Somebody worked out that a sleeve is a size
-      and a size is a thing that a hundred ships can hold.
-      So the same crate fits the same shelf in every port
-      and a record made in one cabin gets as far as the road goes.
+      We finished the last one halfway through second watch
+      and somebody found a clean sleeve under the desk.
+      I wrote no message where the freight clerk could read it,
+      only your berth and the route your next crew takes.
 
       [Chorus]
       Send it out. Send the whole of it out.
-      Let it turn up in a port hall nobody here has seen
-      and be sung wrong by people who have never met us.
-      That is not losing it. That is the point of making it.
+      Let it turn up in the port hall where your next crew signs.
+      Let somebody play it while you are counting stores.
+      If you know the voice by the second line, that is enough.
 
       [Verse 2]
-      There is a man on this crew who will not have it,
-      who says the drum is tuned to this room and no other,
-      that you can post the shape of a thing and not the thing,
-      and he is right, and he knows he is right, and he is still coming.
+      The crate went out with the ordinary morning freight.
+      Cado carried it down before he went off watch.
+      The clerk asked what was in it and he said seven songs,
+      one spare sleeve, and nothing that would trouble the scales.
 
       [Chorus]
       Send it out. Send the whole of it out.
-      Let it turn up in a port hall nobody here has seen
-      and be sung wrong by people who have never met us.
-      That is not losing it. That is the point of making it.
+      Let it turn up in the port hall where your next crew signs.
+      Let somebody play it while you are counting stores.
+      If you know the voice by the second line, that is enough.
 
       [Verse 3]
       I would like it to reach one particular berth
@@ -96,9 +96,9 @@ songs:
 
       [Chorus]
       Send it out. Send the whole of it out.
-      Let it turn up in a port hall nobody here has seen
-      and be sung wrong by people who have never met us.
-      That is not losing it. That is the point of making it.
+      Let it turn up in the port hall where your next crew signs.
+      Let somebody play it while you are counting stores.
+      If you know the voice by the second line, that is enough.
 
       [Chorus - whole crew, three drums together]
       Send it out. Send the whole of it out.
@@ -152,8 +152,8 @@ songs:
       [Verse 2]
       You put yours down at four this afternoon.
       I know because I have looked at that list nine times
-      and I would have noticed a change in the weather sooner
-      than I noticed your handwriting on the second column.
+      and I would have taken longer to notice the weather
+      than I took to find your writing in the second column.
 
       [Pre-Chorus]
       So here I am at the wall with a bit of wire and a stub -
@@ -167,6 +167,8 @@ songs:
       [Middle eight]
       Everybody I know decides everything twice.
       Once at the desk, and once at the door with a coat on.
+
+      [Count-in - four beats of the bow tapped on the fiddle body, band back in on the fifth]
 
       [Verse 3]
       A hauler out on the ninth is eleven days of nothing
@@ -211,14 +213,14 @@ songs:
       The crew shuttle runs the length of the yard and back
       from the transfer hall to the last berth on the hard,
       and it stops eleven times and everybody knows the stops.
-      Mine is the fourth. Yours is the second to last.
-      I have known that for two years and never once used it.
+      Mine is the second to last. Yours is the eighth.
+      I have known that for two years and always stayed on.
 
       [Chorus]
-      So I got off at the fourth stop early with my bag on my shoulder
+      So I got off with two stops left and my bag on my shoulder
       and said something about wanting the air, which was a lie,
       and we walked the whole wet length of the service road
-      talking about nothing at about half the speed it takes.
+      talking about nothing and walking at half our ordinary speed.
 
       [Verse 2]
       Twenty minutes. Twenty-two if the gate is shut.
@@ -229,24 +231,24 @@ songs:
       and every one of them has the sense not to wave.
 
       [Chorus]
-      So I got off at the fourth stop early with my bag on my shoulder
+      So I got off with two stops left and my bag on my shoulder
       and said something about wanting the air, which was a lie,
       and we walked the whole wet length of the service road
-      talking about nothing at about half the speed it takes.
+      talking about nothing and walking at half our ordinary speed.
 
       [Instrumental - both guitars, 10 seconds]
 
       [Verse 3 - acoustic-toned guitar only]
-      You got off one stop early on the Tuesday after.
-      You did not say anything about the air.
+      You rode two stops past yours on the Tuesday after.
+      You did not say anything about wanting the ride.
       You did not say anything at all, and neither did I,
-      and we walked the whole way in and it took thirty-one minutes.
+      and we walked the whole way back and it took thirty-one minutes.
 
       [Chorus]
-      So I got off at the fourth stop early with my bag on my shoulder
+      So I got off with two stops left and my bag on my shoulder
       and said something about wanting the air, which was a lie,
       and we walked the whole wet length of the service road
-      talking about nothing at about half the speed it takes.
+      talking about nothing and walking at half our ordinary speed.
 
       [Outro - sustain, guitar and chimes]
     take: null                    # M-30 fills this in at the Suno sitting
@@ -326,20 +328,22 @@ songs:
     fact: >-
       Oren Saye plays upright bass with a cloth under the strings so the sleeping crew could remain
       in the adjoining cabin.
-    arrangement_note: a guest upright bass is played with a cloth under the strings and every part on the record is played at the volume of a room where people are asleep next door
+    arrangement_note: a guest upright bass is played with a cloth under the strings, one tuned tank drum is brushed and stopped by hand, and every part is played at the volume of a room where people are asleep next door
     intro: 16
     outro: sustain
     target_duration: "4:20"
     prompt: >-
-      Warm live-room soft rock, 96 BPM, wistful and intimate, steady. Male lead vocal, warm baritone
+      Warm live-room soft rock, 100 BPM with an unhurried feel, wistful and intimate, steady. Male lead vocal, warm baritone
       that roughens at the top of the range, plain and a shade behind the beat, no vibrato, sung
-      quietly throughout. Whole-crew chorus of four voices in unison rather than harmony, kept very
-      quiet, answering the refrain only. Acoustic-toned composite guitar, guest upright bass played
+      quietly throughout. Whole-crew backing voices, four singers in unison rather than harmony,
+      kept very quiet and answering the refrain only. Acoustic-toned composite guitar, guest upright bass played
       with a cloth under the strings so it is short and dull rather than ringing, hanging wire
-      chimes brushed rather than struck, no drums. Tracked together in a small cabin at the volume
-      of a room where people are asleep next door, light compression. Four verses and a two-line
-      refrain, no chorus anywhere. Sixteen seconds of muted upright bass and guitar before the first
-      sung word. Ends on a sustained chord.
+      chimes brushed rather than struck, and one tuned metal tank drum brushed softly and stopped by
+      hand after each stroke. Tracked together in a small cabin at the volume of a room where people
+      are asleep next door, light compression, with unhurried space after each refrain. Four verses,
+      a one-line refrain after each that expands to two lines at the end, no chorus anywhere.
+      Sixteen seconds of muted upright bass and guitar before the first sung word. Ends on a
+      sustained chord.
     exclude: synthesizers, electronic drums, drum kit, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, belted vocals, dance-pop production
     lyrics: |
       [Intro - 16 seconds, muted upright bass and acoustic-toned guitar, chimes at eleven seconds, no vocal]
@@ -402,11 +406,11 @@ songs:
     outro: fade
     target_duration: "4:10"
     prompt: >-
-      Warm live-room soft rock, 92 BPM, secretive and tender, slow. Male lead vocal, warm baritone
+      Warm live-room soft rock, 100 BPM with a slow half-time feel, secretive and tender. Male lead vocal, warm baritone
       that roughens at the top of the range, plain and a shade behind the beat, no vibrato, quiet
-      but never breathy. Whole-crew chorus of four voices in unison rather than harmony, pitched
-      deliberately just above the room's own low mechanical hum and never below it, and the final
-      line sung by the lead alone. Acoustic-toned composite guitar, electric composite guitar
+      but never breathy. Whole-crew chorus of four voices in unison rather than harmony, sung and
+      mixed deliberately just above the room's low mechanical noise floor and never lost beneath
+      it, with the final line sung by the lead alone. Acoustic-toned composite guitar, electric composite guitar
       played very softly, electric bass, tuned metal tank drums brushed rather than struck, hanging
       wire chimes. Tracked together in a live room with its own audible low ventilation noise left
       in. Twelve seconds of guitar over that hum before the first sung word. Fade.
@@ -465,16 +469,18 @@ songs:
     fact: >-
       Sel Ardin arranged the crew chorus so each singer enters with a different fare complaint
       collected at three ports.
-    arrangement_note: the closer; each voice in the crew chorus enters one at a time with a different line, and by the last chorus all six are singing different words at once
+    arrangement_note: the closer; six distinct sung fare complaints, two collected at each of three ports, with the first four introduced one voice at a time and all six overlapping under the lead in the last chorus
     intro: 6
     outro: fade
     target_duration: "3:55"
     prompt: >-
       Warm live-room jangle pop and soft rock, 132 BPM, wry and communal, driving. Male lead vocal,
       warm baritone that roughens at the top of the range, plain and a shade behind the beat, no
-      vibrato. Whole-crew chorus of six voices in unison rather than harmony, entering one at a time
-      with a different line each and all six singing different words at once by the last chorus,
-      mixed registers, unpolished. Two composite guitars, one acoustic-toned and one electric,
+      vibrato. Whole-crew backing of six voices in mixed registers, unpolished and without chordal
+      harmony. Each singer has one distinct short fare complaint, two collected at each of three
+      ports. The first four voices are introduced alone in the middle choruses; all six lines then
+      overlap in a controlled communal pile-up under the lead in the final chorus. Two composite
+      guitars, one acoustic-toned and one electric,
       electric bass, tuned metal tank drums and hanging wire chimes left ringing. Whole band tracked
       together in a live room, light compression, loose rather than gridded. Six seconds of tank
       drums and both guitars before the first sung word. Fade on six voices at once.
@@ -482,9 +488,9 @@ songs:
     lyrics: |
       [Intro - 6 seconds, tank drums and both guitars, no vocal]
 
-      [Chorus]
-      Everybody knows the fare (everybody knows the fare)
-      Everybody knows it is a shade more than it was (than it was)
+      [Chorus - lead only]
+      Everybody knows the fare.
+      Everybody knows it is a shade more than it was.
       Nobody has ever seen it written on a board
       and every single person on this deck can tell you what it is.
 
@@ -494,11 +500,15 @@ songs:
       of a different year, and she has the receipt to prove it,
       and the two of them have never met and never will.
 
-      [Chorus]
-      Everybody knows the fare (everybody knows the fare)
-      Everybody knows it is a shade more than it was (than it was)
+      [Chorus - lead, then first-port crew voices entering separately]
+      Everybody knows the fare.
+      Everybody knows it is a shade more than it was.
       Nobody has ever seen it written on a board
       and every single person on this deck can tell you what it is.
+      [Crew voice 1 - first port]
+      Went up again in spring.
+      [Crew voice 2 - first port]
+      My mother paid half of this.
 
       [Verse 2]
       I am not complaining about the fare. I am complaining
@@ -506,11 +516,15 @@ songs:
       on a two-day crossing with nothing else to do
       and somebody standing at the rail that I would rather talk to.
 
-      [Chorus]
-      Everybody knows the fare (everybody knows the fare)
-      Everybody knows it is a shade more than it was (than it was)
+      [Chorus - lead, then second-port crew voices entering separately]
+      Everybody knows the fare.
+      Everybody knows it is a shade more than it was.
       Nobody has ever seen it written on a board
       and every single person on this deck can tell you what it is.
+      [Crew voice 3 - second port]
+      They charge the bag as cargo now.
+      [Crew voice 4 - second port]
+      The late ferry costs another share.
 
       [Verse 3]
       So here is what it costs, and I have done the sums.
@@ -518,11 +532,24 @@ songs:
       it costs looking like a fool in front of six of my crew,
       and it is the cheapest thing I have ever paid for.
 
-      [Final Chorus - six voices, all different words]
-      Everybody knows the fare (everybody knows the fare)
-      Everybody knows it is a shade more than it was (than it was)
+      [Final Chorus - lead over all six crew voices singing their different lines at once]
+      Everybody knows the fare.
+      Everybody knows it is a shade more than it was.
       Nobody has ever seen it written on a board.
       Pay it. Get on. She is at the rail and the ferry goes at four.
+      [Overlapping crew - all six lines at once under the lead]
+      [Crew voice 1 - first port]
+      Went up again in spring.
+      [Crew voice 2 - first port]
+      My mother paid half of this.
+      [Crew voice 3 - second port]
+      They charge the bag as cargo now.
+      [Crew voice 4 - second port]
+      The late ferry costs another share.
+      [Crew voice 5 - third port]
+      No board has shown the fare all year.
+      [Crew voice 6 - third port]
+      Ask three clerks and get four sums.
 
       [Outro - fade on six voices at once]
     take: null                    # M-30 fills this in at the Suno sitting

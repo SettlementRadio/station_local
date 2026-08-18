@@ -29,12 +29,13 @@ album:
   style_card: b_004
   room: >-
     One room, held for the whole route, which is what the 2619 co-operative rule change bought. So
-    this record has a consistency the two EPs could not have: the same live room, the same tuned
-    tank drums, the same handmade chimes, and the whole band tracked together on every song. The
-    style card is followed straight. The departures are per song and each is a guest on exactly one
-    part — a resonance-pipe note that waits for the handover, a locker latch retuned into a chime, a
-    guest piano on the last two tracks, and one song where the same player takes both guitars
-    because the band voted on who got the break.
+    this record has a consistency the two EPs could not have: every instrumental bed and lead vocal
+    comes from the same live room, with the same tuned tank drums and the same handmade chimes
+    wherever a per-song object does not replace them. The style card is followed straight. Among
+    the narrow, audible departures are an opposite-shift answering voice, paper wrapping tubes, a
+    locker latch retuned into a chime, one guest taking both guitars, three out-of-time clappers,
+    two precise fiddle cues, a resonance-pipe note that waits for the handover, a crew chorus cut at
+    the open ramp, and a sparse guest piano on the last two tracks.
 
 generation:
   # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
@@ -60,9 +61,9 @@ songs:
     prompt: >-
       Warm live-room jangle pop and soft rock, 130 BPM, romantic and triumphant, driving. Male lead
       vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
-      no vibrato. A single answering voice recorded separately that never overlaps the lead by a
-      beat, then the whole-crew chorus of four to six voices in unison rather than harmony on the
-      last two choruses, one high harmony over the final one. Two composite guitars, one
+      no vibrato. A single answering voice recorded on the opposite shift from the lead that never
+      overlaps him by a beat, then the whole-crew chorus of four to six voices in unison rather than
+      harmony on the last two choruses, one high harmony over the final one. Two composite guitars, one
       acoustic-toned and one electric, electric bass, tuned metal tank drums and hanging wire chimes
       left ringing. Whole band tracked together in one live room, light compression, loose rather
       than gridded. Eight seconds of both guitars and tank drums before the first sung word. Cold
@@ -72,50 +73,46 @@ songs:
       [Intro - 8 seconds, both composite guitars over tank drums, no vocal]
 
       [Verse 1]
-      Eleven years on this circuit and I have never had the same berth twice.
-      A different bunk, a different wall, a different noise at three,
-      a locker with somebody else's name half scratched off it
-      and a shelf that is either too high or not there at all.
+      The first time was rain at the outer freight berth
+      and your carrier was two hours late off the relay road.
+      I was waiting for a clerk who had gone to find my papers
+      and you were waiting for somebody who had already missed the boat.
 
-      [Chorus]
-      And then they changed the rule and gave us the one room
-      for the whole route, out and back, the entire way round.
-      Same berth twice. Same berth eleven times.
-      You can put a photograph up. You can leave a cup out.
+      [Chorus - lead and one answering voice alternating, never overlapping]
+      [Lead]
+      Same berth twice in a port with thirty places to stand.
+      [Answering voice - enters after the lead ends]
+      I knew the coat before I looked up at your face.
+      [Lead]
+      Nobody arranged it and nobody needs to know.
+      [Answering voice - enters after the lead ends]
+      Stay until the lamps go out and call it what you like.
 
       [Verse 2]
-      It sounds like nothing. Read it on a notice and it is nothing.
-      A line in a co-operative minute about room allocation.
-      But a person who has slept in forty rooms in a year
-      will tell you exactly what it is worth, and it is not nothing.
-
-      [Chorus]
-      And then they changed the rule and gave us the one room
-      for the whole route, out and back, the entire way round.
-      Same berth twice. Same berth eleven times.
-      You can put a photograph up. You can leave a cup out.
-
-      [Bridge]
-      The two of us cannot agree on who wrote this,
-      and we have both turned up, on opposite shifts, to sing it.
-
-      [Verse 3]
-      There is a hook by the door that has had my coat on it since spring
-      and the coat knows the hook now, which is more than I expected.
-      And you know which watch I am on without asking anybody,
-      and you leave the light off, and the kettle warm, and the door.
+      Eleven weeks later they sent our crew back by the same road,
+      same rain, same clerk, and the same number over the loading ramp.
+      You were there with a different coat and the same bad cup,
+      and this time neither of us pretended to be waiting for papers.
 
       [Chorus - whole crew]
-      And then they changed the rule and gave us the one room
-      for the whole route, out and back, the entire way round.
-      Same berth twice. Same berth eleven times.
-      I have stopped counting the ports. I have started counting the weeks.
+      Same berth twice, and the second time you saved me a place.
+      The whole port moving and the two of us standing still.
+      If anybody asks, the manifest put both crews here.
+      The manifest has done one useful thing and can have the credit.
+
+      [Verse 3]
+      Your boat left first. Mine loaded through the night.
+      You wrote the next arrival on the back of my gate slip.
+      It is Thursday at one if the weather holds, and I have checked it
+      often enough to know that the ink is wearing thin.
+      There are thirty berths and three ports where our routes could cross.
+      I am still going to be at this one before the ramp comes down.
 
       [Final Chorus - one high harmony over the crew]
-      Same berth twice, and a shelf, and a hook, and a wall.
-      It is not a settlement. It is not a name on a lease.
-      It is the first thing on this circuit I have not had to pack.
-      Leave the cup out. Leave it out the whole way round.
+      Same berth twice. A third time would begin to look deliberate.
+      Bring the bad cup. I will bring the papers I do not need.
+      Let the whole freight hall decide that chance has had enough.
+      When your lamps come round the point, I will already be there.
 
       [Outro - cold stop, all voices together]
     take: null                    # M-30 fills this in at the Suno sitting
@@ -136,7 +133,8 @@ songs:
       Whole-crew chorus of four to six voices in unison rather than harmony, answering the lead
       across the chorus. Two composite guitars, one acoustic-toned and one electric, electric bass,
       and percussion played on empty paper wrapping tubes tapped against a table — dry and light,
-      with the tuned tank drums kept out of the verses entirely and arriving only in the choruses.
+      with the tuned tank drums kept out of the verses entirely and arriving only in the choruses,
+      plus hanging wire chimes left ringing.
       Whole band tracked together in one live room, light compression, loose rather than gridded.
       Five seconds of tapped tubes and acoustic-toned guitar before the first sung word. Fade.
     exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
@@ -293,7 +291,7 @@ songs:
       So it is the last ferry home or it is nothing at all,
       it is the quarter past or a week on the wrong side of the water.
       I have got eleven minutes and a bag and a bad plan
-      and I am going to spend all three of them badly.
+      and I am going to use all three of them badly.
 
       [Verse 2]
       You were at the far end of the hard with your back to me
@@ -308,11 +306,11 @@ songs:
       So it is the last ferry home or it is nothing at all,
       it is the quarter past or a week on the wrong side of the water.
       I have got eleven minutes and a bag and a bad plan
-      and I am going to spend all three of them badly.
+      and I am going to use all three of them badly.
 
       [Instrumental - electric composite guitar break, 14 seconds, faster than the song]
 
-      [Verse 3]
+      [Verse 3 - band still running a shade fast after the break]
       I did not make it. Obviously I did not make it.
       I stood on the hard and watched the lamps go round the point
       and then I turned round and you were still standing there,
@@ -343,17 +341,17 @@ songs:
       baritone that roughens at the top of the range, plain and a shade behind the beat, no vibrato.
       Whole-crew chorus of four to six voices in unison rather than harmony, answering the lead line
       for line. Two composite guitars, one acoustic-toned and one electric, both played by the same
-      guest player so that they answer each other in an identical hand, electric bass, tuned metal
-      tank drums and hanging wire chimes. Whole band tracked together in one live room, light
-      compression, loose rather than gridded. An eight-second guitar break and no longer. Six
-      seconds of both guitars before the first sung word. Fade.
+      guest player, with matched picking attack, timing and phrasing so their answers sound like one
+      hand, electric bass, tuned metal tank drums and hanging wire chimes. Whole band tracked
+      together in one live room, light compression, loose rather than gridded. An eight-second
+      guitar break and no longer. Six seconds of both guitars before the first sung word. Fade.
     exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
     lyrics: |
       [Intro - 6 seconds, two composite guitars in the same hand, no vocal]
 
       [Verse 1]
       There are two bunks in that cabin and one of them is better.
-      Not much better. About a hand's width from the scrubber vent,
+      Not much better. About a hand's width farther from the scrubber vent,
       which on a long leg is the whole difference between rooms.
       Everybody who has ever been in there knows which one it is
       and nobody has ever admitted knowing it out loud.
@@ -415,10 +413,11 @@ songs:
       baritone that roughens at the top of the range, plain and a shade behind the beat, no vibrato.
       Whole-crew chorus of four to six voices in unison rather than harmony, answering the lead. Two
       composite guitars, one acoustic-toned and one electric, electric bass, tuned metal tank drums,
-      and three untrained people clapping the backbeat from the first chorus onward, slightly out of
-      time with one another and left that way. Whole band tracked together in one live room, light
-      compression, loose rather than gridded. Three seconds of acoustic-toned guitar before the
-      first sung word. Fade on the claps.
+      hanging wire chimes, and three untrained people — the co-operative treasurer and two
+      pressing-unit mechanics — clapping the backbeat from the first chorus onward, slightly out
+      of time with one another and left that way. Whole band tracked together in one live room,
+      light compression, loose rather than gridded. Three seconds of acoustic-toned guitar before
+      the first sung word. Fade on the claps.
     exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
     lyrics: |
       [Intro - 3 seconds, acoustic-toned guitar, no vocal]
@@ -430,7 +429,7 @@ songs:
       The hall fills up. The stalls put their prices up.
       Everybody in this port has known the date for a fortnight.
 
-      [Chorus]
+      [Chorus - three out-of-time clappers enter and stay]
       Do not spend it all. Do not spend it all tonight.
       That is what the treasurer says at the top of the meeting
       to a room of people who are already halfway out of it,
@@ -440,7 +439,7 @@ songs:
       There is a man who buys a coat every single payday
       and a woman who has bought the same three things since 2611
       and a lad on his first route who has gone very quiet
-      and is going to be lending money by the ninth.
+      and is going to be lending money by the ninth day.
 
       [Chorus]
       Do not spend it all. Do not spend it all tonight.
@@ -485,9 +484,9 @@ songs:
       composite guitars, one acoustic-toned and one electric, electric bass, tuned metal tank drums,
       and a guest composite fiddle — bright and thin-toned, one instrument and never a string
       section — playing at one pace through the first verse and stepping up to a faster one partway
-      through the second, never coming back down. Whole band tracked together in one live room,
-      light compression, loose rather than gridded. Seven seconds of fiddle and tank drums before
-      the first sung word. Cold stop.
+      through the second, never coming back down, with hanging wire chimes left ringing behind it.
+      Whole band tracked together in one live room, light compression, loose rather than gridded.
+      Seven seconds of fiddle and tank drums before the first sung word. Cold stop.
     exclude: synthesizers, electronic drums, orchestral string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
     lyrics: |
       [Intro - 7 seconds, composite fiddle over tank drums, no vocal]
@@ -496,7 +495,7 @@ songs:
       The board came out on the Thursday with a mistake in it.
       A gap. A clean four hours on a working afternoon
       between the end of the turnaround and the start of the count.
-      Four hours in a port hall town on a burn day, in daylight,
+      Four hours beyond the port hall on a burn day, in daylight,
       and nobody in the office has noticed it yet.
 
       [Chorus]
@@ -505,7 +504,7 @@ songs:
       There is a rule about mistakes on a board and the rule is
       you say nothing at all and you turn up where you are told.
 
-      [Verse 2 - fiddle stepping up]
+      [Verse 2 - fiddle holds its first pace on "Four hours," steps up on "Four whole hours," and never slows]
       Four hours. Four whole hours, in the middle of a route,
       in daylight, on the same day, in the same port as you.
       I have had leave that was worth less than this by a long way.
@@ -563,7 +562,7 @@ songs:
       People on the window ledges, people on the floor,
       people standing three deep at the back by the door.
 
-      [Chorus]
+      [Chorus - four fiddle notes after the last word]
       And there was a chair at the end of the fourth row
       with a coat over the back of it and a hand up in the air.
       Somebody saved a seat. In a room like that.
@@ -575,7 +574,7 @@ songs:
       Somebody moved a bag off a chair forty minutes before
       and sat there in the noise being uncomfortable about it.
 
-      [Chorus]
+      [Chorus - four fiddle notes after the last word]
       And there was a chair at the end of the fourth row
       with a coat over the back of it and a hand up in the air.
       Somebody saved a seat. In a room like that.
@@ -591,7 +590,7 @@ songs:
       The meeting went on for two hours and settled nothing at all
       and it is the best two hours I have spent in that hall.
 
-      [Final Chorus - whole crew, one high harmony]
+      [Final Chorus - whole crew, one high harmony, four fiddle notes after the last word]
       And there was a chair at the end of the fourth row
       with a coat over the back of it and a hand up in the air.
       Somebody saved a seat. I am going to be saving one
@@ -617,9 +616,9 @@ songs:
       composite guitars, one acoustic-toned and one electric, electric bass, tuned metal tank drums
       brushed rather than struck, hanging wire chimes, and one guest resonance pipe — a long alloy
       tube with a deep organ tone — which is absent for the whole first half and then holds a single
-      low note under everything from the middle of the song to the end. Whole band tracked together
-      in one live room, light compression, loose rather than gridded. Nine seconds of guitar and
-      brushed drums before the first sung word. Fade.
+      low note under everything only after the second refrain has completed the sung handover.
+      Whole band tracked together in one live room, light compression, loose rather than gridded.
+      Nine seconds of guitar and brushed drums before the first sung word. Fade.
     exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
     lyrics: |
       [Intro - 9 seconds, acoustic-toned guitar and brushed tank drums, no vocal]
@@ -639,14 +638,16 @@ songs:
       stops being yours in the space of about a second.
       Nobody outside this trade knows what that second is like.
 
-      [Refrain - resonance pipe entering]
+      [Refrain - no resonance pipe]
       And when it is signed for, it is not mine any more.
+
+      [Resonance pipe enters after the handover line and holds to the end]
 
       [Verse 3]
       There is a place across from the gate that opens at five
       for exactly this, for people at the end of a turnover,
       and it is not good and it does not pretend to be
-      and there is nowhere in the settled worlds I would rather be at five.
+      and there is nowhere on this circuit I would rather be at five.
 
       [Chorus]
       So come and have a bad cup of something with me
@@ -684,10 +685,11 @@ songs:
       Warm live-room jangle pop and soft rock, 128 BPM, hopeful and nocturnal, driving. Male lead
       vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
       no vibrato, close and dry. Whole-crew chorus of six voices in unison rather than harmony
-      recorded outdoors at an open loading ramp, wide and further away than the lead on every
-      chorus, with night air behind them. Two composite guitars, one acoustic-toned and one
-      electric, electric bass, tuned metal tank drums and hanging wire chimes. Whole band tracked
-      together in one live room, light compression, loose rather than gridded. Eight seconds of both
+      recorded separately outdoors at an open loading ramp, wide and further away than the lead on
+      every chorus, with night air behind them. Two composite guitars, one acoustic-toned and one
+      electric, electric bass, tuned metal tank drums and hanging wire chimes. Instrumental bed and
+      lead tracked together in the album's live room; crew voices cut at the ramp after the room
+      ventilation stopped, light compression, loose rather than gridded. Eight seconds of both
       guitars and chimes before the first sung word. Fade.
     exclude: synthesizers, electronic drums, string sections, studio choir, vocal tuning, rapped sections, whispered vocals, dance-pop production, four-on-the-floor kick
     lyrics: |
@@ -783,7 +785,7 @@ songs:
       in a cabin four berths down from somebody who would have said yes.
 
       [Verse 3]
-      I have been on this circuit since I was nineteen years old.
+      I have been on this circuit since my first paid route.
       I have watched two people do the whole of it in silence
       out of manners, out of shifts, out of not being sure,
       and they are both still here and they are both still not sure.
@@ -800,7 +802,7 @@ songs:
 
       [Silent bar]
 
-      [Final Chorus - cracked word, whole crew, one high harmony]
+      [Final Chorus - "There" cracks audibly after the silence, whole crew, one high harmony]
       There is nothing the matter with wanting. I want the route with you.
       Not the good version, not the one out of a song —
       the actual route, the cold ramp, the bad coffee, the lot.
@@ -824,7 +826,8 @@ songs:
       Warm live-room jangle pop and soft rock, 126 BPM, romantic and celebratory, brisk. Male lead
       vocal, warm baritone that roughens at the top of the range, plain and a shade behind the beat,
       no vibrato. Whole-crew chorus of six voices in unison rather than harmony, mixed registers,
-      the largest and loudest thing on the record by the final chorus, one high harmony over it. Two
+      entering together without rehearsal and becoming the largest and loudest thing on the record
+      by the final chorus, one high harmony over it. Two
       composite guitars, one acoustic-toned and one electric, electric bass, tuned metal tank drums
       and hanging wire chimes left ringing, and a guest upright piano playing sparsely — about half
       of what was written for it — because the voices fill the rest. Whole band tracked together in
@@ -847,7 +850,7 @@ songs:
       just the two of us and an hour that has not been allocated.
 
       [Verse 2]
-      I have been on the clock since I was nineteen years old.
+      I have been on the clock since my first paid watch.
       Every hour of my life has had a number beside it
       in somebody's book, in somebody's office, in somebody's hand,
       and I have never once minded it until this year.
@@ -859,10 +862,10 @@ songs:
       just the two of us and an hour that has not been allocated.
 
       [Verse 3]
-      The whole crew came into the room to sing this one.
-      Nobody asked them. Nobody wrote them a part.
-      They stood at the back and came in on the second chorus
-      and the piano player put down half of what he had written.
+      At the gate the whole crew will be going toward the hall.
+      Somebody will ask where I am going and why I am smiling.
+      I will say I have one hour nobody has put on a board
+      and a person by the water who has agreed to waste it with me.
 
       [Chorus - whole crew]
       Meet me off the clock. Not on a shift, not on a break.

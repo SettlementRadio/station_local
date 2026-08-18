@@ -29,8 +29,10 @@ album:
     power allotment came back on. Stormline Issue paid for portable storage and not for room time,
     so several vocals were sung beside working crews. The style card's "dry verses opening into a
     wide reverberant chorus" is therefore literal here — the verses are the shelter room and the
-    choruses are the depot's metal space — and it is the only line the arrangement notes bend.
-    Voice, backing, instruments and exclude are untouched.
+    choruses are the depot's metal space. Voice remains untouched. Two fact-bound session
+    exceptions are explicit rather than silent: Talla Venn's guest composite guitar on s_0053 and
+    the whole-band replacement answer on s_0054. Neither changes the band's line-up or base sound;
+    all other backing, instruments and exclusions remain fixed.
 
 generation:
   # Empty until M-30's Suno sitting. `make music-tag` (M-05) reads this block and each song's
@@ -54,7 +56,7 @@ songs:
     arrangement_note: opens on the shelter's four-knock power-warning pattern played on struck metal, the fourth knock late every time, and that pattern runs under every chorus
     intro: 10
     outro: cold
-    target_duration: "3:30"
+    target_duration: "4:10"
     prompt: >-
       Bright electronic power-pop, 122 BPM, urgent and driving. Female lead vocal, low alto, strong
       and level, holding the long notes in the hook and singing the chorus twice the size of the
@@ -127,17 +129,17 @@ songs:
     mood: [apologetic, exuberant, quick]
     fact: >-
       Nara Veck addresses the song to a friend whose shoes she ruined at a shelter social in 2606.
-    arrangement_note: the group voices answer the lead in the choruses only, and the last chorus is sung a fourth higher with the whole room on it
+    arrangement_note: the group voices answer the lead in the choruses only, and the last chorus lifts into a higher register with the whole room on it
     intro: 6
     outro: fade
-    target_duration: "3:15"
+    target_duration: "4:05"
     prompt: >-
       Bright electronic power-pop, 128 BPM, exuberant and quick, apologetic in the words and not in
       the playing. Female lead vocal, low alto, strong and level, holding the long notes in the hook
       and singing the chorus twice the size of the verse. Two voices doubling the hook in octaves
-      and answering the lead line for line across the chorus, the last chorus a fourth higher with
-      the whole room singing it. Synth bass, electronic drum kit, layered compact synthesizers,
-      struck metal percussion. Ringing electric-piano tones over the synthesizers, gated electronic
+      and answering the lead line for line across the chorus, the last chorus lifted into a higher
+      register with the whole room singing it. Synth bass, electronic drum kit, layered compact
+      synthesizers, struck metal percussion. Ringing electric-piano tones over the synthesizers, gated electronic
       drums, dry close verses opening into a wide reverberant chorus. Six seconds of synthesizer and
       handclaps before the first sung word. Fade on the repeated hook.
     exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
@@ -145,7 +147,7 @@ songs:
       [Intro - 6 seconds, synthesizer chord and handclaps, no vocal]
 
       [Verse 1]
-      She had them a year and she kept them for good rooms,
+      You had them for a year and kept them for good rooms,
       pale as anything, wrong for the coast, wrong for the walk.
       I said come out, it is only across the yard,
       it is only ten minutes and the floor is dry inside.
@@ -154,41 +156,46 @@ songs:
       It was not dry inside -
 
       [Chorus]
-      I am sorry about the shoes (sorry about the shoes)
+      I am sorry about your shoes (sorry about the shoes)
       I am sorry about the whole of it (all of it)
-      I would say it in a letter but a letter takes eight days
-      and I am saying it in the room, out loud, with the lights on.
+      I would put it in a letter,
+      but a letter lands next week.
+      I am saying it to you in this room,
+      out loud, with the lights on.
 
       [Verse 2]
       There was a puddle where the seal had gone at the doorway,
       half the port hall floor was under it by nine.
-      I walked her into the middle of it holding both her hands.
-      She did not shout. She looked down for a second.
-      Then she danced in them anyway till the allotment ran out.
+      I walked you into the middle of it holding both your hands.
+      You did not shout. You looked down for a second.
+      Then you danced in them anyway till the allotment ran out.
 
       [Pre-Chorus]
       Which is worse, somehow -
 
       [Chorus]
-      I am sorry about the shoes (sorry about the shoes)
+      I am sorry about your shoes (sorry about the shoes)
       I am sorry about the whole of it (all of it)
-      I would say it in a letter but a letter takes eight days
-      and I am saying it in the room, out loud, with the lights on.
+      I would put it in a letter,
+      but a letter lands next week.
+      I am saying it to you in this room,
+      out loud, with the lights on.
 
       [Verse 3]
-      I have offered her the money twice and she will not take it,
-      she says the story is worth more than the shoes were.
-      She will tell it in every port hall between here and the core
-      and she will tell it well, and the shoes will get paler each time.
-      So I have written her a chorus she can hold over me
+      I have offered you the money twice and you will not take it,
+      you say the story is worth more than the shoes were.
+      You will tell it in every port hall between here and the core
+      and you will tell it well, and the shoes will get paler each time.
+      So I have written you a chorus you can hold over me
       for as long as either of us is still standing up.
 
-      [Chorus - a fourth higher, whole room]
-      I am sorry about the shoes (sorry about the shoes)
+      [Chorus - lifted higher, whole room]
+      I am sorry about your shoes (sorry about the shoes)
       I am sorry about the whole of it (all of it)
-      I would say it in a letter but a letter takes eight days
-      and I am saying it in the room, out loud, with the lights on.
-      Out loud, with the lights on.
+      I would put it in a letter,
+      but a letter lands next week.
+      I am saying it to you in this room,
+      out loud, with the lights on.
 
       [Outro - fade on the group answer and the handclaps]
     take: null                    # M-30 fills this in at the Suno sitting
@@ -199,10 +206,10 @@ songs:
     mood: [yearning, playful, brisk]
     fact: >-
       Miro Olt makes the electronic strings descend three steps each time the title is sung.
-    arrangement_note: the synth-harpsichord figure steps down three degrees under the title line every time it is sung, and the middle eight is the same three steps played alone
+    arrangement_note: the synth-harpsichord figure steps down three degrees under the title line every time it is sung, and the middle eight strips back to that figure under the lead vocal
     intro: 8
     outro: fade
-    target_duration: "3:25"
+    target_duration: "3:45"
     prompt: >-
       Bright electronic power-pop, 124 BPM, yearning and playful, brisk. Female lead vocal, low
       alto, strong and level, holding the long notes in the hook and singing the chorus twice the
@@ -212,7 +219,8 @@ songs:
       plucked electronic strings — whose figure steps down three degrees under the hook line every
       time it is sung. Ringing electric-piano and organ tones, gated electronic drums, dry verses
       opening into a wide reverberant chorus. Eight seconds of plucked electronic strings before the
-      first sung word. A middle eight of those three descending steps played alone. Fade.
+      first sung word. A middle eight with those three descending steps exposed under a sparse lead
+      vocal. Fade.
     exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
     lyrics: |
       [Intro - 8 seconds, plucked electronic strings stepping down three degrees twice, no vocal]
@@ -241,16 +249,16 @@ songs:
       far enough that I have to want it before I climb.
       And I want it. I have wanted it since the road sealed.
 
-      [Middle eight - three descending steps alone]
+      [Middle eight - descending figure exposed, lead vocal over it]
       Everybody in this settlement lives above or below somebody.
       It is nothing. It is three flights and a handrail.
       It is the longest distance I have ever not crossed.
 
       [Verse 3]
-      So put the light on when you mean it and leave it off when you do not,
+      Put the light on if you mean it; leave it off if you do not,
       I will read it right, I have had the practice.
       There is a landing between us with a lamp that never works
-      and I am standing on it now with the kettle going cold in my hand.
+      I am standing there now with the kettle going cold in my hand.
 
       [Chorus]
       Three floors down, three floors down,
@@ -297,7 +305,7 @@ songs:
       Everything looks better in this weather.
       The lamps, the wet road, the sign on the depot,
       your face when you have given up on staying dry.
-      Everything looks better. It is not the rain. It is who I am standing with.
+      Everything looks better when you are the one standing in it.
 
       [Verse 2]
       We had a whole plan and the plan needed lights,
@@ -311,7 +319,7 @@ songs:
       Everything looks better in this weather.
       The lamps, the wet road, the sign on the depot,
       your face when you have given up on staying dry.
-      Everything looks better. It is not the rain. It is who I am standing with.
+      Everything looks better when you are the one standing in it.
 
       [Verse 3]
       You sang the low part under mine and you got it wrong twice
@@ -340,7 +348,7 @@ songs:
     arrangement_note: the synth bass plays the uneven click of an office printer through every verse and stops dead in the refrain, and there is no chorus in this song
     intro: 4
     outro: cold
-    target_duration: "3:10"
+    target_duration: "3:40"
     prompt: >-
       Bright electronic power-pop, 126 BPM, wry and tense, quick. Female lead vocal, low alto,
       strong and level, holding the long notes in the refrain. Two voices doubling the refrain in
@@ -361,7 +369,8 @@ songs:
       and I have started hearing it in rooms where it is not.
 
       [Refrain]
-      Everything I owe, I owe on time, and late.
+      Every bill on time.
+      Every honest hour late.
 
       [Verse 2]
       I paid the room, I paid the storage, I paid the man
@@ -372,7 +381,8 @@ songs:
       to the person who has been waiting on the end of my week.
 
       [Refrain]
-      Everything I owe, I owe on time, and late.
+      Every bill on time.
+      Every honest hour late.
 
       [Verse 3]
       You do not send notices. You do not keep a page.
@@ -381,11 +391,12 @@ songs:
       because a machine tells you the number and you tell me nothing.
 
       [Refrain]
-      Everything I owe, I owe on time, and late.
+      Every bill on time.
+      Every honest hour late.
 
       [Bridge - bass stopped, voice and struck metal only]
       So here is the manifest with the last line filled in.
-      Tuesday. All of it. Nothing else in the book.
+      Friday. All of it. Nothing else in the book.
       No storage, no fee, no notice on the day.
       One afternoon, paid in full, and nothing carried over.
 
@@ -396,7 +407,8 @@ songs:
       and I will pay it in full and I will pay it in person.
 
       [Refrain]
-      Everything I owe, I owe on time, and late.
+      Every bill on time.
+      Every honest hour late.
 
       [Outro - cold stop, the click cutting off mid-figure]
     take: null                    # M-30 fills this in at the Suno sitting
@@ -411,7 +423,7 @@ songs:
     arrangement_note: a loose service-panel latch is struck on the offbeat all the way through, matched in pitch to the electronic snare, and the record opens on its chorus
     intro: 3
     outro: fade
-    target_duration: "3:20"
+    target_duration: "4:05"
     prompt: >-
       Bright electronic power-pop, 128 BPM, urgent and affectionate, brisk. Female lead vocal, low
       alto, strong and level, holding the long notes in the hook and singing the chorus twice the
@@ -484,7 +496,7 @@ songs:
     arrangement_note: a bucket catching a roof drip falls exactly between the verse lines and is left in as percussion; the lead is the guide vocal and is never replaced
     intro: 9
     outro: fade
-    target_duration: "3:35"
+    target_duration: "3:45"
     prompt: >-
       Bright electronic power-pop at a midtempo, 112 BPM, hopeful and comic. Female lead vocal, low
       alto, strong and level, a guide take kept rather than replaced, holding the long notes in the
@@ -551,7 +563,7 @@ songs:
     arrangement_note: a guest composite guitar answers the vocal in short clipped figures and plays the instrumental break, recorded in the depot's window recess and never used as a rhythm part
     intro: 7
     outro: cold
-    target_duration: "3:20"
+    target_duration: "4:05"
     prompt: >-
       Bright electronic power-pop, 126 BPM, restless and bright, quick. Female lead vocal, low alto,
       strong and level, holding the long notes in the hook and singing the chorus twice the size of
@@ -572,7 +584,7 @@ songs:
       There is one window in this depot that is dry
       and everybody in the building takes a turn standing at it.
       You can see the port hall roof and a corner of the water
-      and a hauler on the hard that has not moved since Tuesday.
+      and a hauler on the hard that has not moved since the first warning.
 
       [Pre-Chorus]
       Somebody has to move first -
@@ -624,15 +636,16 @@ songs:
     fact: >-
       The second singer's answers were lost in a storage fault, so Sel Ardin taught them to the whole
       band for the replacement session.
-    arrangement_note: the answering line is sung by the whole band in unison rather than by one voice, because the single answering voice is the part that was lost
+    arrangement_note: the lead sings the first three lines of the final chorus and the whole band answers only the last line in unison, replacing the single answering voice that was lost
     intro: 15
     outro: sustain
-    target_duration: "4:15"
+    target_duration: "4:05"
     prompt: >-
       Bright electronic power-pop at a slow steady tempo, 100 BPM, uncertain and tender. Female lead
       vocal, low alto, strong and level, holding the long notes in the hook and singing the chorus
-      twice the size of the verse. The answering line sung by the whole band in blunt unison rather
-      than by one voice, four mixed registers together, never in harmony. Synth bass, electronic
+      twice the size of the verse. Two voices double the first line of each chorus in octaves; in
+      the final chorus the lead sings the first three lines and the whole band answers only the last
+      line in blunt unison, four mixed registers together, never in harmony. Synth bass, electronic
       drum kit, layered compact synthesizers, struck metal percussion. Ringing electric-piano and
       organ tones over the synthesizers, gated electronic drums held back, dry verses opening into a
       wide reverberant chorus. Fifteen seconds of layered synthesizers and struck metal before the
@@ -675,10 +688,12 @@ songs:
       I will take it in any state you can get it to me,
       and if it is bad news I will take that in any state too.
 
-      [Chorus - whole band in unison]
+      [Final Chorus - lead, two backing voices on the first line]
       Half of a sentence is worse than none of it.
       I would rather you had said nothing at all in the doorway
       than left me the beginning and the tone of your voice.
+
+      [Answer - whole band in blunt unison]
       Finish the sentence. That is all I am asking for.
 
       [Outro - sustained organ tone under the last unison line]
@@ -694,9 +709,9 @@ songs:
     arrangement_note: the record's closer; the final chorus is sung by the band and by the depot crew who had held the storm door shut, and it is the only time the group is more than four voices
     intro: 18
     outro: sustain
-    target_duration: "4:40"
+    target_duration: "4:20"
     prompt: >-
-      Bright electronic power-pop building across four and a half minutes, 104 BPM, relieved and
+      Bright electronic power-pop building patiently across the song, 104 BPM, relieved and
       celebratory. Female lead vocal, low alto, strong and level, holding the long notes in the hook
       and singing the chorus twice the size of the verse. Two voices doubling the hook in octaves
       through the record, and a final chorus sung by a dozen untrained voices together with the
@@ -712,8 +727,8 @@ songs:
       [Verse 1]
       Two of them stood against it for a quarter of an hour
       with their backs to the metal and their boots braced on the floor.
-      We were singing on the other side of that door
-      and not one of us knew until the take was done.
+      We were singing on the other side, too loud to hear them,
+      and only saw their boot marks when we opened up.
 
       [Chorus]
       And the season let go on a Tuesday afternoon
@@ -722,8 +737,8 @@ songs:
       Whatever that is, keep it. I am going to need it in the winter.
 
       [Verse 2]
-      Nothing dramatic happened. That is what I want on the record.
-      The wind dropped, somebody opened a door, and there was light in the yard.
+      Nothing dramatic happened, which is how the best days start.
+      The wind dropped, somebody opened the door, and light crossed the yard.
       The depot crew went back to what they had been doing
       and the coast road was a road again by four o'clock.
 
@@ -734,8 +749,8 @@ songs:
       Whatever that is, keep it. I am going to need it in the winter.
 
       [Bridge]
-      They will not be credited by name and they should be.
-      Two people leaning on a door is why this record exists.
+      We pulled them in for the chorus before their shift changed.
+      Two wet coats, two bad voices, both of them louder than us.
 
       [Verse 3]
       So come out and stand in the wet light with the rest of them,

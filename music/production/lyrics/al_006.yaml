@@ -25,11 +25,12 @@ album:
   style_card: b_003
   room: >-
     A booked Meridian hall, worked inside the same power allotment the band has always had, which is
-    the point the record is making. So the style card is followed straight here — no room bend at
-    all — and the only per-song departures are the guests, each of whom is on exactly one part: a
-    resonance-pipe note recorded down a hallway, a composite fiddle, a composite guitar quoting a
-    figure from al_005, and an office piano played while the band's own keyboard stands switched off
-    beside it.
+    the point the record is making. The base style card remains fixed, and every departure is tied
+    to a printed guest credit: Sel Ardin adds live backing voices on s_0056, s_0057 and s_0065;
+    Nessa Dray plays the chorus answers on s_0057; Brin Noll plays the seat frames on s_0058 and
+    s_0059; Ivena Sorn holds the hallway resonance-pipe note on s_0060; Miro Olt plays the
+    synth-harpsichord on s_0061 and s_0062; Talla Venn quotes the al_005 guitar figure on s_0063;
+    and Calo Meret plays the upright piano on s_0064 and the office piano on s_0065.
 
 generation:
   # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
@@ -47,19 +48,20 @@ songs:
     mood: [optimistic, bright, brisk]
     fact: >-
       Nara Veck finished the lead two minutes before the hall's booked power allotment ended.
-    arrangement_note: nothing is doubled or overdubbed anywhere in this song, because the take had to fit inside the allotment, and the last chorus is the room as it stood
+    arrangement_note: every part is performed live in one take with no overdubs; the band's two backing voices double the hook in octaves, Sel Ardin supplies the call-and-response answer, and the last chorus is the room as it stood
     intro: 6
     outro: cold
-    target_duration: "3:20"
+    target_duration: "4:00"
     prompt: >-
       Bright electronic power-pop, 124 BPM, optimistic and brisk. Female lead vocal, low alto,
       strong and level, holding the long notes in the hook and singing the chorus twice the size of
-      the verse. Two voices doubling the hook in octaves, a repeated group chorus, one
-      call-and-response answer in the last third of the song. Synth bass, electronic drum kit,
+      the verse. The band's two backing voices double the hook in octaves, with guest Sel Ardin
+      supplying one live call-and-response answer in the last third, then all three backing voices
+      joining the final chorus. Synth bass, electronic drum kit,
       layered compact synthesizers, struck metal percussion. Ringing electric-piano and organ tones
       over the synthesizers, gated electronic drums, dry verses opening into a wide reverberant
-      chorus, hook engineered to be sung back. Everything played live inside one take with nothing
-      doubled and nothing overdubbed. Six seconds of synthesizer and struck metal before the first
+      chorus, hook engineered to be sung back. Everything performed live in one take with no
+      double-tracking or overdubs. Six seconds of synthesizer and struck metal before the first
       sung word. Cold stop.
     exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
     lyrics: |
@@ -78,10 +80,12 @@ songs:
       and neither of us goes home carrying the other one's week.
 
       [Verse 2]
-      You are the last person in this settlement who tells me the truth
-      at the speed I can take it, which is slower than you think.
-      Everyone else waits for a better hour and the better hour never lands,
-      and the road seals, and the whole thing goes out on the carrier wave in pieces,
+      You are the last person in this settlement
+      who tells me the truth at the speed I can take,
+      which is slower than you think.
+      Everyone else waits for a better hour,
+      but the better hour never lands. The road seals
+      and the whole thing goes out on the carrier wave in pieces,
       four days one way and four days back with the weather in it,
       and by then neither of us can remember which part mattered.
 
@@ -93,12 +97,12 @@ songs:
 
       [Verse 3]
       Two minutes left, and I have said it, and it is out in the room now.
-      You have got the same two minutes and the same going lamps,
+      You have got the same two minutes and the same dimming lamps,
       and whatever you do with them I will still be here on Thursday,
       in the same chair, in the same port hall, at the same hour.
       That is not pressure. That is the timetable.
 
-      [Chorus]
+      [Final Chorus - three live backing voices]
       So let us be clear by closing.
       Not tidy, not agreed, not signed at the bottom,
       just clear — you know where I am and I know where you are,
@@ -114,15 +118,16 @@ songs:
     mood: [flirtatious, warm, midtempo]
     fact: >-
       Sel Ardin split the title between six voices so Nara Veck never sings the full request alone.
-    arrangement_note: the title line is split word by word across six voices and the lead never sings the whole of it herself; a guest composite fiddle answers the second half of every chorus
+    arrangement_note: six voices pass the three-word title between them in overlapping pairs so the lead never sings the whole request alone; Nessa Dray's guest composite fiddle answers the second half of every chorus
     intro: 9
     outro: fade
-    target_duration: "3:40"
+    target_duration: "4:05"
     prompt: >-
       Bright electronic power-pop at a midtempo, 112 BPM, flirtatious and warm. Female lead vocal,
-      low alto, strong and level, holding the long notes in the hook. Six voices in total sharing
-      the hook line word by word so the lead never sings the whole request alone, then a repeated
-      group chorus. Synth bass, electronic drum kit, layered compact synthesizers, struck metal
+      low alto, strong and level, holding the long notes in the hook. Six voices pass the three-word
+      hook between them in overlapping pairs, one pair per word, so the lead never sings the whole
+      request alone, then all six join the repeated group chorus. Synth bass, electronic drum kit,
+      layered compact synthesizers, struck metal
       percussion, and one guest composite fiddle — bright and thin-toned, a single instrument and
       never a string section — answering the second half of every chorus. Ringing electric-piano and
       organ tones, gated electronic drums, dry verses opening into a wide reverberant chorus. Nine
@@ -137,7 +142,7 @@ songs:
       There is a queue for it. I have stood in the queue.
       I have watched four people take their turn and I did not complain.
 
-      [Chorus]
+      [Chorus - title passed across six voices in overlapping pairs, fiddle answers the last two lines]
       Borrow my evening. Give it back how you like.
       Bent, late, spent, with the good part already used —
       I would rather have it wrecked and handed over
@@ -151,15 +156,15 @@ songs:
       I know which door you come out of and how long you take
       and I have never once let on that I know.
 
-      [Chorus]
+      [Chorus - title passed across six voices in overlapping pairs, fiddle answers the last two lines]
       Borrow my evening. Give it back how you like.
       Bent, late, spent, with the good part already used —
       I would rather have it wrecked and handed over
       than kept nice on a shelf for somebody sensible.
 
-      [Middle eight - six voices, one word each]
-      Nobody sings the whole of this line on their own.
-      That is not modesty, it is how the thing was built.
+      [Middle eight - lead with close group answers]
+      Pass it down the line until it reaches where you are.
+      Keep the last word for yourself if that is what gets you here.
 
       [Verse 3]
       So come and take it, take Tuesday, take the wet half of it,
@@ -169,7 +174,7 @@ songs:
       I am not keeping anything back for a better offer.
       There is no better offer. I have looked at the board.
 
-      [Chorus]
+      [Final Chorus - title passed across six voices in overlapping pairs, fiddle answers the last two lines]
       Borrow my evening. Give it back how you like.
       Bent, late, spent, with the good part already used —
       I would rather have it wrecked and handed over
@@ -188,7 +193,7 @@ songs:
     arrangement_note: the drum pattern is the rhythm of folding seats being stacked, played on struck metal, and it is the only thing under the first verse
     intro: 5
     outro: fade
-    target_duration: "3:15"
+    target_duration: "4:00"
     prompt: >-
       Bright electronic power-pop, 128 BPM, restless and social, quick. Female lead vocal, low alto,
       strong and level, holding the long notes in the hook and singing the chorus twice the size of
@@ -261,7 +266,7 @@ songs:
     arrangement_note: the record opens on its chorus, played on the metal seat frames from the previous track, and the frames replace the electronic snare all the way through
     intro: 4
     outro: cold
-    target_duration: "3:10"
+    target_duration: "4:00"
     prompt: >-
       Bright electronic power-pop, 126 BPM, teasing and bright, brisk. Female lead vocal, low alto,
       strong and level, holding the long notes in the hook and singing the chorus twice the size of
@@ -359,11 +364,11 @@ songs:
       Whatever they are doing in there, it is colder.
 
       [Verse 2]
-      There is a pipe running the length of this hallway
-      and it makes a low note you feel before you hear it.
-      I have worked in this building eleven years,
-      I have walked this corridor four times a day,
-      and I have never once noticed it until tonight.
+      There is a resonance pipe at the far end of this hallway
+      and its low note reaches me before I hear it.
+      I know every service door in this building,
+      I walk this corridor four times a day,
+      and I had never heard that note until tonight.
 
       [Refrain]
       It is warmer out here than it is in there.
@@ -402,21 +407,23 @@ songs:
     fact: >-
       Nara Veck rejected the prepared lyric sheet and sang the accepted verse from a three-line note
       in her pocket.
-    arrangement_note: the third verse is three lines long and is sung with the band dropped to synth bass alone, because that is the verse that came off the note in her pocket
+    arrangement_note: Miro Olt's guest synth-harpsichord plays a clipped two-note answer after the first line of every chorus; the third verse is three lines long and drops to synth bass alone because it came from the note in Nara Veck's pocket
     intro: 7
     outro: cold
-    target_duration: "3:05"
+    target_duration: "3:50"
     prompt: >-
       Bright electronic power-pop, 128 BPM, direct and defiant, quick. Female lead vocal, low alto,
       strong and level, holding the long notes in the hook and singing the chorus twice the size of
       the verse. Two voices doubling the hook in octaves, all voices on the final chorus. Synth
       bass, electronic drum kit, layered compact synthesizers, struck metal percussion. Ringing
       electric-piano and organ tones, gated electronic drums, dry verses opening into a wide
-      reverberant chorus. The third verse is three lines long with everything dropped away but the
-      synth bass. Seven seconds of synthesizer and gated drums before the first sung word. Cold stop.
+      reverberant chorus. Guest synth-harpsichord — plucked electronic strings — plays a clipped
+      two-note answer after the first line of every chorus and stays silent through the third verse,
+      where everything drops away but synth bass. Seven seconds of synth-harpsichord, synthesizer
+      and gated drums before the first sung word. Cold stop.
     exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
     lyrics: |
-      [Intro - 7 seconds, synthesizer and gated electronic drums, no vocal]
+      [Intro - 7 seconds, clipped synth-harpsichord figure over synthesizer and gated drums, no vocal]
 
       [Verse 1]
       You have got a very good way of not saying no.
@@ -425,7 +432,7 @@ songs:
       and I walk out of the room feeling reasonably well treated
       and it is only on the stairs that I notice what happened.
 
-      [Chorus]
+      [Chorus - clipped two-note synth-harpsichord answer after the first line]
       Give me one plain answer. I can carry either one.
       I have got a hold full of things I am carrying already
       and not one of them weighs what a maybe weighs.
@@ -439,18 +446,18 @@ songs:
       You can go a whole year on a nearly. I have done it.
       I have got a year I would like back, if anybody is offering.
 
-      [Chorus]
+      [Chorus - clipped two-note synth-harpsichord answer after the first line]
       Give me one plain answer. I can carry either one.
       I have got a hold full of things I am carrying already
       and not one of them weighs what a maybe weighs.
       Say it plainly. I will not make you say it twice.
 
       [Verse 3 - synth bass alone, three lines]
-      Here is mine, and it is three lines long, and I wrote it on the back of a manifest.
       Yes. Whenever you like. Tell me where to stand.
-      That is all it takes and it took me eleven years.
+      I have kept that answer folded up through every nearly and maybe.
+      You asked me plainly. There it is. Do not make me say it twice.
 
-      [Final Chorus - all voices]
+      [Final Chorus - all voices, clipped two-note synth-harpsichord answer after the first line]
       Give me one plain answer. I can carry either one.
       I have got a hold full of things I am carrying already
       and not one of them weighs what a maybe weighs.
@@ -466,18 +473,19 @@ songs:
     mood: [impatient, playful, brisk]
     fact: >-
       Miro Olt leaves a deliberate gap each time the singer refuses another prediction.
-    arrangement_note: the guest synth-harpsichord drops out for a full bar every time the lead refuses a prediction, and the gap is never filled by anything else
+    arrangement_note: Miro Olt cues a full-band one-bar stop immediately after every "Spare me the weather" line; no instrument or voice fills the gap, and his guest synth-harpsichord is the first sound back in
     intro: 8
     outro: fade
-    target_duration: "3:30"
+    target_duration: "4:05"
     prompt: >-
       Bright electronic power-pop, 122 BPM, impatient and playful, brisk. Female lead vocal, low
       alto, strong and level, holding the long notes in the hook and singing the chorus twice the
       size of the verse. Two voices doubling the hook in octaves and answering the lead line for
       line, a repeated group chorus. Synth bass, electronic drum kit, layered compact synthesizers,
-      struck metal percussion, and a guest synth-harpsichord — plucked electronic strings — that
-      drops out for a full silent bar every time the lead refuses a prediction, the gap left
-      completely empty. Ringing electric-piano and organ tones, gated electronic drums, dry verses
+      struck metal percussion, and a guest synth-harpsichord — plucked electronic strings. The
+      entire band stops for one completely silent bar immediately after every "Spare me the
+      weather" line, with the synth-harpsichord the first sound to return. Ringing electric-piano
+      and organ tones, gated electronic drums, dry verses
       opening into a wide reverberant chorus. Eight seconds of plucked electronic strings before the
       first sung word. A twelve-second instrumental on the same plucked strings. Fade.
     exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
@@ -492,6 +500,7 @@ songs:
 
       [Chorus]
       Spare me the weather (spare me the weather)
+      [One full bar - complete silence]
       Tell me what you are doing, not what the sky is doing (not the sky)
       I have had a season of everybody's predictions
       and not one of them has ever come and knocked on my door.
@@ -506,6 +515,7 @@ songs:
 
       [Chorus]
       Spare me the weather (spare me the weather)
+      [One full bar - complete silence]
       Tell me what you are doing, not what the sky is doing (not the sky)
       I have had a season of everybody's predictions
       and not one of them has ever come and knocked on my door.
@@ -520,12 +530,14 @@ songs:
 
       [Chorus]
       Spare me the weather (spare me the weather)
+      [One full bar - complete silence]
       Tell me what you are doing, not what the sky is doing (not the sky)
       I have had a season of everybody's predictions
       and not one of them has ever come and knocked on my door.
 
-      [Chorus - group, plucked strings dropping out on every refusal]
+      [Chorus - group]
       Spare me the weather (spare me the weather)
+      [One full bar - complete silence, synth-harpsichord returns first]
       Come to the door. Knock on it. Say a day of the week.
       I have had a season of everybody's predictions.
       Be the one that turns up.
@@ -558,7 +570,7 @@ songs:
       [Intro - 11 seconds, synthesizer with a clipped composite-guitar figure answering it, no vocal]
 
       [Verse 1]
-      Twelve years ago we stood in a doorway like this one
+      In 2607 we stood in a doorway like this one
       and neither of us had anything worked out at all.
       You had a coat that was no use and I had less than that,
       and the rain came off the roof between us in a line.
@@ -578,10 +590,10 @@ songs:
       and you are still standing on the dry side, leaving me the wet.
 
       [Verse 3]
-      There is a figure the guitar plays that I have heard before,
-      four notes, clipped, from a session in a depot years back.
-      I did not know she had kept it. I did not know I had.
-      That is what this record is, if anybody asks.
+      The guitar finds the four-note figure from that doorway,
+      clipped and small, the one we nearly lost beneath the rain.
+      You look up before I do; you remember it as well.
+      Some things come back because somebody kept the part.
 
       [Chorus]
       Same weather, same roof, same two feet of dry ground.
@@ -609,16 +621,17 @@ songs:
     fact: >-
       The group recorded the entire song in one pass after spending two sessions arguing about its
       four-bar introduction.
-    arrangement_note: four bars of introduction and no more, and the whole song runs through in one continuous pass with no edit anywhere in it
+    arrangement_note: Calo Meret's guest upright piano plays the four-bar introduction, doubles the hook and plays no other part; the whole song runs through in one continuous pass with no edit anywhere in it
     intro: 8
     outro: fade
-    target_duration: "3:25"
+    target_duration: "3:45"
     prompt: >-
       Bright electronic power-pop, 126 BPM, hopeful and buoyant, quick. Female lead vocal, low alto,
       strong and level, holding the long notes in the hook and singing the chorus twice the size of
       the verse. Two voices doubling the hook in octaves, a repeated group chorus, one
       call-and-response answer in the last third. Synth bass, electronic drum kit, layered compact
-      synthesizers, struck metal percussion, and a guest upright piano doubling the hook. Ringing
+      synthesizers, struck metal percussion, and a guest upright piano playing the four-bar
+      introduction and doubling the hook, with no other piano part. Ringing
       electric-piano and organ tones, gated electronic drums, dry verses opening into a wide
       reverberant chorus. Exactly four bars of introduction, about eight seconds, and then one
       continuous performance with no edit in it anywhere. Fade.
@@ -627,10 +640,10 @@ songs:
       [Intro - 8 seconds, four bars of synthesizer and piano, no vocal]
 
       [Verse 1]
-      We spent two evenings arguing about how to start.
-      Two evenings. On four bars. On the way into a song
-      that everybody in the room already knew by heart,
-      and could have played from the top with their coats still on.
+      We spent two evenings arguing about where to meet.
+      Two evenings on one hour we both had free.
+      By the time we settled on the door and the minute,
+      everybody in the hall had gone home without us.
 
       [Chorus]
       It could be easy. It has been easy before.
@@ -653,10 +666,10 @@ songs:
       and let the thing be what it was at half past six.
 
       [Verse 3]
-      So here it is in one pass with the mistakes left in.
-      Somebody comes in early. Somebody laughs on the second chorus.
-      The room is exactly as loud as the room actually was,
-      and nobody is going back in to make it better.
+      So here we are at half past six with nothing written down.
+      You came in early. I laughed before you finished asking.
+      The room is loud and ordinary and nobody has improved it,
+      and neither of us is going home to make it harder.
 
       [Chorus]
       It could be easy. It has been easy before.
@@ -680,23 +693,24 @@ songs:
     fact: >-
       Calo Meret plays Stormline Issue's office piano while the band's compact keyboard remains
       switched off beside it.
-    arrangement_note: the record's closer; a guest upright piano carries the whole song and the band's own synthesizers are switched off and silent for the first two verses, coming in only under the last chorus
+    arrangement_note: the record's closer; Calo Meret's office piano carries the whole song while the band's compact synthesizers remain switched off throughout; synth bass, electronic drums and struck metal enter only under the final chorus, with Sel Ardin joining the group voices
     intro: 14
     outro: sustain
-    target_duration: "4:45"
+    target_duration: "4:15"
     prompt: >-
-      Bright electronic power-pop opening out of an upright piano, 102 BPM, wistful and communal,
-      building across four and three quarter minutes. Female lead vocal, low alto, strong and level,
+      Bright electronic power-pop building patiently from solo upright piano to a final full-band
+      chorus, 102 BPM, wistful and communal. Female lead vocal, low alto, strong and level,
       holding the long notes in the hook and singing the chorus twice the size of the verse. Two
       voices doubling the hook in octaves through the record and a large group chorus at the end.
-      Guest upright piano carrying the entire song, with the synth bass, electronic drum kit and
-      layered compact synthesizers silent for the first two verses and entering only under the last
-      chorus, struck metal percussion throughout. Gated electronic drums when they arrive, dry
-      verses opening into a wide reverberant chorus. Fourteen seconds of upright piano alone before
+      Guest office upright piano carrying the entire song while the band's compact synthesizers
+      remain switched off throughout. Synth bass, electronic drum kit and struck metal percussion
+      enter only under the final chorus; Sel Ardin joins the large group vocal there. Gated
+      electronic drums when they arrive, dry verses opening into a wide reverberant chorus.
+      Fourteen seconds of upright piano alone before
       the first sung word. Ends on a long sustained chord.
     exclude: acoustic drum kit, guitars, continuous four-on-the-floor club beat, orchestral strings, rapped sections, whispered vocals, vocal tuning, dance-pop and club production, hi-NRG, house
     lyrics: |
-      [Intro - 14 seconds, upright piano alone, struck metal at ten seconds, no vocal]
+      [Intro - 14 seconds, upright piano alone, no vocal]
 
       [Verse 1]
       There is an hour at the end of a night on this coast
@@ -725,8 +739,8 @@ songs:
       It is the best hour we have got and it is nobody's fault.
 
       [Bridge]
-      There is a piano in this room that nobody has switched on
-      and a keyboard beside it, unplugged, waiting for a better year.
+      There is a piano by the wall with its lid propped open
+      and enough room on the bench for two people not going home.
 
       [Verse 3]
       One of us is going to say the sensible thing.
@@ -734,13 +748,13 @@ songs:
       and it will be true, and it will be the wrong thing to say,
       and we will both go home and think about the other one.
 
-      [Final Chorus - band entering, group voices]
+      [Final Chorus - synth bass, electronic drums, struck metal and group voices enter]
       Closing time weather. Cold on the step, warm in the door.
       Half the settlement walking home in twos
       and the other half standing about deciding not to.
-      Do not decide. Just stand here. The doors are open till they are not.
+      Do not decide. Just stand here. Let the staff ask us twice.
 
-      [Coda - group, piano and synthesizers together]
+      [Coda - group, piano and synth bass together]
       Cold on the step. Warm in the door.
       Cold on the step. Warm in the door.
 
