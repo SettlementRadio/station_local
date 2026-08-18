@@ -10,7 +10,10 @@
 # repeated choruses", which is how the length is bought here: the verses stay short and the chorus
 # comes back four times rather than twice.
 #
-# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+# **Filed by M-30, 2026-08-17/18.** Every `take:` carries the Suno id, the vendor's own
+# creation timestamp and the file it was dispatched to; the album's `generation:` block
+# carries the model, the licence period and the sitting. The dispatch was verified against
+# the lyric each take carries in its own tags, not assumed from filename order (D-091).
 
 album:
   id: al_005
@@ -35,15 +38,21 @@ album:
     all other backing, instruments and exclusions remain fixed.
 
 generation:
-  # Empty until M-30's Suno sitting. `make music-tag` (M-05) reads this block and each song's
-  # take: block and writes licence period, generation date, model version and the AI marker into
-  # every audio file's own tags.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the 2026-08-17 sitting (M-30). Suno Pro, remix disabled, model v5.5 — the same
+  # account, tier and settings as the pilot, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers these takes too: the Pro tier assigns the output to the
+  # account holder, scoped to the subscription term. Times are UTC, as the files report them.
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-17
+  sittings:
+    - {date: 2026-08-17, from: '20:52:15', to: '20:57:41', tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW into music/audio/label_3/ by song id. The mapping was
+    verified rather than assumed: every take carries the lyric it was generated from in its
+    own tags, and each one matches this file's lyric exactly (D-091). Each song's take:
+    block carries the Suno id and the vendor's own creation timestamp.
 
 songs:
   - id: s_0046
@@ -121,7 +130,14 @@ songs:
       We are not going to be sensible in it.
 
       [Outro - cold stop on the fourth knock]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-17
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: c108d466-678f-4212-a085-dc3e9b1eff01
+      suno_created: 2026-08-17T20:52:15Z
+      file: music/audio/label_3/al_005/01.mp3
 
   - id: s_0047
     title: Dance Floor Apology
@@ -198,7 +214,14 @@ songs:
       out loud, with the lights on.
 
       [Outro - fade on the group answer and the handclaps]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-17
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 28a54558-e1fd-4a90-acb0-3a01cad015ea
+      suno_created: 2026-08-17T20:52:59Z
+      file: music/audio/label_3/al_005/02.mp3
 
   - id: s_0048
     title: Three Floors Down
@@ -267,7 +290,14 @@ songs:
       And I want it. I have wanted it since the road sealed.
 
       [Outro - fade on the descending figure]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-17
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 67bd7d4c-ba06-4873-9500-b8e5b9713b34
+      suno_created: 2026-08-17T20:53:35Z
+      file: music/audio/label_3/al_005/03.mp3
 
   - id: s_0049
     title: Better in the Rain
@@ -336,7 +366,14 @@ songs:
       It has never once been the rain.
 
       [Outro - sustained chord, the awning still audible]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-17
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: b225f4fd-0de2-4e0b-9559-4ee37ff81556
+      suno_created: 2026-08-17T20:54:08Z
+      file: music/audio/label_3/al_005/04.mp3
 
   - id: s_0050
     title: Late Fee Heart
@@ -411,7 +448,14 @@ songs:
       Every honest hour late.
 
       [Outro - cold stop, the click cutting off mid-figure]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-17
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 7aa1fdea-ab24-44f6-9362-6a7001c0f481
+      suno_created: 2026-08-17T20:54:47Z
+      file: music/audio/label_3/al_005/05.mp3
 
   - id: s_0051
     title: Hold the Lift
@@ -484,7 +528,14 @@ songs:
       Count to five. That is all it has ever taken.
 
       [Outro - fade on the latch]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-17
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: f3f57f93-3a45-44dd-ad86-2699cb5e41db
+      suno_created: 2026-08-17T20:55:21Z
+      file: music/audio/label_3/al_005/06.mp3
 
   - id: s_0052
     title: Dry Shoes Tomorrow
@@ -551,7 +602,14 @@ songs:
       I have had far worse plans than you.
 
       [Outro - fade, the bucket left running on]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-17
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 008c3903-6730-470c-ac64-6942bb4343ad
+      suno_created: 2026-08-17T20:55:51Z
+      file: music/audio/label_3/al_005/07.mp3
 
   - id: s_0053
     title: Window Seat Fever
@@ -627,7 +685,14 @@ songs:
       The far side of the yard is a foreign country from here.
 
       [Outro - cold stop on the guitar's last clipped figure]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-17
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 5d0c5890-8332-4091-8968-ef76031cc8f9
+      suno_created: 2026-08-17T20:56:21Z
+      file: music/audio/label_3/al_005/08.mp3
 
   - id: s_0054
     title: Half a Conversation
@@ -697,7 +762,14 @@ songs:
       Finish the sentence. That is all I am asking for.
 
       [Outro - sustained organ tone under the last unison line]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-17
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 5339dcdf-3602-43ff-a36a-e318d5f72833
+      suno_created: 2026-08-17T20:57:11Z
+      file: music/audio/label_3/al_005/09.mp3
 
   - id: s_0055
     title: Storm Door Smile
@@ -766,4 +838,11 @@ songs:
       Keep it. I am going to need it in the winter.
 
       [Outro - sustain, the crowd holding under the last chord]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-17
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 387bfad5-124c-455f-8c38-d10b67628535
+      suno_created: 2026-08-17T20:57:41Z
+      file: music/audio/label_3/al_005/10.mp3

@@ -9,7 +9,10 @@
 # sections and no extended instrumental passages. Tempos run 76 to 112 with the mood, and the slower
 # songs repeat small, ordinary details rather than opening out into larger arrangements.
 #
-# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+# **Filed by M-30, 2026-08-17/18.** Every `take:` carries the Suno id, the vendor's own
+# creation timestamp and the file it was dispatched to; the album's `generation:` block
+# carries the model, the licence period and the sitting. The dispatch was verified against
+# the lyric each take carries in its own tags, not assumed from filename order (D-091).
 
 album:
   id: al_010
@@ -33,13 +36,21 @@ album:
     varying, played by hand, rather than a sequence.
 
 generation:
-  # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the 2026-08-18 sitting (M-30). Suno Pro, remix disabled, model v5.5 — the same
+  # account, tier and settings as the pilot, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers these takes too: the Pro tier assigns the output to the
+  # account holder, scoped to the subscription term. Times are UTC, as the files report them.
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-18
+  sittings:
+    - {date: 2026-08-18, from: '14:05:49', to: '14:09:32', tracks: [1, 2, 3, 4, 5, 6, 7]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW into music/audio/label_6/ by song id. The mapping was
+    verified rather than assumed: every take carries the lyric it was generated from in its
+    own tags, and each one matches this file's lyric exactly (D-091). Each song's take:
+    block carries the Suno id and the vendor's own creation timestamp.
 
 songs:
   - id: s_0091
@@ -107,7 +118,14 @@ songs:
       Do not ask me now. Now is the only good hour I have got.
 
       [Outro - fade, the piano almost shut]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 23da3423-8e5e-4b4a-9dd8-b14e6251eb63
+      suno_created: 2026-08-18T14:05:49Z
+      file: music/audio/label_6/al_010/01.mp3
 
   - id: s_0092
     title: Table Near the Door
@@ -176,7 +194,14 @@ songs:
       Next Tuesday I am sitting where the door is.
 
       [Outro - cold stop, the bass figure cut off halfway through]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: d5a6c043-bf7c-4a15-8cac-8f8cc7e1d2e2
+      suno_created: 2026-08-18T14:06:25Z
+      file: music/audio/label_6/al_010/02.mp3
 
   - id: s_0093
     title: One Drink Behind
@@ -248,7 +273,14 @@ songs:
       You are one behind. Stay one behind. Stay.
 
       [Outro - fade on the brushed tray]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: d8892a6b-9986-440f-98a1-6b1e77f7300b
+      suno_created: 2026-08-18T14:06:54Z
+      file: music/audio/label_6/al_010/03.mp3
 
   - id: s_0094
     title: Keep Your Voice Down
@@ -316,7 +348,14 @@ songs:
       I have decided I do not mind what gets to Friday.
 
       [Outro - cold stop, the door voices cutting off with the band]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 4ccfec0f-73ed-4aa5-9e4b-e6ab4beb0769
+      suno_created: 2026-08-18T14:07:25Z
+      file: music/audio/label_6/al_010/04.mp3
 
   - id: s_0095
     title: The Coat Check Smile
@@ -384,7 +423,14 @@ songs:
       I have four hundred and six of them and that was not one.
 
       [Outro - fade on the one-handed figure]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: e3d08372-7a41-4901-adf3-b76b0200a051
+      suno_created: 2026-08-18T14:07:52Z
+      file: music/audio/label_6/al_010/05.mp3
 
   - id: s_0096
     title: If the Piano Stops
@@ -458,7 +504,14 @@ songs:
       Stop the piano. I am not afraid of the room.
 
       [Outro - sustain, the piano returning under the last chord]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 7702cb41-587a-4866-8648-a9f7f68f2ca3
+      suno_created: 2026-08-18T14:09:00Z
+      file: music/audio/label_6/al_010/06.mp3
 
   - id: s_0097
     title: Closed for Counting
@@ -526,4 +579,11 @@ songs:
       Everybody out. Not you. You wait. I am nearly finished.
 
       [Outro - sustain, the room and the cups still going]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 0d7fc325-7f91-4816-a99e-510bfe5e7aee
+      suno_created: 2026-08-18T14:09:32Z
+      file: music/audio/label_6/al_010/07.mp3

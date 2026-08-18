@@ -10,7 +10,10 @@
 # Both show up in the arrangement notes rather than in the words — the songs are about people, and
 # the argument is in what the sleeve says and in the fact that nothing was bought to win it.
 #
-# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+# **Filed by M-30, 2026-08-17/18.** Every `take:` carries the Suno id, the vendor's own
+# creation timestamp and the file it was dispatched to; the album's `generation:` block
+# carries the model, the licence period and the sitting. The dispatch was verified against
+# the lyric each take carries in its own tags, not assumed from filename order (D-091).
 
 album:
   id: al_006
@@ -33,13 +36,21 @@ album:
     and Calo Meret plays the upright piano on s_0064 and the office piano on s_0065.
 
 generation:
-  # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the 2026-08-18 sitting (M-30). Suno Pro, remix disabled, model v5.5 — the same
+  # account, tier and settings as the pilot, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers these takes too: the Pro tier assigns the output to the
+  # account holder, scoped to the subscription term. Times are UTC, as the files report them.
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-18
+  sittings:
+    - {date: 2026-08-18, from: '09:04:10', to: '09:40:27', tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW into music/audio/label_3/ by song id. The mapping was
+    verified rather than assumed: every take carries the lyric it was generated from in its
+    own tags, and each one matches this file's lyric exactly (D-091). Each song's take:
+    block carries the Suno id and the vendor's own creation timestamp.
 
 songs:
   - id: s_0056
@@ -110,7 +121,14 @@ songs:
       Clear by closing. The lights are going anyway.
 
       [Outro - cold stop as the last chord cuts]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 3a22a878-9058-4ce7-9398-e5fae8bdf9bb
+      suno_created: 2026-08-18T09:04:10Z
+      file: music/audio/label_3/al_006/01.mp3
 
   - id: s_0057
     title: Borrow My Evening
@@ -181,7 +199,14 @@ songs:
       than kept nice on a shelf for somebody sensible.
 
       [Outro - fade on the fiddle and the shared hook]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 8fe36c77-550e-4461-80ed-0f2ec56db83f
+      suno_created: 2026-08-18T09:04:43Z
+      file: music/audio/label_3/al_006/02.mp3
 
   - id: s_0058
     title: Queue for the Roof
@@ -254,7 +279,14 @@ songs:
       and I would stand here all night if you stand here too.
 
       [Outro - fade on the stacking rhythm and the group answer]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 39cfe915-1d73-4bff-a04d-dc70978e6dba
+      suno_created: 2026-08-18T09:05:18Z
+      file: music/audio/label_3/al_006/03.mp3
 
   - id: s_0059
     title: Please Stay Seated
@@ -324,7 +356,14 @@ songs:
       and the only person who has noticed is me.
 
       [Outro - cold stop on a struck frame]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: e4c42ba2-e76c-4106-a462-2421c5fed18a
+      suno_created: 2026-08-18T09:08:38Z
+      file: music/audio/label_3/al_006/04.mp3
 
   - id: s_0060
     title: Heat in the Hallway
@@ -398,7 +437,14 @@ songs:
       It has been warmer out here all night.
 
       [Outro - sustain, the pipe note left ringing after the band stops]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: f3bb9aee-6874-4081-bb98-b8708afc841e
+      suno_created: 2026-08-18T09:09:35Z
+      file: music/audio/label_3/al_006/05.mp3
 
   - id: s_0061
     title: One Clean Answer
@@ -465,7 +511,14 @@ songs:
       One plain answer. That is the whole of the ask.
 
       [Outro - cold stop, everything cutting together]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: b96b6649-f484-4995-bd33-69b98c43b3b8
+      suno_created: 2026-08-18T09:10:27Z
+      file: music/audio/label_3/al_006/06.mp3
 
   - id: s_0062
     title: Spare Me the Forecast
@@ -543,7 +596,14 @@ songs:
       Be the one that turns up.
 
       [Outro - fade on the plucked strings]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 901baa7d-3a55-45a2-8923-08a6c2ba2ee1
+      suno_created: 2026-08-18T09:13:31Z
+      file: music/audio/label_3/al_006/07.mp3
 
   - id: s_0063
     title: Under the Awning
@@ -612,7 +672,14 @@ songs:
       Stand where you are. I have got the wet side. I always have.
 
       [Outro - sustained chord, the clipped figure last]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: c32fa4fc-15c0-4b6f-b102-6bba7fbebd04
+      suno_created: 2026-08-18T09:14:04Z
+      file: music/audio/label_3/al_006/08.mp3
 
   - id: s_0064
     title: This Could Be Easy
@@ -684,7 +751,14 @@ songs:
       It was easy at the time.
 
       [Outro - fade on the group and the piano]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 91cdde68-9768-4207-b6a9-85e4b1a2e728
+      suno_created: 2026-08-18T09:14:42Z
+      file: music/audio/label_3/al_006/09.mp3
 
   - id: s_0065
     title: Closing Time Weather
@@ -759,4 +833,11 @@ songs:
       Cold on the step. Warm in the door.
 
       [Outro - long sustained chord]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: bd8224c5-7316-4c01-b76e-9eebc41f3115
+      suno_created: 2026-08-18T09:40:27Z
+      file: music/audio/label_3/al_006/10.mp3

@@ -14,7 +14,15 @@
 # of a song — §3 — but the first is why every take on the record is the same room, and the second is
 # why the answering lines on track 1 were cut on opposite shifts.
 #
-# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+# **Filed by M-30, 2026-08-17/18.** Every `take:` carries the Suno id, the vendor's own
+# creation timestamp and the file it was dispatched to; the album's `generation:` block
+# carries the model, the licence period and the sitting. The dispatch was verified against
+# the lyric each take carries in its own tags, not assumed from filename order (D-091).
+#
+# **Track 9 took two sittings.** At 13:54 the lyric box still held track 8's words, so what came
+# back was a second take of `s_0086` rather than `s_0087` Coffee After Turnover — caught by the
+# lyric each take carries in its own tags (D-091), never filed, and regenerated at 21:24 the same
+# day. The album is complete: twelve songs, twelve takes.
 
 album:
   id: al_009
@@ -38,13 +46,22 @@ album:
     the open ramp, and a sparse guest piano on the last two tracks.
 
 generation:
-  # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the 2026-08-18 sitting (M-30). Suno Pro, remix disabled, model v5.5 — the same
+  # account, tier and settings as the pilot, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers these takes too: the Pro tier assigns the output to the
+  # account holder, scoped to the subscription term. Times are UTC, as the files report them.
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-18
+  sittings:
+    - {date: 2026-08-18, from: '13:50:18', to: '13:56:33', tracks: [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12]}
+    - {date: 2026-08-18, from: '21:24:09', to: '21:24:09', tracks: [9]}   # the one track the first sitting missed
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW into music/audio/label_5/ by song id. The mapping was
+    verified rather than assumed: every take carries the lyric it was generated from in its
+    own tags, and each one matches this file's lyric exactly (D-091). Each song's take:
+    block carries the Suno id and the vendor's own creation timestamp.
 
 songs:
   - id: s_0079
@@ -115,7 +132,14 @@ songs:
       When your lamps come round the point, I will already be there.
 
       [Outro - cold stop, all voices together]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 3c39c584-a51d-4f53-9228-edf7b35ba2b2
+      suno_created: 2026-08-18T13:50:18Z
+      file: music/audio/label_5/al_009/01.mp3
 
   - id: s_0080
     title: Payday Flowers
@@ -184,7 +208,14 @@ songs:
       It is worth it. Ask anybody who is not sensible.
 
       [Outro - fade on the tapped tubes]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 56b10cbe-4001-4896-aaf0-a241d8b4d5a5
+      suno_created: 2026-08-18T13:50:52Z
+      file: music/audio/label_5/al_009/02.mp3
 
   - id: s_0081
     title: Your Name on the Locker
@@ -252,7 +283,14 @@ songs:
       I am going to be standing there, and I am going to say something.
 
       [Outro - cold stop, one struck latch and nothing after it]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: a4e752c2-fa83-42b6-a479-5e05fd780f0e
+      suno_created: 2026-08-18T13:51:25Z
+      file: music/audio/label_5/al_009/03.mp3
 
   - id: s_0082
     title: Last Ferry Home
@@ -323,7 +361,14 @@ songs:
       is not the punishment the notice seemed to think it was.
 
       [Outro - cold stop on the downbeat]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: bfe08199-77e1-4435-b763-48ee56715126
+      suno_created: 2026-08-18T13:51:56Z
+      file: music/audio/label_5/al_009/04.mp3
 
   - id: s_0083
     title: The Better Bunk
@@ -395,7 +440,14 @@ songs:
       I will ask about four hundred times. I am aware of that.
 
       [Outro - fade on the two guitars]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 027f684d-9e59-4bea-97a1-f8f93ec4912d
+      suno_created: 2026-08-18T13:52:33Z
+      file: music/audio/label_5/al_009/05.mp3
 
   - id: s_0084
     title: Don't Spend It All
@@ -464,7 +516,14 @@ songs:
       She has stopped saying it. She is clapping along with the rest of them.
 
       [Outro - fade on the three out-of-time clappers]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 6876bfa5-f2b5-4513-a704-5afd53fd6420
+      suno_created: 2026-08-18T13:53:05Z
+      file: music/audio/label_5/al_009/06.mp3
 
   - id: s_0085
     title: Half Shift Holiday
@@ -529,7 +588,14 @@ songs:
       They cannot have the two hours. The two hours are gone.
 
       [Outro - cold stop, fiddle cutting off mid-figure]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: c12dd979-7223-4a47-ab89-39f33ed017d7
+      suno_created: 2026-08-18T13:53:45Z
+      file: music/audio/label_5/al_009/07.mp3
 
   - id: s_0086
     title: Someone Saved a Seat
@@ -597,7 +663,14 @@ songs:
       at every meeting in every port for the rest of this route.
 
       [Outro - cold stop, the four fiddle notes and nothing after them]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 9ff8400c-f314-4d05-b476-862c50d74499
+      suno_created: 2026-08-18T13:54:12Z
+      file: music/audio/label_5/al_009/08.mp3
 
   - id: s_0087
     title: Coffee After Turnover
@@ -668,7 +741,15 @@ songs:
       Sit down. It is signed for. It is not mine any more.
 
       [Outro - fade, the alloy note last]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept; the earlier attempt at this slot sang
+                                  # track 8's lyric and was never a take of this song (D-091)
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 91d76107-e0e8-426c-983d-d54034fb3449
+      suno_created: 2026-08-18T21:24:09Z
+      file: music/audio/label_5/al_009/09.mp3
 
   - id: s_0088
     title: Leave the Ramp Lit
@@ -737,7 +818,14 @@ songs:
       and you will see it from the water and you will know whose it is.
 
       [Outro - fade on the crew and the night behind them]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 6a6a4b02-8299-4606-9579-17688ce12b46
+      suno_created: 2026-08-18T13:55:16Z
+      file: music/audio/label_5/al_009/10.mp3
 
   - id: s_0089
     title: Nothing Wrong With Wanting
@@ -809,7 +897,14 @@ songs:
       I have said it now. It is on the record. It is going out on a crate.
 
       [Outro - sustain, piano under the crew]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 42739bfd-1ca6-4ca8-ae4d-eddbb08a1f0b
+      suno_created: 2026-08-18T13:56:01Z
+      file: music/audio/label_5/al_009/11.mp3
 
   - id: s_0090
     title: Meet Me Off the Clock
@@ -880,4 +975,11 @@ songs:
       Off the clock. Off the clock. Nothing owed to anybody.
 
       [Outro - fade on the crew, chimes ringing under it]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 553ddbb5-2097-47ed-97ff-27acca799d8e
+      suno_created: 2026-08-18T13:56:33Z
+      file: music/audio/label_5/al_009/12.mp3

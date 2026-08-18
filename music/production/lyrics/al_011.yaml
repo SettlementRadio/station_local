@@ -13,7 +13,10 @@
 # The track order is the signed session ledger's, which is the order the wiki states and the one the
 # station holds — two claimants issued two different ones from the same masters.
 #
-# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+# **Filed by M-30, 2026-08-17/18.** Every `take:` carries the Suno id, the vendor's own
+# creation timestamp and the file it was dispatched to; the album's `generation:` block
+# carries the model, the licence period and the sitting. The dispatch was verified against
+# the lyric each take carries in its own tags, not assumed from filename order (D-091).
 
 album:
   id: al_011
@@ -36,13 +39,21 @@ album:
     resonance-pipe note at the end of the record.
 
 generation:
-  # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the 2026-08-18 sitting (M-30). Suno Pro, remix disabled, model v5.5 — the same
+  # account, tier and settings as the pilot, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers these takes too: the Pro tier assigns the output to the
+  # account holder, scoped to the subscription term. Times are UTC, as the files report them.
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-18
+  sittings:
+    - {date: 2026-08-18, from: '17:20:58', to: '17:24:23', tracks: [1, 2, 3, 4, 5, 6, 7, 8]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW into music/audio/label_6/ by song id. The mapping was
+    verified rather than assumed: every take carries the lyric it was generated from in its
+    own tags, and each one matches this file's lyric exactly (D-091). Each song's take:
+    block carries the Suno id and the vendor's own creation timestamp.
 
 songs:
   - id: s_0098
@@ -110,7 +121,14 @@ songs:
       and it is the only one on either page that matters.
 
       [Outro - fade on the piano]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: c4902198-30bd-4213-809b-1849a074d243
+      suno_created: 2026-08-18T17:20:58Z
+      file: music/audio/label_6/al_011/01.mp3
 
   - id: s_0099
     title: Called in a Favor
@@ -180,7 +198,14 @@ songs:
       Ask me for something. Anything. At any hour. Please.
 
       [Outro - cold stop, the bass cutting off with the voice]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: bc0afc2c-daa7-436b-a42b-d04bc2d5dd17
+      suno_created: 2026-08-18T17:21:25Z
+      file: music/audio/label_6/al_011/02.mp3
 
   - id: s_0100
     title: Your Usual Corner
@@ -248,7 +273,14 @@ songs:
       I have got the whole of a Thursday and no other plans at all.
 
       [Outro - sustain, piano holding under the four voices]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 4d1cc1de-7bb6-4861-9ec9-c52f0a4e67d1
+      suno_created: 2026-08-18T17:21:58Z
+      file: music/audio/label_6/al_011/03.mp3
 
   - id: s_0101
     title: One Honest Minute
@@ -317,7 +349,14 @@ songs:
       Do not be kind. Say it badly. Say anything.
 
       [Outro - sustain, one held chord and nothing else]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 3ac83a7d-d248-498c-ab24-c9cb9eb43de0
+      suno_created: 2026-08-18T17:22:29Z
+      file: music/audio/label_6/al_011/04.mp3
 
   - id: s_0102
     title: Make It Someone Else
@@ -384,7 +423,14 @@ songs:
       I have been making it at you across a table all week.
 
       [Outro - fade on the plucked figure]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 8dd7d476-7461-42d3-9f90-e60fdb28d544
+      suno_created: 2026-08-18T17:22:52Z
+      file: music/audio/label_6/al_011/05.mp3
 
   - id: s_0103
     title: The Founder Won't Call
@@ -453,7 +499,14 @@ songs:
       and I know exactly who I am going to spend it with.
 
       [Outro - cold stop on the out-of-tune note]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: fea610bc-05af-4c85-afcc-7a8e5d1269e6
+      suno_created: 2026-08-18T17:23:18Z
+      file: music/audio/label_6/al_011/06.mp3
 
   - id: s_0104
     title: Receipt Without a Name
@@ -521,7 +574,14 @@ songs:
       and you looked at me over the table when I put it away.
 
       [Outro - fade on the tapped receipt and the chimes]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 9af080f8-36a6-4fff-9562-02c55baaa4d5
+      suno_created: 2026-08-18T17:23:48Z
+      file: music/audio/label_6/al_011/07.mp3
 
   - id: s_0105
     title: After the Final Bell
@@ -601,4 +661,11 @@ songs:
       and nothing at all is owed by anybody. Put your coat on. Come on.
 
       [Outro - sustain, the alloy note outlasting every voice]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 28b1844e-8b0d-4a80-bba0-3490b16a2803
+      suno_created: 2026-08-18T17:24:23Z
+      file: music/audio/label_6/al_011/08.mp3

@@ -9,7 +9,10 @@
 # so they are live on this EP: with six songs, one shape may cover two of them and one song may
 # carry the echoed answer.
 #
-# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+# **Filed by M-30, 2026-08-17/18.** Every `take:` carries the Suno id, the vendor's own
+# creation timestamp and the file it was dispatched to; the album's `generation:` block
+# carries the model, the licence period and the sitting. The dispatch was verified against
+# the lyric each take carries in its own tags, not assumed from filename order (D-091).
 
 album:
   id: al_007
@@ -34,13 +37,21 @@ album:
     band's signature on its first record.
 
 generation:
-  # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the 2026-08-18 sitting (M-30). Suno Pro, remix disabled, model v5.5 — the same
+  # account, tier and settings as the pilot, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers these takes too: the Pro tier assigns the output to the
+  # account holder, scoped to the subscription term. Times are UTC, as the files report them.
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-18
+  sittings:
+    - {date: 2026-08-18, from: '11:47:07', to: '11:53:06', tracks: [1, 2, 3, 4, 5, 6]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW into music/audio/label_5/ by song id. The mapping was
+    verified rather than assumed: every take carries the lyric it was generated from in its
+    own tags, and each one matches this file's lyric exactly (D-091). Each song's take:
+    block carries the Suno id and the vendor's own creation timestamp.
 
 songs:
   - id: s_0066
@@ -122,7 +133,14 @@ songs:
       and we will sing it all the way to the vote at nine.
 
       [Outro - cold stop, all voices together]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: d5356dc2-4615-4d20-99b9-942d69738d76
+      suno_created: 2026-08-18T11:47:07Z
+      file: music/audio/label_5/al_007/01.mp3
 
   - id: s_0067
     title: Better Pay by Morning
@@ -193,7 +211,14 @@ songs:
       and I would like to take it with you, whatever the count says.
 
       [Outro - fade on the bass turn and the crew answer]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 149d7411-3a6e-4322-9184-c88a62f4f1f5
+      suno_created: 2026-08-18T11:50:16Z
+      file: music/audio/label_5/al_007/02.mp3
 
   - id: s_0068
     title: Cup in the Sink
@@ -264,7 +289,14 @@ songs:
       It is not about the cup. It has never been about the cup.
 
       [Outro - cold stop, one last struck cup]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: e892b0cc-3e41-47b2-af49-d9fa53a51723
+      suno_created: 2026-08-18T11:50:53Z
+      file: music/audio/label_5/al_007/03.mp3
 
   - id: s_0069
     title: Burn Day Promise
@@ -334,7 +366,14 @@ songs:
       It is the one hour neither of us will give away.
 
       [Outro - fade, crew chorus arriving on the beat at last]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: b678308b-deef-4e3c-a03d-61893b27984e
+      suno_created: 2026-08-18T11:52:01Z
+      file: music/audio/label_5/al_007/04.mp3
 
   - id: s_0070
     title: Hold My Place in Line
@@ -400,7 +439,14 @@ songs:
       I have got you at forty from the front. Take your time.
 
       [Outro - sustain, the figure ringing on]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: a7b15856-a4db-4bb3-a7cb-85316237e4ea
+      suno_created: 2026-08-18T11:52:35Z
+      file: music/audio/label_5/al_007/05.mp3
 
   - id: s_0071
     title: Don't Wake the Cook
@@ -468,4 +514,11 @@ songs:
       It is the last hour of the festival. Nobody is keeping anything down.
 
       [Outro - fade on the whole room]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 4e802c2e-81c0-4aae-a971-67e69d18e3f3
+      suno_created: 2026-08-18T11:53:06Z
+      file: music/audio/label_5/al_007/06.mp3

@@ -2516,3 +2516,42 @@ title from the sung hook and 36 take it from an image in the lyric**, which is M
 repeated: the title fights the rule, and the fix is to name the record after something in the song
 instead. Rule 3 was cheap by comparison (6 of 60 use the echoed answer) and rule 2 was free (42 of
 60 carry a third person or a named character without being asked to).
+
+### D-091 · The dispatch is proved by the lyric inside the file, and it caught a song that was never generated — 2026-08-18
+
+M-18 verified the pilot's dispatch statistically: filename order against embedded timestamps, gaps
+against album boundaries, and cold endings against the brief (D-083's neighbours test). It was the
+best available evidence and it was still inference. **M-30's takes carry the lyric they were
+generated from in a `lyrics-eng` tag**, so the mapping from file to song id is now a text match
+against `music/production/lyrics/`, and inference is not needed for this or for any Suno card after
+it. All 60 files matched a song exactly on whitespace-normalised text; the timestamps then
+corroborated it — strictly track order, album by album, in seven sittings.
+
+**It found a real defect on the first run, which is the whole argument for checking.** `87.mp3`
+carries `s_0086`'s lyric, not `s_0087`'s: at the 13:54 sitting the style box moved on and the lyric
+box did not, so Suno returned a second take of *Someone Saved a Seat* where track 9 should have
+been, and **`s_0087` Coffee After Turnover was never generated.** Under M-18's method this would
+have passed every test — the file is the right size, in the right place in the sequence, with a
+timestamp 31 seconds after its neighbour — and *Coffee After Turnover* would have gone into the
+catalogue as a record whose one stated fact (Ivena Sorn's resonance-pipe note entering after the
+handover) is about a performance that does not exist on it. That is precisely the failure the wiki
+exists to prevent, and it is a back-announce the presenter would have got wrong every time.
+
+**59 takes are filed and one song is left without audio** rather than filled with something
+plausible. `87.mp3` stays in `music/audio/RAW/` by operator decision, where `make music-tag` reports
+it as unclaimed on every run — §25's rule that a file which cannot say what licence it was made
+under must never pass silently, doing exactly its job. The gate is red until `s_0087` is generated
+or that file is removed, and **that red is the correct resting state**: relay-pop is 104 of 105.
+
+**One test stopped being about the pilot.** `test_the_pilot_resolves_to_four_values_a_song` asserted
+`len(songs) == 45`, which was the whole catalogue when M-18 wrote it and is now a number that
+changes with every Suno card. It derives the count from the lyrics files instead and keeps the
+invariant that matters — every filed take resolves four tag values and names a subscription period —
+so the next eight audio cards do not each have to edit a constant.
+
+**Closed 2026-08-18.** `s_0087` was regenerated the same evening and files as
+`music/audio/label_5/al_009/09.mp3`, verified by the same lyric match; `al_009` records it as a
+second sitting of one track. Relay-pop is 105 of 105 playable and M-30 is done. The rejected file is
+`music/audio/RAW/87_wrong.mp3`, still unclaimed and still reported by `make music-tag` on every run,
+which is the gate holding a real question open rather than a defect: the operator has not yet said
+whether that second take of `s_0086` is kept or deleted.

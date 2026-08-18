@@ -6,7 +6,8 @@ that runs on every one of the 500 files rather than once in CI.
 
 What is worth testing is D-062's resolution: a song's `take:` block first, the album's
 `generation:` block for anything null there. That rule is the only reason 45 files can be tagged
-from four metadata blocks, and getting it wrong writes a plausible-looking wrong licence period
+from four metadata blocks — 104 of them as of M-30 — and getting it wrong writes a
+plausible-looking wrong licence period
 into a file that will one day be all the evidence there is (COMMISSION.md §9).
 
 The last two tests read the real lyrics files, because the shape M-17 fixed is what this reads and
@@ -20,7 +21,7 @@ from pathlib import Path
 import pytest
 import yaml
 
-from station.music import tag
+from station.music import tag, writing
 
 ROOT = Path(__file__).resolve().parents[2]
 MUSIC = ROOT / "music"
@@ -94,12 +95,25 @@ def test_a_song_with_no_take_yet_is_not_a_song_to_tag() -> None:
     assert tag._album_songs(MUSIC, Path("al_001.yaml"), parsed) == []
 
 
-def test_the_pilot_resolves_to_four_values_a_song() -> None:
-    """The real files, in the shape al_001.yaml fixes — 45 takes, every one able to name its licence."""
+def test_every_filed_take_resolves_to_four_values() -> None:
+    """The real files, in the shape al_001.yaml fixes: every take can name its own licence.
+
+    The count is derived rather than written down — it was 45 at M-18 and grows with every Suno
+    card — but the invariant does not move: a take that cannot say what it was made under is a take
+    nobody may broadcast (§9).
+    """
+    filed = [
+        song
+        for path in sorted((MUSIC / writing.LYRICS_DIR).glob("*.yaml"))
+        for song in yaml.safe_load(path.read_text(encoding="utf-8"))["songs"]
+        if song.get("take") and song["take"].get("file")
+    ]
     songs = tag.load_songs(MUSIC)
-    assert len(songs) == 45
+    assert len(songs) == len(filed) > 0
     assert all(len(song.provenance.tags()) == len(tag.TAG_KEYS) for song in songs)
-    assert {song.provenance.licence_period for song in songs} == {"suno-pro-2026-08"}
+    assert all(song.provenance.licence_period.startswith("suno-") for song in songs), (
+        "every take names the subscription period it was generated in"
+    )
 
 
 def test_every_take_points_at_a_file_under_the_audio_root() -> None:

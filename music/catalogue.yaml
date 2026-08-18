@@ -3856,18 +3856,18 @@ tracks:
   artist: b_003
   title: Pressure Weather
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_005/01.mp3
+  duration_sec: 235.92
+  intro_ramp_sec: 16.21
+  outro_type: cold
+  category: gold
   mood:
   - urgent
   - bright
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Kerr Aven built the opening pulse from the shelter's power-warning pattern after maintenance approved
     the timing.
 - id: s_0047
@@ -3875,72 +3875,72 @@ tracks:
   artist: b_003
   title: Dance Floor Apology
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_005/02.mp3
+  duration_sec: 226.56
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - apologetic
   - exuberant
   - quick
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Nara Veck addresses the song to a friend whose shoes she ruined at a shelter social in 2606.
 - id: s_0048
   album: al_005
   artist: b_003
   title: Three Floors Down
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_005/03.mp3
+  duration_sec: 213.44
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - yearning
   - playful
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Miro Olt makes the electronic strings descend three steps each time the title is sung.
 - id: s_0049
   album: al_005
   artist: b_003
   title: Better in the Rain
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_005/04.mp3
+  duration_sec: 207.2
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - romantic
   - bright
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The accepted backing vocals were recorded under a depot awning after the shelter room lost power.
 - id: s_0050
   album: al_005
   artist: b_003
   title: Late Fee Heart
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_005/05.mp3
+  duration_sec: 208.6
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - wry
   - tense
   - quick
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Sumi Orl copied the bass accents from the overdue notices clicking through the label's office
     printer.
 - id: s_0051
@@ -3948,54 +3948,54 @@ tracks:
   artist: b_003
   title: Hold the Lift
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_005/06.mp3
+  duration_sec: 197.04
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - urgent
   - affectionate
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Brin Noll plays a loose service-panel latch that matched Kerr Aven's drum pitch without retuning.
 - id: s_0052
   album: al_005
   artist: b_003
   title: Dry Shoes Tomorrow
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_005/07.mp3
+  duration_sec: 223.44
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - hopeful
   - comic
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Nara Veck kept the guide vocal because water dripped into a bucket exactly between the verse lines.
 - id: s_0053
   album: al_005
   artist: b_003
   title: Window Seat Fever
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_005/08.mp3
+  duration_sec: 254.72
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - restless
   - bright
   - quick
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Talla Venn plays the clipped composite-guitar answers while standing in the repair depot's only
     dry window recess.
 - id: s_0054
@@ -4003,18 +4003,18 @@ tracks:
   artist: b_003
   title: Half a Conversation
   track_no: 9
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_005/09.mp3
+  duration_sec: 194.6
+  intro_ramp_sec: 8.64
+  outro_type: cold
+  category: gold
   mood:
   - uncertain
   - tender
   - steady
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The second singer's answers were lost in a storage fault, so Sel Ardin taught them to the whole
     band for the replacement session.
 - id: s_0055
@@ -4022,18 +4022,18 @@ tracks:
   artist: b_003
   title: Storm Door Smile
   track_no: 10
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_005/10.mp3
+  duration_sec: 193.92
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - relieved
   - celebratory
   - building
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The final chorus includes depot workers who had held the storm door shut during the first recording
     attempt.
 - id: s_0056
@@ -4041,72 +4041,72 @@ tracks:
   artist: b_003
   title: Clear by Closing
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_006/01.mp3
+  duration_sec: 217.84
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - optimistic
   - bright
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Nara Veck finished the lead two minutes before the hall's booked power allotment ended.
 - id: s_0057
   album: al_006
   artist: b_003
   title: Borrow My Evening
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_006/02.mp3
+  duration_sec: 224.76
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - flirtatious
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Sel Ardin split the title between six voices so Nara Veck never sings the full request alone.
 - id: s_0058
   album: al_006
   artist: b_003
   title: Queue for the Roof
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_006/03.mp3
+  duration_sec: 225.2
+  intro_ramp_sec: 6.69
+  outro_type: cold
+  category: gold
   mood:
   - restless
   - social
   - quick
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Kerr Aven copied the rhythm of folding seats being stacked after a Meridian roof-room inspection.
 - id: s_0059
   album: al_006
   artist: b_003
   title: Please Stay Seated
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_006/04.mp3
+  duration_sec: 185.96
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - teasing
   - bright
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Brin Noll plays the opening on the same roof-room seat frames heard being stacked on the previous
     track.
 - id: s_0060
@@ -4114,18 +4114,18 @@ tracks:
   artist: b_003
   title: Heat in the Hallway
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_006/05.mp3
+  duration_sec: 232.68
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - sultry
   - tense
   - steady
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ivena Sorn's resonance-pipe note was recorded in the Meridian studio hallway because it overloaded
     the main-room microphone at the planned distance.
 - id: s_0061
@@ -4133,18 +4133,18 @@ tracks:
   artist: b_003
   title: One Clean Answer
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_006/06.mp3
+  duration_sec: 179.28
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - direct
   - defiant
   - quick
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Nara Veck rejected the prepared lyric sheet and sang the accepted verse from a three-line note
     in her pocket.
 - id: s_0062
@@ -4152,54 +4152,54 @@ tracks:
   artist: b_003
   title: Spare Me the Forecast
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_006/07.mp3
+  duration_sec: 232.12
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - impatient
   - playful
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Miro Olt leaves a deliberate gap each time the singer refuses another prediction.
 - id: s_0063
   album: al_006
   artist: b_003
   title: Under the Awning
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_006/08.mp3
+  duration_sec: 255.04
+  intro_ramp_sec: 10.66
+  outro_type: cold
+  category: gold
   mood:
   - romantic
   - sheltered
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Talla Venn repeats the composite-guitar figure she played at the depot awning sessions in 2607.
 - id: s_0064
   album: al_006
   artist: b_003
   title: This Could Be Easy
   track_no: 9
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_006/09.mp3
+  duration_sec: 236.36
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - hopeful
   - buoyant
   - quick
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The group recorded the entire song in one pass after spending two sessions arguing about its four-bar
     introduction.
 - id: s_0065
@@ -4207,18 +4207,18 @@ tracks:
   artist: b_003
   title: Closing Time Weather
   track_no: 10
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_3/al_006/10.mp3
+  duration_sec: 208.0
+  intro_ramp_sec: 18.37
+  outro_type: fade
+  category: gold
   mood:
   - wistful
   - communal
   - building
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Calo Meret plays Stormline Issue's office piano while the band's compact keyboard remains switched
     off beside it.
 - id: s_0066
@@ -4226,18 +4226,18 @@ tracks:
   artist: b_004
   title: Crew Rates
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_007/01.mp3
+  duration_sec: 259.48
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - assertive
   - bright
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The four members sing the figures from a rejected pay offer before Ressa Morn answers with the
     accepted rate.
 - id: s_0067
@@ -4245,36 +4245,36 @@ tracks:
   artist: b_004
   title: Better Pay by Morning
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_007/02.mp3
+  duration_sec: 241.8
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - hopeful
   - communal
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Jalen Rook wrote the bass turn while waiting for the co-operative's overnight wage vote to finish.
 - id: s_0068
   album: al_007
   artist: b_004
   title: Cup in the Sink
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_007/03.mp3
+  duration_sec: 235.6
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - domestic
   - annoyed
   - quick
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Cado Veir plays the opening beat on the unwashed metal cup that started the cabin argument in
     the lyric.
 - id: s_0069
@@ -4282,18 +4282,18 @@ tracks:
   artist: b_004
   title: Burn Day Promise
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_007/04.mp3
+  duration_sec: 257.0
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - romantic
   - eager
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ressa Morn wrote the song about two people reserving the same free hour before their shift boards
     changed.
 - id: s_0070
@@ -4301,36 +4301,36 @@ tracks:
   artist: b_004
   title: Hold My Place in Line
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_007/05.mp3
+  duration_sec: 282.88
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - affectionate
   - patient
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Talla Venn plays a bright composite-guitar answer copied from Emi Soll's tuning check.
 - id: s_0071
   album: al_007
   artist: b_004
   title: Don't Wake the Cook
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_007/06.mp3
+  duration_sec: 191.84
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - mischievous
   - hushed
   - quick
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The band sings the first chorus at half volume because the meeting-room wall adjoined the festival
     kitchen rest area.
 - id: s_0072
@@ -4338,18 +4338,18 @@ tracks:
   artist: b_004
   title: Shared Format
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_008/01.mp3
+  duration_sec: 238.72
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - confident
   - communal
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Cado Veir demonstrates three different oxygen-tank tunings before the first sung line to make
     the Localist argument audible.
 - id: s_0073
@@ -4357,18 +4357,18 @@ tracks:
   artist: b_004
   title: Add My Name in Pencil
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_008/02.mp3
+  duration_sec: 196.12
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - eager
   - bright
   - quick
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Nessa Dray gives the count with her bow against the composite fiddle body rather than speaking
     it.
 - id: s_0074
@@ -4376,36 +4376,36 @@ tracks:
   artist: b_004
   title: Two Stops Early
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_008/03.mp3
+  duration_sec: 302.44
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - romantic
   - restless
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ressa Morn based the lyric on leaving a crew shuttle early to prolong a walk with another passenger.
 - id: s_0075
   album: al_008
   artist: b_004
   title: Loan Me Your Coat
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_008/04.mp3
+  duration_sec: 246.28
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - flirtatious
   - warm
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Talla Venn recorded the composite-guitar break in the narrow loading passage where the lyric's
     request took place.
 - id: s_0076
@@ -4413,18 +4413,18 @@ tracks:
   artist: b_004
   title: The Galley Light
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_008/05.mp3
+  duration_sec: 243.12
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - wistful
   - intimate
   - steady
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Oren Saye plays upright bass with a cloth under the strings so the sleeping crew could remain
     in the adjoining cabin.
 - id: s_0077
@@ -4432,18 +4432,18 @@ tracks:
   artist: b_004
   title: Quieter Than Engines
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_008/06.mp3
+  duration_sec: 294.6
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - secretive
   - tender
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The first take was rejected because all four singers dropped below the life-support noise and
     lost the final line.
 - id: s_0078
@@ -4451,18 +4451,18 @@ tracks:
   artist: b_004
   title: Everybody Knows the Fare
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_008/07.mp3
+  duration_sec: 239.44
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - wry
   - communal
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Sel Ardin arranged the crew chorus so each singer enters with a different fare complaint collected
     at three ports.
 - id: s_0079
@@ -4470,18 +4470,18 @@ tracks:
   artist: b_004
   title: Same Berth Twice
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_009/01.mp3
+  duration_sec: 237.88
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - romantic
   - triumphant
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ressa Morn and Jalen Rook recorded their answering lines on opposite shifts after their credit
     argument.
 - id: s_0080
@@ -4489,54 +4489,54 @@ tracks:
   artist: b_004
   title: Payday Flowers
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_009/02.mp3
+  duration_sec: 224.0
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - joyful
   - affectionate
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Cado Veir taps the empty wrapping tubes from the flowers bought for the session meal table.
 - id: s_0081
   album: al_009
   artist: b_004
   title: Your Name on the Locker
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_009/03.mp3
+  duration_sec: 228.36
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - tender
   - proud
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Brin Noll turns a locker latch into the offbeat chime after retuning its loose plate.
 - id: s_0082
   album: al_009
   artist: b_004
   title: Last Ferry Home
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_009/04.mp3
+  duration_sec: 264.08
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - urgent
   - yearning
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Emi Soll plays the composite-guitar break at the faster tempo the band used when a ferry notice
     shortened the session.
 - id: s_0083
@@ -4544,18 +4544,18 @@ tracks:
   artist: b_004
   title: The Better Bunk
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_009/05.mp3
+  duration_sec: 248.2
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - comic
   - affectionate
   - quick
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Talla Venn plays both composite guitars because Emi Soll lost the band vote over who should take
     the short break.
 - id: s_0084
@@ -4563,18 +4563,18 @@ tracks:
   artist: b_004
   title: Don't Spend It All
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_009/06.mp3
+  duration_sec: 217.04
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - cautionary
   - buoyant
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The handclaps come from the co-operative treasurer and two pressing-unit mechanics who were checking
     the session budget.
 - id: s_0085
@@ -4582,18 +4582,18 @@ tracks:
   artist: b_004
   title: Half Shift Holiday
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_009/07.mp3
+  duration_sec: 222.72
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - carefree
   - bright
   - quick
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Nessa Dray increases the composite-fiddle pace when Ressa Morn names the extra free hour in the
     second verse.
 - id: s_0086
@@ -4601,18 +4601,18 @@ tracks:
   artist: b_004
   title: Someone Saved a Seat
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_009/08.mp3
+  duration_sec: 273.44
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - grateful
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Nessa Dray wrote the brief answering figure after finding her own chair marked at the crowded
     route meeting.
 - id: s_0087
@@ -4620,36 +4620,36 @@ tracks:
   artist: b_004
   title: Coffee After Turnover
   track_no: 9
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_009/09.mp3
+  duration_sec: 302.92
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - tired
   - flirtatious
   - steady
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ivena Sorn's low resonance-pipe note begins only after the lyric's shift handover is complete.
 - id: s_0088
   album: al_009
   artist: b_004
   title: Leave the Ramp Lit
   track_no: 10
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_009/10.mp3
+  duration_sec: 248.72
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - hopeful
   - nocturnal
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The band recorded the crew chorus at the open loading ramp after the room ventilation stopped
     for inspection.
 - id: s_0089
@@ -4657,18 +4657,18 @@ tracks:
   artist: b_004
   title: Nothing Wrong With Wanting
   track_no: 11
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_009/11.mp3
+  duration_sec: 293.4
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - defiant
   - tender
   - building
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ressa Morn kept the cracked word on the final chorus because it followed the record's only fully
     silent bar.
 - id: s_0090
@@ -4676,54 +4676,54 @@ tracks:
   artist: b_004
   title: Meet Me Off the Clock
   track_no: 12
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_009/12.mp3
+  duration_sec: 242.92
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - romantic
   - celebratory
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Calo Meret removed half the keyboard arrangement after the whole crew chorus arrived without rehearsal.
 - id: s_0091
   album: al_010
   artist: b_005
   title: Soft Closing
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_010/01.mp3
+  duration_sec: 232.6
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - intimate
   - restrained
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Mela Jorn sings the accepted lead while closing the piano lid one step at a time between verses.
 - id: s_0092
   album: al_010
   artist: b_005
   title: Table Near the Door
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_010/02.mp3
+  duration_sec: 195.24
+  intro_ramp_sec: 4.95
+  outro_type: sustain
+  category: gold
   mood:
   - watchful
   - romantic
   - steady
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Tovin Ashe wrote the bass answer for two customers who chose the same visible table through an
     entire season.
 - id: s_0093
@@ -4731,18 +4731,18 @@ tracks:
   artist: b_005
   title: One Drink Behind
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_010/03.mp3
+  duration_sec: 218.56
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - wry
   - wistful
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Elo Vara uses a serving tray for the brushed rhythm because the regular kit sounded too formal
     in the empty room.
 - id: s_0094
@@ -4750,18 +4750,18 @@ tracks:
   artist: b_005
   title: Keep Your Voice Down
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_010/04.mp3
+  duration_sec: 209.64
+  intro_ramp_sec: 11.49
+  outro_type: sustain
+  category: gold
   mood:
   - secretive
   - tense
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The backing singers stand behind the closed club door, making their answers sound like the conversation
     the lead is trying to hide.
 - id: s_0095
@@ -4769,18 +4769,18 @@ tracks:
   artist: b_005
   title: The Coat Check Smile
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_010/05.mp3
+  duration_sec: 208.4
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - flirtatious
   - light
   - quick
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Pira Nemm plays the electronic-string figure with one hand while sorting the group's coats with
     the other during the guide take.
 - id: s_0096
@@ -4788,18 +4788,18 @@ tracks:
   artist: b_005
   title: If the Piano Stops
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_010/06.mp3
+  duration_sec: 218.88
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - uneasy
   - tender
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Mela Jorn leaves the piano silent under the second verse after a pedal repair interrupted the
     first take.
 - id: s_0097
@@ -4807,18 +4807,18 @@ tracks:
   artist: b_005
   title: Closed for Counting
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_010/07.mp3
+  duration_sec: 191.44
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - tired
   - warm
   - building
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The club's closing staff sing the final answer while counting the room's empty cups into storage
     bins.
 - id: s_0098
@@ -4826,18 +4826,18 @@ tracks:
   artist: b_005
   title: Catalogue of Small Debts
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_011/01.mp3
+  duration_sec: 209.64
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - wry
   - controlled
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Mela Jorn sings from the band's unpaid-invoice list but replaces every amount with the favor it
     was meant to purchase.
 - id: s_0099
@@ -4845,18 +4845,18 @@ tracks:
   artist: b_005
   title: Called in a Favor
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_011/02.mp3
+  duration_sec: 236.12
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - urgent
   - intimate
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Oren Saye played the accepted bass part without a fee after the label's payment desk closed during
     the session.
 - id: s_0100
@@ -4864,18 +4864,18 @@ tracks:
   artist: b_005
   title: Your Usual Corner
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_011/03.mp3
+  duration_sec: 198.52
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - nostalgic
   - affectionate
   - steady
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Sel Ardin arranged the chorus for the four singers who still met at the band's first club table
     in 2612.
 - id: s_0101
@@ -4883,18 +4883,18 @@ tracks:
   artist: b_005
   title: One Honest Minute
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_011/04.mp3
+  duration_sec: 213.4
+  intro_ramp_sec: 11.17
+  outro_type: sustain
+  category: gold
   mood:
   - direct
   - spare
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The group removed every backing voice until the final line, where Sel Ardin adds a single unison
     answer.
 - id: s_0102
@@ -4902,18 +4902,18 @@ tracks:
   artist: b_005
   title: Make It Someone Else
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_011/05.mp3
+  duration_sec: 213.44
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - bitter
   - brisk
   - sharp
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Miro Olt plays the bright electronic-string figure that Lower Bell Editions tried to credit to
     an absent arranger.
 - id: s_0103
@@ -4921,18 +4921,18 @@ tracks:
   artist: b_005
   title: The Founder Won't Call
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_011/06.mp3
+  duration_sec: 192.6
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - angry
   - restrained
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Calo Meret plays the office piano beneath a lyric drafted after the label founder missed three
     scheduled account meetings.
 - id: s_0104
@@ -4940,18 +4940,18 @@ tracks:
   artist: b_005
   title: Receipt Without a Name
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_011/07.mp3
+  duration_sec: 197.2
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - mysterious
   - wounded
   - steady
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The percussion is Elo Vara tapping the unsigned meal receipt that appeared inside the session
     account.
 - id: s_0105
@@ -4959,18 +4959,18 @@ tracks:
   artist: b_005
   title: After the Final Bell
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_6/al_011/08.mp3
+  duration_sec: 213.84
+  intro_ramp_sec: 10.63
+  outro_type: sustain
+  category: gold
   mood:
   - resigned
   - warm
   - building
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ivena Sorn sustains the final resonance-pipe note while each band member reads one settled debt
     into the room ledger.
 - id: s_0106

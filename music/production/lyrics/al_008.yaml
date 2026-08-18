@@ -8,7 +8,10 @@
 # an instrument stays tied to its room — is an arrangement fact, not a subject: Cado Veir's tuned
 # oxygen-tank drums arrive here and are on every track, and nothing in the words is about movements.
 #
-# `generation:` and every `take:` are empty until M-30's Suno sitting fills them in.
+# **Filed by M-30, 2026-08-17/18.** Every `take:` carries the Suno id, the vendor's own
+# creation timestamp and the file it was dispatched to; the album's `generation:` block
+# carries the model, the licence period and the sitting. The dispatch was verified against
+# the lyric each take carries in its own tags, not assumed from filename order (D-091).
 
 album:
   id: al_008
@@ -30,13 +33,21 @@ album:
     upright bass with a cloth under the strings so the next cabin could stay asleep.
 
 generation:
-  # Empty until M-30's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the 2026-08-18 sitting (M-30). Suno Pro, remix disabled, model v5.5 — the same
+  # account, tier and settings as the pilot, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers these takes too: the Pro tier assigns the output to the
+  # account holder, scoped to the subscription term. Times are UTC, as the files report them.
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-18
+  sittings:
+    - {date: 2026-08-18, from: '12:58:51', to: '13:21:02', tracks: [1, 2, 3, 4, 5, 6, 7]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW into music/audio/label_5/ by song id. The mapping was
+    verified rather than assumed: every take carries the lyric it was generated from in its
+    own tags, and each one matches this file's lyric exactly (D-091). Each song's take:
+    block carries the Suno id and the vendor's own creation timestamp.
 
 songs:
   - id: s_0072
@@ -107,7 +118,14 @@ songs:
       Go and find it. It has gone further than I can.
 
       [Outro - fade on the three drums]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 45b1b2d4-897c-4096-9adf-9800de2be00f
+      suno_created: 2026-08-18T12:58:51Z
+      file: music/audio/label_5/al_008/01.mp3
 
   - id: s_0073
     title: Add My Name in Pencil
@@ -183,7 +201,14 @@ songs:
       and if it is right I will go over it in ink myself.
 
       [Outro - cold stop on a struck tank drum]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 357439a2-09fc-4460-9c08-dd5f7bf63db6
+      suno_created: 2026-08-18T12:59:25Z
+      file: music/audio/label_5/al_008/02.mp3
 
   - id: s_0074
     title: Two Stops Early
@@ -251,7 +276,14 @@ songs:
       talking about nothing and walking at half our ordinary speed.
 
       [Outro - sustain, guitar and chimes]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: aa42a62c-5bb6-436f-904b-afbd958d719a
+      suno_created: 2026-08-18T13:00:03Z
+      file: music/audio/label_5/al_008/03.mp3
 
   - id: s_0075
     title: Loan Me Your Coat
@@ -319,7 +351,14 @@ songs:
       it is Thursday, it is still on the back of my chair, and you have not asked.
 
       [Outro - fade on the guitar and the crew]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 80eefd2b-35d7-4992-86b0-31cf68df3983
+      suno_created: 2026-08-18T13:09:28Z
+      file: music/audio/label_5/al_008/04.mp3
 
   - id: s_0076
     title: The Galley Light
@@ -392,7 +431,14 @@ songs:
       Leave it on the whole way to the port.
 
       [Outro - sustain, muted bass under the last chime]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: a3b3238f-198a-4a62-8880-d20ec64bf663
+      suno_created: 2026-08-18T13:19:48Z
+      file: music/audio/label_5/al_008/05.mp3
 
   - id: s_0077
     title: Quieter Than Engines
@@ -460,7 +506,14 @@ songs:
       Say it once, at any volume, and I will have it for good.
 
       [Outro - fade, the room's hum left running]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: a581df52-59d0-4824-841c-2c6fd25fb92c
+      suno_created: 2026-08-18T13:20:20Z
+      file: music/audio/label_5/al_008/06.mp3
 
   - id: s_0078
     title: Everybody Knows the Fare
@@ -552,4 +605,11 @@ songs:
       Ask three clerks and get four sums.
 
       [Outro - fade on six voices at once]
-    take: null                    # M-30 fills this in at the Suno sitting
+    take:
+      attempts: 1                 # first generation kept
+      model_version: null         # inherits generation.model_version (v5.5) — see the al_001 header
+      generated_on: 2026-08-18
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 346269bf-cdf7-4d9e-a6bf-f1ccf1779f17
+      suno_created: 2026-08-18T13:21:02Z
+      file: music/audio/label_5/al_008/07.mp3
