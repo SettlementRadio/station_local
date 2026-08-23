@@ -1,0 +1,696 @@
+# al_038 — Ten Ports Out · Burn Day Wages (b_019) · Common Wake Cooperative · 2612 · 9 songs
+#
+# Written by M-22. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# **b_019's card is complete for the first time on this record.** Una Brack joined in 2604, so from
+# here on the crew chorus is five voices with one woman clearly audible above the men, and the
+# stripped-wire chimes are in the kit — both of which al_037 had to do without. s_0323 is the first
+# time she takes a line on her own, which is the wiki's fact and the reason that song exists.
+#
+# Written across one ten-port run and recorded in a covered bay with the doors open. The year a core
+# late-club label folded and took a booking with it is on this record twice, in two different moods,
+# and neither of them is a song about a label: one is about a room full of people who lost the room,
+# and the other is about who owns a thing after the person who made it has stopped.
+#
+# s_0325 puts four lines of a haulage contract in the middle of a song. **They are sung flat on one
+# note at speaking pace, not spoken** — b_019's card excludes whispered and rapped sections, and this
+# station's spoken form is deck-talk, which lane-rock is not.
+#
+# Three of these nine take an instrumental break (§7), on the lead guitar.
+#
+# `generation:` and every `take:` are empty until M-31's Suno sitting fills them in.
+
+album:
+  id: al_038
+  title: Ten Ports Out
+  band: b_019
+  band_name: Burn Day Wages
+  label: label_5
+  release_year: 2612
+  genre: lane-rock
+  cornerstone: false
+  song_count: 9
+  style_card: b_019
+  room: >-
+    One covered bay with the doors open, which is why the weather is on the record and why s_0324
+    changes sound halfway through — that take was kept rather than repeated. The card is complete and
+    unbent: high hard tenor, five-voice crew chorus with one woman above the men, two electric
+    guitars, bass, tank drums left ringing, stripped-wire chimes, tracked whole-band and loose rather
+    than gridded. Three fact-bound session exceptions are explicit: Calo Meret's guest piano on
+    s_0326, played with the lid shut for the whole part after the band asked for something quieter
+    than the bay; Brin Noll's retuning of the bay's own loose metal on s_0327, which he did before any
+    microphone was allowed to be placed; and Sel Ardin's answering chorus on s_0328, written in a
+    session break and learned by the crew in one pass. None of them adds a player.
+
+generation:
+  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0320
+    title: Ten Ports Out
+    track_number: 1
+    mood: [driving, restless, fast]
+    fact: >-
+      Dov Reyland wrote one verse at each of the first four ports of a single run and finished the
+      rest at the fifth.
+    arrangement_note: four verses before the first chorus, one for each port, and the band adds nothing at all until the chorus finally arrives more than two minutes in
+    intro: 6
+    outro: cold
+    target_duration: "4:40"
+    prompt: >-
+      Boogie-driven rock, 146 BPM, driving and restless, fast. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato. A crew chorus of four and five voices in unison rather than harmony,
+      mixed registers with one woman's voice clearly audible above the men, answering the lead
+      through the verses and singing the chorus as loud as he does. Two electric guitars, electric
+      bass, drum kit with tuned oxygen-tank drums left ringing rather than damped, stripped-wire
+      chimes. Tracked whole-band in one live covered bay with the doors open, loose rather than
+      gridded, light compression. Four verses before the first chorus with nothing added to the
+      arrangement across them. Six seconds of chimes and guitar before the first sung word. Cold
+      stop.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 6 seconds, stripped-wire chimes and guitar, no vocal]
+
+      [Verse 1]
+      First port and everybody is still being polite about the bunks
+      and the food is a novelty and the run is a good idea
+      and somebody has brought a thing to do in the evenings
+      and everybody has agreed that they will all be doing it.
+
+      [Verse 2]
+      Second port and the thing to do in the evenings is in a locker
+      and two people have stopped speaking about something from the Tuesday
+      and the food is the food and the bunks are the bunks
+      and there are eight ports left and nobody has said that out loud.
+
+      [Verse 3]
+      Third port and I got off the hauler and walked for two hours
+      in a settlement I have been to nine times and never looked at,
+      and bought nothing, and spoke to nobody, and came back on
+      and felt better than I had felt for about a week.
+
+      [Verse 4]
+      Fourth port and the two who stopped speaking are speaking again
+      and neither of them has any idea what the argument was
+      and one of them has told me about it twice with different reasons
+      and I did not correct him either time and I am not going to.
+
+      [Chorus]
+      Ten ports out and ten ports back and nine days between them
+      and the whole of the crew is a different set of people by the end.
+      Nobody warns you about that. They warn you about the hours.
+      The hours are fine. It is the ninth day that gets you.
+
+      [Verse 5]
+      Fifth port and I wrote the rest of it in a transfer hall
+      waiting for a manifest that did not come until the morning,
+      and it came out in about forty minutes, all of it,
+      which has happened to me four times in twenty-six years.
+
+      [Chorus]
+      Ten ports out and ten ports back and nine days between them
+      and the whole of the crew is a different set of people by the end.
+      Nobody warns you about that. They warn you about the hours.
+      The hours are fine. It is the ninth day that gets you.
+
+      [Final Chorus - all five voices]
+      Ten ports out and ten ports back and here we still are,
+      and I would not do anything else and I have tried twice.
+      Ask me on the ninth day and you will get a different answer
+      and the answer on the ninth day is not the true one.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0321
+    title: The Year the Room Closed
+    track_number: 2
+    mood: [angry, heavy, midtempo]
+    fact: >-
+      The band wrote it after a late-club room cancelled their booking without notice when its label
+      folded in 2612.
+    arrangement_note: the crew do not answer the lead anywhere in this song until the last chorus, so the verses are one voice on his own against the band, which happens nowhere else on the record
+    intro: 12
+    outro: cold
+    target_duration: "4:45"
+    prompt: >-
+      Boogie-driven rock, 118 BPM, angry and heavy, midtempo. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato, and completely alone through every verse. A crew chorus of four and
+      five voices in unison rather than harmony, mixed registers with one woman's voice clearly
+      audible above the men, absent from the whole song until the final chorus. Two electric guitars,
+      electric bass, drum kit with tuned oxygen-tank drums left ringing rather than damped,
+      stripped-wire chimes. Tracked whole-band in one live covered bay with the doors open, loose
+      rather than gridded, light compression. Twelve seconds of bass and tank drums before the first
+      sung word. Cold stop.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 12 seconds, bass and tank drums, no vocal]
+
+      [Verse 1]
+      We found out from a man at a gate who was not sure he should tell us
+      and told us anyway, which is the only decent part of it,
+      and we were four days out with a berth booked and a rate agreed
+      and a room at the end of it that had already stopped existing.
+
+      [Chorus]
+      The year that room closed. It closed in an afternoon.
+      Nobody who worked in it knew until the following week.
+      A thing that took nineteen years to become a place
+      stopped being one in the time it takes to sign something.
+
+      [Verse 2]
+      It is not our loss and I want to be clear about that.
+      We lost a night and a fee and a long drive for nothing.
+      The woman on the door had been on that door since 2593
+      and the man who did the sound had never done anything else.
+
+      [Chorus]
+      The year that room closed. It closed in an afternoon.
+      Nobody who worked in it knew until the following week.
+      A thing that took nineteen years to become a place
+      stopped being one in the time it takes to sign something.
+
+      [Bridge]
+      There is a settlement in the core with a good room in it
+      and now there is a settlement in the core with a shut room in it,
+      and the difference between those two sentences is everybody's evening.
+
+      [Verse 3]
+      We played the yard outside it in the end, for nothing, in the cold,
+      about forty people, no rate, no fee, no arrangement,
+      and the woman from the door stood at the front the whole time
+      and did not sing and did not leave and did not say anything after.
+
+      [Final Chorus - the crew entering for the first time]
+      The year that room closed. It closed in an afternoon,
+      and the whole of the settlement went and stood in the yard,
+      and it is not the same, and it was not nothing either,
+      and I have not been back down that lane since.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0322
+    title: Whose Catalogue Is It
+    track_number: 3
+    mood: [bitter, hard, brisk]
+    fact: >-
+      Ryke Alden wrote the riff the night the band heard a label's back catalogue had become
+      disputed, and the words were added a month later.
+    arrangement_note: the riff came a month before the words and the song is built to show it, opening on eight bars of the riff on its own and returning to it unaccompanied between every section
+    intro: 4
+    outro: cold
+    target_duration: "4:20"
+    prompt: >-
+      Boogie-driven rock, 140 BPM, bitter and hard, brisk. Male lead vocal, high hard tenor, carrying
+      and a shade nasal, pushing at the top of every chorus and staying there, plain and undecorated,
+      no vibrato. A crew chorus of four and five voices in unison rather than harmony, mixed
+      registers with one woman's voice clearly audible above the men. Two electric guitars, electric
+      bass, drum kit with tuned oxygen-tank drums left ringing rather than damped, stripped-wire
+      chimes. Tracked whole-band in one live covered bay with the doors open, loose rather than
+      gridded, light compression. One riff returning unaccompanied between every section. A
+      fourteen-second lead guitar break. Four seconds of the riff alone before the first sung word.
+      Cold stop.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 4 seconds, the riff alone, no vocal]
+
+      [Verse 1]
+      A house goes under and the records do not go anywhere.
+      They sit in a room in a building nobody is paying for
+      while four sets of people who have never made anything
+      work out which of them is allowed to sell them,
+      and the room has a rent on it that nobody is paying either,
+      and one day somebody will open the door and start deciding.
+
+      [Riff - eight bars, unaccompanied]
+
+      [Chorus]
+      Whose is it now. Go on. Say it out loud.
+      Not the singer. Not the crew who played it. Not the settlement.
+      Somebody in an office with a claim and a date,
+      and a woman who wrote all eleven of them is not on the list.
+
+      [Verse 2]
+      Ryke came in with this on the night we heard about it
+      and had no words for it and did not want any yet,
+      and played it at us for about an hour without stopping
+      and then put it down and did not touch it for a month.
+
+      [Instrumental - lead guitar break, 14 seconds]
+
+      [Chorus]
+      Whose is it now. Go on. Say it out loud.
+      Not the singer. Not the crew who played it. Not the settlement.
+      Somebody in an office with a claim and a date,
+      and a woman who wrote all eleven of them is not on the list.
+
+      [Verse 3]
+      This is why every record we make prints all of us on one line
+      and why the co-operative holds the thing rather than a person,
+      and it is not idealism, it is having watched it happen
+      to somebody good on a lane about four hours from here,
+      who is on a scrubber line now and does not talk about it.
+
+      [Final Chorus - all five voices]
+      Whose is it now. Go on. Say it out loud.
+      Somebody is going to ask that about ours one day
+      and the answer is going to be a page with five names on it
+      and a membership of ninety who all voted for it.
+
+      [Outro - cold stop on the riff]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0323
+    title: Four Voices, One Line
+    track_number: 4
+    mood: [warm, singalong, midtempo]
+    fact: >-
+      Una Brack sings the top line alone here for the first time, having refused to do it on the
+      band's previous record.
+    arrangement_note: the woman's voice, which is normally the top of the crew chorus, takes the pre-chorus entirely alone with the band out, and the lead does not sing at all until the chorus arrives underneath her
+    intro: 9
+    outro: sustain
+    target_duration: "4:35"
+    prompt: >-
+      Boogie-driven rock, 124 BPM, warm and midtempo, built to be sung back. Male lead vocal, high
+      hard tenor, carrying and a shade nasal, pushing at the top of every chorus and staying there,
+      plain and undecorated, no vibrato. A crew chorus of five voices in unison rather than harmony,
+      mixed registers, with the woman's voice clearly above the men — and taking each pre-chorus
+      entirely alone with the band out and no lead vocal anywhere near her. Two electric guitars,
+      electric bass, drum kit with tuned oxygen-tank drums left ringing rather than damped,
+      stripped-wire chimes. Tracked whole-band in one live covered bay with the doors open, loose
+      rather than gridded, light compression. Nine seconds of chimes and bass before the first sung
+      word. Ends on a held chord with all five voices on it.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 9 seconds, stripped-wire chimes and bass, no vocal]
+
+      [Verse 1]
+      She has been the top of everything this band has sung since 2604
+      in a bay, in a hold, on a deck, in a transfer hall,
+      and you can pick her out of any chorus we have ever recorded
+      and she has never once been the only person singing,
+      which was a decision, and it was hers, and we let it stand.
+
+      [Pre-Chorus - one voice alone, band out]
+      I am not the singer. I am one of the singers.
+
+      [Chorus]
+      Four of us on one line, and one of them over the top of it,
+      and that is the sound of this band and it always has been.
+      Nobody in it is a soloist and nobody wants to be
+      and we have turned down two offers that were only for one of us.
+
+      [Verse 2]
+      Last record there was a place for her to take one on her own
+      and she looked at it and said no, and gave a reason,
+      and the reason was that she had not been in the band long enough,
+      which was eight years, and none of us knew what to say.
+
+      [Pre-Chorus - one voice alone, band out]
+      Eight years is long enough. Somebody should have said.
+
+      [Chorus]
+      Four of us on one line, and one of them over the top of it,
+      and that is the sound of this band and it always has been.
+      Nobody in it is a soloist and nobody wants to be
+      and we have turned down two offers that were only for one of us.
+
+      [Verse 3]
+      So this year she came in and asked for one, at a meeting,
+      formally, as an item, with a vote on it, which is very her,
+      and it went through with nobody against and one abstention
+      and the abstention was hers, on the grounds that it was about her.
+
+      [Final Chorus - all five voices]
+      Four of us on one line, and one of them over the top of it,
+      and for eleven seconds in the middle of this record
+      the whole crew is out of the room and the line is hers,
+      and the rest of us are standing in the bay listening.
+
+      [Outro - held chord, five voices on it]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0324
+    title: Load Out in the Rain
+    track_number: 5
+    mood: [weary, driving, brisk]
+    fact: >-
+      The band kept the take in which the weather changed the sound of the covered bay halfway
+      through the song.
+    arrangement_note: the room changes halfway through this take because the weather did, so the second half is duller and closer than the first and no attempt was made to match them
+    intro: 15
+    outro: fade
+    target_duration: "4:25"
+    prompt: >-
+      Boogie-driven rock, 134 BPM, weary and driving, brisk. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato. A crew chorus of four and five voices in unison rather than harmony,
+      mixed registers with one woman's voice clearly audible above the men. Two electric guitars,
+      electric bass, drum kit with tuned oxygen-tank drums left ringing rather than damped,
+      stripped-wire chimes. Tracked whole-band in one live covered bay with the doors open, and the
+      room audibly changing halfway through — brighter and more open in the first half, duller and
+      closer in the second, with no attempt to match them. Loose rather than gridded, light
+      compression. A sixteen-second lead guitar break at the point where the room changes. Fifteen
+      seconds of rain on the bay roof and one guitar before the first sung word. Fade.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 15 seconds, rain on the bay roof and one guitar, no vocal]
+
+      [Verse 1]
+      Everything comes off in the order it went on and no other order,
+      and the order it went on is on the manifest in somebody's coat,
+      and the coat is in the cab and the cab is at the far end
+      and it is raining, and there are nine hours of this.
+
+      [Chorus]
+      Load it out in the rain and do not get clever about it.
+      Do it the long way. Do it the way that is written down.
+      Everybody who has ever been hurt on a wet floor
+      was going faster than the page said they should be.
+
+      [Verse 2]
+      There is a version of this job where you are dry and warm
+      and it is a version nobody in this crew has ever met,
+      and the ones who get it are not better at anything,
+      they were somewhere else on the day the roster went round,
+      and it is a lane and a rate and a coat and nothing else.
+
+      [Instrumental - lead guitar break, 16 seconds, the room changing under it]
+
+      [Chorus]
+      Load it out in the rain and do not get clever about it.
+      Do it the long way. Do it the way that is written down.
+      Everybody who has ever been hurt on a wet floor
+      was going faster than the page said they should be.
+
+      [Verse 3]
+      Halfway through this take the weather came round the bay
+      and the whole room got smaller and closer and duller,
+      and you can hear it happen, and we kept it, and Hess said
+      that a record made in a bay ought to sound like a bay.
+
+      [Bridge]
+      Nine hours and then a plate of something and then out again.
+      That is not a complaint. Somebody asked, so I am saying it.
+
+      [Chorus - all five voices]
+      Load it out in the rain and do not get clever about it.
+      Do it the long way. Do it the way that is written down.
+      Everybody who has ever been hurt on a wet floor
+      was going faster than the page said they should be.
+
+      [Outro - fade, the rain last]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0325
+    title: Don't Read the Contract Aloud
+    track_number: 6
+    mood: [wry, rowdy, fast]
+    fact: >-
+      Bel Corrow reads four lines of a real haulage contract in the middle of the song, chosen
+      because they contradict one another.
+    arrangement_note: the four contract lines are sung flat on one note at speaking pace by the bass chair with the band vamping under them, and the contradiction lands because nothing in the arrangement points at it
+    intro: 5
+    outro: fade
+    target_duration: "4:15"
+    prompt: >-
+      Boogie-driven rock, 144 BPM, wry and rowdy, fast. Male lead vocal, high hard tenor, carrying
+      and a shade nasal, pushing at the top of every chorus and staying there, plain and undecorated,
+      no vibrato. A crew chorus of four and five voices in unison rather than harmony, mixed
+      registers with one woman's voice clearly audible above the men. One passage of four lines sung
+      flat on a single note at conversational speed by a second male voice, with the band vamping
+      underneath — sung, never spoken and never whispered. Two electric guitars, electric bass, drum
+      kit with tuned oxygen-tank drums left ringing rather than damped, stripped-wire chimes. Tracked
+      whole-band in one live covered bay with the doors open, loose rather than gridded, light
+      compression. Five seconds of full band before the first sung word. Fade.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, spoken-word delivery, dance and electronic production
+    lyrics: |
+      [Intro - 5 seconds, full band, no vocal]
+
+      [Verse 1]
+      Bel has been collecting them for about eleven years
+      the way other people collect something reasonable,
+      and he has a folder, and the folder has tabs in it,
+      and every one of the tabs is a sentence somebody wrote on purpose
+      about cargo, or a hold, or an hour that went missing,
+      and got paid for writing, and never had to say out loud.
+
+      [Chorus]
+      Don't read the contract aloud. It sounds worse out loud.
+      On paper it is a paragraph and it goes past you.
+      Say it in a bay with four people listening
+      and somebody will laugh before you get to the end of it.
+
+      [Verse 2 - flat, one note, at speaking pace, band vamping]
+      The carrier shall not be liable for any delay however caused.
+      The carrier shall notify the client of any delay within four hours.
+      No notification shall be construed as an admission of delay.
+      Time is of the essence in all matters under this agreement.
+
+      [Chorus]
+      Don't read the contract aloud. It sounds worse out loud.
+      On paper it is a paragraph and it goes past you.
+      Say it in a bay with four people listening
+      and somebody will laugh before you get to the end of it.
+
+      [Verse 3]
+      Those four are from one page and they are all on one page
+      and every one of them was read and approved by somebody
+      and none of them was written to be true, they were written
+      to be there in case, which is a different job entirely,
+      and the person who reads it at the table is the only one
+      who ever finds out which of the four is going to matter.
+
+      [Chorus]
+      Don't read the contract aloud. It sounds worse out loud.
+      On paper it is a paragraph and it goes past you.
+      Say it in a bay with four people listening
+      and somebody will laugh before you get to the end of it.
+
+      [Tag - all five voices, twice]
+      Read it at the table. Read it out loud at the table.
+
+      [Outro - fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0326
+    title: Slow Berth
+    track_number: 7
+    mood: [reflective, sustained, slow]
+    fact: >-
+      Calo Meret played the whole piano part with the lid closed, after the band asked for something
+      quieter than the bay.
+    arrangement_note: a guest piano played with the lid shut for the whole part, so it is duller and further away than anything else in the room, and the crew sing a refrain rather than a chorus and never rise above the lead
+    intro: 18
+    outro: sustain
+    target_duration: "5:15"
+    prompt: >-
+      Boogie-driven rock at its slowest, 112 BPM, reflective and sustained, slow. Male lead vocal,
+      high hard tenor, carrying and a shade nasal, plain and undecorated, no vibrato, and never
+      pushed at the top here. A crew chorus of four and five voices in unison rather than harmony,
+      mixed registers with one woman's voice audible above the men, singing a quiet refrain rather
+      than a chorus and never rising above the lead. A guest upright piano played with the lid closed
+      throughout, duller and further away than anything else in the room; two electric guitars,
+      electric bass, drum kit with tuned oxygen-tank drums left ringing rather than damped,
+      stripped-wire chimes. Tracked whole-band in one live covered bay with the doors open, loose
+      rather than gridded, light compression. Eighteen seconds of the closed piano before the first
+      sung word. Ends on a held chord left to decay.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production, bright open piano
+    lyrics: |
+      [Intro - 18 seconds, piano with the lid shut, no vocal]
+
+      [Verse 1]
+      There is a kind of berth you get about twice in a career
+      where the turnaround has gone wrong somewhere further up
+      and there is nothing to do for two days and nobody to tell,
+      and everybody on the crew handles it completely differently.
+
+      [Verse 2]
+      Ryke walks. Bel reads. Hess sleeps like it is a job.
+      Una goes and finds whoever runs the port and talks to them,
+      which is the most useful thing any of us does with the time
+      and none of the rest of us will ever be able to do it.
+
+      [Refrain]
+      Berthed and going nowhere. Two days. Nothing coming in.
+      The lane is somewhere out there and it is not our problem.
+      I have never once in twenty-six years known what to do
+      with two days that nobody has any use for.
+
+      [Verse 3]
+      A man came down to play on this and brought a piano with him
+      and shut the lid on it and played the whole thing that way,
+      because we had said we wanted something quieter than the bay
+      and he did not argue and did not suggest another room.
+
+      [Refrain]
+      Berthed and going nowhere. Two days. Nothing coming in.
+      The lane is somewhere out there and it is not our problem.
+      I have never once in twenty-six years known what to do
+      with two days that nobody has any use for.
+
+      [Bridge]
+      It is not rest. Rest is when you have finished something.
+      This is the other thing and there is no word for it,
+      and the last ferry has gone and the next one is Thursday.
+
+      [Refrain - all five voices, quietly]
+      Berthed and going nowhere. Two days. Nothing coming in.
+      By the second afternoon everybody has stopped pretending
+      and we sit in the bay with the doors open and the rain going
+      and it is one of the best things this crew has ever done.
+
+      [Outro - held chord, left to decay]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0327
+    title: Keep the Kit Loud
+    track_number: 8
+    mood: [rowdy, loud, fast]
+    fact: >-
+      Brin Noll retuned the bay's loose metal before the engineers were allowed to place a
+      microphone, which is the only condition he works under.
+    arrangement_note: the bay's own loose metal is tuned to the song and rings with the tank drums, so the drum sound is the room as much as the kit, and the break is played over both with the guitars out
+    intro: 8
+    outro: fade
+    target_duration: "4:30"
+    prompt: >-
+      Boogie-driven rock, 148 BPM, rowdy and loud, fast. Male lead vocal, high hard tenor, carrying
+      and a shade nasal, pushing at the top of every chorus and staying there, plain and undecorated,
+      no vibrato. A crew chorus of four and five voices in unison rather than harmony, mixed
+      registers with one woman's voice clearly audible above the men, shouting the last chorus. Two
+      electric guitars, electric bass, drum kit with tuned oxygen-tank drums left ringing rather than
+      damped, stripped-wire chimes, and the bay's own loose metal tuned to the song and ringing with
+      the kit so the drum sound is as much the room as the drums. Tracked whole-band in one live
+      covered bay with the doors open, loose rather than gridded, light compression. A sixteen-second
+      lead guitar break over the tank drums and the ringing metal with the rhythm guitar out. Eight
+      seconds of tuned tank drums and loose metal before the first sung word. Fade.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production, damped or gated drums
+    lyrics: |
+      [Intro - 8 seconds, tuned tank drums and loose metal, no vocal]
+
+      [Verse 1]
+      Two people came down from the co-operative with a plan
+      for making this record sound like the ones from the core,
+      which involved putting cloth on things and shutting the doors
+      and taking the ring off the tanks, which is the whole band.
+      Hess listened to all of it without saying one word
+      and then asked them which record of ours they liked.
+
+      [Chorus]
+      Keep the kit loud. Keep the doors open. Keep the ring.
+      If it sounds like a bay that is because it is a bay.
+      Nobody out here has ever wanted us to sound like anything
+      except four people and a crew in a metal room.
+
+      [Verse 2]
+      A man arrived on the fourth day and would not let anybody
+      place a single microphone until he had been round the bay,
+      touching the loose panels and the rails and the door frames
+      and tuning the whole building to the song we were doing.
+
+      [Chorus]
+      Keep the kit loud. Keep the doors open. Keep the ring.
+      If it sounds like a bay that is because it is a bay.
+      Nobody out here has ever wanted us to sound like anything
+      except four people and a crew in a metal room.
+
+      [Instrumental - lead guitar break over the tanks and the ringing metal, 16 seconds]
+
+      [Verse 3]
+      He was a hauler hand for eleven years before any of this
+      and he says the loose metal in a hold is either with you or against you
+      and there is no third option and it costs nothing to check,
+      and the two from the co-operative watched him do it and said nothing.
+
+      [Shout - all five voices]
+      Keep the ring. Keep the ring. Keep the ring on.
+
+      [Final Chorus - all five voices, shouted]
+      Keep the kit loud. Keep the doors open. Keep the ring.
+      Everything anybody has ever tried to take off this band
+      has been the thing that made anybody like us in the first place,
+      and it has taken twenty-six years to learn to say that quickly.
+
+      [Outro - fade on the ringing metal]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0328
+    title: Home Port Eventually
+    track_number: 9
+    mood: [hopeful, warm, midtempo]
+    fact: >-
+      Sel Ardin wrote the answering chorus during a session break and the band learned it in one pass.
+    arrangement_note: there are two choruses, the band's and a second one written in a session break that answers it, and the crew sing the answering one from behind the lead without ever joining his
+    intro: 14
+    outro: fade
+    target_duration: "5:00"
+    prompt: >-
+      Boogie-driven rock, 126 BPM, hopeful and warm, midtempo. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato. A crew chorus of four and five voices in unison rather than harmony,
+      mixed registers with one woman's voice clearly audible above the men, singing a second
+      answering chorus from behind the lead rather than joining his. Two electric guitars, electric
+      bass, drum kit with tuned oxygen-tank drums left ringing rather than damped, stripped-wire
+      chimes. Tracked whole-band in one live covered bay with the doors open, loose rather than
+      gridded, light compression. Fourteen seconds of chimes, bass and guitar before the first sung
+      word. Fade with both choruses going at once.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 14 seconds, chimes, bass and guitar, no vocal]
+
+      [Verse 1]
+      Nobody on a run says home. There is a word for it here
+      and the word is the port and everybody knows which port,
+      and a hauler is a bunk and a berth is nine hours of sleep,
+      and you can be nine days from it and say the name of it
+      and four people will look up who were not listening before.
+
+      [Chorus]
+      Home port eventually. Not soon and not on a date.
+      There is a run and then a turnaround and then another run
+      and somewhere out past all of that there is a door,
+      and I do not think about it before the eighth day.
+
+      [Verse 2]
+      A man in the corner of the bay wrote the other half of this
+      in the twenty minutes it took the rest of us to eat,
+      and came back in and sang it once and we had it,
+      and the crew have sung it behind me on every night since.
+
+      [Answering Chorus - the crew, from behind]
+      He will get there. He always gets there.
+      Nine days and a turnaround and a walk across a yard.
+      Do not wait up for him. He would not want it.
+      Leave the light and go to bed and he will be in by two.
+
+      [Verse 3]
+      That is not what I wrote. That is somebody else's answer
+      and it is kinder than anything I would have put there
+      and it changes the whole song and I let him keep it
+      and his name is on the one line with the rest of ours.
+
+      [Bridge]
+      Twenty-six years and I have never once got the last word
+      on anything this band has recorded, and that is the point of it.
+
+      [Final Chorus - both choruses at once]
+      Home port eventually. Not soon and not on a date.
+      He will get there. He always gets there.
+      There is a run and then a turnaround and then another run
+      and a light on in a hall and somebody asleep upstairs.
+
+      [Outro - fade with both choruses going]
+    take: null                    # M-31 fills this in at the Suno sitting

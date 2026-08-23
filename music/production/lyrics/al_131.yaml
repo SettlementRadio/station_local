@@ -1,0 +1,422 @@
+# al_131 — Bay Rate · Second Hitch (b_016) · Harbor Standard · 2619 · 5 songs
+#
+# Written by M-22, the first of lane-rock's thirteen albums. **The file shape is fixed by
+# al_001.yaml — read that header once.** Production vocabulary (COMMISSION.md §8): never enters the
+# wiki, never said on air. Lyrics written by hand; Suno Custom mode only. Written under §12 rules 9
+# and 10.
+#
+# Five songs cut in one night in a Cold Harbor transfer shed, in the year the four of them started
+# playing. The wiki's story is a band paying for its own record and selling sixty copies at a gate,
+# so nothing here is grand: the songs are about what a shift pays, who gets called when somebody
+# does not turn up, and the walk back. **The pay dispute is furniture and the people are the
+# subject** (§3) — the rates are what the argument is made of, not what the song is about.
+#
+# Lane-rock takes an instrumental break in roughly one song in three (§7) and b_016's style card
+# gives the break to the lead guitar. Two of these five take one.
+#
+# `generation:` and every `take:` are empty until M-31's Suno sitting fills them in.
+
+album:
+  id: al_131
+  title: Bay Rate
+  band: b_016
+  band_name: Second Hitch
+  label: label_2
+  release_year: 2619
+  genre: lane-rock
+  cornerstone: false
+  song_count: 5
+  style_card: b_016
+  room: >-
+    One transfer-shed bay on the Cold Harbor dock, borrowed for a night because its door was out of
+    use and nobody needed the room. The style card's "small hard-walled shed bay" is literal here
+    and is the only room the band has ever recorded in. Nothing is bent: four players, two thin
+    electric guitars, bass and a compact kit, tracked live with a doubled chorus vocal and nothing
+    else overdubbed. The repair crew working the door is audible under track 2 and is in the wiki's
+    own story rather than in the arrangement. Voice, backing, instruments and exclude are untouched.
+
+generation:
+  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1076
+    title: Bay Rate
+    track_number: 1
+    mood: [blunt, driving, fast]
+    fact: >-
+      Wen Arbo built the verse out of the four different rates the crew was paid for four different
+      bays, which they had argued about all that week.
+    arrangement_note: the two guitars trade the same four-note figure through the whole song, one rhythm one lead, and the four rates are counted off flat in the third verse with the band dropping to bass and drums under them
+    intro: 12
+    outro: cold
+    target_duration: "3:50"
+    prompt: >-
+      Dry pub rock, 148 BPM, blunt and driving, fast. Male lead vocal, plain mid baritone,
+      conversational and unforced, sung hard on the beat, getting louder rather than higher at the
+      end of a chorus, no vibrato. Two band voices in unison under the lead on the chorus only,
+      never in harmony, all four shouting the hook on the last one. Two bright thin-toned electric
+      guitars, one rhythm and one lead trading the same four-note figure, electric bass, compact
+      drum kit. Tracked live in a small hard-walled shed bay, guitars close-mic'd and mid-forward,
+      drums tight and untreated, nothing overdubbed but a doubled chorus vocal. Band drops to bass
+      and drums under the counted list in the third verse. Twelve seconds of the two guitars trading
+      the figure with the drums entering at four bars, no vocal. Cold stop.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production
+    lyrics: |
+      [Intro - 12 seconds, two guitars trading the figure, drums in at four bars, no vocal]
+
+      [Verse 1]
+      Four bays down the transfer hall and four different rates,
+      same crew, same backs, same cargo off the same hauler.
+      Bay one pays like it matters, bay four pays like a favour,
+      and the hands are the same hands whichever door you stand at.
+      Nobody who wrote the numbers has been down here to look.
+
+      [Chorus]
+      Bay rate, bay rate,
+      whatever they are calling it this week we still lift it.
+      Bay rate, bay rate,
+      the number moves and the weight never does.
+      Come down and carry one and then tell me what it is worth.
+
+      [Verse 2]
+      Ansa worked all four of them inside one shift on the Tuesday
+      and got paid four ways for one spine and one pair of boots.
+      She wrote the four of them on the back of her hand in the yard light
+      and held it flat against the office glass until somebody looked up.
+      They looked up. That is all they did. She went back down and finished.
+
+      [Chorus]
+      Bay rate, bay rate,
+      whatever they are calling it this week we still lift it.
+      Bay rate, bay rate,
+      the number moves and the weight never does.
+      Come down and carry one and then tell me what it is worth.
+
+      [Verse 3]
+      Ninety on the near door, eighty-two on the second,
+      seventy-five on the third and I have stopped saying the fourth.
+      Four rates, one shed, one manifest, one crew,
+      and the argument has run all week and will run again on Monday.
+
+      [Bridge]
+      I am not asking for the good rate.
+      I am asking for one rate.
+      Put a number on the wall and stand behind it
+      and I will carry anything you like.
+
+      [Final chorus - all four voices, shouted]
+      Bay rate, bay rate,
+      whatever they are calling it this week we still lift it.
+      Bay rate, bay rate,
+      the number moves and the weight never does.
+      Come down and carry one. Come down and carry one.
+
+      [Outro - cold stop on the riff]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1077
+    title: Door Out of Use
+    track_number: 2
+    mood: [wry, rowdy, brisk]
+    fact: >-
+      The band only had the bay that night because its door was out of use, and the take keeps the
+      repair crew's radio under the second verse.
+    arrangement_note: the lead guitar takes a twelve-second break in the middle of the song, played over the repair crew's radio, which is left in the take and not mixed down
+    intro: 6
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      Dry pub rock, 152 BPM, wry and rowdy, brisk. Male lead vocal, plain mid baritone,
+      conversational and unforced, sung hard on the beat, getting louder rather than higher at the
+      end of a chorus, no vibrato. Two band voices in unison under the lead on the chorus only,
+      never in harmony, all four shouting the hook on the last one. Two bright thin-toned electric
+      guitars, one rhythm and one lead, electric bass, compact drum kit. Tracked live in a small
+      hard-walled shed bay, guitars close-mic'd and mid-forward, drums tight and untreated, nothing
+      overdubbed but a doubled chorus vocal. A twelve-second lead guitar break in the middle of the
+      song with a faint radio audible behind it, left in rather than cleaned up. Six seconds of
+      rhythm guitar and a counted stick before the first sung word. Fade on the repeated hook.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production
+    lyrics: |
+      [Intro - 6 seconds, rhythm guitar and a counted stick, no vocal]
+
+      [Verse 1]
+      We got the room because the room was broken.
+      Sign on the shutter, nobody booked, nobody coming.
+      Best night of the year to be a band with no money
+      is the night the door will not close and the shed is worth nothing.
+      Teff had the kit in the bay before the shift had finished walking out.
+
+      [Chorus]
+      Play it while it is out of order,
+      play it while nobody wants the space.
+      They will fix it in the morning and charge us for the hour,
+      so we are going to fill this one right up.
+
+      [Verse 2]
+      Two of the repair crew stayed and put their radio on the bulkhead,
+      halfway through the take you can hear what they were listening to.
+      Mel said leave it, it is the only guest we can afford,
+      and he was right, and it is on the record, and it stays.
+      Somebody's carrier wave, somebody's afternoon, straight through our second verse,
+      and it cost us nothing and it is the best thing on the track.
+
+      [Chorus]
+      Play it while it is out of order,
+      play it while nobody wants the space.
+      They will fix it in the morning and charge us for the hour,
+      so we are going to fill this one right up.
+
+      [Instrumental - lead guitar break, 12 seconds, the repair crew's radio faint underneath]
+
+      [Verse 3]
+      There is a way of getting things that costs nothing but timing.
+      Wait for the fault. Wait for the shift that got cancelled.
+      Wait for the hauler that is late and the hold that is empty,
+      and be standing there ready with a bag full of leads.
+      Everything we own came to us broken and cheap
+      and we have not paid full price for one hour of it yet.
+
+      [Bridge]
+      They will weld it and hang it and test it twice by seven,
+      and by seven we will be gone and the tape will be in a coat.
+      Fix your door. We were never supposed to be in here.
+
+      [Chorus - all four, shouted]
+      Play it while it is out of order,
+      play it while nobody wants the space.
+      They will fix it in the morning and charge us for the hour,
+      so we are going to fill this one right up.
+      We are going to fill this one right up.
+
+      [Outro - fade on the riff and the radio]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1078
+    title: Second Hitch
+    track_number: 3
+    mood: [defiant, singalong, midtempo]
+    fact: >-
+      Dessa Kelm wrote it about being the crew called in when the first one does not turn up, and
+      the band took their name from it rather than the other way round.
+    arrangement_note: the chorus is a whole-room singalong from the first time it arrives, with the two band voices in unison under the lead throughout and no harmony anywhere
+    intro: 9
+    outro: sustain
+    target_duration: "4:05"
+    prompt: >-
+      Dry pub rock, 130 BPM, defiant and midtempo, built to be sung back. Male lead vocal, plain mid
+      baritone, conversational and unforced, sung hard on the beat, getting louder rather than
+      higher at the end of a chorus, no vibrato. Two band voices in unison under the lead on every
+      chorus, never in harmony, all four shouting the hook on the last one. Two bright thin-toned
+      electric guitars, one rhythm and one lead, electric bass, compact drum kit. Tracked live in a
+      small hard-walled shed bay, guitars close-mic'd and mid-forward, drums tight and untreated,
+      nothing overdubbed but a doubled chorus vocal. Nine seconds of the full band on the chorus
+      figure before the first sung word. Ends on a held chord left ringing in the room.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production
+    lyrics: |
+      [Intro - 9 seconds, full band on the chorus figure, no vocal]
+
+      [Verse 1]
+      The call comes at five past and the call is never first.
+      Somebody did not make it down and somebody has to.
+      You are the name under the name on the board at the gate,
+      you are the crew they get when the crew they wanted is gone.
+      Boots on, coat off the hook, out into the cold of the yard,
+      and the board does not say thank you and neither does the gate.
+
+      [Pre-Chorus]
+      And you go. You always go.
+
+      [Chorus]
+      Second hitch, second hitch,
+      the ones who turn up when the first ones do not.
+      We are not the first thing anybody thought of
+      and the cargo does not care and neither do we.
+
+      [Verse 2]
+      Dessa said it plain in the yard and then said it again louder:
+      being called second is not the same as being called last.
+      Her father worked twenty years on the standby list at the transfer hall
+      and never once left a hold sitting because of it.
+      He is on no sleeve and no manifest and no plaque anywhere,
+      and every run he covered went out on time.
+
+      [Pre-Chorus]
+      That is the whole of it. That is the trade.
+
+      [Chorus]
+      Second hitch, second hitch,
+      the ones who turn up when the first ones do not.
+      We are not the first thing anybody thought of
+      and the cargo does not care and neither do we.
+
+      [Verse 3]
+      So we took the words off the song and put them on the van,
+      and the name came from the chorus and not the other way round.
+      Anybody can be somebody's first choice on a good day.
+      Turning up on the bad one is a harder thing to be,
+      and it is the only thing the four of us have ever been good at.
+
+      [Final Chorus - all four voices, the room joining]
+      Second hitch, second hitch,
+      the ones who turn up when the first ones do not.
+      We are not the first thing anybody thought of
+      and the hauler goes out loaded either way.
+      The hauler goes out loaded either way.
+
+      [Outro - held chord, left ringing in the shed]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1079
+    title: Walk Home After
+    track_number: 4
+    mood: [tender, plain, slow]
+    fact: >-
+      Wen Arbo wrote it about the walk back from the shed, and the band have never played a room
+      they could not walk home from since.
+    arrangement_note: the band's slowest tempo, at the bottom of the card's range, with the drums brushed off the rim rather than struck and the lead guitar answering the end of every vocal line instead of a backing voice
+    intro: 16
+    outro: fade
+    target_duration: "4:20"
+    prompt: >-
+      Dry pub rock at its slowest, 120 BPM, tender and plain, unhurried. Male lead vocal, plain mid
+      baritone, conversational and unforced, sung hard on the beat, getting louder rather than
+      higher at the end of a chorus, no vibrato. Two band voices in unison under the lead on the
+      chorus only, never in harmony. Two bright thin-toned electric guitars, one rhythm and one lead
+      answering the end of every vocal line, electric bass, compact drum kit played off the rim
+      rather than struck. Tracked live in a small hard-walled shed bay, guitars close-mic'd and
+      mid-forward, drums tight and untreated, nothing overdubbed but a doubled chorus vocal. Sixteen
+      seconds of one guitar and bass walking in before the first sung word. Fade.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production, ballad string pads
+    lyrics: |
+      [Intro - 16 seconds, one guitar and bass walking in, drums off the rim, no vocal]
+
+      [Verse 1]
+      Half past two and the shed goes quiet in one go,
+      the way a room does when four people stop at once.
+      Amps off, cases shut, somebody counts the leads,
+      and then there is the door and then there is the road.
+
+      [Verse 2]
+      It is eleven minutes to my step from the transfer hall gate.
+      I have walked it drunk and I have walked it carrying a kit
+      and I have walked it the night my sister took the last ferry out
+      and I did not want to get there any faster than I did.
+
+      [Chorus]
+      We walk back after.
+      That is the whole rule and we have never broken it.
+      If the room is further than the walk then the room is not for us,
+      and the settlement is small and I would rather it stayed that way.
+
+      [Verse 3]
+      Orl carries the bass and will not let anybody take it,
+      says the weight on the shoulder is how he knows the night was real.
+      Nobody talks much. There is nothing left to say
+      that was not already said at volume in the bay.
+
+      [Chorus]
+      We walk back after.
+      That is the whole rule and we have never broken it.
+      If the room is further than the walk then the room is not for us,
+      and the settlement is small and I would rather it stayed that way.
+
+      [Bridge]
+      They offered us a room in the core two years running.
+      Good money, good floor, a door that shuts.
+      And a walk home that is eight days of the lag long,
+      and I said no twice and I would say it again.
+
+      [Chorus]
+      We walk back after.
+      That is the whole rule and we have never broken it.
+      If the room is further than the walk then the room is not for us,
+      and the dark is cold and the step is only eleven minutes.
+
+      [Outro - fade on the walking bass]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1080
+    title: Nobody Signed Us
+    track_number: 5
+    mood: [proud, comic, fast]
+    fact: >-
+      Teff Onda counts the band in by shouting the number of copies they had money for, which was
+      sixty.
+    arrangement_note: the drummer's shouted count of sixty opens the track and comes back once near the end with all four voices on it, and the lead guitar takes a ten-second break out of the second chorus
+    intro: 4
+    outro: cold
+    target_duration: "3:40"
+    prompt: >-
+      Dry pub rock, 156 BPM, proud and comic, fast and loose. Male lead vocal, plain mid baritone,
+      conversational and unforced, sung hard on the beat, getting louder rather than higher at the
+      end of a chorus, no vibrato. Two band voices in unison under the lead on the chorus only,
+      never in harmony, all four shouting the hook on the last one. Two bright thin-toned electric
+      guitars, one rhythm and one lead, electric bass, compact drum kit. Tracked live in a small
+      hard-walled shed bay, guitars close-mic'd and mid-forward, drums tight and untreated, nothing
+      overdubbed but a doubled chorus vocal. The drummer shouts a count of sixty to start the track
+      and the whole band shouts it again near the end. A ten-second lead guitar break out of the
+      second chorus. Four seconds of a shouted count and open hi-hat before the first sung word.
+      Cold stop.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production
+    lyrics: |
+      [Intro - 4 seconds, the drummer shouts a count of sixty over an open hi-hat, no sung word]
+
+      [Verse 1]
+      Sixty copies. That was the money we had.
+      Not sixty thousand, not sixty a week, sixty in a box,
+      and the box came back from the press on a Thursday
+      and we carried it up from the siding like it was somebody's cargo.
+      Sixty is a number you can hold in both arms at once.
+      Sixty is four rows of a room and one row standing.
+
+      [Chorus]
+      Nobody signed anything, nobody rang,
+      no office in the core has our names written down.
+      We paid for the room and the room was broken,
+      and we did the whole thing on a night off.
+
+      [Verse 2]
+      Sold eleven at the gate the first Friday, four the next,
+      and one to a hauler pilot who bought it to be polite.
+      She played it on the run out and sent word back down the carrier wave
+      that track three was the good one, which we already knew.
+      By the turn of the season there were nine left in the box
+      and we stopped counting them and started counting the nights instead.
+
+      [Chorus]
+      Nobody signed anything, nobody rang,
+      no office in the core has our names written down.
+      We paid for the room and the room was broken,
+      and we did the whole thing on a night off.
+
+      [Instrumental - lead guitar break, 10 seconds, out of the second chorus]
+
+      [Verse 3]
+      A year later a flagship label bought the tape off us
+      and pressed it again without moving a single thing,
+      which is either the best joke on this record
+      or the only sensible decision anybody made about it.
+      They kept the broken door. They kept the count. They kept the radio.
+      There was nothing in it to improve and somebody upstairs knew it.
+
+      [Bridge]
+      You do not need permission to make a loud noise in a shed.
+      You need a night, four people and a room nobody wants,
+      and the settlement is full of rooms nobody wants.
+
+      [Shout - all four, the count of sixty again]
+
+      [Final Chorus - all four voices, shouted]
+      Nobody signed anything, nobody rang,
+      and we are still standing in the shed we started in.
+      We paid for the room and the room was broken,
+      and we would do the whole thing again on a night off.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting

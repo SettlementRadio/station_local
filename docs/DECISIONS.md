@@ -2555,3 +2555,81 @@ second sitting of one track. Relay-pop is 105 of 105 playable and M-30 is done. 
 `music/audio/RAW/87_wrong.mp3`, still unclaimed and still reported by `make music-tag` on every run,
 which is the gate holding a real question open rather than a defect: the operator has not yet said
 whether that second take of `s_0086` is kept or deleted.
+
+---
+
+### D-092 · The wiki's dates outrank the style card, and two facts that fight a §12 rule keep both — 2026-08-19
+
+Lane-rock's 110 lyrics (M-22) hit three collisions the relay-pop card never met, and all three are
+resolved the same way: **nothing in the wiki bends, and the exception is written down on the record
+it applies to rather than left for a listener to notice.**
+
+**A style card is fixed for the life of a band, and a band's line-up is not.** §7 says the card never
+changes; the wiki says Juno Kerrick did not amplify the resonance pipes until 2612, that Ade Prosk —
+who is b_017's entire backing vocal — arrives the same year, and that Una Brack, who is both the
+woman's voice in b_019's crew chorus and its stripped-wire chimes, arrives in 2604. Three records
+predate a line on their own band's card. **The card is the band at its current line-up and a record
+made before that line-up existed says so in its `room:` block and keeps the missing thing out with
+its own exclude line** — `al_033` has acoustic pipes and no backing voice at all, `al_132` changes
+bass chair and amplification halfway through and its eight prompts split five to three, and `al_037`
+has a four-man chorus and no chimes. The alternative was writing 2594 as though 2619 had already
+happened, which is the same defect as a band whose singer changes sex between albums.
+
+**Two wiki facts contradict a counted rule and the fact wins on content while the rule wins on
+arithmetic.** s_0272's fact is that the guitar solo was cut to keep the song under three minutes, and
+§12 rule 10 will not go below 288 sung words: it is the only track on `al_032` with no break, its
+`target_duration` is 2:55, and it is written at the floor, which makes it the densest lyric on the
+record — the tension is real and it is recorded here rather than resolved by quietly ignoring one
+side. s_0306's fact is that the band recorded it before anyone had written a second verse, and rule 9
+asks for three verse sections: **it has three and they are all the same verse**, sung three times
+with a different arrangement each time, which is what a band with one verse and a booked room
+actually does.
+
+**A guest never takes the instrumental break.** §7 says the break instrument has to be one the band's
+card already lists, and lane-rock hands guests a fiddle on `s_0316`, `s_0336` and `s_1101` and a
+resonance pipe on `s_0338` — none of which b_019 or b_061 owns. The guest plays a written part
+through the song and **the marked break stays the lead guitar's**, which is §7's own sentence applied
+to the case it does not spell out.
+
+**And the words run longer than relay-pop's.** 317 sung words on average against M-21's 308, because
+the measured 0.746 seconds per word is relay-pop's rate at 110–130 BPM and lane-rock runs 100–172,
+with a third of the songs carrying a break that §7 says is added to the words rather than traded
+against them. If M-39 measures lane-rock faster per word than relay-pop, that is the reason the
+floor was cleared by thirty words rather than by two.
+
+---
+
+### D-093 · Imaging gets a catalogue of its own; placement stays in the grid — 2026-08-22
+
+§9 defines an `imaging` table and §17a validation 6 makes it an error for a `grid.yaml` reference to
+name an imaging id that does not exist. **Nothing said where those rows come from.** Music has had
+the answer since M-06 — `music/catalogue.yaml` is the one file the database ingests, loaded by
+`make music-sync` — and imaging was never given the equivalent. The gap surfaced while filing the 56
+imaging assets carried over from the previous attempt, which have no path into the system at all.
+
+**The fix is the music pattern, unchanged.** `imaging/catalogue.yaml`, committed to the repository,
+loaded by `make imaging-sync`, with the audio on the external volume under `imaging/` and never in
+git. `make imaging-analyse` measures `duration_sec`, `bed_loop_sec`, `intro_ramp_sec` and `energy`;
+`make imaging-tag` writes licence period, generation date, model version and the AI marker into each
+asset, for the reason `COMMISSION.md` §9 already gives for music — audio and manifest get separated
+by a backup or a hand-off, and the file has to carry its own provenance.
+
+**What was actually confused is inventory against placement.** §17a said *"the imaging hour clock
+lives inside `grid.yaml` rather than in a file of its own — it is per programme, so it belongs with
+the programme,"* and that sentence is right about the hour clock and reads as though it settles the
+whole question. It does not. The hour clock says *when a piece plays*; something still has to say
+*what pieces exist*. Validation 6 checks one against the other, so they cannot be the same file.
+And most imaging is not per-programme in the first place — sweepers, chart markers, the fallback bed
+and the disclosure sting are station-wide, and a per-programme file has nowhere to put them. §17a
+now states the split rather than implying it.
+
+**Two alternatives were rejected.** Folding the rows into `grid.yaml` would bury ~100 imaging entries
+under ~30 programme entries in the file you open to understand the schedule, and still would not
+house the station-wide pieces. Deriving rows by scanning a directory is what the previous attempt
+did — its brief said *"the filename is load-bearing: it is the program id"* — and it is precisely
+what §9 moved away from by giving imaging a real `id`. Every one of that attempt's 56 surviving
+assets is now misnamed against this grid, which is the cost of that convention made visible.
+
+**Nothing is built here.** This records where the rows come from so that C4 can be written without
+rediscovering the question; the manifest, the three targets and the measurement pass are Phase F
+work at build step 12. **`ADMIN.md` gains nothing until the targets run** (§32).

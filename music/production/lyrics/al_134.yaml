@@ -1,0 +1,537 @@
+# al_134 — One Day in Port · Turn and Burn (b_061) · Common Wake Cooperative · 2619 · 7 songs
+#
+# Written by M-22. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The co-operative's other lane-rock band, and b_019's opposite on purpose: a female lead who cuts
+# every line end off short, two blunt male voices answering short phrases rather than a whole-crew
+# chorus, and a keyboard high beside the guitars. **The card excludes ballad tempos and its range
+# starts at 132**, so the two slow songs here — s_1100 and, on the next record, s_1108 — are slow in
+# what they are about and not in how fast they go. Nothing on this band's records is under 132 and
+# nothing ever will be.
+#
+# The wiki gives 2619 three votes for an amplification rig, one vote lost about being paid by the
+# port, and a singer who has never written a set list down — so the running order here is the order
+# the songs were finished in and nothing else.
+#
+# Two of these seven take an instrumental break (§7), which is §7's floor for an album of five or
+# more, and both are the lead guitar's. The card also lets the keyboard take one where the
+# arrangement asks; that happens on the next record rather than this one.
+#
+# `generation:` and every `take:` are empty until M-31's Suno sitting fills them in.
+
+album:
+  id: al_134
+  title: One Day in Port
+  band: b_061
+  band_name: Turn and Burn
+  label: label_5
+  release_year: 2619
+  genre: lane-rock
+  cornerstone: false
+  song_count: 7
+  style_card: b_061
+  room: >-
+    Five halls at five ports, none of them for longer than a turnaround, which is the card's "tracked
+    quickly in whatever hall the berth was next to" taken literally — nothing here was played twice
+    and the room changes on almost every track. This is the first Turn and Burn record with
+    amplification, which the co-operative voted on three times before it would pay for it, so the
+    keyboard and the guitars are louder and harder here than anything the band had put out before,
+    and s_1097's solo is the first thing that ever went through the rig. One fact-bound session
+    exception is explicit: Nessa Dray's guest fiddle on s_1101, played an octave above where it was
+    written, which is the only change to one of her own songs Rhea Molt has ever accepted. The break
+    on that track is still the lead guitar's (§7).
+
+generation:
+  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1096
+    title: One Day in Port
+    track_number: 1
+    mood: [driving, restless, fast]
+    fact: >-
+      Rhea Molt wrote it walking from the berth to the hall and the band played it that night without
+      anyone else having heard it; the take on the record is from the following morning.
+    arrangement_note: the band had heard this once when they recorded it, so nothing is worked out, the keyboard follows the guitars a fraction late all the way through and nobody fixed it
+    intro: 4
+    outro: cold
+    target_duration: "3:55"
+    prompt: >-
+      Fast boogie rock at the hard-rock edge, 160 BPM, driving and restless, amplified and loud.
+      Female lead vocal, bright hard mezzo, fast and clipped, singing ahead of the beat and cutting
+      line ends off short instead of holding them, no vibrato. Two male voices answering short
+      phrases on the chorus, blunt and unpolished, never close harmony, the whole band shouting the
+      last one. Two electric guitars, electric bass, drum kit with struck alloy, compact electric
+      organ-toned keyboards set high beside the guitars and following them a fraction late
+      throughout. Tracked quickly in whatever hall was next to the berth, first-take feel, very
+      little overdub. Four seconds of struck alloy and one guitar before the first sung word. Cold
+      stop.
+    exclude: acoustic instruments, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 4 seconds, struck alloy and one guitar, no vocal]
+
+      [Verse 1]
+      Berth at eleven, hall at eight, out again by four,
+      and the walk between the two of them is about nine minutes
+      and it is the only part of that whole port I have seen
+      and I have been through it about forty times.
+
+      [Chorus]
+      One day in port and none of it is mine.
+      Eight hours of it are the hall and six are asleep
+      and the rest is a walk down a road I could draw from memory
+      and have never once turned left on to see what is there.
+
+      [Verse 2]
+      I wrote this on that nine minutes and I did not write it down,
+      because I do not write anything down and never have,
+      and I sang it at the four of them at about a quarter to eight
+      and we played it at nine and none of them had heard it.
+
+      [Chorus]
+      One day in port and none of it is mine.
+      Eight hours of it are the hall and six are asleep
+      and the rest is a walk down a road I could draw from memory
+      and have never once turned left on to see what is there.
+
+      [Verse 3]
+      Iber is a fraction behind the guitars the whole way through
+      because he is listening for what comes next like the rest of them
+      and you can hear five people finding out what a song is
+      in front of about two hundred who think it is an old one.
+
+      [Bridge]
+      We did it again the next morning and that is the take.
+      It is worse than the night before and it is the honest one.
+
+      [Final Chorus - the whole band shouting]
+      One day in port and none of it is mine,
+      and there is a departure at four and a lane after that
+      and a settlement somewhere at the end of the week
+      that will get exactly the same nine minutes out of me.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1097
+    title: Three Ballots for a Speaker
+    track_number: 2
+    mood: [wry, rowdy, brisk]
+    fact: >-
+      The co-operative voted three times before it would pay for the band's amplification, and Cass
+      Verrow's solo here is the first thing they ever played through it.
+    arrangement_note: the eighteen-second break is the first sound the band ever put through the rig they had to win three votes for, and it is louder and dirtier than anything around it because nobody had worked out how to set it yet
+    intro: 8
+    outro: fade
+    target_duration: "4:10"
+    prompt: >-
+      Fast boogie rock at the hard-rock edge, 148 BPM, wry and rowdy, brisk, amplified and loud.
+      Female lead vocal, bright hard mezzo, fast and clipped, singing ahead of the beat and cutting
+      line ends off short instead of holding them, no vibrato. Two male voices answering short
+      phrases on the chorus, blunt and unpolished, never close harmony, the whole band shouting the
+      last one. Two electric guitars, electric bass, drum kit with struck alloy, compact electric
+      organ-toned keyboards high beside the guitars. Tracked quickly in whatever hall was next to the
+      berth, first-take feel, very little overdub. An eighteen-second lead guitar break that is
+      noticeably louder and dirtier than everything around it, badly set and not corrected. Eight
+      seconds of full band before the first sung word. Fade.
+    exclude: acoustic instruments, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 8 seconds, full band, no vocal]
+
+      [Verse 1]
+      First one went down by about thirty and I understood it.
+      It is a lot of money and there are people on this membership
+      who have been asking for a second van since 2611
+      and a van is a thing that carries something and a rig is not.
+      Half that membership is a freight crew and the other half is clerks
+      and not one of them has ever stood at the back of a hall.
+
+      [Chorus]
+      Three times. Three separate evenings. Three shows of hands.
+      Somebody had to stand up at the front and ask again
+      and it was Tem, all three times, and he is not a talker,
+      and the third time he did it in about eleven words.
+
+      [Verse 2]
+      Second one lost by four and that one I did not understand,
+      because between the first and the second we had done the numbers
+      and taken them round and sat in nine people's kitchens
+      and the four who moved were four we had not got to,
+      because they were out on a lane for the whole of that fortnight
+      and came back the day before and voted on what they had heard.
+
+      [Instrumental - lead guitar break, 18 seconds, badly set and left]
+
+      [Chorus]
+      Three times. Three separate evenings. Three shows of hands.
+      Somebody had to stand up at the front and ask again
+      and it was Tem, all three times, and he is not a talker,
+      and the third time he did it in about eleven words.
+
+      [Verse 3]
+      That solo is the first thing that ever went through it
+      and it is far too loud and nobody knew how to set it
+      and Cass came off it looking like a man who had been hit
+      and we kept it exactly as it came out of the room.
+
+      [Final Chorus - the whole band shouting]
+      Three times. Three separate evenings. Three shows of hands,
+      and a membership that has never once been wrong for free,
+      and every one of them has to live with what it costs
+      and every one of them turned up on the third night.
+
+      [Outro - fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1098
+    title: Paid by the Record
+    track_number: 3
+    mood: [bitter, hard, fast]
+    fact: >-
+      Tem Osgar wrote it the evening the membership voted down the band's request to be paid by the
+      port instead.
+    arrangement_note: the bass chair wrote this and the bass is mixed forward for the whole song, and the two answering voices come in on every line of the chorus rather than on short phrases, which happens nowhere else on the record
+    intro: 5
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      Fast boogie rock at the hard-rock edge, 156 BPM, bitter and hard, fast, amplified and loud.
+      Female lead vocal, bright hard mezzo, fast and clipped, singing ahead of the beat and cutting
+      line ends off short instead of holding them, no vibrato. Two male voices answering every line
+      of the chorus rather than short phrases, blunt and unpolished, never close harmony. Two
+      electric guitars, electric bass mixed forward and loud, drum kit with struck alloy, compact
+      electric organ-toned keyboards high beside the guitars. Tracked quickly in whatever hall was
+      next to the berth, first-take feel, very little overdub. Five seconds of bass and struck alloy
+      before the first sung word. Ends on a held chord with the whole band on it.
+    exclude: acoustic instruments, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 5 seconds, bass and struck alloy, no vocal]
+
+      [Verse 1]
+      A record is a thing that happens once and then keeps going
+      and a port is a thing that happens and then it is gone,
+      and we play about ninety ports a year on this circuit
+      and we have made two records in twelve and a half years.
+
+      [Pre-Chorus]
+      One of those is in a crate somewhere and it is still earning.
+
+      [Chorus]
+      Pay us for the ports. Pay us for the nights.
+      Not for a crate on a siding that somebody else moves.
+      We are not a thing that gets pressed and put in a box.
+      We are five people in a hall and it is Tuesday.
+
+      [Verse 2]
+      Tem did the arithmetic and took it to the meeting
+      and it is not even close, it is not a marginal case,
+      and it went down, and the reason it went down
+      is that it is how the co-operative has always done it.
+
+      [Chorus]
+      Pay us for the ports. Pay us for the nights.
+      Not for a crate on a siding that somebody else moves.
+      We are not a thing that gets pressed and put in a box.
+      We are five people in a hall and it is Tuesday.
+
+      [Verse 3]
+      He wrote this the same evening and he wrote it angry
+      and it is the only angry thing this band has ever done
+      and by the time we recorded it he had stopped being angry
+      and I had started, which is roughly how the two of us work.
+
+      [Bridge]
+      They changed it five years later. That is on the next record.
+      Nobody has ever said out loud that Tem was right.
+
+      [Final Chorus - the whole band shouting]
+      Pay us for the ports. Pay us for the nights.
+      Ninety halls a year and a hold going out behind us
+      and a membership of ninety who all voted about it,
+      and we will be at the meeting in the spring.
+
+      [Outro - held chord, whole band on it]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1099
+    title: Nothing to Unpack
+    track_number: 4
+    mood: [comic, loud, fast]
+    fact: >-
+      Wyll Petrin has never carried more than one bag on a circuit, and the second verse is a list of
+      what is in it.
+    arrangement_note: the list in the second verse is sung at the top of the tempo with one item to a bar and the band stopping dead after each one, which is the only silence anywhere on the track
+    intro: 3
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      Fast boogie rock at the hard-rock edge, 172 BPM, comic and loud, very fast and amplified.
+      Female lead vocal, bright hard mezzo, fast and clipped, singing ahead of the beat and cutting
+      line ends off short instead of holding them, no vibrato. Two male voices answering short
+      phrases on the chorus, blunt and unpolished, never close harmony, the whole band shouting the
+      last one. Two electric guitars, electric bass, drum kit with struck alloy, compact electric
+      organ-toned keyboards high beside the guitars. Tracked quickly in whatever hall was next to the
+      berth, first-take feel, very little overdub. One verse of a list at one item to a bar, with the
+      whole band stopping dead after each item and no other silence anywhere in the song. Three
+      seconds of drums before the first sung word. Fade.
+    exclude: acoustic instruments, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 3 seconds, drums, no vocal]
+
+      [Verse 1]
+      Everybody else on this circuit travels like a settlement moving.
+      Cass has three cases and a bag for the bag he keeps the leads in.
+      Iber brings a thing to sit on, which I have stopped asking about.
+      And then there is Wyll, who has one bag, and has always had one bag.
+
+      [Chorus]
+      Nothing to unpack. Nothing to leave behind.
+      Off the hauler, into the hall, out again at four,
+      and the only person on this crew who is never looking for anything
+      is the one who decided years ago not to own it.
+
+      [Verse 2 - one item a bar, the band stopping dead after each]
+      Two shirts. One coat. A tin with something in it.
+      Sticks. Spare sticks. A second pair of spare sticks.
+      A photograph he has never once shown anybody.
+      And a spanner, which is not for the kit, and he will not say what it is for.
+
+      [Chorus]
+      Nothing to unpack. Nothing to leave behind.
+      Off the hauler, into the hall, out again at four,
+      and the only person on this crew who is never looking for anything
+      is the one who decided years ago not to own it.
+
+      [Verse 3]
+      I asked him about it once on a nine-hour lane in the dark
+      and he said that a thing you carry is a thing you think about
+      and he would rather think about the second half of a set,
+      and then he went to sleep, which I think was the rest of the answer.
+
+      [Verse 4]
+      He has left one bag at one berth in twelve years,
+      and it came back down the relay road eleven days later, unopened,
+      and he took it off the clerk and said thanks and put it down
+      and did not check it, in front of all four of us, on purpose.
+
+      [Final Chorus - the whole band shouting]
+      Nothing to unpack. Nothing to leave behind,
+      and I have four cases in a hall about nine ports back
+      that somebody is going to have to send on after me,
+      and he is asleep, and he is right, and I hate it.
+
+      [Outro - fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1100
+    title: Berth Nineteen
+    track_number: 5
+    mood: [tender, plain, slow]
+    fact: >-
+      Rhea Molt sings it to a partner who works the opposite circuit, and the two of them have been in
+      the same port eleven times.
+    arrangement_note: the band's slowest tempo, which is still fast, so the tenderness has to come from the words and from the singer not cutting the line ends off for once, and the keyboard holds under everything instead of answering
+    intro: 14
+    outro: fade
+    target_duration: "4:35"
+    prompt: >-
+      Fast boogie rock at the hard-rock edge, 132 BPM — the bottom of this band's range and still
+      quick — tender and plain in the words while the playing stays hard. Female lead vocal, bright
+      hard mezzo, singing ahead of the beat, and here holding the ends of lines rather than cutting
+      them short, which she does nowhere else; no vibrato. Two male voices answering short phrases on
+      the chorus, blunt and unpolished, never close harmony. Two electric guitars, electric bass,
+      drum kit with struck alloy, compact electric organ-toned keyboards holding long chords
+      underneath rather than answering. Tracked quickly in whatever hall was next to the berth,
+      first-take feel, very little overdub. Fourteen seconds of keyboard and bass before the first
+      sung word. Fade.
+    exclude: acoustic instruments, orchestral strings, brass, ballad tempos, slow or half-time playing, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 14 seconds, keyboard and bass, no vocal]
+
+      [Verse 1]
+      Eleven times in twelve years and I have counted all eleven
+      and could tell you the port and the month and what the weather did
+      and which berth and which hall and what was said on two,
+      and there is no version of this where that is a lot.
+
+      [Verse 2]
+      Your lane goes the other way round and that is the whole problem.
+      It is not a disagreement and it is nobody's fault
+      and there is no office anywhere I could go and shout at
+      and I have thought about that a great deal and it does not help.
+
+      [Chorus]
+      Nineteen, at the far end of it, past the second gate.
+      Nine hours if the turnaround holds and six if it does not.
+      I have got a hall at eight and you are out at midnight
+      and that is the whole of it and it is worth the run.
+
+      [Verse 3]
+      There is a woman on the near circuit who told me to stop
+      and she was being kind and she has been in this before
+      and she said eleven times in twelve years is not a life,
+      and I said no, it is eleven times, and that is not nothing.
+
+      [Chorus]
+      Nineteen, at the far end of it, past the second gate.
+      Nine hours if the turnaround holds and six if it does not.
+      I have got a hall at eight and you are out at midnight
+      and that is the whole of it and it is worth the run.
+
+      [Bridge]
+      Twelfth one is in the spring if neither circuit changes.
+      I have not written it down. I have not needed to.
+
+      [Final Chorus]
+      Nineteen, at the far end of it, past the second gate,
+      and I will be walking down it about half past five
+      with a hall at eight and nothing to say for myself,
+      and you will be there, and that is the whole of the plan.
+
+      [Outro - fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1101
+    title: Faster Than the Freight
+    track_number: 6
+    mood: [triumphant, driving, fast]
+    fact: >-
+      Nessa Dray played the fiddle line an octave above where it was written, which Rhea Molt has said
+      is the only change to one of her songs she has ever accepted.
+    arrangement_note: a guest fiddle plays the written line an octave up so that it sits above the guitars instead of inside them, and the sixteen-second break is still the lead guitar's with the fiddle over the top of it
+    intro: 10
+    outro: fade
+    target_duration: "4:20"
+    prompt: >-
+      Fast boogie rock at the hard-rock edge, 164 BPM, triumphant and driving, fast and amplified.
+      Female lead vocal, bright hard mezzo, fast and clipped, singing ahead of the beat and cutting
+      line ends off short instead of holding them, no vibrato. Two male voices answering short
+      phrases on the chorus, blunt and unpolished, never close harmony, the whole band shouting the
+      last one. A guest fiddle playing high above the guitars rather than inside them; two electric
+      guitars, electric bass, drum kit with struck alloy, compact electric organ-toned keyboards high
+      beside the guitars. Tracked quickly in whatever hall was next to the berth, first-take feel,
+      very little overdub. A sixteen-second lead guitar break with the fiddle over the top of it. Ten
+      seconds of fiddle and guitars before the first sung word. Fade.
+    exclude: acoustic instruments other than the guest fiddle, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 10 seconds, fiddle and guitars, no vocal]
+
+      [Verse 1]
+      There is a fast circuit and there is a faster one
+      and the co-operative runs both of them and we are on the second,
+      and the reason we are on it is that nobody else wanted it
+      and the reason nobody wanted it is that it is nine ports in eleven days
+      with a hold coming off behind you at every one of them.
+
+      [Chorus]
+      Out ahead of the freight and ahead of the manifest,
+      into a hall with the cargo still coming off behind us.
+      Nobody on this circuit has ever waited for anything
+      and none of us can sit down in a room any more.
+
+      [Verse 2]
+      I wrote the line for this about halfway up the neck
+      and she came in and played it a whole octave above,
+      which put it over the top of the guitars instead of in them,
+      and I said keep it, which I have never said to anybody,
+      and she said she had assumed I meant it that way,
+      and I did not correct her, and I am not going to.
+
+      [Instrumental - lead guitar break with the fiddle over it, 16 seconds]
+
+      [Chorus]
+      Out ahead of the freight and ahead of the manifest,
+      into a hall with the cargo still coming off behind us.
+      Nobody on this circuit has ever waited for anything
+      and none of us can sit down in a room any more.
+
+      [Verse 3]
+      Wyll says it will end and that everybody comes off it
+      at about year fifteen and takes a route with towns on it,
+      and I have watched two crews do exactly that and be happy
+      and I am not going to and I have known that for a while.
+
+      [Final Chorus - the whole band shouting]
+      Out ahead of the freight and ahead of the manifest,
+      and one day the circuit will change and we will not be on it
+      and I will be in a hall somewhere with a slow set list
+      and that is somebody else's song and not this one.
+
+      [Outro - fade on the fiddle]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1102
+    title: Sign It on the Way Out
+    track_number: 7
+    mood: [defiant, singalong, midtempo]
+    fact: >-
+      The chorus is what the band say to the co-operative's clerks, and the clerks sing it back at
+      them at the annual meeting.
+    arrangement_note: the two answering voices take the whole of the last chorus with the lead out of it, because that is how the clerks do it at the meeting, and the band plays it exactly as a room of people would
+    intro: 16
+    outro: sustain
+    target_duration: "4:45"
+    prompt: >-
+      Fast boogie rock at the hard-rock edge, 138 BPM, defiant and midtempo for this band, amplified
+      and built to be shouted back. Female lead vocal, bright hard mezzo, fast and clipped, singing
+      ahead of the beat and cutting line ends off short, no vibrato, and absent entirely from the
+      final chorus. Two male voices answering short phrases on the choruses, blunt and unpolished,
+      never close harmony, and taking the whole final chorus on their own with the lead out. Two
+      electric guitars, electric bass, drum kit with struck alloy, compact electric organ-toned
+      keyboards high beside the guitars. Tracked quickly in whatever hall was next to the berth,
+      first-take feel, very little overdub. Sixteen seconds of keyboard and guitars before the first
+      sung word. Ends on a held chord with the answering voices on it.
+    exclude: acoustic instruments, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 16 seconds, keyboard and guitars, no vocal]
+
+      [Verse 1]
+      There are four clerks at the co-operative and all four of them
+      have been there longer than this band has existed
+      and they have a window and a counter and a manifest book each
+      and every single thing any of us does goes past one of them.
+
+      [Chorus]
+      Sign it on the way out. Do not read it to me.
+      I have got a berth at six and a hall at eight
+      and whatever is wrong with it will still be wrong on Thursday
+      and you will still be here and so, unfortunately, will I.
+
+      [Verse 2]
+      It is not disrespect. It is nine years of the same exchange.
+      They want it read and I want it signed and both of us are right
+      and neither of us has moved a single step since 2610
+      and the whole thing takes about four minutes every time.
+
+      [Chorus]
+      Sign it on the way out. Do not read it to me.
+      I have got a berth at six and a hall at eight
+      and whatever is wrong with it will still be wrong on Thursday
+      and you will still be here and so, unfortunately, will I.
+
+      [Verse 3]
+      At the annual meeting the four of them sing it at us,
+      all four, in the doorway, badly, as we come in,
+      and have done every year since the record came out
+      and I have not managed to say anything back once.
+
+      [Bridge]
+      They read everything. They have read every page we have signed.
+      Twice they have stopped us signing something and both times they were right.
+
+      [Final Chorus - the two answering voices alone, lead out]
+      Sign it on the way out. Do not read it to me.
+      There is a berth at six and a hall at eight
+      and four people at a counter who have read the whole thing
+      and will still be there in the spring when we get back.
+
+      [Outro - held chord, the answering voices on it]
+    take: null                    # M-31 fills this in at the Suno sitting

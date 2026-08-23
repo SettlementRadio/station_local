@@ -1,0 +1,891 @@
+# al_039 — Hold the Whole Chorus · Burn Day Wages (b_019) · Common Wake Cooperative · 2619 · 12 songs
+#
+# Written by M-22. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# **A cornerstone**, and the record every hauler settlement plays on burn day, so it got the extra
+# passes §12's note asks for. The wiki gives it three ports inside one run — rhythm section at the
+# first, guitars at the second, vocals at the third — a copy of their own record coming back with
+# somebody else's name on it, a resignation that was written and not given, and a running order voted
+# on by ninety people. Every one of those is a song here and not one of them is a song *about* the
+# co-operative: the subject is always somebody's decision and what it cost them.
+#
+# The whole of b_019's card is in use: five-voice crew chorus with one woman above the men, tank
+# drums left ringing, stripped-wire chimes, tracked loose. Two guests bring instruments the card does
+# not list — a resonance pipe on s_0338 and a fiddle on s_0336 — and **neither of them takes the
+# instrumental break**, because §7 says a solo is not a way to hand a band an instrument it does not
+# own. All four breaks on this record are the lead guitar's.
+#
+# `generation:` and every `take:` are empty until M-31's Suno sitting fills them in.
+
+album:
+  id: al_039
+  title: Hold the Whole Chorus
+  band: b_019
+  band_name: Burn Day Wages
+  label: label_5
+  release_year: 2619
+  genre: lane-rock
+  cornerstone: true
+  song_count: 12
+  style_card: b_019
+  room: >-
+    Three ports inside one run, one layer each — the drums at the first, the guitars at the second,
+    the vocals at the third — which is why this record is drier and tighter than anything else the
+    band has made and why nothing on it was played by everybody at the same time except the ending of
+    s_0329, cut in a transfer hall between two departures with thirty-one members of the co-operative
+    in the room. The card is otherwise unbent. Four fact-bound exceptions are explicit: the sealed bay
+    Dov Reyland recorded s_0332 alone in; Nessa Dray playing both fiddle parts of s_0336 herself
+    rather than lending a bow; Ivena Sorn's guest resonance pipe on s_0338, one take only, in a hall
+    she had not worked in since 2600; and Calo Meret's contribution to s_0340, which is one sustained
+    chord and is all that survived of a full written arrangement.
+
+generation:
+  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0329
+    title: Hold the Whole Chorus
+    track_number: 1
+    mood: [anthemic, singalong, midtempo]
+    fact: >-
+      Thirty-one members of the co-operative sing the final chorus, recorded in a transfer hall
+      between two departures.
+    arrangement_note: the last chorus is thirty-one untrained voices in a transfer hall, recorded in one go between two departures, and the band drops to bass and drums underneath so that nothing competes with it
+    intro: 10
+    outro: sustain
+    target_duration: "5:00"
+    prompt: >-
+      Boogie-driven rock, 122 BPM, anthemic and midtempo, built to be sung back. Male lead vocal,
+      high hard tenor, carrying and a shade nasal, pushing at the top of every chorus and staying
+      there, plain and undecorated, no vibrato. A crew chorus of four and five voices in unison
+      rather than harmony, mixed registers with one woman's voice clearly audible above the men —
+      and on the final chorus a large untrained crowd of about thirty voices in a big hard hall,
+      rough and slightly late, with the band dropped to bass and drums underneath. Two electric
+      guitars, electric bass, drum kit with tuned oxygen-tank drums left ringing rather than damped,
+      stripped-wire chimes. Tracked loose rather than gridded, light compression. Ten seconds of
+      chimes and guitar before the first sung word. Ends on a held chord with the whole crowd
+      sustaining over it.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 10 seconds, stripped-wire chimes and guitar, no vocal]
+
+      [Verse 1]
+      There is a thing a room does about four seconds into a chorus
+      where everybody stops listening and starts doing it instead
+      and you can feel the floor change and you can stop working,
+      and it is the only part of this job I have never got used to.
+
+      [Chorus]
+      Hold the whole chorus. Do not let it drop.
+      Not the good half, not the bit you are sure of, all of it,
+      right to the end of the line where it runs out of air,
+      and if you have to be flat then be flat and be loud.
+
+      [Verse 2]
+      We put a notice out that we wanted whoever was free
+      and thirty-one people came to a transfer hall on a Tuesday
+      between a departure at eleven and a departure at one
+      and stood on the floor in their coats and sang it four times.
+
+      [Chorus]
+      Hold the whole chorus. Do not let it drop.
+      Not the good half, not the bit you are sure of, all of it,
+      right to the end of the line where it runs out of air,
+      and if you have to be flat then be flat and be loud.
+
+      [Verse 3]
+      None of them can sing. That is not a criticism.
+      Two of them are clerks and one of them runs a scrubber line
+      and one is eleven years old and came with her mother
+      and is the loudest thing on the whole of this record.
+
+      [Bridge]
+      We got it on the second go and did the other two for them.
+      Nobody was going to say we had finished after one.
+
+      [Final Chorus - thirty-one voices, band down to bass and drums]
+      Hold the whole chorus. Do not let it drop.
+      Not the good half, not the bit you are sure of, all of it,
+      and that is a hall full of people who were somewhere else at ten
+      and were back at work by two and are on a record for good.
+
+      [Outro - held chord, the whole hall sustaining]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0330
+    title: Three Ports, One Take
+    track_number: 2
+    mood: [driving, restless, fast]
+    fact: >-
+      The drums were recorded at one port, the guitars at the second and the vocals at the third, all
+      inside a single run.
+    arrangement_note: nothing on this track was played by two people in the same room, so the parts sit slightly apart from each other in a way that nobody corrected and the guitars answer a drum part recorded nine days earlier
+    intro: 4
+    outro: cold
+    target_duration: "4:20"
+    prompt: >-
+      Boogie-driven rock, 148 BPM, driving and restless, fast. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato. A crew chorus of four and five voices in unison rather than harmony,
+      mixed registers with one woman's voice clearly audible above the men. Two electric guitars,
+      electric bass, drum kit with tuned oxygen-tank drums left ringing rather than damped,
+      stripped-wire chimes — with the parts sitting slightly apart from one another, none of them
+      played in the same room, and no attempt made to tighten them. Loose rather than gridded, light
+      compression. A sixteen-second lead guitar break. Four seconds of tank drums alone before the
+      first sung word. Cold stop.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production, gridded or corrected timing
+    lyrics: |
+      [Intro - 4 seconds, tank drums alone, no vocal]
+
+      [Verse 1]
+      Hess played this to nothing at all in a bay at the first port
+      with a count in his head and the manifest on the floor in front of him
+      and nine days later two guitars answered a man who was not there
+      and eleven days after that I sang to both of them.
+
+      [Chorus]
+      Three ports and one run and nobody in the same room,
+      and if it sounds like four people it is an accident.
+      This is a crew that has never all been off shift together
+      and the record is exactly as honest about that as we are.
+
+      [Verse 2]
+      There is a bar in the second chorus where the guitars are early
+      and they are early because the drums were played in a bigger bay
+      and Ryke heard it and left it and did not tell anybody
+      and I found out about it four years later at a meeting.
+
+      [Instrumental - lead guitar break, 16 seconds]
+
+      [Chorus]
+      Three ports and one run and nobody in the same room,
+      and if it sounds like four people it is an accident.
+      This is a crew that has never all been off shift together
+      and the record is exactly as honest about that as we are.
+
+      [Verse 3]
+      Every band I know that got good got good in one room
+      and we have never had one and we have been at this since 2596
+      and what we have instead is nine days of thinking about a part
+      before anybody is allowed to hear you play it,
+      nine days of a hold and a lane and the same four faces
+      and a part in your head that has nowhere to go.
+
+      [Final Chorus - all five voices]
+      Three ports and one run and nobody in the same room.
+      I would like one room. I have wanted one room for years.
+      And I would not swap what this does for what that does,
+      and neither would any of the four of them, and I have asked.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0331
+    title: Altered Credit
+    track_number: 3
+    mood: [bitter, hard, brisk]
+    fact: >-
+      Ryke Alden wrote it after a copy of the band's own record reached them with a different writer's
+      name printed on the label.
+    arrangement_note: the crew do not sing behind the lead anywhere in this song, which is the only track on the record where the band's own voices are missing, and the space where they should be is left empty
+    intro: 6
+    outro: cold
+    target_duration: "4:15"
+    prompt: >-
+      Boogie-driven rock, 142 BPM, bitter and hard, brisk. Male lead vocal, high hard tenor, carrying
+      and a shade nasal, pushing at the top of every chorus and staying there, plain and undecorated,
+      no vibrato, entirely alone — no crew chorus anywhere in this song, with the space where the
+      answering voices would be left empty. Two electric guitars, electric bass, drum kit with tuned
+      oxygen-tank drums left ringing rather than damped, stripped-wire chimes. Tracked loose rather
+      than gridded, light compression. Six seconds of rhythm guitar and bass before the first sung
+      word. Cold stop.
+    exclude: crew chorus, group vocals, close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 6 seconds, rhythm guitar and bass, no vocal]
+
+      [Verse 1]
+      A copy came back down the relay road from four settlements out
+      with our songs on it and our crate number and our sleeve
+      and one name on the writing line that is not one of ours
+      and belongs to a person none of us has ever met.
+
+      [Pre-Chorus]
+      It came off a hauler at the near siding on a Tuesday.
+
+      [Chorus]
+      Somebody typed that. Somebody sat and typed that
+      and then went home and had an evening like anybody else.
+      It is not a machine and it is not the weather.
+      It is a person and there is a name and I know the name.
+
+      [Verse 2]
+      The co-operative went at it properly, in writing, for two years,
+      and it is settled now and it is cited at meetings
+      and none of that gives anybody back the eighteen months
+      Ryke spent finding out how a thing like that even happens.
+
+      [Pre-Chorus]
+      Two years of pages. Two years of somebody else's evenings.
+
+      [Chorus]
+      Somebody typed that. Somebody sat and typed that
+      and then went home and had an evening like anybody else.
+      It is not a machine and it is not the weather.
+      It is a person and there is a name and I know the name.
+
+      [Verse 3]
+      There is no crew behind me on this one, which is deliberate,
+      and it is the only song of ours that has ever been sung alone,
+      and it is because the thing this is about is the opposite
+      of what a line with five names on it is for.
+
+      [Bridge]
+      I do not want an apology. I have been offered one twice.
+      I want the page corrected on every copy that exists.
+
+      [Final Chorus]
+      Somebody typed that. Somebody sat and typed that.
+      Four hundred crates went out of a hall with it on them
+      and every one of those is still out there somewhere
+      and the correction is not printed on any of them.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0332
+    title: The Between
+    track_number: 4
+    mood: [reflective, expansive, midtempo]
+    fact: >-
+      Dov Reyland recorded the lead vocal alone in a sealed bay because he could not sing the second
+      verse with the band watching.
+    arrangement_note: the lead vocal was recorded with nobody else in the room and it is audibly a smaller and closer performance than anything else on the record, and the crew come in at the last chorus from a long way off
+    intro: 20
+    outro: sustain
+    target_duration: "5:20"
+    prompt: >-
+      Boogie-driven rock, 118 BPM, reflective and expansive, midtempo. Male lead vocal, high hard
+      tenor, carrying and a shade nasal, plain and undecorated, no vibrato — here recorded alone in a
+      small sealed room, closer and quieter and less pushed than anywhere else on the record. A crew
+      chorus of four and five voices in unison rather than harmony, mixed registers with one woman's
+      voice clearly audible above the men, entering only at the last chorus and sounding a long way
+      off. Two electric guitars, electric bass, drum kit with tuned oxygen-tank drums left ringing
+      rather than damped, stripped-wire chimes. Tracked loose rather than gridded, light compression.
+      Twenty seconds of chimes and bass before the first sung word. Ends on a held chord left to
+      decay.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 20 seconds, chimes and bass, no vocal]
+
+      [Verse 1]
+      Everybody from a settlement has one place they are from
+      and I have got a route, which is not the same thing,
+      and when people ask I say the between and they nod
+      and about a third of them know what I actually mean.
+
+      [Verse 2 - recorded alone in a sealed bay]
+      It is not a place. There is nothing to look at. There are no doors.
+      It is nine days of the same four faces and a hold behind you
+      and everybody I have ever loved is at one end or the other
+      and I have spent twenty-three years in the part in the middle.
+
+      [Chorus]
+      The between. That is the whole of the address.
+      Not a settlement, not an outpost, not a port with a name.
+      The bit that everybody else goes through to get somewhere
+      is the bit that four of us have made a life in.
+
+      [Verse 3]
+      I could not do that second verse with the band in the room.
+      I tried it twice on the Tuesday and it came out wrong
+      and Bel said go and do it in the sealed bay on your own,
+      which he offered without asking me what the matter was.
+
+      [Chorus]
+      The between. That is the whole of the address.
+      Not a settlement, not an outpost, not a port with a name.
+      The bit that everybody else goes through to get somewhere
+      is the bit that four of us have made a life in.
+
+      [Bridge]
+      Nobody grows up wanting this. You end up in it.
+      And then one year you notice you would not take the other thing.
+
+      [Final Chorus - the crew entering from a long way off]
+      The between. That is the whole of the address,
+      and there are about four hundred of us out here at any hour
+      and none of us can point at it on anything,
+      and every one of us knows exactly where it is.
+
+      [Outro - held chord, left to decay]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0333
+    title: Talk to the Crew, Not Me
+    track_number: 5
+    mood: [wry, rowdy, fast]
+    fact: >-
+      The verse is what Bel Corrow says to anyone who asks the band to decide something the
+      co-operative has not voted on.
+    arrangement_note: the lead sings the verses and the crew answer every second line of them, so the song is arranged as an argument the singer keeps losing, and the break is the lead guitar over the crew still going
+    intro: 5
+    outro: fade
+    target_duration: "4:10"
+    prompt: >-
+      Boogie-driven rock, 146 BPM, wry and rowdy, fast. Male lead vocal, high hard tenor, carrying
+      and a shade nasal, pushing at the top of every chorus and staying there, plain and undecorated,
+      no vibrato. A crew chorus of four and five voices in unison rather than harmony, mixed
+      registers with one woman's voice clearly audible above the men, answering every second line of
+      every verse and never letting the lead finish a thought. Two electric guitars, electric bass,
+      drum kit with tuned oxygen-tank drums left ringing rather than damped, stripped-wire chimes.
+      Tracked loose rather than gridded, light compression. A fourteen-second lead guitar break with
+      the crew still chanting underneath. Five seconds of full band before the first sung word. Fade.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 5 seconds, full band, no vocal]
+
+      [Verse 1]
+      A man came down to the berth off the last ferry in a good suit
+      with a page in his hand and a departure in the morning
+      and asked for a decision by the end of the afternoon,
+      and I said yes before I had finished hearing the question,
+      because I am the one at the front and that is what happens.
+
+      [Chorus]
+      Go and talk to the crew. Do not talk to me.
+      I have not got a vote that is worth any more than theirs.
+      There are ninety people in this and I am one of them
+      and the one you are looking at is the one who sings.
+
+      [Verse 2]
+      Bel took the page out of my hand without any comment
+      and handed it back to the man and told him about the meeting,
+      the date of it, the time of it, and where he could sit,
+      and the man looked at me and I looked at the floor.
+
+      [Chorus]
+      Go and talk to the crew. Do not talk to me.
+      I have not got a vote that is worth any more than theirs.
+      There are ninety people in this and I am one of them
+      and the one you are looking at is the one who sings.
+
+      [Instrumental - lead guitar break, crew chanting underneath, 14 seconds]
+
+      [Verse 3]
+      He has said it about forty times in twenty-three years
+      and about eleven of those times he has said it to me,
+      and every single one of the eleven I had deserved
+      and about four of them I have gone back and thanked him for.
+
+      [Bridge]
+      It is slower. It is slower every single time.
+      It is the reason none of us has ever been sacked or bought.
+
+      [Final Chorus - all five voices]
+      Go and talk to the crew. Do not talk to me.
+      He is at the third table on the left at every meeting.
+      Bring the page. Bring the numbers. Bring the whole thing.
+      And bring a coat, because it goes on until about ten.
+
+      [Outro - fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0334
+    title: Fourteen Hours to Meridian
+    track_number: 6
+    mood: [urgent, driving, fast]
+    fact: >-
+      The tempo was set by the departure timer in the hall, which the band left running through the
+      take.
+    arrangement_note: the tempo is a departure timer and not a count, so it does not move at all for the whole song and the band has to sit on it, and the timer is audible under the quiet parts
+    intro: 3
+    outro: cold
+    target_duration: "4:00"
+    prompt: >-
+      Boogie-driven rock, 150 BPM, urgent and driving, fast. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato. A crew chorus of four and five voices in unison rather than harmony,
+      mixed registers with one woman's voice clearly audible above the men. Two electric guitars,
+      electric bass, drum kit with tuned oxygen-tank drums left ringing rather than damped,
+      stripped-wire chimes, and a hall departure timer ticking audibly underneath, setting a tempo
+      that never moves for the entire song. Tracked loose rather than gridded, light compression.
+      Three seconds of the timer alone before the first sung word. Cold stop.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 3 seconds, the hall's departure timer alone, no vocal]
+
+      [Verse 1]
+      Fourteen hours to Meridian and the load is not on
+      and the man with the sheet has been called away to something
+      and the timer on the wall has not stopped since we came in
+      and does not care about any of that at all.
+      Fifty-eight crates and a lane that does not wait
+      and a hall full of people all doing the same arithmetic.
+
+      [Chorus]
+      Fourteen hours to Meridian. Fourteen. Now thirteen.
+      Nothing anybody says in this hall changes that number.
+      You can argue with the office and you can argue with the weather
+      and the one thing on that wall is not in the conversation.
+
+      [Verse 2]
+      We left it running through the take because it was already going
+      and it turns out to be almost exactly the tempo of this,
+      which nobody arranged, and which is why the song never moves,
+      because a departure timer has no idea that it is playing.
+
+      [Chorus]
+      Fourteen hours to Meridian. Fourteen. Now thirteen.
+      Nothing anybody says in this hall changes that number.
+      You can argue with the office and you can argue with the weather
+      and the one thing on that wall is not in the conversation.
+
+      [Verse 3]
+      Every settlement I have ever loaded out of has one
+      and every crew on every lane has stood underneath one
+      and said something to it, out loud, that they would not repeat,
+      and it has gone on doing the only thing it does,
+      which is the most reliable relationship any of us has.
+
+      [Bridge]
+      We made it with about forty minutes spare, which is not close.
+      It felt close. It always feels close. It is never close.
+
+      [Final Chorus - all five voices]
+      Fourteen hours to Meridian. Fourteen. Now thirteen.
+      That is the most honest instrument on this record
+      and it is the only one that did not have to be paid,
+      and it is still on that wall and it is still going.
+
+      [Outro - cold stop, the timer running on]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0335
+    title: The Notice She Didn't Give
+    track_number: 7
+    mood: [tense, warm, midtempo]
+    fact: >-
+      Una Brack sang this the morning after the members' vote that changed how backing singers were
+      paid, with her resignation already written.
+    arrangement_note: the woman's voice is the top of the crew chorus for the whole song as usual, but on the last chorus the lead drops out entirely and leaves her there, which nobody in the band knew was going to happen
+    intro: 14
+    outro: fade
+    target_duration: "4:50"
+    prompt: >-
+      Boogie-driven rock, 120 BPM, tense and warm, midtempo. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato — and absent entirely from the final chorus. A crew chorus of four and
+      five voices in unison rather than harmony, mixed registers with one woman's voice clearly
+      audible above the men throughout, and left carrying the final chorus alone at the top when the
+      lead drops out. Two electric guitars, electric bass, drum kit with tuned oxygen-tank drums left
+      ringing rather than damped, stripped-wire chimes. Tracked loose rather than gridded, light
+      compression. Fourteen seconds of chimes and one guitar before the first sung word. Fade.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 14 seconds, stripped-wire chimes and one guitar, no vocal]
+
+      [Verse 1]
+      There was a page in her coat that morning and we all knew it,
+      not because she had said anything, because she had gone quiet,
+      and this crew is bad at a lot of things and good at that,
+      and nobody asked her about it and everybody was careful.
+
+      [Pre-Chorus]
+      Fifteen years on a manifest and one page in a coat.
+
+      [Chorus]
+      The one she did not hand in. It is in a coat somewhere.
+      Fifteen years of turning up and one page written at four
+      and a members' meeting that went the other way by eleven votes
+      and a morning where she came in and sang this instead.
+
+      [Verse 2]
+      It was never about her. That is what people get wrong.
+      She had been paid the same as the rest of us for years
+      and there were four other people on the co-operative's books
+      who had not, and she had known all four of their numbers,
+      four names on four crews on four different lanes.
+
+      [Chorus]
+      The one she did not hand in. It is in a coat somewhere.
+      Fifteen years of turning up and one page written at four
+      and a members' meeting that went the other way by eleven votes
+      and a morning where she came in and sang this instead.
+
+      [Verse 3]
+      I would not have won that vote. I want that on the record.
+      Half the membership was out on a lane and voted by carrier wave.
+      I said what I thought at the meeting and it was not enough
+      and about nine people I have known for twenty years
+      changed their minds because of something she said at the back.
+
+      [Bridge]
+      She has never mentioned the page and none of us has either.
+      It is fifteen more years now. It is probably still in the coat.
+
+      [Final Chorus - the lead out, the woman's voice alone at the top]
+      The one she did not hand in. It is in a coat somewhere,
+      and there are four people on a manifest getting a proper rate
+      who have no idea that any of that happened at all,
+      and that is the way she wanted it and it is what she got.
+
+      [Outro - fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0336
+    title: Two Bows, Neither Lent
+    track_number: 8
+    mood: [bright, rowdy, fast]
+    fact: >-
+      Nessa Dray plays both fiddle parts herself, having refused to lend either bow to the guest
+      player the co-operative had booked.
+    arrangement_note: two guest fiddle parts played by one person on two different bows, hard apart, and the lead guitar takes the break over both of them because the break belongs to the band
+    intro: 8
+    outro: fade
+    target_duration: "4:25"
+    prompt: >-
+      Boogie-driven rock, 146 BPM, bright and rowdy, fast. Male lead vocal, high hard tenor, carrying
+      and a shade nasal, pushing at the top of every chorus and staying there, plain and undecorated,
+      no vibrato. A crew chorus of four and five voices in unison rather than harmony, mixed
+      registers with one woman's voice clearly audible above the men. Two guest fiddle parts placed
+      hard apart, both played by the same player with two different bows and two audibly different
+      tones; two electric guitars, electric bass, drum kit with tuned oxygen-tank drums left ringing
+      rather than damped, stripped-wire chimes. Tracked loose rather than gridded, light compression.
+      A sixteen-second lead guitar break over both fiddle parts. Eight seconds of the two fiddles
+      answering each other before the first sung word. Fade.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 8 seconds, the two fiddles answering each other, no vocal]
+
+      [Verse 1]
+      The co-operative booked a second player for this one
+      and told her about it in a message on the Thursday
+      and she read it on the gangway and said one word
+      and then said the rest of it at the meeting in writing,
+      and the meeting went the other way and she played anyway.
+
+      [Chorus]
+      Two bows and she will not lend either one of them,
+      not to a friend, not for a fee, not for an afternoon.
+      Everybody thinks that is a difficult thing to be
+      until they hear what comes out of the two of them.
+
+      [Verse 2]
+      They are not the same. One of them is nine years older
+      and does a thing on the low strings that the other cannot do,
+      and she uses them for different songs and different halls
+      and could tell you which one she used on anything she has played,
+      in any hall, on any lane, in any settlement, going back years.
+
+      [Instrumental - lead guitar break over both fiddle parts, 16 seconds]
+
+      [Chorus]
+      Two bows and she will not lend either one of them,
+      not to a friend, not for a fee, not for an afternoon.
+      Everybody thinks that is a difficult thing to be
+      until they hear what comes out of the two of them.
+
+      [Verse 3]
+      So she played both parts herself, one after the other,
+      in an afternoon, in a cold bay, for one fee,
+      and the man who had been booked sat and watched her do it
+      and asked her afterwards what the older one was,
+      and she told him, and they talked for about an hour,
+      and he has booked her on four of his own records since.
+
+      [Final Chorus - all five voices]
+      Two bows and she will not lend either one of them,
+      and every crew on this lane knows it and nobody minds,
+      and if you want to know what somebody is actually like
+      find the one thing they will not do and ask them why.
+
+      [Outro - fade on the two fiddles]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0337
+    title: Everything on the Manifest
+    track_number: 9
+    mood: [blunt, driving, brisk]
+    fact: >-
+      The lyric lists what the crew was carrying on the run the record was made during, in the
+      manifest's own order.
+    arrangement_note: the list is sung in the manifest's own order across two verses with the crew answering each item, and the band never varies underneath it because a manifest does not build
+    intro: 9
+    outro: cold
+    target_duration: "4:30"
+    prompt: >-
+      Boogie-driven rock, 136 BPM, blunt and driving, brisk. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato. A crew chorus of four and five voices in unison rather than harmony,
+      mixed registers with one woman's voice clearly audible above the men, answering each item of a
+      sung list. Two electric guitars, electric bass, drum kit with tuned oxygen-tank drums left
+      ringing rather than damped, stripped-wire chimes, with the band staying at exactly the same
+      size and weight underneath the list from first item to last. Tracked loose rather than gridded,
+      light compression. Nine seconds of full band before the first sung word. Cold stop.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production, dynamic builds
+    lyrics: |
+      [Intro - 9 seconds, full band, no vocal]
+
+      [Verse 1]
+      This is what was in the hold while we were making this,
+      in the order it is written on the page in the cab,
+      which is not the order it went on and not the order it comes off,
+      it is the order somebody in an office typed it in,
+      and it is the only version of the run that will still exist
+      in about forty years, when nobody remembers the rest.
+
+      [Chorus]
+      Everything on the manifest and nothing that is not,
+      and everything that is not is somebody going to prison.
+      Read it, sign it, carry it, hand it over at the far end.
+      That is the entire job and everything else is talking.
+
+      [Verse 2]
+      Scrubber parts. Nine crates. For a settlement I have never seen.
+      Seed stock, four crates, which have to stay above a temperature.
+      Rolled alloy, eleven crates, which is most of the weight.
+      Somebody's furniture, one crate, and a note asking us to be careful.
+
+      [Chorus]
+      Everything on the manifest and nothing that is not,
+      and everything that is not is somebody going to prison.
+      Read it, sign it, carry it, hand it over at the far end.
+      That is the entire job and everything else is talking.
+
+      [Verse 3]
+      Rations, forty crates, which is what most of it always is.
+      Two oxygen tanks, sealed, with their own paperwork.
+      A box the size of a hand with three signatures on it.
+      And a bag of something personal that a clerk put on by mistake.
+
+      [Bridge]
+      The furniture was a woman moving out to the frontier.
+      We were careful. Hess strapped it himself and told nobody.
+
+      [Final Chorus - all five voices]
+      Everything on the manifest and nothing that is not.
+      Fifty-eight crates, nine days, four ports and a signature,
+      and one of those crates is a whole person's life in it
+      and there is nothing on the page that says which.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0338
+    title: Pipes at the Turnaround
+    track_number: 10
+    mood: [solemn, sustained, slow]
+    fact: >-
+      Ivena Sorn played the pipe part in a hall she had not worked in since 2600 and refused a second
+      take once the room had settled around the instrument.
+    arrangement_note: a guest resonance pipe, which is not an instrument this band owns, played in one take and never doubled, and the band stays out of its register for the whole song
+    intro: 24
+    outro: sustain
+    target_duration: "5:30"
+    prompt: >-
+      Boogie-driven rock at its slowest, 112 BPM, solemn and sustained, slow. Male lead vocal, high
+      hard tenor, carrying and a shade nasal, plain and undecorated, no vibrato, never pushed here. A
+      crew chorus of four and five voices in unison rather than harmony, mixed registers with one
+      woman's voice clearly audible above the men, quiet throughout. A guest resonance pipe — a long
+      alloy tube with a deep organ tone — played in a single take and never doubled, with the rest of
+      the band staying out of its register entirely; two electric guitars, electric bass, drum kit
+      with tuned oxygen-tank drums left ringing rather than damped, stripped-wire chimes. Tracked
+      loose rather than gridded, light compression. Twenty-four seconds of the pipe alone before the
+      first sung word. Ends on a held pipe note left to decay.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 24 seconds, the guest resonance pipe alone, no vocal]
+
+      [Verse 1]
+      A turnaround is eleven hours and nine of them are waiting
+      and the hall at that port has been there longer than the port
+      and is the only warm building on the whole of that side,
+      and everybody off every hauler ends up in it eventually,
+      the freight crews and the clerks and whoever missed the last ferry.
+
+      [Verse 2]
+      She had not been in that room since the year two thousand six hundred
+      and walked in and put a hand flat on the wall by the door
+      and stood there for about a minute before she said anything
+      and then asked what key we were in, and that was all.
+
+      [Chorus]
+      Pipes going at the turnaround, and nobody has anywhere to be.
+      Eleven hours, one hall, whoever came off which run.
+      Nothing gets decided here and nothing gets loaded
+      and it is the only part of a run anybody remembers.
+
+      [Verse 3]
+      One take. She would not do another. She said the room
+      had settled round the instrument and it would not do it twice
+      and that anything after this would be a copy of it,
+      and she was already putting the case together as she said it,
+      and marked the tuning on her cuff and went out to the gate.
+
+      [Chorus]
+      Pipes going at the turnaround, and nobody has anywhere to be.
+      Eleven hours, one hall, whoever came off which run.
+      Nothing gets decided here and nothing gets loaded
+      and it is the only part of a run anybody remembers.
+
+      [Bridge]
+      We stayed out of her register for the whole of the take.
+      That was Ryke's idea and it is the best decision on this record.
+
+      [Final Chorus - the crew quietly]
+      Pipes going at the turnaround, and nobody has anywhere to be,
+      and in about four hours a departure will come up on a board
+      and every person in this hall will stand up at once
+      and none of us will say anything about any of it.
+
+      [Outro - held pipe note, left to decay]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0339
+    title: Hold Your Own Line
+    track_number: 11
+    mood: [defiant, loud, fast]
+    fact: >-
+      The membership vote on the running order moved this track from last to eleventh by two votes.
+    arrangement_note: written and arranged as a closing track, so it ends the way a record ends, and then there is another song after it, which the membership decided and the band did not
+    intro: 7
+    outro: fade
+    target_duration: "4:20"
+    prompt: >-
+      Boogie-driven rock, 150 BPM, defiant and loud, fast. Male lead vocal, high hard tenor, carrying
+      and a shade nasal, pushing at the top of every chorus and staying there, plain and undecorated,
+      no vibrato. A crew chorus of four and five voices in unison rather than harmony, mixed
+      registers with one woman's voice clearly audible above the men, shouting the last chorus. Two
+      electric guitars, electric bass, drum kit with tuned oxygen-tank drums left ringing rather than
+      damped, stripped-wire chimes. Tracked loose rather than gridded, light compression, and
+      arranged as the closing track of a record — building to a full-size ending of the kind that
+      closes a record. A sixteen-second lead guitar break. Seven seconds of full band before the first sung
+      word. Fade at full size.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 7 seconds, full band, no vocal]
+
+      [Verse 1]
+      Everybody on a crew has one thing they will not do
+      and most people find out what theirs is by accident
+      about nine years in, on a bad day, in front of somebody,
+      in a hold or a transfer hall or a bay with the doors open,
+      and after that they know it and it does not move.
+
+      [Chorus]
+      Hold your own line. Nobody else is going to hold it.
+      Not the office, not the membership, not the four of us.
+      You work out where it is and you say it once, clearly,
+      and then you do not have that conversation again.
+
+      [Verse 2]
+      Bel's is a page at a table. Hess's is the ring on the tanks.
+      Una's is four names on a list she would not give up.
+      Ryke's is a writing line and it cost him eighteen months.
+      Mine is a word in a chorus that a man wanted to fix.
+
+      [Instrumental - lead guitar break, 16 seconds]
+
+      [Chorus]
+      Hold your own line. Nobody else is going to hold it.
+      Not the office, not the membership, not the four of us.
+      You work out where it is and you say it once, clearly,
+      and then you do not have that conversation again.
+
+      [Verse 3]
+      I wrote this to be the last thing on the record
+      and it ends the way a last thing ends, at full size,
+      and ninety people voted and it went to eleventh by two,
+      and I lost, and that is the whole of what the song is about.
+
+      [Final Chorus - all five voices, shouted]
+      Hold your own line. Nobody else is going to hold it.
+      I held mine on a word and I lost this one on a vote
+      and both of those are what a membership is for
+      and there is one more song after this and I like it better,
+      and ninety people were right and I was wrong,
+      and I have said that out loud exactly once, at a meeting.
+
+      [Outro - fade at full size]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0340
+    title: Wages at the End of It
+    track_number: 12
+    mood: [warm, resolute, midtempo]
+    fact: >-
+      Calo Meret copied out a full arrangement and then cut it to a single sustained chord, which is
+      what the record uses.
+    arrangement_note: one sustained guest keyboard chord under the last chorus and nothing else from him anywhere, which is what is left of four pages he wrote out himself and then removed
+    intro: 16
+    outro: fade
+    target_duration: "5:10"
+    prompt: >-
+      Boogie-driven rock, 124 BPM, warm and resolute, midtempo. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato. A crew chorus of four and five voices in unison rather than harmony,
+      mixed registers with one woman's voice clearly audible above the men. Two electric guitars,
+      electric bass, drum kit with tuned oxygen-tank drums left ringing rather than damped,
+      stripped-wire chimes, and one single sustained guest keyboard chord under the final chorus and
+      nowhere else in the song. Tracked loose rather than gridded, light compression. Sixteen seconds
+      of bass, chimes and guitar before the first sung word. Fade with the sustained chord under it.
+    exclude: close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production, continuous keyboard accompaniment
+    lyrics: |
+      [Intro - 16 seconds, bass, chimes and guitar, no vocal]
+
+      [Verse 1]
+      There is a table at the far end of the transfer hall on burn day
+      with a woman behind it and a box and a list of names
+      and everybody on the freight circuit walks past it once
+      and the queue is the only place all of us are ever together.
+
+      [Chorus]
+      And wages, at the end of all of it. That is what this is for.
+      Not the road, not the crew, not the songs, not the hall.
+      Nine days out and nine days back and a name on a list
+      and a woman at a table who says it out loud.
+
+      [Verse 2]
+      A man came down with four pages of a written arrangement
+      and listened to this once and took out all four pages
+      and left one chord underneath the last chorus,
+      and would not be talked out of it, and was right.
+
+      [Chorus]
+      And wages, at the end of all of it. That is what this is for.
+      Not the road, not the crew, not the songs, not the hall.
+      Nine days out and nine days back and a name on a list
+      and a woman at a table who says it out loud.
+
+      [Verse 3]
+      It is not a romantic job and I have never said it was
+      and the twelve songs on this record are about people
+      and every one of those people got up because of that table
+      and would not have got up for any of the rest of it.
+
+      [Bridge]
+      Everything I have said on this record I meant.
+      And I would not have said one word of it unpaid.
+
+      [Verse 4]
+      The queue on burn day is the whole freight circuit standing still,
+      four crews deep and nobody impatient about any of it,
+      and it is the one hour of the year that everybody has,
+      and the songs are for that hour and always have been.
+
+      [Final Chorus - all five voices, one sustained chord underneath]
+      And wages, at the end of all of it. That is what this is for,
+      and the queue goes round the hall and out past the doors
+      and every single person in it has somewhere to be after
+      and this is the twenty minutes before all of them go.
+
+      [Outro - fade, the sustained chord last]
+    take: null                    # M-31 fills this in at the Suno sitting

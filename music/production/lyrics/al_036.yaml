@@ -1,0 +1,566 @@
+# al_036 — Slow Yard · Ballast Weather (b_018) · Deep Register · 2624 · 7 songs
+#
+# Written by M-22. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# A season in a Forge yard building, worked on the days it was not in use, which is why it took
+# longer than anything else this band has made. The wiki gives it a singer who wanted a slower record
+# and got one — most of it tracked under the tempo the band plays it at live — and a solo handed to a
+# loader from the yard gate. **No backing vocal anywhere** (b_018's card).
+#
+# **s_0306 is written against its own fact and the fact wins.** The wiki says the band recorded it
+# before anybody had written a second verse. §12 rule 9 asks for three verse sections, so the song
+# has three and they are all the same verse: the only one it has, sung three times, which is what a
+# band with one verse and a booked room actually does. The arrangement note says so and the
+# staging tags say so.
+#
+# **s_0310's fact does not put a voice on this record.** Sel Ardin arranged the closing chorus around
+# the singer's guide vocal; that is an arrangement of the band around one voice, not a second voice,
+# and the guide take is what is issued. The card's `backing: none` is untouched.
+#
+# Three of these seven take an instrumental break (§7), on the lead guitar — except that on s_0307
+# the person playing it is not in the band.
+#
+# `generation:` and every `take:` are empty until M-31's Suno sitting fills them in.
+
+album:
+  id: al_036
+  title: Slow Yard
+  band: b_018
+  band_name: Ballast Weather
+  label: label_4
+  release_year: 2624
+  genre: lane-rock
+  cornerstone: false
+  song_count: 7
+  style_card: b_018
+  room: >-
+    One Forge yard building, booked for a season and used on the days nothing else needed it. The
+    style card holds — twin guitars hard apart, pipes doubling the bass under the chorus, steady
+    unhurried drums, light compression, and no backing vocal of any kind — and the one thing that
+    moves is tempo: most of this record sits below the speed the band plays it at live, at the
+    bottom of the card's 100 to 136. Three fact-bound exceptions are explicit: the lead guitarist
+    stands down on s_0307 and the solo is played by a loader from the yard gate; Calo Meret's guest
+    keyboard part on s_0308 is what was left after he removed most of his own written arrangement;
+    and Ivena Sorn ends s_0309 alone on the pipes, in a tuning she marked on her cuff and the band
+    has used since. Nobody sings on this record but Isa Lorne.
+
+generation:
+  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0304
+    title: Slow Yard
+    track_number: 1
+    mood: [weary, heavy, slow]
+    fact: >-
+      The band tracked the whole song under the tempo they play it at live, and Isa Lorne has said it
+      is the only recording of theirs she prefers to the performance.
+    arrangement_note: everything is played about ten beats a minute under where the band takes it live, which puts a gap after every snare that nothing fills, and nothing is added to cover the gaps
+    intro: 16
+    outro: fade
+    target_duration: "4:45"
+    prompt: >-
+      Even mid-tempo heartland rock at its slowest, 100 BPM, weary and heavy, slow and dragging
+      slightly behind itself. Female lead vocal, warm mid alto, level and unhurried, plain diction,
+      ending lines flat rather than lifting them, never belting. No backing vocal of any kind
+      anywhere; the second guitar gives a short answer only after the last line of each chorus and
+      leaves every snare gap empty. Two bright thin-toned electric guitars hard apart, electric
+      bass, resonance pipes doubling the bass under the chorus with a deep alloy organ tone, drum
+      kit with an audible gap after every snare that nothing fills. Tracked live in a Forge yard
+      building, steady unhurried drums, light compression, no reverb of any size. Sixteen seconds of
+      pipes and one guitar before the first sung word. Fade.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 16 seconds, pipes and one guitar, no vocal]
+
+      [Verse 1]
+      Nothing has moved in this yard since about the middle of the season
+      and there are four crates of cargo by the wall that nobody has claimed
+      and are on no manifest anybody in this settlement can find
+      and a light at the top that comes on before anybody needs it
+      and goes off again at a time somebody set nine years ago.
+
+      [Verse 2]
+      We come in on the days the building is not being used,
+      which is most days now, and put four amps on the floor
+      and play everything about ten under where we play it live
+      and stop for an hour in the middle because there is no reason not to.
+
+      [Chorus]
+      Slow yard. Nothing coming, nothing going out.
+      A season of it and a door that is open at both ends
+      and four of us not in a hurry for the first time
+      since a man from a label first put a page on a table.
+
+      [Verse 3]
+      By the sixth week Neve had stopped bringing a clock
+      and Kolm left his coat on the hook by the near door,
+      and Perin knew which afternoon the yard light came on,
+      and I knew the freight clerk's name without ever asking.
+      Four people can spend a season waiting for nothing
+      and still come back on the next clear day.
+
+      [Chorus]
+      Slow yard. Nothing coming, nothing going out.
+      A season of it and a door that is open at both ends
+      and four of us not in a hurry for the first time
+      since a man from a label first put a page on a table.
+
+      [Bridge]
+      We play it faster on stage. We will always play it faster.
+      This is the only one of ours I would rather have than the room.
+
+      [Final Chorus]
+      Slow yard. Nothing coming, nothing going out.
+      There is a whole settlement of people wanting the opposite
+      and I have wanted the opposite for twenty-seven years
+      and it turns out that this is what I actually wanted.
+
+      [Outro - fade on the pipes]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0305
+    title: Same Route Every Year
+    track_number: 2
+    mood: [nostalgic, warm, midtempo]
+    fact: >-
+      The second verse lists the four settlements Ballast Weather have played every year since 2600,
+      in the order the route takes them.
+    arrangement_note: the four settlements are named in the second verse against a bar of the band each and nothing else moves under them, so the list is the only thing happening
+    intro: 10
+    outro: fade
+    target_duration: "4:30"
+    prompt: >-
+      Even mid-tempo heartland rock, 118 BPM, nostalgic and warm, midtempo. Female lead vocal, warm
+      mid alto, level and unhurried, plain diction, ending lines flat rather than lifting them,
+      never belting. No backing vocal of any kind anywhere; the second guitar gives one short answer
+      after the last line of each chorus and stays silent through the place-name verse. Two bright
+      thin-toned electric guitars hard apart, electric bass, resonance pipes doubling the bass under
+      the chorus with a deep alloy organ tone, drum kit. Tracked live in a Forge yard building,
+      steady unhurried drums, light compression. One verse of four place names with a single bar of
+      band under each and no guitar answers or other movement. Ten seconds of both guitars and pipes
+      before the first sung word. Fade.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 10 seconds, both guitars and pipes, no vocal]
+
+      [Verse 1]
+      People ask whether we are going to do somewhere else this year
+      and they ask it the way you ask somebody about their health,
+      carefully, as though the answer might be difficult,
+      and the answer is no, and it has not been difficult since 2600.
+
+      [Pre-Chorus]
+      Four halls, one lane, and a hauler out of Forge on the Monday.
+
+      [Verse 2 - one bar of band under each name]
+      Forge, because it is where we live and it is first.
+      Low Span, on the freight exchange, three days after.
+      Verrin Reach, which is the small one and the best one.
+      Cold Harbor at the end of it, and then the yard, and then home.
+
+      [Chorus]
+      The same four, the same order, twenty-four years of it.
+      Not because we could not go further. We were asked.
+      Because a hall you have played twenty-four times
+      is a room full of people and not a room full of strangers.
+
+      [Verse 3]
+      There is a woman at Verrin Reach who brings her daughter now
+      and the daughter is the age the woman was at the first one
+      and neither of them has ever come up and said anything to me
+      and I would not know what to do with it if they did.
+
+      [Chorus]
+      The same four, the same order, twenty-four years of it.
+      Not because we could not go further. We were asked.
+      Because a hall you have played twenty-four times
+      is a room full of people and not a room full of strangers.
+
+      [Bridge]
+      Two settlements have asked to be put on the route and been refused.
+      It is not a route any more. Four is what it is.
+
+      [Final Chorus]
+      The same four, the same order, twenty-four years of it,
+      and one day it will be three, and that is coming,
+      and I have thought about which one and I will not say,
+      and the year it happens we will play the other three anyway.
+
+      [Outro - fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0306
+    title: Rust Doesn't Argue
+    track_number: 3
+    mood: [blunt, driving, brisk]
+    fact: >-
+      Kolm Estry wrote the title on the back of a maintenance report and the band recorded the song
+      before anyone had written a second verse.
+    arrangement_note: there is one verse and it is sung three times, because that is all the song had when the room was booked, and each time round it is arranged differently while the words do not change at all
+    intro: 5
+    outro: cold
+    target_duration: "4:00"
+    prompt: >-
+      Even mid-tempo heartland rock, 130 BPM, blunt and driving, brisk. Female lead vocal, warm mid
+      alto, level and unhurried, plain diction, ending lines flat rather than lifting them, never
+      belting. No backing vocal of any kind anywhere; the second guitar answers only the last two
+      lines of each chorus and is silent with the other guitar through the second verse. Two bright
+      thin-toned electric guitars hard apart, electric bass, resonance pipes doubling the bass under
+      the chorus with a deep alloy organ tone, drum kit. Tracked live in a Forge yard building,
+      steady unhurried drums, light compression. The same verse returns three times with the same
+      words and a different arrangement each time — first with the full band, then with both guitars
+      out, then with everything at once. A fourteen-second lead guitar break. Five seconds of rhythm
+      guitar and kick before the first sung word. Cold stop.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 5 seconds, rhythm guitar and kick, no vocal]
+
+      [Verse 1]
+      He wrote three words on the back of a maintenance report
+      about a bulkhead rail on the near door, going for two years
+      and has been reported four times and inspected twice
+      and is on a list somewhere between here and the office in the core.
+      It is not going to argue with anybody. It is not going to write in.
+      It is going to keep doing what it has been doing since 2622,
+      quietly, all season, in the weather, at its own speed,
+      and one morning somebody is going to put a hand on it.
+
+      [Chorus]
+      Rust doesn't argue. It does not have to.
+      It has got nothing to prove and nowhere else to be
+      and every single thing it is waiting for is coming.
+      That is the whole of its position and it is a strong one.
+
+      [Verse 2 - the same words, guitars out, bass and pipes only]
+      He wrote three words on the back of a maintenance report
+      about a bulkhead rail on the near door, going for two years
+      and has been reported four times and inspected twice
+      and is on a list somewhere between here and the office in the core.
+      It is not going to argue with anybody. It is not going to write in.
+      It is going to keep doing what it has been doing since 2622,
+      quietly, all season, in the weather, at its own speed,
+      and one morning somebody is going to put a hand on it.
+
+      [Instrumental - lead guitar break, 14 seconds]
+
+      [Chorus]
+      Rust doesn't argue. It does not have to.
+      It has got nothing to prove and nowhere else to be
+      and every single thing it is waiting for is coming.
+      That is the whole of its position and it is a strong one.
+
+      [Verse 3 - the same words again, everything at once]
+      He wrote three words on the back of a maintenance report
+      about a bulkhead rail on the near door, going for two years
+      and has been reported four times and inspected twice
+      and is on a list somewhere between here and the office in the core.
+      It is not going to argue with anybody. It is not going to write in.
+      It is going to keep doing what it has been doing since 2622,
+      quietly, all season, in the weather, at its own speed,
+      and one morning somebody is going to put a hand on it.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0307
+    title: Give the Solo Away
+    track_number: 4
+    mood: [generous, rowdy, fast]
+    fact: >-
+      Perin Dask stood down and the solo is played by a loader the band met at the yard gate,
+      credited on the sleeve by name.
+    arrangement_note: the band's own lead guitarist stays on rhythm for the whole song and a third guitar enters only for the twenty-second break, played by a yard loader who used to play but is not now in a band, so it is slower and simpler than anything else on the record
+    intro: 7
+    outro: cold
+    target_duration: "4:20"
+    prompt: >-
+      Even mid-tempo heartland rock at its fastest, 134 BPM, generous and rowdy, fast. Female lead
+      vocal, warm mid alto, level and unhurried, plain diction, ending lines flat rather than
+      lifting them, never belting. No backing vocal of any kind anywhere; the second band guitar
+      gives one short answer after the last line of each chorus and otherwise stays on rhythm. Two
+      bright thin-toned band guitars hard apart, both playing rhythm; electric bass, resonance pipes
+      doubling the bass under the chorus with a deep alloy organ tone, drum kit. Tracked live in a
+      Forge yard building, steady unhurried drums, light compression. A third, guest electric guitar
+      enters only for a twenty-second break, played by a yard loader who used to play but is not now
+      in a band — restrained, slower, simpler and plainer than anything else on the record, with one
+      note held unexpectedly long before it resolves. Seven seconds of both band guitars before the
+      first sung word. Cold stop.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production, virtuosic or fast lead guitar
+    lyrics: |
+      [Intro - 7 seconds, both guitars, no vocal]
+
+      [Verse 1]
+      There is a loader we met by the gate of that yard
+      who has worked the morning shift since before we booked the building,
+      and he told us in the second week that he used to play,
+      in the way people say it, which means do not ask me to.
+
+      [Verse 2]
+      So nobody asked him for four weeks and then Perin did,
+      and he said no, and then said no again, and then said when,
+      and came in on a Thursday with a guitar in a bag
+      that had not been out of the bag since about 2611.
+
+      [Chorus]
+      Give the solo away. It is not a possession.
+      Somebody in this yard has been waiting nine years to be asked
+      and the four of us have been asked more times than we can count,
+      and one of those is a problem and it is not his.
+
+      [Instrumental - the loader's guitar break, 20 seconds, slow and plain]
+
+      [Verse 3]
+      It is slower than Perin would have played it and simpler,
+      and he holds one note about a bar past where you expect it
+      and then comes off it in a way I did not see coming,
+      and Perin turned round in the room and said keep that.
+
+      [Chorus]
+      Give the solo away. It is not a possession.
+      Somebody in this yard has been waiting nine years to be asked
+      and the four of us have been asked more times than we can count,
+      and one of those is a problem and it is not his.
+
+      [Verse 4]
+      His name is on the sleeve in the same size as the rest of us
+      and the label asked twice whether that was really what we wanted
+      and I said yes twice, and there was no third time,
+      and he has not come back to play on anything since and I keep asking.
+
+      [Final Chorus]
+      Give the solo away. It is not a possession.
+      There is one of him on every loading crew in every yard
+      in every settlement on this whole lane, doing the work,
+      with an instrument still in its case at the end of a shift,
+      and nobody has asked any of them for about twenty years.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0308
+    title: Ask Me When I'm Off
+    track_number: 5
+    mood: [wry, warm, midtempo]
+    fact: >-
+      Calo Meret arrived with the arrangement copied out in full and removed most of it once the band
+      started playing, as he does.
+    arrangement_note: a guest piano part that is almost entirely absent, playing one chord after the first verse and three in the last chorus, the final one held under the fade, which is what was left after Calo Meret took the rest of his written arrangement out
+    intro: 12
+    outro: fade
+    target_duration: "4:35"
+    prompt: >-
+      Even mid-tempo heartland rock, 120 BPM, wry and warm, midtempo. Female lead vocal, warm mid
+      alto, level and unhurried, plain diction, ending lines flat rather than lifting them, never
+      belting. No backing vocal of any kind anywhere; the second guitar gives one short answer after
+      the last line of the first two choruses and stays silent in the final chorus. Two bright
+      thin-toned electric guitars hard apart, electric bass, resonance pipes doubling the bass under
+      the chorus with a deep alloy organ tone, drum kit, and a guest upright piano. The piano plays
+      one isolated chord after the first verse, then stays silent until the final chorus, where it
+      plays after lines one, three and four; the last chord sustains under the fade. Tracked live in
+      a Forge yard building, steady unhurried drums, light compression. Twelve seconds of both
+      guitars and bass before the first sung word. Fade.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production, continuous piano accompaniment
+    lyrics: |
+      [Intro - 12 seconds, both guitars and bass, no vocal]
+
+      [Verse 1]
+      Do not ask me about it at the gate with my coat half on
+      and do not ask me about it in the eleventh hour on a deck
+      and do not ask me the thing you actually want to ask
+      in the four minutes between the shed and the road.
+
+      [Guest piano - one chord, then silent]
+
+      [Chorus]
+      Ask me when I am off. Ask me on a Sunday.
+      Ask me when I have slept and eaten and got nothing on
+      and I will give you a straight answer and I will mean it,
+      and you will get a better one than the one you are chasing now.
+
+      [Verse 2]
+      Calo came in with four pages of an arrangement copied out
+      in a small clear hand with every bar of it accounted for,
+      and he listened to us play it through once, the whole way,
+      and then took a pen and crossed out about nine tenths of it.
+
+      [Chorus]
+      Ask me when I am off. Ask me on a Sunday.
+      Ask me when I have slept and eaten and got nothing on
+      and I will give you a straight answer and I will mean it,
+      and you will get a better one than the one you are chasing now.
+
+      [Verse 3]
+      A supervisor asked me at the yard door in Forge
+      whether I meant to take another lane contract or go,
+      and I gave him an answer because my hand was on the latch,
+      then came back Sunday and gave him the answer I meant.
+
+      [Bridge]
+      The first answer keeps the shift moving. That is all it does.
+      The second one is the one you should write down.
+
+      [Final Chorus - piano after lines 1, 3 and 4 only]
+      Ask me when I am off. Ask me on a Sunday.
+      Half of what I have said in a yard at the end of a shift
+      I have had to go back and say again properly
+      and the second time is the one that ever counted.
+
+      [Outro - fade, the last piano chord under it]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0309
+    title: Last Bell at the Hall
+    track_number: 6
+    mood: [reflective, sustained, slow]
+    fact: >-
+      Ivena Sorn ends the track alone on the pipes and marked the tuning on her cuff, and it is the
+      tuning the band have used ever since.
+    arrangement_note: the band leaves one instrument at a time through the last two minutes and the pipes finish the track alone, in a tuning nobody in this band had used before and everybody has used since
+    intro: 22
+    outro: sustain
+    target_duration: "5:30"
+    prompt: >-
+      Even mid-tempo heartland rock at its slowest, 100 BPM, reflective and sustained, slow. Female
+      lead vocal, warm mid alto, level and unhurried, plain diction, ending lines flat rather than
+      lifting them, never belting. No backing vocal of any kind anywhere; the second guitar gives one
+      short answer after the last line of the first two choruses and stops answering before the
+      two-minute exit begins. Two bright thin-toned electric guitars hard apart, electric bass,
+      resonance pipes with a deep alloy organ tone, drum kit. Tracked live in a Forge yard building,
+      steady unhurried drums, light compression, no reverb of any size. Begin a two-minute withdrawal
+      at the bridge: rhythm guitar leaves after its first line, lead guitar after its second, drums
+      after line two of the final chorus, and bass after line four; Isa sings a brief coda over Ivena
+      Sorn's pipes, then Ivena ends alone. Twenty-two seconds of pipes alone before the first sung
+      word. Ends on a long held pipe note with nothing else on it.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 22 seconds, pipes alone, no vocal]
+
+      [Verse 1]
+      There is a bell in the second hall on the route that they ring
+      about ten minutes before they want everybody gone,
+      and it is not loud and it is not unfriendly and it works,
+      and I have heard it twenty-four times and never once resented it.
+
+      [Pre-Chorus]
+      Ten minutes. That is the whole of the warning anybody gets.
+
+      [Verse 2]
+      Every good room has one. It does not have to be a bell.
+      It is a light going up, it is a chair going on a table,
+      it is a keeper standing near a door and not saying anything,
+      and if a room has not got one then the room does not end.
+
+      [Chorus]
+      Last bell. Ten minutes. Finish what you are saying.
+      Nobody is being thrown out and nobody is in trouble.
+      Somebody has to lock this and go home to their own life
+      and it has been somebody's whole evening and not yours.
+      There is a last ferry for everything and this is the hall's.
+
+      [Verse 3]
+      Ivena came down for one afternoon to play the ending
+      and found a tuning nobody in this band had ever used,
+      and wrote it on her cuff in the way she has always done,
+      and we have used it on everything since and never told her.
+
+      [Chorus]
+      Last bell. Ten minutes. Finish what you are saying.
+      Nobody is being thrown out and nobody is in trouble.
+      Somebody has to lock this and go home to their own life
+      and it has been somebody's whole evening and not yours.
+
+      [Bridge - two-minute exit begins; rhythm guitar leaves after line 1, lead guitar after line 2]
+      She would not do a second one. She said the room had settled.
+      I did not understand that for about four years.
+
+      [Final Chorus - drums leave after line 2, bass after line 4; only voice and pipes remain]
+      Last bell. Ten minutes. Finish what you are saying.
+      Get your coat. Say the thing to the person now.
+      There is a whole settlement outside and it is cold
+      and this room has been warm for four hours and it is enough.
+
+      [Vocal Coda - Isa over Ivena's pipes only]
+      Last bell. Ten minutes. I heard it.
+      The door is open. I am going now.
+
+      [Outro - Ivena alone, one long held pipe note]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0310
+    title: Everything Still Moves
+    track_number: 7
+    mood: [resolute, loud, fast]
+    fact: >-
+      Sel Ardin built the closing chorus around Isa Lorne's guide vocal without telling her, and the
+      guide take is the one on the record.
+    arrangement_note: the vocal on the last chorus is a guide take that was never meant to be kept, so it is further from the microphone and less careful than the rest, and the band was arranged around it afterwards rather than the other way round
+    intro: 4
+    outro: cold
+    target_duration: "4:05"
+    prompt: >-
+      Even mid-tempo heartland rock at its fastest, 136 BPM, resolute and loud, fast. Female lead
+      vocal, warm mid alto, level and unhurried, plain diction, ending lines flat rather than
+      lifting them, never belting — and on the final chorus a rougher, more distant, less careful
+      take of the same voice, further from the microphone, with the band arranged around it. No
+      backing vocal of any kind anywhere; the second guitar answers only lines one and four of the
+      first two choruses and stays silent through the exposed final chorus. Two bright thin-toned
+      electric guitars hard apart, electric bass, resonance pipes doubling the bass under the chorus
+      with a deep alloy organ tone, drum kit. Tracked live in a Forge yard building, steady
+      unhurried drums, light compression. A sixteen-second lead guitar break. Four seconds of drums
+      and bass before the first sung word. Cold stop.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 4 seconds, drums and bass, no vocal]
+
+      [Verse 1]
+      A season in a building where nothing was going anywhere
+      and four crates by the wall that did not move all year
+      and a light on a timer and a door open at both ends,
+      and I came out of it thinking the opposite of what I went in with.
+
+      [Verse 2]
+      Because it does move. All of it. Constantly. Under everything.
+      The four crates went in the spring on a hauler out of Forge
+      and the rail on the near door was finally taken off
+      and the man on the gate has retired and the gate is somebody else's,
+      and a whole settlement went on doing all of it without us
+      while four people sat in a yard playing slowly at each other.
+
+      [Chorus]
+      It all still moves. Everything is still moving.
+      The slow yard was a season and the season is over.
+      Nothing has stopped anywhere and nothing is going to,
+      and standing still in it for a while was the whole point.
+
+      [Instrumental - lead guitar break, 16 seconds]
+
+      [Verse 3]
+      I sang this once to give the band something to play against
+      and went out to the yard and came back and it was done,
+      and Sel had built the whole last chorus round it
+      and had not asked me and would not have got a yes if he had,
+      and played it back once and then went and stood outside.
+
+      [Chorus]
+      It all still moves. Everything is still moving.
+      The slow yard was a season and the season is over.
+      Nothing has stopped anywhere and nothing is going to,
+      and standing still in it for a while was the whole point.
+
+      [Final Chorus - the guide vocal, further off and less careful]
+      It all still moves. Everything is still moving.
+      That is the guide from a Tuesday, sung in a coat,
+      and it is the best I have sung anything in twenty years
+      and I have stopped being annoyed about it, mostly.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting

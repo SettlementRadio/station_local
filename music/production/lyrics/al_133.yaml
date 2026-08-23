@@ -1,0 +1,540 @@
+# al_133 — The Route in Order · Ballast Weather (b_018) · Deep Register · 2619 · 7 songs
+#
+# Written by M-22. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The record whose running order is the route. Four songs cut in the four settlement halls the band
+# plays every year, in the order the year visits them, and the other three in a Forge yard that the
+# singer paid for herself when the label would not book a fifth room. **No backing vocal anywhere**
+# (b_018's card, and the whole of this band's texture — the second guitar answers her instead).
+#
+# The four hall tracks are 1 to 4 and the three yard tracks are 5 to 7, which is why the record gets
+# quieter and closer as it goes and why the last three sound like one building rather than four.
+#
+# Lane-rock takes a break in roughly one song in three (§7) and b_018 gives it to the lead guitar.
+# Two of these seven take one, and one of the two is played on five strings.
+#
+# `generation:` and every `take:` are empty until M-31's Suno sitting fills them in.
+
+album:
+  id: al_133
+  title: The Route in Order
+  band: b_018
+  band_name: Ballast Weather
+  label: label_4
+  release_year: 2619
+  genre: lane-rock
+  cornerstone: false
+  song_count: 7
+  style_card: b_018
+  room: >-
+    Five rooms rather than one. Tracks 1 to 4 are the four settlement halls of the band's annual
+    route, taken in route order, so each of them carries its own room sound and the album's low end
+    changes four times; tracks 5 to 7 are three days in a Forge yard, closer and drier than any of
+    them. The style card holds throughout — twin guitars hard apart, pipes doubling the bass under
+    the chorus, steady unhurried drums, light compression, and no backing vocal of any kind. Two
+    fact-bound exceptions are explicit: on s_1090 the pipes are the second hall's own rather than
+    the band's, brought back into tune that afternoon by Ivena Sorn, and on s_1091 the lead guitar
+    plays the whole song and its break on five strings. On s_1095 the kit is brushed, which happens
+    nowhere else in this band's catalogue and is the singer's decision over the drummer's objection.
+
+generation:
+  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1089
+    title: The Route in Order
+    track_number: 1
+    mood: [driving, warm, brisk]
+    fact: >-
+      The running order is the order the band's annual route visits the four settlements, and Isa
+      Lorne refused every rearrangement Deep Register proposed.
+    arrangement_note: recorded in the first hall of the route, so the room on this track is the largest on the record and everything after it is smaller
+    intro: 10
+    outro: fade
+    target_duration: "4:10"
+    prompt: >-
+      Even mid-tempo heartland rock, 126 BPM, driving and warm, brisk. Female lead vocal, warm mid
+      alto, level and unhurried, plain diction, ending lines flat rather than lifting them, never
+      belting. No backing vocal of any kind anywhere; the second guitar answers every vocal line
+      where a harmony voice would be. Two bright thin-toned electric guitars hard apart, electric
+      bass, resonance pipes doubling the bass under the chorus with a deep alloy organ tone, drum
+      kit. Tracked live in a large settlement hall, the biggest room on the record, steady unhurried
+      drums, light compression. Ten seconds of both guitars and the hall before the first sung word.
+      Fade.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 10 seconds, both guitars and the hall, no vocal]
+
+      [Verse 1]
+      Same four settlements, same four halls, same order, every year,
+      four halls off one lane and nineteen years of doing it,
+      and we have done it nineteen times and it has never once been discussed,
+      and people ask whether we get bored and the answer is no,
+      and the reason is not a good one, it is just true.
+
+      [Chorus]
+      The route in order. That is how it goes on the record.
+      Not the loud one first and the slow one at the end,
+      the way we actually arrive at them, in the order the year does,
+      and if that makes a bad first side then it makes a bad first side.
+
+      [Verse 2]
+      A man from the label had four other orders drawn up,
+      and every one of them was better, and I said no to all four,
+      and he asked me why and I did not have a reason he would take,
+      and I said it anyway and he wrote it down and printed it.
+
+      [Chorus]
+      The route in order. That is how it goes on the record.
+      Not the loud one first and the slow one at the end,
+      the way we actually arrive at them, in the order the year does,
+      and if that makes a bad first side then it makes a bad first side.
+
+      [Verse 3]
+      There are people in the second settlement who have seen us
+      more times than my own brother has, and by a long way,
+      and there is a woman at the fourth one who has stood in the same place
+      since the year we started and has never spoken to me once.
+
+      [Bridge]
+      Nineteen years is not loyalty, it is a road that goes that way.
+      But it starts as a road and it turns into something.
+
+      [Final Chorus]
+      The route in order. That is how it goes on the record,
+      and the halls get smaller as it goes and so does the band,
+      and by the end of it we are in a yard in Forge
+      with three days paid for out of my own pocket.
+
+      [Outro - fade, the hall last]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1090
+    title: First Hall of the Year
+    track_number: 2
+    mood: [bright, resolute, fast]
+    fact: >-
+      Kolm Estry plays the hall's own resonance pipes rather than the band's, and Ivena Sorn spent
+      the afternoon before it bringing them back into tune.
+    arrangement_note: the pipes on this track are the hall's own and are bigger and slower to speak than the band's, so the chorus arrives about a beat late underneath and nobody corrects it
+    intro: 6
+    outro: cold
+    target_duration: "3:55"
+    prompt: >-
+      Even mid-tempo heartland rock at its fastest, 134 BPM, bright and resolute, fast. Female lead
+      vocal, warm mid alto, level and unhurried, plain diction, ending lines flat rather than
+      lifting them, never belting. No backing vocal of any kind anywhere; the second guitar answers
+      every vocal line where a harmony voice would be. Two bright thin-toned electric guitars hard
+      apart, electric bass, and a very large set of hall resonance pipes doubling the bass under the
+      chorus — slower to speak than the band's own, arriving about a beat late and left uncorrected.
+      Drum kit. Tracked live in a settlement hall, steady unhurried drums, light compression. A
+      twelve-second lead guitar break. Six seconds of the hall pipes finding their note before the
+      first sung word. Cold stop.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 6 seconds, the hall's own pipes finding their note, no vocal]
+
+      [Verse 1]
+      It is always cold and it is always the wrong week for it
+      and half the settlement has not been out since the sealed season
+      and they come in with their coats on and keep them on
+      and by the third song there is a pile of them by the door,
+      and somebody's ration of something warm is going round the back row.
+
+      [Chorus]
+      The first one of the year. Nobody is any good at it.
+      Not us, not the keeper, not the man who does the lights.
+      Everybody is a season out of practice at once
+      and everybody knows it and nobody says it.
+
+      [Verse 2]
+      Their pipes are bolted to the wall and are older than the hall
+      and are half a beat slow because of how long they are,
+      and a woman came in the afternoon before and worked on them
+      and would not tell anybody what she had changed,
+      and marked the number on her cuff and went and sat at the side
+      and did not come to the front once all evening.
+
+      [Instrumental - lead guitar break, 12 seconds]
+
+      [Verse 3]
+      So the chorus lands and then the bottom of it lands after,
+      which sounds like a mistake for about four bars
+      and then sounds like the only way this song could ever go,
+      and we have played it that way in every hall since.
+
+      [Chorus]
+      The first one of the year. Nobody is any good at it.
+      Not us, not the keeper, not the man who does the lights.
+      Everybody is a season out of practice at once
+      and everybody knows it and nobody says it.
+
+      [Final Chorus]
+      The first one of the year, and the coats come off,
+      and the second one is better and the third one is the one,
+      and nobody at the third one knows what the first one cost
+      and I would not go back and skip it for anything.
+
+      [Outro - cold stop, the pipes last]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1091
+    title: Five Strings Will Do
+    track_number: 3
+    mood: [rowdy, comic, fast]
+    fact: >-
+      Perin Dask broke a string two lines in and played the rest on five, and that is the take on the
+      record.
+    arrangement_note: the lead guitar plays the whole song and its break on five strings, working round the missing one rather than avoiding it, and the figure goes wrong in the same place every time
+    intro: 4
+    outro: cold
+    target_duration: "3:45"
+    prompt: >-
+      Even mid-tempo heartland rock at its fastest, 136 BPM, rowdy and comic, fast. Female lead
+      vocal, warm mid alto, level and unhurried, plain diction, ending lines flat rather than
+      lifting them, never belting. No backing vocal of any kind anywhere; the second guitar answers
+      every vocal line where a harmony voice would be. Two bright thin-toned electric guitars hard
+      apart, the lead one obviously working around a missing string and reaching for notes that are
+      not there; electric bass, resonance pipes doubling the bass under the chorus with a deep alloy
+      organ tone, drum kit. Tracked live in a settlement hall, steady unhurried drums, light
+      compression. A fourteen-second lead guitar break played on five strings. Four seconds of drums
+      and rhythm guitar before the first sung word. Cold stop.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 4 seconds, drums and rhythm guitar, no vocal]
+
+      [Verse 1]
+      Two lines in and there was a noise from the far side
+      that I have heard about four hundred times in nineteen years
+      and I did not turn round, because turning round is how you stop,
+      and I have stopped for that noise before and it cost us a take.
+
+      [Chorus]
+      Five strings will do. Five strings have always done.
+      Nobody in that hall knew there were six to start with.
+      You go round the hole in it and you keep the shape
+      and you tell them about it afterwards or you do not.
+
+      [Verse 2]
+      He got most of it. There is a place in the second chorus
+      where the figure reaches for something that has gone
+      and comes back down a different way and it is better,
+      and he has played it that way ever since on all six.
+
+      [Instrumental - lead guitar break on five strings, 14 seconds]
+
+      [Verse 3]
+      I have watched a hauler crew take a full hold out of a bay
+      with two people short and a lift that would only go one way,
+      and nobody in the transfer hall could tell afterwards,
+      and they did not tell anybody either, which is the same thing.
+
+      [Chorus]
+      Five strings will do. Five strings have always done.
+      Nobody in that hall knew there were six to start with.
+      You go round the hole in it and you keep the shape
+      and you tell them about it afterwards or you do not.
+
+      [Bridge]
+      He was furious for about an hour and then he heard it back.
+      Nineteen years and it is the only take of his I have ever heard him play twice.
+
+      [Final Chorus]
+      Five strings will do. Five strings have always done,
+      and the whole of that room went home not knowing anything,
+      and it is on the record, and the reason it is on the record
+      is that it is the best thing he has ever played.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1092
+    title: Nothing Signed at the Table
+    track_number: 4
+    mood: [blunt, hard, midtempo]
+    fact: >-
+      Isa Lorne wrote the verse out of what she says to anyone who puts a contract in front of her
+      at the end of an evening.
+    arrangement_note: the band plays absolutely flat and level for the entire song with no dynamic change anywhere, which is the fourth and smallest hall on the route and the driest room on the record
+    intro: 8
+    outro: cold
+    target_duration: "4:15"
+    prompt: >-
+      Even mid-tempo heartland rock, 116 BPM, blunt and hard, midtempo. Female lead vocal, warm mid
+      alto, level and unhurried, plain diction, ending lines flat rather than lifting them, never
+      belting. No backing vocal of any kind anywhere; the second guitar answers every vocal line
+      where a harmony voice would be. Two bright thin-toned electric guitars hard apart, electric
+      bass, resonance pipes doubling the bass under the chorus with a deep alloy organ tone, drum
+      kit. Tracked live in a small dry settlement hall, absolutely flat and level throughout with no
+      dynamic change anywhere in the song, steady unhurried drums, light compression. Eight seconds
+      of bass and rhythm guitar before the first sung word. Cold stop.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production, dynamic builds
+    lyrics: |
+      [Intro - 8 seconds, bass and rhythm guitar, no vocal]
+
+      [Verse 1]
+      It is always at the end. It is never at the beginning.
+      Nobody has ever put a page in front of me at ten in the morning
+      with a cup of something and an hour to look at it,
+      and I have thought about why that is for nineteen years.
+
+      [Chorus]
+      Nothing gets signed at the table. Not one thing.
+      Not in a good mood, not after a good night,
+      not because it is easier than saying it out loud,
+      not ever, and I have said it to eleven people now.
+
+      [Verse 2]
+      They are not villains. Most of them are tired too
+      and have been told to come back with something signed
+      and have a room booked out and a departure in the morning
+      and they are asking me to solve their week with my year.
+
+      [Chorus]
+      Nothing gets signed at the table. Not one thing.
+      Not in a good mood, not after a good night,
+      not because it is easier than saying it out loud,
+      not ever, and I have said it to eleven people now.
+
+      [Verse 3]
+      The first time I said it I was shaking and I said it badly
+      and the man laughed, not unkindly, and put the page away,
+      and it was fine, it was completely fine, nothing happened,
+      and it took me another four years to believe that.
+
+      [Verse 4]
+      Take it home. Read it at a table you are paying for.
+      Read the fourth page. Read the paragraph at the bottom.
+      Then say yes on a Tuesday morning in your own settlement
+      or say no on a Tuesday morning, which is also a thing you can do.
+
+      [Final Chorus]
+      Nothing gets signed at the table. Not one thing.
+      That is the only piece of advice I have got
+      and it is not about music and it never was,
+      and every crew on every lane could tell you the same.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1093
+    title: Yard Days
+    track_number: 5
+    mood: [weary, plain, slow]
+    fact: >-
+      Isa Lorne paid for the three days in the Forge yard out of her own money after Deep Register
+      declined to book a fifth room.
+    arrangement_note: the first of the three Forge yard tracks, so the room shuts down to something small and close after four halls, and the pipes are further away than they have been all record
+    intro: 18
+    outro: fade
+    target_duration: "4:50"
+    prompt: >-
+      Even mid-tempo heartland rock at its slowest, 100 BPM, weary and plain, slow. Female lead
+      vocal, warm mid alto, level and unhurried, plain diction, ending lines flat rather than
+      lifting them, never belting. No backing vocal of any kind anywhere; the second guitar answers
+      every vocal line where a harmony voice would be. Two bright thin-toned electric guitars hard
+      apart, electric bass, resonance pipes doubling the bass under the chorus but set further back
+      than elsewhere on the record, drum kit played quietly. Tracked live in a small dry yard
+      building, close and unglamorous after four halls, steady unhurried drums, light compression.
+      Eighteen seconds of one guitar and the room before the first sung word. Fade.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 18 seconds, one guitar and the room, no vocal]
+
+      [Verse 1]
+      Four halls and then the money stopped, which we were told
+      in a message that came down the carrier wave while we were loading
+      out of the third hall with the van half full in the rain,
+      and there are three songs left and there is nowhere to do them
+      and everybody in the van already knew what I was going to say.
+
+      [Verse 2]
+      There is a yard building in Forge that is empty most weeks
+      and the man who has the keys wanted almost nothing for it,
+      and I paid him out of my own account on the Thursday morning
+      and did not tell the band the number and they did not ask.
+
+      [Chorus]
+      Three days in a yard. Nobody is going to hear the difference
+      except the four of us, and we hear it every time.
+      The room is small and the record is finished
+      and finished is the only thing that has ever mattered.
+
+      [Verse 3]
+      It is not a noble thing and I do not want it made into one.
+      It is a bad deal, of the kind every freight crew knows,
+      and I took it because the only alternative
+      was a record with four songs on it and an argument
+      that would have gone on until the following spring.
+
+      [Chorus]
+      Three days in a yard. Nobody is going to hear the difference
+      except the four of us, and we hear it every time.
+      The room is small and the record is finished
+      and finished is the only thing that has ever mattered.
+
+      [Bridge]
+      I got it back inside two years, which I did not expect.
+      That is not why I did it and it is nice that it happened.
+
+      [Final Chorus]
+      Three days in a yard, in the cold, with the door open,
+      and the last three songs on this record are the best three.
+      Somebody has to decide and then pay for deciding.
+      It is the one part of this job nobody ever tells you about.
+
+      [Outro - fade on the room]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1094
+    title: Ask the Hall Keeper
+    track_number: 6
+    mood: [wry, warm, midtempo]
+    fact: >-
+      The verse is what the keeper of the second hall on the route has said to the band on arrival
+      every year since 2600, word for word.
+    arrangement_note: the second verse is another person's speech reported exactly, sung at the pace it is actually said rather than at the pace of the song, so the band has to wait for it
+    intro: 12
+    outro: fade
+    target_duration: "4:25"
+    prompt: >-
+      Even mid-tempo heartland rock, 120 BPM, wry and warm, midtempo. Female lead vocal, warm mid
+      alto, level and unhurried, plain diction, ending lines flat rather than lifting them, never
+      belting. No backing vocal of any kind anywhere; the second guitar answers every vocal line
+      where a harmony voice would be. Two bright thin-toned electric guitars hard apart, electric
+      bass, resonance pipes doubling the bass under the chorus with a deep alloy organ tone, drum
+      kit. Tracked live in a small dry yard building, steady unhurried drums, light compression. One
+      verse delivered at conversational speed rather than at the song's pace, with the band waiting
+      through it. Twelve seconds of both guitars before the first sung word. Fade.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 12 seconds, both guitars, no vocal]
+
+      [Verse 1]
+      Every year at the second hall the same man comes out
+      before we have got the doors of the van properly open
+      and says the same eleven things in the same order
+      and has done since the year two thousand six hundred.
+
+      [Chorus]
+      Ask the keeper. The keeper has been here longer.
+      Longer than the label, longer than the route,
+      longer than the four of us and the band before us,
+      and everything anybody needs to know is in those eleven things.
+
+      [Verse 2 - at speaking pace, the band waiting]
+      You are early. The heating is on. It has been on since six.
+      Do not put anything on the left-hand rail, it is a bulkhead.
+      There is tea. There is not much tea. Somebody took the tea.
+      The floor is wet by the far door and it is not going to dry.
+      Same as last year. Same as last year. In you come.
+
+      [Chorus]
+      Ask the keeper. The keeper has been here longer.
+      Longer than the label, longer than the route,
+      longer than the four of us and the band before us,
+      and everything anybody needs to know is in those eleven things.
+
+      [Verse 3]
+      I asked him once what he did before he did this
+      and he looked at me as though I had asked what colour the hall was,
+      and said he had done this, and that was the whole answer,
+      and I have never asked another question in nineteen years.
+
+      [Chorus]
+      Ask the keeper. The keeper has been here longer.
+      Longer than the label, longer than the route,
+      longer than the four of us and the band before us,
+      and everything anybody needs to know is in those eleven things.
+
+      [Bridge]
+      He will not come to the front. He watches from the side door.
+      He has seen every band this settlement has had.
+
+      [Final Chorus]
+      Ask the keeper. The keeper has been here longer.
+      One day we will arrive and it will be somebody else
+      and they will say something different and it will be fine
+      and I will sit in the van for a minute before I go in.
+
+      [Outro - fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1095
+    title: Off Season
+    track_number: 7
+    mood: [reflective, sustained, slow]
+    fact: >-
+      Neve Atlin plays brushes here and nowhere else in the band's whole catalogue, at Isa Lorne's
+      asking and after arguing against it for a week.
+    arrangement_note: brushes instead of sticks for the only time in this band's catalogue, which takes the front off every beat, and the pipes hold one note underneath the whole last chorus
+    intro: 20
+    outro: sustain
+    target_duration: "5:15"
+    prompt: >-
+      Even mid-tempo heartland rock at its slowest, 100 BPM, reflective and sustained, slow. Female
+      lead vocal, warm mid alto, level and unhurried, plain diction, ending lines flat rather than
+      lifting them, never belting. No backing vocal of any kind anywhere; the second guitar answers
+      every vocal line where a harmony voice would be. Two bright thin-toned electric guitars hard
+      apart, electric bass, resonance pipes doubling the bass and holding one long note under the
+      whole last chorus, drum kit played with brushes throughout so that no beat has a front on it.
+      Tracked live in a small dry yard building, light compression, no reverb of any size. Twenty
+      seconds of brushed kit and one guitar before the first sung word. Ends on a held pipe note.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production, struck or driving drums
+    lyrics: |
+      [Intro - 20 seconds, brushed kit and one guitar, no vocal]
+
+      [Verse 1]
+      There are about nine weeks in the year when nobody wants a band
+      and every hall on the route is shut or being repaired
+      and the settlement is indoors and the lanes are quiet
+      and the last ferry of the season has gone out of the harbour
+      and you find out what you are like when nobody is asking.
+
+      [Pre-Chorus]
+      Nine weeks. It is on the calendar. It arrives.
+
+      [Verse 2]
+      I am not good at it. I have never been good at it.
+      I clean things that are clean and I write things I throw away
+      and I go down to the yard and stand about in the cold
+      and come home and say it was fine and it was not fine.
+
+      [Chorus]
+      Off season. Nine weeks of it, every year, on purpose.
+      You cannot run a route without a stretch of nothing in it,
+      and the nothing is the price and it is a real price
+      and nobody puts it on any of the contracts.
+
+      [Verse 3]
+      She argued against the brushes for a week and lost,
+      and said, once, that a drum should sound like a drum,
+      and then played it like this and did not mention it again
+      and has not touched a brush in the twenty-five years since.
+
+      [Chorus]
+      Off season. Nine weeks of it, every year, on purpose.
+      You cannot run a route without a stretch of nothing in it,
+      and the nothing is the price and it is a real price
+      and nobody puts it on any of the contracts.
+
+      [Bridge]
+      It ends. It always ends. The first hall opens in the spring
+      and the coats come off by the third song and it starts again.
+
+      [Final Chorus - one held pipe note underneath]
+      Off season. Nine weeks of it, every year, on purpose,
+      and I have had twenty-five of them and they do not get shorter,
+      and I would not swap one of them for a run on the fast circuit
+      and I would like somebody to know that I said so.
+
+      [Outro - held pipe note]
+    take: null                    # M-31 fills this in at the Suno sitting

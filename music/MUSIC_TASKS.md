@@ -67,7 +67,7 @@ marked **NEXT**.
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-06** `music/catalogue.yaml` · 2026-08-16 | **all done.** The takes are measured (D-083), tagged (D-084), and joined into the one file the station's database ingests — 1,358 tracks, 45 of them playable, checked against the wiki by `make check` (D-085) |
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
 | **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
-| **5 · The bulk — 8 genres, lyrics → audio → measure** | M-21 … M-39 | **M-30** relay-pop's audio, all 60 takes · 2026-08-18 | **M-22 is NEXT** — lane-rock's lyrics, 110 songs across 13 albums and 5 bands. **Relay-pop is finished**: 105 of 105 playable, measured, tagged and in `catalogue.yaml`. One genre down, eight to go — 395 songs of lyrics and 395 of audio |
+| **5 · The bulk — 8 genres, lyrics → audio → measure** | M-21 … M-39 | **M-22** lane-rock's lyrics, all 110 songs · 2026-08-19 | **M-31 is NEXT and it is yours** — lane-rock's audio, 110 songs across 13 albums and 5 bands, the biggest Suno card in the file. Relay-pop is finished; lane-rock's words are written and `make check` is green on all ten of §12's rules. 285 songs of lyrics and 395 of audio still to go |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -101,10 +101,12 @@ starts. That pairing is the point: a problem shows up after about sixty songs in
 The two cards inside one genre cannot overlap, so from here **the sessions take turns rather than
 running side by side.**
 
-**Relay-pop is finished and the turn passes back to the agent.** M-21 wrote the remaining 60 songs
-on 2026-08-17, M-30 generated and filed all 60 on 2026-08-18, and the genre is 105 of 105 playable.
-**M-22 is next** — lane-rock's lyrics, and it is the biggest genre in the catalogue at 110 songs. The
-Suno card after it, M-31, is five bands rather than three.
+**Relay-pop is finished and lane-rock is written, so the turn passes back to you.** M-21 wrote the
+remaining 60 relay-pop songs on 2026-08-17, M-30 generated and filed all 60 on 2026-08-18, and that
+genre is 105 of 105 playable. M-22 wrote lane-rock's 110 on 2026-08-19. **M-31 is next and it is
+yours** — the biggest Suno card in this file, five bands rather than three, 110 songs across 13
+albums. Finish a band in as few sittings as possible (COMMISSION §9), and read the note under M-30
+before the first one.
 
 **One thing the pilot did not settle**, and it is the operator's own words: *"I do expect to have
 better variety in the future with more styles."* The pilot is one genre on one label and could not
@@ -1034,7 +1036,7 @@ start of that month.
 | Order | Lyrics `[agent]` | Audio `[you]` | Songs |
 |---|---|---|---|
 | 1 | **M-21 relay-pop — done** | **M-30 relay-pop — done** | 60 |
-| 2 | **M-22 lane-rock · NEXT** | M-31 lane-rock — 5 bands | 110 |
+| 2 | **M-22 lane-rock — done** | **M-31 lane-rock · NEXT** — 5 bands | 110 |
 | 3 | M-23 deck-talk | M-32 deck-talk — 3 bands | 70 |
 | 4 | M-24 frontier-reels | M-33 frontier-reels — 3 bands | 65 |
 | 5 | M-25 old-system-sessions | M-34 old-system-sessions — 3 bands | 60 |
@@ -1043,7 +1045,7 @@ start of that month.
 | 8 | M-28 core-harmonies | M-37 core-harmonies — 1 band | 15 |
 | 9 | M-29 void-ballads | M-38 void-ballads — 1 band | 10 |
 
-### M-21 … M-29 · `[agent]` Lyrics and prompts — 51 albums, 455 songs — **M-21 DONE 2026-08-17**
+### M-21 … M-29 · `[agent]` Lyrics and prompts — 51 albums, 455 songs — **M-22 DONE 2026-08-19**
 Files: one file per album under `music/production/lyrics/`
 Check: every song has lyrics, a generation prompt and an exclude line; every lyric passes the
 swap-the-nouns test; every song has a vocal. M-21 writes `al_005.yaml` … `al_011.yaml`.
@@ -1067,12 +1069,44 @@ sing their own title and the other 36 take their title from an image in the lyri
 again. Rule 3 cost little (6 of 60 use the echoed answer) and rule 2 came free (42 of 60).
 **Nothing was generated and nothing was measured**: every `generation:` block and every `take:` is
 null until M-30, `music/catalogue.yaml` is byte-identical, and `make music-tag` still reports 45 of 45.
+Result (M-22): **lane-rock is written — 110 songs across 13 albums**, `al_032` … `al_039` and
+`al_131` … `al_135`, which is the biggest genre in the catalogue and the first one that takes an
+instrumental break. Five bands, five different textures, and the words are written for the
+difference: `b_016`'s four shed loaders shouting the last chorus, `b_017`'s hall baritone with one
+low voice under him, `b_018` with **no backing vocal at all** anywhere in three records, `b_019`'s
+whole-crew chorus answering line for line, and `b_061`'s clipped mezzo with two blunt voices on short
+phrases. **`make check` is green on all ten of §12's rules.**
+**§7's four distributions all land.** Breaks: **37 of 110, 34%** — §7's "roughly one in three" — with
+never fewer than two on an album, and every one of them on the instrument its band's card names. The
+keyboard takes exactly one, on `s_1107`, which is the only place `b_061`'s "where the arrangement
+asks" is asked. Ramps: **63% of songs declare ≥8s and 23% declare ≥15s** against §7's ≥40% and ≥15%.
+Outros: **36 cold / 49 fade / 25 sustain**, which is 33/45/23 against 30/45/25. Targets average 4:24
+with nothing under 2:55.
+**The lyrics are longer than relay-pop's on purpose** (D-092): 296 to 387 sung words, **mean 317**
+against M-21's 308, 34,907 words in all. §7's measured 0.746 seconds per word is relay-pop's rate at
+110–130 BPM and lane-rock runs 100–172 with a break in a third of the songs, so the floor is cleared
+by thirty words rather than by two. If M-39 measures this genre faster per word, that is why.
+**Rule 4 was the one that bound, again, and harder.** Lane-rock titles are crew shorthand and every
+one of them wants to be the hook: the first pass had six albums red on rule 4 and two at 89%. **46 of
+110 sing their own title** and the other 64 take it from an image in the lyric, which is M-47's
+finding arriving in a genre that resists it more than relay-pop did. Rule 1 bound next — the
+verse/chorus/verse/chorus/verse/bridge shape is the natural one for this form and had to be broken up
+on six albums. Rule 3 came free: **the echoed answer is on 6 of 110**, because four of these five
+bands answer their lead with real voices in the arrangement instead.
+**Three collisions between the wiki and the style cards were resolved the wiki's way** (D-092):
+`al_033` has acoustic pipes and no backing voice because Juno Kerrick amplifies nothing until 2612
+and Ade Prosk is not in the band yet, `al_132` changes bass chair and amplification halfway through
+and its prompts split five to three, and `al_037` has a four-man chorus and no stripped-wire chimes
+because Una Brack joins in 2604. Each is written into that album's `room:` block and kept out by its
+own exclude line. Two songs are written against their own facts and keep both — `s_0272` is under
+three minutes *and* at the word floor, `s_0306` has one verse sung three times — and **no guest ever
+takes the break**, on any of the four tracks where a guest brings an instrument the band does not own.
+**Nothing was generated and nothing was measured**: every `generation:` block and every `take:` is
+null until M-31, `music/catalogue.yaml` is byte-identical, and `make music-tag` reports exactly what
+it reported before — 105 correct and `87_wrong.mp3` still unclaimed, which is D-091's resting state.
 Depends on: M-20 for M-21; thereafter each genre's lyrics card depends on the previous genre's
-**audio** card being finished — that is what "one genre at a time" means. **M-30 closed on
-2026-08-18, so M-22 is runnable now**: lane-rock, 110 playable songs across 13 albums and 5 bands
-(`al_034` … `al_045`, `al_131` … `al_135`), which is the biggest genre in the catalogue and the
-first one that takes an instrumental break — roughly one song in three, on the instrument each
-band's style card already names (§7).
+**audio** card being finished — that is what "one genre at a time" means. **M-22 closed on
+2026-08-19, so M-31 is runnable now**, and M-23's turn comes when M-31 does.
 
 ### M-30 … M-38 · `[you]` Suno — 455 songs — **M-30 DONE 2026-08-18**
 Files: `music/audio/<label>/<album>/NN.mp3`

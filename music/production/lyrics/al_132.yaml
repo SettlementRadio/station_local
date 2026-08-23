@@ -1,0 +1,617 @@
+# al_132 — Four Won't Fill It · Pipe and Hammer (b_017) · Deep Register · 2612 · 8 songs
+#
+# Written by M-22. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# **This is the record the style card changes on, and the change is the wiki's.** Juno Kerrick
+# amplifies the resonance pipes in 2612, Saul Ravik leaves over it, and Ade Prosk comes in on the
+# bass — and the wiki says half the album was already written when the argument started and the band
+# would not go back and redo it. So the pipes are amplified on the five tracks Prosk plays and
+# acoustic on the three that Ravik plays or that the band cut as a three-piece, and the card's
+# backing line — *one male harmony voice from the bass chair* — is only available on the same five,
+# because the wiki gives Ravik no vocal. **Neither is a bend of the card; both are the card arriving
+# in the middle of the record it was written for.** The voice line never moves.
+#
+# The running order is not the calendar. The title track is the newest thing here and opens the
+# album, and the last song Ravik played on is track 2, which is the sleeve's own joke and the reason
+# Forge players still argue about which half is better.
+#
+# Lane-rock takes a break in roughly one song in three (§7). The break belongs to the pipes, and the
+# three that take one are the three where the amplification is the point.
+#
+# `generation:` and every `take:` are empty until M-31's Suno sitting fills them in.
+
+album:
+  id: al_132
+  title: Four Won't Fill It
+  band: b_017
+  band_name: Pipe and Hammer
+  label: label_4
+  release_year: 2612
+  genre: lane-rock
+  cornerstone: false
+  song_count: 8
+  style_card: b_017
+  room: >-
+    A Forge hall across the year the band changed bass players. The style card's "large ringing
+    hall" and "riff-led hall rock at the hard-rock edge" hold throughout; what moves is the low end.
+    Tracks 1, 4, 5, 6 and 8 have amplified pipes and a low male harmony from the bass chair; tracks
+    2, 7 and the three-piece track 3 have acoustic pipes and no backing voice at all, and their
+    exclude lines say so. Two fact-bound exceptions are explicit: Juno Kerrick plays the bass part
+    himself on s_1083, the week the band was down to three, and Ivena Sorn plays an unamplified low
+    pipe beside Kerrick's amplified one on s_1086, which is the only place on the record the two can
+    be heard against each other. Nobody is added to the line-up anywhere.
+
+generation:
+  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1081
+    title: Four Won't Fill It
+    track_number: 1
+    mood: [driving, defiant, fast]
+    fact: >-
+      The title is what Juno Kerrick said to the rest of the band the first night he put the
+      resonance pipes through an amplifier.
+    arrangement_note: the amplified pipes arrive on the first downbeat at full size and never come back down, and the sixteen-second break is the loudest thing anybody in this band had put on a record
+    intro: 12
+    outro: cold
+    target_duration: "4:10"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 140 BPM, driving and defiant, fast. Male lead vocal,
+      big hall baritone with a hard edge at the top of the range, pushing into the chorus rather
+      than belting it, sung slightly ahead of the band, no vibrato. One low male harmony voice from
+      the bass chair, under the lead on choruses only, never above him and never a stack. Amplified
+      resonance pipes — long alloy tubes, deep organ tone, arriving at full size on the first
+      downbeat and staying there — rhythm electric guitar, electric bass, drum kit with struck
+      alloy. Tracked live in a large ringing hall, the amplified alloy organ tone carrying the
+      bottom under the guitar, drums roomy, guitar mid-range and unpolished. A sixteen-second
+      amplified pipe break, the loudest thing on the record. Twelve seconds of amplified pipes and
+      struck alloy before the first sung word. Cold stop.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony
+    lyrics: |
+      [Intro - 12 seconds, amplified pipes and struck alloy, no vocal]
+
+      [Verse 1]
+      He had it wired by seven and said nothing about it all evening,
+      let us set up, let us tune, let us run the first one through,
+      and then he leaned on the low tube and took the roof off the hall
+      and the three of us stopped playing without deciding to.
+
+      [Chorus]
+      Four won't fill it. Four of us won't fill it.
+      Not this room, not on a Friday, not any more.
+      I have been standing in the same corner for twenty years
+      and the corner has stopped being big enough.
+
+      [Verse 2]
+      Twenty years of getting a hall this size on four pairs of hands.
+      It worked when the halls were half full and it worked when we were young
+      and it does not work on a burn day with eight hundred in
+      and somebody at the back shouting that they cannot hear us.
+      Half the freight crew off the late lane come straight from the siding
+      and stand at the back in their coats and deserve to hear it.
+
+      [Chorus]
+      Four won't fill it. Four of us won't fill it.
+      Not this room, not on a Friday, not any more.
+      I have been standing in the same corner for twenty years
+      and the corner has stopped being big enough.
+
+      [Instrumental - amplified pipe break, 16 seconds, at full size]
+
+      [Verse 3]
+      Saul went outside for the whole of that. Nobody followed him.
+      He came back in and picked up the bass and said we would talk in the morning
+      and we did talk in the morning and it did not help,
+      and the record has both of the things he was right about on it,
+      and one of them is on the front of the sleeve in his own words.
+
+      [Final Chorus]
+      Four won't fill it. Four of us won't fill it.
+      He said it once, at half past seven, to nobody in particular,
+      and I have put it on the front of a record without asking him,
+      and he was talking about the hall and I am not.
+
+      [Outro - cold stop, amplified pipes last]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1082
+    title: Argue It in the Hall
+    track_number: 2
+    mood: [angry, hard, brisk]
+    fact: >-
+      Saul Ravik plays the bass here and it is the last song of the band's he ever played on, four
+      days before he left over the amplification.
+    arrangement_note: acoustic pipes and no backing voice, with the bass playing louder than it has anywhere else on the record and the guitar giving it room to
+    intro: 4
+    outro: cold
+    target_duration: "3:55"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 134 BPM, angry and hard, brisk. Male lead vocal, big
+      hall baritone with a hard edge at the top of the range, pushing into the chorus rather than
+      belting it, sung slightly ahead of the band, no vibrato, and no other voice anywhere. Acoustic
+      resonance pipes — long alloy tubes, deep organ tone — rhythm electric guitar giving ground to
+      an electric bass mixed louder and further forward than anywhere else on the record, drum kit
+      with struck alloy. Tracked live in a large ringing hall, the alloy organ tone under the
+      guitar, drums roomy, guitar mid-range and unpolished. Four seconds of bass and kick before the
+      first sung word. Cold stop.
+    exclude: backing vocals of any kind, amplified or distorted organ tone, acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 4 seconds, bass and kick, no vocal]
+
+      [Verse 1]
+      Do not do it in a letter and do not do it at the gate.
+      Do not do it in front of a label or a hall keeper
+      or a hauler pilot who is going to repeat half of it wrong
+      to somebody at the far end of a lane who will repeat it worse.
+
+      [Chorus]
+      Argue it out in the hall with the doors shut.
+      Say the whole thing, say the ugly part, say it to my face.
+      I would rather lose a friend on a Tuesday afternoon
+      than keep one by never finishing a sentence.
+
+      [Verse 2]
+      He has been in the chair since the year we started
+      and he has been right about more of it than I have.
+      He says a thing that gets louder stops being the thing.
+      I say a hall that empties stops being a hall,
+      and a settlement with no hall in it is a siding with beds.
+
+      [Chorus]
+      Argue it out in the hall with the doors shut.
+      Say the whole thing, say the ugly part, say it to my face.
+      I would rather lose a friend on a Tuesday afternoon
+      than keep one by never finishing a sentence.
+
+      [Verse 3]
+      Four days after this take he put the bass in its case
+      and carried it out through the yard and did not slam anything,
+      and I did not go after him because I knew what I would say,
+      and what I would have said would have been about the volume.
+
+      [Bridge]
+      There is a version of this where I go out into the cold after him.
+      I have played that one in my head more than I have played this song.
+
+      [Final Chorus]
+      Argue it out in the hall with the doors shut,
+      and then open the doors, and then both of you walk out of them.
+      That is the part nobody tells you about arguing properly.
+      Somebody still has to be the one who leaves.
+
+      [Outro - cold stop on the bass]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1083
+    title: Whoever Stays Plays
+    track_number: 3
+    mood: [wry, rowdy, midtempo]
+    fact: >-
+      Havel Ost wrote it in one sitting the week the band was down to three players, and Juno
+      Kerrick plays the bass part on it.
+    arrangement_note: three players and no bassist, so the pipe player covers the bass line as well and the low end drops out entirely every time the pipes have to move
+    intro: 7
+    outro: fade
+    target_duration: "4:00"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 124 BPM, wry and rowdy, midtempo. Male lead vocal,
+      big hall baritone with a hard edge at the top of the range, pushing into the chorus rather
+      than belting it, sung slightly ahead of the band, no vibrato, and no other voice anywhere.
+      Three players only: acoustic resonance pipes — long alloy tubes, deep organ tone — covering
+      the bass line as well as their own part, so the bottom of the arrangement disappears every
+      time they move; rhythm electric guitar; drum kit with struck alloy. Tracked live in a large
+      ringing hall, drums roomy, guitar mid-range and unpolished, obvious holes left in the low end
+      rather than filled. Seven seconds of guitar and struck alloy before the first sung word. Fade.
+    exclude: backing vocals of any kind, electric bass, amplified or distorted organ tone, acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 7 seconds, guitar and struck alloy, no vocal]
+
+      [Verse 1]
+      Three of us in a hall booked for four and paid for in advance,
+      one chair with nothing on it and nobody sitting in it,
+      and a set list with eleven songs on it that need a low end,
+      and a man on the pipes who says he will have a go.
+
+      [Pre-Chorus]
+      Nobody is coming. The doors open at eight.
+
+      [Chorus]
+      Whoever is still standing plays it.
+      That is the arrangement and it has always been the arrangement.
+      Not the best player, not the one who wrote it,
+      whoever is in the room when the doors come open.
+
+      [Verse 2]
+      He got about two thirds of it and dropped the rest on purpose,
+      so the bottom falls out of every chorus and comes back late,
+      and the hall does something to that hole that I cannot describe,
+      and we have never once tried to fix it since.
+
+      [Pre-Chorus]
+      Nobody noticed. Eight hundred people and nobody noticed.
+
+      [Chorus]
+      Whoever is still standing plays it.
+      That is the arrangement and it has always been the arrangement.
+      Not the best player, not the one who wrote it,
+      whoever is in the room when the doors come open.
+
+      [Verse 3]
+      I wrote the whole of this in an afternoon in a cold hall
+      and it is the least worked-on thing on the record
+      and the only one I have never wanted to change a word of,
+      which is a lesson I have refused to learn from twice already.
+
+      [Bridge]
+      A freight crew short of two still takes the cargo out.
+      Nobody down there gets to wait for a full line-up.
+
+      [Final Chorus]
+      Whoever is still standing plays it.
+      Three of us, a borrowed low end and a hole in every chorus,
+      and eight hundred people who did not ask for their money back.
+      Somebody is always missing. The hall does not care.
+
+      [Outro - fade on guitar and alloy]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1084
+    title: New Hands on the Low End
+    track_number: 4
+    mood: [warm, singalong, midtempo]
+    fact: >-
+      Ade Prosk learned the band's whole set in nine days and plays this one in the key Saul Ravik
+      had written it in.
+    arrangement_note: the new bass chair sings its harmony line for the first time here, low under the lead through both choruses, and the song stays in the key the last bass player wrote it in rather than the one that suits the new one
+    intro: 9
+    outro: fade
+    target_duration: "4:05"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 122 BPM, warm and midtempo, built to be sung back.
+      Male lead vocal, big hall baritone with a hard edge at the top of the range, pushing into the
+      chorus rather than belting it, sung slightly ahead of the band, no vibrato. One low male
+      harmony voice from the bass chair, under the lead through both choruses, never above him and
+      never a stack. Amplified resonance pipes — long alloy tubes, deep organ tone — rhythm electric
+      guitar, electric bass, drum kit with struck alloy. Tracked live in a large ringing hall, the
+      amplified alloy organ tone under the guitar, drums roomy, guitar mid-range and unpolished.
+      Nine seconds of bass and pipes before the first sung word. Fade on the repeated chorus.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony
+    lyrics: |
+      [Intro - 9 seconds, bass and pipes, no vocal]
+
+      [Verse 1]
+      Nine days to learn a set that took us eighteen years to build,
+      and he did it in a room above a transfer hall with the door shut,
+      and he came in on the tenth morning and played the whole thing through
+      and got one thing wrong and it was a thing we get wrong too.
+      Nine days is what a hauler takes to run the long lane out
+      and he learned twenty years of us in the same nine days.
+
+      [Chorus]
+      New hands on the low end (new hands, same songs)
+      and the songs do not mind, which is the hard part.
+      Twenty years of somebody and the songs do not mind.
+      They will sound like this now and they will sound fine.
+
+      [Verse 2]
+      He asked if we wanted to move this one up a tone for him.
+      I said no before I had thought about why I was saying it.
+      He did not argue. He learned it where it was and it is high for him
+      and you can hear it costing him in the second chorus.
+
+      [Chorus]
+      New hands on the low end (new hands, same songs)
+      and the songs do not mind, which is the hard part.
+      Twenty years of somebody and the songs do not mind.
+      They will sound like this now and they will sound fine.
+
+      [Verse 3]
+      His voice sits under mine the way the other one never did,
+      lower and further back and it took me a month to like it,
+      and now I cannot hear the old shape of the chorus at all
+      and I do not know when exactly that stopped being a loss.
+
+      [Bridge]
+      He put his name on nothing for the first two years.
+      Nine days, one key, one chair, and no complaint about any of it.
+
+      [Final Chorus]
+      New hands on the low end and the same eleven songs,
+      and the songs do not mind, which is the hard part.
+      Welcome to the hall. It is cold and it is ours.
+      Do not let anybody move that one up a tone.
+
+      [Outro - fade on the repeated chorus]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1085
+    title: Same Riff, More of It
+    track_number: 5
+    mood: [heavy, loud, fast]
+    fact: >-
+      Tor Dolo refused to play any harder to keep up with the amplified pipes, and the rest of the
+      band came down to him instead.
+    arrangement_note: one riff for the whole song with nothing added but volume, the drums played at exactly the weight they would be on any other track, and everything else pulled back to sit with them
+    intro: 6
+    outro: cold
+    target_duration: "4:15"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 138 BPM, heavy and loud, fast. Male lead vocal, big
+      hall baritone with a hard edge at the top of the range, pushing into the chorus rather than
+      belting it, sung slightly ahead of the band, no vibrato. One low male harmony voice from the
+      bass chair, under the lead on choruses only, never above him and never a stack. Amplified
+      resonance pipes — long alloy tubes, deep organ tone — rhythm electric guitar, electric bass,
+      drum kit with struck alloy played at ordinary weight and never pushed, with the rest of the
+      band pulled back to sit with it. One riff for the whole song with nothing added but volume.
+      Tracked live in a large ringing hall, drums roomy, guitar mid-range and unpolished. An
+      eighteen-second amplified pipe break on the same riff. Six seconds of the riff alone before
+      the first sung word. Cold stop.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony, double kick drumming
+    lyrics: |
+      [Intro - 6 seconds, the riff alone, no vocal]
+
+      [Verse 1]
+      There is one figure in this song and you have heard it by now.
+      It does not develop. It does not go anywhere clever.
+      It is four bars long and we play it forty-one times
+      and the only thing that changes is how much of it there is.
+      Same as a hold. Same as a lane. Same as a shift.
+      Nobody down there gets a second figure either.
+
+      [Chorus]
+      Same riff. And more of it. That is the whole idea.
+      You do not need a new one, you need it played properly.
+      Everybody wants a second figure by the second chorus.
+      Sit down. It is coming round again.
+
+      [Verse 2]
+      When the pipes got loud everybody looked at the drummer
+      and the drummer looked back and carried on at his own weight,
+      and said if the song needs hitting harder then the song is wrong,
+      and did not say another word about it for the rest of the week.
+      He has hit a drum at one weight since the year we started
+      and every argument this band has had has ended at that weight.
+
+      [Chorus]
+      Same riff. And more of it. That is the whole idea.
+      You do not need a new one, you need it played properly.
+      Everybody wants a second figure by the second chorus.
+      Sit down. It is coming round again.
+
+      [Instrumental - amplified pipe break on the same riff, 18 seconds]
+
+      [Verse 3]
+      So the rest of us came down to him instead of up to it,
+      which took a day and an argument and a walk round the yard,
+      and the record is quieter than the night that started it
+      and heavier than anything either of those men has played since.
+
+      [Final Chorus]
+      Same riff. And more of it. That is the whole idea.
+      Four bars, a hall, an alloy tube and a man who will not rush.
+      Nothing on this record cost anybody a new idea.
+      Forty-one times, and the last one is the best one,
+      and if you disagree you have not been listening properly.
+
+      [Outro - cold stop, all together]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1086
+    title: The Hall Answers Back
+    track_number: 6
+    mood: [expansive, solemn, slow]
+    fact: >-
+      Ivena Sorn plays the low pipe unamplified beside Juno Kerrick's amplified one, and it is the
+      only place on the record the two can be heard against each other.
+    arrangement_note: two pipes, one amplified and one not, playing the same line a half-bar apart so the acoustic one reads as the room replying to the amplified one, and the twenty-second break is both of them alone
+    intro: 22
+    outro: sustain
+    target_duration: "5:20"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 104 BPM, expansive and solemn, slow. Male lead
+      vocal, big hall baritone with a hard edge at the top of the range, pushing into the chorus
+      rather than belting it, sung slightly ahead of the band, no vibrato. One low male harmony
+      voice from the bass chair, under the lead on choruses only, never above him and never a stack.
+      Two resonance-pipe parts — long alloy tubes, deep organ tone — one amplified and one acoustic,
+      playing the same line half a bar apart so the acoustic one reads as the room answering;
+      rhythm electric guitar, electric bass, drum kit with struck alloy. Tracked live in a large
+      ringing hall, drums roomy, guitar mid-range and unpolished. A twenty-second break with both
+      pipes alone and the band out. Twenty-two seconds of the two pipes finding each other before
+      the first sung word. Ends on a held note left to decay in the room.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony
+    lyrics: |
+      [Intro - 22 seconds, the two pipes finding each other, no vocal]
+
+      [Verse 1]
+      Put the new one through the amplifier and the old one beside it
+      and play the same line on both of them half a bar apart,
+      and one of them is a band and the other one is a building
+      and I could not tell you which of them I trust more.
+
+      [Verse 2]
+      She has played these tubes in this hall since before the reorganisation
+      and she would not have one of them wired for any money,
+      not for a burn day, not for a whole season's rate,
+      and she stood next to the loudest thing in the settlement
+      and played quieter than it and won every exchange.
+
+      [Chorus]
+      The hall answers. It has always answered.
+      You can put a speaker in front of it if you like.
+      It will wait for you to stop and then it will say the line back
+      the way the room has always said it, and slower.
+
+      [Instrumental - both pipes alone, band out, 20 seconds]
+
+      [Verse 3]
+      Juno stood there afterwards with his hand flat on the cabinet
+      and did not say anything for about the length of a song,
+      and then said, quietly, that he had been wrong about one thing
+      and did not say which thing and has never said since.
+
+      [Chorus]
+      The hall answers. It has always answered.
+      You can put a speaker in front of it if you like.
+      It will wait for you to stop and then it will say the line back
+      the way the room has always said it, and slower.
+
+      [Bridge]
+      Nobody in this settlement built that hall to be argued with.
+      They built it to keep the weather out and it does that too.
+
+      [Final Chorus]
+      The hall answers. It has always answered.
+      Two tubes, one room, one of them plugged in and one not,
+      and the only honest bar on this whole record
+      is the one where you cannot tell which is which.
+
+      [Outro - held note, left to decay in the hall]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1087
+    title: Count the Empty Seats
+    track_number: 7
+    mood: [weary, blunt, midtempo]
+    fact: >-
+      Havel Ost built the lyric out of the attendance figures for the band's own halls in 2610 and
+      2611, which he had kept.
+    arrangement_note: acoustic pipes, no backing voice, and the third verse is the two years of figures read out flat over bass and drums with the guitar stopped entirely
+    intro: 15
+    outro: fade
+    target_duration: "4:30"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 118 BPM, weary and blunt, midtempo. Male lead vocal,
+      big hall baritone with a hard edge at the top of the range, pushing into the chorus rather
+      than belting it, sung slightly ahead of the band, no vibrato, and no other voice anywhere.
+      Acoustic resonance pipes — long alloy tubes, deep organ tone — rhythm electric guitar which
+      stops entirely for the third verse, electric bass, drum kit with struck alloy. Tracked live in
+      a large ringing hall, the alloy organ tone under the guitar, drums roomy, guitar mid-range and
+      unpolished. The third verse sung flat and level over bass and drums with no guitar at all.
+      Fifteen seconds of acoustic pipes alone before the first sung word. Fade.
+    exclude: backing vocals of any kind, amplified or distorted organ tone, acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 15 seconds, acoustic pipes alone, no vocal]
+
+      [Verse 1]
+      I have kept every hall's number since the year we started,
+      not because I am proud of them, because I want to know,
+      and the notebook is in the case with the leads and the spare strings
+      and nobody else in this band has ever asked to see it,
+      which is either trust or not wanting to know, and I have not asked which.
+
+      [Verse 2]
+      A full room does not tell you anything you did not know.
+      A half room tells you what month it is, what the rate is,
+      whether the freight circuit changed, whether the road is shut,
+      whether the settlement has money this season or is holding on.
+
+      [Verse 3 - flat, over bass and drums, no guitar]
+      Four hundred and ten. Three hundred and eighty. Two ninety.
+      Two ninety again. Three hundred and forty on a burn day.
+      One hundred and sixty, which was the night of the blowout.
+      Two hundred. Two hundred. Two hundred and five. Two hundred.
+      Three hundred and ninety at the burn festival, which does not count.
+      One eighty. One seventy. One seventy again. One sixty-five.
+
+      [Chorus]
+      Count the empty chairs. Somebody has to.
+      Not the office, not the label, not the man at the door.
+      You count them yourself and you write the number down
+      and you do not tell the band until the season is over.
+
+      [Verse 4]
+      Twenty years of standing in front of whoever came,
+      and the ones who came are not fewer, they are just older,
+      and the young ones are at a different hall on the other side
+      listening to a band with a speaker stack and their own van,
+      and I have been to see them twice and they are good,
+      and that is the number in the notebook and there is nothing else in it.
+
+      [Chorus]
+      Count the empty chairs. Somebody has to.
+      Not the office, not the label, not the man at the door.
+      You count them yourself and you write the number down
+      and you do not tell the band until the season is over.
+
+      [Outro - fade on the acoustic pipes]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_1088
+    title: Still the Same Four
+    track_number: 8
+    mood: [resolute, warm, midtempo]
+    fact: >-
+      Saul Ravik and Ade Prosk both play the last chorus, and it is the only thing the two of them
+      ever recorded together.
+    arrangement_note: two bass players on the last chorus and nowhere else, the old one entering underneath the new one four bars before the end, and neither of them told the other it was going to happen
+    intro: 11
+    outro: sustain
+    target_duration: "4:40"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 120 BPM, resolute and warm, midtempo. Male lead
+      vocal, big hall baritone with a hard edge at the top of the range, pushing into the chorus
+      rather than belting it, sung slightly ahead of the band, no vibrato. One low male harmony
+      voice from the bass chair, under the lead on choruses only, never above him and never a stack.
+      Amplified resonance pipes — long alloy tubes, deep organ tone — rhythm electric guitar, drum
+      kit with struck alloy, and two electric basses on the final chorus only, the second entering
+      underneath the first four bars from the end. Tracked live in a large ringing hall, drums
+      roomy, guitar mid-range and unpolished. Eleven seconds of pipes and guitar before the first
+      sung word. Ends on a held chord with both basses on it.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony
+    lyrics: |
+      [Intro - 11 seconds, pipes and guitar, no vocal]
+
+      [Verse 1]
+      Somebody counted it up in the office and told us cheerfully
+      that we have had five members in twenty years, which is nothing,
+      and I said yes, like a man agreeing about the weather,
+      and did not say that four of them were the same four
+      and the fifth one is the reason there is a record to count.
+
+      [Pre-Chorus]
+      Twenty years. One hall. One lane out of it.
+
+      [Chorus]
+      Still the same four. Whoever is in the chairs, still the same four.
+      That is not sentiment, that is how a band actually works.
+      The shape stays and the people go through it,
+      and the shape is the thing the settlement turns up for.
+
+      [Verse 2]
+      He came back for the last day because the hall keeper asked him,
+      not because I asked him, which I want on the record,
+      and he stood at the side with his coat on for two hours
+      and then somebody handed him a bass and nobody said anything.
+
+      [Pre-Chorus]
+      Four bars from the end. Four bars, out of nowhere.
+
+      [Chorus]
+      Still the same four. Whoever is in the chairs, still the same four.
+      That is not sentiment, that is how a band actually works.
+      The shape stays and the people go through it,
+      and the shape is the thing the settlement turns up for.
+
+      [Verse 3]
+      Two low ends on one chorus and neither of them warned the other,
+      and you can hear the newer one hear it happen,
+      and stay exactly where he was, which is the most generous thing
+      anybody did in that hall in the whole of that year.
+
+      [Final Chorus]
+      Still the same four. Whoever is in the chairs, still the same four.
+      He put it down after, and put his coat back on, and went,
+      and it is the only bar the two of them are on together
+      and I have never once managed to listen to it all the way through.
+
+      [Outro - held chord, both basses on it]
+    take: null                    # M-31 fills this in at the Suno sitting

@@ -1,0 +1,765 @@
+# al_032 — Nothing Loose · Second Hitch (b_016) · Harbor Standard · 2624 · 10 songs
+#
+# Written by M-22. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Eleven nights in the same Cold Harbor transfer shed, five years after al_131 and after refusing a
+# core studio twice. The wiki gives this record a broken wrist, a pay dispute with the shed operator
+# and a door left open. Most of the songs are about the four people it happened to rather than about
+# the shed; the closer gives the room one song of its own. **One song here is written against its own
+# fact.** s_0272's fact says the guitar solo was cut to keep the song under three minutes, so it is
+# the only track whose missing break is fact-bound and the only one whose target sits under 3:00.
+# §12 rule 10 still holds it at the word floor, making it the densest lyric relative to its target.
+# That unresolved timing tension is the explicit D-092 exception, not an accidental omission.
+#
+# Lane-rock takes a break in roughly one song in three (§7) and b_016's card gives it to the lead
+# guitar. Three of these ten take one, and one of the three is played by a guest on a borrowed
+# instrument, which the wiki's own fact requires.
+#
+# `generation:` and every `take:` are empty until M-31's Suno sitting fills them in.
+
+album:
+  id: al_032
+  title: Nothing Loose
+  band: b_016
+  band_name: Second Hitch
+  label: label_2
+  release_year: 2624
+  genre: lane-rock
+  cornerstone: false
+  song_count: 10
+  style_card: b_016
+  room: >-
+    The same Cold Harbor transfer-shed bay as al_131, cleared for eleven nights. The style card is
+    unbent — four players, two thin electric guitars, bass and a compact kit, tracked live, nothing
+    overdubbed but a doubled chorus vocal — and three fact-bound session exceptions are explicit
+    rather than silent: Sel Ardin's arranged drop-out of the backing voices on s_0270, Talla Venn's
+    guest lead figure on a borrowed instrument on s_0273, and Brin Noll's retuned panel fixings on
+    s_0275. None of the three changes the permanent line-up or the band's base sound. The
+    shed door is open on s_0271 and the wind under its second verse is the room, not an overdub.
+    Voice, backing, instruments and exclude are untouched.
+
+generation:
+  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0266
+    title: Nothing Loose
+    track_number: 1
+    mood: [driving, blunt, fast]
+    fact: >-
+      Wen Arbo built the chorus out of the check the crew shouts before a bay door opens, and the
+      band kept the counting-in shout on the take.
+    arrangement_note: the four-word crew check opens the record shouted flat with no music under it, a counted stick brings the band in, and the same exact check returns between the second and third verses
+    intro: 0
+    outro: cold
+    target_duration: "3:45"
+    prompt: >-
+      Dry pub rock, 150 BPM, driving and blunt, fast. Male lead vocal, plain mid baritone,
+      conversational and unforced, sung hard on the beat, getting louder rather than higher at the
+      end of a chorus, no vibrato. Two band voices in unison under the lead on the chorus only,
+      never in harmony, all four shouting the hook on the last one. Two bright thin-toned electric
+      guitars, one rhythm and one lead, electric bass, compact drum kit. Tracked live in a small
+      hard-walled shed bay, guitars close-mic'd and mid-forward, drums tight and untreated, nothing
+      overdubbed but a doubled chorus vocal. Opens immediately with all four voices shouting
+      "Straps, sheet, corners, latch" flat and with no music under them; a counted stick brings the
+      band in. The same exact four-word check returns once between the second and third verses, again
+      with the band stopped. Cold stop.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production
+    lyrics: |
+      [Crew Check - all four voices shouted flat, no music]
+      Straps! Sheet! Corners! Latch!
+
+      [Count-in - counted stick brings the band in]
+
+      [Verse 1]
+      Straps, sheet, corners, latch, and then you say it out loud,
+      because saying it in your head has killed people before.
+      Four of us on the floor and every one of us checks,
+      and the one who checks last is the one who opens the door.
+      That is not a rule anybody wrote down. It is older than the shed.
+
+      [Chorus]
+      Nothing loose, nothing loose,
+      say it back to me before that door comes up.
+      Nothing loose, nothing standing where it should not stand.
+      I want to hear it from all four of you or the door stays shut.
+
+      [Verse 2]
+      Orl went under a pallet in his second year on the dock
+      because a man on the far side said fine instead of saying yes.
+      He was out for nine weeks and he came back and said nothing
+      and he has said the whole list out loud every shift since.
+      There is nothing on any manifest worth a man's shoulder.
+      There is nothing in any hold that is in a hurry.
+
+      [Chorus]
+      Nothing loose, nothing loose,
+      say it back to me before that door comes up.
+      Nothing loose, nothing standing where it should not stand.
+      I want to hear it from all four of you or the door stays shut.
+
+      [Crew Check - all four voices shouted flat, no music]
+      Straps! Sheet! Corners! Latch!
+
+      [Verse 3]
+      Every crew on this coast has a short list of its own.
+      Some name the straps first and some begin with the latch.
+      The words come out different but the meaning stays the same:
+      nobody lifts and nobody opens until everybody answers back.
+      Ask a hauler pilot, ask anybody walking off a deck,
+      they will stop at the hatch and call their own check out too.
+
+      [Final Chorus - all four voices, shouted]
+      Nothing loose, nothing loose,
+      say it back to me before that door comes up.
+      Nothing loose, nothing standing where it should not stand,
+      and the cargo goes out whole and so does everybody else.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0267
+    title: Count Me on the Manifest
+    track_number: 2
+    mood: [defiant, singalong, brisk]
+    fact: >-
+      Dessa Kelm refused to record a solo lead on a song about being listed with everybody else, so
+      all four members sing the last chorus.
+    arrangement_note: the two band voices sing in unison under the lead through both choruses and the last chorus is sung by all four in unison with no lead vocal above it at all
+    intro: 10
+    outro: sustain
+    target_duration: "4:00"
+    prompt: >-
+      Dry pub rock, 138 BPM, defiant and brisk, built to be sung back. Male lead vocal, plain mid
+      baritone, conversational and unforced, sung hard on the beat, getting louder rather than
+      higher at the end of a chorus, no vibrato. Two band voices in unison under the lead through
+      the choruses, never in harmony, and the last chorus sung by all four in unison with no lead
+      vocal above it. Two bright thin-toned electric guitars, one rhythm and one
+      lead, electric bass, compact drum kit. Tracked live in a small hard-walled shed bay, guitars
+      close-mic'd and mid-forward, drums tight and untreated, nothing overdubbed but a doubled
+      chorus vocal. Ten seconds of full band on the chorus figure before the first sung word. Ends
+      on a held chord with the four voices still on it.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production
+    lyrics: |
+      [Intro - 10 seconds, full band on the chorus figure, no vocal]
+
+      [Verse 1]
+      There is a page at the gate with everybody's name on it
+      and the names are not in order of anything at all.
+      Not who lifts most, not who has been here longest,
+      just the crew that showed, in the order that we walked in.
+      Same page as the hold, same page as the cargo,
+      which is the only sensible way anybody has ever run a dock.
+
+      [Chorus - two band voices in unison under the lead]
+      Count me on the manifest (count me on it)
+      same line, same ink, same page as the rest.
+      I do not want my name up higher than the others,
+      I want it in the middle where it can be read.
+
+      [Verse 2]
+      Dessa found a manifest with half the night crew missing,
+      four names on the loading line and one name on the pay.
+      She took it back across the yard and waited at the window
+      until the clerk found ink enough to put the others in.
+      He said somebody has to stand first on every page.
+      She said not tonight, and stood there until he changed it.
+
+      [Chorus - two band voices in unison under the lead]
+      Count me on the manifest (count me on it)
+      same line, same ink, same page as the rest.
+      I do not want my name up higher than the others,
+      I want it in the middle where it can be read.
+
+      [Bridge]
+      Somebody will always want a face on the front of it.
+      Somebody will always want one throat to blame.
+      Put the whole crew on it or leave the whole thing off,
+      and we will find another room and another door.
+
+      [Verse 3]
+      We have seen a foreman's name above a page of other people
+      as if his hands had lifted every case and tied every sheet.
+      Put Orl beside Teff, put Dessa beside Wen,
+      and leave enough line for whoever takes the next shift after us.
+
+      [Final Chorus - all four in unison, no lead vocal above them]
+      Count me on the manifest,
+      same line, same ink, same page as the rest.
+      I do not want my name up higher than the others,
+      I want it in the middle where it can be read.
+      Where anybody standing at the gate can read it.
+
+      [Outro - held chord, four voices still on it]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0268
+    title: Wrong Bay, Right Crew
+    track_number: 3
+    mood: [wry, rowdy, midtempo]
+    fact: >-
+      The second verse names the four loading errors the band made during one night shift in 2623.
+    arrangement_note: the band stops dead for one bar after the four-error list, then the lead guitar takes a fourteen-second break before the third verse as if somebody had noticed the mistake
+    intro: 8
+    outro: fade
+    target_duration: "4:00"
+    prompt: >-
+      Dry pub rock, 126 BPM, wry and rowdy, midtempo. Male lead vocal, plain mid baritone,
+      conversational and unforced, sung hard on the beat, getting louder rather than higher at the
+      end of a chorus, no vibrato. Two band voices in unison under the lead on the chorus only,
+      never in harmony, all four shouting the hook on the last one. Two bright thin-toned electric
+      guitars, one rhythm and one lead, electric bass, compact drum kit. Tracked live in a small
+      hard-walled shed bay, guitars close-mic'd and mid-forward, drums tight and untreated, nothing
+      overdubbed but a doubled chorus vocal. After the verse listing the four errors, one bar of dead
+      silence leads into a fourteen-second lead guitar break before the third verse. Eight seconds
+      of rhythm guitar and bass before the first sung word. Fade on the repeated hook.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production
+    lyrics: |
+      [Intro - 8 seconds, rhythm guitar and bass, no vocal]
+
+      [Verse 1]
+      It was the last night of a bad week and we were all still standing,
+      which on any other week would have been the good news.
+      Four of us, one hold, one sheet of paper,
+      and a supervisor who had gone home at eleven and left it to us.
+
+      [Chorus]
+      Wrong bay. The right crew.
+      We put it back and nobody has to know.
+      Wrong bay, and the right four hands to be standing there,
+      because the ones that made the mess are the ones that shift it twice.
+
+      [Verse 2]
+      One: two pallets to the near door that should have gone to the far one.
+      Two: a strap through the wrong ring, which held anyway, which is worse.
+      Three: the sheet signed before it was checked, by me, in my writing.
+      Four: forty minutes lost pretending the third one had not happened.
+
+      [Chorus]
+      Wrong bay. The right crew.
+      We put it back and nobody has to know.
+      Wrong bay, and the right four hands to be standing there,
+      because the ones that made the mess are the ones that shift it twice.
+
+      [Instrumental - one bar of dead silence, then a lead guitar break, 14 seconds]
+
+      [Verse 3]
+      Teff said write them down and we will sing them at the gate,
+      because a thing you can sing is a thing that has stopped being frightening.
+      So here they are, all four, in the order that we made them,
+      and every crew on the dock knows all four off by heart.
+
+      [Bridge]
+      Nobody died. Nothing was broken. The cargo went out on time.
+      And it took the four of us the whole of that night to be sure of it,
+      and the hold was shut and sealed by twenty past five in the morning,
+      and not one word of any of it went up to the office.
+
+      [Final Chorus - all four, shouted]
+      Wrong bay. The right crew.
+      We put it back and everybody knows.
+      Wrong bay, and the right four hands to be standing there,
+      because the ones that made the mess are the ones that shift it twice.
+
+      [Outro - fade on the riff]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0269
+    title: Hold the Sheet Down
+    track_number: 4
+    mood: [urgent, hard, fast]
+    fact: >-
+      Teff Onda plays the whole track with a strapped wrist, and the band declined the label's offer
+      to bring in a session drummer.
+    arrangement_note: the drum part is stripped to what one strapped wrist can play, so the kick and the snare carry the whole song and the hi-hat barely moves, and the guitars fill the space the cymbals would have taken
+    intro: 4
+    outro: cold
+    target_duration: "3:35"
+    prompt: >-
+      Dry pub rock, 158 BPM, urgent and hard, fast. Male lead vocal, plain mid baritone,
+      conversational and unforced, sung hard on the beat, getting louder rather than higher at the
+      end of a chorus, no vibrato. Two band voices in unison under the lead on the chorus only,
+      never in harmony, all four shouting the hook on the last one. Two bright thin-toned electric
+      guitars, one rhythm and one lead, electric bass, compact drum kit stripped almost to kick and
+      snare with the hi-hat barely moving and no cymbal fills, the guitars filling that space
+      instead. Tracked live in a small hard-walled shed bay, guitars close-mic'd and mid-forward,
+      drums tight and untreated, nothing overdubbed but a doubled chorus vocal. Four seconds of kick
+      and snare alone before the first sung word. Cold stop.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production, cymbal-heavy drumming
+    lyrics: |
+      [Intro - 4 seconds, kick and snare alone, no vocal]
+
+      [Verse 1]
+      Wind came round the corner of the shed at about eleven
+      and took the corner of the sheet like it was asking a question.
+      Two of us on the near edge and nobody on the far one
+      and the whole load standing there open to the storm coast.
+
+      [Chorus]
+      Hold that sheet down till I take the near side.
+      Keep your bad hand clear; shout if the corner runs.
+      The load and sheet can take the weather.
+      Nobody's hand is cargo. Nobody has to prove it.
+
+      [Verse 2]
+      Teff went over on the second night and came up wrong,
+      wrist strapped by morning and the kit still where he left it.
+      The work board sent another drummer across the yard.
+      Teff said he could play if the useless motions went,
+      so we made the part fit the hand he had
+      instead of asking one wrist to pretend it had two.
+
+      [Chorus]
+      Hold that sheet down till I take the near side.
+      Keep your bad hand clear; shout if the corner runs.
+      The load and sheet can take the weather.
+      Nobody's hand is cargo. Nobody has to prove it.
+
+      [Verse 3]
+      For the next nine nights we changed the way we moved together.
+      Nobody sent him for a corner and nobody let him lift.
+      At the kit he kept the beat with what the strapped hand gave him,
+      and the rest of us left room instead of filling every gap.
+
+      [Bridge]
+      Anybody can hold a corner on a still night.
+      The test is letting go before the weather takes the hand.
+      Nine nights left, one strapped wrist, one shed,
+      and four people making sure that one injury stayed one.
+
+      [Final Chorus - all four, shouted]
+      Hold that sheet down till I take the near side.
+      Keep your bad hand clear; shout if the corner runs.
+      The load and sheet can take the weather.
+      We held it down together. That is the whole story.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0270
+    title: Sleep on the Ride Back
+    track_number: 5
+    mood: [tired, warm, slow]
+    fact: >-
+      Sel Ardin arranged the backing voices to drop out one at a time in the order the crew usually
+      falls asleep.
+    arrangement_note: the two backing voices leave the chorus one at a time and do not come back, so the last chorus is the lead alone, and the guitars thin out with them
+    intro: 18
+    outro: fade
+    target_duration: "4:30"
+    prompt: >-
+      Dry pub rock at its slowest, 120 BPM, tired and warm, unhurried. Male lead vocal, plain mid
+      baritone, conversational and unforced, sung hard on the beat, getting louder rather than
+      higher at the end of a chorus, no vibrato. Two band voices in unison under the lead on the
+      first chorus, one of them gone by the second and both gone by the last, never in harmony and
+      never returning. Two bright thin-toned electric guitars thinning out as the voices go,
+      electric bass, compact drum kit played quietly. Tracked live in a small hard-walled shed bay,
+      guitars close-mic'd and mid-forward, drums tight and untreated, nothing overdubbed but a
+      doubled chorus vocal. Eighteen seconds of bass and one guitar before the first sung word. Fade
+      on the lead voice alone.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production, string pads
+    lyrics: |
+      [Intro - 18 seconds, bass and one guitar, drums entering late, no vocal]
+
+      [Verse 1]
+      Two in the morning and the van smells like the shed does,
+      four coats, four bags, one window that will not shut.
+      Nobody says anything for the first ten minutes,
+      which is not a bad silence, it is just the shape we are in.
+      The hold went out at midnight and the manifest is signed
+      and there is nothing left in any of us to give anybody.
+
+      [Verse 2]
+      Orl goes first. He always goes first. Head against the strut,
+      out before the gate is even properly behind us.
+      Then Dessa, halfway up the coast road, mid-sentence,
+      and Teff hangs on to about the second bridge out of pride.
+
+      [Chorus - two backing voices in unison under the lead]
+      Sleep. There is nothing to do until the yard.
+      Sleep. I have got the road and the road is straight.
+      I will wake you at the gate and not one minute sooner.
+      Everything you were worried about will still be there.
+
+      [Verse 3]
+      Past the second bridge Teff gives the window one last pull,
+      misses the catch, says leave it, and folds into his coat.
+      Three breathing rhythms settle underneath the road noise,
+      each one arriving separately and somehow making one quiet.
+
+      [Chorus - one backing voice left]
+      Sleep. There is nothing to do until the yard.
+      Sleep. I have got the road and the road is straight.
+      I will wake you at the gate and not one minute sooner.
+      Everything you were worried about will still be there.
+
+      [Bridge]
+      Somebody has to stay awake and drive it.
+      Some nights it is me and some nights it is not,
+      and the ones where it is not are the best hours of the week.
+
+      [Chorus - lead voice alone]
+      Sleep. There is nothing to do until the yard.
+      Sleep. I have got the road and the road is straight.
+      I will wake you at the gate and not one minute sooner,
+      and the settlement will be exactly where we left it.
+
+      [Outro - fade on the lead voice alone]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0271
+    title: Weather at the Gate
+    track_number: 6
+    mood: [tense, building, midtempo]
+    fact: >-
+      The band recorded with the shed door open and the wind under the second verse was not added
+      afterwards.
+    arrangement_note: the song is built to get louder every section and never comes back down, starting with one guitar and the open door and ending with everything at once
+    intro: 15
+    outro: fade
+    target_duration: "4:25"
+    prompt: >-
+      Dry pub rock, 132 BPM, tense and building, midtempo. Male lead vocal, plain mid baritone,
+      conversational and unforced, sung hard on the beat, getting louder rather than higher at the
+      end of a chorus, no vibrato. Two band voices in unison under the lead on the chorus only,
+      never in harmony, all four shouting the hook on the last one. Two bright thin-toned electric
+      guitars, one rhythm and one lead, electric bass, compact drum kit. Tracked live in a small
+      hard-walled shed bay with the door open and real wind audible in the room, guitars close-mic'd
+      and mid-forward, drums tight and untreated, nothing overdubbed but a doubled chorus vocal.
+      Every section louder than the one before it and none of them coming back down. Fifteen seconds
+      of one guitar and the open door before the first sung word. Fade at full volume.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production
+    lyrics: |
+      [Intro - 15 seconds, one guitar and the open shed door, no vocal]
+
+      [Verse 1]
+      It comes off the water about an hour before it arrives,
+      you can hear it in the fittings before you can feel it on your face.
+      Everybody on the dock knows the sound and nobody names it,
+      you just start moving faster and stop finishing your sentences.
+
+      [Verse 2 - real wind audible beneath the band]
+      We left the door open on the second night to get the air in
+      and the whole of the storm coast came through it sideways.
+      The loading sheets climbed the wall and every fitting answered.
+      Nobody closed it. We needed to know what was coming.
+
+      [Chorus]
+      There is weather out at the gate and weather in the room,
+      and only one of them is going to blow over.
+      Get the load on, get the door down, get the crew inside,
+      and after that you can worry about the rest of it.
+
+      [Verse 3]
+      Dessa lost a roof in the sealed season when she was small
+      and does not talk about it and does not have to.
+      She just gets very quiet and very fast at the same time
+      and everybody on the floor moves the way she moves.
+
+      [Chorus]
+      There is weather out at the gate and weather in the room,
+      and only one of them is going to blow over.
+      Get the load on, get the door down, get the crew inside,
+      and after that you can worry about the rest of it.
+
+      [Bridge]
+      It is not the storm season yet. That is what makes it bad.
+      Nobody has the boards up. Nobody has been told.
+      An hour of warning is a whole hour, if you use it.
+
+      [Final Chorus - all four, shouted, everything at once]
+      There is weather out at the gate and weather in the room,
+      and only one of them is going to blow over.
+      Get the load on, get the door down, get the crew inside.
+      We are all inside. Let it come.
+
+      [Outro - fade at full volume]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0272
+    title: You Left the Light On
+    track_number: 7
+    mood: [tender, plain, midtempo]
+    fact: >-
+      Orl Mance wrote it for a partner working the opposite shift, and the band cut the guitar solo
+      to keep it under three minutes.
+    arrangement_note: this is the only song whose missing instrumental break is fact-bound, because the solo was cut; the lead figure that would have carried it is played once under the last verse instead and lasts four bars
+    intro: 3
+    outro: fade
+    target_duration: "2:55"
+    prompt: >-
+      Dry pub rock, 136 BPM, tender and plain, midtempo and unfussy, words coming quickly and close
+      together. Male lead vocal, plain mid baritone, conversational and unforced, sung hard on the
+      beat, getting louder rather than higher at the end of a chorus, no vibrato. Two band voices in
+      unison under the lead on the chorus only, never in harmony. Two bright thin-toned electric
+      guitars, one rhythm and one lead, electric bass, compact drum kit. Tracked live in a small
+      hard-walled shed bay, guitars close-mic'd and mid-forward, drums tight and untreated, nothing
+      overdubbed but a doubled chorus vocal. No instrumental break anywhere; the lead figure appears
+      once for four bars under the last verse and that is all. Three seconds of guitar before the
+      first sung word. Fade.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production, guitar solo, instrumental break
+    lyrics: |
+      [Intro - 3 seconds, guitar, no vocal]
+
+      [Verse 1]
+      You work nights and I work the back half of the day
+      and we have done it four years and we are fine.
+      I get in at two to a warm and empty flat
+      with a plate under cloth and the hall light on.
+      Four years of that in a settlement this size,
+      and the two of us still somehow managing to miss each other.
+
+      [Chorus]
+      You left the light on. You always leave the light on.
+      Nine credits a season and you will not let me change it.
+      You say it is so I can find the step without falling,
+      I say it is so I know somebody meant to be here.
+
+      [Verse 2]
+      I keep a list of things to tell you from the shed:
+      the storm coast wind, the wrist, the argument about the fee.
+      By the time you wake I will have slept it off,
+      and none will be worth the breath it takes to say.
+
+      [Chorus]
+      You left the light on. You always leave the light on.
+      Nine credits a season and you will not let me change it.
+      You say it is so I can find the step without falling,
+      I say it is so I know somebody meant to be here.
+
+      [Verse 3 - four-bar lead guitar figure under the first four lines, no break]
+      Some mornings I hear your key as mine leaves the latch,
+      and we get one sentence each before the kettle starts.
+      There is no extra hour hiding anywhere between us.
+      There is only the light, the plate, and the step I find.
+
+      [Chorus]
+      You left the light on. You always leave the light on.
+      Nine credits a season and you will not let me change it.
+      Leave it on tomorrow. I will be later than this.
+      Leave it on and I will find the step.
+
+      [Outro - fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0273
+    title: Cheap Coffee, Loud Room
+    track_number: 8
+    mood: [rowdy, comic, fast]
+    fact: >-
+      Talla Venn played the lead figure on a borrowed instrument after her own left Cold Harbor on a
+      transfer that had already departed.
+    arrangement_note: a guest plays the lead figure and the eighteen-second break on an instrument that is not hers, so the tone is thinner and brighter than the band's own lead guitar and is left that way
+    intro: 6
+    outro: cold
+    target_duration: "4:00"
+    prompt: >-
+      Dry pub rock, 154 BPM, rowdy and comic, fast. Male lead vocal, plain mid baritone,
+      conversational and unforced, sung hard on the beat, getting louder rather than higher at the
+      end of a chorus, no vibrato. Two band voices in unison under the lead on the chorus only,
+      never in harmony, all four shouting the hook on the last one, with one short answered phrase
+      in the second chorus. Two bright thin-toned electric guitars, one rhythm and one lead, the
+      lead figure and the break played on a borrowed instrument with a thinner and brighter tone
+      than the band's own, electric bass, compact drum kit. Tracked live in a small hard-walled shed
+      bay, guitars close-mic'd and mid-forward, drums tight and untreated, nothing overdubbed but a
+      doubled chorus vocal. An eighteen-second lead break on the borrowed instrument. Six seconds of
+      drums and bass before the first sung word. Cold stop.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production
+    lyrics: |
+      [Intro - 6 seconds, drums and bass, no vocal]
+
+      [Verse 1]
+      The cleared bay holds about ninety and it has held two hundred,
+      the coffee is terrible and it costs almost nothing,
+      and there is no stage, there is a mark on the floor in tape
+      where somebody decided the band was going to stand.
+      Half the room came straight off a deck and has not sat down yet
+      and the other half is not going to be up in the morning.
+
+      [Chorus]
+      Bad coffee, loud room, everybody in,
+      nine at the door and you will not get out till one.
+      Nothing here is good and everything here is ours,
+      and the whole coast has been through that door at least once.
+
+      [Verse 2]
+      Talla came in to play the lead line on the Thursday
+      and her own instrument was somewhere off the settlement by then,
+      out on a transfer that had gone before she got to the siding,
+      so she borrowed one off the wall and it sounds nothing like hers.
+      She stood there with the neck of it and made a face at the ceiling
+      and then played the figure twice through without asking anybody.
+
+      [Chorus]
+      Bad coffee, loud room, everybody in (everybody in)
+      nine at the door and you will not get out till one.
+      Nothing here is good and everything here is ours,
+      and the whole coast has been through that door at least once.
+
+      [Instrumental - lead break on the borrowed instrument, 18 seconds, thin and bright]
+
+      [Verse 3]
+      She said it was too bright and we said leave it exactly there,
+      because nobody in that bay arrived with a first choice.
+      Nothing we own is the thing we would have chosen,
+      but all of it works when the right person takes the weight.
+      The van, the kit, the room, the cups, the four of us:
+      not one thing on the list had to arrive here new.
+
+      [Final Chorus - all four, shouted]
+      Bad coffee, loud room, everybody in,
+      nine at the door and you will not get out till one.
+      Nothing here is good and everything here is ours.
+      Same time next month. Same mark on the floor.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0274
+    title: Twelve Hours to Say It
+    track_number: 9
+    mood: [regretful, driving, brisk]
+    fact: >-
+      The lyric is the argument Wen Arbo did not have before a twelve-hour run, written down in the
+      order he had rehearsed it.
+    arrangement_note: the verses are the rehearsed argument in order and get one line longer each time, and the band plays flat behind them with no build until the last chorus
+    intro: 9
+    outro: fade
+    target_duration: "4:10"
+    prompt: >-
+      Dry pub rock, 142 BPM, regretful and driving, brisk. Male lead vocal, plain mid baritone,
+      conversational and unforced, sung hard on the beat, getting louder rather than higher at the
+      end of a chorus, no vibrato. Two band voices in unison under the lead on the chorus only,
+      never in harmony, all four shouting the hook on the last one. Two bright thin-toned electric
+      guitars, one rhythm and one lead, electric bass, compact drum kit. Tracked live in a small
+      hard-walled shed bay, guitars close-mic'd and mid-forward, drums tight and untreated, nothing
+      overdubbed but a doubled chorus vocal. The band stays flat and level behind the verses with no
+      build at all until the final chorus, which arrives without warning. Nine seconds of rhythm
+      guitar and kick before the first sung word. Fade.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production
+    lyrics: |
+      [Intro - 9 seconds, rhythm guitar and kick, no vocal]
+
+      [Verse 1]
+      One. You were right about the money and I knew it on the Tuesday.
+      Two. I let you say it twice and pretended not to hear.
+      Three. The thing I said about your brother was not fair
+      and I have known it was not fair since about four seconds after.
+
+      [Chorus]
+      Twelve hours out and twelve hours back
+      and every one of them is a line I did not use.
+      I had the whole thing straight before I shut the door
+      and I shut the door.
+
+      [Verse 2]
+      Four. I have been going out on the long ones because they are easy.
+      Five. Easy is not the same as necessary, which you also said.
+      Six. There is nothing on that lane that needs me particularly.
+      Seven. You have known that for a year and did not say it.
+      I would have. I would have said it. That is the difference.
+
+      [Chorus]
+      Twelve hours out and twelve hours back
+      and every one of them is a line I did not use.
+      I had the whole thing straight before I shut the door
+      and I shut the door.
+
+      [Verse 3]
+      Eight. I rehearsed all of this on the coast road at four in the morning.
+      Nine. I got it word perfect somewhere past the second outpost.
+      Ten. I came in and put the kettle on and asked about your day.
+      Eleven. You told me. It was a good one. I was glad.
+      Twelve. And here it is on a record instead, which is a coward's way,
+      and you will hear it before I ever manage to say it out loud.
+
+      [Final Chorus - all four, shouted, arriving without warning]
+      Twelve hours out and twelve hours back
+      and every one of them is a line I did not use.
+      I had the whole thing straight before I shut the door.
+      Ask me tonight. Ask me tonight and I will get through it.
+
+      [Outro - fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0275
+    title: Everything Rattles
+    track_number: 10
+    mood: [triumphant, loud, fast]
+    fact: >-
+      Brin Noll retuned the shed's loose panel fixings before the session so the room would rattle
+      with the chorus instead of against it.
+    arrangement_note: the loose metal of the room is tuned to the chorus and rings with it, so the last chorus is the band and the building doing the same thing, and the break is the lead guitar over the rattling panels alone
+    intro: 12
+    outro: sustain
+    target_duration: "4:35"
+    prompt: >-
+      Dry pub rock, 148 BPM, triumphant and loud, fast. Male lead vocal, plain mid baritone,
+      conversational and unforced, sung hard on the beat, getting louder rather than higher at the
+      end of a chorus, no vibrato. Two band voices in unison under the lead on the chorus only,
+      never in harmony, all four shouting the hook on the last one. Two bright thin-toned electric
+      guitars, one rhythm and one lead, electric bass, compact drum kit, and the loose metal panels
+      of the room itself tuned to the chorus and ringing with it rather than against it. Tracked
+      live in a small hard-walled shed bay, guitars close-mic'd and mid-forward, drums tight and
+      untreated, nothing overdubbed but a doubled chorus vocal. The panels make a dry acoustic
+      sympathetic rattle on the chorus, never an electronic effect or percussion loop. A
+      sixteen-second lead guitar break over that ringing metal with the band dropped out. Twelve
+      seconds of loose metal ringing and one guitar before the first sung word. Ends on a held chord
+      with the room still ringing.
+    exclude: synthesizers, keyboards, acoustic guitar, orchestral strings, brass, stadium reverb, heavy vocal tuning, spoken-word or rapped sections, whispered vocals, dance and electronic production
+    lyrics: |
+      [Intro - 12 seconds, loose metal ringing and one guitar, no vocal]
+
+      [Verse 1]
+      Every shed on this coast makes a noise you learn to hate,
+      panels going in the wind, fittings arguing with the frame,
+      a bulkhead somewhere down the row with a note of its own,
+      and for eleven nights we fought it and lost every time,
+      because you cannot play louder than a building.
+
+      [Chorus]
+      Everything rattles. Everything rattles.
+      Let it. Let the whole shed come in on the chorus.
+      We are not going to win against four hundred loose fixings,
+      so we are going to sing the note the fixings are already on.
+
+      [Verse 2]
+      Brin came down on the ninth night with a bag and a spanner
+      and went round the walls for two hours tapping every seam,
+      and when he had finished the room answered the key of the song
+      and none of us knew that was a thing a person could do.
+      He does it in every hold and every bay he works in,
+      and he will not call a room ready until the bad notes are gone.
+
+      [Chorus]
+      Everything rattles. Everything rattles.
+      Let it. Let the whole shed come in on the chorus.
+      We are not going to win against four hundred loose fixings,
+      so we are going to sing the note the fixings are already on.
+
+      [Instrumental - lead guitar break over the ringing panels, band out, 16 seconds]
+
+      [Verse 3]
+      By the end of eleven nights we knew what could stay loose:
+      not the straps, not the corners, not the load behind the door,
+      but the shed could keep its voice if Brin could find the note,
+      and four tired people could stop fighting where they worked
+      long enough to let the whole loud building answer back.
+
+      [Final Chorus - all four, shouted, the building ringing with them]
+      Everything rattles. Everything rattles.
+      Let it. Let the whole shed come in on the chorus.
+      We are not going to win against four hundred loose fixings.
+      Nothing here is quiet and nothing here is going to be.
+      Nothing here was ever going to be.
+
+      [Outro - held chord, the room still ringing]
+    take: null                    # M-31 fills this in at the Suno sitting

@@ -838,6 +838,9 @@ deleted, because the world may already have aired it), or **edit**.
 | `make canon-sync` | no | Idempotent upsert by `fact_key`; embeds changed only; regenerates affected domain summaries; marks removed facts retired |
 | `make music-sync` | no | Idempotent upsert of artists/albums/tracks from `music/*.yaml`; ffprobes durations; flags orphans both ways |
 | `make music-analyse` | no | Ramp/outro/bpm/energy analysis pass (§9) |
+| `make imaging-sync` | no | Idempotent upsert of imaging rows from `imaging/catalogue.yaml`; ffprobes durations; flags orphans both ways |
+| `make imaging-analyse` | no | Duration/loop/ramp/energy pass over imaging (§9) |
+| `make imaging-tag` | no | Writes licence period, date, model and AI marker into every imaging asset (§9) |
 | `make grid-sync` | no | Programmes, dayparts, briefs, host rotas from `grid.yaml` |
 | `make reset-world` | **yes** | Wipes threads/beats/items/coverage/charts only. Never touches facts, music, grid, cast, imaging. Typed confirmation, and refuses while any render job references rows it would wipe |
 
@@ -971,6 +974,21 @@ imaging(id, kind, file_path, duration_sec, programme_id null,
         bed_loop_sec, intro_ramp_sec, energy, tags text[])
 ```
 
+**The rows come from `imaging/catalogue.yaml`** — committed to the repository, loaded by
+`make imaging-sync`, exactly the shape `music/catalogue.yaml` and `make music-sync` already have
+(§17a). The audio lives on the external volume under `imaging/` and never in git, the same rule
+music follows.
+
+**What exists today is inventoried in `music/jingles/README.md`** — 56 assets carried over from the
+previous attempt, with their provenance, licence position, per-piece Suno recipes and the list of
+what is still missing. That file is the input to `imaging/catalogue.yaml`, not a substitute for it.
+
+**Inventory and placement are two things and they live in two files** (D-093). This catalogue says
+*what pieces exist*; `grid.yaml`'s hour clock says *when each one plays*. §17a validation 6 checks
+the second against the first, which is only possible while they are separate. Most imaging is not
+per-programme at all — sweepers, chart markers, the fallback bed and the disclosure sting are
+station-wide — so an inventory folded into the per-programme grid would have nowhere to put them.
+
 | `kind` | Use |
 |---|---|
 | `sonic_logo` | 2–3s station signature, at joins |
@@ -1009,8 +1027,18 @@ mean it can.
 correction of the ramps by ear**. Onset detection gets the ballpark; the difference between a link
 that lands and one that clips the vocal is about half a second, and that is a listening judgement.
 
+**Imaging carries the same measured fields and earns them the same way.** `duration_sec`,
+`bed_loop_sec`, `intro_ramp_sec` and `energy` come from `make imaging-analyse` plus correction by
+ear — a bed's loop seam and a sting's tail are listening judgements in exactly the way a track's
+ramp is. **D-083 declined librosa for the music pass** and said the imaging pass is the card that
+should re-open that choice if it ever wants beat tracking or key detection; it is still the card.
+
 Imaging is exempt from the safety gate (hand-curated, not generated per air) but **not** from the
-IP screen — run the banned-entity pass over imaging titles and any sung lyrics.
+IP screen — run the banned-entity pass over imaging titles and any sung lyrics. **Provenance is
+mandatory in the file itself**: licence period, generation date, model version and an AI marker
+written into each asset's tags by `make imaging-tag`, on the same reasoning `COMMISSION.md` §9 gives
+for music — the audio and its manifest will be separated eventually, by a backup or a hand-off, and
+the file has to carry its own provenance.
 
 ### The mix specification — how the hour clock is executed
 
@@ -2300,6 +2328,9 @@ make canon-check       validation report, no writes
 make canon-sync        idempotent canon → DB
 make music-sync        idempotent music → DB
 make music-analyse     ramp/outro/bpm/energy pass
+make imaging-sync      idempotent imaging → DB
+make imaging-analyse   duration/loop/ramp/energy pass over imaging
+make imaging-tag       licence, date, model and AI marker into imaging assets
 make grid-sync         idempotent grid → DB
 make batch             run the full nightly batch now
 make tick              world tick only
@@ -2510,8 +2541,24 @@ tracks:  [{ id: t_0141, album: long_dark, title: "Ferry Song", track_no: 3,
             intro_ramp_sec: 11.5, outro_type: fade }]
 ```
 
-`models.yaml` is in §3. The imaging hour clock lives inside `grid.yaml` above rather than in a file
-of its own — it is per programme, so it belongs with the programme.
+```yaml
+# imaging/catalogue.yaml — read by `make imaging-sync`; audio lives on the external volume.
+# The inventory of what exists. Placement is `grid.yaml`'s hour clock, not this file (D-093).
+imaging: [{ id: evening_open, kind: programme_open, programme: evening_report,
+            file: "imaging/opens/evening_open.mp3", duration_sec: 14.2,
+            intro_ramp_sec: 0.0, energy: 0.6, tags: [day, brass],
+            licence_note: "suno-pro-2026-07" },
+          { id: news_bed_loop, kind: news_bed, file: "imaging/beds/news_bed_loop.mp3",
+            duration_sec: 41.0, bed_loop_sec: 32.0, energy: 0.2, tags: [junction] }]
+```
+
+`models.yaml` is in §3.
+
+**Why imaging needs a file of its own.** The imaging *hour clock* lives inside `grid.yaml` above —
+it is per programme, so it belongs with the programme. The imaging *inventory* does not: most of it
+is station-wide furniture with no programme at all, and validation 6 checks grid references against
+the catalogue, which requires the two to be separate things. Placement in `grid.yaml`, inventory in
+`imaging/catalogue.yaml` (D-093).
 
 **Rotation category weights** (§8), stated once so nobody invents them:
 
@@ -3463,7 +3510,7 @@ when the work is split into tasks.
 | C3 | **Voice reference clips** — 10–20s synthetic WAV per presenter, committed, with `voices/PROVENANCE.md` (§3, §18) | eng 8 |
 | C4 | **`grid.yaml`** — programmes, hosts, dayparts, hour clocks (§17a) | eng 9, 10 |
 | C5 | **Suno catalogue** + `music/catalogue.yaml` + licence evidence | eng 13, 15 |
-| C6 | **Imaging pack** — logo, stings, beds, opens/closes, disclosure sting | eng 12 |
+| C6 | **Imaging pack** — logo, stings, beds, opens/closes, disclosure sting, and `imaging/catalogue.yaml` listing them | eng 12 |
 | C7 | **Pool pieces** — 37 minimum across three length bands (§13) | eng **10** (back-timing cannot run without some pool at all) and eng **13c** (where the 37 minimum is reached and `make pool-check` goes green) |
 | C8 | **`banned-entities.yaml` seed** | eng 4 |
 | C9 | **Stock voice bank** — 12–20 synthetic reference clips for `figures` (§3), varied by age, register and settlement. Required by every two-way, interview, vox pop and package, i.e. by most of the grid | eng 8 |
@@ -3495,7 +3542,9 @@ when the work is split into tasks.
 11. **The batch runner** — phases, priority order, N+1 buffer, pre-flight, launchd, macOS hardening.
 11b. **The rundown** (§14a) — the first thing that makes the station legible to you. An afternoon,
     and it is what you will read every morning for the next year.
-12. **Imaging pack + `make music-analyse`** — the hour clocks, ramps corrected by ear.
+12. **Imaging pack + `imaging/catalogue.yaml` + `make imaging-sync`/`-analyse`/`-tag`** — the
+    inventory, then the hour clocks, ramps corrected by ear. `make music-analyse` corrects the
+    track ramps in the same pass.
 13. **Music model + rotation + one music show** end to end. Proves the cheap format before you
     depend on it for capacity.
 13b. **Force the voice-identity decision** (§3) — bulk re-render versus an in-world host change —

@@ -1,0 +1,703 @@
+# al_037 — Every Crew Signs · Burn Day Wages (b_019) · Common Wake Cooperative · 2600 · 9 songs
+#
+# Written by M-22. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# **Two lines of b_019's card are not available yet and both are Una Brack, who joins in 2604.** The
+# card's backing line is a whole-crew chorus *with one woman's voice clearly audible above the men*,
+# and its instruments line carries *stripped-wire chimes*. Brack is both of those, and she is not on
+# this record: the crew chorus here is four men in unison and there are no chimes anywhere. The
+# exclude lines say so. Everything else — the high hard tenor, the boogie-driven rock, the tank drums
+# left ringing, the crew mixed level with the lead — is the card exactly as written.
+#
+# This is the band that answers its lead with a whole crew, which is the opposite of b_018's, and
+# the lyrics are written for it: the verses have somebody answering back in them and the choruses
+# are built to be shouted by four people who are not singers.
+#
+# Lane-rock takes a break in roughly one song in three (§7) and b_019's card gives it to the lead
+# guitar. Three of these nine take one, including s_0316 — where a guest fiddle plays a second lead
+# line through the whole song but **the break itself is still the card's instrument**, because §7 is
+# explicit that a solo is not a way to hand a band an instrument it does not own.
+#
+# `generation:` and every `take:` are empty until M-31's Suno sitting fills them in.
+
+album:
+  id: al_037
+  title: Every Crew Signs
+  band: b_019
+  band_name: Burn Day Wages
+  label: label_5
+  release_year: 2600
+  genre: lane-rock
+  cornerstone: false
+  song_count: 9
+  style_card: b_019
+  room: >-
+    Four cargo bays at four ports inside one run, which is as close to the card's "one live room" as
+    a hauler crew gets. The first bay, on s_0311 and s_0312, is small and keeps the low end short; the
+    second, on s_0313 through s_0315, is wide and lets the tank drums ring longest; the third, on
+    s_0316 and s_0317, is long and leaves a bass tail behind the beat; and the fourth, on s_0318 and
+    s_0319, is tall with a leaner low end. No song was carried from one bay to the next. The card
+    holds except for what Una Brack has not arrived to supply — the crew chorus is four men total,
+    including the lead, with no woman above them, and there are no stripped-wire chimes anywhere.
+    Three fact-bound exceptions are explicit: a relief hauler replaces Hess Vantry on drums and
+    supplies the fourth crew shout on s_0315; Nessa Dray's guest fiddle runs through s_0316 and takes
+    the tempo up mid-take with the band following her; and Oren Saye replaces Bel Corrow on s_0319,
+    playing upright bass throughout and the closing figure in the key Dov Reyland used at the
+    audition rather than the one on the chart. That last track has three crew voices and Oren does
+    not sing. None of the guests joins the permanent line-up.
+
+generation:
+  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0311
+    title: Every Crew Signs
+    track_number: 1
+    mood: [defiant, singalong, brisk]
+    fact: >-
+      The song is about the argument that produced the band's one-line credit, which the co-operative
+      agreed to before recording began.
+    arrangement_note: Dov leads the verses while the other three men repeat selected line endings, then all four male voices total sing level with one another on every chorus, with nobody in front in those sections
+    intro: 10
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      Boogie-driven rock, 132 BPM, defiant and brisk, built to be shouted back. Male lead vocal,
+      high hard tenor, carrying and a shade nasal, pushing at the top of every chorus and staying
+      there, plain and undecorated, no vibrato. Three other male voices repeat the tagged line endings
+      in unison through the verses; on every chorus the lead joins them to make four male voices total,
+      all four in unison rather than harmony, level with one another and never stacked behind him.
+      Two electric guitars, electric bass, drum kit with tuned oxygen-tank drums left ringing rather
+      than damped. Tracked whole-band in the small first cargo bay, with short low-end decay, loose
+      rather than gridded, light compression. Ten seconds of full band before the first sung word.
+      Ends on a held chord with all four voices still on it.
+    exclude: stripped-wire chimes, a woman's voice in the chorus, close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 10 seconds, full band, no vocal]
+
+      [Verse 1 - other three men repeat the last phrase of lines 2 and 4]
+      They sent the paper down to the bay with one name on it,
+      mine, in the big letters, and the rest of them underneath
+      in the size they print the things nobody is meant to read,
+      and I put it on the floor and said we are not starting.
+
+      [Chorus - lead plus the other three men, four voices total in unison]
+      Every crew signs. Every crew signs or nobody does.
+      One line, four names, and the same ink for all of them.
+      You can have the record when the page says what happened.
+      Until then we are four men sitting in a hold.
+
+      [Verse 2 - other three men repeat the last phrase of lines 1 and 4]
+      It took nine days. It went to a vote and then a second vote
+      and a man came down from the co-operative to explain to us
+      why it was normally done the other way, at length, twice,
+      and Bel said normally is not a reason and he stopped.
+
+      [Chorus - lead plus the other three men, four voices total in unison]
+      Every crew signs. Every crew signs or nobody does.
+      One line, four names, and the same ink for all of them.
+      You can have the record when the page says what happened.
+      Until then we are four men sitting in a hold.
+
+      [Verse 3 - other three men repeat the last phrase of lines 2 and 6]
+      It is not about the money. The money is the same either way,
+      which is the part the man from the office could not follow,
+      and he asked what we actually wanted about six times
+      and the answer never changed and he never heard it,
+      and he went out on the last ferry with the page unsigned
+      and came back down nine days later and signed it in the bay.
+
+      [Bridge]
+      A crew is a crew on the manifest and a crew at the gate.
+      Nobody down there is billed as the important one.
+
+      [Final Chorus - lead plus the other three men, four voices total and level]
+      Every crew signs. Every crew signs or nobody does.
+      One line, four names, and the same ink for all of them.
+      That page is in the crate that leaves this bay tonight
+      and it took nine days and it was worth every one.
+
+      [Outro - held chord, four voices on it]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0312
+    title: Beyond the Usual Lanes
+    track_number: 2
+    mood: [expansive, driving, fast]
+    fact: >-
+      The second verse names the four ports the record reached first once the shared press format let
+      it travel past the band's own route.
+    arrangement_note: the first port name has one guitar under it, then bass enters after that line, drums after the second and the other guitar after the third, so the four-person band is complete at the fourth name and stays there
+    intro: 14
+    outro: fade
+    target_duration: "4:30"
+    prompt: >-
+      Boogie-driven rock, 144 BPM, expansive and driving, fast. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato. Three other male voices answer selected tagged line endings through
+      the verses; the lead joins them on the choruses, making four male voices total in unison rather
+      than harmony. Two electric guitars, electric bass and tuned oxygen-tank drums: one guitar plays
+      alone under Cold Harbor, bass enters for Low Span, drums for Verrin Reach, and the second guitar
+      for Forge, leaving the four-person band complete. Tracked whole-band in the small first cargo
+      bay, with short low-end decay, loose rather than gridded, light compression. A sixteen-second
+      lead guitar break. Fourteen seconds of one guitar building before the first sung word. Fade at
+      full size.
+    exclude: stripped-wire chimes, a woman's voice in the chorus, close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 14 seconds, one guitar building, no vocal]
+
+      [Verse 1 - other three men repeat the last phrase of lines 2 and 6]
+      For four years everything we made stayed on our own circuit
+      and got as far as the last port on it and stopped there,
+      because a crate is heavy and a run is expensive
+      and nobody was going to carry ours for nothing,
+      and every hauler out of here has a full hold already
+      and there is no room on any manifest for a favour.
+
+      [Verse 2 - one guitar only under the first name]
+      Then Cold Harbor, on a hauler that was going anyway.
+      [Bass enters]
+      Then Low Span, because a clerk there liked the first one.
+      [Drums enter]
+      Then Verrin Reach, which we have still never played.
+      [Second guitar enters - four-person band now complete]
+      Then Forge, which is the one that changed everything after.
+
+      [Chorus - four male voices total in unison]
+      Out past the usual lanes. Past the end of the route.
+      Somewhere out there is a settlement we will never stand in
+      with four people in it who know the words to this,
+      and that is a strange thing to have done with a Tuesday.
+
+      [Instrumental - lead guitar break, 16 seconds]
+
+      [Verse 3 - other three men repeat the last phrase of lines 2 and 6]
+      A woman wrote to the co-operative from a port we had not heard of
+      to ask what the second verse of the third song was about,
+      and Dov wrote back, on paper, four pages, and told her.
+      On the fourth page he asked about her own settlement,
+      whether a crate can arrive where the band itself never will
+      and still count as four people having been there.
+
+      [Chorus - four male voices total in unison]
+      Out past the usual lanes. Past the end of the route.
+      Somewhere out there is a settlement we will never stand in
+      with four people in it who know the words to this,
+      and that is a strange thing to have done with a Tuesday.
+
+      [Final Chorus - four male voices total in unison]
+      Out past the usual lanes. Past the end of the route.
+      We did not go anywhere. The crate went without us.
+      Everything we have ever made has travelled further than we have
+      and I have made my peace with that about half the time.
+
+      [Outro - fade at full size]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0313
+    title: Burn Day Wages
+    track_number: 3
+    mood: [celebratory, rowdy, fast]
+    fact: >-
+      The chorus is the one the crew shouted on the band's first burn day, and Dov Reyland has
+      refused every suggestion to change a word of it.
+    arrangement_note: the chorus is shouted rather than sung by all four men total, including the lead, at the same pitch and volume, and it is the only place on the record where the tenor is not above the other three
+    intro: 5
+    outro: cold
+    target_duration: "4:00"
+    prompt: >-
+      Boogie-driven rock, 148 BPM, celebratory and rowdy, fast. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, plain and undecorated, no vibrato — and shouting the chorus at the
+      same pitch and volume as the other three men rather than above them. Every chorus is all four
+      male voices total shouting in unison rather than harmony. Two electric guitars, electric bass,
+      drum kit with tuned oxygen-tank drums left ringing rather than damped. Tracked whole-band in
+      the wide second cargo bay, with broad low end and the longest tank-drum ring on the record,
+      loose rather than gridded, light compression. Five seconds of tank drums before the first sung
+      word. Cold stop.
+    exclude: stripped-wire chimes, a woman's voice in the chorus, close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 5 seconds, tank drums, no vocal]
+
+      [Verse 1]
+      First burn day any of us had been paid for properly,
+      four years in, in a transfer hall with the doors open,
+      and somebody put a rate up on a board at about four
+      and the whole room read it at the same time and made a noise.
+
+      [Pre-Chorus]
+      Nobody had told us. It was just up there, in chalk.
+
+      [Chorus - shouted by everyone at once]
+      Burn day wages, burn day wages,
+      a full rate and a half and the night after it off.
+      Spend it, spend it, spend the whole of it tonight,
+      it will not be here in the morning and neither will we.
+
+      [Verse 2]
+      One line does not scan. I know exactly where it goes wrong.
+      Four people shouted it in a hall and I wrote it down
+      exactly as it came out, including the bit that does not scan,
+      and eleven people have offered to fix that line for me,
+      including two who were in the transfer hall on the night.
+
+      [Chorus - shouted by everyone at once]
+      Burn day wages, burn day wages,
+      a full rate and a half and the night after it off.
+      Spend it, spend it, spend the whole of it tonight,
+      it will not be here in the morning and neither will we.
+
+      [Verse 3]
+      A man from a label in the core said one word had to go
+      and offered a better one and the better one is better
+      and I said no, and he asked why, and I could not tell him,
+      and I still cannot, and the word is still in it.
+
+      [Bridge]
+      There is a version of that evening in about two hundred heads
+      and this is the only one anybody wrote down.
+
+      [Final Chorus - shouted by everyone at once]
+      Burn day wages, burn day wages,
+      a full rate and a half and the night after it off.
+      That is the line and I have not changed a word,
+      and I am not going to, and that is the whole song.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0314
+    title: Split It Nine Ways
+    track_number: 4
+    mood: [wry, warm, midtempo]
+    fact: >-
+      Bel Corrow wrote the verse as an accurate account of how the band's earnings were divided in
+      2600.
+    arrangement_note: the other three men count back shares one through eight after the lead names them, all four voices total sing each chorus, and the crew go silent when he names the ninth share and again for the final thank-you line
+    intro: 8
+    outro: fade
+    target_duration: "4:25"
+    prompt: >-
+      Boogie-driven rock, 120 BPM, wry and warm, midtempo. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato. Three other male voices count back shares one through eight in the
+      tagged parenthetical answers; the lead joins them for four male voices total in unison on the
+      choruses. The other three stay silent when the ninth share is named and on the last line of the
+      song. Two electric guitars, electric bass, drum kit with tuned oxygen-tank drums left ringing
+      rather than damped. Tracked whole-band in the wide second cargo bay, with broad low end and a
+      long tank-drum ring, loose rather than gridded, light compression. Eight seconds of bass and
+      tank drums before the first sung word. Fade.
+    exclude: stripped-wire chimes, a woman's voice in the chorus, close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 8 seconds, bass and tank drums, no vocal]
+
+      [Verse 1 - lead names shares 1 through 6, the other three men count them back]
+      Four shares for the four of us and that is the easy part
+      and after that it gets complicated in a way nobody warns you about.
+      One, two, three, four, one for each of us. (one, two, three, four)
+      One for the van, the strings, the skins and the leads. (five)
+      One for the crate and the co-operative that sends it. (six)
+      because nothing on any manifest travels for love.
+
+      [Chorus - lead plus the other three men, four voices total in unison]
+      Nine ways it splits, and then the argument splits four,
+      which is the only bit of arithmetic anybody remembers.
+      Nobody in this band has ever been short-changed
+      and all four of us have been furious about the sums.
+
+      [Verse 2 - the other three men count 7 and 8, then go silent for 9]
+      One held back for the season when nothing comes in. (seven)
+      One for whoever drove, because whoever drove did not drink. (eight)
+      And one, at the end, for the man who fixed the van in 2597.
+
+      [Chorus - four male voices total in unison]
+      Nine ways it splits, and then the argument splits four,
+      which is the only bit of arithmetic anybody remembers.
+      Nobody in this band has ever been short-changed
+      and all four of us have been furious about the sums.
+
+      [Verse 3]
+      He fixed the van in 2597 for nothing and would not take it after
+      and has not asked for anything since and would be embarrassed
+      and the ninth share goes to his account four times a year
+      and he has never once mentioned that it arrives.
+
+      [Bridge]
+      Bel wrote all nine down in a notebook in the first year
+      and reads them out at the meeting and nobody has ever moved one.
+
+      [Verse 4]
+      There are bands on this lane who have never had this conversation
+      and are four years from an argument that will finish them,
+      and I would rather have had ours in the first season, on paper,
+      in a cold bay, with a notebook, badly, than not at all.
+
+      [Final Chorus - four voices through line 3, lead alone on line 4]
+      Nine ways it splits, and then the argument splits four,
+      which is the only bit of arithmetic anybody remembers.
+      Nobody in this band has ever been short-changed.
+      The ninth one is not a share. It is a thank you.
+
+      [Outro - fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0315
+    title: Somebody's Cousin on the Kit
+    track_number: 5
+    mood: [comic, loud, fast]
+    fact: >-
+      Hess Vantry is not on this track; a relief hauler who had never recorded before plays the drums
+      and is credited on the same line as everyone else.
+    arrangement_note: a relief hauler who plays drums but has never recorded replaces Hess, pushes each fill and lands the first beat of every chorus early, with the band following rather than correcting him; he also supplies the fourth voice in the crew shout
+    intro: 4
+    outro: cold
+    target_duration: "3:55"
+    prompt: >-
+      Boogie-driven rock, 150 BPM, comic and loud, fast. Male lead vocal, high hard tenor, carrying
+      and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato. The lead, the two other band members present and the relief drummer
+      make four male voices total in the crew chorus, shouting in unison rather than harmony. Two
+      electric guitars, electric bass, and a drum kit with tuned oxygen-tank drums played by a
+      working hauler who plays at home but has never recorded: he pushes each fill and lands the first
+      beat of every chorus slightly early, and the band follows rather than correcting him. Tracked
+      whole-band in the wide second cargo bay, with broad low end and a long tank-drum ring, loose
+      rather than gridded, light compression. A fourteen-second lead guitar break. Four seconds of
+      drums alone before the first sung word. Cold stop.
+    exclude: stripped-wire chimes, a woman's voice in the chorus, close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production, gridded or corrected drumming
+    lyrics: |
+      [Intro - 4 seconds, drums alone, no vocal]
+
+      [Verse 1]
+      Hess did not make the third port. There is a reason and it is boring
+      and it involves a berth, a schedule and a decision by somebody else,
+      and we had a bay for nine hours and a song that needed drums
+      and about forty minutes to decide what we were going to do.
+
+      [Chorus - lead, two bandmates and relief drummer, four voices total]
+      Somebody's cousin behind the kit, somebody's cousin behind the kit,
+      and he has never been in a room with a microphone in his life,
+      and he is going to rush every fill in this entire song
+      and we are going to go with him because that is what a crew does.
+
+      [Verse 2]
+      Somebody knew somebody on a relief run out of the near lane
+      which is where the title came from; nobody was anybody's cousin.
+      He had a kit at home and played it and would not say more than that,
+      and he came down the gangway looking like a man being arrested
+      and sat behind it and asked, very quietly, how many times,
+      and Bel said as many as it takes and he said right and did four.
+
+      [Chorus - lead, two bandmates and relief drummer, four voices total]
+      Somebody's cousin behind the kit, somebody's cousin behind the kit,
+      and he has never been in a room with a microphone in his life,
+      and he is going to rush every fill in this entire song
+      and we are going to go with him because that is what a crew does.
+
+      [Instrumental - lead guitar break, 14 seconds]
+
+      [Verse 3]
+      It is the fastest thing on the record by about six beats
+      and none of us decided that and all of us went with it,
+      and his name is on the one line with the three of ours
+      and when the page came down he read the whole line twice.
+
+      [Final Chorus - lead, two bandmates and relief drummer, four voices total]
+      Somebody's cousin behind the kit, somebody's cousin behind the kit,
+      and Hess heard it back and said leave it exactly there,
+      and said it was his song whether or not he was on it,
+      which is the most generous thing one drummer can say about another.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0316
+    title: Fiddle on the Long Run
+    track_number: 6
+    mood: [bright, rowdy, fast]
+    fact: >-
+      Nessa Dray changed the tempo halfway through the take with a look across the bay and the band
+      followed her without stopping.
+    arrangement_note: Nessa Dray's guest fiddle runs a second lead line through the whole song and lifts the tempo about eight beats a minute after the second chorus without any signal but a look, and the band goes with her inside a bar
+    intro: 6
+    outro: fade
+    target_duration: "4:20"
+    prompt: >-
+      Boogie-driven rock, 138 BPM rising to 146 halfway through without a break, bright and rowdy,
+      fast. Male lead vocal, high hard tenor, carrying and a shade nasal, pushing at the top of every
+      chorus and staying there, plain and undecorated, no vibrato. The lead and the other three men
+      make four male voices total in the crew chorus, in unison rather than harmony. Nessa Dray's
+      guest fiddle runs a second lead line through the entire song; two electric guitars, electric
+      bass, drum kit with tuned oxygen-tank drums left ringing rather than damped. After the second
+      chorus Nessa looks across the bay and takes the tempo from 138 to 146 BPM without a stop, and
+      the band reaches it inside one bar. Tracked whole-band in the long third cargo bay, with a bass
+      tail behind the beat, loose rather than gridded, light compression. A sixteen-second lead
+      guitar break at the new tempo with the fiddle underneath it. Six seconds of fiddle and guitar
+      before the first sung word. Fade.
+    exclude: stripped-wire chimes, a woman's voice in the chorus, close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 6 seconds, fiddle and guitar, no vocal]
+
+      [Verse 1]
+      Nine days out and four to go and everybody on that run
+      had stopped being interesting to each other about a week before,
+      and there is a point in a long haul where the conversation dies
+      and what is left is whoever can make a noise,
+      and the hold is full and the lane is straight and the deck is cold
+      and there are four days of exactly this in front of everybody.
+
+      [Chorus - lead plus the other three men, four voices total in unison]
+      A fiddle going, out on the long run, and the hold does not care
+      and the freight does not care and the schedule does not care,
+      and eleven people in a bay who have run out of things to say
+      have suddenly all got something to be doing with their hands.
+
+      [Verse 2]
+      Nessa came down with the crew on the second port and stayed on
+      and carries two bows and will not lend either of them
+      and told me that on the first evening without being asked,
+      which told me exactly how this run was going to go.
+
+      [Chorus - lead plus the other three men, four voices total in unison]
+      A fiddle going, out on the long run, and the hold does not care
+      and the freight does not care and the schedule does not care,
+      and eleven people in a bay who have run out of things to say
+      have suddenly all got something to be doing with their hands.
+
+      [Tempo lift - Nessa looks across the bay; rise from 138 to 146 BPM inside one bar, no stop]
+
+      [Instrumental - lead guitar break with the fiddle underneath, 16 seconds, new tempo]
+
+      [Verse 3]
+      Halfway through, the whole bay changed shape without moving.
+      The cook put down a cup. The keeper came off the wall.
+      Eleven people found the beat at eleven different times
+      and by the end of the bar everybody had it,
+      with four days still ahead and none of them looking as long.
+
+      [Final Chorus - all four voices, at the new tempo]
+      A fiddle going, out on the long run, and the hold does not care,
+      and the freight does not care and the schedule does not care,
+      and the lane is the same length it was one bar ago,
+      but every next mark on it is arriving sooner.
+
+      [Outro - fade on the fiddle]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0317
+    title: Cold Bunk, Warm Letter
+    track_number: 7
+    mood: [tender, plain, slow]
+    fact: >-
+      Dov Reyland sings the last verse an octave down because he had been awake through the whole of
+      the previous night's session.
+    arrangement_note: the lead drops an octave for the last verse and stays there, which takes the top off the song completely, and the crew do not come in behind it at all
+    intro: 18
+    outro: fade
+    target_duration: "4:55"
+    prompt: >-
+      Boogie-driven rock at its slowest, 112 BPM, tender and plain, slow. Male lead vocal, high hard
+      tenor, carrying and a shade nasal, plain and undecorated, no vibrato — and dropping a full
+      octave for the last verse and staying there, tired and low, with the top gone off the song. A
+      chorus of four male voices total, the lead and the other three men in unison rather than
+      harmony, on the choruses only and absent entirely from the final verse. Two electric guitars,
+      electric bass, drum kit with tuned oxygen-tank drums played quietly and left ringing. Tracked
+      whole-band in the long third cargo bay, with a soft bass tail behind the beat, loose rather than
+      gridded, light compression. Eighteen seconds of bass and one guitar before the first sung word.
+      Fade.
+    exclude: stripped-wire chimes, a woman's voice in the chorus, close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 18 seconds, bass and one guitar, no vocal]
+
+      [Verse 1]
+      There is a shelf above the bunk about the width of a hand
+      and everything I own on this run is on it,
+      and one of the things on it is four pages of your writing
+      that came aboard at the second port with the cargo manifest,
+      in a bag of other people's, off a hauler going the other way.
+
+      [Verse 2]
+      I have read it eleven times, which is not a good number,
+      and there is nothing in it, it is what you had for the week,
+      the roof, the neighbour, the thing with the account,
+      and I have read it eleven times and I will read it again tonight.
+
+      [Chorus - lead plus the other three men, four voices total in unison]
+      Cold bunk and a warm letter and eleven days to go.
+      The lag out here is nine days each way and I know that,
+      and I write back anyway, on the day, every time,
+      and by the time it lands the week in it is over.
+
+      [Verse 3]
+      There is a man two bunks along who does not get letters
+      and does not appear to want any and I do not believe him,
+      and I have offered him mine to read twice, as a joke,
+      and the second time he took them, and read all four pages.
+
+      [Chorus - lead plus the other three men, four voices total in unison]
+      Cold bunk and a warm letter and eleven days to go.
+      The lag out here is nine days each way and I know that,
+      and I write back anyway, on the day, every time,
+      and by the time it lands the week in it is over.
+
+      [Verse 4 - the lead an octave down, crew absent]
+      I have been awake since the session at the port before this
+      and there is nothing left in the top of my voice at all,
+      so the last part comes out where my speaking voice sits,
+      low enough that the man two bunks along could sleep through it.
+
+      [Outro - fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0318
+    title: Nobody Owns the Road
+    track_number: 8
+    mood: [anthemic, driving, midtempo]
+    fact: >-
+      The title was chosen by a vote of the co-operative's members rather than by the band.
+    arrangement_note: the other three men answer every lead line with the exact parenthetical phrases, then all four voices total sing the final chorus twice through with no instrumental gap between the two passes
+    intro: 12
+    outro: sustain
+    target_duration: "4:45"
+    prompt: >-
+      Boogie-driven rock, 124 BPM, anthemic and driving, midtempo. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato. Three other male voices give the exact tagged parenthetical answer
+      after every lead line; for the final chorus the lead joins them, making four male voices total
+      in unison, and all four sing two complete passes with no instrumental gap. Two electric guitars,
+      electric bass, drum kit with tuned oxygen-tank drums left ringing rather than damped. Tracked
+      whole-band in the tall fourth cargo bay, with lean low end and a long tank-drum ring, loose
+      rather than gridded, light compression. Twelve seconds of full band before the first sung word.
+      Ends on a held chord with all four voices still on it.
+    exclude: stripped-wire chimes, a woman's voice in the chorus, close harmony, stacked studio harmony, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 12 seconds, full band, no vocal]
+
+      [Verse 1]
+      There is a schedule with our name on it and a slot and a rate
+      and the slot is not ours, we are borrowing it for nine days,
+      and the same is true of everybody else on the same lane
+      and every one of us behaves as though it is not.
+
+      [Chorus - lead lines with exact answers from the other three men]
+      Nobody owns the road (nobody owns it)
+      not the office, not the crews, not the settlement at the end. (nobody owns it)
+      You get the use of it for as long as you keep moving. (keep it moving)
+      The day you stop, somebody else has got your slot. (somebody gets it)
+
+      [Verse 2]
+      We had four titles for this and could not choose between them
+      and Dov would not decide, because Dov does not decide,
+      and it went to the membership and about ninety people voted
+      and this one won by eleven and it is the right one.
+
+      [Chorus - lead lines with exact answers from the other three men]
+      Nobody owns the road (nobody owns it)
+      not the office, not the crews, not the settlement at the end. (nobody owns it)
+      You get the use of it for as long as you keep moving. (keep it moving)
+      The day you stop, somebody else has got your slot. (somebody gets it)
+
+      [Verse 3]
+      A crew we had run beside for six years lost their circuit in 2599
+      and it was nobody's fault and there was nobody to be angry with
+      and they are in three different settlements now doing three different things
+      and one of them still sends word down the carrier wave at Clearing Day.
+
+      [Bridge]
+      I do not want to own it. I would not know what to do with it.
+      I want the use of it, and I want it to still be there.
+
+      [Final Chorus - first pass, all four voices in unison]
+      Nobody owns the road, nobody owns the road,
+      not the office, not the crews, not the settlement at the end.
+      You get the use of it for as long as you keep moving,
+      and we have been moving since 2596 and we are not stopping.
+
+      [Final Chorus - immediate exact second pass, no instrumental gap]
+      Nobody owns the road, nobody owns the road,
+      not the office, not the crews, not the settlement at the end.
+      You get the use of it for as long as you keep moving,
+      and we have been moving since 2596 and we are not stopping.
+
+      [Outro - held chord, four voices on it]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0319
+    title: Sign Off and Go Home
+    track_number: 9
+    mood: [warm, resolute, midtempo]
+    fact: >-
+      Oren Saye plays the closing figure in the key Dov Reyland had used at the audition rather than
+      the one written on the chart.
+    arrangement_note: Bel Corrow is absent and Oren Saye replaces the electric bass with upright bass for the whole song, then plays the closing figure in Dov's old audition key rather than the chart key, so the last thirty seconds sit somewhere the rest does not
+    intro: 16
+    outro: cold
+    target_duration: "4:50"
+    prompt: >-
+      Boogie-driven rock, 122 BPM, warm and resolute, midtempo. Male lead vocal, high hard tenor,
+      carrying and a shade nasal, pushing at the top of every chorus and staying there, plain and
+      undecorated, no vibrato. Three male band voices total, including the lead, sing the crew chorus
+      in unison rather than harmony; Oren Saye does not sing. Two electric guitars, no electric bass,
+      Oren's guest upright bass throughout, and drum kit with tuned oxygen-tank drums left ringing
+      rather than damped. For the closing thirty seconds Oren moves the upright-bass figure into Dov's
+      old audition key rather than the chart key, putting the ending somewhere the rest of the song
+      does not sit. Tracked whole-band in the tall fourth cargo bay, with lean low end and a long
+      tank-drum ring, loose rather than gridded, light compression. Sixteen seconds of upright bass
+      and guitar before the first sung word. Cold stop.
+    exclude: stripped-wire chimes, a woman's voice in the chorus, close harmony, stacked studio harmony, electric bass, synthesizers, electronic drums, brass, orchestral strings, close modern studio polish, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 16 seconds, upright bass and guitar, no vocal]
+
+      [Verse 1]
+      The last thing on a run is a page and a pen and a name
+      and it takes about eleven seconds and nobody makes anything of it,
+      and it is the only moment in nine days that is actually the end,
+      and after it you are a person again and not a crew.
+
+      [Pre-Chorus]
+      Nine days of being one thing and then eleven seconds.
+
+      [Chorus - Dov, Ryke and Hess, three male voices total]
+      Sign off and go home. That is the whole ceremony.
+      No speech, no handshake, nobody says well done.
+      A line on a page and a walk across a yard
+      and a door somewhere with somebody behind it.
+
+      [Verse 2]
+      I have signed off in eleven ports and about four hundred times
+      and I could not tell you one single thing about any of them
+      except the one where I was told something at the desk
+      that I had to carry across a yard on my own,
+      past the transfer hall and the sidings and the whole of the port,
+      with a manifest still in my hand because nobody had taken it.
+
+      [Chorus - Dov, Ryke and Hess, three male voices total]
+      Sign off and go home. That is the whole ceremony.
+      No speech, no handshake, nobody says well done.
+      A line on a page and a walk across a yard
+      and a door somewhere with somebody behind it.
+
+      [Verse 3]
+      Oren came in for one afternoon at the fourth port
+      and named the key I had sung at an audition four years before,
+      though he had only stood at the back waiting for somebody else,
+      and the chart on the floor in front of him said something different.
+
+      [Bridge]
+      He does not use charts. He remembers what people did.
+      That is either a trick or the whole job and I think it is the job.
+
+      [Final Chorus - Dov, Ryke and Hess, three male voices total]
+      Sign off and go home. That is the whole ceremony.
+      Nine days, four bays, one crate and one line on a page,
+      and this is the last thing on it and then it is over,
+      and the next run goes out on the Monday after.
+
+      [Outro - cold stop, Oren's upright bass last in the audition key]
+    take: null                    # M-31 fills this in at the Suno sitting

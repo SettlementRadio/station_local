@@ -90,7 +90,7 @@ phase, so the person who has to write all of it can see it at once.
 | **Stock voice bank** (C9) | **D** | 12–20 clips, varied by age, register and settlement | after A |
 | **`grid.yaml`** (C4) | **D** | ~30 programme entries from PROGRAMMING §8 | **now** — the grid is written and validated |
 | **Pool pieces** (C7) | **E** | 37 minimum across three length bands, all filler — idents are imaging (D-008) | after D |
-| **Imaging + jingles** (C6) | **F** | **~30 jingle sets** — one per strand, each an open, close and bed, plus a sting for news — and the station furniture on top. Call it 100+ pieces | after F's Suno account |
+| **Imaging + jingles** (C6) | **F** | **~30 jingle sets** — one per strand, each an open, close and bed, plus a sting for news — and the station furniture on top. Call it 100+ pieces, listed in `imaging/catalogue.yaml` (D-093). **56 already exist** — see `music/jingles/README.md` | **partly done** — the remainder after F's Suno account |
 | **Music wiki** (C5a) | **F** | **~100 musicians · ~195 albums · ~1,700 song titles**, spanning ~200 years in three layers (D-044) | **now** — text only, no account, no hardware |
 | **Music audio** (C5b) | **F** | **500 songs** — the playable layer of the wiki, plus lyrics and style cards | after F's Suno account |
 | **The archive** | **H** | ~4,000 speech-minutes, ~165 hours | **not before F** (D-006) |
@@ -102,6 +102,15 @@ operator can make.
 
 > **Imaging is not "a pack."** The grid has around thirty named strands and ARCHITECTURE §17a makes
 > a `jingle_set` mandatory for every one of them, so this is a hundred-odd short pieces, not a dozen.
+>
+> **C6 is roughly a third done before F starts, and the done third is the cheap one.**
+> `music/jingles/README.md` is the inventory: **56 assets** carried over from the previous attempt,
+> licensed and filed — the station furniture almost complete, and ~29 programme opens. **Read it
+> before drafting any C6 card.** What is missing is the expensive two-thirds: **~30 programme
+> closes, ~30 link beds, 5 opens with no candidate, and `news_bed`** — a minimum of ~36 new pieces,
+> or ~64 if every strand gets its own bed rather than sharing. Two gates sit in front of all of it,
+> both in that README: the operator's listen to the signature ident, which the whole family hangs
+> on, and the naming, which cannot be settled until C4 fixes the programme slugs.
 
 > **The music catalogue is not a pile of tracks; it is a wiki with a record library inside it**
 > (D-044). §8 gives rotation weights and separation rules but never said how big the catalogue must
@@ -304,6 +313,12 @@ pipeline · §17a `grid.yaml` · §17's `make sample`.
 > **The mix here is bare.** §9's mix specification — beds, opens, closes, the hour clock — is F. A
 > show in this phase is voices concatenated with the §12 pipeline and nothing around them, which is
 > enough to judge writing and performance and is not yet what **M1** asks for.
+>
+> **`grid.yaml` names imaging ids that do not exist yet, and that is expected.** §17a validation 6
+> requires every referenced imaging id and `jingle_set` to resolve, and the catalogue they resolve
+> against — `imaging/catalogue.yaml` — is not built until F (D-093). C4 declares the names; F fills
+> them. Whoever writes the grid should know the target file exists by decision before it exists on
+> disk, so the naming is chosen once rather than twice.
 
 ---
 
@@ -357,13 +372,14 @@ question is settled and written down before the archive makes it expensive.
   makes `tracks.licence_note` mandatory and the answer changes the day a third-party track enters
   the catalogue.
 - **Content** — **C5 Suno catalogue** + `music/catalogue.yaml` + licence evidence · **C6 imaging
-  pack** (logo, stings, beds, opens and closes, disclosure sting) · manual correction of track
-  intro ramps by ear.
+  pack** (logo, stings, beds, opens and closes, disclosure sting) + `imaging/catalogue.yaml` and its
+  licence evidence · manual correction of track **and imaging** intro ramps by ear.
 - **Depends on** — E.
 
 **Completes in ARCHITECTURE:** §8 the music data model, rotation and the chart's scoring — the
 chart *show* waits for K and three weeks of real airplay · §9 station imaging and the mix
-specification · §10 music shows and render economics · §26's remaining caches — track durations,
+specification, **including `imaging/catalogue.yaml` and `make imaging-sync`/`-analyse`/`-tag`**
+(D-093) · §10 music shows and render economics · §26's remaining caches — track durations,
 which the hourly playlist build depends on never re-probing, and rendered pool and imaging, which
 are never invalidated because that is the point of rendering them once.
 **Build steps:** 12, 13, 13b, 13c.

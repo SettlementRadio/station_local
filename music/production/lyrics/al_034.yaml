@@ -1,0 +1,991 @@
+# al_034 — Hammer Down the Line · Pipe and Hammer (b_017) · Deep Register · 2619 · 13 songs
+#
+# Written by M-22. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# **A cornerstone**, and one of the six to eight records that has to carry a whole 56-minute
+# programme on its own (§5), so it got the extra passes §12's note asks for. Thirteen songs, eleven
+# days, one Forge pipe hall with the rig left standing in it by the band who had it the fortnight
+# before. The wiki gives this record a singer who lost his voice on the sixth day, an argument about
+# writing shares that was settled by printing every share, a cracked cymbal, and a label asking for
+# a shorter record on the last day and getting two verses cut rather than two songs. Every one of
+# those facts is audible in an arrangement; where the words approach the work itself, they stay with
+# the people making the decision rather than turning into sung sleeve notes.
+#
+# **The card's backing line is exceeded exactly once and the wiki requires it.** b_017's backing is
+# *one male harmony voice from the bass chair, never a stack*, and s_0295's fact is a closing harmony
+# assembled from eleven takes sung by five people. That song, and only that song, carries a stack,
+# and its prompt says so. Every other track on the record has one low voice under the lead and
+# nothing else.
+#
+# Lane-rock takes a break in roughly one song in three (§7) and b_017 gives the break to the
+# amplified pipes. Four of these thirteen take one.
+#
+# `generation:` and every `take:` are empty until M-31's Suno sitting fills them in.
+
+album:
+  id: al_034
+  title: Hammer Down the Line
+  band: b_017
+  band_name: Pipe and Hammer
+  label: label_4
+  release_year: 2619
+  genre: lane-rock
+  cornerstone: true
+  song_count: 13
+  style_card: b_017
+  room: >-
+    Forge's largest pipe hall, eleven days, with a pipe rig already standing when the band walked in
+    — which is the only reason eleven days were enough and is why the hall's own largest tube is on
+    the record at all. The style card holds unbent for twelve of the thirteen: amplified pipes,
+    rhythm guitar, bass, drum kit with struck alloy, tracked live, one low male harmony from the
+    bass chair. The four fact-bound exceptions are explicit rather than silent — Ivena Sorn's
+    room-tuned hall pipe on s_0287, with every guitar retuned to match it; Calo Meret's one-handed
+    guest piano on s_0291, kept out of the low register so the pipes keep it; Brin Noll's retuned
+    railing fittings on s_0294; and Sel Ardin's assembled closing harmony on s_0295, the one place
+    the backing line is exceeded. Havel Ost's voice is damaged from the sixth day onward and s_0285
+    is sung on what was left of it; the voice line itself does not change.
+
+generation:
+  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0284
+    title: Hammer Down the Line
+    track_number: 1
+    mood: [driving, anthemic, fast]
+    fact: >-
+      The band recorded the opening riff twenty-two times and chose the second take after playing
+      all twenty-two back in one sitting.
+    arrangement_note: the opening riff is the whole architecture of the song and returns unchanged at every join, and the fourteen-second pipe break is the same riff an octave down with the guitar out
+    intro: 14
+    outro: cold
+    target_duration: "4:30"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 138 BPM, driving and anthemic, fast. Male lead
+      vocal, big hall baritone with a hard edge at the top of the range, pushing into the chorus
+      rather than belting it, sung slightly ahead of the band, no vibrato. One low male harmony
+      voice from the bass chair, under the lead on choruses only, never above him and never a stack.
+      Amplified resonance pipes — long alloy tubes, deep organ tone, carrying the bottom — rhythm
+      electric guitar, electric bass, drum kit with struck alloy. Tracked live in a large ringing
+      hall, drums roomy, guitar mid-range and unpolished. One opening riff that returns unchanged at
+      every join, and a fourteen-second pipe break playing the same riff an octave down with the
+      guitar out. Fourteen seconds of that riff building from pipes to full band before the first
+      sung word. Cold stop.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony
+    lyrics: |
+      [Intro - 14 seconds, the riff building from pipes to full band, no vocal]
+
+      [Verse 1]
+      Give four people the same question twenty-two times
+      and by the ninth answer nobody knows what the question was.
+      Four hours in a cold hall can make eight seconds enormous
+      and make a small decision feel like something worth a fight.
+      There is a freight crew out on the long lane tonight
+      who will hear it once, know whether it moves, and settle the matter.
+
+      [Chorus]
+      Hammer down the line, hammer down the line,
+      whatever is at the far end of it can wait its turn.
+      One thing at a time and all of it at once,
+      and the hall gets what the hall came for.
+
+      [Verse 2]
+      The first answer comes before you understand the room.
+      The last comes after you have stopped hearing yourself.
+      Somewhere in between there is one where you are still trying,
+      and it is nearly always earlier than anybody wants to admit.
+
+      [Chorus]
+      Hammer down the line, hammer down the line,
+      whatever is at the far end of it can wait its turn.
+      One thing at a time and all of it at once,
+      and the hall gets what the hall came for.
+
+      [Instrumental - pipe break, the same riff an octave down, guitar out, 14 seconds]
+
+      [Verse 3]
+      Tor said it on the sixth take and nobody listened to him.
+      Said the second one, said it flatly, went back to the kit,
+      and on the ninth day it was the second one, exactly as he said,
+      and he did not mention it, which is worse than mentioning it.
+
+      [Bridge]
+      Eleven days. One hall. A rig somebody else left standing.
+      We would not have got half of this in a room of our own,
+      and the hall was cold and the heating came on when it liked.
+
+      [Final Chorus]
+      Hammer down the line, hammer down the line,
+      whatever is at the far end of it can wait its turn.
+      Twenty-two answers and the honest one came second,
+      exactly where Tor said it was before we made it difficult.
+
+      [Outro - cold stop on the riff]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0285
+    title: Six Days In
+    track_number: 2
+    mood: [hoarse, defiant, midtempo]
+    fact: >-
+      Havel Ost sings the whole track on the voice he had left after losing it on the sixth day of
+      the sessions.
+    arrangement_note: the whole band drops back under the vocal because the vocal cannot come forward, so the loudest thing on the track is the pipes in the gaps between lines and the singer is never asked to reach
+    intro: 5
+    outro: fade
+    target_duration: "4:20"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 116 BPM, hoarse and defiant, midtempo. Male lead
+      vocal, big hall baritone with a hard edge at the top of the range, damaged and rough, staying
+      low in the range and never reaching, sung slightly ahead of the band, no vibrato. One low male
+      harmony voice from the bass chair, under the lead on choruses only, never above him and never
+      a stack. Amplified resonance pipes — long alloy tubes, deep organ tone — filling every gap
+      between vocal lines and dropping right back underneath them; rhythm electric guitar, electric
+      bass, drum kit with struck alloy. Tracked live in a large ringing hall, the band held back
+      under the voice throughout, drums roomy, guitar mid-range and unpolished. Five seconds of
+      pipes and guitar before the first sung word. Fade.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony, belted or soaring vocals
+    lyrics: |
+      [Intro - 5 seconds, pipes and guitar, no vocal]
+
+      [Verse 1]
+      It went on the Thursday morning, halfway through a line,
+      not gradually, not with any warning, just gone,
+      one word came out and the next one did not follow it
+      and the room went quiet in a way I have not heard before.
+
+      [Chorus]
+      Six days gone and there is nothing left to sing with
+      and there are five days of hall booked and paid for.
+      So the band came down and the pipes took the top off it
+      and what you are hearing is what I had left.
+
+      [Verse 2]
+      They spent two days building beds around the shape of me,
+      guitar, bass, alloy, everything but the thing that was broken,
+      and nobody said we should stop and nobody said we should carry on,
+      they just kept playing quieter until I could get over the top.
+
+      [Chorus]
+      Six days gone and there is nothing left to sing with
+      and there are five days of hall booked and paid for.
+      So the band came down and the pipes took the top off it
+      and what you are hearing is what I had left.
+
+      [Verse 3]
+      My voice came back in spring and I used it everywhere,
+      but every time the throat goes rough I know this room again:
+      four people making space around the part that would not work,
+      nobody calling it brave and nobody asking me to reach.
+
+      [Bridge]
+      A hall this size does not care what your voice is doing.
+      Neither does a manifest. Neither does the last ferry.
+      You get up and you do the thing at the volume you have got.
+
+      [Final Chorus]
+      Six days into it and there is nothing left to sing with,
+      and the eleven days were booked and the eleven days were used.
+      We did not make the missing part pretend that it was whole;
+      we brought everything else down to the volume I had got.
+
+      [Outro - fade on the pipes]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0286
+    title: Put My Name Beside It
+    track_number: 3
+    mood: [angry, hard, brisk]
+    fact: >-
+      Ade Prosk wrote the verse the evening the band argued about writing shares, and it is the first
+      song of theirs he is credited on.
+    arrangement_note: the bass chair wrote the second verse, but Havel remains the lead singer; Ade drops his harmony there and brings the bass forward under the verse before returning beneath the lead on the choruses
+    intro: 4
+    outro: cold
+    target_duration: "4:05"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 136 BPM, angry and hard, brisk. Male lead vocal, big
+      hall baritone with a hard edge at the top of the range, pushing into the chorus rather than
+      belting it, sung slightly ahead of the band, no vibrato. One low male harmony voice from the
+      bass chair, under the lead on choruses only, never above him and never a stack. Havel still
+      sings the second verse; the harmony drops out and Ade's bass comes forward beneath the words
+      he wrote. Amplified resonance pipes — long alloy tubes, deep organ tone — rhythm electric
+      guitar, electric bass, drum kit with struck alloy. Tracked live in a large ringing hall, drums
+      roomy, guitar mid-range and unpolished. Four seconds of guitar and struck alloy before the
+      first sung word. Cold stop.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony
+    lyrics: |
+      [Intro - 4 seconds, guitar and struck alloy, no vocal]
+
+      [Verse 1]
+      Seven years in the chair and nothing with his name on it,
+      which nobody decided and everybody let happen,
+      and it came up on a Tuesday evening over a bad meal
+      because a copy of somebody else's record had gone round the hall
+      with the wrong name printed on it, off a hauler, down the lane.
+
+      [Verse 2 - lead vocal, no harmony, bass chair forward beneath it]
+      I do not want the biggest share and I never asked for one.
+      I want the line under the title where the writing goes
+      to say what actually happened in the room that day,
+      because in nine years somebody will read it and believe it.
+      That is the whole of the argument. That is all of it.
+
+      [Chorus]
+      Put my name next to it. Not above it. Next to it.
+      Same size, same page, same ink as everybody else.
+      A name on a sleeve is not money and it is not pride,
+      it is a fact, and facts get argued about later.
+
+      [Verse 3]
+      So we printed every share on the back of the record,
+      four names, four numbers, and one of them is small
+      and it is his and it is the first one he has had
+      and he has not said a word about it since the day it landed.
+
+      [Chorus]
+      Put my name next to it. Not above it. Next to it.
+      Same size, same page, same ink as everybody else.
+      A name on a sleeve is not money and it is not pride,
+      it is a fact, and facts get argued about later.
+
+      [Bridge]
+      Somewhere out on the relay road there is a copy of this
+      with the wrong name on it, and we know, and we cannot get it back.
+
+      [Final Chorus]
+      Put my name next to it. Not above it. Next to it.
+      Every share printed and the argument over in an evening,
+      which is nine years faster than we managed the last one.
+      Ask for it out loud. Nobody offers.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0287
+    title: Long Alloy
+    track_number: 4
+    mood: [heavy, solemn, slow]
+    fact: >-
+      Juno Kerrick and Ivena Sorn tuned the hall's largest pipe to the room rather than to the band,
+      and every guitar was retuned to match it.
+    arrangement_note: Ivena plays the hall's largest pipe beneath the sung sections and every instrument is tuned around it; for the twenty-second break she drops out and Juno plays that same pipe alone
+    intro: 24
+    outro: sustain
+    target_duration: "5:40"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 104 BPM, heavy and solemn, slow. Male lead vocal,
+      big hall baritone with a hard edge at the top of the range, pushing into the chorus rather
+      than belting it, sung slightly ahead of the band, no vibrato. One low male harmony voice from
+      the bass chair, under the lead on choruses only, never above him and never a stack. One very
+      large amplified resonance pipe — a long alloy tube with a deep organ tone, played by Ivena
+      under the sung sections and tuned to the room rather than concert pitch — with guitar and bass
+      tuned around it. The instruments remain firmly in tune with one another; the unusual center is
+      low and stable, never a bad-intonation effect. Rhythm electric guitar, electric bass, drum kit
+      with struck alloy. Tracked live in a large ringing hall, drums roomy, guitar mid-range and
+      unpolished. For a twenty-second break Ivena and the band drop out and Juno plays the largest
+      pipe alone. Twenty-four seconds of Ivena on that pipe before the first sung word. Ends on
+      Juno's held pipe note left to decay in the hall.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony
+    lyrics: |
+      [Intro - 24 seconds, the hall's largest pipe alone, no vocal]
+
+      [Verse 1]
+      There is a tube in that hall that is longer than the van
+      and it has been bolted to the back wall since before the reorganisation
+      and nobody has moved it because nobody could move it,
+      and it is tuned to the building and the building has not changed.
+      It came off a hauler in pieces before anybody here was working
+      and whoever bolted it up did not leave a name on it.
+
+      [Verse 2]
+      They spent the whole of a morning finding where it actually was,
+      the two of them, with the doors shut and the heating off,
+      and then she said a number and he wrote it on his hand
+      and we retuned four instruments to a wall.
+
+      [Chorus]
+      The long tube, and everything comes to it.
+      Not the other way round. Nothing comes to us.
+      The room was here first and the room will be here after
+      and the only sensible thing is to agree with it.
+
+      [Instrumental - Juno on the largest pipe alone, Ivena and the band out, 20 seconds]
+
+      [Verse 3]
+      It sits about a third of a tone off where you want it
+      and the first four times you hear this you will think it is wrong,
+      and then one morning it will be the only right note in the hall
+      and every easier tuning will feel like it is trying too hard.
+      There is a note under this settlement that everything else is measured from
+      and it is a length of alloy screwed to a wall in a cold hall.
+
+      [Chorus]
+      The long tube, and everything comes to it.
+      Not the other way round. Nothing comes to us.
+      The room was here first and the room will be here after
+      and the only sensible thing is to agree with it.
+
+      [Bridge]
+      There is a settlement's worth of alloy in that wall.
+      Somebody hung it there for a reason nobody wrote down.
+
+      [Final Chorus]
+      The long tube, and everything comes to it.
+      She marked the tuning on her cuff and would not do it twice.
+      We wrote that number on this wall and nowhere else,
+      because no other hall has ever asked the same thing of us.
+
+      [Outro - held note, left to decay in the hall]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0288
+    title: Everything Runs Hot
+    track_number: 5
+    mood: [urgent, loud, fast]
+    fact: >-
+      Tor Dolo plays a cracked cymbal for the whole take because the replacement did not arrive
+      before the hall booking ended.
+    arrangement_note: the cracked cymbal is on every beat of the chorus and is left exactly as it sounds, dead and short instead of ringing, and the arrangement is built around the hole where a cymbal should be
+    intro: 3
+    outro: cold
+    target_duration: "3:55"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 140 BPM, urgent and loud, fast. Male lead vocal, big
+      hall baritone with a hard edge at the top of the range, pushing into the chorus rather than
+      belting it, sung slightly ahead of the band, no vibrato. One low male harmony voice from the
+      bass chair, under the lead on choruses only, never above him and never a stack. Amplified
+      resonance pipes — long alloy tubes, deep organ tone — rhythm electric guitar, electric bass,
+      drum kit with struck alloy and one cracked cymbal on every chorus beat, dead and short rather
+      than ringing, left exactly as it sounds. Tracked live in a large ringing hall, drums roomy,
+      guitar mid-range and unpolished. Three seconds of the cracked cymbal and kick before the first
+      sung word. Cold stop.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony, bright ringing cymbals
+    lyrics: |
+      [Intro - 3 seconds, the cracked cymbal and kick, no vocal]
+
+      [Verse 1]
+      Third day of a run and the scrubber is at the top of its range
+      and everybody on the deck has taken a layer off
+      and the numbers on the panel are the numbers you do not like
+      and there is nothing to do about any of it for six hours.
+
+      [Chorus]
+      Everything runs hot. Everything runs hot.
+      The metal, the argument, the man on the third shift.
+      Nothing here has stopped yet and nothing here feels right,
+      and you sit in it and you do the job and it passes.
+
+      [Verse 2]
+      He cracked it on the fourth day and the new one never came,
+      stuck at a siding somewhere with a fortnight of other things,
+      and he played the rest of the booking on that dead short sound,
+      short, ugly, gone in half a second, and it is perfect,
+      and it is on every chorus and there is nothing else like it.
+
+      [Chorus]
+      Everything runs hot. Everything runs hot.
+      The metal, the argument, the man on the third shift.
+      Nothing here has stopped yet and nothing here feels right,
+      and you sit in it and you do the job and it passes.
+
+      [Verse 3]
+      I have been in a hold at fifty degrees with three people
+      who all went quiet because nobody wanted to stop the shift.
+      Then one of them pulled the alarm and opened the near door,
+      and we stood outside until the panel came back green,
+      and every one of us learned the other three names properly.
+
+      [Bridge]
+      It cools down. It always cools down.
+      That is not comfort, that is just the shape of a shift.
+
+      [Final Chorus]
+      Everything runs hot. Everything runs hot.
+      The metal, the argument, the man on the third shift.
+      Six hours in and the panel comes back green
+      and nobody says anything about any of it ever again.
+
+      [Outro - cold stop on the cracked cymbal]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0289
+    title: The Shift You Don't Come Back From
+    track_number: 6
+    mood: [ominous, building, midtempo]
+    fact: >-
+      The lyric was assembled from a list of near-misses the band collected from the pipe hall's own
+      maintenance crew.
+    arrangement_note: pipes open alone; rhythm guitar joins for the first verse, bass for the pre-chorus and drums for the second verse, after which the full band never drops out, while the vocal stays at one fixed volume throughout
+    intro: 18
+    outro: fade
+    target_duration: "5:00"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 112 BPM, ominous and building, midtempo. Male lead
+      vocal, big hall baritone with a hard edge at the top of the range, held at exactly the same
+      volume from first line to last while the band grows louder around it, sung slightly ahead of
+      the band, no vibrato. One low male harmony voice from the bass chair, under the lead on
+      choruses only, never above him and never a stack. Amplified resonance pipes — long alloy
+      tubes, deep organ tone — opening alone; rhythm electric guitar joins for the first verse,
+      electric bass for the pre-chorus and drum kit with struck alloy for the second verse. The full
+      band remains from there and nothing drops out again.
+      Tracked live in a large ringing hall, drums roomy, guitar mid-range and unpolished. Eighteen
+      seconds of pipes alone before the first sung word. Fade at full size.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony
+    lyrics: |
+      [Intro - 18 seconds, pipes alone, no vocal]
+
+      [Verse 1 - rhythm guitar joins the pipes]
+      A man who fixes the heating in that hall told us four of these
+      over a cup of something in the corridor on the second night,
+      and then a woman came past and added a fifth without stopping,
+      and we wrote them all down on the back of the running order.
+
+      [Pre-Chorus - bass joins, nothing drops out]
+      Not one of these is about a person who was unlucky.
+
+      [Verse 2 - drums join, full band from here onward]
+      A bulkhead door that shut on a coat and not on the man in it.
+      A scrubber that failed at the far end of a night shift
+      and the alarm that everybody had stopped hearing years ago
+      and one person who noticed the smell and said so out loud.
+
+      [Chorus]
+      Nobody plans it. Nobody gets a warning.
+      There is a shift you do not come back from and it looks like all the others.
+      Same gate, same coat, same thing said at the door,
+      and the difference is not in anything you can see.
+
+      [Verse 3]
+      A strap that held. A rung that did not. A light that was out
+      on the one week the second light was also out.
+      A hauler that came in on the wrong bearing and stopped
+      about the width of a room short of everything.
+
+      [Chorus]
+      Nobody plans it. Nobody gets a warning.
+      There is a shift you do not come back from and it looks like all the others.
+      Same gate, same coat, same thing said at the door,
+      and the difference is not in anything you can see.
+
+      [Bridge]
+      Every one of these is a story about somebody who is fine.
+      That is why they get told. The other ones do not get told.
+
+      [Final Chorus]
+      Nobody plans it. Nobody gets a warning.
+      So say the thing at the door. Say it every time.
+      Say it when it is boring and say it when you are late,
+      and let it be the stupidest thing you do all week.
+
+      [Outro - fade at full size]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0290
+    title: Second Bass Player
+    track_number: 7
+    mood: [wry, rowdy, brisk]
+    fact: >-
+      Ade Prosk asked for the title to be changed and the rest of the band voted to keep it.
+    arrangement_note: the bass is the loudest thing in the mix for the whole song and takes the last four bars alone, and the pipe break in the middle is the only time it is not the largest object in the room
+    intro: 8
+    outro: fade
+    target_duration: "4:10"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 134 BPM, wry and rowdy, brisk. Male lead vocal, big
+      hall baritone with a hard edge at the top of the range, pushing into the chorus rather than
+      belting it, sung slightly ahead of the band, no vibrato. One low male harmony voice from the
+      bass chair, under the lead on choruses only, never above him and never a stack. Electric bass
+      mixed as the loudest instrument on the track and playing the last four bars alone; amplified
+      resonance pipes — long alloy tubes, deep organ tone — rhythm electric guitar, drum kit with
+      struck alloy. Tracked live in a large ringing hall, drums roomy, guitar mid-range and
+      unpolished. A twelve-second pipe break, the only passage where the bass is not the largest
+      thing in the room. Eight seconds of bass alone before the first sung word. The final four bars
+      belong to the bass alone and fade with no other instrument returning.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony
+    lyrics: |
+      [Intro - 8 seconds, bass alone, no vocal]
+
+      [Verse 1]
+      He asked us in the corridor to call it something else
+      and he asked properly, once, without making a thing of it,
+      and we went away and talked about it and came back and said no,
+      and I am still not sure that we were right to.
+
+      [Chorus]
+      The second man on the bass. Seven years and counting.
+      There is no first and second when the doors come open.
+      There is a low end or there is not a low end,
+      and there has been a low end every night since he walked in.
+
+      [Verse 2]
+      The joke stops being a joke somewhere around year four
+      and nobody notices the day it stops, least of all the ones telling it,
+      and by year seven it is just a word people say
+      about a man who has played more of our songs than the other one did.
+
+      [Chorus]
+      The second man on the bass. Seven years and counting.
+      There is no first and second when the doors come open.
+      There is a low end or there is not a low end,
+      and there has been a low end every night since he walked in.
+
+      [Instrumental - pipe break, 12 seconds]
+
+      [Verse 3]
+      So the title stays, because a band is not a democracy
+      except when it is, and that week it was, and he lost,
+      and that night he played as if he had no use for an apology.
+      At the end we left four bars of empty room around him,
+      which was not amends but was the nearest thing we managed.
+
+      [Bridge]
+      Ask me in another seven years and I will have changed my mind.
+      He will not bring it up. That is the whole problem with him.
+
+      [Final Chorus]
+      The second man on the bass. Seven years and counting.
+      Somebody has to be the one who came in later.
+      Every crew on every lane has one and they hold the thing up,
+      and the ones who were there first get the songs named after them.
+
+      [Outro - final four bars, bass alone, fading]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0291
+    title: Wages and Weather
+    track_number: 8
+    mood: [weary, warm, midtempo]
+    fact: >-
+      Calo Meret plays the piano part with one hand so that the resonance pipes could keep the low
+      register to themselves.
+    arrangement_note: a guest piano plays with the right hand only and never goes below the middle of the instrument, so the pipes keep the whole bottom of the arrangement and the two never occupy the same register
+    intro: 10
+    outro: fade
+    target_duration: "4:35"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 118 BPM, weary and warm, midtempo. Male lead vocal,
+      big hall baritone with a hard edge at the top of the range, pushing into the chorus rather
+      than belting it, sung slightly ahead of the band, no vibrato. One low male harmony voice from
+      the bass chair, under the lead on choruses only, never above him and never a stack. A guest
+      upright piano played with the right hand only, never below the middle of the instrument;
+      amplified resonance pipes — long alloy tubes, deep organ tone — keeping the entire low
+      register to themselves; rhythm electric guitar, electric bass, drum kit with struck alloy.
+      Tracked live in a large ringing hall, drums roomy, guitar mid-range and unpolished. Ten
+      seconds of one-handed piano and pipes before the first sung word. Fade.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony, left-hand piano bass
+    lyrics: |
+      [Intro - 10 seconds, one-handed piano and pipes, no vocal]
+
+      [Verse 1]
+      There are two things anybody in this settlement talks about
+      and one of them is what the season did to the roof
+      and the other is what the season did to the rate,
+      and they are the same conversation and everybody knows it.
+
+      [Verse 2]
+      Calo came in with the arrangement copied out in full,
+      four pages, both hands, everything in the right place,
+      and then he heard the pipes come up under the first chorus
+      and put his left hand in his lap and left it there all night.
+
+      [Chorus]
+      The wages and the weather. That is the whole of it.
+      Ask anybody at the gate and you will get both in one sentence.
+      Nothing else moves out here. Nothing else needs to.
+      Two numbers on a board and a look out of the window.
+
+      [Verse 3]
+      My mother could tell you the rate for every year since the reorganisation
+      and could not tell you one thing that happened in the core,
+      and I used to think that was small of her and it is not,
+      it is the only two numbers that ever changed anything in this house.
+
+      [Chorus]
+      The wages and the weather. That is the whole of it.
+      Ask anybody at the gate and you will get both in one sentence.
+      Nothing else moves out here. Nothing else needs to.
+      Two numbers on a board and a look out of the window.
+
+      [Bridge]
+      Weather moves first. Wages follow six weeks later.
+      One comes through the roof and one comes through the pay,
+      and both of them arrive whether anybody is ready or not.
+
+      [Verse 4]
+      There is a board at the gate with the rate on it in chalk
+      and a window above it that everybody looks through first,
+      and in nine years of standing there I have never once
+      seen a person check the rate before checking the sky.
+
+      [Final Chorus]
+      The wages and the weather. That is the whole of it,
+      and a hall with the heating on and eleven days paid for.
+      Both numbers were bad that season and we made this anyway,
+      and it was the warmest room we had that season.
+
+      [Outro - fade on the one-handed piano]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0292
+    title: Don't Wait Up for the Yard
+    track_number: 9
+    mood: [tender, plain, slow]
+    fact: >-
+      Havel Ost recorded the vocal sitting down, which he had refused to do on any previous record.
+    arrangement_note: the vocal is sung sitting and sounds it, closer and lower and with less air behind it than anywhere else on the record, and the band plays at the smallest size it can manage without stopping
+    intro: 12
+    outro: fade
+    target_duration: "4:50"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 106 BPM, tender and plain, slow. Male lead vocal,
+      big hall baritone with a hard edge at the top of the range, here sung seated — closer, lower
+      and with less air behind it than anywhere else, never reaching — slightly ahead of the band,
+      no vibrato. One low male harmony voice from the bass chair, under the lead on choruses only,
+      never above him and never a stack. Amplified resonance pipes — long alloy tubes, deep organ
+      tone — played at their quietest; rhythm electric guitar, electric bass, drum kit with struck
+      alloy, the whole band at the smallest size it can play without stopping. Tracked live in a
+      large ringing hall, drums roomy, guitar mid-range and unpolished. Twelve seconds of pipes and
+      bass before the first sung word. Fade.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony, belted or soaring vocals
+    lyrics: |
+      [Intro - 12 seconds, pipes and bass, no vocal]
+
+      [Verse 1]
+      I came back from the yard after the ninth evening
+      with both knees making decisions I had not agreed to.
+      There was a chair beside the table and a plate under a cloth,
+      and I sat before I had taken either boot off.
+
+      [Verse 2]
+      At that height the kitchen looks like somewhere you can stay.
+      The light reaches the table and does not ask for anything.
+      A man awake since four can stop pretending he is not tired
+      when nobody in the room needs him to stand back up.
+
+      [Pre-Chorus]
+      Twenty-seven years of coming in after the light went out.
+
+      [Chorus]
+      Don't wait up for the yard. It will still be there.
+      Go to bed. Leave the light. I will come in quietly.
+      There is no cargo at the far end of this that will not keep,
+      and I have said that to you for twenty-seven years.
+
+      [Verse 3]
+      She has waited up for the yard more times than I have worked
+      and has never once said that it was a thing she was doing,
+      and the plate is under the cloth and the chair is at the table
+      and there is no version of this where I get to be right about it.
+      Her father did it for the freight crew before I ever did
+      and she has been waiting up for a yard since she was small.
+
+      [Chorus]
+      Don't wait up for the yard. It will still be there.
+      Go to bed. Leave the light. I will come in quietly.
+      There is nothing at the far end of this that will not keep,
+      and I have said that to you for twenty-seven years.
+
+      [Bridge]
+      Eleven days in a hall is not a long time to be away.
+      It is eleven evenings. Somebody counted them.
+
+      [Final Chorus]
+      Don't wait up for the yard. It will still be there.
+      Go to bed. Leave the light. I will come in quietly.
+      I am going to keep saying it and you are going to keep waiting,
+      and we have both known how that ends since the beginning.
+
+      [Outro - fade on the quiet pipes]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0293
+    title: Straight Through Meridian
+    track_number: 10
+    mood: [driving, bright, fast]
+    fact: >-
+      Two verses were cut on the last day, after Deep Register asked for a record that would fit one
+      side of a pressing.
+    arrangement_note: the two cut verses leave two four-bar spaces, one after the second verse and one after the second chorus, and the full band plays the opening riff through both with no solo or pause
+    intro: 6
+    outro: cold
+    target_duration: "3:45"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 140 BPM, driving and bright, fast. Male lead vocal,
+      big hall baritone with a hard edge at the top of the range, pushing into the chorus rather
+      than belting it, sung slightly ahead of the band, no vibrato. One low male harmony voice from
+      the bass chair, under the lead on choruses only, never above him and never a stack. Amplified
+      resonance pipes — long alloy tubes, deep organ tone — rhythm electric guitar, electric bass,
+      drum kit with struck alloy. Tracked live in a large ringing hall, drums roomy, guitar
+      mid-range and unpolished. Two four-bar full-band turns on the opening riff where verses were
+      removed, one after the second verse and one after the second chorus, with no solo and no pause.
+      Six seconds of full band before the first sung word. Cold stop.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony
+    lyrics: |
+      [Intro - 6 seconds, full band, no vocal]
+
+      [Verse 1]
+      Out at four, past the near siding, and then you do not stop.
+      Not for the second outpost, not for the transfer hall,
+      not for the place with the good coffee that everybody stops at,
+      and you are through the storm coast before the weather knows,
+      and the hold is full and the manifest is signed
+      and there is nothing behind you that needs looking at.
+
+      [Chorus]
+      Straight on through Meridian and out the other side.
+      Nine hours if the lane is clear and nine and a half if not.
+      I have done it enough times to know what I am missing
+      and I miss it every time and I do not stop.
+
+      [Verse 2]
+      Meridian gives no warning where the road begins to narrow.
+      The markers stay the same and the shoulder simply goes,
+      so you put both hands level and keep the hauler centered
+      and let the impatient one behind you spend the fuel to pass.
+
+      [Turn - full band on the opening riff, four bars, no solo]
+
+      [Chorus]
+      Straight on through Meridian and out the other side.
+      Nine hours if the lane is clear and nine and a half if not.
+      I have done it enough times to know what I am missing
+      and I miss it every time and I do not stop.
+
+      [Turn - full band on the opening riff, four bars, no solo]
+
+      [Verse 3]
+      By the seventh hour the place with the good coffee
+      starts to look like the only sensible building on the lane.
+      I pass it every time and regret it for twenty minutes,
+      then the yard calls with a berth and there is no time left to stop.
+      Missing a thing is not the same as turning back for it.
+
+      [Final Chorus]
+      Straight on through Meridian and out the other side,
+      nine hours, one stop for nothing, and the yard by two.
+      The road takes what it takes and leaves the rest behind,
+      and everybody at the far end gets most of what they wanted.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0294
+    title: Count the Loud Ones
+    track_number: 11
+    mood: [rowdy, comic, fast]
+    fact: >-
+      Brin Noll built the percussion out of the hall's loose railing fittings, retuning them between
+      takes.
+    arrangement_note: the hall's railing fittings are played as a tuned percussion part beside the kit and are retuned between every take, and the pipe break happens over them with the drum kit out
+    intro: 9
+    outro: fade
+    target_duration: "4:15"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 138 BPM, rowdy and comic, fast. Male lead vocal, big
+      hall baritone with a hard edge at the top of the range, pushing into the chorus rather than
+      belting it, sung slightly ahead of the band, no vibrato. One low male harmony voice from the
+      bass chair, under the lead on choruses only, never above him and never a stack. A tuned
+      percussion part played on the hall's own loose metal railing fittings, beside the kit rather
+      than instead of it; amplified resonance pipes — long alloy tubes, deep organ tone — rhythm
+      electric guitar, electric bass, drum kit with struck alloy. Tracked live in a large ringing
+      hall, drums roomy, guitar mid-range and unpolished. A fourteen-second pipe break over the
+      railing percussion with the drum kit out. Nine seconds of tuned railing metal before the first
+      sung word. Fade.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony
+    lyrics: |
+      [Intro - 9 seconds, tuned railing metal, no vocal]
+
+      [Verse 1]
+      Every hall has four people who make more noise than the rest
+      and you can find them from the stage inside about a minute
+      and they are never the ones at the front, they are halfway back
+      by the doors, with their coats still on, and they arrived late,
+      straight off a deck or a late lane with the dust still on them.
+
+      [Chorus]
+      Count the loud ones. Four of them tonight.
+      Two by the doors, one on the rail, one I cannot see.
+      They are the reason the quiet ones came out at all,
+      because nobody wants to be the first person to shout.
+
+      [Verse 2]
+      Brin came in with a bag of spanners on the sixth day
+      and went round the railings of that hall tapping each one,
+      and by the afternoon the rails answered the chorus cleanly,
+      and he checked them again whenever the room went cold.
+
+      [Chorus]
+      Count the loud ones. Four of them tonight.
+      Two by the doors, one on the rail, one I cannot see.
+      They are the reason the quiet ones came out at all,
+      because nobody wants to be the first person to shout.
+
+      [Instrumental - pipe break over the railing percussion, kit out, 14 seconds]
+
+      [Verse 3]
+      He will not let the outer doors open until the room is right,
+      which has cost two hall keepers a morning each,
+      and he was a freight crew hand for eleven years before this
+      and says a bad rail is a bad rail wherever it is bolted,
+      in a hall, in a hold, on a hauler, it makes no difference.
+
+      [Bridge]
+      One of the loud ones came up afterwards and apologised.
+      I told her to be worse next time. I meant it.
+
+      [Final Chorus]
+      Count the loud ones. Four of them tonight,
+      and the railings they are leaning on are answering too.
+      The room has got a part whether anybody writes it down or not,
+      including the pieces of it that hold the roof up.
+
+      [Outro - fade on the railings]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0295
+    title: Nothing Sounds Like That Room
+    track_number: 12
+    mood: [nostalgic, expansive, midtempo]
+    fact: >-
+      Sel Ardin assembled the closing harmony from eleven separate takes sung by five different
+      people in the hall.
+    arrangement_note: the only stacked harmony on the record, built after the fact out of eleven takes by five people who were never in the room together, and it arrives only in the last chorus and never repeats
+    intro: 16
+    outro: sustain
+    target_duration: "5:15"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 116 BPM, nostalgic and expansive, midtempo. Male
+      lead vocal, big hall baritone with a hard edge at the top of the range, pushing into the
+      chorus rather than belting it, sung slightly ahead of the band, no vibrato. One low male
+      harmony voice from the bass chair under the lead on the earlier choruses only, and then, in
+      the final chorus, a full stacked harmony of five unpolished voices across registers assembled
+      from separate takes, arriving once and never repeating. Amplified resonance pipes — long alloy
+      tubes, deep organ tone — rhythm
+      electric guitar, electric bass, drum kit with struck alloy. Tracked live in a large ringing
+      hall, drums roomy, guitar mid-range and unpolished. Sixteen seconds of the empty hall and
+      pipes before the first sung word. Ends on a held chord with the stacked voices sustaining over
+      it.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 16 seconds, the empty hall and pipes, no vocal]
+
+      [Verse 1]
+      We have been in better halls with better everything in them
+      and none of them do the thing this one does at the low end,
+      and nobody can tell you why, and two people have measured it,
+      and both of them went away and did not write anything down.
+
+      [Verse 2]
+      It is bolted alloy and a bad roof and a floor that slopes
+      and a heating system that argues with the settlement's own scrubber,
+      and if you built it again out of the same materials
+      it would not do it, and everybody who works there knows that.
+
+      [Chorus]
+      Nothing sounds like it. Nothing is going to.
+      Not the core, not the new place, not the room with the good desk.
+      Eleven days in a building that is falling down
+      and every one of them stayed somewhere in the sound.
+
+      [Verse 3]
+      A man went round the hall on the last afternoon with a machine
+      and got five people to sing the same four bars into it,
+      the hall keeper, two of us, and two who had come to watch,
+      eleven goes between them, none of them at the same time.
+
+      [Chorus]
+      Nothing sounds like it. Nothing is going to.
+      Not the core, not the new place, not the room with the good desk.
+      Eleven days in a building that is falling down
+      and every one of them stayed somewhere in the sound.
+
+      [Bridge]
+      He put them together in an evening and played it back once
+      and nobody said anything for a while, and then we went home.
+
+      [Final Chorus - stacked voices, five people, arriving once]
+      Nothing sounds like it. Nothing is going to,
+      and one day the roof will go and that will be that,
+      and there will be a car park or a store or nothing at all,
+      and five voices will still carry the way that room answered.
+
+      [Outro - held chord, the stacked voices sustaining]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0296
+    title: Home on the Slow Circuit
+    track_number: 13
+    mood: [warm, resolute, midtempo]
+    fact: >-
+      The final chorus is the one the band had closed every performance with since 2594 and had
+      never put on a record.
+    arrangement_note: the closing chorus is the one the band has ended every night with for twenty-five years and it is played exactly as it is played live, with nothing added and no second attempt
+    intro: 11
+    outro: sustain
+    target_duration: "5:05"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 120 BPM, warm and resolute, midtempo. Male lead
+      vocal, big hall baritone with a hard edge at the top of the range, pushing into the chorus
+      rather than belting it, sung slightly ahead of the band, no vibrato. One low male harmony
+      voice from the bass chair, under the lead on choruses only, never above him and never a stack.
+      Amplified resonance pipes — long alloy tubes, deep organ tone — rhythm electric guitar,
+      electric bass, drum kit with struck alloy. Tracked live in a large ringing hall, drums roomy,
+      guitar mid-range and unpolished, the final chorus played exactly as it is played live with
+      nothing added. Eleven seconds of pipes and guitar before the first sung word. Ends on a held
+      chord left ringing in the hall.
+    exclude: acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production, stacked studio harmony
+    lyrics: |
+      [Intro - 11 seconds, pipes and guitar, no vocal]
+
+      [Verse 1]
+      There is a fast circuit and a slow one and they end in the same place
+      and one of them takes four days and the other takes nine,
+      and everybody young takes the fast one, which is correct,
+      and everybody who has done both of them takes the slow one.
+
+      [Verse 2]
+      The slow one goes through settlements that have nothing in them
+      but a hall, a gate, a transfer hall and about two hundred people,
+      and every one of those halls has had us in it twice
+      and half of them still have the poster up from the first time.
+
+      [Chorus]
+      Home on the slow circuit. Nine days and a hall a night.
+      No one is waiting at the far end with anything for us.
+      That is not a sad thing. That is the arrangement.
+      Nine days of somebody's Friday and then the yard.
+
+      [Verse 3]
+      We have ended every night with this since the first burn festival
+      after the last listed song and before the lights come up.
+      Some halls are empty by then and some are still standing,
+      but the same four bars tell everybody the night is finished,
+      and nobody asks for another because everybody knows the road home.
+
+      [Chorus]
+      Home on the slow circuit. Nine days and a hall a night.
+      No one is waiting at the far end with anything for us.
+      That is not a sad thing. That is the arrangement.
+      Nine days of somebody's Friday and then the yard.
+
+      [Bridge]
+      Twenty-five years of the same four bars at the end of every night.
+      It has outlived a bass player and most of the halls.
+
+      [Final Chorus - as played live, nothing added]
+      Home on the slow circuit. Nine days and a hall a night.
+      Whoever is standing at the end of it can have the last one.
+      Put the lights up. We are not doing another.
+      Get home safely and we will see you in the spring.
+
+      [Outro - held chord, left ringing in the hall]
+    take: null                    # M-31 fills this in at the Suno sitting

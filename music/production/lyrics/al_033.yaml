@@ -1,0 +1,613 @@
+# al_033 — Burn Day Overtime · Pipe and Hammer (b_017) · Deep Register · 2594 · 8 songs
+#
+# Written by M-22. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# **Two lines of the style card are bent here and both are the wiki's doing, not the writer's.**
+# b_017's card says *amplified* resonance pipes, and Juno Kerrick does not put them through an
+# amplifier until 2612 — twenty-five years after this record and the event al_132's title track is
+# named for. The pipes on this album are acoustic, in a hall large enough that they do not need to
+# be anything else. And the card's backing line is *one male harmony voice from the bass chair*,
+# which is Ade Prosk, who joins in 2612. Saul Ravik holds the bass here and the wiki gives him no
+# vocal, so **there is no band backing singer anywhere on this record**. s_0283's fact-bound closing
+# chorus is the one exception: the whole hall joins Havel in rough unison. The crowd's rewritten
+# chorus on s_0279 is sung by Havel alone; the festival crowd is not present on the recording.
+# Instruments and tempo range are untouched, and the lead-voice line never moves.
+#
+# Lane-rock takes a break in roughly one song in three (§7). b_017's card gives the break to the
+# resonance pipes and this band has no lead guitar, so all three breaks here are pipe breaks.
+#
+# `generation:` and every `take:` are empty until M-31's Suno sitting fills them in.
+
+album:
+  id: al_033
+  title: Burn Day Overtime
+  band: b_017
+  band_name: Pipe and Hammer
+  label: label_4
+  release_year: 2594
+  genre: lane-rock
+  cornerstone: false
+  song_count: 8
+  style_card: b_017
+  room: >-
+    The Forge hall the band rehearsed in, over four consecutive nights, because it was the only time
+    the room was free. The style card's "large ringing hall" is therefore literal and is the reason
+    the acoustic pipes carry: Juno Kerrick tunes them to the room and the guitar follows, which is
+    why nothing on this record sits in a comfortable key. Two fact-bound session exceptions are
+    explicit: Ivena Sorn's second pipe part on s_0278, played at the far end of the same hall in the
+    same take, and Oren Saye's guest upright bass on s_0282, which is the one track Saul Ravik is
+    not on. Neither changes the permanent line-up. The false start on s_0281 is in the issued take
+    and is written into the lyric as staging rather than removed.
+
+generation:
+  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0276
+    title: Burn Day Overtime
+    track_number: 1
+    mood: [driving, celebratory, fast]
+    fact: >-
+      Havel Ost wrote it during a shift he had volunteered for and finished the second verse walking
+      home from it.
+    arrangement_note: the pipes hold one long low note under the whole of the first verse and do not move off it until the chorus, so the song appears to be standing still until it is not
+    intro: 10
+    outro: cold
+    target_duration: "4:00"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 138 BPM, driving and celebratory, fast. Male lead
+      vocal, big hall baritone with a hard edge at the top of the range, pushing into the chorus
+      rather than belting it, sung slightly ahead of the band, no vibrato, and no other voice
+      anywhere. Acoustic resonance pipes — long alloy tubes, deep organ tone, carrying the low end
+      of the band — holding one long low note under the whole first verse; rhythm electric guitar,
+      electric bass, drum kit with struck alloy. Tracked live in a large ringing hall, the alloy
+      organ tone under the guitar, drums roomy, guitar mid-range and unpolished. Ten seconds of the
+      held pipe note and struck alloy before the first sung word. Cold stop.
+    exclude: backing vocals of any kind, amplified resonance pipes, electric organ, acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 10 seconds, one held low pipe note and struck alloy, no vocal]
+
+      [Verse 1]
+      They put the list up on the Tuesday and I put my name at the bottom.
+      Nobody made me. Nobody was going to make anybody.
+      Double for the burn day and double again for the night half,
+      and the hall is booked for the week after and the hall costs money.
+
+      [Chorus]
+      Burn day overtime, burn day overtime,
+      everybody else out at the festival and me on the floor.
+      I can hear it from the yard. I have got the door propped open.
+      Twelve hours of somebody else's good evening.
+
+      [Verse 2]
+      At four I walked home with the whole settlement still up,
+      the lanes still full and every festival door still open,
+      people coming the other way with their coats undone,
+      while the last lines found their order somewhere by the water.
+
+      [Chorus]
+      Burn day overtime, burn day overtime,
+      everybody else out at the festival and me on the floor.
+      I can hear it from the yard. I have got the door propped open.
+      Twelve hours of somebody else's good evening.
+
+      [Verse 3]
+      My father did nine burn days in a row on the same freight circuit
+      and never once said it was a sacrifice, because it was not,
+      it was a rate, and he took it, and bought the panels
+      for the back room where I slept until I left home.
+      Nine burn days and a scrubber that he serviced himself
+      and a family who remember exactly what the extra hours bought.
+
+      [Bridge]
+      There is no medal in it. There is money in it.
+      That is a cleaner thing and it says what it is.
+
+      [Final Chorus]
+      Burn day overtime, burn day overtime,
+      everybody else out at the festival and me on the floor.
+      I will be there next year and I will be unbearable about it,
+      and the hall will be paid for and the doors will be open.
+
+      [Outro - cold stop on the low pipe]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0277
+    title: Four Hundred Copies
+    track_number: 2
+    mood: [proud, wry, brisk]
+    fact: >-
+      The title is the size of the only pressing Deep Register would pay for before the festival.
+    arrangement_note: the guitar plays the same eight-bar figure from the first bar to the last without a single variation, and everything that changes in the song is the pipes moving underneath it
+    intro: 5
+    outro: cold
+    target_duration: "3:50"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 132 BPM, proud and wry, brisk. Male lead vocal, big
+      hall baritone with a hard edge at the top of the range, pushing into the chorus rather than
+      belting it, sung slightly ahead of the band, no vibrato, and no other voice anywhere. Acoustic
+      resonance pipes — long alloy tubes, deep organ tone — moving underneath a rhythm electric
+      guitar that repeats one eight-bar figure unchanged from first bar to last; electric bass, drum
+      kit with struck alloy. Tracked live in a large ringing hall, the alloy organ tone under the
+      guitar, drums roomy, guitar mid-range and unpolished. Five seconds of the guitar figure alone
+      before the first sung word. Cold stop.
+    exclude: backing vocals of any kind, amplified resonance pipes, electric organ, acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 5 seconds, guitar figure alone, no vocal]
+
+      [Verse 1]
+      A man came up from the office with a number already in his mouth.
+      Not a discussion, not an offer, a number, said once.
+      Four hundred, he said, before the festival, and that is the whole of it,
+      and if they go we will talk again and if they do not we will not.
+      He had his coat on the whole time he was saying it,
+      which is how you know a man has already decided.
+
+      [Chorus]
+      Four hundred of them in a crate on a siding.
+      That is the size of everything we are.
+      Not a career, not a plan, not a thing to tell your mother,
+      four hundred and a hall and a week to shift them in.
+
+      [Verse 2]
+      Juno wanted eight hundred and said so twice and got nowhere.
+      Tor said four hundred is four hundred more than none
+      and went back to the kit, which is how he ends most arguments.
+      I did not say anything because I was doing the sum in my head.
+
+      [Chorus]
+      Four hundred of them in a crate on a siding.
+      That is the size of everything we are.
+      Not a career, not a plan, not a thing to tell your mother,
+      four hundred and a hall and a week to shift them in.
+
+      [Verse 3]
+      We sold the crate out on the second day of the burn festival
+      and stood there afterwards with an empty box and nowhere to put it,
+      and the office rang the hall in the morning wanting to talk again,
+      and I let it ring twice before I picked it up. Only twice.
+
+      [Final Chorus]
+      Four hundred of them in a crate on a siding.
+      That was the size of everything we were.
+      Ask me again next year what the number is,
+      and the number will be bigger and the crate will still be ours.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0278
+    title: Pipes Before Sunrise
+    track_number: 3
+    mood: [heavy, solemn, midtempo]
+    fact: >-
+      Ivena Sorn and Juno Kerrick played the two resonance-pipe parts in the same take, standing at
+      opposite ends of the hall.
+    arrangement_note: two pipe parts answer a hall apart through the song, one close and one distant, but the twenty-second break belongs to Juno's near pipes alone while Ivena and the band drop out
+    intro: 20
+    outro: sustain
+    target_duration: "5:10"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 106 BPM, heavy and solemn, midtempo and unhurried.
+      Male lead vocal, big hall baritone with a hard edge at the top of the range, pushing into the
+      chorus rather than belting it, sung slightly ahead of the band, no vibrato, and no other voice
+      anywhere. Two acoustic resonance-pipe parts — long alloy tubes, deep organ tone — Juno close
+      and Ivena far away at the other end of the room, answering through the sung sections; rhythm
+      electric guitar, electric bass, drum kit with struck alloy. Tracked live in a large ringing
+      hall, the alloy organ tone carrying the bottom under the guitar, drums roomy, guitar mid-range
+      and unpolished. A twenty-second break played by Juno's near pipes alone, with Ivena and the band
+      out. Twenty seconds of Ivena's far pipe alone before the first sung word. Ends on Juno's held
+      pipe note left to decay in the room.
+    exclude: backing vocals of any kind, amplified resonance pipes, electric organ, acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 20 seconds, the far pipe alone across the hall, no vocal]
+
+      [Verse 1]
+      There is an hour in a hall like this before anybody is up
+      when the alloy has come down to the temperature of the room
+      and everything you play sits exactly where you put it,
+      and after about seven it is gone and you cannot get it back.
+      The freight crew are not on yet, the scrubber is on its low setting,
+      and the hall is the only honest thing in the settlement.
+
+      [Verse 2]
+      Ivena stood at the far end and Juno at the near one.
+      Two sets of tubes, one cold room, no talking.
+      Her first low note crossed the hall and came back thinner;
+      his answer met it halfway and the walls held both.
+
+      [Chorus]
+      Play them before sunrise or do not play them at all.
+      The hall sits still for about an hour and then it shifts.
+      Whatever you set in that hour stays where it lands,
+      and whatever you miss can wait for another year.
+
+      [Instrumental - Juno's near pipes alone, Ivena and the band out, 20 seconds]
+
+      [Verse 3]
+      She has been doing this since before I could lift one,
+      marks every tuning she has ever found on her own cuff
+      and will not start again once the room has warmed and shifted,
+      and she is right, and I have stopped arguing about it.
+
+      [Chorus]
+      Play them before sunrise or do not play them at all.
+      The hall sits still for about an hour and then it shifts.
+      Whatever you set in that hour stays where it lands,
+      and whatever you miss can wait for another year.
+
+      [Bridge]
+      The freight crew came on at six and we lost the room.
+      That is not a complaint. That is what the room is for.
+
+      [Final Chorus]
+      Play them before sunrise or do not play them at all.
+      The hall sat still for an hour and we were in it.
+      What we set there stayed exactly where it landed,
+      and the walls gave back the last note as the sun came up.
+
+      [Outro - held pipe note, left to decay in the hall]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0279
+    title: Hold the Circuit Open
+    track_number: 4
+    mood: [defiant, loud, fast]
+    fact: >-
+      The recorded chorus is the version the festival crowd sang back on the first night, not the
+      one the band arrived with.
+    arrangement_note: every chorus uses the festival crowd's changed wording rather than the band's abandoned original, sung by Havel alone, with the band hitting the later choruses harder each time
+    intro: 8
+    outro: fade
+    target_duration: "4:05"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 140 BPM, defiant and loud, fast. Male lead vocal,
+      big hall baritone with a hard edge at the top of the range, pushing into the chorus rather
+      than belting it, sung slightly ahead of the band, no vibrato, and no other voice anywhere.
+      Every chorus uses the festival crowd's changed words, sung by the lead alone; the band makes
+      each later chorus louder without adding voices. Acoustic resonance pipes — long alloy tubes,
+      deep organ tone — rhythm electric guitar, electric bass, drum kit with struck alloy. Tracked
+      live in a large ringing hall, the alloy organ tone under the guitar, drums roomy, guitar
+      mid-range and unpolished. Eight seconds of guitar and drums before the first sung word. Fade
+      on the repeated chorus.
+    exclude: backing vocals of any kind, close studio harmony, amplified resonance pipes, electric organ, acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 8 seconds, guitar and drums, no vocal]
+
+      [Verse 1]
+      We came in with a line about keeping the circuit open
+      and it was fine, it scanned, it did what it was told.
+      Then four hundred people on a burn day put their own words in it
+      and by the second chorus ours had stopped existing.
+
+      [Pre-Chorus]
+      You cannot take it back off a room that size.
+
+      [Chorus]
+      Hold the circuit open, hold it open,
+      nobody closes a road that somebody still lives on.
+      Hold the circuit open, hold the circuit open,
+      and we will keep coming down it until the day you do.
+
+      [Verse 2]
+      Juno heard it first and stopped playing to listen,
+      which he has done twice in his life and both times mattered.
+      Tor kept the beat because Tor keeps the beat.
+      I sang theirs on the second night and have sung theirs ever since.
+
+      [Pre-Chorus]
+      You do not get a vote once the whole room has it.
+
+      [Chorus]
+      Hold the circuit open, hold it open,
+      nobody closes a road that somebody still lives on.
+      Hold the circuit open, hold the circuit open,
+      and we will keep coming down it until the day you do.
+
+      [Verse 3]
+      There were two settlements that year that lost their stop
+      and one of them had a hall in it we had played four times.
+      The route is a decision somebody makes in an office,
+      and the people on it find out from a notice at the gate.
+      One of those halls is boarded and the other one is a store,
+      and both of them had four hundred people in them once.
+
+      [Bridge]
+      A song you wrote is yours until a room takes it.
+      After that you are just the one who has to keep up.
+
+      [Final Chorus]
+      Hold the circuit open, hold the circuit open,
+      nobody closes a road that somebody still lives on.
+      That is not our line and it has never been our line,
+      and it is the only line from us that anybody remembers.
+
+      [Outro - fade on the repeated chorus]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0280
+    title: Whose Route Is It
+    track_number: 5
+    mood: [angry, rowdy, fast]
+    fact: >-
+      Saul Ravik built the bass figure out of an argument between two crews that he had refused to
+      take a side in.
+    arrangement_note: the bass figure alternates two short phrases that answer without agreeing for the whole song, and the pipes take a fourteen-second break over that same unresolved exchange
+    intro: 4
+    outro: cold
+    target_duration: "3:55"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 136 BPM, angry and rowdy, fast. Male lead vocal, big
+      hall baritone with a hard edge at the top of the range, pushing into the chorus rather than
+      belting it, sung slightly ahead of the band, no vibrato, and no other voice anywhere. Electric
+      bass alternating two short phrases that answer without agreeing, repeating that unresolved
+      exchange for the whole song;
+      acoustic resonance pipes — long alloy tubes, deep organ tone — rhythm electric guitar, drum
+      kit with struck alloy. Tracked live in a large ringing hall, the alloy organ tone under the
+      guitar, drums roomy, guitar mid-range and unpolished. A fourteen-second pipe break sitting on
+      top of the alternating bass phrases and resolving neither. Four seconds of bass alone before the
+      first sung word. Cold stop.
+    exclude: backing vocals of any kind, amplified resonance pipes, electric organ, acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 4 seconds, bass alone, two alternating phrases refusing each other, no vocal]
+
+      [Verse 1]
+      Two crews in a transfer hall and one road between them
+      and both of them have been running it eleven years.
+      One says the near lane was theirs before the reorganisation,
+      the other says nothing was anybody's before the reorganisation.
+      Both of them have a man who remembers it differently
+      and both of those men are certain and one of them is wrong.
+
+      [Chorus]
+      Whose route is this, whose route is this,
+      ask the office and the office will send you to the other office.
+      Ask the crews and you will get two answers and a shove,
+      and the cargo sits in the hold while you work it out.
+
+      [Verse 2]
+      Saul stood between them while both crews asked him to choose.
+      He said the near lane carried freight in both directions
+      and a man in the middle did not own either end of it.
+      Each side heard that as support for the other one,
+      which is how refusing them became the third position.
+
+      [Chorus]
+      Whose route is this, whose route is this,
+      ask the office and the office will send you to the other office.
+      Ask the crews and you will get two answers and a shove,
+      and the cargo sits in the hold while you work it out.
+
+      [Instrumental - pipe break over both bass phrases, 14 seconds, resolving neither]
+
+      [Verse 3]
+      There is a bench outside the second hall where they both drink
+      and they have never once had this argument sitting down.
+      Standing up, at a gate, with a manifest in one hand,
+      it is the end of the world. On the bench it does not come up.
+      They ask after each other's people. They split the last ration of tea.
+      Then the shift starts and the whole thing begins again.
+
+      [Final Chorus]
+      Whose route is this, whose route is this,
+      I have got a hall to be in and I do not care.
+      Settle it or do not settle it, it will still be there,
+      and so will both of you, and so will the road.
+
+      [Outro - cold stop, both bass phrases at once]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0281
+    title: Ash on the Windows
+    track_number: 6
+    mood: [weary, warm, slow]
+    fact: >-
+      The issued take keeps a false start, because Tor Dolo's count-in landed with the hall's
+      ventilation and the band could not repeat it.
+    arrangement_note: the false start stays at the front — four bars, a stop, the ventilation alone, and then Tor repeats the same struck-alloy count — and the whole song sits on the slowest tempo the band has
+    intro: 14
+    outro: fade
+    target_duration: "4:45"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 104 BPM, weary and warm, slow and unhurried. Male
+      lead vocal, big hall baritone with a hard edge at the top of the range, pushing into the
+      chorus rather than belting it, sung slightly ahead of the band, no vibrato, and no other voice
+      anywhere. Acoustic resonance pipes — long alloy tubes, deep organ tone — rhythm electric
+      guitar, electric bass, drum kit with struck alloy. Tracked live in a large ringing hall, the
+      hall's own ventilation audible, the alloy organ tone under the guitar, drums roomy, guitar
+      mid-range and unpolished. Opens on a four-bar instrumental false start, a dead stop with only
+      the ventilation, then the same four struck-alloy count hits again; the count is percussion,
+      not a spoken voice. Fourteen seconds before the first sung word. Fade.
+    exclude: backing vocals of any kind, amplified resonance pipes, electric organ, acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [False start - 14 seconds: four bars, dead stop, ventilation alone, then four struck-alloy count hits again, no vocal]
+
+      [Verse 1]
+      The windows in that hall face the yard and never get cleaned,
+      and after a burn day there is a film on all of them
+      that is not dirt exactly, it is what a good week leaves behind,
+      and by the second morning you have stopped seeing it.
+      Somebody's cargo went out under all of it on the Tuesday
+      and nobody in this room could tell you what was in it.
+
+      [Verse 2]
+      Tor counted us in and the room breathed at the same moment
+      and the two of them landed together like it was arranged,
+      and we all stopped, and looked at each other, and could not do it again,
+      so he struck the same four and we came back in behind the room.
+
+      [Chorus]
+      Ash on the glass and a light coming through it,
+      and everybody who is going to be here is already here.
+      I have not got a big thing to say about any of it.
+      It was a long week and this is the end of it.
+
+      [Verse 3]
+      Juno tuned to the ventilation rather than against it,
+      which took him twenty minutes and nobody complained,
+      and the lowest pipe sits on the note the hall makes
+      when there is nothing in it and the doors are shut.
+
+      [Chorus]
+      Ash on the glass and a light coming through it,
+      and everybody who is going to be here is already here.
+      I have not got a big thing to say about any of it.
+      It was a long week and this is the end of it.
+
+      [Bridge]
+      Four nights. One room. Nobody paid to be here.
+      We will not get this hall again until the spring.
+
+      [Chorus]
+      Ash on the glass and a light coming through it,
+      and everybody who is going to be here is already here.
+      Somebody put the kettle on before the last one.
+      It was a long week. Do not clean the windows.
+
+      [Outro - fade on the pipes and the ventilation]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0282
+    title: Nobody Sleeps Through It
+    track_number: 7
+    mood: [rowdy, comic, fast]
+    fact: >-
+      Oren Saye played the whole track after one run-through, having discarded the chart as he does
+      on every session.
+    arrangement_note: a guest upright bass in place of the electric one for this track only, played from memory after a single run-through, and it walks straight through every chorus without ever landing where the guitar does
+    intro: 6
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 140 BPM, rowdy and comic, fast. Male lead vocal, big
+      hall baritone with a hard edge at the top of the range, pushing into the chorus rather than
+      belting it, sung slightly ahead of the band, no vibrato, and no other voice anywhere. A guest
+      upright bass in place of the electric bass for this track only, walking hard and landing off
+      the guitar rather than with it; acoustic resonance pipes — long alloy tubes, deep organ tone —
+      rhythm electric guitar, drum kit with struck alloy. Tracked live in a large ringing hall, the
+      alloy organ tone under the guitar, drums roomy, guitar mid-range and unpolished. Six seconds
+      of walking upright bass before the first sung word. Fade.
+    exclude: backing vocals of any kind, amplified resonance pipes, electric organ, acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 6 seconds, walking upright bass, no vocal]
+
+      [Verse 1]
+      There is a bunk room over the transfer hall with eleven beds in it
+      and a floor that is also the ceiling of the room we play in.
+      They put the night crew in there and then they book us underneath,
+      and somebody up there is trying to sleep through all of this.
+
+      [Chorus]
+      Nobody sleeps through that. Nobody has ever slept through that.
+      Do not write to the office. The office booked us both.
+      Come down and stand at the back and be furious in person,
+      and by the third one you will be singing it like everybody else.
+
+      [Verse 2]
+      Oren came in on the Thursday to cover the bass part,
+      took one run-through and put the chart face down,
+      then walked beneath the chorus without landing on the guitar
+      and never once looked back at the paper on the chair.
+
+      [Chorus]
+      Nobody sleeps through that. Nobody has ever slept through that.
+      Do not write to the office. The office booked us both.
+      Come down and stand at the back and be furious in person,
+      and by the third one you will be singing it like everybody else.
+
+      [Verse 3]
+      Two of the night crew did come down, about half eleven,
+      in the state a person is in when they have given up on the idea,
+      and they stayed to the end and asked what the record was called
+      and bought one each at the gate the following week.
+
+      [Bridge]
+      He would not take a fee. He took the hall's own cargo tea
+      and a lift back to the siding, and that was the whole rate.
+
+      [Final Chorus]
+      Nobody sleeps through that. Nobody has ever slept through that.
+      Do not write to the office. The office booked us both.
+      There are eleven beds up there and eleven people in them
+      and not one of them has had a full night since we started.
+
+      [Outro - fade on the walking bass]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0283
+    title: Take the Long Way In
+    track_number: 8
+    mood: [expansive, hopeful, midtempo]
+    fact: >-
+      Everyone in the hall sings the closing chorus, including the two engineers, who are credited
+      on the sleeve by first name only.
+    arrangement_note: the closing chorus is everybody in the building at once, in unison and untidy, and the eighteen-second pipe break before it is the last time anything on the record is played by one person alone
+    intro: 16
+    outro: sustain
+    target_duration: "5:00"
+    prompt: >-
+      Riff-led hall rock at the hard-rock edge, 118 BPM, expansive and hopeful, midtempo. Male lead
+      vocal, big hall baritone with a hard edge at the top of the range, pushing into the chorus
+      rather than belting it, sung slightly ahead of the band, no vibrato, with the whole room
+      joining him in rough unison on the last chorus only — everybody in the building, untidy, never
+      a stacked studio harmony. Acoustic resonance pipes — long alloy tubes, deep organ tone —
+      rhythm electric guitar, electric bass, drum kit with struck alloy. Tracked live in a large
+      ringing hall, the alloy organ tone under the guitar, drums roomy, guitar mid-range and
+      unpolished. An eighteen-second pipe break alone before the last chorus. Sixteen seconds of
+      pipes and guitar building before the first sung word. Ends on a held chord with the room still
+      singing over it.
+    exclude: band backing vocals before the final chorus, close studio harmony, amplified resonance pipes, electric organ, acoustic guitar, twelve-string jangle, synth pads, string sections, brass, four-on-the-floor kick, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 16 seconds, pipes and guitar building, no vocal]
+
+      [Verse 1]
+      There is a short way into this settlement and a long way,
+      and the short one comes off the siding through the yards,
+      and the long one goes round the water and adds forty minutes
+      and every single person I like takes the long one.
+      The short way is for a hauler with a hold full and a slot booked.
+      Nobody in this band has been in a hurry since 2592.
+
+      [Chorus]
+      Take the long way in. There is nothing waiting.
+      Whatever it is, it will still be a thing at seven.
+      Take the long way in and come round by the water,
+      and get here late and get here in a better state.
+
+      [Verse 2]
+      Four nights in this hall and the four of us are finished
+      and the last shift has started on the loading floor below.
+      The two people behind the machines have not slept either,
+      but neither has anybody waiting to lock the outer doors.
+
+      [Chorus]
+      Take the long way in. There is nothing waiting.
+      Whatever it is, it will still be a thing at seven.
+      Take the long way in and come round by the water,
+      and get here late and get here in a better state.
+
+      [Instrumental - pipe break alone, 18 seconds]
+
+      [Verse 3]
+      Then everybody in the building sang the last one,
+      the crew off the loading floor, the man who locks the doors,
+      two engineers, a hauler pilot who had come for the noise,
+      somebody's daughter who had been asleep on a coat since ten,
+      and not one of them in tune and all of them on time.
+
+      [Final Chorus - the whole hall in rough unison]
+      Take the long way in. There is nothing waiting.
+      Whatever it is, it will still be a thing at seven.
+      Take the long way in and come round by the water.
+      We will leave the door open. We are not going anywhere.
+
+      [Outro - held chord, the room still singing over it]
+    take: null                    # M-31 fills this in at the Suno sitting

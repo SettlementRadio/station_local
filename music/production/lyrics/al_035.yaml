@@ -1,0 +1,545 @@
+# al_035 — Nothing Rides Free · Ballast Weather (b_018) · Deep Register · 2600 · 7 songs
+#
+# Written by M-22. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# **This is the lane-rock band with nobody in it who sings but the singer.** b_018's card says
+# `backing: none` and its exclude line keeps backing vocals out entirely, and that is not an omission
+# — it is the wiki's line-up, and it is the sharpest separator lane-rock has. There is no crew
+# chorus anywhere on any Ballast Weather record. Where another band in this genre answers its lead
+# with four voices, this one answers her with the second guitar, and the lyrics are written for one
+# person saying something once: no call-and-response, no shouted last chorus, no room joining in.
+#
+# The wiki's story is a first record made in the week Forge's presses changed format, a kit that
+# arrived incomplete, and a haulage invoice the band disputed and lost. **The invoice is furniture
+# and the argument is the subject** (§3).
+#
+# Lane-rock takes a break in roughly one song in three (§7) and b_018's card gives it to the lead
+# guitar. Two of these seven take one, which is §7's floor for an album of five or more.
+#
+# `generation:` and every `take:` are empty until M-31's Suno sitting fills them in.
+
+album:
+  id: al_035
+  title: Nothing Rides Free
+  band: b_018
+  band_name: Ballast Weather
+  label: label_4
+  release_year: 2600
+  genre: lane-rock
+  cornerstone: false
+  song_count: 7
+  style_card: b_018
+  room: >-
+    A Forge shop floor, which is the room the style card was written for and the one this band has
+    used ever since. Twin guitars hard apart, the pipe tone thickening the low end where the chorus
+    lands, steady unhurried drums and light compression — the card, unbent. Three fact-bound session
+    exceptions are explicit rather than silent: Neve Atlin plays a ballast plate in place of a floor
+    tom for the whole of s_0299, because the kit arrived without one; Oren Saye's guest upright bass
+    on s_0302, playing the key Isa Lorne had written in two years earlier; and the audible cracked
+    bridge of Talla Venn's guest instrument under the last chorus of s_0303. None of them adds a
+    voice: this record has one singer on it and no other vocal of any kind.
+
+generation:
+  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true            # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0297
+    title: Nothing Rides Free
+    track_number: 1
+    mood: [blunt, driving, brisk]
+    fact: >-
+      Isa Lorne took the chorus straight from the wording of a haulage invoice the band had disputed
+      and lost.
+    arrangement_note: the chorus is the invoice's own wording sung flat and level with no lift at the ends of lines, and the second guitar answers every line of it where a harmony voice would be
+    intro: 12
+    outro: cold
+    target_duration: "4:05"
+    prompt: >-
+      Even mid-tempo heartland rock, 128 BPM, blunt and driving, brisk. Female lead vocal, warm mid
+      alto, level and unhurried, plain diction, ending lines flat rather than lifting them, never
+      belting. No backing vocal of any kind anywhere; the second guitar answers every chorus line
+      in the gaps where a harmony voice would be, and stays out of the verses. Two bright thin-toned electric guitars hard apart, electric
+      bass, resonance pipes doubling the bass under the chorus with a deep alloy organ tone, drum
+      kit. Tracked live on a shop floor, steady unhurried drums, light compression, no reverb of any
+      size. Twelve seconds of both guitars and the pipe tone before the first sung word. Cold stop.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 12 seconds, both guitars and the pipe tone, no vocal]
+
+      [Verse 1]
+      It is four pages and the fourth one is the only one that matters
+      and the fourth one has a paragraph at the bottom of it
+      that I have read about ninety times since the spring
+      and it says the same thing every time I read it.
+      One hold, one lane, one delay that was not ours,
+      and a number at the bottom with our name under it.
+
+      [Chorus]
+      Nothing rides free. Nothing has ever ridden free.
+      Carriage, handling, storage, and a charge for the delay
+      that was caused by the storage that we did not ask for.
+      Somebody wrote that down and somebody signed it.
+
+      [Verse 2]
+      We took it to two people and both of them were sorry
+      and neither of them was sorry enough to move a number,
+      and the second one said, kindly, that we should read things,
+      which is the most expensive sentence anybody has said to me.
+
+      [Chorus]
+      Nothing rides free. Nothing has ever ridden free.
+      Carriage, handling, storage, and a charge for the delay
+      that was caused by the storage that we did not ask for.
+      Somebody wrote that down and somebody signed it.
+
+      [Verse 3]
+      So I put the paragraph in a song, word for word,
+      which is the only thing I have ever got back out of it,
+      and it scans, which tells you something about the person who wrote it,
+      and I hope they hear it and I hope they know it is theirs,
+      and I hope it is playing in an office somewhere on the day
+      that somebody hands them four pages of their own.
+
+      [Bridge]
+      I am not owed anything. I signed it. I read it after.
+      That is the lesson and it cost about a season's work.
+
+      [Final Chorus]
+      Nothing rides free. Nothing has ever ridden free.
+      Not the cargo, not the room, not the hour it sat there.
+      Read the fourth page. Read it at the table.
+      Do not read it at home on a Thursday like I did.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0298
+    title: Pressed in One Week
+    track_number: 2
+    mood: [proud, rowdy, fast]
+    fact: >-
+      The band recorded to the new shared press timing in the week Forge adopted it, rather than
+      wait for a slot on the old format.
+    arrangement_note: the whole song is played to a fixed length rather than to an arrangement, so it stops where it stops, and the last chorus is cut off by the ending rather than resolving into it
+    intro: 5
+    outro: cold
+    target_duration: "3:50"
+    prompt: >-
+      Even mid-tempo heartland rock at its fastest, 136 BPM, proud and rowdy, fast. Female lead
+      vocal, warm mid alto, level and unhurried, plain diction, ending lines flat rather than
+      lifting them, never belting. No backing vocal of any kind anywhere; the second guitar answers
+      only the ends of chorus phrases with short figures and leaves the verses open. Two bright thin-toned electric guitars hard
+      apart, electric bass, resonance pipes doubling the bass under the chorus with a deep alloy
+      organ tone, drum kit. Tracked live on a shop floor, steady unhurried drums, light compression,
+      no reverb of any size. The fixed running time cuts the final chorus off immediately after its
+      third line, on the bar, with a cold stop and no fade. Five seconds of drums and one guitar
+      before the first sung word.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 5 seconds, drums and one guitar, no vocal]
+
+      [Verse 1]
+      They changed the format on the Monday and the whole settlement
+      spent the week arguing about it in the way that Forge argues,
+      which is quietly, at length, and mostly about the timing,
+      and by the Friday every press in the place had turned over.
+
+      [Verse 2]
+      Two ways to go. Wait nine months for a slot on the old one,
+      or be in a room by Wednesday with a record that is not finished.
+      I said Wednesday before anybody had asked for a vote
+      and nobody argued, which is how I know they had all decided too.
+
+      [Chorus]
+      Six days. One room. Whatever we have got by then.
+      There is no version of this where we come back in the spring.
+      Bad first records get made. Good first records get planned
+      and half of them never happen, and I have watched that twice.
+
+      [Verse 3]
+      So it is short and it is fast and two of the endings are wrong
+      and one of them is on this song and you have not got to it yet,
+      and it is out, and it exists, and people bought it,
+      and the one we would have made in the spring does not.
+
+      [Chorus]
+      Six days. One room. Whatever we have got by then.
+      There is no version of this where we come back in the spring.
+      Bad first records get made. Good first records get planned
+      and half of them never happen, and I have watched that twice.
+
+      [Bridge]
+      Somebody's shipboard press was running the whole of that week
+      and every hauler out of Forge had a crate on it by the Sunday.
+
+      [Final Chorus - cut off by the ending]
+      Six days. One room. Whatever we have got by then.
+      There is no version of this where we come back in the spring.
+      Bad first records get made and this is one of them—
+
+      [Outro - immediate cold cut on the fixed bar, no fade]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0299
+    title: Ballast and Bad Coffee
+    track_number: 3
+    mood: [wry, warm, midtempo]
+    fact: >-
+      Neve Atlin plays a ballast plate instead of a floor tom for the whole song, because the kit
+      arrived without one.
+    arrangement_note: a flat plate of ballast is played where the floor tom would be for the entire song, dead and pitched and completely wrong, and nothing else in the arrangement acknowledges it
+    intro: 9
+    outro: fade
+    target_duration: "4:15"
+    prompt: >-
+      Even mid-tempo heartland rock, 118 BPM, wry and warm, midtempo. Female lead vocal, warm mid
+      alto, level and unhurried, plain diction, ending lines flat rather than lifting them, never
+      belting. No backing vocal of any kind anywhere; the second guitar answers only the last line
+      of each chorus with one short figure. Two bright thin-toned electric guitars hard apart, electric
+      bass, resonance pipes doubling the bass under the chorus with a deep alloy organ tone, drum
+      kit with a flat struck metal plate in place of the floor tom throughout — dead, pitched and
+      obviously not a drum. Tracked live on a shop floor, steady unhurried drums, light compression,
+      no reverb of any size. Nine seconds of the struck plate and bass before the first sung word.
+      Fade.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 9 seconds, the struck plate and bass, no vocal]
+
+      [Verse 1]
+      The kit came down on a Tuesday in three boxes and a bag
+      and there were four boxes on the manifest, which we all read,
+      and the fourth one is somewhere between here and the near siding
+      and nobody has seen it and it has been eleven days.
+
+      [Chorus]
+      Ballast in the kit and something in a cup
+      that the machine on the shop floor is calling coffee.
+      Everything in this room is standing in for something
+      and it will all be like this until it is not.
+
+      [Verse 2]
+      Neve went out to the yard and came back with a plate of ballast
+      and put it where the tom goes and hit it once and looked at us,
+      and it is a terrible noise, and it is on every bar of this,
+      and by the second day none of us could hear it any more.
+
+      [Chorus]
+      Ballast in the kit and something in a cup
+      that the machine on the shop floor is calling coffee.
+      Everything in this room is standing in for something
+      and it will all be like this until it is not.
+
+      [Verse 3]
+      There is a way of working where you wait until it is right
+      and there is a way where you use what is in the room,
+      and one of them makes better plans while the other shifts the load,
+      and I have known crews who waited for the missing part until spring.
+
+      [Chorus]
+      Ballast in the kit and something in a cup
+      that the machine on the shop floor is calling coffee.
+      Everything in this room is standing in for something
+      and it will all be like this until it is not.
+
+      [Bridge]
+      The fourth box arrived in the spring, in good condition,
+      and she has never taken the plate out of the kit since.
+
+      [Final Chorus]
+      Ballast in the kit and something in a cup
+      that the machine on the shop floor is calling coffee.
+      Nothing here is the thing it was supposed to be
+      and we used what arrived instead of waiting for the rest.
+
+      [Outro - fade on the plate]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0300
+    title: Where the Line Bends
+    track_number: 4
+    mood: [tense, building, midtempo]
+    fact: >-
+      Perin Dask plays the lead figure a half-step against the pipes, which Kolm Estry insisted on
+      keeping over the label's objection.
+    arrangement_note: the lead guitar figure sits a half-step against the pipes in the intro and choruses while the verses stay firmly tonal; the fourteen-second break is that same deliberate argument with nothing else in the room
+    intro: 16
+    outro: sustain
+    target_duration: "4:55"
+    prompt: >-
+      Even mid-tempo heartland rock, 112 BPM, tense and building, midtempo. Female lead vocal, warm
+      mid alto, level and unhurried, plain diction, ending lines flat rather than lifting them,
+      never belting. No backing vocal of any kind anywhere; the second guitar leaves the verses open
+      and answers only the final chorus line. Two bright thin-toned electric guitars hard apart. In
+      the intro and choruses, the lead figure makes a deliberate short half-step rub against the
+      resonance pipes; the verses are firmly tonal, and neither part sounds accidentally out of
+      tune. Electric bass, resonance pipes doubling the bass under the chorus with a deep alloy
+      organ tone, drum kit. Tracked live on a shop floor, steady unhurried drums, light compression,
+      no reverb of any size. A fourteen-second lead guitar break against the pipes with nothing else
+      playing. Sixteen seconds of the pipes and guitar refusing each other before the first sung
+      word. Ends on a held chord with both still there.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production, random out-of-tune playing
+    lyrics: |
+      [Intro - 16 seconds, pipes and guitar refusing each other, no vocal]
+
+      [Verse 1]
+      There is a bend on the near lane about two hours out
+      where the road stops going where it looks like it is going
+      and every new hauler pilot takes it too fast once
+      and every old one still slows down without deciding to.
+
+      [Verse 2]
+      A man from the label sat on the shop floor with his hands together
+      and said, very reasonably, that one of the two was wrong,
+      and Kolm said no, both of them are right, that is the point,
+      and did not explain any further, and we kept it.
+
+      [Chorus]
+      It is where that line bends that you find out about a person.
+      Not the long straight. Anybody is fine on the long straight.
+      The bend, in the dark, in the fourth hour, on your own,
+      with nothing coming the other way to tell you where it is.
+
+      [Instrumental - lead guitar against the pipes, nothing else, 14 seconds]
+
+      [Verse 3]
+      I have been in the cab beside people who took it beautifully
+      and beside one who took it badly and was never told,
+      because it went fine, and the fine ones are the frightening ones,
+      and I have not been in a cab with him since and I have not said why.
+
+      [Chorus]
+      It is where that line bends that you find out about a person.
+      Not the long straight. Anybody is fine on the long straight.
+      The bend, in the dark, in the fourth hour, on your own,
+      with nothing coming the other way to tell you where it is.
+
+      [Bridge]
+      Two notes that will not agree, held for four minutes.
+      The label wanted one of them gone. It is the whole song.
+
+      [Final Chorus]
+      It is where that line bends that you find out about a person,
+      and about a band, and about which of them will not move.
+      He has been right about one thing in all the years I have known him.
+      It is this, and he has never mentioned it since.
+
+      [Outro - held chord, both still there]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0301
+    title: Say It at the Gate
+    track_number: 5
+    mood: [urgent, hard, fast]
+    fact: >-
+      The lyric names the three things Isa Lorne says out loud before every shift and had never told
+      the rest of the band about.
+    arrangement_note: the three things are the only lines in the song that stop dead with the band silent behind them, and everything else runs without a gap anywhere
+    intro: 4
+    outro: cold
+    target_duration: "3:50"
+    prompt: >-
+      Even mid-tempo heartland rock at its fastest, 134 BPM, urgent and hard, fast. Female lead
+      vocal, warm mid alto, level and unhurried, plain diction, ending lines flat rather than
+      lifting them, never belting. No backing vocal of any kind anywhere; the second guitar answers
+      in the chorus gaps only and stays silent behind the three stopped lines. Two bright thin-toned electric guitars hard
+      apart, electric bass, resonance pipes doubling the bass under the chorus with a deep alloy
+      organ tone, drum kit. Tracked live on a shop floor, steady unhurried drums, light compression,
+      no reverb of any size. Three single lines where the whole band stops dead behind the voice and
+      no gap anywhere else in the song. Four seconds of drums alone before the first sung word. Cold
+      stop.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 4 seconds, drums alone, no vocal]
+
+      [Verse 1]
+      I have done the same three things at the same gate for eleven years
+      and I have never told anybody in this band that I do them,
+      and they are not a superstition, or if they are I do not care,
+      and saying them here means three other people know them now.
+
+      [Chorus]
+      Say it at the gate. Out loud. Every time.
+      Not in your head, because your head does not count,
+      and not in the yard afterwards when it is over,
+      at the gate, before, where somebody could hear you.
+
+      [Verse 2 - band stopping dead behind each line]
+      One. I know exactly what is in this hold.
+      Two. I know who is behind me and what they are doing.
+      Three. If it goes wrong today it will not be because I was quick.
+
+      [Chorus]
+      Say it at the gate. Out loud. Every time.
+      Not in your head, because your head does not count,
+      and not in the yard afterwards when it is over,
+      at the gate, before, where somebody could hear you.
+
+      [Verse 3]
+      My mother worked a scrubber line for twenty-two years
+      and had two of them, and never told me what they were,
+      and I found out from a woman on her crew after she stopped
+      and I have wished every day since that I had asked her myself.
+
+      [Verse 4]
+      So here are mine, all three, in the order that I say them,
+      and now the four of us are stuck with them at every gate,
+      and Neve has started saying the second one under her breath,
+      and I have not mentioned it and I am not going to.
+
+      [Final Chorus]
+      Say it at the gate. Out loud. Every time.
+      Not in your head, because your head does not count.
+      Somebody said it to me once and I have never stopped,
+      and that is the whole of what I have got to pass on.
+
+      [Outro - cold stop]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0302
+    title: Two Bunks, One Window
+    track_number: 6
+    mood: [tender, plain, slow]
+    fact: >-
+      Oren Saye remembered Isa Lorne's original key from a rehearsal two years earlier and played it
+      back to her when she could not find it.
+    arrangement_note: a guest upright bass replaces the electric one and carries the song, and the key is the one it was written in two years earlier rather than the one the band had been rehearsing
+    intro: 15
+    outro: fade
+    target_duration: "4:45"
+    prompt: >-
+      Even mid-tempo heartland rock at its slowest, 100 BPM, tender and plain, slow. Female lead
+      vocal, warm mid alto, level and unhurried, plain diction, ending lines flat rather than
+      lifting them, never belting. No backing vocal of any kind anywhere; the second guitar places
+      sparse replies at the ends of chorus phrases and leaves the verses open. A guest upright bass
+      carrying the song in place of the electric bass and restoring from memory the original key Isa
+      used two years earlier, with the whole band following that key; two bright thin-toned electric
+      guitars hard apart, resonance pipes doubling the bass under the chorus with a deep alloy organ
+      tone, drum kit played quietly. Tracked live on a shop floor, steady unhurried drums, light
+      compression, no reverb of any size. Fifteen seconds of upright bass alone before the first
+      sung word. Fade.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 15 seconds, upright bass alone, no vocal]
+
+      [Verse 1]
+      Two bunks and one window and the window is above his,
+      which we did not decide, it was how the berth came,
+      and for the first month I said nothing about it at all
+      and then one morning I said it and he swapped that afternoon.
+
+      [Verse 2]
+      There is a thing that happens in a berth that size
+      where you learn somebody's whole day from how they take their coat off,
+      and after about a year you stop needing to ask
+      and after about two you have to start asking again on purpose.
+
+      [Chorus]
+      Two bunks and one window and a settlement out of it
+      that neither of us has been able to leave or wanted to.
+      It is small. I know it is small. People say so.
+      They say it kindly and they have not been in it.
+
+      [Verse 3]
+      I lost the key of this one somewhere between writing it
+      and standing in a room with three people waiting for me,
+      and a man I had met twice played four notes back on the upright
+      from a rehearsal two years earlier that I had forgotten.
+
+      [Chorus]
+      Two bunks and one window and a settlement out of it
+      that neither of us has been able to leave or wanted to.
+      It is small. I know it is small. People say so.
+      They say it kindly and they have not been in it.
+
+      [Verse 4]
+      He keeps every singer's original key and no charts at all
+      and could not tell you how he does it if you asked him,
+      and he was in the room for one afternoon in the whole of that year
+      and it is his low end holding this song up.
+
+      [Final Chorus]
+      Two bunks and one window and a settlement out of it,
+      and a song that was nearly lost and came back in the right key.
+      The window is above mine now and has been for years,
+      and I still wake up and look at where it used to be.
+
+      [Outro - fade on the upright bass]
+    take: null                    # M-31 fills this in at the Suno sitting
+
+  - id: s_0303
+    title: Everyone Off the Deck
+    track_number: 7
+    mood: [triumphant, loud, fast]
+    fact: >-
+      The buzz under the last chorus is the cracked bridge of the scarred instrument Talla Venn has
+      been repairing between sessions since 2591.
+    arrangement_note: a guest guitar with an audibly cracked bridge buzzes under the last chorus and is not cleaned up, and the sixteen-second break before it is played on the band's own lead guitar so that the two tones can be told apart
+    intro: 7
+    outro: cold
+    target_duration: "4:20"
+    prompt: >-
+      Even mid-tempo heartland rock at its fastest, 136 BPM, triumphant and loud, fast. Female lead
+      vocal, warm mid alto, level and unhurried, plain diction, ending lines flat rather than
+      lifting them, never belting. No backing vocal of any kind anywhere; the second guitar answers
+      only in chorus gaps and the guest guitar enters solely under the final chorus. Two bright
+      thin-toned electric guitars hard apart, plus a third guest guitar with an audibly cracked
+      bridge buzzing under the last chorus and left uncleaned; electric bass, resonance pipes
+      doubling the bass under the chorus with a
+      deep alloy organ tone, drum kit. Tracked live on a shop floor, steady unhurried drums, light
+      compression, no reverb of any size. A sixteen-second break on the band's own lead guitar
+      before the last chorus. Seven seconds of both guitars before the first sung word. Cold stop.
+    exclude: backing vocals of any kind, group or shouted choruses, synthesizers, electronic drums, brass, orchestral strings, stadium reverb, vocal tuning, whispered or rapped sections, dance and electronic production
+    lyrics: |
+      [Intro - 7 seconds, both guitars, no vocal]
+
+      [Verse 1]
+      Everyone off the deck, and I mean everyone, and I mean now,
+      and I am not going to explain it standing here,
+      and if I am wrong I will buy the whole crew something
+      and you can all be furious with me in about ten minutes.
+      There is a bulkhead between us and whatever that reading is
+      and I would rather have the rail under my hands than the bulkhead.
+
+      [Chorus]
+      Everyone off the deck. Nobody argues on the way.
+      You can argue at the rail with your hands on the bar.
+      Whatever it costs to be wrong about this is cheap
+      and whatever it costs to be slow about it is not.
+
+      [Verse 2]
+      It was nothing. It was a reading on a panel that was faulty
+      and the panel was replaced and the whole thing took an hour
+      and eleven people stood outside in the cold being annoyed with me
+      and one of them bought me something afterwards anyway,
+      and the crew from the next hold came out too, which nobody asked them to.
+
+      [Chorus]
+      Everyone off the deck. Nobody argues on the way.
+      You can argue at the rail with your hands on the bar.
+      Whatever it costs to be wrong about this is cheap
+      and whatever it costs to be slow about it is not.
+
+      [Instrumental - lead guitar break, 16 seconds]
+
+      [Verse 3]
+      A woman came in on the last day with an instrument she has been
+      putting back together for nine years, a bit at a time,
+      and the bridge on it is cracked and it buzzes on the low notes
+      and she offered to play something else and we said absolutely not.
+
+      [Final Chorus - the cracked guitar buzzing underneath]
+      Everyone off the deck. Nobody argues on the way.
+      You can argue at the rail with your hands on the bar.
+      I have been wrong about it four times in eleven years
+      and I am going to be wrong about it again.
+
+      [Outro - cold stop, the buzz last]
+    take: null                    # M-31 fills this in at the Suno sitting
