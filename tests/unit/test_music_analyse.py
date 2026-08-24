@@ -59,7 +59,7 @@ def test_the_voice_is_what_moves_the_feature() -> None:
     song, in the curve's own spread — because that is the number `DEPTH_CLAIM` is compared against.
     """
     left, right = _take(intro_s=10, sung_s=20)
-    v = analyse._smooth(_evidence(left, right), analyse.SLOW_S)
+    v = analyse.smooth(_evidence(left, right), analyse.SLOW_S)
     depth, _, _ = analyse._opening_depth(v, start=0)
     assert depth > analyse.DEPTH_CLAIM
 
@@ -68,7 +68,7 @@ def test_the_voice_is_what_moves_the_feature() -> None:
 def test_the_ramp_lands_within_half_a_second(intro: float) -> None:
     """The half-second in the card's check, against a signal that knows its own answer."""
     left, right = _take(intro_s=intro, sung_s=24)
-    ramp, confidence, note = analyse._intro_ramp(_evidence(left, right), start=0)
+    ramp, confidence, note = analyse.intro_ramp(_evidence(left, right), start=0)
     assert confidence == "firm", note
     assert abs(ramp - intro) <= 0.5
 
@@ -76,7 +76,7 @@ def test_the_ramp_lands_within_half_a_second(intro: float) -> None:
 def test_singing_from_the_top_is_no_ramp_rather_than_a_small_one() -> None:
     """A record with no run-up must not be given one; the mixer would talk over the first word."""
     left, right = _take(intro_s=0, sung_s=30)
-    ramp, confidence, _ = analyse._intro_ramp(_evidence(left, right), start=0)
+    ramp, confidence, _ = analyse.intro_ramp(_evidence(left, right), start=0)
     assert ramp == 0.0
     assert confidence == "firm"
 
@@ -87,7 +87,7 @@ def test_a_rise_that_does_not_hold_is_not_the_vocal() -> None:
     fill = np.pad(_voice(1.0), ((0, 0), (int(4 * SR), 0)))
     left[: fill.shape[1]] += 1.2 * fill[0]
     right[: fill.shape[1]] += 1.2 * fill[1]
-    ramp, confidence, note = analyse._intro_ramp(_evidence(left, right), start=0)
+    ramp, confidence, note = analyse.intro_ramp(_evidence(left, right), start=0)
     assert confidence == "firm", note
     assert abs(ramp - 10.0) <= 0.5
 

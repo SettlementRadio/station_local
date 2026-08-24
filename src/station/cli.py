@@ -60,7 +60,15 @@ def _boot() -> Settings:
 # exists to stop the *station* running mis-configured; it must not stop the operator writing
 # content. The music wiki is deliberately buildable before any hardware or volume exists (D-044).
 CONFIG_FREE = frozenset(
-    {"version", "music-albums", "music-screen", "music-analyse", "music-tag", "music-catalogue"}
+    {
+        "version",
+        "music-albums",
+        "music-screen",
+        "music-analyse",
+        "music-tag",
+        "music-catalogue",
+        "imaging-analyse",
+    }
 )
 
 
@@ -294,6 +302,48 @@ def music_catalogue() -> None:
         raise typer.Exit(code=2) from None
     if not console.catalogue_summary(built, problems, path):
         raise typer.Exit(code=1)
+
+
+# The pile has not moved yet. §9 puts imaging audio on the external volume under `imaging/`, but
+# what exists today is the 56 files carried over from the previous attempt, and moving them is
+# I-06's job, not this command's. So it reads whichever of the two holds audio, and says which.
+IMAGING_DIRS = (Path("imaging"), Path("music") / "jingles" / "approved")
+
+
+@app.command("imaging-analyse")
+def imaging_analyse(
+    piece: str = typer.Option(None, "--piece", help="only pieces whose name contains this"),
+) -> None:
+    """Measure every piece of imaging: length, run-up, energy, and a bed's loop seam."""
+    from station.imaging import analyse, console
+
+    roots = [Path.cwd() / d for d in IMAGING_DIRS]
+    found = [(root, analyse.audio_files(root)) for root in roots if root.is_dir()]
+    root, paths = next(((r, p) for r, p in found if p), (roots[0], []))
+    if not paths:
+        typer.secho(
+            "no imaging audio — looked in " + " and ".join(str(d) for d in IMAGING_DIRS),
+            fg="yellow",
+        )
+        return
+    paths = [p for p in paths if piece is None or piece in p.stem]
+    if not paths:
+        typer.secho(f"no piece under {root} matches {piece!r}", fg="yellow")
+        return
+
+    typer.echo(
+        f"{len(paths)} piece(s) under {root.relative_to(Path.cwd())} — about a second each, "
+        "and ten for a long bed\n"
+    )
+    typer.echo(console.HEADER)
+    measured, failed = [], []
+    for path in paths:
+        one, problems = analyse.measure_all([path])
+        measured += one
+        failed += problems
+        if one:
+            console.measurement(one[0])
+    console.analyse_summary(measured, failed)
 
 
 def main() -> None:

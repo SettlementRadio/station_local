@@ -21,9 +21,9 @@ programme opens and the fallback bed. Not music: the catalogue's 45 songs are co
 | Assets generated under it | **56** — 25 on 2026-07-04, 22 on 2026-07-08, 9 on 2026-07-20 |
 | Subscription tier at generation | **Pro** — the account has been on Pro from day 0, continuously (operator, 2026-08-22) |
 | Remix features | **never enabled on this account** (operator, 2026-08-22) |
-| Model version used | **not recorded** — see below |
+| Model version used | **v5.5** — operator, 2026-08-23. The same model the 45 songs record |
 | `licence_period` to record per asset | `suno-pro-2026-07` |
-| Complete? | **Yes**, subject to the model-version gap below |
+| Complete? | **Yes** |
 
 ---
 
@@ -43,19 +43,19 @@ account, so the clause never attaches. It has to stay off.
 **The two URLs are one document.** `suno.com/terms` and `suno.com/terms-of-service` resolve to the
 same terms, confirmed by the operator 2026-08-22. There is no second set of conditions to capture.
 
-## The one gap: model version
+## Model version
 
 `COMMISSION.md` §9 wants the model version recorded per generated item, because models are on a
-published deprecation path and a band's albums will not match each other across a model change.
-**These 56 assets do not carry it.** Their Suno tags hold only `made with suno`, a creation timestamp
-and a generation id — no model field. The 45 songs record `v5.5`; July's model is unknown from the
-files alone.
+published deprecation path and work generated across a model change will not match itself.
 
-This is a provenance gap, not a licence gap — nothing about which model produced them changes who
-owns them. It is recoverable: each asset's generation id is in its own ID3 comment tag and the
-account still holds the generations. `ARCHITECTURE.md` §9 now names `make imaging-tag` as the command
-that will write licence period, generation date, model version and the AI marker into these files
-(D-093); it does not exist yet, and this is the gap it closes.
+**All 56 were generated on v5.5** — the operator's own record, given 2026-08-23, and the same model
+version the 45 songs carry. The files themselves do not say so: their Suno tags hold only
+`made with suno`, a creation timestamp and a generation id, with no model field. That is a limit of
+what the vendor writes into an export, not a gap in the provenance, and this line is the record.
+
+`ARCHITECTURE.md` §9 names `make imaging-tag` as the command that writes the licence period,
+generation date, model version and AI marker into these files (D-093). It does not exist yet;
+`IMAGING_TASKS.md` I-03 builds it and this is the value it writes.
 
 ---
 

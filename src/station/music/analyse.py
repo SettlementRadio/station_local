@@ -29,6 +29,10 @@ five times the runtime, so it is not here (D-083).
 Everything is numpy over ffmpeg's decoded samples. librosa would supply the spectrogram and an
 onset detector, but not this feature — and §22 asks a dependency to save more than ~200 lines,
 which the dozen lines of framed FFT below do not.
+
+`stft`, `smooth`, `audio_start` and `intro_ramp` are public because `imaging/analyse.py` measures
+the same run-up on the same evidence (§9: imaging earns its fields the same way music does). There
+is one ramp measure in this repository and this is it.
 """
 
 from __future__ import annotations
@@ -116,7 +120,7 @@ def decode(path: Path) -> tuple[NDArray[np.float32], NDArray[np.float32]]:
     return frames[:, 0].copy(), frames[:, 1].copy()
 
 
-def _stft(y: NDArray[np.float32]) -> NDArray[np.complex64]:
+def stft(y: NDArray[np.float32]) -> NDArray[np.complex64]:
     """Framed rfft. Complex, because the phase is the feature."""
     window = np.hanning(N_FFT).astype(np.float32)
     count = 1 + (len(y) - N_FFT) // HOP
@@ -124,7 +128,7 @@ def _stft(y: NDArray[np.float32]) -> NDArray[np.complex64]:
     return np.fft.rfft(y[index] * window, axis=1).astype(np.complex64)
 
 
-def _smooth(x: NDArray[np.float64], seconds: float) -> NDArray[np.float64]:
+def smooth(x: NDArray[np.float64], seconds: float) -> NDArray[np.float64]:
     """Centred moving average, edge-padded so the first and last frames stay usable."""
     width = max(1, int(seconds * FRAME_RATE))
     pad = width // 2
@@ -161,7 +165,7 @@ def curves(left: NDArray[np.float32], right: NDArray[np.float32]) -> Curves:
     Returned standardised, so a number is "robust standard deviations from this song's own middle".
     """
     length = min(len(left), len(right))
-    cl, cr = _stft(left[:length]), _stft(right[:length])
+    cl, cr = stft(left[:length]), stft(right[:length])
     centre = np.clip(1.0 - np.abs(cl - cr) / (np.abs(cl) + np.abs(cr) + 1e-9), 0.0, 1.0)
     spectrum = np.abs((cl + cr) / 2)
 
@@ -210,20 +214,20 @@ def _opening_depth(slow: NDArray[np.float64], start: int) -> tuple[float, float,
 # --- the three numbers --------------------------------------------------------------------------
 
 
-def _audio_start(energy: NDArray[np.float64]) -> int:
+def audio_start(energy: NDArray[np.float64]) -> int:
     """First frame carrying sound, so a file with a second of digital black is not penalised."""
     floor = float(np.percentile(energy, 90)) * 10 ** (-40 / 20)
     return int(np.argmax(energy > floor))
 
 
-def _intro_ramp(v: NDArray[np.float64], start: int) -> tuple[float, str, str]:
+def intro_ramp(v: NDArray[np.float64], start: int) -> tuple[float, str, str]:
     """Seconds from the first sound to the first sung word, with a confidence and a reason.
 
     A ramp is *claimed* only when the opening is clearly quieter in vocal evidence than the song
     and the rise out of it holds. Otherwise the answer is zero — the singer is in from the top —
     and the flag says whether that is a finding or a shrug.
     """
-    slow, fast = _smooth(v, SLOW_S), _smooth(v, FAST_S)
+    slow, fast = smooth(v, SLOW_S), smooth(v, FAST_S)
     depth, opening, body = _opening_depth(slow, start)
     if depth < DEPTH_CLAIM:
         if depth < DEPTH_QUIET:
@@ -308,9 +312,9 @@ def measure(path: Path) -> Measurement:
     left, right = decode(path)
     duration = min(len(left), len(right)) / SR
     measured = curves(left, right)
-    start = _audio_start(frame_energy(left, right))
+    start = audio_start(frame_energy(left, right))
 
-    ramp, confidence, note = _intro_ramp(measured.evidence, start)
+    ramp, confidence, note = intro_ramp(measured.evidence, start)
     outro, outro_note = _outro(left, right, measured.onset)
     if outro_note:
         confidence, note = "check", "; ".join(x for x in (note, outro_note) if x)

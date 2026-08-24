@@ -2633,3 +2633,64 @@ assets is now misnamed against this grid, which is the cost of that convention m
 **Nothing is built here.** This records where the rows come from so that C4 can be written without
 rediscovering the question; the manifest, the three targets and the measurement pass are Phase F
 work at build step 12. **`ADMIN.md` gains nothing until the targets run** (§32).
+
+### D-094 · Energy is brightness, the loop point is a seam that has to survive two tests, and librosa is still declined — 2026-08-24
+
+I-02. §9 asks four numbers of every piece of imaging and D-083 left this card the librosa question.
+Three things had to be decided, and the first two were decided by measuring the 56 files rather than
+by argument.
+
+**`energy` is the spectral centroid on a log scale, 0 at 250 Hz and 1 at 5 kHz.** Onset density and
+rhythmic modulation — the two obvious ways to measure how energetic a piece is — were both computed
+across all 56 first. Neither separated anything: onset density put `link_bed_night` above
+`sweeper_bright`, and the 1–8 Hz modulation share put `disclosure_bed`, a slow underlay, at the top
+of the pile. That is not a failure of the implementations, it is what `music/jingles/README.md` §2
+means when it says *mostly slow–mid, unhurried* and *even the "urgent" pieces stay composed* — tempo
+is nearly constant across the brand, so it carries almost no information about a piece. What §2's
+three tiers actually vary is timbre: night is felt piano and low pads, day is mallets and arpeggios,
+bright is pulses, claps and sweeps. That is a brightness ladder, and the centroid climbs it —
+`open_the_night_watch_0204` 0.11, `link_bed_night` 0.23, `link_bed_day` 0.40, `news_sting` 0.74,
+`sweeper_mid` 0.95. Log-spaced because a tier is a musical distance, not a number of hertz.
+
+**The loop return point is found by matching the window before the end of the file against every
+earlier window, and then the join is checked separately.** A loop sounds right when the material
+before the end is the same phase of the pattern as the material before the point it jumps back to,
+so the search is a correlation of the last three seconds against the piece. Two details were not
+optional. The frames have to be compared with the piece's own average spectrum removed, or every
+frame of a warm pad correlates with every other at 0.99 and the measure says nothing. And the match
+alone is not enough: the join is separately required to step no further than about three times the
+piece's own median frame-to-frame step, because a pattern can line up at a point where the level
+does not. **Only `fallback_bed` passes both, at 448.6 s** — the file README §6 records as not
+resolving at its end, which is the piece this card existed to prove the measure on. Looping it back
+to zero instead steps 23.7× the natural step; the measured point steps 2.2×.
+
+**The other three beds fail the match test, and that is the finding, not a threshold to lower.**
+`link_bed_day`, `link_bed_night` and `disclosure_bed` reach 0.23–0.39 against `fallback_bed`'s 0.86
+— they were generated as one-shot pieces and do not repeat their own endings. So a missing loop
+point is printed as `—` and is not flagged: the tool cannot know which pieces are meant to be beds,
+and eleven yellow rows on programme opens that will never loop would bury the two rows that matter.
+The summary carries the count instead. **The 0.60 claim threshold is calibrated on one positive
+example**, which is all the pile contains; it sits in the middle of a real gap (0.53 to 0.86) and is
+the number to revisit when I-09's `news_bed` gives it a second.
+
+**The ramp is `music/analyse.py`'s, and a level fallback underneath it.** The vocal measure runs
+first and its answer wins wherever a piece sings — the post on a sung station name is the hardest
+there is, and D-083 already measures it. But it returns `0.0` on all 56 files, correctly: they are
+instrumental, and there is no vocal to enter. A field that reads `0.0` for every row is not a
+measurement, so where the vocal measure claims nothing the run-up is measured to where the piece
+reaches and holds its own body level, which is what a swell or riser into a motif is. It is claimed
+on D-083's rule — only where the opening is measurably under the body, `check` with the reason where
+it is only a little under. Seven of the 56 have one; `event_lumen_festival` runs 4.6 s.
+`stft`, `smooth`, `audio_start` and `intro_ramp` became public names in `music/analyse.py` so that
+there is one ramp measure in this repository rather than two that drift.
+
+**librosa is still declined, and the question is now closed rather than deferred.** D-083 named this
+card as the one that should re-open it *if it ever wants beat tracking or key detection*. It wants
+neither: tempo was measured, found not to discriminate on this palette, and dropped, and nothing
+above needs a key. What librosa would supply here is a spectrogram, which is nine lines of numpy
+already written and already shared with music. §22's bar — more than ~200 lines saved — is not met,
+and eleven transitive packages including numba on the machine that also runs MLX is the cost.
+
+**One thing this pass does not do.** It writes nothing. The numbers are read on screen and measured
+again when `imaging/catalogue.yaml` is built, the way `make music-analyse` and `make music-catalogue`
+already relate. Where the operator's corrections live is I-06's question, not this card's.

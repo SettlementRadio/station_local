@@ -4,6 +4,7 @@
 SHELL := /bin/bash
 .DEFAULT_GOAL := help
 .PHONY: help setup check doctor music-albums music-screen music-analyse music-tag music-catalogue
+.PHONY: imaging-analyse
 
 help:  ## list the targets that exist today
 	@echo "Settlement Radio — make targets"
@@ -53,3 +54,6 @@ music-tag:  ## write licence, date, model and AI marker into every take (ALBUM= 
 
 music-catalogue:  ## build music/catalogue.yaml — the one file the station's database ingests
 	@uv run station music-catalogue
+
+imaging-analyse:  ## measure every piece of imaging: length, run-up, energy, loop seam (PIECE= optional)
+	@uv run station imaging-analyse $(if $(PIECE),--piece $(PIECE),)

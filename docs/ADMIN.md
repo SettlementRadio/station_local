@@ -178,6 +178,46 @@ red rather than given a guessed run-up.
 agent working one card of `music/MUSIC_TASKS.md` — you open a session and say the card number
 (D-055). Nothing is copied to a clipboard and nothing is pasted anywhere.
 
+### `make imaging-analyse`
+
+Measures every piece of station imaging and prints four numbers per piece: how long it runs, how
+much run-up there is before the first sound a presenter cannot talk over, how bright it is on a
+0-to-1 scale, and — where the piece repeats its own ending — the point a loop should return to.
+`PIECE=night_watch` limits it to pieces whose name contains that. The 56 files take about half a
+minute, most of which is the eight-minute fallback bed.
+
+It reads `imaging/` if that folder holds audio and `music/jingles/approved/` otherwise, and prints
+which one it read. Today it is the second: the pile has not moved to the external volume yet.
+
+**`ENERGY` is a scale, not a verdict.** 0 is a piece whose sound sits around 250 Hz and 1 is one
+sitting around 5 kHz, log-spaced between them. `music/jingles/README.md` §2's three tiers — night,
+day, bright — are a brightness ladder by construction, so this is the axis that separates them, and
+it is the number `grid.yaml`'s daypart ranges are compared against (`ARCHITECTURE.md` §17a). It is
+not loudness: the mixer normalises every piece anyway.
+
+**`RAMP` of `0.0` means the piece is at full level from the top** — there is nothing to talk over,
+not that it starts at sample zero. Where a piece sings, the run-up is measured to the first sung
+word by the same measure `make music-analyse` uses, and the row says `sung entry`. Where it does
+not — which today is all 56 — it is measured to where the piece reaches and holds its own body
+level, which is what a swell or a riser into a motif actually is.
+
+**`LOOP` of `—` means the piece does not repeat its own ending.** That is a fact about the audio and
+not a failed measurement: most imaging is a one-shot piece with a beginning and an end, and only a
+bed needs a seam. Today exactly one file has one — `fallback_bed`, which returns to 448.6 s. **The
+other three beds do not**, so looping any of them will step audibly at the join until a seam is
+edited in or the piece is regenerated.
+
+**Rows in yellow marked `check` are the ones to listen to, and the note says why.** Either the
+opening is only a little under the body of the piece, so where the run-up ends is a judgement, or
+the pattern repeats at the point named but the join steps further than the piece steps of its own
+accord. `ARCHITECTURE.md` §9 is the reason: the last half-second of a ramp and the treatment of a
+seam are listening judgements, and a tool printing a hundred confident numbers, some of them wrong,
+would be worse than no tool.
+
+It is not a gate, it always exits 0, and nothing is written to a file — the numbers are read on
+screen, and `imaging/catalogue.yaml` takes them again when that file is built (I-06). A file that
+cannot be decoded is named as `UNREADABLE`, counted in the summary, and does not stop the pass.
+
 ## What GitHub checks, and when
 
 Three workflows, in `.github/workflows/`. None of them touches the database, the Transmitter or a
