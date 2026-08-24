@@ -49,9 +49,9 @@ time; two `[agent]` cards may not. Say the number to start one — "Do I-02" —
 
 | Stage | Cards | Status |
 |---|---|---|
-| **0 · What today's 56 files already allow** | I-01 · I-02 · I-03 · I-04 | **I-01 · I-02 done** · I-03 **NEXT** · I-04 waits on C8 |
+| **0 · What today's 56 files already allow** | I-01 · I-02 · I-03 · I-04 | **I-01 · I-02 · I-03 done** · I-04 waits on C8 |
 | **1 · The manifest** | I-05 · I-06 · I-07 | blocked on `grid.yaml` (**C4**) |
-| **2 · The gaps — the long pole, and it is yours** | I-08 · I-09 · I-10 · I-11 · I-12 · I-13 | ~36 new pieces minimum, ~64 if I-10 goes the other way |
+| **2 · The gaps — the long pole, and it is yours** | I-08 · I-09 · I-10 · I-11 · I-12 · I-13 | I-08 **NEXT** · ~36 new pieces minimum, ~64 if I-10 goes the other way |
 | **3 · Execution — the hour clock** | I-14 · I-15 · I-16 · I-17 | last · this is what M1 is judged on |
 
 **What exists:** 56 approved Suno assets in `music/jingles/approved/`, inventoried in that folder's
@@ -64,6 +64,10 @@ ident · and either 0 or ~28 link beds depending on I-10.
 **Two things gate this whole file.** `grid.yaml` (**C4**) — programme ids do not exist until it is
 written, and every `open_*` name in the pile is a guess at one. And **Phase E**, which everything in
 stage 3 extends rather than builds.
+
+**Stage 0 closed on 2026-08-24 apart from I-04, and with it the agent track for now.** Every
+remaining `[agent]` card is blocked — I-04 on C8, I-05 · I-06 · I-07 on `grid.yaml` (C4), stage 3 on
+all of them. What is runnable today is stage 2, and stage 2 is entirely yours.
 
 ---
 
@@ -122,7 +126,7 @@ measure under it for that case; seven pieces have a run-up, 0.7 s to 4.6 s. Two 
 librosa is declined again and the question D-083 left open is now closed (D-094).
 Depends on: —
 
-### I-03 · `[agent]` `make imaging-tag` — licence and compliance into every file — **NEXT**
+### I-03 · `[agent]` `make imaging-tag` — licence and compliance into every file — **DONE 2026-08-24**
 Goal: every imaging file still says what it is after a backup or a hand-off separates it from the
 manifest.
 Reads: ARCHITECTURE §9, §18 · DECISIONS D-084 · `music/COMMISSION.md` §9
@@ -139,6 +143,20 @@ come from — imaging has no per-album metadata block, so all four are read from
 date from each file's own Suno timestamp, and the model version I-01 supplies. **While in there,
 correct README §1's two stale lines** — July's licence file exists, and the dates are 25 · 22 · 9.
 **If this turns out to be a copy of `tag.py`, make it one module both call.**
+Result: `make imaging-tag` wrote the four values into all 56 files in eleven seconds; a second run
+rewrites nothing in under four and **Suno's own comment, with its generation id, is intact on all
+56**. It was a copy, so it became one: `station/tagging.py` holds the keys, the `Provenance` model,
+the ffprobe read, the checksummed `-c copy` remux and the verify-then-replace, and both `music/tag.py`
+(387 → 277 lines) and `imaging/tag.py` call it (D-095). **The period and the model version are read
+out of the July licence note rather than typed in**, by an exact-label parse of three of its table
+rows that fails by name on a renamed row or a row holding prose; the real note is read again in a
+unit test, so rewriting it turns CI red rather than this command. **The generation date comes from
+each file's own Suno `created=` tag** — present on all 56, at three different precisions — and a
+file that has lost it is failed by name, never given a guessed date. Two cross-checks that would
+otherwise fail silently: the note's period has to end in the month it says it covers, and every
+file's own date has to fall inside that month. The gate exits 1 on any failure, proved on a
+deliberately stripped copy. README §1's two stale lines are corrected: **the dates are 25 · 22 · 9**,
+and the "Outstanding" paragraph now records that both things it listed are done.
 Depends on: I-01
 
 ### I-04 · `[agent]` The IP screen over the pile
@@ -213,7 +231,7 @@ Depends on: I-06
 *`PHASES.md` sizes C6 at 100+ pieces and 56 exist. Everything here is Suno, ears and judgement.
 Stage 3 does not need all of it — I-14 needs I-11 and I-12 — but M1 does.*
 
-### I-08 · `[you]` The disclosure ident `ai_ident`
+### I-08 · `[you]` The disclosure ident `ai_ident` — **NEXT**
 Goal: the one piece of imaging the law cares about. Every hour, at every one of the six playout
 levels, the station says what it is and that it is machine-made.
 Reads: ARCHITECTURE §18, §9, §15 · PHASES F, G

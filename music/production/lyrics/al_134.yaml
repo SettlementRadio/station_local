@@ -33,15 +33,17 @@ album:
   song_count: 7
   style_card: b_061
   room: >-
-    Five halls at five ports, none of them for longer than a turnaround, which is the card's "tracked
-    quickly in whatever hall the berth was next to" taken literally — nothing here was played twice
-    and the room changes on almost every track. This is the first Turn and Burn record with
-    amplification, which the co-operative voted on three times before it would pay for it, so the
-    keyboard and the guitars are louder and harder here than anything the band had put out before,
-    and s_1097's solo is the first thing that ever went through the rig. One fact-bound session
-    exception is explicit: Nessa Dray's guest fiddle on s_1101, played an octave above where it was
-    written, which is the only change to one of her own songs Rhea Molt has ever accepted. The break
-    on that track is still the lead guitar's (§7).
+    Five halls at five ports, none held longer than a turnaround. The narrow first hall gives s_1096
+    a short alloy crack; the wide freight hall on s_1097 and s_1098 throws the new amplification back
+    at the band; the low dead room on s_1099 swallows everything after each stop; the high empty hall
+    on s_1100 leaves the drumless guitars and keyboard exposed; and the long final hall carries
+    s_1101's fiddle and s_1102's answering voices to the far door. No arrangement is carried to a
+    second port. The title track was first played at night and recorded the following morning in the
+    same hall. Cass Verrow's badly set break on s_1097 was captured as the rig's first test before the
+    full-band take and kept inside it. Three credited absences are explicit: Iber Tance and the
+    keyboard are absent from s_1099 and s_1101, while Wyll Petrin and the drums are absent from
+    s_1100. Nessa Dray's guest fiddle on s_1101 plays the written line an octave up, the only change
+    to one of her own songs Rhea Molt has accepted; the instrumental break remains the lead guitar's.
 
 generation:
   # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
@@ -67,56 +69,69 @@ songs:
     prompt: >-
       Fast boogie rock at the hard-rock edge, 160 BPM, driving and restless, amplified and loud.
       Female lead vocal, bright hard mezzo, fast and clipped, singing ahead of the beat and cutting
-      line ends off short instead of holding them, no vibrato. Two male voices answering short
-      phrases on the chorus, blunt and unpolished, never close harmony, the whole band shouting the
-      last one. Two electric guitars, electric bass, drum kit with struck alloy, compact electric
-      organ-toned keyboards set high beside the guitars and following them a fraction late
-      throughout. Tracked quickly in whatever hall was next to the berth, first-take feel, very
-      little overdub. Four seconds of struck alloy and one guitar before the first sung word. Cold
-      stop.
+      every line end short, no vibrato. Two blunt male voices answer only "none of it" and "keep
+      moving" in the choruses, never harmony; the whole five-person band shouts the final chorus.
+      Two electric guitars, electric bass, drum kit with a short struck-alloy crack, compact electric
+      organ-toned keyboard high beside the guitars but following every change a fraction late. The
+      band learned the song in front of an audience the night before and records it the following
+      morning without settling the joins. Tracked in a narrow hall beside the berth, hard dry walls,
+      first-take uncertainty, very little overdub. Four seconds of struck alloy and one guitar before
+      the first sung word. Cold stop.
     exclude: acoustic instruments, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
     lyrics: |
       [Intro - 4 seconds, struck alloy and one guitar, no vocal]
 
       [Verse 1]
-      Berth at eleven, hall at eight, out again by four,
-      and the walk between the two of them is about nine minutes
-      and it is the only part of that whole port I have seen
-      and I have been through it about forty times.
+      Berth eleven. Hall eight. Departure at four.
+      Nine minutes from the ramp to the loading arch.
+      Food stall shut. Blue gate. Two broken lamps.
+      A left turn after the manifest office.
+      I know the sign above it. I know the paint.
+      I have never taken it. Not once. Not yet.
 
-      [Chorus]
+      [Chorus - two men answer "none of it" after line 1 and "keep moving" after line 4]
       One day in port and none of it is mine.
-      Eight hours of it are the hall and six are asleep
-      and the rest is a walk down a road I could draw from memory
-      and have never once turned left on to see what is there.
+      One straight road and a borrowed night.
+      Hall lights ahead. Hauler behind.
+      Nine minutes clear. Keep moving.
+      I can draw every door with my eyes shut
+      and cannot tell you what is round the corner.
 
       [Verse 2]
-      I wrote this on that nine minutes and I did not write it down,
-      because I do not write anything down and never have,
-      and I sang it at the four of them at about a quarter to eight
-      and we played it at nine and none of them had heard it.
-
-      [Chorus]
-      One day in port and none of it is mine.
-      Eight hours of it are the hall and six are asleep
-      and the rest is a walk down a road I could draw from memory
-      and have never once turned left on to see what is there.
+      The first line came between the gate and the food stall.
+      The second landed under the loading arch.
+      I kept both by saying them against my steps.
+      No page. No list. No room to lose one.
+      Cass heard them at the side door and found a chord.
+      Tem found the bottom. Wyll counted. Iber came late.
 
       [Verse 3]
-      Iber is a fraction behind the guitars the whole way through
-      because he is listening for what comes next like the rest of them
-      and you can hear five people finding out what a song is
-      in front of about two hundred who think it is an old one.
+      Last night the first turn nearly lost all five of us.
+      Iber watched Cass and arrived one beat after.
+      Wyll hit the stop while Tem kept going.
+      Two hundred people shouted as if we meant it.
+      This morning the floor is empty and we still do not.
+      The late chord stays. The wrong stop stays too.
+
+      [Chorus - same two blunt answers]
+      One day in port and none of it is mine.
+      One straight road and a borrowed night.
+      Hall lights ahead. Hauler behind.
+      Nine minutes clear. Keep moving.
+      I can draw every door with my eyes shut
+      and cannot tell you what is round the corner.
 
       [Bridge]
-      We did it again the next morning and that is the take.
-      It is worse than the night before and it is the honest one.
+      If I turn left, I miss the hall.
+      If I never turn, I keep the song.
 
       [Final Chorus - the whole band shouting]
-      One day in port and none of it is mine,
-      and there is a departure at four and a lane after that
-      and a settlement somewhere at the end of the week
-      that will get exactly the same nine minutes out of me.
+      One day in port. None of it is mine.
+      One straight road and a departure time.
+      Gate at three. Hauler at four.
+      Lane all week. Keep moving.
+      Another settlement, another borrowed night,
+      another left turn I will know and never take.
 
       [Outro - cold stop]
     take: null                    # M-31 fills this in at the Suno sitting
@@ -135,58 +150,72 @@ songs:
     prompt: >-
       Fast boogie rock at the hard-rock edge, 148 BPM, wry and rowdy, brisk, amplified and loud.
       Female lead vocal, bright hard mezzo, fast and clipped, singing ahead of the beat and cutting
-      line ends off short instead of holding them, no vibrato. Two male voices answering short
-      phrases on the chorus, blunt and unpolished, never close harmony, the whole band shouting the
-      last one. Two electric guitars, electric bass, drum kit with struck alloy, compact electric
-      organ-toned keyboards high beside the guitars. Tracked quickly in whatever hall was next to the
-      berth, first-take feel, very little overdub. An eighteen-second lead guitar break that is
-      noticeably louder and dirtier than everything around it, badly set and not corrected. Eight
-      seconds of full band before the first sung word. Fade.
+      every line end short, no vibrato. Two blunt male voices answer "ask again" and "eleven words"
+      in the choruses, never harmony; the five-person band shouts the last chorus. Two electric
+      guitars, electric bass, struck-alloy drum kit, compact electric organ-toned keyboard punching
+      short chords high beside the guitars. Wide freight hall with a hard return from the new rig,
+      tracked quickly, first-take feel, very little overdub. The eighteen-second lead-guitar break is
+      the rig's captured setup test, made before the full-band take and retained inside it: a sudden
+      jump in level, dirty input, badly set, physically startling, never corrected. Eight seconds of
+      bass, drums and clipped keyboard before the first sung word. Fade after the full-band shout.
     exclude: acoustic instruments, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
     lyrics: |
-      [Intro - 8 seconds, full band, no vocal]
+      [Intro - 8 seconds, bass, drums and clipped keyboard, no vocal]
 
       [Verse 1]
-      First one went down by about thirty and I understood it.
-      It is a lot of money and there are people on this membership
-      who have been asking for a second van since 2611
-      and a van is a thing that carries something and a rig is not.
-      Half that membership is a freight crew and the other half is clerks
-      and not one of them has ever stood at the back of a hall.
+      First vote: thirty hands against us.
+      I understood every one of them.
+      A second van carries freight. A speaker carries noise.
+      One has a rate. One has a promise.
+      Tem sat at the back with his figures folded.
+      When the chair called finished, he stood anyway.
 
-      [Chorus]
-      Three times. Three separate evenings. Three shows of hands.
-      Somebody had to stand up at the front and ask again
-      and it was Tem, all three times, and he is not a talker,
-      and the third time he did it in about eleven words.
+      [Chorus - two men answer "ask again" after line 2 and "eleven words" after line 5]
+      Same room. Same question. Same row of hands.
+      Stand up, Tem. Ask it again.
+      He hates the front. He hates a speech.
+      He knows every number on the page.
+      Third night. No spare words.
+      Say what it costs. Then sit down.
 
       [Verse 2]
-      Second one lost by four and that one I did not understand,
-      because between the first and the second we had done the numbers
-      and taken them round and sat in nine people's kitchens
-      and the four who moved were four we had not got to,
-      because they were out on a lane for the whole of that fortnight
-      and came back the day before and voted on what they had heard.
+      Second vote: four hands short.
+      We had carried the figures through nine kitchens,
+      over cold food, past sleeping children,
+      to a clerk with flour still on both wrists.
+      Four freight crew were out on the lane.
+      They came home with somebody else's version.
+      Tem unfolded the page and started a third list.
 
-      [Instrumental - lead guitar break, 18 seconds, badly set and left]
-
-      [Chorus]
-      Three times. Three separate evenings. Three shows of hands.
-      Somebody had to stand up at the front and ask again
-      and it was Tem, all three times, and he is not a talker,
-      and the third time he did it in about eleven words.
+      [Chorus - same two blunt answers]
+      Same room. Same question. Same row of hands.
+      Stand up, Tem. Ask it again.
+      He hates the front. He hates a speech.
+      He knows every number on the page.
+      Third night. No spare words.
+      Say what it costs. Then sit down.
 
       [Verse 3]
-      That solo is the first thing that ever went through it
-      and it is far too loud and nobody knew how to set it
-      and Cass came off it looking like a man who had been hit
-      and we kept it exactly as it came out of the room.
+      Third vote: Tem used eleven words.
+      No story. No kitchens. No second van.
+      Price of the rig. Number of halls. Five names.
+      He put the page down before the count began.
+      The four missing hands came up first.
+      Then six more. Then the chair stopped counting.
+
+      [Instrumental - Cass's lead-guitar break, 18 seconds, the badly set rig test]
+
+      [Bridge]
+      Cass pulled both hands off the strings.
+      Tem said: put that one on the record.
 
       [Final Chorus - the whole band shouting]
-      Three times. Three separate evenings. Three shows of hands,
-      and a membership that has never once been wrong for free,
-      and every one of them has to live with what it costs
-      and every one of them turned up on the third night.
+      Same room. Third question. Every hand counted.
+      Stand up, Tem. Never mind. Sit down.
+      The membership is never wrong for free.
+      Every one of them has to live with the noise.
+      Every one of them came on the third night.
+      Every one of them heard what they bought.
 
       [Outro - fade]
     take: null                    # M-31 fills this in at the Suno sitting
@@ -205,60 +234,66 @@ songs:
     prompt: >-
       Fast boogie rock at the hard-rock edge, 156 BPM, bitter and hard, fast, amplified and loud.
       Female lead vocal, bright hard mezzo, fast and clipped, singing ahead of the beat and cutting
-      line ends off short instead of holding them, no vibrato. Two male voices answering every line
-      of the chorus rather than short phrases, blunt and unpolished, never close harmony. Two
-      electric guitars, electric bass mixed forward and loud, drum kit with struck alloy, compact
-      electric organ-toned keyboards high beside the guitars. Tracked quickly in whatever hall was
-      next to the berth, first-take feel, very little overdub. Five seconds of bass and struck alloy
-      before the first sung word. Ends on a held chord with the whole band on it.
+      every line end short, no vibrato. Two blunt male voices give the exact parenthetical response
+      after every chorus line, never harmony. Tem Osgar's electric bass is the lead instrument: dry,
+      forward and loud, pushing against two clipped electric guitars, struck-alloy drums and compact
+      electric organ-toned keyboard on short off-beat chords. Tracked quickly in the wide freight
+      hall, the new rig throwing the bass back from the rear wall, first-take feel, very little
+      overdub. Five seconds of bass alone before struck alloy joins. Ends on a held bass note with the
+      band striking one final chord around it.
     exclude: acoustic instruments, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
     lyrics: |
-      [Intro - 5 seconds, bass and struck alloy, no vocal]
+      [Intro - 5 seconds, bass first, struck alloy joining, no vocal]
 
       [Verse 1]
-      A record is a thing that happens once and then keeps going
-      and a port is a thing that happens and then it is gone,
-      and we play about ninety ports a year on this circuit
-      and we have made two records in twelve and a half years.
-
-      [Pre-Chorus]
-      One of those is in a crate somewhere and it is still earning.
+      Tem put ninety marks across one sheet.
+      One for every port hall on the circuit.
+      Then two marks underneath for two pressed records.
+      He drew a line. Nobody needed the total.
+      We came straight from unloading the hold,
+      still wearing the dust that somebody else was paid for.
 
       [Chorus]
-      Pay us for the ports. Pay us for the nights.
-      Not for a crate on a siding that somebody else moves.
-      We are not a thing that gets pressed and put in a box.
-      We are five people in a hall and it is Tuesday.
+      Pay us for the ports. (pay the hands)
+      Pay us for the nights. (pay the night)
+      Not for a crate earning money on a siding. (not the crate)
+      We are five people in a hall and it is Tuesday. (standing here)
 
       [Verse 2]
-      Tem did the arithmetic and took it to the meeting
-      and it is not even close, it is not a marginal case,
-      and it went down, and the reason it went down
-      is that it is how the co-operative has always done it.
+      The woman at the front said the pressing carries risk.
+      Tem said the crew carries everything else.
+      A man from a freight crew said changing one rate
+      meant changing every rate, and he was right.
+      Somebody asked who would count the nights.
+      Five hands went up. None belonged to the office.
 
       [Chorus]
-      Pay us for the ports. Pay us for the nights.
-      Not for a crate on a siding that somebody else moves.
-      We are not a thing that gets pressed and put in a box.
-      We are five people in a hall and it is Tuesday.
+      Pay us for the ports. (pay the hands)
+      Pay us for the nights. (pay the night)
+      Not for a crate earning money on a siding. (not the crate)
+      We are five people in a hall and it is Tuesday. (standing here)
 
       [Verse 3]
-      He wrote this the same evening and he wrote it angry
-      and it is the only angry thing this band has ever done
-      and by the time we recorded it he had stopped being angry
-      and I had started, which is roughly how the two of us work.
+      The vote went down before the last ferry.
+      Tem folded the figures once and put them away.
+      At the berth he wrote four lines on the back,
+      hard enough for the pen to cut the page.
+      He handed them to me without saying sing this.
+      I sang them before his hand left the paper.
 
       [Bridge]
-      They changed it five years later. That is on the next record.
-      Nobody has ever said out loud that Tem was right.
+      The page is closed. The rate is the rate.
+      The spring meeting is already on the manifest.
 
       [Final Chorus - the whole band shouting]
-      Pay us for the ports. Pay us for the nights.
-      Ninety halls a year and a hold going out behind us
-      and a membership of ninety who all voted about it,
-      and we will be at the meeting in the spring.
+      Pay the ports. (pay the hands)
+      Pay the nights. (pay the night)
+      Ninety halls and the same five names. (standing here)
+      The hold goes out. We go to another berth. (not the crate)
+      Keep the page. Keep the count.
+      We will ask again in the spring.
 
-      [Outro - held chord, whole band on it]
+      [Outro - held bass note, one band chord around it]
     take: null                    # M-31 fills this in at the Suno sitting
 
   - id: s_1099
@@ -270,65 +305,81 @@ songs:
       what is in it.
     arrangement_note: the list in the second verse is sung at the top of the tempo with one item to a bar and the band stopping dead after each one, which is the only silence anywhere on the track
     intro: 3
-    outro: fade
+    outro: cold
     target_duration: "3:50"
     prompt: >-
       Fast boogie rock at the hard-rock edge, 172 BPM, comic and loud, very fast and amplified.
       Female lead vocal, bright hard mezzo, fast and clipped, singing ahead of the beat and cutting
-      line ends off short instead of holding them, no vibrato. Two male voices answering short
-      phrases on the chorus, blunt and unpolished, never close harmony, the whole band shouting the
-      last one. Two electric guitars, electric bass, drum kit with struck alloy, compact electric
-      organ-toned keyboards high beside the guitars. Tracked quickly in whatever hall was next to the
-      berth, first-take feel, very little overdub. One verse of a list at one item to a bar, with the
-      whole band stopping dead after each item and no other silence anywhere in the song. Three
-      seconds of drums before the first sung word. Fade.
-    exclude: acoustic instruments, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
+      every line end short, no vibrato. Two blunt male voices answer "nothing" and "leave it" on the
+      choruses, never harmony; all four players present shout the final one. Two electric guitars,
+      electric bass and struck-alloy drum kit, no keyboard. Tracked in a low dead hall that swallows
+      every decay, fast and dry, first-take feel, very little overdub. The second verse is eight
+      objects at one object per bar; after every object the entire band stops dead, then restarts at
+      full speed, with no other silence anywhere. Three seconds of drums before the first sung word.
+      Final line ends in a hard collective stop, no fade.
+    exclude: acoustic instruments, keyboards, organ, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
     lyrics: |
       [Intro - 3 seconds, drums, no vocal]
 
       [Verse 1]
-      Everybody else on this circuit travels like a settlement moving.
-      Cass has three cases and a bag for the bag he keeps the leads in.
-      Iber brings a thing to sit on, which I have stopped asking about.
-      And then there is Wyll, who has one bag, and has always had one bag.
+      Cass has three cases and one case for leads.
+      Tem has a crate of pages nobody asked him to bring.
+      I have four bags and know what is in two.
+      We unload like a settlement changing address.
+      Wyll steps off the hauler with one hand free.
+      One bag. Same bag. Twelve years. No search.
 
-      [Chorus]
+      [Chorus - two men answer "nothing" after line 1 and "leave it" after line 4]
       Nothing to unpack. Nothing to leave behind.
-      Off the hauler, into the hall, out again at four,
-      and the only person on this crew who is never looking for anything
-      is the one who decided years ago not to own it.
+      One bag through the gate. One bag by the kit.
+      Hall at nine. Back on the hauler at four.
+      If it does not fit, leave it.
+      Wyll is ready while the rest of us count cases
+      and accuse the port of moving them.
 
       [Verse 2 - one item a bar, the band stopping dead after each]
-      Two shirts. One coat. A tin with something in it.
-      Sticks. Spare sticks. A second pair of spare sticks.
-      A photograph he has never once shown anybody.
-      And a spanner, which is not for the kit, and he will not say what it is for.
+      Two shirts.
+      One coat.
+      A sealed tin.
+      Drumsticks.
+      Spare drumsticks.
+      A photograph turned inward.
+      One small spanner.
+      Nothing else.
 
-      [Chorus]
+      [Chorus - same two blunt answers]
       Nothing to unpack. Nothing to leave behind.
-      Off the hauler, into the hall, out again at four,
-      and the only person on this crew who is never looking for anything
-      is the one who decided years ago not to own it.
+      One bag through the gate. One bag by the kit.
+      Hall at nine. Back on the hauler at four.
+      If it does not fit, leave it.
+      Wyll is ready while the rest of us count cases
+      and accuse the port of moving them.
 
       [Verse 3]
-      I asked him about it once on a nine-hour lane in the dark
-      and he said that a thing you carry is a thing you think about
-      and he would rather think about the second half of a set,
-      and then he went to sleep, which I think was the rest of the answer.
+      On a nine-hour lane I asked about the photograph.
+      He said a thing you carry is a thing you think about.
+      I said that sounded like a reason to show it.
+      He said it sounded like a reason not to.
+      Then he put the bag under his head,
+      shut his eyes and finished the conversation.
 
       [Verse 4]
-      He has left one bag at one berth in twelve years,
-      and it came back down the relay road eleven days later, unopened,
-      and he took it off the clerk and said thanks and put it down
-      and did not check it, in front of all four of us, on purpose.
+      Once he left it at a berth behind us.
+      Eleven days later it came down the relay road,
+      unopened, with three clerk marks on the handle.
+      Wyll said thanks and put it beside the kit.
+      Four of us stood waiting for him to check.
+      He counted us instead and walked into the hall.
 
       [Final Chorus - the whole band shouting]
       Nothing to unpack. Nothing to leave behind,
-      and I have four cases in a hall about nine ports back
-      that somebody is going to have to send on after me,
-      and he is asleep, and he is right, and I hate it.
+      one bag through the gate and nothing missing.
+      I have four cases in a hall nine ports back.
+      Somebody will put them on the next manifest.
+      Wyll is asleep. Wyll is right.
+      I hate it.
 
-      [Outro - fade]
+      [Outro - hard collective stop]
     take: null                    # M-31 fills this in at the Suno sitting
 
   - id: s_1100

@@ -68,6 +68,7 @@ CONFIG_FREE = frozenset(
         "music-tag",
         "music-catalogue",
         "imaging-analyse",
+        "imaging-tag",
     }
 )
 
@@ -304,31 +305,16 @@ def music_catalogue() -> None:
         raise typer.Exit(code=1)
 
 
-# The pile has not moved yet. §9 puts imaging audio on the external volume under `imaging/`, but
-# what exists today is the 56 files carried over from the previous attempt, and moving them is
-# I-06's job, not this command's. So it reads whichever of the two holds audio, and says which.
-IMAGING_DIRS = (Path("imaging"), Path("music") / "jingles" / "approved")
-
-
 @app.command("imaging-analyse")
 def imaging_analyse(
     piece: str = typer.Option(None, "--piece", help="only pieces whose name contains this"),
 ) -> None:
     """Measure every piece of imaging: length, run-up, energy, and a bed's loop seam."""
-    from station.imaging import analyse, console
+    from station.imaging import analyse, console, pile
 
-    roots = [Path.cwd() / d for d in IMAGING_DIRS]
-    found = [(root, analyse.audio_files(root)) for root in roots if root.is_dir()]
-    root, paths = next(((r, p) for r, p in found if p), (roots[0], []))
+    root, paths = pile.find(piece)
     if not paths:
-        typer.secho(
-            "no imaging audio — looked in " + " and ".join(str(d) for d in IMAGING_DIRS),
-            fg="yellow",
-        )
-        return
-    paths = [p for p in paths if piece is None or piece in p.stem]
-    if not paths:
-        typer.secho(f"no piece under {root} matches {piece!r}", fg="yellow")
+        console.nothing_found(root, piece)
         return
 
     typer.echo(
@@ -344,6 +330,38 @@ def imaging_analyse(
         if one:
             console.measurement(one[0])
     console.analyse_summary(measured, failed)
+
+
+@app.command("imaging-tag")
+def imaging_tag(
+    piece: str = typer.Option(None, "--piece", help="only pieces whose name contains this"),
+) -> None:
+    """Write the licence period, generation date, model version and AI marker into every piece."""
+    from station.imaging import console, pile
+    from station.imaging import tag as tagger
+
+    note_path = Path.cwd() / "music" / tagger.LICENCE_NOTE
+    try:
+        note = tagger.read_note(note_path)
+    except tagger.TagError as exc:
+        typer.secho(f"\n{exc}\n", err=True, fg="red")
+        raise typer.Exit(code=1) from None
+
+    root, paths = pile.find(piece)
+    if not paths:
+        console.nothing_found(root, piece)
+        return
+
+    typer.echo(
+        f"{len(paths)} piece(s) under {root.relative_to(Path.cwd())}, against "
+        f"{tagger.LICENCE_NOTE.name} — {note.licence_period}, {note.model_version}\n"
+    )
+    typer.echo(console.TAG_HEADER)
+    results = []
+    for path in paths:
+        results.append(tagger.tag(path, note))
+        console.tag_row(results[-1])
+    console.tag_summary(tagger.summarise(results), results)
 
 
 def main() -> None:

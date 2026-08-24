@@ -218,6 +218,50 @@ It is not a gate, it always exits 0, and nothing is written to a file — the nu
 screen, and `imaging/catalogue.yaml` takes them again when that file is built (I-06). A file that
 cannot be decoded is named as `UNREADABLE`, counted in the summary, and does not stop the pass.
 
+### `make imaging-tag`
+
+Writes four things into every piece of station imaging: the licence period it was generated under,
+the generation date, the model version, and a marker saying it is machine-generated. `PIECE=sweeper`
+limits it to pieces whose name contains that. The 56 files take about eleven seconds the first time
+and under four after that.
+
+**Why it matters more than it sounds.** The imaging audio is not in git and its whole manifest is a
+`README.md` written for a person. Separate one file from that folder — a backup, a new machine, a
+hand-off — and before this command it said only `made with suno`. `ARCHITECTURE.md` §9 makes
+provenance mandatory in the imaging file itself for that reason, and §18 makes the AI marker a
+compliance control rather than a nicety.
+
+**Where the four values come from.** Two places, and neither is typed in here (D-095):
+
+- **`music/licence-evidence/2026-07-suno-licence-note.md`** — the licence period and the model
+  version, read out of that note's own table. Correct the note and the next run corrects the files.
+- **Each file's own Suno comment** — the generation date, out of the `created=` timestamp Suno
+  writes into every export. A file that has lost that comment is **failed by name, never given a
+  guessed date**, because a wrong generation date inside an audio file reads as fact forever.
+
+It also refuses, by name, any file whose Suno date falls outside the month the note covers. That is
+the mistake nobody would otherwise notice: a later pile quietly tagged with an earlier pile's terms.
+
+What it prints at the end is the check: the counts, then one file's four tags in full **plus Suno's
+own comment**, so you can see both that the licence is in and that the generation id is still there.
+To read another file yourself:
+
+```bash
+ffprobe -v error -show_entries format_tags -of default music/jingles/approved/time_sting.mp3
+```
+
+**Nothing already in the file is touched and the audio is never re-encoded.** Suno's comment, with
+the generation id every one of these can be re-exported by, stays. Each file is copied with the
+audio passed through untouched, the copy checked against the original, and only then moved over it —
+so an interrupted run leaves whole files behind, never a half-written one.
+
+**Running it twice is safe and nearly instant** — a file already carrying the right four values is
+not rewritten at all.
+
+Like `make music-tag` and unlike `make imaging-analyse`, **this one is a gate**: it exits red if any
+file failed. A piece with no licence in it is a piece nobody may broadcast, and the cheap moment to
+notice is before `imaging/catalogue.yaml` is built on top of it.
+
 ## What GitHub checks, and when
 
 Three workflows, in `.github/workflows/`. None of them touches the database, the Transmitter or a

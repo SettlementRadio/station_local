@@ -31,9 +31,9 @@ All 56 files were generated in **Suno** during the previous attempt, on three da
 
 | Generated | Files |
 |---|---|
-| 2026-07-04 | 27 |
-| 2026-07-08 | 23 |
-| 2026-07-20 | 11 |
+| 2026-07-04 | 25 |
+| 2026-07-08 | 22 |
+| 2026-07-20 | 9 |
 
 Every file carries its Suno generation id in its own ID3 comment tag (`id=…`), so any of them can be
 re-exported from the account — including as WAV — without regenerating. **No WAV masters exist**;
@@ -49,12 +49,12 @@ the pile is MP3 only, 48 kHz stereo, ~165–215 kbps.
   The captured evidence in `music/licence-evidence/2026-08-suno-terms.pdf` is therefore the governing
   text for these files as well as for the 45 songs.
 
-**Outstanding:** `COMMISSION.md` §9 wants licence evidence filed **per generation month**, and July
-2026 has no file. The terms themselves need no second capture — the same revision governs — but the
-period does need a record. Separately, §9 wants the licence period, generation date, model version
-and an AI marker written into each file's own tags; the Suno tags carry a creation date and
-generation id but **no licence period and no AI marker**. `make music-tag` does this for the
-catalogue and there is no equivalent for imaging.
+**Settled, 2026-08-24 (I-01, I-03).** Both of the things this section listed as outstanding are
+done. July 2026 has its licence file — `music/licence-evidence/2026-07-suno-licence-note.md`, which
+records that the same March 2026 revision governs, that the account was on Pro at all three dates,
+and that **all 56 were generated on v5.5**. And `make imaging-tag` now writes the licence period,
+the generation date, the model version and an AI marker into every one of the 56 files, leaving
+Suno's own comment — and with it every generation id — exactly where it was.
 
 ---
 

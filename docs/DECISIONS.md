@@ -2694,3 +2694,50 @@ and eleven transitive packages including numba on the machine that also runs MLX
 **One thing this pass does not do.** It writes nothing. The numbers are read on screen and measured
 again when `imaging/catalogue.yaml` is built, the way `make music-analyse` and `make music-catalogue`
 already relate. Where the operator's corrections live is I-06's question, not this card's.
+
+### D-095 · Imaging's four licence values come from a note and a Suno timestamp, and the write itself is one module both commands call — 2026-08-24
+
+I-03. `make imaging-tag` had to write the four values `COMMISSION.md` §9 requires into the 56
+imaging files, and `make music-tag` already wrote the same four into the catalogue's takes. Two
+questions followed: how much of the music command this is, and where imaging's values come from,
+since imaging has no per-album `generation:` block to read them out of.
+
+**It was two thirds a copy, so the copy moved to `station/tagging.py` and both commands call it.**
+The four tag keys, the `Provenance` model, the ffprobe read, the audio checksum, the `-c copy`
+remux, the verify-then-`os.replace`, and the already-right / write / failed decision are identical
+between the two because the requirement is identical — every mechanical choice D-084 took holds
+here unchanged. What is *not* shared is which value belongs in which file, and that half stays in
+`music/tag.py` (D-062's take-then-album resolution) and `imaging/tag.py`. The card said to make it
+one module if it turned out to be a copy; it did. `music/tag.py` re-exports the shared names, so
+nothing calling it had to learn where the ffmpeg call went, and it dropped from 387 lines to 277.
+
+**Imaging's period and model version are read out of the licence note, not typed in.** All 56 were
+generated in one month on one plan with one model, so both values are facts about the pile rather
+than about a file, and the only place they are written down is
+`music/licence-evidence/2026-07-suno-licence-note.md` — which is where I-01 put the model version.
+Copying `v5.5` into code would have made a correction to the note a change that never reached the
+files. The parse is deliberately literal: three table rows matched by their exact left-hand label,
+markdown emphasis and backticks stripped, first word taken, and each checked against a shape before
+it is used. A renamed row or a row holding prose — `not recorded`, which is what the model-version
+row said before I-01 — fails by name rather than writing something plausible into 56 files. The
+real note is read again in a unit test so a rewrite of it turns CI red rather than `make
+imaging-tag` at some later date.
+
+**The generation date comes from the file, and a file that cannot say is a failure.** Suno writes
+`created=2026-07-08T10:03:15Z` into the comment of every export, at three different precisions
+across these 56, so the date is already inside each file and nothing has to remember it. A file
+that has lost that comment is reported failed by name; §25's rule against silently producing
+nothing cuts the other way here too, because the cheap wrong answer — the filesystem mtime — is a
+guess that would read as evidence forever. Measured on the pile: all 56 carry one, and the dates
+are **25 · 22 · 9** across 04, 08 and 20 July, not the 27 · 23 · 11 `music/jingles/README.md` §1
+claimed. That table and §1's "Outstanding" paragraph were both corrected in the same pass.
+
+**The note's month is checked against every file's own date.** A pile generated in a later month
+and tagged against this note would carry terms nobody ever checked against it, and it would look
+exactly like a clean run. So a file whose Suno date falls outside the covered month is refused by
+name, and the note's two rows are checked against each other as well — a period that does not end
+in the month the note says it covers is a note where one of the two rows is wrong.
+
+**It is a gate, like `make music-tag`.** Red on any failure. There is no `unclaimed` sweep and no
+`pending` state, because unlike music the audio *is* the input here — there is no manifest yet for
+a file to be missing from, and I-06 is what builds one.
