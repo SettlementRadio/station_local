@@ -207,6 +207,8 @@ songs:
 
       [Bridge]
       Cass pulled both hands off the strings.
+      The first note bent the paper cups at the back.
+      Nobody asked for less.
       Tem said: put that one on the record.
 
       [Final Chorus - the whole band shouting]
@@ -235,12 +237,13 @@ songs:
       Fast boogie rock at the hard-rock edge, 156 BPM, bitter and hard, fast, amplified and loud.
       Female lead vocal, bright hard mezzo, fast and clipped, singing ahead of the beat and cutting
       every line end short, no vibrato. Two blunt male voices give the exact parenthetical response
-      after every chorus line, never harmony. Tem Osgar's electric bass is the lead instrument: dry,
-      forward and loud, pushing against two clipped electric guitars, struck-alloy drums and compact
-      electric organ-toned keyboard on short off-beat chords. Tracked quickly in the wide freight
-      hall, the new rig throwing the bass back from the rear wall, first-take feel, very little
-      overdub. Five seconds of bass alone before struck alloy joins. Ends on a held bass note with the
-      band striking one final chord around it.
+      after every chorus line, never harmony; all five band members shout the final chorus while the
+      two responses remain distinct. Tem Osgar's electric bass is the lead instrument: dry, forward
+      and loud, pushing against two clipped electric guitars, struck-alloy drums and compact electric
+      organ-toned keyboard on short off-beat chords. Tracked quickly in the wide freight hall, the new
+      rig throwing the bass back from the rear wall, first-take feel, very little overdub. Five
+      seconds of bass alone before struck alloy joins. Ends on a held bass note with the band striking
+      one final chord around it.
     exclude: acoustic instruments, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
     lyrics: |
       [Intro - 5 seconds, bass first, struck alloy joining, no vocal]
@@ -252,6 +255,9 @@ songs:
       He drew a line. Nobody needed the total.
       We came straight from unloading the hold,
       still wearing the dust that somebody else was paid for.
+
+      [Pre-Chorus - bass and lead voice only]
+      Ninety marks. Two crates. Five people still standing.
 
       [Chorus]
       Pay us for the ports. (pay the hands)
@@ -389,63 +395,75 @@ songs:
     fact: >-
       Rhea Molt sings it to a partner who works the opposite circuit, and the two of them have been in
       the same port eleven times.
-    arrangement_note: the band's slowest tempo, which is still fast, so the tenderness has to come from the words and from the singer not cutting the line ends off for once, and the keyboard holds under everything instead of answering
-    intro: 14
+    arrangement_note: Wyll is absent and there are no drums, so the band's slowest tempo is held by clipped guitars and bass under one continuous keyboard chord; Rhea lets the line ends ring and the two men answer only "not nothing"
+    intro: 18
     outro: fade
     target_duration: "4:35"
     prompt: >-
       Fast boogie rock at the hard-rock edge, 132 BPM — the bottom of this band's range and still
-      quick — tender and plain in the words while the playing stays hard. Female lead vocal, bright
-      hard mezzo, singing ahead of the beat, and here holding the ends of lines rather than cutting
-      them short, which she does nowhere else; no vibrato. Two male voices answering short phrases on
-      the chorus, blunt and unpolished, never close harmony. Two electric guitars, electric bass,
-      drum kit with struck alloy, compact electric organ-toned keyboards holding long chords
-      underneath rather than answering. Tracked quickly in whatever hall was next to the berth,
-      first-take feel, very little overdub. Fourteen seconds of keyboard and bass before the first
-      sung word. Fade.
-    exclude: acoustic instruments, orchestral strings, brass, ballad tempos, slow or half-time playing, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
+      quick — tender and plain while the pulse stays insistent. Female lead vocal, bright hard mezzo,
+      slightly ahead of the beat, but here letting line endings ring instead of cutting them short;
+      no vibrato. Two blunt male voices answer only "not nothing" at the end of each chorus, never
+      harmony. Wyll Petrin is absent: no drums and no struck alloy. Two clipped electric guitars and
+      electric bass maintain the 132 BPM pulse while a compact electric organ-toned keyboard holds
+      one long chord underneath, changing only between sections. Tracked in a high empty hall where
+      every exposed pick and breath carries, very little overdub. Eighteen seconds of keyboard, then
+      bass, then both guitars before the first word. Long patient fade.
+    exclude: drums, percussion, struck alloy, acoustic instruments, orchestral strings, brass, ballad tempos, slow or half-time playing, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
     lyrics: |
-      [Intro - 14 seconds, keyboard and bass, no vocal]
+      [Intro - 18 seconds, keyboard, then bass, then both guitars, no vocal]
 
       [Verse 1]
-      Eleven times in twelve years and I have counted all eleven
-      and could tell you the port and the month and what the weather did
-      and which berth and which hall and what was said on two,
-      and there is no version of this where that is a lot.
+      Your message was waiting at the second gate.
+      Opposite circuit. Early arrival. Nine hours clear.
+      I read it twice beside the manifest window.
+      Cass asked whether somebody had died.
+      I said no. Somebody had landed.
+      Then I walked the wrong way toward the hall.
+
+      [Chorus - two men answer "not nothing" after line 4]
+      Nineteen, at the far rail, past the second gate.
+      You have six hours. I have nine.
+      No promises larger than the morning.
+      Eleven times is not nothing.
+      Put your coat beside mine on the barrier.
+      We can be two people until the first call.
 
       [Verse 2]
-      Your lane goes the other way round and that is the whole problem.
-      It is not a disagreement and it is nobody's fault
-      and there is no office anywhere I could go and shout at
-      and I have thought about that a great deal and it does not help.
+      Once you brought two cups and dropped one at the gate.
+      Once the sealed-season alarm kept us on opposite sides.
+      Once we had forty minutes and spent thirty arguing.
+      Last time your sleeve was torn at the shoulder.
+      I meant to mend it. The departure sounded.
+      I remember the tear better than what we said.
 
-      [Chorus]
-      Nineteen, at the far end of it, past the second gate.
-      Nine hours if the turnaround holds and six if it does not.
-      I have got a hall at eight and you are out at midnight
-      and that is the whole of it and it is worth the run.
+      [Chorus - same single blunt answer]
+      Nineteen, at the far rail, past the second gate.
+      You have six hours. I have nine.
+      No promises larger than the morning.
+      Eleven times is not nothing.
+      Put your coat beside mine on the barrier.
+      We can be two people until the first call.
 
       [Verse 3]
-      There is a woman on the near circuit who told me to stop
-      and she was being kind and she has been in this before
-      and she said eleven times in twelve years is not a life,
-      and I said no, it is eleven times, and that is not nothing.
-
-      [Chorus]
-      Nineteen, at the far end of it, past the second gate.
-      Nine hours if the turnaround holds and six if it does not.
-      I have got a hall at eight and you are out at midnight
-      and that is the whole of it and it is worth the run.
+      At half past five you come under the port light,
+      walking fast because both of us always walk fast.
+      You have grease across one cuff and no bag.
+      I have four cases somebody else is watching.
+      Neither of us says this cannot keep working.
+      Neither of us wastes the first minute.
 
       [Bridge]
-      Twelfth one is in the spring if neither circuit changes.
-      I have not written it down. I have not needed to.
+      A whole life is not arriving later.
+      A whole life is the part that arrives.
 
       [Final Chorus]
-      Nineteen, at the far end of it, past the second gate,
-      and I will be walking down it about half past five
-      with a hall at eight and nothing to say for myself,
-      and you will be there, and that is the whole of the plan.
+      Nineteen, at the far rail, past the second gate.
+      Your call at midnight. My hall at eight.
+      No promise except the coat on the barrier.
+      Eleven times is not nothing.
+      The twelfth is in spring if both lanes hold.
+      I have not written it down. I know the way.
 
       [Outro - fade]
     take: null                    # M-31 fills this in at the Suno sitting
@@ -464,57 +482,73 @@ songs:
     prompt: >-
       Fast boogie rock at the hard-rock edge, 164 BPM, triumphant and driving, fast and amplified.
       Female lead vocal, bright hard mezzo, fast and clipped, singing ahead of the beat and cutting
-      line ends off short instead of holding them, no vibrato. Two male voices answering short
-      phrases on the chorus, blunt and unpolished, never close harmony, the whole band shouting the
-      last one. A guest fiddle playing high above the guitars rather than inside them; two electric
-      guitars, electric bass, drum kit with struck alloy, compact electric organ-toned keyboards high
-      beside the guitars. Tracked quickly in whatever hall was next to the berth, first-take feel,
-      very little overdub. A sixteen-second lead guitar break with the fiddle over the top of it. Ten
-      seconds of fiddle and guitars before the first sung word. Fade.
-    exclude: acoustic instruments other than the guest fiddle, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
+      every line end short, no vibrato. Two blunt male voices answer "not yet" and "move" in the
+      choruses, never harmony; the whole band joins only the last two lines of the final chorus.
+      Iber Tance is absent: no keyboard. Nessa Dray's guest fiddle plays one octave above the written
+      line, a thin hard lead above two electric guitars rather than inside them; electric bass and
+      struck-alloy drum kit drive underneath. Tracked quickly in the long final cargo hall, where the
+      fiddle reaches the far door and the guitars stay close and dry, first-take feel, very little
+      overdub. A sixteen-second lead-guitar break remains clearly the break instrument, with the high
+      fiddle sustaining and cutting across it rather than taking over. Ten-second intro: fiddle alone
+      for six seconds, then both guitars join for four. Fade on the high fiddle.
+    exclude: keyboards, organ, acoustic instruments other than the guest fiddle, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
     lyrics: |
-      [Intro - 10 seconds, fiddle and guitars, no vocal]
+      [Intro - 10 seconds, fiddle alone for 6, guitars joining for 4, no vocal]
 
       [Verse 1]
-      There is a fast circuit and there is a faster one
-      and the co-operative runs both of them and we are on the second,
-      and the reason we are on it is that nobody else wanted it
-      and the reason nobody wanted it is that it is nine ports in eleven days
-      with a hold coming off behind you at every one of them.
+      Nine ports. Eleven days. Door still moving.
+      Freight comes off while the guitars come in.
+      Wyll builds the kit beside a working hold.
+      Tem counts cases between the first two chords.
+      Cass finds power at the back of the hall.
+      I count the minutes nobody gave us.
 
-      [Chorus]
-      Out ahead of the freight and ahead of the manifest,
-      into a hall with the cargo still coming off behind us.
-      Nobody on this circuit has ever waited for anything
-      and none of us can sit down in a room any more.
+      [Chorus - two men answer "not yet" after line 2 and "move" after line 5]
+      Freight behind us. Fiddle overhead.
+      Hall door open. Cargo not down yet.
+      Manifest late. Departure on time.
+      Nobody waits on the faster lane.
+      If the room is ready, move.
+      If it is not, move anyway.
 
       [Verse 2]
-      I wrote the line for this about halfway up the neck
-      and she came in and played it a whole octave above,
-      which put it over the top of the guitars instead of in them,
-      and I said keep it, which I have never said to anybody,
-      and she said she had assumed I meant it that way,
-      and I did not correct her, and I am not going to.
+      Nessa looked once at the line Cass showed her.
+      Then she put the bow a whole octave higher.
+      I said that is not where any of it sits.
+      She said it sits there now and played through me.
+      I opened my mouth to put it back.
+      The note crossed the hall before the word arrived.
+      I said keep it. Nobody moved for a second.
 
       [Instrumental - lead guitar break with the fiddle over it, 16 seconds]
 
-      [Chorus]
-      Out ahead of the freight and ahead of the manifest,
-      into a hall with the cargo still coming off behind us.
-      Nobody on this circuit has ever waited for anything
-      and none of us can sit down in a room any more.
+      [Chorus - same two blunt answers]
+      Freight behind us. Fiddle overhead.
+      Hall door open. Cargo not down yet.
+      Manifest late. Departure on time.
+      Nobody waits on the faster lane.
+      If the room is ready, move.
+      If it is not, move anyway.
 
       [Verse 3]
-      Wyll says it will end and that everybody comes off it
-      at about year fifteen and takes a route with towns on it,
-      and I have watched two crews do exactly that and be happy
-      and I am not going to and I have known that for a while.
+      The loader at the door stops with one hook raised.
+      Three freight crew come in without taking coats off.
+      A clerk at the counter marks time with a stamp.
+      Nobody knows the line was meant to sit lower.
+      They only know the roof has something above it
+      and the next port suddenly feels one hour closer.
 
-      [Final Chorus - the whole band shouting]
-      Out ahead of the freight and ahead of the manifest,
-      and one day the circuit will change and we will not be on it
-      and I will be in a hall somewhere with a slow set list
-      and that is somebody else's song and not this one.
+      [Breakdown - bass and drums, fiddle holding one high note]
+      Wyll says every fast circuit ends.
+      Nessa holds the note until he stops talking.
+
+      [Final Chorus - lead for lines 1 through 4, whole band joining lines 5 and 6]
+      Freight behind us. High line overhead.
+      One day the circuit changes. Not yet.
+      One day I stand in a hall with time to spare.
+      That is somebody else's song and not this one.
+      Nine ports. Eleven days. Door still moving.
+      Move. Move.
 
       [Outro - fade on the fiddle]
     take: null                    # M-31 fills this in at the Suno sitting
@@ -532,57 +566,70 @@ songs:
     target_duration: "4:45"
     prompt: >-
       Fast boogie rock at the hard-rock edge, 138 BPM, defiant and midtempo for this band, amplified
-      and built to be shouted back. Female lead vocal, bright hard mezzo, fast and clipped, singing
-      ahead of the beat and cutting line ends off short, no vibrato, and absent entirely from the
-      final chorus. Two male voices answering short phrases on the choruses, blunt and unpolished,
-      never close harmony, and taking the whole final chorus on their own with the lead out. Two
-      electric guitars, electric bass, drum kit with struck alloy, compact electric organ-toned
-      keyboards high beside the guitars. Tracked quickly in whatever hall was next to the berth,
-      first-take feel, very little overdub. Sixteen seconds of keyboard and guitars before the first
-      sung word. Ends on a held chord with the answering voices on it.
+      and built as an argument passed across a counter. Female lead vocal, bright hard mezzo, ahead
+      of the beat, fast and clipped, cutting every line short, no vibrato, and absent entirely from
+      the final chorus. Two blunt male voices answer "read it" and "four minutes" in the first two
+      choruses, never harmony; in the final chorus they portray all four clerks and sing the complete
+      reply without the lead. Two electric guitars, electric bass, struck-alloy drum kit and compact
+      electric organ-toned keyboard making short high stamping chords. Tracked quickly in the long
+      final hall, voices travelling to the far door, first-take feel, very little overdub. Sixteen
+      seconds of keyboard stamps, struck alloy and guitars before the first word. Ends on a held chord
+      with only the two answering voices.
     exclude: acoustic instruments, orchestral strings, brass, ballad tempos, stacked harmony, close studio harmony, vocal tuning, whispered or rapped sections, dance and electronic production
     lyrics: |
-      [Intro - 16 seconds, keyboard and guitars, no vocal]
+      [Intro - 16 seconds, keyboard stamps, struck alloy and guitars, no vocal]
 
       [Verse 1]
-      There are four clerks at the co-operative and all four of them
-      have been there longer than this band has existed
-      and they have a window and a counter and a manifest book each
-      and every single thing any of us does goes past one of them.
+      Four clerks. Four windows. Four manifest books.
+      The first one reads aloud with one finger on the line.
+      The second will not stamp a page with an empty box.
+      The third knows every berth before the board changes.
+      The fourth says good morning at any hour.
+      Every road this band takes passes that counter.
 
-      [Chorus]
+      [Chorus - Rhea leads; two men answer "read it" after line 1 and "four minutes" after line 4]
       Sign it on the way out. Do not read it to me.
-      I have got a berth at six and a hall at eight
-      and whatever is wrong with it will still be wrong on Thursday
-      and you will still be here and so, unfortunately, will I.
+      Berth at six. Hall at eight. Gate closing.
+      Whatever is wrong will still be wrong on Thursday.
+      Put the mark here. Give me four minutes back.
+      You will be here when the next run lands.
+      So will I. That is the difficult part.
 
       [Verse 2]
-      It is not disrespect. It is nine years of the same exchange.
-      They want it read and I want it signed and both of us are right
-      and neither of us has moved a single step since 2610
-      and the whole thing takes about four minutes every time.
+      Window two stopped my hand over a cargo figure.
+      I said the hold was closed and the hauler was waiting.
+      She turned the manifest round without raising her voice.
+      One digit put our fee on somebody else's run.
+      I had signed halfway through my own name.
+      She crossed it clean and made me start again.
 
-      [Chorus]
+      [Chorus - same lead and two short answers]
       Sign it on the way out. Do not read it to me.
-      I have got a berth at six and a hall at eight
-      and whatever is wrong with it will still be wrong on Thursday
-      and you will still be here and so, unfortunately, will I.
+      Berth at six. Hall at eight. Gate closing.
+      Whatever is wrong will still be wrong on Thursday.
+      Put the mark here. Give me four minutes back.
+      You will be here when the next run lands.
+      So will I. That is the difficult part.
 
       [Verse 3]
-      At the annual meeting the four of them sing it at us,
-      all four, in the doorway, badly, as we come in,
-      and have done every year since the record came out
-      and I have not managed to say anything back once.
+      At the spring meeting they stood across the doorway.
+      Four clerks with no books and nothing to stamp.
+      The first one gave a count. The others came in.
+      They sang our own words back before we sat down.
+      Every line landed slower and clearer than mine.
+      Ninety members watched me fail to answer.
 
       [Bridge]
-      They read everything. They have read every page we have signed.
-      Twice they have stopped us signing something and both times they were right.
+      They read every page. We skip every line.
+      Twice they stopped us. Twice they were right.
 
-      [Final Chorus - the two answering voices alone, lead out]
-      Sign it on the way out. Do not read it to me.
-      There is a berth at six and a hall at eight
-      and four people at a counter who have read the whole thing
-      and will still be there in the spring when we get back.
+      [Final Chorus - two male voices as the four clerks, Rhea completely absent]
+      Sign it on the way out. We already read it.
+      Your berth is six. Your hall is eight. We know.
+      It will still be wrong on Thursday if we sign it wrong now.
+      Take the four minutes. Read the cargo line.
+      We will be here when your next run lands.
+      So will you. That is the useful part.
 
       [Outro - held chord, the answering voices on it]
     take: null                    # M-31 fills this in at the Suno sitting
