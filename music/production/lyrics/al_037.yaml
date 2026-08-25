@@ -49,13 +49,22 @@ album:
     not sing. None of the guests joins the permanent line-up.
 
 generation:
-  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-31. Suno Pro, model v5.5, remixing disabled — the same
+  # account, tier and settings as the pilot and as relay-pop, so 2026-08's licence evidence
+  # in music/licence-evidence/ covers these takes too. Times are UTC, as the files report
+  # them, and every one of them was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-23
+  sittings:
+    - {date: 2026-08-23, from: '12:17:45', to: '13:29:16', tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW by `make music-dispatch`, which matched every take
+    against the lyric it carries in its own tags rather than against its filename, and
+    refused to move anything until all of them formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric.
 
 songs:
   - id: s_0311
@@ -126,7 +135,15 @@ songs:
       and it took nine days and it was worth every one.
 
       [Outro - held chord, four voices on it]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: a19ede63-0dd6-4f9f-8ffd-e8abc710700e
+      suno_created: 2026-08-23T12:17:45Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_037/01.mp3
 
   - id: s_0312
     title: Beyond the Usual Lanes
@@ -200,7 +217,15 @@ songs:
       and I have made my peace with that about half the time.
 
       [Outro - fade at full size]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: fec112fa-ff9e-4cc0-b158-8d0c28532083
+      suno_created: 2026-08-23T12:18:40Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_037/02.mp3
 
   - id: s_0313
     title: Burn Day Wages
@@ -271,7 +296,15 @@ songs:
       and I am not going to, and that is the whole song.
 
       [Outro - cold stop]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 5394d782-0ba4-4c7a-b906-7f616561925d
+      suno_created: 2026-08-23T13:24:10Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_037/03.mp3
 
   - id: s_0314
     title: Split It Nine Ways
@@ -346,7 +379,15 @@ songs:
       The ninth one is not a share. It is a thank you.
 
       [Outro - fade]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 02f690b7-b7e1-4d8c-9409-676b1aa1e8df
+      suno_created: 2026-08-23T13:26:03Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_037/04.mp3
 
   - id: s_0315
     title: Somebody's Cousin on the Kit
@@ -415,7 +456,15 @@ songs:
       which is the most generous thing one drummer can say about another.
 
       [Outro - cold stop]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 364c0fc4-25c7-4fa7-8be3-f22bbf18759a
+      suno_created: 2026-08-23T13:26:51Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_037/05.mp3
 
   - id: s_0316
     title: Fiddle on the Long Run
@@ -488,7 +537,15 @@ songs:
       but every next mark on it is arriving sooner.
 
       [Outro - fade on the fiddle]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 69de1f86-eb99-4640-aa85-b14d6de56d19
+      suno_created: 2026-08-23T13:27:28Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_037/06.mp3
 
   - id: s_0317
     title: Cold Bunk, Warm Letter
@@ -553,7 +610,15 @@ songs:
       low enough that the man two bunks along could sleep through it.
 
       [Outro - fade]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 2cda3b15-88aa-4738-b6a9-cc9482388358
+      suno_created: 2026-08-23T13:27:58Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_037/07.mp3
 
   - id: s_0318
     title: Nobody Owns the Road
@@ -626,7 +691,15 @@ songs:
       and we have been moving since 2596 and we are not stopping.
 
       [Outro - held chord, four voices on it]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 082c7631-4c7c-4344-9ed9-58dae70b6b5e
+      suno_created: 2026-08-23T13:28:36Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_037/08.mp3
 
   - id: s_0319
     title: Sign Off and Go Home
@@ -700,4 +773,12 @@ songs:
       and the next run goes out on the Monday after.
 
       [Outro - cold stop, Oren's upright bass last in the audition key]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: a5370c0a-8150-4b3a-8ca4-bb004807214d
+      suno_created: 2026-08-23T13:29:16Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_037/09.mp3

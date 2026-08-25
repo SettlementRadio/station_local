@@ -3,7 +3,7 @@
 
 SHELL := /bin/bash
 .DEFAULT_GOAL := help
-.PHONY: help setup check doctor music-albums music-screen music-analyse music-tag music-catalogue
+.PHONY: help setup check doctor music-albums music-screen music-dispatch music-analyse music-tag music-catalogue
 .PHONY: imaging-analyse imaging-tag
 
 help:  ## list the targets that exist today
@@ -45,6 +45,9 @@ music-albums:  ## list every album in the wiki, with its id and layer (GENRE= op
 
 music-screen:  ## screen a genre's invented names against Wikidata (GENRE= optional)
 	@uv run station music-screen $(if $(GENRE),--genre $(GENRE),)
+
+music-dispatch:  ## file a pile of Suno takes into music/audio/, proved against their lyrics (GENRE= optional)
+	@uv run station music-dispatch $(if $(GENRE),--genre $(GENRE),) $(if $(RAW),--raw $(RAW),)
 
 music-analyse:  ## measure every take: duration, intro ramp, outro type (ALBUM= optional)
 	@uv run station music-analyse $(if $(ALBUM),--album $(ALBUM),)

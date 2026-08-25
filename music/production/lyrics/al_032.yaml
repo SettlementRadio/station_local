@@ -41,13 +41,22 @@ album:
     Voice, backing, instruments and exclude are untouched.
 
 generation:
-  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-31. Suno Pro, model v5.5, remixing disabled — the same
+  # account, tier and settings as the pilot and as relay-pop, so 2026-08's licence evidence
+  # in music/licence-evidence/ covers these takes too. Times are UTC, as the files report
+  # them, and every one of them was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-20
+  sittings:
+    - {date: 2026-08-20, from: '07:13:41', to: '07:35:15', tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW by `make music-dispatch`, which matched every take
+    against the lyric it carries in its own tags rather than against its filename, and
+    refused to move anything until all of them formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric.
 
 songs:
   - id: s_0266
@@ -124,7 +133,15 @@ songs:
       and the cargo goes out whole and so does everybody else.
 
       [Outro - cold stop]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 86beb5b6-30cd-4000-bc59-42909242820f
+      suno_created: 2026-08-20T07:13:41Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_032/01.mp3
 
   - id: s_0267
     title: Count Me on the Manifest
@@ -199,7 +216,15 @@ songs:
       Where anybody standing at the gate can read it.
 
       [Outro - held chord, four voices still on it]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 27e7eb12-84cf-4506-99ed-077744d0835c
+      suno_created: 2026-08-20T07:14:19Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_032/02.mp3
 
   - id: s_0268
     title: Wrong Bay, Right Crew
@@ -270,7 +295,15 @@ songs:
       because the ones that made the mess are the ones that shift it twice.
 
       [Outro - fade on the riff]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: f88ab9a0-ce6a-45a4-976e-fc455dfd3e29
+      suno_created: 2026-08-20T07:14:50Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_032/03.mp3
 
   - id: s_0269
     title: Hold the Sheet Down
@@ -342,7 +375,15 @@ songs:
       We held it down together. That is the whole story.
 
       [Outro - cold stop]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: bd3cb254-6a77-4b67-9cd1-7fcdbbde56a7
+      suno_created: 2026-08-20T07:15:26Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_032/04.mp3
 
   - id: s_0270
     title: Sleep on the Ride Back
@@ -413,7 +454,15 @@ songs:
       and the settlement will be exactly where we left it.
 
       [Outro - fade on the lead voice alone]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: de825881-bc48-4c9d-b1b4-3acae422e791
+      suno_created: 2026-08-20T07:16:07Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_032/05.mp3
 
   - id: s_0271
     title: Weather at the Gate
@@ -482,7 +531,15 @@ songs:
       We are all inside. Let it come.
 
       [Outro - fade at full volume]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: e5a43358-e02f-471e-b65c-10f34cb02187
+      suno_created: 2026-08-20T07:16:38Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_032/06.mp3
 
   - id: s_0272
     title: You Left the Light On
@@ -548,7 +605,15 @@ songs:
       Leave it on and I will find the step.
 
       [Outro - fade]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: f20f6b6a-79b8-484d-b8ab-02bb2de2df25
+      suno_created: 2026-08-20T07:17:14Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_032/07.mp3
 
   - id: s_0273
     title: Cheap Coffee, Loud Room
@@ -621,7 +686,15 @@ songs:
       Same time next month. Same mark on the floor.
 
       [Outro - cold stop]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 34ed5102-0d1e-49e7-8f43-e926186a9322
+      suno_created: 2026-08-20T07:17:31Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_032/08.mp3
 
   - id: s_0274
     title: Twelve Hours to Say It
@@ -688,7 +761,15 @@ songs:
       Ask me tonight. Ask me tonight and I will get through it.
 
       [Outro - fade]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 3d9b8915-071e-4f81-857c-6b2399828d07
+      suno_created: 2026-08-20T07:34:40Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_032/09.mp3
 
   - id: s_0275
     title: Everything Rattles
@@ -762,4 +843,12 @@ songs:
       Nothing here was ever going to be.
 
       [Outro - held chord, the room still ringing]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: f08dd363-0541-46ad-95ef-6a0482304129
+      suno_created: 2026-08-20T07:35:15Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_032/10.mp3

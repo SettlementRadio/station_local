@@ -48,13 +48,23 @@ album:
     is sung on what was left of it; the voice line itself does not change.
 
 generation:
-  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-31. Suno Pro, model v5.5, remixing disabled — the same
+  # account, tier and settings as the pilot and as relay-pop, so 2026-08's licence evidence
+  # in music/licence-evidence/ covers these takes too. Times are UTC, as the files report
+  # them, and every one of them was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-21
+  sittings:
+    - {date: 2026-08-21, from: '20:51:03', to: '20:51:39', tracks: [1, 2]}
+    - {date: 2026-08-23, from: '07:14:55', to: '07:21:23', tracks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW by `make music-dispatch`, which matched every take
+    against the lyric it carries in its own tags rather than against its filename, and
+    refused to move anything until all of them formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric.
 
 songs:
   - id: s_0284
@@ -129,7 +139,15 @@ songs:
       exactly where Tor said it was before we made it difficult.
 
       [Outro - cold stop on the riff]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-21
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 7450b788-544d-4988-8fa4-3484495e7775
+      suno_created: 2026-08-21T20:51:03Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/01.mp3
 
   - id: s_0285
     title: Six Days In
@@ -198,7 +216,15 @@ songs:
       we brought everything else down to the volume I had got.
 
       [Outro - fade on the pipes]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-21
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: c8410ce0-6187-4917-a9b0-6524678709aa
+      suno_created: 2026-08-21T20:51:39Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/02.mp3
 
   - id: s_0286
     title: Put My Name Beside It
@@ -268,7 +294,15 @@ songs:
       Ask for it out loud. Nobody offers.
 
       [Outro - cold stop]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: b191c081-b97a-4f33-a960-98d3e50a36d0
+      suno_created: 2026-08-23T07:14:55Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/03.mp3
 
   - id: s_0287
     title: Long Alloy
@@ -345,7 +379,15 @@ songs:
       because no other hall has ever asked the same thing of us.
 
       [Outro - held note, left to decay in the hall]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: fc89ac11-08e3-423c-afb0-9201e44b49c2
+      suno_created: 2026-08-23T07:15:38Z
+      lyric_match: 0.9985      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/04.mp3
 
   - id: s_0288
     title: Everything Runs Hot
@@ -415,7 +457,15 @@ songs:
       and nobody says anything about any of it ever again.
 
       [Outro - cold stop on the cracked cymbal]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: ebf88765-188d-4602-aa0e-7f9a30e78ed9
+      suno_created: 2026-08-23T07:16:20Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/05.mp3
 
   - id: s_0289
     title: The Shift You Don't Come Back From
@@ -487,7 +537,15 @@ songs:
       and let it be the stupidest thing you do all week.
 
       [Outro - fade at full size]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 7d27cd2d-b455-4382-a7fb-6f1c3cc4d568
+      suno_created: 2026-08-23T07:16:55Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/06.mp3
 
   - id: s_0290
     title: Second Bass Player
@@ -558,7 +616,15 @@ songs:
       and the ones who were there first get the songs named after them.
 
       [Outro - final four bars, bass alone, fading]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 477354c3-7e02-4e6c-ba0e-a73ccaf6adcc
+      suno_created: 2026-08-23T07:17:23Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/07.mp3
 
   - id: s_0291
     title: Wages and Weather
@@ -633,7 +699,15 @@ songs:
       and it was the warmest room we had that season.
 
       [Outro - fade on the one-handed piano]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 96ba6729-1d41-4a1e-a22d-0ff99ebb4969
+      suno_created: 2026-08-23T07:17:57Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/08.mp3
 
   - id: s_0292
     title: Don't Wait Up for the Yard
@@ -705,7 +779,15 @@ songs:
       and we have both known how that ends since the beginning.
 
       [Outro - fade on the quiet pipes]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 616b41ea-1d0f-4bee-baa1-661f46936190
+      suno_created: 2026-08-23T07:18:25Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/09.mp3
 
   - id: s_0293
     title: Straight Through Meridian
@@ -776,7 +858,15 @@ songs:
       and everybody at the far end gets most of what they wanted.
 
       [Outro - cold stop]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 44634816-d369-421e-b28b-2a7abb6f4b94
+      suno_created: 2026-08-23T07:18:51Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/10.mp3
 
   - id: s_0294
     title: Count the Loud Ones
@@ -849,7 +939,15 @@ songs:
       including the pieces of it that hold the roof up.
 
       [Outro - fade on the railings]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 4778410a-b9c2-447f-8630-93b139c0d074
+      suno_created: 2026-08-23T07:19:20Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/11.mp3
 
   - id: s_0295
     title: Nothing Sounds Like That Room
@@ -919,7 +1017,15 @@ songs:
       and five voices will still carry the way that room answered.
 
       [Outro - held chord, the stacked voices sustaining]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 94cfb549-2fd9-4a81-9379-8356deb81889
+      suno_created: 2026-08-23T07:20:21Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/12.mp3
 
   - id: s_0296
     title: Home on the Slow Circuit
@@ -988,4 +1094,12 @@ songs:
       Get home safely and we will see you in the spring.
 
       [Outro - held chord, left ringing in the hall]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 9a47f542-3f85-4a5e-8d0f-79c1d36f651f
+      suno_created: 2026-08-23T07:21:23Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_034/13.mp3

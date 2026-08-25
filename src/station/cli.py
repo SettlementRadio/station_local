@@ -64,6 +64,7 @@ CONFIG_FREE = frozenset(
         "version",
         "music-albums",
         "music-screen",
+        "music-dispatch",
         "music-analyse",
         "music-tag",
         "music-catalogue",
@@ -214,6 +215,31 @@ def music_screen(genre: str = _GENRE_FILTER) -> None:
             "\nRecord the verdict on each of these in music/CONSTANTS.md §3 — cleared and "
             "rejected both, or the same collision gets proposed again next genre."
         )
+
+
+@app.command("music-dispatch")
+def music_dispatch(
+    genre: str = _GENRE_FILTER,
+    raw: str = typer.Option(None, "--raw", help="the pile to file; default music/audio/RAW"),
+) -> None:
+    """File a pile of Suno takes into `music/audio/`, proved against the lyric each one carries."""
+    from station.music import console, dispatch
+
+    music = Path.cwd() / "music"
+    try:
+        plan, waiting = dispatch.prepare(
+            music, Path(raw) if raw else music / dispatch.RAW_DIR, genre or None
+        )
+    except dispatch.DispatchError as exc:
+        typer.secho(f"\n{exc}\n", err=True, fg="red")
+        raise typer.Exit(code=1) from None
+    console.dispatch_plan(plan, waiting)
+    console.dispatch_summary(plan)
+    if not plan.ok:
+        raise typer.Exit(code=1)
+    filed, path = dispatch.commit(music, plan)
+    typer.secho(f"\n{filed} take(s) filed · both ends recorded in {path.name}", fg="green")
+    typer.echo("  next: write each take: block from that manifest, then `make music-analyse`.")
 
 
 @app.command("music-analyse")

@@ -44,13 +44,22 @@ album:
     be heard against each other. Nobody is added to the line-up anywhere.
 
 generation:
-  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-31. Suno Pro, model v5.5, remixing disabled — the same
+  # account, tier and settings as the pilot and as relay-pop, so 2026-08's licence evidence
+  # in music/licence-evidence/ covers these takes too. Times are UTC, as the files report
+  # them, and every one of them was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-23
+  sittings:
+    - {date: 2026-08-23, from: '20:18:26', to: '20:25:19', tracks: [1, 2, 3, 4, 5, 6, 7, 8]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW by `make music-dispatch`, which matched every take
+    against the lyric it carries in its own tags rather than against its filename, and
+    refused to move anything until all of them formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric.
 
 songs:
   - id: s_1081
@@ -121,7 +130,15 @@ songs:
       and he was talking about the hall and I am not.
 
       [Outro - cold stop, amplified pipes last]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 03e9887b-b6ea-4f22-b10b-06ce1ffafb36
+      suno_created: 2026-08-23T20:18:26Z
+      lyric_match: 0.8641      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_132/01.mp3
 
   - id: s_1082
     title: Argue It in the Hall
@@ -189,7 +206,15 @@ songs:
       Somebody still has to be the one who leaves.
 
       [Outro - cold stop on the bass]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: d5f3176c-9879-4c50-9960-c4c4474fce99
+      suno_created: 2026-08-23T20:19:34Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_132/02.mp3
 
   - id: s_1083
     title: Whoever Stays Plays
@@ -262,7 +287,15 @@ songs:
       Somebody is always missing. The hall does not care.
 
       [Outro - fade on guitar and alloy]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 025f342a-4766-4048-9739-c9da67bbf255
+      suno_created: 2026-08-23T20:21:50Z
+      lyric_match: 0.6667      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_132/03.mp3
 
   - id: s_1084
     title: New Hands on the Low End
@@ -331,7 +364,15 @@ songs:
       Do not let anybody move that one up a tone.
 
       [Outro - fade on the repeated chorus]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 2a827e62-d246-4437-a8a2-fcf6295b6445
+      suno_created: 2026-08-23T20:22:47Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_132/04.mp3
 
   - id: s_1085
     title: Same Riff, More of It
@@ -403,7 +444,15 @@ songs:
       and if you disagree you have not been listening properly.
 
       [Outro - cold stop, all together]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: e765d7c2-31f0-4d6b-ae33-4458fb953bcb
+      suno_created: 2026-08-23T20:23:20Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_132/05.mp3
 
   - id: s_1086
     title: The Hall Answers Back
@@ -475,7 +524,15 @@ songs:
       is the one where you cannot tell which is which.
 
       [Outro - held note, left to decay in the hall]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 0623f750-ef10-4633-9f3b-fa8032bc0958
+      suno_created: 2026-08-23T20:24:13Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_132/06.mp3
 
   - id: s_1087
     title: Count the Empty Seats
@@ -543,7 +600,15 @@ songs:
       and you do not tell the band until the season is over.
 
       [Outro - fade on the acoustic pipes]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 7a6f0465-4e62-4b0e-98b2-9c914067b95f
+      suno_created: 2026-08-23T20:24:42Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_132/07.mp3
 
   - id: s_1088
     title: Still the Same Four
@@ -614,4 +679,12 @@ songs:
       and I have never once managed to listen to it all the way through.
 
       [Outro - held chord, both basses on it]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: e0557af6-dffd-47c8-9978-93bdde8b08ff
+      suno_created: 2026-08-23T20:25:19Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_132/08.mp3

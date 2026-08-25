@@ -2741,3 +2741,93 @@ in the month the note says it covers is a note where one of the two rows is wron
 **It is a gate, like `make music-tag`.** Red on any failure. There is no `unclaimed` sweep and no
 `pending` state, because unlike music the audio *is* the input here — there is no manifest yet for
 a file to be missing from, and I-06 is what builds one.
+
+---
+
+### D-093 · The dispatch is a make target with D-091's proof inside it, and Suno rewrites the words — 2026-08-25
+
+**M-31 filed 110 lane-rock takes, and the check that M-30 did by hand is now `make music-dispatch`.**
+D-091 established the method — match a take to a song by the lyric the file carries in its own tags,
+never by filename order — and left it as something an agent did once in a scratchpad. Lane-rock is
+the second of nine piles and there are seven more coming, so the method is now a target with a unit
+test on both of D-091's failure shapes: a song claimed by two takes, and a song claimed by none.
+
+**It refuses a pile whole or files all of it.** Three conditions, and every one of them is the defect
+M-30 found rather than an opinion about how good a match should be: every take claims exactly one
+song, no song is claimed twice, and no waiting song is left unclaimed. Two thresholds back them up —
+a best match under `0.30`, or a margin under `0.20` over the runner-up, stops the run. Lane-rock's
+weakest take scored `0.46` with a margin of `0.36`, so both floors sit well below what a real pile
+produces and are there to catch a file that belongs to another card or to nothing.
+
+**`difflib`'s `autojunk` had to be switched off, and this is worth writing down because it silently
+produced nonsense.** SequenceMatcher treats any element appearing in more than 1% of a long sequence
+as junk; on English text that is every common word, and on character sequences it is every character.
+The first pass of this matcher compared characters with the default settings and returned 0.03 for a
+take that was plainly its own lyric — three files then "disagreed" with their filenames and 110 songs
+appeared to collapse onto 107. Word-level comparison with `autojunk=False` returns 1.00 for the same
+pair. **A similarity score that has not been sanity-checked against a known-identical pair is not
+evidence**, and it nearly became the basis for refusing a correct pile.
+
+**The finding that matters is not the filing — it is that Suno does not sing what it is given.**
+93 of the 110 takes match their written lyric exactly. The other 17 drift, and the drift is not
+noise: `s_1083` sings its lyric twice over (600 words against 300), `s_0335` drops about a quarter of
+it (258 against 345), and `s_0336` and `s_1076` are reworded line by line — *cargo* becomes *pallet*,
+*favour* becomes *prank*, *"Nobody who wrote the numbers has been down here to look"* becomes
+*"Nobody who signed the numbers has walked this floor."* Custom mode with an exact lyric box does not
+guarantee an exact vocal, and nothing before this card had measured that because relay-pop's 60 came
+back clean.
+
+**Two songs now fail §12 rule 5 on what is actually sung.** `s_0336` and `s_1092` each lost the word
+*settlement* and carry one of the world's own nouns rather than two. `make check` counts the written
+lyric and stays green, correctly — the written lyric is the only thing that exists before a sitting,
+and rewriting it to match a take would be falsifying the record rather than fixing anything. But the
+station broadcasts the take. **This is recorded as a finding for the operator's ear and for M-39, not
+as a number to edit and not as a reason to regenerate anything.** If it recurs at this rate across
+the remaining seven genres it is roughly twelve songs in five hundred, and the question of whether
+rule 5 should also be counted against the sung words is then a card of its own.
+
+**Filing the replacement exposed a flaw in the matcher and fixed it.** The first version matched a
+pile only against the songs still waiting for audio, on the reasoning that a finished song is not a
+candidate. Topping up `s_0340` on its own then had a candidate pool of exactly one, which turns
+*which song is this* into a question with no wrong answer: the take would have been filed as `s_0340`
+whatever it contained, and the guard against a one-song pool was the only thing that stopped it.
+**A take is now matched against every written lyric in the genre and filed only against the ones
+still waiting**, so the pool is 110 rather than 1, and a take that belongs to a song already on disk
+is refused by name instead of being forced into the gap. The replacement filed at 88% with a 72%
+margin over its runner-up.
+
+**The replacement is a different generation, not the same file fetched again.** Its Suno id is
+`46c4ba85-3cc9-4a0d-811e-befc4e98e555`, created three seconds *before* the truncated
+`26f811f7-be07-4bc0-ac11-f8e236790408` — the vendor returns two takes per prompt and the operator
+downloaded the sibling. `s_0340` is therefore the one song on this record whose `attempts:` is
+knowable, and it says `2`.
+
+**`attempts:` is null on the other 109 and that is honest rather than lazy.** The takes carry a Suno id and
+the vendor's creation time and nothing about how many generations preceded them, and M-30's `1` was
+recorded by the person who sat there. Nothing in the artefacts can recover it after the fact, so the
+field says null and the operator can fill it in if they kept a count.
+
+---
+
+### D-094 · The four cards for the two unpressed forms are deleted, and their numbers retire with them — 2026-08-25
+
+**Operator decision.** `M-23` and `M-32` (deck-talk lyrics and audio) and `M-26` and `M-35`
+(pulse-dance lyrics and audio) are removed from `music/MUSIC_TASKS.md`. They asked for work that
+cannot exist: COMMISSION.md §2 makes deck-talk and pulse-dance the two forms **the station does not
+hold**, D-068's re-weight moved their 130 songs into the other five genres, and the wiki gives both
+of them zero layer-A bands, zero layer-A albums and zero playable songs. Their bands, feuds, credits
+and album stories all stay exactly where they are in layer B — a presenter can talk about them all
+night — and none of it is recorded, which is §1 working as designed rather than a gap.
+
+**Why it needed deleting rather than a note.** The stage-5 order table still carried the song counts
+every genre had *before* the re-weight, so it read `M-23 deck-talk — 70 songs` and looked like the
+next card in the queue. It was: an agent finishing M-31 read that row, set the NEXT marker to M-23,
+and told the operator that seventy deck-talk lyrics were the next job. A row that has already caused
+one wrong hand-off will cause another. The table now carries the wiki's numbers — frontier-reels 95
+not 65, old-system sessions 90 not 60, void-lounge 55 not 40, core harmonies 20 not 15, void ballads
+25 not 10 — and stage 5 is seven genres rather than nine.
+
+**The numbers retire with the cards and are never reused.** `MUSIC_TASKS.md`'s own rule is that a
+number is an identity for the life of the project — in git, in `RUNBOOK.md`, in this file — and not a
+position in a queue. So the two card headings that used to be written as the ranges `M-21 … M-29` and
+`M-30 … M-38` now list the seven numbers each actually covers, holes and all. Nothing is renumbered.

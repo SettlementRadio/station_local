@@ -42,13 +42,22 @@ album:
     and is written into the lyric as staging rather than removed.
 
 generation:
-  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-31. Suno Pro, model v5.5, remixing disabled — the same
+  # account, tier and settings as the pilot and as relay-pop, so 2026-08's licence evidence
+  # in music/licence-evidence/ covers these takes too. Times are UTC, as the files report
+  # them, and every one of them was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-20
+  sittings:
+    - {date: 2026-08-20, from: '07:36:52', to: '07:40:20', tracks: [1, 2, 3, 4, 5, 6, 7, 8]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW by `make music-dispatch`, which matched every take
+    against the lyric it carries in its own tags rather than against its filename, and
+    refused to move anything until all of them formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric.
 
 songs:
   - id: s_0276
@@ -118,7 +127,15 @@ songs:
       and the hall will be paid for and the doors will be open.
 
       [Outro - cold stop on the low pipe]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: fd290a52-16f4-40a4-802d-3f1d20c8d401
+      suno_created: 2026-08-20T07:36:52Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_033/01.mp3
 
   - id: s_0277
     title: Four Hundred Copies
@@ -182,7 +199,15 @@ songs:
       and the number will be bigger and the crate will still be ours.
 
       [Outro - cold stop]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 3f73fea2-5e93-4422-a38f-9ffc14798785
+      suno_created: 2026-08-20T07:37:29Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_033/02.mp3
 
   - id: s_0278
     title: Pipes Before Sunrise
@@ -255,7 +280,15 @@ songs:
       and the walls gave back the last note as the sun came up.
 
       [Outro - held pipe note, left to decay in the hall]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: ac1943c5-860a-46f9-8338-a9ac6bad231b
+      suno_created: 2026-08-20T07:37:55Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_033/03.mp3
 
   - id: s_0279
     title: Hold the Circuit Open
@@ -331,7 +364,15 @@ songs:
       and it is the only line from us that anybody remembers.
 
       [Outro - fade on the repeated chorus]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 4e29c0dc-ec1a-42cb-9689-5c104a857c0f
+      suno_created: 2026-08-20T07:38:26Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_033/04.mp3
 
   - id: s_0280
     title: Whose Route Is It
@@ -403,7 +444,15 @@ songs:
       and so will both of you, and so will the road.
 
       [Outro - cold stop, both bass phrases at once]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: afc11775-f8a0-49cd-a867-f393abfa4b1a
+      suno_created: 2026-08-20T07:38:55Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_033/05.mp3
 
   - id: s_0281
     title: Ash on the Windows
@@ -473,7 +522,15 @@ songs:
       It was a long week. Do not clean the windows.
 
       [Outro - fade on the pipes and the ventilation]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 80677016-4a57-4c2c-a4b5-0cccf5af9eae
+      suno_created: 2026-08-20T07:39:26Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_033/06.mp3
 
   - id: s_0282
     title: Nobody Sleeps Through It
@@ -540,7 +597,15 @@ songs:
       and not one of them has had a full night since we started.
 
       [Outro - fade on the walking bass]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 9d4b7e1a-91d8-4c23-abe8-d2d9a19f6914
+      suno_created: 2026-08-20T07:39:53Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_033/07.mp3
 
   - id: s_0283
     title: Take the Long Way In
@@ -610,4 +675,12 @@ songs:
       We will leave the door open. We are not going anywhere.
 
       [Outro - held chord, the room still singing over it]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-20
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: b0790920-62ca-4912-a4ca-f178b528cdc7
+      suno_created: 2026-08-20T07:40:20Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_033/08.mp3

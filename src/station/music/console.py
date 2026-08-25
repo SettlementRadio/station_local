@@ -14,6 +14,7 @@ from pathlib import Path
 import typer
 
 from station.music import catalogue as catalogue_module
+from station.music import dispatch as dispatch_module
 from station.music import tag as tagger
 from station.music.analyse import Measurement
 from station.music.screen import Report
@@ -193,3 +194,59 @@ def _rotation(playable: list[catalogue_module.Track]) -> None:
         f"  rotation: {heavy} in heavy rotation, {gold} gold — a record "
         f"{catalogue_module.GOLD_AFTER_YEARS} in-world years old or more is catalogue (§8, D-085)"
     )
+
+
+# --- make music-dispatch ----------------------------------------------------------------------
+
+
+DISPATCH_HEADER = f"{'TAKE':<12}{'SONG':<9}{'TRACK':<18}{'MATCH':<8}{'GAP':<7}"
+
+
+def dispatch_plan(plan: dispatch_module.Plan, waiting: int) -> None:
+    """Every take, the song its own words claim, and how clearly it claims it (D-091)."""
+    typer.echo(f"{len(plan.assignments)} take(s) against {waiting} song(s) waiting for audio\n")
+    typer.echo(DISPATCH_HEADER)
+    album = ""
+    for found in sorted(plan.assignments, key=lambda a: (a.song.album_id, a.song.track_number)):
+        if found.song.album_id != album:
+            album = found.song.album_id
+            typer.secho(f"\n{album}", bold=True)
+        weak = found.score < _CLOSE_ENOUGH
+        typer.secho(
+            f"{found.take.path.name:<12}{found.song.song_id:<9}"
+            f"{found.song.track_number:>2}  {found.song.title[:14]:<14}"
+            f"{found.score:>5.0%}   {found.gap:>+5.0%}",
+            fg="yellow" if weak else None,
+        )
+
+
+# A take under this still files — the gap and the bijection are what prove it — but it is worth the
+# operator's eye, because it means Suno sang something a fair way from the words it was given.
+_CLOSE_ENOUGH = 0.85
+
+# How many drifted song ids to name before the line stops being readable.
+_NAMED_IN_LINE = 6
+
+
+def dispatch_summary(plan: dispatch_module.Plan) -> None:
+    """Why the pile may not be filed, or what filing it would do. Refused whole, never in part."""
+    drifted = [f for f in plan.assignments if f.score < _CLOSE_ENOUGH]
+    if drifted:
+        typer.secho(
+            f"\n{len(drifted)} take(s) sing a fair way from the words they were given — "
+            f"{', '.join(f.song.song_id for f in drifted[:_NAMED_IN_LINE])}"
+            f"{' …' if len(drifted) > _NAMED_IN_LINE else ''}",
+            fg="yellow",
+        )
+        typer.echo("  that is a finding for your ear, not a reason not to file them.")
+    if plan.unclaimed_songs:
+        typer.secho(
+            f"\n{len(plan.unclaimed_songs)} song(s) no take claims: "
+            f"{', '.join(plan.unclaimed_songs)}",
+            fg="red",
+        )
+        typer.echo("  a lyric with no audio is a song that was never generated (D-091).")
+    for problem in plan.problems:
+        typer.secho(f"  {problem}", fg="red")
+    if not plan.ok:
+        typer.secho("\nnothing was moved.", fg="red")

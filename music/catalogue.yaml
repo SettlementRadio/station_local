@@ -7378,18 +7378,18 @@ tracks:
   artist: b_016
   title: Nothing Loose
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_032/01.mp3
+  duration_sec: 185.96
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: A
   mood:
   - driving
   - blunt
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Wen Arbo built the chorus out of the check the crew shouts before a bay door opens, and the band
     kept the counting-in shout on the take.
 - id: s_0267
@@ -7397,18 +7397,18 @@ tracks:
   artist: b_016
   title: Count Me on the Manifest
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_032/02.mp3
+  duration_sec: 242.28
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: A
   mood:
   - defiant
   - singalong
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Dessa Kelm refused to record a solo lead on a song about being listed with everybody else, so
     all four members sing the last chorus.
 - id: s_0268
@@ -7416,36 +7416,36 @@ tracks:
   artist: b_016
   title: Wrong Bay, Right Crew
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_032/03.mp3
+  duration_sec: 242.24
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: A
   mood:
   - wry
   - rowdy
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The second verse names the four loading errors the band made during one night shift in 2623.
 - id: s_0269
   album: al_032
   artist: b_016
   title: Hold the Sheet Down
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_032/04.mp3
+  duration_sec: 199.8
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: A
   mood:
   - urgent
   - hard
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Teff Onda plays the whole track with a strapped wrist, and the band declined the label's offer
     to bring in a session drummer.
 - id: s_0270
@@ -7453,18 +7453,18 @@ tracks:
   artist: b_016
   title: Sleep on the Ride Back
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_032/05.mp3
+  duration_sec: 263.08
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - tired
   - warm
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Sel Ardin arranged the backing voices to drop out one at a time in the order the crew usually
     falls asleep.
 - id: s_0271
@@ -7472,36 +7472,36 @@ tracks:
   artist: b_016
   title: Weather at the Gate
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_032/06.mp3
+  duration_sec: 228.92
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: A
   mood:
   - tense
   - building
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The band recorded with the shed door open and the wind under the second verse was not added afterwards.
 - id: s_0272
   album: al_032
   artist: b_016
   title: You Left the Light On
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_032/07.mp3
+  duration_sec: 184.8
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - tender
   - plain
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Orl Mance wrote it for a partner working the opposite shift, and the band cut the guitar solo
     to keep it under three minutes.
 - id: s_0273
@@ -7509,18 +7509,18 @@ tracks:
   artist: b_016
   title: Cheap Coffee, Loud Room
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_032/08.mp3
+  duration_sec: 214.44
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: A
   mood:
   - rowdy
   - comic
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Talla Venn played the lead figure on a borrowed instrument after her own left Cold Harbor on a
     transfer that had already departed.
 - id: s_0274
@@ -7528,18 +7528,18 @@ tracks:
   artist: b_016
   title: Twelve Hours to Say It
   track_no: 9
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_032/09.mp3
+  duration_sec: 200.76
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: A
   mood:
   - regretful
   - driving
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The lyric is the argument Wen Arbo did not have before a twelve-hour run, written down in the
     order he had rehearsed it.
 - id: s_0275
@@ -7547,18 +7547,18 @@ tracks:
   artist: b_016
   title: Everything Rattles
   track_no: 10
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_032/10.mp3
+  duration_sec: 256.28
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - triumphant
   - loud
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Brin Noll retuned the shed's loose panel fixings before the session so the room would rattle with
     the chorus instead of against it.
 - id: s_0276
@@ -7566,18 +7566,18 @@ tracks:
   artist: b_017
   title: Burn Day Overtime
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_033/01.mp3
+  duration_sec: 178.0
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - driving
   - celebratory
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Havel Ost wrote it during a shift he had volunteered for and finished the second verse walking
     home from it.
 - id: s_0277
@@ -7585,36 +7585,36 @@ tracks:
   artist: b_017
   title: Four Hundred Copies
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_033/02.mp3
+  duration_sec: 202.4
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - proud
   - wry
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The title is the size of the only pressing Deep Register would pay for before the festival.
 - id: s_0278
   album: al_033
   artist: b_017
   title: Pipes Before Sunrise
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_033/03.mp3
+  duration_sec: 318.32
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - heavy
   - solemn
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ivena Sorn and Juno Kerrick played the two resonance-pipe parts in the same take, standing at
     opposite ends of the hall.
 - id: s_0279
@@ -7622,18 +7622,18 @@ tracks:
   artist: b_017
   title: Hold the Circuit Open
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_033/04.mp3
+  duration_sec: 277.52
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - defiant
   - loud
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The recorded chorus is the version the festival crowd sang back on the first night, not the one
     the band arrived with.
 - id: s_0280
@@ -7641,18 +7641,18 @@ tracks:
   artist: b_017
   title: Whose Route Is It
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_033/05.mp3
+  duration_sec: 263.36
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - angry
   - rowdy
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Saul Ravik built the bass figure out of an argument between two crews that he had refused to take
     a side in.
 - id: s_0281
@@ -7660,18 +7660,18 @@ tracks:
   artist: b_017
   title: Ash on the Windows
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_033/06.mp3
+  duration_sec: 297.08
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - weary
   - warm
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The issued take keeps a false start, because Tor Dolo's count-in landed with the hall's ventilation
     and the band could not repeat it.
 - id: s_0282
@@ -7679,18 +7679,18 @@ tracks:
   artist: b_017
   title: Nobody Sleeps Through It
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_033/07.mp3
+  duration_sec: 223.04
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - rowdy
   - comic
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Oren Saye played the whole track after one run-through, having discarded the chart as he does
     on every session.
 - id: s_0283
@@ -7698,18 +7698,18 @@ tracks:
   artist: b_017
   title: Take the Long Way In
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_033/08.mp3
+  duration_sec: 283.6
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - expansive
   - hopeful
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Everyone in the hall sings the closing chorus, including the two engineers, who are credited on
     the sleeve by first name only.
 - id: s_0284
@@ -7717,18 +7717,18 @@ tracks:
   artist: b_017
   title: Hammer Down the Line
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/01.mp3
+  duration_sec: 267.32
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - driving
   - anthemic
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The band recorded the opening riff twenty-two times and chose the second take after playing all
     twenty-two back in one sitting.
 - id: s_0285
@@ -7736,18 +7736,18 @@ tracks:
   artist: b_017
   title: Six Days In
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/02.mp3
+  duration_sec: 288.36
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - hoarse
   - defiant
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Havel Ost sings the whole track on the voice he had left after losing it on the sixth day of the
     sessions.
 - id: s_0286
@@ -7755,18 +7755,18 @@ tracks:
   artist: b_017
   title: Put My Name Beside It
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/03.mp3
+  duration_sec: 257.84
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - angry
   - hard
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ade Prosk wrote the verse the evening the band argued about writing shares, and it is the first
     song of theirs he is credited on.
 - id: s_0287
@@ -7774,18 +7774,18 @@ tracks:
   artist: b_017
   title: Long Alloy
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/04.mp3
+  duration_sec: 259.4
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - heavy
   - solemn
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Juno Kerrick and Ivena Sorn tuned the hall's largest pipe to the room rather than to the band,
     and every guitar was retuned to match it.
 - id: s_0288
@@ -7793,18 +7793,18 @@ tracks:
   artist: b_017
   title: Everything Runs Hot
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/05.mp3
+  duration_sec: 231.36
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - urgent
   - loud
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Tor Dolo plays a cracked cymbal for the whole take because the replacement did not arrive before
     the hall booking ended.
 - id: s_0289
@@ -7812,18 +7812,18 @@ tracks:
   artist: b_017
   title: The Shift You Don't Come Back From
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/06.mp3
+  duration_sec: 292.76
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - ominous
   - building
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The lyric was assembled from a list of near-misses the band collected from the pipe hall's own
     maintenance crew.
 - id: s_0290
@@ -7831,36 +7831,36 @@ tracks:
   artist: b_017
   title: Second Bass Player
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/07.mp3
+  duration_sec: 291.04
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - wry
   - rowdy
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ade Prosk asked for the title to be changed and the rest of the band voted to keep it.
 - id: s_0291
   album: al_034
   artist: b_017
   title: Wages and Weather
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/08.mp3
+  duration_sec: 233.56
+  intro_ramp_sec: 15.46
+  outro_type: sustain
+  category: gold
   mood:
   - weary
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Calo Meret plays the piano part with one hand so that the resonance pipes could keep the low register
     to themselves.
 - id: s_0292
@@ -7868,36 +7868,36 @@ tracks:
   artist: b_017
   title: Don't Wait Up for the Yard
   track_no: 9
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/09.mp3
+  duration_sec: 314.0
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - tender
   - plain
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Havel Ost recorded the vocal sitting down, which he had refused to do on any previous record.
 - id: s_0293
   album: al_034
   artist: b_017
   title: Straight Through Meridian
   track_no: 10
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/10.mp3
+  duration_sec: 268.6
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - driving
   - bright
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Two verses were cut on the last day, after Deep Register asked for a record that would fit one
     side of a pressing.
 - id: s_0294
@@ -7905,18 +7905,18 @@ tracks:
   artist: b_017
   title: Count the Loud Ones
   track_no: 11
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/11.mp3
+  duration_sec: 259.04
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - rowdy
   - comic
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Brin Noll built the percussion out of the hall's loose railing fittings, retuning them between
     takes.
 - id: s_0295
@@ -7924,18 +7924,18 @@ tracks:
   artist: b_017
   title: Nothing Sounds Like That Room
   track_no: 12
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/12.mp3
+  duration_sec: 261.56
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - nostalgic
   - expansive
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Sel Ardin assembled the closing harmony from eleven separate takes sung by five different people
     in the hall.
 - id: s_0296
@@ -7943,18 +7943,18 @@ tracks:
   artist: b_017
   title: Home on the Slow Circuit
   track_no: 13
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_034/13.mp3
+  duration_sec: 277.56
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - warm
   - resolute
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The final chorus is the one the band had closed every performance with since 2594 and had never
     put on a record.
 - id: s_0297
@@ -7962,18 +7962,18 @@ tracks:
   artist: b_018
   title: Nothing Rides Free
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_035/01.mp3
+  duration_sec: 262.56
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - blunt
   - driving
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Isa Lorne took the chorus straight from the wording of a haulage invoice the band had disputed
     and lost.
 - id: s_0298
@@ -7981,18 +7981,18 @@ tracks:
   artist: b_018
   title: Pressed in One Week
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_035/02.mp3
+  duration_sec: 232.0
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - proud
   - rowdy
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The band recorded to the new shared press timing in the week Forge adopted it, rather than wait
     for a slot on the old format.
 - id: s_0299
@@ -8000,18 +8000,18 @@ tracks:
   artist: b_018
   title: Ballast and Bad Coffee
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_035/03.mp3
+  duration_sec: 235.48
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - wry
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Neve Atlin plays a ballast plate instead of a floor tom for the whole song, because the kit arrived
     without one.
 - id: s_0300
@@ -8019,18 +8019,18 @@ tracks:
   artist: b_018
   title: Where the Line Bends
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_035/04.mp3
+  duration_sec: 246.04
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - tense
   - building
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Perin Dask plays the lead figure a half-step against the pipes, which Kolm Estry insisted on keeping
     over the label's objection.
 - id: s_0301
@@ -8038,18 +8038,18 @@ tracks:
   artist: b_018
   title: Say It at the Gate
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_035/05.mp3
+  duration_sec: 266.48
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - urgent
   - hard
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The lyric names the three things Isa Lorne says out loud before every shift and had never told
     the rest of the band about.
 - id: s_0302
@@ -8057,18 +8057,18 @@ tracks:
   artist: b_018
   title: Two Bunks, One Window
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_035/06.mp3
+  duration_sec: 200.0
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - tender
   - plain
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Oren Saye remembered Isa Lorne's original key from a rehearsal two years earlier and played it
     back to her when she could not find it.
 - id: s_0303
@@ -8076,18 +8076,18 @@ tracks:
   artist: b_018
   title: Everyone Off the Deck
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_035/07.mp3
+  duration_sec: 303.84
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - triumphant
   - loud
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The buzz under the last chorus is the cracked bridge of the scarred instrument Talla Venn has
     been repairing between sessions since 2591.
 - id: s_0304
@@ -8095,18 +8095,18 @@ tracks:
   artist: b_018
   title: Slow Yard
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_036/01.mp3
+  duration_sec: 252.8
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - weary
   - heavy
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The band tracked the whole song under the tempo they play it at live, and Isa Lorne has said it
     is the only recording of theirs she prefers to the performance.
 - id: s_0305
@@ -8114,18 +8114,18 @@ tracks:
   artist: b_018
   title: Same Route Every Year
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_036/02.mp3
+  duration_sec: 257.4
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: A
   mood:
   - nostalgic
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The second verse lists the four settlements Ballast Weather have played every year since 2600,
     in the order the route takes them.
 - id: s_0306
@@ -8133,18 +8133,18 @@ tracks:
   artist: b_018
   title: Rust Doesn't Argue
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_036/03.mp3
+  duration_sec: 234.16
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - blunt
   - driving
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Kolm Estry wrote the title on the back of a maintenance report and the band recorded the song
     before anyone had written a second verse.
 - id: s_0307
@@ -8152,18 +8152,18 @@ tracks:
   artist: b_018
   title: Give the Solo Away
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_036/04.mp3
+  duration_sec: 258.36
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: A
   mood:
   - generous
   - rowdy
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Perin Dask stood down and the solo is played by a loader the band met at the yard gate, credited
     on the sleeve by name.
 - id: s_0308
@@ -8171,18 +8171,18 @@ tracks:
   artist: b_018
   title: Ask Me When I'm Off
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_036/05.mp3
+  duration_sec: 238.44
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - wry
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Calo Meret arrived with the arrangement copied out in full and removed most of it once the band
     started playing, as he does.
 - id: s_0309
@@ -8190,18 +8190,18 @@ tracks:
   artist: b_018
   title: Last Bell at the Hall
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_036/06.mp3
+  duration_sec: 232.68
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: A
   mood:
   - reflective
   - sustained
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ivena Sorn ends the track alone on the pipes and marked the tuning on her cuff, and it is the
     tuning the band have used ever since.
 - id: s_0310
@@ -8209,18 +8209,18 @@ tracks:
   artist: b_018
   title: Everything Still Moves
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_036/07.mp3
+  duration_sec: 253.04
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - resolute
   - loud
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Sel Ardin built the closing chorus around Isa Lorne's guide vocal without telling her, and the
     guide take is the one on the record.
 - id: s_0311
@@ -8228,18 +8228,18 @@ tracks:
   artist: b_019
   title: Every Crew Signs
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_037/01.mp3
+  duration_sec: 173.4
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - defiant
   - singalong
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The song is about the argument that produced the band's one-line credit, which the co-operative
     agreed to before recording began.
 - id: s_0312
@@ -8247,18 +8247,18 @@ tracks:
   artist: b_019
   title: Beyond the Usual Lanes
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_037/02.mp3
+  duration_sec: 224.44
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - expansive
   - driving
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The second verse names the four ports the record reached first once the shared press format let
     it travel past the band's own route.
 - id: s_0313
@@ -8266,18 +8266,18 @@ tracks:
   artist: b_019
   title: Burn Day Wages
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_037/03.mp3
+  duration_sec: 203.04
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - celebratory
   - rowdy
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The chorus is the one the crew shouted on the band's first burn day, and Dov Reyland has refused
     every suggestion to change a word of it.
 - id: s_0314
@@ -8285,36 +8285,36 @@ tracks:
   artist: b_019
   title: Split It Nine Ways
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_037/04.mp3
+  duration_sec: 258.68
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - wry
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Bel Corrow wrote the verse as an accurate account of how the band's earnings were divided in 2600.
 - id: s_0315
   album: al_037
   artist: b_019
   title: Somebody's Cousin on the Kit
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_037/05.mp3
+  duration_sec: 227.96
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - comic
   - loud
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Hess Vantry is not on this track; a relief hauler who had never recorded before plays the drums
     and is credited on the same line as everyone else.
 - id: s_0316
@@ -8322,18 +8322,18 @@ tracks:
   artist: b_019
   title: Fiddle on the Long Run
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_037/06.mp3
+  duration_sec: 253.88
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - bright
   - rowdy
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Nessa Dray changed the tempo halfway through the take with a look across the bay and the band
     followed her without stopping.
 - id: s_0317
@@ -8341,18 +8341,18 @@ tracks:
   artist: b_019
   title: Cold Bunk, Warm Letter
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_037/07.mp3
+  duration_sec: 248.36
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - tender
   - plain
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Dov Reyland sings the last verse an octave down because he had been awake through the whole of
     the previous night's session.
 - id: s_0318
@@ -8360,36 +8360,36 @@ tracks:
   artist: b_019
   title: Nobody Owns the Road
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_037/08.mp3
+  duration_sec: 237.32
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - anthemic
   - driving
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The title was chosen by a vote of the co-operative's members rather than by the band.
 - id: s_0319
   album: al_037
   artist: b_019
   title: Sign Off and Go Home
   track_no: 9
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_037/09.mp3
+  duration_sec: 248.36
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - warm
   - resolute
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Oren Saye plays the closing figure in the key Dov Reyland had used at the audition rather than
     the one written on the chart.
 - id: s_0320
@@ -8397,18 +8397,18 @@ tracks:
   artist: b_019
   title: Ten Ports Out
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_038/01.mp3
+  duration_sec: 242.4
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   - restless
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Dov Reyland wrote one verse at each of the first four ports of a single run and finished the rest
     at the fifth.
 - id: s_0321
@@ -8416,18 +8416,18 @@ tracks:
   artist: b_019
   title: The Year the Room Closed
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_038/02.mp3
+  duration_sec: 294.16
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - angry
   - heavy
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The band wrote it after a late-club room cancelled their booking without notice when its label
     folded in 2612.
 - id: s_0322
@@ -8435,18 +8435,18 @@ tracks:
   artist: b_019
   title: Whose Catalogue Is It
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_038/03.mp3
+  duration_sec: 238.12
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - bitter
   - hard
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ryke Alden wrote the riff the night the band heard a label's back catalogue had become disputed,
     and the words were added a month later.
 - id: s_0323
@@ -8454,18 +8454,18 @@ tracks:
   artist: b_019
   title: Four Voices, One Line
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_038/04.mp3
+  duration_sec: 266.64
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - warm
   - singalong
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Una Brack sings the top line alone here for the first time, having refused to do it on the band's
     previous record.
 - id: s_0324
@@ -8473,18 +8473,18 @@ tracks:
   artist: b_019
   title: Load Out in the Rain
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_038/05.mp3
+  duration_sec: 257.92
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - weary
   - driving
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The band kept the take in which the weather changed the sound of the covered bay halfway through
     the song.
 - id: s_0325
@@ -8492,18 +8492,18 @@ tracks:
   artist: b_019
   title: Don't Read the Contract Aloud
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_038/06.mp3
+  duration_sec: 219.36
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - wry
   - rowdy
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Bel Corrow reads four lines of a real haulage contract in the middle of the song, chosen because
     they contradict one another.
 - id: s_0326
@@ -8511,18 +8511,18 @@ tracks:
   artist: b_019
   title: Slow Berth
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_038/07.mp3
+  duration_sec: 271.2
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - reflective
   - sustained
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Calo Meret played the whole piano part with the lid closed, after the band asked for something
     quieter than the bay.
 - id: s_0327
@@ -8530,18 +8530,18 @@ tracks:
   artist: b_019
   title: Keep the Kit Loud
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_038/08.mp3
+  duration_sec: 204.76
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - rowdy
   - loud
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Brin Noll retuned the bay's loose metal before the engineers were allowed to place a microphone,
     which is the only condition he works under.
 - id: s_0328
@@ -8549,36 +8549,36 @@ tracks:
   artist: b_019
   title: Home Port Eventually
   track_no: 9
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_038/09.mp3
+  duration_sec: 234.68
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - hopeful
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Sel Ardin wrote the answering chorus during a session break and the band learned it in one pass.
 - id: s_0329
   album: al_039
   artist: b_019
   title: Hold the Whole Chorus
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_039/01.mp3
+  duration_sec: 171.56
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - anthemic
   - singalong
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Thirty-one members of the co-operative sing the final chorus, recorded in a transfer hall between
     two departures.
 - id: s_0330
@@ -8586,18 +8586,18 @@ tracks:
   artist: b_019
   title: Three Ports, One Take
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_039/02.mp3
+  duration_sec: 232.6
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - driving
   - restless
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The drums were recorded at one port, the guitars at the second and the vocals at the third, all
     inside a single run.
 - id: s_0331
@@ -8605,18 +8605,18 @@ tracks:
   artist: b_019
   title: Altered Credit
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_039/03.mp3
+  duration_sec: 223.0
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - bitter
   - hard
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ryke Alden wrote it after a copy of the band's own record reached them with a different writer's
     name printed on the label.
 - id: s_0332
@@ -8624,18 +8624,18 @@ tracks:
   artist: b_019
   title: The Between
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_039/04.mp3
+  duration_sec: 242.0
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - reflective
   - expansive
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Dov Reyland recorded the lead vocal alone in a sealed bay because he could not sing the second
     verse with the band watching.
 - id: s_0333
@@ -8643,18 +8643,18 @@ tracks:
   artist: b_019
   title: Talk to the Crew, Not Me
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_039/05.mp3
+  duration_sec: 239.64
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - wry
   - rowdy
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The verse is what Bel Corrow says to anyone who asks the band to decide something the co-operative
     has not voted on.
 - id: s_0334
@@ -8662,18 +8662,18 @@ tracks:
   artist: b_019
   title: Fourteen Hours to Meridian
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_039/06.mp3
+  duration_sec: 219.72
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - urgent
   - driving
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The tempo was set by the departure timer in the hall, which the band left running through the
     take.
 - id: s_0335
@@ -8681,18 +8681,18 @@ tracks:
   artist: b_019
   title: The Notice She Didn't Give
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_039/07.mp3
+  duration_sec: 218.92
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - tense
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Una Brack sang this the morning after the members' vote that changed how backing singers were
     paid, with her resignation already written.
 - id: s_0336
@@ -8700,18 +8700,18 @@ tracks:
   artist: b_019
   title: Two Bows, Neither Lent
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_039/08.mp3
+  duration_sec: 257.04
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - bright
   - rowdy
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Nessa Dray plays both fiddle parts herself, having refused to lend either bow to the guest player
     the co-operative had booked.
 - id: s_0337
@@ -8719,18 +8719,18 @@ tracks:
   artist: b_019
   title: Everything on the Manifest
   track_no: 9
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_039/09.mp3
+  duration_sec: 214.08
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - blunt
   - driving
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The lyric lists what the crew was carrying on the run the record was made during, in the manifest's
     own order.
 - id: s_0338
@@ -8738,18 +8738,18 @@ tracks:
   artist: b_019
   title: Pipes at the Turnaround
   track_no: 10
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_039/10.mp3
+  duration_sec: 279.52
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - solemn
   - sustained
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ivena Sorn played the pipe part in a hall she had not worked in since 2600 and refused a second
     take once the room had settled around the instrument.
 - id: s_0339
@@ -8757,36 +8757,36 @@ tracks:
   artist: b_019
   title: Hold Your Own Line
   track_no: 11
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_039/11.mp3
+  duration_sec: 204.68
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - defiant
   - loud
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The membership vote on the running order moved this track from last to eleventh by two votes.
 - id: s_0340
   album: al_039
   artist: b_019
   title: Wages at the End of It
   track_no: 12
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_039/12.mp3
+  duration_sec: 267.0
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - warm
   - resolute
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Calo Meret copied out a full arrangement and then cut it to a single sustained chord, which is
     what the record uses.
 - id: s_0341
@@ -20707,18 +20707,18 @@ tracks:
   artist: b_016
   title: Bay Rate
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_131/01.mp3
+  duration_sec: 219.56
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - blunt
   - driving
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Wen Arbo built the verse out of the four different rates the crew was paid for four different
     bays, which they had argued about all that week.
 - id: s_1077
@@ -20726,18 +20726,18 @@ tracks:
   artist: b_016
   title: Door Out of Use
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_131/02.mp3
+  duration_sec: 225.76
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - wry
   - rowdy
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The band only had the bay that night because its door was out of use, and the take keeps the repair
     crew's radio under the second verse.
 - id: s_1078
@@ -20745,18 +20745,18 @@ tracks:
   artist: b_016
   title: Second Hitch
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_131/03.mp3
+  duration_sec: 178.64
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - defiant
   - singalong
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Dessa Kelm wrote it about being the crew called in when the first one does not turn up, and the
     band took their name from it rather than the other way round.
 - id: s_1079
@@ -20764,18 +20764,18 @@ tracks:
   artist: b_016
   title: Walk Home After
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_131/04.mp3
+  duration_sec: 216.44
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - tender
   - plain
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Wen Arbo wrote it about the walk back from the shed, and the band have never played a room they
     could not walk home from since.
 - id: s_1080
@@ -20783,36 +20783,36 @@ tracks:
   artist: b_016
   title: Nobody Signed Us
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_2/al_131/05.mp3
+  duration_sec: 239.64
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - proud
   - comic
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Teff Onda counts the band in by shouting the number of copies they had money for, which was sixty.
 - id: s_1081
   album: al_132
   artist: b_017
   title: Four Won't Fill It
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_132/01.mp3
+  duration_sec: 277.2
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - driving
   - defiant
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The title is what Juno Kerrick said to the rest of the band the first night he put the resonance
     pipes through an amplifier.
 - id: s_1082
@@ -20820,18 +20820,18 @@ tracks:
   artist: b_017
   title: Argue It in the Hall
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_132/02.mp3
+  duration_sec: 203.28
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - angry
   - hard
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Saul Ravik plays the bass here and it is the last song of the band's he ever played on, four days
     before he left over the amplification.
 - id: s_1083
@@ -20839,18 +20839,18 @@ tracks:
   artist: b_017
   title: Whoever Stays Plays
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_132/03.mp3
+  duration_sec: 479.2
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - wry
   - rowdy
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Havel Ost wrote it in one sitting the week the band was down to three players, and Juno Kerrick
     plays the bass part on it.
 - id: s_1084
@@ -20858,18 +20858,18 @@ tracks:
   artist: b_017
   title: New Hands on the Low End
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_132/04.mp3
+  duration_sec: 247.08
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - warm
   - singalong
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ade Prosk learned the band's whole set in nine days and plays this one in the key Saul Ravik had
     written it in.
 - id: s_1085
@@ -20877,18 +20877,18 @@ tracks:
   artist: b_017
   title: Same Riff, More of It
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_132/05.mp3
+  duration_sec: 291.52
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - heavy
   - loud
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Tor Dolo refused to play any harder to keep up with the amplified pipes, and the rest of the band
     came down to him instead.
 - id: s_1086
@@ -20896,18 +20896,18 @@ tracks:
   artist: b_017
   title: The Hall Answers Back
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_132/06.mp3
+  duration_sec: 338.84
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - expansive
   - solemn
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ivena Sorn plays the low pipe unamplified beside Juno Kerrick's amplified one, and it is the only
     place on the record the two can be heard against each other.
 - id: s_1087
@@ -20915,18 +20915,18 @@ tracks:
   artist: b_017
   title: Count the Empty Seats
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_132/07.mp3
+  duration_sec: 286.88
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - weary
   - blunt
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Havel Ost built the lyric out of the attendance figures for the band's own halls in 2610 and 2611,
     which he had kept.
 - id: s_1088
@@ -20934,18 +20934,18 @@ tracks:
   artist: b_017
   title: Still the Same Four
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_132/08.mp3
+  duration_sec: 266.36
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - resolute
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Saul Ravik and Ade Prosk both play the last chorus, and it is the only thing the two of them ever
     recorded together.
 - id: s_1089
@@ -20953,18 +20953,18 @@ tracks:
   artist: b_018
   title: The Route in Order
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_133/01.mp3
+  duration_sec: 268.0
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   - warm
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The running order is the order the band's annual route visits the four settlements, and Isa Lorne
     refused every rearrangement Deep Register proposed.
 - id: s_1090
@@ -20972,18 +20972,18 @@ tracks:
   artist: b_018
   title: First Hall of the Year
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_133/02.mp3
+  duration_sec: 242.48
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - bright
   - resolute
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Kolm Estry plays the hall's own resonance pipes rather than the band's, and Ivena Sorn spent the
     afternoon before it bringing them back into tune.
 - id: s_1091
@@ -20991,18 +20991,18 @@ tracks:
   artist: b_018
   title: Five Strings Will Do
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_133/03.mp3
+  duration_sec: 237.28
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - rowdy
   - comic
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Perin Dask broke a string two lines in and played the rest on five, and that is the take on the
     record.
 - id: s_1092
@@ -21010,18 +21010,18 @@ tracks:
   artist: b_018
   title: Nothing Signed at the Table
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_133/04.mp3
+  duration_sec: 279.28
+  intro_ramp_sec: 23.22
+  outro_type: cold
+  category: gold
   mood:
   - blunt
   - hard
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Isa Lorne wrote the verse out of what she says to anyone who puts a contract in front of her at
     the end of an evening.
 - id: s_1093
@@ -21029,18 +21029,18 @@ tracks:
   artist: b_018
   title: Yard Days
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_133/05.mp3
+  duration_sec: 291.0
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - weary
   - plain
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Isa Lorne paid for the three days in the Forge yard out of her own money after Deep Register declined
     to book a fifth room.
 - id: s_1094
@@ -21048,18 +21048,18 @@ tracks:
   artist: b_018
   title: Ask the Hall Keeper
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_133/06.mp3
+  duration_sec: 276.72
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - wry
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The verse is what the keeper of the second hall on the route has said to the band on arrival every
     year since 2600, word for word.
 - id: s_1095
@@ -21067,18 +21067,18 @@ tracks:
   artist: b_018
   title: Off Season
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_4/al_133/07.mp3
+  duration_sec: 275.76
+  intro_ramp_sec: 17.53
+  outro_type: fade
+  category: gold
   mood:
   - reflective
   - sustained
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Neve Atlin plays brushes here and nowhere else in the band's whole catalogue, at Isa Lorne's asking
     and after arguing against it for a week.
 - id: s_1096
@@ -21086,18 +21086,18 @@ tracks:
   artist: b_061
   title: One Day in Port
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_134/01.mp3
+  duration_sec: 187.0
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - driving
   - restless
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Rhea Molt wrote it walking from the berth to the hall and the band played it that night without
     anyone else having heard it; the take on the record is from the following morning.
 - id: s_1097
@@ -21105,18 +21105,18 @@ tracks:
   artist: b_061
   title: Three Ballots for a Speaker
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_134/02.mp3
+  duration_sec: 213.4
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - wry
   - rowdy
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The co-operative voted three times before it would pay for the band's amplification, and Cass
     Verrow's solo here is the first thing they ever played through it.
 - id: s_1098
@@ -21124,18 +21124,18 @@ tracks:
   artist: b_061
   title: Paid by the Record
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_134/03.mp3
+  duration_sec: 202.28
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - bitter
   - hard
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Tem Osgar wrote it the evening the membership voted down the band's request to be paid by the
     port instead.
 - id: s_1099
@@ -21143,18 +21143,18 @@ tracks:
   artist: b_061
   title: Nothing to Unpack
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_134/04.mp3
+  duration_sec: 192.4
+  intro_ramp_sec: 10.45
+  outro_type: sustain
+  category: gold
   mood:
   - comic
   - loud
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Wyll Petrin has never carried more than one bag on a circuit, and the second verse is a list of
     what is in it.
 - id: s_1100
@@ -21162,18 +21162,18 @@ tracks:
   artist: b_061
   title: Berth Nineteen
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_134/05.mp3
+  duration_sec: 253.96
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - tender
   - plain
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Rhea Molt sings it to a partner who works the opposite circuit, and the two of them have been
     in the same port eleven times.
 - id: s_1101
@@ -21181,18 +21181,18 @@ tracks:
   artist: b_061
   title: Faster Than the Freight
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_134/06.mp3
+  duration_sec: 298.6
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - triumphant
   - driving
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Nessa Dray played the fiddle line an octave above where it was written, which Rhea Molt has said
     is the only change to one of her songs she has ever accepted.
 - id: s_1102
@@ -21200,18 +21200,18 @@ tracks:
   artist: b_061
   title: Sign It on the Way Out
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_134/07.mp3
+  duration_sec: 261.84
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - defiant
   - singalong
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The chorus is what the band say to the co-operative's clerks, and the clerks sing it back at them
     at the annual meeting.
 - id: s_1103
@@ -21219,18 +21219,18 @@ tracks:
   artist: b_061
   title: Paid by the Port
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_135/01.mp3
+  duration_sec: 248.36
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - triumphant
   - driving
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The membership reversed its own vote of 2619, and Rhea Molt sings the new wording of it in the
     chorus.
 - id: s_1104
@@ -21238,18 +21238,18 @@ tracks:
   artist: b_061
   title: Two Days in the Same Hall
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_135/02.mp3
+  duration_sec: 237.32
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - warm
   - expansive
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: It is the first song Turn and Burn ever played twice in one room, which the change to how they
     were paid is what allowed.
 - id: s_1105
@@ -21257,18 +21257,18 @@ tracks:
   artist: b_061
   title: Stall-Bought
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_135/03.mp3
+  duration_sec: 207.6
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: A
   mood:
   - rowdy
   - comic
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Cass Verrow plays the whole session on an instrument bought from a port stall for the price of
     one night's fee, having left the other at a berth.
 - id: s_1106
@@ -21276,18 +21276,18 @@ tracks:
   artist: b_061
   title: The Written Order
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_135/04.mp3
+  duration_sec: 329.2
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: A
   mood:
   - wry
   - brisk
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Rhea Molt lost the band's long argument about set lists, and the words are that argument as Tem
     Osgar remembers it.
 - id: s_1107
@@ -21295,18 +21295,18 @@ tracks:
   artist: b_061
   title: Keys at the Back
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_135/05.mp3
+  duration_sec: 334.72
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - heavy
   - building
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Iber Tance is credited as a writer on one of the band's songs for the first time here, having
     joined them in 2614.
 - id: s_1108
@@ -21314,18 +21314,18 @@ tracks:
   artist: b_061
   title: Cold Circuit
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_135/06.mp3
+  duration_sec: 242.04
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: A
   mood:
   - weary
   - plain
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Tem Osgar wrote it about the two ports the band's circuit stopped calling at in 2624, and names
     neither of them.
 - id: s_1109
@@ -21333,18 +21333,18 @@ tracks:
   artist: b_061
   title: Nobody Waits for Us
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_135/07.mp3
+  duration_sec: 233.96
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: A
   mood:
   - defiant
   - loud
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Wyll Petrin plays struck alloy in place of a cymbal throughout, in a pattern copied from the co-operative's
     own departure schedule.
 - id: s_1110
@@ -21352,18 +21352,18 @@ tracks:
   artist: b_061
   title: Turn and Burn
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_5/al_135/08.mp3
+  duration_sec: 187.2
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - anthemic
   - singalong
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The band had been playing since 2607 and this is the first of their songs to carry their own name;
     Rhea Molt has said she will not write a second one.
 - id: s_1111

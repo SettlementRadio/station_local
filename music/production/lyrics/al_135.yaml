@@ -42,13 +42,22 @@ album:
     changed. This is also the only Turn and Burn record made to a written running order.
 
 generation:
-  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-31. Suno Pro, model v5.5, remixing disabled — the same
+  # account, tier and settings as the pilot and as relay-pop, so 2026-08's licence evidence
+  # in music/licence-evidence/ covers these takes too. Times are UTC, as the files report
+  # them, and every one of them was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-25
+  sittings:
+    - {date: 2026-08-25, from: '09:08:03', to: '09:14:38', tracks: [1, 2, 3, 4, 5, 6, 7, 8]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW by `make music-dispatch`, which matched every take
+    against the lyric it carries in its own tags rather than against its filename, and
+    refused to move anything until all of them formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric.
 
 songs:
   - id: s_1103
@@ -125,7 +134,15 @@ songs:
       We get tomorrow in the hall. That is the difference.
 
       [Outro - fade]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-25
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 12a9c358-5ef2-4107-af3e-f80647967c5e
+      suno_created: 2026-08-25T09:08:03Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_135/01.mp3
 
   - id: s_1104
     title: Two Days in the Same Hall
@@ -199,7 +216,15 @@ songs:
       Leave it where it works. We get another go.
 
       [Outro - held chord]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-25
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: c209db92-f58b-4ea6-a9f5-39cbb258e3f0
+      suno_created: 2026-08-25T09:10:47Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_135/02.mp3
 
   - id: s_1105
     title: Stall-Bought
@@ -265,7 +290,15 @@ songs:
       and I have stopped asking, and the record is better.
 
       [Outro - cold stop]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-25
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 4612734c-cbbf-42b6-ad4d-56ad0e397695
+      suno_created: 2026-08-25T09:11:39Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_135/03.mp3
 
   - id: s_1106
     title: The Written Order
@@ -344,7 +377,15 @@ songs:
       That is my whole concession. Take the page down tomorrow.
 
       [Outro - fade]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-25
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: ff7b4677-a52f-44c9-9b53-3b161301d68a
+      suno_created: 2026-08-25T09:12:13Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_135/04.mp3
 
   - id: s_1107
     title: Keys at the Back
@@ -424,7 +465,15 @@ songs:
       Iber takes the room without taking one step.
 
       [Outro - held keyboard chord]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-25
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 675587ee-ce39-475d-bd45-fd3be6848d96
+      suno_created: 2026-08-25T09:12:44Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_135/05.mp3
 
   - id: s_1108
     title: Cold Circuit
@@ -493,7 +542,15 @@ songs:
       and the people in them do not need it said out loud by me.
 
       [Outro - fade]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-25
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 3b0f9bd2-2475-4480-af75-8d27223fdc6b
+      suno_created: 2026-08-25T09:13:12Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_135/06.mp3
 
   - id: s_1109
     title: Nobody Waits for Us
@@ -572,7 +629,15 @@ songs:
       We are through the door before the last strike stops.
 
       [Outro - fade on the alloy pattern]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-25
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: f314031b-af75-423c-aee6-d62932846a0d
+      suno_created: 2026-08-25T09:13:56Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_135/07.mp3
 
   - id: s_1110
     title: Turn and Burn
@@ -643,4 +708,12 @@ songs:
       and a departure at four, and that is where this stops.
 
       [Outro - held chord, every voice on it]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-25
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 0537ee4c-fd14-448b-8b17-04767ba56211
+      suno_created: 2026-08-25T09:14:38Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_135/08.mp3

@@ -87,6 +87,43 @@ the verdict on each name is yours. Record both the clearances and the rejections
 If Wikidata cannot be reached it stops and says so rather than printing an empty report, because an
 empty report reads as "every name is clear". Run it again when the connection is back.
 
+### `make music-dispatch`
+
+Files a pile of Suno takes into `music/audio/<label>/<album>/NN.mp3`. Point it at the export folder
+and it works out which song each file is — **by reading the lyric inside the file, never by its
+name.** `GENRE=lane-rock` limits which songs it will file against; `RAW=some/folder` points it
+somewhere other than `music/audio/RAW`. Sub-folders are searched, so an export can stay in whatever
+folder the browser made for it.
+
+**Why it does not trust filenames.** M-18 filed the pilot by sorting the export by time and walking
+the track list. M-30 checked that against the lyric Suno writes into every file's own tags and found
+a song that had never been generated: at one sitting the style box moved on and the lyric box did
+not, so track 9's slot held a second take of track 8 — right size, right place, plausible time
+(D-091). Reading the words is the only check that catches that.
+
+**It refuses the whole pile or files all of it.** Every take has to claim exactly one song, no song
+may be claimed twice, no take may claim a song that already has audio, and every song waiting for
+audio has to be claimed by something. A pile that fails any of those prints why and moves nothing,
+which is the same failure shape D-091 found: one song claimed twice and another claimed by nobody.
+
+**Every take is matched against every written lyric in the genre and filed only against the ones
+still waiting**, which is not the same thing. Topping up a single missing song against a pool of one
+would make "which song is this?" a question with no wrong answer, and the take would be filed as that
+song whatever it actually contained. Keeping the finished songs in the pool is what lets a take that
+belongs to something already on disk say so.
+
+**Nothing is overwritten and nothing is deleted.** A take moves only to a path that does not exist
+yet, and both ends of every move go into `music/audio/RAW/dispatch-manifest.json` with the Suno id,
+the vendor's own timestamp, and how much of the take is the written lyric.
+
+A `MATCH` under 100% is not a fault — Suno rewords, drops a section and doubles another, and a take
+can be a loose copy of its lyric and still unmistakably be that lyric and no other. Those rows print
+in yellow because they are worth your ear, not because anything went wrong.
+
+**It does not write the `take:` blocks.** Those go into `music/production/lyrics/` by hand from the
+manifest, because a machine writing YAML back into those files would flatten every lyric and drop
+every comment in them. Then `make music-tag`, then `make music-catalogue`.
+
 ### `make music-analyse`
 
 Measures every audio file under `music/audio/` and prints three numbers per take: how long it runs,

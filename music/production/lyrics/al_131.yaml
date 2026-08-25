@@ -36,13 +36,22 @@ album:
     own story rather than in the arrangement. Voice, backing, instruments and exclude are untouched.
 
 generation:
-  # Empty until M-31's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-31. Suno Pro, model v5.5, remixing disabled — the same
+  # account, tier and settings as the pilot and as relay-pop, so 2026-08's licence evidence
+  # in music/licence-evidence/ covers these takes too. Times are UTC, as the files report
+  # them, and every one of them was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-23
+  sittings:
+    - {date: 2026-08-23, from: '20:07:05', to: '20:13:40', tracks: [1, 2, 3, 4, 5]}
   ai_generated: true            # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW by `make music-dispatch`, which matched every take
+    against the lyric it carries in its own tags rather than against its filename, and
+    refused to move anything until all of them formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric.
 
 songs:
   - id: s_1076
@@ -118,7 +127,15 @@ songs:
       Come down and carry one. Come down and carry one.
 
       [Outro - cold stop on the riff]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 73522968-1071-4fd3-9ac1-7f504abbb726
+      suno_created: 2026-08-23T20:07:05Z
+      lyric_match: 0.7059      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_131/01.mp3
 
   - id: s_1077
     title: Door Out of Use
@@ -195,7 +212,15 @@ songs:
       We are going to fill this one right up.
 
       [Outro - fade on the riff and the radio]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 727e5484-77ac-4016-b96a-57a68bbbbde5
+      suno_created: 2026-08-23T20:07:55Z
+      lyric_match: 1.0000      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_131/02.mp3
 
   - id: s_1078
     title: Second Hitch
@@ -270,7 +295,15 @@ songs:
       The hauler goes out loaded either way.
 
       [Outro - held chord, left ringing in the shed]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: e1fe6fc8-3a7b-4178-b380-a8ca15f025df
+      suno_created: 2026-08-23T20:09:12Z
+      lyric_match: 0.7886      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_131/03.mp3
 
   - id: s_1079
     title: Walk Home After
@@ -339,7 +372,15 @@ songs:
       and the dark is cold and the step is only eleven minutes.
 
       [Outro - fade on the walking bass]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: 8c7717d4-6a92-4e27-81a3-d71930a38caf
+      suno_created: 2026-08-23T20:11:24Z
+      lyric_match: 0.8592      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_131/04.mp3
 
   - id: s_1080
     title: Nobody Signed Us
@@ -419,4 +460,12 @@ songs:
       and we would do the whole thing again on a night off.
 
       [Outro - cold stop]
-    take: null                    # M-31 fills this in at the Suno sitting
+    take:
+      attempts: null              # the sitting did not record how many were generated
+      model_version: null         # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-23
+      prompt_used: null           # null means the prompt above was used unchanged
+      suno_id: dd0d1d12-2831-400a-b232-70f8992b540f
+      suno_created: 2026-08-23T20:13:40Z
+      lyric_match: 0.5892      # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_131/05.mp3
