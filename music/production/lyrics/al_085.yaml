@@ -1,0 +1,550 @@
+# al_085 — Dance It Off the Deck · Loose Cargo (b_039) · Common Wake Cooperative · 2607 · 7 songs
+#
+# Written by M-24. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# **The last record, made in a hold that was not going anywhere.** The co-operative wanted a third and
+# the band agreed on one condition — a hold again — which meant hiring one by the night and paying
+# for a room that never left its berth. Wend Amory called that the most expensive joke the band ever
+# made and the record is written as the joke landing: it is looser and slower than anything else they
+# did, and the two things it is about are money and finishing.
+#
+# The room comes back and the prompts come back with it: boxy, close, dead, the fittings ringing
+# behind the kit, no hall space anywhere. Brin Noll retuned the hold's loose metal before the
+# engineers arrived, so the fittings are in tune with the band on this record and were not on al_083.
+#
+# **s_0697 is the one song in this band's life where the harmony singer takes the lead outright**, and
+# the card has said so since M-20. Wend Amory is not on that track at all — no low male voice, no
+# harmony under her, nothing. It is stated in the prompt and it happens once.
+#
+# Two of the seven take a fiddle break. `generation:` and every `take:` are empty until M-33.
+
+album:
+  id: al_085
+  title: Dance It Off the Deck
+  band: b_039
+  band_name: Loose Cargo
+  label: label_5
+  release_year: 2607
+  genre: frontier-reels
+  cornerstone: false
+  song_count: 7
+  style_card: b_039
+  room: >-
+    A hired cargo hold at a berth, paid for by the night and going nowhere, which is the whole
+    economics of the record. Boxy, close and dead again after al_084's transfer hall, with the hold's
+    own loose metal retuned by Brin Noll before anything was set up, so the fittings ring in tune
+    behind the kit rather than against it. The card holds — low bass-baritone lead under the fiddle
+    and never lifted, one female harmony from the bass chair on choruses, fiddle taking every break,
+    bass big and woody, slapback short — with two fact-bound exceptions. Talla Venn plays a second
+    guitar on s_0698, scarred and tuned down to match the hold. And on s_0697 the bass chair sings the
+    lead and the usual lead singer is not on the track in any capacity, which is the once in this
+    band's life that the card allows. s_0695 is at the tempo Col Sennet asked for after twenty-seven
+    years and was cut on the first take at it.
+
+generation:
+  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0693
+    title: Dance It Off the Deck
+    track_number: 1
+    mood: [fast, loose, bright]
+    fact: >-
+      Brin Noll retuned the hold's loose metal before the sessions so the room would answer the
+      chorus, and three of those fittings are audible on the take.
+    arrangement_note: the hold's own fittings have been retuned to the key of the tune, so the room rings back in pitch on every chorus instead of clattering, which is a thing done to a building rather than to an instrument
+    intro: 10
+    outro: cold
+    target_duration: "4:05"
+    prompt: >-
+      Skiffle and jump blues at reel tempo, 162 BPM, fast and bright, loose and unhurried in the
+      playing. Male lead vocal, low bass-baritone, unhurried and dry, sitting under the fiddle,
+      staying in his own low register and never lifted into a brighter key. One female harmony voice
+      on the choruses only. Loose metal fittings in the room ringing IN TUNE with the music on every
+      chorus — three distinct pitched metallic resonances answering the band rather than clattering
+      against it. Composite fiddle, fretted composite guitar, big woody upright bass, a kit built out
+      of crates and struck metal. Recorded inside a cargo hold: boxy, close and dead, no hall space
+      anywhere. Ten seconds of fiddle and ringing metal before the first sung word. Four bars of the
+      ringing fittings alone after the second chorus. Cold stop.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, untuned clatter, fade-out
+    lyrics: |
+      [Intro - fiddle and ringing metal, ten seconds]
+
+      [Verse 1]
+      A man came down two days before anybody else did
+      with a bag of tools and a list and about nine hours,
+      and went round this hold tightening and slackening things
+      until every loose fitting in it was in the same key as us.
+      Nobody asked him to. He has done it for other people.
+      He said a room either answers you or it argues, and chose.
+
+      [Chorus]
+      Dance it off the deck. Dance it off the plate.
+      There is nothing under this floor for about nine metres
+      and every step four hundred people take comes back up,
+      and tonight it comes back up in tune, which is new.
+
+      [Verse 2]
+      On the first record the metal was just noise
+      and we called that character, because that is what you call it
+      when a thing is wrong and you cannot afford to fix it
+      and somebody in a review has been kind about it.
+      This one rings. You can hear the difference immediately.
+      Reddin has been quietly furious about that for a week.
+
+      [Turnaround - the tuned fittings alone, four bars]
+
+      [Verse 3]
+      Twenty-seven years of loading and unloading this
+      and about eleven of playing in it once it was empty,
+      and it has taken until the last record anybody makes
+      for somebody to turn up and tune the building.
+      Brin Noll. Off the frontier, works everywhere, says nothing.
+      He is going to do the same thing in a shed in Cold Harbor.
+
+      [Chorus]
+      Dance it off the deck. Dance it off the plate.
+      There is nothing under this floor for about nine metres
+      and every step four hundred people take comes back up,
+      and tonight it comes back up in tune, which is new.
+
+      [Final Chorus - harmony from the bass chair]
+      Dance it off the deck and let the fittings answer.
+      There is nothing under this floor for about nine metres.
+      Every step four hundred people take comes back up,
+      and a man with a bag of tools decided what it would say.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0694
+    title: A Hold Going Nowhere
+    track_number: 2
+    mood: [midtempo, wry, warm]
+    fact: >-
+      Written about the hired hold the record was made in, which the co-operative paid for by the
+      night and which never left its berth.
+    arrangement_note: the tune sits still — no key change, no tempo change and no dynamic change anywhere in it, and the band deliberately never builds — because it is a song about paying by the night for something that is not moving
+    intro: 6
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      Skiffle and jump blues at reel tempo, 136 BPM, midtempo, wry and warm. Male lead vocal, low
+      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
+      never lifted. One female harmony voice on the choruses only. The arrangement never builds — no
+      key change, no tempo change, no dynamic swell anywhere, exactly the same weight from first bar
+      to last. Composite fiddle, fretted composite guitar, big woody upright bass, a kit built out of
+      crates and struck metal. Recorded inside a cargo hold: boxy, close and dead. Six seconds before
+      the first sung word. Fades.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, dynamic swells, key changes, cold ending
+    lyrics: |
+      [Intro - band, six seconds]
+
+      [Verse 1]
+      We said we would make a third one if it was made in a hold
+      and the co-operative said fine and then went and looked
+      and discovered that a hold is a thing that is usually going somewhere
+      and that a hold that is not going somewhere still costs money.
+      Forty-one a night. Nine nights. For a room at a berth.
+      That is the single most expensive joke I have ever made.
+
+      [Chorus]
+      Paid by the night for a thing that is not moving,
+      tied at a berth with nothing in it but a band.
+      There is a whole trade out there running on this,
+      and we hired one and sat in it and did not sail.
+
+      [Verse 2]
+      Ilsa did the arithmetic and read it out at the table
+      and asked, reasonably, what exactly we thought we were buying.
+      I said the sound. She said you are buying a shape.
+      A hold sounds like a hold because it is full of things.
+      Take the cargo out and it is a big empty tin.
+      She was right about that too and we did it anyway.
+
+      [Verse 3]
+      What we were actually buying, and I know this now,
+      is nine nights of the four of us in a room with a door shut
+      at the end of twenty-seven years of doing this,
+      with nobody's shift in the morning and nothing to sign.
+      That is worth forty-one a night. That is worth more.
+      The co-operative has not sent us the invoice and will not.
+
+      [Chorus]
+      Paid by the night for a thing that is not moving,
+      tied at a berth with nothing in it but a band.
+      There is a whole trade out there running on this,
+      and we hired one and sat in it and did not sail.
+
+      [Final Chorus - harmony from the bass chair]
+      Paid by the night for a thing that is not moving,
+      and every crew on this lane has heard about it by now.
+      There is a whole trade out there running on this.
+      Let them laugh. It was worth every single night.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0695
+    title: Slower Than We Used To
+    track_number: 3
+    mood: [slow, fond, weathered]
+    fact: >-
+      The tempo is the one Col Sennet asked for after twenty-seven years of playing it faster, and the
+      band recorded it his way on the first take.
+    arrangement_note: the tempo is about twenty beats a minute under where this tune has been played for twenty-seven years, at the fiddle player's request, and everything in the arrangement has more room in it as a direct result
+    intro: 14
+    outro: fade
+    target_duration: "4:35"
+    prompt: >-
+      Skiffle and jump blues at a slow reel tempo, 118 BPM, slow and weathered, fond. Male lead vocal,
+      low bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register
+      and never lifted. One female harmony voice on the choruses only. Everything has more space in it
+      than usual — the fiddle unhurried and unornamented, the bass wide, the crate percussion sparse.
+      Composite fiddle, fretted composite guitar, big woody upright bass, crates and struck metal
+      brushed rather than hit. Recorded inside a cargo hold: boxy, close and dead. Fourteen seconds of
+      fiddle before the first sung word. Fades.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, fast reel tempo, cold ending
+    lyrics: |
+      [Intro - fiddle, fourteen seconds]
+
+      [Verse 1]
+      He asked at the table, quietly, before we started,
+      whether we would consider taking it about twenty under,
+      and there was a pause of the kind that happens in a band
+      when somebody says a thing they have been not saying for years.
+      Twenty-seven years of this tune at one speed.
+      Nobody had ever asked. Nobody had ever thought to ask.
+
+      [Chorus]
+      Slower than we did it and better than we did it,
+      and it turns out there was a tune under the tempo all along.
+      Nothing in this hold is in a hurry any more.
+      Nothing on this record has anywhere to be.
+
+      [Verse 2]
+      I said why now, and he said because I can hear it now,
+      which is either about his hands or about his ears
+      and he would not say which and it does not matter which.
+      A man who has played the same forty tunes since he was nineteen
+      is allowed, once, at the end, to ask for one of them slowly.
+      We did it on the first take. Nobody discussed it further.
+
+      [Pre-Chorus]
+      Twenty-seven years is a long time to not be asked
+      and a long time to not ask, and he did both.
+
+      [Verse 3]
+      What it does is give the words somewhere to sit.
+      At the old speed you get four of them into a bar
+      and you are through the second verse before anybody hears it
+      and a dance does not need you to be heard, it needs you to go.
+      This is not for a dance. Nothing on this record is.
+      This is four people in a hired hold at a berth.
+
+      [Chorus]
+      Slower than we did it and better than we did it,
+      and it turns out there was a tune under the tempo all along.
+      Nothing in this hold is in a hurry any more.
+      Nothing on this record has anywhere to be.
+
+      [Final Chorus - harmony from the bass chair]
+      Slower than we did it, and he asked, and we did it,
+      and the far hall is going to want it fast and will not get it.
+      Nothing in this hold is in a hurry any more.
+      Twenty-seven years and one question at a table.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0696
+    title: Who Is Paying for the Room
+    track_number: 4
+    mood: [brisk, blunt, wry]
+    fact: >-
+      The lyric is a version of the argument the band had with the co-operative about the cost of the
+      hold, and both sides agreed it was accurate.
+    arrangement_note: the verses alternate between two positions in the arrangement — one where the band is together and one where the fiddle and bass are on opposite sides of the tune — because the lyric is two people arguing and both of them are right
+    intro: 4
+    outro: cold
+    target_duration: "3:50"
+    prompt: >-
+      Skiffle and jump blues at reel tempo, 154 BPM, brisk and blunt, wry. Male lead vocal, low
+      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
+      never lifted. One female harmony voice on the choruses only. The arrangement alternates: in the
+      first and third verses the band plays together and tight; in the second, the composite fiddle and
+      the upright bass pull to opposite sides of the tune and disagree rhythmically. Fretted composite
+      guitar, crates and struck metal. Recorded inside a cargo hold: boxy, close and dead. Four seconds
+      before the first sung word. A sixteen-second fiddle break. Cold stop.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, fade-out
+    lyrics: |
+      [Intro - band, four seconds]
+
+      [Verse 1]
+      This is what was actually said, near enough, at the table,
+      and both sides have read it and both sides have agreed
+      that it is a fair account of a conversation about money
+      between four people who make records and one who pays for them,
+      in a settlement neither side is from, at a berth, at nine.
+      Nobody comes out of it badly. That is the strange part.
+      Everybody in that room had a completely reasonable position.
+
+      [Chorus]
+      Who is paying for the room. Somebody is paying for the room.
+      It is never nobody. There has never once been a nobody.
+      Either it comes out of the door or it comes out of the label
+      or it comes out of four people not being paid for a fortnight.
+
+      [Verse 2 - the band pulls apart]
+      They said we cannot justify a hold that does not move.
+      We said the last two records are the reason you have members.
+      They said that is true and it is not an argument about cost.
+      We said everything is an argument about cost eventually.
+      They said yes. Exactly. That is our whole point.
+      And there was a very long silence, and Ilsa made tea.
+      She let it sit there for a minute and then said her piece.
+
+      [Instrumental - fiddle break, sixteen seconds]
+
+      [Verse 3]
+      What settled it is that the members voted for it.
+      Not the officers. The members. About nine hundred of them,
+      most of whom are on a run at any given hour
+      and none of whom will ever hear this record in a hall.
+      They voted to hire a hold for a band on their own label.
+      That is a co-operative and it is why we are on one.
+
+      [Chorus]
+      Who is paying for the room. Somebody is paying for the room.
+      It is never nobody. There has never once been a nobody.
+      Either it comes out of the door or it comes out of the label
+      or it comes out of four people not being paid for a fortnight.
+
+      [Final Chorus - harmony from the bass chair]
+      Who is paying for the room. Nine hundred freight crews are.
+      It is never nobody. There has never once been a nobody.
+      Either it comes out of the door or it comes out of the label,
+      and this time it came out of everybody, on a vote.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0697
+    title: Take the Long Berth Home
+    track_number: 5
+    mood: [rolling, warm, tired]
+    fact: >-
+      Ilsa Brack sings the lead for the only time in the band's life, and Wend Amory does not appear on
+      the track at all.
+    arrangement_note: the bass chair sings the lead outright and there is no low male voice anywhere on the track and no harmony under her, because the man who would sing it is not in the room and the woman who has sung underneath him for twenty-seven years is on her own
+    intro: 12
+    outro: fade
+    target_duration: "4:20"
+    prompt: >-
+      Skiffle and jump blues at reel tempo, 132 BPM, rolling and warm, tired. FEMALE lead vocal on
+      this track only — plain, unforced mid register, dry and conversational, no ornament, close to
+      the microphone. NO male vocal of any kind anywhere on the track and no harmony or backing vocal
+      underneath her. Composite fiddle, fretted composite guitar, big woody upright bass played by the
+      singer, a kit built out of crates and struck metal. Recorded inside a cargo hold: boxy, close and
+      dead. Twelve seconds of fiddle and bass before the first sung word. Fades.
+    exclude: male vocals, low male harmony, backing vocals, second voices, electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, cold ending
+    lyrics: |
+      [Intro - fiddle and bass, twelve seconds]
+
+      [Verse 1]
+      Twenty-seven years underneath somebody else's line
+      and a third below it on the chorus and nothing in the verses,
+      which is a real job and I have never once complained about it
+      and which four hundred people in two halls have never noticed.
+      He wrote this one and then said he was not going to sing it
+      and went out onto the berth and did not come back until it was done.
+
+      [Chorus]
+      Take the long berth home, the one past the water gate.
+      It is nine minutes further and there is nobody on it.
+      You have been in a hold with three men for a fortnight.
+      Take the long way. Do not talk to anybody.
+
+      [Verse 2]
+      I have sung one line at a time for twenty-seven years
+      and I have never had to work out where a verse goes
+      or what to do with my hands or when to come in,
+      and the first take of this was frankly a disgrace.
+      Col said nothing. Reddin said nothing, which cost him.
+      By the fourth one I had stopped listening to myself.
+
+      [Bridge]
+      He has stood behind me on a berth for twenty-seven years
+      and both of us have been out on that walk on our own.
+
+      [Verse 3]
+      There is a walk from the berth to the settlement gate
+      that goes past the water and takes about nine minutes longer
+      and every crew that has ever worked this port knows it
+      and none of them will tell you why they take it.
+      You take it because for nine minutes nobody is asking you anything.
+      That is the whole song. That is the entire song.
+
+      [Chorus]
+      Take the long berth home, the one past the water gate.
+      It is nine minutes further and there is nobody on it.
+      You have been in a hold with three men for a fortnight.
+      Take the long way. Do not talk to anybody.
+
+      [Final Chorus - lead alone, no harmony]
+      Take the long berth home, the one past the water gate,
+      and he will be at the far end of it not saying anything,
+      which is the kindest thing that man has ever done.
+      Nine minutes. Once. In twenty-seven years.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0698
+    title: One More Around the Hold
+    track_number: 6
+    mood: [fast, communal, bright]
+    fact: >-
+      Talla Venn plays second guitar on the scarred instrument he has repaired between sessions for
+      thirty years, and he tuned it down to match the hold.
+    arrangement_note: a second guitar tuned down to the pitch the hold's own fittings ring at, played by somebody who has been repairing the same scarred instrument for thirty years, sitting under the band's guitar rather than beside it
+    intro: 8
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      Skiffle and jump blues at reel tempo, 166 BPM, fast and bright, communal. Male lead vocal, low
+      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
+      never lifted. One female harmony voice on the choruses only. TWO fretted composite guitars: the
+      band's own, and a second one tuned noticeably lower, duller and more scarred, sitting underneath
+      the first rather than beside it. Composite fiddle taking a fourteen-second break, big woody
+      upright bass, a kit built out of crates and struck metal, the room's tuned fittings ringing.
+      Recorded inside a cargo hold: boxy, close and dead. Eight seconds before the first sung word.
+      Ends on a held chord with the fittings still ringing.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, matched guitars, cold ending
+    lyrics: |
+      [Intro - two guitars and fiddle, eight seconds]
+
+      [Verse 1]
+      There is a man who has been fixing the same guitar
+      since before this band existed, between other people's sessions,
+      in ports and transfer halls and the backs of carts,
+      and there is not much left on it that has not been replaced.
+      He tuned it down two whole tones to match this hold
+      because he asked what the room was in, which nobody asks.
+
+      [Chorus]
+      One more around, and one more after that,
+      and the fittings ring back and the crates come in behind.
+      Nine metres of nothing underneath this floor
+      and about eleven people having the best night of the fortnight.
+
+      [Instrumental - fiddle break, fourteen seconds]
+
+      [Verse 2]
+      There were eleven of us in here on the seventh night.
+      Four in the band, one on a second guitar, one on the desk,
+      three off a crew at the next berth who heard it through a wall,
+      one from the co-operative and one nobody could account for.
+      It is the only track on this record with people on it
+      and you can hear all eleven of them at the end.
+
+      [Verse 3]
+      Twenty-seven years and this is the last dance we play,
+      in a rented room, at a berth, to about seven people,
+      and it is exactly as good as the ones in the far hall
+      with four hundred, which nobody would ever believe.
+      A dance is not a number. I have said that for years.
+      Tonight I found out whether I actually meant it.
+
+      [Chorus]
+      One more around, and one more after that,
+      and the fittings ring back and the crates come in behind.
+      Nine metres of nothing underneath this floor
+      and about eleven people having the best night of the fortnight.
+
+      [Final Chorus - harmony from the bass chair, the room joining in]
+      One more around, and one more after that,
+      and the man with the scarred guitar is not going to stop first.
+      Nine metres of nothing underneath this floor,
+      and eleven people, and a hold, and that is enough.
+
+      [Outro - held chord, the fittings ringing]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0699
+    title: Off at the Last Stop
+    track_number: 7
+    mood: [midtempo, warm, final]
+    fact: >-
+      The last thing Loose Cargo recorded, and the four of them played it twice through without
+      stopping because nobody wanted to be the one to call the end.
+    arrangement_note: the whole tune is played through twice without a break between the two passes, and the second pass is quieter and slower than the first because nobody was willing to be the one who stopped it
+    intro: 16
+    outro: fade
+    target_duration: "4:45"
+    prompt: >-
+      Skiffle and jump blues at reel tempo, 138 BPM, midtempo, warm and final. Male lead vocal, low
+      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
+      never lifted. One female harmony voice on the choruses only. The complete tune is played twice
+      through with no break between the passes; the second pass is quieter and gradually slower than
+      the first, drifting rather than winding down. Composite fiddle, fretted composite guitar, big
+      woody upright bass, crates and struck metal brushed. Recorded inside a cargo hold: boxy, close
+      and dead. Sixteen seconds of fiddle and bass before the first sung word. Long fade over the
+      second pass.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, big finish, cold ending
+    lyrics: |
+      [Intro - fiddle and bass, sixteen seconds]
+
+      [Verse 1]
+      Nobody said this was the last one. Nobody says that.
+      There was no meeting and there was no announcement
+      and there is not going to be a fourth record
+      and every one of the four of us has known that for a month.
+      The co-operative does not know yet. It will find out
+      the way everybody finds anything out on this lane: late,
+      off a carrier wave, from somebody at a berth, in a port hall.
+
+      [Chorus]
+      Off at the last one with everything you came with,
+      and the hold behind you swept, and the paper signed.
+      Nobody hands you anything. Nobody says well done.
+      You put your coat on and you go down the ramp.
+
+      [Verse 2]
+      So we played it through and got to the end of it
+      and not one of the four of us stopped playing,
+      and it went round again, quieter, and slightly slower,
+      because stopping would have been somebody's decision
+      and none of us was going to be the person who made it.
+      You can hear the second pass. It is on the record.
+
+      [Verse 3]
+      Twenty-seven years, two halls, four records,
+      one festival, about nine hundred nights and one long argument
+      about whether a band that could not stand still could be recorded,
+      which we settled, in a hold, on two borrowed microphones.
+      Ilsa is going to keep working. Col is going to teach.
+      Reddin says he is going nowhere, which means nothing at all.
+
+      [Chorus]
+      Off at the last one with everything you came with,
+      and the hold behind you swept, and the paper signed.
+      Nobody hands you anything. Nobody says well done.
+      You put your coat on and you go down the ramp.
+
+      [Final Chorus - harmony from the bass chair, the second pass, quieter]
+      Off at the last one with everything you came with.
+      There is a run out on Sunday and it is not ours.
+      Nobody hands you anything. Nobody says well done,
+      and the four of us are still playing, and it is finished.
+
+      [Outro - long fade over the second pass]
+    take: null # M-33 fills this in at the Suno sitting

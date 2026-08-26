@@ -1,0 +1,587 @@
+# al_138 — Learned Off the Floor · Board and Bow (b_062) · Harbor Standard · 2619 · 7 songs
+#
+# Written by M-24. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Suli Orley's own band, thirty-six years after she first stood on the Cold Harbor floor and twelve
+# after Wire and Rosin stopped. Harbor Standard took two years to come and find them and then wanted
+# the exchange hall; **Orley would not record in a room the dancers are charged to walk into**, so
+# this was cut in the transfer shed the band had been playing in. That refusal is the record.
+#
+# **b_062 is the only band in this genre with two women out in front of the band at once**, and the
+# card is explicit about how they divide: the lead sings, the fiddle chair puts one high harmony
+# through the choruses, and Alis Doone calls the dance figures over the top of everything on every
+# track. Calling is not singing and it is not rapping — it is short rhythmic instructions shouted
+# across a room at people who are moving — and every prompt here says so while the exclude lines keep
+# rapped verses out. Harbor Standard asked twice for the calling to come off. It is on all seven.
+#
+# Two of the seven take a fiddle break, which is b_062's break instrument. `generation:` and every
+# `take:` are empty until M-33.
+
+album:
+  id: al_138
+  title: Learned Off the Floor
+  band: b_062
+  band_name: Board and Bow
+  label: label_2
+  release_year: 2619
+  genre: frontier-reels
+  cornerstone: false
+  song_count: 7
+  style_card: b_062
+  room: >-
+    A Cold Harbor transfer shed the band was already playing in weekly, chosen over the exchange hall
+    because Suli Orley will not record in a room with a door charge on it. Live, loud, fast and with
+    the floor in the room on every track. The card holds throughout: plain mid-register female lead
+    phrasing like somebody calling across a room, one high harmony from the fiddle chair through the
+    choruses, and Alis Doone calling the figures over the band on all seven tracks — short, rhythmic,
+    shouted, never sung, never in place of the lead. Three fact-bound details live in their own songs:
+    Doone calls s_1127 from the side of the room rather than the front, because that is where she
+    stands at a dance; Corr Ballan plays one unaltered figure for the whole of s_1129; and Brin Noll
+    retuned the shed's loose metal before the sessions and stayed to play the chimes on s_1132. Neve
+    Torrin sings the second verse of s_1131 alone.
+
+generation:
+  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1126
+    title: Learned Off the Floor
+    track_number: 1
+    mood: [fast, bright, communal]
+    fact: >-
+      Suli Orley took this tune off the Cold Harbor floor while she was still playing guitar for Wire
+      and Rosin, and she has never found out who wrote it.
+    arrangement_note: the guitar states the tune completely alone before anything else arrives, which is how it was learned — off a floor, one instrument at a time, with nobody explaining anything
+    intro: 12
+    outro: cold
+    target_duration: "4:00"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 172 BPM, fast and bright, communal. Female lead vocal,
+      plain mid register, strong and unornamented, phrasing like somebody calling across a room, never
+      ornamented and never belted. One high female harmony from the fiddle chair through the choruses
+      only. A SECOND woman calls dance figures over the top of the band throughout — short rhythmic
+      shouted instructions to dancers, close over the band, plainly spoken and never sung, never
+      rapped, never in place of the lead. Composite fiddle, fretted acoustic-toned composite guitar,
+      upright bass, cut-stock kit, stripped-wire chimes. Tracked live and loud in a hard-walled
+      transfer shed with a floor of dancers in the room, no click, slapback on the lead. Twelve
+      seconds of solo guitar before anything else enters. Cold stop.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, sung backing chants, fade-out
+    lyrics: |
+      [Intro - solo guitar, twelve seconds]
+
+      [Verse 1]
+      I was nineteen and standing at the back of the exchange hall
+      about six feet from a band that did not know I existed,
+      and somebody played this and I had it by the second turn
+      and I have played it about four thousand times since.
+      I do not know who wrote it. I have asked everybody.
+      I have asked people who were playing here before I was born.
+      It came off a hauler, or off a ferry, or off nothing at all.
+
+      [Call - shouted over the band]
+      Take hands. Long way round. Wait for the fiddle.
+
+      [Chorus]
+      Nothing I know came off a piece of paper.
+      All of it came off a floor with people on it,
+      out of somebody's hands about nine feet away
+      on a Tuesday, badly lit, with my coat still on.
+
+      [Verse 2]
+      There is a way of learning that the core does not have
+      and it is not better and it is not worse and it is ours.
+      You stand at the back. You watch a hand. You go home.
+      You have got about a third of it and you play the third.
+      Next week you get another third and it is wrong
+      and by the time you have the whole thing it is a different tune.
+
+      [Call - shouted over the band]
+      Second couple up. Cast off. Both lines.
+
+      [Chorus]
+      Nothing I know came off a piece of paper.
+      All of it came off a floor with people on it,
+      out of somebody's hands about nine feet away
+      on a Tuesday, badly lit, with my coat still on.
+
+      [Verse 3]
+      Six years I stood behind Hessa Lund and sang a third under her
+      and she never once told me a tune. Not one. Ever.
+      She would play it and look at me and that was the lesson
+      and I have never had a better one from anybody since.
+      Now there are four people behind me doing the same thing
+      and I have not told any of them anything either.
+
+      [Final Chorus - high harmony from the fiddle chair, the caller over the top]
+      Nothing I know came off a piece of paper.
+      All of it came off a floor with people on it,
+      and every one of you out there tonight is doing it now
+      whether you have noticed or you have not.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1127
+    title: Call It From the Side
+    track_number: 2
+    mood: [driving, loud, communal]
+    fact: >-
+      Alis Doone calls the whole figure from the side of the room rather than the front, because that
+      is where she stands at a dance and she would not do it differently for a record.
+    arrangement_note: the caller is positioned to one side rather than in front of the band and stays there for the whole track, so she is off-axis and slightly further away than she would be on any other record, which is where she stands at a dance
+    intro: 8
+    outro: fade
+    target_duration: "4:10"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 164 BPM, driving and loud, communal. Female lead vocal,
+      plain mid register, strong and unornamented, phrasing like somebody calling across a room. One
+      high female harmony from the fiddle chair through the choruses only. A second woman calls dance
+      figures over the band throughout — short rhythmic shouted instructions, spoken not sung, never
+      rapped — positioned clearly OFF TO ONE SIDE of the band rather than in front of it: off-axis,
+      slightly distant, plainly in the room rather than at a microphone. Composite fiddle, fretted
+      acoustic-toned composite guitar, upright bass, cut-stock kit, stripped-wire chimes. Tracked live
+      and loud in a hard-walled transfer shed with a floor of dancers, no click, slapback on the lead.
+      Eight seconds of band before the first sung word. Fades.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, centred or close-mic'd spoken vocal, cold ending
+    lyrics: |
+      [Intro - band, eight seconds]
+
+      [Verse 1]
+      A caller stands where a caller can see the whole floor
+      and the whole floor is not in front of a band, it is around it,
+      so she stands at the side, about a third of the way down,
+      with her back to the bulkhead and her eye on the far corner.
+      The label asked her to come and stand by the microphone.
+      She said she would not be able to see anything from there.
+
+      [Call - shouted from the side of the room]
+      Top of the room. Face your partner. And go.
+
+      [Chorus]
+      Call it from where you can see it or do not call it.
+      A caller who cannot see the far end is guessing,
+      and a floor that is being guessed at falls apart
+      about eight bars before anybody notices.
+
+      [Verse 2]
+      Older callers say the caller belongs at the front
+      and that a figure comes down over the top of a band
+      and that this is a thing that has been settled for a century.
+      The dancers settled it differently, in about a fortnight,
+      by simply doing what she said and not what anybody else did.
+      That is how these arguments end. It is not by arguing.
+
+      [Call - shouted from the side of the room]
+      Cast. Cast. Long line. Hold it. Come back.
+
+      [Chorus]
+      Call it from where you can see it or do not call it.
+      A caller who cannot see the far end is guessing,
+      and a floor that is being guessed at falls apart
+      about eight bars before anybody notices.
+
+      [Verse 3]
+      You can hear where she is on this. She is not in the middle.
+      She is off to one side and slightly further away
+      and the whole record is worse by every measure a label has
+      and better by the only measure that has ever mattered here,
+      which is whether four hundred people know where to put their feet.
+      Harbor Standard has asked twice. It is going to keep asking.
+
+      [Final Chorus - high harmony from the fiddle chair, the caller from the side]
+      Call it from where you can see it or do not call it.
+      She has been in that spot on this floor for nine years
+      and the far corner has never once gone wrong on her,
+      which is worth more than a tidy record to anybody here.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1128
+    title: No Licence, No Stage
+    track_number: 3
+    mood: [wry, brisk, defiant]
+    fact: >-
+      Written about the room Harbor Standard first heard the band in, which is the hall Ivet Sallow
+      kept her ledgers for and which has held no licence since 2604.
+    arrangement_note: no introduction of any consequence and no ending of any consequence, because the room this is about has no stage, no licence and no permission, and the arrangement is built to sound like something that simply starts
+    intro: 6
+    outro: cold
+    target_duration: "3:45"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 168 BPM, brisk and defiant, wry. Female lead vocal, plain
+      mid register, strong and unornamented, phrasing like somebody calling across a room. One high
+      female harmony from the fiddle chair through the choruses only. A second woman calls dance
+      figures over the band throughout — short rhythmic shouted instructions, spoken not sung, never
+      rapped. Composite fiddle, fretted acoustic-toned composite guitar, upright bass, cut-stock kit,
+      stripped-wire chimes. Tracked live and loud in a hard-walled transfer shed with a floor of
+      dancers, no click, slapback on the lead. Six seconds of band before the first sung word — no
+      real introduction, the track simply begins. Cold stop.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, long instrumental introduction, big finish, fade-out
+    lyrics: |
+      [Intro - band, six seconds]
+
+      [Verse 1]
+      There is a room out past the second gate with no licence
+      and there has been no licence on it since about 2604
+      and there is a dance in it every week and there has been for years
+      and everybody including the people who issue licences knows.
+      No stage. No door charge. A stove and a swept floor
+      and a woman on the step who tells you if it is on.
+
+      [Call - shouted over the band]
+      In you come. Mind the step. Straight to the middle.
+
+      [Chorus]
+      No licence, no stage, no ticket and no sign,
+      and about two hundred people in there every week.
+      Whatever a hall is, it is not a piece of paper.
+      It is a floor and a stove and somebody at the door.
+
+      [Verse 2]
+      Ivet Sallow kept the ledgers for that room for years
+      and the ledgers are still in a box under the bench,
+      and if anybody ever wants to know what a frontier dance cost
+      in a room that officially has not existed since 2604,
+      the numbers are all there in a hand nobody can read
+      and the last entry is in the same ink as the first.
+
+      [Verse 3]
+      Harbor Standard sent a man out there to hear us
+      because a gate clerk told them there was a band worth hearing,
+      and it took them two years to send him, which is fair,
+      because the address he was given is not really an address.
+      He stood at the back with his coat on for four hours.
+      He signed us the following week and asked where the stage was.
+
+      [Call - shouted over the band]
+      Two lines. Face up. Hold. And away.
+
+      [Chorus]
+      No licence, no stage, no ticket and no sign,
+      and about two hundred people in there every week.
+      Whatever a hall is, it is not a piece of paper.
+      It is a floor and a stove and somebody at the door.
+
+      [Final Chorus - high harmony from the fiddle chair, the caller over the top]
+      No licence, no stage, no ticket and no sign.
+      Every settlement on this coast has one of these
+      and not one of them is on any list anywhere,
+      and that is the whole reason they are still standing.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1129
+    title: Hold It Under
+    track_number: 4
+    mood: [deep, insistent, rolling]
+    fact: >-
+      Corr Ballan plays one figure for the whole track without altering it, which he says is the entire
+      job of a bass player and which the rest of the band disputes in public.
+    arrangement_note: the bass plays one figure from the first bar to the last without a single variation, fill or change, and everything else in the arrangement moves around it, which is either the point of the track or the argument of it depending on who is asked
+    intro: 14
+    outro: fade
+    target_duration: "4:25"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 156 BPM, deep and rolling, insistent. Female lead vocal,
+      plain mid register, strong and unornamented, phrasing like somebody calling across a room. One
+      high female harmony from the fiddle chair through the choruses only. A second woman calls dance
+      figures over the band throughout — short rhythmic shouted instructions, spoken not sung, never
+      rapped. The upright bass plays ONE unchanging repeated figure from the first bar to the last with
+      no fills, no variation and no development at all, while everything else moves around it.
+      Composite fiddle taking an eighteen-second break, fretted acoustic-toned composite guitar,
+      cut-stock kit, stripped-wire chimes. Tracked live and loud in a hard-walled transfer shed with a
+      floor of dancers, no click. Fourteen seconds of the bass figure alone before the first sung word.
+      Fades.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, bass fills, bass solos, cold ending
+    lyrics: |
+      [Intro - the bass figure alone, fourteen seconds]
+
+      [Verse 1]
+      He has played one thing for four minutes and eleven seconds
+      and he will tell you, at length, in a port hall, for free,
+      that this is the entire job and everything else is vanity,
+      and that a bass that is doing something is a bass that has stopped working.
+      The rest of us disagree with him loudly and in public
+      and none of us has ever asked him to change a single bar.
+
+      [Chorus]
+      Hold it under. Do not move. Do not decorate.
+      Four hundred people are standing on top of that figure
+      and every one of them will fall over if it moves,
+      and not one of them will ever know it was there.
+
+      [Instrumental - fiddle break over the unchanging bass, eighteen seconds]
+
+      [Verse 2]
+      Neve goes somewhere different every second time round.
+      Tobe changes what he is doing about once a bar.
+      I have never sung the third verse of this the same way twice
+      and none of that is possible without a floor under it.
+      He knows that. That is the whole of his argument.
+      He is right and we are never going to admit it in a hall.
+
+      [Call - shouted over the band]
+      Round again. Same again. Nobody stops.
+
+      [Chorus]
+      Hold it under. Do not move. Do not decorate.
+      Four hundred people are standing on top of that figure
+      and every one of them will fall over if it moves,
+      and not one of them will ever know it was there.
+
+      [Verse 3]
+      There was a night at the shed when a string went on him
+      about two thirds of the way through a long set
+      and the floor came apart inside about six bars,
+      and every person in that room felt it and none of them knew why.
+      He had it back on in ninety seconds and said nothing.
+      That is the best argument anybody has ever made about anything.
+
+      [Final Chorus - high harmony from the fiddle chair, the caller over the top]
+      Hold it under. Do not move. Do not decorate.
+      Four hundred people are standing on top of that figure.
+      He has done it for nine years and he will do it for nine more
+      and the sleeve will say bass, and that will be that.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1130
+    title: Charge the Band, Not the Floor
+    track_number: 5
+    mood: [hard, plain, defiant]
+    fact: >-
+      Suli Orley wrote it after a hall keeper offered the band a larger fee out of a raised door price,
+      and she reads the offer out before the first verse.
+    arrangement_note: the offer is read out plainly over the introduction, off a piece of paper, before a note is sung, and the band does not react to it — it simply starts the tune underneath the last sentence
+    intro: 10
+    outro: cold
+    target_duration: "4:05"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 162 BPM, hard and plain, defiant. Female lead vocal, plain
+      mid register, strong and unornamented, phrasing like somebody calling across a room. One high
+      female harmony from the fiddle chair through the choruses only. A second woman calls dance
+      figures over the band throughout — short rhythmic shouted instructions, spoken not sung, never
+      rapped. Over the ten-second introduction the lead singer READS ALOUD from a piece of paper —
+      flat, unhurried, plainly reading rather than performing, not rhythmic, not rapped — and the band
+      comes in underneath the last sentence without reacting. Composite fiddle, fretted acoustic-toned
+      composite guitar, upright bass, cut-stock kit, stripped-wire chimes. Tracked live and loud in a
+      hard-walled transfer shed with a floor of dancers, no click. Cold stop.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, rhythmic spoken word, whispered vocals, vocal tuning, modern pop production, fade-out
+    lyrics: |
+      [Intro - the offer read aloud off a piece of paper, ten seconds, band entering underneath]
+      Two and a half times the standing fee, payable on the night,
+      the difference to be met from an adjustment to the door.
+
+      [Verse 1]
+      That is what the man wrote and that is what the man meant
+      and there is nothing dishonest in it anywhere at all.
+      He has a hall to keep and a stove to feed and a roof,
+      and a settlement's worth of ice on it until the thaw.
+      and he thought he was doing something rather generous.
+      He was doing something rather generous. To us.
+      Out of the pockets of the people standing in his room.
+
+      [Chorus]
+      Charge the band. Take it out of what you pay us.
+      Do not put it on a door that people queue at in the ice.
+      There are four of us and there are four hundred of them
+      and only one of those numbers can afford it.
+
+      [Call - shouted over the band]
+      Straight down the middle. Turn. And out.
+
+      [Verse 2]
+      He said, reasonably, that the floor would not notice.
+      A small increase. A coin. Nobody is going to argue.
+      And that is true, and that is exactly the trouble,
+      because nobody argues, and next year it goes up again,
+      the way a ration goes down and nobody writes to anybody,
+      and in nine years the dance costs what a shift pays
+      and the people it was for are the ones who are not in it.
+
+      [Chorus]
+      Charge the band. Take it out of what you pay us.
+      Do not put it on a door that people queue at in the ice.
+      There are four of us and there are four hundred of them
+      and only one of those numbers can afford it.
+
+      [Verse 3]
+      We turned it down and we have turned the same one down twice
+      and the second time it was the exchange hall itself,
+      which is the room I stood in when I was nineteen
+      and would very much like to play before I stop.
+      Not at that price. Not out of that door.
+      I will play a shed with a stove in it until I am eighty.
+
+      [Final Chorus - high harmony from the fiddle chair, the caller over the top]
+      Charge the band. Take it out of what you pay us.
+      There are four of us and there are four hundred of them,
+      and every one of the four hundred works for a living,
+      and so do we, and that is the end of the arithmetic.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1131
+    title: We Did Not Go Back
+    track_number: 6
+    mood: [midtempo, cold, knowing]
+    fact: >-
+      Neve Torrin sings the second verse about a hall she has never played, which is the exchange hall
+      the band turned down that year.
+    arrangement_note: the fiddle chair sings the second verse alone, in a higher voice than the lead's and with no harmony above her, about a room she has never set foot in, and the lead does not sing underneath her
+    intro: 4
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 150 BPM, midtempo, cold and knowing. Female lead vocal,
+      plain mid register, strong and unornamented, phrasing like somebody calling across a room. On the
+      second verse only, a DIFFERENT and noticeably higher female voice takes the lead alone, with no
+      harmony above or below her and the usual lead silent. One high female harmony from the fiddle
+      chair through the choruses. A second woman calls dance figures over the band throughout — short
+      rhythmic shouted instructions, spoken not sung, never rapped. Composite fiddle, fretted
+      acoustic-toned composite guitar, upright bass, cut-stock kit, stripped-wire chimes. Tracked live
+      and loud in a hard-walled transfer shed with a floor of dancers, no click. Four seconds before
+      the first sung word. Fades.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, blended double lead, cold ending
+    lyrics: |
+      [Intro - band, four seconds]
+
+      [Verse 1]
+      There is a hall in this settlement with a floor I know
+      about as well as I know the inside of my own hands,
+      and I have not stood on it since the year Wire and Rosin stopped
+      and I am not going to stand on it at the price they are asking.
+      Everybody in Cold Harbor knows which room this is.
+      Half of them think we are right and half think we are showing off.
+      It is the biggest hall between here and the storm coast.
+
+      [Verse 2 - the fiddle chair alone, higher, no harmony]
+      I have never been in it. I have never once been in it.
+      I was on the far side of the ice when all that happened
+      and by the time I got here we were not going there,
+      and so there is a room in my own settlement I have never seen.
+      She talks about that floor the way people talk about weather.
+      I have no opinion about it at all and I am in the band.
+
+      [Call - shouted over the band]
+      All the way up. Both lines. Wait. Now.
+
+      [Chorus]
+      We did not go, and we are not going, and it is fine.
+      There are eleven rooms on this coast with a floor in them
+      and about nine of them will have us on a Saturday
+      and none of the nine charges anybody to walk in.
+
+      [Verse 3]
+      There was another record made in that hall this year
+      by a band who did go, and who are very good,
+      and the whole coast has spent a winter deciding
+      which of the two of us was paying the proper tribute.
+      Neither. Both. Ask the four hundred people in this shed.
+      They have not spent one minute of the winter on it.
+
+      [Chorus]
+      We did not go, and we are not going, and it is fine.
+      There are eleven rooms on this coast with a floor in them
+      and about nine of them will have us on a Saturday
+      and none of the nine charges anybody to walk in.
+
+      [Final Chorus - high harmony from the fiddle chair, the caller over the top]
+      We did not go, and we are not going, and it is fine,
+      and one of us has never been in the room at all,
+      which is the part of this that I had not thought about
+      until she said it, into a microphone, in front of everybody.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1132
+    title: Doors at the Far End
+    track_number: 7
+    mood: [fast, loose, bright]
+    fact: >-
+      Brin Noll retuned the shed's loose metal before the band played and then stayed to play the
+      chimes on this one, having done the same thing in a hold for Loose Cargo.
+    arrangement_note: the shed's own loose metal has been retuned to the key of the tune and a fifth player is on the stripped-wire chimes, so the building answers the band in pitch on every chorus and the chimes answer it on top
+    intro: 16
+    outro: sustain
+    target_duration: "4:30"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 178 BPM, fast and bright, loose. Female lead vocal, plain
+      mid register, strong and unornamented, phrasing like somebody calling across a room. One high
+      female harmony from the fiddle chair through the choruses only. A second woman calls dance
+      figures over the band throughout — short rhythmic shouted instructions, spoken not sung, never
+      rapped. Prominent stripped-wire chimes played by a fifth player — thin, high, irregular struck
+      wire — plus the shed's own loose metal ringing IN TUNE with the music on every chorus. Composite
+      fiddle taking a sixteen-second break, fretted acoustic-toned composite guitar, upright bass,
+      cut-stock kit. Tracked live and loud in a hard-walled transfer shed with a floor of dancers, no
+      click. Sixteen seconds of chimes and ringing metal before the first sung word. Ends on a held
+      chord with the metal still ringing.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, untuned clatter, cold ending
+    lyrics: |
+      [Intro - chimes and ringing metal, sixteen seconds]
+
+      [Verse 1]
+      A man came out to the shed two days before we started
+      with a bag of tools and a list and about nine hours
+      and went round every loose fixing in the building
+      until the whole shed was in the same key as the band.
+      He did it in a hold for a crew off the between once.
+      He does not charge for it. Nobody knows why he does it.
+
+      [Call - shouted over the band]
+      Doors at the far end. Line it up. Go.
+
+      [Chorus]
+      Doors at the far end and the cold coming in
+      and four hundred people who are not going to notice.
+      Open them. Open them properly. It is too warm in here.
+      A shed full of dancers in the long night makes its own weather.
+
+      [Instrumental - fiddle break over the ringing metal, sixteen seconds]
+
+      [Verse 2]
+      Then he stayed. Nobody asked him to stay and he stayed
+      and played the wire on this one standing behind Tobe
+      like a man who had turned up to do a job and found another.
+      He is the fifth person on this track and the sleeve says so
+      and Harbor Standard wanted to know what he was being paid.
+      He is not being paid. He asked for a cup of tea.
+
+      [Call - shouted over the band]
+      Both doors. Both. And back down the middle.
+
+      [Chorus]
+      Doors at the far end and the cold coming in
+      and four hundred people who are not going to notice.
+      Open them. Open them properly. It is too warm in here.
+      A shed full of dancers in the long night makes its own weather.
+
+      [Verse 3]
+      When the doors go the whole building changes note.
+      You can hear it on this. It happens in the third turn.
+      The room gets longer and everything rings differently
+      and Neve went up a register without deciding to.
+      That is the last thing on this record and it is an accident
+      and it is the reason we made it in a shed.
+
+      [Final Chorus - high harmony from the fiddle chair, the caller over the top]
+      Doors at the far end and the cold coming in
+      and a man on the wire who came to tune the building.
+      Open them. Open them properly. It is too warm in here,
+      and let the whole of Cold Harbor hear where we are.
+
+      [Outro - held chord, the metal still ringing]
+    take: null # M-33 fills this in at the Suno sitting

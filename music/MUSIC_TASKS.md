@@ -67,7 +67,7 @@ marked **NEXT**.
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-06** `music/catalogue.yaml` · 2026-08-16 | **all done.** The takes are measured (D-083), tagged (D-084), and joined into the one file the station's database ingests — 1,358 tracks, 45 of them playable, checked against the wiki by `make check` (D-085) |
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
 | **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
-| **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-31** lane-rock's audio, all 110 filed · 2026-08-25 | **M-24 is NEXT** — Frontier Reels' lyrics, 95 songs across 4 bands and 12 albums. Two genres down and both complete: relay-pop 105 of 105, lane-rock 110 of 110. 285 songs of lyrics and 285 of audio still to go, across five genres and not seven |
+| **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-24** Frontier Reels' lyrics, 95 songs across 12 albums · 2026-08-26 | **M-33 is NEXT** — Frontier Reels' audio, 95 takes across 4 bands, and it is yours. Two genres finished end to end (relay-pop 105 of 105, lane-rock 110 of 110) and a third now has its words. 190 songs of lyrics and 285 of audio still to go |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -103,11 +103,12 @@ before the next one starts. That pairing is the point: a problem shows up after 
 instead of after 455. The two cards inside one genre cannot overlap, so **the sessions take turns
 rather than running side by side.**
 
-**Two genres are finished and the turn passes back to the agent.** Relay-pop is 105 of 105.
-Lane-rock's words were written on 2026-08-19 (M-22) and its audio landed on 2026-08-25 (M-31): all
-110 takes generated, filed, tagged and in the catalogue, one of them fetched twice because the first
-download stopped at 8.2 seconds. **M-24 is next** — Frontier Reels' lyrics, 95 songs across 4 bands
-and 12 albums.
+**Two genres are finished and the third has its words.** Relay-pop is 105 of 105. Lane-rock's
+words were written on 2026-08-19 (M-22) and its audio landed on 2026-08-25 (M-31): all 110 takes
+generated, filed, tagged and in the catalogue, one of them fetched twice because the first download
+stopped at 8.2 seconds. **M-24 closed on 2026-08-26** — Frontier Reels' 95 lyrics across 12 albums,
+written and green on all ten of §12's rules. **M-33 is next and it is yours**: 95 takes, four bands,
+one band per sitting.
 
 **Filing a pile is now `make music-dispatch`** rather than something an agent works out each time.
 Point it at the export folder; it reads the lyric out of every file's own tags, proves the whole pile
@@ -1051,13 +1052,13 @@ are never reused, because a number is an identity here and not a position in a q
 |---|---|---|---|
 | 1 | **M-21 relay-pop — done** | **M-30 relay-pop — done** | 60 |
 | 2 | **M-22 lane-rock — done** | **M-31 lane-rock — done** | 110 |
-| 3 | **M-24 frontier-reels · NEXT** | M-33 frontier-reels — 4 bands | 95 |
+| 3 | M-24 frontier-reels — done | **M-33 frontier-reels · NEXT** — 4 bands | 95 |
 | 4 | M-25 old-system-sessions | M-34 old-system-sessions — 4 bands | 90 |
 | 5 | M-27 void-lounge | M-36 void-lounge — 4 bands | 55 |
 | 6 | M-28 core-harmonies | M-37 core-harmonies — 1 band | 20 |
 | 7 | M-29 void-ballads | M-38 void-ballads — 2 bands | 25 |
 
-### M-21 · M-22 · M-24 · M-25 · M-27 · M-28 · M-29 · `[agent]` Lyrics and prompts — 59 albums, 455 songs — **M-22 DONE 2026-08-19**
+### M-21 · M-22 · M-24 · M-25 · M-27 · M-28 · M-29 · `[agent]` Lyrics and prompts — 59 albums, 455 songs — **M-24 DONE 2026-08-26**
 Files: one file per album under `music/production/lyrics/`
 Check: every song has lyrics, a generation prompt and an exclude line; every lyric passes the
 swap-the-nouns test; every song has a vocal. M-21 writes `al_005.yaml` … `al_011.yaml`.
@@ -1116,9 +1117,53 @@ takes the break**, on any of the four tracks where a guest brings an instrument 
 **Nothing was generated and nothing was measured**: every `generation:` block and every `take:` is
 null until M-31, `music/catalogue.yaml` is byte-identical, and `make music-tag` reports exactly what
 it reported before — 105 correct and `87_wrong.mp3` still unclaimed, which is D-091's resting state.
+Result (M-24): **Frontier Reels is written — 95 songs across 12 albums**, `al_078` … `al_085` and
+`al_136` … `al_139`, which is the smallest band count of any genre so far — four — and the first
+whose layer A is mostly historical: three of the four bands had stopped by 2612, and one of the
+twelve records is a live album of performances made twenty years before it was issued.
+**`make check` is green on all ten of §12's rules.**
+**The dance floor is the fifth instrument and the arrangement notes treat it as one.** It claps the
+count in on `s_0635`, sings a whole chorus unaccompanied on `s_0643`, is paid at the door on `al_079`
+because the band made that the condition, is absent from exactly one track in the genre (`s_0647`,
+where the room tone changes with it), and is four hundred Cold Harbor dancers carried to the core at
+a label's expense on `al_139`. **Eleven of the 95 are about who gets paid** — a door price, a hall
+fee, a wage packet, a bench with the money on it, a fee handed over in a corridor — which is what
+`s_0637`'s promoter and `s_1130`'s hall keeper have in common with each other and with §3's rule that
+the world supplies the furniture and never the subject.
+**§7's four distributions all land.** Breaks: **31 of 95, 33%** — §7's "roughly one in three" —
+never fewer than two on an album, and every one of them on the instrument that band's card names,
+which for `b_038` means the fiddle and the pipes trading it. Ramps: **73% declare ≥8s and 19%
+≥15s** against §7's ≥40% and ≥15%; the overshoot is deliberate and larger than lane-rock's,
+because a reel sets its tune before anybody sings and Suno still comes in early. Outros: **29 cold /
+43 fade / 23 sustain**, which is 31/45/24 against §7's 30/45/25 — the closest any genre has come.
+Targets average 4:05 with nothing under 3:20.
+**The lyrics are the longest yet and the tempo is why** (D-095): 296 to 395 sung words, **mean 340**
+against M-22's 317 and M-21's 308, 32,290 words in all. §7's measured 0.746 seconds per word is
+relay-pop's rate at 110–130 BPM; this genre runs 118–184 and every band's card floor is above
+relay-pop's ceiling, so words go past faster and the floor has to be cleared by fifty rather than by
+thirty. If M-39 measures this genre short per word, that is why.
+**Rule 4 bound hardest of the three genres so far.** Frontier reel titles are dance-floor shorthand
+and every one of them wants to be the hook: the first pass had **nine of the twelve albums red on
+rule 4 and two of them at 100%**. 43 of 95 sing their own title and the other 52 take it from an
+image in the lyric. Rule 1 bound next, on six albums, because a reel is a shape people dance to and the
+shape does not want to vary — the fix was turnarounds, called figures, pre-choruses and read-aloud
+sections, not different songs. Rule 3 came free: **the echoed answer is on none of the 95**,
+because these four bands answer their leads with a second fiddle, a set of pipes, a hall or a caller
+— the answering voice is in the section tags and the prompts, which is where M-47 put it.
+**Two collisions between the wiki and the style cards were resolved the wiki's way** (D-095), and one
+of them is dated rather than permanent: `b_038`'s card says *amplified* resonance pipes and `al_081`
+is a Purist record from 2583, so nothing on it is amplified and the first amplifier in the band's life
+is the first sound on `al_082`; and `b_062`'s card says the caller is on every track, while the wiki's
+credits put Alis Doone on four of `al_139`'s eight, so she is off the other four and their exclude
+lines keep spoken calling out. **Four songs are sung by somebody other than their band's lead voice**
+and every one is a wiki fact: `s_0654`, `s_1116`, `s_0697` and `s_1139`. Each is named in its own
+prompt and in its album's `room:` block; no style card was amended.
+**Nothing was generated and nothing was measured**: every `generation:` block and every `take:` is
+null until M-33, `music/catalogue.yaml` is byte-identical, and `make music-tag` reports exactly what
+it reported before.
 Depends on: M-20 for M-21; thereafter each genre's lyrics card depends on the previous genre's
-**audio** card being finished — that is what "one genre at a time" means. **M-22 closed on
-2026-08-19, so M-31 is runnable now**, and M-24's turn comes when M-31 does.
+**audio** card being finished — that is what "one genre at a time" means. **M-24 closed on
+2026-08-26, so M-33 is runnable now**, and M-25's turn comes when M-33 does.
 
 ### M-30 · M-31 · M-33 · M-34 · M-36 · M-37 · M-38 · `[you]` Suno — 455 songs — **M-31 DONE 2026-08-25**
 Files: `music/audio/<label>/<album>/NN.mp3`

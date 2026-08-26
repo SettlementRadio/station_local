@@ -1,0 +1,638 @@
+# al_139 — We Went the Other Way · Board and Bow (b_062) · Harbor Standard · 2624 · 8 songs
+#
+# Written by M-24. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Four nights in Concordance's reopened hall, which Suli Orley agreed to on one condition: that Cold
+# Harbor dancers came too and were not charged to get in. Four hundred of them were, at the label's
+# expense, and the hall's own staff danced and are on the sleeve by name. **It is the loudest thing
+# this band has made** and every prompt says so — the room is enormous and hard where al_138's shed
+# was small and hard, and the arrangement is the same five people playing into about ten times the
+# air.
+#
+# **One collision between the card and the wiki, resolved the wiki's way.** b_062's style card says
+# the caller is on every track. The wiki's credits for this record put Alis Doone on four of the
+# eight — s_1133, s_1134, s_1135 and s_1140 — and off the other four entirely. So she is off them:
+# no called figures anywhere on s_1136, s_1137, s_1138 or s_1139, and their exclude lines keep spoken
+# calling out. Where she is on, she sits further forward than on al_138, because she asked for it.
+# The card is not amended; the record is what the record is.
+#
+# Three of the eight take a fiddle break. `generation:` and every `take:` are empty until M-33.
+
+album:
+  id: al_139
+  title: We Went the Other Way
+  band: b_062
+  band_name: Board and Bow
+  label: label_2
+  release_year: 2624
+  genre: frontier-reels
+  cornerstone: false
+  song_count: 8
+  style_card: b_062
+  room: >-
+    Concordance's reopened hall over four nights, with four hundred Cold Harbor dancers brought in at
+    the label's expense and not charged, and the hall's own staff on the floor with them. Enormous,
+    hard and loud — the opposite of al_138's transfer shed in size and the same in temperament. The
+    card holds: plain mid-register female lead phrasing like somebody calling across a room, one high
+    harmony from the fiddle chair through the choruses, fiddle taking every break, no click. Two
+    departures are the wiki's and are written into the songs that own them. **Alis Doone is on four of
+    these eight tracks and not on the other four**, and where she is on she is mixed further forward
+    than anywhere on the first record. And on s_1139 the fiddle chair sings the lead, which is the one
+    lead Suli Orley has ever given away. Nessa Dray plays a second fiddle on s_1136 and lifts the
+    tempo halfway through without having agreed to. s_1140 was played after the hall's licensed hours
+    had ended and the keeper let it run.
+
+generation:
+  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1133
+    title: We Went the Other Way
+    track_number: 1
+    mood: [driving, bright, defiant]
+    fact: >-
+      Suli Orley wrote it on the way to the core and changed the last verse after seeing the hall,
+      which she has described as a room built for people who are sitting down.
+    arrangement_note: the first two verses are the version written on the way in and the last verse is the one written after seeing the room, and the arrangement gets harder rather than bigger at exactly that point
+    intro: 10
+    outro: cold
+    target_duration: "4:05"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 170 BPM, driving and bright, defiant. Female lead vocal,
+      plain mid register, strong and unornamented, phrasing like somebody calling across a room. One
+      high female harmony from the fiddle chair through the choruses only. A second woman calls dance
+      figures over the band — short rhythmic shouted instructions, spoken not sung, never rapped —
+      mixed well forward, close and loud over the top of everything. Composite fiddle, fretted
+      acoustic-toned composite guitar, upright bass, cut-stock kit, stripped-wire chimes. Tracked live
+      in an enormous hard-walled concert hall with four hundred dancers in it: very loud, long
+      reflections, the floor audible everywhere. Ten seconds of band before the first sung word. The
+      arrangement gets harder and tighter at the last verse rather than bigger. Cold stop.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, small dry room, fade-out
+    lyrics: |
+      [Intro - band, ten seconds]
+
+      [Verse 1]
+      Everybody comes the other way. That is the road.
+      You get good on a frontier floor and you go to the core
+      and you play a hall with a sprung stage and a curtain
+      and you come home in nine years with an accent and a manager.
+      I wrote the first half of this on the way in
+      feeling extremely clever about not doing that.
+
+      [Call - shouted over the band, well forward]
+      Take hands. All the way down. And turn.
+
+      [Chorus]
+      We went the other way and brought the floor with us.
+      Four hundred people off the ice in a hall with a chandelier.
+      Nobody here is going anywhere on their own.
+      If we are playing the core, the coast is coming too.
+
+      [Verse 2]
+      The condition was simple and the label agreed to it
+      after about a fortnight of finding out I meant it:
+      four hundred Cold Harbor dancers, carried, not charged,
+      or there is no record and Harbor Standard can have the nights back.
+      They said it would cost more than the hall did. It did.
+      They did it anyway, which I did not expect, and I have said so.
+
+      [Call - shouted over the band, well forward]
+      Cast off. Both lines. Long way round. Hold.
+
+      [Chorus]
+      We went the other way and brought the floor with us.
+      Four hundred people off the ice in a hall with a chandelier.
+      Nobody here is going anywhere on their own.
+      If we are playing the core, the coast is coming too.
+
+      [Verse 3 - written after seeing the room]
+      And then I saw it, and I had to write this bit again.
+      It is a beautiful room. It is a genuinely beautiful room.
+      It is also a room that was built for people sitting down,
+      with the seats bolted to the floor in rows facing one way.
+      They took two hundred of them out for us in a day.
+      Somebody in this settlement is going to be furious about that.
+
+      [Final Chorus - high harmony from the fiddle chair, the caller forward]
+      We went the other way and brought the floor with us,
+      and they unbolted the seats, which is the whole story.
+      Nobody here is going anywhere on their own.
+      Four nights. Then the ferry. Then home.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1134
+    title: Four Hundred Off the Frontier
+    track_number: 2
+    mood: [fast, loud, communal]
+    fact: >-
+      The dancers on it travelled from Cold Harbor at the label's expense, and the sleeve lists the
+      hall's own staff by name as well, because they danced too.
+    arrangement_note: the loudest thing on the record, with the floor mixed almost level with the band because there are four hundred people on it in a room built for a thousand sitting still
+    intro: 14
+    outro: sustain
+    target_duration: "4:30"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 176 BPM, fast and loud, communal. Female lead vocal, plain
+      mid register, strong and unornamented, phrasing like somebody calling across a room. One high
+      female harmony from the fiddle chair through the choruses only. A second woman calls dance
+      figures over the band — short rhythmic shouted instructions, spoken not sung, never rapped —
+      mixed well forward. Composite fiddle, fretted acoustic-toned composite guitar, upright bass,
+      cut-stock kit, stripped-wire chimes. Tracked live in an enormous hard-walled concert hall with
+      four hundred dancers, mixed almost level with the band: feet, voices and long reflections
+      everywhere, the loudest track on the record. Fourteen seconds of band and rising floor noise
+      before the first sung word. Ends on a held chord with the room still going.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, small dry room, cold ending
+    lyrics: |
+      [Intro - band and rising floor, fourteen seconds]
+
+      [Verse 1]
+      Four hundred people who have never left the coast
+      on a ferry, in the dark, for four days, to dance,
+      with about nine of them being sick in the first hour
+      and every one of them saying it was worth it afterwards.
+      They were carried. Not charged. Fed twice. Put somewhere.
+      That is what a label is for and nobody uses one that way.
+
+      [Call - shouted over the band, well forward]
+      Straight down the middle. Two lines. Now.
+
+      [Chorus]
+      Four hundred off the coast and about nine from the hall,
+      and the nine are on the sleeve because the nine came out.
+      Nobody watched. There was nobody left to watch.
+      Everybody in that building was doing the same thing.
+
+      [Verse 2]
+      The hall's own staff were supposed to be working
+      and stood at the sides for about two tunes, professionally,
+      and then a woman who has cleaned that room for eleven years
+      put her cloth down on a rail and walked out into it.
+      Her name is on the sleeve and so are the other eight.
+      Harbor Standard asked whether that was necessary. It was.
+
+      [Verse 3]
+      There is a thing that happens in a room with no seats in it
+      that does not happen anywhere with seats, ever, at all,
+      which is that nobody can tell who came to watch
+      and who came to dance and who works there and who does not.
+      Take the chairs out and a room stops sorting people.
+      That is not a metaphor. That is joinery.
+
+      [Call - shouted over the band, well forward]
+      All the way up. Hold it. Both lines. Away.
+
+      [Chorus]
+      Four hundred off the coast and about nine from the hall,
+      and the nine are on the sleeve because the nine came out.
+      Nobody watched. There was nobody left to watch.
+      Everybody in that building was doing the same thing.
+
+      [Final Chorus - high harmony from the fiddle chair, the caller forward]
+      Four hundred off the coast and about nine from the hall,
+      and a chandelier over the top of the whole business.
+      Nobody watched. There was nobody left to watch.
+      Bolt the seats back in on Monday. Not tonight.
+
+      [Outro - held chord, the room still going]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1135
+    title: Ask a Core Room to Turn
+    track_number: 3
+    mood: [quick, wry, communal]
+    fact: >-
+      Alis Doone calls a figure the core dancers did not know and spends the first chorus teaching it
+      to them, which the band kept rather than start again.
+    arrangement_note: the caller teaches a figure over the whole of the first chorus instead of calling it, so the lead does not sing that chorus at all and the band vamps underneath the instruction until the floor has it
+    intro: 6
+    outro: fade
+    target_duration: "4:15"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 166 BPM, quick and communal, wry. Female lead vocal, plain
+      mid register, strong and unornamented, phrasing like somebody calling across a room. One high
+      female harmony from the fiddle chair through the choruses. A second woman calls dance figures
+      over the band — short rhythmic shouted instructions, spoken not sung, never rapped — mixed well
+      forward, and during the first chorus she EXPLAINS a figure at length instead of calling it,
+      patiently and unhurriedly, with no sung vocal underneath her while the band vamps. Composite
+      fiddle taking a sixteen-second break, fretted acoustic-toned composite guitar, upright bass,
+      cut-stock kit, stripped-wire chimes. Tracked live in an enormous hard-walled concert hall with
+      four hundred dancers. Six seconds before the first sung word. Fades.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, small dry room, cold ending
+    lyrics: |
+      [Intro - band, six seconds]
+
+      [Verse 1]
+      There is a figure we do on the coast that nobody else does
+      and it takes a bar of five in the middle of a straight tune
+      and everybody in Cold Harbor has walked it since they were six
+      and not one person in this room had ever seen it before.
+      It came up the relay road in a hold with a freight crew.
+      She called it on the first night and four hundred core dancers
+      went in about nine directions and it was magnificent.
+
+      [Teaching - spoken over the band, unhurried, no singing]
+      Right. Stop. Everybody stop. Nobody has done this before,
+      so we are going to do it slowly and then we are going to do it properly.
+      Take your partner. Long step on the fifth. Wait for it.
+      Wait. Wait. There. That is it. Again.
+
+      [Verse 2]
+      The band vamped for a minute and forty behind that
+      and Harbor Standard's man was at the side going white
+      and Corr just held the figure under it the way he does
+      and Tobe looked at me once and neither of us stopped.
+      You do not start a take again because the floor is learning.
+      Learning is the loudest thing that happened in four nights.
+
+      [Instrumental - fiddle break, sixteen seconds]
+
+      [Chorus]
+      Ask a room to turn and give it time to turn.
+      Nobody was born knowing where their feet go.
+      Four hundred people off the ice were taught this too,
+      by somebody, in a shed, about nine years ago.
+
+      [Verse 3]
+      Second time round they had it. Not well. They had it.
+      By the fourth night there were core dancers teaching each other
+      down at the far end where the caller cannot see,
+      which is exactly how it got to Cold Harbor in the first place.
+      There is going to be a bar of five in this settlement now
+      and in about four years nobody will remember where it came from.
+
+      [Chorus]
+      Ask a room to turn and give it time to turn.
+      Nobody was born knowing where their feet go.
+      Four hundred people off the ice were taught this too,
+      by somebody, in a shed, about nine years ago.
+
+      [Final Chorus - high harmony from the fiddle chair, the caller forward]
+      Ask a room to turn and give it time to turn,
+      and keep the take, and let the minute forty stand.
+      Nobody was born knowing where their feet go.
+      That is on the record and I would not cut a second.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1136
+    title: Bring Your Own Floor
+    track_number: 4
+    mood: [fast, competitive, bright]
+    fact: >-
+      Nessa Dray plays the second fiddle part and lifts the tempo halfway through with a look, which
+      Neve Torrin says she had not agreed to and has never asked her to undo.
+    arrangement_note: two fiddles, and the tempo goes up about eight beats a minute exactly halfway through because the guest decided it should, with no discussion and no warning and the rest of the band following her
+    intro: 16
+    outro: cold
+    target_duration: "4:25"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, fast and bright, competitive. Starts at 168 BPM and, at the
+      halfway point, the whole band lifts to about 176 BPM without warning and stays there — an
+      unannounced push rather than a gradual accelerando. Female lead vocal, plain mid register, strong
+      and unornamented, phrasing like somebody calling across a room. One high female harmony from the
+      fiddle chair through the choruses only. NO spoken calling and no called dance figures anywhere on
+      this track. TWO composite fiddles, audibly two different players, trading an eighteen-second
+      break. Fretted acoustic-toned composite guitar, upright bass, cut-stock kit. Tracked live in an
+      enormous hard-walled concert hall with four hundred dancers. Sixteen seconds of the two fiddles
+      before the first sung word. Cold stop.
+    exclude: spoken calling, called dance figures, shouted instructions, electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, gradual accelerando, small dry room, fade-out
+    lyrics: |
+      [Intro - two fiddles, sixteen seconds]
+
+      [Verse 1]
+      A hall is not a floor. That is the whole difference
+      and nobody who has only ever played halls understands it.
+      A floor is what four hundred people do to a building.
+      You can put one into a room that has never had one
+      and you can take it out again on Monday morning
+      the way a freight crew takes a hold apart at a berth,
+      and the room will not remember and the people will.
+
+      [Chorus]
+      Bring your own floor. Do not wait to be given one.
+      There is no room anywhere that comes with people in it.
+      Whatever you are carrying, that is the venue.
+      The building is a roof and it is not the point.
+
+      [Verse 2]
+      Nessa Dray came out from four stops down the road
+      for one night and stayed for three, which was not the arrangement,
+      and about halfway through this she looked up at Neve
+      and put about eight beats a minute on it without asking anybody.
+      Neve went with her. Corr went with her. Tobe swore.
+      I sang the second half of this considerably faster than I meant to.
+
+      [Instrumental - two fiddles trading, eighteen seconds]
+
+      [Verse 3]
+      Neve says she had not agreed to it and never would have
+      and has not once asked her to put it back where it was
+      and has been playing it at the new speed ever since,
+      which is the most Neve Torrin sequence of events possible.
+      That is what a session player is actually for.
+      Not the part. The look. The eight beats nobody agreed to.
+
+      [Chorus]
+      Bring your own floor. Do not wait to be given one.
+      There is no room anywhere that comes with people in it.
+      Whatever you are carrying, that is the venue.
+      The building is a roof and it is not the point.
+
+      [Final Chorus - high harmony from the fiddle chair]
+      Bring your own floor, and mind who you let stand on it,
+      because somebody will lift it out from under you at the join.
+      Whatever you are carrying, that is the venue,
+      and it is going faster than it was and we are staying with it.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1137
+    title: Paid Before We Played
+    track_number: 5
+    mood: [blunt, midtempo, wry]
+    fact: >-
+      Corr Ballan made the label hand the fee over in front of the band before the first night, having
+      been at three dances where nobody was paid after one.
+    arrangement_note: the plainest arrangement on the record with nothing decorating anything, the bass forward and the fiddle staying out of the way, because it is a song about a transaction being witnessed
+    intro: 4
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 152 BPM, blunt and midtempo, wry. Female lead vocal, plain
+      mid register, strong and unornamented, phrasing like somebody calling across a room. One high
+      female harmony from the fiddle chair through the choruses only. NO spoken calling and no called
+      dance figures anywhere on this track. The plainest arrangement on the record: upright bass
+      forward and unadorned, composite fiddle staying out of the way, fretted acoustic-toned composite
+      guitar, cut-stock kit, no fills or decoration anywhere. Tracked live in an enormous hard-walled
+      concert hall with four hundred dancers. Four seconds before the first sung word. Fades.
+    exclude: spoken calling, called dance figures, shouted instructions, electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, instrumental flourishes, small dry room, cold ending
+    lyrics: |
+      [Intro - band, four seconds]
+
+      [Verse 1]
+      He stood in the corridor of a hall in the core
+      with four people behind him and a man from the label in front
+      and said he would like the money now, in front of everybody,
+      before anybody played anything, and would not move.
+      It was not rudeness. He had been at three dances
+      where a band played four hours and went home with a promise.
+
+      [Chorus]
+      Money first. Not because anybody is a liar.
+      Because a promise at eleven is not a promise at four
+      and a man who is very sorry in the morning
+      has still not paid five people who have to eat.
+
+      [Verse 2]
+      The label's man was genuinely offended for about a minute
+      and then, to his credit, worked out what was being said,
+      which is not that he would not pay but that he might not have to,
+      and that the difference is invisible until it is not.
+      He got it out and counted it in the corridor.
+      Nobody has mentioned it since and nobody has needed to.
+
+      [Verse 3]
+      There is a hall keeper on the coast who owes six bands
+      and every one of them believed him at the time,
+      and he is not a criminal and he is not going to be charged
+      and he will do it again this winter to somebody young.
+      Corr has been at three of those. Three is enough.
+      Three is exactly enough to change how a man stands in a corridor.
+
+      [Chorus]
+      Money first. Not because anybody is a liar.
+      Because a promise at eleven is not a promise at four
+      and a man who is very sorry in the morning
+      has still not paid five people who have to eat.
+
+      [Final Chorus - high harmony from the fiddle chair]
+      Money first, and then the doors, and then the tune,
+      and everybody in that corridor knew it was fair.
+      A promise at eleven is not a promise at four.
+      Ask any freight crew what a signature is for.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1138
+    title: Home on the Late Run
+    track_number: 6
+    mood: [slow, warm, tired]
+    fact: >-
+      Tobe Marran plays it on chimes he built out of stage wire the hall was throwing away, and he
+      asked the hall keeper for the wire before the band had played a note.
+    arrangement_note: the chimes on this track are made out of wire the hall was throwing out and were built between the first and second nights, so they are longer and duller than the band's usual ones and they carry the whole top of the arrangement
+    intro: 12
+    outro: fade
+    target_duration: "4:40"
+    prompt: >-
+      Slow dance-hall music at walking pace, 100 BPM, slow and warm, tired. Female lead vocal, plain
+      mid register, strong and unornamented, quieter and closer here than elsewhere. One high female
+      harmony from the fiddle chair through the choruses only. NO spoken calling and no called dance
+      figures anywhere on this track. Struck wire chimes carrying the whole top of the arrangement —
+      longer, duller and lower than usual, hand-built, irregular. Composite fiddle low and
+      unornamented, fretted acoustic-toned composite guitar, upright bass, cut-stock kit brushed.
+      Tracked live in an enormous hard-walled concert hall late at night, much quieter and emptier than
+      the rest of the record. Twelve seconds of the chimes before the first sung word. Fades.
+    exclude: spoken calling, called dance figures, shouted instructions, electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, fast reel tempo, cold ending
+    lyrics: |
+      [Intro - hand-built chimes, twelve seconds]
+
+      [Verse 1]
+      There was a bin at the back of that hall on the first night
+      with about nine metres of stage wire in it going out,
+      and Tobe found it before we had played a single note
+      and went and asked a man in a uniform whether he could have it.
+      The man did not know what to say and said yes.
+      By the second night there was a new set of chimes on the stand.
+
+      [Chorus]
+      Going home on the late one with the whole coast asleep,
+      four days on a ferry and a settlement in the dark,
+      and about eleven of us awake in a hold at the front
+      not saying anything and not wanting to.
+
+      [Verse 2]
+      They are longer than the ones he made in the shed
+      and duller, and they hang differently, and they are wrong,
+      and the wrongness is the only reason this track exists
+      because we heard them and wrote something quiet to put them in.
+      Nine metres of wire off the back of a core hall
+      making the only slow tune on this whole record.
+
+      [Verse 3]
+      Four nights, four hundred dancers, a room with no seats,
+      and then it is over and it is a ferry and a long night
+      and everybody who came is going back to a shift
+      and nobody at the far end is going to have heard about it.
+      That is the good part. That is genuinely the good part.
+      You go and you come back and the settlement is the same.
+
+      [Chorus]
+      Going home on the late one with the whole coast asleep,
+      four days on a ferry and a settlement in the dark,
+      and about eleven of us awake in a hold at the front
+      not saying anything and not wanting to.
+
+      [Final Chorus - high harmony from the fiddle chair, very quiet]
+      Going home on the late one with the whole coast asleep,
+      and a man in the corner with nine metres of wire in a bag.
+      Four days on a ferry and a settlement in the dark,
+      and a dance on Saturday in a shed with a stove.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1139
+    title: She Sang Behind for Six Years
+    track_number: 7
+    mood: [warm, rolling, fond]
+    fact: >-
+      Neve Torrin sings the only lead Suli Orley has given away, for the reason Wire and Rosin once
+      wrote Orley an introduction and made her play it alone.
+    arrangement_note: the fiddle chair sings the lead and the usual lead singer sings the harmony underneath her instead, which is the exact reverse of everything else this band has recorded and happened once
+    intro: 8
+    outro: fade
+    target_duration: "4:20"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 148 BPM, warm and rolling, fond. On this track the parts
+      are reversed: a HIGHER female voice sings the lead throughout, and the band's usual plain
+      mid-register lead singer sings a harmony underneath her on the choruses instead. NO spoken
+      calling and no called dance figures anywhere on this track. Composite fiddle, fretted
+      acoustic-toned composite guitar, upright bass, cut-stock kit, stripped-wire chimes. Tracked live
+      in an enormous hard-walled concert hall with four hundred dancers. Eight seconds of fiddle before
+      the first sung word. Fades.
+    exclude: spoken calling, called dance figures, shouted instructions, electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, small dry room, cold ending
+    lyrics: |
+      [Intro - fiddle, eight seconds]
+
+      [Verse 1]
+      Somebody wrote her an introduction once, in a studio,
+      and then all three of them walked out of the room
+      and left her there on her own with a light on
+      until she played it, because that is how it is done here.
+      She has told me that story about four hundred times.
+      I did not understand why until about a fortnight ago.
+
+      [Chorus]
+      She sang behind for six years and she never once said so,
+      and then she stood in front of a band and never went back.
+      There is a way of handing something to somebody
+      that looks exactly like being left in a room alone.
+
+      [Verse 2]
+      I have played fiddle in this band since it started
+      and sung one high line over the top of the choruses
+      and been perfectly happy, and I would have gone on being it,
+      and she gave me this one in a corridor in the core
+      by saying, without turning round, that I was doing the next one.
+      That is the whole of the conversation. That is all of it.
+
+      [Verse 3]
+      She is underneath me now, a third down, on the chorus,
+      in the place she stood for six years behind somebody else,
+      and she is not very good at it, which I am enjoying,
+      and she has not said one word about any of this since.
+      Six years behind Hessa Lund on a frontier settlement floor,
+      nine years in front of a band of her own,
+      and one night in a hall in the core where she went back.
+
+      [Chorus]
+      She sang behind for six years and she never once said so,
+      and then she stood in front of a band and never went back.
+      There is a way of handing something to somebody
+      that looks exactly like being left in a room alone.
+
+      [Final Chorus - the usual lead singing harmony underneath]
+      She sang behind for six years and she never once said so.
+      There is a way of handing something to somebody
+      that looks exactly like being left in a room alone,
+      and I am going to do it to somebody else in nine years.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1140
+    title: Last Turn in the Core
+    track_number: 8
+    mood: [fast, final, communal]
+    fact: >-
+      The last thing played on the fourth night, after the hall's licensed hours had ended, and the
+      hall keeper let it run rather than stop it as he had stopped everybody else that season.
+    arrangement_note: the fastest and longest thing the band has recorded, played past the hour the hall is licensed to, with the whole floor and the hall's own staff on it and nobody making any attempt to bring it to an end
+    intro: 12
+    outro: sustain
+    target_duration: "4:50"
+    prompt: >-
+      Fast dance-hall reels and rockabilly, 184 BPM, fast and communal, final. The fastest and longest
+      track on the record. Female lead vocal, plain mid register, strong and unornamented, phrasing
+      like somebody calling across a room, pushing hard. One high female harmony from the fiddle chair
+      through the choruses. A second woman calls dance figures over the band — short rhythmic shouted
+      instructions, spoken not sung, never rapped — mixed well forward and shouting by the end.
+      Composite fiddle taking an eighteen-second break, fretted acoustic-toned composite guitar,
+      upright bass, cut-stock kit, stripped-wire chimes. Tracked live in an enormous hard-walled
+      concert hall with four hundred dancers, very loud. Twelve seconds of band before the first sung
+      word. The ending goes round twice more than it should. Ends on a held chord with the whole room
+      on it.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, rapped verses, whispered vocals, vocal tuning, modern pop production, small dry room, cold ending, fade-out
+    lyrics: |
+      [Intro - band, twelve seconds]
+
+      [Verse 1]
+      The hall stops at eleven. It has stopped at eleven
+      all season, on everybody, without exception, including
+      two things this settlement was extremely proud of
+      and one man who is on every wall in the building.
+      At eleven the keeper stands up and it is over.
+      That is the rule and there is nothing personal in it.
+
+      [Call - shouted over the band, well forward]
+      One more. All of you. Down the middle. Go.
+
+      [Chorus]
+      Last turn in the core and the clock has gone past.
+      Nobody has stopped us. Nobody is going to.
+      There is a man at the side with his hand on a switch
+      who has decided, tonight, not to use it.
+
+      [Verse 2]
+      He is standing at the door with his arms folded
+      watching a cleaner he has employed for eleven years
+      dance the long way round a room she has never sat in
+      with four hundred people off an ice coast four days away.
+      He let it run. He let the whole thing run.
+      He has not explained it to anybody and he does not have to.
+
+      [Instrumental - fiddle break, eighteen seconds]
+
+      [Verse 3]
+      Four nights. Two hundred seats out. Nine names on a sleeve.
+      A figure with a bar of five in it loose in the core now.
+      A woman who sang behind somebody for six years
+      standing in front of a band in a hall with a chandelier.
+      That is what we came for and we did not know it
+      until about four minutes ago and here it is.
+
+      [Call - shouted over the band, shouting now]
+      Round again. And again. Nobody sits down.
+
+      [Final Chorus - high harmony from the fiddle chair, the whole room on it]
+      Last turn in the core and the clock has gone past,
+      and the ferry is at seven and none of us have packed.
+      There is a man at the side with his hand on a switch
+      and he is not going to use it, so we are not going to stop.
+
+      [Outro - held chord, the whole room on it]
+    take: null # M-33 fills this in at the Suno sitting

@@ -1,0 +1,755 @@
+# al_136 — Played and Never Pressed · The Foundry Set (b_038) · Deep Register · 2619 · 10 songs
+#
+# Written by M-24. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# **A live record issued in 2619 of performances made between 2591 and 2599**, recorded off the shop's
+# own equipment by Orsa Lipp for himself and kept quiet for twenty years. That gap governs every
+# lyric here: **nothing in these words can know about the 2619 sleeve**, the disputed credit, or the
+# verse Pipe and Hammer put on their own record about it. These are Forge dance halls in the nineties
+# and the songs are what a working band shouted at a room it played every week.
+#
+# The room is not al_081's or al_082's. This is a **hall, not the pipe shop** — no eleven-second
+# decay, no shutdown sequence, a much rougher recording made on equipment that was never meant to
+# make one, and shop workers on the floor who can be heard complaining about the heat. Every prompt
+# says so.
+#
+# **Two exceptions and both are the wiki's.** s_1111 opens with the singer shouting a question and
+# the hall shouting back — that is a crowd, not a backing vocal, and the exclude line still keeps
+# harmony out, because b_038 has none anywhere in its life. And on s_1116 the bass player sings the
+# second verse, the only time he sang in front of an audience, having lost an argument about which of
+# them would.
+#
+# Three of the ten take an instrumental break, traded between fiddle and pipes. `generation:` and
+# every `take:` are empty until M-33.
+
+album:
+  id: al_136
+  title: Played and Never Pressed
+  band: b_038
+  band_name: The Foundry Set
+  label: label_4
+  release_year: 2619
+  genre: frontier-reels
+  cornerstone: false
+  song_count: 10
+  style_card: b_038
+  room: >-
+    Forge dance halls between 2591 and 2599, recorded by the band's own pipe player on shop equipment
+    with nobody outside the band told it was happening, and issued twenty years later. The pipes are
+    amplified throughout, because every one of these performances is after 2591. The card holds —
+    male lead singing against his own fiddle, no vocal harmony anywhere, bass and kit dry — but the
+    building has changed: hall reverberation rather than the pipe shop's decay, a loud floor of shop
+    workers, and a recording that is plainly not a studio's. Two fact-bound exceptions live in their
+    own songs: the hall shouting an answer back on s_1111, which is a crowd and not a backing vocal,
+    and Toller Grange singing the second verse of s_1116 in a voice that is audibly not the lead's.
+    s_1114 is the third hall of a week and the pipes are still tuned for the second one, which is
+    left uncorrected. Nothing in these lyrics knows about the 2619 sleeve.
+
+generation:
+  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1111
+    title: Ask the Whole Shop
+    track_number: 1
+    mood: [fast, communal, bright]
+    fact: >-
+      Dane Verrow shouts the first line as a question and the hall answers it, which is how the band
+      opened every dance it ever played and never once did on a record.
+    arrangement_note: the first line is shouted flat as a question with no music under it and a hall full of people shouts an answer back, which is how this band opened a dance for twenty years and had never been recorded doing
+    intro: 10
+    outro: cold
+    target_duration: "4:00"
+    prompt: >-
+      Jump blues and reel tempos, 164 BPM, fast and bright, communal. Male lead vocal, dry mid tenor,
+      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
+      himself, shouting rather than singing at the top. No sung harmony or backing vocal of any kind
+      anywhere. A large untrained crowd in a hall shouts a spoken answer back at him twice — a shout,
+      ragged and unpitched, never a sung harmony line. Amplified resonance pipes, composite fiddle,
+      upright bass, cut-stock kit and struck alloy. Recorded live in a hot crowded dance hall on
+      equipment that was not made for it: rough, loud, slightly distorted, the floor and the room very
+      present. Ten seconds of band before the first sung word. Cold stop.
+    exclude: sung harmony, backing vocals, vocal stacking, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, clean studio recording, fade-out
+    lyrics: |
+      [Intro - band, ten seconds]
+
+      [Call and Answer - shouted flat, no music, the hall answers]
+      Is the whole shop in?
+      THE WHOLE SHOP IS IN.
+
+      [Verse 1]
+      That is how you start a dance and it is not a trick.
+      You ask the room a question that the room can answer,
+      and once four hundred people have said one thing together
+      they are a floor, and before that they were a queue.
+      We have done it in every hall in this settlement
+      and we have never once done it in front of a machine.
+
+      [Chorus]
+      Ask them. Ask them out loud and wait for it.
+      Do not start playing over the top of the answer.
+      Half of them came here straight off a shift at four
+      and half the rest came off a hauler at the loading deck.
+
+      [Verse 2]
+      There is a man at the back who does the answer early.
+      There is always a man at the back who does the answer early.
+      He has been coming to these for eleven years, that man,
+      and he thinks nobody has noticed, and everybody has.
+      There is a woman near the front who never says it at all
+      and dances harder than anybody in the building.
+
+      [Call and Answer - shouted flat, no music, the hall answers]
+      Is the whole shop in?
+      THE WHOLE SHOP IS IN.
+
+      [Verse 3]
+      It is too hot in here. It is always too hot in here.
+      They have got the heat on for a room that was half this size
+      and four hundred people off a late shift generate their own,
+      and by the second tune there is water running down the wall.
+      You can hear them complaining about it on this recording.
+      They complained about it every week for twenty years.
+
+      [Final Chorus - pipes answering the vocal line]
+      Ask them. Ask them out loud and wait for it,
+      and then go, and do not stop until somebody makes you.
+      Half of them came here straight off a shift at four.
+      Take your coats off. It is going to get worse.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1112
+    title: Hollan's Reel
+    track_number: 2
+    mood: [hard, fast, defiant]
+    fact: >-
+      Bree Hollan wrote it and would not let the band play it in front of the supervisor it is about,
+      so it was only ever played at dances he did not attend.
+    arrangement_note: the drummer wrote it and it is built round the kit rather than round the tune, with the struck alloy carrying the figure and the fiddle playing underneath it, and the fiddle break is short and angry
+    intro: 14
+    outro: cold
+    target_duration: "4:10"
+    prompt: >-
+      Jump blues and reel tempos, 170 BPM, fast and hard, defiant. Male lead vocal, dry mid tenor,
+      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
+      himself. No harmony or backing vocal of any kind anywhere. Built around the percussion rather
+      than the tune: struck alloy carrying the main figure, loud and pitched, cut-stock kit hard
+      underneath, with the composite fiddle playing below the alloy rather than above it. Amplified
+      resonance pipes, upright bass. Recorded live in a hot crowded dance hall on rough equipment.
+      Fourteen seconds of struck alloy and kit before the first sung word. A twelve-second fiddle
+      break, short and angry. Cold stop.
+    exclude: sung harmony, backing vocals, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, clean studio recording, fade-out
+    lyrics: |
+      [Intro - struck alloy and kit, fourteen seconds]
+
+      [Verse 1]
+      She wrote it on a bench in about forty minutes flat
+      after a conversation at a gate about a rota,
+      and it is the angriest thing anybody in this band has made
+      and it is about one man and everybody knows which one.
+      There is no name in it. She was careful about that.
+      There does not need to be a name in it in this settlement.
+      Everybody on that deck can name him by the second bar.
+
+      [Chorus]
+      He is not here tonight. Somebody went and checked.
+      He is at the other hall on the far side of the yard.
+      So we are going to play the one we do not play,
+      and every one of you is going to know why.
+
+      [Verse 2]
+      Rules for this tune: he is not in the building.
+      Not at the door, not in the yard, not on the stair.
+      Twice in eight years we have got halfway through it
+      and stopped dead, and gone into something else, and never explained.
+      She will not have it played at him. She has been clear.
+      She says it is not a message, it is a description.
+
+      [Instrumental - fiddle break, twelve seconds, hard]
+
+      [Verse 3]
+      What it describes is a shift rota written badly
+      by somebody who does not have to work it himself,
+      and eleven people on the wrong side of a decision
+      and a woman who counted it up and took it to him twice.
+      He said it was the same for everybody. It was not.
+      She has the sheets. She keeps the sheets. She still has them.
+
+      [Final Chorus - pipes answering the vocal line]
+      He is not here tonight. Somebody went and checked,
+      and there is a room in Forge that knows every word of this
+      and has never sung it in front of the man it is about.
+      Nine years, and not once, and that is a kind of discipline.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1113
+    title: Money on the Bench
+    track_number: 3
+    mood: [brisk, plain, wry]
+    fact: >-
+      Forge halls paid a band by leaving the money on a workbench beside the door, and Toller Grange
+      counts it out loud at the end of this one.
+    arrangement_note: the tune ends about twenty seconds before the track does and what fills the gap is a man counting coins out loud onto a bench with the hall still noisy around him
+    intro: 6
+    outro: fade
+    target_duration: "3:40"
+    prompt: >-
+      Jump blues and reel tempos, 152 BPM, brisk and plain, wry. Male lead vocal, dry mid tenor, flat
+      and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
+      himself. No harmony or backing vocal of any kind anywhere. Amplified resonance pipes, composite
+      fiddle, upright bass, cut-stock kit and struck alloy. Recorded live in a hot crowded dance hall
+      on rough equipment. Six seconds of band before the first sung word. The band finishes about
+      twenty seconds before the track does, and the last twenty seconds are a different male voice —
+      lower, unamplified, off-microphone — counting coins out loud onto a hard bench, with the hall
+      still noisy behind him. Fades out on the counting.
+    exclude: sung harmony, backing vocals, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, clean studio recording, cold ending
+    lyrics: |
+      [Intro - band, six seconds]
+
+      [Verse 1]
+      There is no envelope. There has never been an envelope.
+      There is a bench by the door with a lamp over it
+      and whatever the hall decided you were worth is on it
+      and it is on it before you play, which is the good part.
+      You walk in, you look at the bench, you know your night.
+      Nobody has to have a conversation about anything.
+
+      [Chorus]
+      Money on the bench and the lamp on over it,
+      and it does not go up if we are good and it does not go down.
+      Count it at the end in front of whoever is left.
+      That is not distrust. That is how this is done.
+
+      [Verse 2]
+      Toller does the counting because Toller can count
+      and because the rest of us get it wrong and argue.
+      He does it out loud. He has always done it out loud.
+      He says a thing counted quietly is a thing counted twice.
+      You can hear him on this one over the top of the room
+      going up in fours the way a man counts a manifest.
+
+      [Chorus]
+      Money on the bench and the lamp on over it,
+      and it does not go up if we are good and it does not go down.
+      Count it at the end in front of whoever is left.
+      That is not distrust. That is how this is done.
+
+      [Verse 3]
+      Once, in a hall out past the yard, the bench was empty
+      and the keeper said he would settle it in the morning,
+      and Bree took the kit apart and put it on the cart
+      and we played nothing, and stood there, and went home.
+      He paid the next band on the bench before they walked in.
+      That is the only argument this settlement understands.
+
+      [Final Chorus - pipes answering the vocal line]
+      Money on the bench and the lamp on over it,
+      and a man in the corner going up in fours out loud.
+      Count it at the end in front of whoever is left.
+      Nobody in Forge has ever been paid on a promise.
+
+      [Outro - the counting, out loud, over the room, fading]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1114
+    title: Three Halls in a Week
+    track_number: 4
+    mood: [driving, tired, bright]
+    fact: >-
+      The band played three different Forge halls in one week in 2596 and this is the third of them,
+      with Orsa Lipp's pipes still tuned for the second.
+    arrangement_note: the pipes are audibly in the wrong key for this hall because they are still tuned for the previous one and there was no time to change them, so the fiddle spends the whole track working around them
+    intro: 8
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      Jump blues and reel tempos, 160 BPM, driving and bright, tired. Male lead vocal, dry mid tenor,
+      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
+      himself, audibly tired. No harmony or backing vocal of any kind anywhere. Amplified resonance
+      pipes that are slightly in the wrong key for the tune — long alloy organ tones sitting a little
+      outside the harmony, never corrected — with the composite fiddle working around them all the way
+      through. Upright bass, cut-stock kit and struck alloy. Recorded live in a hot crowded dance hall
+      on rough equipment. Eight seconds of band before the first sung word. Fades.
+    exclude: sung harmony, backing vocals, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, clean studio recording, corrected tuning, cold ending
+    lyrics: |
+      [Intro - band, eight seconds]
+
+      [Verse 1]
+      Monday the west hall, Thursday the yard hall, Saturday here,
+      and eleven pipes on a cart between the three of them
+      and about ninety minutes each time to get them up,
+      which is not enough, and everybody knows it is not enough.
+      A cart, a rack, a manifest and a bad rota.
+      So they are in Thursday's key and this is Saturday
+      and nobody in this room is going to notice but us.
+
+      [Chorus]
+      Three halls in a week and the cart between the halls
+      and a shift in the morning after every one of them.
+      Nobody is doing this for a living. Nobody could.
+      We are doing it because Saturday is Saturday.
+
+      [Verse 2]
+      Orsa has spent the whole tune about a quarter tone off
+      and I have spent the whole tune not looking at him
+      and the fiddle has gone somewhere nobody wrote down
+      to sit in a gap between what is right and what is here.
+      It sounds strange. Half of Forge thinks that is our sound.
+      Our sound is a cart, a rota and not enough time.
+
+      [Verse 3]
+      There is a woman on the floor tonight who was at all three.
+      Same coat. Same place, about a third of the way back.
+      She has not spoken to any of us in four years of this
+      and she has been at more of our dances than Bree has.
+      That is what a band actually is in a settlement like this:
+      not the four on the boards, the forty who come every week.
+
+      [Chorus]
+      Three halls in a week and the cart between the halls
+      and a shift in the morning after every one of them.
+      Nobody is doing this for a living. Nobody could.
+      We are doing it because Saturday is Saturday.
+
+      [Final Chorus - pipes answering the vocal line, still in the wrong key]
+      Three halls in a week and the cart is at the door,
+      and the pipes go back on the rack before the whistle.
+      We are doing it because Saturday is Saturday,
+      and Thursday's key is going to have to do.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1115
+    title: Every Tune Twice
+    track_number: 5
+    mood: [rolling, generous, midtempo]
+    fact: >-
+      Dane Verrow announces the repeat before it arrives because the floor had already asked for the
+      tune twice that night.
+    arrangement_note: the singer says out loud, over the band and before it happens, that the tune is about to go round again, which is a thing said at a dance and not on a record, and the pipes take the break in the repeat rather than in the first pass
+    intro: 12
+    outro: fade
+    target_duration: "4:30"
+    prompt: >-
+      Jump blues and reel tempos, 146 BPM, rolling and generous, midtempo. Male lead vocal, dry mid
+      tenor, flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is
+      playing himself. At one point he speaks a short announcement plainly over the band, not sung,
+      the way a bandleader talks to a room. No harmony or backing vocal of any kind anywhere.
+      Amplified resonance pipes taking an eighteen-second instrumental break, composite fiddle,
+      upright bass, cut-stock kit and struck alloy. Recorded live in a hot crowded dance hall on rough
+      equipment. Twelve seconds of pipes and fiddle before the first sung word. Fades.
+    exclude: sung harmony, backing vocals, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, clean studio recording, cold ending
+    lyrics: |
+      [Intro - pipes and fiddle, twelve seconds]
+
+      [Verse 1]
+      They asked for it at nine and they got it at nine,
+      and they asked for it again at about a quarter past ten,
+      which you are allowed to do twice and not three times,
+      and the second time you have to be told it is happening.
+      So here it is again and I am telling you now.
+      Nobody at a dance likes finding out afterwards.
+      Say it like a manifest: read out, then loaded.
+
+      [Announcement - spoken plainly over the band]
+      Right. Same one. Round again. Get yourselves back out.
+
+      [Chorus]
+      Every tune twice if the floor asks twice,
+      and nothing more than twice, because there are other tunes.
+      A band that plays what it is asked is a band that eats.
+      A band that only plays what it is asked is a jukebox.
+
+      [Verse 2]
+      There is a difference between a request and an instruction
+      and the difference is whether anybody is dancing to it.
+      They were dancing to it. Four hundred of them were.
+      You do not stand on a stage and be interesting about that.
+      Orsa hates this and plays it beautifully every time,
+      which is the most Forge thing about the man.
+
+      [Instrumental - pipes take the break in the repeat, eighteen seconds]
+
+      [Verse 3]
+      The second pass is never the same as the first one.
+      It is quicker. Everybody knows the shape of it now.
+      The ones who sat the first one out are up for this one
+      and the ones who did the first one are already tired,
+      so the floor swaps over halfway through without anybody deciding,
+      and that is a whole settlement's evening in about four minutes.
+
+      [Chorus]
+      Every tune twice if the floor asks twice,
+      and nothing more than twice, because there are other tunes.
+      A band that plays what it is asked is a band that eats.
+      A band that only plays what it is asked is a jukebox.
+
+      [Final Chorus - pipes answering the vocal line]
+      Every tune twice if the floor asks twice.
+      That is the arrangement and it has never been written down.
+      A band that plays what it is asked is a band that eats,
+      and there is a bench by the door with the money on it.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1116
+    title: Pay Us in Order
+    track_number: 6
+    mood: [blunt, midtempo, hard]
+    fact: >-
+      Toller Grange sings the second verse, the only time he sang anything in front of an audience,
+      having lost an argument about which of them would.
+    arrangement_note: the bass player sings the second verse and the usual singer does not sing on it at all, and the difference between the two voices is the whole point of the track rather than something to be smoothed out
+    intro: 5
+    outro: cold
+    target_duration: "3:45"
+    prompt: >-
+      Jump blues and reel tempos, 140 BPM, blunt and hard, midtempo. Male lead vocal, dry mid tenor,
+      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
+      himself. On the second verse only, a COMPLETELY DIFFERENT male voice takes the lead — lower,
+      rougher, plainly not a singer, slightly behind the beat and unsure — and the usual singer is
+      silent under it. Not a harmony; a handover. No backing or harmony vocal of any kind anywhere.
+      Amplified resonance pipes, composite fiddle, upright bass, cut-stock kit and struck alloy.
+      Recorded live in a hot crowded dance hall on rough equipment. Five seconds before the first sung
+      word. Cold stop.
+    exclude: sung harmony, backing vocals, vocal blending, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, clean studio recording, fade-out
+    lyrics: |
+      [Intro - band, five seconds]
+
+      [Verse 1]
+      Four bands played the yard hall on the festival week
+      and three of them got paid and the fourth one got a promise
+      and the fourth one was not us, which is the only reason
+      anybody in this band is in a position to say anything.
+      They went out on a run the following Tuesday
+      and by the time they were back there was nobody to ask.
+
+      [Chorus]
+      Pay us in order. Pay us in the order that we played.
+      Not the loudest, not the last, not whoever is still standing.
+      There is a list at that door with four names on it
+      and the list is the list and it goes in order.
+
+      [Verse 2 - a different, lower voice; the lead does not sing]
+      I lost the argument about who was going to say this,
+      which is how a man who does not sing ends up singing,
+      and I have played four hundred dances behind a bass
+      and never once stood in front of anybody in my life.
+      A list is a manifest. That is all a list is.
+      You load in order and you get paid in order.
+
+      [Chorus]
+      Pay us in order. Pay us in the order that we played.
+      Not the loudest, not the last, not whoever is still standing.
+      There is a list at that door with four names on it
+      and the list is the list and it goes in order.
+
+      [Verse 3]
+      He got through it. He got through all six lines of it.
+      He went back behind the bass like a man going indoors
+      and did not say another word for the rest of the night
+      and has never sung anything in front of anybody since.
+      Every band in this settlement heard about it within a week.
+      Two halls changed how they pay. Two is not nothing.
+
+      [Final Chorus - pipes answering the vocal line]
+      Pay us in order. Pay us in the order that we played,
+      and if there is not enough, say so at the start.
+      There is a list at that door with four names on it,
+      and a man who does not sing has just sung about it.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1117
+    title: Turn Under the Pipes
+    track_number: 7
+    mood: [deep, strange, driving]
+    fact: >-
+      Forge dancers walk a figure to this one that appears in none of Bessel Kroy's written sets, which
+      callers have been using as an argument ever since.
+    arrangement_note: the tune has a bar of five in every second turn, which is what the figure is walked to and which no written set accounts for, and the pipes hold through the odd bar rather than marking it
+    intro: 16
+    outro: fade
+    target_duration: "4:20"
+    prompt: >-
+      Jump blues and reel tempos, 150 BPM, deep and driving, strange. The tune has an extra beat in
+      every second turn — a bar of five inside otherwise straight four — which is never smoothed out
+      and which the dancers are plainly walking to. Male lead vocal, dry mid tenor, flat and
+      matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing himself. No
+      harmony or backing vocal of any kind anywhere. Amplified resonance pipes holding straight
+      through the odd bar rather than marking it, composite fiddle, upright bass, cut-stock kit and
+      struck alloy. Recorded live in a hot crowded dance hall on rough equipment. Sixteen seconds of
+      pipes and fiddle before the first sung word. Fades.
+    exclude: sung harmony, backing vocals, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, clean studio recording, straightened or corrected metre, cold ending
+    lyrics: |
+      [Intro - pipes and fiddle, sixteen seconds]
+
+      [Verse 1]
+      There is a beat in this one that should not be there
+      and it has been there since before any of us were playing
+      and every set that anybody has ever written down
+      has four in a bar all the way through and this does not.
+      A caller came out from the core to look at it once
+      and stood at the side for an hour and went away again.
+
+      [Chorus]
+      Turn under it, turn under it, and take the long step there.
+      Everybody in this room does it and nobody was taught.
+      You cannot read it off a page. It is not on a page.
+      It is in four hundred pairs of boots and that is where it lives.
+
+      [Verse 2]
+      The written sets are good and the written sets are useful
+      and somebody had to do it or half of it would be gone,
+      and the man who did it was thorough and was honest
+      and wrote down what he saw in the halls he could get to.
+      He never got to this one. It is a long way out
+      and the yard hall is not on anybody's list of rooms.
+
+      [Verse 3]
+      So there are two arguments and both of them are old.
+      One says a figure that is not written is not a figure.
+      One says the writing is a record and not the thing,
+      and the thing is a settlement doing what it does on a Saturday.
+      Callers have been having it since before I was born.
+      Meanwhile the floor turns under the pipes and does not care.
+
+      [Chorus]
+      Turn under it, turn under it, and take the long step there.
+      Everybody in this room does it and nobody was taught.
+      You cannot read it off a page. It is not on a page.
+      It is in four hundred pairs of boots and that is where it lives.
+
+      [Final Chorus - pipes answering the vocal line]
+      Turn under it, turn under it, and take the long step there,
+      and let the ones from off the relay road watch and count.
+      You cannot read it off a page. It is not on a page.
+      Come to the yard hall on a Saturday and learn it.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1118
+    title: Nobody Wrote It Down
+    track_number: 8
+    mood: [quick, warm, loose]
+    fact: >-
+      Neither Dane Verrow nor Orsa Lipp could say afterwards which of them wrote it, so the 2619 sleeve
+      credits the band, and it is the one track Bree Hollan did not dispute.
+    arrangement_note: the loosest thing on the record, with the fiddle and the pipes trading the break between them four bars at a time because neither of them has a better claim to it than the other
+    intro: 4
+    outro: sustain
+    target_duration: "4:05"
+    prompt: >-
+      Jump blues and reel tempos, 162 BPM, quick and warm, loose and slightly untidy. Male lead vocal,
+      dry mid tenor, flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he
+      is playing himself. No harmony or backing vocal of any kind anywhere. Composite fiddle and
+      amplified resonance pipes trading an instrumental break between them four bars at a time for
+      twenty seconds. Upright bass, cut-stock kit and struck alloy. Recorded live in a hot crowded
+      dance hall on rough equipment. Four seconds before the first sung word. Ends on a held pipe note
+      left ringing over the hall.
+    exclude: sung harmony, backing vocals, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, clean studio recording, tight arrangement, cold ending
+    lyrics: |
+      [Intro - band, four seconds]
+
+      [Verse 1]
+      Nobody can remember and both of us have tried.
+      He says I had it in the cart on the way to the west hall.
+      I say he was playing it at the bench about a month before
+      and that I took it off him without noticing I had.
+      Both of those are probably true and neither is provable
+      and it has stopped mattering to either of us.
+      There is no paper anywhere with the date of it on.
+      There is no bench, no manifest, no note in a hold.
+
+      [Chorus]
+      Who wrote it. Who cares. Somebody in this room did.
+      It has been going round Forge for about four years
+      and a hall out past the yard plays it faster than we do
+      and a girl at the west hall sings a different second line.
+
+      [Verse 2]
+      That is the honest history of most of what gets played.
+      Somebody had it, somebody heard it, somebody changed it,
+      and by the time anybody thinks to write a name on it
+      there are nine versions and four settlements involved.
+      The written ones are the ones somebody made money from.
+      That is not the same as the ones somebody made.
+
+      [Instrumental - fiddle and pipes trading four bars each, twenty seconds]
+
+      [Verse 3]
+      Bree says split it four ways like everything else
+      and neither of us has ever argued with Bree about money,
+      and that is what the paper says and that is the end of it.
+      It is the only tune this band has that nobody claims.
+      It is also the one that gets asked for most weeks,
+      in every hall in this settlement and two out past the yard,
+      which the two of us have decided not to think about.
+
+      [Final Chorus - pipes answering the vocal line]
+      Who wrote it. Who cares. Somebody in this room did.
+      It has been going round Forge for about four years.
+      A hall out past the yard plays it faster than we do,
+      and they are right, and we are not going to change.
+
+      [Outro - a held pipe note ringing over the hall]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1119
+    title: Cold Walk to the Shift
+    track_number: 9
+    mood: [slow, weathered, warm]
+    fact: >-
+      Written about going from a dance straight to a morning shift, which all four of them did for
+      twenty years and none of them stopped doing to make a record.
+    arrangement_note: the slowest thing on the record and the only one taken well under the band's usual range, with the pipes holding one very long tone under the whole track the way the building hums before a shift starts
+    intro: 12
+    outro: sustain
+    target_duration: "4:35"
+    prompt: >-
+      Slow blues at walking pace, 88 BPM, weathered and warm. Male lead vocal, dry mid tenor, flat and
+      matter-of-fact, clipping the ends of lines, quiet and tired. No harmony or backing vocal of any
+      kind anywhere. Amplified resonance pipes holding one very long low tone under the entire track,
+      barely moving. Composite fiddle played low and slowly, upright bass, cut-stock kit brushed.
+      Recorded live in a dance hall at the end of a night on rough equipment, the room much quieter
+      and emptier than on the rest of the record. Twelve seconds of the held pipe tone before the
+      first sung word. Four bars of the held pipe tone alone after the first chorus. Ends on that
+      one pipe tone, left going after everything else has stopped.
+    exclude: sung harmony, backing vocals, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, reel tempo, fast tempo, clean studio recording, cold ending, fade-out
+    lyrics: |
+      [Intro - one held pipe tone, twelve seconds]
+
+      [Verse 1]
+      It is a quarter to five and the hall is nearly empty
+      and there is a walk from here to the gate of about a mile
+      and the shift is at six and there is no point going home,
+      so you go slowly, and you get there early, and you sit.
+      All four of us have done that for about twenty years.
+      Not one of us has ever stopped doing it to make a record.
+
+      [Chorus]
+      Cold walk, warm coat, and a shift at the end of it,
+      and a settlement getting up around you as you go.
+      The first lamps in the yard come on at about half five.
+      That is the most beautiful thing in Forge and nobody looks.
+
+      [Verse 2]
+      You can hear the shop before you can see the shop.
+      It has a note. It has had the same note all my life.
+      Somewhere under everything this settlement does
+      there is a long low sound that nobody hears any more,
+      and the first time Orsa put a pipe under a tune
+      what he was doing was making people hear it again.
+
+      [Turnaround - the held pipe tone alone, four bars]
+
+      [Verse 3]
+      Bree goes in with her hands still ringing from the kit.
+      Toller has a bass on a cart and a shift on a rack.
+      I have sung for four hours and I have to talk at six
+      to a man about a stock order and I will manage it.
+      Nobody made us do this. Nobody is watching.
+      There is a dance every Saturday and we are always at it.
+      Same lamps, same gate, same berth, same cold.
+
+      [Chorus]
+      Cold walk, warm coat, and a shift at the end of it,
+      and a settlement getting up around you as you go.
+      The first lamps in the yard come on at about half five.
+      That is the most beautiful thing in Forge and nobody looks.
+
+      [Final Chorus - the held pipe tone answering the vocal line]
+      Cold walk, warm coat, and the whistle in an hour,
+      and a note under the whole of it that has always been there.
+      The first lamps in the yard come on at about half five.
+      Look at them once. That is all anybody is asking.
+
+      [Outro - the one pipe tone, left going]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1120
+    title: Last Dance in Forge
+    track_number: 10
+    mood: [fast, final, communal]
+    fact: >-
+      The last thing The Foundry Set played in public, three weeks after Bree Hollan took the
+      supervisor's post and told the other three she was finished.
+    arrangement_note: the fastest and longest thing on the record, played by four people who have already agreed that this is the end and have not told the room, with the whole band audibly refusing to finish it
+    intro: 8
+    outro: sustain
+    target_duration: "4:40"
+    prompt: >-
+      Jump blues and reel tempos, 172 BPM, fast and communal, final. The fastest and longest thing on
+      the record. Male lead vocal, dry mid tenor, flat and matter-of-fact, clipping the ends of lines,
+      singing against the fiddle he is playing himself, pushing hard. No harmony or backing vocal of
+      any kind anywhere. Amplified resonance pipes, composite fiddle, upright bass, cut-stock kit and
+      struck alloy, all four playing flat out. Recorded live in a hot crowded dance hall on rough
+      equipment, the floor enormous and audibly not stopping. Eight seconds of band before the first
+      sung word. The end goes round one more time than it should. Ends on a held chord with the hall
+      still on it.
+    exclude: sung harmony, backing vocals, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, clean studio recording, cold ending, fade-out
+    lyrics: |
+      [Intro - band, eight seconds]
+
+      [Verse 1]
+      Three weeks ago she told us at the bench, in about a sentence,
+      that she has taken the supervisor's post on the second line
+      and is not going to stand in front of a room on a Saturday
+      and pay eleven people less than she is being paid to pay them.
+      Nobody argued. There was nothing to argue with.
+      She is right, and we all knew she was right immediately.
+
+      [Chorus]
+      Last one in Forge and the room does not know it.
+      Do not tell them. Do not make a thing of it.
+      There is no announcement coming and there is no speech.
+      There is a tune, and it is fast, and then we go.
+
+      [Verse 2]
+      Twenty years of a shop, a cart, a rack and a hall.
+      Two records made in a building we do not own,
+      and a settlement that never once asked us to make them.
+      A rota, an argument, a wall with a sentence on it,
+      a cart pushed past the berth at four in the morning,
+      four names on a piece of paper because one of us insisted.
+      That is the whole of it and it is more than most get
+      and there is not one of us who thinks otherwise tonight.
+
+      [Verse 3]
+      Orsa has kept every one of these on shop equipment
+      and has not told anybody, including us, that he has,
+      which we are going to find out about in twenty years
+      when somebody in a Deep Register office opens a cupboard.
+      Tonight he is just a man with eleven pipes and a desk
+      playing the last one about four beats too fast.
+
+      [Chorus]
+      Last one in Forge and the room does not know it.
+      Do not tell them. Do not make a thing of it.
+      There is no announcement coming and there is no speech.
+      There is a tune, and it is fast, and then we go.
+
+      [Final Chorus - pipes answering the vocal line, the hall over the top]
+      Last one in Forge, and round it goes again,
+      and again, because none of us will play the last bar.
+      There is no announcement coming and there is no speech.
+      Somebody is going to have to stop this. It will not be me.
+
+      [Outro - held chord, the hall still going]
+    take: null # M-33 fills this in at the Suno sitting

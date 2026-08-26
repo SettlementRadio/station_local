@@ -2831,3 +2831,42 @@ not 65, old-system sessions 90 not 60, void-lounge 55 not 40, core harmonies 20 
 number is an identity for the life of the project — in git, in `RUNBOOK.md`, in this file — and not a
 position in a queue. So the two card headings that used to be written as the ranges `M-21 … M-29` and
 `M-30 … M-38` now list the seven numbers each actually covers, holes and all. Nothing is renumbered.
+
+---
+
+### D-095 · A style card can be dated, and a credit list outranks it — 2026-08-26
+
+**Agent decision on M-24**, following D-092's precedent for lane-rock. Two of Frontier Reels' four
+style cards disagreed with the wiki, and both were resolved the wiki's way — but the two disagreements
+are not the same shape, and the difference is worth writing down.
+
+**The first is dated rather than permanent.** `b_038`'s card says *amplified* resonance pipes. The
+wiki says The Foundry Set were Purist until 2591 and that Orsa Lipp spent a decade arguing the pipes
+were an acoustic instrument. `al_081` is from 2583. So nothing on `al_081` is amplified, the first
+amplifier in the band's life is the first sound on `al_082`, and the exception carries an expiry year
+rather than a note saying "except here". **A style card is fixed for the life of a band (COMMISSION.md
+§7) and a band's life has a shape**: where the wiki dates a change in the line-up's own equipment, the
+card describes the band's settled sound and the earlier record says when it did not yet apply. The
+card was not amended and no card should be.
+
+**The second is a credit list beating a card's "every track".** `b_062`'s card says the caller is over
+the band on every track, which is true of `al_138` — Alis Doone is credited on all seven. The wiki's
+credits for `al_139` put her on four of eight. So she is off the other four, and those four songs'
+exclude lines keep spoken calling out rather than leaving it to chance. **Where the card generalises
+and the wiki enumerates, the enumeration wins**, because the credits are what a presenter will read
+out and the card is a production convenience that never reaches the air (§8).
+
+**Four songs across the genre are sung by somebody other than their band's lead voice** — `s_0654`,
+`s_1116`, `s_0697` and `s_1139` — and every one is a wiki fact rather than a writing choice. COMMISSION.md
+§10 forbids changing a band's lead voice *between albums*; a single track on which the wiki says a
+named member sang, once, for a stated reason, is not that. Each names the exception in its own prompt,
+excludes the usual voice explicitly so the generator cannot split the difference, and is listed in its
+album's `room:` block. `b_039`'s card had already anticipated one of them in words — *"on one song in
+the band's life she takes the lead outright"* — and that song is `s_0697`.
+
+**Why the lyrics are longer again.** Relay-pop averaged 308 sung words, lane-rock 317, Frontier Reels
+340. §7's measured rate of 0.746 seconds per sung word is relay-pop's, at 110–130 BPM. Every Frontier
+Reels band's card floor is above relay-pop's ceiling and the genre runs to 184, so the same words go
+past faster and the §12 rule 10 floor has to be cleared by a wider margin to reach the same take. This
+is an estimate made against one measurement, and M-39 is what settles it: **if this genre measures
+short per word, the cause is the tempo and not the writing.**

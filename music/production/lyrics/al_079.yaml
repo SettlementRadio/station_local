@@ -1,0 +1,684 @@
+# al_079 — Second Set, Same Room · Wire and Rosin (b_037) · Harbor Standard · 2594 · 9 songs
+#
+# Written by M-24. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The exchange hall again, eleven years on, with the dancers paid this time because the band made
+# that the condition of doing it. The wiki's own summary of the difference is *"the tempos are
+# noticeably lower"*, and that is the record: same room, same four people, less hurry. The prompts
+# sit ten to twenty beats a minute under al_078's throughout and the style card's floor of 132 is
+# only reached twice.
+#
+# **Two session players enter the band's world for the first time in sixteen years** — Nessa Dray's
+# answering fiddle on s_0650 and s_0655, Oren Saye's bass on s_0651 and s_0656 — and both are in
+# the arrangement notes as guests rather than as replacements. Neither takes anything the card gives
+# to somebody else, except in the one place the wiki says outright that Hessa Lund gave it away.
+#
+# **s_0654 is written against the style card's voice line and the wiki is the reason** (§7 fixes
+# the lead voice for the life of a band; the wiki says Finn Derrow sang lead here once, on the
+# fourth night, because Hessa Lund had lost her voice). The card is not amended: the prompt names
+# the exception, the female lead is explicitly absent from that one track, and she is back on s_0655.
+#
+# Three of the nine take a fiddle break (§7). `generation:` and every `take:` are empty until M-33.
+
+album:
+  id: al_079
+  title: Second Set, Same Room
+  band: b_037
+  band_name: Wire and Rosin
+  label: label_2
+  release_year: 2594
+  genre: frontier-reels
+  cornerstone: false
+  song_count: 9
+  style_card: b_037
+  room: >-
+    The Cold Harbor exchange hall for the second time, eleven years after al_078, with Harbor
+    Standard paying the floor. Everything on the card holds except in three places the wiki fixes.
+    Nessa Dray plays a second fiddle against Hessa Lund on s_0650 and s_0655 and takes the last
+    exchange on s_0650, which the wiki says Lund had written for herself and handed over during the
+    take. Oren Saye plays bass on s_0651 and s_0656 so that Arel Tocke can stand on the floor.
+    And on s_0654 the guitar chair sings the lead outright — the one track in the band's life where
+    the card's voice line does not apply, because Hessa Lund had no voice on the fourth night and
+    would not cancel. The card is unchanged; the exception lives in that song's prompt and nowhere
+    else. Tempos across the record sit under al_078's throughout.
+
+generation:
+  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0648
+    title: Second Set, Same Room
+    track_number: 1
+    mood: [midtempo, warm, knowing]
+    fact: >-
+      Hessa Lund opens by naming the hall and the year, which the label asked her to remove and she
+      recorded again identically the following night.
+    arrangement_note: the first line is the name of the hall and the year spoken plainly on the beat before the tune has properly started, and the band comes in underneath it rather than waiting for it to finish
+    intro: 10
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 142 BPM, midtempo and warm, knowing and
+      unhurried. Female lead vocal, clear high soprano with a hard edge, sung in short phrases
+      between fiddle passages, never a held note, plain and unornamented. One male harmony voice a
+      third below the lead on the chorus only, nothing under the verses. Bright thin-toned composite
+      fiddle, fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit played with
+      brushes and sticks. Tracked live in a wooden dance hall with no click, takes short and slightly
+      rushing, light slapback on the voice, the floor audible behind the band. Ten seconds of fiddle
+      and guitar, then the first line comes in flat and almost spoken over the band before the tune
+      has settled. Fades out under the room.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, fast reel tempo, cold ending
+    lyrics: |
+      [Intro - fiddle and guitar, ten seconds]
+
+      [Opening Line - flat, almost spoken, band underneath]
+      Cold Harbor exchange hall, and the year is ninety-four.
+
+      [Verse 1]
+      Eleven years ago we stood exactly here
+      and played this room too fast because the room told us to.
+      The label has the tape. The label will not stop selling it.
+      Half this floor was not born when the first one came out.
+      It went down the relay road and it is still going round.
+      They asked me to take the name of the hall out of this song.
+      I sang it again the next night and I sang it the same.
+
+      [Chorus]
+      Second set, same room, and eleven years of ice.
+      Nothing here has changed except every single one of us.
+      Same boards, same stove, same door that will not shut,
+      and a slower tune, because we are not twenty-six.
+
+      [Verse 2]
+      What changed is the money and the money is the story.
+      We would not do it again unless the floor got paid,
+      and the label thought about it for a fortnight and agreed,
+      and every band on this coast has used that rate since.
+      Four hundred people are not scenery. They are the record.
+      You can hear them on the first one. Now they can hear their names.
+
+      [Chorus]
+      Second set, same room, and eleven years of ice.
+      Nothing here has changed except every single one of us.
+      Same boards, same stove, same door that will not shut,
+      and a slower tune, because we are not twenty-six.
+
+      [Verse 3]
+      Marda has a wrist that tells her when the storm season turns.
+      Arel's bass has been repaired eleven times by Arel.
+      Finn stopped drinking. I stopped shouting over the band.
+      We are better than we were and we will sell about half.
+      That is the arrangement and none of us mind it much,
+      and the ones who mind it least are the ones out on the floor.
+
+      [Final Chorus - harmony a third below]
+      Second set, same room, and eleven years of ice,
+      and the doors go up at midnight the way they always did.
+      Same boards, same stove, same door that will not shut.
+      Ask for it slower. We can do it slower now.
+
+      [Outro - fade under the room]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0649
+    title: Paid at the Door
+    track_number: 2
+    mood: [brisk, plain, satisfied]
+    fact: >-
+      Written about the arrangement that got the dancers paid for these sessions, and the band
+      played it on the first night before the money had actually arrived.
+    arrangement_note: played straight through with no dynamic changes at all, the same four instruments at the same weight from first bar to last, because the song is an argument being stated rather than made
+    intro: 6
+    outro: cold
+    target_duration: "3:30"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 150 BPM, brisk and plain, satisfied and
+      matter-of-fact. Female lead vocal, clear high soprano with a hard edge, sung in short phrases
+      between fiddle passages, never a held note, plain and unornamented. One male harmony voice a
+      third below the lead on the chorus only, nothing under the verses. Bright thin-toned composite
+      fiddle, fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit played with
+      brushes and sticks. Tracked live in a wooden dance hall with no click, light slapback on the
+      voice, the floor audible. Six seconds of band before the first sung word. No dynamic changes
+      anywhere — the same four instruments at the same weight from the first bar to the last. Cold
+      stop.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, dynamic swells, fade-out
+    lyrics: |
+      [Intro - band, six seconds]
+
+      [Verse 1]
+      A record of a dance is a record of four hundred people
+      and three of them get paid and the rest of them get thanked.
+      Four hundred people off a deck and off a late shift.
+      That was the first one and it sold what it sold,
+      and every review of it was about the sound of the floor.
+      So the sound of the floor is on the invoice this time.
+      It took a fortnight to agree and it took one line to write.
+
+      [Chorus]
+      Paid at the door on the way in, not on the way out.
+      Small money, honest money, and it goes in a hand.
+      Whoever is on that floor is on this record,
+      and whoever is on this record gets their share of it.
+
+      [Verse 2]
+      The label's man said nobody has ever done that.
+      Arel said that is not an argument, that is a description.
+      The label's man said the accounts will not have a line for it.
+      Arel said then the accounts will get a new line.
+      There was a long quiet and then the man wrote it down,
+      and that is how a rate on this whole coast got set.
+
+      [Pre-Chorus]
+      We played it on the first night before the money came,
+      which was either confidence or a way of making sure.
+
+      [Chorus]
+      Paid at the door on the way in, not on the way out.
+      Small money, honest money, and it goes in a hand.
+      Whoever is on that floor is on this record,
+      and whoever is on this record gets their share of it.
+
+      [Verse 3]
+      There is a woman who has danced in this hall since she was nine
+      and has been on two records and has never been asked her name.
+      She was in the queue at seven with her hand already out
+      and she made the clerk write it down and read it back to her.
+      That is the whole of it. That is what a manifest is for.
+      If you are on the load, you are on the paper. Nothing else.
+
+      [Final Chorus - harmony a third below]
+      Paid at the door on the way in, not on the way out.
+      Small money, honest money, and it goes in a hand.
+      Nobody in this hall is doing anybody a favour.
+      Everybody in this hall is at work tonight.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0650
+    title: Two Fiddles Arguing
+    track_number: 3
+    mood: [fast, competitive, bright]
+    fact: >-
+      Nessa Dray plays the answering fiddle and takes the last exchange, which Hessa Lund had
+      written for herself and gave away during the take.
+    arrangement_note: two fiddles trade four-bar phrases across a twenty-second break in the middle and the second fiddle takes the last exchange rather than the first, which was decided during the take and not before it
+    intro: 18
+    outro: cold
+    target_duration: "4:15"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 168 BPM, fast and bright, competitive. Female
+      lead vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
+      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
+      chorus only, nothing under the verses. TWO bright thin-toned composite fiddles trading four-bar
+      phrases with each other, clearly two different players — the second one drier and more ornate.
+      Fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit played with brushes
+      and sticks. Tracked live in a wooden dance hall with no click, light slapback on the voice, the
+      floor audible. Eighteen seconds of the two fiddles alone before the first sung word. A
+      twenty-second break in the middle where the two fiddles trade four bars each, and the second
+      fiddle takes the last exchange. Cold stop.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, single fiddle, fade-out
+    lyrics: |
+      [Intro - two fiddles alone, eighteen seconds]
+
+      [Verse 1]
+      There is a thing that happens when you put two of them in a room
+      and it is not a fight, whatever the sleeve is going to say.
+      It is closer to two people finishing each other's sentences
+      badly, and on purpose, and at a hundred and sixty-eight.
+      Nessa came in off the relay road on the Tuesday
+      and by the Wednesday we had stopped explaining anything to her.
+
+      [Chorus]
+      Four bars yours and four bars mine and four bars yours again,
+      and whoever is still standing at the end of it can have it.
+      Nobody wins. That is not what any of this is.
+      But somebody always finishes, and it matters who.
+
+      [Verse 2]
+      I wrote the last one for myself. I had it in my hand.
+      I had been playing it in the cart for about a week.
+      And she came round the corner of it about two bars early
+      with something I have not been able to play since, and I let her.
+      You can hear me not play it. There is a hole where I was.
+      That is the best thing on this record and it is not mine.
+
+      [Instrumental - two fiddles trading four bars each, twenty seconds, the second takes the last]
+
+      [Verse 3]
+      Arel says I gave it away because I knew it was better.
+      Marda says I gave it away because I was tired.
+      Finn has not said anything about it, which is his way of saying it,
+      and Nessa has a ferry on the Sunday and will not discuss it at all.
+      She is on three of these nights and then she is gone
+      and there is a hole in the middle of this one where I was.
+
+      [Final Chorus - harmony a third below]
+      Four bars yours and four bars mine and four bars yours again.
+      I have played this room for sixteen years and I know what I heard.
+      Nobody wins. That is not what any of this is.
+      Ask the floor who finished it. The floor will tell you.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0651
+    title: Nothing Left in the Kettle
+    track_number: 4
+    mood: [wry, midtempo, tired]
+    fact: >-
+      Oren Saye plays bass so that Arel Tocke could sit in the hall and listen to the band from the
+      floor for the first time in sixteen years.
+    arrangement_note: the bass is a different instrument and a different player and sits further back in the room than anywhere else on the record, and the band plays slightly more carefully all the way through because one of them is out there listening
+    intro: 8
+    outro: sustain
+    target_duration: "3:40"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 138 BPM, wry and tired, midtempo. Female lead
+      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
+      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
+      chorus only, nothing under the verses. Bright thin-toned composite fiddle, fretted
+      acoustic-toned composite guitar, cut-stock drum kit played with brushes, and an upright bass
+      that is plainly a different instrument and a different player — rounder, further back in the
+      room, less percussive. Tracked live in a wooden dance hall with no click, light slapback on the
+      voice, the floor audible. Eight seconds of band before the first sung word. Ends on a held
+      chord.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, aggressive slap bass, cold ending
+    lyrics: |
+      [Intro - band, eight seconds]
+
+      [Verse 1]
+      It is the fourth night and the kettle has been empty for an hour
+      and the woman who runs it has gone home to sleep for six hours.
+      There is a rota for that kettle. There has always been a rota.
+      Nobody on it has ever been paid or thanked or listed.
+      Whatever this settlement is, it is that rota and four hundred boots
+      and a stove somebody keeps going without being asked to.
+
+      [Chorus]
+      Nothing in the kettle and nothing in the tin,
+      and about two hours of the night still to be got through.
+      Somebody find a cup. Somebody find the woman.
+      This is not a crisis but it is not far off one.
+
+      [Verse 2]
+      Arel is out there. Arel is on the floor.
+      Sixteen years of standing behind a bass in this hall
+      and tonight there is a man from off the relay playing it
+      and Arel Tocke is standing at the back with his coat on, listening.
+      He said afterwards it was the strangest hour of his life.
+      He said we are slower than he thought and better than he thought.
+
+      [Chorus]
+      Nothing in the kettle and nothing in the tin,
+      and about two hours of the night still to be got through.
+      Somebody find a cup. Somebody find the woman.
+      This is not a crisis but it is not far off one.
+
+      [Verse 3]
+      Oren Saye is a careful man who has played a thousand halls
+      and he plays it the way it is written and not the way it is.
+      Arel plays it wrong in four places and has for sixteen years
+      and the four wrong places are the reason it sounds like us.
+      He is going to want it back tomorrow. He can have it back.
+      I would like him to hear it from out there once more first.
+
+      [Final Chorus - harmony a third below]
+      Nothing in the kettle and nothing in the tin,
+      and a man in his own hall with nothing in his hands.
+      Somebody find a cup. Somebody find the woman.
+      Sit down, Arel. There are two hours to go.
+
+      [Outro - held chord]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0652
+    title: She Works the Late Gate
+    track_number: 5
+    mood: [warm, rolling, fond]
+    fact: >-
+      Hessa Lund wrote it for a gate clerk who had let the band's equipment through after hours for
+      eleven years and had never been thanked in public.
+    arrangement_note: the tune rolls without ever accelerating and the fiddle plays the same figure under every verse rather than varying it, because the song is about somebody doing the same thing reliably for eleven years
+    intro: 12
+    outro: fade
+    target_duration: "4:00"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 136 BPM, warm and rolling, fond. Female lead
+      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
+      never a held note, plain and unornamented. One male harmony voice a third below the lead on
+      the chorus only, nothing under the verses. Bright thin-toned composite fiddle playing the same
+      figure under every verse without variation, fretted acoustic-toned composite guitar, upright
+      bass, cut-stock drum kit played with brushes. Tracked live in a wooden dance hall with no
+      click, light slapback on the voice, the floor audible. Twelve seconds of fiddle and guitar
+      before the first sung word. Never accelerates. Fades.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, tempo changes, cold ending
+    lyrics: |
+      [Intro - fiddle and guitar, twelve seconds]
+
+      [Verse 1]
+      There is a gate between the berth and the road into town
+      and it shuts at nine and nobody has ever argued with that.
+      Except there is a clerk on the late shift who has, for eleven years,
+      opened it for four people with a bass and a drum on a cart.
+      She has never asked for anything. She has never been thanked.
+      Her name is not on either record and she has not mentioned it.
+
+      [Chorus]
+      She works the late gate and she has the whole book in her head,
+      what is due, what is late, what is going nowhere until the thaw.
+      Eleven years of a cart at half past nine
+      and eleven years of a woman deciding not to see it.
+
+      [Verse 2]
+      There is a version of this settlement that is only rules
+      and there is nothing wrong with rules and rules keep the ice out.
+      And then there is the other one, which is what actually happens,
+      which is people quietly deciding what to enforce.
+      Every hall we have ever played, we got in through somebody.
+      Every one. Eleven years. Not one of them wrote it down.
+
+      [Chorus]
+      She works the late gate and she has the whole book in her head,
+      what is due, what is late, what is going nowhere until the thaw.
+      Eleven years of a cart at half past nine
+      and eleven years of a woman deciding not to see it.
+
+      [Verse 3]
+      She is out there. She is at the far end near the door
+      because she cannot stand still and cannot be seen to dance.
+      This is the thank you. This is the whole of the thank you.
+      It is a tune, which is not much, and it is the thing we have.
+      She is going to be furious about this in the morning.
+      She is going to say she was only doing the job. She was not.
+
+      [Final Chorus - harmony a third below]
+      She works the late gate and she has the whole book in her head,
+      and the book says the gate is shut, and the gate has not been shut.
+      Eleven years of a cart at half past nine.
+      Everybody in this hall came through somebody's gate.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0653
+    title: Turn It Over Twice
+    track_number: 6
+    mood: [fast, insistent, hard]
+    fact: >-
+      The band plays the tune through twice at different speeds and joins them without a break, which
+      took nine takes and is the reason the sessions ran a night over.
+    arrangement_note: the whole tune is played through at one tempo and then immediately again about fourteen beats a minute faster with no pause and no ritardando between them, and the fiddle carries the join alone so the band has something to change gear against
+    intro: 4
+    outro: cold
+    target_duration: "4:30"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, fast and hard, insistent. The track starts at
+      148 BPM and, at the halfway point, jumps without pause or ritardando to 162 BPM and stays
+      there — one hard gear change in the middle, no gradual acceleration anywhere. Female lead
+      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
+      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
+      chorus only, nothing under the verses. Bright thin-toned composite fiddle, fretted
+      acoustic-toned composite guitar, upright bass, cut-stock drum kit played with sticks. Tracked
+      live in a wooden dance hall with no click, light slapback on the voice, the floor audible. Four
+      seconds of band before the first sung word. A sixteen-second fiddle break carries the gear
+      change alone. Cold stop.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, gradual accelerando, fade-out
+    lyrics: |
+      [Intro - band, four seconds]
+
+      [Verse 1]
+      Every caller on this coast will tell you the same thing:
+      you take the tune round once so the floor can learn the shape,
+      and then you take it round again and you take it faster,
+      and the second time is the one they will talk about all week.
+      Doing it on a stage is easy. You just go.
+      Doing it on a record with two microphones is not.
+
+      [Chorus]
+      Take it round again and do not let them feel the join.
+      No slowing into it. No counting. Nothing kind.
+      One bar at the old speed and the next one somewhere else,
+      and four people arriving at the same place at once.
+
+      [Verse 2]
+      Nine takes. Nine. On the fifth one Marda swore
+      loudly enough that Harbor Standard had to cut two bars.
+      On the seventh Arel came in early and stayed early
+      and we played the whole second half about a beat apart.
+      The sessions ran a night over and the label paid for the night
+      and did not say one word about it, which we noticed.
+
+      [Instrumental - fiddle alone carries the gear change, sixteen seconds]
+
+      [Verse 3]
+      The eighth was clean and had nothing in it at all.
+      The ninth is this one and Finn came off the beat at the join
+      and got back on it inside two bars by an act of will,
+      and you can hear him do it, and that is why it is the take.
+      A hold full of cargo goes over a bad siding the same way.
+      Something shifts, and somebody puts a hand out, and it holds.
+
+      [Final Chorus - harmony a third below]
+      Take it round again and do not let them feel the join,
+      and if they feel it, keep going, because they will forgive it.
+      One bar at the old speed and the next one somewhere else.
+      Nine of these and this is the one with the mistake in it.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0654
+    title: Ask the Same Question
+    track_number: 7
+    mood: [midtempo, plain, patient]
+    fact: >-
+      Finn Derrow sings the lead, the only time he did on record, because Hessa Lund had lost her
+      voice on the fourth night and would not cancel.
+    arrangement_note: the guitar chair sings the whole lead and the usual lead singer does not sing anywhere on the track at all — she plays fiddle and nothing else — and there is no harmony voice on it because the only harmony singer in the band is the one singing the lead
+    intro: 9
+    outro: sustain
+    target_duration: "3:45"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 132 BPM, plain and patient, midtempo. MALE
+      lead vocal on this track only — a plain, unpolished mid-baritone, conversational, slightly
+      short of breath, clearly not a practised lead singer. No female vocal anywhere on the track.
+      No backing or harmony vocal of any kind. Bright thin-toned composite fiddle played by somebody
+      who is not singing, fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit
+      played with brushes. Tracked live in a wooden dance hall with no click, light slapback on the
+      voice, the floor audible. Nine seconds of band before the first sung word. Ends on a held
+      chord.
+    exclude: female vocals, harmony vocals, backing vocals, electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, cold ending
+    lyrics: |
+      [Intro - band, nine seconds]
+
+      [Verse 1]
+      She has not got a voice tonight and she will not call it off,
+      so there is a man at this microphone who has never stood at one,
+      and if this sounds like somebody's brother at a wedding,
+      that is because that is exactly what it is.
+      Sixteen years I have sung a third below her.
+      There is nothing underneath me now and it is a long way down.
+
+      [Chorus]
+      Same six words a night, and every night a different room.
+      Same four bars, same four people, same six words.
+      The tune does not change. The tune has never changed.
+      Whoever is in front of it is what makes it new.
+
+      [Verse 2]
+      Hessa is eight feet away with the fiddle and no voice
+      and a look on her face I am going to hear about later.
+      She wrote this. She has sung it about nine hundred times.
+      I have got the words wrong twice already and she has not stopped.
+      That is the arrangement in this band, and it is not written down:
+      you do not stop for anything short of the roof coming in.
+
+      [Verse 3]
+      There is a man off a hauler at the front who is enjoying this
+      more than anybody should enjoy another man's bad night.
+      He came in off a run with the cargo still to sign.
+      He has asked for it again. He is going to be told no.
+      The floor knows something is wrong and the floor is being kind,
+      and being danced at kindly by four hundred people
+      is the single most exposed I have ever been in my life.
+
+      [Chorus]
+      Same six words a night, and every night a different room.
+      Same four bars, same four people, same six words.
+      The tune does not change. The tune has never changed.
+      Whoever is in front of it is what makes it new.
+
+      [Final Chorus - lead alone, no harmony, the band very quiet]
+      Same six words a night, and every night a different room.
+      She will have her voice back Tuesday and I will go back behind her,
+      and there will be no record anywhere of what a fourth night is,
+      except this, which the label is going to press, apparently.
+
+      [Outro - held chord]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0655
+    title: Money for the Room
+    track_number: 8
+    mood: [brisk, blunt, driving]
+    fact: >-
+      It replaced a tune about the same dispute that named the hall keeper directly, and Harbor
+      Standard refused to press that version.
+    arrangement_note: two fiddles again, the second one playing a hard unison rather than an answer, so the tune is heavier than anything else on the record without being faster
+    intro: 5
+    outro: fade
+    target_duration: "3:35"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 152 BPM, brisk and blunt, driving. Female lead
+      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
+      never a held note, plain and unornamented, flat and unimpressed. One male harmony voice a third
+      below the lead on the chorus only, nothing under the verses. TWO bright thin-toned composite
+      fiddles playing hard unison together rather than answering each other, which makes the tune
+      heavy without making it fast. Fretted acoustic-toned composite guitar, upright bass, cut-stock
+      drum kit played with sticks. Tracked live in a wooden dance hall with no click, light slapback
+      on the voice, the floor audible. Five seconds of band before the first sung word. Fades.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, fiddle solos, cold ending
+    lyrics: |
+      [Intro - band, five seconds]
+
+      [Verse 1]
+      There was another version of this and you are not going to hear it.
+      It had a name in the second line and the name was a real one
+      and Harbor Standard read it and went quiet for a day
+      and then said no, and meant it, and that was the end of it.
+      So here is the same tune with the name taken out,
+      which is a worse song and a better idea.
+
+      [Chorus]
+      Money for the room, money for the light, money for the floor,
+      and money for a man who has not lifted anything all year.
+      We are not arguing that a hall should cost nothing.
+      We are arguing about the size of the number.
+
+      [Verse 2]
+      A hall is a building and a building has to be kept
+      and the keeper has a roof to mend and a stove to feed.
+      Fine. Agreed. Nobody in this band disputes it.
+      What we dispute is forty per cent of the door.
+      Forty. On a night the floor is paying to be recorded.
+      Say that number to a freight crew and watch what happens.
+      Say it in a port hall on the coast and watch it travel.
+
+      [Verse 3]
+      He came to the third night and stood at the back and listened
+      and he knew exactly which tune was about him and he smiled,
+      and he shook Arel's hand on the way out and said well played,
+      and Arel came back in and did not say anything for an hour.
+      That is how it goes. Nobody is going to be shamed.
+      The rate is the rate until enough halls refuse it.
+
+      [Chorus]
+      Money for the room, money for the light, money for the floor,
+      and money for a man who has not lifted anything all year.
+      We are not arguing that a hall should cost nothing.
+      We are arguing about the size of the number.
+
+      [Final Chorus - harmony a third below]
+      Money for the room, money for the light, money for the floor.
+      There is a version of this with his name in it somewhere.
+      We are arguing about the size of the number,
+      and the number does not move because a band wrote a tune.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0656
+    title: Last One Standing Up
+    track_number: 9
+    mood: [fast, communal, bright]
+    fact: >-
+      Marda Kell counts the band out loud at the end because the hall was too loud for anyone to hear
+      the kit, and the count is on the record.
+    arrangement_note: a woman's shouted count of four is audible over the last eight bars because the room had got too loud for the kit to be heard, and it is left on the take rather than removed
+    intro: 16
+    outro: cold
+    target_duration: "4:10"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 170 BPM, fast and bright, communal. Female lead
+      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
+      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
+      chorus only, nothing under the verses. Bright thin-toned composite fiddle, fretted
+      acoustic-toned composite guitar, cut-stock drum kit played with sticks, and an upright bass
+      that is a different instrument and a different player — rounder and further back. Tracked live
+      in a wooden dance hall with no click, light slapback on the voice, a very loud crowd. Sixteen
+      seconds of band and rising crowd before the first sung word. A twelve-second fiddle break. Over
+      the last eight bars a woman's voice shouts a count of four, off-microphone and unamplified,
+      audible over the band. Cold stop.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, fade-out
+    lyrics: |
+      [Intro - band and rising crowd, sixteen seconds]
+
+      [Verse 1]
+      Fifth night, last tune, and the hall has stopped being a room.
+      It is one thing now and it is moving in one direction
+      and the four of us on the boards are not driving it any more,
+      we are hanging on to the back of it and calling that a band.
+      I cannot hear the kit. Finn cannot hear the kit.
+      Marda cannot hear the kit and Marda is playing it.
+
+      [Chorus]
+      Whoever is still standing gets the last tune of the night.
+      Everybody else sat down about two hours ago.
+      Look at them. Look at what a hall in the dark months does.
+      Half this settlement is going to work on nothing.
+
+      [Verse 2]
+      So she stood up behind it and she counted us out loud.
+      One, two, three, four, over four hundred people,
+      the way you would count a crew lifting something heavy,
+      and it is on the record and the label wanted it off.
+      They said it sounds like a rehearsal. It sounds like the truth.
+      It sounds like four people getting to the end together.
+
+      [Instrumental - fiddle break, twelve seconds]
+
+      [Verse 3]
+      There is a man from the co-operative here on a route stop
+      who has been on that floor since eight and has a run at six
+      and is going to sign for a full hold with no sleep in him.
+      There is a gate clerk who is not supposed to be here at all.
+      Whatever this is, it is the last of it until the thaw,
+      and every one of them knows that, which is why nobody has gone.
+
+      [Final Chorus - harmony a third below, the count audible over the top]
+      Whoever is still standing gets the last tune of the night.
+      Everybody else sat down about two hours ago.
+      One, two, three, four, and the doors go up after this,
+      and the ice is on the road and nobody cares at all.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting

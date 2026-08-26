@@ -1,0 +1,614 @@
+# al_080 — Rosin on Everything · Wire and Rosin (b_037) · Harbor Standard · 2607 · 8 songs
+#
+# Written by M-24. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The band's last record and the only one made in a studio, which is the argument of the whole
+# thing. Twenty-nine years of refusing a room with no floor in it, and then a room with no floor in
+# it. **The record splits in two and the prompts split with it**: s_0657, s_0658, s_0659 and s_0662
+# are dry, close and empty, with no crowd anywhere; s_0660, s_0661, s_0663 and s_0664 are the four
+# tracks the wiki says the dancers were brought in for, and the room comes back on them. The wiki
+# calls this the quietest thing the band made, so every tempo here sits under al_079's, which sat
+# under al_078's.
+#
+# Finn Derrow has been gone three years and Suli Orley has the guitar chair. The harmony voice is
+# still one voice a third below the lead from the guitar chair, which is what the card says and what
+# the line-up still supplies — a different person singing the same part, not a new part.
+#
+# **s_0657 is the only overdub in the band's life** and the wiki says so; it is written as an
+# admission rather than as a technique. Three of the eight take a fiddle break, which is b_037's
+# break instrument on every record. `generation:` and every `take:` are empty until M-33.
+
+album:
+  id: al_080
+  title: Rosin on Everything
+  band: b_037
+  band_name: Wire and Rosin
+  label: label_2
+  release_year: 2607
+  genre: frontier-reels
+  cornerstone: false
+  song_count: 8
+  style_card: b_037
+  room: >-
+    A Harbor Standard studio rather than the exchange hall, for the first and last time in
+    twenty-nine years, with the dancers brought in for four of the eight tracks because Hessa Lund
+    made that the condition. The card holds: same voice, one harmony a third below it from the
+    guitar chair, fiddle taking every break, no click. Two things the wiki fixes are written into
+    the songs that own them and nowhere else — Hessa Lund double-tracking the fiddle on s_0657,
+    which is the only overdub the band ever recorded, and Arel Tocke's original 2578 bass audibly
+    failing on s_0662, which the band chose to record rather than repair. Talla Venn plays a second
+    guitar against Suli Orley on s_0663, cut facing her with no separation. Suli Orley plays s_0658's
+    introduction alone. Tempos sit under both earlier records throughout.
+
+generation:
+  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0657
+    title: Rosin on Everything
+    track_number: 1
+    mood: [warm, midtempo, worn]
+    fact: >-
+      Hessa Lund plays both fiddle parts, the first time the band ever overdubbed anything, and she
+      has said she would not do it again.
+    arrangement_note: two fiddle parts played by the same player and audibly the same player, one carrying the tune and one a third under it, which is the only overdub anywhere in the band's catalogue and sounds slightly wrong on purpose
+    intro: 14
+    outro: fade
+    target_duration: "4:00"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 134 BPM, warm and worn, midtempo. Female lead
+      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
+      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
+      chorus only, nothing under the verses. Two bright thin-toned composite fiddle parts played by
+      the same player and identical in tone — one carrying the tune, one a third underneath it,
+      slightly too together to be two people. Fretted acoustic-toned composite guitar, upright bass,
+      cut-stock drum kit played with brushes. Recorded in a small dry studio: close, quiet, no room
+      sound, no audience anywhere. Fourteen seconds of the two fiddles before the first sung word.
+      Fades.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, audience noise, hall reverb, cold ending
+    lyrics: |
+      [Intro - two fiddle parts, one player, fourteen seconds]
+
+      [Verse 1]
+      Twenty-nine years I have played one part at a time
+      because that is what a person can do and I am a person.
+      Then a man in a clean room asks would I play it again
+      over the top of the one I had just played, and I said yes.
+      I do not know why I said yes. I have thought about it since.
+      I said yes and it took nine minutes and it is on the record.
+
+      [Chorus]
+      Rosin on everything. Rosin on the strings and the coat
+      and the door handle and the cart and both my hands.
+      Twenty-nine winters of it and you cannot get it off,
+      which is the only honest thing in this whole building.
+
+      [Verse 2]
+      It sounds wrong. Nobody else will hear that it sounds wrong.
+      It is too together. Two players are never that together.
+      There is a gap between two people that you can hear
+      and there is no gap in this, and the gap is the band.
+      Arel says it is fine. Arel says nobody will know.
+      Marda has not said anything and Marda is the one who is right.
+
+      [Verse 3]
+      The floor is not here. That is the whole difference.
+      There is no floor here, there is a carpet and a wall,
+      and four hundred people are what we have played against
+      since before the settlement had a berth worth the name.
+      You cannot rush against a carpet. You cannot arrive late.
+      Everything we know how to do is a thing this room removes.
+
+      [Chorus]
+      Rosin on everything. Rosin on the strings and the coat
+      and the door handle and the cart and both my hands.
+      Twenty-nine winters of it and you cannot get it off,
+      which is the only honest thing in this whole building.
+
+      [Final Chorus - harmony a third below]
+      Rosin on everything, and it will not come out of wool,
+      and it is on the sleeve of a coat I do not wear any more.
+      I would not do that again and I am glad I did it once,
+      and there is one of me on this and there should be one of me.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0658
+    title: New Hand on the Guitar
+    track_number: 2
+    mood: [brisk, bright, generous]
+    fact: >-
+      Written for Suli Orley by the band that hired her, and she plays the introduction alone because
+      none of the others would record it for her.
+    arrangement_note: sixteen seconds of unaccompanied guitar open the track, played by the newest member because the other three left the room rather than record it for her, and the band comes in underneath her only once she has got all the way through the figure
+    intro: 16
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 146 BPM, brisk and bright, generous. Female
+      lead vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
+      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
+      chorus only, nothing under the verses. Opens with sixteen seconds of solo fretted
+      acoustic-toned composite guitar, completely unaccompanied, slightly nervous, before anything
+      else enters. Then bright thin-toned composite fiddle, upright bass and cut-stock drum kit with
+      brushes come in underneath. Recorded in a small dry studio: close and quiet, no audience. Fades.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, audience noise, hall reverb, cold ending
+    lyrics: |
+      [Intro - solo guitar, unaccompanied, sixteen seconds]
+
+      [Verse 1]
+      There is a young woman in the room who took a chair
+      that had one man in it for twenty-six years.
+      She did not audition. Nobody asked her to.
+      She already knew every tune we have, off the floor,
+      because she was on that floor from about the age of eleven,
+      between the ration store and the berth and the long night
+      and she has been learning this band for longer than she has been in it.
+
+      [Chorus]
+      New hand on the guitar and the same four tunes,
+      and the tunes have come out different, which we did not expect.
+      Not wrong. Different. She holds a bar back
+      and lets the fiddle get there first, which nobody taught her.
+
+      [Verse 2]
+      We wrote this for her and then we would not play the front of it.
+      All three of us went out to the corridor and left her there.
+      That is not cruelty. That is the only way anybody learns
+      that a room with a light on is not going to bite them.
+      She sat there for a minute and thirty seconds not playing
+      and then she played it, and it is the take you can hear.
+
+      [Verse 3]
+      Finn left over money, which is what people leave over.
+      A run of dances got cancelled and the cancellation got paid
+      to somebody who was not us, and he asked, and it got worse,
+      and he went, and none of us has managed to say it plainly since.
+      She is not a replacement. She is a different band.
+      That is what happens and we are too old to pretend otherwise.
+
+      [Chorus]
+      New hand on the guitar and the same four tunes,
+      and the tunes have come out different, which we did not expect.
+      Not wrong. Different. She holds a bar back
+      and lets the fiddle get there first, which nobody taught her.
+
+      [Final Chorus - harmony a third below, the new voice on it]
+      New hand on the guitar and a new voice underneath,
+      a third below, in the same place, out of a different throat.
+      There is a woman off the Cold Harbor floor in this band now
+      and she will still be doing this when the rest of us are not.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0659
+    title: The Room With No Floor
+    track_number: 3
+    mood: [cold, sparse, restless]
+    fact: >-
+      The title is what Hessa Lund called the studio, and the band left the phrase in the lyric after
+      the label's engineer asked twice for it to go.
+    arrangement_note: the sparsest thing on the record — the kit plays nothing but a rim through the verses and the bass is left almost alone under the second one — because the song is about a room with nothing in it
+    intro: 6
+    outro: sustain
+    target_duration: "3:30"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 140 BPM, cold and restless, sparse. Female lead
+      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
+      never a held note, plain and unornamented, flat and unimpressed. One male harmony voice a third
+      below the lead on the chorus only, nothing under the verses. Bright thin-toned composite
+      fiddle, fretted acoustic-toned composite guitar, upright bass, and a cut-stock kit playing
+      almost nothing at all — a rim click through the verses, no snare, no cymbals. The bass nearly
+      alone under the second verse. Recorded in a small dry studio: close, dead, no room sound and no
+      audience whatsoever. Six seconds of band before the first sung word. Ends on a held chord
+      that dies almost immediately, because there is nothing in the room to carry it.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, audience noise, hall reverb, big drums, fade-out, cold ending
+    lyrics: |
+      [Intro - band, six seconds]
+
+      [Verse 1]
+      I have called it a lot of things in the last four days
+      and the one that stuck is the room with no floor,
+      which their engineer has now asked me twice to take out,
+      politely, both times, and it is going to stay in.
+      There is no floor. There is a covering on the ground.
+      Nothing happens on it and nothing can happen on it.
+
+      [Chorus]
+      No floor. No stove. No coats. No door that will not shut.
+      Nobody at the far end pretending not to dance.
+      A little red light on a stand and a man behind glass
+      and four people in a settlement of two hundred thousand.
+
+      [Verse 2 - bass almost alone]
+      Everything this band does, it does against a room.
+      You rush because they rush. You slow because they will not.
+      A tune is a negotiation with four hundred people
+      and every good take we have is an argument we lost.
+      Here there is nothing to lose an argument to.
+      You just play it, and it is right, and it is nothing.
+
+      [Chorus]
+      No floor. No stove. No coats. No door that will not shut.
+      Nobody at the far end pretending not to dance.
+      A little red light on a stand and a man behind glass
+      and four people in a settlement of two hundred thousand.
+
+      [Verse 3]
+      To be fair to them, and I am trying to be fair,
+      you can hear the bass. You have never been able to hear the bass.
+      Twenty-nine years of Arel underneath four hundred boots
+      and here he is at last, plain, in the middle of the room.
+      He said it was like hearing his own voice on a carrier wave.
+      He said he would rather not, and then he played it beautifully.
+
+      [Final Chorus - harmony a third below]
+      No floor. No stove. No coats. No door that will not shut,
+      and the best take of my life in a room I cannot stand.
+      A little red light on a stand and a man behind glass,
+      and it is going on the record, and so is this line.
+
+      [Outro - held chord, dying almost at once in the dead room]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0660
+    title: Bring Them In From the Street
+    track_number: 4
+    mood: [fast, loud, communal]
+    fact: >-
+      This is the first of the four tracks recorded with dancers present, and the band would not
+      begin until there were more than forty of them in the room.
+    arrangement_note: the room changes completely between this track and the one before it because there are now forty people in it, and the band plays about eight beats a minute faster than it has all week as a direct result
+    intro: 20
+    outro: sustain
+    target_duration: "4:25"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 162 BPM, fast and loud, communal. Female lead
+      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
+      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
+      chorus only, nothing under the verses. Bright thin-toned composite fiddle, fretted
+      acoustic-toned composite guitar, upright bass, cut-stock drum kit played with sticks, and
+      stripped-wire chimes — thin, high, irregular struck metal — well back in the mix. Recorded in a
+      studio with about forty people standing and dancing in it: the room is suddenly alive, feet on
+      a hard surface, voices, none of it tidy. Twenty seconds of band and the room filling before the
+      first sung word. A fourteen-second fiddle break. Ends on a held chord with the room still on it.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, dry studio silence, cold ending
+    lyrics: |
+      [Intro - band and a room filling up, twenty seconds]
+
+      [Verse 1]
+      I told them on the Monday I would not sing another note
+      into a room with nobody in it, and they thought I was negotiating.
+      I was not negotiating. I had run out of things to do.
+      You cannot make this music at a wall. It is not for a wall.
+      So somebody from the label went out onto the street
+      and came back an hour later with about forty people.
+
+      [Chorus]
+      Bring them in. Bring them in out of the cold.
+      Bring them in off the road and do not ask them for anything.
+      Forty is enough. Forty will hold a room.
+      Under forty and you can hear yourself, and that is the end of it.
+
+      [Instrumental - fiddle break, fourteen seconds, the room loud under it]
+
+      [Verse 2]
+      There were nine of them at first and I said no.
+      There were twenty-two and I said no, and had a cup of tea.
+      At forty-one Marda counted them, out loud, twice,
+      and I put the fiddle up and we went straight into it.
+      Listen to the difference. It is not subtle. It is not small.
+      That is a band with something to be late for.
+
+      [Chorus]
+      Bring them in. Bring them in out of the cold.
+      Bring them in off the road and do not ask them for anything.
+      Forty is enough. Forty will hold a room.
+      Under forty and you can hear yourself, and that is the end of it.
+
+      [Verse 3]
+      Half of them work a scrubber shift and came in wet.
+      One of them had a full manifest under his arm all night
+      and danced with it, which I would like on the record somewhere,
+      so it is here: a man dancing with a hold's worth of paper.
+      They were not paid. They were not asked. Nobody wrote them down.
+      The label bought them one hot drink each and they stayed four hours.
+
+      [Final Chorus - harmony a third below, the room over the top]
+      Bring them in, and bring them in, and do not shut the door,
+      and let it be untidy, and let somebody be wrong.
+      Forty is enough. Forty will hold a room.
+      That is not a rule about music. That is a rule about people.
+
+      [Outro - held chord, the room still going]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0661
+    title: Every Tune She Knew
+    track_number: 5
+    mood: [rolling, fond, midtempo]
+    fact: >-
+      Suli Orley learned the tune from the floor rather than from the band and plays a version of it
+      that Hessa Lund has said is wrong and better.
+    arrangement_note: the guitar plays a version of the figure that does not match the fiddle's and neither is corrected to the other, and the fiddle break in the middle is the fiddle playing the guitar's wrong version rather than its own
+    intro: 10
+    outro: fade
+    target_duration: "4:10"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 138 BPM, rolling and fond, midtempo. Female
+      lead vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
+      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
+      chorus only, nothing under the verses. Bright thin-toned composite fiddle and fretted
+      acoustic-toned composite guitar playing two slightly different versions of the same figure
+      against each other and neither correcting to the other. Upright bass, cut-stock drum kit with
+      brushes. Recorded in a studio with about forty people in it, dancing, audible but not loud. Ten
+      seconds of guitar and fiddle disagreeing before the first sung word. A sixteen-second fiddle
+      break in which the fiddle plays the guitar's version instead of its own. Fades.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, tightly unison arrangements, cold ending
+    lyrics: |
+      [Intro - guitar and fiddle disagreeing, ten seconds]
+
+      [Verse 1]
+      She has a version of this that is not the one we play
+      and she got it off the floor of the exchange hall as a child
+      from a band that is not us, playing it wrong, in about ninety-one,
+      and she has never once been told and never once found out.
+      There is a bar in the second turn where she goes up
+      and every one of us goes down, and she is right.
+
+      [Chorus]
+      Every tune this settlement has, somebody learned it standing up.
+      Nobody wrote it down. Nobody could have.
+      A tune off a floor is a tune that has been through people,
+      and people put their hands on it, and that is not damage.
+
+      [Verse 2]
+      I have played this since before she was born and I am wrong.
+      I have been wrong for about eighteen years, cheerfully.
+      Somewhere between a hall and a cart and a hall again
+      the second turn came off it and nobody noticed but her.
+      I said so, in front of the band, which cost me something,
+      and Arel laughed for a full minute and had to sit down.
+
+      [Instrumental - fiddle break, sixteen seconds, playing the guitar's version]
+
+      [Verse 3]
+      So the break is her version played on my instrument
+      which is as close to an apology as a fiddle can get.
+      She will not take the credit and there is no credit to take.
+      It is not hers either. It belongs to a room full of people
+      who have been carrying it about between them for forty years
+      the way a freight crew carries anything: badly, and it arrives.
+
+      [Final Chorus - harmony a third below]
+      Every tune this settlement has, somebody learned it standing up,
+      and half of them are wrong, and the wrong ones are the good ones.
+      A tune off a floor is a tune that has been through people.
+      Play it her way. Everybody else is going to.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0662
+    title: Twenty-Nine Winters
+    track_number: 6
+    mood: [slow, warm, weathered]
+    fact: >-
+      Arel Tocke's bass is the instrument he built in 2578 and it is audibly failing, which the band
+      decided to record rather than repair.
+    arrangement_note: the bass buzzes and drops notes audibly all the way through and is deliberately the loudest thing in the mix, because the instrument coming apart is the subject rather than a fault in the take
+    intro: 18
+    outro: sustain
+    target_duration: "4:40"
+    prompt: >-
+      Slow old-time dance music at walking pace, 96 BPM, warm and weathered. Female lead vocal, clear
+      high soprano with a hard edge, sung in short phrases, never a held note, plain and
+      unornamented, close and tired. One male harmony voice a third below the lead on the chorus
+      only, nothing under the verses. An old upright bass that is audibly failing — buzzing against
+      the fingerboard, notes dying early, a rattle somewhere in the body — and mixed forward, the
+      loudest thing on the track, faults included. Bright thin-toned composite fiddle low and
+      unornamented, fretted acoustic-toned composite guitar, cut-stock kit brushed very quietly.
+      Recorded in a small dry studio, close, no audience. Eighteen seconds of bass and fiddle before
+      the first sung word. Four bars of the bass completely alone after the first chorus, faults
+      and all. Ends on one held bass note that buzzes and dies early.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, clean bass tone, audience noise, fast tempo, cold ending, fade-out
+    lyrics: |
+      [Intro - bass and fiddle, eighteen seconds]
+
+      [Verse 1]
+      He made it out of drum stock in the yard behind the shed
+      in the first year, because there was no bass and no money,
+      and he has repaired it eleven times with what came to hand
+      and the eleventh repair was four winters ago and it was the last one.
+      It buzzes now. It drops a note if you ask it for a low one.
+      There is something loose inside it that nobody can find.
+
+      [Chorus]
+      Twenty-nine of them, and a box made out of stock,
+      and every dance this band has played has come out of that box.
+      He will not have it mended. He has been very clear.
+      He said mend it and it is a different instrument.
+
+      [Turnaround - bass alone, four bars]
+
+      [Verse 2]
+      The label offered him a new one on the second day.
+      A good one. A real one, off the relay, out of the core.
+      He looked at it for a long time and thanked them properly
+      and then went and got the other one out of the cart.
+      That is not sentiment. Ask him and he will tell you
+      it is the only bass on this coast that knows the tunes.
+
+      [Verse 3]
+      So we put a microphone on the fault and turned it up.
+      You can hear it dying. That is what this track is.
+      In four years there will not be a Wire and Rosin
+      and in nine there will not be that bass in any hold,
+      and there will be a record with the buzz on it, this one,
+      and somebody will think it is a bad take. It is not.
+
+      [Chorus]
+      Twenty-nine of them, and a box made out of stock,
+      and every dance this band has played has come out of that box.
+      He will not have it mended. He has been very clear.
+      He said mend it and it is a different instrument.
+
+      [Final Chorus - harmony a third below, very quiet]
+      Twenty-nine of them, and a box made out of stock,
+      and a man who built the thing he has stood behind all his life.
+      He said mend it and it is a different instrument,
+      and he is right, and we are recording it instead.
+
+      [Outro - one held bass note, buzzing, dying early]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0663
+    title: Nobody Asked Us to Stop
+    track_number: 7
+    mood: [fast, defiant, bright]
+    fact: >-
+      Talla Venn plays second guitar against Suli Orley and the two parts were cut facing each other
+      in one take with no separation.
+    arrangement_note: two guitars audibly in the same small space with no separation between them, each bleeding into the other's microphone, playing against each other rather than in unison, and the fiddle break sits on top of both
+    intro: 8
+    outro: cold
+    target_duration: "4:05"
+    prompt: >-
+      Reel-tempo rockabilly and old-time dance music, 166 BPM, fast and bright, defiant. Female lead
+      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
+      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
+      chorus only, nothing under the verses. TWO fretted acoustic-toned composite guitars playing
+      against each other in the same small space with no separation — each audibly bleeding into the
+      other's microphone, one scarred and duller than the other. Bright thin-toned composite fiddle,
+      upright bass, cut-stock drum kit played with sticks. Recorded in a studio with about forty
+      people in it, dancing. Eight seconds of the two guitars before the first sung word. A
+      twelve-second fiddle break over both guitars. Cold stop.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, clean channel separation, fade-out
+    lyrics: |
+      [Intro - two guitars, eight seconds]
+
+      [Verse 1]
+      Twenty-nine years and not one person ever said stop.
+      No label folded on us. No hall shut its doors.
+      Nobody died and nobody had a falling out that held.
+      No hall on this coast has shut a door on us,
+      and no freight crew has ever once asked us to leave.
+      One man left over money and one woman took his chair.
+      We are going to finish because we have decided to,
+      which is a rarer way for a band to end than you would think.
+
+      [Chorus]
+      Nobody asked. Nobody wrote and nobody came round.
+      There was no last dance that anybody knew was the last.
+      There is just a point where you have had a good run
+      and the next thing to do is stop having it,
+      before somebody in a hall has to be kind about you.
+
+      [Verse 2]
+      Talla Venn came off a ferry with a scarred guitar
+      he has been repairing between other people's records for thirty years,
+      and they put him in the same three feet of air as Suli
+      with no screen and no separation and one take.
+      You can hear them in each other's microphones the whole way.
+      That is not a mistake. That is two people in a room.
+
+      [Instrumental - fiddle break over both guitars, twelve seconds]
+
+      [Verse 3]
+      There is a version of this band that carries on to the end
+      and gets slower every thaw and nobody ever says it,
+      and plays a hall on a Tuesday to about thirty people,
+      and dies in a room somewhere with somebody's grandchild in it,
+      and I have thought about it and I do not want it,
+      and Marda's wrist has thought about it and it agrees.
+      Three more years. Two more thaws. We have said so out loud.
+      Nobody asked, and we are stopping anyway.
+
+      [Final Chorus - harmony a third below]
+      Nobody asked. Nobody wrote and nobody came round.
+      No fold, no fire, no argument, no ice.
+      There is just a point where you have had a good run,
+      and forty people in this room are dancing through it.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_0664
+    title: Put the Chairs Back
+    track_number: 8
+    mood: [tired, warm, slow]
+    fact: >-
+      The last thing Wire and Rosin recorded, cut with the dancers still in the room, and the sound at
+      the end is the hall being put back in order.
+    arrangement_note: the tune winds down rather than ending and the last forty seconds have almost no band on them at all, just the room being put back in order — chairs, boots, a door — with the fiddle finishing somewhere underneath it
+    intro: 12
+    outro: fade
+    target_duration: "4:30"
+    prompt: >-
+      Slow old-time dance music at an easy walking tempo, 104 BPM, tired and warm. Female lead vocal,
+      clear high soprano with a hard edge, sung in short phrases, never a held note, plain and
+      unornamented, tired and close. One male harmony voice a third below the lead on the chorus
+      only, nothing under the verses. Bright thin-toned composite fiddle, fretted acoustic-toned
+      composite guitar, upright bass, cut-stock kit brushed softly. Recorded in a studio with about
+      forty people in it who are now leaving. Twelve seconds of fiddle before the first sung word.
+      Over the last forty seconds the band thins to almost nothing and the sounds of a room being put
+      back in order take over — chairs dragged and stacked, boots, a door, low voices — with the
+      fiddle finishing quietly underneath. Long fade on the room rather than on the band.
+    exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, big finish, applause, cold ending
+    lyrics: |
+      [Intro - fiddle, twelve seconds]
+
+      [Verse 1]
+      That is it. That is the last one. Somebody get the door.
+      There are forty people in here who came in off the street
+      four hours ago for a hot drink and stayed for a record
+      and are now, without anybody asking, stacking chairs.
+      They have all done this before. Everybody here has.
+      A room does not put itself back and it never has.
+
+      [Chorus]
+      Put the chairs back. Put the chairs back where they were.
+      Somebody find the lid of the thing the kit came in.
+      Nothing is finished until the room looks like a room,
+      which is the last thing anybody's mother ever said.
+
+      [Verse 2]
+      Twenty-nine years of this and it always ends the same:
+      four people and a cart and a berth and a cold walk.
+      Not once has it ended with anybody making a speech.
+      You just put the chairs back and you go and you come again.
+      Except this time we are not going to come again,
+      and I am not going to say that to anybody in this room.
+
+      [Verse 3]
+      Marda has the kit in the crate and the crate on the cart.
+      Suli is talking to a woman about how to hold a bar back.
+      Arel has that bass on his shoulder like a hold's last load
+      and he is going to walk it home the way he has since seventy-eight.
+      There is a man doing the chairs who has not spoken all night
+      and he is doing the whole far wall on his own, quickly.
+
+      [Chorus]
+      Put the chairs back. Put the chairs back where they were.
+      Somebody find the lid of the thing the kit came in.
+      Nothing is finished until the room looks like a room,
+      which is the last thing anybody's mother ever said.
+
+      [Final Chorus - harmony a third below, very quiet]
+      Put the chairs back and put the light out and go home.
+      There will be a cart on the ice road in about ten minutes.
+      Nothing is finished until the room looks like a room.
+      Leave it the way you found it. That is the whole of it.
+
+      [Outro - the room being put back in order, fiddle underneath, long fade]
+    take: null # M-33 fills this in at the Suno sitting

@@ -1,0 +1,413 @@
+# al_137 — Burn Festival Set · Loose Cargo (b_039) · Common Wake Cooperative · 2594 · 5 songs · EP
+#
+# Written by M-24. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Five tunes cut in a port hall on the morning after the last two nights of the first freight-circuit
+# burn festival, with the doors still open and the festival being cleared outside them. **The
+# shortest thing this band made and the only one with other crews singing on it** — which is a room
+# full of freight crews shouting along, not a second harmony part. b_039 has one harmony voice, from
+# the bass chair, on choruses, and that does not change here; the exclude lines keep any blended or
+# stacked backing vocal out and the prompts describe the crews as a crowd.
+#
+# The record is a working band's snapshot of one week and the lyrics are written that way: nobody in
+# them knows the festival is going to become an anchor of the whole calendar. It went out along the
+# route for a season and then out of print, which Wend Amory has called the only sensible thing the
+# co-operative ever did with a record of theirs — so the words are loose, local and unpolished on
+# purpose.
+#
+# Two of the five take a fiddle break, one of them against a fiddler off another crew whose name
+# nobody wrote down. `generation:` and every `take:` are empty until M-33.
+
+album:
+  id: al_137
+  title: Burn Festival Set
+  band: b_039
+  band_name: Loose Cargo
+  label: label_5
+  release_year: 2594
+  genre: frontier-reels
+  cornerstone: false
+  song_count: 5
+  style_card: b_039
+  room: >-
+    A port hall on the morning after the festival's last night, doors open, the site being cleared
+    outside. Not a hold this time — the room is bigger and harder than anything else in this band's
+    catalogue and the prompts say so, but the kit is still crates and struck metal and the bass is
+    still big and woody. The card holds: low bass-baritone lead under the fiddle and never lifted,
+    one female harmony from the bass chair on choruses. Three fact-bound details live in their own
+    songs: the second fiddle on s_1122 belongs to a player off another crew whom the co-operative has
+    never been able to credit; the harmony on s_1123 is sung from the doorway because the hall was
+    full; and the last voice on s_1125 is a port officer asking the band to move, left on the take.
+    The crews singing on s_1121 and s_1125 are a crowd and not a backing vocal.
+
+generation:
+  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1121
+    title: Everybody's Circuit
+    track_number: 1
+    mood: [fast, communal, bright]
+    fact: >-
+      Wend Amory wrote it on the run in and the second verse names four crews who were at the
+      festival, three of whom asked afterwards to be taken out of it.
+    arrangement_note: a hall full of freight crews shouts the last line of every chorus back at the band, ragged and unpitched and in about three keys, which is the only reason this track was worth cutting the morning after
+    intro: 10
+    outro: cold
+    target_duration: "4:00"
+    prompt: >-
+      Skiffle and jump blues at reel tempo, 160 BPM, fast and bright, communal. Male lead vocal, low
+      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
+      never lifted into a brighter key. One female harmony voice on the choruses only. At the end of
+      every chorus a room full of untrained adults shouts the last line back — ragged, unpitched,
+      several keys at once, a crowd and never a stacked backing vocal. Composite fiddle, fretted
+      composite guitar, big woody upright bass, a kit built out of wooden crates and struck metal,
+      stripped-wire chimes. Recorded in a large hard port hall with the doors open: bigger and
+      brighter than a hold, some outdoor noise leaking in. Ten seconds of fiddle before the first sung
+      word. Cold stop.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, stacked or blended backing vocals, studio choir, fade-out
+    lyrics: |
+      [Intro - fiddle, ten seconds]
+
+      [Verse 1]
+      Somebody in an office worked out that if every crew
+      on the whole circuit timed its turnaround for the same week
+      then for six days there would be four thousand people
+      in one port hall who normally pass each other in the dark.
+      It should not have worked. Half of it did not work.
+      The half that worked was the best week of my life.
+
+      [Chorus]
+      One circuit for everybody, and nobody's port,
+      and a hall that was built for a load and not for this.
+      Whatever crew you are off, get out on that floor.
+
+      [Crews - shouted flat, no harmony]
+      NOBODY IS SIGNING ANYTHING TONIGHT.
+
+      [Verse 2]
+      I wrote the second verse on the run in, on the deck,
+      and put four crews in it by name, because they were there,
+      and three of those four have since asked to come out of it
+      on the grounds that they were not quite as they are described.
+      They were exactly as they are described. Ask anybody.
+      The fourth crew asked for another verse and did not get one.
+
+      [Chorus]
+      One circuit for everybody, and nobody's port,
+      and a hall that was built for a load and not for this.
+      Whatever crew you are off, get out on that floor.
+
+      [Crews - shouted flat, no harmony]
+      NOBODY IS SIGNING ANYTHING TONIGHT.
+
+      [Verse 3]
+      There were crews there who had been on the same lane for years
+      and had never once been in the same settlement at the same hour
+      and stood at a door working out that they knew each other
+      off a carrier wave, by voice, and not by face at all.
+      A man walked up to Ilsa and said I know your bass
+      and could not tell you what she looked like. That is the circuit.
+
+      [Final Chorus - harmony from the bass chair, the crews over the top]
+      One circuit for everybody, and nobody's port,
+      and it is over on Sunday and the whole thing scatters.
+      Whatever crew you are off, get out on that floor.
+
+      [Crews - shouted flat, no harmony]
+      NOBODY IS SIGNING ANYTHING TONIGHT.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1122
+    title: Two Crews, One Tune
+    track_number: 2
+    mood: [quick, competitive, warm]
+    fact: >-
+      Col Sennet plays it against a fiddler off another crew whose name nobody wrote down, and the
+      co-operative has never been able to credit her.
+    arrangement_note: two fiddles, one of them plainly a different player with a different training, trading the break between them, and the second one is better and does not know the tune
+    intro: 14
+    outro: fade
+    target_duration: "4:20"
+    prompt: >-
+      Skiffle and jump blues at reel tempo, 156 BPM, quick and warm, competitive. Male lead vocal, low
+      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
+      never lifted. One female harmony voice on the choruses only. TWO composite fiddles, plainly two
+      different players: the first with an unorthodox scratchy bowing hand and an accent in the wrong
+      half of the bar, the second cleaner, quicker and more ornamented, and slightly unsure of the
+      tune. They trade an eighteen-second instrumental break between them. Fretted composite guitar,
+      big woody upright bass, a kit built out of wooden crates and struck metal. Recorded in a large
+      hard port hall with the doors open. Fourteen seconds of the two fiddles before the first sung
+      word. Fades.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, matched or unison fiddles, cold ending
+    lyrics: |
+      [Intro - two fiddles, fourteen seconds]
+
+      [Verse 1]
+      There was a woman off a crew from somewhere down the lane
+      standing at the side of the hall on the second night
+      with a fiddle case she had carried into a port hall
+      the way you carry a thing you are not sure you will use.
+      Col saw the case before he saw her, which is Col,
+      and by the second tune the two of them were at it.
+
+      [Chorus]
+      Two crews, one tune, and nobody has met before,
+      and it took about four bars and then it took none.
+      That is the thing nobody outside this trade believes:
+      we all know the same forty tunes and we have never met.
+
+      [Instrumental - two fiddles trading, eighteen seconds]
+
+      [Verse 2]
+      She is better than he is. He said so at the time.
+      She is better than he is by a distance and she was lost,
+      because our tunes have a limp in them and hers do not
+      and she spent half of it working out where the beat had gone.
+      Then she found it, and she got in front of it,
+      and there is about six seconds on this take that is hers alone.
+
+      [Chorus]
+      Two crews, one tune, and nobody has met before,
+      and it took about four bars and then it took none.
+      That is the thing nobody outside this trade believes:
+      we all know the same forty tunes and we have never met.
+
+      [Verse 3]
+      Nobody wrote her name down. Nobody wrote anything down.
+      It was four in the morning and the doors were still open
+      and the co-operative has been trying to find her since,
+      because she is on this record and she is not on the sleeve.
+      If you are reading this and it was you, it was you.
+      There is a payment sitting at the co-operative with no name on it.
+
+      [Final Chorus - harmony from the bass chair]
+      Two crews, one tune, and one of them went home,
+      and there is a berth number somewhere that nobody kept.
+      We all know the same forty tunes and we have never met,
+      and I have listened to those six seconds about nine hundred times.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1123
+    title: Somebody Else's Floor
+    track_number: 3
+    mood: [rolling, warm, midtempo]
+    fact: >-
+      Ilsa Brack sings the harmony from the doorway because the hall was full and there was nowhere
+      else to put her.
+    arrangement_note: the harmony voice is sung from a doorway several rooms' width from the band with the outside audible behind her, which is further away than any vocal on any of this band's records
+    intro: 8
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      Skiffle and jump blues at reel tempo, 134 BPM, rolling and warm, midtempo. Male lead vocal, low
+      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
+      never lifted. One female harmony voice on the choruses only, sung from a doorway a long way from
+      the band — distant, thin, with outdoor noise audible behind her, clearly in a different part of
+      the building. Composite fiddle, fretted composite guitar, big woody upright bass, a kit built
+      out of wooden crates and struck metal, stripped-wire chimes. Recorded in a large hard port hall
+      with the doors open. Eight seconds of guitar and fiddle before the first sung word. Fades.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, close or blended harmony, cold ending
+    lyrics: |
+      [Intro - guitar and fiddle, eight seconds]
+
+      [Verse 1]
+      This is not our hall. This is not anybody's hall.
+      It is a port hall, which means it is a room for cargo
+      that somebody put a floor in about forty years ago
+      because there was nowhere else on the whole site to put people.
+      There is a weighbridge at the far end under a sheet.
+      There is a manifest board on the wall with last week still on it.
+
+      [Chorus]
+      Somebody else's floor and everybody's night,
+      and none of us will ever be in this room again.
+      Play it like you are borrowing it, because you are.
+      Leave it the way you found it. Leave it better.
+
+      [Verse 2]
+      Ilsa is in the doorway. There is nowhere else for Ilsa.
+      The hall was full at nine and it was fuller at eleven
+      and by the time we were recording there was a person
+      in every part of that building including the stair,
+      so she stood in a doorway with the outside behind her
+      and sang the chorus from about forty feet away.
+
+      [Chorus]
+      Somebody else's floor and everybody's night,
+      and none of us will ever be in this room again.
+      Play it like you are borrowing it, because you are.
+      Leave it the way you found it. Leave it better.
+
+      [Verse 3]
+      You can hear the outside on her. You can hear the site.
+      There is a hauler being moved about a hundred yards off
+      and a man shouting numbers and the wind coming round the corner
+      and a whole festival being taken apart behind her voice.
+      The co-operative wanted to cut that verse and re-record it.
+      They have been told what everybody tells them, which is no.
+
+      [Final Chorus - harmony from the doorway, distant]
+      Somebody else's floor and everybody's night,
+      and a woman in a doorway with a settlement behind her.
+      Play it like you are borrowing it, because you are,
+      and get off it by noon, because the load comes in at one.
+
+      [Outro - fade]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1124
+    title: Ration Week Reel
+    track_number: 4
+    mood: [fast, hard, defiant]
+    fact: >-
+      Reddin Vosk built the kit for it out of fittings borrowed off three different crews and gave
+      every piece back before the run out.
+    arrangement_note: every piece of the percussion came off a different ship and none of it matches, so the kit is louder, higher and more ragged than anything on the earlier record, and all of it went back before the run out
+    intro: 6
+    outro: cold
+    target_duration: "3:45"
+    prompt: >-
+      Skiffle and jump blues at reel tempo, 168 BPM, fast and hard, defiant. Male lead vocal, low
+      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
+      never lifted. One female harmony voice on the choruses only. Percussion built from mismatched
+      borrowed metal off three different ships — nothing matching anything, high and clangy and
+      ragged, no proper drum kit anywhere. Composite fiddle taking a fourteen-second break, fretted
+      composite guitar, big woody upright bass. Recorded in a large hard port hall with the doors
+      open. Six seconds before the first sung word. Cold stop.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, matched drum kit, cymbals, fade-out
+    lyrics: |
+      [Intro - borrowed metal and fiddle, six seconds]
+
+      [Verse 1]
+      A ration week is not a famine and it is not a crisis.
+      It is a form of arithmetic that arrives about twice a year
+      when a supply run is late and a port is not to blame
+      and everybody eats slightly less than they had planned to.
+      Nobody dies. Everybody complains. That is the whole event.
+      And every crew on the circuit has a tune about it.
+
+      [Chorus]
+      Short week, long face, and the same again on Thursday,
+      and a queue at the store with four hundred people in it
+      all doing the same sum in their heads and getting it right.
+      It is fine. It is genuinely fine. We are all just cross.
+
+      [Instrumental - fiddle break, fourteen seconds]
+
+      [Verse 2]
+      Reddin has a hatch fixing off a crew from the near end,
+      a length of chain off a hauler nobody could name,
+      and a piece of alloy that a woman handed him at a door
+      and said bring it back, and he did, before the run out.
+      None of it matches. That is the sound of this track.
+      Three ships and a port hall and nothing that belongs together.
+
+      [Chorus]
+      Short week, long face, and the same again on Thursday,
+      and a queue at the store with four hundred people in it
+      all doing the same sum in their heads and getting it right.
+      It is fine. It is genuinely fine. We are all just cross.
+
+      [Verse 3]
+      What actually happens in a short week is the good part.
+      A crew with a full hold gives a crew with a light one
+      about a third of what it has, quietly, at a berth,
+      and nobody writes it down, and it is never mentioned again.
+      That is not charity and nobody in this trade calls it that.
+      It is next month, from the other direction, and everyone knows.
+
+      [Final Chorus - harmony from the bass chair]
+      Short week, long face, and the same again on Thursday,
+      and a man giving a chain back at a gate at six.
+      It is fine. It is genuinely fine. We are all just cross,
+      and there is a run out on Sunday and a hold to fill.
+
+      [Outro - cold stop]
+    take: null # M-33 fills this in at the Suno sitting
+
+  - id: s_1125
+    title: Sign Off and Dance
+    track_number: 5
+    mood: [brisk, satisfied, communal]
+    fact: >-
+      Cut with the doors open while the festival was being cleared, and the last voice on it is a port
+      officer asking the band to move.
+    arrangement_note: the site is audibly being taken apart outside for the whole track, and the last thing on the record is not music but a port officer's speaking voice asking the band to move, which was left on
+    intro: 16
+    outro: sustain
+    target_duration: "4:10"
+    prompt: >-
+      Skiffle and jump blues at reel tempo, 150 BPM, brisk and satisfied, communal. Male lead vocal,
+      low bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register
+      and never lifted. One female harmony voice on the choruses only, plus a room of untrained adults
+      shouting along on the last chorus — a crowd, ragged and unpitched, never a stacked backing
+      vocal. Composite fiddle, fretted composite guitar, big woody upright bass, a kit built out of
+      wooden crates and struck metal. Recorded in a large hard port hall with the doors wide open and
+      a site audibly being dismantled outside throughout — vehicles, shouted numbers, metal being
+      stacked. Sixteen seconds of fiddle and outside noise before the first sung word. At the very
+      end, after the last chord, a man's plain speaking voice off-microphone asks the band to move.
+      Ends on a held chord with that voice over it.
+    exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, stacked or blended backing vocals, clean studio recording, cold ending
+    lyrics: |
+      [Intro - fiddle and the site being cleared outside, sixteen seconds]
+
+      [Verse 1]
+      It is nine in the morning and there is a man with a list
+      walking round this hall putting a mark against everything,
+      and outside there is a whole week coming apart in sections
+      and going back onto the ships it arrived on.
+      We have got about forty minutes and five tunes
+      and a co-operative that wants a record out of this.
+
+      [Chorus]
+      Sign off, then dance, in that order, always.
+      Get the load away and then have the night you have earned.
+      Nobody at this festival is on anybody's clock,
+      which is the first time that has been true in years.
+
+      [Verse 2]
+      The whole point of the week was that it was between runs.
+      Everybody's turnaround, nobody's shift, no cargo waiting,
+      and four thousand people on a site with nothing to do
+      for the first time since any of them started working.
+      You could feel people not knowing how to have it.
+      By the third day they had worked it out. By the fifth it was gone.
+
+      [Verse 3]
+      There is a woman here from a crew off the far circuit
+      who has not been off her own lane in eleven years
+      and has spent this week being introduced to about nine people
+      whose voices she has known on a carrier wave since she was young.
+      She said it was like a room full of people she had read about.
+      She is going out at noon and it is not going to happen again.
+
+      [Chorus]
+      Sign off, then dance, in that order, always.
+      Get the load away and then have the night you have earned.
+      Nobody at this festival is on anybody's clock,
+      which is the first time that has been true in years.
+
+      [Final Chorus - harmony from the bass chair, the crews over the top]
+      Sign off, then dance, and then go and load the hold,
+      and the next one is in a year and everybody says they will come.
+      Nobody at this festival is on anybody's clock.
+      Half of us will be on a run. That is the arrangement.
+
+      [Officer - spoken, off-microphone, over the last chord]
+      Right, gentlemen, I am going to have to ask you to move.
+
+      [Outro - held chord]
+    take: null # M-33 fills this in at the Suno sitting
