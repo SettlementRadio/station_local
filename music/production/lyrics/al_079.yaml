@@ -66,15 +66,7 @@ songs:
     outro: fade
     target_duration: "3:50"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 142 BPM, midtempo and warm, knowing and
-      unhurried. Female lead vocal, clear high soprano with a hard edge, sung in short phrases
-      between fiddle passages, never a held note, plain and unornamented. One male harmony voice a
-      third below the lead on the chorus only, nothing under the verses. Bright thin-toned composite
-      fiddle, fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit played with
-      brushes and sticks. Tracked live in a wooden dance hall with no click, takes short and slightly
-      rushing, light slapback on the voice, the floor audible behind the band. Ten seconds of fiddle
-      and guitar, then the first line comes in flat and almost spoken over the band before the tune
-      has settled. Fades out under the room.
+      142 BPM warm fiddle reel; hard female soprano, knowing delivery, live dance hall, gentle fade.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, fast reel tempo, cold ending
     lyrics: |
       [Intro - fiddle and guitar, ten seconds]
@@ -83,13 +75,12 @@ songs:
       Cold Harbor exchange hall, and the year is ninety-four.
 
       [Verse 1]
-      Eleven years ago we stood exactly here
-      and played this room too fast because the room told us to.
-      The label has the tape. The label will not stop selling it.
-      Half this floor was not born when the first one came out.
-      It went down the relay road and it is still going round.
-      They asked me to take the name of the hall out of this song.
-      I sang it again the next night and I sang it the same.
+      The sea-end door still needs a shoulder when it freezes.
+      The stove still leans and smokes before it catches.
+      A woman at the gate was nine the first time through.
+      Tonight her own boy carries both their coats from the ferry.
+      He runs ahead and finds the mark beside the wall
+      where she wore one borrowed boot down to the sole.
 
       [Chorus]
       Second set, same room, and eleven years of ice.
@@ -98,12 +89,12 @@ songs:
       and a slower tune, because we are not twenty-six.
 
       [Verse 2]
-      What changed is the money and the money is the story.
-      We would not do it again unless the floor got paid,
-      and the label thought about it for a fortnight and agreed,
-      and every band on this coast has used that rate since.
-      Four hundred people are not scenery. They are the record.
-      You can hear them on the first one. Now they can hear their names.
+      At the door each dancer gives the clerk a name.
+      The clerk reads every name back before they cross.
+      Small coins wait in envelopes under the desk.
+      The woman signs for hers and makes her boy sign too.
+      Eleven years ago she came through here for nothing.
+      Tonight the floor is work and the settlement knows it.
 
       [Chorus]
       Second set, same room, and eleven years of ice.
@@ -112,12 +103,12 @@ songs:
       and a slower tune, because we are not twenty-six.
 
       [Verse 3]
-      Marda has a wrist that tells her when the storm season turns.
-      Arel's bass has been repaired eleven times by Arel.
-      Finn stopped drinking. I stopped shouting over the band.
-      We are better than we were and we will sell about half.
-      That is the arrangement and none of us mind it much,
-      and the ones who mind it least are the ones out on the floor.
+      Marda turns her wrist once before the opening count.
+      Arel checks the same repair with two careful fingers.
+      Finn brings water and leaves his old cup empty.
+      I can hear the floor without trying to beat it now.
+      The Harbor man asks me to lose the opening line.
+      Next night I name the hall and year exactly the same.
 
       [Final Chorus - harmony a third below]
       Second set, same room, and eleven years of ice,
@@ -140,41 +131,32 @@ songs:
     outro: cold
     target_duration: "3:30"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 150 BPM, brisk and plain, satisfied and
-      matter-of-fact. Female lead vocal, clear high soprano with a hard edge, sung in short phrases
-      between fiddle passages, never a held note, plain and unornamented. One male harmony voice a
-      third below the lead on the chorus only, nothing under the verses. Bright thin-toned composite
-      fiddle, fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit played with
-      brushes and sticks. Tracked live in a wooden dance hall with no click, light slapback on the
-      voice, the floor audible. Six seconds of band before the first sung word. No dynamic changes
-      anywhere — the same four instruments at the same weight from the first bar to the last. Cold
-      stop.
+      150 BPM plain fiddle reel; hard female soprano, steady full band, paid dancers, cold live ending.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, dynamic swells, fade-out
     lyrics: |
       [Intro - band, six seconds]
 
       [Verse 1]
-      A record of a dance is a record of four hundred people
-      and three of them get paid and the rest of them get thanked.
-      Four hundred people off a deck and off a late shift.
-      That was the first one and it sold what it sold,
-      and every review of it was about the sound of the floor.
-      So the sound of the floor is on the invoice this time.
-      It took a fortnight to agree and it took one line to write.
+      Four hundred people queue between the berth and door.
+      Freight hands off a hauler, gate clerks, cooks wearing flour.
+      Each one gives a name and gets it read aloud.
+      The payment envelopes have not reached the desk.
+      The clerk keeps writing anyway and fills the first page.
+      Nobody crosses until the name beside them matches.
 
       [Chorus]
       Paid at the door on the way in, not on the way out.
       Small money, honest money, and it goes in a hand.
-      Whoever is on that floor is on this record,
-      and whoever is on this record gets their share of it.
+      Name on the sheet and the clerk reads it back.
+      Whoever works the floor gets counted with the rest.
 
       [Verse 2]
-      The label's man said nobody has ever done that.
-      Arel said that is not an argument, that is a description.
-      The label's man said the accounts will not have a line for it.
-      Arel said then the accounts will get a new line.
-      There was a long quiet and then the man wrote it down,
-      and that is how a rate on this whole coast got set.
+      The accounts man brought a book with narrow columns.
+      No column for a dancer and no room beside the total.
+      Arel drew one down the margin with a ruler.
+      The man said books do not work that way.
+      Arel put the ruler down and waited by the stove.
+      After one long minute, the man copied the new line.
 
       [Pre-Chorus]
       We played it on the first night before the money came,
@@ -183,16 +165,16 @@ songs:
       [Chorus]
       Paid at the door on the way in, not on the way out.
       Small money, honest money, and it goes in a hand.
-      Whoever is on that floor is on this record,
-      and whoever is on this record gets their share of it.
+      Name on the sheet and the clerk reads it back.
+      Whoever works the floor gets counted with the rest.
 
       [Verse 3]
       There is a woman who has danced in this hall since she was nine
-      and has been on two records and has never been asked her name.
+      and nobody at the door has ever asked her name.
       She was in the queue at seven with her hand already out
       and she made the clerk write it down and read it back to her.
-      That is the whole of it. That is what a manifest is for.
-      If you are on the load, you are on the paper. Nothing else.
+      She signs beside the mark and crosses to the floor.
+      Her envelope comes after midnight. She counts it twice.
 
       [Final Chorus - harmony a third below]
       Paid at the door on the way in, not on the way out.
@@ -215,27 +197,18 @@ songs:
     outro: cold
     target_duration: "4:15"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 168 BPM, fast and bright, competitive. Female
-      lead vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
-      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
-      chorus only, nothing under the verses. TWO bright thin-toned composite fiddles trading four-bar
-      phrases with each other, clearly two different players — the second one drier and more ornate.
-      Fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit played with brushes
-      and sticks. Tracked live in a wooden dance hall with no click, light slapback on the voice, the
-      floor audible. Eighteen seconds of the two fiddles alone before the first sung word. A
-      twenty-second break in the middle where the two fiddles trade four bars each, and the second
-      fiddle takes the last exchange. Cold stop.
+      168 BPM bright two-fiddle reel; hard female soprano, competitive trade, live hall, cold stop.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, single fiddle, fade-out
     lyrics: |
       [Intro - two fiddles alone, eighteen seconds]
 
       [Verse 1]
-      There is a thing that happens when you put two of them in a room
-      and it is not a fight, whatever the sleeve is going to say.
-      It is closer to two people finishing each other's sentences
-      badly, and on purpose, and at a hundred and sixty-eight.
-      Nessa came in off the relay road on the Tuesday
-      and by the Wednesday we had stopped explaining anything to her.
+      Nessa came off the relay road with frost across her case.
+      She opened it beside the stove and tightened every string.
+      Hessa played four bars without looking from the bow.
+      Nessa sent four back before the last note settled.
+      By Wednesday neither one was leaving space politely.
+      The floor made a ring and let the two of them through.
 
       [Chorus]
       Four bars yours and four bars mine and four bars yours again,
@@ -244,22 +217,28 @@ songs:
       But somebody always finishes, and it matters who.
 
       [Verse 2]
-      I wrote the last one for myself. I had it in my hand.
-      I had been playing it in the cart for about a week.
-      And she came round the corner of it about two bars early
-      with something I have not been able to play since, and I let her.
-      You can hear me not play it. There is a hole where I was.
-      That is the best thing on this record and it is not mine.
+      Hessa kept the last exchange folded in her hand.
+      She had played it to the cart wheels for a week.
+      Nessa reached the corner two full bars ahead
+      and found a sharper ending waiting past the turn.
+      Hessa raised her bow, then pointed it across.
+      Nessa took the final four and did not give them back.
 
       [Instrumental - two fiddles trading four bars each, twenty seconds, the second takes the last]
 
+      [Bridge]
+      One bow points toward the wall. One points down the lane.
+      One leaves a space above the beat. One cuts across it.
+      Four bars pass between them faster than a spoken answer.
+      Nessa takes the last four. Hessa stamps the floor.
+
       [Verse 3]
-      Arel says I gave it away because I knew it was better.
-      Marda says I gave it away because I was tired.
-      Finn has not said anything about it, which is his way of saying it,
-      and Nessa has a ferry on the Sunday and will not discuss it at all.
-      She is on three of these nights and then she is gone
-      and there is a hole in the middle of this one where I was.
+      At the cold stop Nessa looked straight toward the berth.
+      Her Sunday ferry token was tucked beneath the bridge.
+      Marda laughed. Arel stamped both heels once.
+      Finn brought the cases and wisely said nothing.
+      Hessa asked if she would take the ending next night.
+      Nessa closed the case and said ask me after four bars.
 
       [Final Chorus - harmony a third below]
       Four bars yours and four bars mine and four bars yours again.
@@ -282,15 +261,7 @@ songs:
     outro: sustain
     target_duration: "3:40"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 138 BPM, wry and tired, midtempo. Female lead
-      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
-      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
-      chorus only, nothing under the verses. Bright thin-toned composite fiddle, fretted
-      acoustic-toned composite guitar, cut-stock drum kit played with brushes, and an upright bass
-      that is plainly a different instrument and a different player — rounder, further back in the
-      room, less percussive. Tracked live in a wooden dance hall with no click, light slapback on the
-      voice, the floor audible. Eight seconds of band before the first sung word. Ends on a held
-      chord.
+      138 BPM tired fiddle reel; hard female soprano, guest upright bass, warm live hall, held ending.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, aggressive slap bass, cold ending
     lyrics: |
       [Intro - band, eight seconds]
@@ -312,10 +283,10 @@ songs:
       [Verse 2]
       Arel is out there. Arel is on the floor.
       Sixteen years of standing behind a bass in this hall
-      and tonight there is a man from off the relay playing it
-      and Arel Tocke is standing at the back with his coat on, listening.
-      He said afterwards it was the strangest hour of his life.
-      He said we are slower than he thought and better than he thought.
+      and tonight Oren from the relay road has it under both hands.
+      Arel stands at the back with his coat still buttoned.
+      First tune, he watches Oren. Second tune, he watches us.
+      Third tune, somebody pulls him out onto the boards.
 
       [Chorus]
       Nothing in the kettle and nothing in the tin,
@@ -324,12 +295,12 @@ songs:
       This is not a crisis but it is not far off one.
 
       [Verse 3]
-      Oren Saye is a careful man who has played a thousand halls
-      and he plays it the way it is written and not the way it is.
-      Arel plays it wrong in four places and has for sixteen years
-      and the four wrong places are the reason it sounds like us.
-      He is going to want it back tomorrow. He can have it back.
-      I would like him to hear it from out there once more first.
+      Oren plays each written change exactly where it falls.
+      At the first wrong corner Arel lifts one finger.
+      At the second he smiles. At the third he mouths too late.
+      By the fourth he is laughing into somebody's shoulder.
+      Tomorrow he takes the bass and all four corners back.
+      Tonight he hears what sixteen years has done to them.
 
       [Final Chorus - harmony a third below]
       Nothing in the kettle and nothing in the tin,
@@ -352,25 +323,18 @@ songs:
     outro: fade
     target_duration: "4:00"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 136 BPM, warm and rolling, fond. Female lead
-      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
-      never a held note, plain and unornamented. One male harmony voice a third below the lead on
-      the chorus only, nothing under the verses. Bright thin-toned composite fiddle playing the same
-      figure under every verse without variation, fretted acoustic-toned composite guitar, upright
-      bass, cut-stock drum kit played with brushes. Tracked live in a wooden dance hall with no
-      click, light slapback on the voice, the floor audible. Twelve seconds of fiddle and guitar
-      before the first sung word. Never accelerates. Fades.
+      136 BPM warm rolling fiddle reel; hard female soprano, repeating fiddle figure, live hall fade.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, tempo changes, cold ending
     lyrics: |
       [Intro - fiddle and guitar, twelve seconds]
 
       [Verse 1]
-      There is a gate between the berth and the road into town
-      and it shuts at nine and nobody has ever argued with that.
-      Except there is a clerk on the late shift who has, for eleven years,
-      opened it for four people with a bass and a drum on a cart.
-      She has never asked for anything. She has never been thanked.
-      Her name is not on either record and she has not mentioned it.
+      Half past nine, four people pushing one bad cart.
+      Bass at the front and one cut drum tied behind.
+      The late gate shut. The ferry papers already filed.
+      She looks at us, looks once along the empty road,
+      then lifts the bar and keeps her stamp beside the book.
+      Eleven years and still she never asks the reason.
 
       [Chorus]
       She works the late gate and she has the whole book in her head,
@@ -379,12 +343,12 @@ songs:
       and eleven years of a woman deciding not to see it.
 
       [Verse 2]
-      There is a version of this settlement that is only rules
-      and there is nothing wrong with rules and rules keep the ice out.
-      And then there is the other one, which is what actually happens,
-      which is people quietly deciding what to enforce.
-      Every hall we have ever played, we got in through somebody.
-      Every one. Eleven years. Not one of them wrote it down.
+      Once the bass wheel split between the berth and gate.
+      She found a freight board, rope and somebody's hammer.
+      Once the last ferry put us three full hours behind.
+      She kept the road lamp burning past the end of shift.
+      Once Marda left the brushes on the outward cart.
+      The clerk sent them through next morning with the mail.
 
       [Chorus]
       She works the late gate and she has the whole book in her head,
@@ -395,10 +359,10 @@ songs:
       [Verse 3]
       She is out there. She is at the far end near the door
       because she cannot stand still and cannot be seen to dance.
-      This is the thank you. This is the whole of the thank you.
-      It is a tune, which is not much, and it is the thing we have.
-      She is going to be furious about this in the morning.
-      She is going to say she was only doing the job. She was not.
+      Hessa says her name once. The whole floor turns.
+      The clerk folds both arms and studies the road book.
+      At the second chorus one heel finds the moving beat.
+      She will call it work tomorrow. Nobody here will.
 
       [Final Chorus - harmony a third below]
       She works the late gate and she has the whole book in her head,
@@ -421,27 +385,23 @@ songs:
     outro: cold
     target_duration: "4:30"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, fast and hard, insistent. The track starts at
-      148 BPM and, at the halfway point, jumps without pause or ritardando to 162 BPM and stays
-      there — one hard gear change in the middle, no gradual acceleration anywhere. Female lead
-      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
-      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
-      chorus only, nothing under the verses. Bright thin-toned composite fiddle, fretted
-      acoustic-toned composite guitar, upright bass, cut-stock drum kit played with sticks. Tracked
-      live in a wooden dance hall with no click, light slapback on the voice, the floor audible. Four
-      seconds of band before the first sung word. A sixteen-second fiddle break carries the gear
-      change alone. Cold stop.
+      148 to 162 BPM hard fiddle reel; female soprano, sudden mid-song gear change, cold live ending.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, gradual accelerando, fade-out
     lyrics: |
       [Intro - band, four seconds]
 
       [Verse 1]
-      Every caller on this coast will tell you the same thing:
-      you take the tune round once so the floor can learn the shape,
-      and then you take it round again and you take it faster,
-      and the second time is the one they will talk about all week.
-      Doing it on a stage is easy. You just go.
-      Doing it on a record with two microphones is not.
+      First time round, the young ones learn the corners.
+      Left at the coats. Right beside the stove.
+      Second time, the caller lifts one hand for faster.
+      The freight crew at the wall leans into the turn.
+      Hessa holds one note while all four change their footing.
+      The next bar lands fourteen beats above the first.
+
+      [Pre-Chorus]
+      The caller drops his hand. Hessa keeps the bow moving.
+      Old speed leaves at the stove. Fast speed enters by the coats
+      without one empty bar.
 
       [Chorus]
       Take it round again and do not let them feel the join.
@@ -450,20 +410,20 @@ songs:
       and four people arriving at the same place at once.
 
       [Verse 2]
-      Nine takes. Nine. On the fifth one Marda swore
-      loudly enough that Harbor Standard had to cut two bars.
-      On the seventh Arel came in early and stayed early
-      and we played the whole second half about a beat apart.
-      The sessions ran a night over and the label paid for the night
-      and did not say one word about it, which we noticed.
+      First try, Finn stayed standing at the slower door.
+      Third try, Arel changed before the fiddle gave the sign.
+      Fifth try, Marda sent one brush across the floor.
+      Seventh try, the fast half split us down the middle.
+      Nine tries carried midnight into one more night.
+      The keeper brought the keys and sat beside the stove.
 
       [Instrumental - fiddle alone carries the gear change, sixteen seconds]
 
       [Verse 3]
-      The eighth was clean and had nothing in it at all.
-      The ninth is this one and Finn came off the beat at the join
-      and got back on it inside two bars by an act of will,
-      and you can hear him do it, and that is why it is the take.
+      The eighth went clean and nobody on the floor looked up.
+      On the ninth Finn lost the turn and found it two bars late.
+      Hessa held the join. Marda left him one clear beat.
+      Arel leaned across and pulled the low line under him.
       A hold full of cargo goes over a bad siding the same way.
       Something shifts, and somebody puts a hand out, and it holds.
 
@@ -471,7 +431,7 @@ songs:
       Take it round again and do not let them feel the join,
       and if they feel it, keep going, because they will forgive it.
       One bar at the old speed and the next one somewhere else.
-      Nine of these and this is the one with the mistake in it.
+      Finn comes through two bars late and all four leave together.
 
       [Outro - cold stop]
     take: null # M-33 fills this in at the Suno sitting
@@ -488,14 +448,7 @@ songs:
     outro: sustain
     target_duration: "3:45"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 132 BPM, plain and patient, midtempo. MALE
-      lead vocal on this track only — a plain, unpolished mid-baritone, conversational, slightly
-      short of breath, clearly not a practised lead singer. No female vocal anywhere on the track.
-      No backing or harmony vocal of any kind. Bright thin-toned composite fiddle played by somebody
-      who is not singing, fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit
-      played with brushes. Tracked live in a wooden dance hall with no click, light slapback on the
-      voice, the floor audible. Nine seconds of band before the first sung word. Ends on a held
-      chord.
+      132 BPM patient fiddle reel; unpolished male baritone lead, no female or harmony vocals, live hall.
     exclude: female vocals, harmony vocals, backing vocals, electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, cold ending
     lyrics: |
       [Intro - band, nine seconds]
@@ -516,11 +469,11 @@ songs:
 
       [Verse 2]
       Hessa is eight feet away with the fiddle and no voice
-      and a look on her face I am going to hear about later.
-      She wrote this. She has sung it about nine hundred times.
-      I have got the words wrong twice already and she has not stopped.
-      That is the arrangement in this band, and it is not written down:
-      you do not stop for anything short of the roof coming in.
+      and every wrong word pulls one eyebrow higher.
+      I miss the third line. She points the bow at me.
+      I find the fourth because I know what that point means.
+      She has sung these six words nine hundred times.
+      Tonight her hands keep them moving without a sound.
 
       [Verse 3]
       There is a man off a hauler at the front who is enjoying this
@@ -540,8 +493,8 @@ songs:
       [Final Chorus - lead alone, no harmony, the band very quiet]
       Same six words a night, and every night a different room.
       She will have her voice back Tuesday and I will go back behind her,
-      and there will be no record anywhere of what a fourth night is,
-      except this, which the label is going to press, apparently.
+      and the man off the hauler can ask again all night.
+      I have been in front once. Once is enough for anyone.
 
       [Outro - held chord]
     take: null # M-33 fills this in at the Suno sitting
@@ -558,60 +511,52 @@ songs:
     outro: fade
     target_duration: "3:35"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 152 BPM, brisk and blunt, driving. Female lead
-      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
-      never a held note, plain and unornamented, flat and unimpressed. One male harmony voice a third
-      below the lead on the chorus only, nothing under the verses. TWO bright thin-toned composite
-      fiddles playing hard unison together rather than answering each other, which makes the tune
-      heavy without making it fast. Fretted acoustic-toned composite guitar, upright bass, cut-stock
-      drum kit played with sticks. Tracked live in a wooden dance hall with no click, light slapback
-      on the voice, the floor audible. Five seconds of band before the first sung word. Fades.
+      152 BPM blunt two-fiddle reel; hard female soprano, heavy fiddle unison, live dance hall fade.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, fiddle solos, cold ending
     lyrics: |
       [Intro - band, five seconds]
 
       [Verse 1]
-      There was another version of this and you are not going to hear it.
-      It had a name in the second line and the name was a real one
-      and Harbor Standard read it and went quiet for a day
-      and then said no, and meant it, and that was the end of it.
-      So here is the same tune with the name taken out,
-      which is a worse song and a better idea.
+      The first page carried one real name in the second line.
+      The Harbor man read it twice and folded up the sheet.
+      Hessa took it back and struck the letters through.
+      Nessa set her fiddle hard against the crossing-out.
+      The name is gone. The number underneath remains.
+      Forty at the door looks worse without a person on it.
 
       [Chorus]
       Money for the room, money for the light, money for the floor,
-      and money for a man who has not lifted anything all year.
-      We are not arguing that a hall should cost nothing.
-      We are arguing about the size of the number.
+      show the roof repair and show the winter coal.
+      Put the figure on the table where four hands can reach it.
+      Forty from the door is forty. Say it plain.
 
       [Verse 2]
-      A hall is a building and a building has to be kept
-      and the keeper has a roof to mend and a stove to feed.
-      Fine. Agreed. Nobody in this band disputes it.
-      What we dispute is forty per cent of the door.
-      Forty. On a night the floor is paying to be recorded.
-      Say that number to a freight crew and watch what happens.
-      Say it in a port hall on the coast and watch it travel.
+      The keeper brought a ledger thick with folded corners.
+      Roof patch, stove pipe, two new boards beside the wall.
+      Arel read each line and nodded till the total.
+      Then he turned the book around and tapped the forty.
+      Outside, a freight crew waited by the berth, coats half on.
+      One saw the number through the glass and told the rest.
 
       [Verse 3]
       He came to the third night and stood at the back and listened
-      and he knew exactly which tune was about him and he smiled,
-      and he shook Arel's hand on the way out and said well played,
-      and Arel came back in and did not say anything for an hour.
-      That is how it goes. Nobody is going to be shamed.
-      The rate is the rate until enough halls refuse it.
+      and knew the tune before the second verse arrived.
+      He smiled once, then counted every body on the floor.
+      At the door he shook Arel's hand and said well played.
+      Arel came back in and put the ledger by the stove.
+      Neither one moved the number. Both came back next night.
 
       [Chorus]
       Money for the room, money for the light, money for the floor,
-      and money for a man who has not lifted anything all year.
-      We are not arguing that a hall should cost nothing.
-      We are arguing about the size of the number.
+      show the roof repair and show the winter coal.
+      Put the figure on the table where four hands can reach it.
+      Forty from the door is forty. Say it plain.
 
       [Final Chorus - harmony a third below]
       Money for the room, money for the light, money for the floor.
-      There is a version of this with his name in it somewhere.
-      We are arguing about the size of the number,
-      and the number does not move because a band wrote a tune.
+      One name crossed out and one hard number left.
+      Put the ledger by the stove and leave it open.
+      Everybody through the door can read the line.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -628,16 +573,7 @@ songs:
     outro: cold
     target_duration: "4:10"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 170 BPM, fast and bright, communal. Female lead
-      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
-      never a held note, plain and unornamented. One male harmony voice a third below the lead on the
-      chorus only, nothing under the verses. Bright thin-toned composite fiddle, fretted
-      acoustic-toned composite guitar, cut-stock drum kit played with sticks, and an upright bass
-      that is a different instrument and a different player — rounder and further back. Tracked live
-      in a wooden dance hall with no click, light slapback on the voice, a very loud crowd. Sixteen
-      seconds of band and rising crowd before the first sung word. A twelve-second fiddle break. Over
-      the last eight bars a woman's voice shouts a count of four, off-microphone and unamplified,
-      audible over the band. Cold stop.
+      170 BPM bright fiddle reel; hard female soprano, loud crowd, shouted female count, cold live stop.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, fade-out
     lyrics: |
       [Intro - band and rising crowd, sixteen seconds]
@@ -657,12 +593,12 @@ songs:
       Half this settlement is going to work on nothing.
 
       [Verse 2]
-      So she stood up behind it and she counted us out loud.
-      One, two, three, four, over four hundred people,
-      the way you would count a crew lifting something heavy,
-      and it is on the record and the label wanted it off.
-      They said it sounds like a rehearsal. It sounds like the truth.
-      It sounds like four people getting to the end together.
+      Marda stands behind the kit and raises one wet brush.
+      One, two, three, four, across four hundred people.
+      She counts the way a freight crew counts a loaded lift.
+      Finn finds the one. Oren pulls the bottom under.
+      Hessa catches four and drives it toward the doors.
+      Marda keeps on shouting till the final turn is clear.
 
       [Instrumental - fiddle break, twelve seconds]
 

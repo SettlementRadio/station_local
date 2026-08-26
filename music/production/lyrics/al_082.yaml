@@ -67,61 +67,58 @@ songs:
     outro: fade
     target_duration: "4:00"
     prompt: >-
-      Jump blues and reel tempos, 140 BPM, midtempo, warm and generous. Male lead vocal, dry mid
-      tenor, flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is
-      playing himself. Absolutely no backing or harmony vocal of any kind. Resonance pipes through a
-      large valve amplifier for the first time — long alloy organ tones with an audible electrical
-      warmth and a faint hum behind them. Composite fiddle, upright bass, cut-stock kit and struck
-      alloy, kept dry against a hugely reverberant metal workshop. Slapback on the voice. The track
-      opens with the sound of a big amplifier being switched on and settling into its hum, alone, for
-      several seconds, before any instrument enters — twelve seconds in total before the first sung
-      word. Fades.
+      140 BPM warm jump-reel; dry male tenor, amplified resonance pipes, valve hum intro, workshop fade.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, clean digital tone, cold ending
     lyrics: |
       [Intro - a valve amplifier switched on and finding its hum, twelve seconds]
 
       [Verse 1]
-      That is the sound of a man losing an argument he started.
-      Ten years of standing in this shop saying a pipe is a pipe,
-      it is alloy, it is a length, it is a thing you hit,
-      and there is nothing electrical about a length of metal.
-      All of which was true, and all of which was beside the point,
-      because we ran it through the shop's own desk to be heard.
-      A pipe is a length of alloy off a hull off a deck.
+      Orsa stood with one thumb resting on the switch,
+      coat still buttoned, kettle cold, morning off the glass.
+      Bree leaned back on two legs of a stool and waited.
+      Toller watched the little valve go from black to orange.
+      Then the rack began to hum through every loose tool on the bench,
+      through an alloy cup, through the pipes, through the soles of our boots.
+      Orsa took his hand away and nobody helped him with the silence.
 
       [Chorus]
-      Take the weight off. Take the weight off and sit down.
-      You have been carrying that for a decade and nobody asked you to.
-      Nobody in this settlement was ever keeping score,
-      and the two people who were are both in this room.
+      Take the weight off, take the weight off, sit down.
+      Leave that old iron with the coats beside the door.
+      Nobody in this settlement is asking for a confession.
+      Put the kettle on. Let the warm valve find the floor.
+      If the pipe sounds bigger, we can call it bigger and play.
 
       [Verse 2]
-      Orsa put that hum on the front of the record himself.
-      He did not have to. The label wanted it taken off.
-      He said if I am going to do it I am going to say I did it,
-      and put twelve seconds of his own defeat on track one.
-      That is the whole of the man in one decision.
-      He would rather be wrong loudly than right in private.
+      Ten years he said a pipe was only measured alloy,
+      cut from a hull, set on a rack, struck clean and left alone.
+      Ten years we heard that speech at lunch and after closing,
+      while stripped wire waited in a drawer beneath his hand.
+      Now he fed the line himself and turned the gain up slowly,
+      stopped where the whole bench shook, and looked at every face.
+      "There," he said. "That ought to carry past the gate."
 
       [Verse 3]
-      A movement is a thing people put in an argument
-      when what they actually mean is I like this and not that.
-      There is nothing pure about a shop full of offcuts.
-      There is nothing pure about a rack of borrowed pipes.
-      We took what Forge had and we played it and it worked,
-      and then we took the next thing Forge had, which was power.
+      We had offcuts in the bin and borrowed pipes above us,
+      a patched lead by the desk and freight dust in the seams.
+      Bree counted four, the fiddle caught against the humming,
+      and Orsa brought the first low note up underneath.
+      A spanner walked an inch across the bench from all the ringing.
+      He caught it, set it down, and finally took off his coat.
+      By the second turn he was grinning where he thought we could not see.
 
       [Chorus]
-      Take the weight off. Take the weight off and sit down.
-      You have been carrying that for a decade and nobody asked you to.
-      Nobody in this settlement was ever keeping score,
-      and the two people who were are both in this room.
+      Take the weight off, take the weight off, sit down.
+      Leave that old iron with the coats beside the door.
+      Nobody in this settlement is asking for a confession.
+      Put the kettle on. Let the warm valve find the floor.
+      If the pipe sounds bigger, we can call it bigger and play.
 
       [Final Chorus - pipes answering the vocal line]
-      Take the weight off, and put the kettle on the bench,
-      and let the thing hum, because it is going to hum.
-      Nobody in this settlement was ever keeping score.
-      It sounds enormous. That is the end of it.
+      Take the weight off, take the weight off, sit down.
+      The cups are on the bench and the old speech is done.
+      Nobody in this settlement was keeping score but Orsa.
+      He lets the thing hum. We hit the turn and run.
+      It sounds enormous. That is enough for everyone.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -138,60 +135,59 @@ songs:
     outro: fade
     target_duration: "4:20"
     prompt: >-
-      Jump blues and reel tempos, 134 BPM, rolling and deep, wry. Male lead vocal, dry mid tenor,
-      flat and matter-of-fact, clipping the ends of lines, singing words plainly not his own.
-      Absolutely no backing or harmony vocal of any kind. Amplified resonance pipes carrying a
-      melodic line under the voice throughout — long alloy organ tones, warm and electrical — and
-      taking a twenty-second instrumental break. Composite fiddle, upright bass, cut-stock kit and
-      struck alloy, dry against a hugely reverberant metal workshop. Slapback on the voice. Sixteen
-      seconds of pipes before the first sung word. Fades.
+      134 BPM deep jump-reel; dry male tenor, melodic amplified pipes, pipe break, workshop fade.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, cold ending
     lyrics: |
       [Intro - amplified pipes, sixteen seconds]
 
       [Verse 1]
-      He wrote it down on the back of a stock sheet and handed it over
-      and said sing that, and would not discuss it further,
-      and there are eleven words in the first line that are his
-      and I have been saying them out loud for about a year.
-      He will not sing. He has never sung. He is not going to.
-      So I stand here saying a man's own apology for him.
+      Orsa wrote eleven words across the back of a stock sheet,
+      folded it once, and slid it underneath my cup.
+      He said, "Sing that before the first turn," then faced the pipe rack
+      as if the sizes needed checking and the morning had got short.
+      He will not sing. He barely says good evening.
+      So I cleared my throat and held his paper to the lamp,
+      while Bree found the count and Toller hid a smile.
 
       [Chorus]
       I was wrong about the pipes and I have been wrong for a while.
-      They were never pure. Nothing in this shop is pure.
-      A signalling tube on a rack is not a philosophy,
-      and I made it one, and I made everybody carry it.
+      I made a load of measured alloy heavier than a hull.
+      I kept that load beside me through the gate and down the siding.
+      I was wrong about the pipes. Set the long note going now.
 
       [Verse 2]
-      What actually happened is smaller and less noble.
-      He heard them through a desk at somebody else's session
-      and stood in a doorway for twenty minutes not moving
-      and came back to the shop and did not mention it for six weeks.
-      Then he said, on a Tuesday, in front of the whole band,
-      that the argument had been dishonest, and went and made tea.
+      What happened was a doorway, somebody else's workroom,
+      rain coming sideways off the yard, a relay light gone red.
+      He heard one pipe come warm through a battered desk and speaker,
+      and stood there twenty minutes with the wet upon his coat.
+      He came home and held his tongue for six weeks.
+      Then Tuesday, while we checked a freight crew's dented rack,
+      he said, "The argument was crooked," and went to make the tea.
 
       [Instrumental - amplified pipes take the break, twenty seconds]
 
       [Verse 3]
       He says the title was mine and it was not mine.
       I say the title was his and he says that is convenient.
-      Somewhere in this settlement is a stock sheet with it written on
-      and neither of us has ever gone and looked for it,
-      which tells you what both of us think is on the paper,
-      and which is why this is the one thing we do not discuss.
+      Somewhere in this settlement that stock sheet sits in a drawer,
+      under valve counts, ferry dates and orders never filled.
+      Neither of us looks, though we both know where the drawer is.
+      Bree says she will settle it whenever we grow tired.
+      Orsa checks the rack. I find another thing to carry.
+      We have managed not to tire of this in twelve long months.
 
       [Chorus]
       I was wrong about the pipes and I have been wrong for a while.
-      They were never pure. Nothing in this shop is pure.
-      A signalling tube on a rack is not a philosophy,
-      and I made it one, and I made everybody carry it.
+      I made a load of measured alloy heavier than a hull.
+      I kept that load beside me through the gate and down the siding.
+      I was wrong about the pipes. Set the long note going now.
 
       [Final Chorus - pipes answering the vocal line]
-      I was wrong about the pipes and there is a record of it now,
-      pressed, and sold, and sitting in a rack in the core.
-      A signalling tube on a rack is not a philosophy,
-      and I am playing one, through a desk, on this take.
+      I was wrong about the pipes; I am saying what he wrote.
+      Orsa has the long note. I have got the folded paper.
+      Bree is at the count and Toller leans into the turn.
+      I was wrong about the pipes. The kettle starts to knock.
+      He reaches for the switch, then leaves the warm hum on.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -208,62 +204,58 @@ songs:
     outro: cold
     target_duration: "4:35"
     prompt: >-
-      Jump blues and reel tempos, 158 BPM, fast and deep, strange. Male lead vocal, dry mid tenor,
-      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
-      himself. Absolutely no backing or harmony vocal of any kind. TWO separate sets of amplified
-      resonance pipes at slightly different tunings, playing against each other — long alloy organ
-      tones that beat and pulse against one another where the two tunings disagree, enormous and
-      unsettling. Composite fiddle, upright bass, cut-stock kit and struck alloy, dry against a hugely
-      reverberant metal workshop. Slapback on the voice. Eighteen seconds of the two sets of pipes
-      alone before the first sung word. A twenty-second break of the two sets of pipes alone with
-      nothing else playing. Cold stop.
+      158 BPM deep jump-reel; dry male tenor, two detuned amplified pipe sets, beating tones, cold stop.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, tuned unison pipes, fade-out
     lyrics: |
       [Intro - two sets of pipes at two tunings, eighteen seconds]
 
       [Verse 1]
-      Nobody had done it because nobody had two sets.
-      There are eleven pipes on that rack and they belong to the shop
-      and the only other set within a season of here
-      came in on the relay with a woman and a bag of tools.
-      Ivena Sorn, who tunes hers to a different year than ours
-      and would not change it, and was entirely right not to.
+      The relay door opened with the weather pushing through it,
+      and Ivena Sorn came sideways with a canvas bag of tools.
+      Eleven pipes were waiting on the rack behind Orsa.
+      She set eleven more against the bench and tried one low.
+      His set answered flat enough to make the lamp wire tremble.
+      He asked if she would tune. She said, "I already did."
+      Bree struck the rim once, delighted by the trouble.
 
       [Chorus]
-      Two sets of it. Two lengths. Two different decades.
-      And where they disagree, the room starts beating like a heart.
-      That is not a fault. Nobody put that in on purpose.
-      That is two pieces of alloy having an argument in the air.
+      Two pipe sets, two measures, two different years.
+      Where the long notes cross, the whole room beats between them.
+      Keep that rolling in the walls. Do not sand the edges off.
+      Let two pieces of alloy find the distance in the air.
 
       [Verse 2]
-      She wrote both tunings on her cuffs in shop marker
-      because there was no paper in the building she was allowed to use,
-      and that cuff is now the only written record anywhere
-      of what these settlement pipes were tuned to in that year.
-      Deep Register has it in a drawer. She gave it to them.
-      She said she had another shirt, which was not true.
+      Ivena wrote the numbers up and down her cuffs in marker,
+      left arm for her travelling set and right arm for the shop.
+      Paper slid beneath the tools; her hands were full of valves.
+      Sweat took half a figure, so she wrote the figure twice.
+      Those cuffs are all that anyone kept of both the tunings,
+      black strokes for a settlement year no gauge remembers now.
+      She gave the shirt away and wore her coat back to the berth.
 
       [Instrumental - the two sets of pipes alone, twenty seconds]
 
       [Verse 3]
       Toller says it makes him feel like a bulkhead is failing.
-      Bree loves it, obviously. Bree would live in it.
-      Orsa went very quiet the first time we ran it
-      and then asked her, formally, whether she would stay a night longer.
-      She had a berth booked out and she moved it, and stayed,
-      and that is two of the eight tracks on this record.
+      Bree laughs every time the beating shakes the cups.
+      Orsa listens with his head down by the smaller valves,
+      then asks Ivena, far too formally, to stay another night.
+      Her berth is booked for morning on the eastbound ferry.
+      She walks to the relay desk, moves it on one day,
+      comes back with rain upon her coat and says, "From the top."
 
       [Chorus]
-      Two sets of it. Two lengths. Two different decades.
-      And where they disagree, the room starts beating like a heart.
-      That is not a fault. Nobody put that in on purpose.
-      That is two pieces of alloy having an argument in the air.
+      Two pipe sets, two measures, two different years.
+      Where the long notes cross, the whole room beats between them.
+      Keep that rolling in the walls. Do not sand the edges off.
+      Let two pieces of alloy find the distance in the air.
 
       [Final Chorus - both sets of pipes answering the vocal line]
-      Two sets of it, and one of them goes out on Thursday,
-      and there is not going to be another record like this one.
-      That is two pieces of alloy having an argument in the air
-      and a woman with a marked cuff who wrote the year down.
+      Two pipe sets, and one goes out on Thursday.
+      One marked cuff is folded in a drawer behind the gate.
+      Let two pieces of alloy hold their distance in the air.
+      Ivena shoulders up the travelling set before first light.
+      The shop feels half its width when eleven pipes have gone.
 
       [Outro - cold stop]
     take: null # M-33 fills this in at the Suno sitting
@@ -280,14 +272,7 @@ songs:
     outro: cold
     target_duration: "3:40"
     prompt: >-
-      Jump blues and reel tempos, 166 BPM, fast and hard, defiant. Male lead vocal, dry mid tenor,
-      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
-      himself. Absolutely no backing or harmony vocal of any kind. The four instruments enter one at a
-      time over the first sixteen bars, each getting four bars alone before the next arrives: struck
-      alloy and cut-stock kit first, then upright bass, then composite fiddle, then amplified
-      resonance pipes. Dry bass and drums against a hugely reverberant metal workshop. Slapback on
-      the voice. Five seconds before the first sung word. Four bars of struck alloy alone after
-      the first chorus. Cold stop.
+      166 BPM hard jump-reel; dry male tenor, four staggered instrument entries, struck-alloy stop.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, fade-out
     lyrics: |
       [Intro - struck alloy alone, five seconds]
@@ -318,11 +303,12 @@ songs:
 
       [Verse 3]
       It took about nine minutes. There was no argument.
-      Toller said yes before she had finished the second line.
+      Toller said yes before she reached the second figure.
       Orsa said it should have been four ways from the shop floor up.
-      Dane said nothing for a while and then said fine, and meant it,
-      and every song this band recorded after that afternoon
-      has four names on it, which is the whole story of the record.
+      Dane stood quiet, read the stock sheet, then said, "Write it fair."
+      Bree made the clerk put four names across the next clean line,
+      checked each one herself, and tucked the paper by the manifest.
+      Then she picked the sticks up, clicked them once, and counted fast.
 
       [Chorus]
       Four names or no reel. Four names on the paper.
@@ -351,21 +337,14 @@ songs:
     outro: fade
     target_duration: "4:30"
     prompt: >-
-      Slow blues at walking pace, 84 BPM, warm and patient. Male lead vocal sung a full octave lower
-      than usual — a low, rough, exhausted bass-baritone, quiet, very close to the microphone, flat
-      and matter-of-fact, clipping the ends of lines. Absolutely no backing or harmony vocal of any
-      kind. Amplified resonance pipes holding very long tones, composite fiddle played low and
-      slowly, upright bass, cut-stock kit brushed quietly. Dry bass and drums against a hugely
-      reverberant metal workshop, with the room much more audible than usual because nothing is
-      covering it. Slapback on the voice. Twelve seconds of pipes and fiddle before the first sung
-      word. Fades.
+      84 BPM slow blues; exhausted low male baritone, amplified pipes, warm empty workshop, fade.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, reel tempo, fast tempo, bright vocal, cold ending
     lyrics: |
       [Intro - pipes and fiddle, twelve seconds]
 
       [Verse 1]
       We wasted the whole evening and there is no other word.
-      Six hours on a tune that will not be on this record
+      Six hours on a tune that never learned to stand up
       and a disagreement about the order of the second half
       and Bree walking out to the yard twice to not say anything.
       By two nobody was playing anything anybody wanted.
@@ -384,7 +363,8 @@ songs:
       and I opened my mouth and this came out instead of my voice,
       about an octave down, because there was nothing left of it.
       Nobody stopped. Nobody said anything at all.
-      We played it once and it is the take you are hearing.
+      Bree kept the brush moving. Toller stayed under the note.
+      My voice stayed down there until the whistle found us.
 
       [Verse 3]
       A shop at four in the morning is a warm dark thing.
@@ -421,63 +401,63 @@ songs:
     outro: cold
     target_duration: "3:35"
     prompt: >-
-      Jump blues and reel tempos, 156 BPM, brisk and blunt, bright. Male lead vocal, dry mid tenor,
-      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
-      himself. Absolutely no backing or harmony vocal of any kind. TWO sets of amplified resonance
-      pipes in hard unison — same tuning, doubled, very heavy long alloy organ tones. Composite fiddle
-      playing underneath the pipes rather than above them. Upright bass, cut-stock kit and struck
-      alloy, dry against a hugely reverberant metal workshop. Slapback on the voice. Six seconds
-      before the first sung word. Cold stop.
+      156 BPM blunt jump-reel; dry male tenor, two amplified pipe sets in heavy unison, cold stop.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, detuned or beating pipes, fade-out
     lyrics: |
       [Intro - two sets of pipes in unison, six seconds]
 
       [Verse 1]
-      It went on for years. It went on in the yard and the bench room
-      and at the gate and in the cart and once at somebody's table
-      and every single time it ended the same way, which is not at all,
-      because there is no end to an argument nobody can lose.
-      Purist. Synthesist. Two words for what you like.
-      Two words that had four people not speaking by 2590.
-      Ask a hauler crew which half of the argument they are.
+      Orsa chalked "Purist" above the rack for half a season.
+      Dane wrote "Synthesist" beneath it to watch him turn.
+      The words followed yard to gate, rode in the tool cart,
+      and came home every evening in the chalk upon our coats.
+      One Thursday no one spoke through thirty feet of stripped wire.
+      Bree stopped the count and crossed both sticks upon the snare.
+      Four people faced one bench and would not share a kettle.
 
       [Chorus]
-      Nobody here is pure. Nobody on this whole coast is.
-      The alloy came off a hull. The hull came off a yard.
-      The yard runs on a line that runs on somebody's power,
-      and the power is the argument, and we are all in it.
+      Nobody here is pure; look at our hands.
+      Alloy off a hull, stripped wire out of cargo,
+      borrowed power in the wall, old grease around the valves.
+      Nobody here is pure. Good. Put the kettle on.
+      That rack must meet the morning freight crew.
 
       [Verse 2]
-      Orsa said the sentence standing up, on a Thursday,
-      and put his hands flat on the bench, and that was that.
-      Bree had a marker in her pocket, because Bree has,
-      and wrote it on the wall behind the rack in letters that high.
-      It is still there. It has been painted round twice.
-      The shop will not paint over it and will not say why.
+      Orsa said the sentence standing up that Thursday,
+      both hands flat beside the parts we had to ship.
+      Bree had a marker in her pocket, because Bree always does.
+      She climbed onto Toller's stool before the echo quit,
+      wrote it on the wall behind the rack in letters tall as spanners,
+      capped the marker with her teeth and started up the count.
+      Twice they painted round it. Nobody will paint it out.
 
       [Pre-Chorus]
-      Two words, and a bench, and four people who had to work together
-      in a room the size of a settlement for another eight years.
+      Check the valves. Pass the small wrench down.
+      Relay hauler at six, finished rack at seven.
+      Four cups on the bench, and nobody gets a throne.
 
       [Verse 3]
-      Ivena is back on this one with her own set
-      and the two are in unison, which is the point of the tune:
-      no beating, no argument, no two tunings disagreeing,
-      just twice as much of the same thing, very loud.
-      There is nothing subtle in this track anywhere at all
-      and there is not supposed to be. It is a full stop.
+      Ivena shoulders up beside Orsa at the pipe rack.
+      Two hands lift together, two sets take the same low note.
+      The cups move. The lamp shakes. Dust comes off the bulkhead.
+      Bree drives the heel down; Toller braces by the gate.
+      Dane's fiddle saws below them, hard against the floor.
+      No one wins and no one yields; the long notes move as one.
+      Orsa sees the chalk above him and laughs before the stop.
 
       [Chorus]
-      Nobody here is pure. Nobody on this whole coast is.
-      The alloy came off a hull. The hull came off a yard.
-      The yard runs on a line that runs on somebody's power,
-      and the power is the argument, and we are all in it.
+      Nobody here is pure; look at our hands.
+      Alloy off a hull, stripped wire out of cargo,
+      borrowed power in the wall, old grease around the valves.
+      Nobody here is pure. Good. Put the kettle on.
+      That rack must meet the morning freight crew.
 
       [Final Chorus - both sets of pipes answering the vocal line]
-      Nobody here is pure, and it is on the wall,
-      and it is on this record, and it is the end of it.
-      The yard runs on a line that runs on somebody's power.
-      Go and be pure somewhere with no settlement in it.
+      Nobody here is pure; the words stay on the wall.
+      Alloy off a hull and two pipe sets against the weather.
+      Nobody here is pure. Good. Open up the gate.
+      Let the morning freight crew find us working all together.
+      Leave the chalk up by the rack. We know what it cost.
 
       [Outro - cold stop]
     take: null # M-33 fills this in at the Suno sitting
@@ -494,13 +474,7 @@ songs:
     outro: fade
     target_duration: "3:55"
     prompt: >-
-      Jump blues and reel tempos, 142 BPM, midtempo, fond and plain. Male lead vocal, dry mid tenor,
-      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
-      himself. Absolutely no backing or harmony vocal of any kind. The upright bass is BOWED
-      throughout rather than plucked — long sustained low tones with audible bow noise, sitting inside
-      the amplified resonance pipes rather than under them. No pizzicato bass anywhere. Composite
-      fiddle, cut-stock kit brushed, dry against a hugely reverberant metal workshop. Slapback on the
-      voice. Ten seconds of bowed bass and pipes before the first sung word. Fades.
+      142 BPM plain jump-reel; dry male tenor, bowed upright bass inside amplified pipes, soft fade.
     exclude: vocal harmony, backing vocals, second voices, plucked or pizzicato bass, slap bass, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, cold ending
     lyrics: |
       [Intro - bowed bass and pipes, ten seconds]
@@ -521,12 +495,13 @@ songs:
       and I will give you a plain answer or none at all.
 
       [Verse 2]
-      So there is a bowed bass on this record and nowhere else,
-      and the reason is a borrowed bow and a bad correspondence.
-      It sits inside the pipes. It does not sit under them.
-      You cannot tell where the alloy stops and the string starts,
-      which is the single most beautiful thing on this album
-      and happened because a stranger left something on a bench.
+      Toller took the bow from where it slept above the bench,
+      pulled one bass string long enough to wake the hanging pipes.
+      Orsa laid a low note over it and neither sound gave way.
+      The alloy and the string kept passing through each other,
+      one rough edge under one, one warm edge over two.
+      Bree came in with brushes so she would not break the line.
+      A stranger's name stayed pencilled on the leather by his hand.
 
       [Verse 3]
       He is going to give it back. He says so at every session.
@@ -546,7 +521,7 @@ songs:
       Ask me later, at the gate, with the shift going in,
       and I will tell you what I think and it will be short.
       Ask me where the lists are checked and the boots come off.
-      Somebody write to that woman about her bow.
+      Toller, use the berth number. Send the woman back her bow.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -563,14 +538,7 @@ songs:
     outro: sustain
     target_duration: "4:25"
     prompt: >-
-      Jump blues and reel tempos, 170 BPM, fast and urgent, communal. Male lead vocal, dry mid tenor,
-      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
-      himself. Absolutely no backing or harmony vocal of any kind. Amplified resonance pipes,
-      composite fiddle, upright bass, cut-stock kit and struck alloy, dry against a hugely reverberant
-      metal workshop. Slapback on the voice. Eight seconds before the first sung word. A fourteen-
-      second fiddle break. Forty seconds before the end, a very loud industrial shift whistle sounds
-      and continues — the band does not stop, does not pause and does not acknowledge it, and plays
-      the rest of the track underneath it. Ends on a held chord with the whistle still going.
+      170 BPM urgent jump-reel; dry male tenor, shift whistle over final 40 seconds, held ending.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, cold ending, fade-out
     lyrics: |
       [Intro - band, eight seconds]
@@ -582,7 +550,7 @@ songs:
       and none of them has ever needed to be told.
       It goes out over the yard and the rack and the loading deck.
       It is not a warning. It is not an alarm. It is a time.
-      And it went off in the middle of the best take we had.
+      Tonight it found us halfway through the quickest turn we had.
 
       [Chorus]
       The last set of the night, and the whistle does not wait.
@@ -597,8 +565,9 @@ songs:
       Orsa had a note going and he kept it going.
       And I sang a whole verse into a signal that is louder
       than anything four people with instruments can produce,
-      and if you turn this up you can hear about half of it,
-      and the half you cannot hear is not worth having anyway.
+      felt the deck plates answer underneath my heels,
+      lost every other word and drove the fiddle harder.
+      Bree saw the shift at the door and kicked us through the turn.
 
       [Chorus]
       The last set of the night, and the whistle does not wait.
@@ -607,12 +576,13 @@ songs:
       and there is about a minute of this left and it is ours.
 
       [Verse 3]
-      Deep Register wanted it again without the whistle on it.
-      All four of us said no, at the same time, again.
-      A record made in a working shop with a shift at six
-      that does not have the whistle on it is a lie about the shop.
-      This is the eighth track and the last thing on it
-      is the building telling four people to get out of the way.
+      The morning freight crew filled the doorway by the dozen,
+      lunch tins, rolled sleeves, manifests beneath their arms.
+      We moved no faster. They could wait the forty seconds.
+      One woman marked the time and leaned against the frame.
+      Then Orsa held the final note beneath the dying whistle,
+      Bree put both sticks up, and the whole shift crossed the floor.
+      Our cases shut as their first rack came through the gate.
 
       [Final Chorus - pipes answering the vocal line, whistle over everything]
       The last set of the night, and the whistle does not wait.

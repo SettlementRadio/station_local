@@ -69,27 +69,18 @@ songs:
     outro: cold
     target_duration: "3:35"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 172 BPM, fast and bright, driving hard from
-      the first bar. Female lead vocal, clear high soprano with a hard edge, sung in short phrases
-      between fiddle passages, never a held note, plain and unornamented. One male harmony voice a
-      third below the lead on the chorus only and nothing at all under the verses. Bright thin-toned
-      composite fiddle, fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit
-      played with brushes and sticks. Tracked live in a wooden dance hall with two microphones and
-      no click, takes short and slightly rushing, light slapback on the voice, the floor and the
-      dancers audible behind the band throughout. Opens on the floor clapping alone for eight
-      seconds; the fiddle enters on the clap and the band arrives at the room's speed, faster than
-      it means to. Cold stop with the clapping still going.
+      172 BPM fiddle reel-rock; hard female soprano, live dance hall, rushing beat, clapping crowd.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, studio silence at the top
     lyrics: |
       [Intro - the floor clapping alone, eight seconds, no instruments]
 
       [Verse 1]
-      We had it at a hundred and sixty in the shed on Tuesday night,
-      counted careful, counted level, every one of us agreed.
-      Then four hundred people started clapping while we tuned,
-      and the four of us looked sideways and not one of us said stop.
-      You do not tell a room it has the tempo wrong.
-      You come in where the room is and you argue afterwards.
+      Coats were still coming through the door when the clap began.
+      Boots struck the boards before Hessa raised her bow.
+      She gave Marda one look and counted where they were.
+      Arel caught the second beat. Finn nearly missed the third.
+      Four hundred hands pulled all four of us forward.
+      The room chose the speed and nobody asked permission.
 
       [Chorus]
       Nobody sat down. Nobody sat down.
@@ -98,12 +89,12 @@ songs:
       and the coldest thing in Cold Harbor was outside the door.
 
       [Verse 2]
-      Hessa put the fiddle up and took the speed off the floor,
-      and Marda found it second and the bass came in behind.
-      Four beats faster than we ever played it since,
-      which you can hear if you have heard us play it anywhere else.
-      A settlement that races on the ice all winter
-      is not going to be told what a fast tune is.
+      A woman by the stove kicked both boots under a bench.
+      Her coat stayed buttoned and her hair came loose at once.
+      The gate clerk left his desk with the stamp in his hand.
+      Two freight hands turned before their cargo cleared the berth.
+      We never took the tune that fast on any later night.
+      Cold Harbor heard it slower and called the slower one wrong.
 
       [Chorus]
       Nobody sat down. Nobody sat down.
@@ -140,28 +131,18 @@ songs:
     outro: fade
     target_duration: "3:30"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 156 BPM, brisk and wry, warm rather than hard.
-      Female lead vocal, clear high soprano with a hard edge, sung in short phrases between fiddle
-      passages, never a held note, plain and unornamented. One male harmony voice a third below the
-      lead on the chorus only, entering slightly late, and nothing under the verses. Bright
-      thin-toned composite fiddle, fretted acoustic-toned composite guitar, upright bass, cut-stock
-      drum kit played with brushes and sticks. Tracked live in a wooden dance hall with two
-      microphones and no click, takes short and slightly rushing, light slapback on the voice, the
-      floor audible behind the band. Six seconds of fiddle and guitar before the first sung word.
-      Four bars of unaccompanied fiddle after the second chorus. Guitar and brushes alone under
-      the third verse, the band back for the last chorus. Fades out
-      slowly with the room noise still under it.
+      156 BPM warm fiddle reel; hard female soprano, late male harmony, guitar and brush fade, live hall.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, hard ending
     lyrics: |
       [Intro - fiddle and guitar, six seconds]
 
       [Verse 1]
-      Every band that works a floor has one tune held in reserve
-      that is never on the card and never gets announced.
-      You do not play it early and you do not play it well.
-      You play it when the keeper wants his hall back before the morning.
-      Ours has been the same one since the year the last ferry changed,
-      and until this week we had never played it from a stage.
+      The keeper stacked six chairs beside the stove at one.
+      He stacked six more and looked directly at the fiddle.
+      Forty coats still hung along the sea-end wall.
+      Two had gone. The owners of the rest kept turning.
+      Finn called the tune we use when morning wants the room.
+      For once we faced the floor instead of playing from the door.
 
       [Chorus]
       Two coats going out and forty still on the hook,
@@ -170,12 +151,12 @@ songs:
       the doors are going to be shut whether you are through them or you are not.
 
       [Verse 2]
-      It works because it does not sound like it is finishing.
-      It sounds like something starting, so they stand there and they wait,
-      and by the time the second turn comes round they have their coats
-      and half of them are talking on the step and not inside.
-      Finn worked that out in a hall in his first year
-      and has been quietly proud of it since, which he would deny.
+      First turn: somebody finds a ferry token under a chair.
+      Second turn: three friends begin the argument outside.
+      Third turn: a woman pulls her sleeping boy upright.
+      He dances in his boots while she fastens up his coat.
+      Finn watches every door and never changes tempo.
+      A tune can clear a hall without sending anyone away.
 
       [Chorus]
       Two coats going out and forty still on the hook,
@@ -214,16 +195,7 @@ songs:
     outro: cold
     target_duration: "4:05"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 176 BPM, fast and hard, defiant. Female lead
-      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
-      never a held note, plain and unornamented, angrier than the tune. One male harmony voice a
-      third below the lead on the chorus only, nothing under the verses. Bright thin-toned composite
-      fiddle, fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit played with
-      brushes and sticks. Tracked live in a wooden dance hall with two microphones and no click,
-      takes short and slightly rushing, light slapback on the voice, the floor audible behind the
-      band. Sixteen seconds of unaccompanied fiddle before the first sung word. A fourteen-second
-      hard fiddle break where a fourth verse would be. Whole band stops dead for one bar before the
-      final chorus. Cold stop.
+      176 BPM hard fiddle reel-rock; hard female soprano, angry delivery, live hall, one-bar stop.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, fade-out
     lyrics: |
       [Intro - unaccompanied fiddle, sixteen seconds]
@@ -259,12 +231,12 @@ songs:
       [Instrumental - fiddle break, hard and unornamented, fourteen seconds]
 
       [Verse 3]
-      Every band on this coast can name him and not one of us can prove it,
-      and the label had a lawyer read this before they let us cut it.
-      So there is no name in this song and there is not going to be.
+      Harbor's lawyer put the title underneath a lamp.
+      She crossed the promoter's name out with a careful line.
+      She circled short money twice and pushed the page back.
+      No name, no date, no hall: those were her conditions.
       He knows. We know. Half the floor tonight knows.
-      Play it in his hall and watch him not react,
-      and that is as close to an admission as anybody gets.
+      Play it where he stands and watch him study his own shoes.
 
       [Break - whole band stopped, one bar]
 
@@ -289,15 +261,7 @@ songs:
     outro: fade
     target_duration: "3:20"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 164 BPM, warm and quick, hopeful. Female lead
-      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
-      never a held note, plain and unornamented. One male harmony voice a third below the lead,
-      chorus only, and singing a full line behind her rather than with her, as though he cannot hear
-      her — deliberate and kept. Bright thin-toned composite fiddle, fretted acoustic-toned
-      composite guitar, upright bass, cut-stock drum kit played with brushes and sticks. Tracked
-      live in a wooden dance hall with two microphones and no click, light slapback on the voice,
-      the floor loud behind the band. Four seconds of band before the first sung word. Fiddle out
-      entirely under the second verse. Fades under the room.
+      164 BPM warm fiddle reel; hard female soprano, male harmony one line late, loud live dance hall.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, tight vocal stacking
     lyrics: |
       [Intro - full band, four seconds]
@@ -317,12 +281,12 @@ songs:
       and if it goes right you have got the rest of the night.
 
       [Verse 2 - no fiddle]
-      That is the only real service a dance band provides.
-      Not the tune. The noise. The permission and the noise.
-      Ask her in a quiet room and everybody watches,
-      ask her in a quiet room and she has to be kind.
-      Here she can take your hand between the hall and the berth
-      and the two of you can pretend the answer was the tune.
+      The fiddle drops away. Finn lands one line behind.
+      She laughs because his answer reaches after mine.
+      You cross two rows while everybody turns the other way.
+      The floor is loud enough to let her answer honestly.
+      She takes your hand somewhere between the hall and berth.
+      Both of you can blame the tune for what comes after.
 
       [Chorus - harmony a full line behind the lead]
       Ask her while the band plays. Ask her while it is loud.
@@ -359,60 +323,53 @@ songs:
     outro: fade
     target_duration: "3:45"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 148 BPM, driving and plain, midtempo and
-      steady. Female lead vocal, clear high soprano with a hard edge, sung in short phrases between
-      fiddle passages, never a held note, plain and unornamented. One male harmony voice a third
-      below the lead on the chorus only, nothing under the verses. Bright thin-toned composite
-      fiddle, fretted acoustic-toned composite guitar played low and dull, upright bass with no
-      bottom end at all — the low register missing entirely, the bass working in its middle. No
-      sub-bass anywhere. Cut-stock drum kit with brushes and sticks. Tracked live in a wooden dance
-      hall with two microphones and no click, light slapback on the voice, the floor audible. Nine
-      seconds of band before the first sung word. Fades.
+      148 BPM plain fiddle reel; hard female soprano, high upright bass, low guitar, live dance hall.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, deep bass, sub-bass, low end weight
     lyrics: |
       [Intro - band, no low end, nine seconds]
 
       [Verse 1]
-      A hall costs money before anybody has been paid.
-      Heat costs money. Light costs money. The floor costs most of all,
-      because a floor that four hundred people are going to work
-      needs somebody underneath it twice a year with a spanner.
-      Whoever tells you a dance is free has never hired a room.
-      Somebody always paid. It is only ever a question of who.
+      The keeper laid the hall bill flat beside the stove.
+      Six nights of light. Six nights of heat and doors.
+      One line for the man who crawls beneath the floor
+      with a lamp, a spanner and two boards across his back.
+      Marda counted every line and pushed the coins across.
+      The keeper counted once, then opened both his hands.
 
       [Chorus]
-      Room is paid for, and the rest of it is ours,
-      and the rest of it divides four ways at the end of the night.
-      Not five ways. Not a share for the man who owns the door.
-      Four ways at a table with the money in the middle.
+      The hall is paid. Put the money in the middle.
+      Heat and light are settled. The floor is covered too.
+      Four chairs, four hands, four shares before the ferry.
+      Nobody at the door gets to count it twice.
 
       [Verse 2]
-      Arel's bass broke a string on the third night of the six
-      and there is nothing on this coast that fits it until the thaw.
-      So he has played the whole record in the middle of the instrument
-      and Finn has gone down to meet him and it sounds like another band.
-      Nobody in that hall noticed and every one of us did.
-      You can hear the hole in it. We decided to keep the hole.
+      Arel's low string broke before the third-night doors.
+      No shop on this coast keeps another till the thaw.
+      He moved his left hand higher and never looked at us.
+      Finn dropped every guitar turn to meet him underneath.
+      The dancers stamped straight through the missing bottom note.
+      We heard the space. They only heard the floor.
 
       [Verse 3]
-      Marda worked out the arithmetic on the back of the manifest
-      because it was the only paper anybody had that night.
-      Hall, heat, the ferry over, what the coats cost to store,
-      what we owe the man who lends us a cart for the bass.
-      What was left was enough and it was not much more than enough,
-      and all four of us said yes and nobody said it twice.
+      Marda used the back side of a freight manifest.
+      Ferry over. Coat hooks. Cart hire for the bass.
+      A meal at midnight and the lamp beneath the boards.
+      She drew four boxes round the little that remained.
+      Arel took his share and bought a length of useless wire.
+      He knew it would not fit. He bought it all the same.
+      Marda folded the manifest and kept it in her coat.
 
       [Chorus]
-      Room is paid for, and the rest of it is ours,
-      and the rest of it divides four ways at the end of the night.
-      Not five ways. Not a share for the man who owns the door.
-      Four ways at a table with the money in the middle.
+      The hall is paid. Put the money in the middle.
+      Heat and light are settled. The floor is covered too.
+      Four chairs, four hands, four shares before the ferry.
+      Nobody at the door gets to count it twice.
 
       [Final Chorus - harmony a third below]
-      Room is paid for and the doors are still open,
-      and there is nobody standing at them counting who came in.
-      Four ways at a table with the money in the middle,
-      and a broken string, and the best week of the year.
+      The hall is paid. Both doors are standing open.
+      Four shares counted while the last coats disappear.
+      Arel has three strings and a coil that does not fit.
+      We have the ferry home and enough until next week.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -429,63 +386,54 @@ songs:
     outro: fade
     target_duration: "5:15"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 158 BPM, bright and rolling, generous and
-      unhurried despite the tempo. Female lead vocal, clear high soprano with a hard edge, sung in
-      short phrases between fiddle passages, never a held note, plain and unornamented. One male
-      harmony voice a third below the lead on the chorus only, nothing under the verses. Bright
-      thin-toned composite fiddle, fretted acoustic-toned composite guitar, upright bass, cut-stock
-      drum kit played with brushes and sticks. Tracked live in a wooden dance hall with two
-      microphones and no click, light slapback on the voice, the floor very loud behind the band and
-      audibly not stopping. Eighteen seconds of fiddle and guitar before the first sung word. A long
-      twenty-four-second fiddle break in the middle. The longest track on the record. Long fade with
-      the dancers still going.
+      158 BPM rolling fiddle reel; hard female soprano, long fiddle break, tireless live dance floor.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, cold ending
     lyrics: |
       [Intro - fiddle and guitar, eighteen seconds]
 
       [Verse 1]
-      There is a short way round this floor and everybody knows it.
-      Eight bars, turn, eight bars, and you are back where you began.
-      It is the one they teach the young ones and it works in a small room
-      and it is not what any of these four hundred people came for.
-      Take the long way round. Go all the way to the wall.
-      The wall is where the good part of the evening happens.
+      Eight bars takes the young ones down the middle.
+      Eight more brings them safely to the place they left.
+      Tonight they pass the turn and carry on toward the wall.
+      Coats brush shoulders. Gate clerks lose the count.
+      A girl in borrowed boots goes farther every time.
+      Her brother waits at centre and she waves him on.
 
       [Chorus]
       The long way round the floor and back again,
       past the door, past the coats, past the ones who came to watch.
-      Nobody is counting and nobody is timing you.
-      We will keep playing while there is anybody moving.
+      Take the far turn. Let the near turn go.
+      Come back when the room brings you around.
 
       [Verse 2]
-      We were going to finish this one at the second time around.
-      Hessa had her bow up. Marda had the look.
-      And four hundred people on a cold night did not stop,
-      so the four of us went round it again and did not say anything.
-      You cannot be the one who stops it. That is the whole job.
-      The band is the last thing in the hall that is allowed to be tired.
+      At the second ending Hessa raised the bow.
+      Marda closed the pattern. Arel faced the door.
+      Four hundred boots kept going past the final bar.
+      The girl in borrowed boots had reached the coats again.
+      Hessa dropped the bow and caught the moving beat.
+      Nobody on the floor had asked for anything but more.
 
       [Instrumental - fiddle break, twenty-four seconds, the floor still going]
 
       [Verse 3]
       A man came off a hauler at the port hall at eleven
       with a full manifest still to sign and ice all down his coat,
-      and he has been on this floor since and he has not sat once,
-      and the cargo is going to be exactly where he left it in the morning.
-      There is a woman who works the scrubber shift at six
-      dancing like the shift is somebody else's problem, which it is not.
+      and every turn takes him past the unsigned page.
+      It will be waiting at the berth when morning comes.
+      A woman on the scrubber shift keeps checking the hall clock.
+      Each time she sees it, she goes the long way once again.
 
       [Chorus]
       The long way round the floor and back again,
       past the door, past the coats, past the ones who came to watch.
-      Nobody is counting and nobody is timing you.
-      We will keep playing while there is anybody moving.
+      Take the far turn. Let the near turn go.
+      Come back when the room brings you around.
 
       [Final Chorus - harmony a third below, the floor over the top]
       The long way round, and round, and one more time,
-      and the keeper at the back can look at us all he likes.
-      Nobody is counting and nobody is timing you.
-      This is the longest thing we ever put on a record.
+      past the keeper with his keys held at his side.
+      The scrubber shift is coming. The manifest still waits.
+      One more far turn. Nobody takes the short way home.
 
       [Outro - long fade, the dancers still going]
     take: null # M-33 fills this in at the Suno sitting
@@ -502,16 +450,7 @@ songs:
     outro: sustain
     target_duration: "3:40"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 168 BPM, cold and quick, restless. Female lead
-      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
-      never a held note, plain and unornamented. One male harmony voice a third below the lead on
-      the chorus only, nothing under the verses. Bright thin-toned composite fiddle, fretted
-      acoustic-toned composite guitar, upright bass, and a single cut drum played with brushes —
-      no full kit anywhere, no cymbals, no snare. The dancers' feet on a wooden floor carry the rest
-      of the rhythm and are loud in the mix. Tracked live in a wooden dance hall with two
-      microphones and no click, light slapback on the voice. Ten seconds of band before the first
-      sung word. The band stops twice for one bar leaving the floor alone. Ends on a held chord with the floor
-      still going under it.
+      168 BPM cold fiddle reel; hard female soprano, one brushed drum, boot-stomp floor, live hall.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, full drum kit, cymbals, fade-out, cold ending
     lyrics: |
       [Intro - fiddle, guitar and one brushed drum, ten seconds]
@@ -533,12 +472,12 @@ songs:
       [Break - band out, the floor alone, one bar]
 
       [Verse 2]
-      Marda has one drum tonight and a pair of brushes.
-      That is all this needs, because the floor is doing the rest.
-      Four hundred pairs of boots on a wooden dance floor
-      is the loudest and the oldest instrument on this coast.
-      She sat back and let them have it and played almost nothing,
-      which took more out of her than a full night on the kit.
+      Marda heard the boot heels rolling under us.
+      She set both sticks down and kept one cut drum.
+      Brush on the skin. Four hundred feet below it.
+      She left a space and every boot came through.
+      One small circle from her wrist held all of them together.
+      By midnight both her sleeves were wet with work.
 
       [Chorus]
       Weather off the ice, weather at the wall,
@@ -551,8 +490,8 @@ songs:
       and a man has been out to it twice with a lamp and a bar.
       He comes back in, he stamps, he does not say a word,
       he takes his gloves off and he goes straight back on the floor.
-      That is Cold Harbor in one man in one evening.
-      He will do it again at midnight and he will not mention it then either.
+      At midnight the latch freezes hard a third time.
+      He sees the keeper looking and reaches for his gloves.
 
       [Break - band out, the floor alone, one bar]
 
@@ -577,15 +516,7 @@ songs:
     outro: fade
     target_duration: "3:30"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 144 BPM, wry and plain, midtempo. Female lead
-      vocal, clear high soprano with a hard edge, sung in short phrases between fiddle passages,
-      never a held note, plain and unornamented, conversational and slightly embarrassed. One male
-      harmony voice a third below the lead on the chorus only, nothing under the verses. Bright
-      thin-toned composite fiddle, fretted acoustic-toned composite guitar, upright bass, cut-stock
-      drum kit played with brushes and sticks. Tracked live in a wooden dance hall with two
-      microphones and no click, light slapback on the voice, the floor audible. Starts as though it
-      is already halfway through — two seconds and the first sung word, no introduction. The first
-      verse deliberately ragged and untogether, the band tightening from the first chorus on. Fades.
+      144 BPM ragged fiddle reel; hard female soprano, no intro, embarrassed vocal, live dance hall.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, long instrumental introduction
     lyrics: |
       [Intro - two seconds, band already going]
@@ -647,16 +578,7 @@ songs:
     outro: sustain
     target_duration: "4:20"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 166 BPM, bright and loud, communal. Female
-      lead vocal on the verses only, clear high soprano with a hard edge, sung in short phrases
-      between fiddle passages, never a held note, plain and unornamented. NO studio harmony vocal
-      anywhere. Every chorus is sung by a large untrained crowd of four hundred people in the room —
-      ragged, loud, ahead of the beat, several octaves at once — with no lead singer over them and
-      no backing singer under them. Bright thin-toned composite fiddle, fretted acoustic-toned
-      composite guitar, upright bass, cut-stock drum kit with brushes and sticks, playing under the
-      crowd. Tracked live in a wooden dance hall with two microphones and no click. Fourteen seconds
-      of band and rising crowd noise before the first sung word. A twelve-second fiddle break.
-      Ends on a held chord with the crowd still on it.
+      166 BPM loud fiddle reel; female soprano verses, untrained crowd choruses, live dance hall.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, studio backing vocals, tidy group harmony, cold ending
     lyrics: |
       [Intro - band and rising room noise, fourteen seconds]
@@ -666,8 +588,8 @@ songs:
       The woman who runs the ration store is here with all her sisters.
       Two people who have not spoken since a dispute about a berth
       are eleven feet apart and both pretending it is fine.
-      There is a rule in a settlement this size and it is simple:
-      whatever else is happening, everybody comes to the hall.
+      The school cook has flour on the front of her coat.
+      The night ferry crew came straight through in work boots.
 
       [Chorus - sung by the floor alone, no band voice]
       Half the town was there and the other half heard about it,
@@ -676,12 +598,12 @@ songs:
       There is not a hall on this coast that holds as many as claim it.
 
       [Verse 2]
-      We did not sing that. We have never sung that.
-      Hessa put her fiddle up and stepped back from the microphone
-      and four hundred people took it off her without being asked,
-      which is why the sleeve has nobody credited on the harmony.
-      Finn stood there for four minutes with nothing to do
-      and has since described it as the best night of his working life.
+      Hessa reached the chorus and four hundred voices got there first.
+      She lowered the bow and let the first line cross her.
+      Finn opened his mouth late, then shut it with a laugh.
+      The sisters from the ration store took the high part.
+      Two gate clerks found the bottom somewhere near the beat.
+      The people by the berth dispute sang without looking across.
 
       [Chorus - sung by the floor alone, no band voice]
       Half the town was there and the other half heard about it,
@@ -696,8 +618,8 @@ songs:
       standing on a chair so that she can see the bow.
       She has got the whole tune already. You can watch her get it.
       In nine years she is going to be doing this in some other hall
-      and she will not remember the tune or the night or our names,
-      she will remember that a room can sound like that.
+      with flour on her coat or a gate stamp in her hand.
+      Tonight she only knows the whole room sings when she does.
 
       [Final Chorus - the floor alone, band underneath]
       Half the town was there and the other half heard about it,
@@ -720,26 +642,18 @@ songs:
     outro: fade
     target_duration: "4:30"
     prompt: >-
-      Slow old-time dance music at walking pace, 92 BPM, warm and close, the slowest thing this band
-      has recorded. Female lead vocal, clear high soprano with a hard edge, still sung in short
-      phrases and still never holding a long note, plain and unornamented, close to the microphone.
-      One male harmony voice a third below the lead on the chorus only, nothing under the verses.
-      Bright thin-toned composite fiddle played low and without ornament, fretted acoustic-toned
-      composite guitar, upright bass, cut-stock drum kit brushed very quietly. Tracked live in a
-      wooden dance hall with two microphones and no click, light slapback on the voice. The room
-      almost silent because the floor has stopped moving. Twenty seconds of fiddle and guitar before
-      the first sung word. Fades.
+      92 BPM slow old-time folk; hard female soprano, low fiddle, quiet brushes, close live hall.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, fast tempo, reel tempo, big finish
     lyrics: |
       [Intro - fiddle and guitar, twenty seconds]
 
       [Verse 1]
-      The label asked us for a slow one and we said no,
-      and the label asked again and we said no again,
-      and then the label pointed out that four hundred people
-      cannot dance a whole storm season without somewhere to stop.
-      Which is true, and which we knew, and which we hated,
-      and this is the tune we wrote to prove a point and lost.
+      The Harbor man held one finger up from the corner.
+      Not one more tune. One slower. Give the floor a rest.
+      Hessa shook her head. He pointed at the stove,
+      at four hundred people breathing frost into the room.
+      Marda changed to brushes. Arel found the walking note.
+      Nobody thanked the man. The whole floor stopped together.
 
       [Chorus]
       Rosin on the fingers and rain against the roof,
@@ -748,20 +662,20 @@ songs:
       Everybody else out there just standing, holding on.
 
       [Verse 2]
-      A dance band's whole argument is that nobody should stop.
-      That is not sentiment, that is how a cold hall stays warm.
-      You put a slow tune in and the temperature goes down
-      and somebody at the back decides it is time to go home.
-      Arel says that is superstition and Arel is probably right
-      and Arel also said we should record this one twice.
+      A man beside the coats kept both hands at his sides.
+      The woman facing him had crossed on the last ferry.
+      He asked if she was warm. She said not even slightly.
+      He offered her one glove. She took the other too.
+      They stood there through the verse without deciding anything.
+      By the chorus they were moving at the same slow step.
 
       [Verse 3]
-      And then we played it, and the room did the thing rooms do.
-      Four hundred people stopped and did not go anywhere at all.
-      They stood there in their coats and let it be quiet,
-      and a woman off the last ferry had her head on somebody's shoulder,
-      and the ice was on the window and the stove was going out,
-      and none of the four of us said anything about it afterwards.
+      Nobody left. That was the part we had not counted.
+      Boots went still but every coat stayed in the hall.
+      The woman from the ferry laid her head against his shoulder.
+      Twelve tired freight hands sat barefoot by the stove.
+      Rain worked the roof and ice held to the window.
+      The quiet kept four hundred people exactly where they were.
 
       [Chorus]
       Rosin on the fingers and rain against the roof,
@@ -771,9 +685,9 @@ songs:
 
       [Final Chorus - harmony a third below]
       Rosin on the fingers and the rain not letting up,
-      and the long night outside where it has been all winter.
-      Twelve people at the stove and the rest of them standing,
-      and we were wrong about it, and we are not going to say so.
+      one borrowed pair of gloves between two people by the coats.
+      Twelve pairs of boots are drying by the stove.
+      Nobody is dancing. Nobody has gone home.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -790,15 +704,7 @@ songs:
     outro: cold
     target_duration: "3:40"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 170 BPM, quick and sly, warm and conspiratorial.
-      Female lead vocal, clear high soprano with a hard edge, sung in short phrases, never a held
-      note, plain and unornamented, sung low and confidential in the verses. One male harmony voice a
-      third below the lead on the chorus only, nothing under the verses. Fretted acoustic-toned
-      composite guitar leading the tune throughout — the guitar is the lead instrument on this track,
-      not the fiddle. Bright thin-toned composite fiddle answering in short two-bar phrases only.
-      Upright bass, cut-stock drum kit played with brushes and sticks. Tracked live in a wooden dance
-      hall with two microphones and no click, light slapback on the voice, the floor audible. Three
-      seconds of guitar before the first sung word. Cold stop.
+      170 BPM sly guitar-led reel; hard female soprano, short fiddle replies, live dance hall.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, fiddle-led arrangement, fade-out
     lyrics: |
       [Intro - guitar alone, three seconds]
@@ -840,10 +746,10 @@ songs:
       and every one of us still looks at that gap going past.
 
       [Bridge]
-      Nobody in this settlement has ever asked where the money goes.
-      A hall keeper has a roof and a stove and a floor to mend
-      and he takes it out of the door because there is nowhere else,
-      and everybody knows that, and everybody goes round the back.
+      Finn came through once with rosin on both sleeves.
+      The keeper looked at him, then looked at the clean fiddle case.
+      Finn said he was with the band. The keeper opened the door.
+      Neither one has ever settled which of them was joking.
 
       [Final Chorus - harmony a third below]
       Round the back, past the coats, and up the second step.
@@ -866,28 +772,18 @@ songs:
     outro: cold
     target_duration: "4:00"
     prompt: >-
-      Reel-tempo rockabilly and old-time dance music, 178 BPM, fast and urgent, bright, the fastest
-      thing on the record. Female lead vocal, clear high soprano with a hard edge, sung in short
-      phrases between fiddle passages, never a held note, plain and unornamented. One male harmony
-      voice a third below the lead on the chorus only, nothing under the verses. Bright thin-toned
-      composite fiddle, fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit
-      played with brushes and sticks. Tracked live in a wooden dance hall with two microphones and
-      no click, light slapback on the voice, the floor very loud. A middle-aged man's speaking voice
-      is audible over the eight-second introduction, at a distance and off-microphone, asking the
-      band to finish — not sung, not amplified, ignored. A ten-second fiddle break in the middle
-      that accelerates rather than staying level. Cold stop, dead, on the beat.
+      178 BPM urgent fiddle reel; hard female soprano, keeper speaks at intro, accelerating break.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, fade-out, ritardando
     lyrics: |
       [Intro - eight seconds, the hall keeper's voice off-microphone asking the band to finish]
 
       [Verse 1]
-      That is the keeper at the side and he is right and we heard him
-      and there is a rule about this hall and the hour it has to close.
-      He has said it twice. He is going to have to say it three times.
-      There is a ferry at six and a berth to be cleared by nine.
-      Everybody in this room knows how this particular argument ends.
-      We are going to play one more and he is going to let us,
-      and then he is going to complain about it for a year.
+      The keeper calls from the side door: finish now.
+      Hessa lifts the bow before his last word lands.
+      He has the keys in one hand and our coats in the other.
+      The ferry leaves at six. His morning starts at five.
+      He points at the clock. The floor points back at us.
+      Marda gives the count. The keeper shuts his eyes.
 
       [Chorus]
       One more before the doors. One more and we are done.
@@ -896,12 +792,12 @@ songs:
       Get out on that floor. There is not going to be another.
 
       [Verse 2]
-      Six nights in this hall and every one of them sold,
-      and a label in the corner with two microphones and a face
-      like a man off a freight crew who has just found what a dance costs
-      and cannot work out which part of it he is allowed to remove.
-      He is going to want the room taken off it in the morning.
-      He is going to be told, politely, that it cannot be done.
+      The woman from the ration store has found one glove.
+      A freight hand holds the other high above the floor.
+      The young one on the chair is dancing in her socks.
+      Both gate clerks have left tomorrow's forms unsigned.
+      The keeper sees each one and adds it to the clock.
+      Nobody moves toward the coats when the fiddle turns.
 
       [Instrumental - fiddle break, ten seconds, getting faster]
 
@@ -910,14 +806,16 @@ songs:
       Arel is playing on a bass with a string that is not there.
       Hessa has sung for six nights on a throat full of ice air
       and Finn has been a full line behind since the second night.
-      This is the worst the four of us have ever sounded
-      and it is the best record anybody on this coast has made.
+      The bow hair hangs loose. One brush has lost its wire.
+      The floor comes in ahead and pulls us through the turn.
+      Marda laughs when the loose brush catches on the skin.
+      Arel finds the missing bottom in the boards below.
 
       [Final Chorus - harmony a third below, the floor over the top]
       One more before the doors. One more and we are done.
-      Sixth night, last tune, and the last one gets taken fast.
-      Whatever you were saving, this is what you saved it for,
-      and the keeper can have his hall back at the end of this bar.
+      Last ferry, first shift, every reason to be gone.
+      Whatever you were saving, spend it on the final turn.
+      The keeper gets his hall when the last boot leaves the floor.
 
       [Outro - cold stop, dead on the beat]
     take: null # M-33 fills this in at the Suno sitting
@@ -934,27 +832,18 @@ songs:
     outro: sustain
     target_duration: "4:35"
     prompt: >-
-      Old-time dance music at an easy walking tempo, 116 BPM, tired and warm, midtempo and unhurried.
-      Female lead vocal, clear high soprano with a hard edge, sung in short phrases, never a held
-      note, plain and unornamented, tired and close to the microphone. One male harmony voice a third
-      below the lead on the chorus only, nothing under the verses. Bright thin-toned composite
-      fiddle, fretted acoustic-toned composite guitar, upright bass, cut-stock drum kit brushed
-      softly. Tracked live in a large empty wooden dance hall with two microphones — completely
-      empty, no audience, no crowd noise of any kind anywhere on the track, and the hall's own long
-      reverberation suddenly audible now that there is nobody in it to absorb it. The band plays
-      quietly. Twenty-two seconds of fiddle in the empty room before the first sung word. Ends on a
-      held chord left to decay into the room.
+      116 BPM tired old-time reel; close female soprano, soft fiddle, empty reverberant dance hall.
     exclude: electric guitars, drum machines, synthesizers, brass, orchestral strings, click-tight timing, vocal tuning, whispered or rapped sections, modern pop production, audience noise, applause, crowd, dancers, cold ending
     lyrics: |
       [Intro - fiddle alone in an empty hall, twenty-two seconds]
 
       [Verse 1]
-      They have all gone. The last of them went twenty minutes back,
-      and you can hear this room now, which you cannot when it is full.
-      Four hundred people take the echo out of a building.
-      Take them away and it comes back and it is enormous.
-      We have played here for five years and never heard it.
-      Somebody said play something, so we are playing something.
+      The last pair left together twenty minutes back.
+      Their steps went past the ration store and faded at the berth.
+      Four hundred coats had held the walls close all week.
+      Now one fiddle note runs clear to the sea-end door.
+      It comes back late, after everybody thinks it finished.
+      Hessa plays the phrase again and waits to hear it return.
 
       [Chorus]
       Walk home cold, walk home slow, walk home talking.
@@ -963,12 +852,12 @@ songs:
       with the whole thing still going round in your head.
 
       [Verse 2]
-      A dance is not the dance. Ask anyone who goes.
-      The dance is four hours and the walk home is the rest,
-      and every arrangement anybody in this settlement ever made
-      got made between the exchange hall and somebody's door.
-      There are people out on that ice road right now
-      taking the long route back for reasons they will not admit.
+      Two gate clerks walk the ice road with their stamps inside.
+      The school cook carries both her shoes and one wet coat.
+      A freight hand takes the long route past the water tanks.
+      Somebody from the last ferry walks beside him without gloves.
+      At every corner one of them says this is where I turn.
+      At every corner both of them keep going straight.
 
       [Chorus]
       Walk home cold, walk home slow, walk home talking.
@@ -978,17 +867,17 @@ songs:
 
       [Verse 3]
       Marda is asleep against the wall with a brush in her hand.
-      Arel is coiling cable that does not need coiling yet.
-      The stove is out. The label's man has gone to find a cart.
+      Arel coils one cable, then uncoils the same one.
+      The stove is out. Finn has gone to find the cart.
       There is one lamp on at the far end and it is not enough.
-      Six nights, thirteen tunes, and a record nobody has heard,
-      and in the morning it will be a week like any other week.
+      No dancers, no gate clerk, nobody left to please.
+      Four people play more quietly than they knew they could.
 
       [Final Chorus - harmony a third below, very quiet]
       Walk home cold, walk home slow, walk home talking,
-      and the long night out there doing what it does.
-      Down past the ration store and the berth and the water.
-      Put the chairs back. Put the lamp out. That is the record.
+      past the ration store, the berth, the water tanks.
+      Say this is my corner. Keep on walking anyway.
+      Put the chairs back. Put the lamp out. Leave together.
 
       [Outro - held chord left to decay into the empty hall]
     take: null # M-33 fills this in at the Suno sitting

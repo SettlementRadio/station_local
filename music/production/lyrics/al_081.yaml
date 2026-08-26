@@ -69,26 +69,18 @@ songs:
     outro: sustain
     target_duration: "4:00"
     prompt: >-
-      Jump blues and reel tempos, 152 BPM, fast and driving, cavernous. Male lead vocal, dry mid
-      tenor, flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is
-      playing himself, and leaving a full bar of silence after every second line so the room can
-      finish it. Absolutely no backing or harmony vocal of any kind. Long unamplified alloy organ
-      tones underneath from bowed and struck resonance pipes — deep, slow-moving, acoustic. Composite
-      fiddle, upright bass and cut-stock kit with struck alloy, both kept dry and close against the
-      room. Recorded in a large working metal workshop with an enormous eleven-second reverberation
-      tail on everything except the bass and drums. Slapback on the voice. Fourteen seconds of pipes
-      and fiddle before the first sung word. Ends on a note left to decay for the full eleven seconds.
+      152 BPM cavernous jump-reel; dry male tenor, fiddle, acoustic resonance pipes, 11-second decay.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, amplified organ, dry studio sound, cold ending
     lyrics: |
       [Intro - pipes and fiddle, fourteen seconds]
 
       [Verse 1]
-      You sing a line in here and the line does not stop.
-      It goes up into the roof and comes back down eleven seconds later
-      and lands on top of whatever you were going to say next,
-      so the first night I sang a record's worth of mud.
-      Toller stood at the far wall with his hands over his ears
-      and said, kindly, that he had heard worse. He had not.
+      Dane sang the first line hard against the roof.
+      He reached the third before the first came down.
+      Both landed on the fiddle and buried every word.
+      Toller stood by the stock rack with his hands over his ears.
+      Bree stopped counting. Orsa let the pipe note finish.
+      Eleven seconds later all four heard what went wrong.
 
       [Chorus]
       Hot floor, cold shop, and the machines all stopped,
@@ -97,21 +89,20 @@ songs:
       Say half of it and let the shop say the other half.
 
       [Verse 2]
-      Orsa worked it out, because Orsa always works it out.
-      Two lines and then a bar of nothing. Two lines and wait.
-      It sounds like a man who cannot remember his own song.
-      It is the only reason there is a record and not a noise.
-      Hardest thing I have ever learned and I have learned some things.
-      Shut up in the middle of a line, on purpose, four hundred times.
+      Orsa chalked two marks on the bench beside the bow.
+      Sing to the second mark. At the third, say nothing.
+      Dane tried once and filled the gap too early.
+      Tried twice and watched his old line cross the new one.
+      On the third he held his breath and let the shop answer.
+      Leaving one bar empty took the whole first night.
 
       [Verse 3]
-      This is a shop. There is a shift in here at six.
-      There is a bench behind me with somebody's work on it
-      and a rack of stock that nobody was allowed to move
-      and a floor that is warm from a settlement's worth of heat.
-      We are guests. We are guests with four nights and a deadline
-      and a label who found nowhere else in Forge that rings.
-      Four nights between a bulkhead and a rack of stock.
+      Somebody's half-cut signal plate lay on a freight manifest.
+      A shift list hung at six beside the bulkhead door.
+      Nobody moved the stock or touched the marked-out bench.
+      The floor stayed warm from Forge beneath their boots.
+      At half past four the steward checked each rack.
+      Dane waited through the silence till her footsteps cleared.
 
       [Chorus]
       Hot floor, cold shop, and the machines all stopped,
@@ -123,7 +114,7 @@ songs:
       Hot floor, cold shop, and four of us in it,
       and a note I let go of a very long time ago
       still coming down out of the roof at me now.
-      Say half of it. The shop has been here longer.
+      Say half of it. Wait. Let the shop finish.
 
       [Outro - held note left to decay for eleven seconds]
     take: null # M-33 fills this in at the Suno sitting
@@ -140,61 +131,52 @@ songs:
     outro: cold
     target_duration: "4:10"
     prompt: >-
-      Jump blues and reel tempos, 144 BPM, brisk and hard, plain. Male lead vocal, dry mid tenor,
-      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
-      himself. Absolutely no backing or harmony vocal of any kind. Long unamplified alloy organ tones
-      from bowed and struck resonance pipes, composite fiddle, upright bass, cut-stock kit and struck
-      alloy, bass and drums dry against a hugely reverberant metal workshop. The first ninety seconds
-      run against real industrial machinery shutting down in stages — heavy motors winding down one
-      after another, air releasing, a building going quiet — and the band enters piece by piece as
-      each machine stops, so the mix gets cleaner and the tune gets clearer as the noise leaves.
-      Twenty seconds of machinery before the first sung word. Slapback on the voice. Cold stop.
+      144 BPM hard jump-reel; dry male tenor, machinery shutdown, band enters in stages, cold stop.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, amplified organ, fade-out
     lyrics: |
       [Intro - the shop's shutdown sequence, twenty seconds, band entering as machines stop]
 
       [Verse 1]
-      Ninety seconds. That is what it takes to stop this building.
-      The big one first, and it takes nine of them on its own,
-      then the line, then the air, then a sound like a held breath,
-      and then a room the size of a settlement with nothing in it.
-      We rehearsed against that for a month in our own time,
-      because you cannot ask a shop to do it twice.
-      Every scrubber in this settlement runs off that line.
+      The shift steward puts one hand against the panel.
+      First the big motor rolls nine seconds toward silence.
+      Then the cutting line lets go and belts slap still.
+      Four air valves empty somewhere past the bulkhead.
+      Bree waits with the tool held over struck alloy.
+      The whole settlement keeps breathing off what stops in here.
 
       [Chorus]
       Shut it down, shut it down, and count it while it goes.
       Nine for the big one, twelve for the line, four for the air.
-      Nobody in Forge has ever heard this building empty.
-      That is what you are listening to. That is the whole record.
+      Forge has never heard this building reach the bottom.
+      Hold the last count. Let the empty shop arrive.
 
       [Verse 2]
       Bree came in on the struck alloy at forty-one seconds
       because that is when the second motor lets go of the belt.
       Toller waits until the air has finished, which is sixty-eight.
       Orsa is last, and the pipes come in on nothing at all,
-      into a shop that has been loud since before his father,
-      and it is the best twenty seconds any of us have made.
+      into a shop that has been loud since before his father.
+      Dane raises the fiddle. The steward watches the panel.
 
       [Chorus]
       Shut it down, shut it down, and count it while it goes.
       Nine for the big one, twelve for the line, four for the air.
-      Nobody in Forge has ever heard this building empty.
-      That is what you are listening to. That is the whole record.
+      Forge has never heard this building reach the bottom.
+      Hold the last count. Let the empty shop arrive.
 
       [Verse 3]
       A shift steward stood at the door for the whole ninety seconds
       with a hand on the panel in case any of it went wrong,
       because a shop that is stopped wrong is a shop that is broken
       and the settlement does not stop needing what this place makes.
-      He never once looked at the band. He looked at the machines.
-      He said afterwards it was the longest minute of his working life.
+      She never once looked at the band. She watched the machines.
+      She said afterwards it was the longest minute of her working life.
 
       [Final Chorus - pipes answering the vocal line]
       Shut it down, shut it down, and count it while it goes,
       and start it up at six and never mention it again.
       Nobody in Forge has ever heard this building empty
-      and four of us have, four times, and we are not the same.
+      except one steward with her hand against the panel.
 
       [Outro - cold stop]
     take: null # M-33 fills this in at the Suno sitting
@@ -211,26 +193,18 @@ songs:
     outro: sustain
     target_duration: "4:30"
     prompt: >-
-      Jump blues and reel tempos, 132 BPM, deep and rolling, strange. Male lead vocal, dry mid tenor,
-      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
-      himself. Absolutely no backing or harmony vocal of any kind. Unamplified resonance pipes tuned
-      a full tone lower than usual — very deep bowed and struck alloy organ tones sitting UNDER the
-      upright bass rather than above it, slow and enormous. Composite fiddle, upright bass, cut-stock
-      kit and struck alloy, dry against a hugely reverberant metal workshop. Slapback on the voice.
-      Twelve seconds of the low pipes alone before the first sung word. A twenty-second
-      instrumental break taken entirely by the pipes. Ends on one very low pipe note left to ring in
-      the room.
+      132 BPM deep jump-reel; dry male tenor, low acoustic resonance pipes, pipe break, held ending.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, amplified organ, bright high register, cold ending, fade-out
     lyrics: |
       [Intro - the low pipes alone, twelve seconds]
 
       [Verse 1]
-      A resonance pipe is cut to a length and the length is the note
-      and the note is the one the shop needs for its own signalling,
-      and there are eleven of them in this building on a rack
-      and none of them were put there for a man to play tunes on.
-      Orsa took them down a full tone for one tune.
-      One. And put them back before the morning, as always.
+      Orsa loosened eleven fittings after the shift went home.
+      One turn on each, then one more measured against the bow.
+      The first pipe dropped beneath the note Toller expected.
+      By the fifth, every bench in Forge had started humming.
+      The steward came back through and stopped beside the rack.
+      Orsa kept both hands still until she asked the pitch.
 
       [Chorus]
       Down a tone and the whole floor goes soft under you.
@@ -239,12 +213,12 @@ songs:
       when your chest tells you something has been going on.
 
       [Verse 2]
-      A steward filed a complaint and he was entirely right to.
-      Those pipes are the shop's, and the shop is the settlement's,
-      and a signal that is a tone flat at six in the morning
-      is a man on the far side of a bulkhead getting the wrong instruction.
-      It was back by half past four. It was checked twice.
-      The complaint stands on the record and so does the tune.
+      The steward wrote the complaint against the bench.
+      Eleven working signals keep the settlement on pitch.
+      At six, somebody past the bulkhead needs the right instruction.
+      Orsa signed the sheet and set a lamp beside the clock.
+      By half past four each fitting stood at working pitch.
+      She checked the first. He checked all eleven after.
 
       [Instrumental - the low pipes take the break, twenty seconds]
 
@@ -266,7 +240,7 @@ songs:
       Down a tone, and back up by half past four,
       and a shop that never knew, and a man who wrote it down.
       You do not hear it so much as find out about it later.
-      One night in Forge the whole floor went down a step.
+      One night in Forge every boot went down a step.
 
       [Outro - one very low pipe note left ringing]
     take: null # M-33 fills this in at the Suno sitting
@@ -283,15 +257,7 @@ songs:
     outro: sustain
     target_duration: "3:30"
     prompt: >-
-      Jump blues and reel tempos, 168 BPM, fast and blunt, communal. Male lead vocal, dry mid tenor,
-      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
-      himself. Absolutely no backing or harmony vocal of any kind. Percussion is one large piece of
-      scrap alloy struck with a hand tool — clanging, pitched, ringing, mixed loud and forward, in
-      place of most of the drum kit rather than on top of it. Minimal cut-stock kit underneath.
-      Unamplified resonance pipes holding long tones, composite fiddle, upright bass, dry against a
-      hugely reverberant metal workshop. Slapback on the voice. Six seconds of struck alloy before
-      the first sung word. Ends on one struck plate left to ring out into the room for its full
-      length.
+      168 BPM blunt jump-reel; dry male tenor, loud struck scrap plate, acoustic pipes, held ending.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, amplified organ, full drum kit, fade-out, cold ending
     lyrics: |
       [Intro - struck alloy alone, six seconds]
@@ -301,8 +267,8 @@ songs:
       You finish at four and the hall is at half past five
       and the boots you have got on are the boots you are dancing in,
       which is a hundred and forty years of Forge in one sentence.
-      Somebody from the core wrote that we look like we came from work.
-      We did come from work. Where does he think we came from.
+      A core visitor asked why nobody dressed for the floor.
+      Bree held up both hands, still black from the shift.
 
       [Chorus]
       Dance in your work boots. Dance in the coat you wore in.
@@ -313,18 +279,18 @@ songs:
       [Verse 2]
       Bree went to the scrap rack and came back with a plate
       about the size of a hatch and a hand tool for hitting it,
-      and it is on the sleeve with its stock number, which she insisted on,
-      and it went back on the rack the same night before the shift.
-      Deep Register wanted her to keep it and she would not.
-      She said it is not mine, it is the shop's, and put it back.
+      stock number cut along one edge under the grease.
+      She struck it once. Every work boot found the pitch.
+      Before the morning she wiped both faces clean.
+      The plate went back between two offcuts on the rack.
 
       [Verse 3]
-      There is no kit on this one worth calling a kit.
-      There is a woman hitting a piece of the building with a tool.
-      Every settlement on the frontier makes its own noise
-      out of what it already has and cannot afford to buy twice,
-      and Forge has a rack of offcuts and eleven long pipes
-      and that is why we sound like this and nobody else does.
+      The shift steward dances nearest to the scrap rack.
+      A welder turns with one glove tucked inside his belt.
+      A freight crew stamps the grease they carried from the line.
+      Bree lifts the tool and leaves the next hard beat to them.
+      The plate rings on after every heel comes down.
+      At quarter to six, nobody has changed their boots.
 
       [Chorus]
       Dance in your work boots. Dance in the coat you wore in.
@@ -353,24 +319,18 @@ songs:
     outro: fade
     target_duration: "3:45"
     prompt: >-
-      Jump blues and reel tempos, 164 BPM, loud and bright, insistent. Male lead vocal, dry mid
-      tenor, flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is
-      playing himself. Absolutely no backing or harmony vocal of any kind. Upright bass played
-      entirely in its upper register — no low notes anywhere, the instrument working above the middle
-      of its range, woody and articulate. The only low end on the track is the unamplified resonance
-      pipes. Composite fiddle, cut-stock kit and struck alloy, dry against a hugely reverberant metal
-      workshop. Slapback on the voice. Eight seconds of band before the first sung word. Fades.
+      164 BPM bright jump-reel; dry male tenor, high upright bass, acoustic low pipes, long room fade.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, amplified organ, deep bass, sub-bass, cold ending
     lyrics: |
       [Intro - band, eight seconds]
 
       [Verse 1]
-      Toller wrote a bass part like a man writes a bass part,
-      down where the good notes live, underneath everything else,
-      and he played it on the first night and it went into the roof
-      and did not come back, and there was a hole in the band.
-      So he moved the whole thing up an octave, all of it,
-      and he has been annoyed about it since about a quarter past nine.
+      Toller struck the low note once beside the stock rack.
+      Orsa's pipes rolled over it and took it through the roof.
+      He tried again with Bree standing by the far wall.
+      She held one hand up: nothing underneath the room.
+      Toller moved the line an octave toward the fiddle.
+      At quarter past nine the missing part came back as wood.
 
       [Chorus]
       No quiet in this building. Not one second of it.
@@ -379,12 +339,12 @@ songs:
       that is not a machine and that nobody can find.
 
       [Verse 2]
-      The low notes are not gone. That is what nobody believes.
-      They are still in here somewhere going round and round
-      the way a shout goes round a hold with the cargo out,
-      and they will come back down when the third verse is starting
-      and sit on top of it like a man sitting on his own hat.
-      You cannot mix that. You can only stop making it.
+      The old low notes keep circling somewhere above the lamps.
+      One comes down late beside a rack of stripped wire.
+      Another lands across the fiddle in the second turn.
+      A shout goes round an empty hold exactly that way:
+      cargo gone, doors open, nobody where it returns.
+      Toller stays high and lets the lost notes pass.
 
       [Chorus]
       No quiet in this building. Not one second of it.
@@ -393,18 +353,18 @@ songs:
       that is not a machine and that nobody can find.
 
       [Verse 3]
-      There is a whole way of playing that this shop invented
-      by refusing to carry anything below a certain note,
-      and every band in Forge has done it since without knowing why,
-      and the reason is a bass player being sensible in 2583.
-      He is not going to get any credit for that. He would hate it.
-      Toller Grange, who moved a bass part up and never said so.
+      A cutter on the night shift stands beside the door.
+      She hears the high bass plainly through the closing line.
+      At morning she will whistle it above the cutting bench.
+      Toller will be gone before the big motor starts.
+      He checks the upper string and packs it in the cart.
+      The shop keeps both the hum and what he played above it.
 
       [Final Chorus - pipes answering the vocal line]
       No quiet in this building. Not one second of it,
-      and we made a record in it, which was a strange idea.
+      not at the bulkhead and not beside the wire.
       Even the empty version of this room has a hum in it,
-      and there is nothing under this band tonight but pipes.
+      and the bass walks high while the pipes hold underneath.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -421,14 +381,7 @@ songs:
     outro: fade
     target_duration: "3:50"
     prompt: >-
-      Jump blues and reel tempos, 138 BPM, warm and fond, midtempo. Male lead vocal, dry mid tenor,
-      flat and matter-of-fact, clipping the ends of lines, singing against the fiddle he is playing
-      himself, warmer here than elsewhere. Absolutely no backing or harmony vocal of any kind. NO
-      resonance pipes and no sustained organ tone anywhere on this track — the composite fiddle
-      carries the whole top of the arrangement alone. Upright bass, cut-stock kit brushed. Recorded
-      in the same reverberant metal workshop but sounding much smaller without the pipes in it.
-      Slapback on the voice. Ten seconds of fiddle before the first sung word. Four bars of
-      unaccompanied fiddle after the first chorus. Fades.
+      138 BPM warm jump-reel; dry male tenor, fiddle-led with no pipes, intimate workshop, soft fade.
     exclude: vocal harmony, backing vocals, second voices, resonance pipes, organ, sustained drones, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, cold ending
     lyrics: |
       [Intro - fiddle alone, ten seconds]
@@ -459,12 +412,12 @@ songs:
       [Turnaround - fiddle alone, four bars]
 
       [Verse 3]
-      There are no pipes on this one. I asked for none.
-      That building would have made this enormous and it is not.
-      It is a small thing that happens twice a day at a gate
-      to a man who has not yet worked out how to say good morning,
-      and putting eleven seconds of alloy under it
-      would have been the biggest lie on this record.
+      At changeover yesterday the list jammed at her name.
+      The clerk read it once and asked her to repeat it.
+      Dane stood three places back and learned it through the queue.
+      The gate cleared before he found a word to follow.
+      Today the fiddle keeps the room close around him.
+      Tomorrow he has twelve minutes and her name.
 
       [Chorus]
       Second shift, second stair, second half of the day.
@@ -493,58 +446,54 @@ songs:
     outro: cold
     target_duration: "4:15"
     prompt: >-
-      Jump blues and reel tempos, 172 BPM, urgent and fast, tired and slightly out of control. Male
-      lead vocal, dry mid tenor, flat and matter-of-fact, clipping the ends of lines, audibly out of
-      breath, singing against the fiddle he is playing himself. Absolutely no backing or harmony
-      vocal of any kind. Unamplified resonance pipes, composite fiddle, upright bass, cut-stock kit
-      and struck alloy, dry against a hugely reverberant metal workshop. A single live take with
-      nothing repaired — small timing errors, one entry slightly early, and the band pushing ahead of
-      itself throughout. Slapback on the voice. Four seconds before the first sung word. A
-      twelve-second fiddle break in the middle that is plainly under-rehearsed. Cold stop.
+      172 BPM urgent jump-reel; breathless male tenor, acoustic pipes, rough single take, cold stop.
     exclude: vocal harmony, backing vocals, second voices, electric guitar, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, amplified organ, edited or corrected performance, fade-out
     lyrics: |
       [Intro - band, four seconds]
 
       [Verse 1]
-      Forty minutes. Forty. And eleven pipes to put back
-      and a rack to hang them on and a check to run twice
-      and a steward at the door at half past four with a list.
-      One take. That is what forty minutes is. One take.
-      Orsa said go and Bree counted and we went,
-      and what you can hear is four tired people not stopping.
+      Forty minutes and eleven pipes still off the rack.
+      A steward waits beside the door with both lists open.
+      Orsa says go. Bree counts before Dane finds his breath.
+      Toller reaches the first turn half a beat too soon.
+      Nobody looks across. The shop clock takes another minute.
+      Four tired people keep the tune in front of morning.
 
       [Chorus]
       Back before the morning. Back before the shift.
       Everything in this building has to be where it was.
       Nobody is going to know that we were ever here
-      except the eleven minutes of it we are taking away.
+      when the big motor takes the first load at six.
 
       [Verse 2]
-      Toller comes in early in the second turn. It is on there.
-      I run out of air in the fourth line and you can hear it.
-      The fiddle break is not learned. It is four nights old.
-      There is a thing at the end that I still cannot explain.
-      Deep Register asked, on the way out, if we wanted another.
-      All four of us said no at the same time, which never happens.
-      Four nights is what we asked for and four nights is what it is.
+      Dane loses air and cuts the fourth line short.
+      The old words fall eleven seconds through the gap.
+      Bree drops one strike and catches the next on alloy.
+      Orsa points at the clock without leaving the pipes.
+      The fiddle break turns wrong and Dane stays with the turn.
+      Nobody stops to mend it. Nobody has the time.
+
+      [Pre-Chorus]
+      Thirty-one minutes. Orsa pulls the first pipe free.
+      Twenty-eight. The steward clears one space along the rack.
+      The tune keeps running while the clock removes the room.
 
       [Instrumental - fiddle break, under-rehearsed, twelve seconds]
 
       [Verse 3]
-      Because a fifth night is a lie about what this was.
-      This was four workers in a shop between two shifts
-      with a label who could not find a room and a settlement
-      that has never once been asked what it sounds like.
       Get the pipes up. Get the rack straight. Get the plate back.
       Wipe the bench. Move the cart. Take the lamp off the wall.
       Somebody check the rack against the list and then check it again.
       There is a manifest on that bench that has to be signed at six.
+      Toller takes the bass through the bulkhead door.
+      Bree finds one tool beneath the stock and puts it home.
+      The steward checks all eleven. Orsa checks them after.
 
       [Final Chorus - pipes answering the vocal line]
       Back before the morning. Back before the shift,
       and the big motor at six, and the line, and the air,
-      and a shop full of people who will never hear this,
-      working in a room that is on a record now.
+      and a shop full of people coming through the gate,
+      finding every pipe at pitch and every tool in place.
 
       [Outro - cold stop]
     take: null # M-33 fills this in at the Suno sitting
