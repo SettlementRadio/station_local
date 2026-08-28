@@ -18,7 +18,7 @@
 #
 # **s_0657 is the only overdub in the band's life** and the wiki says so; it is written as an
 # admission rather than as a technique. Three of the eight take a fiddle break, which is b_037's
-# break instrument on every record. `generation:` and every `take:` are empty until M-33.
+# break instrument on every record. `generation:` and every `take:` were filled from the dispatch manifest at M-33.
 
 album:
   id: al_080
@@ -43,13 +43,22 @@ album:
     introduction alone. Tempos sit under both earlier records throughout.
 
 generation:
-  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-33. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-27
+  sittings:
+    - {date: 2026-08-27, from: '14:15:59', to: '14:20:14', tracks: [1, 2, 3, 4, 5, 6, 7, 8]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-24 by `make music-dispatch`, which matched every
+    take against the lyric it carries in its own tags rather than against its filename,
+    and refused to move anything until all 95 formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric. 1 sitting for this record.
 
 songs:
   - id: s_0657
@@ -112,7 +121,15 @@ songs:
       one bow in each hand and only one hand mine.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 0ccfa646-788b-4e90-bf7e-d65a9fac91bd
+      suno_created: 2026-08-27T14:15:59Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_080/01.mp3
 
   - id: s_0658
     title: New Hand on the Guitar
@@ -174,7 +191,15 @@ songs:
       This time the fiddle waits and lets the guitar lead.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 8f578ea7-b0f5-4800-a595-722738d4b0de
+      suno_created: 2026-08-27T14:16:34Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_080/02.mp3
 
   - id: s_0659
     title: The Room With No Floor
@@ -236,7 +261,15 @@ songs:
       Hessa names the room once more and leaves the line.
 
       [Outro - held chord, dying almost at once in the dead room]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 3c87b5c8-f099-4833-a412-23e0f219975d
+      suno_created: 2026-08-27T14:17:02Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_080/03.mp3
 
   - id: s_0660
     title: Bring Them In From the Street
@@ -300,7 +333,15 @@ songs:
       The held chord ends and nobody lets it fall.
 
       [Outro - held chord, the room still going]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 6e1fc543-18c2-4221-a7ed-00c5628c7229
+      suno_created: 2026-08-27T14:17:33Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_080/04.mp3
 
   - id: s_0661
     title: Every Tune She Knew
@@ -358,7 +399,15 @@ songs:
       Play it her way. Everybody else is going to.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: dafd0313-2870-49c4-af2c-048dd2dc69ea
+      suno_created: 2026-08-27T14:18:14Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_080/05.mp3
 
   - id: s_0662
     title: Twenty-Nine Winters
@@ -422,7 +471,15 @@ songs:
       so let the last note buzz and let it die itself.
 
       [Outro - one held bass note, buzzing, dying early]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e40adbfa-f4de-4469-9cbf-b24d1b103bf3
+      suno_created: 2026-08-27T14:18:49Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_080/06.mp3
 
   - id: s_0663
     title: Nobody Asked Us to Stop
@@ -489,7 +546,15 @@ songs:
       Forty people dance straight through the line.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 36e7ae80-58cc-4834-9f0b-18aa024d86fc
+      suno_created: 2026-08-27T14:19:19Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_080/07.mp3
 
   - id: s_0664
     title: Put the Chairs Back
@@ -551,4 +616,12 @@ songs:
       Leave it the way you found it. That is the whole of it.
 
       [Outro - the room being put back in order, fiddle underneath, long fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: ee452cd1-e1e6-457d-bd77-05536d076603
+      suno_created: 2026-08-27T14:20:14Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_080/08.mp3

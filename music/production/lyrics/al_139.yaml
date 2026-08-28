@@ -18,7 +18,7 @@
 # calling out. Where she is on, she sits further forward than on al_138, because she asked for it.
 # The card is not amended; the record is what the record is.
 #
-# Three of the eight take a fiddle break. `generation:` and every `take:` are empty until M-33.
+# Three of the eight take a fiddle break. `generation:` and every `take:` were filled from the dispatch manifest at M-33.
 
 album:
   id: al_139
@@ -45,13 +45,22 @@ album:
     had ended and the keeper let it run.
 
 generation:
-  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-33. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-28
+  sittings:
+    - {date: 2026-08-28, from: '13:18:29', to: '13:21:19', tracks: [1, 2, 3, 4, 5, 6, 7, 8]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-24 by `make music-dispatch`, which matched every
+    take against the lyric it carries in its own tags rather than against its filename,
+    and refused to move anything until all 95 formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric. 1 sitting for this record.
 
 songs:
   - id: s_1133
@@ -124,7 +133,15 @@ songs:
       Four nights. Then the ferry. Then Cold Harbor home.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: fc0e86d3-83c1-4198-ab9d-f6f4e2a206f7
+      suno_created: 2026-08-28T13:18:29Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_139/01.mp3
 
   - id: s_1134
     title: Four Hundred Off the Frontier
@@ -195,7 +212,15 @@ songs:
       Stack the seats behind the doors. Do not bolt them down tonight.
 
       [Outro - held chord, the room still going]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 290eab3f-0851-4e65-9a11-288193fb93c0
+      suno_created: 2026-08-28T13:18:57Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_139/02.mp3
 
   - id: s_1135
     title: Ask a Core Room to Turn
@@ -268,7 +293,15 @@ songs:
       Corr holds four notes. Alis lifts both hands. Again.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 1263158f-4837-40b4-bcfb-cb41c0f02151
+      suno_created: 2026-08-28T13:19:22Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_139/03.mp3
 
   - id: s_1136
     title: Bring Your Own Floor
@@ -335,7 +368,15 @@ songs:
       and Nessa has it moving faster; Neve stays beside her.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: f6bfef95-efa4-4777-be2e-33a7e7c5d8b2
+      suno_created: 2026-08-28T13:19:46Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_139/04.mp3
 
   - id: s_1137
     title: Paid Before We Played
@@ -397,7 +438,15 @@ songs:
       Ask any freight crew what a signature is for.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 08572318-98c0-4e51-a7e1-46742e0f7a23
+      suno_created: 2026-08-28T13:20:06Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_139/05.mp3
 
   - id: s_1138
     title: Home on the Late Run
@@ -459,7 +508,15 @@ songs:
       and Saturday waiting in a shed beside the stove.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 773c49a2-9bfe-467a-850b-e4c214b43f4a
+      suno_created: 2026-08-28T13:20:34Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_139/06.mp3
 
   - id: s_1139
     title: She Sang Behind for Six Years
@@ -521,7 +578,15 @@ songs:
       and one day I may know who needs the door shut behind them.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e3a4d8d8-2991-48d9-8584-5993bf5e6985
+      suno_created: 2026-08-28T13:20:58Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_139/07.mp3
 
   - id: s_1140
     title: Last Turn in the Core
@@ -585,4 +650,12 @@ songs:
       and he is not going to use it, so we are not going to stop.
 
       [Outro - held chord, the whole room on it]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e8895843-156e-413f-91e6-c54318cb4412
+      suno_created: 2026-08-28T13:21:19Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_139/08.mp3

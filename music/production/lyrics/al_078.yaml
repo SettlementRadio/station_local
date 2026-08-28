@@ -21,7 +21,7 @@
 # both are the ones where the floor is doing the work. Rule 6 is a wiki rule and not this file's,
 # but the same instinct applies to a lyric: a record about a hall is worth one song about the hall.
 #
-# `generation:` and every `take:` are empty until M-33's Suno sitting fills them in.
+# `generation:` and every `take:` were filled from the dispatch manifest at M-33.
 
 album:
   id: al_078
@@ -47,13 +47,22 @@ album:
     tone changes with them. Voice, backing, instruments and exclude are untouched.
 
 generation:
-  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-33. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-27
+  sittings:
+    - {date: 2026-08-27, from: '12:21:34', to: '12:31:07', tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-24 by `make music-dispatch`, which matched every
+    take against the lyric it carries in its own tags rather than against its filename,
+    and refused to move anything until all 95 formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric. 1 sitting for this record.
 
 songs:
   - id: s_0635
@@ -117,7 +126,15 @@ songs:
       and nobody sat down and nobody went home.
 
       [Outro - cold stop, the clapping carrying on into the silence]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 0fe59eaf-94a9-4b85-ba43-6560ab85c2dd
+      suno_created: 2026-08-27T12:21:34Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/01.mp3
 
   - id: s_0636
     title: Two Coats to the Door
@@ -181,7 +198,15 @@ songs:
       We are going to keep playing until the room decides.
 
       [Outro - long fade, the room still talking]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 42d0499e-e8b7-4c93-9d3a-47f897210116
+      suno_created: 2026-08-27T12:25:19Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/02.mp3
 
   - id: s_0637
     title: Short Money Reel
@@ -247,7 +272,15 @@ songs:
       We will just keep playing this one everywhere we go.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 1a357db1-80c1-4086-ba11-fa3239f74bb6
+      suno_created: 2026-08-27T12:25:46Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/03.mp3
 
   - id: s_0638
     title: Ask Her While the Band Plays
@@ -309,7 +342,15 @@ songs:
       Four tunes is a long time. Four tunes is not long at all.
 
       [Outro - fade under the room]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 67efde11-19c7-40eb-8573-6beb97c2d54f
+      suno_created: 2026-08-27T12:26:33Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/04.mp3
 
   - id: s_0639
     title: Hall Fee Paid
@@ -372,7 +413,15 @@ songs:
       We have the ferry home and enough until next week.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: bb4f4896-38b2-4f87-a851-522b7b49a496
+      suno_created: 2026-08-27T12:26:47Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/05.mp3
 
   - id: s_0640
     title: The Long Way Round the Floor
@@ -436,7 +485,15 @@ songs:
       One more far turn. Nobody takes the short way home.
 
       [Outro - long fade, the dancers still going]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 8e840306-4a5d-45b9-82f7-4d7aceaf7866
+      suno_created: 2026-08-27T12:27:09Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/06.mp3
 
   - id: s_0641
     title: Weather Off the Water
@@ -502,7 +559,15 @@ songs:
       and the door holds till the morning if somebody keeps going out to it.
 
       [Outro - held chord, the floor still going]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 126b78a0-df73-4a67-b0bb-c063faa0400b
+      suno_created: 2026-08-27T12:28:10Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/07.mp3
 
   - id: s_0642
     title: Standing at the Wrong End
@@ -564,7 +629,15 @@ songs:
       and there was never anything at the far end of it but work.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 9a627cf0-f95f-4682-9a62-b0b9ca3514d0
+      suno_created: 2026-08-27T12:28:35Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/08.mp3
 
   - id: s_0643
     title: Half the Town Was There
@@ -628,7 +701,15 @@ songs:
       and let them. Let them all have been here.
 
       [Outro - held chord, the room still singing]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 1b2fd07c-6e14-4e78-99ec-c62942b8806c
+      suno_created: 2026-08-27T12:29:10Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/09.mp3
 
   - id: s_0644
     title: Rosin and Rain
@@ -690,7 +771,15 @@ songs:
       Nobody is dancing. Nobody has gone home.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 7c5338e1-c882-4f03-ac06-9b979f18bd37
+      suno_created: 2026-08-27T12:29:54Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/10.mp3
 
   - id: s_0645
     title: Come Back Through the Side Door
@@ -758,7 +847,15 @@ songs:
       and there is a stack of crates, and the floor does not care how you came.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e80c35e3-e3ac-4a69-bbf9-2d8487d9d2a2
+      suno_created: 2026-08-27T12:30:16Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/11.mp3
 
   - id: s_0646
     title: One More Before the Doors
@@ -818,7 +915,15 @@ songs:
       The keeper gets his hall when the last boot leaves the floor.
 
       [Outro - cold stop, dead on the beat]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 1d1dada8-c16e-494a-863b-fb1519d06b9c
+      suno_created: 2026-08-27T12:30:35Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/12.mp3
 
   - id: s_0647
     title: Walk Home Cold
@@ -880,4 +985,12 @@ songs:
       Put the chairs back. Put the lamp out. Leave together.
 
       [Outro - held chord left to decay into the empty hall]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: f296d2c3-ad8e-4b27-a906-94669f6398cf
+      suno_created: 2026-08-27T12:31:07Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_078/13.mp3

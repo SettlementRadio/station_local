@@ -21,8 +21,8 @@
 # second verse, the only time he sang in front of an audience, having lost an argument about which of
 # them would.
 #
-# Three of the ten take an instrumental break, traded between fiddle and pipes. `generation:` and
-# every `take:` are empty until M-33.
+# Three of the ten take an instrumental break, traded between fiddle and pipes. `generation:` and every `take:` were filled from the
+# dispatch manifest at M-33.
 
 album:
   id: al_136
@@ -48,13 +48,22 @@ album:
     left uncorrected. Nothing in these lyrics knows about the 2619 sleeve.
 
 generation:
-  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-33. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-28
+  sittings:
+    - {date: 2026-08-28, from: '09:17:50', to: '09:24:21', tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-24 by `make music-dispatch`, which matched every
+    take against the lyric it carries in its own tags rather than against its filename,
+    and refused to move anything until all 95 formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric. 1 sitting for this record.
 
 songs:
   - id: s_1111
@@ -124,7 +133,15 @@ songs:
       Ask once, hear the whole roof answer, count four and go.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: a44f7502-928c-4bc1-9890-be9c3af079c1
+      suno_created: 2026-08-28T09:17:50Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_136/01.mp3
 
   - id: s_1112
     title: Hollan's Reel
@@ -186,7 +203,15 @@ songs:
       The last hard stroke comes down upon the supervisor's empty chair.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: a529c541-d445-4105-a226-829065d18f5d
+      suno_created: 2026-08-28T09:19:08Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_136/02.mp3
 
   - id: s_1113
     title: Money on the Bench
@@ -248,7 +273,15 @@ songs:
       Nobody in Forge has ever been paid on a promise.
 
       [Outro - the counting, out loud, over the room, fading]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 431b7fb5-0240-4d02-8045-7a4768fc9366
+      suno_created: 2026-08-28T09:19:46Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_136/03.mp3
 
   - id: s_1114
     title: Three Halls in a Week
@@ -314,7 +347,15 @@ songs:
       Saturday is here. Thursday's key will have to do.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: aba177f1-c3a6-49e1-aa94-13d606d05428
+      suno_created: 2026-08-28T09:20:21Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_136/04.mp3
 
   - id: s_1115
     title: Every Tune Twice
@@ -384,7 +425,15 @@ songs:
       Round again. The money waits beneath the lamp.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 74f46a79-ed77-4952-afa0-7643ee8a6be2
+      suno_created: 2026-08-28T09:21:00Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_136/05.mp3
 
   - id: s_1116
     title: Pay Us in Order
@@ -450,7 +499,15 @@ songs:
       First name first. Last name last. No promises at the berth.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 451948ad-12ef-4e59-8a13-828c1867d977
+      suno_created: 2026-08-28T09:21:51Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_136/06.mp3
 
   - id: s_1117
     title: Turn Under the Pipes
@@ -516,7 +573,15 @@ songs:
       Five beneath the pipes; the whole yard hall turns clean.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 0ca1bad4-cbc1-4bbd-9a77-2369f8450a4f
+      suno_created: 2026-08-28T09:22:42Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_136/07.mp3
 
   - id: s_1118
     title: Nobody Wrote It Down
@@ -579,7 +644,15 @@ songs:
       Count four, let it loose, and see who changes it by dawn.
 
       [Outro - a held pipe note ringing over the hall]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: ab4f741b-7c17-43e5-b258-b24591612c0e
+      suno_created: 2026-08-28T09:23:10Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_136/08.mp3
 
   - id: s_1119
     title: Cold Walk to the Shift
@@ -644,7 +717,15 @@ songs:
       Look at them once. That is all anybody is asking.
 
       [Outro - the one pipe tone, left going]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 04b12348-00ab-4b73-89b8-14876f0e0fb9
+      suno_created: 2026-08-28T09:23:42Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_136/09.mp3
 
   - id: s_1120
     title: Last Dance in Forge
@@ -712,4 +793,12 @@ songs:
       Bree raises both sticks, counts one more, and does not leave.
 
       [Outro - held chord, the hall still going]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 790c8fd2-c0f4-4b2d-9de4-3caacd31dfbb
+      suno_created: 2026-08-28T09:24:21Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_136/10.mp3

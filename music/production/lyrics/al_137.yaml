@@ -18,7 +18,7 @@
 # purpose.
 #
 # Two of the five take a fiddle break, one of them against a fiddler off another crew whose name
-# nobody wrote down. `generation:` and every `take:` are empty until M-33.
+# nobody wrote down. `generation:` and every `take:` were filled from the dispatch manifest at M-33.
 
 album:
   id: al_137
@@ -43,13 +43,23 @@ album:
     The crews singing on s_1121 and s_1125 are a crowd and not a backing vocal.
 
 generation:
-  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-33. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-28
+  sittings:
+    - {date: 2026-08-28, from: '09:25:55', to: '09:27:14', tracks: [1, 2, 3]}
+    - {date: 2026-08-28, from: '11:06:15', to: '11:07:09', tracks: [4, 5]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-24 by `make music-dispatch`, which matched every
+    take against the lyric it carries in its own tags rather than against its filename,
+    and refused to move anything until all 95 formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric. 2 sittings for this record.
 
 songs:
   - id: s_1121
@@ -121,7 +131,15 @@ songs:
       NOBODY IS SIGNING ANYTHING TONIGHT.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: ce925674-904e-4751-a8cc-201f967d32b3
+      suno_created: 2026-08-28T09:25:55Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_137/01.mp3
 
   - id: s_1122
     title: Two Crews, One Tune
@@ -189,7 +207,15 @@ songs:
       Find the crooked beat and play as if you always knew.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 8394b8fa-0c94-41cb-a640-1dbf17d7ce3d
+      suno_created: 2026-08-28T09:26:32Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_137/02.mp3
 
   - id: s_1123
     title: Somebody Else's Floor
@@ -255,7 +281,15 @@ songs:
       Leave both doors unblocked and every borrowed hook returned.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e586782e-a9e2-4e47-a02b-a93af0f7504c
+      suno_created: 2026-08-28T09:27:14Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_137/03.mp3
 
   - id: s_1124
     title: Ration Week Reel
@@ -323,7 +357,15 @@ songs:
       Next month, from the other direction. Everybody knows.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 4f700685-68fe-4323-aa8c-61972e632930
+      suno_created: 2026-08-28T11:06:15Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_137/04.mp3
 
   - id: s_1125
     title: Sign Off and Dance
@@ -392,4 +434,12 @@ songs:
       Right, gentlemen, I am going to have to ask you to move.
 
       [Outro - held chord]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 4c38dfa7-334f-46da-8385-d8d2c55e9f4a
+      suno_created: 2026-08-28T11:07:09Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_137/05.mp3

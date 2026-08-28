@@ -16,8 +16,8 @@
 # across a room at people who are moving — and every prompt here says so while the exclude lines keep
 # rapped verses out. Harbor Standard asked twice for the calling to come off. It is on all seven.
 #
-# Two of the seven take a fiddle break, which is b_062's break instrument. `generation:` and every
-# `take:` are empty until M-33.
+# Two of the seven take a fiddle break, which is b_062's break instrument. `generation:` and every `take:` were filled
+# from the dispatch manifest at M-33.
 
 album:
   id: al_138
@@ -43,13 +43,23 @@ album:
     Torrin sings the second verse of s_1131 alone.
 
 generation:
-  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-33. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-28
+  sittings:
+    - {date: 2026-08-28, from: '12:30:22', to: '12:31:13', tracks: [1, 2]}
+    - {date: 2026-08-28, from: '12:50:55', to: '12:54:53', tracks: [3, 4, 5, 6, 7]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-24 by `make music-dispatch`, which matched every
+    take against the lyric it carries in its own tags rather than against its filename,
+    and refused to move anything until all 95 formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric. 2 sittings for this record.
 
 songs:
   - id: s_1126
@@ -121,7 +131,15 @@ songs:
       Keep the coat on. Watch the hand. Walk home and play it wrong.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 0b6b630f-a8b9-4fb5-8959-8c91873d5474
+      suno_created: 2026-08-28T12:30:22Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_138/01.mp3
 
   - id: s_1127
     title: Call It From the Side
@@ -192,7 +210,15 @@ songs:
       Face your partner. Long line. Every part comes home.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: d66c4d36-752d-4326-8959-cdbc235e67f8
+      suno_created: 2026-08-28T12:31:13Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_138/02.mp3
 
   - id: s_1128
     title: No Licence, No Stage
@@ -263,7 +289,15 @@ songs:
       Ivet keeps the key and tells you when it is on.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 615d1151-bff7-4b53-ad9e-0e56f1a05744
+      suno_created: 2026-08-28T12:50:55Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_138/03.mp3
 
   - id: s_1129
     title: Hold It Under
@@ -334,7 +368,15 @@ songs:
       Corr packs the bass. We start the argument again.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: ee6b2774-1f41-4f3f-a2ee-0a4039d34d94
+      suno_created: 2026-08-28T12:51:40Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_138/04.mp3
 
   - id: s_1130
     title: Charge the Band, Not the Floor
@@ -404,7 +446,15 @@ songs:
       and so do we, and that is the end of the arithmetic.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 412e3b85-9743-4110-a52f-9735d1bb82f2
+      suno_created: 2026-08-28T12:52:46Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_138/05.mp3
 
   - id: s_1131
     title: We Did Not Go Back
@@ -472,7 +522,15 @@ songs:
       We have this floor tonight. Turn when Alis calls.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: a29a60a7-54d4-4dc9-b4fd-ee1fb2751d20
+      suno_created: 2026-08-28T12:53:37Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_138/06.mp3
 
   - id: s_1132
     title: Doors at the Far End
@@ -546,4 +604,12 @@ songs:
       Cold Harbor, follow Alis. Both lines down the middle.
 
       [Outro - held chord, the metal still ringing]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 28d19d14-5d0b-437e-bafa-1792f570bb7d
+      suno_created: 2026-08-28T12:54:53Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_2/al_138/07.mp3

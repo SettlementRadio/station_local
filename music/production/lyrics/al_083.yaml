@@ -16,7 +16,7 @@
 # on this band. And the harmony is one female voice from the bass chair, choruses only; **she takes
 # the lead outright exactly once in the band's life**, which is not on this record but on al_085.
 #
-# Two of the six take a fiddle break. `generation:` and every `take:` are empty until M-33.
+# Two of the six take a fiddle break. `generation:` and every `take:` were filled from the dispatch manifest at M-33.
 
 album:
   id: al_083
@@ -42,13 +42,22 @@ album:
     people at one. The manifest is being read aloud under s_0685's first verse.
 
 generation:
-  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-33. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-28
+  sittings:
+    - {date: 2026-08-28, from: '08:47:07', to: '08:49:30', tracks: [1, 2, 3, 4, 5, 6]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-24 by `make music-dispatch`, which matched every
+    take against the lyric it carries in its own tags rather than against its filename,
+    and refused to move anything until all 95 formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric. 1 sitting for this record.
 
 songs:
   - id: s_0680
@@ -117,7 +126,15 @@ songs:
       Between two ports, the middle keeps us here.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 303903fa-c70a-41c0-adfc-073fd3bf29cc
+      suno_created: 2026-08-28T08:47:07Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_083/01.mp3
 
   - id: s_0681
     title: Dance at Both Ends
@@ -185,7 +202,15 @@ songs:
       Two floors under one tune, and both of them are home.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: f04309f4-4612-4e17-826f-64bf7d217bb5
+      suno_created: 2026-08-28T08:47:37Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_083/02.mp3
 
   - id: s_0682
     title: Nothing Tied Down Properly
@@ -255,7 +280,15 @@ songs:
       Chain, cover, crate and wire all meet upon the one.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 2d754c52-3aa0-47b6-8902-5002c7adc392
+      suno_created: 2026-08-28T08:48:05Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_083/03.mp3
 
   - id: s_0683
     title: She Waits at the Far End
@@ -323,7 +356,15 @@ songs:
       Nine days out. Let the far gate answer me.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 171b9e71-870b-478d-a134-37d02f0c8fba
+      suno_created: 2026-08-28T08:48:30Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_083/04.mp3
 
   - id: s_0684
     title: Short Run, Long Night
@@ -391,7 +432,15 @@ songs:
       Load at first light. Keep the crooked hand exactly where it is.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: a21ac0ae-d3be-4ca3-81c0-dafcd6ab397f
+      suno_created: 2026-08-28T08:49:21Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_083/05.mp3
 
   - id: s_0685
     title: Sign for the Load
@@ -457,4 +506,12 @@ songs:
       Thursday in the port hall. Friday, load again.
 
       [Outro - held chord]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: aae4d5d7-d22d-4dc7-acd6-78acbc840fd0
+      suno_created: 2026-08-28T08:49:30Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_083/06.mp3

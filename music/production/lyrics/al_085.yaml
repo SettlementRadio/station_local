@@ -18,7 +18,7 @@
 # the card has said so since M-20. Wend Amory is not on that track at all — no low male voice, no
 # harmony under her, nothing. It is stated in the prompt and it happens once.
 #
-# Two of the seven take a fiddle break. `generation:` and every `take:` are empty until M-33.
+# Two of the seven take a fiddle break. `generation:` and every `take:` were filled from the dispatch manifest at M-33.
 
 album:
   id: al_085
@@ -44,13 +44,22 @@ album:
     years and was cut on the first take at it.
 
 generation:
-  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-33. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-28
+  sittings:
+    - {date: 2026-08-28, from: '09:09:50', to: '09:14:22', tracks: [1, 2, 3, 4, 5, 6, 7]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-24 by `make music-dispatch`, which matched every
+    take against the lyric it carries in its own tags rather than against its filename,
+    and refused to move anything until all 95 formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric. 1 sitting for this record.
 
 songs:
   - id: s_0693
@@ -121,7 +130,15 @@ songs:
       Reddin counts the final turn and almost calls it right.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 158bc59a-05e5-4e9d-84df-8b28c29543c0
+      suno_created: 2026-08-28T09:09:50Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_085/01.mp3
 
   - id: s_0694
     title: A Hold Going Nowhere
@@ -189,7 +206,15 @@ songs:
       Forty-one till morning, and nowhere else to go.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 11772a59-36da-4914-8168-646e38a24805
+      suno_created: 2026-08-28T09:10:26Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_085/02.mp3
 
   - id: s_0695
     title: Slower Than We Used To
@@ -259,7 +284,15 @@ songs:
       Col holds the final bow until the berth lights blur.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 452567b7-0c10-4905-acc2-c0372860d4bb
+      suno_created: 2026-08-28T09:11:33Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_085/03.mp3
 
   - id: s_0696
     title: Who Is Paying for the Room
@@ -327,7 +360,15 @@ songs:
       Ilsa lifts the tea. The officers lift theirs.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: f9adcbf9-a176-4a07-93fe-07ed21484cd2
+      suno_created: 2026-08-28T09:12:11Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_085/04.mp3
 
   - id: s_0697
     title: Take the Long Berth Home
@@ -397,7 +438,15 @@ songs:
       Nine minutes, then the gate, then home beside a friend.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: b1279ab7-afb3-4ba3-b88d-ea5c14d16b02
+      suno_created: 2026-08-28T09:13:02Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_085/05.mp3
 
   - id: s_0698
     title: One More Around the Hold
@@ -465,7 +514,15 @@ songs:
       One more around. The nameless woman counts us in.
 
       [Outro - held chord, the fittings ringing]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: dd60fce5-7169-435f-826f-55fe15fcba4b
+      suno_created: 2026-08-28T09:13:42Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_085/06.mp3
 
   - id: s_0699
     title: Off at the Last Stop
@@ -531,4 +588,12 @@ songs:
       Then Ilsa takes the first step and the other three go with her.
 
       [Outro - long fade over the second pass]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-28
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 6f7b585f-bf2d-4f9c-832a-ae943a4b7e81
+      suno_created: 2026-08-28T09:14:22Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_5/al_085/07.mp3

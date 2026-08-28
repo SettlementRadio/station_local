@@ -21,7 +21,7 @@
 # twenty-five years later, when a sleeve credits Dane Verrow throughout.
 #
 # Three of the eight take an instrumental break, traded between fiddle and pipes as b_038's card
-# says. `generation:` and every `take:` are empty until M-33.
+# says. `generation:` and every `take:` were filled from the dispatch manifest at M-33.
 
 album:
   id: al_082
@@ -46,13 +46,22 @@ album:
     voice line bends without breaking. The shift whistle is on the take of s_0679 and stays.
 
 generation:
-  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-33. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-27
+  sittings:
+    - {date: 2026-08-27, from: '14:34:49', to: '14:38:10', tracks: [1, 2, 3, 4, 5, 6, 7, 8]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-24 by `make music-dispatch`, which matched every
+    take against the lyric it carries in its own tags rather than against its filename,
+    and refused to move anything until all 95 formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric. 1 sitting for this record.
 
 songs:
   - id: s_0672
@@ -121,7 +130,15 @@ songs:
       It sounds enormous. That is enough for everyone.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e546d08a-9dfd-47ec-bbb3-4e7254a510c2
+      suno_created: 2026-08-27T14:34:49Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_082/01.mp3
 
   - id: s_0673
     title: I Was Wrong About the Pipes
@@ -190,7 +207,15 @@ songs:
       He reaches for the switch, then leaves the warm hum on.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 55081e77-61c1-41a8-8e08-b12df37fc058
+      suno_created: 2026-08-27T14:35:18Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_082/02.mp3
 
   - id: s_0674
     title: Two Sets of Pipes
@@ -258,7 +283,15 @@ songs:
       The shop feels half its width when eleven pipes have gone.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 639d457f-0fcb-4d30-b902-a3504c4c2bf0
+      suno_created: 2026-08-27T14:35:43Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_082/03.mp3
 
   - id: s_0675
     title: Wage Packet Reel
@@ -323,7 +356,15 @@ songs:
       Ask a freight crew. Ask anybody with a manifest.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 9607cc55-fad0-4e35-a466-168479a6cdb4
+      suno_created: 2026-08-27T14:36:12Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_082/04.mp3
 
   - id: s_0676
     title: Warm Room, Late Start
@@ -387,7 +428,15 @@ songs:
       and we found that out by wasting a whole evening.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 44ea2be1-9ac8-4af3-af63-83eafbbd3d0d
+      suno_created: 2026-08-27T14:36:42Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_082/05.mp3
 
   - id: s_0677
     title: Nobody Here Is Pure
@@ -460,7 +509,15 @@ songs:
       Leave the chalk up by the rack. We know what it cost.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 2dec2227-cac8-46a9-a31e-ac0a3bdb0b6a
+      suno_created: 2026-08-27T14:37:16Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_082/06.mp3
 
   - id: s_0678
     title: Ask Me at the Gate
@@ -524,7 +581,15 @@ songs:
       Toller, use the berth number. Send the woman back her bow.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: f038a9ca-9358-4f44-accf-226f874a7367
+      suno_created: 2026-08-27T14:37:36Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_082/07.mp3
 
   - id: s_0679
     title: Last Set Before the Whistle
@@ -591,4 +656,12 @@ songs:
       Leave the note going. Let it go under the door.
 
       [Outro - held chord, the whistle still going]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 3d08b7e5-ff64-4f6f-895f-41cb1e0a763e
+      suno_created: 2026-08-27T14:38:10Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_082/08.mp3

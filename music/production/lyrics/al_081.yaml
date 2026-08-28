@@ -21,8 +21,8 @@
 # The band has **no backing vocal anywhere, ever** — the card is explicit and so is the line-up, and
 # the pipes answer the vocal where a second voice would be. Every exclude line here keeps harmony
 # out. Two of the seven take an instrumental break; b_038 is the one band in this genre whose card
-# gives the break to two instruments, and they trade it. `generation:` and every `take:` are empty
-# until M-33.
+# gives the break to two instruments, and they trade it. `generation:` and every `take:` were
+# filled from the dispatch manifest at M-33.
 
 album:
   id: al_081
@@ -48,13 +48,22 @@ album:
     there were forty minutes left before the pipes had to go back.
 
 generation:
-  # Empty until M-33's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-33. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-27
+  sittings:
+    - {date: 2026-08-27, from: '14:22:56', to: '14:32:25', tracks: [1, 2, 3, 4, 5, 6, 7]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-24 by `make music-dispatch`, which matched every
+    take against the lyric it carries in its own tags rather than against its filename,
+    and refused to move anything until all 95 formed a one-to-one mapping (D-091). Each
+    song's take: block records the Suno id, the vendor's own creation time, and how much
+    of the take is the written lyric. 1 sitting for this record.
 
 songs:
   - id: s_0665
@@ -117,7 +126,15 @@ songs:
       Say half of it. Wait. Let the shop finish.
 
       [Outro - held note left to decay for eleven seconds]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 765fb253-aed8-40c5-b998-175b48ef9108
+      suno_created: 2026-08-27T14:22:56Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_081/01.mp3
 
   - id: s_0666
     title: Shut the Machines Down
@@ -179,7 +196,15 @@ songs:
       except one steward with her hand against the panel.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 20004a82-8515-47f1-bd29-5ac2af4c3062
+      suno_created: 2026-08-27T14:23:42Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_081/02.mp3
 
   - id: s_0667
     title: Pipes Down a Tone
@@ -243,7 +268,15 @@ songs:
       One night in Forge every boot went down a step.
 
       [Outro - one very low pipe note left ringing]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 54c311c1-fe77-4a91-85d5-54a861ad456f
+      suno_created: 2026-08-27T14:24:19Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_081/03.mp3
 
   - id: s_0668
     title: Dance in Your Work Boots
@@ -305,7 +338,15 @@ songs:
       and put the plate back on the rack before you go.
 
       [Outro - one struck plate left ringing]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 1d17f159-11ef-4f4c-9344-8862f6b711d3
+      suno_created: 2026-08-27T14:24:48Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_081/04.mp3
 
   - id: s_0669
     title: Nothing Here Is Quiet
@@ -367,7 +408,15 @@ songs:
       and the bass walks high while the pipes hold underneath.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 1c37c3f1-424d-4731-a633-3ccd798d6449
+      suno_created: 2026-08-27T14:25:14Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_081/05.mp3
 
   - id: s_0670
     title: Second Shift Sweetheart
@@ -432,7 +481,15 @@ songs:
       or I will not, and we will do this for another four years.
 
       [Outro - fade]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: ec3e2392-7dde-45a4-9152-a4b5fd4d6564
+      suno_created: 2026-08-27T14:31:17Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_081/06.mp3
 
   - id: s_0671
     title: Back Before the Morning
@@ -496,4 +553,12 @@ songs:
       finding every pipe at pitch and every tool in place.
 
       [Outro - cold stop]
-    take: null # M-33 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-27
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 3c4de865-c97b-4942-8733-b6151cdefec0
+      suno_created: 2026-08-27T14:32:25Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_4/al_081/07.mp3

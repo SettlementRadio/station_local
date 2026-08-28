@@ -67,7 +67,7 @@ marked **NEXT**.
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-06** `music/catalogue.yaml` · 2026-08-16 | **all done.** The takes are measured (D-083), tagged (D-084), and joined into the one file the station's database ingests — 1,358 tracks, 45 of them playable, checked against the wiki by `make check` (D-085) |
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
 | **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
-| **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-24** Frontier Reels' lyrics, 95 songs across 12 albums · 2026-08-26 | **M-33 is NEXT** — Frontier Reels' audio, 95 takes across 4 bands, and it is yours. Two genres finished end to end (relay-pop 105 of 105, lane-rock 110 of 110) and a third now has its words. 190 songs of lyrics and 285 of audio still to go |
+| **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-33** Frontier Reels' audio, all 95 filed, measured and tagged · 2026-08-28 | **M-25 is NEXT** — old-system sessions' lyrics, 90 songs across 4 bands. Three genres down and all three complete: relay-pop 105, lane-rock 110, Frontier Reels 95. **310 of the 500 playable songs now exist.** 190 songs of lyrics and 190 of audio still to go, across four genres |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -1052,8 +1052,8 @@ are never reused, because a number is an identity here and not a position in a q
 |---|---|---|---|
 | 1 | **M-21 relay-pop — done** | **M-30 relay-pop — done** | 60 |
 | 2 | **M-22 lane-rock — done** | **M-31 lane-rock — done** | 110 |
-| 3 | M-24 frontier-reels — done | **M-33 frontier-reels · NEXT** — 4 bands | 95 |
-| 4 | M-25 old-system-sessions | M-34 old-system-sessions — 4 bands | 90 |
+| 3 | **M-24 frontier-reels — done** | **M-33 frontier-reels — done** | 95 |
+| 4 | **M-25 old-system-sessions · NEXT** | M-34 old-system-sessions — 4 bands | 90 |
 | 5 | M-27 void-lounge | M-36 void-lounge — 4 bands | 55 |
 | 6 | M-28 core-harmonies | M-37 core-harmonies — 1 band | 20 |
 | 7 | M-29 void-ballads | M-38 void-ballads — 2 bands | 25 |
@@ -1165,7 +1165,7 @@ Depends on: M-20 for M-21; thereafter each genre's lyrics card depends on the pr
 **audio** card being finished — that is what "one genre at a time" means. **M-24 closed on
 2026-08-26, so M-33 is runnable now**, and M-25's turn comes when M-33 does.
 
-### M-30 · M-31 · M-33 · M-34 · M-36 · M-37 · M-38 · `[you]` Suno — 455 songs — **M-31 DONE 2026-08-25**
+### M-30 · M-31 · M-33 · M-34 · M-36 · M-37 · M-38 · `[you]` Suno — 455 songs — **M-33 DONE 2026-08-28**
 Files: `music/audio/<label>/<album>/NN.mp3`
 Check: every song in that genre has a keeper take, downloaded and named, with the prompt, attempts,
 model version and date recorded in the album's lyrics file. Custom mode only.
@@ -1221,10 +1221,36 @@ quarter of it, and `s_0336` and `s_1076` are reworded line by line. **Two songs 
 the world's own nouns instead of two. `make check` counts the written lyric and stays green, which is
 correct; the station broadcasts the take. That is a finding for your ear and for M-39, not a number
 to edit and not a reason to regenerate anything.
+Result (M-33): **Frontier Reels' 95 takes are generated, filed, tagged and in `music/catalogue.yaml`**
+— `music/audio/label_2/al_078` … `al_080` and `al_138` … `al_139`, `label_4/al_081`, `al_082` and
+`al_136`, `label_5/al_083` … `al_085` and `al_137`. Suno Pro, `suno-pro-2026-08`, generated across two
+days, 2026-08-27 and 2026-08-28. `attempts:` is null on all 95, as on lane-rock and for the same
+reason (D-093): the takes carry a Suno id and a creation time and nothing about what came before.
+**`model_version: v5.5` is read from 2026-08's own licence note rather than from the files**, which do
+not carry it — if a different model was used, that one field in twelve `generation:` blocks is the
+only thing to correct.
+**All 95 matched their lyric exactly and the pile filed in one pass.** `make music-dispatch` reported
+`lyric_match: 1.0000` on every take — no drift at all, against lane-rock's 17 of 110 that drifted and
+two that fell under §12 rule 5 on what was actually sung. Whatever changed between the two sittings,
+this genre is broadcasting the words that are written down.
+**The word floor is working and is now over-buying by more than lane-rock's.** The 95 average **3:57**,
+nothing is under 2:00, the shortest is 2:44 and the longest 5:09, and the take comes in **8.1 seconds
+under the stated target** against the pilot's 61.7. **D-095's prediction was right about the rate and
+wrong about what to do with it**: this genre measures **0.698 seconds per sung word** against
+relay-pop's 0.746 and lane-rock's 0.779 — the fastest yet, exactly as the tempo argument said — but
+the lyrics were written thirty words longer to compensate for a rate that was already going the other
+way. At 0.698, §12's 288-word floor lands at **3:21** and 310 words reaches §7's 3:36. **An hour of
+Frontier Reels is thirteen songs, not fourteen.**
+**Two bands were finished in one sitting each and one was not.** Wire and Rosin's three records were
+cut inside two hours on 2026-08-27 and Loose Cargo's four inside two and a half on 2026-08-28, which
+is what COMMISSION §9 asks for. The Foundry Set is split across both days — `al_081` and `al_082` on
+the 27th, `al_136` on the 28th. Same month, same licence period and the same model, so the risk §9
+names does not bite here; it is worth knowing because the next split may not be so lucky.
 Note (M-30, for the next sitting): **Finish one band in as few sittings as possible** (COMMISSION §9).
 Each song's `prompt:` is the style box and its `lyrics:` is the lyric box, Custom mode, remixing off.
 **Check the lyric box actually changed before you generate** — that is the one failure this card
-found. **September needs its own licence PDF the day you start generating in it** (M-40).
+found. **September needs its own licence PDF the day you start generating in it** (M-40), and the
+takes generated on 2026-08-27 and 2026-08-28 are the last ones 2026-08's evidence covers.
 Depends on: M-21 for M-30, M-22 for M-31, and so on down the table.
 
 ### M-39 · `[agent]` Measure and tag every song
@@ -1260,6 +1286,28 @@ is no longer a finding about writing. Suno sings from the top whatever the promp
 the ramps come from choosing different takes, or from the mixer at M-42, or §7's ramp distribution is
 describing something this vendor will not do.
 All 215 playable songs now average **3:42** against §7's 3:30.
+Frontier Reels pass, 2026-08-28 — **the third genre through, all 95 songs measured and tagged.**
+Duration holds and the rate moved again: they average **3:57**, nothing is under 2:00, the shortest is
+2:44 and the longest 5:09, and the take comes back at **0.698 seconds per written sung word** against
+lane-rock's 0.779 and relay-pop's 0.746. **Three genres, three different rates, and the spread is now
+0.08 seconds a word — eleven per cent.** D-095 predicted this one would run fast because the form is
+fast, and it does; what it could not predict is by how much, and the thirty extra words written to
+cover it were not needed. The lesson for M-25 is not a number of words, it is that **the rate is a
+property of the genre and only measurement gives it** — write at the floor plus a small margin and let
+this card find the rest.
+Outros land **35 cold / 38 fade / 22 sustain**, which is 37 / 40 / 23 against §7's 30 / 45 / 25 — a
+little cold-heavy and the widest miss of the three genres, though **only 36 of the 95 end the way
+their lyrics file said they would**, so the distribution landing near §7 is partly luck.
+**The ramps miss again and this is now four in a row.** 8 of the 95 have a measurable run-up at all,
+7 of them reach 8 seconds and 2 reach 15, where §7 asks 40% and 15%. Every one of the 95 declared a
+2-to-22-second intro in both its lyric tag and its prompt, and this genre declared the highest ramps
+in the catalogue — 73% at 8 seconds or more — precisely because the two genres before it had missed.
+**Declaring the ramp does not produce the ramp.** After the pilot, relay-pop, lane-rock and Frontier
+Reels, the writing side of this has been tried as hard as it can be tried: the remaining places it can
+come from are choosing different takes, the mixer at M-42, or §7's ramp distribution describing
+something this vendor will not do. **That is now a decision for the operator rather than a finding**,
+and it is the one thing in stage 5 that has failed the same way four times.
+All 310 playable songs now average **3:46** against §7's 3:30.
 Depends on: M-05, and each genre's audio card as it lands. Closes when M-38 does.
 
 ---
