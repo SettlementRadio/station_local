@@ -64,26 +64,19 @@ songs:
     outro: cold
     target_duration: "4:00"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 160 BPM, fast and bright, communal. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted into a brighter key. One female harmony voice on the choruses only. At the end of
-      every chorus a room full of untrained adults shouts the last line back — ragged, unpitched,
-      several keys at once, a crowd and never a stacked backing vocal. Composite fiddle, fretted
-      composite guitar, big woody upright bass, a kit built out of wooden crates and struck metal,
-      stripped-wire chimes. Recorded in a large hard port hall with the doors open: bigger and
-      brighter than a hold, some outdoor noise leaking in. Ten seconds of fiddle before the first sung
-      word. Cold stop.
+      160 BPM bright reel; low dry male bass-baritone, female chorus, ragged crew shouts, cold stop.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, stacked or blended backing vocals, studio choir, fade-out
     lyrics: |
       [Intro - fiddle, ten seconds]
 
       [Verse 1]
-      Somebody in an office worked out that if every crew
-      on the whole circuit timed its turnaround for the same week
-      then for six days there would be four thousand people
-      in one port hall who normally pass each other in the dark.
-      It should not have worked. Half of it did not work.
-      The half that worked was the best week of my life.
+      Four thousand people found the same port in one short week,
+      freight crews who had crossed for years as lights beyond the glass.
+      Cases filled the manifest room; coats buried every rail.
+      Two haulers waited empty while their deck hands took the floor.
+      Ilsa knew three voices before she knew three faces.
+      Reddin built a crate kit where the weigh clerk used to sit.
+      Six days should have broken down. Six days somehow held.
 
       [Chorus]
       One circuit for everybody, and nobody's port,
@@ -94,12 +87,13 @@ songs:
       NOBODY IS SIGNING ANYTHING TONIGHT.
 
       [Verse 2]
-      I wrote the second verse on the run in, on the deck,
-      and put four crews in it by name, because they were there,
-      and three of those four have since asked to come out of it
-      on the grounds that they were not quite as they are described.
-      They were exactly as they are described. Ask anybody.
-      The fourth crew asked for another verse and did not get one.
+      North Ledger lost its cook at cards behind the berth.
+      Lantern Six wore matching coats and swore it was not planned.
+      Pale Runner signed three times for Southbound Nine's own cargo.
+      Last Light came for one quick dance and stayed through Sunday noon.
+      Four crew names I wrote between two watch bells on the run in,
+      four small truths their deck mates shouted louder every time.
+      Last Light asked for one more line. Three crews asked for less.
 
       [Chorus]
       One circuit for everybody, and nobody's port,
@@ -110,12 +104,13 @@ songs:
       NOBODY IS SIGNING ANYTHING TONIGHT.
 
       [Verse 3]
-      There were crews there who had been on the same lane for years
-      and had never once been in the same settlement at the same hour
-      and stood at a door working out that they knew each other
-      off a carrier wave, by voice, and not by face at all.
-      A man walked up to Ilsa and said I know your bass
-      and could not tell you what she looked like. That is the circuit.
+      Near the open doors, two pilots stopped and stared a moment.
+      Same lane, same storm seasons, never once the same dry berth.
+      Each knew when the other laughed from years of carrier waves.
+      Neither knew the coat, the height, the scar above one eye.
+      A man came up to Ilsa saying, "I would know that bass anywhere."
+      Then looked directly past her for the player he had heard.
+      She took his hand and said, "You know enough. Come dance."
 
       [Final Chorus - harmony from the bass chair, the crews over the top]
       One circuit for everybody, and nobody's port,
@@ -140,62 +135,58 @@ songs:
     outro: fade
     target_duration: "4:20"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 156 BPM, quick and warm, competitive. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. One female harmony voice on the choruses only. TWO composite fiddles, plainly two
-      different players: the first with an unorthodox scratchy bowing hand and an accent in the wrong
-      half of the bar, the second cleaner, quicker and more ornamented, and slightly unsure of the
-      tune. They trade an eighteen-second instrumental break between them. Fretted composite guitar,
-      big woody upright bass, a kit built out of wooden crates and struck metal. Recorded in a large
-      hard port hall with the doors open. Fourteen seconds of the two fiddles before the first sung
-      word. Fades.
+      156 BPM duel reel; low dry male bass-baritone, two mismatched fiddles trading, open-hall fade.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, matched or unison fiddles, cold ending
     lyrics: |
       [Intro - two fiddles, fourteen seconds]
 
       [Verse 1]
-      There was a woman off a crew from somewhere down the lane
-      standing at the side of the hall on the second night
-      with a fiddle case she had carried into a port hall
-      the way you carry a thing you are not sure you will use.
-      Col saw the case before he saw her, which is Col,
-      and by the second tune the two of them were at it.
+      A woman off a crew from somewhere down the lane
+      stood beside the port-hall wall with one shut fiddle case.
+      She held it by the handle like a tool she might not need.
+      Col saw the scarred black case before he saw her face.
+      He lifted his own bow; she raised one shoulder back.
+      By the second tune, her latches lay open on the floor.
+      By the third, both fiddles crowded under one low lamp.
 
       [Chorus]
       Two crews, one tune, and nobody has met before,
-      and it took about four bars and then it took none.
-      That is the thing nobody outside this trade believes:
-      we all know the same forty tunes and we have never met.
+      four bars asking questions, four bars cutting in.
+      We all carry forty tunes between a hold and hall.
+      Find the crooked beat and play as if you always knew.
 
       [Instrumental - two fiddles trading, eighteen seconds]
 
       [Verse 2]
-      She is better than he is. He said so at the time.
-      She is better than he is by a distance and she was lost,
-      because our tunes have a limp in them and hers do not
-      and she spent half of it working out where the beat had gone.
-      Then she found it, and she got in front of it,
-      and there is about six seconds on this take that is hers alone.
+      She played cleaner, quicker, every ornament in place.
+      Col dragged his old wrong accent through the middle of the bar.
+      First exchange she missed the limp and landed one beat early.
+      Second time she watched the dancers, not his bowing hand.
+      Third time she found the gap and stepped in front of him.
+      Col laughed aloud and dropped the next four bars entirely.
+      For six bright seconds, one unknown fiddle owned the hall.
 
       [Chorus]
       Two crews, one tune, and nobody has met before,
-      and it took about four bars and then it took none.
-      That is the thing nobody outside this trade believes:
-      we all know the same forty tunes and we have never met.
+      four bars asking questions, four bars cutting in.
+      We all carry forty tunes between a hold and hall.
+      Find the crooked beat and play as if you always knew.
 
       [Verse 3]
-      Nobody wrote her name down. Nobody wrote anything down.
-      It was four in the morning and the doors were still open
-      and the co-operative has been trying to find her since,
-      because she is on this record and she is not on the sleeve.
-      If you are reading this and it was you, it was you.
-      There is a payment sitting at the co-operative with no name on it.
+      At four, the doors stood open and the run-out calls began.
+      She wiped the fiddle down and shut it in the scarred black case.
+      Col asked which berth. She pointed through the clearing crews.
+      He asked her name; a cargo hauler sounded over both of them.
+      She waved once from the ramp and vanished past the manifest board.
+      Nobody wrote the crew, the route, the berth or player down.
+      Only one clean rosin mark stayed pale beneath the lamp.
 
       [Final Chorus - harmony from the bass chair]
       Two crews, one tune, and one of them went home,
-      and there is a berth number somewhere that nobody kept.
-      We all know the same forty tunes and we have never met,
-      and I have listened to those six seconds about nine hundred times.
+      one scarred case gone somewhere down the relay road.
+      We all carry forty tunes between a hold and hall.
+      Col plays four empty bars and leaves her answer open.
+      Find the crooked beat and play as if you always knew.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -212,24 +203,19 @@ songs:
     outro: fade
     target_duration: "3:55"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 134 BPM, rolling and warm, midtempo. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. One female harmony voice on the choruses only, sung from a doorway a long way from
-      the band — distant, thin, with outdoor noise audible behind her, clearly in a different part of
-      the building. Composite fiddle, fretted composite guitar, big woody upright bass, a kit built
-      out of wooden crates and struck metal, stripped-wire chimes. Recorded in a large hard port hall
-      with the doors open. Eight seconds of guitar and fiddle before the first sung word. Fades.
+      134 BPM warm rolling reel; low dry male bass-baritone, distant doorway harmony, open hall fade.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, close or blended harmony, cold ending
     lyrics: |
       [Intro - guitar and fiddle, eight seconds]
 
       [Verse 1]
-      This is not our hall. This is not anybody's hall.
-      It is a port hall, which means it is a room for cargo
-      that somebody put a floor in about forty years ago
-      because there was nowhere else on the whole site to put people.
-      There is a weighbridge at the far end under a sheet.
-      There is a manifest board on the wall with last week still on it.
+      This is not our hall and no crew keeps the key.
+      Cargo gets the weekdays; borrowed feet get Saturday.
+      A weighbridge sleeps beneath a sheet behind the dancers.
+      Last week's manifest still covers half the western wall.
+      Coats hang from the hooks where loading straps should go.
+      Four thousand strangers leave one narrow path between them.
+      We set the cases down as if the floor might ask them back.
 
       [Chorus]
       Somebody else's floor and everybody's night,
@@ -238,12 +224,13 @@ songs:
       Leave it the way you found it. Leave it better.
 
       [Verse 2]
-      Ilsa is in the doorway. There is nowhere else for Ilsa.
-      The hall was full at nine and it was fuller at eleven
-      and by the time we were recording there was a person
-      in every part of that building including the stair,
-      so she stood in a doorway with the outside behind her
-      and sang the chorus from about forty feet away.
+      Ilsa carries in the bass and finds no place to stand.
+      The hall filled up at nine; by eleven, every stair was taken.
+      Reddin points toward the doorway forty feet behind us.
+      She wedges one bass foot where the threshold meets the stone.
+      Outside, clearance carts reverse beneath the morning lamps.
+      Inside, Col lifts the tune above a thousand moving coats.
+      Ilsa sends one distant line across the whole hard room.
 
       [Chorus]
       Somebody else's floor and everybody's night,
@@ -252,18 +239,20 @@ songs:
       Leave it the way you found it. Leave it better.
 
       [Verse 3]
-      You can hear the outside on her. You can hear the site.
-      There is a hauler being moved about a hundred yards off
-      and a man shouting numbers and the wind coming round the corner
-      and a whole festival being taken apart behind her voice.
-      The co-operative wanted to cut that verse and re-record it.
-      They have been told what everybody tells them, which is no.
+      Wind comes round the corner, lifts the tally sheets behind her.
+      A hauler moves one hundred yards beyond the loading gate.
+      Someone calls out numbers while the scaffold loses bolts.
+      Ilsa holds the chorus steady through the reversing signal.
+      One child slips between her bass case and the open door.
+      She moves an inch, no more, and sends the next line farther.
+      The whole festival comes down outside; the borrowed floor keeps turning.
 
       [Final Chorus - harmony from the doorway, distant]
       Somebody else's floor and everybody's night,
       and a woman in a doorway with a settlement behind her.
       Play it like you are borrowing it, because you are,
-      and get off it by noon, because the load comes in at one.
+      sweep it clean by noon; the next load comes at one.
+      Leave both doors unblocked and every borrowed hook returned.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -280,24 +269,19 @@ songs:
     outro: cold
     target_duration: "3:45"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 168 BPM, fast and hard, defiant. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. One female harmony voice on the choruses only. Percussion built from mismatched
-      borrowed metal off three different ships — nothing matching anything, high and clangy and
-      ragged, no proper drum kit anywhere. Composite fiddle taking a fourteen-second break, fretted
-      composite guitar, big woody upright bass. Recorded in a large hard port hall with the doors
-      open. Six seconds before the first sung word. Cold stop.
+      168 BPM hard skiffle reel; low dry male bass-baritone, borrowed metal kit, fiddle break, cold stop.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, matched drum kit, cymbals, fade-out
     lyrics: |
       [Intro - borrowed metal and fiddle, six seconds]
 
       [Verse 1]
-      A ration week is not a famine and it is not a crisis.
-      It is a form of arithmetic that arrives about twice a year
-      when a supply run is late and a port is not to blame
-      and everybody eats slightly less than they had planned to.
-      Nobody dies. Everybody complains. That is the whole event.
-      And every crew on the circuit has a tune about it.
+      Ration week begins with one late run and half a notice.
+      The store queue bends around the port hall before dawn.
+      Four hundred workers count the days against their tokens,
+      trade one meal for two, then check the sum again.
+      Nobody calls it danger; everybody calls it badly timed.
+      Children ask why supper changed and get a longer answer.
+      By Thursday, every crew has found the same short face.
 
       [Chorus]
       Short week, long face, and the same again on Thursday,
@@ -308,12 +292,13 @@ songs:
       [Instrumental - fiddle break, fourteen seconds]
 
       [Verse 2]
-      Reddin has a hatch fixing off a crew from the near end,
-      a length of chain off a hauler nobody could name,
-      and a piece of alloy that a woman handed him at a door
-      and said bring it back, and he did, before the run out.
-      None of it matches. That is the sound of this track.
-      Three ships and a port hall and nothing that belongs together.
+      Reddin borrows one hatch fitting from the near-end crew,
+      chain from a grey hauler waiting on the outer berth,
+      bright alloy from a woman guarding Southbound Nine.
+      She holds it out and says, "Before the Sunday run."
+      Nothing shares a pitch, a shape, a bolt or working age.
+      He hangs all three from crates and strikes the queue's complaint.
+      Three ships answer one another underneath the fiddle break.
 
       [Chorus]
       Short week, long face, and the same again on Thursday,
@@ -322,18 +307,20 @@ songs:
       It is fine. It is genuinely fine. We are all just cross.
 
       [Verse 3]
-      What actually happens in a short week is the good part.
-      A crew with a full hold gives a crew with a light one
-      about a third of what it has, quietly, at a berth,
-      and nobody writes it down, and it is never mentioned again.
-      That is not charity and nobody in this trade calls it that.
-      It is next month, from the other direction, and everyone knows.
+      After dark, a full-hold crew rolls two sealed cases
+      toward a lighter hauler at the far end of the berth.
+      No names cross the manifest; no clerk records the weight.
+      One third changes hands beneath a broken loading lamp.
+      Nobody calls it charity or waits around for thanks.
+      Next month, weather turns and cargo comes the other way.
+      Everybody knows the sum because everybody has been short.
 
       [Final Chorus - harmony from the bass chair]
       Short week, long face, and the same again on Thursday,
-      and a man giving a chain back at a gate at six.
+      and Reddin at the gate returning three things before six.
       It is fine. It is genuinely fine. We are all just cross,
-      and there is a run out on Sunday and a hold to fill.
+      and the Sunday run goes out with every borrowed bolt aboard.
+      Next month, from the other direction. Everybody knows.
 
       [Outro - cold stop]
     take: null # M-33 fills this in at the Suno sitting
@@ -350,61 +337,56 @@ songs:
     outro: sustain
     target_duration: "4:10"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 150 BPM, brisk and satisfied, communal. Male lead vocal,
-      low bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register
-      and never lifted. One female harmony voice on the choruses only, plus a room of untrained adults
-      shouting along on the last chorus — a crowd, ragged and unpitched, never a stacked backing
-      vocal. Composite fiddle, fretted composite guitar, big woody upright bass, a kit built out of
-      wooden crates and struck metal. Recorded in a large hard port hall with the doors wide open and
-      a site audibly being dismantled outside throughout — vehicles, shouted numbers, metal being
-      stacked. Sixteen seconds of fiddle and outside noise before the first sung word. At the very
-      end, after the last chord, a man's plain speaking voice off-microphone asks the band to move.
-      Ends on a held chord with that voice over it.
+      150 BPM brisk reel; low dry male bass-baritone, crew shouts, site-clearance noise, officer ending.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, stacked or blended backing vocals, clean studio recording, cold ending
     lyrics: |
       [Intro - fiddle and the site being cleared outside, sixteen seconds]
 
       [Verse 1]
-      It is nine in the morning and there is a man with a list
-      walking round this hall putting a mark against everything,
-      and outside there is a whole week coming apart in sections
-      and going back onto the ships it arrived on.
-      We have got about forty minutes and five tunes
-      and a co-operative that wants a record out of this.
+      Nine in the morning, one port officer with a list,
+      marking every borrowed rail and folded meal-hall table.
+      Outside, six festival days come apart in sections:
+      lamps into cases, scaffold down, signs off the wall.
+      Clearance carts reverse through both wide-open doors.
+      The officer checks his time and gives us forty minutes.
+      Reddin finds two crates still standing and counts four.
 
       [Chorus]
       Sign off, then dance, in that order, always.
       Get the load away and then have the night you have earned.
-      Nobody at this festival is on anybody's clock,
-      which is the first time that has been true in years.
+      Nobody on this floor is on another person's clock.
+      The morning shift can wait until the final turn comes round.
 
       [Verse 2]
-      The whole point of the week was that it was between runs.
-      Everybody's turnaround, nobody's shift, no cargo waiting,
-      and four thousand people on a site with nothing to do
-      for the first time since any of them started working.
-      You could feel people not knowing how to have it.
-      By the third day they had worked it out. By the fifth it was gone.
+      Two crews roll the outer fencing past the doorway.
+      Someone stacks the ration cups in towers by the gate.
+      Twenty dancers stay between the weighbridge and our cases,
+      coats unbuttoned, eyes half shut, boots grey with six days' dust.
+      Col lifts the fiddle over shouted clearance numbers.
+      Ilsa's distant line comes in with wind behind it.
+      Every time the officer looks up, the floor has one more pair.
 
       [Verse 3]
-      There is a woman here from a crew off the far circuit
-      who has not been off her own lane in eleven years
-      and has spent this week being introduced to about nine people
-      whose voices she has known on a carrier wave since she was young.
-      She said it was like a room full of people she had read about.
-      She is going out at noon and it is not going to happen again.
+      A woman from the far circuit stands beside the last sign.
+      Eleven years upon one lane, first week beyond its berths.
+      She has met nine carrier-wave voices face to face,
+      learned which laugh belongs to whom and who is shorter than they sound.
+      Her noon run flashes twice upon the relay board.
+      She takes one final turn with North Ledger's youngest pilot,
+      then keeps her work coat on and stays for one more chorus.
 
       [Chorus]
       Sign off, then dance, in that order, always.
       Get the load away and then have the night you have earned.
-      Nobody at this festival is on anybody's clock,
-      which is the first time that has been true in years.
+      Nobody on this floor is on another person's clock.
+      The morning shift can wait until the final turn comes round.
 
       [Final Chorus - harmony from the bass chair, the crews over the top]
       Sign off, then dance, and then go and load the hold,
-      and the next one is in a year and everybody says they will come.
-      Nobody at this festival is on anybody's clock.
-      Half of us will be on a run. That is the arrangement.
+      fold the final table, clear the borrowed port-hall floor.
+      Nobody on this floor is on another person's clock.
+      North Ledger, Last Light, every crew still here—sing once.
+      Then take your cases, find your berth, and scatter with the loads.
 
       [Officer - spoken, off-microphone, over the last chord]
       Right, gentlemen, I am going to have to ask you to move.

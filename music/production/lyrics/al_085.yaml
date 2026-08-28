@@ -65,62 +65,60 @@ songs:
     outro: cold
     target_duration: "4:05"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 162 BPM, fast and bright, loose and unhurried in the
-      playing. Male lead vocal, low bass-baritone, unhurried and dry, sitting under the fiddle,
-      staying in his own low register and never lifted into a brighter key. One female harmony voice
-      on the choruses only. Loose metal fittings in the room ringing IN TUNE with the music on every
-      chorus — three distinct pitched metallic resonances answering the band rather than clattering
-      against it. Composite fiddle, fretted composite guitar, big woody upright bass, a kit built out
-      of crates and struck metal. Recorded inside a cargo hold: boxy, close and dead, no hall space
-      anywhere. Ten seconds of fiddle and ringing metal before the first sung word. Four bars of the
-      ringing fittings alone after the second chorus. Cold stop.
+      162 BPM loose reel; low dry male bass-baritone, female chorus, three tuned fittings, cold stop.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, untuned clatter, fade-out
     lyrics: |
       [Intro - fiddle and ringing metal, ten seconds]
 
       [Verse 1]
-      A man came down two days before anybody else did
-      with a bag of tools and a list and about nine hours,
-      and went round this hold tightening and slackening things
-      until every loose fitting in it was in the same key as us.
-      Nobody asked him to. He has done it for other people.
-      He said a room either answers you or it argues, and chose.
+      Brin Noll came down the berth ramp with a canvas bag of tools,
+      struck the forward bracket once and waited for the ring.
+      He tightened one long fitting, hung a washer on another,
+      wedged a strip of cargo seal beneath the third loose plate.
+      Nine hours with a gauge, a wrench, and chalk across his sleeve,
+      till three notes in the hired hold sat under Col's low string.
+      "A room can answer or argue," Brin said. "This one can choose."
 
       [Chorus]
       Dance it off the deck. Dance it off the plate.
-      There is nothing under this floor for about nine metres
-      and every step four hundred people take comes back up,
-      and tonight it comes back up in tune, which is new.
+      Put your working heel down where the long brace meets the floor.
+      Three pieces of loose metal throw the chorus back in tune.
+      Dance it off the deck and let the empty hold reply.
+      Nine metres under every step, and nothing holding still.
 
       [Verse 2]
-      On the first record the metal was just noise
-      and we called that character, because that is what you call it
-      when a thing is wrong and you cannot afford to fix it
-      and somebody in a review has been kind about it.
-      This one rings. You can hear the difference immediately.
-      Reddin has been quietly furious about that for a week.
+      Reddin hit the first crate hard and all three fittings answered.
+      He stopped with both sticks raised and glared into the roof.
+      For years the chain and hatch had landed where they pleased,
+      half a tone against the fiddle, sharp beneath the bass.
+      Now the room came back obedient on every counted four.
+      He tried to push the snare ahead; the brackets followed clean.
+      By supper he was calling it suspiciously well behaved.
 
       [Turnaround - the tuned fittings alone, four bars]
 
       [Verse 3]
-      Twenty-seven years of loading and unloading this
-      and about eleven of playing in it once it was empty,
-      and it has taken until the last record anybody makes
-      for somebody to turn up and tune the building.
-      Brin Noll. Off the frontier, works everywhere, says nothing.
-      He is going to do the same thing in a shed in Cold Harbor.
+      Brin sat by the hatch while Col ran once around the figure.
+      First plate held the bottom; second caught the middle note.
+      Third one rang above us like a cup against a bulkhead.
+      Ilsa found a harmony and let the fittings carry it.
+      Brin packed every tool except the chalk he left behind,
+      marked three small circles where the deck should take a heel,
+      then shouldered up the bag and caught the last relay home.
 
       [Chorus]
       Dance it off the deck. Dance it off the plate.
-      There is nothing under this floor for about nine metres
-      and every step four hundred people take comes back up,
-      and tonight it comes back up in tune, which is new.
+      Put your working heel down where the long brace meets the floor.
+      Three pieces of loose metal throw the chorus back in tune.
+      Dance it off the deck and let the empty hold reply.
+      Nine metres under every step, and nothing holding still.
 
       [Final Chorus - harmony from the bass chair]
       Dance it off the deck and let the fittings answer.
-      There is nothing under this floor for about nine metres.
-      Every step four hundred people take comes back up,
-      and a man with a bag of tools decided what it would say.
+      First one low, second middle, third above the line.
+      Put your working heel down on the circles Brin left white.
+      Dance it off the deck; the whole hold answers back.
+      Reddin counts the final turn and almost calls it right.
 
       [Outro - cold stop]
     take: null # M-33 fills this in at the Suno sitting
@@ -137,58 +135,58 @@ songs:
     outro: fade
     target_duration: "3:55"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 136 BPM, midtempo, wry and warm. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. One female harmony voice on the choruses only. The arrangement never builds — no
-      key change, no tempo change, no dynamic swell anywhere, exactly the same weight from first bar
-      to last. Composite fiddle, fretted composite guitar, big woody upright bass, a kit built out of
-      crates and struck metal. Recorded inside a cargo hold: boxy, close and dead. Six seconds before
-      the first sung word. Fades.
+      136 BPM warm static reel; low dry male bass-baritone, female chorus, no build, boxy hold, fade.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, dynamic swells, key changes, cold ending
     lyrics: |
       [Intro - band, six seconds]
 
       [Verse 1]
-      We said we would make a third one if it was made in a hold
-      and the co-operative said fine and then went and looked
-      and discovered that a hold is a thing that is usually going somewhere
-      and that a hold that is not going somewhere still costs money.
-      Forty-one a night. Nine nights. For a room at a berth.
-      That is the single most expensive joke I have ever made.
+      I asked the co-operative clerk to find an empty hold.
+      She found six that carried cargo and one tied at the berth.
+      The travelling six were spoken for; the idle one cost extra.
+      Forty-one a night, she said, and watched me understand.
+      Nine nights for a room built only to be somewhere else,
+      nine nights going nowhere with no load beneath our names.
+      I signed the hire form and laughed before the ink was dry.
 
       [Chorus]
       Paid by the night for a thing that is not moving,
       tied at a berth with nothing in it but a band.
-      There is a whole trade out there running on this,
-      and we hired one and sat in it and did not sail.
+      Every other hold along the lane earns while it travels.
+      We hired one, shut the hatch, and did not sail.
+      Forty-one till morning. Let the berth lights stay.
 
       [Verse 2]
-      Ilsa did the arithmetic and read it out at the table
-      and asked, reasonably, what exactly we thought we were buying.
-      I said the sound. She said you are buying a shape.
-      A hold sounds like a hold because it is full of things.
-      Take the cargo out and it is a big empty tin.
-      She was right about that too and we did it anyway.
+      Ilsa did the arithmetic and read it at the table:
+      three hundred sixty-nine before we bought a meal.
+      "What exactly have you paid for?" I said, "The sound we know."
+      "You bought the shape," she said. "The cargo made the sound."
+      Reddin tapped the empty wall; it answered like a tank.
+      Col said, "Put the cases round us. That will dull it down."
+      Ilsa checked the total twice and brought her bass aboard.
 
       [Verse 3]
-      What we were actually buying, and I know this now,
-      is nine nights of the four of us in a room with a door shut
-      at the end of twenty-seven years of doing this,
-      with nobody's shift in the morning and nothing to sign.
-      That is worth forty-one a night. That is worth more.
-      The co-operative has not sent us the invoice and will not.
+      By the seventh night, the joke had found its honest answer:
+      four work coats by the hatch and no shift whistle due,
+      nobody waiting for the manifest, no cargo to inspect,
+      nowhere the four of us were meant to be by dawn.
+      We sat on cases after closing with the berth lights coming through.
+      Forty-one had bought an hour nobody else could claim.
+      Ilsa raised her cup and said, "That part was worth the shape."
 
       [Chorus]
       Paid by the night for a thing that is not moving,
       tied at a berth with nothing in it but a band.
-      There is a whole trade out there running on this,
-      and we hired one and sat in it and did not sail.
+      Every other hold along the lane earns while it travels.
+      We hired one, shut the hatch, and did not sail.
+      Forty-one till morning. Let the berth lights stay.
 
       [Final Chorus - harmony from the bass chair]
       Paid by the night for a thing that is not moving,
-      and every crew on this lane has heard about it by now.
-      There is a whole trade out there running on this.
-      Let them laugh. It was worth every single night.
+      and every freight crew on the lane can laugh at that.
+      Nine idle nights, one invoice, four coats beside the hatch.
+      Let them laugh. We knew exactly what we bought.
+      Forty-one till morning, and nowhere else to go.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -205,62 +203,60 @@ songs:
     outro: fade
     target_duration: "4:35"
     prompt: >-
-      Skiffle and jump blues at a slow reel tempo, 118 BPM, slow and weathered, fond. Male lead vocal,
-      low bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register
-      and never lifted. One female harmony voice on the choruses only. Everything has more space in it
-      than usual — the fiddle unhurried and unornamented, the bass wide, the crate percussion sparse.
-      Composite fiddle, fretted composite guitar, big woody upright bass, crates and struck metal
-      brushed rather than hit. Recorded inside a cargo hold: boxy, close and dead. Fourteen seconds of
-      fiddle before the first sung word. Fades.
+      118 BPM weathered reel; low dry male bass-baritone, female chorus, sparse crates, roomy phrasing.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, fast reel tempo, cold ending
     lyrics: |
       [Intro - fiddle, fourteen seconds]
 
       [Verse 1]
-      He asked at the table, quietly, before we started,
-      whether we would consider taking it about twenty under,
-      and there was a pause of the kind that happens in a band
-      when somebody says a thing they have been not saying for years.
-      Twenty-seven years of this tune at one speed.
-      Nobody had ever asked. Nobody had ever thought to ask.
+      Col asked at the table, quietly, before we started,
+      whether we could take the old one twenty beats below.
+      Four cups stopped halfway up; the berth lights held behind him.
+      That was how a long-unsaid thing entered the hired hold.
+      Twenty-seven years we drove that figure at one speed,
+      fast enough to fill two halls and clear the final ferry.
+      Nobody had asked him once how fast his hands could hear it.
 
       [Chorus]
       Slower than we did it and better than we did it,
       and it turns out there was a tune under the tempo all along.
-      Nothing in this hold is in a hurry any more.
-      Nothing on this record has anywhere to be.
+      Nothing in this empty hold is hurrying tonight.
+      Let the long bow cross the bar and leave the space behind.
 
       [Verse 2]
       I said why now, and he said because I can hear it now,
-      which is either about his hands or about his ears
-      and he would not say which and it does not matter which.
-      A man who has played the same forty tunes since he was nineteen
-      is allowed, once, at the end, to ask for one of them slowly.
-      We did it on the first take. Nobody discussed it further.
+      then turned the tuning peg and would not say another word.
+      Maybe it was fingers stiff from cargo straps and weather.
+      Maybe it was ears that needed fewer notes at once.
+      Reddin gave a count with half the old impatience gone.
+      Ilsa let the low line open wide beneath the fiddle.
+      One pass from first low scrape to fade, and nobody called again.
 
       [Pre-Chorus]
-      Twenty-seven years is a long time to not be asked
-      and a long time to not ask, and he did both.
+      Twenty-seven years is long enough to hide one question.
+      Four cups on a table are enough to let it out.
 
       [Verse 3]
-      What it does is give the words somewhere to sit.
-      At the old speed you get four of them into a bar
-      and you are through the second verse before anybody hears it
-      and a dance does not need you to be heard, it needs you to go.
-      This is not for a dance. Nothing on this record is.
-      This is four people in a hired hold at a berth.
+      At the old pace, every heel knew where to land before us.
+      Tonight the crate brush waits; the stripped-wire chimes hang clear.
+      I can hear Col breathe before he pulls the second figure.
+      I can hear the wood complain beneath Ilsa's lowest string.
+      The far hall may demand it fast when Thursday comes again.
+      They can stamp and shout; we will not chase their feet.
+      This one crossed the years to reach the speed it needed.
 
       [Chorus]
       Slower than we did it and better than we did it,
       and it turns out there was a tune under the tempo all along.
-      Nothing in this hold is in a hurry any more.
-      Nothing on this record has anywhere to be.
+      Nothing in this empty hold is hurrying tonight.
+      Let the long bow cross the bar and leave the space behind.
 
       [Final Chorus - harmony from the bass chair]
       Slower than we did it, and he asked, and we did it,
       and the far hall is going to want it fast and will not get it.
       Nothing in this hold is in a hurry any more.
-      Twenty-seven years and one question at a table.
+      Twenty-seven years, four cups, one question at a table.
+      Col holds the final bow until the berth lights blur.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -277,62 +273,58 @@ songs:
     outro: cold
     target_duration: "3:50"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 154 BPM, brisk and blunt, wry. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. One female harmony voice on the choruses only. The arrangement alternates: in the
-      first and third verses the band plays together and tight; in the second, the composite fiddle and
-      the upright bass pull to opposite sides of the tune and disagree rhythmically. Fretted composite
-      guitar, crates and struck metal. Recorded inside a cargo hold: boxy, close and dead. Four seconds
-      before the first sung word. A sixteen-second fiddle break. Cold stop.
+      154 BPM blunt reel; low dry male bass-baritone, female chorus, split fiddle and bass, cold stop.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, fade-out
     lyrics: |
       [Intro - band, four seconds]
 
       [Verse 1]
-      This is what was actually said, near enough, at the table,
-      and both sides have read it and both sides have agreed
-      that it is a fair account of a conversation about money
-      between four people who make records and one who pays for them,
-      in a settlement neither side is from, at a berth, at nine.
-      Nobody comes out of it badly. That is the strange part.
-      Everybody in that room had a completely reasonable position.
+      The invoice sat between us at a borrowed settlement table,
+      nine nights in a hired hold picked out in heavy ink.
+      Four work coats faced two co-operative coats at nine.
+      Rain moved along the berth glass; nobody touched the tea.
+      Ilsa had the figures. Reddin had his arms crossed tight.
+      The officers had nine hundred names behind their answer.
+      Everybody knew the money had to leave somebody's hands.
 
       [Chorus]
       Who is paying for the room. Somebody is paying for the room.
       It is never nobody. There has never once been a nobody.
-      Either it comes out of the door or it comes out of the label
-      or it comes out of four people not being paid for a fortnight.
+      It leaves by the gate, or the co-operative ledger,
+      or four wage packets missing half a working fortnight.
 
       [Verse 2 - the band pulls apart]
-      They said we cannot justify a hold that does not move.
-      We said the last two records are the reason you have members.
-      They said that is true and it is not an argument about cost.
-      We said everything is an argument about cost eventually.
-      They said yes. Exactly. That is our whole point.
-      And there was a very long silence, and Ilsa made tea.
-      She let it sit there for a minute and then said her piece.
+      They said, "We cannot justify a hold that does not move."
+      We said, "You asked us back. This was the price we named."
+      They said, "Both are true and neither finds the money."
+      We said, "Every promise reaches cost before the end."
+      They said, "Yes. Exactly." Then the whole room lost its language.
+      Ilsa poured the cooling tea and let the silence take one minute.
+      "Send the invoice to the members. Let the owners choose."
 
       [Instrumental - fiddle break, sixteen seconds]
 
       [Verse 3]
-      What settled it is that the members voted for it.
-      Not the officers. The members. About nine hundred of them,
-      most of whom are on a run at any given hour
-      and none of whom will ever hear this record in a hall.
-      They voted to hire a hold for a band on their own label.
-      That is a co-operative and it is why we are on one.
+      Ballot slips went out beneath the freight manifests on Tuesday,
+      down the relay road, through sidings, halls and waiting berths.
+      Hauler crews marked yes or no between their loading shifts.
+      Some wrote, "Far too much." Some wrote, "Hire it twice."
+      Nine hundred working owners sent the paper home.
+      The count came back a yes with every objection still attached.
+      Ilsa read the total once and pushed the invoice down the table.
 
       [Chorus]
       Who is paying for the room. Somebody is paying for the room.
       It is never nobody. There has never once been a nobody.
-      Either it comes out of the door or it comes out of the label
-      or it comes out of four people not being paid for a fortnight.
+      It leaves by the gate, or the co-operative ledger,
+      or four wage packets missing half a working fortnight.
 
       [Final Chorus - harmony from the bass chair]
       Who is paying for the room. Nine hundred freight crews are.
       It is never nobody. There has never once been a nobody.
-      Either it comes out of the door or it comes out of the label,
-      and this time it came out of everybody, on a vote.
+      Nine nights in a hold that never leaves its berth.
+      This time everybody paid, and everybody got a vote.
+      Ilsa lifts the tea. The officers lift theirs.
 
       [Outro - cold stop]
     take: null # M-33 fills this in at the Suno sitting
@@ -349,23 +341,19 @@ songs:
     outro: fade
     target_duration: "4:20"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 132 BPM, rolling and warm, tired. FEMALE lead vocal on
-      this track only — plain, unforced mid register, dry and conversational, no ornament, close to
-      the microphone. NO male vocal of any kind anywhere on the track and no harmony or backing vocal
-      underneath her. Composite fiddle, fretted composite guitar, big woody upright bass played by the
-      singer, a kit built out of crates and struck metal. Recorded inside a cargo hold: boxy, close and
-      dead. Twelve seconds of fiddle and bass before the first sung word. Fades.
+      132 BPM warm rolling reel; plain female lead alone, upright bass, fiddle, boxy hold, soft fade.
     exclude: male vocals, low male harmony, backing vocals, second voices, electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, cold ending
     lyrics: |
       [Intro - fiddle and bass, twelve seconds]
 
       [Verse 1]
-      Twenty-seven years underneath somebody else's line
-      and a third below it on the chorus and nothing in the verses,
-      which is a real job and I have never once complained about it
-      and which four hundred people in two halls have never noticed.
-      He wrote this one and then said he was not going to sing it
-      and went out onto the berth and did not come back until it was done.
+      Fourteen nights inside a hold can shrink a person's language.
+      Pass the wrench. Check the list. Move your case. Count four.
+      Three men I have known longer than most people know a home,
+      each one close enough to hear me set my cup down wrong.
+      Tonight I need the water road beyond the loading lamps,
+      nine more minutes past the direct way to the settlement gate.
+      Wend sees me take my coat and does not ask to come.
 
       [Chorus]
       Take the long berth home, the one past the water gate.
@@ -374,24 +362,26 @@ songs:
       Take the long way. Do not talk to anybody.
 
       [Verse 2]
-      I have sung one line at a time for twenty-seven years
-      and I have never had to work out where a verse goes
-      or what to do with my hands or when to come in,
-      and the first take of this was frankly a disgrace.
-      Col said nothing. Reddin said nothing, which cost him.
-      By the fourth one I had stopped listening to myself.
+      The short road follows cargo carts beneath the relay signs,
+      freight crews changing shifts and port clerks shouting numbers.
+      The long road turns behind the tanks and finds the black water.
+      No manifests, no questions, no one matching pace.
+      I let my work hands open; both palms still smell of strings.
+      Nine minutes is not freedom. It is near enough tonight.
+      By the bend, I hear my own boots instead of everybody else's.
 
       [Bridge]
       He has stood behind me on a berth for twenty-seven years
-      and both of us have been out on that walk on our own.
+      and both of us know when the other needs that walk alone.
 
       [Verse 3]
-      There is a walk from the berth to the settlement gate
-      that goes past the water and takes about nine minutes longer
-      and every crew that has ever worked this port knows it
-      and none of them will tell you why they take it.
-      You take it because for nine minutes nobody is asking you anything.
-      That is the whole song. That is the entire song.
+      Every crew that works this port has found the water turning.
+      Nobody marks it on a chart or calls it by a name.
+      You take it after blame, after good news, after finishing,
+      whenever even kindness feels like one demand too many.
+      At the far end Wend is waiting with my bass case by his leg.
+      He gives me back the strap and falls in half a step behind.
+      We reach the settlement gate without exchanging one word.
 
       [Chorus]
       Take the long berth home, the one past the water gate.
@@ -401,9 +391,10 @@ songs:
 
       [Final Chorus - lead alone, no harmony]
       Take the long berth home, the one past the water gate,
-      and he will be at the far end of it not saying anything,
-      which is the kindest thing that man has ever done.
-      Nine minutes. Once. In twenty-seven years.
+      where one old friend knows better than to follow.
+      He will meet you at the far end and carry what is heavy.
+      Take the long way. Let the dark water keep the silence.
+      Nine minutes, then the gate, then home beside a friend.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -420,61 +411,58 @@ songs:
     outro: sustain
     target_duration: "4:15"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 166 BPM, fast and bright, communal. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. One female harmony voice on the choruses only. TWO fretted composite guitars: the
-      band's own, and a second one tuned noticeably lower, duller and more scarred, sitting underneath
-      the first rather than beside it. Composite fiddle taking a fourteen-second break, big woody
-      upright bass, a kit built out of crates and struck metal, the room's tuned fittings ringing.
-      Recorded inside a cargo hold: boxy, close and dead. Eight seconds before the first sung word.
-      Ends on a held chord with the fittings still ringing.
+      166 BPM bright reel; low dry male bass-baritone, two detuned guitars, fiddle break, held end.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, matched guitars, cold ending
     lyrics: |
       [Intro - two guitars and fiddle, eight seconds]
 
       [Verse 1]
-      There is a man who has been fixing the same guitar
-      since before this band existed, between other people's sessions,
-      in ports and transfer halls and the backs of carts,
-      and there is not much left on it that has not been replaced.
-      He tuned it down two whole tones to match this hold
-      because he asked what the room was in, which nobody asks.
+      Talla Venn arrived with one scarred guitar beneath his coat.
+      Thirty years of patches showed along the composite grain:
+      four new frets, a borrowed bridge, two plates around the shoulder,
+      somebody's initials almost sanded from the neck.
+      He struck the hold's low fitting, turned each peg two tones,
+      played the note beneath my own and let the room decide.
+      Both guitars sat together like a cart with one low wheel.
 
       [Chorus]
       One more around, and one more after that,
       and the fittings ring back and the crates come in behind.
       Nine metres of nothing underneath this floor
-      and about eleven people having the best night of the fortnight.
+      and eleven people with no reason yet to leave.
 
       [Instrumental - fiddle break, fourteen seconds]
 
       [Verse 2]
-      There were eleven of us in here on the seventh night.
-      Four in the band, one on a second guitar, one on the desk,
-      three off a crew at the next berth who heard it through a wall,
-      one from the co-operative and one nobody could account for.
-      It is the only track on this record with people on it
-      and you can hear all eleven of them at the end.
+      Three freight hands from the next berth heard us through the wall.
+      One co-operative clerk came down to bring the hire key.
+      Brin returned for chalk, then stayed beside the hatch.
+      One woman followed no one and refused to give a name.
+      With Talla and the four of us, that made eleven bodies.
+      Reddin cleared the cases back and marked a narrow floor.
+      The nameless woman took first place and pulled the clerk around.
 
       [Verse 3]
-      Twenty-seven years and this is the last dance we play,
-      in a rented room, at a berth, to about seven people,
-      and it is exactly as good as the ones in the far hall
-      with four hundred, which nobody would ever believe.
-      A dance is not a number. I have said that for years.
-      Tonight I found out whether I actually meant it.
+      Talla's lower strings kept rubbing under mine like weather.
+      Col threw the fiddle high; the tuned plates answered back.
+      Eleven sets of boots and shoes made more than enough floor.
+      No caller, no paid gate, no coats arranged in hundreds.
+      Just a hired hold at berth and one more night before we finished.
+      I had always said a dance was never measured by the door.
+      With six people turning, I found out I meant it.
 
       [Chorus]
       One more around, and one more after that,
       and the fittings ring back and the crates come in behind.
       Nine metres of nothing underneath this floor
-      and about eleven people having the best night of the fortnight.
+      and eleven people with no reason yet to leave.
 
       [Final Chorus - harmony from the bass chair, the room joining in]
       One more around, and one more after that,
-      and the man with the scarred guitar is not going to stop first.
+      and Talla with the scarred guitar will not be stopping first.
       Nine metres of nothing underneath this floor,
-      and eleven people, and a hold, and that is enough.
+      three tuned fittings, six dancers, five against the wall.
+      One more around. The nameless woman counts us in.
 
       [Outro - held chord, the fittings ringing]
     take: null # M-33 fills this in at the Suno sitting
@@ -491,26 +479,19 @@ songs:
     outro: fade
     target_duration: "4:45"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 138 BPM, midtempo, warm and final. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. One female harmony voice on the choruses only. The complete tune is played twice
-      through with no break between the passes; the second pass is quieter and gradually slower than
-      the first, drifting rather than winding down. Composite fiddle, fretted composite guitar, big
-      woody upright bass, crates and struck metal brushed. Recorded inside a cargo hold: boxy, close
-      and dead. Sixteen seconds of fiddle and bass before the first sung word. Long fade over the
-      second pass.
+      138 BPM warm final reel; low dry male bass-baritone, female chorus, two full passes, slowing fade.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, big finish, cold ending
     lyrics: |
       [Intro - fiddle and bass, sixteen seconds]
 
       [Verse 1]
-      Nobody said this was the last one. Nobody says that.
-      There was no meeting and there was no announcement
-      and there is not going to be a fourth record
-      and every one of the four of us has known that for a month.
-      The co-operative does not know yet. It will find out
-      the way everybody finds anything out on this lane: late,
-      off a carrier wave, from somebody at a berth, in a port hall.
+      Nobody called it final. Nobody wanted that word loose.
+      Four work coats waited by the hatch, four cases by the wall.
+      Ilsa knew. Col knew. Reddin checked the clock and looked away.
+      I had known a month and never found a useful way to say it.
+      Beyond the berth, a Sunday carrier loaded someone else's cargo.
+      The co-operative would hear later on a carrier wave.
+      Inside the hired hold, we counted four and let the fiddle start.
 
       [Chorus]
       Off at the last one with everything you came with,
@@ -519,20 +500,22 @@ songs:
       You put your coat on and you go down the ramp.
 
       [Verse 2]
-      So we played it through and got to the end of it
-      and not one of the four of us stopped playing,
-      and it went round again, quieter, and slightly slower,
-      because stopping would have been somebody's decision
-      and none of us was going to be the person who made it.
-      You can hear the second pass. It is on the record.
+      We reached the held last note; Col kept the bow in motion.
+      Reddin touched the crate again instead of setting down the sticks.
+      Ilsa found the opening underneath the fading chord.
+      I followed half a breath behind and let the first line turn.
+      Nobody looked up. Looking up would ask the question.
+      Round again, a little softer, one slow fraction under.
+      The tune knew where to go when none of us would call the end.
 
       [Verse 3]
-      Twenty-seven years, two halls, four records,
-      one festival, about nine hundred nights and one long argument
-      about whether a band that could not stand still could be recorded,
-      which we settled, in a hold, on two borrowed microphones.
-      Ilsa is going to keep working. Col is going to teach.
-      Reddin says he is going nowhere, which means nothing at all.
+      Afterward, Ilsa swept the chalk and splinters from the deck.
+      Col wound the worn bow loose and shut it in the case.
+      Reddin took the chain apart and hung it by the hatch.
+      He said he had no plans, which meant he had at least three.
+      Ilsa had a loading shift; Col had promised someone lessons.
+      I signed the empty-hold form and returned the borrowed key.
+      Four coats left four hooks bare without a speech between them.
 
       [Chorus]
       Off at the last one with everything you came with,
@@ -543,8 +526,9 @@ songs:
       [Final Chorus - harmony from the bass chair, the second pass, quieter]
       Off at the last one with everything you came with.
       There is a run out on Sunday and it is not ours.
-      Nobody hands you anything. Nobody says well done,
-      and the four of us are still playing, and it is finished.
+      Nobody hands you anything. Nobody says well done.
+      Four people reach the ramp and stop beneath the berth light.
+      Then Ilsa takes the first step and the other three go with her.
 
       [Outro - long fade over the second pass]
     take: null # M-33 fills this in at the Suno sitting

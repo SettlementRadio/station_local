@@ -63,60 +63,58 @@ songs:
     outro: fade
     target_duration: "4:00"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 138 BPM, rolling and restless, midtempo. Male lead vocal,
-      low bass-baritone, unhurried and dry, sitting UNDER the fiddle rather than over it, staying in
-      his own low register throughout and never lifted into a brighter key. One female harmony voice
-      on the choruses only and nothing under the verses. Composite fiddle, fretted composite guitar,
-      big woody upright bass, and a kit built out of wooden cargo crates and struck metal — each hit
-      a different pitch, boxy, ringing, plainly not a drum kit. Recorded inside a loaded cargo hold on
-      two microphones: close, boxy and dead, no room reverberation at all, the crates audible behind
-      everything. Slapback kept very short. Ten seconds of fiddle and crates before the first sung
-      word. Fades.
+      138 BPM rolling skiffle reel; low dry male bass-baritone, female chorus, pitched crate kit, fade.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, room reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, proper drum kit, cold ending
     lyrics: |
       [Intro - fiddle and crates, ten seconds]
 
       [Verse 1]
-      There is a hall at one end of this run and a hall at the other
-      and about nine days of nothing in between the two,
-      and this band exists because somebody had to fill the nine days
-      and there is not a great deal else to do in a loaded hold.
-      Reddin started hitting the cargo about four years ago.
-      Col had a fiddle. I had a guitar and no sense.
+      The near port lets us loose an hour before the lamps go pale.
+      Ilsa folds the manifest and buttons it inside her coat.
+      Below our boots, machine parts lean against a crate of grain,
+      all of it assigned a number and a berth that is not ours.
+      Reddin taps the high box with his heel before we cast off.
+      Col finds the answer on a string and I come in below.
+      The loaded hold begins to knock the time against the hull.
 
       [Chorus]
       Between two ports and neither of them ours,
-      and a manifest signed at one end to be signed again at the other.
-      Everything we own is in a crate with a number on it.
-      Everything we are is somewhere on that list.
+      nine days with a cargo list folded in a coat.
+      Every crate has got a number, every gate another name.
+      We sleep above the load and let the old route pull us on.
+      Between two ports, the middle knows us best.
 
       [Verse 2]
-      The co-operative wanted a record and had no room to make one
-      and no equipment and no money and no obvious idea,
-      so they borrowed two microphones off a label on the coast
-      and sent them out on the run with a note saying be careful.
-      We put one on the fiddle and one in front of me
-      and Reddin played the load, and that is the record.
+      On day three the empty crate beside the hatch rings sharp.
+      The grain box gives us nothing but a dry and wooden thud.
+      Machine parts sound like weather trying bolts along a bulkhead.
+      By day five we know each item by the note beneath our feet.
+      Ilsa sleeps through all of it; Col sleeps with one eye open.
+      Reddin moves his blanket when the highest box gets loud.
+      I lie awake and count the knocks until the dark shifts over.
 
       [Verse 3]
-      You can hear which crate. That is the strange part.
-      The high one near the door is somebody's machine parts.
-      The dead one is grain and the ringing one is empty
-      and by the third day we knew the whole hold by its note.
-      A different load makes a different record entirely.
-      Nobody is ever going to be able to make this one again.
+      At the far port, hands come down and break the rhythm open.
+      Grain goes first, then machine parts, then the hollow box.
+      Every lifted number leaves a colder square of deck.
+      By noon the hold is bare enough to throw our voices back.
+      We do not like the echo. We go up and find the hall.
+      Thursday gives us one good night and someone else's floor.
+      Friday brings another load, and all the notes have changed.
 
       [Chorus]
       Between two ports and neither of them ours,
-      and a manifest signed at one end to be signed again at the other.
-      Everything we own is in a crate with a number on it.
-      Everything we are is somewhere on that list.
+      nine days with a cargo list folded in a coat.
+      Every crate has got a number, every gate another name.
+      We sleep above the load and let the old route pull us on.
+      Between two ports, the middle knows us best.
 
       [Final Chorus - harmony from the bass chair]
-      Between two ports, and the middle is the job,
-      and the middle is where every tune we have got written.
-      Everything we own is in a crate with a number on it,
-      and we are going to unload it on Thursday and go back.
+      Between two ports and neither of them ours,
+      Thursday at the far hall, next week at the near.
+      Every crate has got a number; we are not upon the list.
+      Load the grain and machine parts. Let the hull begin again.
+      Between two ports, the middle keeps us here.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -133,63 +131,58 @@ songs:
     outro: cold
     target_duration: "4:20"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 158 BPM, fast and bright, communal. The track changes key
-      abruptly at the exact halfway point with no modulation and no warning — the second half simply
-      begins in a different key, about a tone away, and stays there. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted into a brighter key even after the change. One female harmony voice on the choruses
-      only. Composite fiddle, fretted composite guitar, big woody upright bass, a kit built out of
-      wooden cargo crates and struck metal, stripped-wire chimes. Recorded inside a loaded cargo hold
-      on two microphones: close, boxy and dead. Fourteen seconds of fiddle before the first sung word.
-      A sixteen-second fiddle break across the key change. Cold stop.
+      158 BPM bright reel; low dry male bass-baritone, female chorus, abrupt mid-song key jump, cold stop.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, smooth modulation, bright or lifted lead vocal, fade-out
     lyrics: |
       [Intro - fiddle, fourteen seconds]
 
       [Verse 1]
-      The hall at the near end has been flat since before I was working.
-      Not badly. Half a tone, maybe, and it has never been fixed
-      because fixing it would mean somebody paying for it
-      and everybody has learned to play there the way it is.
-      The hall at the far end is where it should be, roughly.
-      So the same tune is two tunes depending which week it is.
-      Nine days of hold and cargo in between the two.
+      The near-end hall has leaned a little flat for forty years.
+      Col lays his ear against the bridge and follows where it sits.
+      Nobody repairs what every pair of feet has learned already.
+      The caller lifts one finger; all the longshore couples turn.
+      An old man by the stove comes in before the fiddle does.
+      He stamps the crooked pitch so hard the hanging lamps complain.
+      At midnight he says, "Play ours once more before you load."
 
       [Chorus]
       A dance at either end, and count yourself lucky.
       Most crews get one hall or they get none at all.
       Nine days out, one night, nine days back, one night.
-      That is a whole life and it is not a bad one.
+      Two floors under one tune, and room enough for us.
 
       [Instrumental - fiddle break across the key change, sixteen seconds]
 
       [Verse 2]
-      So we put both of them on the record, one after the other,
-      and did not join them, because they do not join in life.
-      You finish the near end on a Tuesday and you load,
-      and nine days later you unload and it is somewhere else.
-      Col will not modulate into it. He says that is a lie.
-      He says you get there or you do not, and we do not.
+      Then Col lifts the bow, the old pitch ends, and nine days pass.
+      Cargo shifts below us; sleep and meals and watch bells turn.
+      At the far hall every string sits one full step above us.
+      He gives no warning, takes no road between the keys.
+      The first high note lands clean and half the room is moving.
+      A woman near the port door laughs before she joins the line.
+      She says, "You took your time," as if we crossed the floor, not space.
 
       [Chorus]
       A dance at either end, and count yourself lucky.
       Most crews get one hall or they get none at all.
       Nine days out, one night, nine days back, one night.
-      That is a whole life and it is not a bad one.
+      Two floors under one tune, and room enough for us.
 
       [Verse 3]
-      There is a woman at the far end who thinks we are a far-end band
-      and a man at the near end who is certain we are his,
-      and neither of them has ever been to the other hall
-      and neither of them is going to, and both of them are right.
-      A route is not a line between two places on a chart.
-      A route is two rooms full of people who do not know each other.
+      The woman at the far end calls us hers on every Thursday.
+      The old man near the stove says we belong to him.
+      Neither knows the other's hall, its tuning or its weather.
+      Neither plans to spend nine days above a loaded hold.
+      Col says both are right and tightens up the travelling case.
+      A route is not the line somebody printed on a manifest.
+      It is two rooms claiming four tired people in different keys.
 
       [Final Chorus - harmony from the bass chair]
       A dance at either end, and do not tell either of them
       that the tune they think is theirs is somebody else's too.
       Nine days out, one night, nine days back, one night,
-      and a key change in the middle that nobody has explained.
+      shut the fiddle case, change key, and open it again.
+      Two floors under one tune, and both of them are home.
 
       [Outro - cold stop]
     take: null # M-33 fills this in at the Suno sitting
@@ -206,59 +199,60 @@ songs:
     outro: cold
     target_duration: "3:35"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 164 BPM, quick and driving, wry. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. One female harmony voice on the choruses only. Percussion is entirely loose metal
-      fittings, chain, a hatch cover and struck crate — no drum kit of any kind. Composite fiddle,
-      fretted composite guitar, big woody upright bass. Recorded inside a loaded cargo hold on two
-      microphones: close, boxy and dead. Twice during the track everything lurches and the players
-      stop for a moment — a low structural groan, things shifting — and then come back in where they
-      left off. Six seconds before the first sung word. Cold stop.
+      164 BPM driving skiffle reel; low dry male bass-baritone, loose fittings, two ship-lurch stops.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, drum kit, cymbals, bright or lifted lead vocal, fade-out
     lyrics: |
       [Intro - loose fittings and fiddle, six seconds]
 
       [Verse 1]
-      Reddin has never once bought an instrument in his life.
-      He has a chain, a hatch cover, two lengths of stripped wire
-      and whatever is loose in whichever hold we are in,
-      and he has an argument about it that he is bored of making.
-      A kit is a thing you buy and carry and insure.
-      This is a thing that is already here and rings.
+      Reddin kneels beside the hatch and empties both his pockets:
+      two lengths of stripped wire, one bent pin, a coupling ring.
+      He hangs the chain where every little link can answer,
+      tries the cover with his palm, then turns a crate around.
+      The loaded hold has given him a different kit each crossing.
+      He owns two sticks, a blanket and the boots that he arrived in.
+      Everything he needs is loose already and can ring.
 
       [Chorus]
-      Nothing in here is tied down and nothing ever is,
-      and the load shifts about a hand's width every night.
-      That is fine. That is inside tolerance. That is the job.
-      It is also the reason this take has two holes in it.
+      Nothing in here is tied down properly tonight.
+      The load can move a hand's width and still pass at the port.
+      Brace your heel, hold the note, leave room beside the hatch.
+      When the hull says wait, we wait. When it settles, count us in.
 
-      [Verse 2 - the take stops here]
-      There. That is one of them. That is the ship.
-      Everything in this hold moved about that far, at once,
-      and four people stopped playing at exactly the same moment
-      without looking at each other, which you learn in about a year.
-      Ilsa put a hand on the bass. Col lifted the bow off.
-      Nobody said anything. We waited. We came back in.
+      [Break - first ship lurch, fittings slide, band stops]
+
+      [Verse 2]
+      The deck drops half an inch and every crate leans east.
+      Ilsa catches up the bass before its shoulder hits the wall.
+      Col lifts clear; my fretting hand closes hard around the neck.
+      Reddin pins the rolling coupling underneath one boot.
+      No one calls a warning. All four bodies know the movement.
+      We listen while the cargo finds another place to rest.
+      Then Reddin's quiet count comes softly from the sticks.
 
       [Chorus]
-      Nothing in here is tied down and nothing ever is,
-      and the load shifts about a hand's width every night.
-      That is fine. That is inside tolerance. That is the job.
-      It is also the reason this take has two holes in it.
+      Nothing in here is tied down properly tonight.
+      The load can move a hand's width and still pass at the port.
+      Brace your heel, hold the note, leave room beside the hatch.
+      When the hull says wait, we wait. When it settles, count us in.
 
       [Verse 3]
-      The co-operative wanted us to do it again clean.
-      We said there is no clean. There is no such run.
-      Every crew on the lane has a hold that moves at night
-      and every one of them has stopped what they were doing and waited.
-      Leave the holes in. The holes are what it is.
-      They left the holes in, which is why we stayed with them.
+      Four bars later, something heavy tests the forward strap.
+      Chain strikes chain, the hatch complains, the floor goes light.
+      Again our hands come off together in the middle of the turn.
+      Beyond the bulkhead, watch crew boots go running past.
+      Ilsa starts to laugh but keeps one hand upon the bass.
+      Reddin waits until the last loose fitting quits its travel,
+      taps the cover twice, and brings us back exactly where we left.
+
+      [Break - second ship lurch, low groan, then silence]
 
       [Final Chorus - harmony from the bass chair]
-      Nothing in here is tied down and nothing ever is,
-      and the second one is coming in about four bars.
-      That is fine. That is inside tolerance. That is the job.
-      There it is. Wait. Right — back in.
+      Nothing in here is tied down properly tonight.
+      Neither are the four of us, and still we know the run.
+      Brace your heel, find the note, leave room beside the hatch.
+      When the hull says wait, we wait. Now Reddin counts us in.
+      Chain, cover, crate and wire all meet upon the one.
 
       [Outro - cold stop]
     take: null # M-33 fills this in at the Suno sitting
@@ -275,60 +269,58 @@ songs:
     outro: fade
     target_duration: "4:15"
     prompt: >-
-      Skiffle and jump blues at a slow reel tempo, 120 BPM, warm and slow, longing. Male lead vocal,
-      low bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register
-      and never lifted into a brighter key. One female harmony voice on the choruses, recorded on a
-      separate microphone in a different part of the space — audibly further away, drier, smaller,
-      clearly not beside him. Composite fiddle, fretted composite guitar, big woody upright bass, a
-      kit built out of wooden cargo crates brushed quietly, stripped-wire chimes. Recorded inside a
-      loaded cargo hold on two microphones: close, boxy and dead. Twelve seconds of fiddle and guitar
-      before the first sung word. Fades.
+      120 BPM warm slow reel; low dry male bass-baritone, distant female chorus, boxy cargo hold, fade.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, blended or close-stacked harmony, cold ending
     lyrics: |
       [Intro - fiddle and guitar, twelve seconds]
 
       [Verse 1]
-      Nine days out and nine days back and one night in between
-      and the one night is the whole of it and everybody knows.
-      There is a woman at the far end who has a shift pattern
-      that does not care in the slightest what a route does,
-      and about one time in three she is working the late berth
-      on a freight crew that is not ours, when we land,
-      and we get eleven minutes at a gate and that is the month.
+      Nine days out, nine back, one night in between
+      and the one night holds the answer neither of us sends.
+      Her shift board takes no notice of a hauler running late.
+      About one time in three, she works the far-end berth
+      with another freight crew unloading under yellow lamps.
+      I find her at the gate with tally chalk across one sleeve.
+      Eleven minutes by the clock, and that becomes the month.
 
       [Chorus]
       She waits at the far end, or she does not wait,
-      and I have never once asked her which of those it is.
+      I have never asked which one is true.
       There is no version of this where I am there more.
       There is no version of this where she is there less.
+      Nine days out, and let the one night answer me.
 
       [Verse 2]
-      Ilsa is singing this from about nine feet away
-      because the two microphones are where the two microphones are
-      and there was no room to put two people at one of them
-      with the cargo where it is and the fiddle where it has to be.
-      So she sounds far off, which nobody planned,
-      and which is the best accident on this whole record.
+      When she is there, she smells of cable grease and rain.
+      She checks the time behind me while I try not to check hers.
+      We trade the names of broken valves and people changing shifts.
+      I tell her what the cargo did on day six in the dark.
+      She tells me who got married, who got fined, whose berth moved east.
+      Then somebody lifts the gate and both our crews begin to call.
+      She puts one cold hand on my cheek and walks back to her load.
 
       [Chorus]
       She waits at the far end, or she does not wait,
-      and I have never once asked her which of those it is.
+      I have never asked which one is true.
       There is no version of this where I am there more.
       There is no version of this where she is there less.
+      Nine days out, and let the one night answer me.
 
       [Verse 3]
-      Every crew has a version of this and they all sound the same
-      and they are all completely different and none of them travel.
-      You cannot explain it to somebody who lives in one place.
-      They think it is romantic and it is mostly arithmetic.
-      Nine and nine and one, and one is not enough,
-      and one is what there is, and one is a great deal.
+      Once I said I might leave the route and find a room nearby.
+      She asked which work I meant to do and where I meant to sleep.
+      I had no answer past the part where distance disappeared.
+      She smiled and read the chalk marks drying on her cuff.
+      Nine days out and nine days back is mostly arithmetic.
+      One night is not enough; one night is what there is.
+      We have kept it seven years by never calling it a promise.
 
       [Final Chorus - harmony from the far microphone]
       She waits at the far end, or she does not wait,
-      and there is a hall on Thursday and I will know by then.
+      and the relay says our Thursday landing may be late.
       There is no version of this where I am there more,
       and she has never once asked me to find one.
+      Nine days out. Let the far gate answer me.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -345,55 +337,58 @@ songs:
     outro: fade
     target_duration: "3:50"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 162 BPM, fast and defiant, tired. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. One female harmony voice on the choruses only. Composite fiddle played with an
-      unorthodox bowing technique — the accent falling on the wrong half of the bar, a slight limp in
-      the rhythm, scratchy attack, never smoothed out — taking a fourteen-second instrumental break
-      exactly as it plays everywhere else. Fretted composite guitar, big woody upright bass, a kit
-      built out of wooden cargo crates and struck metal. Recorded inside a loaded cargo hold on two
-      microphones: close, boxy and dead. Eight seconds before the first sung word. Fades.
+      162 BPM tired fast reel; low dry male bass-baritone, crooked-accent fiddle break, crate kit, fade.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, smooth or conservatory fiddle technique, bright or lifted lead vocal, cold ending
     lyrics: |
       [Intro - fiddle and crates, eight seconds]
 
       [Verse 1]
-      Col learned the fiddle off recordings played in a hold
-      by a man who is dead now and who played it wrong himself,
-      and he holds the bow like somebody carrying a hot pan
-      and every single review of this band has mentioned it.
-      Somebody from the co-operative asked him to play it properly.
-      He said this is properly. This is how I was taught.
+      Col learned from old recordings played above a loaded hold,
+      watching one dead player's hand go crooked in the frame.
+      He copied every angle with a mop handle and some twine,
+      palm turned up as if he carried supper from the stove.
+      No teacher came to straighten him; no teacher knew the route.
+      By sixteen he could hold a near-port floor until the lamps went out.
+      The bow still lands a little late and pulls the bar behind it.
 
       [Chorus]
-      A short run and a long night, and back before the week is out,
-      and the accent lands where the accent lands, and there it is.
-      There is nobody out here to tell any of us how it is done.
-      That is the good half and the bad half of the whole business.
+      Short run and a long night, freight dust on the floor.
+      Let the accent fall behind; the working feet will find it.
+      Straight lines look fine printed on a manifest at noon.
+      Nothing carries cargo through the dark by moving straight.
 
       [Verse 2]
-      What it does is put a limp in the middle of the bar
-      and a floor that has never heard it does not know what to do
-      and a floor that has heard it once is on it immediately
-      because a limp is easier to dance to than a straight line.
-      Ask anybody who has ever worked a real load:
-      nothing that moves properly moves evenly.
+      A co-operative man came down the ramp before a Thursday dance,
+      heard the first eight bars and raised one careful hand.
+      "Could you bow it conventionally, just once, before we start?"
+      Col looked past him to the couples stacking coats beside the wall.
+      "This is convention where I work," he said, and checked the tuning.
+      Ilsa hid a laugh behind the shoulder of the bass.
+      Reddin struck the crate and all the port hall took the floor.
 
       [Instrumental - fiddle break, unorthodox bowing, fourteen seconds]
 
+      [Chorus]
+      Short run and a long night, freight dust on the floor.
+      Let the accent fall behind; the working feet will find it.
+      Straight lines look fine printed on a manifest at noon.
+      Nothing carries cargo through the dark by moving straight.
+
       [Verse 3]
-      There are people in the core who learn this from a teacher
-      in a room, from paper, at an hour agreed in advance,
-      and they are better than Col by every measure that exists
-      and not one of them has made anybody dance in a port hall.
-      He has never had a lesson. He has had about nine hundred nights.
-      Those are two different instruments with the same name.
+      The first pair miss the crooked beat and laugh against each other.
+      The second pair catch hold; the third are waiting when it comes.
+      Soon the whole floor leans together where the bow hand drags.
+      Boots that spent nine days correcting every shift beneath a load
+      know a useful kind of wrong the moment that they feel it.
+      The co-operative man stays planted by the coats for half the night.
+      Near closing, Col looks over. Even he is stepping late.
 
       [Final Chorus - harmony from the bass chair]
-      A short run and a long night, and the far hall on Thursday,
-      and a bow held wrong by a man who will not be corrected.
-      There is nobody out here to tell any of us how it is done,
-      and if there were, this crew would not have listened.
+      Short run and a long night, far berth on Thursday.
+      Let the accent fall behind; the whole floor comes to meet it.
+      Straight lines look fine printed on a manifest at noon.
+      Col shuts the travelling case. Nobody asks him twice.
+      Load at first light. Keep the crooked hand exactly where it is.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -410,59 +405,56 @@ songs:
     outro: sustain
     target_duration: "3:45"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 148 BPM, brisk and plain, satisfied. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. One female harmony voice on the choruses only. Underneath the first verse, a
-      different voice reads a list of cargo items and numbers aloud — flat, bored, unamplified,
-      off-microphone, not in time with the music and not stopping for it. Composite fiddle, fretted
-      composite guitar, big woody upright bass, a kit built out of wooden cargo crates and struck
-      metal, stripped-wire chimes. Recorded inside a loaded cargo hold on two microphones: close,
-      boxy and dead. Four seconds before the first sung word. Ends on a held chord.
+      148 BPM brisk skiffle reel; low dry male bass-baritone, manifest under verse one, held ending.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, large hall reverb, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, rapped or rhythmic spoken delivery, cold ending
     lyrics: |
       [Intro - band, four seconds]
 
       [Verse 1 - a manifest being read aloud underneath]
-      That is the load going off and that is a man reading it
-      and he started before we did and he is not going to stop
-      and there is no point asking him, because he has a form
-      and the form is why anybody on this run gets paid at all.
-      Four hundred and eleven items and he says every one.
-      We put a tune under it because there was nothing else to do.
+      The clerk begins at item one before the hatch is open,
+      flat as rain and twice as steady, pencil tucked behind one ear.
+      Couplings, grain, machine parts, sealant, thirty coils of rope.
+      Four hundred and eleven lines, and he intends to read them all.
+      Reddin finds the pace against a crate marked forty-seven.
+      Col slips round the numbers; Ilsa checks them as they pass.
+      I wait until the clerk says load, then give the word a tune.
 
       [Chorus]
       Sign at the top, sign at the bottom, sign for the load.
       Somebody has to be the person whose name is on it.
       That is the whole of the freight business in one line.
-      Everything else is weather and argument and rope.
+      Everything else is weather, missing numbers, rope and time.
 
       [Verse 2]
       Ilsa signs. Ilsa has always signed. Nobody voted.
-      She is the one of the four of us who reads a list properly
-      and does not go down it going yes, yes, yes, fine,
-      which is what the rest of us do and what gets crews fined.
-      There is a berth in the near port where they check twice
-      because of a crew who signed for a hold nobody had loaded.
+      She follows every item with one finger down the page.
+      Col says yes to anything; Reddin says it will be fine.
+      I lose my place whenever someone opens up the gate.
+      At the near-port berth, they check our manifest twice
+      because one crew signed a winter hold that no one ever loaded.
+      Ilsa found the empty line before the port could find the fine.
 
       [Verse 3]
-      The good part is the twenty minutes after the signing.
-      The load is somebody else's problem, formally, in writing.
-      Whatever is in it is now the port's and not ours
-      and there is a hall about a mile away and it is Thursday.
-      Nine days of that hold and we are done with it,
-      and Reddin is already taking the kit apart.
+      The best part is the twenty minutes after signing.
+      Cargo becomes somebody else's trouble in blue ink.
+      Nine days of listening for every strap and shifting corner,
+      then the port owns every coupling, grain sack, coil and crate.
+      Reddin takes the kit apart and puts the chain back on the hatch.
+      Col has found the hall lamps burning one long mile away.
+      Ilsa blots her name, folds up the copy, and we go.
 
       [Chorus]
       Sign at the top, sign at the bottom, sign for the load.
       Somebody has to be the person whose name is on it.
       That is the whole of the freight business in one line.
-      Everything else is weather and argument and rope.
+      Everything else is weather, missing numbers, rope and time.
 
       [Final Chorus - harmony from the bass chair]
       Sign at the top, sign at the bottom, and go.
-      Six tunes, one hold, two microphones and a run.
-      That is the whole of the freight business in one line,
-      and the whole of this record, and it is finished.
+      Shut the hold, return the pencil, leave the gate behind.
+      Somebody has to be the person whose name was on it.
+      Ilsa has the signed-off copy buttoned in her coat.
+      Thursday in the port hall. Friday, load again.
 
       [Outro - held chord]
     take: null # M-33 fills this in at the Suno sitting

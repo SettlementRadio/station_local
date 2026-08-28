@@ -70,59 +70,58 @@ songs:
     outro: cold
     target_duration: "3:55"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 164 BPM, fast and bright, driving. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted into a brighter key. One female harmony voice on the choruses only. A real drum kit
-      — proper snare, kick and toms, played with sticks — for the first time on this band's records,
-      opening with a distinctive syncopated figure. Composite fiddle, fretted composite guitar, big
-      woody upright bass. Recorded in a large transfer hall: open, roomy, some natural space around
-      everything, no boxy hold sound anywhere. Twelve seconds of the drum figure and fiddle before the
-      first sung word. Cold stop.
+      164 BPM bright skiffle reel; low dry male bass-baritone, female chorus, real kit figure, cold stop.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, crate percussion, boxy dead room, fade-out
     lyrics: |
       [Intro - drum figure and fiddle, twelve seconds]
 
       [Verse 1]
-      Seventeen years he has played that on a hatch and a chain
-      and about four hundred people know it before the second bar
-      and not one of them has ever seen it written anywhere
-      because there was nothing to write and nobody to write it for.
-      Then a man from the co-operative brought a kit into the room
-      and asked him, politely, whether he could do it on that.
+      The co-operative rolled a proper kit across the transfer floor,
+      kick, two toms and polished snare, each one inside a case.
+      Reddin walked around it twice and would not take his coat off.
+      Seventeen years his opening lived on hatch cover and chain.
+      Four hundred dancers knew the figure by the second bar,
+      but no one knew where either hand was meant to fall.
+      He set his two old sticks across the shining snare and breathed.
 
       [Chorus]
       Everything not tied down is going to move,
-      and the ones who know that load a hold in a certain way.
-      You do not stop things moving. That is not the trade.
-      You decide in advance which way you would like them to go.
+      so choose the wall, leave room, and know which strap can take it.
+      You cannot stop a cargo when the whole deck turns beneath it.
+      You decide which way it travels, then you let it go.
+      Everything not tied down, including us, will move.
 
       [Verse 2]
-      He could. Obviously he could. He did it in one.
-      And it is cleaner and it is louder and it carries,
-      and every person who has heard both of them says the same:
-      the new one is better and the old one was ours.
-      Both of those are true and neither is worth arguing.
-      He has kept the chain. It is on the cart. It is coming back.
+      First the kick took what the crate had always swallowed.
+      Then the snare threw every crooked little stroke across the hall.
+      Col came in too early, laughed, and started from the top.
+      Ilsa felt the cleaner bottom through the boards beneath her bass.
+      It carried farther than the chain had ever carried,
+      past the loading gate to workers stacking freight outside.
+      Reddin played it once, then checked the cart to find his chain.
 
       [Verse 3]
-      What the co-operative bought was the shared press format
-      and what the shared press format buys is other people,
-      settlements down the lane that we have never worked
-      hearing a figure a man invented in a hold in eighty-three.
-      That is not nothing. That is a very great deal.
-      It cost us the crates and I am still deciding about it.
+      At closing, someone laid a grey sheet over all the drums.
+      The proper kit belonged to everybody, which meant it stayed.
+      Our hatch cover waited nine days down the relay road.
+      Our coupling ring and stripped wire waited in the hold.
+      Reddin coiled the old chain underneath his travelling case,
+      left the polished snare asleep beside the transfer wall,
+      and said, "A better tool is good. It does not make it mine."
 
       [Chorus]
       Everything not tied down is going to move,
-      and the ones who know that load a hold in a certain way.
-      You do not stop things moving. That is not the trade.
-      You decide in advance which way you would like them to go.
+      so choose the wall, leave room, and know which strap can take it.
+      You cannot stop a cargo when the whole deck turns beneath it.
+      You decide which way it travels, then you let it go.
+      Everything not tied down, including us, will move.
 
       [Final Chorus - harmony from the bass chair]
       Everything not tied down is going to move,
-      including four people who were doing very well as they were.
-      You do not stop things moving. That is not the trade,
-      and this one is moving, and we are on it, and here we go.
+      polished snare or length of chain or case beside the door.
+      You cannot stop a cargo when the whole deck turns beneath it.
+      Reddin counts us in and lets the new kit carry.
+      Then he lifts the old chain with us when we go.
 
       [Outro - cold stop]
     take: null # M-33 fills this in at the Suno sitting
@@ -139,60 +138,60 @@ songs:
     outro: fade
     target_duration: "4:05"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 140 BPM, rolling and hopeful, midtempo. Male lead vocal,
-      low bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register
-      and never lifted into a brighter key. One female harmony voice on the choruses only. The
-      arrangement opens outward at each chorus — fretted composite guitar moving up, composite fiddle
-      staying put, more space rather than more force. Big woody upright bass, drum kit brushed.
-      Recorded in a large transfer hall: open and roomy. Eight seconds of guitar before the first sung
-      word. Four bars of unaccompanied fiddle after the second chorus. Fades.
+      140 BPM hopeful skiffle reel; low dry male bass-baritone, female chorus, widening arrangement, fade.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, crate percussion, boxy dead room, cold ending
     lyrics: |
       [Intro - guitar, eight seconds]
 
       [Verse 1]
-      There is a settlement about four stops past our far end
-      that I have flown over and never once stood in
-      and there is going to be a copy of this in a rack there
-      in about a season, if the format does what they say.
-      I am singing this before anybody knows whether it works.
-      That is a strange thing to do and I have done it anyway.
+      A clerk wraps one fresh copy in a square of cargo paper,
+      writes a settlement four stops beyond our far-end hall.
+      I have watched its lights go under us and never stood there.
+      We have no berth, no freight crew waiting, no familiar gate.
+      The new press is supposed to make the distance smaller.
+      Nobody in this transfer hall can swear that it will work.
+      The clerk ties off the parcel and sets Thursday by the name.
 
       [Chorus]
       Past the end of the route and out the other side,
-      to rooms with our tunes in them and none of us in the room.
-      Seventeen years of two halls and a hold in between
-      and now a thing with our names on going somewhere on its own.
+      into one more room where none of us has worked.
+      Seventeen years of two known halls and one known hold,
+      now a little pressed thing travels farther than we do.
+      Past the end of the route, if the Thursday run gets through.
 
       [Verse 2]
-      A record is a strange object for a crew to make.
-      Everything else we have ever done, we were there for.
-      You load it, you sign it, you take it, you hand it over.
-      This one goes off on its own and does the work itself
-      and arrives somewhere we have no berth and no contact
-      and starts a conversation we are not part of.
+      Everything we move, we count ourselves and hand across.
+      We know the loading strap, the pilot, and the time it leaves.
+      This small parcel rides beneath somebody else's manifest,
+      changes hands at sidings where our names mean nothing yet.
+      Maybe someone drops it. Maybe rain gets through the wrapping.
+      Maybe one night, four stops down, a hall clerk opens it,
+      and hears Col's crooked bow before she knows his face.
 
       [Turnaround - fiddle alone, four bars]
 
       [Verse 3]
-      Ilsa says that is exactly what a manifest does
-      and has done for four hundred years, and she is right,
-      and I said a manifest is not a tune, and she said
-      it is a list of what was in the hold and so is this.
-      There is no arguing with her when she is like that.
-      There is a copy going out on the Thursday run.
+      Ilsa says a manifest has always done exactly this:
+      told a stranger what a hold contained after the hold was gone.
+      I say lists do not dance. She knots the parcel tighter.
+      "Neither do you," she says, and Col nearly drops the case.
+      Reddin signs the corner where the shipping clerk has pointed.
+      I touch our four small names and take my hand away.
+      The Thursday carrier loads it underneath a coil of wire.
 
       [Chorus]
       Past the end of the route and out the other side,
-      to rooms with our tunes in them and none of us in the room.
-      Seventeen years of two halls and a hold in between
-      and now a thing with our names on going somewhere on its own.
+      into one more room where none of us has worked.
+      Seventeen years of two known halls and one known hold,
+      now a little pressed thing travels farther than we do.
+      Past the end of the route, if the Thursday run gets through.
 
       [Final Chorus - harmony from the bass chair]
       Past the end of the route and out the other side,
-      and if it comes to nothing we will have lost a fortnight.
-      Seventeen years of two halls and a hold in between.
-      Somebody four stops down is going to put it on.
+      past our contacts, past the lanes our own work knows.
+      If it comes to nothing, Thursday brings another load.
+      If it reaches one warm room, we may never hear of it.
+      The carrier shuts the door. The little parcel goes.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -209,58 +208,58 @@ songs:
     outro: fade
     target_duration: "3:50"
     prompt: >-
-      Skiffle and jump blues at an easy reel tempo, 128 BPM, warm and wry, midtempo. Male lead vocal,
-      low bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register
-      and never lifted. One female harmony voice on the choruses only. The most spacious arrangement
-      on the record: instruments well apart, natural air between them, quiet. Composite fiddle,
-      fretted composite guitar, big woody upright bass, drum kit brushed lightly, stripped-wire
-      chimes. Recorded in a large transfer hall, open and roomy. Six seconds before the first sung
-      word. Fades.
+      128 BPM warm roomy reel; low dry male bass-baritone, female chorus, sparse brushed kit, soft fade.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, crate percussion, boxy dead room, dense or compressed mix, cold ending
     lyrics: |
       [Intro - band, six seconds]
 
       [Verse 1]
-      Ilsa walked in on the first morning and stood still
-      and looked at the far wall for about a quarter of a minute
-      and said, to nobody, that it was a room you could walk out of,
-      and then went and put the bass down and said nothing else.
-      Seventeen years of making records in a hold.
-      A hold has one way out and it is not usually open.
+      Ilsa walked in first and stopped beneath the leaking sign,
+      looked from the north door to the loading door behind us.
+      For fifteen quiet seconds she said nothing to the room.
+      Then, mostly to the bass case, "You can walk out of this one."
+      Seventeen years inside a loaded hold had taught us one exit,
+      usually shut behind the cargo, usually someone else's choice.
+      She put the bass down halfway from both doors and smiled.
 
       [Chorus]
       A room you can leave. Imagine that. A room you can leave.
-      Two of them, at either end, and both of them work.
-      You can go out for air in the middle of a take
-      and come back in, and the take is still there.
+      Two working doors and neither one is blocked.
+      Step outside for air, come back when you are ready.
+      Nobody with a manifest decides when it is locked.
+      A room you can leave, and still choose to come back in.
 
       [Verse 2]
-      It sounds like a small thing and it is not a small thing.
-      You play differently in a room you cannot get out of.
-      Everything is a bit tighter and a bit more urgent
-      and nobody ever says why, and everybody knows why.
-      Take that away and the band came apart for two days
-      and had to learn to play in a place with no pressure on it.
+      Reddin set the snare too far from Ilsa on the first day.
+      Col kept walking backward till the fiddle sounded thin.
+      I could not feel the bass through all that open floor between us.
+      Every count arrived with half a breath too much around it.
+      We drew chalk marks where our boots had stood inside the hold,
+      moved them out one board at a time, then tried the turn again.
+      By evening, four small islands found a way to share the air.
 
       [Verse 3]
-      Reddin hated it. Reddin has hated every good thing
-      that has ever happened to this band, on principle, for a week,
-      and then quietly decided it was his idea all along.
-      Col did not notice. Col has never noticed a room.
-      I stood in one of the doorways on the second night
-      and could see the berth from it, and that was new.
+      Reddin hated both the doors and said they spoiled the bottom.
+      Two days later, he was telling us where each should stay.
+      Col did not notice. Col can miss a bulkhead if the tune is good.
+      Ilsa walked outside three times and came back with hot tea.
+      I stood beneath the north frame on the second evening,
+      saw our berth lights through the rain beyond the transfer gate,
+      and felt no hand behind me waiting to seal the hatch.
 
       [Chorus]
       A room you can leave. Imagine that. A room you can leave.
-      Two of them, at either end, and both of them work.
-      You can go out for air in the middle of a take
-      and come back in, and the take is still there.
+      Two working doors and neither one is blocked.
+      Step outside for air, come back when you are ready.
+      Nobody with a manifest decides when it is locked.
+      A room you can leave, and still choose to come back in.
 
       [Final Chorus - harmony from the bass chair]
-      A room you can leave, and a woman who noticed first,
-      after seventeen years of being sealed in with the cargo.
-      You can go out for air in the middle of a take.
-      Nobody in this band has ever been able to do that.
+      A room you can leave, and Ilsa noticed first.
+      Seventeen years with cargo pressed against the only hatch.
+      Step outside for air; leave both doors standing open.
+      Hear the bass come through the gap and choose to turn back.
+      A room you can leave, and four people staying late.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -277,62 +276,58 @@ songs:
     outro: sustain
     target_duration: "4:25"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 166 BPM, fast and bright, competitive. Male lead vocal,
-      low bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register
-      and never lifted. One female harmony voice on the choruses only. TWO composite fiddles, audibly
-      two different players and two different trainings: one scratchy and unorthodox with the accent
-      in the wrong half of the bar, one clean, quick and ornamented. They trade a twenty-second break
-      in four-bar exchanges that get shorter as it goes. Fretted composite guitar, big woody upright
-      bass, drum kit with sticks. Recorded in a large transfer hall, open and roomy. Sixteen
-      seconds of the two fiddles before the first sung word. Ends on one long note held by both
-      fiddles together, the only place they agree.
+      166 BPM competitive reel; low dry male bass-baritone, two clashing fiddles, short trades, held end.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, matched or unison fiddles, crate percussion, fade-out, cold ending
     lyrics: |
       [Intro - two fiddles, sixteen seconds]
 
       [Verse 1]
-      He asked her for a bow. That is the whole story.
-      She had two in the case and she was using one of them
-      and his has been rehaired about four times too often
-      and he asked, at the door, on the second morning, and she said no.
-      Not unkindly. Not rudely. She said no and went in.
-      He has told that story in every interview for a decade.
+      Col met Nessa Dray beside the north door second morning.
+      She had two good bows laid straight inside an open case.
+      His own hair hung in gaps and one loose strand kept catching.
+      He pointed to the spare and asked if he could use it once.
+      Nessa looked at his worn bow, then looked him in the face.
+      "No," she said, not cruelly, and carried both inside.
+      Col stood in the doorway like the weather had accused him.
 
       [Chorus]
       Two bows on the one tune and one of them is better
-      and both of us know which and neither of us will say it.
+      and everybody knows which; nobody will say it.
       Four bars, four bars, two bars, two bars, one.
-      That is a conversation and not one of us is being polite.
+      One clean hand, one crooked hand, and neither giving ground.
 
       [Instrumental - two fiddles trading, shortening exchanges, twenty seconds]
 
       [Verse 2]
-      What she actually said, later, in the transfer hall,
-      is that a bow is a person's hand and you do not lend a hand,
-      and that if his was worn out then he should have it done,
-      and that she would tell him where, and she did, and he has not.
-      Col thinks she was making a point about training.
-      She was making a point about a rehair costing four days' work.
+      Halfway through the break, her clean note crossed his rough one.
+      He leaned late; she climbed above; he caught her on the turn.
+      At supper Nessa said, "A bow becomes a person's hand.
+      You do not lend your hand because another wore his through."
+      She named a repairer three stops down the relay road.
+      Col asked the price. She said it cost four working days.
+      He wiped his own old bow and did not ask again.
 
       [Chorus]
       Two bows on the one tune and one of them is better
-      and both of us know which and neither of us will say it.
+      and everybody knows which; nobody will say it.
       Four bars, four bars, two bars, two bars, one.
-      That is a conversation and not one of us is being polite.
+      One clean hand, one crooked hand, and neither giving ground.
 
       [Verse 3]
-      She goes out on Sunday down the relay road to somewhere else
-      and there is a session player's whole life in one sentence:
-      four days here, nine days on a run, a hall, a berth,
-      forty bands who will all say she made their record.
-      He will still be here. He will be here in thirty years.
-      Both of those are careers. Only one of them is ours.
+      Sunday, Nessa buckled both good bows inside the case.
+      Her berth call sounded while the rain came through the roof.
+      Col carried one end of her trunk as far as the relay gate.
+      She asked if he would send the old bow down for proper hair.
+      He said the loose strand only caught when he was showing off.
+      She said, "You show off every night," and shouldered up the case.
+      At the gate they played one final bar against the weather.
 
       [Final Chorus - harmony from the bass chair]
-      Two bows on the one tune, and the good one leaves on Sunday.
+      Two bows on the one tune, and both good bows leave Sunday.
       Four bars, four bars, two bars, two bars, one.
-      That is a conversation and not one of us is being polite,
-      and he is going to be talking about it until he stops.
+      One clean hand, one crooked hand, and neither giving ground.
+      Nessa takes the relay. Col keeps every fraying strand.
+      Both hold one long note before the transfer doors shut.
 
       [Outro - one long note held by both fiddles]
     take: null # M-33 fills this in at the Suno sitting
@@ -349,58 +344,56 @@ songs:
     outro: fade
     target_duration: "4:00"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 150 BPM, deep and driving, plain. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. NO harmony or backing vocal anywhere on this track. Upright bass played by a
-      plainly different player — rounder, more even, less percussive, sitting further back — and
-      carrying the whole bottom of the arrangement. Composite fiddle, fretted composite guitar, drum
-      kit with brushes. Recorded in a large transfer hall, open and roomy. Ten seconds of bass and
-      fiddle before the first sung word. Fades.
+      150 BPM deep skiffle reel; low dry male bass-baritone alone, round guest upright bass, roomy fade.
     exclude: harmony vocals, backing vocals, second voices, electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, crate percussion, cold ending
     lyrics: |
       [Intro - bass and fiddle, ten seconds]
 
       [Verse 1]
-      Ilsa wrote the low part of this about nine years ago
-      in a key that suited her voice and not the fiddle,
-      and at some point somebody wrote a chart for it
-      and moved it up a tone to make the fiddle easier.
-      Nobody remembers who. It has been played that way since.
-      Every one of us had forgotten there was another one.
+      Ilsa made the low line nine years back inside a winter hold,
+      set it where her voice sat warm beneath the scrape of Col's old bow.
+      Someone later copied it and raised the ink one tone,
+      easier for the fiddle, wrong for where the floor began.
+      The paper travelled with us till the error looked official.
+      Ilsa read it in the transfer hall and shut the bass case hard.
+      She said, "If that is what you wrote, find someone else to hold it."
 
       [Chorus]
       Hold the low end. That is the entire instruction.
-      Everything above it can go where it wants to go.
-      Somebody has to be the floor of this arrangement.
-      Nobody ever thanks the floor and the floor knows.
+      Let the fiddle climb; let every loose thing argue.
+      Somebody has to be the floor beneath the cargo.
+      Nobody thanks the floor. The floor still bears the load.
 
       [Verse 2]
-      Oren Saye came in for one afternoon off a route
-      and read the chart once and put it down on the stand
-      and played the whole thing a tone below what was written,
-      and when we stopped he said, this is her key, isn't it.
-      He had played on something of hers about eleven years back.
-      He had heard it once, in a hall, and he had it.
+      Oren Saye came off a midday relay with a borrowed bass.
+      He read the chart one time, then set the paper face down.
+      On the second pass he dropped the opening a tone.
+      Every board beneath us found the weight it had been missing.
+      "This was Ilsa's key," he said, before we asked him why.
+      Eleven years before, he heard her play it at a port hall,
+      once through, after midnight, with a freight crew at the door.
 
       [Chorus]
       Hold the low end. That is the entire instruction.
-      Everything above it can go where it wants to go.
-      Somebody has to be the floor of this arrangement.
-      Nobody ever thanks the floor and the floor knows.
+      Let the fiddle climb; let every loose thing argue.
+      Somebody has to be the floor beneath the cargo.
+      Nobody thanks the floor. The floor still bears the load.
 
       [Verse 3]
-      There is no harmony on this one, which is not an accident.
-      Ilsa is not on it. She would not play her own key
-      with a man who had never met her getting it right first time,
-      and went out to the berth and came back when it was done.
-      She has not said anything about it since and she will not.
-      It is the best track on the record and she is not on it.
+      Ilsa heard the lower opening from outside the north door.
+      She stayed beside the berth lights till the final turn was done.
+      Oren wiped the borrowed strings and waited by the case.
+      When she came back in, he offered her the chart face down.
+      She left the paper where it was and checked the tuning peg.
+      "Third note drags," she said. He nodded. "Yours did too."
+      She almost smiled, then took her coat and carried in the bass.
 
       [Final Chorus - no harmony, lead alone]
       Hold the low end and let the rest of it argue.
-      Somebody has to be the floor of this arrangement.
-      Nobody ever thanks the floor and the floor knows,
-      and the woman who wrote this floor was out at the berth.
+      Somebody has to be the floor beneath the cargo.
+      Nobody thanks the floor. The floor remembers weight.
+      Oren has the old key; Ilsa has the harder silence.
+      One low voice above them, with no answer coming in.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -417,59 +410,56 @@ songs:
     outro: fade
     target_duration: "3:40"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 158 BPM, cold and quick, restless. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. One female harmony voice on the choruses only. Halfway through the track the room
-      changes audibly — the reverberation, the distance and the tone of the whole band shift at once,
-      as though the players have moved to a different corner of the building mid-take, and it is never
-      corrected. Water dripping is faintly audible in the first half. Composite fiddle, fretted
-      composite guitar, big woody upright bass, drum kit with sticks. Recorded in a large transfer
-      hall. Four seconds before the first sung word. Fades.
+      158 BPM restless reel; low dry male bass-baritone, female chorus, room shifts, water drips, fade.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, consistent room tone, crate percussion, cold ending
     lyrics: |
       [Intro - band, four seconds]
 
       [Verse 1]
-      There is water coming through the roof at the north corner
-      and it has been coming through the roof for about a decade
-      and the transfer hall is not going to be repaired this year
-      because the cargo it holds does not mind and people do not stay.
-      We are people. We stayed. There were buckets by ten.
-      By midnight there were four of them and we had moved twice.
+      Water finds the north corner ten minutes after dark.
+      First one drop beside the snare, then six across the floor.
+      Ilsa sets a bucket down without releasing the bass line.
+      Reddin shifts the kick two boards and keeps the figure running.
+      Col moves under the loading sign; I follow with the lead.
+      At ten, the first dry corner has a silver line of rain.
+      We lift the cables, count to four, and move again.
 
       [Chorus]
       Weather in the transfer hall and weather on the coast
-      and a roof with a settlement's worth of storm season on it.
-      Move the bass. Move the kit. Move it all again.
-      Nobody is stopping. There is a run out on Sunday.
+      with a settlement's storm season pressing on the roof.
+      Move the bass, move the kit, keep the fiddle off the water.
+      Sunday has a loaded run. Tonight we find the dry.
 
       [Verse 2 - the room changes here]
-      There. That is the third move and you can hear it happen.
-      Everything gets slightly closer and slightly drier
-      and the fiddle is suddenly in front instead of beside
-      and the take carried on because nobody wanted to lose it.
-      The co-operative asked whether we would do it clean.
-      We have been asked that before. The answer is the same.
+      Near midnight, the third corner fails above the fiddle.
+      Col tucks bow and case beneath his arm and crosses fast.
+      Ilsa walks the bass; I drag the stand; Reddin rolls the floor tom.
+      We settle by the east wall close enough to share one lamp.
+      Here the roof is lower and every wooden note comes back.
+      The fiddle stands in front of me instead of at my shoulder.
+      Four wet coats steam beside the last dry stack of cargo.
 
       [Chorus]
       Weather in the transfer hall and weather on the coast
-      and a roof with a settlement's worth of storm season on it.
-      Move the bass. Move the kit. Move it all again.
-      Nobody is stopping. There is a run out on Sunday.
+      with a settlement's storm season pressing on the roof.
+      Move the bass, move the kit, keep the fiddle off the water.
+      Sunday has a loaded run. Tonight we find the dry.
 
       [Verse 3]
-      A hold never leaked. That is the one thing about a hold.
-      Whatever else is wrong with it, and a great deal is,
-      the roof is somebody's whole professional responsibility
-      and it is checked before every run by a person with a list.
-      Nobody checks a transfer hall. Nobody owns it enough.
-      Seventeen years in a sealed box and I miss the box.
+      I used to curse the sealed hold and its one narrow hatch,
+      cargo at my elbow, warm breath coming straight back.
+      But somebody checked that hull before we left the berth.
+      Somebody signed the joints and put a number by the seal.
+      This transfer roof belongs to everyone and therefore no one.
+      Rain has reached my boot; the final bucket overflows.
+      Seventeen years inside a box, and now I miss the box.
 
       [Final Chorus - harmony from the bass chair]
       Weather in the transfer hall and weather on the coast,
-      and four buckets and a band in a different corner.
-      Move the bass. Move the kit. Move it all again,
-      and get it down before the north end gives up entirely.
+      four full buckets, four wet coats, one corner left.
+      Move the bass, move the kit, keep the fiddle off the water.
+      Hold the east wall till the final long note fades.
+      Sunday has a loaded run and one dry roof below.
 
       [Outro - fade]
     take: null # M-33 fills this in at the Suno sitting
@@ -486,61 +476,58 @@ songs:
     outro: sustain
     target_duration: "4:30"
     prompt: >-
-      Skiffle and jump blues at reel tempo, 144 BPM, warm and communal, midtempo. Male lead vocal, low
-      bass-baritone, unhurried and dry, sitting under the fiddle, staying in his own low register and
-      never lifted. On the last two choruses all four band members sing the same line together in flat
-      unison — one low male lead, one female voice, two more untrained male voices, no harmony, no
-      stacking, nobody above anybody. Composite fiddle taking a sixteen-second break, fretted composite
-      guitar, big woody upright bass, drum kit with sticks, stripped-wire chimes. Recorded in a large
-      transfer hall with about forty people standing in it, audible between phrases. Fourteen seconds
-      of fiddle and chimes before the first sung word. Ends on a held chord.
+      144 BPM communal reel; low male bass-baritone, four rough unison voices, fiddle break, held end.
     exclude: electric guitar, drum machines, synthesizers, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern pop production, bright or lifted lead vocal, stacked or blended harmony, choir, crate percussion, cold ending
     lyrics: |
       [Intro - fiddle and chimes, fourteen seconds]
 
       [Verse 1]
-      There is a run out on Sunday and all four of us are on it
-      and that has been true for seventeen years without a gap.
-      We have not stopped once to make a record. Not once.
-      Every one of these was cut in a week we were not working
-      and every week we were not working was a week unpaid,
-      which is the whole economics of this band in two lines.
+      Sunday has a loaded run and all four names are on it.
+      Ilsa checks the manifest; Reddin coils the transfer rope.
+      Col has packed the fiddle twice and opened it again.
+      Seventeen years, no missed departure, no abandoned cargo.
+      The berth call waits on Saturday beside our four work coats.
+      Tonight the co-operative fills the hall with folding chairs.
+      Tomorrow we return the key and take the relay east.
 
       [Chorus]
       Still on the route, and still going out on Sunday.
-      Nobody here has ever done this for a living.
-      A band is what four people do with the time between,
-      and the time between is not very much time.
+      Same four names beneath the same departing load.
+      We found a wider room; we did not leave the freight road.
+      Still on the route, with one free night to spend.
 
       [Verse 2]
-      The co-operative had a members' meeting in the hall
-      on the last afternoon, which nobody planned,
-      and about forty of them stayed on afterwards to watch,
-      and they are on this track, standing, not saying much.
-      They are the label. That is not a figure of speech.
-      Every one of them owns a piece of this record.
+      Forty members finish votes on roof sheets, ink and wages.
+      Nobody folds a chair. They turn them toward the floor.
+      A woman from the night desk asks if wider roads come next.
+      A loader by the gate asks who will take our Sunday cargo.
+      Ilsa points at all four coats still hanging by the berth form.
+      Reddin taps the snare; Col lifts the fiddle to his chin.
+      I say, "We leave at six," and forty people understand.
 
       [Instrumental - fiddle break, sixteen seconds]
 
       [Verse 3]
-      So all four of us sang the end of it, together, flat,
-      which we have never done and are not going to do again,
-      because Ilsa sings and the rest of us make a noise
-      and putting the four of us on one line is a decision.
-      It is not good singing. It was not meant to be.
-      It is four members of a co-operative facing forty more.
+      Ilsa takes the first low line and holds it without ornament.
+      I come beside her; Col arrives a little late.
+      Reddin leans across the snare and finds the same rough note.
+      No one takes the upper part; no voice gets to lead.
+      Four working voices meet the forty workers in the chairs.
+      Someone near the back stamps once upon the transfer floor.
+      We hold the line together till the room begins to shake.
 
       [Chorus - all four in unison]
       Still on the route, and still going out on Sunday.
-      Nobody here has ever done this for a living.
-      A band is what four people do with the time between,
-      and the time between is not very much time.
+      Same four names beneath the same departing load.
+      We found a wider room; we did not leave the freight road.
+      Still on the route, with one free night to spend.
 
       [Final Chorus - all four in unison, the room audible]
       Still on the route, and the hold is loaded Saturday,
-      and there is a hall at the far end and we will be at it.
-      A band is what four people do with the time between.
+      far hall on Thursday, near hall coming back.
+      Forty chairs, four work coats, one line without a leader.
       Seventeen years. Sunday. Same berth. Same four.
+      Return the transfer key and carry out the cases.
 
       [Outro - held chord]
     take: null # M-33 fills this in at the Suno sitting
