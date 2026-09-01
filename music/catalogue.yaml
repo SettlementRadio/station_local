@@ -16089,18 +16089,18 @@ tracks:
   artist: b_046
   title: The Room at Terrace Road
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/01.mp3
+  duration_sec: 238.6
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - rolling
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The works' shift bell rings twice during the take and the band played through it both times, because
     the canteen was theirs only until it rang the third.
 - id: s_0797
@@ -16108,18 +16108,18 @@ tracks:
   artist: b_046
   title: Don't Wait Up for the Late Car
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/02.mp3
+  duration_sec: 218.84
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - shuffling
   - wry
   - tired
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Del Marran built the bass figure out of the rhythm the last tram makes over the joints outside
     the canteen, and he has never played it any other way.
 - id: s_0798
@@ -16127,18 +16127,18 @@ tracks:
   artist: b_046
   title: Two Cups and No Sugar
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/03.mp3
+  duration_sec: 249.4
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - dry
   - slow
   - funny
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Amon Furlow plays the whole track with his left hand because he would not put the cup down, and
     the band kept the take rather than have the argument.
 - id: s_0799
@@ -16146,18 +16146,18 @@ tracks:
   artist: b_046
   title: She Took the Other Line
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/04.mp3
+  duration_sec: 333.04
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - slow
   - aching
   - blue
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Nan Sudell wrote it and left it behind when she went in 2622, and it is the only song on any of
     the band's records Wesla Tarn did not write.
 - id: s_0800
@@ -16165,18 +16165,18 @@ tracks:
   artist: b_046
   title: Nobody Counts It In
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/05.mp3
+  duration_sec: 223.56
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - loose
   - late
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: It starts with Wesla Tarn's foot on the canteen floor because nobody had settled who would count
     the band in now that Orin Lask was on the kit.
 - id: s_0801
@@ -16184,18 +16184,18 @@ tracks:
   artist: b_046
   title: Working Both Ends
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/06.mp3
+  duration_sec: 282.04
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: A
   mood:
   - driving
   - hard
   - shuffling
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Written about holding the works shift and the canteen night at the same time, which all four of
     them were still doing when the record was made.
 - id: s_0802
@@ -16203,18 +16203,18 @@ tracks:
   artist: b_046
   title: The Water's Off Again
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/07.mp3
+  duration_sec: 257.92
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - wry
   - plain
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The verse listing what the district is short of was chalked on the canteen wall and Wesla Tarn
     read it off the wall during the take.
 - id: s_0803
@@ -16222,18 +16222,18 @@ tracks:
   artist: b_046
   title: Long Way to the Yard
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/08.mp3
+  duration_sec: 236.2
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: A
   mood:
   - rolling
   - steady
   - patient
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Wesla Tarn plays the slide with the length of tram brake shoe she has used since 2606, and it
     is the track the band point at when anyone asks what the sound is.
 - id: s_0804
@@ -16241,18 +16241,18 @@ tracks:
   artist: b_046
   title: Nobody Asked for Quiet
   track_no: 9
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/09.mp3
+  duration_sec: 199.04
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: A
   mood:
   - fast
   - loud
   - defiant
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The loudest thing the band has recorded, and the canteen steward can be heard telling them to
     stop before the last chorus arrives.
 - id: s_0805
@@ -16260,18 +16260,18 @@ tracks:
   artist: b_046
   title: Cold Toast and an Argument
   track_no: 10
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/10.mp3
+  duration_sec: 247.04
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: A
   mood:
   - funny
   - brisk
   - dry
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The argument in the second verse is one Del Marran and Amon Furlow had about the money for these
     sessions, and both of them agreed to it going on the record.
 - id: s_0806
@@ -16279,18 +16279,18 @@ tracks:
   artist: b_046
   title: Sit Down, You're Blocking the Door
   track_no: 11
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/11.mp3
+  duration_sec: 184.72
+  intro_ramp_sec: 5.48
+  outro_type: sustain
+  category: A
   mood:
   - fast
   - communal
   - bright
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: There were more people in the canteen than it holds and this is the track on which the band stopped
     asking them to move.
 - id: s_0807
@@ -16298,18 +16298,18 @@ tracks:
   artist: b_046
   title: Play the One About the Rain
   track_no: 12
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/12.mp3
+  duration_sec: 241.52
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: A
   mood:
   - warm
   - generous
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The title is what one regular shouted at the band every week for eleven years, and this is the
     song they eventually wrote to answer him.
 - id: s_0808
@@ -16317,18 +16317,18 @@ tracks:
   artist: b_046
   title: Turn the Lamps Down
   track_no: 13
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_098/13.mp3
+  duration_sec: 268.2
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - slow
   - close
   - final
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Cut at the end of the third night with the canteen lights already off, which is why the piano
     is the loudest thing on it.
 - id: s_0809
@@ -16336,18 +16336,18 @@ tracks:
   artist: b_046
   title: Later Than Advertised
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_099/01.mp3
+  duration_sec: 248.2
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - shuffling
   - wry
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Named for the band's habit of starting an hour after the notice said, and the notice from 2617
     is reproduced on the sleeve.
 - id: s_0810
@@ -16355,18 +16355,18 @@ tracks:
   artist: b_046
   title: Half the Fare Home
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_099/02.mp3
+  duration_sec: 288.88
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - midtempo
   - plain
   - tired
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Nan Sudell plays the whole track with brushes because the machine shop next door was on a night
     run and the band could not be louder than it.
 - id: s_0811
@@ -16374,18 +16374,18 @@ tracks:
   artist: b_046
   title: Ask Me Again on Payday
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_099/03.mp3
+  duration_sec: 298.6
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - dry
   - rolling
   - wry
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Written across two pay weeks, and the second verse names the exact sum the band was paid for these
     sessions.
 - id: s_0812
@@ -16393,18 +16393,18 @@ tracks:
   artist: b_046
   title: Wrong Side of the Works
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_099/04.mp3
+  duration_sec: 308.44
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - driving
   - hard
   - blunt
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Tel Brask plays harmonica, the only person from outside the band on any of their records, and
     he had never heard the song before that night.
 - id: s_0813
@@ -16412,18 +16412,18 @@ tracks:
   artist: b_046
   title: Nothing to Report
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_099/05.mp3
+  duration_sec: 314.16
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - slow
   - blue
   - weary
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Wesla Tarn wrote it about the works accident book and sings it without touching the slide, which
     she does nowhere else on either record.
 - id: s_0814
@@ -16431,18 +16431,18 @@ tracks:
   artist: b_046
   title: Two Streets Over
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_099/06.mp3
+  duration_sec: 292.08
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - warm
   - midtempo
   - fond
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: About somebody who lived two streets from the canteen for nine years, and Wesla Tarn has always
     refused to say whether they ever met.
 - id: s_0815
@@ -16450,18 +16450,18 @@ tracks:
   artist: b_046
   title: Small Money, Loud Room
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_099/07.mp3
+  duration_sec: 269.8
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - brisk
   - defiant
   - hard
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The band's first attempt was faster and Amon Furlow talked them down to this tempo, which he can
     be heard doing at the top of the take.
 - id: s_0816
@@ -16469,18 +16469,18 @@ tracks:
   artist: b_046
   title: Don't Sing That One Here
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_099/08.mp3
+  duration_sec: 239.4
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - fast
   - funny
   - sly
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The works foreman asked the band not to play it in the canteen, which is why they opened with
     it every week for the rest of that year.
 - id: s_0817
@@ -16488,18 +16488,18 @@ tracks:
   artist: b_046
   title: Under the Terrace
   track_no: 9
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_099/09.mp3
+  duration_sec: 287.36
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - slow
   - close
   - late
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Recorded at four in the morning after a shift, and the works generator runs underneath the whole
     track.
 - id: s_0818
@@ -16507,36 +16507,36 @@ tracks:
   artist: b_046
   title: A Word With the Steward
   track_no: 10
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_099/10.mp3
+  duration_sec: 289.48
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - midtempo
   - wry
   - plain
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Del Marran sings the second verse, the only lead vocal on either record not sung by Wesla Tarn.
 - id: s_0819
   album: al_099
   artist: b_046
   title: Lights Out on the Line
   track_no: 11
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_099/11.mp3
+  duration_sec: 294.04
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - final
   - warm
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The only tune the band recorded twice; the first attempt was wiped at Nan Sudell's insistence
     and this is the second, cut an hour later.
 - id: s_0820
@@ -16544,18 +16544,18 @@ tracks:
   artist: b_047
   title: Nobody Sings It Alone
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_100/01.mp3
+  duration_sec: 238.6
+  intro_ramp_sec: 22.22
+  outro_type: sustain
+  category: gold
   mood:
   - warm
   - rolling
   - communal
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The four enter a line apart and the last voice in is Kell Moray's, the place he asked for when
     he joined and has kept on every record since.
 - id: s_0821
@@ -16563,18 +16563,18 @@ tracks:
   artist: b_047
   title: Count the Boats Back
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_100/02.mp3
+  duration_sec: 239.6
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - steady
   - patient
   - cold
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The counting verse is the yard's return list and Effa Lomm sings the boats in the order they actually
     came in that evening.
 - id: s_0822
@@ -16582,18 +16582,18 @@ tracks:
   artist: b_047
   title: Wet Rope, Cold Hands
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_100/03.mp3
+  duration_sec: 229.6
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - plain
   - midtempo
   - hard
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Bran Teale plays it with two fingers taped together after a yard injury, and the part was cut
     down to what he could reach on the evening.
 - id: s_0823
@@ -16601,18 +16601,18 @@ tracks:
   artist: b_047
   title: Lamp Room Round
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_100/04.mp3
+  duration_sec: 272.4
+  intro_ramp_sec: 22.83
+  outro_type: fade
+  category: gold
   mood:
   - close
   - warm
   - communal
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Sung in the yard's lamp room rather than the hall because the band wanted the walls, and the door
     being opened halfway through is on the take.
 - id: s_0824
@@ -16620,18 +16620,18 @@ tracks:
   artist: b_047
   title: The Far Shore Boat
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_100/05.mp3
+  duration_sec: 274.28
+  intro_ramp_sec: 14.14
+  outro_type: sustain
+  category: gold
   mood:
   - slow
   - longing
   - sparse
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Effa Lomm sings it with nothing behind her, the only unaccompanied track the band has recorded,
     and she asked the others to leave the hall for it.
 - id: s_0825
@@ -16639,18 +16639,18 @@ tracks:
   artist: b_047
   title: Two Kinds of Cold
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_100/06.mp3
+  duration_sec: 249.8
+  intro_ramp_sec: 12.82
+  outro_type: fade
+  category: gold
   mood:
   - blue
   - slow
   - still
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Ilva Reske's low harmony was sung again after the others had gone home and laid over the take,
     which is the only overdub on any Shore Rounds record.
 - id: s_0826
@@ -16658,18 +16658,18 @@ tracks:
   artist: b_047
   title: Money in the Wrong Pocket
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_100/07.mp3
+  duration_sec: 243.96
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - wry
   - brisk
   - blunt
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: About a yard clerk who paid the crews late for a year, and the importer had the name in the third
     verse taken out before pressing it at the road head.
 - id: s_0827
@@ -16677,18 +16677,18 @@ tracks:
   artist: b_047
   title: Round for the Last Boat
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_100/08.mp3
+  duration_sec: 243.8
+  intro_ramp_sec: 18.67
+  outro_type: sustain
+  category: gold
   mood:
   - final
   - warm
   - communal
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The last track of the imported edition, and on Titan it is followed by a ninth song the crate
     had no room for.
 - id: s_0828
@@ -16696,18 +16696,18 @@ tracks:
   artist: b_047
   title: Two Lamps and a Table
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_101/01.mp3
+  duration_sec: 282.24
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - close
   - warm
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Recorded around one table with two lamps and a single microphone, which is everything the yard's
     meeting room had in it.
 - id: s_0829
@@ -16715,18 +16715,18 @@ tracks:
   artist: b_047
   title: Everybody Take a Line
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_101/02.mp3
+  duration_sec: 204.16
+  intro_ramp_sec: 19.11
+  outro_type: sustain
+  category: gold
   mood:
   - communal
   - bright
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The four sing a verse each in the order they joined the band, which Bran Teale insisted on and
     Effa Lomm has called the only rule they have.
 - id: s_0830
@@ -16734,18 +16734,18 @@ tracks:
   artist: b_047
   title: The Borrowed Piano
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_101/03.mp3
+  duration_sec: 302.48
+  intro_ramp_sec: 8.82
+  outro_type: sustain
+  category: gold
   mood:
   - rolling
   - warm
   - generous
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Saira Dunn plays the yard office piano she had spent two days tuning, and the band wrote the song
     around it once she had finished.
 - id: s_0831
@@ -16753,18 +16753,18 @@ tracks:
   artist: b_047
   title: Ice on the Steps
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_101/04.mp3
+  duration_sec: 231.24
+  intro_ramp_sec: 17.23
+  outro_type: cold
+  category: gold
   mood:
   - cold
   - sparse
   - restless
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Kell Moray bows the bass for the only time on any of the band's records, having borrowed the bow
     from a yard hand who played nothing else.
 - id: s_0832
@@ -16772,18 +16772,18 @@ tracks:
   artist: b_047
   title: Ask the Lamp Man
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_101/05.mp3
+  duration_sec: 278.24
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - wry
   - midtempo
   - plain
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The yard's lamp keeper was in the room for the take and objected to two lines, both of which stayed
     in.
 - id: s_0833
@@ -16791,18 +16791,18 @@ tracks:
   artist: b_047
   title: A Long Wait at the Gate
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_101/06.mp3
+  duration_sec: 273.44
+  intro_ramp_sec: 27.33
+  outro_type: sustain
+  category: gold
   mood:
   - patient
   - tired
   - steady
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: Written waiting for a boat that never came, and Effa Lomm set the tempo by walking the length
     of the room while the others found it.
 - id: s_0834
@@ -16810,18 +16810,18 @@ tracks:
   artist: b_047
   title: Last One Off the Water
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_101/07.mp3
+  duration_sec: 261.84
+  intro_ramp_sec: 14.07
+  outro_type: cold
+  category: gold
   mood:
   - final
   - warm
   - close
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-08
   fact: The four turn away from the microphone for the last round, so it gets quieter as it goes, and
     nobody asked them to do it again.
 - id: s_0835
@@ -16829,18 +16829,18 @@ tracks:
   artist: b_047
   title: Whatever Fits the Crate
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_102/01.mp3
+  duration_sec: 209.68
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: A
   mood:
   - wry
   - brisk
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The title is what Effa Lomm wrote back to the importer, and the record runs to within a minute
     of the length that letter asked for.
 - id: s_0836
@@ -16848,36 +16848,36 @@ tracks:
   artist: b_047
   title: Sing It Twice Over
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_102/02.mp3
+  duration_sec: 209.24
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: A
   mood:
   - communal
   - bright
   - rolling
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The round goes through twice because the band arrived with four songs and had been asked for five.
 - id: s_0837
   album: al_102
   artist: b_047
   title: A Letter and a Number
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_102/03.mp3
+  duration_sec: 243.0
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - dry
   - midtempo
   - knowing
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The importer's letter asked for songs with fewer names in them, and Bran Teale put the request
     itself into the second verse.
 - id: s_0838
@@ -16885,18 +16885,18 @@ tracks:
   artist: b_047
   title: Cold Meal, Warm Room
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_102/04.mp3
+  duration_sec: 278.2
+  intro_ramp_sec: 13.17
+  outro_type: sustain
+  category: A
   mood:
   - warm
   - slow
   - generous
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Amon Furlow plays piano, having crossed from Mars on the strength of a letter, and the band had
     never heard him play before that morning.
 - id: s_0839
@@ -16904,18 +16904,18 @@ tracks:
   artist: b_047
   title: Same Four Voices
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_102/05.mp3
+  duration_sec: 212.56
+  intro_ramp_sec: 6.87
+  outro_type: sustain
+  category: A
   mood:
   - final
   - close
   - communal
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The four sing it with no instruments at all, which is what they do at the end of every night in
     the yard and had never put on a record.
 - id: s_0840

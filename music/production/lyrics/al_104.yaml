@@ -1,0 +1,510 @@
+# al_104 — Second Shift Blues · Undershore Local (b_048) · Relay Road Import · 2607 · 7 songs · album
+#
+# Written by M-25. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The band's second and last record, cut in 2606 across four nights in the same Europa canteen and
+# issued at the road head in 2607. **The shift pattern that ended the band is the reason it took four
+# nights spread over a season to make a record of seven songs**, and it is written into `s_0850`,
+# which was recorded on one of the two nights a month the pattern left all four of them off duty.
+# Undershore Local knew this was the last one while they were making it and said so on the sleeve in
+# one line, without explanation; `s_0855` is that line at length, and the last sound on it is the
+# yard gate, which has never been locked and is on the take anyway.
+#
+# **`s_0853` is the one song in this band's life that Hob Venner is not on** — he was on shift and
+# came in after it was finished, so Tel Brask sings the lead from the harmonica chair, and there is
+# no guitar on the track at all because the guitar was on the second shift. b_048's card had already
+# said this song would happen — *"on one song in the band's life he takes the lead"* — and this is
+# it. The exclude line keeps the usual gravel baritone and the guitar out rather than leaving either
+# to chance (D-096).
+#
+# Saira Dunn arranged everything here including the harmonica parts, and plays throughout in gloves
+# with the fingers cut off, which is audible on the keys on every track and is the subject of
+# `s_0851`. As on al_103, every exclude line keeps a bass out: this band has never had one.
+#
+# `generation:` and every `take:` are empty until M-34.
+
+album:
+  id: al_104
+  title: Second Shift Blues
+  band: b_048
+  band_name: Undershore Local
+  label: label_7
+  release_year: 2607
+  genre: old-system-sessions
+  cornerstone: false
+  song_count: 7
+  style_card: b_048
+  room: >-
+    The same Europa under-ice works canteen as al_103, cut across four nights spread over a season
+    because that is how often the shift pattern put all four of them off duty at once, and after
+    midnight every time, when the heating had gone off. Hard cold room, tape hiss, one take, no
+    overdubs, no bass anywhere in the band, kit still with no cymbals. The card holds: male gravel
+    baritone that tires across a take and drops to plain speech at the ends of lines, one blunt male
+    second voice from the harmonica chair on choruses. Two things are this record's own. Saira Dunn
+    plays in cut-off gloves and the wool is audible on the keys on every track, worst on s_0851 where
+    the lyric names it. And s_0853 has neither the lead voice nor the guitar on it, because both
+    belong to a man who was on shift — Tel Brask sings it and plays the horn, which is one job too
+    many and audibly so.
+
+generation:
+  # Empty until M-34's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0849
+    title: Second Shift Blues
+    track_number: 1
+    mood: [slow, blue, weary]
+    fact: >-
+      The only song the band gave their own form's name to, and Hob Venner said he used the word
+      because it was the plainest one available.
+    arrangement_note: the plainest twelve-bar on either record, taken slowly, with the piano triplets doing all the ornament and the voice doing none
+    intro: 14
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      72 BPM weary blues; plain gravel baritone, flat piano triplets, guitar, rim-and-skin kit, held end.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, vocal ornament or melisma, vocal tuning, whispered or rapped sections, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - piano triplets and guitar, fourteen seconds]
+
+      [Verse 1]
+      Four o'clock, the neighbourhood is opening its doors.
+      Supper lamps come on while I am sealing mine.
+      Children fill the relay court between the housing blocks.
+      You carry two warm cups as far as the airlock gate.
+      Mine will cool untouched beside the night manifest.
+      The shift bell takes the hour before our hands can meet.
+      Evening begins for everyone except the second shift.
+
+      [Chorus]
+      Second shift blues and there is nothing else to call it.
+      Four to midnight, midnight to eight, and then again.
+      Count the hours missing from the people still awake.
+
+      [Verse 2]
+      Morning workers lose the sleep but keep the evening.
+      Night crews trade their bodies for a quieter deck.
+      Second shift takes birthdays, ballots, ordinary meals,
+      all the little hours no wage form knows to price.
+      I know your life by notes left underneath the heater:
+      ration paid, back late, leak fixed, missed you again.
+      A household can survive while never being together.
+      The wall calendar stays full of things I never see.
+
+      [Chorus]
+      Second shift blues and there is nothing else to call it.
+      Four to midnight, midnight to eight, and then again.
+      Count the hours missing from the people still awake.
+
+      [Verse 3]
+      Twice a month the rota gives us one whole evening.
+      We spend the first asleep in clothes beside the stove.
+      On the second, we keep every room lamp burning,
+      eat too late and let the relay messages go unanswered.
+      Nothing grand occurs; that is exactly what we wanted.
+      Your cup stays warm because my hand is there to lift it.
+      Midnight comes without an airlock in between.
+
+      [Final Chorus]
+      Second shift blues and there is nothing else to call it.
+      Four to midnight, midnight to eight, but not tonight.
+      Count the hours found again by people still awake.
+
+      [Outro - sustain]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0850
+    title: Nobody Off at the Same Time
+    track_number: 2
+    mood: [wry, midtempo, tired]
+    fact: >-
+      Written about the shift pattern that ended the band, and recorded on one of the two nights a
+      month that pattern left them all free.
+    arrangement_note: one section is a rota read flat over the kit alone with the rest of the band out of it, because a rota is what ended this band and there is no way to sing one
+    intro: 8
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      98 BPM tired shuffle; gravel baritone, flat rota over drums, guitar, flat piano, harmonica, fade.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, vocal tuning, whispered or rapped sections, rapped delivery, modern studio production, cold ending
+    lyrics: |
+      [Intro - guitar and piano, eight seconds]
+
+      [Verse 1]
+      They call it rolling and it rolls, that much is true.
+      It rolls four friends through different doors and hours,
+      never cruel enough to give them someone they can blame.
+      One finishes as another seals a working coat.
+      One wakes when the last is halfway down the ladder.
+      Arithmetic has no office where a person can object.
+      It only has a noticeboard and columns drawn in black.
+
+      [Chorus]
+      Nobody is off at the same time, and that is how a friendship ends.
+      Not a row, not money, not a door slammed hard.
+      Four empty chairs around one table tell it plainly.
+
+      [The pattern - one voice, flat, over the kit]
+      North gate early. Cold store late. Gallery nights. Deck early.
+      Second week: gate late, store nights, gallery early, deck late.
+      Two nights in the month. That is what is left.
+
+      [Verse 2]
+      She marks both common nights three months ahead,
+      trade shifts, save ration, keep the meeting-room key.
+      The first is lost when north gate needs an extra body.
+      The second reaches midnight before the last friend comes.
+      Still three cups wait and one stays by the heater.
+      Nobody calls the evening wasted while the chair remains.
+      Friendship learns to live in whatever time survives.
+
+      [Chorus]
+      Nobody is off at the same time, and that is how a friendship ends.
+      Not a row, not money, not a door slammed hard.
+      Four empty chairs around one table tell it plainly.
+
+      [Verse 3]
+      By sealed season, notes replace the common table:
+      leak is fixed, gate froze, your cup is on the shelf.
+      One friend transfers; one takes permanent night duty.
+      Nobody announces that the four will not meet again.
+      The pattern rolls, efficient and without intention.
+      At each shift change, two pass briefly in the airlock,
+      long enough to touch one shoulder and keep moving.
+
+      [Final Chorus]
+      Nobody is off at the same time, and that is how a friendship ends.
+      Not a row, not money, not a door slammed hard.
+      Four chairs stay waiting though the table has gone cold.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0851
+    title: Cold Store, Late Hour
+    track_number: 3
+    mood: [slow, close, cold]
+    fact: >-
+      Saira Dunn plays in gloves with the fingers cut off, which can be heard on the keys throughout,
+      because the canteen heating was off after midnight.
+    arrangement_note: the wool of a cut-off glove is audible going down on the keys on every chord, and it was left in rather than played round, which is the only decision anybody made about this track
+    intro: 13
+    outro: fade
+    target_duration: "4:10"
+    prompt: >-
+      66 BPM close cold blues; tired gravel baritone, wool-muted piano, soft guitar, rim kit, room fade.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, clean piano attack, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano in cut-off gloves, thirteen seconds]
+
+      [Verse 1]
+      The heating in that canteen goes off at midnight sharp.
+      A timer in a locked box makes the matter final.
+      Day shift holds the key; night shift keeps its coats.
+      She cuts the fingers from a pair of woollen gloves,
+      presses both palms round the cup before it cools.
+      Beyond the wall, the cold store murmurs differently.
+      Waste heat from the scrubber finds one hidden seam.
+      Nobody points toward it. Everybody knows.
+
+      [Refrain]
+      Cold store, and a late hour, and a woman in cut gloves.
+      Stand beside the leaking wall and keep your voice low.
+      Nothing here is ours except the warmth we do not name.
+
+      [Verse 2]
+      One by one, late workers drift behind the cold store,
+      wet sleeves touching pipes they are not meant to find.
+      No one blocks the gallery or lingers past the bell.
+      Five warm minutes put some feeling in the fingers.
+      A maintenance notice warns of unexplained heat loss.
+      Someone folds it small and sets it by the ration urn.
+      Silence can be solidarity when meters watch the walls.
+
+      [Refrain]
+      Cold store, and a late hour, and a woman in cut gloves.
+      Stand beside the leaking wall and keep your voice low.
+      Nothing here is ours except the warmth we do not name.
+
+      [Verse 3]
+      Before first shift, she wipes the pipe and leaves it bare.
+      The room returns to lawful cold before inspection.
+      Forty coats move outward through the second airlock.
+      The wall keeps one handprint fading in the frost.
+      Tonight another late crew will discover it again,
+      guided by no sign, no map, no spoken invitation.
+      Certain kinds of knowledge travel best through shoulders.
+
+      [Final Refrain]
+      Cold store, and a late hour, and a woman in cut gloves.
+      Stand beside the leaking wall and keep your voice low.
+      Nothing here is ours, so share it while it lasts.
+
+      [Coda - fade, piano and room]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0852
+    title: Half the Local Left
+    track_number: 4
+    mood: [blunt, driving, hard]
+    fact: >-
+      The membership numbers in the second verse are the branch's real ones, read off the noticeboard
+      on the night of the take.
+    arrangement_note: the numbers are read flat off a wall with the band dropping away underneath, because a membership figure has no tune in it and pretending otherwise would be worse
+    intro: 4
+    outro: cold
+    target_duration: "3:20"
+    prompt: >-
+      114 BPM hard blues; gravel baritone, flat membership figures, guitar, flat piano, harmonica, stop.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - full band, four seconds]
+
+      [Verse 1]
+      The noticeboard hangs crooked by the second airlock,
+      old totals fading underneath the newest sheet.
+      Thumb marks darken every year somebody has checked it.
+      The figures need no colour and no voice raised high.
+      They wait above the deck plan, plain enough to challenge,
+      a history of bodies leaving one by one.
+      Count the empty hooks if numbers feel too distant.
+
+      [Chorus]
+      Half of the local left and the half that stayed got quieter.
+      Every missing worker takes a portion of the room.
+      The board says it in figures; empty chairs say more.
+
+      [The board - one voice, flat, read off the wall]
+      Six hundred and forty in 2591.
+      Three hundred and eleven now.
+      Ninety-two of those are on the second shift.
+
+      [Verse 2]
+      People leave the works before they leave each other:
+      one shift cut, one deck sealed, then the western gallery.
+      Transfer forms move families toward another berth.
+      Relay calls grow shorter after distance finds its price.
+      The local keeps their names until the dues run out,
+      then one more line goes pale beside the meeting date.
+      What remains must carry every task with fewer hands.
+
+      [Chorus]
+      Half of the local left and the half that stayed got quieter.
+      Every missing worker takes a portion of the room.
+      The board says it in figures; empty chairs say more.
+
+      [Verse 3]
+      At meetings, those who stay pull chairs toward the heater.
+      Debate grows short because the other side is gone.
+      Four clean votes pass with no opposing hand.
+      Agreement feels like victory until the coats are counted.
+      The woman keeping minutes leaves wide margins now.
+      Through the wall, an empty gallery returns each word.
+      Quiet is not peace when half the voices moved away.
+
+      [Final Chorus]
+      Half of the local left and the half that stayed got quieter.
+      Every missing worker takes a portion of the room.
+      The board says it in figures. Read the empty chairs.
+
+      [Outro - cold stop]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0853
+    title: Nothing Warm to Drink
+    track_number: 5
+    mood: [dry, shuffling, funny]
+    fact: >-
+      Tel Brask sings the lead, the only time he does on either record, because Hob Venner was on
+      shift and came in after it was finished.
+    arrangement_note: no guitar anywhere on the track because the guitar was on the second shift, and the man singing it is also playing the harmonica, so the horn stops dead every time a line starts
+    intro: 5
+    outro: fade
+    target_duration: "3:35"
+    prompt: >-
+      108 BPM dry shuffle; blunt male lead, no guitar, flat piano, stop-start harmonica, rim kit, fade.
+    exclude: bass guitar, upright bass, electric bass, guitar, acoustic guitar, gravel baritone lead, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, continuous harmonica, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and harmonica, five seconds]
+
+      [Verse 1]
+      I come off the late deck after every heater closes,
+      hands too numb to turn the canteen kettle switch.
+      One worker holds a metal horn above the scrubber pipe.
+      Another sets the empty cups beneath its little warmth.
+      Nobody expects comfort worthy of the word.
+      We only want the water not to hurt our teeth.
+      At this hour, small improvements count as luxury.
+
+      [Chorus]
+      Nothing here is warm to drink and nothing warm to sit on
+      and nothing warm to say to anybody at this hour.
+      Put the kettle on the scrubber pipe. It is the only warm thing here.
+
+      [Verse 2]
+      You ask whether I will take the early transfer.
+      The answer waits somewhere behind my frozen mouth.
+      Better quarters, warmer deck, one season from this canteen;
+      everything we claimed we wanted when the cold began.
+      Yet the offer carries only one berth allocation.
+      The horn falls silent every time I try to answer.
+      Some choices leave no breath for keeping music under them.
+
+      [Chorus]
+      Nothing here is warm to drink and nothing warm to sit on
+      and nothing warm to say to anybody at this hour.
+      Put the kettle on the scrubber pipe. It is the only warm thing here.
+
+      [Verse 3]
+      At last the kettle shakes one thread of steam.
+      I split the transfer paper down the centre fold.
+      Warmth without you is another kind of under-ice work.
+      We feed both halves beneath the scrubber flame.
+      Morning may make fools of this expensive answer.
+      Tonight your shoulder finds mine on the metal bench.
+      Nothing here to drink is warm; enough warmth left to stay.
+
+      [Final Chorus]
+      Nothing here is warm to drink and nothing warm to sit on
+      and nothing warm to say to anybody at this hour.
+      Put the kettle on the scrubber pipe. We have one answer now.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0854
+    title: The Last Grievance
+    track_number: 6
+    mood: [hard, defiant, brisk]
+    fact: >-
+      Played once at the branch's final meeting and once for the record, and the band refused a second
+      take on the grounds that they had already done it twice.
+    arrangement_note: one take and no alternative exists, which is true of everything on this record and was argued about only here, and the argument is why the ending is abrupt
+    intro: 3
+    outro: cold
+    target_duration: "3:15"
+    prompt: >-
+      120 BPM defiant blues; hard gravel baritone, guitar, flat piano, harmonica, rim kit, abrupt stop.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, polished performance, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - full band, three seconds]
+
+      [Verse 1]
+      Final meeting, Thursday, forty-one wet coats,
+      two hundred chairs and no reason left to fill them.
+      Closure papers wait beneath the branch-room lamp.
+      The final item concerns the second-gallery door:
+      bulkhead warped, seal split, cold entering at floor level,
+      first raised in 2588 and raised eleven times.
+      Everybody knows the hinge. Nobody laughs tonight.
+      Every winter added one more signature beneath it.
+
+      [Refrain]
+      The last grievance is about a door and it always is.
+      Not the vanished deck or all the wages gone.
+      A door, because a door might still be made to close.
+
+      [Verse 2]
+      One worker reads the prior answers into silence:
+      parts requested, inspection due, no immediate risk.
+      Another places melted ice beneath the meeting table,
+      water gathered from the coat worn by that door.
+      The chair calls the vote. Forty-one hands rise.
+      A unanimous demand from a branch already closing
+      still makes the office clerk record the proper number.
+      Meltwater reaches the closure papers before the ink dries.
+
+      [Refrain]
+      The last grievance is about a door and it always is.
+      Not the vanished deck or all the wages gone.
+      A door, because a door might still be made to close.
+
+      [Verse 3]
+      At dawn, maintenance arrives with seal and hinges.
+      The office wants the final ledger closed in order.
+      Forty-one workers watch one old door meet its frame.
+      Warm air stays inside for once without assistance.
+      Then they stack the chairs, return the branch-room key,
+      and walk through the repaired bulkhead toward the airlock.
+      Some victories come late and still belong to those who asked.
+      Behind them, the old draft finally stops crossing the floor.
+
+      [Final Refrain]
+      The last grievance is about a door and it always is.
+      Not the vanished deck or all the wages gone.
+      The door closes clean. Make the office write that down.
+
+      [Outro - cold stop]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0855
+    title: Nobody Locks It Behind Us
+    track_number: 7
+    mood: [final, slow, warm]
+    fact: >-
+      The last thing Undershore Local recorded, and the sound at the end is the yard gate, which
+      nobody had ever locked and which is on the take anyway.
+    arrangement_note: the yard gate swings at the end of the take because the drummer walked out through it while the tape was running, and nobody went back and cut it off
+    intro: 18
+    outro: sustain
+    target_duration: "4:20"
+    prompt: >-
+      76 BPM warm slow blues; plain gravel baritone, flat piano, guitar, rim kit, gate swing, held end.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, clean or edited ending, vocal tuning, whispered or rapped sections, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - piano and guitar, eighteen seconds]
+
+      [Verse 1]
+      The yard gate above the airlock never needed locking.
+      Its bolt lies under seven years of painted weather.
+      Every shift has pushed it wide with shoulder, crate or boot.
+      Tonight closure notices hang from both its rails.
+      Workers carry cups, spare gloves and locker photographs.
+      Nothing leaves in order. Nothing fits one cargo list.
+      The gate keeps swinging for whoever comes behind.
+      One woman checks the locker row for anything forgotten.
+      She finds a child's drawing taped behind a door.
+
+      [Refrain]
+      Nobody locks it behind us and nobody ever has.
+      Pull it near, then let it open toward the dark.
+      The last one out should never choose who cannot follow.
+
+      [Verse 2]
+      Some take transfer berths; some stay above the ice.
+      Some have nowhere certain past the final ration week.
+      At the relay wall, addresses pass from hand to hand.
+      Promises grow brave because no rota can test them.
+      We will meet next season. We will write each month.
+      Everybody hears the doubt and makes the promise anyway.
+      Hope is sometimes manners at a closing gate.
+
+      [Refrain]
+      Nobody locks it behind us and nobody ever has.
+      Pull it near, then let it open toward the dark.
+      The last one out should never choose who cannot follow.
+
+      [Verse 3]
+      Near morning, only four wet coats remain inside.
+      They turn the canteen lamps down one by one.
+      No speech can hold the gallery, the deck, the vanished shifts.
+      They shoulder final bags and cross the upper airlock.
+      One worker gives the painted gate a backward push.
+      It swings once, catches nothing, swings again.
+      The open works receives the sound and gives it back.
+
+      [Final Refrain]
+      Nobody locks it behind us and nobody ever has.
+      Pull it near, then let it open toward the dark.
+      Leave a way through for whatever comes after us.
+
+      [Outro - sustain, the yard gate]
+    take: null # M-34 fills this in at the Suno sitting

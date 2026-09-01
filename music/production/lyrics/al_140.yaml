@@ -1,0 +1,562 @@
+# al_140 — Ten Locks to the Sea · The Ninefoot Cut (b_063) · Relay Road Import · 2607 · 7 songs · album
+#
+# Written by M-25. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Cut in 2605 in the lock house at the head of eleven miles of Earth canal and issued at the road
+# head in 2607 — **the first record made on Earth that Relay Road Import ever landed**, and only
+# because a clerk read a letter meant for the Bell Yard Rounds as the address of a district rather
+# than of a yard. The band had been paid once and flat and had stopped thinking about the whole
+# business long before anybody out here heard a note of it, which is `s_1146`.
+#
+# **The style card is dated here and this record is before the date** (D-096, following D-095's first
+# shape). Wenna Ferrin joins in 2610, so on al_140 there is **no concertina anywhere and only one
+# harmony voice** — Torr Bexley's, male, low under the lead — where the card describes two. Every
+# exclude line on this record keeps the concertina and the female harmony out; the card was not
+# amended and should not be. The first concertina in this band's life is the first bar of `al_141`.
+#
+# **Sim Pallow plays with his hands and no sticks on all seven tracks**, not only on `s_1147`: the
+# lock house shares a wall with a house that had a child asleep in it for the whole week. That one
+# fact took the volume out of the entire record, which is what `s_1147` is about.
+#
+# `generation:` and every `take:` are empty until M-34.
+
+album:
+  id: al_140
+  title: Ten Locks to the Sea
+  band: b_063
+  band_name: The Ninefoot Cut
+  label: label_7
+  release_year: 2607
+  genre: old-system-sessions
+  cornerstone: false
+  song_count: 7
+  style_card: b_063
+  room: >-
+    The front room of a canal lock house on Earth — small, wooden, with water and stone behind
+    everything and one wall shared with a neighbour. One or two microphones, everything acoustic and
+    close, nothing overdubbed. The card holds with one dated exception: light high female lead, clear
+    and even, unhurried, singing quietly and letting the room carry it, with **one** male harmony
+    voice low under her on choruses and never above her. Wenna Ferrin has not joined yet, so there is
+    no concertina and no female harmony on this record at all. Sim Pallow plays the kit with his hands
+    throughout because of the child asleep the other side of the wall, so nothing here has a stick on
+    it and the guitar and piano both came down to meet it. Two fact-bound details live in their own
+    songs: the tempo of s_1144, which is a loaded boat walked past the window and counted, and the
+    stripped wire left hanging on the towpath posts in s_1143.
+
+generation:
+  # Empty until M-34's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1141
+    title: Ten Locks to the Sea
+    track_number: 1
+    mood: [rolling, warm, midtempo]
+    fact: >-
+      Fenna Crole counts ten locks and there are eleven, because the eleventh was cut in after she
+      wrote it and she has refused to change the number since.
+    arrangement_note: an opener taken at a walking roll with the kit played by hand throughout, and the male harmony only on the last line of each chorus rather than across it
+    intro: 10
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      96 BPM warm blues; high female lead, low male harmony, guitar, piano, bass, hand kit, fade.
+    exclude: concertina, female harmony vocal, slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, drum sticks, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - guitar and piano, ten seconds]
+
+      [Verse 1]
+      My mother kept the third gate through the long rain,
+      her mother kept it before the concrete learned to crack.
+      They taught me every paddle by the pull against my shoulder,
+      every shallow place a loaded hauler ought to miss.
+      Back then ten black doors stood between our kettle
+      and the salt wind leaning inland from the basin.
+      I can still count them right with both hands in my pockets,
+      though a fresh white gate is shining farther down.
+
+      [Chorus]
+      Ten locks to the sea, let the old count carry me.
+      Let the water take the cargo, let the cargo take its time.
+      Every freight crew knows the map can move beneath you,
+      but the way you learned your home stays written in your stride.
+
+      [Verse 2]
+      The new gate has a rail that never catches winter,
+      a painted number no one here remembers asking for.
+      Young hands read the manifest and call the distance eleven;
+      I nod and lift the beam and never trouble them with mine.
+      They have routes beyond the basin, lanes beyond the weather,
+      lights that tell them where their next clean berth will be.
+      I have rain upon the window, bread beside the ledger,
+      and the third lock opening where my people used to stand.
+
+      [Turn]
+      Add a gate, add a mile, add a mark beside the water.
+      You cannot add another childhood to the bank.
+
+      [Chorus]
+      Ten locks to the sea, let the old count carry me.
+      Let the water take the cargo, let the cargo take its time.
+      Every freight crew knows the map can move beneath you,
+      but the way you learned your home stays written in your stride.
+
+      [Verse 3]
+      I went down once at dawn to see the open water,
+      where the cut gives up its name among the cranes.
+      The basin smelled of rope and fuel and foreign oranges,
+      and every voice was bargaining for somewhere else.
+      I watched one empty hauler turn its bow toward homeward,
+      heard the stern line slap the stone below my feet.
+      Eleven gates were waiting, but my body counted ten of them,
+      ten small falls of water to the fire and the key.
+
+      [Chorus]
+      Ten locks to the sea, let the old count carry me.
+      Let the water take the cargo, let the cargo take its time.
+      Every freight crew knows the map can move beneath you,
+      but the way you learned your home stays written in your stride.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1142
+    title: Wait for the Water
+    track_number: 2
+    mood: [patient, slow, wry]
+    fact: >-
+      Written in the hour and a half the top lock needs to fill, which Fenna Crole timed against the
+      lock house clock before she would let the band shorten it.
+    arrangement_note: the slowest thing on the record after s_1144 and the only one with no kit at all in the first verse, because a lock filling makes no rhythm anybody can play to
+    intro: 16
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      66 BPM patient blues; high female lead, low male harmony, piano, guitar, hand kit after verse one.
+    exclude: concertina, female harmony vocal, slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, drum sticks, vocal tuning, whispered or rapped sections, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - piano and guitar, sixteen seconds]
+
+      [Verse 1]
+      I came with a pocket full of reasons to be early,
+      one clean shirt and a message folded small.
+      The top gate wore a skin of green in morning,
+      and the gauge had hardly lifted from the wall.
+      I pulled the paddle, heard the first deep answer,
+      then paced the beam as if my boots could help.
+      A heron took the only post of sunlight.
+      The water climbed without consulting me at all.
+
+      [Refrain]
+      Let it rise the way it rises, dark to silver, stone by stone.
+      You can curse the slow arrival, you can make the waiting home.
+      No lane runs round the chamber, no quick bargain lifts the gate.
+      Put your worry on the balance. What is coming will not break.
+
+      [Verse 2]
+      A freight crew brought a hauler close behind me,
+      with cold tea, tired eyes, and half a hold of grain.
+      They checked the time against a distant relay,
+      then laughed when I said hurry to the rain.
+      One dealt cards across an upturned bucket,
+      one mended canvas where the cargo rubbed it thin.
+      By noon they knew the story in my pocket,
+      and offered three bad answers with a grin.
+
+      [Refrain]
+      Let it rise the way it rises, dark to silver, stone by stone.
+      You can curse the slow arrival, you can make the waiting home.
+      No lane runs round the chamber, no quick bargain lifts the gate.
+      Put your worry on the balance. What is coming will not break.
+
+      [Middle Eight]
+      I thought the far end held a final sentence.
+      I thought one voice could settle what I knew.
+      But the mark crept past the moss while I was breathing,
+      and the hour made a little room for two.
+
+      [Verse 3]
+      When the gate swung wide the day had changed its color,
+      and the folded message weighed no more than thread.
+      I tied beside the wharf and found you waiting,
+      with no grand speech and rain upon your head.
+      You said the last ferry could leave without us,
+      the manifest could find another hand.
+      We watched the empty chamber lose its brightness,
+      and let the next slow water make its plans.
+
+      [Refrain]
+      Let it rise the way it rises, dark to silver, stone by stone.
+      You can curse the slow arrival, you can make the waiting home.
+      No lane runs round the chamber, no quick bargain lifts the gate.
+      Put your worry on the balance. What is coming will not break.
+
+      [Outro - sustain]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1143
+    title: Nobody Walks the Towpath
+    track_number: 3
+    mood: [blue, midtempo, plain]
+    fact: >-
+      About the winter the towpath lamps were stripped off the posts for the metal in them, and the
+      man the crews blamed lived four doors from Sim Pallow and never spoke to him again.
+    arrangement_note: the drummer on this track is the man the song is about being wronged alongside, and he plays it with his hands like everything else here, which nobody in the room mentioned at the time
+    intro: 12
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      88 BPM plain blues; high female lead, low male harmony, guitar, piano, bass, hand kit, fade.
+    exclude: concertina, female harmony vocal, slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, drum sticks, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - guitar and bass, twelve seconds]
+
+      [Verse 1]
+      One winter every lamp went blind in order,
+      first by the wharf and then beyond the bend.
+      Bare posts held their stripped wire to the weather,
+      little copper tongues no current came to mend.
+      The towpath kept its stones, the locks kept turning,
+      freight crews still tied their haulers before dawn.
+      But every window watched the dark grow longer,
+      and every mouth supplied the missing hand.
+
+      [Chorus]
+      No one takes the black path home now.
+      Boots go round by the lane and the houses stay awake.
+      A lamp can lose its metal in a minute;
+      a neighbor loses years for one mistake.
+
+      [Verse 2]
+      They chose the man who lived four doors below us,
+      because he sold old fittings at the quay.
+      No court called him, no witness crossed his threshold,
+      but suspicion needs no manifest to leave.
+      His oldest friend looked down across the flour sacks,
+      then turned his face when both reached for the scale.
+      They had shared storm season, tools, and Sunday supper;
+      now they trade their silence twice a week.
+
+      [Instrumental - guitar and piano, eight seconds]
+
+      [Chorus]
+      No one takes the black path home now.
+      Boots go round by the lane and the houses stay awake.
+      A lamp can lose its metal in a minute;
+      a neighbor loses years for one mistake.
+
+      [Verse 3]
+      I met him where the final post leans waterward,
+      his hands deep in a coat too thin for frost.
+      He said he knew who first had laid the story,
+      then shook his head and would not name the cost.
+      Behind us, cargo chains were knocking softly;
+      ahead, the unlit towpath held its breath.
+      He took the longer road among the windows,
+      and I took it too, four careful doors behind.
+
+      [Final Chorus]
+      No one takes the black path home now.
+      Boots go round by the lane and the houses stay awake.
+      The posts may wear new lamps before next winter,
+      bright enough to show the faces at the gate.
+      But light cannot unsay what fear has spoken,
+      or teach two old friends how to meet again.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1144
+    title: Half a Mile an Hour
+    track_number: 4
+    mood: [slow, steady, dry]
+    fact: >-
+      Aldis Merrow plays it at the speed a loaded boat moves and would not agree to the tempo until
+      Torr Bexley had walked one alongside him.
+    arrangement_note: the tempo is a measurement rather than a choice — a loaded boat walked past a lock house window and counted — and nothing in the arrangement is allowed to push against it anywhere
+    intro: 13
+    outro: fade
+    target_duration: "4:20"
+    prompt: >-
+      62 BPM slow blues; high female lead, low male harmony, steady piano, guitar, bass, hand kit, fade.
+    exclude: concertina, female harmony vocal, slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, drum sticks, tempo changes, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano alone, thirteen seconds]
+
+      [Verse 1]
+      I left before the market lamps were waking,
+      with flour in the hold and rain ahead.
+      Your note lay underneath the folded manifest,
+      six quiet words I must have often read.
+      The hauler leaned against its rope and waited,
+      loaded low enough to comb the canal.
+      I told the morning I would reach you by tomorrow;
+      the morning knew the distance better than I did.
+
+      [Verse 2]
+      At the second gate the freight crew shared their coffee.
+      At the fourth, a fallen branch had caught the chain.
+      At the sixth, two children traded pears for stories.
+      At the eighth, the towpath disappeared in rain.
+      Every delay felt personal till evening,
+      every mile a judgment I had earned.
+      Then your window rose above the farther water,
+      one square of gold that never asked me to be fast.
+
+      [Refrain]
+      Half a mile an hour and the cargo still comes home.
+      Half a mile an hour with the towline pulling true.
+      Let the quick lanes spend themselves beyond us;
+      I have nothing left to outrun coming back to you.
+
+      [Verse 3]
+      I have lived where every clock runs like an argument,
+      where the last ferry shuts before goodbye.
+      I have pushed through transfer halls at closing,
+      with a berth number burning in my eye.
+      Still my hands remember this old balance,
+      stone beside me, dark green water under keel.
+      A loaded boat will tell the plainest measure:
+      what arrives too quickly may not arrive whole.
+
+      [Refrain]
+      Half a mile an hour and the cargo still comes home.
+      Half a mile an hour with the towline pulling true.
+      Let the quick lanes spend themselves beyond us;
+      I have nothing left to outrun coming back to you.
+
+      [Final Verse]
+      When I tied below your window it was midnight.
+      The flour was dry, the bow was cold with dew.
+      You came down barefoot, carrying no questions,
+      and held the line while I stepped onto stone.
+      Behind us all the lock gates kept their patience;
+      ahead, the kettle clouded up the pane.
+      I had crossed eleven miles in one long answer,
+      slow enough to know I meant every word.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1145
+    title: Two Boats Waiting
+    track_number: 5
+    mood: [funny, brisk, blunt]
+    fact: >-
+      The two crews who would not give way to one another for a whole afternoon in 2604 are both in
+      the song, and both of them bought the record.
+    arrangement_note: two flat blunt voices take one exchange with the band dropped out behind them, and they are the lead and the bass chair rather than anybody new, because there is nobody else in this band
+    intro: 5
+    outro: cold
+    target_duration: "3:35"
+    prompt: >-
+      104 BPM brisk blues; high female lead, low male harmony, flat spoken pair, guitar, hand kit, stop.
+    exclude: concertina, female harmony vocal, slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, drum sticks, additional voices, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - full band, five seconds]
+
+      [Verse 1]
+      One bow noses north and one bow noses southward,
+      meeting where the fourth lock narrows to a throat.
+      He has sacks of barley riding low behind him;
+      she has empty crates and one offended goat.
+      The painted rule is plain above the paddle:
+      loaded vessel first, the lighter vessel yields.
+      She reads it twice and ties her rope more firmly.
+      He folds both arms and settles at the wheel.
+
+      [Chorus]
+      Nobody moving, kettle coming on.
+      Six deep in the north lane, five behind the south.
+      Plenty of canal and one small gate between them;
+      pride has found the narrowest place to spread itself about.
+
+      [Verse 2]
+      A freight crew lays a blanket on the towpath.
+      Someone sells hot buns from a cargo tin.
+      A child starts taking wagers on the outcome;
+      even odds they both stay there till spring.
+      The goat eats half the corner of a manifest.
+      The barley man objects as if it matters now.
+      She lifts her cup and smiles across the water.
+      He checks the rule again and clears his throat.
+
+      [Spoken Exchange - two flat voices, band out]
+      You back up.
+      No, you back up.
+      My hold is full.
+      Your head is fuller.
+      That goat is eating paperwork.
+      The goat has made the wisest move all day.
+
+      [Chorus]
+      Nobody moving, kettle coming on.
+      Six deep in the north lane, five behind the south.
+      Plenty of canal and one small gate between them;
+      pride has found the narrowest place to spread itself about.
+
+      [Verse 3]
+      At dusk they both untie without discussion,
+      each reversing at the very selfsame beat.
+      He insists he moved from reason, not surrender;
+      she declares she only pitied those who'd eat.
+      The queues slide through while both crews cheer the darkness,
+      and the goat receives the final sugared bun.
+      Next week the pair will meet down at the wharfside,
+      each retelling how the other one was won.
+
+      [Break - piano and hand kit, six seconds]
+
+      [Final Chorus]
+      Everybody moving, kettle emptied out.
+      Six boats going northward, five boats heading south.
+      Plenty of canal behind the gate between them;
+      pride can fill a whole long day and leave by either mouth.
+
+      [Outro - cold stop]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1146
+    title: Paid at the Wharf
+    track_number: 6
+    mood: [driving, hard, defiant]
+    fact: >-
+      The sum in the last verse is what the four of them were paid for this record, once and flat, and
+      nothing has been added to it since.
+    arrangement_note: the hardest thing on the record and still played with hands, which puts the whole weight on the guitar and the bass and is why it drives without ever getting loud
+    intro: 4
+    outro: cold
+    target_duration: "3:30"
+    prompt: >-
+      108 BPM driving blues; high female lead, low male harmony, hard guitar, bass, hand kit, cold stop.
+    exclude: concertina, female harmony vocal, slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, drum sticks, loud dynamics, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - full band, four seconds]
+
+      [Verse 1]
+      We brought the flour down through freezing water,
+      four bent backs and two nights without sleep.
+      The sacks stayed dry beneath the patched tarpaulin;
+      the hauler took the frost along its keel.
+      At dawn the buyer stood beside the weighbridge,
+      clean cuffs, warm coat, pencil in his hand.
+      He found three faults not written on the manifest,
+      then named the only price that crossed the lane.
+
+      [Refrain]
+      Count it once and close your fingers.
+      Split it four ways, bite the coin.
+      Hunger makes a poor negotiator,
+      but hunger always reaches work on time.
+
+      [Verse 2]
+      Nine and four, the cargo and the winter,
+      nine and four, the room above the store,
+      nine and four for rope burns, cracked skin, waiting,
+      and carrying every sack across the wharf.
+      One share buys a ration and a candle.
+      One share keeps the rent man from the door.
+      One goes back to patch the leaking cover.
+      The final share is gone before it's warm.
+
+      [Bridge]
+      We could have turned the bow and kept the flour.
+      We could have watched it spoil inside the hold.
+      A choice between a bad price and no supper
+      is a choice that only sounds free when it's told.
+
+      [Verse 3]
+      Next market, if his table still is standing,
+      we'll lay our own black ledger by the scale.
+      Freight crew hours, storm loss, rope and patched canvas,
+      every cost his tidy sums conceal.
+      If he laughs, we'll tie and take the cargo,
+      find another buyer down the cut.
+      If every gate is barred against a fair share,
+      we'll feed each other first and call their bluff.
+
+      [Refrain]
+      Count it twice and open your fingers.
+      Split it four ways, name the coin.
+      Need may make a hard negotiator,
+      but four clear voices make a stronger line.
+
+      [Outro - cold stop]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1147
+    title: Down to the Lock House
+    track_number: 7
+    mood: [close, warm, final]
+    fact: >-
+      Sim Pallow plays with his hands and no sticks the whole way through, because the lock house is
+      joined to a house with a child asleep in it.
+    arrangement_note: everything on this record is quiet because of one wall and one sleeping child, and this is the track that says so, with the whole band at the bottom of its range
+    intro: 14
+    outro: sustain
+    target_duration: "4:05"
+    prompt: >-
+      74 BPM warm blues; quiet female lead, low male harmony, soft guitar, piano, hand kit, held end.
+    exclude: concertina, female harmony vocal, slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, drum sticks, loud dynamics, vocal tuning, whispered or rapped sections, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - guitar and piano, fourteen seconds]
+
+      [Verse 1]
+      Come in from the towpath, shake the rain off,
+      leave your heavy boots beside the door.
+      There's onion in the pot and coal enough till morning,
+      one chair at the table, two crates on the floor.
+      The last freight crew tied below the window;
+      their hauler wears a crust of river cold.
+      Speak easy when you tell us where you've come from.
+      A little girl is sleeping through the wall.
+
+      [Round]
+      Pass the bread low, pass the good cup slowly.
+      Keep the fire small and let the kettle hum.
+      The lane can shout till daylight finds it;
+      under this roof, let the quiet make us one.
+
+      [Verse 2]
+      She spent the afternoon outrunning thunder,
+      made a fort of blankets by the stair.
+      Now one small hand is open on the pillow,
+      trusting every grown voice in the air.
+      So tell your joke without the table shaking,
+      tap the rhythm with your palm, not wood.
+      We have all heard louder kinds of welcome;
+      none of them have ever warmed us half as good.
+
+      [Round]
+      Pass the bread low, pass the good cup slowly.
+      Keep the fire small and let the kettle hum.
+      The lane can shout till daylight finds it;
+      under this roof, let the quiet make us one.
+
+      [Verse 3]
+      Before first light the top gate needs attending,
+      and cargo wants the sea before the rain.
+      You may take the spare coat from the nail there;
+      send it homeward on the next relay.
+      If the sleeping child should wake and call us,
+      we'll say the dark has nothing left to prove.
+      Just water at the sill and friends below her,
+      keeping time so softly no dream has to move.
+
+      [Final Round]
+      Pass the bread low, pass the good cup slowly.
+      Keep the fire small and let the kettle hum.
+      The whole wide settlement may hurry;
+      under this roof, let the quiet make us one.
+      Come in from the weather, there is room beside the fire.
+      Mind the wall, and set another place for anyone.
+
+      [Coda - sustain]
+    take: null # M-34 fills this in at the Suno sitting

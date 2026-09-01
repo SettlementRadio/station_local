@@ -1,0 +1,545 @@
+# al_141 — Everything Comes By Water · The Ninefoot Cut (b_063) · Relay Road Import · 2612 · 7 songs · album
+#
+# Written by M-25. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Made in 2610, the season the cut was drained for repair and nobody working on it earned anything,
+# and issued at the road head in 2612. Relay Road Import had written asking for more of the first
+# record and got a slower one made by five people with no wages coming in.
+#
+# **This is the record the style card describes.** Wenna Ferrin came off the next boat that spring,
+# so the concertina arrives on the first bar of `s_1148` and the second harmony voice — female, under
+# the lead with Torr Bexley's — arrives with her. al_140 has neither and says so; from here on the
+# card applies as written.
+#
+# Fenna Crole has said the record is not about the closure and that it is simply the only time the
+# five of them have ever been in the same room for a whole season, which is what `s_1151` and
+# `s_1153` are actually about. **The repair gang sing the chorus of `s_1149`** and were paid the way
+# the band was, out of a share of what the lock house had. **Torr Bexley winds a boat rope round the
+# neck of the bass** on `s_1151` to deaden it and has never taken it off, so from this record on the
+# bass is shorter and drier than it was on al_140.
+#
+# `generation:` and every `take:` are empty until M-34.
+
+album:
+  id: al_141
+  title: Everything Comes By Water
+  band: b_063
+  band_name: The Ninefoot Cut
+  label: label_7
+  release_year: 2612
+  genre: old-system-sessions
+  cornerstone: false
+  song_count: 7
+  style_card: b_063
+  room: >-
+    The lock house front room again, in a winter with no water in the cut outside it and no money in
+    the house. Small, wooden, stone behind everything, one or two microphones, nothing overdubbed.
+    The card holds in full for the first time: light high female lead sung quietly, two harmony voices
+    close under her on choruses — one male, one female — never above her, and a concertina in the
+    line-up. Three things are this record's own. The upright bass has a boat rope wound round its neck
+    from s_1151 onwards, which is where the band's dry short bottom end comes from. The repair gang
+    sing the chorus of s_1149, eight or nine untrained voices, ragged and paid out of the same share
+    the band was. And Wenna Ferrin had been in the band three months when it was cut, which is audible
+    and was left audible.
+
+generation:
+  # Empty until M-34's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1148
+    title: Everything Comes By Water
+    track_number: 1
+    mood: [rolling, warm, communal]
+    fact: >-
+      Wenna Ferrin's concertina is on it from the first bar and she had been in the band three months
+      when they recorded it.
+    arrangement_note: the concertina is the first sound on the record and on this band's whole catalogue, and it is played by somebody who has been in the band a quarter of a year and is audibly finding her place
+    intro: 11
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      92 BPM warm blues; high female lead, two low harmonies, concertina first, guitar, piano, fade.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - concertina and guitar, eleven seconds]
+
+      [Verse 1]
+      Coal at dawn and flour in the evening,
+      lamp oil knocking softly in the hold,
+      letters from a sister past the basin,
+      seed in sacks and medicine kept cold.
+      Every hauler wears the town upon it,
+      every rope brings news against the stone.
+      Then you stepped ashore beside the concertina,
+      carrying one small case and nowhere else to go.
+
+      [Chorus]
+      Everything comes by water, bread and trouble, work and rain.
+      Everything comes by water, leaves us by the same old way.
+      Let the freight crew read the manifest and call the cargo plain;
+      I know the thing I waited for was you upon that boat.
+
+      [Verse 2]
+      When they drained the cut the shop went hollow,
+      bare hooks, empty bins, one ration left to share.
+      Chalk marks climbed the lock-house door till winter;
+      no hull answered when we turned to stare.
+      We learned the weight of ordinary plenty,
+      how a cabbage has a route, how coal has miles.
+      You learned every cold room on the lane then,
+      and stayed when staying offered no reward.
+
+      [Post-Chorus]
+      No last ferry, no late light under canvas,
+      only footprints where the water ought to be.
+
+      [Verse 3]
+      Spring came first as damp along the stonework,
+      then a dark line rising past the gate.
+      Children ran the bank to meet the first bow;
+      every grown hand found a reason there to wait.
+      The relay carried word beyond the basin,
+      but our lane knew hours before it crossed the air.
+      I heard your concertina through the window,
+      bright as something newly landed, choosing to remain.
+
+      [Chorus]
+      Everything comes by water, bread and trouble, work and rain.
+      Everything comes by water, leaves us by the same old way.
+      Let the freight crew read the manifest and call the cargo plain;
+      I know the thing I waited for was you upon that boat.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1149
+    title: The Cut Is Closed
+    track_number: 2
+    mood: [still, cold, patient]
+    fact: >-
+      The gang who drained the cut sing the chorus, and they were paid for it out of the same share
+      the band was.
+    arrangement_note: eight or nine untrained voices off the repair gang sing one chorus flat and ragged and a beat behind, and they are a gang rather than a backing part — this band's two harmonies stay where they always are
+    intro: 17
+    outro: sustain
+    target_duration: "4:20"
+    prompt: >-
+      68 BPM cold blues; high female lead, two low harmonies, concertina, ragged gang chorus, held end.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, blended or studio choir, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - concertina alone, seventeen seconds]
+
+      [Verse 1]
+      Stop planks at the head gate Monday morning,
+      Thursday boots were sinking in the bed.
+      Eleven miles of mud lay open under us,
+      pale stones showing where the water pressed.
+      We found a kettle, four bent wheels, a gate hinge,
+      stripped wire wound around a willow root,
+      all the little things a freight crew loses
+      and lets the dark green surface keep as truth.
+
+      [Work Chorus]
+      The cut is closed, the pay is thin, the winter settles in.
+      Lift together, set it square, and mind the rotten ground.
+      The water kept our living out of sight here;
+      now the bottom tells us what the place is built around.
+
+      [Verse 2]
+      One man clears the silt below the third gate.
+      One woman checks the stone for frost and seams.
+      Eight hands drag a broken beam to daylight,
+      then divide a ration by the lock-house fire.
+      No cargo moves, no office sends an answer,
+      no spare coin waits beneath the account.
+      Still they shoulder every frozen barrow,
+      because a town can owe what it cannot count.
+
+      [Gang Chorus - eight or nine voices, ragged and late]
+      THE CUT IS CLOSED. THE CUT IS CLOSED TILL SPRING.
+      MUD ON THE BOOTS AND NOTHING IN THE TIN.
+
+      [Verse 3]
+      At the deepest bend we find the old foundations,
+      black oak laid before our oldest wall.
+      Every hauler passed above those buried timbers;
+      no manifest had named them there at all.
+      We stand where loaded boats will cross by summer,
+      ankle-deep in what the current leaves.
+      Then cover every scar with gates and water,
+      trusting work the way the whole lane trusts the stream.
+
+      [Work Chorus]
+      The cut is closed, the pay is thin, the winter settles in.
+      Lift together, set it square, and mind the rotten ground.
+      The water kept our living out of sight here;
+      now the bottom tells us what the place is built around.
+
+      [Outro - sustain]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1150
+    title: A Winter Off the Boats
+    track_number: 3
+    mood: [slow, blue, close]
+    fact: >-
+      Fenna Crole wrote it in the four days her whole family were in the lock house together for the
+      first time since 2599, which she has said was three days more than anybody needed.
+    arrangement_note: the two harmonies stay out of it until the last refrain, which is the only time on the record the band leave the lead on her own for that long
+    intro: 14
+    outro: fade
+    target_duration: "4:15"
+    prompt: >-
+      64 BPM close blues; solo high female lead till final refrain, piano, concertina, dry bass, fade.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, continuous backing vocals, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and concertina, fourteen seconds]
+
+      [Verse 1]
+      My brother came up empty from the sea end,
+      my sister left her hauler on the stones.
+      Mother moved her sewing from the back room,
+      and four shut doors remembered we were home.
+      We stacked our boots beside the single fire,
+      passed one bowl and called the silence rest.
+      Outside, the drained cut held no cargo;
+      inside, every old word waited to be said.
+
+      [Refrain]
+      With the boats laid up, we all come homeward.
+      Four rooms, one fire, too much weather in our clothes.
+      We are kinder with eleven miles between us,
+      but winter shuts the lane and everybody knows.
+
+      [Verse 2]
+      First day we spoke of locks and coming thawtime.
+      Second day we sorted rope and grain.
+      Third day she asked why I had never answered
+      the relay sent before the autumn rain.
+      My brother watched the kettle cloud the window,
+      then put the question level on the board.
+      He said I used the cut to keep from choosing.
+      I said he used the sea to leave us all.
+
+      [Refrain]
+      With the boats laid up, we all come homeward.
+      Four rooms, one fire, too much weather in our clothes.
+      We are kinder with eleven miles between us,
+      but winter shuts the lane and everybody knows.
+
+      [Bridge]
+      No last ferry came to end the evening.
+      No freight crew knocked and gave us work to do.
+      The house held every breath above the table,
+      while the bare canal reflected nothing through.
+
+      [Verse 3]
+      At dawn he tied his blanket to his shoulder,
+      though frost was white as flour on the track.
+      I found the six clean words I should have given,
+      but pride can make a mouth refuse its work.
+      He left one glove beside the cooling kettle.
+      I keep it where the cargo ledgers lie.
+      Spring will put the water back between us;
+      before it does, I mean to make this right.
+
+      [Final Refrain - two harmonies enter]
+      When the boats return, we may go outward.
+      Four rooms, one fire, one word still left to choose.
+      We are kinder with eleven miles between us;
+      I would rather lose the distance than lose you.
+
+      [Coda - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1151
+    title: Nothing Moves Till the Thaw
+    track_number: 4
+    mood: [dry, tired, midtempo]
+    fact: >-
+      Torr Bexley plays with a boat rope wound round the neck of the bass to deaden it, which he began
+      doing because of the cold and has never stopped.
+    arrangement_note: the bass is muffled with rope from the first bar and is shorter and drier than a bass, closer to a low drum, and every record after this one has it
+    intro: 6
+    outro: cold
+    target_duration: "3:45"
+    prompt: >-
+      84 BPM dry blues; high female lead, two low harmonies, rope-muted bass, guitar, concertina, stop.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, ringing or sustained bass, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - deadened bass and guitar, six seconds]
+
+      [Verse 1]
+      Frost has sealed the mud beneath the footbridge.
+      Every empty gate throws back the wind.
+      Cargo lists hang useless in the office;
+      pencil dates go pale and start again.
+      I mend the same short rope each morning,
+      sweep the same clean step by half past nine.
+      Across the cut a neighbor lifts her curtain,
+      counting idle windows just like mine.
+
+      [Chorus]
+      Nothing turns before the thaw comes.
+      No gate, no wheel, no wages on the lane.
+      Put another cup beside the fire;
+      waiting weighs less when someone knows your name.
+
+      [Verse 2]
+      First week every freight crew oils its tackle.
+      Second week the broken chairs get square.
+      Third week someone knocks without a reason,
+      holding half a loaf and standing there.
+      We trade old stories for a jar of pickles,
+      argue which dark cloud contains the rain.
+      By the fourth week every shut-up household
+      knows who needs a ration, coal, or company.
+      News no distant relay bothered carrying:
+      whose roof leaks, whose child has outgrown shoes.
+
+      [Turn]
+      Let the far relay keep selling sunshine.
+      Let the core call winter picturesque.
+      Here the cold is rent without the money,
+      and every friendly knock becomes a wage.
+
+      [Chorus]
+      Nothing turns before the thaw comes.
+      No gate, no wheel, no wages on the lane.
+      Put another cup beside the fire;
+      waiting weighs less when someone knows your name.
+
+      [Verse 3]
+      Then one night the drainpipe starts its tapping.
+      One black ribbon opens by the wall.
+      Boots appear before the office doorway;
+      someone brings a fresh new manifest.
+      We will miss the hours we claimed to hate here,
+      doors unlocked before the evening bell.
+      Soon the haulers pull our lives to motion;
+      tonight we let the melting water tell.
+      Cold has drawn a map through all our doorways;
+      every borrowed kindness leaves a mark.
+
+      [Outro - cold stop]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1152
+    title: Owe It to the Shop
+    track_number: 5
+    mood: [wry, brisk, plain]
+    fact: >-
+      The woman who kept the crews in credit through the closure is in the second verse and asked the
+      band to leave her name in it.
+    arrangement_note: the briskest thing on the record, and the only one where the two harmonies sing the whole chorus rather than the last line of it, because the chorus is a thing a lot of people would say
+    intro: 4
+    outro: fade
+    target_duration: "3:40"
+    prompt: >-
+      106 BPM brisk blues; high female lead, two low harmonies, guitar, concertina, piano, dry bass, fade.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - full band, four seconds]
+
+      [Verse 1]
+      At the wharf end, where the lane turns muddy,
+      one warm window keeps the winter back.
+      Flour on the shelf and oil behind the counter,
+      ration tins in one careful little clean stack.
+      She knows which freight crew missed its payment,
+      who has children, whose old mother needs the coal.
+      Never asks for reasons, never offers pity;
+      only takes her pencil from its string.
+
+      [Refrain]
+      Put it on the book till water's running.
+      Put it by the flour, plain and small.
+      Debt can bow a head when someone names it;
+      trust can let you leave there standing tall.
+
+      [Verse 2]
+      One column holds the tea and winter candles.
+      One holds boots repaired and canvas thread.
+      No interest blooms beside the quiet figures,
+      no stamped demand comes riding on the relay.
+      Her rule is pay the shop when work comes homeward,
+      before the bright new coat, before the ale.
+      Keep the promise without making speeches.
+      She will keep your hunger from the lane.
+
+      [Refrain]
+      Put it on the book till water's running.
+      Put it by the flour, plain and small.
+      Debt can bow a head when someone names it;
+      trust can let you leave there standing tall.
+
+      [Verse 3]
+      Thaw brings cargo, wages, boots at daybreak,
+      and coins begin to gather by the scale.
+      Each hand pays its line without reminder;
+      each mark disappears beneath the nail.
+      I ask what happens if the locks stay empty.
+      She looks at me until the question ends.
+      Then slides a sack of rice across the counter,
+      for the new freight crew delayed beyond the bend.
+
+      [Final Refrain]
+      Put it on the book; the water's running.
+      Leave the pencil hanging where it falls.
+      What we owed was counted out in winter;
+      what she gave us never fit the book at all.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1153
+    title: Somebody Else's Kitchen
+    track_number: 6
+    mood: [warm, fond, slow]
+    fact: >-
+      Written about the fortnight the band spent eating in other people's kitchens, and Fenna Crole
+      has never said whose.
+    arrangement_note: the warmest thing on the record and the only one where the concertina and the piano play the same line for the whole of it, which was Wenna Ferrin's idea and her first
+    intro: 13
+    outro: sustain
+    target_duration: "4:10"
+    prompt: >-
+      78 BPM warm blues; high female lead, two low harmonies, doubled concertina and piano, bass, hold.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - concertina and guitar, thirteen seconds]
+
+      [Verse 1]
+      First night, cabbage folded into barley,
+      steam along a window patched with tape.
+      Seven wet coats crowd the narrow passage;
+      five more chairs are boxes turned in place.
+      Someone tears the final loaf in pieces,
+      someone adds hot water to the stew.
+      No one asks what cargo failed to reach us.
+      Hunger is a fact we all can use.
+
+      [Verse 2]
+      Next night, farther up beside the fourth gate,
+      onion, beans, and pepper from a jar.
+      A freight crew tells a joke about the core lanes;
+      nobody gets it, everybody laughs.
+      We wash plates in one tin basin,
+      dry them with a sleeve and stack them straight.
+      Tomorrow our own fire will hold another table;
+      tonight we take the place somebody makes.
+
+      [Refrain]
+      Somebody else's kitchen, somebody else's chair,
+      somebody's last clean ration finding room enough to share.
+      Sit wherever hands can pass a bowl along.
+      Eat until the dark outside remembers you belong.
+
+      [Verse 3]
+      A newcomer sits closest to the doorway,
+      ready for the moment she should leave.
+      Three months on the lane and still apologizing,
+      still believing welcome must be earned.
+      An old hand puts more potatoes on her plate then,
+      asks her for the tune she played last week.
+      By the final cup she knows the children's nicknames;
+      by the door she knows which floorboard speaks.
+
+      [Refrain]
+      Somebody else's kitchen, somebody else's chair,
+      somebody's last clean ration finding room enough to share.
+      Sit wherever hands can pass a bowl along.
+      Eat until the dark outside remembers you belong.
+
+      [Final Verse]
+      Fourteen nights and fourteen different tables,
+      every manifest of hunger crossed away.
+      When the cargo comes, we'll fill our shelves and kettles,
+      send the borrowed bowls back down the lane.
+      No brass plate will mark the winter's giving.
+      No relay will announce who carried whom.
+      Just a knock, a coat, a space beside the cooker,
+      and another chair appearing in the room.
+
+      [Outro - sustain]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1154
+    title: Back on the Water
+    track_number: 7
+    mood: [bright, driving, final]
+    fact: >-
+      The first thing the five of them played on the day the water came back, standing on the lock
+      beam, and the record ends where the closure did.
+    arrangement_note: the brightest and fastest thing on the record, and the one place where the light kit is played with sticks, because it was played outdoors on a lock beam before it was played indoors
+    intro: 8
+    outro: cold
+    target_duration: "3:35"
+    prompt: >-
+      108 BPM bright blues; high female lead, two low harmonies, guitar, concertina, bass, sticks, stop.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - full band, eight seconds]
+
+      [Verse 1]
+      Pull the stop planks, let the first stream shoulder
+      through the gate and darken all the clay.
+      Children mark the rise against the stonework;
+      grown hands find no better work today.
+      Two long days the empty channel gathers,
+      taking sky and willow leaf again.
+      Every window on the lane stands open,
+      listening for water under wind.
+
+      [Chorus]
+      Water under us again, work before us once again.
+      Open every gate and loose the waiting line.
+      Same eleven miles, but every mile is waking;
+      let the loaded morning take its time.
+
+      [Verse 2]
+      Freight crews roll their canvas, test the towropes,
+      chalk new cargo figures by the door.
+      Shop hands wheel the flour sacks from storage;
+      someone hangs fresh prices on the board.
+      The first hauler rounds the lower corner,
+      strange paint shining, captain half asleep.
+      He sees nine people cheering from the lock beam,
+      checks his manifest and asks what he has missed.
+
+      [Break - concertina, guitar, and stick kit, eight seconds]
+
+      [Chorus]
+      Water under us again, work before us once again.
+      Open every gate and loose the waiting line.
+      Same eleven miles, but every mile is waking;
+      let the loaded morning take its time.
+
+      [Verse 3]
+      Nothing happened that the relay noticed,
+      no new settlement, treaty, launch, or crown.
+      Mud took water, ropes took weight and purpose,
+      one unknown boat went quietly down.
+      Yet the winter loosened from our shoulders,
+      every debt stood half an inch less tall.
+      We raised both hands as cargo passed beneath us,
+      and the stranger waved without knowing why at all.
+
+      [Final Chorus]
+      Water under us again, work before us once again.
+      Open every gate and loose the waiting line.
+      Same eleven miles, but every mile is waking;
+      let the loaded morning take its time.
+      Let the concertina carry past the basin;
+      let the stick beat answer from the stone.
+
+      [Coda - cold stop]
+    take: null # M-34 fills this in at the Suno sitting

@@ -62,12 +62,12 @@ marked **NEXT**.
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
 | **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-49** old-system sessions grows to 90 · 2026-08-13 | **all done.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15. No genre carries an `owed_to:` marker any more |
-| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-19 | **M-19** the fourteen-song listen · 2026-08-16 | **done, and the pilot passed.** 45 takes on Suno Pro v5.5, filed, licensed, measured and tagged · **the operator has listened and said yes**, so stages 4–6 run as written · only M-40 stays open, and it stays open until M-38 |
+| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-51 · M-19 | **M-19** the fourteen-song listen · 2026-08-16 | **done, and the pilot passed.** 45 takes on Suno Pro v5.5, filed, licensed, measured and tagged · **the operator has listened and said yes**, so stages 4–6 run as written · **M-40 stays open until M-38, and M-51 is open and unstarted** — it counts the two licence rules that are still prose, and belongs before the next generator's first pile is filed |
 | 2 · The wiki — the catalogue-wide pass | M-07 … M-15 | **M-15** the catalogue-wide pass · 2026-08-14 | **finished. The wiki is frozen.** 500 playable songs across 9 genre files, 25 bands and 63 albums · every label clears §5's floor · layer B carries 55 release years · all eight of §12's rules as they then stood live and green (M-50 has since made it ten) |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-06** `music/catalogue.yaml` · 2026-08-16 | **all done.** The takes are measured (D-083), tagged (D-084), and joined into the one file the station's database ingests — 1,358 tracks, 45 of them playable, checked against the wiki by `make check` (D-085) |
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
 | **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
-| **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-33** Frontier Reels' audio, all 95 filed, measured and tagged · 2026-08-28 | **M-25 is NEXT** — old-system sessions' lyrics, 90 songs across 4 bands. Three genres down and all three complete: relay-pop 105, lane-rock 110, Frontier Reels 95. **310 of the 500 playable songs now exist.** 190 songs of lyrics and 190 of audio still to go, across four genres |
+| **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-25** old-system sessions' lyrics, 90 songs across 11 albums · 2026-08-29 | **M-34 is in progress and stays NEXT — 44 of 90 filed, 2026-08-31 and 2026-09-01**, measured, tagged and in the catalogue. `al_098` … `al_102` are all complete, so **Terrace Road Four and The Shore Rounds are finished bands** and neither is split across generators. **354 of the 500 playable songs now exist.** 46 takes are owed — Undershore Local and The Ninefoot Cut, both untouched — and the operator will make them on a different generator with its own licence evidence. **2026-09's licence PDF is not captured yet** (M-40, D-098) |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -103,12 +103,14 @@ before the next one starts. That pairing is the point: a problem shows up after 
 instead of after 455. The two cards inside one genre cannot overlap, so **the sessions take turns
 rather than running side by side.**
 
-**Two genres are finished and the third has its words.** Relay-pop is 105 of 105. Lane-rock's
-words were written on 2026-08-19 (M-22) and its audio landed on 2026-08-25 (M-31): all 110 takes
-generated, filed, tagged and in the catalogue, one of them fetched twice because the first download
-stopped at 8.2 seconds. **M-24 closed on 2026-08-26** — Frontier Reels' 95 lyrics across 12 albums,
-written and green on all ten of §12's rules. **M-33 is next and it is yours**: 95 takes, four bands,
-one band per sitting.
+**Three genres are finished and the fourth has its words.** Relay-pop is 105 of 105, lane-rock is
+110 of 110, and Frontier Reels closed on 2026-08-28 (M-33) — 95 takes generated, filed, measured and
+tagged, every one of them matching its written lyric exactly. **M-25 closed on 2026-08-29** —
+old-system sessions' 90 lyrics across 11 albums, written and green on all ten of §12's rules, and
+written at the word floor plus eleven because M-39 asked for that in writing. **M-34 is next and it
+is yours**: 90 takes, four bands, one band per sitting, and the four bands sound less like each other
+than any genre so far — a Mars tram works canteen, four voices in a Titan lake yard, a cold Europa
+gallery and a lock house on eleven miles of Earth canal.
 
 **Filing a pile is now `make music-dispatch`** rather than something an agent works out each time.
 Point it at the export folder; it reads the lyric out of every file's own tags, proves the whole pile
@@ -481,6 +483,34 @@ Pro with remixing disabled, so the pilot's 45 are covered. Two things to watch, 
 it takes effect; and a **Remix-enabled track stays non-commercial even on a paid tier**, so remixing
 has to stay off.
 Depends on: M-18
+
+### M-51 · `[agent]` The two licence invariants that are arithmetic
+Goal: A take cannot claim a licence period it was not generated in, or one with no evidence behind
+it. **M-40 is a prose rule — "save the PDF at the start of each month you generate in" — and it has
+already been missed once**, on 2026-09-01. §12's whole argument applies: across six writing sessions
+the counted rules held and the prose rules failed, and *a rule that cannot go red is a preference*.
+Files: `src/station/music/check.py` and its unit test.
+Check: two things go red that are green today, and the real files stay green.
+  1. **The month must match.** Every take records its own `suno_created` timestamp. A take whose
+     `licence_period` names a different year-month than that timestamp goes red — so
+     `suno-pro-2026-08` on a take created `2026-09-01T11:29:55Z` fails. This is the one that would
+     have caught a real mistake: `al_102`'s `generation:` block was written by copying another
+     album's, and had the month not been edited, five September takes would have claimed August's
+     terms with nothing to say so.
+  2. **The named period must have evidence.** A `licence_period` of `<vendor>-<tier>-<YYYY>-<MM>`
+     requires a file in `music/licence-evidence/` whose name begins `<YYYY>-<MM>-<vendor>-`. Today
+     `suno-pro-2026-08` finds `2026-08-suno-terms.pdf` and `suno-pro-2026-09` finds
+     `2026-09-suno-licence-note.md`; an invented period finds nothing and fails. **Match on the
+     prefix, not on a PDF specifically** — 2026-09's evidence is legitimately August's PDF, named by
+     that period's note, and requiring a PDF per period would go red on a state that is correct.
+Note: **the third invariant is already done.** The `<vendor>-<tier>-<YYYY>-<MM>` shape check landed
+at M-34 (D-098) in `tests/unit/test_music_tag.py`; it replaced a `startswith("suno-")` that passed
+`suno-x` and would have gone red on the first take from any second generator. This card is the other
+two. If the shape check is better placed in `check.py` alongside these, move it and say so.
+**Do this before the next generator's first pile is filed**, not after — that is the sitting where a
+period gets typed for the first time and there is nothing to copy it from.
+Depends on: M-06 for the take blocks, M-40 for the folder. Nothing depends on it, and it does not
+block M-34.
 
 ### M-19 · `[you]` The fourteen-song listen — the decision point — **DONE 2026-08-16**
 Goal: Decide whether this approach is worth 455 more songs.
@@ -1053,12 +1083,12 @@ are never reused, because a number is an identity here and not a position in a q
 | 1 | **M-21 relay-pop — done** | **M-30 relay-pop — done** | 60 |
 | 2 | **M-22 lane-rock — done** | **M-31 lane-rock — done** | 110 |
 | 3 | **M-24 frontier-reels — done** | **M-33 frontier-reels — done** | 95 |
-| 4 | **M-25 old-system-sessions · NEXT** | M-34 old-system-sessions — 4 bands | 90 |
+| 4 | **M-25 old-system-sessions — done** | **M-34 old-system-sessions · NEXT** — 44 of 90 filed | 90 |
 | 5 | M-27 void-lounge | M-36 void-lounge — 4 bands | 55 |
 | 6 | M-28 core-harmonies | M-37 core-harmonies — 1 band | 20 |
 | 7 | M-29 void-ballads | M-38 void-ballads — 2 bands | 25 |
 
-### M-21 · M-22 · M-24 · M-25 · M-27 · M-28 · M-29 · `[agent]` Lyrics and prompts — 59 albums, 455 songs — **M-24 DONE 2026-08-26**
+### M-21 · M-22 · M-24 · M-25 · M-27 · M-28 · M-29 · `[agent]` Lyrics and prompts — 59 albums, 455 songs — **M-25 DONE 2026-08-29**
 Files: one file per album under `music/production/lyrics/`
 Check: every song has lyrics, a generation prompt and an exclude line; every lyric passes the
 swap-the-nouns test; every song has a vocal. M-21 writes `al_005.yaml` … `al_011.yaml`.
@@ -1161,11 +1191,72 @@ prompt and in its album's `room:` block; no style card was amended.
 **Nothing was generated and nothing was measured**: every `generation:` block and every `take:` is
 null until M-33, `music/catalogue.yaml` is byte-identical, and `make music-tag` reports exactly what
 it reported before.
+Result (M-25): **old-system sessions is written — 90 songs across 11 albums**, `al_098` … `al_104`
+and `al_140` … `al_143`, on one label, by four bands who have never heard each other: a tram works
+canteen on Mars, four voices in a Titan lake yard, a cold Europa under-ice gallery and eleven miles
+of Earth canal. It carries one of the catalogue's six **cornerstones** — `al_098`, thirteen
+songs, one room, one whole 56-minute programme — and the extra passes §5 asks for went there.
+**`make check` is green on all ten of §12's rules.**
+**The lyrics are shorter than the last three genres and that is M-39's instruction carried out.**
+296 to 322 sung words, **mean 299 — the floor plus eleven** — 26,949 words in all, against Frontier
+Reels' 340, lane-rock's 317 and relay-pop's 308. M-39 measured three genres at three different rates
+spanning eleven per cent and concluded that *"the rate is a property of the genre and only
+measurement gives it — write at the floor plus a small margin and let this card find the rest."*
+That is what these are. **The estimate is stated rather than compensated for** (D-096): this genre
+runs 58–124 BPM where every measured genre starts at 100, so at 0.75 seconds a word these come back
+near **3:44** and at 0.90 near **4:29**, and nothing in the writing narrows that. M-34 and M-39
+settle it.
+**§7's distributions land, and the outros are the closest any genre has come.** Outros are **25 cold
+/ 39 fade / 26 sustain**, which is 28/43/29 against §7's 30/45/25. Ramps declare **61% at eight
+seconds or more and 17% at fifteen**, against §7's ≥40% and ≥15% — deliberately lower than Frontier
+Reels' 73%, because M-39 has now found four genres in a row where declaring the ramp did not produce
+it and inflating the declaration further is the one thing already known not to work. Stated targets
+average **3:50** with nothing under 3:15.
+**This form takes an instrumental break three times in ninety songs and that is a decision** (D-096).
+§7 gives the break to three forms by rule, forbids it to two, and leaves the rest free; no card in
+this genre names a break instrument, so there was no distribution to hit and none was aimed at. The
+three are Wesla Tarn's slide on `s_0803`, and Tel Brask's harmonica through a lamp horn on `s_0812`
+and `s_0844` — each one the answer to a question its own wiki fact asks, on an instrument that
+record's credits already put in the room.
+**Rule 4 bound harder here than in any genre yet.** These titles are plain speech lifted straight out
+of the lyric — *Nothing Dries Down Here*, *Two Cups and No Sugar*, *Nobody Locks It Behind Us* — and
+**the first pass had four albums at 100% and two more above 70%.** 36 of 90 sing their own title and
+the other 54 take it from an image or a fact in the lyric, which is M-47's finding arriving in the
+genre that resists it hardest. Rule 1 cost little: every album carries seven to eleven distinct
+section shapes, because a read-out list, a rota, a committee's request, a round entered a bar apart
+and a room shouting back are all different shapes and this genre supplies all of them. Rule 3 came
+free — **the echoed answer is on 1 of 90**, and it is a foreman being answered by a canteen.
+**Rule 5 was the awkward one and it is a finding rather than a failure.** §12's noun list is the
+settled worlds' furniture and these four bands live in the home system, where there is no burn day,
+no relay road to speak of and no last ferry. What carries it is the freight, dock and life-support
+half of the list: **21 of the 43 nouns are used** — siding, lane, deck, berth, hold, cargo, manifest,
+hauler, freight crew, ration, scrubber, airlock, bulkhead, blowout, oxygen tank, stripped wire,
+storm season, ferry, settlement, the dark, the lag — and every song clears the floor of two. A tram
+works has sidings, a lake yard has berths, an under-ice works has a scrubber and a bulkhead, and a
+canal has a freight crew and a manifest. **No song reaches the floor on a word the room would not
+have said.**
+**Three collisions between the wiki and the style cards were resolved the wiki's way** (D-096), and
+one of them is dated rather than permanent: `b_063`'s card lists a concertina and two harmony voices,
+Wenna Ferrin joins in 2610, and `al_140` was cut in 2605 — so that record has neither, by name, in
+every exclude line on it, and the first concertina in the band's life is the first bar of `al_141`.
+`b_048`'s exclude line says `large hall reverb` and `s_0847` is the four-second gallery decay that
+song is about, so that one track lifts the exclusion and asks for the decay instead. And `b_048` has
+no bass player in the wiki at all, so both Undershore Local records exclude a bass of any kind rather
+than trusting the card's narrower `electric bass`.
+**Four songs are sung by somebody other than their band's lead voice** and every one is a wiki fact:
+`s_0818`, `s_0824`, `s_0829` and `s_0853`. Each is named in its own prompt, excludes the usual voice
+explicitly, and is listed in its album's `room:` block; `b_048`'s card had already anticipated its
+one in words. No style card was amended. Nothing here names a real artist, band, producer or label
+(§8), and the only real places named are the six canon allows this genre — Earth, Mars, Europa,
+Titan, Saturn and the Belt.
+**Nothing was generated and nothing was measured**: every `generation:` block and every `take:` is
+null until M-34, `music/catalogue.yaml` is byte-identical, and `make music-tag` reports exactly what
+it reported before — 310 of 310.
 Depends on: M-20 for M-21; thereafter each genre's lyrics card depends on the previous genre's
-**audio** card being finished — that is what "one genre at a time" means. **M-24 closed on
-2026-08-26, so M-33 is runnable now**, and M-25's turn comes when M-33 does.
+**audio** card being finished — that is what "one genre at a time" means. **M-25 closed on
+2026-08-29, so M-34 is runnable now**, and M-27's turn comes when M-34 does.
 
-### M-30 · M-31 · M-33 · M-34 · M-36 · M-37 · M-38 · `[you]` Suno — 455 songs — **M-33 DONE 2026-08-28**
+### M-30 · M-31 · M-33 · M-34 · M-36 · M-37 · M-38 · `[you]` Suno — 455 songs — **M-33 DONE 2026-08-28 · M-34 44 OF 90 FILED 2026-09-01**
 Files: `music/audio/<label>/<album>/NN.mp3`
 Check: every song in that genre has a keeper take, downloaded and named, with the prompt, attempts,
 model version and date recorded in the album's lyrics file. Custom mode only.
@@ -1251,6 +1342,51 @@ Each song's `prompt:` is the style box and its `lyrics:` is the lyric box, Custo
 **Check the lyric box actually changed before you generate** — that is the one failure this card
 found. **September needs its own licence PDF the day you start generating in it** (M-40), and the
 takes generated on 2026-08-27 and 2026-08-28 are the last ones 2026-08's evidence covers.
+Result (M-34, part 1, 2026-08-31): **38 of old-system sessions' 90 takes are filed, measured, tagged
+and in `music/catalogue.yaml`** — `music/audio/label_7/al_098` … `al_101`. Suno Pro, v5.5,
+`suno-pro-2026-08`, generated across 2026-08-30 and 2026-08-31 in seven sittings. `al_099`, `al_100`
+and `al_101` are complete; `al_098` is 12 of 13. **All 38 match their lyric exactly** —
+`lyric_match: 1.0000` on every one, as on Frontier Reels.
+**The dispatch refused the pile twice before it filed anything and both refusals were right** (D-097).
+**`s_0796` *The Room at Terrace Road* was never generated**: two takes came back nineteen seconds
+apart carrying the same words — `s_0797`'s — because the lyric box did not change when the style box
+did. That is D-091's failure a second time, on the title track of the genre's cornerstone. The
+operator has no time to regenerate it, so its `take:` is null and it is an unplayable row; filing one
+of the pair under it was refused, because a take of *Don't Wait Up for the Late Car* entering the
+catalogue as a song whose one fact is a works bell it does not contain is the exact thing D-091
+exists to stop. And **`s_0809` was generated from a different hand-written draft than the file held**,
+caught at 21%; the file was corrected to the words actually sung rather than the take regenerated,
+which is the opposite of D-093's rule for vendor drift and for a stated reason.
+**52 takes are owed and the operator will make them on a different generator.** Two things follow:
+`b_047` The Shore Rounds will be split across two vendors — `al_100` and `al_101` on Suno v5.5,
+`al_102` elsewhere — which is the stronger form of the risk COMMISSION §9's *"finish a band in one
+sitting"* names; and those takes cannot carry `suno-pro-2026-08`, so they need their own dated
+evidence file and their own `licence_period` the day generation starts (M-40).
+Result (M-34, part 2, 2026-09-01): **six more takes filed — `s_0796` and all five of `al_102`** —
+all matching at `lyric_match: 1.0000`, generated in one sitting of under seven minutes plus one
+regeneration. **`s_0796` *The Room at Terrace Road* now exists**, so the genre's cornerstone is 13 of
+13, and the first attempt at it — which D-097 proved had never been made at all — is closed.
+**Five records are complete and two bands are finished.** `al_098` … `al_102`, which is Terrace Road
+Four's 24 songs and The Shore Rounds' 20. Both clear §5's 18-song floor, so **two artist profiles are
+makeable**, and Relay Road Import reaches **44 playable songs**, past the 40 a label retrospective
+needs. **No band in this genre is split across two generators any more** — the risk D-097 named is
+closed rather than accepted, because `al_102` was made on Suno alongside its two sibling records.
+**`al_098` is the first record in the catalogue made in two licence periods** (D-098): tracks 2–13
+under `suno-pro-2026-08`, track 1 under `suno-pro-2026-09`. Nothing needed inventing — D-062 already
+resolves a song's `take:` block before the album's `generation:`, so track 1 overrides that one field
+and each mp3 carries the period it was actually made under.
+**The September evidence is outstanding and that is the one thing owed on this card.** The operator
+has confirmed Pro and remixing off on 2026-09-01, which is what §9 conditions commercial rights on,
+so the six were filed. The dated capture of the terms has not been taken.
+`music/licence-evidence/2026-09-suno-licence-note.md` exists and opens by saying so, because
+`licence_period` is free text and **no gate in this project will ever ask** (D-098).
+Note (M-34, for the remaining 46): they are **Undershore Local** (`al_103`, `al_104` — 16 songs) and
+**The Ninefoot Cut** (`al_140` … `al_143` — 30 songs), and neither has a single take yet, so both can
+go to a different generator without splitting a band. **Test one track before committing to 46**:
+`make music-dispatch` proves a take by the lyric in its own tags and currently expects Suno's exact
+`id=` and `created=` comment format, which another vendor is unlikely to write. **And run M-51 before
+that pile is filed** — it counts the two licence invariants that are still prose, and the new
+generator's first sitting is exactly where a wrong period would be typed.
 Depends on: M-21 for M-30, M-22 for M-31, and so on down the table.
 
 ### M-39 · `[agent]` Measure and tag every song
@@ -1308,6 +1444,32 @@ come from are choosing different takes, the mixer at M-42, or §7's ramp distrib
 something this vendor will not do. **That is now a decision for the operator rather than a finding**,
 and it is the one thing in stage 5 that has failed the same way four times.
 All 310 playable songs now average **3:46** against §7's 3:30.
+Old-system sessions pass, part 1, 2026-08-31 — **38 of 90 measured and tagged, and the rate finally
+moved the way the tempo said it would.** These 38 come back at **0.853 seconds per written sung
+word** against Frontier Reels' 0.698, relay-pop's 0.746 and lane-rock's 0.779. **D-096 predicted
+0.75 to 0.90 from the tempo alone and it landed at 0.853**, near the top of that range — the first
+time the prediction has been right in direction and size, and the spread across four genres is now
+0.155 seconds a word, twenty-two per cent.
+**So the floor buys far more than it did.** §12's 288 words lands at **4:05** here, not 3:36; the
+written mean of 299 lands at **4:15**; the 38 average **4:20**, the longest of any genre, nothing is
+under 2:00, the shortest is 3:05 and the longest 5:33. **An hour of this is 12.9 songs.** Writing at
+the floor plus eleven was the right call and writing at Frontier Reels' 340 words would have produced
+a 4:50 average.
+**This is the first genre whose takes come in OVER their stated target** — **+33 seconds on average,
+over on 31 of 38** — against the pilot's 61.7 seconds under and Frontier Reels' 8.1 under. §7's note
+that the stated target is *"an honest statement of the take we want"* now cuts the other way: for a
+slow form the words overshoot it.
+**The ramps improved and one half of §7 is met for the first time in the project.** 11 of the 38 have
+a measurable run-up at all — **29%**, against 12% on relay-pop, 4% on lane-rock and 8% on Frontier
+Reels. 10 reach eight seconds (26%, where §7 asks 40%) and **6 reach fifteen (16%, where §7 asks
+15%)**. After four genres of *declaring the ramp does not produce the ramp*, the thing that produced
+some was a slow form, not a bigger number in the prompt.
+**The outros are the widest miss so far and the fade is what vanished.** Measured **22 sustain / 14
+cold / 2 fade** — 58 / 37 / 5 against §7's 30 / 45 / 25 — where the lyrics declared 17 fade, 11 cold
+and 10 sustain. Suno gave back two fades out of seventeen asked for and turned the rest into a held
+ending. On a form this slow a sustain and a fade are a close call by ear, which is worth knowing
+before the remaining 52 are made somewhere else.
+All 348 playable songs now average **3:50** against §7's 3:30.
 Depends on: M-05, and each genre's audio card as it lands. Closes when M-38 does.
 
 ---

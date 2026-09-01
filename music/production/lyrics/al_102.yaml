@@ -1,0 +1,431 @@
+# al_102 — Whatever Fits the Crate · The Shore Rounds (b_047) · Relay Road Import · 2624 · 5 songs · EP
+#
+# Written by M-25. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# **The first record anybody in the home system made because the settled worlds asked for one.**
+# Relay Road Import wrote to the Shore Rounds in 2622 asking for more and, being an importer rather
+# than a label, specified the request in minutes of crate space rather than in songs. The band cut
+# five in 2623 and the record runs to within a minute of the length the letter named. That letter is
+# the subject of three of the five songs and is quoted inside `s_0837`, which is Bran Teale putting
+# the importer's own request — *songs with fewer names in them, if that can be arranged* — into a
+# verse and then leaving every other name on the record alone.
+#
+# It is the only Shore Rounds record made in a hired room, and Effa Lomm has said that agreeing to
+# the length was the concession and the room was merely the consequence. **Amon Furlow came from
+# Mars to play piano on `s_0838`**, invited by the same letter, and met the band on the morning of
+# the session; b_047's card lists no piano and does not need to, because the credits do. **`s_0839`
+# has no instruments on it at all** — four voices and nothing under them, which is what this band
+# does at the end of every night in the yard and had never put on a record.
+#
+# `generation:` and every `take:` were filled from the dispatch manifest at M-34. All five takes
+# match their lyric exactly and the record filed complete in one sitting of under seven minutes —
+# the shortest sitting in the catalogue, for the shortest record in the genre. **It is the first
+# record generated in 2026-09**, so it carries `suno-pro-2026-09` and its evidence is its own file
+# (COMMISSION.md §9, M-40, D-098). Filing it completes The Shore Rounds, so no band in old-system
+# sessions is split across two generators.
+
+album:
+  id: al_102
+  title: Whatever Fits the Crate
+  band: b_047
+  band_name: The Shore Rounds
+  label: label_7
+  release_year: 2624
+  genre: old-system-sessions
+  cornerstone: false
+  song_count: 5
+  style_card: b_047
+  room: >-
+    A hired room on Titan with a stove in it, which is the only room this band has ever paid for and
+    the reason two of these lyrics are about warmth. Voices first, instruments beneath, one
+    microphone, no overdubs, no drum kit. The card holds: plain clear female mezzo starting alone,
+    three voices entering a bar apart, the male bass voice last. Two things are this record's own
+    and both are in the credits. Amon Furlow plays piano on s_0838 and leaves holes in the time that
+    nobody in this band plays into, which is the arrangement note and not a description of a mood.
+    And s_0839 is four voices with no instrument of any kind anywhere on it — the exclude line keeps
+    every instrument out rather than leaving it to chance, because everything else on the record has
+    a reed organ under it.
+
+generation:
+  # Filled from the manifest by M-34. Suno Pro, remixing disabled — the same account, tier and
+  # settings as every take before these, confirmed by the operator on 2026-09-01. **This is the
+  # first record generated in 2026-09**, so it is the first to carry `suno-pro-2026-09` rather
+  # than the August period, and its evidence is its own file (COMMISSION.md §9, M-40).
+  model_version: v5.5
+  licence_period: suno-pro-2026-09
+  generated_on: 2026-09-01
+  sittings:
+    - {date: 2026-09-01, from: '11:29:55', to: '11:36:17', tracks: [1, 2, 3, 4, 5]}
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: >-
+    Dispatched from music/audio/RAW by `make music-dispatch`. All five takes matched their
+    lyric exactly and the record filed complete in one pass, in one sitting of under seven
+    minutes — the shortest sitting in the catalogue, for the shortest record in the genre.
+    Filing it completes The Shore Rounds, so no band in old-system sessions is split across
+    two generators.
+
+songs:
+  - id: s_0835
+    title: Whatever Fits the Crate
+    track_number: 1
+    mood: [wry, brisk, warm]
+    fact: >-
+      The title is what Effa Lomm wrote back to the importer, and the record runs to within a minute
+      of the length that letter asked for.
+    arrangement_note: a brisk opener that stops exactly where it is asked to rather than where the round wants to, which is the whole joke of the record played once at the front of it
+    intro: 6
+    outro: fade
+    target_duration: "3:40"
+    prompt: >-
+      96 BPM brisk folk round; clear female lead, staggered trio, guitar, bass, hand drum, warm fade.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, vocal tuning, whispered or rapped sections, cold ending
+    lyrics: |
+      [Intro - guitar and hand percussion, six seconds]
+
+      [Verse 1]
+      Her transfer notice gives one crate and twenty-two minutes
+      at the cargo gate before the northbound hauler seals.
+      Twelve years in a berth-side room must learn one measure:
+      one work coat, two good pans, the blanket from her mother,
+      four relay letters tied beneath a ration cord.
+      Everything else waits in cupboards like a question.
+      The crate stands open, smaller every time she looks.
+
+      [Chorus]
+      Whatever fits the crate is what you are going to get.
+      Keep the useful things and one thing with no use.
+      A whole life never travelled by obeying every limit.
+
+      [Verse 2]
+      The neighbour wants the kettle; the yard nurse takes the chair.
+      Children choose the coloured cups and argue over both.
+      She gives away the heavy things with practical relief,
+      then finds an old gate token underneath the table burn.
+      It opens nothing now; the berth changed locks nine years ago.
+      Still it takes the final corner meant for winter socks.
+      Memory has never learned to pack according to its weight.
+
+      [Chorus]
+      Whatever fits the crate is what you are going to get.
+      Keep the useful things and one thing with no use.
+      A whole life never travelled by obeying every limit.
+
+      [Verse 3]
+      At the transfer hall, the weight comes half a mark too high.
+      The clerk taps the blankets, waiting for a sacrifice.
+      She takes one steel pan out, leaves the useless token in.
+      Twenty-two minutes after that, the hauler joins the dark.
+      Her old room holds a pale square where the crate had stood.
+      Her new one waits beyond a season of cargo road.
+      Between them, one small key keeps every door she chose.
+
+      [Final Chorus]
+      Whatever fits the crate is what you are going to get.
+      Keep the useful things and one thing with no use.
+      A whole life never travelled by obeying every limit.
+      Close the lid. The part that matters will not stay behind.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-01
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 36b5b844-f9a3-4334-9ab4-73e3033208e4
+      suno_created: 2026-09-01T11:29:55Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_102/01.mp3
+
+  - id: s_0836
+    title: Sing It Twice Over
+    track_number: 2
+    mood: [communal, bright, rolling]
+    fact: >-
+      The round goes through twice because the band arrived with four songs and had been asked for
+      five.
+    arrangement_note: the round is sung all the way through twice with one bar between, and the second time is deliberately not a repeat — the entrances are tighter and the voices are ahead of where they were
+    intro: 4
+    outro: cold
+    target_duration: "3:35"
+    prompt: >-
+      100 BPM rolling round; clear female lead, staggered trio, tighter second pass, organ, guitar, stop.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, identical repeats, vocal tuning, whispered or rapped sections, fade-out
+    lyrics: |
+      [Intro - reed organ, four seconds]
+
+      [First line - lead alone]
+      Say it once before the storm and once when it is over.
+
+      [Verse 1]
+      You promised at the berth before the weather changed:
+      home by ration bell, wet coat beside the heater,
+      both hands round the cup I leave above the stove.
+      The words were light enough to cross the morning water.
+      I carried them all day without examining the seams.
+      Then storm-season warning closed the northern markers,
+      and the same words took on every weight they had concealed.
+
+      [Round - four voices, a bar apart, twice through]
+      Sing it twice over and the second time is not the first.
+      Once for what we promise, once for what we learn.
+      Come in behind me; leave one bar for changing.
+
+      [Verse 2]
+      Relay contact failed beyond the cold-store launch.
+      I walked from stove to window till the cup went dark.
+      At midnight, one weak signal crossed the yard receiver:
+      engine holding, outer hold dry, no arrival time.
+      Home by ration bell became home if water lets me.
+      I heard your voice inside the altered sentence,
+      tighter at the entrance, less certain at the end.
+
+      [Round - four voices, a bar apart, twice through]
+      Sing it twice over and the second time is not the first.
+      Once for what we promise, once for what we learn.
+      Come in behind me; leave one bar for changing.
+
+      [Verse 3]
+      Near dawn, your marker moved behind the breakwater.
+      You crossed the airlock slower than the injured crews.
+      The cup was cold; the stove had used its final cell.
+      You touched both hands around it all the same.
+      Home by ration bell came back without its innocence.
+      We said it once together for the people we had been,
+      then once again for those who knew the water better.
+
+      [Final Round - four voices, a bar apart, twice through]
+      Sing it twice over and the second time is not the first.
+      Once for what we promise, once for what we learn.
+      Come in behind me. We are different at the turning.
+
+      [Coda - cold stop]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-01
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 7f22820c-610e-431a-ac42-3cbbd70ab851
+      suno_created: 2026-09-01T11:32:29Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_102/02.mp3
+
+  - id: s_0837
+    title: A Letter and a Number
+    track_number: 3
+    mood: [dry, midtempo, knowing]
+    fact: >-
+      The importer's letter asked for songs with fewer names in them, and Bran Teale put the request
+      itself into the second verse.
+    arrangement_note: the letter is quoted flat by one voice with the band out of it, and every name in the other four songs was left where it was, which is the answer the song does not bother to state
+    intro: 12
+    outro: sustain
+    target_duration: "3:55"
+    prompt: >-
+      90 BPM dry folk blues; clear female lead, staggered trio, flat solo quote, guitar, bass, held end.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, vocal tuning, whispered or rapped sections, cold ending, fade-out
+    lyrics: |
+      [Intro - guitar and bass, twelve seconds]
+
+      [Verse 1]
+      A clerk beyond the lag unfolds the yard into four lines,
+      one polite request and one precise amount.
+      No wet rope stains the page, no berth lamp shakes above it.
+      No winter ration waits behind the careful script.
+      Distance makes a person neat enough for cargo.
+      Distance turns a working life to syllables and minutes.
+      Then one sentence asks us to become a little smaller.
+
+      [The letter - lead alone, flat]
+      Fewer names in them, if that can be arranged.
+      Twenty-two minutes. Yours faithfully.
+
+      [Verse 2]
+      Here, a name means someone keeping west-gate weather,
+      someone stretching six meals from five ration marks,
+      someone whose spare gloves fit the newest freight hand,
+      someone who leaves one lamp for boats beyond the reeds.
+      There, a name may catch against an unfamiliar tongue.
+      The clerk is not unkind; she is very far away.
+      Care can lose its object over that much dark before the far page opens.
+
+      [Refrain]
+      One letter and one number is what we were sent.
+      One season through the lag can wear a sentence smooth.
+      Fold the whole yard small enough to travel.
+      Open it elsewhere and hope the people rise again.
+
+      [Verse 3]
+      We answer with the jetty, soup and broken airlock,
+      with the third iced step and every counted boat.
+      Not one private name, yet nothing living taken out.
+      The clerk will hear a room and never see the table.
+      We will never see the hand that opens what we send.
+      Between us lies a cargo road and one good chance:
+      strangers may feel known without knowing whom to thank.
+
+      [Refrain]
+      One letter and one number is what we were sent.
+      One season through the lag can wear a sentence smooth.
+      Fold the whole yard small enough to travel.
+      Open it elsewhere and let the people rise again.
+
+      [Outro - sustain]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-01
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: c2a94e38-27f8-4fb6-a5c8-435784f608ba
+      suno_created: 2026-09-01T11:33:25Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_102/03.mp3
+
+  - id: s_0838
+    title: Cold Meal, Warm Room
+    track_number: 4
+    mood: [warm, slow, generous]
+    fact: >-
+      Amon Furlow plays piano, having crossed from Mars on the strength of a letter, and the band had
+      never heard him play before that morning.
+    arrangement_note: the guest piano leaves holes in the time on purpose and the four voices fall into them, which took about a bar to work out and had never happened to this band before
+    intro: 15
+    outro: fade
+    target_duration: "4:10"
+    prompt: >-
+      74 BPM warm folk blues; clear female lead, staggered trio, sparse late piano, organ, warm fade.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, busy or continuous piano, vocal tuning, whispered or rapped sections, cold ending
+    lyrics: |
+      [Intro - piano and reed organ, fifteen seconds]
+
+      [Verse 1]
+      He comes off the inner-route hauler after nightfall,
+      coat sealed to the throat, meal packet frozen through.
+      One letter brought him farther than good sense would recommend.
+      The hired-room stove is red behind its guard.
+      Nobody knows the shape his silence takes at home.
+      Nobody asks him to make distance entertaining.
+      A chair moves nearer to the heat; that is enough.
+
+      [Chorus]
+      Cold meal in a warm room is not a bad evening.
+      Put your travelling coat across the broken door.
+      Come in from the cargo road and let the quiet stay.
+
+      [Verse 2]
+      There is root stew for four and now there are five bowls.
+      Someone thins the pot; someone divides the bread.
+      He eats the cold meal first, saving heat for later,
+      and leaves long spaces where another guest might talk.
+      The lake wind worries at the unsealed door.
+      A berth lamp swings across the ceiling every minute.
+      Strangers become company by needing the same fire.
+
+      [Chorus]
+      Cold meal in a warm room is not a bad evening.
+      Put your travelling coat across the broken door.
+      Come in from the cargo road and let the quiet stay.
+
+      [Verse 3]
+      Near midnight, he uncovers the hired-room piano,
+      presses one low key and waits beyond its ending.
+      No one rushes in to fill the open measure.
+      The next note lands as softly as a cup set down.
+      Four voices find the spaces without taking them away.
+      Outside, the return board clears its final marker.
+      Inside, nobody has asked where he will go tomorrow.
+
+      [Bridge]
+      One letter. One crossing. Five bowls around a stove.
+      Leave room in every measure for the far-travelled person.
+
+      [Final Chorus]
+      Cold meal in a warm room is not a bad evening.
+      Put your travelling coat across the broken door.
+      Morning has the cargo road. Tonight, let the quiet stay.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-01
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: fc643b2e-c843-4a12-b68a-a92187a3d35a
+      suno_created: 2026-09-01T11:34:02Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_102/04.mp3
+
+  - id: s_0839
+    title: Same Four Voices
+    track_number: 5
+    mood: [final, close, communal]
+    fact: >-
+      The four sing it with no instruments at all, which is what they do at the end of every night in
+      the yard and had never put on a record.
+    arrangement_note: four voices and nothing else anywhere on the track — no reed organ, no guitar, no bass, no hands on anything — which is the only track on this record with no instrument under it
+    intro: 3
+    outro: sustain
+    target_duration: "4:00"
+    prompt: >-
+      66 BPM bare round; four unaccompanied voices enter a bar apart, bass last, natural room, held end.
+    exclude: all instruments, reed organ, guitar, bass, percussion, drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, vocal tuning, whispered or rapped sections, cold ending, fade-out
+    lyrics: |
+      [Intro - four voices humming, three seconds]
+
+      [First line - lead alone]
+      When the lamps come down, leave one line inside the room.
+
+      [Verse 1]
+      Last boat tied, wet rope lifted from the walkway,
+      four workers wait while marker lights go dark.
+      The hold is empty; every name is off the board.
+      Still nobody reaches for the outer airlock.
+      A day this long needs more than gates to close it.
+      One clear line rises where the engine noise had been.
+      Three more enter slowly, carrying the ending round.
+
+      [Round - four voices, no instruments]
+      Four voices after labour, four breaths in the cold.
+      One for those gone home and one for those still travelling.
+      Leave the final line awake inside the yard.
+
+      [Verse 2]
+      One of them once waited eleven nights beside this berth,
+      partner overdue beyond the storm-season relay.
+      The others stayed without pretending hope was certain.
+      Every night they gave the empty water one low line.
+      On the twelfth, a damaged marker answered through the snow.
+      Since then, no one leaves before the last note settles.
+      Habit may be gratitude that never learned a speech.
+
+      [Round - four voices, no instruments]
+      Four voices after labour, four breaths in the cold.
+      One for those gone home and one for those still travelling.
+      Leave the final line awake inside the yard.
+
+      [Verse 3]
+      Tonight the hired room stands far from lake and gate.
+      No return board waits beside the closing door.
+      Yet when the first line starts, the berth comes with it:
+      salt upon the steps, lamp oil, rope against the wall.
+      Distance cannot choose which rooms a voice remembers.
+      Four coats lift; four shadows turn toward home.
+      The final breath remains after the door goes still.
+
+      [Final Round - four voices, no instruments, the last entry held]
+      Four voices after labour, four breaths in the cold.
+      One for those gone home and one for those still travelling.
+      Leave the final line awake inside the yard.
+      Leave it there. The morning crew will find it.
+
+      [Coda - sustain, four voices]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-01
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e6e90171-2f64-4996-9bff-05ad6a8cad21
+      suno_created: 2026-09-01T11:36:17Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_102/05.mp3

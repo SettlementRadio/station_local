@@ -16,6 +16,7 @@ a change to it should turn something red here rather than at 02:00.
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import pytest
@@ -95,6 +96,13 @@ def test_a_song_with_no_take_yet_is_not_a_song_to_tag() -> None:
     assert tag._album_songs(MUSIC, Path("al_001.yaml"), parsed) == []
 
 
+# `<vendor>-<tier>-<YYYY>-<MM>` — what COMMISSION.md §9's `licence_note` looks like, as a shape
+# rather than as one vendor's name. It used to read `startswith("suno-")`, which passed `suno-x`
+# and failed `udio-pro-2026-09`: it caught nothing that mattered and would have gone red on the
+# first take from a second generator (D-098).
+LICENCE_PERIOD = re.compile(r"[a-z0-9]+-[a-z0-9]+-\d{4}-(0[1-9]|1[0-2])")
+
+
 def test_every_filed_take_resolves_to_four_values() -> None:
     """The real files, in the shape al_001.yaml fixes: every take can name its own licence.
 
@@ -111,8 +119,16 @@ def test_every_filed_take_resolves_to_four_values() -> None:
     songs = tag.load_songs(MUSIC)
     assert len(songs) == len(filed) > 0
     assert all(len(song.provenance.tags()) == len(tag.TAG_KEYS) for song in songs)
-    assert all(song.provenance.licence_period.startswith("suno-") for song in songs), (
-        "every take names the subscription period it was generated in"
+    wrong = sorted(
+        {
+            song.provenance.licence_period
+            for song in songs
+            if not LICENCE_PERIOD.fullmatch(song.provenance.licence_period)
+        }
+    )
+    assert not wrong, (
+        "every take names the subscription period it was generated in, as "
+        f"<vendor>-<tier>-<YYYY>-<MM>; these do not: {', '.join(wrong)}"
     )
 
 

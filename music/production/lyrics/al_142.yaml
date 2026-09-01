@@ -1,0 +1,718 @@
+# al_142 — Not the Band You Wrote For · The Ninefoot Cut (b_063) · Relay Road Import · 2619 · 9 songs · album
+#
+# Written by M-25. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Cut in 2617 in the lock house and in a wharf room at the bottom of the cut, and issued at the road
+# head in 2619. **The band's answer to the argument out here about whether the importer landed the
+# wrong band from Earth** — and it disappointed the people who had written the letters, because it is
+# not an angry record and only `s_1155` and `s_1156` are about the argument at all. The rest is a
+# coat on a hook, a leaking gate, two names under whitewash and a bridge with an echo.
+#
+# It is the longest record they have made and **the only one made in two rooms**: the lock house at
+# the head of the cut and a wharf room eleven miles down it, which is what `s_1163` is about and why
+# the last track has open doors and a boat going past in it. `s_1161` was cut standing underneath a
+# canal bridge, with Sim Pallow striking the arch with a lock key all the way through and the arch
+# giving it back a beat late.
+#
+# **`s_1162` is the only song on the record Fenna Crole did not write.** Aldis Merrow wrote it, words
+# and all, and handed it over to be sung; the lead voice does not change, because the card's voice
+# line is about who sings and this band's writer and singer are simply not the same person here.
+#
+# `generation:` and every `take:` are empty until M-34.
+
+album:
+  id: al_142
+  title: Not the Band You Wrote For
+  band: b_063
+  band_name: The Ninefoot Cut
+  label: label_7
+  release_year: 2619
+  genre: old-system-sessions
+  cornerstone: false
+  song_count: 9
+  style_card: b_063
+  room: >-
+    Two rooms eleven miles apart — the lock house front room at the head of the cut, and a wharf room
+    at the bottom with two doors on to the water — plus one track cut standing under a canal bridge.
+    Everything acoustic and close, one or two microphones, nothing overdubbed, the bass still deadened
+    with rope. The card holds throughout: light high female lead sung quietly, two close harmonies
+    under her, concertina in the line-up. Three fact-bound details live in their own songs: the lock
+    key struck on the arch of the seventh bridge on s_1161, which arrives a beat late and is what the
+    whole track is played against; the two lock keepers' daughters who were in the room for s_1160 and
+    had never met; and the boat that goes past under the final verse of s_1163, through open doors,
+    with nobody looking up.
+
+generation:
+  # Empty until M-34's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1155
+    title: Not the Band You Wrote For
+    track_number: 1
+    mood: [brisk, dry, knowing]
+    fact: >-
+      The title is the line Fenna Crole put at the top of her first reply to Relay Road Import in
+      2605, when she thought that would be the end of it.
+    arrangement_note: the briskest opener the band have cut, with the concertina and guitar taking the same line all the way through so it goes past without stopping to make its point
+    intro: 6
+    outro: fade
+    target_duration: "3:40"
+    prompt: >-
+      100 BPM dry blues; high female lead, low harmonies, guitar-concertina unison, piano, bass, fade.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - guitar and concertina, six seconds]
+
+      [Verse 1]
+      Your letter found the wrong gate in the springtime,
+      wrong district, wrong river, wrong stone wall.
+      Someone read the manifest too quickly;
+      someone else pushed cargo down the hall.
+      I broke the seal beside the morning kettle,
+      saw a question meant for distant hands.
+      I should have tied it to the next returning hauler.
+      Instead I wrote the answer that I had.
+
+      [Refrain]
+      You called across the lag and reached a stranger.
+      I called back before good sense could start.
+      The relay knows the place that you intended;
+      it cannot know the place that heard your heart.
+
+      [Verse 2]
+      Your next page came with weather from last winter,
+      asking if the bottom lock still froze.
+      I sent the height of water after rainfall,
+      then added how the evening primrose grows.
+      Soon the error was the least of what we carried:
+      market news, bad jokes, a pressed green leaf,
+      your account of one loud night in the transfer hall,
+      my small confession written underneath.
+
+      [Refrain]
+      You called across the lag and reached a stranger.
+      I called back before good sense could start.
+      The relay knows the place that you intended;
+      it cannot know the place that heard your heart.
+
+      [Bridge]
+      Right names close the distance like a ledger.
+      Wrong names leave a door nobody planned.
+      One can lose a parcel for a season;
+      one can find a life in other hands.
+
+      [Verse 3]
+      Now your letters come addressed without correction,
+      my lock house written plainly by the lane.
+      The clerk who made the first mistake is elsewhere;
+      neither of us ever learned his name.
+      If you arrive upon the last ferry,
+      bring the coat you promised and no proof.
+      I will meet you where the water leaves the basin,
+      wrong for every place but this one, coming home.
+
+      [Refrain]
+      You called across the lag and reached a stranger.
+      I called back before good sense could start.
+      The relay knows the place that you intended;
+      it cannot know the place that heard your heart.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1156
+    title: Letters Take a Season
+    track_number: 2
+    mood: [patient, blue, midtempo]
+    fact: >-
+      The second verse is Aldis Merrow's arithmetic about an answer that cannot arrive in the same
+      year as the letter it answers, sung as he wrote it out.
+    arrangement_note: the arithmetic section is sung flat over the piano alone with the rest of the band out of it, because it is a sum being read off a sheet and has no tune in it
+    intro: 14
+    outro: sustain
+    target_duration: "4:05"
+    prompt: >-
+      82 BPM patient blues; high female lead, low harmonies, flat count over solo piano, concertina, hold.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, rapped delivery, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - piano, fourteen seconds]
+
+      [Verse 1]
+      I wrote in spring when blossom touched the towpath,
+      asked if you would meet me at the sea.
+      Sealed the page beneath the cargo ledger,
+      watched the hauler take it out from me.
+      Summer crossed the lane without an answer.
+      Storm season shut the farther relay down.
+      By winter I had learned to sleep without you,
+      then thaw brought your handwriting back around.
+
+      [Flat Count - one voice over piano alone]
+      One season outward. One season waiting.
+      One season homeward through the lag.
+      Ask under blossom, answer under blossom.
+      Count one full year inside the bag.
+
+      [Verse 2]
+      You said yes to someone from last April,
+      someone certain, restless, ready then.
+      I read your yes beside a different window,
+      with different work and steadier hands.
+      The last ferry named an open berth there.
+      My mother needed help above the gate.
+      A true reply can travel without lying
+      and still arrive too honestly, too late.
+
+      [Refrain]
+      Write it while the words are warm and living.
+      Send it though the weather will have turned.
+      We cannot make the distance keep our timing;
+      we can tell the truth before it learns.
+
+      [Verse 3]
+      I answered from the person I had grown to,
+      not the one who watched your cargo leave.
+      I said love had not become refusal;
+      it had changed the shape of what I need.
+      Maybe next spring you will read that sentence,
+      standing in a room I cannot see.
+      You may bless the year that stood between us.
+      You may write another life to me.
+
+      [Refrain]
+      Write it while the words are warm and living.
+      Send it though the weather will have turned.
+      We cannot make the distance keep our timing;
+      we can tell the truth before it learns.
+
+      [Coda - sustain]
+      One season outward. One season home.
+      Every answer finds us changed.
+      No heart stays unchanged.
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1157
+    title: It Was Meant for Somebody Else
+    track_number: 3
+    mood: [wry, rolling, plain]
+    fact: >-
+      About a coat somebody left in the lock house and never came back for, which is still on the same
+      hook.
+    arrangement_note: a plain rolling three-chord thing with the concertina out of it entirely, which is the only track on the record without one and makes the coat song sound like the first record
+    intro: 8
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      94 BPM rolling blues; high female lead, low harmonies, guitar, piano, dry bass, no concertina.
+    exclude: concertina, slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - guitar and bass, eight seconds]
+
+      [Verse 1]
+      A good black coat hangs by the lock-house doorway,
+      shoulders broad and lining stitched by hand.
+      Someone left it after tea one autumn,
+      then crossed the cut before the evening rain.
+      No name hides inside the inner pocket,
+      no berth slip, no old cargo receipt.
+      Only river grit along the left cuff,
+      and one pale thread where something used to be.
+
+      [Chorus]
+      It was meant for somebody else,
+      so we keep it dry and leave the hook alone.
+      Storm season takes what people fail to fasten;
+      this one thing may still be coming home.
+
+      [Verse 2]
+      Twice my own coat split across the shoulder.
+      Twice I stood beneath that warmer cloth.
+      It would fit me like a thing I had commissioned;
+      no one on the lane would know the loss.
+      But I picture him beyond the farthest lock gate,
+      counting every garment he has worn,
+      thinking of a room beside the water
+      where he left one useful piece of home.
+
+      [Interlude - piano and guitar, eight seconds]
+
+      [Verse 3]
+      A young freight crew came asking after shelter,
+      soaked from tying cargo through the squall.
+      One stood shivering by the empty fireplace,
+      staring at the finest coat of all.
+      I gave him mine and wrapped myself in canvas.
+      He laughed, then understood and did not ask.
+      Some promises are made without a witness;
+      some are only hooks we do not pass.
+
+      [Chorus]
+      It was meant for somebody else,
+      so we keep it dry and leave the hook alone.
+      If the owner steps from some late hauler,
+      one small faith will still be waiting home.
+
+      [Verse 4]
+      Years may turn the black wool brown and brittle.
+      Dust may find the collar and the seam.
+      Still each morning someone clears the doorway,
+      careful not to brush away the dream.
+      The last ferry brings a hundred strangers;
+      any one might recognize the thread.
+      Till that day the coat keeps its own silence,
+      holding room for someone not here yet.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1158
+    title: Eleven Miles of Water
+    track_number: 4
+    mood: [steady, warm, rolling]
+    fact: >-
+      Torr Bexley counts the eleven miles off by the bridges rather than by the locks, which is how the
+      crews do it and why his numbers do not agree with the band's first record.
+    arrangement_note: one short section is two voices counting the same eleven miles two different ways, one after the other, with the band holding a single chord under both of them
+    intro: 12
+    outro: fade
+    target_duration: "4:00"
+    prompt: >-
+      92 BPM warm blues; high female lead, low harmonies, two flat counters, held chord, concertina, fade.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - concertina and piano, twelve seconds]
+
+      [Verse 1]
+      You count bridges from the bow of a hauler,
+      every arch a milepost over rain.
+      I count locks by paddles, beams, and waiting,
+      every fall a number in my hands.
+      You say fourth bridge, I say third gate,
+      both point where the hawthorn meets the wall.
+      We have shared this cut since early morning,
+      naming different roads and not lost once at all.
+
+      [Chorus]
+      You count the bridges, I count the gates.
+      Same green water carries both our weights.
+      Freight crews know the language of arriving;
+      keep your measure, I will keep mine straight.
+
+      [Verse 2]
+      Seventeen arches lean across the channel,
+      eleven chambers lower toward the sea.
+      One old aqueduct escapes our numbers,
+      though we always stop there for our tea.
+      Your cargo clock begins when rope starts pulling.
+      Mine begins when upper paddles rise.
+      By the long pound both accounts are even,
+      and the afternoon is level in our eyes.
+
+      [Two Counts - flat voices over one held chord]
+      Bridge one, bridge two, aqueduct, bridge four.
+      Lock one, lock two, third gate, long pound.
+      Bow calls forward. Bank calls downward.
+      Both call home before the final round.
+
+      [Chorus]
+      You count the bridges, I count the gates.
+      Same green water carries both our weights.
+      Freight crews know the language of arriving;
+      keep your measure, I will keep mine straight.
+
+      [Verse 3]
+      When the fog erases every marker,
+      you hear brick throw back the engine's hum.
+      I feel pressure changing at the balance,
+      know which lock the hidden water comes from.
+      No manifest can hold both kinds of knowing,
+      no lane map shows the body learning place.
+      Walk beside me through the final mile now;
+      tell me what you see and let me name the gates.
+
+      [Bridge]
+      One route underneath us, two lives above it.
+      Neither needs the other's count erased.
+
+      [Final Chorus]
+      You count the bridges, I count the gates.
+      Same green water carries both our weights.
+      At the basin all our numbers open;
+      we arrive together, neither one too late.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1159
+    title: The Bottom Gate Leaks
+    track_number: 5
+    mood: [blunt, hard, driving]
+    fact: >-
+      The bottom gate of the lowest lock has leaked since 2601 and the band sent this song to the
+      navigation office with a copy of the record.
+    arrangement_note: the hardest thing on the record, taken flat out with the concertina doubling the bass line rather than the tune, which is the only place on any of their records it goes down there
+    intro: 4
+    outro: cold
+    target_duration: "3:30"
+    prompt: >-
+      110 BPM hard blues; high female lead, low harmonies, concertina doubles bass, guitar, kit, stop.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - full band, four seconds]
+
+      [Verse 1]
+      The bottom gate leaks through every season,
+      silver at the hinge and brown below.
+      Eleven written notices have found the office;
+      two pairs of boots went there to make it known.
+      One man filled the form knee-deep in water,
+      dried it on the boiler by the quay.
+      Somewhere there is a file with every answer.
+      Here the top pound drains toward the sea.
+
+      [Refrain]
+      The bottom gate leaks, four inches by the morning.
+      No alarm will sound, no red light starts.
+      Small waste lives forever without danger;
+      quiet damage never gets a chart.
+
+      [Verse 2]
+      Four inches means a loaded cargo waiting,
+      freight crew wages thinning in the sun,
+      one missed berth beyond the lower basin,
+      one more ration bought when work is done.
+      The office keeps the water, labor, shipping
+      each beneath a different careful hand.
+      No one desk can see the whole thing leaking;
+      every desk can say it understands.
+
+      [Refrain]
+      The bottom gate leaks, four inches by the morning.
+      No alarm will sound, no red light starts.
+      Small waste lives forever without danger;
+      quiet damage never gets a chart.
+
+      [Bridge]
+      Come in summer when the pound lies shallow.
+      Bring your polished shoes and stand below.
+      Hear a working week escape beside you,
+      drop by patient drop where wages go.
+
+      [Verse 3]
+      We have packed the split with rope and sacking,
+      watched the patch pull loose before the rain.
+      We have marked the fall beside the lock wall,
+      sent the figures outward on the lane.
+      If the next reply says further consultation,
+      we will send wet boots instead of words.
+      Let them dry beneath the office boiler.
+      Let the stain explain what paper never could.
+
+      [Final Refrain]
+      The bottom gate leaks, four inches by the morning.
+      Eighteen summers running through the dark.
+      Mend the hinge before the whole cut feels it;
+      small neglect has left a working mark.
+
+      [Outro - cold stop]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1160
+    title: Two Names on the Bill
+    track_number: 6
+    mood: [midtempo, fond, plain]
+    fact: >-
+      The two names in the chorus belong to the lock keepers who worked the cut before Fenna Crole's
+      family did, and both their daughters were in the room for it.
+    arrangement_note: the piano is played very quietly for the whole track because two old women were talking in the room while it was cut and nobody would have dreamed of asking them to stop
+    intro: 10
+    outro: sustain
+    target_duration: "4:00"
+    prompt: >-
+      88 BPM fond blues; high female lead, low harmonies, very quiet piano, concertina, dry bass, hold.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, loud or forward piano, vocal tuning, whispered or rapped sections, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - piano and concertina, ten seconds]
+
+      [Verse 1]
+      Scraping back a shelf beside the doorway,
+      we found blue letters underneath the white.
+      Two careful names along the old oak lintel,
+      one still clear and one worn nearly light.
+      Before our key had turned inside this lock house,
+      two other families woke here in the dark,
+      boiled the same first kettle before morning,
+      watched the same low cargo clear the mark.
+
+      [Chorus]
+      Under the whitewash, somebody was here.
+      Someone kept the water, someone kept the year.
+      Houses on the lane belong to every hand in turn;
+      paint us over gently when our own time disappears.
+
+      [Verse 2]
+      Their daughters came and stood below the writing,
+      one with silver hair, one walking with a cane.
+      Neither knew the other till a small remembered detail:
+      where the winter coats had dripped beside the drain.
+      Then the room filled up with fathers in the morning,
+      muddy cuffs and bread wrapped for the day,
+      one who sang while opening the upper paddle,
+      one who never spoke before the gates were raised.
+
+      [Room Voices - two older women, softly overlapping]
+      He kept the spare key underneath the flour.
+      So did mine, but only after frost.
+      We must have passed as children by the basin.
+      We passed through more than either of us thought.
+
+      [Chorus]
+      Under the whitewash, somebody was here.
+      Someone kept the water, someone kept the year.
+      Houses on the lane belong to every hand in turn;
+      paint us over gently when our own time disappears.
+
+      [Verse 3]
+      No one owns the hour before the sunrise,
+      or the beam polished smooth by every palm.
+      The settlement may print a holder's name there;
+      work remembers bodies, not the form.
+      We leave the blue letters beneath the peeling,
+      add no fresh one while the walls are ours.
+      Someday other hands will scrape this doorway,
+      hear us in the kettle and the waking water.
+
+      [Final Chorus]
+      Under the whitewash, somebody was here.
+      Someone kept the water, someone kept the year.
+      Houses on the lane belong to every hand in turn;
+      paint us over gently, but leave the letters near.
+
+      [Coda - sustain]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1161
+    title: Working Under the Bridge
+    track_number: 7
+    mood: [loud, defiant, fast]
+    fact: >-
+      Sim Pallow strikes the arch of the bridge with a lock key all the way through, because the band
+      played this one standing underneath it.
+    arrangement_note: a lock key struck on stone is the only percussion on the track and the arch returns it about a beat late, so the band are playing against their own echo and gave up trying not to
+    intro: 3
+    outro: cold
+    target_duration: "3:20"
+    prompt: >-
+      112 BPM fast blues; high female lead, low harmonies, stone-key echo only, guitar, concertina, stop.
+    exclude: drum kit, slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, dry or close recording, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - lock key on stone, three seconds]
+
+      [Verse 1]
+      Rain comes sideways at the seventh crossing,
+      drives three haulers underneath the arch.
+      Canvas snaps above the waiting cargo;
+      towropes darken, boots sink in the path.
+      One hand strikes a lock key on the stonework.
+      One beat later, brick returns the blow.
+      We lift the jammed brace to that crooked measure,
+      half on what we hit and half on echo.
+
+      [Chorus]
+      Under the arch, let the old bridge answer.
+      Strike it once and hear the second hand.
+      Freight crews pull when both sounds come together;
+      rain can take the lane, but not our stand.
+
+      [Arch Beat - lock key on stone, no other percussion]
+      One for the hand.
+      Two for the stone.
+      One from the living.
+      Two coming home.
+
+      [Verse 2]
+      Water climbs the wheel marks by the abutment.
+      Stripped wire whistles from a broken post.
+      She knots the hauling line around her shoulder;
+      he sets both heels and calls the next pull close.
+      Every shout returns with someone else's ending,
+      every count comes doubled from the span.
+      We stop trying to make the echoes follow,
+      learn to leave a beat for what comes back.
+
+      [Chorus]
+      Under the arch, let the old bridge answer.
+      Strike it once and hear the second hand.
+      Freight crews pull when both sounds come together;
+      rain can take the lane, but not our stand.
+
+      [Verse 3]
+      By late afternoon the brace sits level.
+      First boat eases through with inches clear.
+      Initials cut above us catch the lamplight,
+      hands from other storms still gathered here.
+      No office gave permission for the shelter.
+      Stone made room and labor made the claim.
+      We shoulder tools toward the lock-house fire,
+      while the arch keeps calling after us through rain.
+
+      [Break - lock key and delayed echo]
+
+      [Final Chorus]
+      Under the arch, let the old bridge answer.
+      Strike it once and hear the second hand.
+      Cargo moves when both sounds come together;
+      rain can take the lane, but not our stand.
+
+      [Outro - cold stop]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1162
+    title: She Never Wrote Back
+    track_number: 8
+    mood: [slow, aching, blue]
+    fact: >-
+      The only song on the record Fenna Crole did not write; Aldis Merrow wrote it, has never said who
+      it is about, and the band have stopped asking him.
+    arrangement_note: written by the piano chair and sung by the lead, which is the arrangement of the whole band inverted for one track, and the piano never comes forward at any point in it
+    intro: 18
+    outro: fade
+    target_duration: "4:25"
+    prompt: >-
+      62 BPM aching blues; quiet high female lead, end harmonies, distant piano, guitar, dry bass, fade.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, forward or virtuoso piano, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano alone, eighteen seconds]
+
+      [Verse 1]
+      I sent the page beneath a flour manifest,
+      sealed against the damp with candle wax.
+      Wrote the berth where every last ferry found me,
+      wrote the month I thought that I'd be back.
+      Cargo took it outward through the basin,
+      relay notice said it cleared the line.
+      I slept beneath the certainty of answer,
+      foolish as a clock that trusts the time.
+
+      [Verse 2]
+      First year I blamed weather in the between,
+      storm season, missed hands, a broken seal.
+      Second year I blamed her work and family,
+      all the honest things a silence might conceal.
+      Third year every reason turned to mercy;
+      I stopped making villains out of air.
+      Some doors close without a sound between them.
+      Some departures never know they're there.
+
+      [Refrain]
+      She never wrote back, and the lane kept waking.
+      She never wrote back, and the locks ran down.
+      Nothing cruel arrived for me to answer;
+      only no word, wearing every sound.
+
+      [Verse 3]
+      I kept one page unfinished by the window,
+      changing how it opened every spring.
+      Anger made it short and pride made it colder;
+      loneliness forgave most everything.
+      Then I saw the sentences were asking
+      someone absent to explain my life to me.
+      I folded them beneath the cargo ledger,
+      let the empty paper finally be.
+
+      [Refrain]
+      She never wrote back, and the lane kept waking.
+      She never wrote back, and the locks ran down.
+      Nothing cruel arrived for me to answer;
+      only no word, wearing every sound.
+
+      [Verse 4 - two harmonies enter on the final four lines]
+      If her letter comes when I am older,
+      I will break the seal with steady hands.
+      I will meet the person who once wrote it
+      as the person time has let me stand.
+      If it never comes, the water still moves outward.
+      Bread still reaches every waiting town.
+      I can live without the final reason.
+      I have lived through all the years till now.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1163
+    title: Stay Where the Water Is
+    track_number: 9
+    mood: [final, close, warm]
+    fact: >-
+      The last thing cut in the wharf room, sung with the doors on to the water standing open, and a
+      boat goes past underneath the final verse.
+    arrangement_note: both doors on to the water were left open for the take and a boat goes past two-thirds of the way through the last verse, which nobody in the room looked up at and nobody cut out
+    intro: 15
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      76 BPM warm blues; high female lead, low harmonies, concertina, open doors, passing boat, hold.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, dry or sealed room, vocal tuning, whispered or rapped sections, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - concertina and guitar, fifteen seconds]
+
+      [Verse 1]
+      Your berth card waits beside the wharf-room doorway,
+      two clean bags are standing by the wall.
+      Last ferry leaves below the morning water;
+      you have paid the fare and answered every call.
+      I will never tell you not to travel.
+      Every open lane deserves a look.
+      I only ask you stand here through the evening,
+      hear the loaded haulers clear the hook.
+
+      [Chorus]
+      Stay where the water is tonight.
+      Stay until the window loses light.
+      Home is not a chain around your ankle;
+      it is one known shore that holds your place in sight.
+
+      [Verse 2]
+      My brother chose a settlement beyond us.
+      My sister nearly followed past the core.
+      Every person landing at this basin
+      left another lamp beside another door.
+      Going is not faithless, staying no surrender;
+      neither one can prove a heart is true.
+      I would rather bless the road that takes you
+      than make the water something owed to you.
+
+      [Chorus]
+      Stay where the water is tonight.
+      Stay until the window loses light.
+      Home is not a chain around your ankle;
+      it is one known shore that holds your place in sight.
+
+      [Verse 3 - doors open; a hauler passes after line four]
+      The evening freight crew loosens from the lower gate.
+      Cargo chains knock softly under strain.
+      Neither of us turns to watch the bow pass,
+      though its wake sends silver through the room.
+      You put one bag back underneath the table,
+      leave the other standing for the dawn.
+      One more night is not a final answer;
+      it is room enough to hear what carries on.
+
+      [Final Chorus]
+      Stay where the water is tonight.
+      Stay until the window loses light.
+      If tomorrow takes you past the basin,
+      leave one known shore that still keeps your place in sight.
+      Every cargo comes from somewhere distant;
+      every traveler leaves one door behind.
+
+      [Coda - sustain, open water through both doors]
+    take: null # M-34 fills this in at the Suno sitting

@@ -1,0 +1,570 @@
+# al_143 — Somebody Sent Us This · The Ninefoot Cut (b_063) · Relay Road Import · 2624 · 7 songs · album
+#
+# Written by M-25. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Cut in 2621 and issued at the road head in 2624, because the first copy was in the crate that went
+# astray in 2622 and very nearly closed the house. **It is the only record in the importer's list on
+# which the road ran both ways**: Relay Road Import had, in 2619, sent something up the road for once
+# — a Shore Rounds pressing with no letter and no name on the sleeve — and the Ninefoot Cut spent a
+# season finding out whose it was and then learned one of the rounds off it. `s_1164` is the arrival
+# and `s_1165` is the round, sung the way five lock-crew people sing rather than the way a Titan yard
+# does: **all five come in together where b_047 come in a bar apart, and the lyric says so.**
+#
+# **`s_1167` was written before the fact it now carries.** The band's own copy was lost in the 2622
+# crate; the song was finished in 2621 and is about second copies in general, because a thing that
+# goes down a canal is a thing you may not see again inside a year. Nothing in the lyric knows what
+# happened, and nothing in it should: the record was cut two years before the crate went.
+#
+# Effa Lomm has written that she would like to hear this record and has not been sent one, which is
+# the last verse of `s_1165` and the last verse of `s_1170`.
+#
+# `generation:` and every `take:` are empty until M-34.
+
+album:
+  id: al_143
+  title: Somebody Sent Us This
+  band: b_063
+  band_name: The Ninefoot Cut
+  label: label_7
+  release_year: 2624
+  genre: old-system-sessions
+  cornerstone: false
+  song_count: 7
+  style_card: b_063
+  room: >-
+    The lock house front room, three days of it, with the front door open on to the top pound for the
+    last track. Small wooden room, water and stone behind everything, one or two microphones, nothing
+    overdubbed, bass still deadened with rope. The card holds throughout: light high female lead sung
+    quietly, two close harmonies under her, concertina. Two things are this record's own. s_1165 is
+    another band's round learned off a record and sung wrong on purpose — all five voices entering
+    together rather than a bar apart — and the prompt asks for exactly that, because a generator given
+    the word "round" will otherwise stagger the entries. And the last chorus of s_1170 is nine or ten
+    people off the boats tied up outside the open door, ragged and unpitched, who had started singing
+    before the band did.
+
+generation:
+  # Empty until M-34's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1164
+    title: Somebody Sent Us This
+    track_number: 1
+    mood: [bright, warm, midtempo]
+    fact: >-
+      The record the importer sent to the lock house in 2619 arrived with no letter and no name on the
+      sleeve, and the band wrote to the road head and waited a season to find out whose it was.
+    arrangement_note: the concertina and the guitar open together and stay together, which is this band sounding like itself deliberately at the start of a record about somebody else's
+    intro: 9
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      98 BPM bright blues; high female lead, low harmonies, guitar-concertina unison, piano, bass, fade.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - concertina and guitar, nine seconds]
+
+      [Verse 1]
+      A parcel rode beneath the winter cargo,
+      wrapped in river paper, tied with blue.
+      No return mark hid below the binding,
+      no short letter told us what to do.
+      When we opened it, four distant voices
+      crossed a cold hall one by one in time.
+      None of us had heard that kind of weather,
+      none could name the water in the rhyme.
+
+      [Chorus]
+      Somebody sent us this across the lag,
+      sent no name and asked no answer back.
+      Let the relay lose the hand that started it;
+      what arrived has found the room it lacked.
+
+      [Verse 2]
+      Every night we set the kettle boiling,
+      let those voices enter line by line.
+      We guessed a yard beneath a distant moonlight,
+      guessed the workers leaving after nine.
+      Freight crews stopped and listened from the doorway.
+      One said those vowels came from farther out.
+      We added concertina where none sounded,
+      gave the empty spaces our own ground.
+
+      [Post-Chorus]
+      A gift can lose its sender in the between
+      and still know exactly where to land.
+
+      [Middle Eight]
+      Maybe it was sent by someone lonely,
+      maybe by a clerk who loved the sound.
+      Maybe no one chose this little lock house;
+      water simply turned the parcel round.
+      Chance can be a hand without a body,
+      giving what it never meant to give.
+
+      [Verse 3]
+      Seasons later, news came with a hauler:
+      four night workers, one wide answering room.
+      By then every rise lived in our breathing,
+      every pause had gathered local dust.
+      We sent thanks along the relay road then,
+      though the proper words were years behind.
+      Somewhere strangers may unfold our paper,
+      hearing their own weather changed by mine.
+
+      [Chorus]
+      Somebody sent us this across the lag,
+      sent no name and asked no answer back.
+      Let the relay lose the hand that started it;
+      what arrived has found the room it lacked.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1165
+    title: Sing the One They Sent
+    track_number: 2
+    mood: [communal, rolling, close]
+    fact: >-
+      The round is the Shore Rounds', learned off that record, and the Ninefoot Cut come in together
+      where the Titan band come in a line apart.
+    arrangement_note: all five voices enter on the same beat rather than a bar apart, which is not how the round goes and is how these five sing, and it is the point of the track rather than a mistake in it
+    intro: 7
+    outro: sustain
+    target_duration: "4:00"
+    prompt: >-
+      86 BPM rolling blues; high female lead, five voices enter together, concertina, guitar, piano, hold.
+    exclude: staggered or canon entries, round or fugue entries a bar apart, slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, vocal tuning, whispered or rapped sections, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - concertina, seven seconds]
+
+      [Verse 1]
+      The tune came folded in with foreign weather,
+      four clean voices entering one by one.
+      We tried to leave a bar between our breathing,
+      lost the second entrance, missed the third.
+      Five lock workers know one kind of singing:
+      catch the line together, hold it fast.
+      So we met upon the same first syllable,
+      shoulder close, and let the order pass.
+
+      [Round - all five enter together, never staggered]
+      Take the tune they carried and lift it as we can.
+      All five voices on the beat, no voice behind another.
+      Words may cross the lag in their first clothing;
+      songs come home wearing the hands that hold them.
+
+      [Verse 2]
+      We sang it hauling sacks across the towpath,
+      sang it tying canvas over grain.
+      Every freight crew bent the ending sideways;
+      every child put daylight in the phrase.
+      No one kept the distant shape unbroken.
+      Nothing living travels without marks.
+      Cargo takes the salt of every harbor;
+      melody takes breath from every heart.
+
+      [Round - all five enter together, never staggered]
+      Take the tune they carried and lift it as we can.
+      All five voices on the beat, no voice behind another.
+      Words may cross the lag in their first clothing;
+      songs come home wearing the hands that hold them.
+
+      [Bridge]
+      Let their cold hall answer line by line there.
+      Let our lock house meet upon the one.
+      Different rooms can keep the same small fire,
+      neither one required to become the other.
+
+      [Verse 3]
+      We sent our version outward with the flour,
+      no apology tied beneath the string.
+      Maybe someone near that distant siding
+      hears five voices land where one should begin.
+      Maybe she will laugh and call it clumsy.
+      Maybe she will teach it to her crew.
+      Then the road will carry back an answer,
+      changed again and twice as plainly true.
+
+      [Final Round - all five together, held at the end]
+      Take the tune they carried and lift it as we can.
+      All five voices on the beat, no voice behind another.
+      If the relay brings it home remade again,
+      we will learn the change and sing it all together.
+
+      [Outro - sustain]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1166
+    title: Nine Foot of Water
+    track_number: 3
+    mood: [dry, funny, brisk]
+    fact: >-
+      Fenna Crole gives the cut its depth in the first line and the navigation office wrote to the
+      band to say that it is nine foot six.
+    arrangement_note: the office's reply is read flat by one voice with the band out of it, in the same place and the same manner as the leaflet they sent about the leaking gate
+    intro: 5
+    outro: cold
+    target_duration: "3:30"
+    prompt: >-
+      104 BPM dry blues; high female lead, low harmonies, flat spoken letter, band out, concertina, stop.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - full band, five seconds]
+
+      [Verse 1]
+      Everyone calls this the Ninefoot water,
+      every painted hauler wears the word.
+      Children learn it pointing from the footbridge;
+      freight crews use it when the locks run slow.
+      Then an office letter crossed the basin,
+      dry as dust and measured to the inch.
+      Our familiar depth had grown while reading,
+      six spare inches no one here had missed.
+
+      [Chorus]
+      Nine feet deep when the kettle's boiling,
+      nine feet deep when the cargo clears.
+      Keep your extra half foot in the ledger;
+      local water does not need it here.
+
+      [Office Letter - one flat voice, band silent]
+      We write to clarify the navigable measure.
+      The stated depth is nine feet and six inches.
+      Please amend all future correspondence.
+
+      [Verse 2]
+      I thanked them for the useful correction,
+      asked about the bottom gate instead.
+      Back there came a leaflet on consultation,
+      closing three full months before I read.
+      Somewhere forms are moving without water,
+      every box aligned and every margin sound.
+      Here we push a pole through summer shallows,
+      finding silt their figures never found.
+
+      [Chorus]
+      Nine feet deep when the kettle's boiling,
+      nine feet deep when the cargo clears.
+      Keep your extra half foot in the ledger;
+      local water does not need it here.
+
+      [Bridge]
+      A loaded hold draws less than half the channel.
+      A hidden bank can catch it just the same.
+      Numbers tell you what the cut was built for;
+      boatmen tell you where the bottom changed.
+
+      [Verse 3]
+      Come at dawn and bring the proper ruler.
+      Walk the long pound slowly in your boots.
+      Measure every shoal below the willow,
+      every bicycle and sunken root.
+      When your clean six inches meet the mud there,
+      write the silt in language offices use.
+      We will keep the old name on the signboard,
+      and save the half foot for more urgent news.
+
+      [Final Chorus]
+      Nine feet deep when the kettle's boiling,
+      nine feet deep when the cargo clears.
+      Keep your extra half foot in the ledger;
+      send someone who knows why water disappears.
+
+      [Outro - cold stop]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1167
+    title: The Second Copy
+    track_number: 4
+    mood: [patient, wry, steady]
+    fact: >-
+      Written about the crate that went astray in 2622 with the band's first copy in it, and finished
+      before anybody had told them the crate was gone.
+    arrangement_note: written in 2621 about second copies in general and about no crate in particular, and nothing in the words knows what was going to happen to this record's own
+    intro: 12
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      84 BPM patient blues; high female lead, low harmonies, piano, guitar, concertina, dry bass, fade.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and guitar, twelve seconds]
+
+      [Verse 1]
+      Two lock keys hang beside the doorway,
+      two gate books sleep above the shelf.
+      One pump handle works the lower chamber;
+      one stays wrapped against the day it fails.
+      My grandmother kept doubles of the useful,
+      taught my mother, who passed the rule to me:
+      anything sent outward with the cargo
+      may spend a year becoming memory.
+      That rule made the cupboards feel like lifeboats,
+      every spare a wall against the dark.
+
+      [Refrain]
+      Keep one safe against the missing.
+      Keep one dry above the flood.
+      Hands are careful, roads are honest;
+      distance loses what it could.
+
+      [Verse 2]
+      Every crate meets rain and hurried counting,
+      every manifest meets one tired eye.
+      Relay roads have bends no map can straighten,
+      last ferries leave while labels still are wet.
+      I make a second letter before sealing,
+      press the same blue flower into both.
+      One may reach the friend who waits beyond us.
+      One may prove the words existed here.
+      I copied even jokes beneath the margin,
+      fearing laughter might be one of one.
+
+      [Bridge]
+      But there was only one red scarf my mother
+      wore through every storm season of my youth.
+      I kept no second laugh inside a cupboard,
+      no spare hand to show me what to do.
+
+      [Verse 3]
+      So I know the comfort and the error:
+      shelves can guard a tool, a page, a key.
+      They cannot keep a person from departing,
+      cannot make one winter happen twice.
+      Still I wrap the duplicate in paper,
+      mark the year and set it out of sun.
+      Fear may never need the thing it saves there;
+      love is knowing which things come as one.
+
+      [Refrain]
+      Keep one safe against the missing.
+      Keep one dry above the flood.
+      Send the first along the water;
+      trust the many careful hands it meets.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1168
+    title: The Same Eleven Miles
+    track_number: 5
+    mood: [slow, plain, fond]
+    fact: >-
+      Torr Bexley has worked the same eleven miles since 2598, and the song lists what has changed on
+      them in order and ends on nothing.
+    arrangement_note: the list is sung flat over the piano alone three times and is the same list each time, because it is short and that is the whole finding of the song
+    intro: 16
+    outro: sustain
+    target_duration: "4:20"
+    prompt: >-
+      70 BPM plain blues; female lead, low harmonies, flat piano list repeated thrice, concertina, hold.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, vocal tuning, whispered or rapped sections, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - piano and concertina, sixteen seconds]
+
+      [Verse 1]
+      I have walked this water since my shoulders
+      reached the towline hanging from the bow.
+      Every bend is waiting in my footsteps,
+      every bridge tells weather by its sound.
+      Ask me what has changed and I say nothing.
+      Ask again and set the paper down.
+      Small things rise like silt beneath the surface,
+      enough to shift a hauler off its line.
+
+      [The List - one flat voice over piano alone]
+      The eleventh lock. The towpath lamps gone.
+      Two houses empty. One family home.
+      A new berth number. The bridge rail mended.
+      The same rain finding the same old stone.
+
+      [Verse 2]
+      Children who once waved from upper windows
+      bring their own freight crews around the turn.
+      One shop closed and left its faded lettering;
+      one new kettle burns where coal once burned.
+      Cargo lists arrive on thinner paper.
+      Rope is better, winter just as long.
+      Nothing changed enough to call a meeting;
+      everything has changed enough to belong.
+
+      [The List - one flat voice over piano alone]
+      The eleventh lock. The towpath lamps gone.
+      Two houses empty. One family home.
+      A new berth number. The bridge rail mended.
+      The same rain finding the same old stone.
+
+      [Bridge]
+      Change is not a gate that opens once there.
+      It is wear beneath the hand from daily use.
+      Stand away and decades look like stillness;
+      stay, and every morning brings the proof.
+
+      [Verse 3]
+      I have left these miles for eleven mornings,
+      came back knowing distance made them strange.
+      The lane looked narrow, houses leaned together,
+      water held a color without name.
+      Soon another worker will count longer,
+      add my absence somewhere on the page.
+      I will say the cut remains as ever,
+      then recite the little weight of change.
+
+      [The List - one flat voice over piano alone]
+      The eleventh lock. The towpath lamps gone.
+      Two houses empty. One family home.
+      A new berth number. The bridge rail mended.
+      The same rain finding the same old stone.
+
+      [Outro - sustain]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1169
+    title: Who Taught You That
+    track_number: 6
+    mood: [warm, generous, midtempo]
+    fact: >-
+      Wenna Ferrin learned the concertina from a woman on the next boat who would not play a tune
+      twice, and this is the one tune she went back and asked for three times.
+    arrangement_note: the concertina opens alone and plays the tune it was taught, and the rest of the band come in underneath it rather than round it, which is the only track where they do
+    intro: 10
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      92 BPM warm blues; plain concertina intro, high female lead, low harmonies, guitar, piano, fade.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, ornamented or virtuoso concertina, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - concertina alone, ten seconds]
+
+      [Verse 1]
+      The woman on the next boat played at sundown,
+      one plain tune while cargo lines were tied.
+      Ask again and she would choose another,
+      leave the first one drifting with the tide.
+      She had work before the upper lock gate,
+      no spare hour to school a waiting hand.
+      I went back three evenings for the same phrase,
+      each time losing where the turn should land.
+
+      [Chorus]
+      Who taught you that, and where is she now?
+      Did you thank her while the berth lines held?
+      Play it twice before the last boat leaves us;
+      memory is water carried without pails.
+
+      [Verse 2]
+      She kept no paper folded in the casework,
+      read no marks and wrote no measure down.
+      If your fingers miss it, take the next one;
+      there are more tunes than nights in any town.
+      I called that generous when I caught the opening,
+      called it cruel whenever I lost the end.
+      Now I hear both truths inside the breathing:
+      music is a gift that will not wait.
+
+      [Chorus]
+      Who taught you that, and where is she now?
+      Did you thank her while the berth lines held?
+      Play it twice before the last boat leaves us;
+      memory is water carried without pails.
+
+      [Verse 3]
+      Her old hauler rests beside the sea end,
+      deck boards roofed and hold turned into store.
+      No one knows which lane or settlement took her,
+      whether she still plays from boat to shore.
+      Four young hands can carry all she left here,
+      each one bending something in the tune.
+      When a stranger asks who first began it,
+      we point down the cut beneath the moon.
+
+      [Final Chorus]
+      Who taught you that, and where is she now?
+      Did you thank her while the berth lines held?
+      Play it twice and let the next hand change it;
+      gratitude is keeping what was freely sent.
+      If she hears it somewhere past the basin,
+      may she know one evening traveled well.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_1170
+    title: Leave the Gate Open
+    track_number: 7
+    mood: [final, communal, bright]
+    fact: >-
+      The band played it out through the open lock house door and the crews tied up outside sing the
+      last chorus back at them.
+    arrangement_note: nine or ten people off the boats tied up along the top pound sing the last chorus through an open door, from outside the room, ragged and unpitched and further away than anything else on the record
+    intro: 8
+    outro: cold
+    target_duration: "3:40"
+    prompt: >-
+      100 BPM bright blues; female lead, low harmonies, ragged crowd final chorus, concertina, stop.
+    exclude: slide guitar, electric instruments, synthesizers, drum machines, brass, orchestral strings, harmony above the lead, blended or studio choir, close crowd vocals, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - full band, eight seconds]
+
+      [Verse 1]
+      Four boats tie along the top pound evening,
+      canvas folded, cargo made secure.
+      Someone starts a tune across the water,
+      someone else replies from near the door.
+      Warm air carries onion from the kitchen,
+      boots collect like driftwood on the step.
+      No one asks which freight crew has permission.
+      No one counts how many chairs are left.
+
+      [Chorus]
+      Leave the gate open, leave the front door wide.
+      If a voice comes off the water, bring that voice inside.
+      There is room beside the kettle, there is bread upon the board.
+      Nobody is checking who the evening is for.
+
+      [Verse 2]
+      One deck hand sings sharp above the others.
+      One comes late and never finds the key.
+      Someone's child keeps time against a bucket;
+      someone laughs so hard she loses three.
+      The relay road can carry perfect copies,
+      names aligned and every minute planned.
+      Here a chorus reaches through an open doorway,
+      rough enough to fit each passing hand.
+
+      [Chorus]
+      Leave the gate open, leave the front door wide.
+      If a voice comes off the water, bring that voice inside.
+      There is room beside the kettle, there is bread upon the board.
+      Nobody is checking who the evening is for.
+
+      [Verse 3]
+      Near midnight, mist lies low across the towpath.
+      Berth lamps make long ladders in the stream.
+      Morning takes the haulers toward the basin;
+      tonight their tired crews have nowhere else to be.
+      We carry different weather in our jackets,
+      different ports and debts and reasons home.
+      But every stranger knows the final answer:
+      keep the fire, pass the cup, and take the room.
+
+      [The Crews - nine or ten voices outside, ragged and unpitched]
+      LEAVE THE GATE OPEN. LEAVE THE FRONT DOOR WIDE.
+      IF A VOICE COMES OFF THE WATER, BRING THAT VOICE INSIDE.
+
+      [Final Chorus]
+      Leave the gate open, leave the front door wide.
+      If a voice comes off the water, bring that voice inside.
+      There is room beside the kettle, there is bread upon the board.
+      Mind the step and join us. That is what the doorway is for.
+
+      [Outro - cold stop]
+    take: null # M-34 fills this in at the Suno sitting

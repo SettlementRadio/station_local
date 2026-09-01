@@ -1,0 +1,580 @@
+# al_101 — Two Lamps and a Table · The Shore Rounds (b_047) · Relay Road Import · 2619 · 7 songs · album
+#
+# Written by M-25. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Made in 2618 in the lake yard's meeting room — a table, two lamps and one microphone — after the
+# band refused a studio in the settlement for the second time, and issued at the road head in 2619.
+# It is the record on which the Shore Rounds began naming who sang which part on the sleeve, and
+# `s_0829` is that decision written out: **the four sing a verse each, in the order they joined**,
+# which is Bran Teale's rule and the one place in this band's life where the lead voice is shared
+# rather than answered (D-096). Effa Lomm's position was that the importer would put a name on it
+# anyway and it might as well be the right ones.
+#
+# **Saira Dunn of Undershore Local is on two tracks** — she came from Europa for the sessions and
+# spent two days tuning the yard office piano, which had not been touched since it was installed.
+# `s_0830` was written round the piano after she had finished with it, so the instrument is the
+# reason the song exists rather than an addition to it. b_047's card lists no piano and does not
+# need to: the wiki's credits put her in the room.
+#
+# `generation:` and every `take:` were filled from the dispatch manifest at M-34. All seven takes
+# match their lyric exactly and the record is complete.
+
+album:
+  id: al_101
+  title: Two Lamps and a Table
+  band: b_047
+  band_name: The Shore Rounds
+  label: label_7
+  release_year: 2619
+  genre: old-system-sessions
+  cornerstone: false
+  song_count: 7
+  style_card: b_047
+  room: >-
+    A Titan lake yard's meeting room — one table with a burn on it, two lamps, one microphone, a
+    window on the water and a door that does not shut — and the yard office next to it, which is
+    where the piano is. Voices first and instruments beneath them, everybody at the distance they
+    happen to be sitting at, no overdubs. The card holds: plain clear female mezzo starting alone,
+    three voices entering a bar apart behind her, the male bass voice last, no drum kit anywhere.
+    Three things are this record's own. Saira Dunn plays the yard office piano on s_0830 and s_0832
+    and on nothing else the band has made. Kell Moray bows the upright bass on s_0831 with a bow
+    borrowed off a man at the gate who plays nothing, which happens once in this band's life. And on
+    s_0829 all four take a verse alone, in the order they joined, which is the only track on any
+    Shore Rounds record where the lead is handed over rather than answered.
+
+generation:
+  # Filled from the manifest by M-34. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-31
+  sittings:
+    - {date: 2026-08-31, from: '11:33:38', to: '11:36:57', tracks: [1, 2, 3, 4, 5, 6, 7]}
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: >-
+    Dispatched from music/audio/RAW/M-25_part_1 by `make music-dispatch`. All 7 takes
+    matched their lyric exactly and the record filed complete. 1 sitting, and the
+    fastest on this record — seven takes inside three and a half minutes.
+
+songs:
+  - id: s_0828
+    title: Two Lamps and a Table
+    track_number: 1
+    mood: [close, warm, slow]
+    fact: >-
+      Recorded around one table with two lamps and a single microphone, which is everything the
+      yard's meeting room had in it.
+    arrangement_note: four people at one table at the distances they happened to be sitting at, so the voices are unevenly placed and stay that way, and a lamp is audible under the quiet passages
+    intro: 11
+    outro: sustain
+    target_duration: "4:00"
+    prompt: >-
+      70 BPM close slow round; clear female lead, staggered trio, organ, guitar, lamp hum, held end.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, even or balanced vocal placement, vocal tuning, whispered or rapped sections, cold ending, fade-out
+    lyrics: |
+      [Intro - reed organ and a lamp humming, eleven seconds]
+
+      [First line - lead alone]
+      Two lamps on one table; choose what we can keep warm.
+
+      [Verse 1]
+      The sealed season came three weeks before the stores.
+      One ration card lay empty by the blackened cup ring.
+      We put the heating figures in the middle of the table,
+      moved them back and forth beneath the stronger lamp.
+      Outside, lake ice pressed against the meeting-room window.
+      Inside, nobody could make a month from twenty days.
+      The door would not shut, so we kept our coats on.
+
+      [Round - four voices around one table]
+      Two lamps and one table, four chairs pulled near.
+      Put the hard sum down where every hand can reach it.
+      Keep one light for figures and one for faces.
+      No one leaves the colder half to someone else.
+
+      [Verse 2]
+      The settlement office sent a careful recommendation:
+      close the lower room and share the upper heat.
+      Easy on a form; harder with two working shifts,
+      one child sleeping days, one elder walking nights.
+      We read the relay notice till the words turned foolish.
+      Then somebody split the final fuel mark into four
+      and found the answer no official line had offered.
+
+      [Round - four voices around one table]
+      Two lamps and one table, four chairs pulled near.
+      Put the hard sum down where every hand can reach it.
+      Keep one light for figures and one for faces.
+      No one leaves the colder half to someone else.
+
+      [Verse 3]
+      By midnight, one lamp went dark to save the cell.
+      Our shadows joined along the wall above the water.
+      We set four ration cards beneath the same fuel promise,
+      not as witnesses, as people owing equal heat.
+      The figures stayed impossible. The room grew less afraid.
+      When morning found us sleeping in our meeting coats,
+      both lamps were cold and every chair was occupied.
+
+      [Final Round - four voices around one table]
+      Two lamps and one table, four chairs pulled near.
+      Put the hard sum down where every hand can reach it.
+      Keep one light for figures and one for faces.
+      We will carry the colder half together.
+
+      [Outro - sustain]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: cb54a1ba-8686-4019-a07d-0777197b10a8
+      suno_created: 2026-08-31T11:33:38Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_101/01.mp3
+
+  - id: s_0829
+    title: Everybody Take a Line
+    track_number: 2
+    mood: [communal, bright, midtempo]
+    fact: >-
+      The four sing a verse each in the order they joined the band, which Bran Teale insisted on and
+      Effa Lomm has called the only rule they have.
+    arrangement_note: four verses and four different singers, in the order they joined — female mezzo, male tenor, low female, male bass — with the other three under whoever is on, and no round anywhere until the last chorus
+    intro: 5
+    outro: cold
+    target_duration: "3:45"
+    prompt: >-
+      96 BPM bright folk round; four lead voices take one verse each, guitar, hand drum, cold stop.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, one voice singing every verse, close modern vocal production, vocal tuning, whispered or rapped sections, fade-out
+    lyrics: |
+      [Intro - guitar and hand percussion, five seconds]
+
+      [Chorus]
+      Everybody take a line and take it in your turn.
+      One voice for the gate, one for the heat, one for the food.
+      Keep the last line open for whoever comes in cold.
+
+      [Verse 1 - clear female mezzo]
+      I take the transfer hall and count the arriving coats.
+      Lower terrace lost its heat before the evening bell.
+      Fifty people, thirty blankets, one airlock closing badly.
+      I know which child has eaten and which one only says so.
+      Bring the new arrivals through and point them toward my table.
+      I can hold the names until the relay comes alive.
+
+      [Verse 2 - plain male tenor]
+      I take the western door and brace the lower hinge.
+      Storm wind finds the gap and drives the lake dust through it.
+      Give me rope, two berth hooks, anybody with dry gloves.
+      If the seal gives way, the upper room loses heat.
+      Do not call this courage; I know how a door is built.
+      Send the next pair down when my two hands go numb.
+
+      [Chorus]
+      Everybody take a line and take it in your turn.
+      One voice for the gate, one for the heat, one for the food.
+      Keep the last line open for whoever comes in cold.
+
+      [Verse 3 - low female voice]
+      I take the ration room and make the thin soup honest.
+      Water, root meal, salt and everything the cupboard has.
+      The office count says forty; I can see it will be sixty.
+      Put the smaller bowls away so no one learns their measure.
+      Leave one pot untouched for crews still on the lake.
+      Hunger hears a promise only when the ladle moves.
+
+      [Verse 4 - male bass voice]
+      I take the final watch beside the marker board.
+      Three repair boats are late beyond the northern reeds.
+      Everyone inside can hear each change I do not call.
+      When the first green light appears, I lift one finger.
+      When the last comes home, I leave the fourth line empty.
+      Someone colder may still need a place to enter.
+
+      [Final Chorus]
+      Everybody take a line and take it in your turn.
+      One voice for the gate, one for the heat, one for the food.
+      Keep the last line open for whoever comes in cold.
+      Nobody takes two. Nobody goes empty-handed.
+
+      [Outro - cold stop]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 9f0b9161-59b7-4589-88e5-755776951fa6
+      suno_created: 2026-08-31T11:34:15Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_101/02.mp3
+
+  - id: s_0830
+    title: The Borrowed Piano
+    track_number: 3
+    mood: [rolling, warm, generous]
+    fact: >-
+      Saira Dunn plays the yard office piano she had spent two days tuning, and the band wrote the
+      song around it once she had finished.
+    arrangement_note: the piano is the reason the song exists rather than a part added to one, so it opens alone and the four voices come in around it instead of the other way about
+    intro: 12
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      92 BPM rolling folk blues; piano leads, clear female lead, staggered trio, guitar, bass, fade.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, vocal tuning, whispered or rapped sections, cold ending
+    lyrics: |
+      [Intro - piano alone, twelve seconds]
+
+      [Verse 1]
+      Under an old coat in the lake-yard office,
+      ninety yellow forms had learned the shape beneath.
+      One cracked key showed where the tea tray always rested.
+      Dust held every fingerprint except the latest one.
+      She came off a cargo run with two days before departure,
+      lifted all the paper, folded back the coat,
+      and found a whole room everyone had stopped seeing.
+      The piano held its silence like a closed-up berth.
+      She treated neither dust nor neglect as a final verdict.
+
+      [Chorus]
+      A borrowed piano, a key returning slowly,
+      one good note where a dead one used to be.
+      Some things wait in silence for the hand that treats them kindly.
+
+      [Verse 2]
+      First day, every string argued with the weather.
+      Second day, the office lamp stayed on through supper.
+      Outside, freight crews crossed the berth in sleet.
+      Inside, one low interval kept losing its way home.
+      She ate beside the pedals, listening between bites,
+      tightened, waited, tried the same two notes again,
+      until the window glass and frame began to answer.
+      Every corrected wire moved the argument along.
+      Care is patient work performed without an audience.
+
+      [Chorus]
+      A borrowed piano, a key returning slowly,
+      one good note where a dead one used to be.
+      Some things wait in silence for the hand that treats them kindly.
+
+      [Verse 3]
+      On the third morning, workers stopped outside the office.
+      Nobody entered; nobody needed telling why.
+      The forms stayed stacked beside the newly folded coat.
+      At noon she left aboard the southbound cargo hauler.
+      That night two children found the first eight careful notes.
+      The settlement relay carried them across the water.
+      Care leaves doors unlocked long after hands have gone.
+
+      [Final Chorus]
+      A borrowed piano, every key returning,
+      one good room where a dead one used to be.
+      Some things wait in silence. Some hands know how to answer.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: ff978f35-130c-487a-935d-19f1ae039b50
+      suno_created: 2026-08-31T11:34:48Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_101/03.mp3
+
+  - id: s_0831
+    title: Ice on the Steps
+    track_number: 4
+    mood: [cold, sparse, restless]
+    fact: >-
+      Kell Moray bows the bass for the only time on any of the band's records, having borrowed the
+      bow from a yard hand who played nothing else.
+    arrangement_note: the upright bass is bowed rather than plucked from first bar to last, which happens once in this band's life and gives the round a cold pull underneath it that never resolves
+    intro: 13
+    outro: sustain
+    target_duration: "4:05"
+    prompt: >-
+      68 BPM cold sparse round; clear female lead, staggered trio, bowed bass, thin organ, held end.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, plucked or pizzicato bass, close modern vocal production, vocal tuning, whispered or rapped sections, warm production, cold ending, fade-out
+    lyrics: |
+      [Intro - bowed bass, thirteen seconds]
+
+      [Verse 1]
+      Before the first storm warning, he brings out the salt,
+      one dented scoop kept underneath the gate-room bench.
+      He starts at the berth rail and works upward slowly,
+      every tread receiving one white careful line.
+      The third step takes two scoops and the heel of his boot.
+      Workers pass above him with the morning manifest.
+      No office order asks him to be there.
+      The office never counts a danger someone else prevents.
+
+      [Refrain]
+      Ice on the steps and salt on the ice
+      and one pair of hands before the yard wakes.
+      Mind the third step. Mind it every year.
+
+      [Verse 2]
+      Years ago, his partner slipped there after night shift,
+      split one wrist and lost a winter's worth of overtime.
+      The yard filed a repair request and marked it pending.
+      Spring took all the ice; the request stayed where it was.
+      By next sealed season, he had found the old salt bin.
+      Anger needs a task or it will turn against the body.
+      He chose one dangerous step and kept it honest.
+
+      [Refrain]
+      Ice on the steps and salt on the ice
+      and one pair of hands before the yard wakes.
+      Mind the third step. Mind it every year.
+
+      [Verse 3]
+      This year, another worker finds him before sunrise,
+      takes the second scoop and starts below the landing.
+      Neither turns the labour into thanks or conversation.
+      Ferry lamps come through the dark one at a time.
+      By first bell, every tread is rough and white.
+      The pending repair remains inside the office.
+      Two people know the third step will not win today.
+      Small repairs become traditions when the proper one never comes.
+
+      [Final Refrain]
+      Ice on the steps and salt on the ice
+      and two pairs of hands before the yard wakes.
+      Mind the third step. Mind each other every year.
+
+      [Coda - sustain, bowed bass held]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: ad55e6a6-96e4-476f-b8e6-97397742c35e
+      suno_created: 2026-08-31T11:35:19Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_101/04.mp3
+
+  - id: s_0832
+    title: Ask the Lamp Man
+    track_number: 5
+    mood: [wry, midtempo, plain]
+    fact: >-
+      The yard's lamp keeper was in the room for the take and objected to two lines, both of which
+      stayed in.
+    arrangement_note: one man's speaking voice interrupts once from a corner of the room and the band go on round him, which is exactly what happened and is why the take was kept
+    intro: 6
+    outro: cold
+    target_duration: "3:40"
+    prompt: >-
+      98 BPM plain folk blues; clear female lead, staggered trio, piano, guitar, male objection, stop.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, vocal tuning, whispered or rapped sections, sung interruption, fade-out
+    lyrics: |
+      [Intro - piano and guitar, six seconds]
+
+      [Verse 1]
+      They say the lamp keeper locks the western room at nine,
+      throws sleeping freight hands out into the weather,
+      keeps the brightest oil for friends along the upper berth.
+      Rumour likes a person with one key ring and a silence.
+      He sits beneath the hook board, tea cooling in his hands,
+      while every version travels farther down the yard.
+      At last the cup meets wood and one voice cuts across us.
+
+      [Chorus]
+      Ask the lamp man. He will know. He has always known.
+      He will give the useful answer and refuse the easy one.
+      Take them both together; neither travels separately.
+
+      [The objection - one man's voice, not sung]
+      That is not what I said.
+      And I never asked anybody to leave.
+
+      [Verse 2]
+      What he does is count eleven lamps at every closing,
+      trim each wick, check every seal and storm hood twice.
+      Anyone too tired for the lane can take the corner bench.
+      Anyone who leaves a flame gets woken before dawn.
+      Kindness wears a difficult face when fuel is measured.
+      Rules sound cruelest from the person keeping watch.
+      The yard remembers tone and loses half the labour.
+
+      [Chorus]
+      Ask the lamp man. He will know. He has always known.
+      He will give the useful answer and refuse the easy one.
+      Take them both together; neither travels separately.
+
+      [Verse 3]
+      When the storm-season relay fails along the north wall,
+      eleven yard lamps hold a road above the water.
+      Repair crews follow them from outer hold to berth.
+      He stands inside the doorway counting every light.
+      By morning, all the freight hands reach the heated room.
+      Nobody corrects the story travelling the tables.
+      He cleans the empty cups and fills the lamps again.
+
+      [Final Chorus]
+      Ask the lamp man. He will know. He has always known.
+      He will give the useful answer and refuse the easy one.
+      Take them both. Then help him carry oil against the storm.
+
+      [Outro - cold stop]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e914b2ed-7fab-4aad-9bbb-f28ffe70751f
+      suno_created: 2026-08-31T11:35:55Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_101/05.mp3
+
+  - id: s_0833
+    title: A Long Wait at the Gate
+    track_number: 6
+    mood: [patient, tired, steady]
+    fact: >-
+      Written waiting for a boat that never came, and Effa Lomm set the tempo by walking the length
+      of the room while the others found it.
+    arrangement_note: the tempo is one woman's walking pace measured across a room four times, and the hand percussion holds that pace flat for the whole track without lifting once
+    intro: 16
+    outro: fade
+    target_duration: "4:10"
+    prompt: >-
+      72 BPM patient round; clear female lead, staggered trio, steady hand drum, organ, guitar, fade.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, tempo changes, close modern vocal production, vocal tuning, whispered or rapped sections, cold ending
+    lyrics: |
+      [Intro - hand percussion at a walking pace, sixteen seconds]
+
+      [Verse 1]
+      I walk from gate lamp to the weather notice,
+      turn beneath the relay clock and walk it back.
+      Your boat was due before the evening ration bell.
+      The outer water holds no marker, wake or engine.
+      Standing still lets every possible ending gather.
+      Walking gives the fear one measured place to go.
+      Fourteen boards each way; I know them without looking.
+
+      [Chorus]
+      A long wait at that gate and no boat on the water.
+      Nothing to do and nothing to be done about it.
+      Walk the line again. The clock has lost an hour.
+
+      [Verse 2]
+      Morning puts one word beside the manifest: delayed.
+      Delayed can mean a valve, a storm, a damaged relay.
+      Delayed can hold a family upright for a day.
+      By night the word has thinned beneath too many fingers.
+      Freight crews pass the gate and lower both their eyes.
+      Someone leaves hot soup beside my walking line.
+      The gate stays open. I refuse to ask by whom.
+
+      [Chorus]
+      A long wait at that gate and no boat on the water.
+      Nothing to do and nothing to be done about it.
+      Walk the line again. The clock has lost an hour.
+
+      [Verse 3]
+      Eleven days have filled the wall with weather sheets.
+      Your marker has not answered from the northern water.
+      I no longer walk all night; the body sets a limit.
+      Still, at every shift change, I take the gate road home.
+      One lamp burns above the berth through sealed-season dark.
+      Hope is not a promise and despair is not a fact.
+      I leave enough room between them for another night.
+
+      [Final Chorus]
+      A long wait at that gate and no boat on the water.
+      Nothing to do and nothing to be done about it.
+      Walk the line once more. Leave the gate lamp on.
+
+      [Coda - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 5c20a619-613c-4881-a288-f15273bfc94a
+      suno_created: 2026-08-31T11:36:20Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_101/06.mp3
+
+  - id: s_0834
+    title: Last One Off the Water
+    track_number: 7
+    mood: [final, warm, close]
+    fact: >-
+      The four turn away from the microphone for the last round, so it gets quieter as it goes, and
+      nobody asked them to do it again.
+    arrangement_note: the last round is sung with all four turned away from the microphone, so the track gets quieter and further off by itself without anything being done to it afterwards
+    intro: 9
+    outro: sustain
+    target_duration: "3:55"
+    prompt: >-
+      74 BPM warm round; clear female lead, staggered trio receding from mic, reed organ, held end.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, level or compressed dynamics, vocal tuning, whispered or rapped sections, cold ending, fade-out
+    lyrics: |
+      [Intro - reed organ, nine seconds]
+
+      [First line - lead alone]
+      Whoever is last off the water puts the lamps out and goes.
+
+      [Verse 1]
+      She ties the final lake boat underneath the berth lamp,
+      checks the empty hold and hangs the wet lines high.
+      Every other coat has vanished through the gate.
+      One cup waits in the lamp room with a skin across it.
+      The return board shows no square left open.
+      Only then she lifts the first light from its hook.
+      Closing is a job the dark can feel beginning.
+
+      [Round - four voices, turning away from the microphone]
+      Put the lamps out. Put them out in order.
+      Leave one for the steps and one above the gate.
+      Go on home. The water knows its way through darkness.
+      Morning will return what night has put away.
+
+      [Verse 2]
+      At the third step she scatters what remains of salt.
+      At the western rail she finds a working glove,
+      carries it inside for whoever comes at dawn.
+      Small duties lengthen when no other footsteps answer.
+      Her home light waits two streets beyond the relay mast.
+      Someone there has kept the evening ration warm.
+      Still she counts each lamp before she leaves the wall.
+
+      [Round - four voices, turning away from the microphone]
+      Put the lamps out. Put them out in order.
+      Leave one for the steps and one above the gate.
+      Go on home. The water knows its way through darkness.
+      Morning will return what night has put away.
+
+      [Verse 3]
+      The last gate lamp makes her shadow reach the water.
+      She turns it low but leaves the pilot flame alive.
+      Storm season teaches what can safely go completely dark.
+      Beyond the yard, one upstairs window opens.
+      She raises one hand; another hand appears.
+      Then the gate goes quiet and her footsteps fade inland.
+      The lake holds only marker lights and weather.
+
+      [Final Round - four voices, further away still]
+      Put the lamps out. Put them out in order.
+      Leave one for the steps and one above the gate.
+      Go on home. The water knows its way through darkness.
+      Morning will return what night has put away.
+
+      [Outro - sustain, empty room]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: c4dce1eb-56d6-4297-b5ed-fdaafabc5cb7
+      suno_created: 2026-08-31T11:36:57Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_101/07.mp3

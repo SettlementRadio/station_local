@@ -1,4 +1,4 @@
-# Suno licence — what applies to the 45 songs generated 2026-08-15
+# Suno licence — what applies to every song generated in 2026-08
 
 > **The evidence is `2026-08-suno-terms.pdf`, beside this file.** That is the complete, dated record
 > M-40 asks for: 19 pages, captured from <https://suno.com/terms> on 2026-08-15 at 20:46, revision
@@ -21,10 +21,10 @@ the one to rely on.
 | Date of last revision, as stated on the page | **March 26, 2026** |
 | Captured | 2026-08-15 |
 | Covers generation month | 2026-08 |
-| Songs generated under it | 45 — `al_001` … `al_004`, the M-18 pilot |
+| Songs generated under it | **348, across 40 albums** — every take in the catalogue. The M-18 pilot's 45 (`al_001` … `al_004`) on 2026-08-15, relay-pop's 60 (M-30), lane-rock's 110 (M-31), Frontier Reels' 95 (M-33) and old-system sessions' first 38 (M-34) on 2026-08-30 and 2026-08-31. **Every one carries `suno_created` inside 2026-08**, so this one capture covers all of them. Counted off `music/production/lyrics/` on 2026-08-31 |
 | Model version used | v5.5 |
-| Subscription tier at generation | **Pro** — confirmed by the operator 2026-08-15 |
-| Remix features | **disabled** — confirmed by the operator 2026-08-15 |
+| Subscription tier at generation | **Pro** — confirmed by the operator 2026-08-15, and every `generation:` block since records the same account, tier and settings |
+| Remix features | **disabled** — confirmed by the operator 2026-08-15, and unchanged on every sitting since (see §Remix below: a remix-enabled track is non-commercial even on a paid tier) |
 | `licence_period` recorded in the lyrics files | `suno-pro-2026-08` |
 | Capture method | browser Print → PDF |
 | Complete? | **Yes** — 19 of 19 pages, 62,580 characters |
@@ -53,7 +53,7 @@ From *Intellectual Property Rights → Content*:
 > your lawful, internal, personal and **non-commercial** purposes, provided that you give
 > attribution credit to Suno in each case.
 
-**The account was on Pro with remixing disabled when these 45 were generated** (operator, 2026-08-15),
+**The account was on Pro with remixing disabled when these were generated** (operator, 2026-08-15),
 so the assignment above applies to all of them unqualified, and the Remix carve-out below does not
 bite. **Three things still follow, and COMMISSION §9 already anticipated all three.**
 

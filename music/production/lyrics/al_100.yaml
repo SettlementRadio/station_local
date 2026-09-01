@@ -1,0 +1,659 @@
+# al_100 — Nobody Sings It Alone · The Shore Rounds (b_047) · Relay Road Import · 2612 · 8 songs · album
+#
+# Written by M-25. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Cut in a Titan lake yard's hall over two evenings in 2611 and issued at the road head in 2612 —
+# the first Shore Rounds record to leave the home system, and **not the record Titan bought**: the
+# crate had room for eight songs, the importer dropped the ninth and told nobody, and the band
+# learned of it in 2616 from a listener's letter. `s_0827` is written as the last track of a record
+# that is one song short and says so, which is the only place the missing ninth reaches the air.
+#
+# **This band's shape is the round and the lyrics are written for it.** Effa Lomm sings the first
+# line of every round alone; Bran Teale enters a bar behind her on the same words; Ilva Reske a bar
+# behind him; Kell Moray last and underneath, the place he asked for in 2598 and has kept. The
+# `[Round]` sections are written to be entered a line apart and the `[First line]` sections are one
+# voice with nothing under it. There is no drum kit anywhere in this band and nothing here asks for
+# one.
+#
+# Two songs break the card and both are wiki facts. **`s_0824` is one voice with nothing at all
+# under it** — Effa Lomm asked the others to leave the hall — and its exclude line keeps every other
+# voice and every instrument out. **`s_0825` carries the only overdub on any Shore Rounds record**,
+# Ilva Reske's low harmony sung again after the others had gone home, against a production line that
+# says no overdubs (D-096). Bran Teale plays with two fingers taped throughout, so the guitar parts
+# are three chords and no more, everywhere on the record and not only on `s_0822`.
+#
+# `generation:` and every `take:` were filled from the dispatch manifest at M-34. All eight takes
+# match their lyric exactly and the record is complete.
+
+album:
+  id: al_100
+  title: Nobody Sings It Alone
+  band: b_047
+  band_name: The Shore Rounds
+  label: label_7
+  release_year: 2612
+  genre: old-system-sessions
+  cornerstone: false
+  song_count: 8
+  style_card: b_047
+  room: >-
+    A Titan lake yard's hall, and for one song the yard's lamp room, recorded on one microphone at
+    the distances the four of them stand at when they sing in the yard — which took most of the first
+    evening to arrange and is why nothing here is close-mic'd. Voices first, instruments underneath:
+    hand-pumped reed organ, acoustic guitar cut to three chords by two taped fingers, upright bass,
+    hand percussion, and no drum kit anywhere. The card holds: plain clear female mezzo with no
+    vibrato starting every round alone, three voices entering a line apart behind her, the male bass
+    voice last. Four fact-bound details live in their own songs — the yard's own return list sung
+    flat on s_0821, the lamp room's metal walls and the door opened halfway through on s_0823, one
+    voice in an empty hall on s_0824, and a name taken out by the importer before pressing on s_0826,
+    which leaves a gap in the third verse that the lyric names rather than fills.
+
+generation:
+  # Filled from the manifest by M-34. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-31
+  sittings:
+    - {date: 2026-08-31, from: '10:46:03', to: '10:51:11', tracks: [1, 2, 3, 4]}
+    - {date: 2026-08-31, from: '11:25:28', to: '11:27:09', tracks: [5, 6, 7, 8]}
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: >-
+    Dispatched from music/audio/RAW/M-25_part_1 by `make music-dispatch`. All 8 takes
+    matched their lyric exactly and the record filed complete in one pass. 2 sittings.
+
+songs:
+  - id: s_0820
+    title: Nobody Sings It Alone
+    track_number: 1
+    mood: [warm, rolling, communal]
+    fact: >-
+      The four enter a line apart and the last voice in is Kell Moray's, the place he asked for when
+      he joined and has kept on every record since.
+    arrangement_note: the four voices enter a bar apart in a fixed order and the male bass voice is last and underneath, which is the band's whole architecture stated on the first track of the record
+    intro: 9
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      88 BPM warm round; clear female lead, three staggered voices, bass last, reed organ, guitar, fade.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, vocal tuning, whispered or rapped sections, unison singing, cold ending
+    lyrics: |
+      [Intro - reed organ, nine seconds]
+
+      [First line - lead alone]
+      Nobody sings it alone. Not here. Not through this weather.
+
+      [Verse 1]
+      I came off the lake with both hands shaking,
+      one lamp gone and half the deck ice-white.
+      Pride got me across the yard and through the berth gate.
+      Pride could not lift the wet coat from my back.
+      One voice found me by the locker, then another,
+      one low enough to settle underneath my breath.
+      By the time the storm bell stopped, my hands were still.
+
+      [Round - four voices, a bar apart]
+      Nobody sings it alone on this water.
+      Bring the line you have; another line will meet it.
+      Come in late, come in low, come in tired from the hold.
+      There is room inside the turning if we make it.
+
+      [Verse 2]
+      You brought a debt folded small inside your ration card,
+      three missed wages and a room about to close.
+      No speech can warm a number written by the office.
+      No brave face makes a landlord lose the sum.
+      So we stayed beside you while the lamp burned lower,
+      passed the hard page round without advice,
+      and left four hand marks where one name had been.
+
+      [Round - four voices, a bar apart]
+      Nobody sings it alone on this water.
+      Bring the line you have; another line will meet it.
+      Come in late, come in low, come in tired from the hold.
+      There is room inside the turning if we make it.
+
+      [Verse 3]
+      The freight crews use the line when engines fail.
+      Children use it crossing flooded lower walkways.
+      Someone starts it softly at a storm-season vigil;
+      no one turns to see whose mouth was first.
+      It belongs to every throat that cannot finish,
+      every worker called away before the final word,
+      every empty place another person sings around.
+
+      [Final Round - four voices, the last entry held]
+      Nobody sings it alone on this water.
+      Bring the line you have; another line will meet it.
+      Come in late, come in low, come in tired from the hold.
+      There is room. There was room before us. Keep it open.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 9bcf7a6d-cda8-4207-83a7-909644d29f02
+      suno_created: 2026-08-31T10:46:03Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_100/01.mp3
+
+  - id: s_0821
+    title: Count the Boats Back
+    track_number: 2
+    mood: [steady, patient, cold]
+    fact: >-
+      The counting verse is the yard's return list and Effa Lomm sings the boats in the order they
+      actually came in that evening.
+    arrangement_note: the list is sung flat and even by one voice with the other three out of it entirely, because it is a working list being read and the yard does not sing it in parts
+    intro: 12
+    outro: sustain
+    target_duration: "4:00"
+    prompt: >-
+      76 BPM patient round; clear female lead, flat solo boat list, reed organ, hand drum, held end.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, vocal tuning, whispered or rapped sections, harmony on the list section, cold ending, fade-out
+    lyrics: |
+      [Intro - reed organ and hand percussion, twelve seconds]
+
+      [Verse 1]
+      At dusk she takes the weather slate out to the jetty,
+      nine departure marks still bright beneath her thumb.
+      Families keep to work because work gives the hands somewhere:
+      rope into a coil, lamp glass wiped, berth hooks laid in rows.
+      No one asks the water what it means by getting darker.
+      No one says the number that the yard already knows.
+      She faces every lamp and lets the list begin.
+
+      [The list - lead alone, flat and even]
+      Nine out. North skiff. Lamp tender. Ferry boat.
+      Ice tow. Cold-store launch. Long reach. Yard three. Net repair. West sounder.
+      Eight in. Eight in by dark. The ninth in at nine.
+
+      [Verse 2]
+      The office counts by berth and scheduled landing.
+      Waiting counts the coat left hanging by the stove,
+      the supper skinning over, one child refusing sleep,
+      a work glove on the table with its other half away.
+      The storm-season feed says visibility is rising.
+      The lake gives back no answer anyone can use.
+      Eight lamps touch the breakwater. One line stays dark.
+
+      [The list - lead alone, flat and even]
+      Nine out. North skiff. Lamp tender. Ferry boat.
+      Ice tow. Cold-store launch. Long reach. Yard three. Net repair. West sounder.
+      Eight in. Eight in by dark. The ninth in at nine.
+
+      [Verse 3]
+      Nine o'clock arrives before the missing engine.
+      Then a low horn moves behind the outer ice.
+      One lamp dead, one hauling line gone overboard,
+      the ninth boat limps between the markers under hand power.
+      She rubs one departure mark away and does not cheer.
+      The whole yard breathes, then bends back to the wet rope.
+      Relief is work returning to its ordinary weight.
+
+      [The list - lead alone, flat and even]
+      Nine out. North skiff. Lamp tender. Ferry boat.
+      Ice tow. Cold-store launch. Long reach. Yard three. Net repair. West sounder.
+      Eight in. Eight in by dark. The ninth in at nine.
+
+      [Outro - sustain]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: d3856c05-4187-44fe-8c46-3a7d14d4e8ba
+      suno_created: 2026-08-31T10:46:55Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_100/02.mp3
+
+  - id: s_0822
+    title: Wet Rope, Cold Hands
+    track_number: 3
+    mood: [plain, midtempo, hard]
+    fact: >-
+      Bran Teale plays it with two fingers taped together after a yard injury, and the part was cut
+      down to what he could reach on the evening.
+    arrangement_note: the guitar is three chords and nothing more anywhere on the track, played by a man with two fingers taped, and the arrangement was cut to fit the hand rather than the hand worked round the arrangement
+    intro: 6
+    outro: cold
+    target_duration: "3:35"
+    prompt: >-
+      94 BPM folk blues; clear female lead, staggered trio, three-chord guitar, bass, hand drum, stop.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, vocal tuning, whispered or rapped sections, elaborate guitar work, fade-out
+    lyrics: |
+      [Intro - guitar and bass, six seconds]
+
+      [Verse 1]
+      He came through the berth gate with two fingers bound,
+      lake water in his boots and blood beneath the tape.
+      The yard nurse wrote fourteen days of lighter duty.
+      The pay clerk turned the paper toward a smaller sum.
+      At home, she cut his supper and unfastened both his sleeves.
+      Neither called it bravery. Neither called it fair.
+      The storm kept working every loose frame in the wall.
+
+      [Chorus]
+      Wet rope and cold hands and a yard that does not stop.
+      Tie the working hand to mine until the swelling goes.
+      A wage can lose two fingers and still call itself complete.
+
+      [Verse 2]
+      She had worked the same deck in her first storm season,
+      carried one white scar across the centre of her palm.
+      Every winter made the old line rise against the skin.
+      She placed that hand beneath his bandaged one at midnight,
+      not to prove she understood or tell him what came next,
+      only so the pain had something warmer underneath.
+      Outside, the freight crews changed beneath the bell.
+
+      [Chorus]
+      Wet rope and cold hands and a yard that does not stop.
+      Tie the working hand to mine until the swelling goes.
+      A wage can lose two fingers and still call itself complete.
+
+      [Verse 3]
+      On Thursday he returned before the tape came loose,
+      took the shore-side manifest and stayed away from lines.
+      Pride lasted till the cold went through his borrowed glove.
+      At noon he used the canteen relay to call her home.
+      She did not praise him for enduring or condemn him for the wage.
+      She said the soup was hot and one chair waited empty.
+      Sometimes going home is the only honest strength.
+
+      [Final Chorus]
+      Wet rope and cold hands and a yard that does not stop.
+      Tie the working hand to mine and let the yard bell ring.
+      A life is more than anything the pay clerk calls complete.
+
+      [Outro - cold stop]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: d4c9a65f-4f26-48a8-a5fd-8038bb6e19fb
+      suno_created: 2026-08-31T10:47:27Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_100/03.mp3
+
+  - id: s_0823
+    title: Lamp Room Round
+    track_number: 4
+    mood: [close, warm, communal]
+    fact: >-
+      Sung in the yard's lamp room rather than the hall because the band wanted the walls, and the
+      door being opened halfway through is on the take.
+    arrangement_note: a nine-foot metal room with a half-beat slap on every voice, and a door opening halfway through that makes the room briefly twice the size before it shuts again
+    intro: 4
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      82 BPM close round; clear lead, three staggered voices, metal slap, organ, guitar, door opens, fade.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, large hall reverb, close modern vocal production, vocal tuning, whispered or rapped sections, cold ending
+    lyrics: |
+      [Intro - four voices humming, four seconds]
+
+      [First line - lead alone]
+      Bring the storm inside; these metal walls can hold it.
+
+      [Verse 1]
+      Lake wind drives the lower-yard lamps sideways.
+      Four wet coats crowd the hooks above the bench.
+      Beyond the door, the weather feed keeps changing,
+      every update later than the one before.
+      Inside, a small flame steadies under glass.
+      One low line returns from every metal wall.
+      We cannot calm the lake, so we answer one another.
+
+      [Round - four voices in a small metal room]
+      Light the lamps and set them down along the wall.
+      Keep one burning for the berth beyond the weather.
+      If your own voice fails, take the one returning.
+      Four breaths enter; every wall sends more.
+
+      [Verse 2]
+      Halfway through, the door lifts on its upper runner.
+      Cold lake air lays flat the little flame.
+      A child stands framed there, searching every face,
+      one parent still assigned to the last repair boat.
+      The room grows wide enough to hold the outer dark.
+      Then the door comes down; the metal gathers close.
+      Five wet coats now hang above the bench.
+
+      [Round - four voices in a small metal room]
+      Light the lamps and set them down along the wall.
+      Keep one burning for the berth beyond the weather.
+      If your own voice fails, take the one returning.
+      Four breaths enter; every wall sends more.
+
+      [Verse 3]
+      Near morning, one green marker clears the breakwater.
+      The child sees it first through scratched door glass.
+      No one shouts; the lamp room has gone past shouting.
+      We turn the flames down, count the coats, unlatch the door.
+      The storm will leave salt on every hook and hinge.
+      Tomorrow other hands will trim these lamps for work.
+      Tonight their walls have carried more than light.
+
+      [Final Round - four voices in a small metal room]
+      Light the lamps and set them down along the wall.
+      Keep one burning for the berth beyond the weather.
+      If your own voice fails, take the one returning.
+      Open the door. The last green marker is coming home.
+
+      [Coda - fade, one voice last]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 82175642-960f-4341-ae50-1954055eedcc
+      suno_created: 2026-08-31T10:51:11Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_100/04.mp3
+
+  - id: s_0824
+    title: The Far Shore Boat
+    track_number: 5
+    mood: [slow, longing, sparse]
+    fact: >-
+      Effa Lomm sings it with nothing behind her, the only unaccompanied track the band has recorded,
+      and she asked the others to leave the hall for it.
+    arrangement_note: one voice in an empty hall with no instrument and no other singer anywhere on the track, which happens nowhere else in this band's life and is why the next song sounds warm
+    intro: 6
+    outro: sustain
+    target_duration: "4:10"
+    prompt: >-
+      62 BPM bare ballad; one clear female mezzo alone in a large hall, no instruments, held end.
+    exclude: all instruments, backing vocals, harmony vocals, drum kit, electric instruments, synthesizers, brass, orchestral strings, close modern vocal production, vocal tuning, whispered or rapped sections, cold ending, fade-out
+    lyrics: |
+      [Intro - empty hall, six seconds]
+
+      [Verse 1]
+      Across the lake, one lamp wakes before the evening,
+      fixed above a boat pulled high beyond the reeds.
+      Seven days it has not shifted toward the water.
+      Seven nights the far-shore weather hides the lower hull.
+      You left from that berth last storm season without warning,
+      said the crossing took an hour in ordinary wind.
+      Ordinary wind has not come back since then.
+
+      [Refrain]
+      One boat on the far shore, one lamp in the dark.
+      No ferry crossing after dusk, no signal on the relay.
+      I can wait until the water gives the distance back.
+
+      [Verse 2]
+      At the yard they say the boat belongs to no one,
+      only an old survey hull with grass around the keel.
+      Yet each night the lamp comes on at our old supper hour.
+      Each night a moving shadow crosses once behind it.
+      I keep two cups warming on the canteen plate,
+      one for foolish hope and one for anyone who asks.
+      Neither one has cooled enough to throw away.
+
+      [Refrain]
+      One boat on the far shore, one lamp in the dark.
+      No ferry crossing after dusk, no signal on the relay.
+      I can wait until the water gives the distance back.
+
+      [Verse 3]
+      Spring will open water between both landing marks.
+      I could take the first work ferry, climb the farther bank,
+      touch that weathered hull and settle what the lamp means.
+      But wanting sometimes lives because the shore stays distant.
+      Truth may be a cold boat no one ever boarded.
+      Let the reeds hold fast. Let the one light answer mine.
+      Tonight the lake is wide enough to keep us kind.
+
+      [Refrain]
+      One boat on the far shore, one lamp in the dark.
+      No ferry crossing after dusk, no signal on the relay.
+      I can wait until the water gives the distance back.
+
+      [Outro - sustain, empty hall]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 8e4793f2-082d-4f03-85b2-5b4ac63ead81
+      suno_created: 2026-08-31T11:25:28Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_100/05.mp3
+
+  - id: s_0825
+    title: Two Kinds of Cold
+    track_number: 6
+    mood: [blue, slow, still]
+    fact: >-
+      Ilva Reske's low harmony was sung again after the others had gone home and laid over the take,
+      which is the only overdub on any Shore Rounds record.
+    arrangement_note: one low female harmony sits under the round and is plainly not in the room with it — closer, drier and a shade in front — because it was sung hours later against a take that was already finished
+    intro: 15
+    outro: fade
+    target_duration: "4:05"
+    prompt: >-
+      66 BPM cold round; clear female lead, dry low female double, reed organ, bass, hand drum, fade.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, vocal tuning, whispered or rapped sections, matched vocal placement, cold ending
+    lyrics: |
+      [Intro - reed organ, fifteen seconds]
+
+      [Verse 1]
+      There is the cold that comes off the water in the evening
+      and the cold that starts when two cups sit untouched.
+      The first one salts the berth rail, lifts the skin,
+      works through any coat not closed up to the throat.
+      The second keeps the room warm and the chairs divided.
+      I have carried both kinds through this storm season.
+      Only one grows worse when someone lights the lamp.
+
+      [Chorus]
+      Two kinds of cold (two kinds of cold),
+      and only one of them is the weather.
+      Put the lamp on. Draw the other chair close.
+      Sit with me until one kind begins to break.
+
+      [Verse 2]
+      You came home after midnight from the western hold,
+      lake ice in your hair, my message still unanswered.
+      I had built a careful speech from every quiet hour.
+      Then your hands shook once above the ration heater.
+      Anger lost its order; pride forgot the opening line.
+      I moved the second chair without forgiving anything.
+      Sometimes mercy is a coat laid over both shoulders.
+
+      [Chorus]
+      Two kinds of cold (two kinds of cold),
+      and only one of them is the weather.
+      Put the lamp on. Draw the other chair close.
+      Sit with me until one kind begins to break.
+
+      [Verse 3]
+      Morning finds the outer lake gone white and harmless,
+      though we know what waits beneath the level light.
+      Your cup is empty. Mine has cooled between my hands.
+      Nothing has been solved enough to call it over.
+      Still the room no longer holds two separate weathers.
+      At the airlock, you turn back and touch my sleeve.
+      One kind follows you to work; one stays behind.
+
+      [Bridge]
+      One coat for the first kind.
+      One honest word for the second.
+
+      [Final Chorus]
+      Two kinds of cold (two kinds of cold),
+      and only one of them is the weather.
+      Leave the lamp on. Leave the other chair close.
+      Come back before the second kind returns.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: da32eb79-498b-4da6-9d42-0017f16d4fd6
+      suno_created: 2026-08-31T11:26:01Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_100/06.mp3
+
+  - id: s_0826
+    title: Money in the Wrong Pocket
+    track_number: 7
+    mood: [wry, brisk, blunt]
+    fact: >-
+      About a yard clerk who paid the crews late for a year, and the importer had the name in the
+      third verse taken out before pressing it at the road head.
+    arrangement_note: the third verse has a hole in it where a name was and the lyric says so rather than filling it, so the band sing round a gap that the listener can hear being left
+    intro: 5
+    outro: cold
+    target_duration: "3:30"
+    prompt: >-
+      100 BPM brisk folk blues; clear female lead, staggered trio, guitar, bass, hand drum, cold stop.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, vocal tuning, whispered or rapped sections, fade-out
+    lyrics: |
+      [Intro - guitar and hand percussion, five seconds]
+
+      [Verse 1]
+      For eleven years the wage came through on Friday.
+      Then one winter Friday passed without the sum.
+      Monday found it pending, Tuesday found it altered,
+      Wednesday found the clerk behind a newly locked door.
+      At the top yard, nobody could see a problem.
+      At the berth, each freight crew counted meals and heat.
+      Missing money always knows exactly whom to visit.
+      The heating meter does not accept explanations.
+      Neither does the child awake behind the wall.
+
+      [Chorus]
+      Money in the wrong pocket is still money.
+      Warm and comfortable, earning for somebody.
+      Ask the empty pocket if the difference is small.
+
+      [Verse 2]
+      One week means nothing with a month behind you.
+      One week means six ration marks spread across nine days,
+      a child kept from the storm because the boots need sealing,
+      one relay charge declined, one landlord at the door.
+      She keeps every figure underneath the kitchen lamp.
+      By Thursday, what the office calls a brief delay
+      has eaten every soft thing from the coming week.
+      Her boots may cross the winter if the failing seal holds.
+      The seal can wait. The hunger cannot do the same.
+
+      [Chorus]
+      Money in the wrong pocket is still money.
+      Warm and comfortable, earning for somebody.
+      Ask the empty pocket if the difference is small.
+
+      [Verse 3]
+      The manifest has every worker, hour and berth,
+      every transfer signed, each late amount approved.
+      Between the words released and paid, one space lies open.
+
+      [One beat left empty]
+
+      Leave it bare. The yard can hear what should be there.
+      A missing word may travel farther than a spoken one.
+      The locked office may keep whatever word was taken.
+      The crews keep all the days that word withheld.
+      Friday comes at last. The empty beat remains.
+
+      [Final Chorus]
+      Money in the wrong pocket is still money.
+      Warm and comfortable, earning for somebody.
+      Ask the empty pocket. It remembers every day.
+
+      [Outro - cold stop]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 5c9cd75f-77b1-4c01-8504-3e3515b32b8c
+      suno_created: 2026-08-31T11:26:33Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_100/07.mp3
+
+  - id: s_0827
+    title: Round for the Last Boat
+    track_number: 8
+    mood: [final, warm, communal]
+    fact: >-
+      The last track of the imported edition, and on Titan it is followed by a ninth song the crate
+      had no room for.
+    arrangement_note: the round is left open at the end rather than closed, with the last entry still going as the take fades, because on the pressing the band made there is another song after it
+    intro: 10
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      78 BPM warm round; clear female lead, three staggered voices, bass last, organ, unresolved fade.
+    exclude: drum kit, electric instruments, synthesizers, brass, orchestral strings, stacked studio harmony, close modern vocal production, vocal tuning, whispered or rapped sections, resolved or closed ending, cold ending
+    lyrics: |
+      [Intro - reed organ and guitar, ten seconds]
+
+      [First line - lead alone]
+      Last boat in, and the lamps go along the wall.
+
+      [Verse 1]
+      Eight green markers rest against the return board.
+      One square stays dark beneath the marked storm-season time.
+      Tools go back in lockers; nobody goes home.
+      The ration room keeps soup below a simmer.
+      At the outer berth, one woman holds two coats,
+      watching every light divide across the water.
+      Evening has no end while one boat keeps it open.
+
+      [Round - four voices, a bar apart]
+      Sing the last boat in, and the last light on.
+      Sing for whoever is still out on the water.
+      Come in behind me. Leave a place for one more voice.
+
+      [Verse 2]
+      Relay weather loses contact past the northern reeds.
+      Search lamps move like needles over black glass.
+      The woman folds one coat and opens it again.
+      Her child sleeps upright on a coil of working rope.
+      No one offers comfort large enough to sound dishonest.
+      Someone starts the lowest line beside the gate.
+      Other voices enter where the fear leaves room.
+
+      [Round - four voices, a bar apart]
+      Sing the last boat in, and the last light on.
+      Sing for whoever is still out on the water.
+      Come in behind me. Leave a place for one more voice.
+
+      [Verse 3]
+      Near dawn, a weak lamp answers from the snow line.
+      Then it disappears. Then answers once again.
+      The marker board stays dark; the yard keeps watching.
+      Hope is not arrival. Hope is one more signal.
+      The woman puts both coats across her shoulders.
+      No one closes out the manifest or song.
+      The lake has not returned the final line.
+
+      [Final Round - four voices, the last entry held]
+      Sing the last boat in, and the last light on.
+      Sing for whoever is still out on the water.
+      Come in behind me. Leave a place for one more voice.
+      One more to come. One more to come. One more—
+
+      [Coda - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: b0f7e711-45c0-465d-b305-44178a959e02
+      suno_created: 2026-08-31T11:27:09Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_100/08.mp3

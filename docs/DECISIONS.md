@@ -2870,3 +2870,165 @@ Reels band's card floor is above relay-pop's ceiling and the genre runs to 184, 
 past faster and the §12 rule 10 floor has to be cleared by a wider margin to reach the same take. This
 is an estimate made against one measurement, and M-39 is what settles it: **if this genre measures
 short per word, the cause is the tempo and not the writing.**
+
+### D-096 · A line-up that has not arrived yet, a break in a form nobody asks one of, and the floor plus eleven — 2026-08-29
+
+**Agent decisions on M-25**, four of them, all following D-092 and D-095's precedent: where a style
+card and the wiki disagree, the wiki wins, and the card is never amended.
+
+**One card is dated and one record is before the date.** `b_063`'s card lists a concertina and two
+harmony voices, one male and one female. Wenna Ferrin joins The Ninefoot Cut in 2610 and `al_140`
+was cut in 2605, so that record has **no concertina anywhere and one harmony voice**, and every
+exclude line on it keeps both out by name. This is D-095's first shape exactly — a card describes a
+band's settled sound and a band's life has a shape — and the first concertina in this band's life is
+the first bar of `al_141`. Two more collisions were resolved the same way and neither is dated:
+`b_048`'s exclude line says `large hall reverb`, and `s_0847` was cut in a nine-hundred-foot gallery
+whose four-second decay is the fact the song carries, so that one song lifts the exclusion and asks
+for the decay by name; and `b_048`'s card lists no bass because the wiki's line-up has none, so every
+exclude line on both Undershore Local records keeps a bass of any kind out rather than trusting the
+card's narrower `electric bass` to do it (§7, no line-up gains a player).
+
+**Old-system sessions takes a break three times in ninety songs, and that is a decision.** §7 gives
+the instrumental break to three forms by rule — lane-rock, Frontier Reels, void-lounge — forbids it
+to two, and says of the rest that they *"may take a break where the arrangement wants one; nothing
+asks them to."* This is one of the rest, and `styles.yaml` says so: no card in this genre names a
+break instrument. So there is **no distribution to hit here and none was aimed at**. Three songs take
+a passage — Wesla Tarn's slide on `s_0803`, Tel Brask's harmonica through a lamp horn on `s_0812` and
+`s_0844` — and every one of them is the answer to a question its own wiki fact asks, on an instrument
+that record's credits already put in the room. Two of the three are a guest's instrument rather than
+the band's, which is the one place §7's *"the instrument has to be one the band's style card already
+lists"* is read past: the rule exists so a solo cannot hand a band an instrument it does not own, and
+here the wiki hands it over, on one track, by name, in the credits.
+
+**Four songs are sung by somebody other than their band's lead voice and all four are wiki facts** —
+`s_0818` (Del Marran takes the second verse), `s_0824` (Effa Lomm alone, with the rest of the band
+sent out of the hall), `s_0829` (all four Shore Rounds take a verse each, in the order they joined)
+and `s_0853` (Tel Brask sings lead, and the guitar is absent because its player was on shift). Each
+names the exception in its own prompt and excludes the usual voice explicitly, and `b_048`'s card had
+already anticipated its one — *"on one song in the band's life he takes the lead."* As at D-095, §10
+forbids changing a band's lead voice *between albums* and a single credited track is not that.
+
+**The lyrics are shorter than the last three genres on purpose, and M-39 asked for it.** Relay-pop
+averaged 308 sung words, lane-rock 317, Frontier Reels 340 — and Frontier Reels then measured the
+*fastest* rate in the catalogue, 0.698 seconds a word, so the thirty extra words written to cover a
+slow rate paid for nothing. M-39's own finding is that **the rate is a property of the genre and only
+measurement gives it**, so these 90 average **299 words — the floor plus eleven** — and the estimate
+is stated rather than compensated for. This genre runs 58–124 BPM against every measured genre's
+100-and-up, so the rate is expected to go the other way: **at 0.75 a word these come back near 3:44,
+at 0.90 near 4:29**, and nothing in the writing can narrow that. M-34 and M-39 settle it.
+
+### D-097 · The dispatch caught D-091 a second time, and a take generated from a different draft corrects the file — 2026-08-31
+
+**Agent decisions on M-34's first pile**, 39 takes covering `al_098` … `al_101`. The dispatch refused
+the whole pile on the first run and both refusals were right.
+
+**`s_0796` was never generated, and the song stays unplayable.** `796.mp3` and `797.mp3` carry
+byte-identical sung words — both `s_0797` — with different Suno ids nineteen seconds apart, which is
+one prompt's pair of takes. `s_0796`'s written lyric scores at most **16%** against anything in the
+pile. This is D-091's failure exactly, on the title track of the genre's cornerstone: the lyric box
+still held track 2's words when the style box moved on. **The operator has said there is no time to
+regenerate it, so `s_0796`'s `take:` stays null and `al_098` is 12 of 13.** Filing one of the pair
+under `s_0796` was available and was refused: it would put a take of *Don't Wait Up for the Late Car*
+into the catalogue as *The Room at Terrace Road*, whose one stated fact is a works bell that is not
+on it, and §10 forbids marking a song playable when audio for it does not exist. **A missing song is
+recoverable; a song filed as another song is a lie the presenter will read out.**
+
+**The kept take is the longer of the pair and the other was deleted, because D-091's precedent
+does not actually work.** `796.mp3` is 3:39 against a stated 3:40 target and `797.mp3` is 3:15, so the
+longer was filed. The shorter was first parked at `music/audio/RAW/797_spare.mp3`, following D-091's
+`87_wrong.mp3` — **and that turns `make music-tag` red.** `tag.unclaimed()` walks the whole of
+`music/audio/` including `RAW/`, and any file there that no lyrics file claims fails the gate, by
+design: *"the command could report forty-five successes over a directory holding fifty, and the five
+nobody wrote down would be exactly the five with no licence attached."* So a rejected take cannot be
+kept where D-091 put one, and `87_wrong.mp3` is presumably gone for the same reason. **The operator
+chose deletion.** Nothing is lost that matters: the generation is in the account as
+`c5a4dd4a-0435-4a4e-8f1c-cc59f344b5b7`, recorded here and in `dispatch-manifest.json`, and it is a
+second take of a song already filed at `lyric_match: 1.0000`. **`music/audio/RAW/` is a staging area
+that two `make` targets treat as catalogue audio** — `music-analyse` measured the un-dispatched pile
+as 39 extra songs before it was filed — and that is a finding for the tooling, not for this card.
+
+**`s_0809`'s file was corrected to the take, and that is the opposite of D-093 for a reason.** The
+dispatch flagged `809.mp3` at 21% against its written lyric. It is **not drift**: the take's own tags
+carry the pasted text with the six-space YAML indentation of a copy out of the lyrics file on every
+line but the first, the same section shape tag for tag, the same title hook, the same characters and
+the same world nouns. It is a complete second hand-written draft — 304 sung words, three verses,
+`lane` and `siding`, **green on §12 on its own** — and it lands the album's own wiki fact (the notice
+reproduced on the sleeve) more squarely than the draft the file held. So the file never described
+this take, and `al_099.yaml`'s `s_0809` is now the text that was actually sung.
+
+**The rule this sets, and its boundary.** D-093 established that where **the vendor rewrites what it
+was given**, the written lyric stays the record and the drift is a finding for the ear —
+`make check` counts the written lyric and stays green, and the station broadcasts the take. That is
+unchanged. This is the other case: where a take is provably generated from **a different
+hand-written text**, the file is corrected to it, because §9's whole purpose is that the file says
+what the audio is, and a `lyric_match` of 0.21 against a lyric nobody ever sang records nothing. The
+two are told apart by the evidence in the tag — a paste carries the file's own indentation and shape;
+a rewrite carries the take's.
+
+**All 38 filed takes match at `lyric_match: 1.0000`**, as Frontier Reels did and lane-rock did not.
+
+**The rest of this genre is going to a different vendor, and §9 has not met that before.** The
+operator will generate the remaining 52 songs on another tool with its own commercial licence
+evidence. Two things follow and neither is settled here. **`b_047` The Shore Rounds will be split
+across two vendors** — `al_100` and `al_101` on Suno v5.5, `al_102` elsewhere — which is the stronger
+form of the risk §9's *"finish a band in one sitting"* exists to name: a band split across two model
+versions may not match itself, and a band split across two vendors almost certainly will not. And
+**`licence_period: suno-pro-2026-08` cannot cover those takes**: they need their own dated evidence
+file in `music/licence-evidence/` and their own period string, captured the day generation starts.
+`music/licence-evidence/2026-08-suno-licence-note.md` was 303 songs out of date and now states what
+it actually covers — all 348 Suno takes, every one created inside 2026-08.
+
+### D-098 · One album, two licence periods, and evidence that no gate will ever ask for — 2026-09-01
+
+**Agent decisions on M-34's second pile**, six takes: `s_0796` regenerated after D-097 proved it had
+never been made, and all five of `al_102`. All six matched their lyric at `1.0000` and filed in one
+pass. **`al_102` completing means no band in old-system sessions is split across two generators** —
+which was the open risk D-097 named, and it is closed rather than accepted.
+
+**`al_098` is the first record in the catalogue whose tracks were made in two licence periods.**
+Tracks 2–13 were generated 2026-08-30 under `suno-pro-2026-08`; track 1 was regenerated 2026-09-01
+under `suno-pro-2026-09`. **Nothing needed inventing to express that**: D-062 already resolves
+provenance song-block-first and album-block-second, so the album's `generation:` block keeps
+`suno-pro-2026-08` and track 1's own `take:` block overrides that one field. Each mp3 now carries the
+period it was actually made under in its own tags, which is what §9 asks for and what survives the
+hand-off the audio and the wiki will eventually get. **A per-song override is the right shape for
+this and an album-level split would not have been** — a record is one release and one story; only the
+take knows when it was made.
+
+**The September evidence turned out to be the August file.** The operator has confirmed the account
+was on **Pro** with **remixing disabled** on 2026-09-01, and that **Suno's terms do not change until
+2026-09-03** — so the six takes were made under the March 26, 2026 revision already captured as
+`2026-08-suno-terms.pdf`, page for page. `suno-pro-2026-09` is a real period with real evidence
+behind it; the evidence is simply the same document as August's, and
+`2026-09-suno-licence-note.md` says so and points at it. **The capture that is still owed belongs to
+the period starting 2026-09-03**, when the banner 2026-08's PDF recorded — *"Our terms are changing
+soon"* — takes effect. Nothing generated so far falls under it.
+
+**`licence_period` is checked in exactly one way, and it is a prefix.**
+`tests/unit/test_music_tag.py:114` asserts every take's period `startswith("suno-")`. That is the
+whole of it — `make check` does not read `music/licence-evidence/` at all, and `make music-tag`
+writes whatever the lyrics files say into the mp3s. Measured by editing the value and running the
+gate: `banana` goes red; **`suno-pro-2019-01`, `suno-x` and August's period on a September take all
+go green**, and so does a period with no evidence file behind it. The one that matters next is the
+opposite failure: **`udio-pro-2026-09` goes red**, so the hardcoded `suno-` prefix will break
+`make check` the day the first take from another generator is filed.
+
+**One of the three was fixed here; the other two became M-51.** The shape check was the one that
+could not wait, because the operator is moving to a second generator and `udio-pro-2026-09` going red
+would have broken `make check` on the first pile. It now matches `<vendor>-<tier>-<YYYY>-<MM>` — any
+vendor passes, `banana`, `suno-x` and `suno-pro-2026-13` fail. **The other two are arithmetic and
+still uncounted**: that the month in a `licence_period` matches the month in the take's own
+`suno_created`, and that every period named has a file in `music/licence-evidence/` beginning
+`<YYYY>-<MM>-<vendor>-`. Both are checkable from data already in the lyrics files, both would have
+caught a real mistake — `al_102`'s `generation:` block was written by copying another album's, and an
+unedited month would have put five September takes under August's terms silently — and the operator
+has asked for them as a card rather than as an observation. **That is M-51**, and it belongs before
+the next generator's first pile is filed, because that sitting is where a period gets typed with
+nothing to copy from.
+
+**Suno needs no further licence capture.** All 354 takes were generated between 2026-08-15 and
+2026-09-01 and the terms do not change until 2026-09-03, so `2026-08-suno-terms.pdf` — the March 26,
+2026 revision — covers every one of them. The operator is not generating on Suno again, so the
+successor terms the August banner warned about apply to nothing this station holds. What the next
+generator needs is its own evidence under its own period, which is M-40's job continuing rather than
+a new one.

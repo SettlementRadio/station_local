@@ -1,0 +1,848 @@
+# al_099 — Later Than Advertised · Terrace Road Four (b_046) · Relay Road Import · 2619 · 11 songs · album
+#
+# Written by M-25. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The band's first record, cut in the tram works canteen in 2618 for a Mars house that pressed four
+# hundred copies and did nothing else with them, and bought unheard at the road head. It is a
+# quieter record than al_098 and the reason is in the room: **Nan Sudell is on drums throughout and
+# plays with brushes on most of it**, because the machine shop next door was on a night run and the
+# band could not be louder than it. Every prompt here says brushes; al_098's say sticks.
+#
+# Two things this record has and the band's other one does not. **Tel Brask of Undershore Local is
+# on s_0812** — the only person from outside the band on either record, on Mars for a fortnight for
+# someone else's wedding, who walked in on the second night and had never heard the song. His
+# harmonica takes a twelve-second passage, and it is the only instrumental break on this record;
+# b_046's card lists no harmonica, and it does not need to, because the wiki's own credits put the
+# instrument in the room (D-096). And **Del Marran sings the second verse of s_0818**, the only lead
+# vocal on either record not sung by Wesla Tarn.
+#
+# `generation:` and every `take:` were filled from the dispatch manifest at M-34, and all eleven
+# takes match their lyric exactly. **`s_0809`'s lyric above is the text that was actually pasted
+# and sung**, which is not the draft this file first held; the dispatch caught the difference at
+# 21% and the file was corrected to the take rather than the take regenerated (D-097).
+
+album:
+  id: al_099
+  title: Later Than Advertised
+  band: b_046
+  band_name: Terrace Road Four
+  label: label_7
+  release_year: 2619
+  genre: old-system-sessions
+  cornerstone: false
+  song_count: 11
+  style_card: b_046
+  room: >-
+    The same tram works canteen on Mars as al_098, cut five years earlier and held down by the
+    machine shop next door, which was on a night run for the whole week. One live room, no overdubs,
+    the steel-bar slide loudest after the voice. The card holds: low smoky female contralto behind
+    the beat, bending the last note of a line down, and one male second voice from the bass chair
+    answering the last line of a verse. Three things are this record's own. Nan Sudell plays brushes
+    rather than sticks on all eleven, which is the sound of the whole record and is a fact about the
+    shop next door rather than a choice. Tel Brask guests on harmonica on s_0812 and takes the only
+    instrumental passage on the record. Del Marran takes the lead on the second verse of s_0818 and
+    nowhere else in the band's life. s_0813 is sung without the slide at all, which happens nowhere
+    else on either record, and s_0817 has the works generator running under it from end to end.
+
+generation:
+  # Filled from the manifest by M-34. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-31
+  sittings:
+    - {date: 2026-08-30, from: '17:13:32', to: '17:13:32', tracks: [1]}
+    - {date: 2026-08-31, from: '07:43:57', to: '07:49:15', tracks: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: >-
+    Dispatched from music/audio/RAW/M-25_part_1 by `make music-dispatch`. All 11 takes
+    matched their lyric exactly and the record filed complete. **Track 1 was generated
+    from a different hand-written draft of s_0809 than the one this file held**, which
+    the match caught at 21% — the take's own tags carry the pasted text, and that text
+    is now the lyric above, so the file describes what the station broadcasts (D-097).
+    2 sittings across two days.
+
+songs:
+  - id: s_0809
+    title: Later Than Advertised
+    track_number: 1
+    mood: [shuffling, wry, brisk]
+    fact: >-
+      Named for the band's habit of starting an hour after the notice said, and the notice from 2617
+      is reproduced on the sleeve.
+    arrangement_note: the band come in one instrument at a time over the first six seconds rather than together, which is the joke in the title played rather than sung
+    intro: 6
+    outro: fade
+    target_duration: "3:35"
+    prompt: >-
+      106 BPM dry blues; smoky contralto, slide, piano, bass, brushes, staggered entry, room fade.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, sticks or hard drumming, cold ending
+    lyrics: |
+      [Intro - piano and brushes, six seconds]
+
+      [Verse 1]
+      The notice said eight o'clock and the notice always does.
+      Somebody types it up and pins it on the canteen door
+      and nobody who has ever been here reads it as a time.
+      Eight is when the urn goes on and Amon finds his stool.
+      Half past is the tables and the lamp and the long argument.
+      Nine is when we play, or half past, or whenever Del arrives.
+
+      [Chorus]
+      We are later than advertised. We have always been later.
+      If you came at eight you have an hour and a cup,
+      and there is nothing down this lane worth being early for.
+
+      [Verse 2]
+      There was a man from the Mars house came to hear us once
+      with a watch and a coat and an appointment after ours.
+      He stood in the doorway at eight and was still there at nine,
+      and by the second song he had his coat over a chair.
+      He bought the record off us and pressed four hundred copies.
+
+      [Chorus]
+      We are later than advertised. We have always been later.
+      If you came at eight you have an hour and a cup,
+      and there is nothing down this lane worth being early for.
+
+      [Verse 3]
+      The works runs to the minute and it has to and it does.
+      Two thousand people move on a bell and nobody is late.
+      Nobody is late twice. That is the whole of the arrangement.
+      So we have one room on this whole siding where a clock
+      is a piece of paper on a door and nothing more than that,
+      and I would give up a good deal before I gave that up.
+
+      [Final Chorus]
+      We are later than advertised. We will be later still.
+      If you came at eight you have an hour and a cup,
+      and if you wanted a band that starts on time, there is the works.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e491bba4-e695-48fc-bc25-0010f4788f7d
+      suno_created: 2026-08-30T17:13:32Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_099/01.mp3
+
+  - id: s_0810
+    title: Half the Fare Home
+    track_number: 2
+    mood: [midtempo, plain, tired]
+    fact: >-
+      Nan Sudell plays the whole track with brushes because the machine shop next door was on a
+      night run and the band could not be louder than it.
+    arrangement_note: the machine shop next door is under the second verse and nothing was done about it, which is why the whole band is playing under its own volume for four minutes
+    intro: 9
+    outro: fade
+    target_duration: "3:40"
+    prompt: >-
+      92 BPM hushed blues; smoky contralto, slide, piano, bass, brushes, faint machinery, fade.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, sticks or hard drumming, loud dynamics, cold ending
+    lyrics: |
+      [Intro - brushed kit and bass, nine seconds]
+
+      [Verse 1]
+      My wage card cleared at midnight with the old deduction,
+      room, ration, heat and the advance from last sealed season.
+      Enough remained for one full fare or supper split in two.
+      You were at the late gate with your collar turned against it,
+      saying walking was no trouble if the storm stayed down.
+      We bought the soup and watched the final tram go empty.
+      Pride is warm for half a mile and useless after that.
+
+      [Chorus]
+      I have got half of what it costs to get home,
+      and the rest of it is a walk, and the walk is long,
+      but your hand is in my pocket and the lane is wide enough.
+
+      [Verse 2]
+      The machine shop shook the shutter on the lower lane.
+      Night crews crossed behind the glass in pale work coats.
+      We kept our voices low where the pressure doors were sleeping,
+      traded one bad joke until it lasted three whole streets.
+      At every tram stop you could still have changed your mind.
+      At every tram stop I pretended not to count.
+      Hunger makes accountants of the tenderest people.
+
+      [Chorus]
+      I have got half of what it costs to get home,
+      and the rest of it is a walk, and the walk is long,
+      but your hand is in my pocket and the lane is wide enough.
+
+      [Verse 3]
+      At the terrace airlock, dawn was silver on the seals.
+      Your block turned left; mine kept along the works wall.
+      We stood where one more minute meant a colder breakfast,
+      both too tired to turn a cheap night into anything grand.
+      You pressed tomorrow's fare card into my working hand.
+      I said I would repay it. You said, not in money.
+      The first shift bell went through us before we moved.
+
+      [Final Refrain]
+      I have got half of what it costs to get home,
+      and the rest of it is a walk, and the walk is long,
+      and tomorrow there are two of us who know the way.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: b2f6dddf-d618-42f5-b3d4-a3ca03eb6349
+      suno_created: 2026-08-31T07:43:57Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_099/02.mp3
+
+  - id: s_0811
+    title: Ask Me Again on Payday
+    track_number: 3
+    mood: [dry, rolling, wry]
+    fact: >-
+      Written across two pay weeks, and the second verse names the exact sum the band was paid for
+      these sessions.
+    arrangement_note: the second verse is a sum read out in a song and the band drop to piano and brushes under it so the number is the only thing in the room
+    intro: 7
+    outro: cold
+    target_duration: "3:30"
+    prompt: >-
+      98 BPM rolling blues; smoky contralto, slide, piano, bass, brushes, bare second verse, cold stop.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, sticks or hard drumming, fade-out
+    lyrics: |
+      [Intro - piano, seven seconds]
+
+      [Verse 1]
+      You brought the housing form on Tuesday after late shift,
+      two rooms at the terrace end, one wage against the bond.
+      Tuesday had my ration light on amber in the cupboard.
+      Tuesday had the lane wind working through my only coat.
+      I loved you just as much as I could manage on a Tuesday,
+      which is not the kind of answer any form can hold.
+      Put the pen away and bring the question back on Friday.
+
+      [Refrain]
+      Ask me again on payday and you will get a different answer.
+      Ask me anything at all on a Friday and I will say yes.
+      I am a braver woman with a week's wage in my coat.
+
+      [Verse 2]
+      Eleven and six came through the pay slot Friday morning.
+      Four ways, room hire, then the debt against the urn.
+      Two hot meals, one relay charge, a week of clean air credit,
+      and enough to make the housing bond look almost like a door.
+      I wrote the total on my wrist before the figures vanished.
+      Money has a gift for leaving while you look at it.
+      Still, the ink was there when you came down the siding.
+
+      [Refrain]
+      Ask me again on payday and you will get a different answer.
+      Ask me anything at all on a Friday and I will say yes.
+      I am a braver woman with a week's wage in my coat.
+
+      [Verse 3]
+      Friday I signed slowly where the two names had to meet.
+      Not because the rooms were better or the work less thin,
+      not because a number made the sealed season disappear.
+      Friday only gave my hope a chair to sit upon.
+      Tuesday keeps the books; Friday opens up the door.
+      Both of them are honest, both are living in my coat,
+      and both will walk beside you when the next deduction comes.
+
+      [Refrain]
+      Ask me again on payday and you will get a different answer.
+      Ask me anything at all on a Friday and I will say yes.
+      I am a braver woman with a week's wage in my coat.
+
+      [Coda - cold stop]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 7fb46a0d-a319-4351-bb8a-709f75e9b191
+      suno_created: 2026-08-31T07:45:09Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_099/03.mp3
+
+  - id: s_0812
+    title: Wrong Side of the Works
+    track_number: 4
+    mood: [driving, hard, blunt]
+    fact: >-
+      Tel Brask plays harmonica, the only person from outside the band on any of their records, and
+      he had never heard the song before that night.
+    arrangement_note: twelve seconds of harmonica from a man who had never heard the tune, played straight through as if he had written it, and it is the only instrumental passage on this record
+    intro: 5
+    outro: cold
+    target_duration: "3:25"
+    prompt: >-
+      110 BPM hard blues; smoky contralto, slide, piano, bass, brushes, 12-second harmonica, cold stop.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, sticks or hard drumming, amplified harmonica, fade-out
+    lyrics: |
+      [Intro - full band, five seconds]
+
+      [Verse 1]
+      She sleeps above the terrace where the air stays warm.
+      He works beyond the bulkhead in the cold repair yard.
+      Between them stands the works with every gate on shift time,
+      a kilometre of iron pretending to be a world.
+      Her neighbours call the yard side hard and temporary.
+      His call the terrace soft enough to make a person weak.
+      Neither side has met the one it warns its children of.
+
+      [Chorus]
+      Wrong side of the wall, wrong side of the wage,
+      wrong side of a bell that rings for somebody else.
+      Warm is where a waiting hand stays open at the gate.
+
+      [Verse 2]
+      One storm night the west airlock lost its closing signal.
+      Freight crews crossed the canteen way to reach the lower berth.
+      She came down carrying a meal gone cold in paper.
+      He came up with metal dust silvering both sleeves.
+      They stopped beneath a dead lamp, each surprised to find
+      the other side had tired eyes and ordinary shoes.
+      The repair bell rang; neither one obeyed it quickly.
+
+      [Instrumental - harmonica, twelve seconds]
+
+      [Chorus]
+      Wrong side of the wall, wrong side of the wage,
+      wrong side of a bell that rings for somebody else.
+      Warm is where a waiting hand stays open at the gate.
+
+      [Verse 3]
+      Now she leaves by the terrace door and circles south.
+      Now he takes the freight way past the pressure pumps.
+      They meet where the broken signal never was repaired,
+      share whatever supper either one could spare that week.
+      Both districts keep their warnings polished on the wall.
+      Both bells still claim a body when the shift comes round.
+      Love is not an exit. It is one unlocked crossing.
+
+      [Final Chorus]
+      Wrong side of the wall, wrong side of the wage,
+      wrong side of a bell that rings for somebody else.
+      Warm is where a waiting hand stays open at the gate.
+
+      [Outro - cold stop]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 2032e68f-a1a6-4e14-b3c6-f10e70064133
+      suno_created: 2026-08-31T07:45:42Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_099/04.mp3
+
+  - id: s_0813
+    title: Nothing to Report
+    track_number: 5
+    mood: [slow, blue, weary]
+    fact: >-
+      Wesla Tarn wrote it about the works accident book and sings it without touching the slide,
+      which she does nowhere else on either record.
+    arrangement_note: no slide anywhere on the track, which leaves the piano carrying the top of the band for the only time on either record, and the singer with nothing in her hands
+    intro: 16
+    outro: sustain
+    target_duration: "4:05"
+    prompt: >-
+      70 BPM bare slow blues; smoky contralto, piano, bass, brushes, no slide, hard room, held end.
+    exclude: slide guitar, electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, sticks or hard drumming, cold ending, fade-out
+    lyrics: |
+      [Intro - piano and brushed kit, sixteen seconds]
+
+      [Verse 1]
+      A green book waits inside the lower airlock office,
+      under one white lamp that never quite stops shaking.
+      At every change of shift, a hand turns to a clean page,
+      checks the siding number, checks the hour, checks the gate.
+      Most nights three small words lie down across the paper.
+      Two thousand workers breathe because those words are dull.
+      No news can be the finest news a night has ever carried.
+
+      [Verse 2]
+      Nine years of blank mercy run along that shelf,
+      then one page from 2610 grows heavy with a time.
+      A pressure seal, a western bay, one line cut short,
+      figures in the margin where a name should not have been.
+      The next leaf opens clean. The careful hand continues.
+      By dawn the usual words return without apology.
+      Paper does not grieve; it only leaves the space.
+
+      [Refrain]
+      Nothing to report. Nothing to report.
+      Good. Let the green book sleep beneath the lamp all year.
+      Let every empty line mean someone reached the lane.
+
+      [Verse 3]
+      His wife still works the second siding after midnight.
+      She came back on a Monday with her hair pinned high.
+      Eleven years have put the closing pen into her hand.
+      Each night she checks the seals and writes the quiet words.
+      No one watches closely. Everyone can hear the nib.
+      The bad page waits three shelves above her shoulder.
+      Kindness may be silence. Silence may be something else.
+
+      [Refrain]
+      Nothing to report. Nothing to report.
+      Good. Let the green book sleep beneath the lamp all year.
+      Let every empty line mean someone reached the lane.
+
+      [Final Verse]
+      Leave the cover green and leave the columns hungry.
+      Let the late crew curse the lamp and hurry through the gate.
+      Let the foreman sharpen pencils no one needs tonight.
+      Let her close the book before the first tram enters.
+      There are prayers too plain for any sacred room:
+      one white lamp, one clean page, one ordinary morning,
+      and every coat accounted for along the lane.
+
+      [Outro - sustain]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e0256fa0-f77a-482e-9f1c-e721d1e74dcf
+      suno_created: 2026-08-31T07:46:13Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_099/05.mp3
+
+  - id: s_0814
+    title: Two Streets Over
+    track_number: 6
+    mood: [warm, midtempo, fond]
+    fact: >-
+      About somebody who lived two streets from the canteen for nine years, and Wesla Tarn has always
+      refused to say whether they ever met.
+    arrangement_note: the bridge is two words and a line and the band stop dead underneath it, which is the only silence on the record and is where the song declines to answer the question it has raised
+    intro: 10
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      96 BPM warm blues; smoky contralto, slide, piano, bass, brushes, full-band pause, room fade.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, sticks or hard drumming, cold ending
+    lyrics: |
+      [Intro - slide and piano, ten seconds]
+
+      [Verse 1]
+      Nine years and two streets away is the whole of the story.
+      I know which window catches the late relay glow.
+      I know which stair. I know the dark coat on the rail.
+      I know what time the light goes on and what time it goes out.
+      I know the sealed-season week the curtain changed to blue.
+      I have never been up that stair and I am not going to say
+      whether that is because I could not or because I did not.
+
+      [Chorus]
+      Two streets away, nine years, and a lane between.
+      That is not far. That is not far at all.
+      I have walked further than that for a cup of tea.
+
+      [Verse 2]
+      The canteen keeps its stories warmer than its tea.
+      Mine travels down the tables every time a new shift starts.
+      Some tell it kindly. Some improve the final turn.
+      Some place my hand upon a door I never touched.
+      No one asks what wanting does when wanting has an address,
+      or how a lane can widen when one crossing matters most.
+
+      [Chorus]
+      Two streets away, nine years, and a lane between.
+      That is not far. That is not far at all.
+      I have walked further than that for a cup of tea.
+
+      [Bridge]
+      Two streets.
+      Two streets, and I have made a life on the near one.
+
+      [Verse 3]
+      There is a way of having a thing by not going and getting it.
+      It is not better and it is not braver and it is not a choice.
+      It is the cup kept warm, the stair left untested,
+      nine years of relay weather whitening the window,
+      two streets held between the first shift and the last.
+      Ask if we ever met. I will ask which answer helps you.
+      Then I will walk the near lane home as usual.
+
+      [Chorus]
+      Two streets away, nine years, and a lane between.
+      That is not far. That is not far at all.
+      I have walked further than that for a cup of tea.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 37076726-db4b-4f64-859c-77fa13761f35
+      suno_created: 2026-08-31T07:46:43Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_099/06.mp3
+
+  - id: s_0815
+    title: Small Money, Loud Room
+    track_number: 7
+    mood: [brisk, defiant, hard]
+    fact: >-
+      The band's first attempt was faster and Amon Furlow talked them down to this tempo, which he
+      can be heard doing at the top of the take.
+    arrangement_note: one man's voice at the top of the take saying four words and the band settling to a slower count behind him, left on the record because it is the only reason the take works
+    intro: 4
+    outro: cold
+    target_duration: "3:20"
+    prompt: >-
+      104 BPM hard blues; smoky contralto, slide, piano, bass, brushes, male count-in, cold stop.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, sung second lead, modern studio production, sticks or hard drumming, fade-out
+    lyrics: |
+      [Intro - piano, four seconds]
+
+      [Count-in - one man's voice, not sung]
+      Slower. Slower than that. There. Now.
+
+      [Verse 1]
+      Friday put a narrow wage into my pocket,
+      deductions taking bites before it reached my hand.
+      Enough for one good shirt or one loud night beneath it,
+      not enough for both, so I wore the old one clean.
+      The canteen door was shaking with the end-shift crowd.
+      Brush past the keeper, hide the ration card, go in.
+      A little money hates to spend the evening by itself.
+
+      [Chorus]
+      Small money in a loud room, make it last till two.
+      Nobody down this lane gets rich by holding back.
+      If tomorrow wants an answer, tomorrow knows the door.
+
+      [Verse 2]
+      You were standing by the urn with both hands empty,
+      watching every faster pair collide against the tables.
+      When the room eased back, you crossed the floor in time,
+      asked for nothing larger than the length of one slow turn.
+      Your coat smelled of the machine oil from the western bay.
+      Mine smelled of cheap soap and the storm outside.
+      We had exactly what the other one could spend.
+
+      [Chorus]
+      Small money in a loud room, make it last till two.
+      Nobody down this lane gets rich by holding back.
+      If tomorrow wants an answer, tomorrow knows the door.
+
+      [Verse 3]
+      At two the relay clock went pale above the counter.
+      Fare money gone, first shift waiting, terrace three lanes north.
+      You offered half your last warm ration for the walk.
+      I offered every story I had saved from you till then.
+      Dawn found us laughing by the locked transfer hall,
+      richer by no measure any pay clerk would accept.
+      Some nights cost little and refuse to become small.
+
+      [Final Chorus]
+      Small money in a loud room, gone before the light.
+      Nobody down this lane gets rich by holding back.
+      Tomorrow has its answer. Tonight has spent us well.
+
+      [Outro - cold stop]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: ef8f10f0-a94e-4480-a945-ea4abd33572d
+      suno_created: 2026-08-31T07:47:11Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_099/07.mp3
+
+  - id: s_0816
+    title: Don't Sing That One Here
+    track_number: 8
+    mood: [fast, funny, sly]
+    fact: >-
+      The works foreman asked the band not to play it in the canteen, which is why they opened with
+      it every week for the rest of that year.
+    arrangement_note: the room answers the lead inside the chorus line itself, which is the only place on either of this band's records where anybody but the bass chair answers her
+    intro: 3
+    outro: fade
+    target_duration: "3:15"
+    prompt: >-
+      116 BPM sly blues; smoky contralto, room answers chorus, slide, piano, bass, brushes, fade.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, blended or studio crowd vocals, drum machines, vocal tuning, whispered or rapped sections, modern studio production, sticks or hard drumming, cold ending
+    lyrics: |
+      [Intro - full band, three seconds]
+
+      [Verse 1]
+      Thursday morning finds him waiting by the airlock,
+      keys enough to close each room along the lane.
+      The title never leaves his careful working mouth.
+      His eyes stay on the floor; one boot worries at the seam.
+      A favour hangs between us, wearing orders like a coat.
+      By evening every table knows which tune he means.
+      By evening every chair is taken facing forward.
+
+      [Chorus]
+      Do not sing that one here (do not sing that one here),
+      says the ring of keys that owns the lower lane.
+      The room keeps one reply behind its teeth: sing it.
+
+      [Call - the room answering the lead, ragged]
+      Do not sing it. Do not sing it. Sing it.
+
+      [Verse 2]
+      The forbidden verse concerns a missing ration manifest,
+      six sealed crates, one signature, an office staying warm.
+      No foreman has a name in it; no district has a number.
+      Still every desk along the works can hear its own drawer close.
+      A guilty person always thinks the mirror is a window.
+      An honest person laughs and asks to hear the line again.
+      Tonight the canteen laughs before the first line ends.
+
+      [Chorus]
+      Do not sing that one here (do not sing that one here),
+      says the ring of keys that owns the lower lane.
+      The room keeps one reply behind its teeth: sing it.
+
+      [Verse 3]
+      All sealed season, workers crowd the doorway early,
+      coats still dusted from the siding, cards not clocked away.
+      The keys remain upstairs; their owner stays behind them.
+      Yet once, beyond the glass, a shoulder keeps the beat.
+      No pardon comes, no threat, no brave conversion.
+      Only one gloved hand that will not quite lie still.
+      Sometimes that is all the truth a hard room gets.
+
+      [Final Chorus]
+      Do not sing that one here (do not sing that one here),
+      says the ring of keys that owns the lower lane.
+      The room has held its answer all year long: sing it.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 2768d7f6-8e08-43c7-bc5a-efcc0e638b3d
+      suno_created: 2026-08-31T07:47:44Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_099/08.mp3
+
+  - id: s_0817
+    title: Under the Terrace
+    track_number: 9
+    mood: [slow, close, late]
+    fact: >-
+      Recorded at four in the morning after a shift, and the works generator runs underneath the
+      whole track.
+    arrangement_note: the works generator is a single low note under the entire track and the piano is tuned to it, which is a thing Amon Furlow started doing years before anybody recorded it
+    intro: 18
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      68 BPM slow blues; tired smoky contralto, generator hum, piano, slide, bass, brushes, held end.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, sticks or hard drumming, ambient drone pad, cold ending, fade-out
+    lyrics: |
+      [Intro - piano and generator hum, eighteen seconds]
+
+      [Verse 1]
+      Four in the morning, eight hours beyond the shift,
+      the generator holds one note beneath the floor.
+      It follows through the canteen and the empty locker room,
+      through the lower airlock, through the soles of both my shoes.
+      The relay mast goes quiet; the terrace windows darken.
+      Still that low note carries every sleeping wall.
+      I take the long lane home and hear it coming with me.
+
+      [Refrain]
+      Down here below the terrace there is one long note.
+      Everything anybody plays is played on top of it.
+      The works keeps breathing whether we are brave or not.
+
+      [Verse 2]
+      You sleep three floors above it with the ration light on red,
+      one hand beneath the pillow, one across my empty side.
+      I promised I would finish before the night crews changed.
+      The night crews changed; the first tram crossed the siding.
+      I stood below our window, too tired to climb the stair,
+      feeling your life overhead and iron under mine,
+      two kinds of weight that somehow keep me standing.
+
+      [Refrain]
+      Down here below the terrace there is one long note.
+      Everything anybody plays is played on top of it.
+      The works keeps breathing whether we are brave or not.
+
+      [Verse 3]
+      Some morning we will take a room beyond the works,
+      where silence does not tremble in the water cup.
+      You say the quiet may be worse once we can hear ourselves.
+      I say we will bring one chair from here to make it ours.
+      Neither one believes the lane will let us go so cleanly.
+      Even in that distant room, when every machine sleeps,
+      my body may supply the note it learned beneath the terrace.
+
+      [Refrain]
+      Down here below the terrace there is one long note.
+      Everything anybody plays is played on top of it.
+      The works keeps breathing whether we are brave or not.
+
+      [Outro - sustain, generator]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 7f460ea6-48aa-4b56-b03f-53469fa6c05d
+      suno_created: 2026-08-31T07:48:13Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_099/09.mp3
+
+  - id: s_0818
+    title: A Word With the Steward
+    track_number: 10
+    mood: [midtempo, wry, plain]
+    fact: >-
+      Del Marran sings the second verse, the only lead vocal on either record not sung by Wesla Tarn.
+    arrangement_note: the second verse is sung by the bass chair rather than answered by it, which happens nowhere else in this band's life, and the usual lead voice is out of the room for it entirely
+    intro: 8
+    outro: fade
+    target_duration: "3:40"
+    prompt: >-
+      94 BPM dry blues; smoky contralto, male lead verse two, slide, piano, bass, brushes, room fade.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, female lead on the middle verse, drum machines, vocal tuning, whispered or rapped sections, modern studio production, sticks or hard drumming, cold ending
+    lyrics: |
+      [Intro - bass and piano, eight seconds]
+
+      [Verse 1]
+      Your shift starts at sunset; mine ends after midnight.
+      We trade one cup between us at the lower gate.
+      Six months of touching sleeves while other workers pass us,
+      six months of messages delayed along the relay.
+      I took our two names to the room behind the urn,
+      laid them on the desk beside the sealed-week manifest,
+      and asked for one whole Wednesday in the same place.
+
+      [Chorus]
+      Go and see the steward when the ledger light is low.
+      Let the first answer pass; leave the real need on the desk.
+      Some doors down this lane open inward and very slowly.
+
+      [Verse 2 - plain male second voice, lead]
+      The first answer came before I reached the second chair:
+      roster sealed, no overlap, night quota already thin.
+      I showed the two untouched ration marks between our names,
+      every meal we missed by working opposite the bell.
+      He turned the manifest around, drew one line through Thursday,
+      wrote Wednesday twice, then shut the ledger with both hands.
+      No blessing, no advice, no reason we could owe him.
+
+      [Chorus]
+      Go and see the steward when the ledger light is low.
+      Let the first answer pass; leave the real need on the desk.
+      Some doors down this lane open inward and very slowly.
+
+      [Verse 3]
+      Wednesday came ordinary, pale and barely warm.
+      We slept till noon, burned supper, missed the terrace tram.
+      You read beside the window while I mended both our coats.
+      Nothing worth reporting crossed the room all day.
+      At sunset, when no bell divided mine from yours,
+      we raised one cup toward the works beyond the glass.
+      A small permission held an entire life inside it.
+
+      [Final Chorus]
+      Go and see the steward when the ledger light is low.
+      Let the first answer pass; leave the real need on the desk.
+      Some doors open slowly. We have Wednesday on the other side.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 740aae53-fc6a-4d14-b772-eb0d1d6f8398
+      suno_created: 2026-08-31T07:48:45Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_099/10.mp3
+
+  - id: s_0819
+    title: Lights Out on the Line
+    track_number: 11
+    mood: [final, warm, slow]
+    fact: >-
+      The only tune the band recorded twice; the first attempt was wiped at Nan Sudell's insistence
+      and this is the second, cut an hour later.
+    arrangement_note: this is the tired take rather than the pleased one, and it is slower and further back than anything else on the record because the band had already played it once that night
+    intro: 14
+    outro: sustain
+    target_duration: "4:00"
+    prompt: >-
+      74 BPM tired warm blues; smoky contralto, long slide, piano, bass, brushes, hard room, held end.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, sticks or hard drumming, bright or lifted lead vocal, cold ending, fade-out
+    lyrics: |
+      [Intro - slide and piano, fourteen seconds]
+
+      [Verse 1]
+      The last car leaves the siding with three windows lit.
+      We watch it from the canteen while the gate clock loses colour.
+      Your bag is by the airlock; mine is underneath the chair.
+      We tried goodbye at eleven and it sounded much too certain.
+      Now midnight gives us tired words with room to bend.
+      Outside, the lane lamps darken one by one.
+      Inside, neither one of us can make the first move.
+
+      [Chorus]
+      Lights out on the line, and the last car off the siding,
+      first shift waiting somewhere past the relay glow.
+      Stay until the room goes dark, then take the long lane home.
+
+      [Verse 2]
+      Once we left this room believing love was finished,
+      walked three streets apart and slept with every lamp alive.
+      Morning made us proud enough to call the silence peace.
+      Evening found your coat again across the same old chair.
+      Tired people cannot keep a perfect ending straight.
+      One hand reaches for a cup; the other lets it stay.
+      Mercy enters softly when conviction goes off shift.
+
+      [Chorus]
+      Lights out on the line, and the last car off the siding,
+      first shift waiting somewhere past the relay glow.
+      Stay until the room goes dark, then take the long lane home.
+
+      [Verse 3]
+      Three years later, money draws its line between us,
+      one disputed sum, two versions no account can join.
+      You take the north-block room and half the ration credit.
+      I keep the cups and Wednesday by the canteen wall.
+      Still, when anger makes me hurry toward a clean conclusion,
+      I hear your tired voice asking for another hour.
+      Some good advice survives the person who has gone.
+
+      [Final Chorus]
+      Lights out on the line, and the last car off the siding,
+      first shift waiting somewhere past the relay glow.
+      Stay until the room goes dark. I will take the long lane home.
+
+      [Coda - sustain, slide held]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-31
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: f4b83d35-31de-499a-8e25-7b1d920f4195
+      suno_created: 2026-08-31T07:49:15Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_099/11.mp3

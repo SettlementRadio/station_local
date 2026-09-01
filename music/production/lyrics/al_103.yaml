@@ -1,0 +1,630 @@
+# al_103 — Nothing Dries Down Here · Undershore Local (b_048) · Relay Road Import · 2600 · 9 songs · album
+#
+# Written by M-25. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Cut in 2599 in the canteens and galleries of the Europa under-ice works and issued at the road head
+# in 2600 — **the oldest record in the station's import catalogue**, paid for by the union local out
+# of its own funds after the works refused, which is why the Europa sleeve carries a branch number
+# where a producer's name goes.
+#
+# **The cold is in the arrangement and not in the words.** Saira Dunn's piano could not be brought to
+# pitch and she played it a quarter-tone flat rather than move rooms, which is `s_0843` and is audible
+# under everything else on the record. Marta Ospel's kit has no cymbals, taken off because the
+# gallery's four-second decay made them unusable, so nothing here has a bright top end and the whole
+# band plays harder to make up for it.
+#
+# **Two things fight the style card and both are resolved the wiki's way** (D-096). `s_0847` was cut
+# in the nine-hundred-foot gallery and its four-second decay is the room — so that song's exclude line
+# drops the card's `large hall reverb` and asks for the decay by name, where every other song on the
+# record keeps it out. And **this band has no bass player**: the wiki's line-up is guitar, piano,
+# harmonica and drums, so every exclude line here keeps a bass of any kind out, rather than relying on
+# the card's `electric bass` to do it (§7, no line-up gains a player).
+#
+# `generation:` and every `take:` are empty until M-34.
+
+album:
+  id: al_103
+  title: Nothing Dries Down Here
+  band: b_048
+  band_name: Undershore Local
+  label: label_7
+  release_year: 2600
+  genre: old-system-sessions
+  cornerstone: false
+  song_count: 9
+  style_card: b_048
+  room: >-
+    The canteens and galleries of a Europa under-ice works — hard, cold, metal, with a long ring
+    behind the harmonica and tape hiss over everything. One take, no overdubs, no bass anywhere in
+    the band. The card holds: male gravel baritone that tires audibly across a take and drops to
+    plain speech at the end of a line, one blunt male second voice from the harmonica chair on
+    choruses only. Four things are this record's own. The piano is a quarter-tone flat throughout,
+    worst on s_0843 where the lyric names it. The kit has no cymbals anywhere. s_0847 was cut in the
+    gallery and keeps its four-second decay, which is the one place on the record where the card's
+    reverb exclusion is lifted. And the last chorus of s_0848 is about forty people off the night
+    shift, ragged, in three keys and a beat behind the band, credited on the sleeve by branch number.
+
+generation:
+  # Empty until M-34's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_0840
+    title: Nothing Dries Down Here
+    track_number: 1
+    mood: [wry, rolling, midtempo]
+    fact: >-
+      Hob Venner wrote the chorus on the back of a grievance form and the form is reproduced on the
+      sleeve of the Europa pressing.
+    arrangement_note: the flat piano is most audible here because the guitar sits out of the choruses entirely, which was not planned and was kept once everybody heard what it did
+    intro: 8
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      100 BPM damp blues; tiring gravel baritone, flat piano, guitar, rim-and-skin kit, hiss, fade.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - guitar and piano, eight seconds]
+
+      [Verse 1]
+      She hangs two work coats over pipes above the scrubber,
+      one from day shift, one still dripping from the night.
+      Morning finds the shoulders dark and both sleeves heavy.
+      She pulls the colder one around her working shirt.
+      At the airlock, someone laughs and says it suits the weather.
+      Under ice, a joke is what you use before a grievance.
+      The wet has learned the shape of everybody here.
+
+      [Chorus]
+      Nothing dries down here. Nothing has ever dried down here.
+      Hang it for a week; the water only changes pockets.
+      Take the boots off anyway. Refuse to call it normal.
+
+      [Verse 2]
+      Four hundred coats breathe steam into one narrow room.
+      Warm pipes knock behind them; nothing leaves the air.
+      Gloves bloom white along the seams by supper.
+      Boot leather softens, cracks, then opens at the heel.
+      The works counts heat supplied and marks the standard met.
+      Nobody measures water carried home in clothing,
+      or the ration cells spent drying socks beside a stove.
+
+      [Chorus]
+      Nothing dries down here. Nothing has ever dried down here.
+      Hang it for a week; the water only changes pockets.
+      Take the boots off anyway. Refuse to call it normal.
+
+      [Verse 3]
+      At home she peels the work coat from her shoulders,
+      lays it by the door so it cannot wet the bed.
+      A child asks why the ceiling drips when ice lies overhead.
+      She puts one metal bowl beneath the faithful leak,
+      opens the grievance form and smooths it on her knee.
+      A complaint begins wherever patience stops pretending.
+      Tonight the bowl and every signature fill slowly.
+
+      [Final Chorus]
+      Nothing dries down here. Nothing has ever dried down here.
+      Hang it for a week; the water only changes pockets.
+      Take the boots off anyway. Refuse to call it normal.
+      Leave the wet form at the gate where no one can ignore it.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0841
+    title: The Long Ladder
+    track_number: 2
+    mood: [driving, hard, steady]
+    fact: >-
+      Marta Ospel plays it on a kit with no cymbals, which she took off because the gallery's echo
+      made them unusable and never put back.
+    arrangement_note: skins and rims and nothing bright anywhere, so the guitar has to carry the whole top of the band and is played harder than it would otherwise be
+    intro: 5
+    outro: cold
+    target_duration: "3:25"
+    prompt: >-
+      112 BPM hard blues; gravel baritone, hard acoustic guitar, flat piano, rim-and-skin kit, stop.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, hi-hat, ride, crash, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - drums and guitar, five seconds]
+
+      [Verse 1]
+      The lift fails dark halfway through the blowout drill.
+      Red lamps turn the second gallery toward the ladder.
+      Two hundred rungs rise through a sweating metal shaft,
+      one bulkhead at the top and four hundred boots below.
+      Nobody panics; panic has no room in single file.
+      Hands find the rails, shoulders find the person ahead.
+      The long climb starts before the alarm stops speaking.
+      Every rung repeats the weight the lift was built to spare.
+
+      [Chorus]
+      Up that long ladder and down that long ladder,
+      two hundred rungs and a bulkhead at the top.
+      Count only the next one. Let the rest wait overhead.
+
+      [Verse 2]
+      Forty rungs from daylight, one worker turns an ankle.
+      The line bends round her without breaking its pace.
+      A man below takes both her arms across his shoulders,
+      her good boot knocking hard against the rail.
+      He does not promise strength enough for what remains.
+      She counts the rungs against his ear to keep them moving.
+      Sixty-seven, sixty-eight, then breath instead of numbers.
+
+      [Chorus]
+      Up that long ladder and down that long ladder,
+      two hundred rungs and a bulkhead at the top.
+      Count only the next one. Let the rest wait overhead.
+
+      [Verse 3]
+      At the upper airlock, other hands receive her.
+      He sits against the bulkhead till his shaking passes.
+      By next shift, the lift is running, drill marked complete.
+      No citation travels down the deck, no story needs his name.
+      Yet every year when warning lights begin their turning,
+      someone leaves a water flask beside the hundredth rung.
+      He takes the ladder still and never takes the flask away.
+
+      [Final Chorus]
+      Up that long ladder and down that long ladder,
+      two hundred rungs and a bulkhead at the top.
+      Count for the one you carry. Let the rest wait overhead.
+
+      [Outro - cold stop]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0842
+    title: Wages in Two Halves
+    track_number: 3
+    mood: [blunt, brisk, defiant]
+    fact: >-
+      The local's committee asked the band not to record it during a live dispute about split
+      payments, the only time it ever asked them for anything.
+    arrangement_note: one voice reads the committee's request flat with the band out of it, and then the band come back in on the same chorus they were asked not to record
+    intro: 3
+    outro: cold
+    target_duration: "3:15"
+    prompt: >-
+      116 BPM blunt blues; hard gravel baritone, spoken request, guitar, flat piano, harmonica, stop.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - full band, three seconds]
+
+      [Verse 1]
+      Half arrives on Friday, half when cargo clears.
+      Cargo clears when one dry office signs the outer manifest.
+      The deck has finished loading; the office has gone home.
+      Rent takes one full wage and does not split its hunger.
+      Heat cells, boots and supper all come due in one.
+      A promise cannot feed the week that waits between.
+
+      [Chorus]
+      Wages in two halves is a wage and a promise.
+      I can spend a wage. I have never spent a promise.
+      Pay it whole before the next shift leaves the deck.
+
+      [The committee - one voice, flat]
+      Not while the dispute is live. Give the talks another week.
+      We are asking once. Do not make the promise harder.
+
+      [Verse 2]
+      One woman counts six ration marks across nine evenings,
+      turns the smallest boot sole toward the kitchen lamp.
+      Her second half is waiting on a hauler already gone.
+      The committee asks for time; the child asks for dry feet.
+      Both requests are honest. Only one is in the room.
+      She threads the cracked sole, knowing thread will not hold,
+      and puts tomorrow's wet boot by the heater.
+
+      [Chorus]
+      Wages in two halves is a wage and a promise.
+      I can spend a wage. I have never spent a promise.
+      Pay it whole before the next shift leaves the deck.
+
+      [Verse 3]
+      Four months put no full Friday in a worker's hand.
+      The office keeps its order; the deck keeps every loading time.
+      At shift change, wet coats fill the second gate together.
+      No one blocks the airlock. No one lifts a threat.
+      They stand long enough to make the missing half visible,
+      forty quiet bodies where one promise used to hide.
+      The signing light stays on beyond the office hour.
+
+      [Final Chorus]
+      Wages in two halves is a wage and a promise.
+      I can spend a wage. I have never spent a promise.
+      Pay it whole. We brought the promise to your door.
+
+      [Outro - cold stop]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0843
+    title: Saltwater Boots
+    track_number: 4
+    mood: [plain, midtempo, cold]
+    fact: >-
+      Saira Dunn's piano is a quarter-tone flat for the whole track because it would not hold pitch in
+      the cold and the band would not move rooms.
+    arrangement_note: the piano is a quarter-tone under everything and never corrected, so the guitar and the voice both lean away from it, which is the sound of the record and is worst here
+    intro: 10
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      94 BPM cold blues; gravel baritone, quarter-flat piano, acoustic guitar, rim-and-skin kit, fade.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, in-tune piano, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and guitar, ten seconds]
+
+      [Verse 1]
+      Salt water finds the stitching before the leather knows.
+      One black line appears along the outer heel.
+      By midday, every step releases what came in.
+      By shift end, both socks carry the under-ice cold.
+      The issue desk calls this pair within its working life.
+      My feet call every metre back to the airlock.
+      Neither voice has power over next spring's allowance.
+
+      [Refrain]
+      Salt water in the boots and salt water in the seam.
+      It gets in and it stays in and it takes the leather off.
+      Two pairs a year, and the second pair is never as good.
+
+      [Verse 2]
+      First pair comes with spring shift and a signature.
+      Second comes from ration credit priced beyond a week.
+      Somewhere dry, a purchasing clerk approved the seam.
+      Somewhere wet, four hundred workers test it daily.
+      No manifest records the hours spent changing socks,
+      or every careful strip of sealing cloth at night.
+      Cheap equipment makes expensive rituals at home.
+
+      [Refrain]
+      Salt water in the boots and salt water in the seam.
+      It gets in and it stays in and it takes the leather off.
+      Two pairs a year, and the second pair is never as good.
+
+      [Verse 3]
+      You wait beside the heater with the patching needle,
+      turn each boot beneath the lamp and find the weaker edge.
+      I say the pair is finished. You refuse the office verdict.
+      One close stitch, one seal, one night beneath the pipe.
+      Morning finds the leather ugly, stiff and holding.
+      Care does not make poor material become fair.
+      It only gets a tired person through another shift.
+
+      [Final Refrain]
+      Salt water in the boots and salt water in the seam.
+      It gets in and it stays in and it takes the leather off.
+      Two pairs a year, and your repair outlasts them both.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0844
+    title: Ask Me When I'm Dry
+    track_number: 5
+    mood: [funny, shuffling, warm]
+    fact: >-
+      Tel Brask plays the harmonica through a lamp horn, which is how he played it in the canteens so
+      it would carry down a gallery.
+    arrangement_note: fourteen seconds of harmonica through a metal lamp horn with a long ring behind it, which is the band's most copied trick and the only instrumental passage on the record
+    intro: 6
+    outro: fade
+    target_duration: "3:40"
+    prompt: >-
+      106 BPM shuffle; gravel baritone, horn-played harmonica break, guitar, flat piano, rim kit, fade.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, amplified or effected harmonica, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - harmonica through a metal horn, six seconds]
+
+      [Verse 1]
+      I come through the airlock with my coat still running,
+      nine hours of gallery water gathered at the hem.
+      You have kept the evening meal above the ration heater.
+      Before I reach the chair, you ask if I am happy.
+      A kind question can arrive at an unkind hour.
+      My answer lands too hard against the metal room.
+      The lamp horn sends it farther than I meant.
+
+      [Chorus]
+      Ask me when I am dry and I will give you an answer.
+      Ask me now and you will get whatever comes out.
+      I have been wet for nine hours; do not trust the first reply.
+
+      [Verse 2]
+      You take your cup and leave mine on the table,
+      no slammed door, no speech rehearsed for me to lose.
+      Water forms a dark ring underneath my elbows.
+      Steam lifts slowly from the meal you kept from cooling.
+      In the quiet, every cruel word returns with edges.
+      Tiredness may explain a wound; it does not close it.
+      I wait until my working hands belong to me again.
+
+      [Instrumental - harmonica through the horn, fourteen seconds]
+
+      [Chorus]
+      Ask me when I am dry and I will give you an answer.
+      Ask me now and you will get whatever comes out.
+      I have been wet for nine hours; do not trust the first reply.
+
+      [Verse 3]
+      Forty minutes later, both boots stand by the pipe.
+      I find you in the next room reading weather changes.
+      The honest answer is not simple, only kinder:
+      mostly yes, sometimes no, never because of you.
+      You look once at the coat still dripping by the door.
+      Tomorrow we will choose a better hour for questions.
+      Tonight I wash the cups and ask to start again.
+
+      [Final Chorus]
+      Ask me when I am dry and I will give you an answer.
+      Ask me now; I have waited for the true reply.
+      Mostly yes, and yes to you, and sorry for the rest.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0845
+    title: The Second Gate
+    track_number: 6
+    mood: [slow, blue, still]
+    fact: >-
+      About a man who worked the second gate for thirty years; he heard the record when it came out
+      and told the band he did not recognise himself in it.
+    arrangement_note: the last verse is the correction and it was written after the man had spoken to the band, so it sits on the end of a song that has already made its mind up
+    intro: 17
+    outro: sustain
+    target_duration: "4:20"
+    prompt: >-
+      68 BPM slow triplet blues; tired gravel baritone, flat piano, guitar, rim-and-skin kit, held end.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, vocal tuning, whispered or rapped sections, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - piano triplets, seventeen seconds]
+
+      [Verse 1]
+      Thirty years at second airlock, day and night rotation.
+      Every manifest arrives beneath my working hand.
+      Cargo inward, workers outward, one lamp over everything.
+      I know the sound of every seal along this gallery.
+      Knowing is not loving. Staying is not choosing.
+      A stool can fit the body and still not be a home.
+
+      [Verse 2]
+      My family crossed the cargo road before the last closure,
+      found a Mars-side room and work beside a warmer gate.
+      I filed for transfer first year, fifth year, then the tenth.
+      Each reply praised continuity at this essential post.
+      Praise is cheaper than a berth on any outbound hauler.
+      Duty is the word an office uses when it means no.
+
+      [Refrain]
+      The second gate, the second gate, the same lamp every shift.
+      Do not call me rooted when the lock is on your side.
+      I have wanted more than this for thirty years.
+
+      [Verse 3]
+      Relay calls arrive with children turning older,
+      voices crossing distance bodies cannot cross.
+      They know the kettle, stool and gate from what I show them.
+      I know their rooms by corners in a narrow screen.
+      Love survives on schedules; that is not the same as living.
+      Another manifest slides underneath the glass.
+
+      [Refrain]
+      The second gate, the second gate, the same lamp every shift.
+      Do not call me rooted when the lock is on your side.
+      I have wanted more than this for thirty years.
+
+      [Final Verse]
+      Tonight I leave the transfer form above the ledger,
+      unsigned by the office, signed by me again.
+      Morning may return it with the usual reason.
+      Morning may surprise a man who stopped expecting.
+      Either way, this gate is work and not my nature.
+      I turn the lamp down. I do not call it home.
+      I send it anyway.
+
+      [Outro - sustain]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0846
+    title: Two Shifts, No Sleep
+    track_number: 7
+    mood: [tired, driving, hard]
+    fact: >-
+      Cut at the end of a double shift and Hob Venner's voice fails on the last verse, which the band
+      kept on the grounds that it was accurate.
+    arrangement_note: the lead voice gives out in the third verse and comes back for the last line, and there is no second take anywhere on this record to put in its place
+    intro: 4
+    outro: cold
+    target_duration: "3:20"
+    prompt: >-
+      118 BPM hard blues; gravel baritone fails in verse three, guitar, flat piano, harmonica, stop.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, large hall reverb, cymbals, clean or unstrained vocal, vocal tuning, whispered or rapped sections, modern studio production, fade-out
+    lyrics: |
+      [Intro - full band, four seconds]
+
+      [Verse 1]
+      First shift starts before the sleeping block is stirring.
+      Second starts when daylight feed turns white above the deck.
+      By the overlap, my hands have lost one glove between them.
+      By the evening ration, both clocks disagree.
+      The scrubber keeps one note beneath the whole sixteen hours.
+      I carry it through airlock, canteen, cup and chair.
+      Sleep has become a place the lift no longer reaches.
+
+      [Chorus]
+      Two shifts and no sleep and a canteen at the end of it.
+      Call it ordinary; ordinary still has weight.
+      Ask the hands that miss the cup and catch it anyway.
+
+      [Verse 2]
+      A desk above the ice calls overlap efficient.
+      Down here, one worker signs the same load twice,
+      one forgets the north valve and remembers at the ladder,
+      one hears a child inside the gallery alarm.
+      Nobody is careless; care has simply spent itself.
+      The branch sends figures upward. Thanks come downward.
+      Neither one can keep an overtired hand from shaking.
+      No schedule counts the mistakes exhaustion nearly makes invisible.
+
+      [Chorus]
+      Two shifts and no sleep and a canteen at the end of it.
+      Call it ordinary; ordinary still has weight.
+      Ask the hands that miss the cup and catch it anyway.
+
+      [Verse 3 - the voice goes]
+      I reach the canteen door and lose the word for doorway.
+      Coat on the chair, head in my hands, light going—
+      [Voice fails]
+      Someone moves the hot cup safely from my elbow.
+      Someone takes the next shift card out of my pocket.
+      The room stays still until my breathing finds its level.
+      I can say one thing clearly: do not call this harmless.
+
+      [Final Chorus]
+      Two shifts and no sleep and a canteen at the end of it.
+      Call it ordinary; ordinary still has weight.
+      Ask the voice that left and came back for the warning.
+
+      [Outro - cold stop]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0847
+    title: Under the Ice Yard
+    track_number: 8
+    mood: [cold, spacious, slow]
+    fact: >-
+      Recorded in the gallery rather than the canteen, and the four-second decay on it is the room and
+      not anything the recording did.
+    arrangement_note: four people standing well apart in a nine-hundred-foot gallery, one microphone, four seconds of decay on everything, and no piano because it could not be got in there
+    intro: 20
+    outro: sustain
+    target_duration: "4:25"
+    prompt: >-
+      66 BPM glacial blues; gravel baritone, four-second decay, guitar, harmonica, rim kit, held end.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, drum machines, cymbals, piano, dry or close recording, artificial reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending, fade-out
+    lyrics: |
+      [Intro - guitar in the gallery, twenty seconds]
+
+      [Verse 1]
+      You stand beyond the scrubber plant at gallery east.
+      I stand by the ladder where the warning lamps begin.
+      Nine hundred feet of metal keeps our bodies separate.
+      I call your working number; four seconds later
+      my own voice reaches back before your answer starts.
+      Anger sounds less certain when the room returns it.
+      Cold makes every distance feel officially measured.
+
+      [Refrain]
+      Down in the ice yard, where everything you say comes back
+      four seconds older, wearing edges you did not intend.
+      Leave a space for me. I am trying to answer.
+
+      [Verse 2]
+      We learned this conversation during first storm season:
+      speak one line, then wait through its returning shadow.
+      No interruption travels clean across the gallery.
+      No quick defence can climb above the older words.
+      Tonight you say the transfer came and you are taking it.
+      My answer leaves too fast, collides with what I said before.
+      Silence is the only room where both can land.
+
+      [Refrain]
+      Down in the ice yard, where everything you say comes back
+      four seconds older, wearing edges you did not intend.
+      Leave a space for me. I am trying to answer.
+
+      [Verse 3]
+      At last I say I knew this gate would never hold you.
+      The gallery repeats it softer toward the east.
+      Your reply begins before the final echo leaves me:
+      knowing is not kindness, letting go is not enough.
+      We walk toward the middle through the scrubber dark,
+      each step taking distance from the measured floor.
+      Four seconds shrink to three, then two, then breath.
+      At halfway, neither voice needs the gallery to travel now.
+
+      [Final Refrain]
+      Down in the ice yard, where everything you say comes back
+      four seconds older, wearing edges you did not intend.
+      There is room between the echoes. Meet me there.
+
+      [Coda - sustain, gallery decay]
+    take: null # M-34 fills this in at the Suno sitting
+
+  - id: s_0848
+    title: Walk Out Together
+    track_number: 9
+    mood: [communal, final, warm]
+    fact: >-
+      The local's whole night shift sings the last chorus, about forty people, and the sleeve credits
+      them under the branch number rather than by name.
+    arrangement_note: about forty people who came off a shift sing the last chorus at whatever distance they were standing at, ragged, in three keys and a beat behind the band, and nobody moved them
+    intro: 12
+    outro: fade
+    target_duration: "4:00"
+    prompt: >-
+      102 BPM warm blues; gravel baritone, ragged 40-voice finale, guitar, flat piano, harmonica, fade.
+    exclude: bass guitar, upright bass, electric bass, synthesizers, brass, orchestral strings, backing harmony stacks, blended or studio choir, drum machines, large hall reverb, cymbals, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and guitar, twelve seconds]
+
+      [Verse 1]
+      Forty workers leave the under-ice deck at eleven,
+      wet coats dark, pay slips folded in their gloves.
+      The second airlock opens; nobody steps through.
+      One grievance stands alone beside the closing gate.
+      Then another shoulder settles level with it.
+      No speech has called them. No office light goes out.
+      A shift becomes a body by refusing to divide.
+
+      [Chorus]
+      Walk out together or do not walk out at all.
+      One is easy to dismiss and hard to keep employed.
+      Forty is the number power has to answer.
+
+      [Verse 2]
+      Management sends one message to each separate locker:
+      delays are under review, return to scheduled work.
+      The branch has heard those careful words for four wet months.
+      A woman near the ladder folds her message twice,
+      puts it underneath the empty boot of the grievance.
+      Thirty-nine more notices make paper hold its ground.
+      The gate alarm complains; the line does not move.
+
+      [Chorus]
+      Walk out together or do not walk out at all.
+      One is easy to dismiss and hard to keep employed.
+      Forty is the number power has to answer.
+
+      [Verse 3]
+      At midnight, office doors unlock above the deck.
+      The answer comes in pieces, smaller than the demand.
+      Nobody cheers; a partial wage remains a partial wage.
+      Still the first concession crosses through the airlock.
+      Forty workers lift their coats and take the homeward gallery,
+      not in step, not one key, not clean enough for slogans.
+      The sound arrives one beat behind and fills the works.
+      The wet floor carries every answer upward.
+
+      [The night shift - forty voices, ragged and unpitched]
+      WALK OUT TOGETHER. WALK OUT TOGETHER.
+
+      [Final Chorus]
+      Walk out together or do not walk out at all.
+      One is easy to dismiss and hard to keep employed.
+      Forty is the number power has to answer.
+      Walk home together. Come back together. Count again.
+
+      [Outro - fade]
+    take: null # M-34 fills this in at the Suno sitting

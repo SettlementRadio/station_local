@@ -1,0 +1,993 @@
+# al_098 — The Room at Terrace Road · Terrace Road Four (b_046) · Relay Road Import · 2624 · 13 songs · album
+#
+# Written by M-25. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# **The cornerstone of the genre and the only one in it** — thirteen songs, one room, one whole
+# 56-minute programme. Cut over three nights in the tram works canteen on Mars in 2623 and issued at
+# the road head in 2624, and it is the record Relay Road Import put most of a crossing behind after
+# the crate went astray in 2622. The extra passes §5 asks for went here.
+#
+# The room is the subject and the subject is not the premise: a canteen is a canteen, the water goes
+# off, the toast is cold, a man asks for the same song for eleven years. Nothing on this record is
+# about being on Mars; Mars is where the tram is.
+#
+# Two things the wiki fixes and the card does not. **Orin Lask is on sticks, not brushes** — the
+# card's brushes are Nan Sudell's and she left in 2622, so this record is the first with the harder
+# kit and the prompts say so on every track (D-096, and D-095's dated exception in another form).
+# And **s_0799 is the one song on either of this band's records Wesla Tarn did not write**: Nan
+# Sudell wrote it and left it behind, and it is written plainer and shorter-lined than anything
+# around it on purpose.
+#
+# `generation:` and every `take:` were filled from the dispatch manifest at M-34, and all thirteen
+# takes match their lyric exactly. **Track 1 was made a fortnight after the rest of the record.** The
+# first sitting returned two takes of `s_0797` rather than one of each, so `s_0796` was never
+# generated at all and the dispatch refused the pile until it was noticed (D-097); it was regenerated
+# on 2026-09-01. **That makes this the only record in the catalogue built in two licence periods** —
+# tracks 2–13 under `suno-pro-2026-08`, track 1 under `suno-pro-2026-09`, which its own `take:` block
+# states and which overrides the album's `generation:` field by field (D-062, D-098).
+
+album:
+  id: al_098
+  title: The Room at Terrace Road
+  band: b_046
+  band_name: Terrace Road Four
+  label: label_7
+  release_year: 2624
+  genre: old-system-sessions
+  cornerstone: true
+  song_count: 13
+  style_card: b_046
+  room: >-
+    A tram works canteen on Mars, hard-walled, free only between shifts, with the works audible
+    through it. One live room, everybody on every microphone, no overdubs, the steel-bar slide the
+    loudest thing after the voice. The card holds throughout: low smoky female contralto behind the
+    beat, bending the last note of a line down, and one male second voice from the bass chair
+    answering the last line of a verse and never running harmony through a chorus. Two things are
+    this record's and not the band's: Orin Lask plays sticks where Nan Sudell played brushes, and
+    the works shift bell is audible on s_0796, s_0800, s_0804 and s_0808. Four fact-bound details
+    live in their own songs — Amon Furlow's left hand alone on s_0798, Wesla Tarn's boot counting
+    the band in on s_0800, the twenty-second slide passage on s_0803 that is the only instrumental
+    break on the record, and the canteen steward audible asking the band to stop on s_0804.
+
+generation:
+  # Filled from the manifest by M-34. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, so 2026-08's licence evidence in
+  # music/licence-evidence/ covers them too. Times are UTC, as the files report them, and
+  # every one was proved against its own lyric before it was filed (D-091).
+  model_version: v5.5
+  licence_period: suno-pro-2026-08
+  generated_on: 2026-08-30
+  sittings:
+    - {date: 2026-08-30, from: '08:23:29', to: '08:23:29', tracks: [2]}
+    - {date: 2026-08-30, from: '09:08:33', to: '09:13:58', tracks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]}
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: >-
+    Dispatched from music/audio/RAW/M-25_part_1 by `make music-dispatch`, which matched
+    every take against the lyric it carries in its own tags rather than against its
+    filename — and caught D-091's failure again on this record. **Track 1, s_0796, was
+    never generated**: the sitting returned two takes of s_0797 nineteen seconds apart
+    because the lyric box still held track 2's words when the style box moved on. The
+    kept take of s_0797 is the longer of that pair at 3:39 against a 3:40 target; the
+    other is music/audio/RAW/797_spare.mp3 and is recorded here rather than deleted.
+    12 of 13 filed on 2026-08-30. **Track 1 was regenerated on 2026-09-01** after the
+    dispatch proved it had never been made, so it is the one take on this record from a
+    different generation month and carries `suno-pro-2026-09` in its own take: block,
+    which overrides this one field by field (D-062). 13 of 13. 3 sittings.
+
+songs:
+  - id: s_0796
+    title: The Room at Terrace Road
+    track_number: 1
+    mood: [rolling, warm, midtempo]
+    fact: >-
+      The works' shift bell rings twice during the take and the band played through it both times,
+      because the canteen was theirs only until it rang the third.
+    arrangement_note: the works bell is audible twice and nothing in the arrangement acknowledges either one, which is the whole of the band's relationship with the room they record in
+    intro: 12
+    outro: sustain
+    target_duration: "3:50"
+    prompt: >-
+      96 BPM rolling twelve-bar blues; low hoarse female contralto behind the beat, steel-bar slide
+      loudest after the voice, upright piano and bass, sticks not brushes, hard canteen room, sustain.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, brushed drums, cold ending, fade-out
+    lyrics: |
+      [Intro - slide guitar and piano, twelve seconds]
+
+      [Verse 1]
+      The room at Terrace Road is a canteen until nine,
+      and after that it is whatever the four of us can make.
+      Amon sets the piano where the draught cannot get at it.
+      Del stands in the corner because the corner takes the bass.
+      Orin counts us in these days, and he counts a shade too fast.
+
+      [Chorus]
+      It is ours until the bell,
+      and the bell has gone twice already,
+      and the third one is the works
+      asking for its room back.
+
+      [Verse 2]
+      There is a mark along the skirting where my case has always sat.
+      There is a chair that no one sits in, and nobody says why.
+      The late bell goes above us at ten and we play under it.
+      Between those two a room can be a different thing entirely,
+      and the works has never once come down the lane to look.
+      Monday it belongs to them. Wednesday, near enough, to us.
+
+      [Chorus]
+      It is ours until the bell,
+      and the bell has gone twice already,
+      and the third one is the works
+      asking for its room back.
+
+      [Verse 3]
+      A woman off the second siding comes in every week
+      and stands against the doorframe with her coat still buttoned up.
+      She waits until we finish and she says the same four words.
+      Whatever we were paid for this, that is the part I keep.
+      Orin says he would prefer the money. He is not wrong.
+      But she is there on Wednesday, and the money never is.
+
+      [Bridge]
+      Bell.
+      Second bell.
+      Nobody in this room moves for a bell that is not the third.
+
+      [Final Chorus]
+      It is ours until the bell,
+      and the bell has gone twice already,
+      and the third one is the works
+      asking for its room back,
+      and we will hand it back.
+
+      [Outro - sustain, piano held under the room]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      licence_period: suno-pro-2026-09 # September, not the album's August (D-098)
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-01
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 44079c03-ef95-4753-b968-7adaa220d672
+      suno_created: 2026-09-01T11:48:05Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/01.mp3
+
+  - id: s_0797
+    title: Don't Wait Up for the Late Car
+    track_number: 2
+    mood: [shuffling, wry, tired]
+    fact: >-
+      Del Marran built the bass figure out of the rhythm the last tram makes over the joints outside
+      the canteen, and he has never played it any other way.
+    arrangement_note: the bass plays four beats and a gap and four more, all the way through, which is what a tram does over the joints outside the door and is the only thing on the track that never varies
+    intro: 8
+    outro: fade
+    target_duration: "3:40"
+    prompt: >-
+      104 BPM blues shuffle; low hoarse female contralto behind the beat, upright bass figure with a
+      gap in it running throughout, steel-bar slide, piano, sticks, hard canteen room, fade.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, brushed drums, cold ending
+    lyrics: |
+      [Intro - upright bass alone, eight seconds]
+
+      [Verse 1]
+      Del found it on a Tuesday standing out beside the siding,
+      the last car going over the joints outside the door.
+      Four beats and a gap in it, and then four more,
+      and he has never played it any other way since.
+      You can hear the tram in it if somebody tells you first,
+      and if nobody tells you it is a man playing bass.
+
+      [Chorus]
+      So do not wait up for me on the late one,
+      I am two shifts and a long lane from my own door,
+      and the last car out of here goes past that wall
+      whether I am on it or I am not.
+
+      [Verse 2]
+      There is a woman on that car most nights with a bag of tools,
+      coming off a shift as I am going down to mine.
+      Neither of us has ever said a word out loud.
+      I would not know her name to save my life or hers,
+      and I would know her walk across a hall of forty people.
+      That is a kind of knowing. It is not a large one.
+
+      [Chorus]
+      So do not wait up for me on the late one,
+      I am two shifts and a long lane from my own door,
+      and the last car out of here goes past that wall
+      whether I am on it or I am not.
+
+      [Verse 3]
+      Amon says the tram is flat and plays against it twice.
+      Orin puts a stick down and just lets the thing go by.
+      Everybody in the canteen turns their head at once,
+      because a tram is only ever going where it goes,
+      and none of us are on it, and the urn is still warm.
+
+      [Chorus]
+      So do not wait up for me on the late one,
+      I am two shifts and a long lane from my own door,
+      and the last car out of here goes past that wall
+      whether I am on it or I am not.
+
+      [Outro - fade]
+    take:
+      attempts: 2 # Suno returns two takes per prompt and both are accounted for here
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 67735e1c-4b38-4183-bdbb-c8473930ede1
+      suno_created: 2026-08-30T08:23:29Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/02.mp3
+
+  - id: s_0798
+    title: Two Cups and No Sugar
+    track_number: 3
+    mood: [dry, slow, funny]
+    fact: >-
+      Amon Furlow plays the whole track with his left hand because he would not put the cup down,
+      and the band kept the take rather than have the argument.
+    arrangement_note: the piano is left hand only from first bar to last and the bass and slide cover the top of it, which leaves a hole in the middle of the band that nobody fills
+    intro: 6
+    outro: cold
+    target_duration: "3:45"
+    prompt: >-
+      78 BPM slow blues shuffle; low hoarse female contralto behind the beat, upright piano left hand
+      only with nothing in the middle register, steel-bar slide, upright bass, sticks, cold stop.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, brushed drums, right-hand piano, fade-out
+    lyrics: |
+      [Intro - piano, left hand only, six seconds]
+
+      [Verse 1]
+      He would not put it down. That is the whole of it.
+      I said, Amon, there is a table eighteen inches off your knee.
+      He said the table's cold and the cup is not, and played.
+      So the bass took the low end and the slide took the top
+      and the piano did what a piano does with half a man.
+
+      [Refrain]
+      Two cups, and neither one of them is mine,
+      no sugar on the ration since the spring,
+      and a man who will not set a thing down for a song.
+
+      [Verse 2]
+      The urn is at the end and it gives out about eleven.
+      There has been an argument in this room about that urn
+      every Wednesday I have played here, and it is never settled.
+      Del says first come first served. Orin says that is convenient.
+      I say I am the one who sings and I should have the first,
+      and all three of them ignore me, which is the correct answer.
+
+      [Refrain]
+      Two cups, and neither one of them is mine,
+      no sugar on the ration since the spring,
+      and a man who will not set a thing down for a song.
+
+      [Verse 3]
+      He finished it left-handed and he never mentioned it again.
+      When the take came back we all heard what was missing,
+      and the room agreed the missing part was better than the argument.
+      So that is what is on the record, half a piano and a cup,
+      and if you want the other half, come down the lane on a Wednesday
+      and buy him one, and watch him put it carefully down.
+
+      [Refrain]
+      Two cups, and neither one of them is mine,
+      no sugar on the ration since the spring,
+      and a man who will not set a thing down for a song.
+
+      [Coda - cold stop]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: d0c8590b-5012-4621-b0fd-2fd088e8401f
+      suno_created: 2026-08-30T09:08:33Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/03.mp3
+
+  - id: s_0799
+    title: She Took the Other Line
+    track_number: 4
+    mood: [slow, aching, blue]
+    fact: >-
+      Nan Sudell wrote it and left it behind when she went in 2622, and it is the only song on any
+      of the band's records Wesla Tarn did not write.
+    arrangement_note: written by the drummer who had already left and played by the drummer who replaced her, which is why it is shorter-lined and plainer than anything else here and why the kit stays out of the first verse entirely
+    intro: 14
+    outro: fade
+    target_duration: "4:20"
+    prompt: >-
+      66 BPM slow blues; low hoarse female contralto behind the beat, steel-bar slide, upright piano
+      and bass, kit absent from the first verse then sticks played soft, hard canteen room, fade.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, brushed drums, cold ending
+    lyrics: |
+      [Intro - slide and piano, fourteen seconds]
+
+      [Verse 1]
+      Two lines leave the terrace and they run a mile apart.
+      One goes down to the works. One goes out past the siding.
+      For nine years I took the one that put me on the shift.
+      She took the other one and did not look for me.
+      I never asked her why. I had the answer in my hand.
+      You get on what is going where you have to go.
+
+      [Verse 2]
+      I kept the early car. I kept the shift. I kept the room.
+      She kept nothing that I know of, which is her own business.
+      Somebody heard she went two stops down the line and stayed.
+      Both of them were certain. Neither of them wrote.
+      That is a lane for you. Everybody knows. Nobody knows.
+
+      [Chorus]
+      And I would not go after her.
+      Not down that line. Not for a day.
+      I have been on the wrong car once
+      and I did not care for the ride.
+
+      [Verse 3]
+      There is a way of leaving that does not need a door.
+      I have watched myself do it, more than once, and come back.
+      She did it properly and got the fare together first,
+      which is more than I have managed and I have had the years.
+
+      [Chorus]
+      And I would not go after her.
+      Not down that line. Not for a day.
+      I have been on the wrong car once
+      and I did not care for the ride.
+
+      [Final Verse]
+      Two lines leave the terrace and they run a mile apart.
+      Somebody is on both of them tonight and neither one is me.
+      I have a cold urn and a cup and a song I did not write.
+      If she hears it out there she will know the tune at once.
+      She will not know who is singing. I would keep it that way.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 6c1a9e1f-3d36-4490-bfac-de3aae5e2a97
+      suno_created: 2026-08-30T09:09:13Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/04.mp3
+
+  - id: s_0800
+    title: Nobody Counts It In
+    track_number: 5
+    mood: [loose, late, warm]
+    fact: >-
+      It starts with Wesla Tarn's foot on the canteen floor because nobody had settled who would
+      count the band in now that Orin Lask was on the kit.
+    arrangement_note: the count is a boot on a hard floor and nothing else, and the band come in one at a time behind it rather than together, which is what a band does when it has not agreed who starts
+    intro: 4
+    outro: cold
+    target_duration: "3:30"
+    prompt: >-
+      108 BPM loose blues shuffle; low hoarse female contralto behind the beat, count-in is a boot on
+      a hard floor, band entering one instrument at a time, slide, piano, upright bass, cold stop.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, brushed drums, drum count-in, fade-out
+    lyrics: |
+      [Count-in - a boot on the canteen floor, four seconds]
+
+      [Verse 1]
+      Nan used to do it. Four on the rim and off we went.
+      Then Nan went, and the first night back there was a gap
+      where a count had been, and all four of us stood in it.
+      Orin looked at me. I looked at Del. Del looked away.
+      Somebody has to start it and none of us will say who.
+
+      [Chorus]
+      So nobody counts it in,
+      and my boot goes on the floor,
+      and whoever hears it first is in the band tonight.
+
+      [Verse 2]
+      He can play. That was never once the argument.
+      He has better hands than Nan and half her sense of when.
+      The trouble with a new man is the old one is still here.
+      Orin knows it too. He said so once, out on the lane,
+      and I told him it would pass, and it has not passed yet,
+      and neither of us has raised it since, which is how it goes.
+
+      [Chorus]
+      So nobody counts it in,
+      and my boot goes on the floor,
+      and whoever hears it first is in the band tonight.
+
+      [Bridge]
+      Four on the rim.
+      Four on the rim was all it ever was.
+      Nobody thought about it once in twelve whole years.
+
+      [Verse 3]
+      So the record starts with a boot, and the boot is mine,
+      and the last car takes the siding with a shriek next door.
+      I would rather have the count. I am not going to ask.
+      Ask a man to count you in and you have said the rest.
+      He will do it some Wednesday, and I will not say a word,
+      and that will be the end of a thing that nobody named.
+
+      [Chorus]
+      So nobody counts it in,
+      and my boot goes on the floor,
+      and whoever hears it first is in the band tonight.
+
+      [Outro - cold stop]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: f7467464-e598-43c9-b531-76c0f0115e83
+      suno_created: 2026-08-30T09:09:51Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/05.mp3
+
+  - id: s_0801
+    title: Working Both Ends
+    track_number: 6
+    mood: [driving, hard, shuffling]
+    fact: >-
+      Written about holding the works shift and the canteen night at the same time, which all four
+      of them were still doing when the record was made.
+    arrangement_note: the hardest thing on the record and the only one taken at the top of the band's range, with a four-bar turnaround for piano and slide together where a verse would otherwise be
+    intro: 9
+    outro: cold
+    target_duration: "3:25"
+    prompt: >-
+      112 BPM hard driving blues shuffle; low hoarse female contralto behind the beat, steel-bar
+      slide and upright piano in unison on a four-bar turnaround, upright bass, sticks, cold stop.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, brushed drums, fade-out
+    lyrics: |
+      [Intro - full band, nine seconds]
+
+      [Verse 1]
+      Six to two at the works and then this room at nine.
+      Four hours in between to eat and sleep and be a person.
+      Del does not sleep at all and says he never has.
+      Orin has a second job down the lane nobody asks about.
+      I have got a bed I see about as often as I see Saturn,
+      which is to say I know that it is there and rarely look.
+
+      [Chorus]
+      Working the both ends and meeting in the middle,
+      and the middle is a Wednesday and a hard room and a bell.
+      Nobody made us do it. Nobody is going to stop us.
+
+      [Verse 2]
+      People ask us when we mean to give the shift away.
+      The shift is what buys strings and pays the rent on this,
+      and this is what turns the shift into a week and not a wall.
+      I have watched three bands around here find that out,
+      and every one of them was better than us when they went.
+
+      [Chorus]
+      Working the both ends and meeting in the middle,
+      and the middle is a Wednesday and a hard room and a bell.
+      Nobody made us do it. Nobody is going to stop us.
+
+      [Verse 3]
+      There is a cost. I am not going to pretend there is not.
+      Nan sat down in 2622 and did the sum and left.
+      I did the same arithmetic and came out the other side,
+      and I could not tell you why, except that Wednesday comes
+      and the room is full and warm and the last car's on the siding,
+      which is not a reason, and it has held for every year I have counted.
+
+      [Turnaround - piano and slide, four bars]
+
+      [Chorus]
+      Working the both ends and meeting in the middle,
+      and the middle is a Wednesday and a hard room and a bell.
+      Nobody made us do it. Nobody is going to stop us.
+
+      [Outro - cold stop]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e2ea0ea7-1060-497d-8d54-5de11ea54f5c
+      suno_created: 2026-08-30T09:10:20Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/06.mp3
+
+  - id: s_0802
+    title: The Water's Off Again
+    track_number: 7
+    mood: [wry, plain, midtempo]
+    fact: >-
+      The verse listing what the district is short of was chalked on the canteen wall and Wesla Tarn
+      read it off the wall during the take.
+    arrangement_note: the list section is sung flat on one note with the band dropping to bass and kit underneath it, because it is a notice being read out and not a verse
+    intro: 7
+    outro: fade
+    target_duration: "3:35"
+    prompt: >-
+      100 BPM midtempo blues shuffle; low hoarse female contralto behind the beat, one section sung
+      flat on a single note over bass and sticks alone, steel-bar slide, upright piano, fade.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, spoken word, modern studio production, brushed drums, cold ending
+    lyrics: |
+      [Intro - slide guitar, seven seconds]
+
+      [Verse 1]
+      Third time this month, and the notice went up Monday.
+      The steward chalked the rest along the canteen wall,
+      and I read it off the wall while we were making this,
+      because the wall was right there and because it was true.
+
+      [Chorus]
+      The water is off. It will be on.
+      It has been off before and it came back.
+      Put the kettle where your hand will find it in the dark.
+
+      [Verse 2]
+      There is a way a district takes a thing like this.
+      The second day there is a queue and someone in it shouts.
+      The third day it is fixed, or it is not, and either way
+      we have all worked out who to ask and who is no use,
+      and it comes out again the next time and the time after that.
+
+      [The wall list - sung flat, one note]
+      No water till the morning. No hot until Thursday.
+      The east stair light is out. The second-floor scrubber is out.
+      Ration Tuesday and Friday. Nothing on the board about the rest.
+
+      [Chorus]
+      The water is off. It will be on.
+      It has been off before and it came back.
+      Put the kettle where your hand will find it in the dark.
+
+      [Verse 3]
+      The steward wiped it off on Thursday when the water came,
+      and I asked him not to, and he said the wall is not yours.
+      But it is on the record now, and the record does not wipe,
+      so a man who chalks a notice up to save himself a question
+      is on a thing that has gone further than he has ever been,
+      and he does not know it, and I am not going to be the one.
+
+      [Chorus]
+      The water is off. It will be on.
+      It has been off before and it came back.
+      Put the kettle where your hand will find it in the dark.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e4facc59-9fe6-4774-a142-df71e798cad3
+      suno_created: 2026-08-30T09:10:50Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/07.mp3
+
+  - id: s_0803
+    title: Long Way to the Yard
+    track_number: 8
+    mood: [rolling, steady, patient]
+    fact: >-
+      Wesla Tarn plays the slide with the length of tram brake shoe she has used since 2606, and it
+      is the track the band point at when anyone asks what the sound is.
+    arrangement_note: the only instrumental passage on the record — twenty seconds of the steel bar alone over bass and kit, with the piano out of it entirely, because the question the song answers is what the slide sounds like
+    intro: 18
+    outro: sustain
+    target_duration: "4:10"
+    prompt: >-
+      88 BPM steady twelve-bar blues; low hoarse female contralto behind the beat, long steel-bar
+      slide passage over bass and sticks with no piano under it, hard canteen room, sustain.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, brushed drums, clean or polished slide tone, cold ending, fade-out
+    lyrics: |
+      [Intro - slide guitar alone, eighteen seconds]
+
+      [Verse 1]
+      It is a length of brake shoe off the tram works floor.
+      I put it in my coat and I have had it ever since.
+      A better one would sound like a better one, not this.
+      This has a burr along one edge that I will not take off,
+      and that burr is on every record I have ever made.
+
+      [Chorus]
+      It is a long way to the yard on foot,
+      longer with a case, and longer in the dark,
+      and I have made that walk with worse things than a song.
+
+      [Verse 2]
+      Amon asked me once what I would do if it broke.
+      I said a brake shoe does not break, it is a brake shoe.
+      He said everything breaks, and went back to the piano.
+      I would find another one and play it until it was the same,
+      and in four years nobody alive would hear the difference.
+
+      [Chorus]
+      It is a long way to the yard on foot,
+      longer with a case, and longer in the dark,
+      and I have made that walk with worse things than a song.
+
+      [Instrumental - slide guitar, twenty seconds]
+
+      [Verse 3]
+      The works has changed the trams twice over since I took it.
+      The shoe is off a car that has not run for years,
+      and the men who ran that car are on a different line
+      or working the far siding or in a room like this one.
+      So the sound of this band is a part off a dead tram
+      played by a woman who kept it because it was there,
+      and that is all it is, and people write in asking.
+
+      [Final Chorus]
+      It is a long way to the yard on foot,
+      longer with a case, and longer in the dark,
+      and I would carry twice that far to get the sound.
+
+      [Outro - sustain]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 6f98764d-0fee-4688-b170-49eb98eb8c89
+      suno_created: 2026-08-30T09:11:28Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/08.mp3
+
+  - id: s_0804
+    title: Nobody Asked for Quiet
+    track_number: 9
+    mood: [fast, loud, defiant]
+    fact: >-
+      The loudest thing the band has recorded, and the canteen steward can be heard telling them to
+      stop before the last chorus arrives.
+    arrangement_note: a man's voice comes in over the top of the band asking them to stop and the band do not stop, which is on the take because nobody in the room heard him at the time
+    intro: 3
+    outro: cold
+    target_duration: "3:15"
+    prompt: >-
+      116 BPM fast loud blues shuffle; low hoarse female contralto pushed hard, steel-bar slide,
+      upright piano, upright bass, sticks, one man's voice cutting across the band near the end.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, brushed drums, quiet or restrained dynamics, fade-out
+    lyrics: |
+      [Intro - full band, three seconds]
+
+      [Verse 1]
+      There is a notice on the door about the noise at night.
+      The steward reads it out when he has had a week,
+      and then it is Wednesday again and the room fills up
+      and the notice is a piece of paper on a door.
+
+      [Chorus]
+      Nobody in this room asked anybody to be quiet.
+      Not one of them came down the lane tonight for quiet.
+      There is quiet at home. There is quiet on the shift.
+      There is quiet in the dark for a long time after that.
+
+      [Verse 2]
+      Del hit the bass so hard the second string went flat.
+      Amon stood up at the piano, which he never does,
+      and the slide went where it goes when I have stopped thinking.
+      Whatever we were doing, we were not doing it quietly.
+
+      [Chorus]
+      Nobody in this room asked anybody to be quiet.
+      Not one of them came down the lane tonight for quiet.
+      There is quiet at home. There is quiet on the shift.
+      There is quiet in the dark for a long time after that.
+
+      [Verse 3]
+      The steward came in at the top of the last one,
+      and you can hear him. He is on the record saying stop.
+      We did not stop. That is not a boast. We did not hear him.
+      He told me after, out on the siding, that he had never
+      seen the room like it, and that we would not do it again.
+      Both of those were true. We have not done it since.
+      It is on here once, and once is how a thing like that goes.
+
+      [Chorus]
+      Nobody in this room asked anybody to be quiet.
+      Not one of them came down the lane tonight for quiet.
+      There is quiet at home. There is quiet on the shift.
+      There is quiet in the dark for a long time after that.
+
+      [Outro - cold stop]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 19feea0d-4510-4a28-a09c-c970ed9e3ea0
+      suno_created: 2026-08-30T09:11:59Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/09.mp3
+
+  - id: s_0805
+    title: Cold Toast and an Argument
+    track_number: 10
+    mood: [funny, brisk, dry]
+    fact: >-
+      The argument in the second verse is one Del Marran and Amon Furlow had about the money for
+      these sessions, and both of them agreed to it going on the record.
+    arrangement_note: the argument section is the lead voice taking both sides quickly over a stripped band, because neither of the two men it belongs to sings on this band's records and neither was going to start
+    intro: 8
+    outro: fade
+    target_duration: "3:40"
+    prompt: >-
+      106 BPM brisk blues shuffle; low hoarse female contralto behind the beat, one quick section
+      where she takes both sides of an argument over bass and piano alone, steel-bar slide, fade.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, spoken word, second lead voice, modern studio production, brushed drums, cold ending
+    lyrics: |
+      [Intro - piano and bass, eight seconds]
+
+      [Verse 1]
+      The toast in this canteen is cold before it is cut,
+      because the grill is on a timer that nobody can find.
+      You take it as it comes or you go without,
+      and the ration board says nothing whatever about toast,
+      and the saying of it is the point, and not the toast.
+
+      [Chorus]
+      Cold toast, and then an argument.
+      That is the whole of a Wednesday.
+      Come down the lane for one and get the other free.
+
+      [Verse 2]
+      Del says the money for these nights comes four ways even.
+      Amon says four ways even is not what even means
+      when one of them has carried the piano up the stair.
+      Del says that nobody asked him to, and Amon says
+      that somebody had to, and it is always the same somebody.
+      Both of them said put it on the record. So it is on.
+
+      [The argument - lead voice taking both sides, flat and quick]
+      Four ways even. Four ways even is not even.
+      Somebody carried the piano. Nobody asked you to.
+      Somebody had to. It is always the same somebody.
+      Put it on the record, then. Put it on the record.
+
+      [Chorus]
+      Cold toast, and then an argument.
+      That is the whole of a Wednesday.
+      Come down the lane for one and get the other free.
+
+      [Verse 3]
+      Here is what I know that neither of them knows.
+      They are both right, and it does not matter which is more,
+      and one day there will be four of us in here, or none,
+      and the money for a Wednesday will not be the reason.
+      You let them have it out and then you play the next one,
+      and the toast is cold for everybody, which is even.
+
+      [Chorus]
+      Cold toast, and then an argument.
+      That is the whole of a Wednesday.
+      Come down the lane for one and get the other free.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: c668d578-da8f-43a9-9d00-e27c2703f881
+      suno_created: 2026-08-30T09:12:28Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/10.mp3
+
+  - id: s_0806
+    title: Sit Down, You're Blocking the Door
+    track_number: 11
+    mood: [fast, communal, bright]
+    fact: >-
+      There were more people in the canteen than it holds and this is the track on which the band
+      stopped asking them to move.
+    arrangement_note: a canteen full past its own notice shouts one line back, ragged and unpitched and in no particular key, which is a crowd and not a backing part — this band has one backing voice and it is a man's, from the bass chair
+    intro: 5
+    outro: fade
+    target_duration: "3:30"
+    prompt: >-
+      114 BPM fast bright blues shuffle; low hoarse female contralto, a packed hard room shouting one
+      line back ragged and unpitched, steel-bar slide, piano, upright bass, sticks, fade.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, blended or studio crowd vocals, drum machines, vocal tuning, whispered or rapped sections, modern studio production, brushed drums, cold ending
+    lyrics: |
+      [Intro - full band, five seconds]
+
+      [Verse 1]
+      Forty-two is what the notice on the wall allows.
+      There were ninety in the room and eleven on the stair.
+      The steward stood against the urn and let the thing go.
+      A man had brought his mother. A freight crew came off the late.
+      Somebody's boy was sitting underneath the piano
+      with his hands over his ears and would not be moved.
+
+      [Chorus]
+      Sit down, you are blocking the door.
+      Sit down, there is no more floor.
+      Sit anywhere at all and we will play around you.
+
+      [Verse 2]
+      We asked them three times to move, then Del just started,
+      and after that we did not ask, and it was better,
+      and it should have been the way we did it all along.
+      You cannot run a room like that from where we stand.
+      A room like that will run itself or it will not run,
+      and all we have to do is be the loudest thing in it.
+
+      [Chorus]
+      Sit down, you are blocking the door.
+      Sit down, there is no more floor.
+      Sit anywhere at all and we will play around you.
+
+      [The room - everybody in the canteen, ragged and unpitched]
+      SIT DOWN. SIT DOWN. THERE IS NOWHERE LEFT TO SIT.
+
+      [Verse 3]
+      Somebody got a table through the doorway on its side
+      and put it down for four more people out along the lane.
+      Somebody brought chairs out of a room that is still locked.
+      The steward wrote it up on Thursday in his own words
+      and the words he chose were, attendance was above the notice,
+      which is the most that man has ever said about a night.
+
+      [Final Chorus]
+      Sit down, you are blocking the door.
+      Sit down, there is no more floor.
+      Sit anywhere at all. Sit on the stair. Sit on the floor.
+      We are not going to ask again.
+
+      [Outro - fade]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: b058ae93-25ea-4c10-a140-8d8a69f99737
+      suno_created: 2026-08-30T09:13:17Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/11.mp3
+
+  - id: s_0807
+    title: Play the One About the Rain
+    track_number: 12
+    mood: [warm, generous, midtempo]
+    fact: >-
+      The title is what one regular shouted at the band every week for eleven years, and this is the
+      song they eventually wrote to answer him.
+    arrangement_note: the bridge is the request itself, sung three times and answered once, and the band drop under it to piano and bass so the line is the only thing in the room
+    intro: 12
+    outro: fade
+    target_duration: "4:05"
+    prompt: >-
+      84 BPM warm midtempo blues; low hoarse female contralto behind the beat, band dropping to piano
+      and upright bass under one repeated line, steel-bar slide, sticks, hard canteen room, fade.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, brushed drums, cold ending
+    lyrics: |
+      [Intro - piano and slide, twelve seconds]
+
+      [Verse 1]
+      Every Wednesday for eleven years, the same man, the same coat.
+      He waits until the room is quiet and he asks for it by name.
+      There is no song about the rain. There never has been one.
+      He knows that, and he asks, and the room has come to wait
+      the way you wait for a bell, and would notice if he stopped.
+
+      [Chorus]
+      So here it is. It took eleven years, and it is not the rain.
+      It is a man who asks for something that was never there,
+      and a room that lets him, and a Wednesday, and a song.
+
+      [Verse 2]
+      I asked him once where he had got the whole idea from.
+      He said his mother had it off a record off the cargo
+      and played it till it wore, and then she played it worn.
+      He has never heard it. He does not know what it is called.
+      What he has is a kitchen, and a sound, and a word for weather.
+
+      [Chorus]
+      So here it is. It took eleven years, and it is not the rain.
+      It is a man who asks for something that was never there,
+      and a room that lets him, and a Wednesday, and a song.
+
+      [Verse 3]
+      So this is what he gets, and I expect he will be disappointed.
+      A room does not hand a man the thing he keeps on asking for.
+      It keeps him asking, and it keeps a place for him to ask in.
+      He comes down the lane on Wednesdays in the same coat,
+      and if he stopped, we would all notice, and none of us would say.
+
+      [Bridge]
+      Play the one about the rain.
+      Play the one about the rain.
+      Play it anyway.
+
+      [Final Chorus]
+      So here it is. It took eleven years, and it is not the rain.
+      It is a man who asks for something that was never there,
+      and a room that lets him ask, and a Wednesday, and a coat.
+
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: a2b296b0-1b38-4703-8bc9-a9eae3cf6c9f
+      suno_created: 2026-08-30T09:13:26Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/12.mp3
+
+  - id: s_0808
+    title: Turn the Lamps Down
+    track_number: 13
+    mood: [slow, close, final]
+    fact: >-
+      Cut at the end of the third night with the canteen lights already off, which is why the piano
+      is the loudest thing on it.
+    arrangement_note: recorded with the canteen lights off and the piano louder than the voice, which is the only place on any of this band's records where the slide is not the loudest thing after the singer
+    intro: 20
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      62 BPM very slow blues; low hoarse female contralto close and tired, upright piano louder than
+      the voice, steel-bar slide well back, upright bass, sticks barely there, sustain into the room.
+    exclude: electric bass, synthesizers, brass, orchestral strings, stacked backing harmony, drum machines, vocal tuning, whispered or rapped sections, modern studio production, brushed drums, prominent slide guitar, cold ending, fade-out
+    lyrics: |
+      [Intro - piano alone, twenty seconds]
+
+      [Verse 1]
+      The steward turned them off at two and left the key.
+      Amon kept on playing, because a piano does not need a lamp.
+      Del found the low end by leaning on the wall to feel it.
+      Orin played what he could hear of us and nothing more.
+      And I have sung this room in the light for all these years
+      and I have never once heard it the way it was that night.
+
+      [Refrain]
+      Turn the lamps down.
+      Everything in here is easier in the dark.
+      Nobody has to look at anybody now.
+
+      [Verse 2]
+      There is a thing that happens to a room when the light goes.
+      It gets bigger and it gets closer, both at the same time.
+      The urn ticks as it cools. The pipe behind the wall knocks twice.
+      A man who has been sitting still all evening gets up to go
+      and you hear the whole of it, the chair, the coat, the door,
+      and none of it is on the take, because it stopped for him,
+      and all of it is why the take sounds like it does.
+
+      [Refrain]
+      Turn the lamps down.
+      Everything in here is easier in the dark.
+      Nobody has to look at anybody now.
+
+      [Verse 3]
+      That is the end of the third night and the end of the record.
+      We put the chairs back on the tables by touch alone.
+      Del found the key. Orin found his coat and not his stick.
+      Amon sat there at the piano for a while after we finished,
+      not playing anything, just sitting with his hands on it,
+      and nobody hurried him, and nobody said a word,
+      and then we went out the door and down the lane and home.
+
+      [Refrain]
+      Turn the lamps down.
+      Everything in here is easier in the dark.
+      Nobody has to look at anybody now.
+
+      [Outro - sustain, piano and room]
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-08-30
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 48453cbb-5206-4cea-b0e4-ed1683cc68f6
+      suno_created: 2026-08-30T09:13:58Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_098/13.mp3
