@@ -65,8 +65,9 @@ before any hardware exists (`DECISIONS.md` D-044).
 
 Puts every invented name in a genre — every band, label, person, album title and song title, layer
 B included — to Wikidata, and lists the ones that are **exactly** the name of a real notable person
-or organisation. `GENRE=lane-rock` limits it to one genre; without it, every genre written so far.
-This is step 3 of `music/RUNBOOK.md`, and it replaces searching several hundred names one at a time.
+or organisation. `GENRE=lane-rock` limits it to one file; without it, every file in `music/wiki/`
+that is read — the genres **and the collections** (`DECISIONS.md` D-099). This is step 3 of
+`music/RUNBOOK.md`, and it replaces searching several hundred names one at a time.
 
 A genre is about 320 names, seven requests and under a minute; a dot appears for each request. The
 normal result is `nothing matched`.

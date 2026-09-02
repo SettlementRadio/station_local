@@ -194,11 +194,25 @@ def _song_rules(
     ]
 
 
+def _is_a_stub(album: LyricsAlbum, collections: set[str]) -> bool:
+    """A collection album whose lyrics file carries no lyrics — §12 has no claim on it.
+
+    The takes in a collection were generated before the commission existed, so there is no written
+    lyric and inventing one would be a lie about what the take sings; the file exists only so
+    `tag.py` can find the provenance (M-54). A *genre* album with the same emptiness is a genre
+    somebody did not write, and every rule below still goes red on it.
+    """
+    return album.album.id in collections and not any(song.lyrics.strip() for song in album.songs)
+
+
 def _lyric_rules(music: Path, rules: Rules) -> list[Finding]:
     """Rules 1 to 5 and 9 to 10, over `music/production/lyrics/`."""
     nouns = rules.pattern(rules.world_nouns)
+    collections = wiki.collection_albums(music / wiki.WIKI_DIR)
     out: list[Finding] = []
     for album in load_lyrics(music / LYRICS_DIR):
+        if _is_a_stub(album, collections):
+            continue
         where = f'{album.album.id} "{album.album.title}"'
         exempt = album.album.id in rules.exempt_albums
         for song in album.songs:
@@ -258,7 +272,7 @@ def _studio_facts(wiki_dir: Path, rules: Rules) -> list[Finding]:
     """Rule 6: a band whose facts are mostly the room has nothing human for a presenter to say."""
     studio = rules.pattern(rules.studio_words)
     out: list[Finding] = []
-    for slug in wiki.written_genres(wiki_dir):
+    for slug in wiki.written_slugs(wiki_dir):
         genre = wiki.load_genre(wiki_dir / f"{slug}.yaml")
         tally: dict[str, list[int]] = defaultdict(lambda: [0, 0])
         names: dict[str, str] = {b.id: b.name for b in genre.layer_a.bands}
@@ -288,7 +302,7 @@ def _layer_b_calendar(wiki_dir: Path, rules: Rules) -> list[Finding]:
     """Rule 7: layer B has no floor to hit, so it is what carries the other two hundred years."""
     years = {
         album.release_year
-        for slug in wiki.written_genres(wiki_dir)
+        for slug in wiki.written_slugs(wiki_dir)
         for album, _, layer in wiki.load_genre(wiki_dir / f"{slug}.yaml").every_album()
         if layer == "B"
     }
@@ -308,7 +322,13 @@ def _layer_b_calendar(wiki_dir: Path, rules: Rules) -> list[Finding]:
 
 
 def _cross_genre_bands(wiki_dir: Path, rules: Rules) -> list[Finding]:
-    """Rule 8: nine sealed worlds read as a database. An industry is bands who know each other."""
+    """Rule 8: nine sealed worlds read as a database. An industry is bands who know each other.
+
+    The one rule collections stay out of, on both sides. §12 counts it over a *genre file*, and the
+    thing it is asking for is that the nine commissioned forms know each other — a shelf of unsigned
+    records is not a tenth world to be sealed, and letting it supply the names would answer the rule
+    without any of the nine having done anything.
+    """
     slugs = wiki.written_genres(wiki_dir)
     loaded = {slug: wiki.load_genre(wiki_dir / f"{slug}.yaml") for slug in slugs}
     named = {

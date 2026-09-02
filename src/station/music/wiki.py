@@ -1,4 +1,4 @@
-"""Read `music/wiki/*.yaml` — the nine genre files — back into typed objects.
+"""Read `music/wiki/*.yaml` — the nine genre files and the collections — into typed objects.
 
 Why models rather than dicts: each genre is written in one long pass against `COMMISSION.md`, so
 its shape is *nearly* uniform and never exactly so. Validating on the way in means a missing field
@@ -26,6 +26,16 @@ WIKI_DIR = "wiki"
 # edition is built on (M-15). It is named here rather than detected by shape, because a genre file
 # that failed to parse would otherwise be silently reclassified as this instead of failing.
 NOT_A_GENRE = frozenset({"anchors"})
+
+# And one file is not a genre in a second, different way. A **collection** is a set of records that
+# reached the station from outside the seven houses. It carries bands, albums and songs in exactly
+# the shape a genre file does and is read as one everywhere; what it is not is part of the
+# commission, so it has no allocation in `plan.yaml` to be counted against and its albums are not
+# bound to the eight anchor years (`check.py`). That is the whole of the difference, written here
+# once rather than as a slug test in each pass that would otherwise get it wrong. Two sets rather
+# than one because the states differ: `anchors.yaml` is skipped, a collection is read. Named, not
+# detected, for `NOT_A_GENRE`'s reason — a file that failed to parse must fail, never be reclassified.
+COLLECTIONS = frozenset({"independents"})
 
 # Keys a song entry legitimately carries that nothing here reads. Anything outside this set and
 # `Song`'s own fields is a stray key rather than a field somebody chose not to model.
@@ -223,11 +233,36 @@ def load_genre(path: Path) -> GenreWiki:
         raise WikiError(f"{path} does not match the expected shape:\n{exc}") from None
 
 
-def written_genres(wiki_dir: Path) -> list[str]:
-    """Genre slugs that have a wiki file, in a stable order. `NOT_A_GENRE` is skipped."""
+def is_collection(slug: str) -> bool:
+    """Whether that file is a collection rather than one of the nine commissioned forms."""
+    return slug in COLLECTIONS
+
+
+def written_slugs(wiki_dir: Path) -> list[str]:
+    """Every wiki file that is read — genres and collections both — in a stable order.
+
+    What almost everything wants: the ids a file mints, the facts it carries, the rows it becomes
+    and the names it screens are the same question whether or not the commission paid for it.
+    """
     if not wiki_dir.is_dir():
         return []
     return sorted(p.stem for p in wiki_dir.glob("*.yaml") if p.stem not in NOT_A_GENRE)
+
+
+def written_genres(wiki_dir: Path) -> list[str]:
+    """The genre slugs alone: what `plan.yaml` allocates, and what the anchor years bind."""
+    return [slug for slug in written_slugs(wiki_dir) if not is_collection(slug)]
+
+
+def collection_albums(wiki_dir: Path) -> set[str]:
+    """Every album id a collection owns — `writing.py`'s way in, since a lyrics file names only
+    its album and never the file the album lives in."""
+    return {
+        album.id
+        for slug in written_slugs(wiki_dir)
+        if is_collection(slug)
+        for album, _, _ in load_genre(wiki_dir / f"{slug}.yaml").every_album()
+    }
 
 
 class Entity(_Entry):
@@ -294,7 +329,7 @@ def next_free_ids(wiki_dir: Path) -> dict[str, str]:
     (`COMMISSION.md` §10), so the counter can only ever be the high-water mark plus one.
     """
     highest = dict.fromkeys((kind for kind, _, _ in COUNTERS), 0)
-    for slug in written_genres(wiki_dir):
+    for slug in written_slugs(wiki_dir):
         for entity in defined_ids(load_genre(wiki_dir / f"{slug}.yaml")):
             if entity.kind not in highest:
                 continue
@@ -323,7 +358,7 @@ class AlbumRow(_Entry):
 def album_rows(wiki_dir: Path, styles: dict[str, str]) -> list[AlbumRow]:
     """Every album in the wiki — layer A and layer B both, so the listing shows what is playable."""
     rows: list[AlbumRow] = []
-    for slug in written_genres(wiki_dir):
+    for slug in written_slugs(wiki_dir):
         genre = load_genre(wiki_dir / f"{slug}.yaml")
         found = genre.every_album()
         for album, band, layer in sorted(found, key=lambda t: (t[2], t[0].id)):

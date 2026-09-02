@@ -3032,3 +3032,42 @@ nothing to copy from.
 successor terms the August banner warned about apply to nothing this station holds. What the next
 generator needs is its own evidence under its own period, which is M-40's job continuing rather than
 a new one.
+
+---
+
+### D-099 · A collection is a third state in `music/wiki/`, not a tenth genre — 2026-09-02
+
+**M-52.** 135 takes made in July, before the commission, cannot join the 500 and must not try:
+`plan.yaml` is the authority for every count and `tests/unit/test_music.py` asserts 500 songs, 25
+bands and nine genre slugs. They arrive instead as a **collection** — a wiki file that carries
+bands, albums and songs in exactly a genre file's shape, named in `wiki.COLLECTIONS`.
+
+**What the name buys is exactly two exemptions, and nothing else.** A collection needs no allocation
+in `plan.yaml` and is not counted against one, and its albums are not bound to `CONSTANTS.md` §1's
+eight anchor years — records that arrived one at a time are not records that came out in the years
+the houses all shipped into. Everything else still applies: it mints ids into the same three counted
+series and `next_free_ids()` sees them, its layer-A songs carry a fact and its layer-B titles carry
+none, its rows go into `music/catalogue.yaml` with the same measured take and licence, and
+`make music-screen` with no argument sweeps it — forty-two invented band names that nothing screens
+is forty-two nobody is ever asked about.
+
+**Why a second set rather than an entry in `NOT_A_GENRE`.** `anchors.yaml` is *skipped*; a
+collection is *read*. Folding them together would have made a collection invisible to the six passes
+that must see it. Both are named rather than detected by shape, for `NOT_A_GENRE`'s original reason:
+a genre file that failed to parse must fail, never be silently reclassified into a file with fewer
+rules. The state lives in one constant and two accessors — `written_slugs()` for everything,
+`written_genres()` for the plan count and the anchors — rather than as a slug test in each pass.
+
+**§12's rule 8 is the one writing rule a collection stays out of, on both sides.** The rule is
+written as *"a **genre file** naming fewer than 3 bands that live in other **genre files**"*, and
+what it asks for is that the nine commissioned forms know each other. A shelf of unsigned records is
+not a tenth world to be sealed, and letting it supply the foreign names would answer the rule
+without any of the nine having done anything. Rules 6 and 7 do read it: rule 6 is counted over any
+layer-A band, and rule 7 is counted over "the whole wiki", which is what that phrase means.
+
+**A collection album's lyrics file, filed with no lyrics in it, is exempt from all ten rules.** The
+takes predate the commission, there is no written lyric to count, and inventing one would be a lie
+about what the take sings — the file exists only so `tag.py` can find the provenance (M-54). The
+exemption is keyed to the wiki rather than to the emptiness: a *genre* album with the same file is
+an album nobody wrote, and stays red. A collection album that does carry words is counted like any
+other, or the collection becomes the place to put a lyric nobody wanted counted.

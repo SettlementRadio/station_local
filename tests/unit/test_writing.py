@@ -319,3 +319,79 @@ def test_a_band_whose_facts_are_all_studio_anecdotes_is_named(tmp_path: Path) ->
     )
     detail = "\n".join(p.line() for p in writing.check_writing(root))
     assert "Held Note" in detail and "b_001" in detail and "studio anecdotes" in detail
+
+
+# --- a collection's stub lyrics (M-52) ---------------------------------------------------------
+
+
+def _collection_wiki(root: Path, album_id: str) -> None:
+    """An `independents.yaml` owning one album, which is how `writing.py` knows it is a stub."""
+    (root / "music" / "wiki" / "independents.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "layer_a": {
+                    "albums": [
+                        {
+                            "id": album_id,
+                            "title": "Green Lights",
+                            "band": "b_101",
+                            "label": "unsigned",
+                            "genre": "independents",
+                            "release_year": 2615,
+                            "songs": [],
+                        }
+                    ]
+                }
+            }
+        )
+    )
+
+
+def _all_ten_live(root: Path) -> Path:
+    """Mark M-47 done, the way `_details` does, so no rule is merely owed and the skip is the
+    only thing that can be keeping the stub green."""
+    tasks = root / "music" / check.TASKS_FILE
+    heading = "### M-47 · **DONE** · the fixture's stand-in"
+    tasks.write_text(re.sub(r"^### M-47 ·.*$", heading, tasks.read_text(), count=1, flags=re.M))
+    return root
+
+
+def _stub(album_id: str) -> dict[str, Any]:
+    """What M-54 files: the ids and the titles, and no lyrics — the takes predate the commission."""
+    return {
+        "album": {"id": album_id, "title": "Green Lights"},
+        "songs": [
+            {"id": f"s_{n:04d}", "title": f"Song {n}", "track_number": n} for n in range(101, 107)
+        ],
+    }
+
+
+def test_a_collection_album_with_no_lyrics_is_exempt(tmp_path: Path) -> None:
+    """M-52 check 7. There is no written lyric to count and inventing one would be a lie about
+    what the take sings, so §12 has no claim on it — the file exists for `tag.py`'s sake (M-54)."""
+    root = _all_ten_live(_root_with(tmp_path, None))
+    (root / "music" / writing.LYRICS_DIR / "al_101.yaml").write_text(
+        yaml.safe_dump(_stub("al_101"))
+    )
+    _collection_wiki(root, "al_101")
+    assert writing.check_writing(root) == []
+
+
+def test_a_genre_album_with_no_lyrics_still_goes_red(tmp_path: Path) -> None:
+    """The other half, and the reason the exemption is keyed to the wiki rather than to emptiness:
+    an album of the 500 with nothing written in it is a card nobody did."""
+    root = _all_ten_live(_root_with(tmp_path, None))
+    (root / "music" / writing.LYRICS_DIR / "al_101.yaml").write_text(
+        yaml.safe_dump(_stub("al_101"))
+    )
+    detail = "\n".join(p.line() for p in writing.check_writing(root))
+    assert "al_101" in detail and "rule 9" in detail and "rule 10" in detail
+
+
+def test_a_collection_album_that_does_carry_lyrics_is_counted(tmp_path: Path) -> None:
+    """Exempt is a fact about a stub, not about a shelf: words written here are held to §12 like
+    any others, or the collection becomes the place to put a lyric nobody wanted counted."""
+    root = _all_ten_live(_root_with(tmp_path, _fixture_album(middle="Chorus")))
+    _collection_wiki(root, "al_900")
+    detail = "\n".join(p.line() for p in writing.check_writing(root))
+    assert "al_900" in detail and "rule 1" in detail

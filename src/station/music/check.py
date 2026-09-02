@@ -6,6 +6,9 @@ layer-B song that has one, a release year that is not one of the eight anchors, 
 and an `owed_to:` marker that has outlived the card it names. Whether a name is too close to a real
 one stays a human judgement (M-03 narrows the pile; it does not clear it).
 
+Two of the six do not apply to a **collection** — the count and the years, the two that come from
+the commission rather than from the wiki. Which files those are is `wiki.COLLECTIONS`, not here.
+
 **Whether the writing is any good used to be a judgement too, and that is what failed.** The ten
 rules of `COMMISSION.md` §12 — the ways an album becomes one song sung eleven times, and the two
 ways it comes out too short to make an hour — are counted in `writing.py`, which is a separate pass
@@ -325,17 +328,23 @@ def check_wiki(root: Path) -> list[Problem]:
 
     problems: list[Problem] = _owed_cards(plan, cards)
     found: list[tuple[str, wiki.Entity]] = []
-    for slug in wiki.written_genres(wiki_dir):
+    for slug in wiki.written_slugs(wiki_dir):
         genre = wiki.load_genre(wiki_dir / f"{slug}.yaml")
         found += [(slug, entity) for entity in wiki.defined_ids(genre)]
         if not _is_written(genre):
             continue
-        if slug not in plan.genres:
-            known = ", ".join(sorted(plan.genres))
-            problems.append(Problem(slug, f"has no allocation in plan.yaml, which has: {known}"))
-            continue
-        if not plan.genres[slug].owed_to:
-            problems += _counts(slug, genre, plan)
+        # The two things a collection is outside of, and the only two. It buys nothing from
+        # `plan.yaml`, so there is no share to count it against; and its records reached the
+        # station one at a time rather than in the years the houses all shipped into, so the
+        # anchors have nothing to say about them either (`wiki.COLLECTIONS`).
+        if not wiki.is_collection(slug):
+            if slug not in plan.genres:
+                known = ", ".join(sorted(plan.genres))
+                detail = f"has no allocation in plan.yaml, which has: {known}"
+                problems.append(Problem(slug, detail))
+                continue
+            if not plan.genres[slug].owed_to:
+                problems += _counts(slug, genre, plan)
+            problems += _years(slug, genre, anchors, layers)
         problems += _facts(slug, genre)
-        problems += _years(slug, genre, anchors, layers)
     return problems + _duplicate_ids(found)

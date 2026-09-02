@@ -157,11 +157,11 @@ class Build(BaseModel):
 
 
 def genres(wiki_dir: Path) -> dict[str, wiki.GenreWiki]:
-    """Every written genre, or a failure naming the file that would not read."""
+    """Every wiki file read — genres and collections both — or a failure naming the bad one."""
     try:
         found = {
             slug: wiki.load_genre(wiki_dir / f"{slug}.yaml")
-            for slug in wiki.written_genres(wiki_dir)
+            for slug in wiki.written_slugs(wiki_dir)
         }
     except wiki.WikiError as exc:
         raise CatalogueError(str(exc)) from None

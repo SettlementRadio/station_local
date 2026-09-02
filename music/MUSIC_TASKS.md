@@ -68,6 +68,7 @@ marked **NEXT**.
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
 | **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
 | **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-25** old-system sessions' lyrics, 90 songs across 11 albums · 2026-08-29 | **M-34 is in progress and stays NEXT — 44 of 90 filed, 2026-08-31 and 2026-09-01**, measured, tagged and in the catalogue. `al_098` … `al_102` are all complete, so **Terrace Road Four and The Shore Rounds are finished bands** and neither is split across generators. **354 of the 500 playable songs now exist.** 46 takes are owed — Undershore Local and The Ninefoot Cut, both untouched — and the operator will make them on a different generator with its own licence evidence. **2026-09's licence PDF is not captured yet** (M-40, D-098) |
+| **7 · The July collection** | M-52 · M-53 · M-54 · M-55 · M-56 | **M-52** the collection seam · 2026-09-02 | **the seam exists; the collection is not written yet.** 135 takes made 2026-07-03 … 07-25 on Suno Pro v5.5, before the commission, sitting unused at `music/audio/RAW/`. 77 of them become an unsigned collection outside the 500; 58 become layer-B titles; one becomes the station's own song. **The code now carries a file that is neither a genre nor skipped** (`wiki.COLLECTIONS`, D-099): no plan allocation, no anchor years, and every other rule unchanged. **M-53 is NEXT** and it is an agent card, so it cannot run beside M-34. Stage 7 must close before M-42 |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -1474,6 +1475,210 @@ Depends on: M-05, and each genre's audio card as it lands. Closes when M-38 does
 
 ---
 
+# Stage 7 · The July collection — 136 takes that predate the wiki
+
+**135 songs already exist and none of them is in the plan.** They were generated on Suno between
+2026-07-03 and 2026-07-25 — one account, **Pro, v5.5** (operator, 2026-09-01), one licence period,
+before the commission was written — and they sit on the volume at `music/audio/RAW/music/` with a
+hand-written `tracks.yaml` describing every one. A 136th was a runaway generation and the operator
+deleted it on 2026-09-01, entry and all; the ledger and the folder are back in step at 135.
+**The operator wants them used.** This stage is how.
+
+**They cannot join the 500 and they must not try.** `plan.yaml` is the authority for every count and
+`tests/unit/test_music.py` asserts 500 songs, 25 bands and exactly the nine genre slugs; the wiki
+froze at M-15. Nothing here moves any of that. The collection arrives as a **collection** — a wiki
+file that carries records but no plan allocation — and everything else follows from that one idea.
+
+**In the world they are what reached the station outside the seven houses.** `label: unsigned` is
+already a value `catalogue.py` understands, so the collection needs no eighth label and inherits
+none of COMMISSION §5's retrospective floors. It is 42 bands, most with one, two or three records each —
+which is exactly what an unsigned shelf looks like, and exactly the relief ARCHITECTURE §8's
+artist-separation rules want from a library of 25 bands.
+
+**Three things make it cheap.** No band name in the pile collides with anything in `music/wiki/`.
+Every one of the 135 already carries a `story_blurb` in the shape of the wiki's per-song `fact` —
+the expensive part of layer A, already written. And nothing in the code reads the RAW filenames, so
+the renaming is free.
+
+**One of them is the station's own song** and gets its own card (M-55).
+
+**Read `music/audio/RAW/music/tracks.yaml` before starting any card in this stage.** It is the only
+description of these files, it is under `music/audio/` and therefore **not in git**, and it is
+deleted at M-56 once its contents live in the wiki. Until then it is the source of truth for what
+each file is.
+
+### M-52 · `[agent]` The collection seam — a wiki file that is not a genre — **DONE 2026-09-02**
+Goal: The code can carry a set of records that is not part of the commissioned 500, and the three
+totals do not move.
+Reads: ARCHITECTURE §8, §17a · COMMISSION §1
+Files: `src/station/music/wiki.py`, `check.py`, `catalogue.py`, `writing.py`, and the unit tests for
+each.
+Check: seven things, and the last two are the ones that make it worth doing as code.
+  1. `make check` is green and unchanged — 500 playable songs, 25 bands, nine genre slugs.
+  2. A collection file in `music/wiki/` needs **no allocation in `plan.yaml`** and is not counted
+     against one. A genre file still is.
+  3. It **is** counted for id uniqueness: a song, album or band id it reuses from a genre goes red,
+     naming both uses. `next_free_ids()` sees its ids, so the next genre written cannot collide.
+  4. Its albums are **not** required to sit on one of §1's eight anchor years. Layer A of a genre
+     still is.
+  5. Its songs still obey the fact rule — layer A carries one, layer B carries none.
+  6. `catalogue.py` includes it: its playable songs become rows with a file, a duration, a ramp, an
+     outro and a licence, and its layer-B titles become unplayable rows.
+  7. A lyrics file for a collection album with no `lyrics:` in it is **exempt** from §12's ten
+     counted rules, and a genre album with the same emptiness still goes red.
+Note: `anchors.yaml` is the precedent — `wiki.NOT_A_GENRE` at `wiki.py:28`. **Do not reuse that
+set.** Anchors is skipped; a collection is read, by everything except the plan count and the anchor
+rule. That is a third state and the code should say so in one place rather than in four `if slug ==`
+tests. `make music-screen` with no argument must sweep collections too, or 42 unscreened band names
+sit in the wiki and nothing ever asks about them.
+Depends on: nothing.
+Result: **`wiki.COLLECTIONS` — one constant, two accessors, and the state is over.** `written_slugs()`
+is what everything reads (ids, facts, catalogue rows, the writing rules, `make music-screen` with no
+argument); `written_genres()` is the narrower list, and only two passes take it — the plan count and
+the anchor years. All seven checks proved against the real wiki with a fixture `independents.yaml`
+dropped into `music/wiki/`: `make check` stayed green with no allocation and a 2615 album, an id
+reused from relay-pop went red naming both files, `next_free_ids()` advanced past the collection,
+and its songs came back as catalogue rows. **One thing the card did not name and this had to
+decide:** §12's rule 8 stays genre-only, because it is written as *"a genre file naming bands in
+other genre files"* and a shelf of unsigned records is not a tenth world to be sealed — rules 6 and
+7 do read the collection. 10 new tests, `make check` green, D-099.
+
+### M-53 · `[agent]` `music/wiki/independents.yaml` — the collection, written — **NEXT**
+Goal: The 136 takes become part of the world, with a story that fits the canon they were made
+before.
+Reads: COMMISSION §1, §2, §6, §7, §8 · CONSTANTS §3, §4 · the preamble above
+Files: `music/wiki/independents.yaml`, `music/CONSTANTS.md` §3, `docs/DECISIONS.md`
+Check: `make check` green. `make music-screen GENRE=independents` has been run and its result — 42
+bands, 46 albums and every title — is recorded in `CONSTANTS.md` §3 beside the nine genres.
+**77 songs are layer A and 58 are layer B**, and the file says which is which.
+
+The split is mechanical and these are the rules that produce it:
+  - **Drop the instrumentals.** Nine are tagged `instrumental`. COMMISSION §7 wants instrumental
+    passages and not wordless tracks, and the operator wants none of them. They become layer-B
+    titles — the record exists, the station does not hold it.
+  - **Drop everything under 2:00.** §7's floor, and 24 files are under it.
+  - **One take per song.** 38 of the 135 are a second take of a song already in the pile — 18 titled
+    `(Alternate Take)` and 20 more retitled (*Dockyard Heart* / *Dockyard Hearts*, *Pass It On* /
+    *Let's Pass It On*, *Red Soil, Blue Guitar* / *Red Soil Sunday* / *Blue Guitar, Red Evening*).
+    **Keep the longest surviving take of each cluster; the rest are layer-B titles.** Longest,
+    because §7's duration arithmetic runs short everywhere else in this project.
+  - **One take of 7:59 is left and it has no twin to be judged against.**
+    `ysolde-mar__cargo-hold-lullaby.mp3` runs 479.4 seconds — to the tenth of a second the same
+    length as the runaway the operator deleted on 2026-09-01, which is what a generation hitting the
+    model's ceiling looks like rather than a piece that ends. §7 has no upper floor and the rule
+    keeps it. **Listen to it and ask** before filing it.
+  - **The station song keeps both takes** — see M-55.
+
+Then five decisions the file has to make, none of which the pile makes for you:
+  - **A form for every album, from the closed nine.** 52 of the 77 carry no form tag at all today,
+    and two carry `pulse-dance`, which D-068 says is never pressed — retag those two or drop them.
+    §2's palette table is what to read them against.
+  - **Re-date the collection into 2612–2621.** `category` is derived, not chosen (D-085): five
+    in-world years or older is `gold`, everything else is `A`, heavy rotation. The pile's own years
+    cluster 2620–2626, so as written all 78 would land in heavy rotation, crowd the commissioned
+    500 and contradict the story. Re-dating costs nothing — no lyric, no fact and no album story has
+    ever been written against these years. **The eight anchors do not apply here** (M-52 check 4)
+    and the collection should mostly miss them: records that arrived one at a time are not records
+    that came out in the years the houses all shipped into.
+  - **Nine titles collide with the wiki** — the albums *After the Last Ferry*, *Old-System
+    Sessions*, *Resonance*, *Turnover*, *Under the Ice*, and the songs *Burn Day*, *Hold the Line*,
+    *Second Shift Blues*, *The Long Way Round*. Retitle the collection's copy, not the wiki's. The
+    wiki is frozen.
+  - **`label: unsigned` throughout**, and no eighth label anywhere.
+  - **The facts are already written.** Each song's `fact` is its `story_blurb` from `tracks.yaml`,
+    edited only where it names an era the canon does not have — `age-of-relays`, `reconnection` and
+    `first-expansion` appear nowhere in `canon/` and are the previous attempt's vocabulary. Layer-B
+    songs get **no** fact; §12's rule and `check.py` both say so.
+Note: this is a wiki-writing card and reads like M-07 … M-14, with two differences: the songs
+already exist, and the bands do not have to earn a label. Bands still need a bio, a home and a
+`kind`; albums still need a title, a year and a form. **Do not write style cards for these 42
+bands** — a style card fixes how a band sounds for records not yet made, and every record these
+bands will ever make already exists.
+Depends on: M-52
+
+### M-54 · `[agent]` File the 78 takes, and the licence they were made under
+Goal: The collection's audio sits where the station expects audio, carries its own provenance, and
+reaches `music/catalogue.yaml`.
+Reads: COMMISSION §9 · ARCHITECTURE §17a · RUNBOOK steps 6 and 7
+Files: `music/audio/unsigned/al_NNN/NN.mp3`, `music/production/lyrics/al_NNN.yaml`,
+`music/licence-evidence/2026-07-suno-licence-note.md`
+Check: `make music-tag` reports **nothing unclaimed** under `music/audio/unsigned/`;
+`make music-catalogue` gains 77 playable rows, each with a measured duration, intro ramp, outro type
+and `licence_note: suno-pro-2026-07`, plus 58 unplayable ones; `make check` green.
+  - **Copy, do not move.** `music/audio/RAW/` stays intact until M-56 says it can go. A copy that
+    can be verified against its source is the whole reason the deletion is a separate card.
+  - **A stub lyrics file per album**, because `tag.py` reads provenance from nowhere else: the
+    album id, a `generation:` block, and `songs[]` with id, title and track number. **No lyrics** —
+    these were not written here and inventing them would be a lie about what the take sings. M-52
+    check 7 is what keeps `writing.py` green over the stubs.
+  - **The generation block is `suno-pro-2026-07`, model version `v5.5`,** with each file's own
+    `created=` date out of its Suno comment tag. **The model version is not in the files** — Suno
+    writes only `made with suno`, a timestamp and a generation id — so it is the operator's to
+    state, and the operator stated it on **2026-09-01**: the same v5.5 the July jingles and the
+    pilot's 45 record. Nothing to ask; write it down and cite the date.
+  - **Widen `2026-07-suno-licence-note.md`.** It currently says it covers 56 imaging assets and
+    explicitly not music. It has to name these files too, with their count and their dates, or M-51
+    finds a period with no evidence behind it.
+Note: `make music-dispatch` cannot file this pile. It proves a take against the lyric the file
+carries in its own tags (D-091, D-097) and these takes have no written lyric to prove against. This
+is a one-time filing and belongs in this card, not in that tool.
+Depends on: M-53
+
+### M-55 · `[agent]` The station's own song
+Goal: Settlement Radio has a record of its own, with a reason in the world and a place in the clock.
+Reads: ARCHITECTURE §9, §18 · PROGRAMMING §7 · `music/jingles/README.md` §5a
+Files: `music/wiki/independents.yaml`, `docs/DECISIONS.md`
+Check: A listener could hear it. Concretely: the wiki says the station adopted it and why, a
+decision line says what it is and what it is not, and the two songs are marked in the file in a way
+the grid card can act on.
+  - **The song is *Green Lights All the Way*, The Lane Runners, 2:39.** Its own blurb is already the
+    adoption story — *"every buoy green from dock to bay. Haulers play it leaving port for luck;
+    harbourmasters swear it works."* A station that opens on a luck song is a station with a
+    character.
+  - **Its reprise is the sign-off.** *Green Lights (Reprise)*, 2:14 — *"the same lucky run sung
+    slower, the way crews hum it at the end of a shift instead of the start."* Open and close, one
+    band, one tune, already made. This is the one place M-53's one-take-per-song rule is
+    deliberately broken, and this card is the reason.
+  - **It is not the sonic logo and must not become one.** `sonic_logo_signature.mp3` is 12 seconds
+    of sung station name — *"Settlement Radio — the light between the worlds"* — approved by the
+    operator on 2026-08-23, and every other imaging piece quotes its glass-bell motif
+    (`jingles/README.md` §5a). Two competing signatures is how a station stops sounding like one
+    station. The logo is the ident; this is the song.
+  - **The pin cannot be built here.** `config/grid.yaml` does not exist yet; the hour clocks are
+    `imaging/IMAGING_TASKS.md` I-14 and the pinned junction is `docs/TASKS.md` T-012. **State the
+    requirement and stop**: the song is pinned to a fixed slot rather than rotated, and whatever
+    selects rotation must filter pinned ids out, or the §8 separation rules will fight the pin every
+    day. Do not add a card to either file to say so.
+  - **Any edit of the song into a sting or a bed is the operator's**, in an editor, as an imaging
+    asset. Placement is config; audio is not.
+Note: record it as a decision (`D-099` or the next free number) — what the station's song is, why it
+is a song and not an ident, and that the reprise is the close. A choice like this gets re-litigated
+in eight months by someone reading only the wiki.
+Depends on: M-53
+
+### M-56 · `[agent]` Retire `music/audio/RAW/` — and the collection is done
+Goal: One description of these 135 takes, in git, and no second copy contradicting it on the volume.
+Files: deletes `music/audio/RAW/`.
+Check: run in this order and stop at the first that is not true.
+  1. `make check` green.
+  2. Every one of the 77 has a row in `music/catalogue.yaml` with a file path that resolves, a
+     measured duration, an intro ramp, an outro type and `suno-pro-2026-07`.
+  3. All 58 layer-B titles are in `music/wiki/independents.yaml` and none of them has audio —
+     `catalogue.py` goes red if one does, which is the check doing its job.
+  4. Every band name, album title and song title from `tracks.yaml` appears in the wiki, under its
+     own name or a retitle M-53 recorded. **Nothing in that file is only in that file.**
+  5. `grep -r RAW` finds no reference in the repository.
+Then delete `music/audio/RAW/`, `tracks.yaml` included. **Ask the operator before deleting** — it is
+irreversible, the folder is not in git, and CLAUDE.md is explicit about this. If any check above is
+not true, the card is not finished and nothing gets deleted.
+Note: the deletion is the point of the card, not a tidy-up at the end of another one. `tracks.yaml`
+is the only record of what these files are and it lives under `music/audio/`, which `.gitignore`
+excludes — so until the wiki carries everything it says, deleting it loses the collection. After
+this card the wiki is the only description, and it is in git.
+Depends on: M-54, M-55
+
+---
+
 # Stage 6 · Hand over
 
 ### M-41 · `[agent]` The catalogue file, complete
@@ -1502,5 +1707,6 @@ Depends on: M-41
 - [ ] `music/catalogue.yaml` complete and validated
 - [ ] Licence evidence for every month generated in
 - [ ] You have listened, twice — at M-19 and at M-42
+- [ ] The July collection filed — **77** unsigned records beside the 500, **58** more as titles, and `music/audio/RAW/` gone
 
 Then the music job is done, and it hands over to the phase that has a database.

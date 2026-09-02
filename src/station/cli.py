@@ -188,7 +188,9 @@ def music_screen(genre: str = _GENRE_FILTER) -> None:
     from station.music import console, screen, wiki
 
     wiki_dir = Path.cwd() / "music" / wiki.WIKI_DIR
-    slugs = [genre] if genre else wiki.written_genres(wiki_dir)
+    # Collections too (`wiki.COLLECTIONS`): a name in one is said on air exactly as readily, and a
+    # file nothing ever sweeps is a file whose invented names nobody was ever asked about.
+    slugs = [genre] if genre else wiki.written_slugs(wiki_dir)
     if not slugs:
         typer.secho("no genre has been written yet (music/RUNBOOK.md)", fg="yellow")
         return

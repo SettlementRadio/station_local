@@ -93,3 +93,127 @@ def test_an_unquoted_comma_truncates_a_title_and_is_reported() -> None:
     whole = wiki.Song.model_validate({"id": "s_0528", "title": "Two Callers, One Sheet",
                                       "track_number": 6, "genre": "deck-talk", "credits": {}})  # fmt: skip
     assert whole.stray_keys == []
+
+
+# --- a collection in the catalogue (M-52) ------------------------------------------------------
+
+
+def _collection(wiki_dir: Path) -> dict[str, wiki.GenreWiki]:
+    """One `independents.yaml`: a record the station holds, and a title it only knows about."""
+    wiki_dir.mkdir(parents=True)
+    (wiki_dir / "independents.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "section": {"present_year": PRESENT},
+                "layer_a": {
+                    "bands": [
+                        {
+                            "id": "b_101",
+                            "name": "The Lane Runners",
+                            "kind": "group",
+                            "genre": "independents",
+                            "label": "unsigned",
+                            "active_from": 2610,
+                            "albums": [
+                                {
+                                    "id": "al_101",
+                                    "title": "Green Lights",
+                                    "label": "unsigned",
+                                    "genre": "independents",
+                                    "release_year": 2615,
+                                    "songs": [
+                                        {
+                                            "id": "s_0101",
+                                            "title": "Green Lights All the Way",
+                                            "track_number": 1,
+                                            "playable": True,
+                                            "fact": "Haulers play it leaving port for luck.",
+                                        },
+                                        {
+                                            "id": "s_0102",
+                                            "title": "Harbour Light",
+                                            "track_number": 2,
+                                            "playable": True,
+                                            "fact": "Cut the same afternoon as the first.",
+                                        },
+                                    ],
+                                }
+                            ],
+                        }
+                    ]
+                },
+                "layer_b": {
+                    "bands": [
+                        {
+                            "id": "b_102",
+                            "name": "Ysolde Mar",
+                            "kind": "solo",
+                            "genre": "independents",
+                            "label": "unsigned",
+                            "active_from": 2614,
+                            "albums": [
+                                {
+                                    "id": "al_102",
+                                    "title": "Cargo Hold",
+                                    "label": "unsigned",
+                                    "genre": "independents",
+                                    "release_year": 2621,
+                                    "songs": [
+                                        {
+                                            "id": "s_0121",
+                                            "title": "Cargo Hold Lullaby",
+                                            "track_number": 1,
+                                        }
+                                    ],
+                                }
+                            ],
+                        }
+                    ]
+                },
+            }
+        )
+    )
+    return catalogue.genres(wiki_dir)
+
+
+def test_a_collection_becomes_rows_like_any_other_wiki_file(tmp_path: Path) -> None:
+    """M-52 check 6. Rotation asks whether there is a file, never who commissioned it — so a
+    collection is read here exactly as a genre is, and only the plan and the anchors ignore it."""
+    found = _collection(tmp_path / "wiki")
+    assert list(found) == ["independents"]
+
+    take = catalogue.Take(
+        file="music/audio/unsigned/al_101/01.mp3",
+        licence_note="suno-pro-2026-07",
+        duration_sec=159.4,
+        intro_ramp_sec=2.0,
+        outro_type="fade",
+    )
+    tracks, problems = catalogue._tracks(found, PRESENT, {"s_0101": take})
+    assert problems == []
+    rows = {track.id: track for track in tracks}
+    assert set(rows) == {"s_0101", "s_0102", "s_0121"}
+
+    played = rows["s_0101"]
+    assert played.playable and played.file == take.file
+    assert played.duration_sec == 159.4 and played.intro_ramp_sec == 2.0
+    assert played.outro_type == "fade" and played.licence_note == "suno-pro-2026-07"
+    assert played.category == catalogue.GOLD  # 2615, eleven in-world years back
+
+    for silent in ("s_0102", "s_0121"):  # a take not made yet, and a title never pressed
+        assert not rows[silent].playable
+        assert rows[silent].file is None and rows[silent].category is None
+
+
+def test_a_collection_title_with_audio_against_it_is_still_a_problem(tmp_path: Path) -> None:
+    """Layer B is what the world knows and the station does not hold, collection or not."""
+    found = _collection(tmp_path / "wiki")
+    take = catalogue.Take(
+        file="music/audio/unsigned/al_102/01.mp3",
+        licence_note="suno-pro-2026-07",
+        duration_sec=479.4,
+        intro_ramp_sec=0.0,
+        outro_type="cold",
+    )
+    _, problems = catalogue._tracks(found, PRESENT, {"s_0121": take})
+    assert any("s_0121" in problem and "layer-B" in problem for problem in problems)
