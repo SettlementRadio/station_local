@@ -68,7 +68,7 @@ marked **NEXT**.
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
 | **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
 | **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-25** old-system sessions' lyrics, 90 songs across 11 albums · 2026-08-29 | **M-34 is in progress and stays NEXT — 44 of 90 filed, 2026-08-31 and 2026-09-01**, measured, tagged and in the catalogue. `al_098` … `al_102` are all complete, so **Terrace Road Four and The Shore Rounds are finished bands** and neither is split across generators. **354 of the 500 playable songs now exist.** 46 takes are owed — Undershore Local and The Ninefoot Cut, both untouched — and the operator will make them on a different generator with its own licence evidence. **2026-09's licence PDF is not captured yet** (M-40, D-098) |
-| **7 · The July collection** | M-52 · M-53 · M-54 · M-55 · M-56 | **M-53** the collection, written · 2026-09-02 | **the collection exists in the world; none of its audio is filed yet.** `music/wiki/independents.yaml` carries **42 bands, 75 albums and 135 songs — 77 the station holds and 58 titles it can only name**, all `label: unsigned`, all re-dated into 2613–2621 so the whole shelf is `gold` and none of it crowds the 500. `make check` green, the names screened clean at 221, D-100 written. **The card's 46 albums was not reachable** — `check.py` keys the fact rule on the album's layer, so 33 bands needed a layer-B record of their own (D-100). **M-54 is NEXT**: copy the 135 takes out of `music/audio/RAW/` into `music/audio/unsigned/`, write the stub lyrics files and widen the July licence note. It is an agent card, so it cannot run beside M-34. Stage 7 must close before M-42 |
+| **7 · The July collection** | M-52 · M-53 · M-54 · M-55 · M-56 | **M-55** the station's own song · 2026-09-02 | **the collection exists in the world and the station has taken a record out of it; none of its audio is filed yet.** `music/wiki/independents.yaml` carries **42 bands, 75 albums and 135 songs — 77 the station holds and 58 titles it can only name**, all `label: unsigned`, all re-dated into 2613–2621 so the whole shelf is `gold` and none of it crowds the 500. `make check` green, the names screened clean at 221, D-100 written. **The card's 46 albums was not reachable** — `check.py` keys the fact rule on the album's layer, so 33 bands needed a layer-B record of their own (D-100). **M-55 is done: the station's song is *Green Lights All the Way* (`s_1374`) and its reprise (`s_1378`) is the sign-off** — adopted in the wiki, marked `station-song` in both songs' `notes:`, and the pin stated for I-14/T-012 rather than built (D-101). **M-54 is NEXT and is the only card left before M-56**: copy the 135 takes out of `music/audio/RAW/` into `music/audio/unsigned/`, write the stub lyrics files and widen the July licence note. It is an agent card, so it cannot run beside M-34. Stage 7 must close before M-42 |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -1652,7 +1652,7 @@ carries in its own tags (D-091, D-097) and these takes have no written lyric to 
 is a one-time filing and belongs in this card, not in that tool.
 Depends on: M-53
 
-### M-55 · `[agent]` The station's own song
+### M-55 · `[agent]` The station's own song — **DONE 2026-09-02**
 Goal: Settlement Radio has a record of its own, with a reason in the world and a place in the clock.
 Reads: ARCHITECTURE §9, §18 · PROGRAMMING §7 · `music/jingles/README.md` §5a
 Files: `music/wiki/independents.yaml`, `docs/DECISIONS.md`
@@ -1683,6 +1683,24 @@ Note: record it as a decision (`D-099` or the next free number) — what the sta
 is a song and not an ident, and that the reprise is the close. A choice like this gets re-litigated
 in eight months by someone reading only the wiki.
 Depends on: M-53
+Result: **Settlement Radio's own record is *Green Lights*, `al_179`, The Lane Runners** — `s_1374`
+*Green Lights All the Way* (2:39) opens the broadcast day and `s_1378` *Green Lights (Reprise)*
+(2:14) closes it. The adoption is in the world in three places a presenter can reach: both songs'
+`fact` now says the station opens and closes on them, `al_179`'s story answers the question its own
+notes already asked, and a header section in `music/wiki/independents.yaml` carries the whole
+decision. **D-101** records what it is, that it is not the sonic logo, and why the reprise is the
+close. **The mark is `notes:` on the two songs, carrying the token `station-song` plus the role** —
+`grep station-song music/wiki/` answers the question I-14 will ask. `notes` was chosen because
+`wiki.SONG_KEYS_NOT_MODELLED` already blesses it: a new song field would mean editing code for a
+fact nothing reads yet, and a `mood_tag` would reach `music/catalogue.yaml` as a mood and be
+selected on as one, which is the opposite of the intent. **The pin was stated and not built**, as
+the card says: the two ids play from fixed slots and must be filtered out of the rotation pool,
+because ARCHITECTURE §8's separation rules run against `airplay` and a pinned play writes an
+`airplay` row like any other — leave them in the pool and either the morning pin is a repeat inside
+four hours or the pin suppresses The Lane Runners' four other tracks for an hour a day.
+PROGRAMMING §8 runs the day 05:00–04:59, so the head is the 05:04 open and the foot is the last
+music before 05:00 in the 04:04 slot. No card was added to `imaging/IMAGING_TASKS.md` or
+`docs/TASKS.md`. `make check` green, 500/25/9 unmoved, no stray keys on either song.
 
 ### M-56 · `[agent]` Retire `music/audio/RAW/` — and the collection is done
 Goal: One description of these 135 takes, in git, and no second copy contradicting it on the volume.

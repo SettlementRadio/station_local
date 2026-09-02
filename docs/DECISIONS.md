@@ -3129,3 +3129,56 @@ stayed.
 
 **No style cards, no members, no session players, no layer C.** A style card fixes how a band sounds
 for records not yet made, and every record these forty-two bands will ever make already exists.
+
+---
+
+### D-101 · The station's song is a song, not a second signature — and the pin is a requirement, not a build — 2026-09-02
+
+**M-55.** Settlement Radio has a record of its own. It is *Green Lights All the Way* — `s_1374`,
+2:39, track 1 of `al_179`, The Lane Runners — and it opens the broadcast day. Its reprise, *Green
+Lights (Reprise)* (`s_1378`, 2:14, track 5 of the same record), closes it. Both are in
+`music/wiki/independents.yaml`, both are `label: unsigned`, and both were already made: this costs
+one wiki edit and no generation.
+
+**The reason was already written and did not need inventing.** The take's own blurb is the adoption
+story — every buoy green from dock to bay, haulers playing it leaving port for luck, harbourmasters
+swearing it works. A station that opens on a luck song is a station with a character, and the
+reprise is the same lucky run sung slower, the way crews hum it at the end of a shift instead of the
+start. Open and close, one band, one tune. Canon 65-arts calls the works the station treats as
+common reference the **Station Canon** — no published boundary, inferred by listeners from repeats.
+This is the station putting one there deliberately, which canon 70-music fact 12 says is what a
+playlist is: never random, always a claim about what matters.
+
+**It is not the sonic logo and must never become one.** `sonic_logo_signature.mp3` is twelve seconds
+of sung station name — *"Settlement Radio — the light between the worlds"* — approved by the operator
+on 2026-08-23, and every other imaging piece quotes its glass-bell motif (`music/jingles/README.md`
+§5a). Two competing signatures is how a station stops sounding like one station. **The logo is the
+ident; this is the song.** Any edit of *Green Lights* into a sting, a bed or a stab is an imaging
+asset, made by the operator in an editor and inventoried like the other 56 — placement is config,
+audio is not, and an agent authoring either would be authoring content (`CLAUDE.md`).
+
+**This is the one place M-53's one-take-per-song rule is broken, and it is broken on purpose.** Every
+other duplicate cluster in the July collection kept its longest surviving take and sent the rest to
+layer B. These two are not a cluster: the reprise is a different arrangement doing a different job at
+the other end of the day, and the collection would be poorer for owning only one end of it.
+
+**The pin could not be built here, so the requirement is written instead.** `config/grid.yaml` does
+not exist — the hour clocks are `imaging/IMAGING_TASKS.md` I-14 and the pinned junction is
+`docs/TASKS.md` T-012, and neither has been reached. The requirement they inherit is this:
+**`s_1374` and `s_1378` play from fixed slots and are never drawn from rotation.** `PROGRAMMING.md`
+§8 runs the broadcast day 05:00 to 04:59, so the head is the 05:04 open and the foot is the last
+music before 05:00 in the 04:04 slot. Whatever fills an ordinary music slot must filter both ids out
+of its pool, because ARCHITECTURE §8's separation rules — same track ≥4h, same artist ≥60min, same
+album ≥90min — are computed against `airplay`, and a pinned play writes an `airplay` row like any
+other. Leave the ids in the pool and the two mechanisms fight daily: either rotation draws the song
+and the next morning's pin is a repeat inside four hours, or the pin's own row suppresses The Lane
+Runners' four other tracks for an hour every day. **No card was added to either file to say so** —
+`CLAUDE.md` forbids drafting work as a side effect of doing work, and both cards read the wiki they
+will pin from.
+
+**The mark is `notes:` on the two songs, and `notes` is a key the wiki already blesses.** Both
+entries carry the token `station-song` plus their role, so `grep station-song music/wiki/` answers
+the question the grid card will ask. It is deliberately not a new song field and deliberately not a
+`mood_tag`: a new field means editing `wiki.SONG_KEYS_NOT_MODELLED` for a fact no code reads yet,
+and a mood tag would reach `music/catalogue.yaml` as a mood and be selected on as one, which is the
+opposite of the intent.

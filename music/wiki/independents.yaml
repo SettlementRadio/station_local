@@ -29,14 +29,42 @@
 #    are titled `(Alternate Take)` and keep that title: the cut that reached this shelf is the second
 #    one, and saying so is truer than swapping the labels round.
 # 4. **The station's own song keeps both takes** — *Green Lights All the Way* and *Green Lights
-#    (Reprise)* — `s_1374` and `s_1378`, tracks 1 and 5 of `al_179` — and M-55 is where the
-#    station adopts them.
+#    (Reprise)* — `s_1374` and `s_1378`, tracks 1 and 5 of `al_179`. M-55 adopted them on
+#    2026-09-02 and the section below is what that means.
 #
 # **Layer B is a record of its own, never a track on a layer-A one.** `check.py` asks every song on
 # a layer-A album for a fact and refuses one on a layer-B album, so the takes the station does not
 # hold sit on their own record — the single or EP that circulated and never reached us. That is why
 # 33 of the 42 bands carry two entries here and why the album count is 75 rather than the 46 the
 # card estimated.
+#
+# ## The station's own song — `s_1374` and `s_1378`, and the pin they need (M-55, D-101)
+#
+# Settlement Radio has adopted *Green Lights All the Way* (`s_1374`, 2:39, track 1 of `al_179`) as
+# the song it opens the broadcast day on, and *Green Lights (Reprise)* (`s_1378`, 2:14, track 5) as
+# the one it closes on. Nothing had to be invented for this: the reason is the record's own story —
+# every buoy green from dock to bay, haulers playing it leaving port for luck and harbourmasters
+# swearing it works — and a station that opens on a luck song is a station with a character. Canon
+# 65-arts calls the works the station treats as common reference the Station Canon, inferred by
+# listeners from repeats rather than published; this is the station putting one there on purpose.
+# It is also why rule 4 above keeps both takes where every other duplicate cluster kept one.
+#
+# **It is a song and not an ident, and it must not become one.** `sonic_logo_signature.mp3` is the
+# station's signature — twelve seconds of sung station name, approved by the operator 2026-08-23,
+# and every other imaging piece quotes its glass-bell motif (`music/jingles/README.md` section 5a).
+# Two competing signatures is how a station stops sounding like one station. The logo is the ident;
+# this is the song. Any edit of it into a sting or a bed is an imaging asset and the operator's, in
+# an editor: placement is config, audio is not.
+#
+# **The pin itself cannot be written yet, and this is the requirement it inherits.** `config/grid.yaml`
+# does not exist — the hour clocks are `imaging/IMAGING_TASKS.md` I-14 and the pinned junction is
+# `docs/TASKS.md` T-012. When they are written: **these two ids play from a fixed slot and are never
+# drawn from rotation.** PROGRAMMING.md section 8 runs the broadcast day 05:00 to 04:59, so the head
+# is the 05:04 open and the foot is the last music before 05:00 in the 04:04 slot. Whatever fills a
+# music slot must filter `s_1374` and `s_1378` out of its pool, or ARCHITECTURE.md section 8's
+# separation rules — same track four hours, same artist sixty minutes, same album ninety minutes —
+# will fight the pin every day and one of the two loses audibly. Both songs carry the mark in their
+# own `notes:` field: **grep `station-song` and the file answers.**
 #
 # ## One take is filed and not yet judged — `s_1362`, *Cargo-Hold Lullaby*
 #
@@ -509,7 +537,9 @@ layer_a:
         The lucky record. It opens on a run where every buoy came up green from dock to bay and closes
         on the same run sung slower, and between them are the two songs the crew actually work to. Haulers
         play the opener leaving port and harbourmasters swear it works, which is the sort of thing a
-        station has to decide what to do about.
+        station has to decide what to do about. Settlement Radio decided: it opens the day on the one
+        and closes it on the other, and has said so on air often enough that crews now time both ends
+        of a shift by it.
       songs:
       - id: s_1374
         title: Green Lights All the Way
@@ -519,7 +549,13 @@ layer_a:
         playable: true
         fact: >-
           The luckiest run ever sung — every buoy green from dock to bay. Haulers play it leaving port
-          for luck; harbourmasters swear it works.
+          for luck; harbourmasters swear it works. Settlement Radio opens its broadcast day on it, for
+          the same reason the haulers do.
+        notes: >-
+          station-song · opener. The station's own song (M-55, D-101). Played from a fixed slot at the
+          head of the broadcast day and never drawn from rotation: whatever fills a music slot filters
+          this id and s_1378 out of its pool. It is the station's song and not its ident —
+          sonic_logo_signature is the signature and stays the only one.
       - id: s_1375
         title: Heavy and Happy
         track_number: 2
@@ -555,7 +591,12 @@ layer_a:
         playable: true
         fact: >-
           The B-side reprise — the same lucky run sung slower, the way crews hum it at the end of a
-          shift instead of the start.
+          shift instead of the start. Settlement Radio closes its broadcast day on it, which is the
+          shift it means.
+        notes: >-
+          station-song · sign-off. The close of the broadcast day (M-55, D-101), and the reason this
+          record is the one place the collection's one-take-per-song rule is broken on purpose. Same
+          pin, same exclusion from rotation as s_1374.
   - id: b_086
     name: Auroral Standard
     kind: group
