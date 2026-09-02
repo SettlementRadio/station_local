@@ -3182,3 +3182,54 @@ the question the grid card will ask. It is deliberately not a new song field and
 `mood_tag`: a new field means editing `wiki.SONG_KEYS_NOT_MODELLED` for a fact no code reads yet,
 and a mood tag would reach `music/catalogue.yaml` as a mood and be selected on as one, which is the
 opposite of the intent.
+
+---
+
+### D-102 · The July collection is filed as a copy, and its stubs carry provenance and nothing else — 2026-09-02
+
+**M-54.** The 76 playable takes of the July collection now sit at `music/audio/unsigned/al_NNN/NN.mp3`,
+carry `suno-pro-2026-07` in their own tags, and reach `music/catalogue.yaml` with a measured
+duration, intro ramp and outro type. Four things were decided doing it.
+
+**One take was judged by ear and lost.** `s_1362`, Ysolde Mar's *Cargo-Hold Lullaby*, ran 479.4
+seconds — to the tenth of a second the length of the runaway generation deleted on 2026-09-01. Every
+measurement pointed one way: `analyse.py` called its outro **cold** with **firm** confidence, so it
+stops rather than ends; its own Suno lyric tag asks for an outro that hums and fades, and the take
+does neither; the written lyric is about 150 words and eight minutes is four times what that
+supports; the next longest take in the whole pile is 406 seconds. **§7 has no upper floor, so no rule
+could catch it** — M-53 filed it playable because the rules kept it and said so. The operator
+listened on 2026-09-02 and it is a runaway. It is now `playable: false` on **`al_245`**, a layer-B
+single of its own for Ysolde Mar, following `al_212`'s shape; no audio for it was ever copied.
+**The collection is 76 held and 59 named**, and `al_171` is a single rather than an album. This is
+the fifth rule of the split and the only one that needed ears: *a take that hits the model's ceiling
+is not a record.*
+
+**The 42 stub lyrics files carry no lyrics and never will.** `tag.py` reads a take's provenance from
+nowhere else, so the files have to exist; but these takes were generated in July 2026, before
+`COMMISSION.md` was written, and nothing was written down for them. Some of the exports do carry a
+`lyrics-eng` tag — Suno's own copy of what was typed at it — and it was deliberately not lifted into
+these files. A lyric in a stub is a claim that the words were commissioned here, and every §12 rule
+would then run against it: `writing.py`'s `_is_a_stub` (M-52) exempts a collection album whose songs
+carry no lyrics, and that exemption is the reason `make check` is green over 42 new files. Each
+`take:` block instead carries the file's own `created=` date, its Suno generation id, and the RAW
+path it was copied from.
+
+**Copied, not moved.** `music/audio/RAW/` is untouched and stays that way until M-56, which is the
+card that asks before deleting it. Both copies exist so the copy can be verified against its source;
+`make music-tag` reports all 183 RAW files as unclaimed, and that is the check doing its job rather
+than a failure — M-56's check 5 is what closes it.
+
+**The July licence note now covers 132 assets, not 56.** It said in terms that it covered imaging and
+**not** music. Widened to name both piles with their counts and dates — 56 imaging assets and the 76
+songs, generated 2026-07-03 through 2026-07-25 — because M-51 counts licence rules against periods
+and a period whose note disclaims its own audio is a period with no evidence behind it. The model
+version is still the operator's word and not the vendor's: Suno writes `made with suno`, a timestamp
+and a generation id into an export and no model field at all. The operator stated **v5.5** for these
+on 2026-09-01 and the note cites that date.
+
+**`make music-dispatch` was not used and could not be.** It proves a take against the lyric the file
+carries in its own tags (D-091, D-097). These takes have no written lyric to prove against, so the
+filing was a one-time pass by (band, title) against `music/audio/RAW/music/tracks.yaml` — every
+(artist, title) pair there is unique, and the five places the mapping is not mechanical were already
+recorded by M-53 in the wiki header: four song retitles that landed on a playable song, and
+`First Generation`, whose one take is filed under The First-Ships Choir.

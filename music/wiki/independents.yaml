@@ -9,14 +9,14 @@
 #
 # **What it is in the world.** 135 records that reached the station from outside the seven houses —
 # unsigned, one at a time, mostly as copies of copies with a year written on the sleeve in
-# somebody's hand. 42 bands, 75 records, 77 songs the station holds and 58 titles it can only name.
+# somebody's hand. 42 bands, 76 records, 76 songs the station holds and 59 titles it can only name.
 # `label: unsigned` throughout; there is no eighth house here and there never will be.
 #
 # **What it is on the disk.** 135 takes made between 2026-07-03 and 2026-07-25 on one Suno Pro
 # account, v5.5, before COMMISSION.md was written. They sit at `music/audio/RAW/music/` with a
 # hand-written `tracks.yaml` beside them until M-54 files them and M-56 deletes it.
 #
-# ## The split — 77 layer A, 58 layer B, and the four rules that produced it
+# ## The split — 76 layer A, 59 layer B, and the rules that produced it
 #
 # 1. **The nine instrumentals are layer B.** COMMISSION.md section 7 wants instrumental passages and
 #    not wordless tracks. The record exists; the station does not hold it.
@@ -32,10 +32,13 @@
 #    (Reprise)* — `s_1374` and `s_1378`, tracks 1 and 5 of `al_179`. M-55 adopted them on
 #    2026-09-02 and the section below is what that means.
 #
+# A fifth rule was added by ear rather than by reading, and it took one take out: **a take that hits
+# the model's ceiling is not a record**. See `s_1362` below.
+#
 # **Layer B is a record of its own, never a track on a layer-A one.** `check.py` asks every song on
 # a layer-A album for a fact and refuses one on a layer-B album, so the takes the station does not
 # hold sit on their own record — the single or EP that circulated and never reached us. That is why
-# 33 of the 42 bands carry two entries here and why the album count is 75 rather than the 46 the
+# 33 of the 42 bands carry two entries here and why the album count is 76 rather than the 46 the
 # card estimated.
 #
 # ## The station's own song — `s_1374` and `s_1378`, and the pin they need (M-55, D-101)
@@ -66,18 +69,19 @@
 # will fight the pin every day and one of the two loses audibly. Both songs carry the mark in their
 # own `notes:` field: **grep `station-song` and the file answers.**
 #
-# ## One take is filed and not yet judged — `s_1362`, *Cargo-Hold Lullaby*
+# ## The one take that was judged by ear — `s_1362`, *Cargo-Hold Lullaby*
 #
-# It runs 479.4 seconds, which to the tenth of a second is the length of the runaway generation the
-# operator deleted on 2026-09-01 — what a take hitting the model's ceiling looks like rather than a
-# piece that ends. Section 7 has no upper floor, so the rule keeps it and it is written in as
-# playable, on `al_171`. **M-53 could not judge it and the card says to ask: the operator listens
-# before M-54 copies it.** If it is a runaway, the fix is one `playable: false` and one line moved
-# to a layer-B record, and nothing else in this file moves.
+# It ran 479.4 seconds, which to the tenth of a second was the length of the runaway generation the
+# operator deleted on 2026-09-01. Section 7 has no upper floor, so M-53's rules kept it and wrote it
+# in as playable on `al_171`; M-53 could not judge it by reading and left the question for the
+# operator. **The operator listened on 2026-09-02 and it is a runaway.** It is now `playable: false`
+# on `al_245`, a layer-B record of its own, and no audio for it was ever copied. That is why the
+# collection is **76 held and 59 named** where the section above it once said 77 and 58, and why
+# `al_171` is a single rather than an album. Nothing else in this file moved.
 #
 # ## The dating
 #
-# The pile's own years cluster 2620–2626, which would have put all 78 in heavy rotation (`category`
+# The pile's own years cluster 2620–2626, which would have put all 135 in heavy rotation (`category`
 # is derived, not chosen — five in-world years or older is `gold`, D-085) and crowded the
 # commissioned 500. Everything here is re-dated into **2613–2621**, so the whole collection is gold.
 # No lyric, fact or album story had ever been written against the old years. The eight anchors do
@@ -202,13 +206,13 @@ layer_a:
       band: b_078
       label: unsigned
       release_year: 2615
-      kind: album
+      kind: single
       genre: void-ballads
       cornerstone: false
       notes: >-
-        Two long pieces made in a freight hold between watches, on a crossing nobody has been able to
-        name since. The second runs to eight minutes and stops rather than ends, which is the argument
-        every crew that carries a copy of it is still having.
+        One long piece made in a freight hold between watches, on a crossing nobody has been able to
+        name since. It is the only thing of hers the station has ever managed to hold a clean copy of;
+        the other one that circulates is on the sleeve below and nobody's copy of it ends the same way.
       songs:
       - id: s_1361
         title: To Stay Awake on the Crossing
@@ -220,15 +224,6 @@ layer_a:
           A navigator's own slow shape of an old Earth-origin new-year piece, learned in a cargo hold
           from a woman who played to stay awake on the crossings — it loops the way a long journey does,
           and it is the only thing of hers anybody has been able to name a year for.
-      - id: s_1362
-        title: Cargo-Hold Lullaby
-        track_number: 2
-        genre: void-ballads
-        mood_tags: [tender]
-        playable: true
-        fact: >-
-          What she sings to the freight and to herself in the last watch before landfall — half a lullaby,
-          half a promise to arrive.
   - id: b_079
     name: Concordance Exchange Consort
     kind: collective
@@ -2398,3 +2393,18 @@ layer_b:
     notes: The alternate account of the blackout, a little longer and no calmer.
     songs:
     - {id: s_1491, title: Blackout at Lagrange, track_number: 1, genre: old-system-sessions, playable: false}
+  - id: al_245
+    title: Cargo-Hold Lullaby
+    band: b_078
+    label: unsigned
+    release_year: 2615
+    kind: single
+    genre: void-ballads
+    cornerstone: false
+    notes: >-
+      The landfall piece, off the same watch as al_171 and cut on the same gear. Every copy that
+      circulates runs eight minutes and none of them ends — it stops, in the middle of the humming,
+      and the crews who carry it have decided that is the point. The station has never held a copy
+      that finishes.
+    songs:
+    - {id: s_1362, title: Cargo-Hold Lullaby, track_number: 1, genre: void-ballads, playable: false}

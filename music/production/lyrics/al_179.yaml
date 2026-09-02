@@ -1,0 +1,97 @@
+# al_179 — Green Lights · The Lane Runners (b_085) · unsigned · 2620 · 5 songs · album
+#
+# **A stub, written by M-54. There are no lyrics in this file and there must not be.** These takes
+# were generated in July 2026, before `COMMISSION.md` existed, and nothing was written down for
+# them: the words are whatever the take sings, and putting a guess here would be a lie about the
+# audio. The file exists for one reason — `tag.py` reads a take's provenance from nowhere else, so
+# without it these 5 files could not say what licence they were made under.
+#
+# `writing.py` skips a collection album whose songs carry no lyrics (`_is_a_stub`, M-52 check 7),
+# which is why COMMISSION.md §12 does not go red over this record. Add a lyric here and it will.
+#
+# **Copied, not moved.** The source is `music/audio/RAW/music/`, which stays intact until M-56
+# retires it; every song's `take:` block names the file it came from.
+
+album:
+  id: al_179
+  title: "Green Lights"
+  band: b_085
+  band_name: The Lane Runners
+  label: unsigned
+  release_year: 2620
+  genre: lane-rock
+  cornerstone: false
+  song_count: 5
+
+generation:
+  # Not a sitting: these are 5 takes out of a 135-file pile made across July 2026 and sorted
+  # into records afterwards by M-53. The licence period and the model version are the pile's and
+  # are stated in music/licence-evidence/2026-07-suno-licence-note.md; **the model version is the
+  # operator's word, given 2026-09-01** — Suno writes no model field into an export, only
+  # `made with suno`, a timestamp and a generation id. Each take carries its own file's date.
+  model_version: v5.5
+  licence_period: suno-pro-2026-07
+  generated_on: 2026-07-05
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: >-
+    Filed by M-54 from music/audio/RAW/music/, by (band, title) against that folder's own
+    tracks.yaml. Not dispatched: `make music-dispatch` proves a take against the lyric it
+    carries (D-091, D-097) and there is no written lyric here to prove against.
+
+songs:
+  - id: s_1374
+    title: "Green Lights All the Way"
+    track_number: 1
+    take:
+      licence_period: null # inherits generation.licence_period (suno-pro-2026-07)
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-07-05
+      suno_id: 17cc2f6e-a5f0-41ef-9a30-3ac559d29c37
+      suno_created: 2026-07-05T17:04:39Z
+      source: music/audio/RAW/music/lane-runners__green-lights-all-the-way.mp3
+      file: music/audio/unsigned/al_179/01.mp3
+  - id: s_1375
+    title: "Heavy and Happy"
+    track_number: 2
+    take:
+      licence_period: null # inherits generation.licence_period (suno-pro-2026-07)
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-07-05
+      suno_id: 0cf4333d-11ec-4cf4-bf1a-9ffa98fc8796
+      suno_created: 2026-07-05T16:21:41Z
+      source: music/audio/RAW/music/lane-runners__heavy-and-happy.mp3
+      file: music/audio/unsigned/al_179/02.mp3
+  - id: s_1376
+    title: "Turnover Burn"
+    track_number: 3
+    take:
+      licence_period: null # inherits generation.licence_period (suno-pro-2026-07)
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-07-21
+      suno_id: 9880233a-6eb7-4813-9598-5e72c92d4d51
+      suno_created: 2026-07-21T13:14:08Z
+      source: music/audio/RAW/music/lane-runners__turnover-burn.mp3
+      file: music/audio/unsigned/al_179/03.mp3
+  - id: s_1377
+    title: "Full Hold, Long Road"
+    track_number: 4
+    take:
+      licence_period: null # inherits generation.licence_period (suno-pro-2026-07)
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-07-21
+      suno_id: 6e94f34d-8fec-4027-9cc6-093df9fde23d
+      suno_created: 2026-07-21T18:51:19Z
+      source: music/audio/RAW/music/lane-runners__full-hold-long-road.mp3
+      file: music/audio/unsigned/al_179/04.mp3
+  - id: s_1378
+    title: "Green Lights (Reprise)"
+    track_number: 5
+    take:
+      licence_period: null # inherits generation.licence_period (suno-pro-2026-07)
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-07-05
+      suno_id: 89afdedd-a6db-43b2-a7ed-c70e66605a83
+      suno_created: 2026-07-05T17:04:24Z
+      source: music/audio/RAW/music/lane-runners__green-lights-reprise.mp3
+      file: music/audio/unsigned/al_179/05.mp3

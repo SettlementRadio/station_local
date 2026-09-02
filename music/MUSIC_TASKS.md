@@ -68,7 +68,7 @@ marked **NEXT**.
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
 | **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
 | **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-25** old-system sessions' lyrics, 90 songs across 11 albums · 2026-08-29 | **M-34 is in progress and stays NEXT — 44 of 90 filed, 2026-08-31 and 2026-09-01**, measured, tagged and in the catalogue. `al_098` … `al_102` are all complete, so **Terrace Road Four and The Shore Rounds are finished bands** and neither is split across generators. **354 of the 500 playable songs now exist.** 46 takes are owed — Undershore Local and The Ninefoot Cut, both untouched — and the operator will make them on a different generator with its own licence evidence. **2026-09's licence PDF is not captured yet** (M-40, D-098) |
-| **7 · The July collection** | M-52 · M-53 · M-54 · M-55 · M-56 | **M-55** the station's own song · 2026-09-02 | **the collection exists in the world and the station has taken a record out of it; none of its audio is filed yet.** `music/wiki/independents.yaml` carries **42 bands, 75 albums and 135 songs — 77 the station holds and 58 titles it can only name**, all `label: unsigned`, all re-dated into 2613–2621 so the whole shelf is `gold` and none of it crowds the 500. `make check` green, the names screened clean at 221, D-100 written. **The card's 46 albums was not reachable** — `check.py` keys the fact rule on the album's layer, so 33 bands needed a layer-B record of their own (D-100). **M-55 is done: the station's song is *Green Lights All the Way* (`s_1374`) and its reprise (`s_1378`) is the sign-off** — adopted in the wiki, marked `station-song` in both songs' `notes:`, and the pin stated for I-14/T-012 rather than built (D-101). **M-54 is NEXT and is the only card left before M-56**: copy the 135 takes out of `music/audio/RAW/` into `music/audio/unsigned/`, write the stub lyrics files and widen the July licence note. It is an agent card, so it cannot run beside M-34. Stage 7 must close before M-42 |
+| **7 · The July collection** | M-52 · M-53 · M-54 · M-55 · M-56 | **M-54** the 76 takes filed · 2026-09-02 | **the collection is in the world, on the disk and in the catalogue; one folder is left to delete.** `music/wiki/independents.yaml` carries **42 bands, 76 albums and 135 songs — 76 the station holds and 59 titles it can only name**, all `label: unsigned`, all re-dated into 2613–2621 so the whole shelf is `gold` and none of it crowds the 500. **M-54 is done: the 76 takes are at `music/audio/unsigned/al_NNN/NN.mp3`**, copied not moved, tagged `suno-pro-2026-07` · v5.5 · their own date, and in `music/catalogue.yaml` measured — **430 playable rows now exist**. 42 stub lyrics files `al_170` … `al_211` carry provenance and deliberately no lyrics, and the July licence note was widened from 56 imaging assets to **132**. **It is 76 and not 77 because the operator listened**: `s_1362` *Cargo-Hold Lullaby* is a runaway generation, now `playable: false` on the new `al_245`, with no audio copied (D-102). **M-56 is NEXT and closes the stage** — it verifies the five things and then asks before deleting `music/audio/RAW/`, which is untouched. It is an agent card and M-34 is `[you]`, so the two may run together. Stage 7 must close before M-42 |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -1618,7 +1618,7 @@ nine canon forms plus §8's three-word old-system exception. Re-dated into 2613�
 of it crowds the 500. Nothing was written that the card told me not to write: no style cards, no
 members, no session players, no layer C.
 
-### M-54 · `[agent]` File the 78 takes, and the licence they were made under — **NEXT**
+### M-54 · `[agent]` File the 78 takes, and the licence they were made under — **DONE 2026-09-02**
 **Before this card copies anything, the operator listens to `s_1362` — Ysolde Mar's *Cargo-Hold
 Lullaby*, `al_171` track 2, 479.4 seconds.** M-53 filed it as playable because §7 has no upper floor
 and the rule kept it, but it is to the tenth of a second the length of the runaway generation the
@@ -1651,6 +1651,27 @@ Note: `make music-dispatch` cannot file this pile. It proves a take against the 
 carries in its own tags (D-091, D-097) and these takes have no written lyric to prove against. This
 is a one-time filing and belongs in this card, not in that tool.
 Depends on: M-53
+Result: **76 takes filed, not 77 — the operator listened to `s_1362` and it is a runaway.** *Cargo-Hold
+Lullaby* is now `playable: false` on **`al_245`**, a layer-B single of its own for Ysolde Mar, and no
+audio for it was copied; `al_171` is a single rather than an album and the collection is **76 held
+and 59 named**. Every measurement had already said so — 479.4 seconds to the tenth of a second,
+outro **cold** at **firm** confidence, its own Suno lyric tag asking for a fade the take never
+plays, a 150-word lyric under eight minutes of audio, and the next longest take in the pile 73
+seconds shorter — but §7 has no upper floor, so no rule could have caught it and the ear was the
+only instrument. **The other 76 are in `music/audio/unsigned/al_NNN/NN.mp3`**, copied not moved,
+tagged `suno-pro-2026-07` · v5.5 · their own file's date, and in `music/catalogue.yaml` with a
+measured duration, intro ramp and outro type. 430 playable rows, all 76 of the new ones `gold`.
+**42 stub lyrics files, `al_170` … `al_211`, and not one line of lyric in any of them** — some of
+the exports do carry Suno's own `lyrics-eng` copy of what was typed at it, and lifting that in was
+refused: it would claim the words were commissioned here and would put all ten §12 rules over
+records nobody wrote. Each `take:` block carries the file's `created=` date, its Suno generation id
+and the RAW path it came from, so the mapping is in git and does not depend on the folder M-56
+deletes. **The July licence note now covers 132 assets** — 56 imaging and these 76, dated
+2026-07-03 through 2026-07-25 — where it used to say in terms that it covered imaging and *not*
+music. **The mapping needed no judgement**: (band, title) against `tracks.yaml`, whose every
+(artist, title) pair is unique, with exactly the five exceptions M-53 had already written into the
+wiki header. D-102 records all of it. `make check` green, `make music-screen GENRE=independents`
+still clean at 221.
 
 ### M-55 · `[agent]` The station's own song — **DONE 2026-09-02**
 Goal: Settlement Radio has a record of its own, with a reason in the world and a place in the clock.
@@ -1702,15 +1723,16 @@ PROGRAMMING §8 runs the day 05:00–04:59, so the head is the 05:04 open and th
 music before 05:00 in the 04:04 slot. No card was added to `imaging/IMAGING_TASKS.md` or
 `docs/TASKS.md`. `make check` green, 500/25/9 unmoved, no stray keys on either song.
 
-### M-56 · `[agent]` Retire `music/audio/RAW/` — and the collection is done
+### M-56 · `[agent]` Retire `music/audio/RAW/` — and the collection is done — **NEXT**
 Goal: One description of these 135 takes, in git, and no second copy contradicting it on the volume.
 Files: deletes `music/audio/RAW/`.
 Check: run in this order and stop at the first that is not true.
   1. `make check` green.
-  2. Every one of the 77 has a row in `music/catalogue.yaml` with a file path that resolves, a
+  2. Every one of the **76** has a row in `music/catalogue.yaml` with a file path that resolves, a
      measured duration, an intro ramp, an outro type and `suno-pro-2026-07`.
-  3. All 58 layer-B titles are in `music/wiki/independents.yaml` and none of them has audio —
+  3. All **59** layer-B titles are in `music/wiki/independents.yaml` and none of them has audio —
      `catalogue.py` goes red if one does, which is the check doing its job.
+     *(77 and 58 until M-54; `s_1362` moved to layer B when the operator judged it a runaway, D-102.)*
   4. Every band name, album title and song title from `tracks.yaml` appears in the wiki, under its
      own name or a retitle M-53 recorded. **Nothing in that file is only in that file.**
   5. `grep -r RAW` finds no reference in the repository.

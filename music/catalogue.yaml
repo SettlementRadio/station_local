@@ -3558,11 +3558,11 @@ albums:
   label: null
   title: Cargo-Hold Songs
   release_year: 2615
-  kind: album
+  kind: single
   cornerstone: false
-  notes: Two long pieces made in a freight hold between watches, on a crossing nobody has been able to
-    name since. The second runs to eight minutes and stops rather than ends, which is the argument every
-    crew that carries a copy of it is still having.
+  notes: One long piece made in a freight hold between watches, on a crossing nobody has been able to
+    name since. It is the only thing of hers the station has ever managed to hold a clean copy of; the
+    other one that circulates is on the sleeve below and nobody's copy of it ends the same way.
 - id: al_172
   artist: b_079
   label: null
@@ -3642,10 +3642,11 @@ albums:
   release_year: 2620
   kind: album
   cornerstone: false
-  notes: The lucky record. It opens on a run where every buoy came up green from dock to bay and closes
+  notes: 'The lucky record. It opens on a run where every buoy came up green from dock to bay and closes
     on the same run sung slower, and between them are the two songs the crew actually work to. Haulers
     play the opener leaving port and harbourmasters swear it works, which is the sort of thing a station
-    has to decide what to do about.
+    has to decide what to do about. Settlement Radio decided: it opens the day on the one and closes it
+    on the other, and has said so on air often enough that crews now time both ends of a shift by it.'
 - id: al_180
   artist: b_086
   label: null
@@ -4240,6 +4241,16 @@ albums:
   cornerstone: false
   notes: Two long pipe pieces off the foundry floor, wordless from end to end — the signal call that answers
     itself, and the evensong the night shift plays out on.
+- id: al_245
+  artist: b_078
+  label: null
+  title: Cargo-Hold Lullaby
+  release_year: 2615
+  kind: single
+  cornerstone: false
+  notes: The landfall piece, off the same watch as al_171 and cut on the same gear. Every copy that circulates
+    runs eight minutes and none of them ends — it stops, in the middle of the humming, and the crews who
+    carry it have decided that is the point. The station has never held a copy that finishes.
 tracks:
 - id: s_0001
   album: al_001
@@ -26975,16 +26986,16 @@ tracks:
   artist: b_077
   title: The Slow Star
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_170/01.mp3
+  duration_sec: 226.4
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - melancholy
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: Written on a one-keeper station months from the nearest light — a man singing to the single star
     that never sets in his window.
 - id: s_1360
@@ -26992,16 +27003,16 @@ tracks:
   artist: b_077
   title: Nobody Answers the Dark
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_170/02.mp3
+  duration_sec: 199.72
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - contemplative
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A keeper's half-question to the emptiness beyond the last settlement — sent out on a relay that
     won't reach anyone for half a year.
 - id: s_1361
@@ -27009,40 +27020,23 @@ tracks:
   artist: b_078
   title: To Stay Awake on the Crossing
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_171/01.mp3
+  duration_sec: 189.6
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - mellow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A navigator's own slow shape of an old Earth-origin new-year piece, learned in a cargo hold from
     a woman who played to stay awake on the crossings — it loops the way a long journey does, and it is
     the only thing of hers anybody has been able to name a year for.
 - id: s_1362
-  album: al_171
+  album: al_245
   artist: b_078
   title: Cargo-Hold Lullaby
-  track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
-  mood:
-  - tender
-  language: en
-  licence_note: null
-  fact: What she sings to the freight and to herself in the last watch before landfall — half a lullaby,
-    half a promise to arrive.
-- id: s_1363
-  album: al_172
-  artist: b_079
-  title: The Long Table
   track_no: 1
   playable: false
   file: null
@@ -27050,10 +27044,25 @@ tracks:
   intro_ramp_sec: null
   outro_type: null
   category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1363
+  album: al_172
+  artist: b_079
+  title: The Long Table
+  track_no: 1
+  playable: true
+  file: music/audio/unsigned/al_172/01.mp3
+  duration_sec: 179.84
+  intro_ramp_sec: 14.68
+  outro_type: sustain
+  category: gold
   mood:
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A gentle piece for the Settlement Council's long table — the sound of many worlds sitting down
     together, for once, in the same room.
 - id: s_1364
@@ -27061,16 +27070,16 @@ tracks:
   artist: b_080
   title: Salvage Yard Saturday
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_173/01.mp3
+  duration_sec: 122.28
+  intro_ramp_sec: 3.62
+  outro_type: fade
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A Freeholds reel banged out on oxygen-tank drums and wire chimes — the Saturday sound of people
     who work hard all week and celebrate harder, on instruments made from what broke.
 - id: s_1365
@@ -27078,16 +27087,16 @@ tracks:
   artist: b_080
   title: Wire and Bone
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_173/02.mp3
+  duration_sec: 128.16
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The reel they play at a Freeholds send-off — half work-song, half dare, all made of wire and bone
     and whatever rings when you hit it.
 - id: s_1366
@@ -27095,16 +27104,16 @@ tracks:
   artist: b_081
   title: Letters We Sent Ahead
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_174/01.mp3
+  duration_sec: 196.4
+  intro_ramp_sec: 15.84
+  outro_type: sustain
+  category: gold
   mood:
   - wistful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A collective whose members have never met — each part recorded on a different world and stitched
     together across the relays. You can hear the distance between the voices; that's the point.
 - id: s_1367
@@ -27112,16 +27121,16 @@ tracks:
   artist: b_082
   title: Fauna Song
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_175/01.mp3
+  duration_sec: 228.36
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - tender
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A lullaby the far-worlds sing to the creatures whose shells become their instruments — gratitude
     and apology in the same breath.
 - id: s_1368
@@ -27129,16 +27138,16 @@ tracks:
   artist: b_083
   title: Departure Hymn
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_176/01.mp3
+  duration_sec: 224.88
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - solemn
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: An Exodus Hymn from the first ships — solemn, hopeful, carrying the weight of leaving and the
     dream of arrival. Centuries old and still sung when a settlement sends someone out.
 - id: s_1369
@@ -27146,16 +27155,16 @@ tracks:
   artist: b_083
   title: The Blue Cradle
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_176/02.mp3
+  duration_sec: 209.92
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - nostalgic
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: 'The hymn every settled child learns about Earth — half record, half founding myth: the blue planet,
     the place humanity first learned to look up and wonder.'
 - id: s_1370
@@ -27163,16 +27172,16 @@ tracks:
   artist: b_083
   title: Earthlight (First-Generation Recording)
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_176/03.mp3
+  duration_sec: 162.48
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - nostalgic
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The sleeve calls it a first-generation recording off the original ship and the choir prints the
     claim without believing it; nothing that old plays, and what is on this is one voice and a worn acoustic
     instrument that everybody agrees sounds older than it can be.
@@ -27181,16 +27190,16 @@ tracks:
   artist: b_084
   title: Nobody Told the Frontier It Was Over
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_177/01.mp3
+  duration_sec: 208.6
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - melancholy
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: Core musicians 'discovering' a Void-Ballad style that never stopped evolving on the outer stations
     — polished and beautiful, and a little haunted by the fact that it was never lost, just never heard.
     The Outer Revival in one song.
@@ -27199,17 +27208,17 @@ tracks:
   artist: b_085
   title: The Whole Crew's Holiday
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_178/01.mp3
+  duration_sec: 184.55
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: Lane-rock off the freight lanes — 'burn day' is the day a ship fires the main engines for turnover,
     halfway home. The whole crew's holiday; the Lane Runners made it everyone's.
 - id: s_1373
@@ -27217,17 +27226,17 @@ tracks:
   artist: b_085
   title: The Thousand-Hour Road
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_178/02.mp3
+  duration_sec: 164.88
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - warm
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The mid-tempo one — the pride and patience of the people who keep the freight moving. Every hauler
     bar on every dock claims this song was written about their lane.
 - id: s_1374
@@ -27235,35 +27244,36 @@ tracks:
   artist: b_085
   title: Green Lights All the Way
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_179/01.mp3
+  duration_sec: 159.16
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - joyful
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The luckiest run ever sung — every buoy green from dock to bay. Haulers play it leaving port for
-    luck; harbourmasters swear it works.
+    luck; harbourmasters swear it works. Settlement Radio opens its broadcast day on it, for the same
+    reason the haulers do.
 - id: s_1375
   album: al_179
   artist: b_085
   title: Heavy and Happy
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_179/02.mp3
+  duration_sec: 152.72
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - warm
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The hauler's grin set to a groove — a full hold as a point of pride. The unofficial anthem of
     every loading dock on the frontier run.
 - id: s_1376
@@ -27271,16 +27281,16 @@ tracks:
   artist: b_085
   title: Turnover Burn
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_179/03.mp3
+  duration_sec: 173.04
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The burn-day anthem — the halfway turnover fired to one song the whole hull sings. Haulers time
     the chorus to the actual burn; 'halfway gone means halfway home.'
 - id: s_1377
@@ -27288,16 +27298,16 @@ tracks:
   artist: b_085
   title: Full Hold, Long Road
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_179/04.mp3
+  duration_sec: 285.48
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A rolling mid-tempo hauler groove — 'we fly so a far town's fed in the end.' The quiet-pride companion
     to the Lane Runners' louder anthems.
 - id: s_1378
@@ -27305,34 +27315,34 @@ tracks:
   artist: b_085
   title: Green Lights (Reprise)
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_179/05.mp3
+  duration_sec: 133.92
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - warm
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The B-side reprise — the same lucky run sung slower, the way crews hum it at the end of a shift
-    instead of the start.
+    instead of the start. Settlement Radio closes its broadcast day on it, which is the shift it means.
 - id: s_1379
   album: al_180
   artist: b_086
   title: Stormglass
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_180/01.mp3
+  duration_sec: 167.48
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: Dance music from Meridian's storm coast, where the season locks everyone indoors — so they dance.
     A 'stormglass' is the window wall you dance in front of while the weather does its worst.
 - id: s_1380
@@ -27340,16 +27350,16 @@ tracks:
   artist: b_086
   title: Turn Up the Lights Again
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_180/02.mp3
+  duration_sec: 191.2
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The encore mix — the dance-floor closer re-cut for the moment the crowd refuses to go home, so
     the lights come up twice.
 - id: s_1381
@@ -27357,17 +27367,17 @@ tracks:
   artist: b_087
   title: Two O'Clock, Settlement Time
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_181/01.mp3
+  duration_sec: 174.04
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - mellow
   - nostalgic
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The deep-hours standard from Concordance's late clubs — named for the hour the night really begins.
     Every settlement bar band covers it; Vell has been known to hum it on air.
 - id: s_1382
@@ -27375,17 +27385,17 @@ tracks:
   artist: b_087
   title: One More for the Relays
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_181/02.mp3
+  duration_sec: 121.48
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - joyful
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The last-call variant — for the rare night several good-news bells ring at once, so every toast
     gets its own verse. Plural earned.
 - id: s_1383
@@ -27393,16 +27403,16 @@ tracks:
   artist: b_087
   title: Closing the Late Window
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_181/03.mp3
+  duration_sec: 212.64
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - mellow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The last-call void-lounge standard — 'the honest and the hopeless both got somewhere to be at
     two.' The Nightliners closing the room, gentle as it gets.
 - id: s_1384
@@ -27410,16 +27420,16 @@ tracks:
   artist: b_088
   title: Standing Hour
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_182/01.mp3
+  duration_sec: 133.64
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - tender
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The booked-line love song — one warm hour a week across a world of lag. 'Nine o'clock's a country,
     and we're the only citizens of that one.'
 - id: s_1385
@@ -27427,17 +27437,17 @@ tracks:
   artist: b_089
   title: Same Stars Tonight
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_183/01.mp3
+  duration_sec: 188.52
+  intro_ramp_sec: 8.2
+  outro_type: fade
+  category: gold
   mood:
   - hopeful
   - tender
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The lighters-up anthem of the settled worlds — for everyone with someone three relays away. The
     chorus is sung at every send-off and every homecoming.
 - id: s_1386
@@ -27445,17 +27455,17 @@ tracks:
   artist: b_089
   title: Run Run Run
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_183/02.mp3
+  duration_sec: 131.56
+  intro_ramp_sec: 18.09
+  outro_type: fade
+  category: gold
   mood:
   - joyful
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The terrace-chant cut — the chorus stretched to song length, recorded with a harbour crowd doing
     the stomp-stomp-clap. What the stands actually sing.
 - id: s_1387
@@ -27463,17 +27473,17 @@ tracks:
   artist: b_090
   title: Patchwork Wings
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_184/01.mp3
+  duration_sec: 124.88
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - hopeful
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The underdog song — a ship of salvaged plates that flies better than new. 'Mended means you made
     it through' gets quoted far beyond the music.
 - id: s_1388
@@ -27481,16 +27491,16 @@ tracks:
   artist: b_090
   title: Rivet Girls
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_184/02.mp3
+  duration_sec: 159.72
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The repair-yard day-crew anthem — 'every ship that leaves this bay flies on the work of a rivet
     girl's dream.' The line-weld-torque chant is a shift-start ritual now.
 - id: s_1389
@@ -27498,16 +27508,16 @@ tracks:
   artist: b_091
   title: Coffee and the Overnight News
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_185/01.mp3
+  duration_sec: 205.28
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - bright
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The breakfast-table duet — a whole world's overnight relay read slow over coffee. First-light
     radio gold, and a quiet wink at the station itself.
 - id: s_1390
@@ -27515,17 +27525,17 @@ tracks:
   artist: b_092
   title: The Old Lamplighter's Song
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_186/01.mp3
+  duration_sec: 203.56
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - warm
   - hopeful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The 'old way' arrangement — the round as the first ships were said to sing it, unaccompanied but
     for a knee-slap. Recorded for the Songbook's archive side.
 - id: s_1391
@@ -27533,50 +27543,50 @@ tracks:
   artist: b_092
   title: Keep the Channel Warm
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_186/02.mp3
+  duration_sec: 143.84
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - hopeful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A warm duet about communication as civic care across different colonies, cultures, and generations.
 - id: s_1392
   album: al_187
   artist: b_093
   title: Signal Through the Dust
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_187/01.mp3
+  duration_sec: 242.96
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - wistful
   - hopeful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A smoky relay-road blues song about hearing one beloved voice through Martian storm static.
 - id: s_1393
   album: al_188
   artist: b_094
   title: Europa Morning Light (Alternate Take)
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_188/01.mp3
+  duration_sec: 137.8
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - bright
   - hopeful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The same ordinary morning caught a second time under the ice, a little slower than the cut the
     colony knows, and the only one of the two that survived the road.
 - id: s_1394
@@ -27584,16 +27594,16 @@ tracks:
   artist: b_094
   title: Ice Highway
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_188/02.mp3
+  duration_sec: 209.72
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A headlights-in-the-dark rock highway song — hauling the mile-deep ice roads of Europa. 'Nobody
     crosses the ice alone; that's the one rule.'
 - id: s_1395
@@ -27601,16 +27611,16 @@ tracks:
   artist: b_095
   title: Dockside Gravity Blues (Alternate Take)
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_189/01.mp3
+  duration_sec: 217.6
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - mellow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: Cut after the bay emptied out, for whoever was still on shift to hear it, which is why it runs
     long and nobody counts the man in properly.
 - id: s_1396
@@ -27618,16 +27628,16 @@ tracks:
   artist: b_095
   title: The Little Light That's Up
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_189/02.mp3
+  duration_sec: 229.68
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - mellow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A harmonica-soaked double-shift blues under a fat gold Saturn — 'a man's the little light that's
     up when he's late.' Jun Pelayo's dockside standard.
 - id: s_1397
@@ -27635,16 +27645,16 @@ tracks:
   artist: b_096
   title: We Built the Rain (Alternate Take)
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_190/01.mp3
+  duration_sec: 164.84
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - hopeful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The band sang this again the week the valley vote finally passed, and it is that second, steadier
     cut the parcel carried out here — the first one stayed home.
 - id: s_1398
@@ -27652,16 +27662,16 @@ tracks:
   artist: b_096
   title: Rain on Schedule
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_190/02.mp3
+  duration_sec: 174.32
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - hopeful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A hymn to made weather — thirty years' work teaching a dome to rain. 'A made thing feels real
     that way.' Greenhouse Nine's proudest song.
 - id: s_1399
@@ -27669,16 +27679,16 @@ tracks:
   artist: b_097
   title: Pirate Frequency
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_191/01.mp3
+  duration_sec: 142.6
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A scrappy rock ode to the unlicensed belt stations — 'you can't put a fence round a frequency.'
     Waved like a flag by every kid with a salvaged transmitter.
 - id: s_1400
@@ -27686,16 +27696,16 @@ tracks:
   artist: b_098
   title: Titan Bay at Midnight
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_192/01.mp3
+  duration_sec: 221.68
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - wistful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A lamplit midnight blues ballad on the methane harbour — 'a quiet bay and a distant song is how
     I make it through.' Sela Maren winding the day down.
 - id: s_1401
@@ -27703,32 +27713,32 @@ tracks:
   artist: b_099
   title: Treaty Line Shuffle
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_193/01.mp3
+  duration_sec: 203.88
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A playful shuffle about messy inter-settlement diplomacy and the comedy of keeping peace alive.
 - id: s_1402
   album: al_194
   artist: b_100
   title: The Long Way Around Mars (Alternate Take)
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_194/01.mp3
+  duration_sec: 141.56
+  intro_ramp_sec: 14.77
+  outro_type: cold
+  category: gold
   mood:
   - mellow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The alternate pass at 'The Long Way Around Mars' — the same scenic route taken at a slightly different
     cruising speed.
 - id: s_1403
@@ -27736,16 +27746,16 @@ tracks:
   artist: b_100
   title: Red Dust Radio
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_194/02.mp3
+  duration_sec: 173.8
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A dust-storm radio love letter — the signal that keeps the whole red plain company when nobody
     can see their hand. A quiet tribute to what the station is for.
 - id: s_1404
@@ -27753,16 +27763,16 @@ tracks:
   artist: b_101
   title: Carbon Heart (Alternate Take)
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_195/01.mp3
+  duration_sec: 167.08
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The hotter of the two cuts of the anthem that came down the road together, and the one this shelf
     holds; listeners here have argued for a season about which of them the hearings actually needed, without
     ever having heard the other.
@@ -27771,16 +27781,16 @@ tracks:
   artist: b_101
   title: Made, Not Born
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_195/02.mp3
+  duration_sec: 244.44
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - contemplative
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A rock meditation on the machine-mind personhood debate that asks the question without answering
     it — 'a line you never think about is the easiest line to get wrong.'
 - id: s_1406
@@ -27788,32 +27798,32 @@ tracks:
   artist: b_102
   title: No Kings in the Airlock
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_196/01.mp3
+  duration_sec: 181.76
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A hard blues labour anthem popular among maintenance crews and pressure-systems workers.
 - id: s_1407
   album: al_196
   artist: b_102
   title: Everybody Breathes
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_196/02.mp3
+  duration_sec: 209.32
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A stomping blues labour anthem against metering the air — 'the air's the commons, and we hold
     that tight.' The pressure crews' picket-line stomp.
 - id: s_1408
@@ -27821,16 +27831,16 @@ tracks:
   artist: b_103
   title: Two O'Clock Again
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_197/01.mp3
+  duration_sec: 284.8
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - mellow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The night-watchman's companion — 'lonesome's not the same as alone, not with a voice on the air.'
     A quiet nod to who's actually listening at 2am.
 - id: s_1409
@@ -27838,17 +27848,17 @@ tracks:
   artist: b_103
   title: Quiet Engines, Quiet Heart
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_197/02.mp3
+  duration_sec: 256.72
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - serene
   - contemplative
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A hushed coasting-leg ballad — 'the quiet isn't empty; it's just the noise unbowed.' Eli Renn
     on why the old hands love the silent weeks.
 - id: s_1410
@@ -27856,16 +27866,16 @@ tracks:
   artist: b_104
   title: Lost in Translation Blues
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_198/01.mp3
+  duration_sec: 177.16
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A wry shuffle about the treaty accidentally signed on a mistranslation — 'best peace deal the
     sector ever did make.' Nima Vale's comic classic.
 - id: s_1411
@@ -27873,16 +27883,16 @@ tracks:
   artist: b_105
   title: Flare Warning Boogie
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_199/01.mp3
+  duration_sec: 212.24
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The shelter-in-place party song — when the flare siren goes, the Corona Drivers play till the
     all-clear. 'A flare's just a party you weren't planning for.'
 - id: s_1412
@@ -27890,32 +27900,32 @@ tracks:
   artist: b_106
   title: The Ballad of Dock 12
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_200/01.mp3
+  duration_sec: 164.4
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A humble ballad about a minor dock failure and the quiet competence that kept everyone safe.
 - id: s_1413
   album: al_200
   artist: b_106
   title: Dock 12 Reunion
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_200/02.mp3
+  duration_sec: 151.56
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The once-a-year everybody-home singalong — hugs, crates, and one chair kept for the crew who didn't
     make it. 'Everybody's here.'
 - id: s_1414
@@ -27923,16 +27933,16 @@ tracks:
   artist: b_107
   title: Red Soil Sunday
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_201/01.mp3
+  duration_sec: 246.84
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A porch-and-slide-guitar rest-day blues — 'Mars is home when you've got a guitar.' Calder Moon
     playing his great-grandmother the easy part.
 - id: s_1415
@@ -27940,16 +27950,16 @@ tracks:
   artist: b_108
   title: Hands Off the Air
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_202/01.mp3
+  duration_sec: 173.24
+  intro_ramp_sec: 28.63
+  outro_type: cold
+  category: gold
   mood:
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A calm, defiant rock anthem for the commons — 'you'll never, ever price the air.' Sung at a thousand-strong
     sit-in, and everywhere since.
 - id: s_1416
@@ -27957,16 +27967,16 @@ tracks:
   artist: b_109
   title: Porch Light on the Relay
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_203/01.mp3
+  duration_sec: 194.8
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A fingerpicked welcome light left on the relay board — 'a light's a small enough thing to give.'
     The settlement-hospitality song.
 - id: s_1417
@@ -27974,32 +27984,32 @@ tracks:
   artist: b_110
   title: Children of the Pressure Dome
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_204/01.mp3
+  duration_sec: 167.6
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - hopeful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: An uplifting colony-generation anthem about growing up between inherited worlds and chosen futures.
 - id: s_1418
   album: al_205
   artist: b_111
   title: Blackout at Lagrange (Alternate Take)
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_205/01.mp3
+  duration_sec: 181.28
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The alternate cut of 'Blackout at Lagrange' — the retelling retold; the Saints kept both accounts
     of the night on the record.
 - id: s_1419
@@ -28007,16 +28017,16 @@ tracks:
   artist: b_111
   title: Everybody Running
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_205/02.mp3
+  duration_sec: 208.72
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: An emergency-muster blues stomp — the whole station running toward the spark. 'A station's who
     comes running when there's trouble.'
 - id: s_1420
@@ -28024,16 +28034,16 @@ tracks:
   artist: b_112
   title: Jukebox on the Concourse
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_206/01.mp3
+  duration_sec: 129.8
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The concourse-jukebox anthem — forty old Earth songs, all late, all beloved, and the whole gate
     dancing till the ferry bell. The Ferry Cats' calling card.
 - id: s_1421
@@ -28041,16 +28051,16 @@ tracks:
   artist: b_112
   title: Rest-Day Rock
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_206/02.mp3
+  duration_sec: 151.04
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The one-day-off anthem of the freight yards — 'dance like the ferry's never gonna show.' Played
     on every rest-day floor from the between to the belt.
 - id: s_1422
@@ -28058,16 +28068,16 @@ tracks:
   artist: b_112
   title: Slapback Saturday
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_206/03.mp3
+  duration_sec: 240.48
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A three-guys-and-a-busted-amp courtship reel — Saturday night in the hydroponics hall. 'The happiest
     hauler in the whole dang gang.'
 - id: s_1423
@@ -28075,16 +28085,16 @@ tracks:
   artist: b_113
   title: Garden-District Girl
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_207/01.mp3
+  duration_sec: 128.2
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - bright
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A jangling relay-pop valentine to the dome-keeper who makes the corridor bloom — 'the reason there's
     a reason to be there.' The Window Boxes' breakout single.
 - id: s_1424
@@ -28092,16 +28102,16 @@ tracks:
   artist: b_113
   title: Every Light in the Corridor
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_207/02.mp3
+  duration_sec: 152.24
+  intro_ramp_sec: 13.21
+  outro_type: cold
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A power cut turned block party turned relay-pop hit — 'the loudest, warmest, brightest block by
     far.' The corridor-neighbour anthem.
 - id: s_1425
@@ -28109,16 +28119,16 @@ tracks:
   artist: b_113
   title: Two Weeks to Reply
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_207/03.mp3
+  duration_sec: 150.24
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - bright
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The lag-letter relay-pop song — every careful line lands two weeks and a hundred changed minds
     too late, so you keep it simple and true.
 - id: s_1426
@@ -28126,16 +28136,16 @@ tracks:
   artist: b_114
   title: Ride the Ring
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_208/01.mp3
+  duration_sec: 168.56
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The rest-day hit — riding the slow-wheeling viewing ring for the view, not the gravity. 'Fastest
     slowest ride you'll ever know.'
 - id: s_1427
@@ -28143,16 +28153,16 @@ tracks:
   artist: b_114
   title: Waxed the Floor
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_208/02.mp3
+  duration_sec: 142.24
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The mess-hall dance-floor caper — buff the deck till it slides and dance till Monday. 'The surliest
     bosun in the fleet just did a full slide into the bin.'
 - id: s_1428
@@ -28160,16 +28170,16 @@ tracks:
   artist: b_115
   title: Good News Travels Slow
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_209/01.mp3
+  duration_sec: 146.2
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - joyful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A horn-driven stomper that turns the lag into a gift — 'the distance made it worth the while.'
     Junia & the Long Players' floor-filler.
 - id: s_1429
@@ -28177,16 +28187,16 @@ tracks:
   artist: b_115
   title: The Long Players
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_209/02.mp3
+  duration_sec: 230.44
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The band's own theme — the late-set players who keep the good thing on after the last ferry. 'Slow
     songs are for the stay.'
 - id: s_1430
@@ -28194,16 +28204,16 @@ tracks:
   artist: b_115
   title: Slow Dance on the Ring
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_209/03.mp3
+  duration_sec: 198.2
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - tender
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: The last-song ballad — a slow dance on the viewing ring after weeks apart. 'Give me the last one,
     give me you and me.'
 - id: s_1431
@@ -28211,16 +28221,16 @@ tracks:
   artist: b_116
   title: Harbor Light Blues
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_210/01.mp3
+  duration_sec: 230.04
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - wistful
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A powerhouse harbour-town blues — three seasons waiting on the black, one green light kept burning.
     Odessa Rhee's signature closer.
 - id: s_1432
@@ -28228,16 +28238,16 @@ tracks:
   artist: b_116
   title: Three Relays Gone
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_210/02.mp3
+  duration_sec: 232.68
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A struttin' blues groove that makes peace with the lag — 'a good thing's always worth the wait.'
     Odessa Rhee at her most defiant and warm.
 - id: s_1433
@@ -28245,16 +28255,16 @@ tracks:
   artist: b_116
   title: Saltwater Under Titan
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_210/03.mp3
+  duration_sec: 208.4
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - tender
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A deep blues ballad standing on a sea made by hand under Titan's ice — 'patience, love, and lamps
     can beat the frozen hours.' Odessa Rhee's most moving.
 - id: s_1434
@@ -28262,16 +28272,16 @@ tracks:
   artist: b_117
   title: Last Ferry Blues
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_211/01.mp3
+  duration_sec: 236.0
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - melancholy
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A gravel-voiced slow blues for the ones who stay when the last ferry's gone — 'you don't get over
     it, you get used to it.' Marlo Quist's signature.
 - id: s_1435
@@ -28279,16 +28289,16 @@ tracks:
   artist: b_117
   title: Nobody's Fault But the Dark
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/unsigned/al_211/02.mp3
+  duration_sec: 214.4
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - melancholy
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-07
   fact: A blues that forgives the lag for the news that came too late — 'you can't hate a distance; it
     don't care how it feels.' Marlo Quist at his most tender.
 - id: s_1436
