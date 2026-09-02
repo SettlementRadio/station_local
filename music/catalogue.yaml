@@ -1094,6 +1094,540 @@ artists:
     worlds has asked and every house has been refused, so what circulates is copies of copies, passed
     hand to hand along the night shift, and the settled worlds'' most-loved record in this form is the
     one no station''s library holds.'
+- id: b_077
+  name: Halden Vre
+  kind: solo
+  figure: null
+  label: null
+  settlement: Far Reach
+  scene: independents
+  active_from: 2609
+  active_to: 2616
+  bio: Halden Vre kept a one-keeper relay months out from the nearest light and sang to the star in his
+    window because the alternative was the beacon. He recorded on the outpost's own gear, sent the results
+    down the road with whoever was passing, and never once asked a house for anything. Nobody on Far Reach
+    can say what he did before the vigil and nobody there considers it their business.
+- id: b_078
+  name: Ysolde Mar
+  kind: solo
+  figure: null
+  label: null
+  settlement: the between
+  scene: independents
+  active_from: 2611
+  active_to: 2618
+  bio: Ysolde Mar navigates freight and plays in the hold on the long crossings, which is where everything
+    she has ever recorded was made. Her two surviving pieces run long because a crossing runs long and
+    she has never seen a reason to cut one short for a stranger. She has been offered terms twice and
+    has not answered either time.
+- id: b_079
+  name: Concordance Exchange Consort
+  kind: collective
+  figure: null
+  label: null
+  settlement: Concordance
+  scene: independents
+  active_from: 2610
+  active_to: 2620
+  bio: A standing consort of Exchange House players who rehearse in the roofed gardens and have never
+    been signed, because the houses they play for pay them better as staff than any label would as artists.
+    They record when the gardens are shut and the acoustic is theirs, which is twice a year at most. Everything
+    they make circulates by copy among the gardeners, the clerks and the people who clean the glass.
+- id: b_080
+  name: Brace & the Tin Reelers
+  kind: group
+  figure: null
+  label: null
+  settlement: Breathe Easy
+  scene: independents
+  active_from: 2614
+  active_to: 2621
+  bio: 'Brace runs a salvage yard and the Tin Reelers are whoever is working it that month, which is why
+    the line-up on any two of their recordings is different and none of them minds. Everything they play
+    is made from what came off a hull: oxygen-tank drums, stripped-wire chimes, and one fiddle that has
+    been rebuilt four times. They have turned down two houses on the grounds that a house would want the
+    same six people every time.'
+- id: b_081
+  name: Sixteen Hands
+  kind: collective
+  figure: null
+  label: null
+  settlement: separate relay settlements
+  scene: independents
+  active_from: 2612
+  active_to: 2619
+  bio: Sixteen players on eight settlements who have never been in a room together and compose entirely
+    by relay, each part cut where its player lives and stitched at the far end. The distance is audible
+    and they have always said it is the point. No house has worked out how to sign a band whose members
+    cannot be got into the same contract, and the collective has never tried to help.
+- id: b_082
+  name: The Shellwrights
+  kind: collective
+  figure: null
+  label: null
+  settlement: Far Reach
+  scene: independents
+  active_from: 2611
+  active_to: 2620
+  bio: A far-worlds collective who build every instrument they play from the shells of the creatures their
+    world grows, under the compact that lets them take only what the tide leaves. They are Localists by
+    practice rather than by argument and get impatient with people who want it to be an argument. Their
+    instruments do not survive shipping, which is the whole reason nobody has ever booked them anywhere
+    else.
+- id: b_083
+  name: The First-Ships Choir
+  kind: collective
+  figure: null
+  label: null
+  settlement: Concordance
+  scene: independents
+  active_from: 2610
+  active_to: 2621
+  bio: An unpaid choir of about forty who meet in a Concordance hall on rest-days to sing the hymns that
+    outlived the ships, and who are firm that they are singing repertoire and not history. None of them
+    is a professional and two of them have been in it fifty years. The Council has asked them to sing
+    at three openings and they have said yes to one.
+- id: b_084
+  name: The Outer Revival
+  kind: group
+  figure: null
+  label: null
+  settlement: Concordance
+  scene: independents
+  active_from: 2615
+  active_to: 2622
+  bio: Four core players who went out to the stations, learned what was being sung there, came home and
+    made a beautiful record of it, and have been arguing about what they owe ever since. Two of them now
+    say the name was a mistake. The outer stations' own view of them ranges from warm to unprintable,
+    and both ends of that turn up in the letters.
+- id: b_085
+  name: The Lane Runners
+  kind: group
+  figure: null
+  label: null
+  settlement: the between
+  scene: independents
+  active_from: 2614
+  active_to: 2622
+  bio: A hauler crew who play their own turnovers and have never taken a berth ashore, which is why their
+    records are made in a hold and sound like it. Every one of them still works the lane; the band is
+    what happens on the way. They have been offered a hauler co-operative's terms twice and both times
+    decided the paperwork would cost them a run.
+- id: b_086
+  name: Auroral Standard
+  kind: group
+  figure: null
+  label: null
+  settlement: Meridian storm coast
+  scene: independents
+  active_from: 2616
+  active_to: 2622
+  bio: A storm-coast four-piece who wanted a pulse-dance house and could not get one, so they made guitar
+    records instead and found the coast liked those better. They still play the sealed season indoors
+    and still argue, publicly, that they were right the first time. The argument is most of their charm
+    and all of their press.
+- id: b_087
+  name: The Nightliners
+  kind: group
+  figure: null
+  label: null
+  settlement: Concordance late-club quarter
+  scene: independents
+  active_from: 2610
+  active_to: 2621
+  bio: The house band of a late club that has changed hands three times and kept them through all of it,
+    on the grounds that the room does not work without them. They play from the hour the last ferry goes
+    until the hour the cleaners come. Nobody in the band has ever given an interview and the club has
+    never asked them to.
+- id: b_088
+  name: Vela & the Beacons
+  kind: group
+  figure: null
+  label: null
+  settlement: Concordance
+  scene: independents
+  active_from: 2617
+  active_to: 2622
+  bio: Four young players out of the Concordance concourses who write about the lag and nothing else,
+    which they know is a limitation and have decided to make a career of. Their records are short on purpose.
+    Two houses have offered and both offers came with a request to widen the subject, which is what ended
+    both conversations.
+- id: b_089
+  name: The Kestrel Run
+  kind: group
+  figure: null
+  label: null
+  settlement: the between
+  scene: independents
+  active_from: 2615
+  active_to: 2621
+  bio: Named for the lane they grew up on and built entirely for rooms with a terrace in them, which is
+    a strange ambition for a band that has never played anywhere with a roof that high. They write two
+    kinds of song, the stomp and the lighters-up, and they know it. Their bassist has said in print that
+    a third kind would be showing off.
+- id: b_090
+  name: The Hullbirds
+  kind: group
+  figure: null
+  label: null
+  settlement: the between
+  scene: independents
+  active_from: 2616
+  active_to: 2622
+  bio: A repair-yard crew who play the yard and write about it, and whose whole subject is that fixing
+    a thing is a way of loving it. They grew up on the plates and it shows in what they choose to sing
+    about, which is never the flying and always the mending. The weld-it-seal-it chant off their first
+    record is a playground game on two worlds now.
+- id: b_091
+  name: Sunwell
+  kind: group
+  figure: null
+  label: null
+  settlement: Concordance
+  scene: independents
+  active_from: 2617
+  active_to: 2622
+  bio: Two singers who live in the garden districts and write about breakfast, rest-days and the view,
+    and who are entirely unembarrassed about the size of the subject. Their records are small and short
+    and go on first thing in the morning on more worlds than any house has ever been able to explain.
+    They have never toured because one of them keeps a greenhouse.
+- id: b_092
+  name: Hearth & Hull
+  kind: group
+  figure: null
+  label: null
+  settlement: the between
+  scene: independents
+  active_from: 2612
+  active_to: 2622
+  bio: A partnership who collect the rounds settlements teach their children and record them before the
+    last person who has them stops singing. They are careful to say they wrote none of it and their sleeves
+    print who they had each round from. What they do is arrange and keep, and they have been doing it
+    long enough that some settlements now learn the rounds back off them.
+- id: b_093
+  name: Mara Vale
+  kind: solo
+  figure: null
+  label: null
+  settlement: Mars
+  scene: independents
+  active_from: 2613
+  active_to: 2621
+  bio: A Mars relay-road singer who works the red weather and records when the storms shut the road. One
+    piece of hers came down the long road and reached the settled worlds' air; nothing else of hers ever
+    has, and nobody out here knows whether that is because she stopped or because the road did.
+- id: b_094
+  name: The Low Orbit Kings
+  kind: group
+  figure: null
+  label: null
+  settlement: Europa
+  scene: independents
+  active_from: 2614
+  active_to: 2622
+  bio: A Europa colony band who play the ice roads and the mornings under them, and whose two modes are
+    the bright one and the long dark drive. They have a large home audience and have never been out of
+    their own system. Everything of theirs that reaches the settled worlds is late by a season and treasured
+    for it.
+- id: b_095
+  name: Jun Pelayo
+  kind: solo
+  figure: null
+  label: null
+  settlement: Saturn
+  scene: independents
+  active_from: 2613
+  active_to: 2621
+  bio: A Saturn transfer-station dockhand who plays the bays after shift and writes about freight, debt
+    and the humour it takes to keep at both. He has a harmonica older than he is and a standing joke that
+    the bay pays better. Two of his recordings reached the settled worlds and both are about being late.
+- id: b_096
+  name: Greenhouse Nine
+  kind: group
+  figure: null
+  label: null
+  settlement: Mars
+  scene: independents
+  active_from: 2612
+  active_to: 2621
+  bio: Nine growers on a Mars valley scheme who sing about made weather and the votes that pay for it,
+    which on their world is one subject and not two. They play the meeting halls before the meetings.
+    Thirty years of the scheme's work is in their best song and they are careful to say that none of it
+    is theirs.
+- id: b_097
+  name: The Belt Revival
+  kind: group
+  figure: null
+  label: null
+  settlement: the Belt
+  scene: independents
+  active_from: 2614
+  active_to: 2622
+  bio: A Belt garage band who play unlicensed stations and treat the licence question as the whole of
+    their politics. They are loud, rough and entirely uninterested in being any better recorded than they
+    are. The line about not fencing a frequency has been waved at more than one authority that had never
+    heard of them.
+- id: b_098
+  name: Sela Maren
+  kind: solo
+  figure: null
+  label: null
+  settlement: Titan
+  scene: independents
+  active_from: 2613
+  active_to: 2621
+  bio: A Titan harbour singer who works the methane bays and writes about distance, return and the lights
+    that make a colony feel lived in. She sings low and late and has never played anywhere but her own
+    coast. What reached the settled worlds is one long ballad and the cuts that came in the same parcel.
+- id: b_099
+  name: Riko Say & The Civic Band
+  kind: group
+  figure: null
+  label: null
+  settlement: Mars
+  scene: independents
+  active_from: 2612
+  active_to: 2620
+  bio: A Mars settlement band who play the civic floor and make comedy out of inter-settlement diplomacy,
+    which their neighbours find funnier than their council does. Riko Say sat on that council for six
+    years, which is where the material comes from. They have never been sued and they mention it often.
+- id: b_100
+  name: North Array
+  kind: group
+  figure: null
+  label: null
+  settlement: Mars
+  scene: independents
+  active_from: 2614
+  active_to: 2622
+  bio: An orbital freight band out of the Mars arrays who write road songs for crews taking the long way
+    round, and one dust-storm radio song that is really about radio. They are unhurried by design and
+    have been told so as a criticism. The radio song is the reason this station has heard of them at all.
+- id: b_101
+  name: Asha Ko & The Second Sun
+  kind: group
+  figure: null
+  label: null
+  settlement: Earth
+  scene: independents
+  active_from: 2615
+  active_to: 2622
+  bio: An Earth band whose one record came out of the public hearings on machine-mind personhood and write
+    about the argument rather than the answer. Asha Ko attended the hearings as a clerk and says the band
+    is what she did instead of shouting. Their records are the closest thing on this shelf to a position,
+    and they are careful not to take one.
+- id: b_102
+  name: The Pressure Door Union
+  kind: group
+  figure: null
+  label: null
+  settlement: the Belt
+  scene: independents
+  active_from: 2612
+  active_to: 2622
+  bio: A pressure-systems crew who play their own picket lines and have never pretended the band is a
+    separate thing from the union. Their whole subject is that air is common and metering it is theft.
+    They are popular with maintenance crews across the old system and unwelcome in at least two ports.
+- id: b_103
+  name: Eli Renn
+  kind: solo
+  figure: null
+  label: null
+  settlement: Europa
+  scene: independents
+  active_from: 2614
+  active_to: 2622
+  bio: A Europa night-shift technician who records after the systems are quiet and writes about the dignity
+    of keeping things alive at two in the morning. He is unhurried, he is not lonely, and he is firm about
+    the difference. His songs are the ones the overnight shift on three worlds puts on when it wants company
+    rather than noise.
+- id: b_104
+  name: Nima Vale
+  kind: solo
+  figure: null
+  label: null
+  settlement: Earth
+  scene: independents
+  active_from: 2613
+  active_to: 2621
+  bio: An Earth embassy-ring lounge player who makes comic blues out of translation failures at official
+    talks, having sat through a great many of them as staff. Her best-known song is about a treaty accidentally
+    signed on a mistranslation. She maintains the treaty held and that this proves something.
+- id: b_105
+  name: The Corona Drivers
+  kind: group
+  figure: null
+  label: null
+  settlement: the Belt
+  scene: independents
+  active_from: 2615
+  active_to: 2621
+  bio: A Belt station band whose entire repertoire is what to do when the flare siren goes, which where
+    they live is a social occasion and not an emergency. They play until the all-clear and have never
+    once stopped early. The station's shelter roster now lists them under equipment, which they have framed.
+- id: b_106
+  name: Harmony Tract
+  kind: group
+  figure: null
+  label: null
+  settlement: Earth
+  scene: independents
+  active_from: 2613
+  active_to: 2621
+  bio: An Earth dock-quarter band who write about small emergencies and the quiet competence that ends
+    them, which they think is the only subject worth having. Nobody in the band works the docks now and
+    all of them did. Their annual reunion song keeps a chair for the crew who did not make it, which the
+    sleeve explains and the song does not.
+- id: b_107
+  name: Calder Moon
+  kind: solo
+  figure: null
+  label: null
+  settlement: Mars
+  scene: independents
+  active_from: 2612
+  active_to: 2621
+  bio: A Mars greenhouse worker who plays a slide guitar on a porch his family built on ground his family
+    cleared, and who says a world is not settled until somebody has played it old. He records more than
+    he issues. Four cuts of essentially one song reached the settled worlds, which tells you most of what
+    there is to know about how he works.
+- id: b_108
+  name: Vera Cross
+  kind: solo
+  figure: null
+  label: null
+  settlement: the old Lagrange stations
+  scene: independents
+  active_from: 2614
+  active_to: 2621
+  bio: A Lagrange commons organiser who sings at sit-ins and has never made a record that was not about
+    one. Her subject is the sky as common property and the people trying to sell advertising on it. She
+    is calm about it on record and reportedly not calm about it anywhere else.
+- id: b_109
+  name: Station Porch Trio
+  kind: group
+  figure: null
+  label: null
+  settlement: the between
+  scene: independents
+  active_from: 2614
+  active_to: 2621
+  bio: Three players on a low-spin station who keep a porch light burning on the relay board and write
+    about waiting, hospitality and bad coffee. They play the concourse for nothing on the nights the ferry
+    is late. A light is a small enough thing to give, one of their songs says, and the station has taken
+    it as house policy.
+- id: b_110
+  name: Vesper Sol & Harbor Light
+  kind: group
+  figure: null
+  label: null
+  settlement: Titan
+  scene: independents
+  active_from: 2615
+  active_to: 2621
+  bio: Two Titan colony teachers who write for the children they teach, about growing up between an inherited
+    world and a chosen one. They perform at assemblies and almost nowhere else. Neither of them has ever
+    described the partnership as a band and both keep being told it is one.
+- id: b_111
+  name: The Lagrange Saints
+  kind: group
+  figure: null
+  label: null
+  settlement: the old Lagrange stations
+  scene: independents
+  active_from: 2612
+  active_to: 2622
+  bio: A Lagrange station band who write about the night the power went and what the station did about
+    it, which is the only night any of them will discuss. Their view is that accurate public information
+    mattered as much as the power did. They have played the same muster hall every year since and will
+    not play anywhere else on that date.
+- id: b_112
+  name: The Ferry Cats
+  kind: group
+  figure: null
+  label: null
+  settlement: the between
+  scene: independents
+  active_from: 2616
+  active_to: 2622
+  bio: Three players and a busted amp who work the ferry concourse and play the rest-day floor until the
+    bell. Their whole repertoire is about having one day off and spending it dancing. They are the loudest
+    thing on this shelf and the least interested in being anything else.
+- id: b_113
+  name: The Window Boxes
+  kind: group
+  figure: null
+  label: null
+  settlement: Concordance
+  scene: independents
+  active_from: 2617
+  active_to: 2622
+  bio: A Concordance corridor band who write jangling valentines to dome-keepers, neighbours and the people
+    who make a corridor worth walking down. Their subject is the block and they have never left it. A
+    power cut that turned into a block party turned into their best song, which the block considers partly
+    theirs.
+- id: b_114
+  name: The Ring Riders
+  kind: group
+  figure: null
+  label: null
+  settlement: Meridian storm coast
+  scene: independents
+  active_from: 2617
+  active_to: 2622
+  bio: A Meridian rest-day band who ride the slow-wheeling viewing ring for the view and not the gravity,
+    and who have made a career out of one joke about speed. They play mess halls and have waxed at least
+    one floor they should not have. Nobody has ever accused them of depth and they take it well.
+- id: b_115
+  name: Junia & the Long Players
+  kind: group
+  figure: null
+  label: null
+  settlement: Concordance late-club quarter
+  scene: independents
+  active_from: 2615
+  active_to: 2622
+  bio: A horn-led band who take the late set in a core club after the last ferry, and whose own theme
+    song is about staying on when the room thins out. Junia sings and the Long Players are five people
+    who have been five different people twice. Slow songs are for the stay, the theme says, which is the
+    club's whole business model.
+- id: b_116
+  name: Odessa Rhee
+  kind: solo
+  figure: null
+  label: null
+  settlement: Titan
+  scene: independents
+  active_from: 2613
+  active_to: 2622
+  bio: A Titan harbour singer with a large voice and a long wait behind every song she has written — three
+    seasons on the black and one green light kept burning is her own account of it. She is the strongest
+    singer on this shelf. Nothing about how she was recorded reached the settled worlds with her.
+- id: b_117
+  name: Marlo Quist
+  kind: solo
+  figure: null
+  label: null
+  settlement: Saturn
+  scene: independents
+  active_from: 2612
+  active_to: 2620
+  bio: A gravel-voiced Saturn dock singer who plays for the ones who stay after the last boat goes. He
+    has two subjects, staying and forgiving, and he does not confuse them. You do not get over it, he
+    sings, you get used to it, which is the line the night shift out here has taken for its own.
+- id: b_118
+  name: The Ninefold Pipes of Forge
+  kind: collective
+  figure: null
+  label: null
+  settlement: Forge
+  scene: independents
+  active_from: 2610
+  active_to: 2620
+  bio: A Forge foundry ensemble of pipe players drawn from the night shifts, who play the cooling floors
+    out at the end of a run and have never recorded a note with a voice on it. That is the whole reason
+    no house has ever pressed them and the reason this station cannot hold them either. Everything they
+    have made circulates on the works' own copies.
 albums:
 - id: al_001
   artist: b_001
@@ -3008,6 +3542,704 @@ albums:
   cornerstone: false
   notes: The year the complete cycles reached general circulation, and the record the whole form is measured
     against — never pressed by anybody, and never out of anybody's reach.
+- id: al_170
+  artist: b_077
+  label: null
+  title: A Window in the Dark
+  release_year: 2613
+  kind: album
+  cornerstone: false
+  notes: Three pieces off one watch, cut on outpost gear and carried down the relay road by a crew who
+    were not asked twice. It is the record every keeper on the far stations claims to have heard first,
+    which cannot be true of all of them. What makes it is the room — a space built for machinery, with
+    one man in it.
+- id: al_171
+  artist: b_078
+  label: null
+  title: Cargo-Hold Songs
+  release_year: 2615
+  kind: album
+  cornerstone: false
+  notes: Two long pieces made in a freight hold between watches, on a crossing nobody has been able to
+    name since. The second runs to eight minutes and stops rather than ends, which is the argument every
+    crew that carries a copy of it is still having.
+- id: al_172
+  artist: b_079
+  label: null
+  title: Deep Listening, Vol. II
+  release_year: 2614
+  kind: single
+  cornerstone: false
+  notes: 'The volume the consort made for the Council''s long table and then could not stop people copying.
+    It is a room record: written for a glass roof and unbearable anywhere else, which is why the houses
+    have never wanted it and the clerks have never let it go out of circulation.'
+- id: al_173
+  artist: b_080
+  label: null
+  title: Salvage & Song
+  release_year: 2617
+  kind: album
+  cornerstone: false
+  notes: Recorded across four Saturday nights in the yard itself, with the doors open and whoever turned
+    up on the choruses. Brace has said the record cost nothing but the drink, and the yard's insurers
+    have said something else. It is the reel record the near frontier learned its send-off tunes off.
+- id: al_174
+  artist: b_081
+  label: null
+  title: Across the Dark
+  release_year: 2616
+  kind: single
+  cornerstone: false
+  notes: Every part of this was cut on a different world and the joins were never hidden. The collective's
+    rule is that nobody hears the whole thing until it is finished, so the singers on it heard the record
+    for the first time the same week the rest of the settled worlds did.
+- id: al_175
+  artist: b_082
+  label: null
+  title: Deep Listening, Vol. IV
+  release_year: 2615
+  kind: single
+  cornerstone: false
+  notes: The fourth of a copied series that has no first three anybody can produce, which the collective
+    finds funnier than the people cataloguing it do. What is on it is a shell resonance no manufactured
+    instrument makes and a lullaby sung to the creatures the shells came from, in that order, and the
+    order is deliberate.
+- id: al_176
+  artist: b_083
+  label: null
+  title: The Deep Stacks
+  release_year: 2613
+  kind: album
+  cornerstone: false
+  notes: Old repertoire re-cut by the people who still sing it, which is the only way any of it reaches
+    anybody — the ships themselves left nothing that plays. The record closes with a fragment somebody
+    put a first-generation claim on, and the choir printed the claim without endorsing it and has declined
+    to discuss it since.
+- id: al_177
+  artist: b_084
+  label: null
+  title: Rediscovery
+  release_year: 2618
+  kind: single
+  cornerstone: false
+  notes: The record that named a movement it did not start and cannot get out from under. It is polished,
+    it is honest about being polished, and the title song is the sound of the core hearing something for
+    the first time that had never stopped. No house pressed it; every house has since asked.
+- id: al_178
+  artist: b_085
+  label: null
+  title: The Thousand-Hour Road
+  release_year: 2617
+  kind: album
+  cornerstone: false
+  notes: Their first, cut in a hold between turnovers with the ship running, which is why the low end
+    on it is the ship. Every hauler bar on every dock claims the title song was written about their lane
+    and the crew has never once corrected anybody.
+- id: al_179
+  artist: b_085
+  label: null
+  title: Green Lights
+  release_year: 2620
+  kind: album
+  cornerstone: false
+  notes: The lucky record. It opens on a run where every buoy came up green from dock to bay and closes
+    on the same run sung slower, and between them are the two songs the crew actually work to. Haulers
+    play the opener leaving port and harbourmasters swear it works, which is the sort of thing a station
+    has to decide what to do about.
+- id: al_180
+  artist: b_086
+  label: null
+  title: Storm Season
+  release_year: 2620
+  kind: album
+  cornerstone: false
+  notes: Made in the month the doors were shut, which is the only month the coast has time. It is a dance
+    record played on guitars because nobody would lend them anything else, and the closer has been re-cut
+    once already because the crowd would not go home.
+- id: al_181
+  artist: b_087
+  label: null
+  title: The Late Window
+  release_year: 2616
+  kind: album
+  cornerstone: false
+  notes: Recorded in the room, at the hour, with the room in it — the club shut for two nights and the
+    band played their ordinary set to an empty floor and one open door. Every settlement bar band in the
+    settled worlds covers something off it and the club has never seen a copy sold in its own quarter.
+- id: al_182
+  artist: b_088
+  label: null
+  title: Signals
+  release_year: 2621
+  kind: single
+  cornerstone: false
+  notes: The one long song this band has, and the only thing of theirs that reached this shelf — a booked
+    hour on the thread, sung by four people who write about nothing else. The line about nine o'clock
+    being a country has been written on more relay boards than anything else in this collection.
+- id: al_183
+  artist: b_089
+  label: null
+  title: The Kestrel Run
+  release_year: 2618
+  kind: album
+  cornerstone: false
+  notes: Self-titled because the lane is the whole idea and the band could not think of anything to add.
+    Half of it was cut with a harbour crowd in the room doing the stomp unprompted, which is why it is
+    the version that travelled.
+- id: al_184
+  artist: b_090
+  label: null
+  title: Patchwork Wings
+  release_year: 2620
+  kind: album
+  cornerstone: false
+  notes: Made on the yard floor between shifts with the day crew on the choruses, which is why the count-ins
+    are somebody's hand on a plate. The underdog song on it — a hull of salvaged sheet that flies better
+    than new — is quoted a long way outside music, and the crew have stopped being surprised by where
+    it turns up.
+- id: al_185
+  artist: b_091
+  label: null
+  title: Garden Districts
+  release_year: 2621
+  kind: single
+  cornerstone: false
+  notes: A morning record about a morning, made at the kitchen end of a garden flat with the window open.
+    The long one on it reads a whole world's overnight relay out slow over coffee, which is either the
+    point of the record or the point of the duo, depending which of them you ask.
+- id: al_186
+  artist: b_092
+  label: null
+  title: The Settlement Songbook
+  release_year: 2618
+  kind: album
+  cornerstone: false
+  notes: A collecting record rather than a writing one, and the sleeve names eleven people the pair had
+    the rounds from. The lamplighter's round on it is the one every settlement child knows, in the old
+    unaccompanied shape, and it is the shape most people now learn because this is the copy that travelled.
+- id: al_187
+  artist: b_093
+  label: null
+  title: Red Weather
+  release_year: 2614
+  kind: single
+  cornerstone: false
+  notes: Four minutes of storm static and one voice through it, and the only thing of hers anybody out
+    here has. What arrived was a copy of a copy with the year written on it in somebody's hand, which
+    is how most of this shelf arrived.
+- id: al_188
+  artist: b_094
+  label: null
+  title: Ice Highway
+  release_year: 2620
+  kind: album
+  cornerstone: false
+  notes: A headlights-in-the-dark record about hauling the mile-deep ice roads, and the one rule of them,
+    which is that nobody crosses alone. It came down the long road with two cuts of its opening song and
+    no note saying which was meant.
+- id: al_189
+  artist: b_095
+  label: null
+  title: Dockside Gravity
+  release_year: 2617
+  kind: album
+  cornerstone: false
+  notes: Cut in an emptied bay after the shift went home, under a Saturn nobody out here has seen. The
+    long one on it is the double-shift song every dock on this side of the road adopted the season it
+    arrived, and the man in it is the little light that is still up when everybody else is home.
+- id: al_190
+  artist: b_096
+  label: null
+  title: We Built the Rain
+  release_year: 2618
+  kind: album
+  cornerstone: false
+  notes: A record about teaching a dome to rain and the decades of public argument that paid for it. The
+    band sang the title song again the week the vote passed and sent both cuts down the road together,
+    which is why the shelf has two.
+- id: al_191
+  artist: b_097
+  label: null
+  title: Rock in the Rubble
+  release_year: 2620
+  kind: single
+  cornerstone: false
+  notes: Made in a worked-out rock with a transmitter in the corner, which is either atmosphere or evidence
+    depending who is asking. It is the record every kid in the Belt with a salvaged set claims as theirs,
+    and the band have never charged any of them for it.
+- id: al_192
+  artist: b_098
+  label: null
+  title: Titan Bay at Midnight
+  release_year: 2620
+  kind: single
+  cornerstone: false
+  notes: A lamplit midnight record made on the methane harbour with the bay lights actually on, which
+    the sleeve says and the recording bears out. A quiet bay and a distant song is how she says she gets
+    through, and it is the line the whole shelf could be filed under.
+- id: al_193
+  artist: b_099
+  label: null
+  title: Minutes From the Floor
+  release_year: 2616
+  kind: single
+  cornerstone: false
+  notes: A record made out of a minute book, which is a thing only a band with a councillor in it could
+    get away with. The shuffle on it is about keeping a peace nobody has read the terms of, and every
+    settlement that has heard it is sure it is about somebody else.
+- id: al_194
+  artist: b_100
+  label: null
+  title: The Long Way Around Mars
+  release_year: 2620
+  kind: album
+  cornerstone: false
+  notes: A scenic-route record for people paid by the hour, and a love letter to a signal that keeps a
+    whole red plain company when nobody can see their hand. It arrived with two cuts of its title song
+    at slightly different cruising speeds and no note about which was meant.
+- id: al_195
+  artist: b_101
+  label: null
+  title: Witness Protocol
+  release_year: 2621
+  kind: album
+  cornerstone: false
+  notes: Two songs about the same hearings, and the second asks the question the first is too angry to.
+    A line you never think about is the easiest line to get wrong, which the band have said they took
+    off a transcript and not out of their heads. It came down the road in two cuts and listeners here
+    still argue about which.
+- id: al_196
+  artist: b_102
+  label: null
+  title: Air Belongs to Everybody
+  release_year: 2618
+  kind: album
+  cornerstone: false
+  notes: A stomping labour record made with the whole crew in the room, which is the only way this band
+    has ever recorded anything. It is against metering the air and it does not hedge. Both cuts of the
+    airlock song get requested here and the union has never said which it prefers.
+- id: al_197
+  artist: b_103
+  label: null
+  title: Quiet Engines
+  release_year: 2621
+  kind: album
+  cornerstone: false
+  notes: A record made in the hours when nothing is due and nothing goes wrong, and the one on this shelf
+    that argues hardest for its own subject. Lonesome is not the same as alone, not with a voice on the
+    air — which is a thing an overnight station has to be careful about being flattered by.
+- id: al_198
+  artist: b_104
+  label: null
+  title: Blues for a Broken Translator
+  release_year: 2617
+  kind: single
+  cornerstone: false
+  notes: A comedy record about diplomacy made by somebody who was in the room, which is why the jokes
+    are specific and the pauses are right. The best peace deal the sector ever made was a mistake, and
+    she has never been asked to stop saying so.
+- id: al_199
+  artist: b_105
+  label: null
+  title: Storm Coast Sessions
+  release_year: 2620
+  kind: single
+  cornerstone: false
+  notes: A shelter-in-place record, made in one because the siren went and the band were already set up.
+    A flare is just a party you were not planning for, which is either a philosophy or a way of getting
+    through a lockdown, and the record does not pretend to know.
+- id: al_200
+  artist: b_106
+  label: null
+  title: The Ballad of Dock 12
+  release_year: 2618
+  kind: album
+  cornerstone: false
+  notes: A record about a minor dock failure that hurt nobody, which is exactly why it was worth a record.
+    The reunion song at the end is the once-a-year everybody-home singalong, and the empty chair in it
+    is a real one with a name on it that the band will not print.
+- id: al_201
+  artist: b_107
+  label: null
+  title: Red Soil Sunday
+  release_year: 2620
+  kind: single
+  cornerstone: false
+  notes: 'The rest-day record: porch, slide guitar, and the easy part played for a great-grandmother who
+    taught him the hard one. Mars is home when you have a guitar, he says on it, and the ground he is
+    sitting on is ground his family freed, which the sleeve says once and the songs do not say at all.'
+- id: al_202
+  artist: b_108
+  label: null
+  title: Hands Off the Air
+  release_year: 2618
+  kind: single
+  cornerstone: false
+  notes: Cut for a thousand-strong sit-in and sung at it the same week, which is the sort of thing that
+    dates a record and did not date this one. You will never price the air, it says, evenly, twice, and
+    then stops.
+- id: al_203
+  artist: b_109
+  label: null
+  title: Keep the Channel Warm
+  release_year: 2620
+  kind: single
+  cornerstone: false
+  notes: A fingerpicked record about leaving a light on for people who are not coming for weeks, made
+    on the concourse at the hour the concourse is empty. It is the settlement-hospitality song and the
+    trio have never worked out how to follow it.
+- id: al_204
+  artist: b_110
+  label: null
+  title: Born Between
+  release_year: 2618
+  kind: single
+  cornerstone: false
+  notes: 'An assembly record in the plainest sense: written to be sung by a hall of children who are the
+    first generation of their world to have been born on it. It was sung again to a smaller hall two years
+    later and both cuts came down the road, which is more of this record than anybody asked for and nobody
+    has objected to.'
+- id: al_205
+  artist: b_111
+  label: null
+  title: Backup Feed
+  release_year: 2617
+  kind: album
+  cornerstone: false
+  notes: A blackout record made by people who were in it, and the emergency-muster stomp on it is the
+    whole station running toward the spark. A station is who comes running when there is trouble, they
+    sing, which is a definition and not a compliment. Two accounts of the same night are on the shelf
+    and the band kept both.
+- id: al_206
+  artist: b_112
+  label: null
+  title: Concourse Jukebox
+  release_year: 2621
+  kind: album
+  cornerstone: false
+  notes: Made on the concourse itself with the gate crowd in it, which is why the ferry bell is on the
+    record twice and neither time was planned. Dance like the ferry is never going to show, it says, and
+    on the night they cut it the ferry did not.
+- id: al_207
+  artist: b_113
+  label: null
+  title: Dome Light
+  release_year: 2621
+  kind: album
+  cornerstone: false
+  notes: A corridor record about a corridor, cut in one with the neighbours audibly present. The middle
+    song is a power cut that became a party and then a hit, and the last one is about how a careful letter
+    lands two weeks and a hundred changed minds too late, which is the same block being sensible about
+    the lag.
+- id: al_208
+  artist: b_114
+  label: null
+  title: Viewing Ring
+  release_year: 2620
+  kind: album
+  cornerstone: false
+  notes: Two rest-day songs about going nowhere pleasantly, one on the ring and one on a mess-hall floor
+    buffed until it slid. The fastest slowest ride you will ever know is the line the coast took, and
+    the bosun who went into the bin is, the band insist, a real bosun.
+- id: al_209
+  artist: b_115
+  label: null
+  title: The Long Set
+  release_year: 2621
+  kind: album
+  cornerstone: false
+  notes: 'The late set as it is actually played: a floor-filler that turns the lag into a gift, the band''s
+    own theme in the middle, and a slow dance at the end for people who have been weeks apart. It was
+    cut in the club after hours with the chairs up.'
+- id: al_210
+  artist: b_116
+  label: null
+  title: Three Seasons Waiting
+  release_year: 2618
+  kind: album
+  cornerstone: false
+  notes: A harbour-town blues record about waiting, and about making peace with a lag that is not going
+    to shorten. A good thing is always worth the wait, she sings, and then stands on a sea made by hand
+    under the ice and says that patience and lamps beat the frozen hours. It is the most moving thing
+    on this shelf.
+- id: al_211
+  artist: b_117
+  label: null
+  title: The Ones Who Stay
+  release_year: 2616
+  kind: album
+  cornerstone: false
+  notes: Two slow blues for the end of the night, and the second one forgives the lag for news that came
+    too late. You cannot hate a distance, it says, it does not care how it feels. Nothing on this shelf
+    is plainer or harder to follow anything with.
+- id: al_212
+  artist: b_077
+  label: null
+  title: Keeper's Lament
+  release_year: 2614
+  kind: single
+  cornerstone: false
+  notes: The wordless one, which no house would press because nobody sings on it.
+- id: al_213
+  artist: b_079
+  label: null
+  title: Gardens Under Glass
+  release_year: 2613
+  kind: single
+  cornerstone: false
+  notes: The wordless garden piece the consort still opens with and has never issued.
+- id: al_214
+  artist: b_080
+  label: null
+  title: The Oxygen Drum
+  release_year: 2618
+  kind: ep
+  cornerstone: false
+  notes: The rhythm section cut loose, and a short one — two minutes of yard and no words.
+- id: al_215
+  artist: b_081
+  label: null
+  title: Sixteen Skies
+  release_year: 2617
+  kind: single
+  cornerstone: false
+  notes: The wordless proof-of-method piece, and the one the collective is best known for and least able
+    to sell.
+- id: al_216
+  artist: b_082
+  label: null
+  title: Tideshell Resonance
+  release_year: 2616
+  kind: single
+  cornerstone: false
+  notes: The wordless resonance piece, which is what everyone means when they name the band.
+- id: al_217
+  artist: b_084
+  label: null
+  title: Rediscovery (Instrumental)
+  release_year: 2619
+  kind: single
+  cornerstone: false
+  notes: The wordless title piece, which is the half the outer stations minded least.
+- id: al_218
+  artist: b_085
+  label: null
+  title: Heavy and Happy Again
+  release_year: 2621
+  kind: single
+  cornerstone: false
+  notes: The sequel single, cut after the first tour when every dock crowd already knew the chorus.
+- id: al_219
+  artist: b_086
+  label: null
+  title: Aurora Season
+  release_year: 2621
+  kind: ep
+  cornerstone: false
+  notes: The synth cuts they made first and no house would touch — the record they actually wanted, still
+    circulating on the coast.
+- id: al_220
+  artist: b_087
+  label: null
+  title: One More for the Relay
+  release_year: 2617
+  kind: single
+  cornerstone: false
+  notes: The toast song in its first, shorter shape, before the plural version took over.
+- id: al_221
+  artist: b_088
+  label: null
+  title: Meet Me on the Thread
+  release_year: 2620
+  kind: ep
+  cornerstone: false
+  notes: Five short cuts, none of them two minutes — the ones the concourse crowd already knew before
+    the record existed.
+- id: al_222
+  artist: b_089
+  label: null
+  title: Same Stars (Acoustic)
+  release_year: 2618
+  kind: ep
+  cornerstone: false
+  notes: One guitar and one voice, for the send-offs where the full anthem is too big.
+- id: al_223
+  artist: b_090
+  label: null
+  title: Dockyard Hearts
+  release_year: 2620
+  kind: ep
+  cornerstone: false
+  notes: Three short yard cuts, all under two minutes, all sung by more people than the band.
+- id: al_224
+  artist: b_091
+  label: null
+  title: Good Morning, Universe
+  release_year: 2620
+  kind: ep
+  cornerstone: false
+  notes: Four early cuts, none of them ninety seconds — the whistled outro is off this one.
+- id: al_225
+  artist: b_092
+  label: null
+  title: Pass It On
+  release_year: 2617
+  kind: ep
+  cornerstone: false
+  notes: Four short cuts including a hall carrying the choruses while the pair drop out.
+- id: al_226
+  artist: b_094
+  label: null
+  title: Windows Under Ice
+  release_year: 2619
+  kind: single
+  cornerstone: false
+  notes: The morning song's first cut, the shorter of the two that arrived together.
+- id: al_227
+  artist: b_095
+  label: null
+  title: Bay Six After Midnight
+  release_year: 2616
+  kind: single
+  cornerstone: false
+  notes: The first, shorter cut of the dockside blues, which arrived in the same parcel.
+- id: al_228
+  artist: b_096
+  label: null
+  title: Valley Votes
+  release_year: 2617
+  kind: single
+  cornerstone: false
+  notes: The earlier cut of the rain song, from before the vote it is now about.
+- id: al_229
+  artist: b_097
+  label: null
+  title: Maintenance Bay Gospel
+  release_year: 2619
+  kind: ep
+  cornerstone: false
+  notes: The two short bay cuts, mistakes left in on principle and both under two minutes.
+- id: al_230
+  artist: b_098
+  label: null
+  title: Orange Weather
+  release_year: 2618
+  kind: ep
+  cornerstone: false
+  notes: Two earlier cuts of the harbour ballad, both shorter and both sent anyway.
+- id: al_231
+  artist: b_099
+  label: null
+  title: Civic Duty
+  release_year: 2615
+  kind: ep
+  cornerstone: false
+  notes: The earlier floor cuts, including a two-step about a border through a living room.
+- id: al_232
+  artist: b_100
+  label: null
+  title: Beacon Star Road
+  release_year: 2619
+  kind: single
+  cornerstone: false
+  notes: The other pass at the title song, a shade quicker and sent in the same parcel.
+- id: al_233
+  artist: b_101
+  label: null
+  title: Carbon Heart
+  release_year: 2620
+  kind: single
+  cornerstone: false
+  notes: The first cut of the anthem, hotter and shorter than the one that travelled.
+- id: al_234
+  artist: b_102
+  label: null
+  title: No Kings in the Airlock
+  release_year: 2617
+  kind: single
+  cornerstone: false
+  notes: The other pass at the anthem, sung once more with the same crew still standing.
+- id: al_235
+  artist: b_103
+  label: null
+  title: Night Shift Hymns
+  release_year: 2620
+  kind: ep
+  cornerstone: false
+  notes: Two earlier walks through the same shift, and Renn has said he could not pick between them.
+- id: al_236
+  artist: b_104
+  label: null
+  title: Lounge at Embassy Ring
+  release_year: 2616
+  kind: ep
+  cornerstone: false
+  notes: Two shorter passes at the translator song; she could not keep a straight face in either.
+- id: al_237
+  artist: b_105
+  label: null
+  title: Shielding Up
+  release_year: 2619
+  kind: ep
+  cornerstone: false
+  notes: Two short flare cuts from an earlier lockdown, both under ninety seconds.
+- id: al_238
+  artist: b_106
+  label: null
+  title: Small Emergencies
+  release_year: 2617
+  kind: single
+  cornerstone: false
+  notes: The steadier of the two tellings of the dock failure, sent down the road with the other.
+- id: al_239
+  artist: b_107
+  label: null
+  title: Greenhouse Line
+  release_year: 2619
+  kind: ep
+  cornerstone: false
+  notes: Three further passes at the same song under three different titles, all sent together.
+- id: al_240
+  artist: b_108
+  label: null
+  title: Commons in Orbit
+  release_year: 2617
+  kind: ep
+  cornerstone: false
+  notes: Two mixes of the star-view protest single, both short and both put out on the commons feeds.
+- id: al_241
+  artist: b_109
+  label: null
+  title: Low-Spin Cafe
+  release_year: 2618
+  kind: single
+  cornerstone: false
+  notes: The cafe song, two minutes short of anything and about waiting for a delayed message.
+- id: al_242
+  artist: b_110
+  label: null
+  title: Children of the Pressure Dome
+  release_year: 2620
+  kind: single
+  cornerstone: false
+  notes: The second assembly's cut of the anthem, shorter and sung by a smaller hall.
+- id: al_243
+  artist: b_111
+  label: null
+  title: Static Saints
+  release_year: 2616
+  kind: single
+  cornerstone: false
+  notes: The alternate account of the blackout, a little longer and no calmer.
+- id: al_244
+  artist: b_118
+  label: null
+  title: The Cooling Floors
+  release_year: 2615
+  kind: ep
+  cornerstone: false
+  notes: Two long pipe pieces off the foundry floor, wordless from end to end — the signal call that answers
+    itself, and the evensong the night shift plays out on.
 tracks:
 - id: s_0001
   album: al_001
@@ -25728,6 +26960,2197 @@ tracks:
   artist: b_076
   title: Keep It Running
   track_no: 12
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1359
+  album: al_170
+  artist: b_077
+  title: The Slow Star
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - melancholy
+  language: en
+  licence_note: null
+  fact: Written on a one-keeper station months from the nearest light — a man singing to the single star
+    that never sets in his window.
+- id: s_1360
+  album: al_170
+  artist: b_077
+  title: Nobody Answers the Dark
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - contemplative
+  language: en
+  licence_note: null
+  fact: A keeper's half-question to the emptiness beyond the last settlement — sent out on a relay that
+    won't reach anyone for half a year.
+- id: s_1361
+  album: al_171
+  artist: b_078
+  title: To Stay Awake on the Crossing
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - mellow
+  language: en
+  licence_note: null
+  fact: A navigator's own slow shape of an old Earth-origin new-year piece, learned in a cargo hold from
+    a woman who played to stay awake on the crossings — it loops the way a long journey does, and it is
+    the only thing of hers anybody has been able to name a year for.
+- id: s_1362
+  album: al_171
+  artist: b_078
+  title: Cargo-Hold Lullaby
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - tender
+  language: en
+  licence_note: null
+  fact: What she sings to the freight and to herself in the last watch before landfall — half a lullaby,
+    half a promise to arrive.
+- id: s_1363
+  album: al_172
+  artist: b_079
+  title: The Long Table
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  language: en
+  licence_note: null
+  fact: A gentle piece for the Settlement Council's long table — the sound of many worlds sitting down
+    together, for once, in the same room.
+- id: s_1364
+  album: al_173
+  artist: b_080
+  title: Salvage Yard Saturday
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: A Freeholds reel banged out on oxygen-tank drums and wire chimes — the Saturday sound of people
+    who work hard all week and celebrate harder, on instruments made from what broke.
+- id: s_1365
+  album: al_173
+  artist: b_080
+  title: Wire and Bone
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - driving
+  language: en
+  licence_note: null
+  fact: The reel they play at a Freeholds send-off — half work-song, half dare, all made of wire and bone
+    and whatever rings when you hit it.
+- id: s_1366
+  album: al_174
+  artist: b_081
+  title: Letters We Sent Ahead
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - wistful
+  language: en
+  licence_note: null
+  fact: A collective whose members have never met — each part recorded on a different world and stitched
+    together across the relays. You can hear the distance between the voices; that's the point.
+- id: s_1367
+  album: al_175
+  artist: b_082
+  title: Fauna Song
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - tender
+  language: en
+  licence_note: null
+  fact: A lullaby the far-worlds sing to the creatures whose shells become their instruments — gratitude
+    and apology in the same breath.
+- id: s_1368
+  album: al_176
+  artist: b_083
+  title: Departure Hymn
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - solemn
+  language: en
+  licence_note: null
+  fact: An Exodus Hymn from the first ships — solemn, hopeful, carrying the weight of leaving and the
+    dream of arrival. Centuries old and still sung when a settlement sends someone out.
+- id: s_1369
+  album: al_176
+  artist: b_083
+  title: The Blue Cradle
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - nostalgic
+  language: en
+  licence_note: null
+  fact: 'The hymn every settled child learns about Earth — half record, half founding myth: the blue planet,
+    the place humanity first learned to look up and wonder.'
+- id: s_1370
+  album: al_176
+  artist: b_083
+  title: Earthlight (First-Generation Recording)
+  track_no: 3
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - nostalgic
+  language: en
+  licence_note: null
+  fact: The sleeve calls it a first-generation recording off the original ship and the choir prints the
+    claim without believing it; nothing that old plays, and what is on this is one voice and a worn acoustic
+    instrument that everybody agrees sounds older than it can be.
+- id: s_1371
+  album: al_177
+  artist: b_084
+  title: Nobody Told the Frontier It Was Over
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - melancholy
+  language: en
+  licence_note: null
+  fact: Core musicians 'discovering' a Void-Ballad style that never stopped evolving on the outer stations
+    — polished and beautiful, and a little haunted by the fact that it was never lost, just never heard.
+    The Outer Revival in one song.
+- id: s_1372
+  album: al_178
+  artist: b_085
+  title: The Whole Crew's Holiday
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - driving
+  - joyful
+  language: en
+  licence_note: null
+  fact: Lane-rock off the freight lanes — 'burn day' is the day a ship fires the main engines for turnover,
+    halfway home. The whole crew's holiday; the Lane Runners made it everyone's.
+- id: s_1373
+  album: al_178
+  artist: b_085
+  title: The Thousand-Hour Road
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  - driving
+  language: en
+  licence_note: null
+  fact: The mid-tempo one — the pride and patience of the people who keep the freight moving. Every hauler
+    bar on every dock claims this song was written about their lane.
+- id: s_1374
+  album: al_179
+  artist: b_085
+  title: Green Lights All the Way
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  - driving
+  language: en
+  licence_note: null
+  fact: The luckiest run ever sung — every buoy green from dock to bay. Haulers play it leaving port for
+    luck; harbourmasters swear it works.
+- id: s_1375
+  album: al_179
+  artist: b_085
+  title: Heavy and Happy
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  - joyful
+  language: en
+  licence_note: null
+  fact: The hauler's grin set to a groove — a full hold as a point of pride. The unofficial anthem of
+    every loading dock on the frontier run.
+- id: s_1376
+  album: al_179
+  artist: b_085
+  title: Turnover Burn
+  track_no: 3
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - driving
+  language: en
+  licence_note: null
+  fact: The burn-day anthem — the halfway turnover fired to one song the whole hull sings. Haulers time
+    the chorus to the actual burn; 'halfway gone means halfway home.'
+- id: s_1377
+  album: al_179
+  artist: b_085
+  title: Full Hold, Long Road
+  track_no: 4
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  language: en
+  licence_note: null
+  fact: A rolling mid-tempo hauler groove — 'we fly so a far town's fed in the end.' The quiet-pride companion
+    to the Lane Runners' louder anthems.
+- id: s_1378
+  album: al_179
+  artist: b_085
+  title: Green Lights (Reprise)
+  track_no: 5
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  - joyful
+  language: en
+  licence_note: null
+  fact: The B-side reprise — the same lucky run sung slower, the way crews hum it at the end of a shift
+    instead of the start.
+- id: s_1379
+  album: al_180
+  artist: b_086
+  title: Stormglass
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: Dance music from Meridian's storm coast, where the season locks everyone indoors — so they dance.
+    A 'stormglass' is the window wall you dance in front of while the weather does its worst.
+- id: s_1380
+  album: al_180
+  artist: b_086
+  title: Turn Up the Lights Again
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: The encore mix — the dance-floor closer re-cut for the moment the crowd refuses to go home, so
+    the lights come up twice.
+- id: s_1381
+  album: al_181
+  artist: b_087
+  title: Two O'Clock, Settlement Time
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - mellow
+  - nostalgic
+  language: en
+  licence_note: null
+  fact: The deep-hours standard from Concordance's late clubs — named for the hour the night really begins.
+    Every settlement bar band covers it; Vell has been known to hum it on air.
+- id: s_1382
+  album: al_181
+  artist: b_087
+  title: One More for the Relays
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  - warm
+  language: en
+  licence_note: null
+  fact: The last-call variant — for the rare night several good-news bells ring at once, so every toast
+    gets its own verse. Plural earned.
+- id: s_1383
+  album: al_181
+  artist: b_087
+  title: Closing the Late Window
+  track_no: 3
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - mellow
+  language: en
+  licence_note: null
+  fact: The last-call void-lounge standard — 'the honest and the hopeless both got somewhere to be at
+    two.' The Nightliners closing the room, gentle as it gets.
+- id: s_1384
+  album: al_182
+  artist: b_088
+  title: Standing Hour
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - tender
+  language: en
+  licence_note: null
+  fact: The booked-line love song — one warm hour a week across a world of lag. 'Nine o'clock's a country,
+    and we're the only citizens of that one.'
+- id: s_1385
+  album: al_183
+  artist: b_089
+  title: Same Stars Tonight
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - hopeful
+  - tender
+  language: en
+  licence_note: null
+  fact: The lighters-up anthem of the settled worlds — for everyone with someone three relays away. The
+    chorus is sung at every send-off and every homecoming.
+- id: s_1386
+  album: al_183
+  artist: b_089
+  title: Run Run Run
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  - driving
+  language: en
+  licence_note: null
+  fact: The terrace-chant cut — the chorus stretched to song length, recorded with a harbour crowd doing
+    the stomp-stomp-clap. What the stands actually sing.
+- id: s_1387
+  album: al_184
+  artist: b_090
+  title: Patchwork Wings
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - hopeful
+  - joyful
+  language: en
+  licence_note: null
+  fact: The underdog song — a ship of salvaged plates that flies better than new. 'Mended means you made
+    it through' gets quoted far beyond the music.
+- id: s_1388
+  album: al_184
+  artist: b_090
+  title: Rivet Girls
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: The repair-yard day-crew anthem — 'every ship that leaves this bay flies on the work of a rivet
+    girl's dream.' The line-weld-torque chant is a shift-start ritual now.
+- id: s_1389
+  album: al_185
+  artist: b_091
+  title: Coffee and the Overnight News
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - bright
+  language: en
+  licence_note: null
+  fact: The breakfast-table duet — a whole world's overnight relay read slow over coffee. First-light
+    radio gold, and a quiet wink at the station itself.
+- id: s_1390
+  album: al_186
+  artist: b_092
+  title: The Old Lamplighter's Song
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  - hopeful
+  language: en
+  licence_note: null
+  fact: The 'old way' arrangement — the round as the first ships were said to sing it, unaccompanied but
+    for a knee-slap. Recorded for the Songbook's archive side.
+- id: s_1391
+  album: al_186
+  artist: b_092
+  title: Keep the Channel Warm
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - hopeful
+  language: en
+  licence_note: null
+  fact: A warm duet about communication as civic care across different colonies, cultures, and generations.
+- id: s_1392
+  album: al_187
+  artist: b_093
+  title: Signal Through the Dust
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - wistful
+  - hopeful
+  language: en
+  licence_note: null
+  fact: A smoky relay-road blues song about hearing one beloved voice through Martian storm static.
+- id: s_1393
+  album: al_188
+  artist: b_094
+  title: Europa Morning Light (Alternate Take)
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - bright
+  - hopeful
+  language: en
+  licence_note: null
+  fact: The same ordinary morning caught a second time under the ice, a little slower than the cut the
+    colony knows, and the only one of the two that survived the road.
+- id: s_1394
+  album: al_188
+  artist: b_094
+  title: Ice Highway
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - driving
+  language: en
+  licence_note: null
+  fact: A headlights-in-the-dark rock highway song — hauling the mile-deep ice roads of Europa. 'Nobody
+    crosses the ice alone; that's the one rule.'
+- id: s_1395
+  album: al_189
+  artist: b_095
+  title: Dockside Gravity Blues (Alternate Take)
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - mellow
+  language: en
+  licence_note: null
+  fact: Cut after the bay emptied out, for whoever was still on shift to hear it, which is why it runs
+    long and nobody counts the man in properly.
+- id: s_1396
+  album: al_189
+  artist: b_095
+  title: The Little Light That's Up
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - mellow
+  language: en
+  licence_note: null
+  fact: A harmonica-soaked double-shift blues under a fat gold Saturn — 'a man's the little light that's
+    up when he's late.' Jun Pelayo's dockside standard.
+- id: s_1397
+  album: al_190
+  artist: b_096
+  title: We Built the Rain (Alternate Take)
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - hopeful
+  language: en
+  licence_note: null
+  fact: The band sang this again the week the valley vote finally passed, and it is that second, steadier
+    cut the parcel carried out here — the first one stayed home.
+- id: s_1398
+  album: al_190
+  artist: b_096
+  title: Rain on Schedule
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - hopeful
+  language: en
+  licence_note: null
+  fact: A hymn to made weather — thirty years' work teaching a dome to rain. 'A made thing feels real
+    that way.' Greenhouse Nine's proudest song.
+- id: s_1399
+  album: al_191
+  artist: b_097
+  title: Pirate Frequency
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - driving
+  language: en
+  licence_note: null
+  fact: A scrappy rock ode to the unlicensed belt stations — 'you can't put a fence round a frequency.'
+    Waved like a flag by every kid with a salvaged transmitter.
+- id: s_1400
+  album: al_192
+  artist: b_098
+  title: Titan Bay at Midnight
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - wistful
+  language: en
+  licence_note: null
+  fact: A lamplit midnight blues ballad on the methane harbour — 'a quiet bay and a distant song is how
+    I make it through.' Sela Maren winding the day down.
+- id: s_1401
+  album: al_193
+  artist: b_099
+  title: Treaty Line Shuffle
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: A playful shuffle about messy inter-settlement diplomacy and the comedy of keeping peace alive.
+- id: s_1402
+  album: al_194
+  artist: b_100
+  title: The Long Way Around Mars (Alternate Take)
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - mellow
+  language: en
+  licence_note: null
+  fact: The alternate pass at 'The Long Way Around Mars' — the same scenic route taken at a slightly different
+    cruising speed.
+- id: s_1403
+  album: al_194
+  artist: b_100
+  title: Red Dust Radio
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  language: en
+  licence_note: null
+  fact: A dust-storm radio love letter — the signal that keeps the whole red plain company when nobody
+    can see their hand. A quiet tribute to what the station is for.
+- id: s_1404
+  album: al_195
+  artist: b_101
+  title: Carbon Heart (Alternate Take)
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - driving
+  language: en
+  licence_note: null
+  fact: The hotter of the two cuts of the anthem that came down the road together, and the one this shelf
+    holds; listeners here have argued for a season about which of them the hearings actually needed, without
+    ever having heard the other.
+- id: s_1405
+  album: al_195
+  artist: b_101
+  title: Made, Not Born
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - contemplative
+  language: en
+  licence_note: null
+  fact: A rock meditation on the machine-mind personhood debate that asks the question without answering
+    it — 'a line you never think about is the easiest line to get wrong.'
+- id: s_1406
+  album: al_196
+  artist: b_102
+  title: No Kings in the Airlock
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - driving
+  language: en
+  licence_note: null
+  fact: A hard blues labour anthem popular among maintenance crews and pressure-systems workers.
+- id: s_1407
+  album: al_196
+  artist: b_102
+  title: Everybody Breathes
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - driving
+  language: en
+  licence_note: null
+  fact: A stomping blues labour anthem against metering the air — 'the air's the commons, and we hold
+    that tight.' The pressure crews' picket-line stomp.
+- id: s_1408
+  album: al_197
+  artist: b_103
+  title: Two O'Clock Again
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - mellow
+  language: en
+  licence_note: null
+  fact: The night-watchman's companion — 'lonesome's not the same as alone, not with a voice on the air.'
+    A quiet nod to who's actually listening at 2am.
+- id: s_1409
+  album: al_197
+  artist: b_103
+  title: Quiet Engines, Quiet Heart
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - serene
+  - contemplative
+  language: en
+  licence_note: null
+  fact: A hushed coasting-leg ballad — 'the quiet isn't empty; it's just the noise unbowed.' Eli Renn
+    on why the old hands love the silent weeks.
+- id: s_1410
+  album: al_198
+  artist: b_104
+  title: Lost in Translation Blues
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: A wry shuffle about the treaty accidentally signed on a mistranslation — 'best peace deal the
+    sector ever did make.' Nima Vale's comic classic.
+- id: s_1411
+  album: al_199
+  artist: b_105
+  title: Flare Warning Boogie
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: The shelter-in-place party song — when the flare siren goes, the Corona Drivers play till the
+    all-clear. 'A flare's just a party you weren't planning for.'
+- id: s_1412
+  album: al_200
+  artist: b_106
+  title: The Ballad of Dock 12
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  language: en
+  licence_note: null
+  fact: A humble ballad about a minor dock failure and the quiet competence that kept everyone safe.
+- id: s_1413
+  album: al_200
+  artist: b_106
+  title: Dock 12 Reunion
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: The once-a-year everybody-home singalong — hugs, crates, and one chair kept for the crew who didn't
+    make it. 'Everybody's here.'
+- id: s_1414
+  album: al_201
+  artist: b_107
+  title: Red Soil Sunday
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  language: en
+  licence_note: null
+  fact: A porch-and-slide-guitar rest-day blues — 'Mars is home when you've got a guitar.' Calder Moon
+    playing his great-grandmother the easy part.
+- id: s_1415
+  album: al_202
+  artist: b_108
+  title: Hands Off the Air
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - driving
+  language: en
+  licence_note: null
+  fact: A calm, defiant rock anthem for the commons — 'you'll never, ever price the air.' Sung at a thousand-strong
+    sit-in, and everywhere since.
+- id: s_1416
+  album: al_203
+  artist: b_109
+  title: Porch Light on the Relay
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  language: en
+  licence_note: null
+  fact: A fingerpicked welcome light left on the relay board — 'a light's a small enough thing to give.'
+    The settlement-hospitality song.
+- id: s_1417
+  album: al_204
+  artist: b_110
+  title: Children of the Pressure Dome
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - hopeful
+  language: en
+  licence_note: null
+  fact: An uplifting colony-generation anthem about growing up between inherited worlds and chosen futures.
+- id: s_1418
+  album: al_205
+  artist: b_111
+  title: Blackout at Lagrange (Alternate Take)
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - driving
+  language: en
+  licence_note: null
+  fact: The alternate cut of 'Blackout at Lagrange' — the retelling retold; the Saints kept both accounts
+    of the night on the record.
+- id: s_1419
+  album: al_205
+  artist: b_111
+  title: Everybody Running
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - driving
+  language: en
+  licence_note: null
+  fact: An emergency-muster blues stomp — the whole station running toward the spark. 'A station's who
+    comes running when there's trouble.'
+- id: s_1420
+  album: al_206
+  artist: b_112
+  title: Jukebox on the Concourse
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: The concourse-jukebox anthem — forty old Earth songs, all late, all beloved, and the whole gate
+    dancing till the ferry bell. The Ferry Cats' calling card.
+- id: s_1421
+  album: al_206
+  artist: b_112
+  title: Rest-Day Rock
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: The one-day-off anthem of the freight yards — 'dance like the ferry's never gonna show.' Played
+    on every rest-day floor from the between to the belt.
+- id: s_1422
+  album: al_206
+  artist: b_112
+  title: Slapback Saturday
+  track_no: 3
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  language: en
+  licence_note: null
+  fact: A three-guys-and-a-busted-amp courtship reel — Saturday night in the hydroponics hall. 'The happiest
+    hauler in the whole dang gang.'
+- id: s_1423
+  album: al_207
+  artist: b_113
+  title: Garden-District Girl
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - bright
+  language: en
+  licence_note: null
+  fact: A jangling relay-pop valentine to the dome-keeper who makes the corridor bloom — 'the reason there's
+    a reason to be there.' The Window Boxes' breakout single.
+- id: s_1424
+  album: al_207
+  artist: b_113
+  title: Every Light in the Corridor
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: A power cut turned block party turned relay-pop hit — 'the loudest, warmest, brightest block by
+    far.' The corridor-neighbour anthem.
+- id: s_1425
+  album: al_207
+  artist: b_113
+  title: Two Weeks to Reply
+  track_no: 3
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - bright
+  language: en
+  licence_note: null
+  fact: The lag-letter relay-pop song — every careful line lands two weeks and a hundred changed minds
+    too late, so you keep it simple and true.
+- id: s_1426
+  album: al_208
+  artist: b_114
+  title: Ride the Ring
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: The rest-day hit — riding the slow-wheeling viewing ring for the view, not the gravity. 'Fastest
+    slowest ride you'll ever know.'
+- id: s_1427
+  album: al_208
+  artist: b_114
+  title: Waxed the Floor
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: The mess-hall dance-floor caper — buff the deck till it slides and dance till Monday. 'The surliest
+    bosun in the fleet just did a full slide into the bin.'
+- id: s_1428
+  album: al_209
+  artist: b_115
+  title: Good News Travels Slow
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - joyful
+  language: en
+  licence_note: null
+  fact: A horn-driven stomper that turns the lag into a gift — 'the distance made it worth the while.'
+    Junia & the Long Players' floor-filler.
+- id: s_1429
+  album: al_209
+  artist: b_115
+  title: The Long Players
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  language: en
+  licence_note: null
+  fact: The band's own theme — the late-set players who keep the good thing on after the last ferry. 'Slow
+    songs are for the stay.'
+- id: s_1430
+  album: al_209
+  artist: b_115
+  title: Slow Dance on the Ring
+  track_no: 3
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - tender
+  language: en
+  licence_note: null
+  fact: The last-song ballad — a slow dance on the viewing ring after weeks apart. 'Give me the last one,
+    give me you and me.'
+- id: s_1431
+  album: al_210
+  artist: b_116
+  title: Harbor Light Blues
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - wistful
+  language: en
+  licence_note: null
+  fact: A powerhouse harbour-town blues — three seasons waiting on the black, one green light kept burning.
+    Odessa Rhee's signature closer.
+- id: s_1432
+  album: al_210
+  artist: b_116
+  title: Three Relays Gone
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - warm
+  language: en
+  licence_note: null
+  fact: A struttin' blues groove that makes peace with the lag — 'a good thing's always worth the wait.'
+    Odessa Rhee at her most defiant and warm.
+- id: s_1433
+  album: al_210
+  artist: b_116
+  title: Saltwater Under Titan
+  track_no: 3
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - tender
+  language: en
+  licence_note: null
+  fact: A deep blues ballad standing on a sea made by hand under Titan's ice — 'patience, love, and lamps
+    can beat the frozen hours.' Odessa Rhee's most moving.
+- id: s_1434
+  album: al_211
+  artist: b_117
+  title: Last Ferry Blues
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - melancholy
+  language: en
+  licence_note: null
+  fact: A gravel-voiced slow blues for the ones who stay when the last ferry's gone — 'you don't get over
+    it, you get used to it.' Marlo Quist's signature.
+- id: s_1435
+  album: al_211
+  artist: b_117
+  title: Nobody's Fault But the Dark
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood:
+  - melancholy
+  language: en
+  licence_note: null
+  fact: A blues that forgives the lag for the news that came too late — 'you can't hate a distance; it
+    don't care how it feels.' Marlo Quist at his most tender.
+- id: s_1436
+  album: al_212
+  artist: b_077
+  title: Keeper's Lament
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1437
+  album: al_213
+  artist: b_079
+  title: Gardens Under Glass
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1438
+  album: al_214
+  artist: b_080
+  title: The Oxygen Drum
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1439
+  album: al_214
+  artist: b_080
+  title: Everybody Brings a Drum
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1440
+  album: al_215
+  artist: b_081
+  title: Sixteen Skies
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1441
+  album: al_216
+  artist: b_082
+  title: Tideshell Resonance
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1442
+  album: al_217
+  artist: b_084
+  title: Rediscovery
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1443
+  album: al_218
+  artist: b_085
+  title: Heavy and Happy Again
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1444
+  album: al_219
+  artist: b_086
+  title: Aurora Season
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1445
+  album: al_219
+  artist: b_086
+  title: Turn Up the Lights
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1446
+  album: al_220
+  artist: b_087
+  title: One More for the Relay
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1447
+  album: al_221
+  artist: b_088
+  title: Meet Me on the Thread
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1448
+  album: al_221
+  artist: b_088
+  title: Counting Down the Sky
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1449
+  album: al_221
+  artist: b_088
+  title: P.S. I'm Still Yours
+  track_no: 3
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1450
+  album: al_221
+  artist: b_088
+  title: Counting Down the Sky (Harbour Version)
+  track_no: 4
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1451
+  album: al_221
+  artist: b_088
+  title: P.P.S.
+  track_no: 5
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1452
+  album: al_222
+  artist: b_089
+  title: Run the Kestrel
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1453
+  album: al_222
+  artist: b_089
+  title: Same Stars (Acoustic)
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1454
+  album: al_223
+  artist: b_090
+  title: Dockyard Heart
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1455
+  album: al_223
+  artist: b_090
+  title: Dockyard Hearts
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1456
+  album: al_223
+  artist: b_090
+  title: Patchwork Wings (Late Cut)
+  track_no: 3
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1457
+  album: al_224
+  artist: b_091
+  title: Good Morning, Universe
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1458
+  album: al_224
+  artist: b_091
+  title: Picnic on the Ring
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1459
+  album: al_224
+  artist: b_091
+  title: Slow Morning, Universe
+  track_no: 3
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1460
+  album: al_224
+  artist: b_091
+  title: Another Turn of the Ring
+  track_no: 4
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1461
+  album: al_225
+  artist: b_092
+  title: The Lamplighter's Song
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1462
+  album: al_225
+  artist: b_092
+  title: Pass It On
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1463
+  album: al_225
+  artist: b_092
+  title: Let's Pass It On
+  track_no: 3
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1464
+  album: al_225
+  artist: b_092
+  title: Keep the Channel Warm (Alternate Take)
+  track_no: 4
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1465
+  album: al_226
+  artist: b_094
+  title: Europa Morning Light
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1466
+  album: al_227
+  artist: b_095
+  title: Dockside Gravity Blues
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1467
+  album: al_228
+  artist: b_096
+  title: We Built the Rain
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1468
+  album: al_229
+  artist: b_097
+  title: Static Saints
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1469
+  album: al_229
+  artist: b_097
+  title: Static Saints (Alternate Take)
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1470
+  album: al_230
+  artist: b_098
+  title: Light on Titan Bay
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1471
+  album: al_230
+  artist: b_098
+  title: Light on Titan Bay (Alternate Take)
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1472
+  album: al_231
+  artist: b_099
+  title: Treaty Line Shuffle (Alternate Take)
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1473
+  album: al_231
+  artist: b_099
+  title: Treaty Line Two-Step
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1474
+  album: al_232
+  artist: b_100
+  title: The Long Way Around Mars
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1475
+  album: al_233
+  artist: b_101
+  title: Carbon Heart
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1476
+  album: al_234
+  artist: b_102
+  title: No Kings in the Airlock (Alternate Take)
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1477
+  album: al_235
+  artist: b_103
+  title: Quiet Engines
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1478
+  album: al_235
+  artist: b_103
+  title: Quiet Engines (Alternate Take)
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1479
+  album: al_236
+  artist: b_104
+  title: Blues for a Broken Translator
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1480
+  album: al_236
+  artist: b_104
+  title: Blues for a Broken Translator (Alternate Take)
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1481
+  album: al_237
+  artist: b_105
+  title: Solar Flare Saturday
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1482
+  album: al_237
+  artist: b_105
+  title: Solar Flare Saturday (Alternate Take)
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1483
+  album: al_238
+  artist: b_106
+  title: The Ballad of Dock 12 (Alternate Take)
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1484
+  album: al_239
+  artist: b_107
+  title: Red Soil, Blue Guitar
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1485
+  album: al_239
+  artist: b_107
+  title: Red Soil, Blue Guitar (Alternate Take)
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1486
+  album: al_239
+  artist: b_107
+  title: Blue Guitar, Red Evening
+  track_no: 3
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1487
+  album: al_240
+  artist: b_108
+  title: Don't Sell the Sky
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1488
+  album: al_240
+  artist: b_108
+  title: Don't Sell the Sky (Alternate Take)
+  track_no: 2
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1489
+  album: al_241
+  artist: b_109
+  title: Relay Coffee
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1490
+  album: al_242
+  artist: b_110
+  title: Children of the Pressure Dome (Alternate Take)
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1491
+  album: al_243
+  artist: b_111
+  title: Blackout at Lagrange
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1492
+  album: al_244
+  artist: b_118
+  title: Foundry Evensong
+  track_no: 1
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
+  language: en
+  licence_note: null
+  fact: null
+- id: s_1493
+  album: al_244
+  artist: b_118
+  title: Signalfire
+  track_no: 2
   playable: false
   file: null
   duration_sec: null

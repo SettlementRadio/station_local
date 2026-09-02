@@ -3071,3 +3071,61 @@ about what the take sings — the file exists only so `tag.py` can find the prov
 exemption is keyed to the wiki rather than to the emptiness: a *genre* album with the same file is
 an album nobody wrote, and stays red. A collection album that does carry words is counted like any
 other, or the collection becomes the place to put a lyric nobody wanted counted.
+
+---
+
+### D-100 · The July collection is 42 bands and 75 records, not 46 — layer B needs records of its own — 2026-09-02
+
+**M-53.** `music/wiki/independents.yaml` is written: 42 bands, 75 albums, 135 songs — **77 the
+station holds and 58 titles it can only name**, which is the split M-53 specified and the split the
+four mechanical rules produce exactly. The rules are the card's: the nine instrumentals go, the
+twenty-four takes under 2:00 go, one take survives each of the thirty-eight duplicate clusters
+(the longest, because §7's duration arithmetic runs short everywhere else), and the station's own
+song keeps both. Nothing was judged by ear and nothing needed to be.
+
+**The card estimated 46 albums and the file has 75, because `check.py` decides where a factless
+title can live.** `_facts()` keys on the *album's* layer, not the song's: every song on a layer-A
+album must carry a fact and no song on a layer-B album may. So a take the station does not hold
+cannot sit as `playable: false` beside the ones it does — it needs a record of its own. Thirty-three
+of the forty-two bands have such takes, so the file carries 42 layer-A records and 33 layer-B ones.
+Each of those 33 is the single or EP that circulated and never reached us, titled from the pile's
+own spare titles rather than invented. **46 was not reachable under the card's own no-fact rule**,
+and the alternative — putting facts on titles the station cannot play — is the thing §1 exists to
+prevent.
+
+**42 bands rather than 43, because `First Generation` is a claim and not a credit.** The pile puts
+the name in quotation marks and files one archival track under it; canon 70-music fact 22 is that
+nothing from beyond living memory plays at all. So the take is filed under The First-Ships Choir,
+whose record it closes, and its fact says the sleeve makes the claim and the choir prints it without
+believing it. That is the canon-true reading and it lands the band count on the operator's number.
+
+**Six of the surviving takes are titled `(Alternate Take)` and keep that title.** Where the second
+generation was the longer one it wins, and swapping the labels so the plain title sat on the take
+that happened to survive would have been a small lie about what is on the shelf. An unsigned shelf
+holding the alternate cut of a record whose issued cut never reached the frontier is the truer
+object, and the facts say so.
+
+**Re-dated into 2613–2621, so the whole collection is `gold`.** `category` is derived (D-085); the
+pile's own years cluster 2620–2626 and would have put all 77 into heavy rotation against the
+commissioned 500. The eight anchors do not bind a collection (D-099) and this one mostly misses
+them, because records that arrive one at a time are not records that came out in the years every
+house shipped into.
+
+**Two names moved on the Wikidata screen — the first two hits in nine screens.** The album *The
+Commons* (House of Commons, 81 sitelinks) and the song *Wings* (the real band, 40 sitelinks). The
+second was not a close call: §8 rule 1 forbids a real band's name outright. Both were retitled and
+the collection rescreened clean at 221 distinct names. `CONSTANTS.md` §3 carries the verdicts.
+
+**The facts are the pile's own blurbs, and §8 was the reason most of the editing happened.** The card
+expected edits only where a blurb named an era canon does not have — and canon 10-history in fact
+names all three (First Expansion, Reconnection, Age of the Relays), so that edit was one word wide.
+What did need editing was the **production vocabulary**: the blurbs were written full of "power-pop",
+"folk-rock", "surf-rock", "soul-rock", and §8 keeps every real genre and technique word out of the
+wiki entirely, because the wiki is read into the station and can reach the microphone. Twenty-eight
+facts and three bios now carry the in-world vocabulary only — the nine canon forms, plus §8's
+three-word exception for old-system material: blues, rock, the folk rounds. Two names went as well:
+`Orin` and `Greaves` are the previous attempt's and appear nowhere in `canon/`; `Vell` is canon and
+stayed.
+
+**No style cards, no members, no session players, no layer C.** A style card fixes how a band sounds
+for records not yet made, and every record these forty-two bands will ever make already exists.

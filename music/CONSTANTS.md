@@ -146,6 +146,19 @@ is recorded is the result:
 | void-lounge | 2026-08-13 | 153 | nothing matched |
 | core-harmonies | 2026-08-14 | 43 | nothing matched — rescreened after M-15 retitled `al_161` *Nobody Had a Seat*, the only new name in the catalogue |
 | void-ballads | 2026-08-14 | 44 | nothing matched |
+| **independents** | 2026-09-02 | 221 | nothing matched **on the second run** — see below. Not a genre: this is the July collection (`wiki.COLLECTIONS`), 42 bands · 75 albums · 135 titles, M-53 |
+
+**The collection's first run found two, and both were moved rather than argued about** (M-53). The
+rule is D-009's — an exact full-name match against an entity with ≥5 sitelinks — and these were the
+first two hits in nine screens:
+
+| Name | What came up | Verdict |
+|---|---|---|
+| **The Commons** | *House of Commons*, 81 sitelinks — an institution, not a musician | **moved.** Nobody would mistake an unsigned orbital protest record for a parliament, but the title was a generic two-word noun phrase carrying no work of its own. Vera Cross's record is now **Hands Off the Air**, after the song on it |
+| **Wings** | the real band, 40 sitelinks | **moved, and it was not a close call** — §8 rule 1 forbids a real band's name outright. It is a layer-B title on `al_223` and is now **Patchwork Wings (Late Cut)**, which is what that take is |
+
+Both were retitled and the whole collection rescreened the same day: 221 distinct names, nothing
+matched.
 
 Notes kept because §19 says fuzzy and surname-only matches are flagged, never blocked:
 

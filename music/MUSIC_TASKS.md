@@ -68,7 +68,7 @@ marked **NEXT**.
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
 | **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
 | **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-25** old-system sessions' lyrics, 90 songs across 11 albums · 2026-08-29 | **M-34 is in progress and stays NEXT — 44 of 90 filed, 2026-08-31 and 2026-09-01**, measured, tagged and in the catalogue. `al_098` … `al_102` are all complete, so **Terrace Road Four and The Shore Rounds are finished bands** and neither is split across generators. **354 of the 500 playable songs now exist.** 46 takes are owed — Undershore Local and The Ninefoot Cut, both untouched — and the operator will make them on a different generator with its own licence evidence. **2026-09's licence PDF is not captured yet** (M-40, D-098) |
-| **7 · The July collection** | M-52 · M-53 · M-54 · M-55 · M-56 | **M-52** the collection seam · 2026-09-02 | **the seam exists; the collection is not written yet.** 135 takes made 2026-07-03 … 07-25 on Suno Pro v5.5, before the commission, sitting unused at `music/audio/RAW/`. 77 of them become an unsigned collection outside the 500; 58 become layer-B titles; one becomes the station's own song. **The code now carries a file that is neither a genre nor skipped** (`wiki.COLLECTIONS`, D-099): no plan allocation, no anchor years, and every other rule unchanged. **M-53 is NEXT** and it is an agent card, so it cannot run beside M-34. Stage 7 must close before M-42 |
+| **7 · The July collection** | M-52 · M-53 · M-54 · M-55 · M-56 | **M-53** the collection, written · 2026-09-02 | **the collection exists in the world; none of its audio is filed yet.** `music/wiki/independents.yaml` carries **42 bands, 75 albums and 135 songs — 77 the station holds and 58 titles it can only name**, all `label: unsigned`, all re-dated into 2613–2621 so the whole shelf is `gold` and none of it crowds the 500. `make check` green, the names screened clean at 221, D-100 written. **The card's 46 albums was not reachable** — `check.py` keys the fact rule on the album's layer, so 33 bands needed a layer-B record of their own (D-100). **M-54 is NEXT**: copy the 135 takes out of `music/audio/RAW/` into `music/audio/unsigned/`, write the stub lyrics files and widen the July licence note. It is an agent card, so it cannot run beside M-34. Stage 7 must close before M-42 |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -1543,8 +1543,8 @@ decide:** §12's rule 8 stays genre-only, because it is written as *"a genre fil
 other genre files"* and a shelf of unsigned records is not a tenth world to be sealed — rules 6 and
 7 do read the collection. 10 new tests, `make check` green, D-099.
 
-### M-53 · `[agent]` `music/wiki/independents.yaml` — the collection, written — **NEXT**
-Goal: The 136 takes become part of the world, with a story that fits the canon they were made
+### M-53 · `[agent]` `music/wiki/independents.yaml` — the collection, written — **DONE 2026-09-02**
+Goal: The 135 takes become part of the world, with a story that fits the canon they were made
 before.
 Reads: COMMISSION §1, §2, §6, §7, §8 · CONSTANTS §3, §4 · the preamble above
 Files: `music/wiki/independents.yaml`, `music/CONSTANTS.md` §3, `docs/DECISIONS.md`
@@ -1586,8 +1586,11 @@ Then five decisions the file has to make, none of which the pile makes for you:
     wiki is frozen.
   - **`label: unsigned` throughout**, and no eighth label anywhere.
   - **The facts are already written.** Each song's `fact` is its `story_blurb` from `tracks.yaml`,
-    edited only where it names an era the canon does not have — `age-of-relays`, `reconnection` and
-    `first-expansion` appear nowhere in `canon/` and are the previous attempt's vocabulary. Layer-B
+    edited only where it breaks §8. **This card's era claim was wrong** — `canon/10-history.md`
+    names all three ages (the First Expansion, the Reconnection, the Age of the Relays), so nothing
+    needed editing on those grounds. What did need editing was §8's production vocabulary:
+    "power-pop", "folk-rock", "surf-rock", "soul-rock", "heartland-rock" — words the wiki never
+    carries because the wiki reaches the microphone. Layer-B
     songs get **no** fact; §12's rule and `check.py` both say so.
 Note: this is a wiki-writing card and reads like M-07 … M-14, with two differences: the songs
 already exist, and the bands do not have to earn a label. Bands still need a bio, a home and a
@@ -1595,8 +1598,33 @@ already exist, and the bands do not have to earn a label. Bands still need a bio
 bands** — a style card fixes how a band sounds for records not yet made, and every record these
 bands will ever make already exists.
 Depends on: M-52
+Result: **`music/wiki/independents.yaml` — 42 bands, 75 albums, 135 songs, 77 playable and 58
+titles.** The split came out at exactly 77/58 from the four mechanical rules with nothing judged by
+ear: 9 instrumentals, 24 takes under 2:00, 38 second takes across 33 clusters (the longest surviving
+take of each kept), and the station's song keeping both. `make check` green, `make music-screen
+GENRE=independents` clean at 221 distinct names, `CONSTANTS.md` §3 carries the result and D-100 the
+decisions. **Three things the card did not predict.** *46 albums was not reachable*: `check.py`
+keys the fact rule on the **album's** layer, so a take the station does not hold cannot sit beside
+one it does — 33 of the 42 bands needed a layer-B record of their own, and the file carries 42
+layer-A records and 33 layer-B ones. *42 bands rather than 43*: `First Generation` is a claim on a
+sleeve and not a credit (canon 70-music fact 22 — nothing that old plays), so its one take closes
+The First-Ships Choir's record and its fact says who is claiming what. *Two names moved on the
+screen* — the album *The Commons* and the song *Wings*, the first two hits in nine screens; both
+retitled and rescreened clean. **And one thing the card got the wrong way round**: it expected the
+facts to need editing for era vocabulary, and canon 10-history has all three eras — what they
+actually needed was §8, because the blurbs are full of production vocabulary ("power-pop",
+"folk-rock", "surf-rock") and that never enters the wiki. 28 facts and 3 bios were edited to the
+nine canon forms plus §8's three-word old-system exception. Re-dated into 2613–2621, so the whole collection is `gold` and none
+of it crowds the 500. Nothing was written that the card told me not to write: no style cards, no
+members, no session players, no layer C.
 
-### M-54 · `[agent]` File the 78 takes, and the licence they were made under
+### M-54 · `[agent]` File the 78 takes, and the licence they were made under — **NEXT**
+**Before this card copies anything, the operator listens to `s_1362` — Ysolde Mar's *Cargo-Hold
+Lullaby*, `al_171` track 2, 479.4 seconds.** M-53 filed it as playable because §7 has no upper floor
+and the rule kept it, but it is to the tenth of a second the length of the runaway generation the
+operator deleted on 2026-09-01, and M-53 could not judge that by reading. If it is a runaway the fix
+is one `playable: false` and one line moved onto a layer-B record for Ysolde Mar, and the counts
+become 76 and 59.
 Goal: The collection's audio sits where the station expects audio, carries its own provenance, and
 reaches `music/catalogue.yaml`.
 Reads: COMMISSION §9 · ARCHITECTURE §17a · RUNBOOK steps 6 and 7
