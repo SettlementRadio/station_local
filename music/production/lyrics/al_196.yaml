@@ -9,8 +9,10 @@
 # `writing.py` skips a collection album whose songs carry no lyrics (`_is_a_stub`, M-52 check 7),
 # which is why COMMISSION.md §12 does not go red over this record. Add a lyric here and it will.
 #
-# **Copied, not moved.** The source is `music/audio/RAW/music/`, which stays intact until M-56
-# retires it; every song's `take:` block names the file it came from.
+# **Copied, not moved — and the source is now gone.** These takes were copied out of
+# `music/audio/RAW/music/`, which M-56 deleted on 2026-09-02 once the wiki carried every name it
+# held. Every song's `take:` block still names the file it came from, and that name is now the only
+# record of it: this file is in git and that folder never was.
 
 album:
   id: al_196

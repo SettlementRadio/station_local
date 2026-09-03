@@ -3233,3 +3233,40 @@ filing was a one-time pass by (band, title) against `music/audio/RAW/music/track
 (artist, title) pair there is unique, and the five places the mapping is not mechanical were already
 recorded by M-53 in the wiki header: four song retitles that landed on a playable song, and
 `First Generation`, whose one take is filed under The First-Ships Choir.
+
+### D-103 · The July pile is deleted, but `music/audio/RAW/` is not — and check 5 was the wrong shape — 2026-09-02
+
+**M-56.** `music/audio/RAW/music/` is gone: 135 takes and the hand-written `tracks.yaml` that
+described them, 137 files, none of which were ever in git. `music/wiki/independents.yaml` and the 42
+stub lyrics files are now the only description of the collection, and both are in git. Three things
+were decided doing it.
+
+**Three album titles existed only in `tracks.yaml`, and the deletion waited for them.** Check 4 asks
+that nothing in that file be only in that file, and three names failed it: the collection's *Red
+Soil, Blue Guitar* (Calder Moon) is `al_201` *Red Soil Sunday*, *Light on Titan Bay* (Sela Maren) is
+`al_192` *Titan Bay at Midnight*, and *Red Weather Sessions* (Mara Vale) is `al_187` *Red Weather*.
+M-53 made all three moves and wrote none of them down, having recorded eleven others. **Why they
+moved is not recorded and was not guessed at** — what is on the page is the visible fact that the
+first two named an album after a song the same band's pile also carried, and the split sent both
+songs to a layer-B record. The mapping is now in the wiki header beside M-53's own retitles, and
+check 4 re-ran clean over 43 artist names, 59 albums and 135 song titles before anything was
+deleted.
+
+**Check 5 cannot be true as written, and making it true would be damage.** It asks that `grep -r
+RAW` find no reference in the repository. It still finds 236, and every one is one of two things
+that must stay. **Provenance**: the 76 `source:` lines M-54 put in the stubs on purpose, precisely so
+the mapping to the original filenames outlives this card. **A live feature**: `music/audio/RAW/` is
+the default input folder of `make music-dispatch`, `dispatch.py` holds `RAW_DIR` and writes
+`dispatch-manifest.json` into it, and `ADMIN.md` documents the `RAW=` override. The check's real
+content is narrower and it was met — **nothing may promise the folder is still there.** Forty-five
+passages said it did: 42 stub headers ("the source ... stays intact until M-56"), two in the wiki
+header, and stage 7's preamble instructing every agent to read `tracks.yaml` first. All were moved
+to the past tense before the deletion, so the repository never described a folder it did not have.
+
+**`music/audio/RAW/` itself was kept, against the card, by operator decision.** The card says delete
+the folder. The folder also held `M-25-SECOND/` — 48 takes for M-34, none of them filed, 30 sitting
+in `music/catalogue.yaml` at `file: null` — and `dispatch-manifest.json`, 92K recording both ends of
+every dispatch move ever made. The card was written when RAW meant the July pile and the disk
+changed underneath it. Only `RAW/music/` was deleted. **The lesson is not about this folder**: a card
+that names a directory to delete is naming what that directory held on the day it was written, and
+the check before an irreversible step has to be what is in it now, not what the card remembers.

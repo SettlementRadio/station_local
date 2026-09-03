@@ -67,8 +67,8 @@ marked **NEXT**.
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-06** `music/catalogue.yaml` · 2026-08-16 | **all done.** The takes are measured (D-083), tagged (D-084), and joined into the one file the station's database ingests — 1,358 tracks, 45 of them playable, checked against the wiki by `make check` (D-085) |
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
 | **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
-| **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-25** old-system sessions' lyrics, 90 songs across 11 albums · 2026-08-29 | **M-34 is in progress and stays NEXT — 44 of 90 filed, 2026-08-31 and 2026-09-01**, measured, tagged and in the catalogue. `al_098` … `al_102` are all complete, so **Terrace Road Four and The Shore Rounds are finished bands** and neither is split across generators. **354 of the 500 playable songs now exist.** 46 takes are owed — Undershore Local and The Ninefoot Cut, both untouched — and the operator will make them on a different generator with its own licence evidence. **2026-09's licence PDF is not captured yet** (M-40, D-098) |
-| **7 · The July collection** | M-52 · M-53 · M-54 · M-55 · M-56 | **M-54** the 76 takes filed · 2026-09-02 | **the collection is in the world, on the disk and in the catalogue; one folder is left to delete.** `music/wiki/independents.yaml` carries **42 bands, 76 albums and 135 songs — 76 the station holds and 59 titles it can only name**, all `label: unsigned`, all re-dated into 2613–2621 so the whole shelf is `gold` and none of it crowds the 500. **M-54 is done: the 76 takes are at `music/audio/unsigned/al_NNN/NN.mp3`**, copied not moved, tagged `suno-pro-2026-07` · v5.5 · their own date, and in `music/catalogue.yaml` measured — **430 playable rows now exist**. 42 stub lyrics files `al_170` … `al_211` carry provenance and deliberately no lyrics, and the July licence note was widened from 56 imaging assets to **132**. **It is 76 and not 77 because the operator listened**: `s_1362` *Cargo-Hold Lullaby* is a runaway generation, now `playable: false` on the new `al_245`, with no audio copied (D-102). **M-56 is NEXT and closes the stage** — it verifies the five things and then asks before deleting `music/audio/RAW/`, which is untouched. It is an agent card and M-34 is `[you]`, so the two may run together. Stage 7 must close before M-42 |
+| **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-25** old-system sessions' lyrics, 90 songs across 11 albums · 2026-08-29 | **M-34 is in progress and is NEXT again now stage 7 is closed — 44 of 90 filed, 2026-08-31 and 2026-09-01**, measured, tagged and in the catalogue. `al_098` … `al_102` are all complete, so **Terrace Road Four and The Shore Rounds are finished bands** and neither is split across generators. **354 of the 500 playable songs now exist.** 46 takes are owed — Undershore Local and The Ninefoot Cut, both untouched — and the operator will make them on a different generator with its own licence evidence. **2026-09's licence PDF is not captured yet** (M-40, D-098) |
+| **7 · The July collection** | M-52 · M-53 · M-54 · M-55 · M-56 | **M-56** the pile retired · 2026-09-02 | **the stage is closed and the collection is done.** `music/wiki/independents.yaml` carries **42 bands, 76 albums and 135 songs — 76 the station holds at `music/audio/unsigned/al_NNN/NN.mp3` and 59 titles it can only name**, all `label: unsigned`, all re-dated into 2613–2621 so the whole shelf is `gold` and none of it crowds the 500. **430 playable rows** in `music/catalogue.yaml`; 42 stub lyrics files `al_170` … `al_211` carry provenance and no lyrics; the July licence note covers **132** assets. `s_1362` *Cargo-Hold Lullaby* is a runaway the operator heard, `playable: false` on `al_245` (D-102). **M-56 deleted `music/audio/RAW/music/` — 137 files — and kept the folder above it**: it still holds `M-25-SECOND/`, 48 unfiled takes M-34 needs, and the dispatch manifest, so the card's own "delete `music/audio/RAW/`" would have destroyed live work (D-103). Check 4 caught three album retitles M-53 never wrote down and they are in the wiki now. **Nothing here blocks M-42 any more** |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -1257,7 +1257,7 @@ Depends on: M-20 for M-21; thereafter each genre's lyrics card depends on the pr
 **audio** card being finished — that is what "one genre at a time" means. **M-25 closed on
 2026-08-29, so M-34 is runnable now**, and M-27's turn comes when M-34 does.
 
-### M-30 · M-31 · M-33 · M-34 · M-36 · M-37 · M-38 · `[you]` Suno — 455 songs — **M-33 DONE 2026-08-28 · M-34 44 OF 90 FILED 2026-09-01**
+### M-30 · M-31 · M-33 · M-34 · M-36 · M-37 · M-38 · `[you]` Suno — 455 songs — **M-33 DONE 2026-08-28 · M-34 44 OF 90 FILED 2026-09-01 · M-34 NEXT**
 Files: `music/audio/<label>/<album>/NN.mp3`
 Check: every song in that genre has a keeper take, downloaded and named, with the prompt, attempts,
 model version and date recorded in the album's lyrics file. Custom mode only.
@@ -1479,8 +1479,9 @@ Depends on: M-05, and each genre's audio card as it lands. Closes when M-38 does
 
 **135 songs already exist and none of them is in the plan.** They were generated on Suno between
 2026-07-03 and 2026-07-25 — one account, **Pro, v5.5** (operator, 2026-09-01), one licence period,
-before the commission was written — and they sit on the volume at `music/audio/RAW/music/` with a
-hand-written `tracks.yaml` describing every one. A 136th was a runaway generation and the operator
+before the commission was written — and they arrived on the volume at `music/audio/RAW/music/` with
+a hand-written `tracks.yaml` describing every one. **That folder is gone — M-56 deleted it on
+2026-09-02**, once the wiki carried every name it held. A 136th was a runaway generation and the operator
 deleted it on 2026-09-01, entry and all; the ledger and the folder are back in step at 135.
 **The operator wants them used.** This stage is how.
 
@@ -1502,10 +1503,12 @@ the renaming is free.
 
 **One of them is the station's own song** and gets its own card (M-55).
 
-**Read `music/audio/RAW/music/tracks.yaml` before starting any card in this stage.** It is the only
-description of these files, it is under `music/audio/` and therefore **not in git**, and it is
-deleted at M-56 once its contents live in the wiki. Until then it is the source of truth for what
-each file is.
+**`music/audio/RAW/music/tracks.yaml` was the source of truth for what each file is, and M-56
+deleted it on 2026-09-02.** It was under `music/audio/` and therefore never in git. Its contents are
+now in two places that are: `music/wiki/independents.yaml` carries every band, album and song title
+it held — M-56 check 4 proved that before the deletion — and the 42 stub lyrics files `al_170` …
+`al_211` carry each take's Suno id, its date and the RAW filename it was copied from. **Do not send
+an agent to read the pile; send it to those two.**
 
 ### M-52 · `[agent]` The collection seam — a wiki file that is not a genre — **DONE 2026-09-02**
 Goal: The code can carry a set of records that is not part of the commissioned 500, and the three
@@ -1723,7 +1726,7 @@ PROGRAMMING §8 runs the day 05:00–04:59, so the head is the 05:04 open and th
 music before 05:00 in the 04:04 slot. No card was added to `imaging/IMAGING_TASKS.md` or
 `docs/TASKS.md`. `make check` green, 500/25/9 unmoved, no stray keys on either song.
 
-### M-56 · `[agent]` Retire `music/audio/RAW/` — and the collection is done — **NEXT**
+### M-56 · `[agent]` Retire `music/audio/RAW/` — and the collection is done — **DONE 2026-09-02**
 Goal: One description of these 135 takes, in git, and no second copy contradicting it on the volume.
 Files: deletes `music/audio/RAW/`.
 Check: run in this order and stop at the first that is not true.
@@ -1744,6 +1747,41 @@ is the only record of what these files are and it lives under `music/audio/`, wh
 excludes — so until the wiki carries everything it says, deleting it loses the collection. After
 this card the wiki is the only description, and it is in git.
 Depends on: M-54, M-55
+Result: **`music/audio/RAW/music/` is gone — 135 takes and the `tracks.yaml` that described them,
+137 files** — and `music/wiki/independents.yaml` plus the 42 stub lyrics files are now the only
+description of the collection. Both are in git; the folder never was. D-103 records the three
+decisions. **Two of the five checks were not true when the card started, and one of them still is
+not.**
+
+*Check 4 caught three album titles that existed nowhere but `tracks.yaml`*, which is exactly what it
+was written to catch. The collection's *Red Soil, Blue Guitar* (Calder Moon) is `al_201` *Red Soil
+Sunday* · *Light on Titan Bay* (Sela Maren) is `al_192` *Titan Bay at Midnight* · *Red Weather
+Sessions* (Mara Vale) is `al_187` *Red Weather*. M-53 made all three moves and recorded none, having
+written down eleven others; deleting first would have lost the only trace that those were ever the
+sleeve's names. **Why they moved is not recorded and was not guessed at.** They are now in the wiki
+header beside M-53's own list, and the check re-ran clean before anything was deleted: 43 artist
+names, 59 (artist, album) pairs, 135 (artist, title) pairs, all reaching the wiki.
+
+*Check 5 is the wrong shape and making it literally true would be damage.* `grep -r RAW` still finds
+236 references and every one is either **provenance** — the 76 `source:` lines M-54 put in the stubs
+so this mapping would outlive this card — or **a live feature**: `music/audio/RAW/` is the default
+input folder of `make music-dispatch`, `dispatch.py` holds `RAW_DIR` and writes
+`dispatch-manifest.json` there, and `ADMIN.md` documents `RAW=`. The check's real content is
+narrower and it was met: **nothing may promise the folder is still there.** Forty-five passages did
+— 42 stub headers, two in the wiki header, and stage 7's preamble telling every agent to read
+`tracks.yaml` first — and all were moved to the past tense *before* the deletion, so the repository
+never described a folder it did not have.
+
+**The card's deletion scope was wrong and the operator narrowed it.** `music/audio/RAW/` also held
+`M-25-SECOND/` — 48 takes for M-34, none filed, 30 of them catalogue rows still at `file: null` —
+and `dispatch-manifest.json`, 92K recording both ends of every dispatch move ever made. Deleting the
+folder as written destroys both. Only `RAW/music/` went; the other two are untouched, and
+`music/audio/RAW/` stays as `make music-dispatch`'s staging area. **`make music-tag`'s unclaimed
+report drops from 183 files to M-34's 48**, so what it reports is now one pile of real outstanding
+work rather than that plus a collection already filed.
+
+`make check` green. `make music-catalogue` regenerates byte-identical — 430 playable rows, 500/25/9
+unmoved — and still agrees with the wiki.
 
 ---
 
@@ -1775,6 +1813,6 @@ Depends on: M-41
 - [ ] `music/catalogue.yaml` complete and validated
 - [ ] Licence evidence for every month generated in
 - [ ] You have listened, twice — at M-19 and at M-42
-- [ ] The July collection filed — **77** unsigned records beside the 500, **58** more as titles, and `music/audio/RAW/` gone
+- [x] The July collection filed — **76** unsigned records beside the 500, **59** more as titles, and the July pile `music/audio/RAW/music/` gone (M-56, 2026-09-02). `music/audio/RAW/` itself stays: it is `make music-dispatch`'s staging area and still holds M-34's unfiled takes (D-103)
 
 Then the music job is done, and it hands over to the phase that has a database.

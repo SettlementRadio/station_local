@@ -13,8 +13,10 @@
 # `label: unsigned` throughout; there is no eighth house here and there never will be.
 #
 # **What it is on the disk.** 135 takes made between 2026-07-03 and 2026-07-25 on one Suno Pro
-# account, v5.5, before COMMISSION.md was written. They sit at `music/audio/RAW/music/` with a
-# hand-written `tracks.yaml` beside them until M-54 files them and M-56 deletes it.
+# account, v5.5, before COMMISSION.md was written. They arrived at `music/audio/RAW/music/` with a
+# hand-written `tracks.yaml` beside them; M-54 copied the 76 the station holds to
+# `music/audio/unsigned/` on 2026-09-02 and **M-56 deleted that folder the same day**. This file is
+# now the only description of the collection, and unlike the folder it is in git.
 #
 # ## The split — 76 layer A, 59 layer B, and the rules that produced it
 #
@@ -103,6 +105,17 @@
 # carries the verdicts: the album *The Commons* → *Hands Off the Air*, and the song *Wings* →
 # *Patchwork Wings (Late Cut)*, which is what that take is.
 #
+# **Three more album titles moved and were not written down, and M-56's check 4 found them.** The
+# collection's *Red Soil, Blue Guitar* (Calder Moon) is `al_201` *Red Soil Sunday* · *Light on Titan
+# Bay* (Sela Maren) is `al_192` *Titan Bay at Midnight* · *Red Weather Sessions* (Mara Vale) is
+# `al_187` *Red Weather*. **Why they moved is not recorded and is not being guessed at here**; what
+# is on the page is that the first two named an album after a song the same band's pile also carries
+# — *Red Soil, Blue Guitar* and *Light on Titan Bay* are both song titles, and the split sent both
+# songs to a layer-B record — so keeping the sleeve's name would have put an album and a song of the
+# same name on one band's shelf. Each of the three is a single here and takes the title of the one
+# take that survived rule 3. Recorded because `tracks.yaml` is being deleted and these three names
+# were the last thing that existed only in it.
+#
 # ## The facts are the pile's own blurbs, edited twice and only twice
 #
 # Every layer-A song's fact is its `story_blurb` from `tracks.yaml`. Two things were edited out.
@@ -116,9 +129,11 @@
 # nothing else. **The era words were not edited**: `age-of-relays`, `reconnection` and
 # `first-expansion` are the tags, not the prose, and canon 10-history names all three ages.
 #
-# **M-54 files the audio by (band, title).** Every other title in this file is the title the take
-# carries in `music/audio/RAW/music/tracks.yaml`, and every (artist, title) pair there is unique, so
-# the mapping is mechanical. The five song retitles above are the only places it is not — four of
+# **M-54 filed the audio by (band, title).** Every other title in this file is the title the take
+# carried in `music/audio/RAW/music/tracks.yaml` — deleted at M-56 — and every (artist, title) pair
+# there was unique, so the mapping was mechanical. **M-56's check 4 walked that file one last time
+# before deleting it**: all 43 artist names, 59 albums and 135 song titles reach this page, under
+# their own name or a retitle recorded above. The five song retitles above are the only places it is not — four of
 # them on playable songs — and
 # `First Generation` is the one artist that moved: its single take is filed here under The
 # First-Ships Choir, because the pile itself puts the name in quotation marks and the sleeve's
