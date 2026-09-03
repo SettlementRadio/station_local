@@ -416,36 +416,19 @@ layer_a:
       band: b_083
       label: unsigned
       release_year: 2613
-      kind: album
+      kind: single
       genre: core-harmonies
       cornerstone: false
       notes: >-
         Old repertoire re-cut by the people who still sing it, which is the only way any of it reaches
-        anybody — the ships themselves left nothing that plays. The record closes with a fragment somebody
-        put a first-generation claim on, and the choir printed the claim without endorsing it and has
-        declined to discuss it since.
+        anybody — the ships themselves left nothing that plays. What the station holds of the record is
+        the fragment somebody put a first-generation claim on; the choir printed the claim without
+        endorsing it and has declined to discuss it since. The two Exodus hymns the record opened with
+        are on al_246 and the station does not hold them (D-104).
       songs:
-      - id: s_1368
-        title: Departure Hymn
-        track_number: 1
-        genre: core-harmonies
-        mood_tags: [solemn]
-        playable: true
-        fact: >-
-          An Exodus Hymn from the first ships — solemn, hopeful, carrying the weight of leaving and
-          the dream of arrival. Centuries old and still sung when a settlement sends someone out.
-      - id: s_1369
-        title: The Blue Cradle
-        track_number: 2
-        genre: core-harmonies
-        mood_tags: [nostalgic]
-        playable: true
-        fact: >-
-          The hymn every settled child learns about Earth — half record, half founding myth: the blue
-          planet, the place humanity first learned to look up and wonder.
       - id: s_1370
         title: Earthlight (First-Generation Recording)
-        track_number: 3
+        track_number: 1
         genre: core-harmonies
         mood_tags: [nostalgic]
         playable: true
@@ -2423,3 +2406,20 @@ layer_b:
       that finishes.
     songs:
     - {id: s_1362, title: Cargo-Hold Lullaby, track_number: 1, genre: void-ballads, playable: false}
+  - id: al_246
+    title: The Leaving Hymns
+    band: b_083
+    label: unsigned
+    release_year: 2613
+    kind: single
+    genre: core-harmonies
+    cornerstone: false
+    notes: >-
+      The two Exodus hymns off the front of The Deep Stacks, and the half of that record the station
+      does not hold. Canon is flat that the settled worlds do not sing their own founding, and the
+      choir's own position — that this is repertoire and not history — is not a thing a back-announce
+      can carry every time either one plays. They exist, the choir sings them on rest-days, and the
+      station names them without putting them on air (D-104, operator).
+    songs:
+    - {id: s_1368, title: Departure Hymn, track_number: 1, genre: core-harmonies, playable: false}
+    - {id: s_1369, title: The Blue Cradle, track_number: 2, genre: core-harmonies, playable: false}

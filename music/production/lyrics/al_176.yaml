@@ -1,13 +1,18 @@
-# al_176 — The Deep Stacks · The First-Ships Choir (b_083) · unsigned · 2613 · 3 songs · album
+# al_176 — The Deep Stacks · The First-Ships Choir (b_083) · unsigned · 2613 · 1 song · single
 #
 # **A stub, written by M-54. There are no lyrics in this file and there must not be.** These takes
 # were generated in July 2026, before `COMMISSION.md` existed, and nothing was written down for
 # them: the words are whatever the take sings, and putting a guess here would be a lie about the
 # audio. The file exists for one reason — `tag.py` reads a take's provenance from nowhere else, so
-# without it these 3 files could not say what licence they were made under.
+# without it this file could not say what licence it was made under.
 #
 # `writing.py` skips a collection album whose songs carry no lyrics (`_is_a_stub`, M-52 check 7),
 # which is why COMMISSION.md §12 does not go red over this record. Add a lyric here and it will.
+#
+# **Two takes were removed after filing.** `s_1368` Departure Hymn and `s_1369` The Blue Cradle
+# were filed here by M-54 and taken back out on 2026-09-02 (D-104): the operator judged them against
+# canon fact 21 and the station does not hold them. They are layer-B titles on `al_246` now, their
+# audio is deleted, and this file is down from three takes to one.
 #
 # **Copied, not moved — and the source is now gone.** These takes were copied out of
 # `music/audio/RAW/music/`, which M-56 deleted on 2026-09-02 once the wiki carried every name it
@@ -23,10 +28,10 @@ album:
   release_year: 2613
   genre: core-harmonies
   cornerstone: false
-  song_count: 3
+  song_count: 1
 
 generation:
-  # Not a sitting: these are 3 takes out of a 135-file pile made across July 2026 and sorted
+  # Not a sitting: this is one take out of a 135-file pile made across July 2026 and sorted
   # into records afterwards by M-53. The licence period and the model version are the pile's and
   # are stated in music/licence-evidence/2026-07-suno-licence-note.md; **the model version is the
   # operator's word, given 2026-09-01** — Suno writes no model field into an export, only
@@ -42,31 +47,9 @@ generation:
     carries (D-091, D-097) and there is no written lyric here to prove against.
 
 songs:
-  - id: s_1368
-    title: "Departure Hymn"
-    track_number: 1
-    take:
-      licence_period: null # inherits generation.licence_period (suno-pro-2026-07)
-      model_version: null # inherits generation.model_version (v5.5)
-      generated_on: 2026-07-05
-      suno_id: 5508e34b-9184-4cb5-b25e-ef9f2873ed55
-      suno_created: 2026-07-05T13:20:07Z
-      source: music/audio/RAW/music/first-ships-choir__departure-hymn.mp3
-      file: music/audio/unsigned/al_176/01.mp3
-  - id: s_1369
-    title: "The Blue Cradle"
-    track_number: 2
-    take:
-      licence_period: null # inherits generation.licence_period (suno-pro-2026-07)
-      model_version: null # inherits generation.model_version (v5.5)
-      generated_on: 2026-07-05
-      suno_id: 01fd27df-398e-4108-9ff6-d309c9dc0aad
-      suno_created: 2026-07-05T13:24:07Z
-      source: music/audio/RAW/music/first-ships-choir__the-blue-cradle.mp3
-      file: music/audio/unsigned/al_176/02.mp3
   - id: s_1370
     title: "Earthlight (First-Generation Recording)"
-    track_number: 3
+    track_number: 1
     take:
       licence_period: null # inherits generation.licence_period (suno-pro-2026-07)
       model_version: null # inherits generation.model_version (v5.5)
@@ -74,4 +57,4 @@ songs:
       suno_id: 7fc438d4-fd02-4d8f-a0cc-ac1e787f4d7e
       suno_created: 2026-07-05T13:44:21Z
       source: music/audio/RAW/music/first-generation__earthlight.mp3
-      file: music/audio/unsigned/al_176/03.mp3
+      file: music/audio/unsigned/al_176/01.mp3

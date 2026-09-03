@@ -146,7 +146,7 @@ is recorded is the result:
 | void-lounge | 2026-08-13 | 153 | nothing matched |
 | core-harmonies | 2026-08-14 | 43 | nothing matched — rescreened after M-15 retitled `al_161` *Nobody Had a Seat*, the only new name in the catalogue |
 | void-ballads | 2026-08-14 | 44 | nothing matched |
-| **independents** | 2026-09-02 | 221 | nothing matched **on the second run** — see below. Not a genre: this is the July collection (`wiki.COLLECTIONS`), 42 bands · 76 albums · 135 titles, M-53. The 76th record is `al_245`, added by M-54 when the operator judged `s_1362` a runaway and moved it to layer B (D-102); it carries no name the screen had not already cleared |
+| **independents** | 2026-09-02 | 221 | nothing matched **on the second run** — see below. Not a genre: this is the July collection (`wiki.COLLECTIONS`), 42 bands · 77 albums · 135 titles, M-53. The 76th record is `al_245`, added by M-54 when the operator judged `s_1362` a runaway and moved it to layer B (D-102); it carries no name the screen had not already cleared. The 77th is `al_246`, added 2026-09-03 when two songs moved to layer B (D-104) — a title the screen had already seen |
 
 **The collection's first run found two, and both were moved rather than argued about** (M-53). The
 rule is D-009's — an exact full-name match against an entity with ≥5 sitelinks — and these were the

@@ -3609,12 +3609,13 @@ albums:
   label: null
   title: The Deep Stacks
   release_year: 2613
-  kind: album
+  kind: single
   cornerstone: false
   notes: Old repertoire re-cut by the people who still sing it, which is the only way any of it reaches
-    anybody — the ships themselves left nothing that plays. The record closes with a fragment somebody
-    put a first-generation claim on, and the choir printed the claim without endorsing it and has declined
-    to discuss it since.
+    anybody — the ships themselves left nothing that plays. What the station holds of the record is the
+    fragment somebody put a first-generation claim on; the choir printed the claim without endorsing it
+    and has declined to discuss it since. The two Exodus hymns the record opened with are on al_246 and
+    the station does not hold them (D-104).
 - id: al_177
   artist: b_084
   label: null
@@ -4251,6 +4252,18 @@ albums:
   notes: The landfall piece, off the same watch as al_171 and cut on the same gear. Every copy that circulates
     runs eight minutes and none of them ends — it stops, in the middle of the humming, and the crews who
     carry it have decided that is the point. The station has never held a copy that finishes.
+- id: al_246
+  artist: b_083
+  label: null
+  title: The Leaving Hymns
+  release_year: 2613
+  kind: single
+  cornerstone: false
+  notes: The two Exodus hymns off the front of The Deep Stacks, and the half of that record the station
+    does not hold. Canon is flat that the settled worlds do not sing their own founding, and the choir's
+    own position — that this is repertoire and not history — is not a thing a back-announce can carry
+    every time either one plays. They exist, the choir sings them on rest-days, and the station names
+    them without putting them on air (D-104, operator).
 tracks:
 - id: s_0001
   album: al_001
@@ -27134,46 +27147,42 @@ tracks:
   fact: A lullaby the far-worlds sing to the creatures whose shells become their instruments — gratitude
     and apology in the same breath.
 - id: s_1368
-  album: al_176
+  album: al_246
   artist: b_083
   title: Departure Hymn
   track_no: 1
-  playable: true
-  file: music/audio/unsigned/al_176/01.mp3
-  duration_sec: 224.88
-  intro_ramp_sec: 0.0
-  outro_type: cold
-  category: gold
-  mood:
-  - solemn
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
   language: en
-  licence_note: suno-pro-2026-07
-  fact: An Exodus Hymn from the first ships — solemn, hopeful, carrying the weight of leaving and the
-    dream of arrival. Centuries old and still sung when a settlement sends someone out.
+  licence_note: null
+  fact: null
 - id: s_1369
-  album: al_176
+  album: al_246
   artist: b_083
   title: The Blue Cradle
   track_no: 2
-  playable: true
-  file: music/audio/unsigned/al_176/02.mp3
-  duration_sec: 209.92
-  intro_ramp_sec: 0.0
-  outro_type: cold
-  category: gold
-  mood:
-  - nostalgic
+  playable: false
+  file: null
+  duration_sec: null
+  intro_ramp_sec: null
+  outro_type: null
+  category: null
+  mood: []
   language: en
-  licence_note: suno-pro-2026-07
-  fact: 'The hymn every settled child learns about Earth — half record, half founding myth: the blue planet,
-    the place humanity first learned to look up and wonder.'
+  licence_note: null
+  fact: null
 - id: s_1370
   album: al_176
   artist: b_083
   title: Earthlight (First-Generation Recording)
-  track_no: 3
+  track_no: 1
   playable: true
-  file: music/audio/unsigned/al_176/03.mp3
+  file: music/audio/unsigned/al_176/01.mp3
   duration_sec: 162.48
   intro_ramp_sec: 0.0
   outro_type: fade

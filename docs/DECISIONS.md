@@ -3270,3 +3270,32 @@ every dispatch move ever made. The card was written when RAW meant the July pile
 changed underneath it. Only `RAW/music/` was deleted. **The lesson is not about this folder**: a card
 that names a directory to delete is naming what that directory held on the day it was written, and
 the check before an irreversible step has to be what is in it now, not what the card remembers.
+
+### D-104 · The two Exodus hymns are named, not played — 2026-09-03
+
+`s_1368` *Departure Hymn* and `s_1369` *The Blue Cradle* were filed playable by M-54 on `al_176` and
+are now layer-B titles on `al_246` *The Leaving Hymns*, with their audio deleted. **Operator
+decision, 2026-09-03**, on the flag M-53 raised when it wrote them: `canon/70-music.md` fact 21 says
+the Exodus "is one of the great subjects for drama and is not a song subject — the settled worlds do
+not dance to their own founding."
+
+**The framing M-53 used was legitimate and was not enough.** Fact 22 allows the deep past to reach a
+listener as repertoire — old tunes re-cut by whoever is working now — and that is what the choir is:
+`b_083` are firm that they sing repertoire and not history, and the record says so. But the frame
+lives in the album notes, and a song on air arrives without them. Every play would have needed a
+back-announce carrying the distinction, and a rule that has to be re-explained on every airing is not
+a rule the station can keep.
+
+**What it cost, and why that is the right price.** *The Deep Stacks* drops from three songs to one
+and becomes a single; the choir keeps its layer-A record and its one held take, `s_1370` *Earthlight
+(First-Generation Recording)*, which is a claim about a recording rather than a song about leaving.
+The collection is **74 held and 61 named** across 77 records. Two takes of audio were destroyed and
+the RAW originals were already gone at M-56, so this is not reversible — the operator was asked and
+said delete.
+
+**The wiki flag alone would not have done it.** `playable:` in `music/wiki/` is the world's statement;
+`catalogue.py` derives the catalogue's own `playable` from whether a take exists on disk, and
+`check.py:_facts()` keys the fact rule on the album's layer rather than the song's. So a song cannot
+stop being played by editing one field: it moves to a layer-B record, loses its fact, leaves its
+album's lyrics stub and gives up its audio. That is four files, and M-53 hit the same wall when it
+found 33 bands needing layer-B records of their own.
