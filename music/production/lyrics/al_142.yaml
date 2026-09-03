@@ -20,7 +20,9 @@
 # and all, and handed it over to be sung; the lead voice does not change, because the card's voice
 # line is about who sings and this band's writer and singer are simply not the same person here.
 #
-# `generation:` and every `take:` are empty until M-34.
+# `generation:` and every `take:` were filled from the dispatch manifest at M-34. Generated on
+# 2026-09-02 on Suno v5.5 and all nine takes match their lyric exactly — nine songs in five
+# minutes, the band's longest record and its quickest sitting.
 
 album:
   id: al_142
@@ -45,13 +47,18 @@ album:
     with nobody looking up.
 
 generation:
-  # Empty until M-34's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-34. Suno Pro, remixing disabled, generated 2026-09-02 —
+  # nine songs in five minutes, straight after al_141's second sitting.
+  model_version: v5.5
+  licence_period: suno-pro-2026-09
+  generated_on: 2026-09-02
+  sittings:
+    - {date: 2026-09-02, from: '11:44:38', to: '11:49:39', tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-25-SECOND by `make music-dispatch`. All nine takes
+    matched their lyric exactly and the record filed in one pass — nine songs in five
+    minutes, the band's longest record and its quickest sitting.
 
 songs:
   - id: s_1155
@@ -126,7 +133,15 @@ songs:
       it cannot know the place that heard your heart.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 8b84aa1e-c9a0-4a93-829d-f40cc6f28e97
+      suno_created: 2026-09-02T11:44:38Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_142/01.mp3
 
   - id: s_1156
     title: Letters Take a Season
@@ -197,7 +212,15 @@ songs:
       One season outward. One season home.
       Every answer finds us changed.
       No heart stays unchanged.
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 847c5ddb-2c65-4e15-8838-1b08bc78f292
+      suno_created: 2026-09-02T11:45:19Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_142/02.mp3
 
   - id: s_1157
     title: It Was Meant for Somebody Else
@@ -271,7 +294,15 @@ songs:
       holding room for someone not here yet.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: d6bf3eac-2147-4b0d-82a5-2da73e53c509
+      suno_created: 2026-09-02T11:45:59Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_142/03.mp3
 
   - id: s_1158
     title: Eleven Miles of Water
@@ -349,7 +380,15 @@ songs:
       we arrive together, neither one too late.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: b8065f53-e56f-4399-9d87-2ce1fd4142af
+      suno_created: 2026-09-02T11:46:34Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_142/04.mp3
 
   - id: s_1159
     title: The Bottom Gate Leaks
@@ -423,7 +462,15 @@ songs:
       small neglect has left a working mark.
 
       [Outro - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 8a8f3fcd-0ad3-4ab4-9b88-ffd4073c49fc
+      suno_created: 2026-09-02T11:47:11Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_142/05.mp3
 
   - id: s_1160
     title: Two Names on the Bill
@@ -497,7 +544,15 @@ songs:
       paint us over gently, but leave the letters near.
 
       [Coda - sustain]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e1673edf-e136-4f05-9ce7-c44f77963447
+      suno_created: 2026-09-02T11:47:48Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_142/06.mp3
 
   - id: s_1161
     title: Working Under the Bridge
@@ -573,7 +628,15 @@ songs:
       rain can take the lane, but not our stand.
 
       [Outro - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 2ec2f76e-1025-4248-93f7-f2cb538ad1ad
+      suno_created: 2026-09-02T11:48:19Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_142/07.mp3
 
   - id: s_1162
     title: She Never Wrote Back
@@ -645,7 +708,15 @@ songs:
       I have lived through all the years till now.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: ce76d39c-43aa-49f3-b4d4-f564a476dbe2
+      suno_created: 2026-09-02T11:49:07Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_142/08.mp3
 
   - id: s_1163
     title: Stay Where the Water Is
@@ -715,4 +786,12 @@ songs:
       every traveler leaves one door behind.
 
       [Coda - sustain, open water through both doors]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 22150471-9312-44ea-b2ae-d447bafc20c9
+      suno_created: 2026-09-02T11:49:39Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_142/09.mp3

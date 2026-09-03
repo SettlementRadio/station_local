@@ -20,7 +20,9 @@
 # Effa Lomm has written that she would like to hear this record and has not been sent one, which is
 # the last verse of `s_1165` and the last verse of `s_1170`.
 #
-# `generation:` and every `take:` are empty until M-34.
+# `generation:` and every `take:` were filled from the dispatch manifest at M-34. Generated on
+# 2026-09-02 on Suno v5.5 and all seven takes match their lyric exactly. **The last record
+# generated for the catalogue**: it finishes The Ninefoot Cut, old-system sessions, and the 500.
 
 album:
   id: al_143
@@ -45,13 +47,19 @@ album:
     before the band did.
 
 generation:
-  # Empty until M-34's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-34. Suno Pro, remixing disabled, generated 2026-09-02.
+  # **The last record of the genre and the last of the 500.** Cut in under three minutes,
+  # finishing The Ninefoot Cut and old-system sessions in one day.
+  model_version: v5.5
+  licence_period: suno-pro-2026-09
+  generated_on: 2026-09-02
+  sittings:
+    - {date: 2026-09-02, from: '11:55:33', to: '11:58:15', tracks: [1, 2, 3, 4, 5, 6, 7]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-25-SECOND by `make music-dispatch`. All seven takes
+    matched their lyric exactly. The last record generated for the catalogue: it finishes
+    The Ninefoot Cut, old-system sessions, and the 500.
 
 songs:
   - id: s_1164
@@ -126,7 +134,15 @@ songs:
       what arrived has found the room it lacked.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: c6de87e2-fd85-4603-bfb1-19c1efc0cf20
+      suno_created: 2026-09-02T11:55:33Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_143/01.mp3
 
   - id: s_1165
     title: Sing the One They Sent
@@ -200,7 +216,15 @@ songs:
       we will learn the change and sing it all together.
 
       [Outro - sustain]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 49a4fcb2-8b2c-4b38-ad93-4b27076758a4
+      suno_created: 2026-09-02T11:56:11Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_143/02.mp3
 
   - id: s_1166
     title: Nine Foot of Water
@@ -279,7 +303,15 @@ songs:
       send someone who knows why water disappears.
 
       [Outro - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: dce29368-940d-45f9-8156-777a6d4f0ba4
+      suno_created: 2026-09-02T11:56:42Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_143/03.mp3
 
   - id: s_1167
     title: The Second Copy
@@ -351,7 +383,15 @@ songs:
       trust the many careful hands it meets.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: db8ab8e1-eb87-48ec-8b13-bf17a254e188
+      suno_created: 2026-09-02T11:57:07Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_143/04.mp3
 
   - id: s_1168
     title: The Same Eleven Miles
@@ -425,7 +465,15 @@ songs:
       The same rain finding the same old stone.
 
       [Outro - sustain]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: f8b5f0ab-0859-4ba8-aab2-d36d195d3257
+      suno_created: 2026-09-02T11:57:33Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_143/05.mp3
 
   - id: s_1169
     title: Who Taught You That
@@ -495,7 +543,15 @@ songs:
       may she know one evening traveled well.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 692274d1-f4b7-4a24-9487-07d89fd874ca
+      suno_created: 2026-09-02T11:57:58Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_143/06.mp3
 
   - id: s_1170
     title: Leave the Gate Open
@@ -567,4 +623,12 @@ songs:
       Mind the step and join us. That is what the doorway is for.
 
       [Outro - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e86815c7-b5b7-403c-8f48-0f8d49abcf5e
+      suno_created: 2026-09-02T11:58:15Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_143/07.mp3

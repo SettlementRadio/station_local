@@ -20,7 +20,10 @@
 # lock house shares a wall with a house that had a child asleep in it for the whole week. That one
 # fact took the volume out of the entire record, which is what `s_1147` is about.
 #
-# `generation:` and every `take:` are empty until M-34.
+# `generation:` and every `take:` were filled from the dispatch manifest at M-34. Generated on
+# 2026-09-02 on Suno v5.5 — **not on the second generator the card had planned for** — and all
+# seven takes match their lyric exactly. The first of The Ninefoot Cut's four records, and all four
+# were cut the same day, so the band is finished on one model in one day (COMMISSION.md §9).
 
 album:
   id: al_140
@@ -46,13 +49,20 @@ album:
     stripped wire left hanging on the towpath posts in s_1143.
 
 generation:
-  # Empty until M-34's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-34. Suno Pro, remixing disabled, generated 2026-09-02
+  # under the same terms as the rest of this genre's September takes (COMMISSION.md §9,
+  # M-40). **The first of The Ninefoot Cut's four records**, and all four were cut the same
+  # day, so the band is finished on one model in one day (§9).
+  model_version: v5.5
+  licence_period: suno-pro-2026-09
+  generated_on: 2026-09-02
+  sittings:
+    - {date: 2026-09-02, from: '08:44:41', to: '08:47:11', tracks: [1, 2, 3, 4, 5, 6, 7]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-25-SECOND by `make music-dispatch`. All seven takes
+    matched their lyric exactly and the record filed in one pass. The first of The Ninefoot
+    Cut's four records and the first record ever cut for the band.
 
 songs:
   - id: s_1141
@@ -125,7 +135,15 @@ songs:
       but the way you learned your home stays written in your stride.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 0937343b-cb80-421b-99cb-b06ba749ca7b
+      suno_created: 2026-09-02T08:44:41Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_140/01.mp3
 
   - id: s_1142
     title: Wait for the Water
@@ -199,7 +217,15 @@ songs:
       Put your worry on the balance. What is coming will not break.
 
       [Outro - sustain]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: d5cbb548-9ba4-4dda-ba7a-733d19c1bcea
+      suno_created: 2026-09-02T08:45:10Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_140/02.mp3
 
   - id: s_1143
     title: Nobody Walks the Towpath
@@ -271,7 +297,15 @@ songs:
       or teach two old friends how to meet again.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 71caf3da-68ac-4897-8a33-88bff11e971e
+      suno_created: 2026-09-02T08:45:29Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_140/03.mp3
 
   - id: s_1144
     title: Half a Mile an Hour
@@ -343,7 +377,15 @@ songs:
       slow enough to know I meant every word.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: fbce92f7-dfe6-439b-8d08-01e4a221de6b
+      suno_created: 2026-09-02T08:45:54Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_140/04.mp3
 
   - id: s_1145
     title: Two Boats Waiting
@@ -421,7 +463,15 @@ songs:
       pride can fill a whole long day and leave by either mouth.
 
       [Outro - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 8f26808c-9018-4a95-9f32-8ea3e9e46a2d
+      suno_created: 2026-09-02T08:46:20Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_140/05.mp3
 
   - id: s_1146
     title: Paid at the Wharf
@@ -489,7 +539,15 @@ songs:
       but four clear voices make a stronger line.
 
       [Outro - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 3f81f72d-39f4-4328-97d0-bc58f4062b0c
+      suno_created: 2026-09-02T08:46:48Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_140/06.mp3
 
   - id: s_1147
     title: Down to the Lock House
@@ -559,4 +617,12 @@ songs:
       Mind the wall, and set another place for anyone.
 
       [Coda - sustain]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: c2d05909-a231-4805-804a-9cc1748f3e20
+      suno_created: 2026-09-02T08:47:11Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_140/07.mp3

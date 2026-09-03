@@ -62,13 +62,13 @@ marked **NEXT**.
 |---|---|---|---|
 | 0 · Tooling that needed nothing | M-01 · M-02 · M-03 | **M-03** name screening · 2026-08-09 | all done |
 | **R · The re-weight** | M-43 · M-44 · M-45 · M-47 · M-46 · M-48 · M-49 | **M-49** old-system sessions grows to 90 · 2026-08-13 | **all done.** §12's rules 1–6 are live and green; 7–8 stay owed to M-15. No genre carries an `owed_to:` marker any more |
-| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-51 · M-19 | **M-19** the fourteen-song listen · 2026-08-16 | **done, and the pilot passed.** 45 takes on Suno Pro v5.5, filed, licensed, measured and tagged · **the operator has listened and said yes**, so stages 4–6 run as written · **M-40 stays open until M-38, and M-51 is open and unstarted** — it counts the two licence rules that are still prose, and belongs before the next generator's first pile is filed |
+| 1 · The pilot — 45 songs end to end | M-16 · M-17 · M-18 · M-40 · M-51 · M-19 | **M-19** the fourteen-song listen · 2026-08-16 | **done, and the pilot passed.** 45 takes on Suno Pro v5.5, filed, licensed, measured and tagged · **the operator has listened and said yes**, so stages 4–6 run as written · **M-40 stays open until M-38, and M-51 is open and unstarted** — it counts the two licence rules that are still prose. **Its trigger has passed**: it was to run before a second generator's first pile, and M-34 finished on Suno instead, so there is no longer a sitting in front of it. Both invariants would be green as things stand (D-105) |
 | 2 · The wiki — the catalogue-wide pass | M-07 … M-15 | **M-15** the catalogue-wide pass · 2026-08-14 | **finished. The wiki is frozen.** 500 playable songs across 9 genre files, 25 bands and 63 albums · every label clears §5's floor · layer B carries 55 release years · all eight of §12's rules as they then stood live and green (M-50 has since made it ten) |
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-06** `music/catalogue.yaml` · 2026-08-16 | **all done.** The takes are measured (D-083), tagged (D-084), and joined into the one file the station's database ingests — 1,358 tracks, 45 of them playable, checked against the wiki by `make check` (D-085) |
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
 | **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
-| **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-25** old-system sessions' lyrics, 90 songs across 11 albums · 2026-08-29 | **M-34 is in progress and is NEXT again now stage 7 is closed — 44 of 90 filed, 2026-08-31 and 2026-09-01**, measured, tagged and in the catalogue. `al_098` … `al_102` are all complete, so **Terrace Road Four and The Shore Rounds are finished bands** and neither is split across generators. **354 of the 500 playable songs now exist.** 46 takes are owed — Undershore Local and The Ninefoot Cut, both untouched — and the operator will make them on a different generator with its own licence evidence. **2026-09's licence PDF is not captured yet** (M-40, D-098) |
-| **7 · The July collection** | M-52 · M-53 · M-54 · M-55 · M-56 | **M-56** the pile retired · 2026-09-02 | **the stage is closed and the collection is done.** `music/wiki/independents.yaml` carries **42 bands, 77 albums and 135 songs — 74 the station holds at `music/audio/unsigned/al_NNN/NN.mp3` and 61 titles it can only name**, all `label: unsigned`, all re-dated into 2613–2621 so the whole shelf is `gold` and none of it crowds the 500. **428 playable rows** in `music/catalogue.yaml`; 42 stub lyrics files `al_170` … `al_211` carry provenance and no lyrics; the July licence note covers **132** assets. `s_1362` *Cargo-Hold Lullaby* is a runaway the operator heard, `playable: false` on `al_245` (D-102), and `s_1368` *Departure Hymn* and `s_1369` *The Blue Cradle* went the same way on 2026-09-03 against canon fact 21 — layer B on `al_246`, audio deleted (D-104). **M-56 deleted `music/audio/RAW/music/` — 137 files — and kept the folder above it**: it still holds `M-25-SECOND/`, 48 unfiled takes M-34 needs, and the dispatch manifest, so the card's own "delete `music/audio/RAW/`" would have destroyed live work (D-103). Check 4 caught three album retitles M-53 never wrote down and they are in the wiki now. **Nothing here blocks M-42 any more** |
+| **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-34** old-system sessions' audio, all 90 filed · 2026-09-03 | **M-34 is DONE and old-system sessions is finished** — 90 of 90 takes filed, measured, tagged and in the catalogue, all eleven records complete and all four bands whole on one model in one licence period. **400 of the 500 playable songs now exist**, and **every lyric written in this project has audio**; the 100 outstanding are the three genres whose lyrics are not written yet — void-lounge 55, core-harmonies 20, void-ballads 25 (M-27 · M-28 · M-29, then M-36 · M-37 · M-38). **The 46 came back on Suno after all, not on a second generator**, so nothing is split across vendors and the September evidence already covers them (D-105). **`make music-tag`'s unclaimed report drops from 48 files to 2** — the two rejected twins, which are kept on purpose. Next is **M-27**, void-lounge's lyrics. Two findings for the operator sit under M-34's Result — this genre runs 0.882 s per sung word against Frontier Reels' 0.698, so an hour of it is **twelve** songs, and the commissioned 400 now average **3:56** against §7's 3:30 |
+| **7 · The July collection** | M-52 · M-53 · M-54 · M-55 · M-56 | **M-56** the pile retired · 2026-09-02 | **the stage is closed and the collection is done.** `music/wiki/independents.yaml` carries **42 bands, 77 albums and 135 songs — 74 the station holds at `music/audio/unsigned/al_NNN/NN.mp3` and 61 titles it can only name**, all `label: unsigned`, all re-dated into 2613–2621 so the whole shelf is `gold` and none of it crowds the 500. **428 playable rows** in `music/catalogue.yaml`; 42 stub lyrics files `al_170` … `al_211` carry provenance and no lyrics; the July licence note covers **132** assets. `s_1362` *Cargo-Hold Lullaby* is a runaway the operator heard, `playable: false` on `al_245` (D-102), and `s_1368` *Departure Hymn* and `s_1369` *The Blue Cradle* went the same way on 2026-09-03 against canon fact 21 — layer B on `al_246`, audio deleted (D-104). **M-56 deleted `music/audio/RAW/music/` — 137 files — and kept the folder above it**: it still held `M-25-SECOND/`, the 48 takes M-34 needed, and the dispatch manifest, so the card's own "delete `music/audio/RAW/`" would have destroyed live work (D-103). **M-34 has since filed 46 of those 48**; the folder now holds only the manifest and the two rejected twins under `M-34-REJECTED/`. Check 4 caught three album retitles M-53 never wrote down and they are in the wiki now. **Nothing here blocks M-42 any more** |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
 **Read the Last done column, not your memory.** Two stages run at once (below), so "the last thing
@@ -1084,12 +1084,12 @@ are never reused, because a number is an identity here and not a position in a q
 | 1 | **M-21 relay-pop — done** | **M-30 relay-pop — done** | 60 |
 | 2 | **M-22 lane-rock — done** | **M-31 lane-rock — done** | 110 |
 | 3 | **M-24 frontier-reels — done** | **M-33 frontier-reels — done** | 95 |
-| 4 | **M-25 old-system-sessions — done** | **M-34 old-system-sessions · NEXT** — 44 of 90 filed | 90 |
-| 5 | M-27 void-lounge | M-36 void-lounge — 4 bands | 55 |
+| 4 | **M-25 old-system-sessions — done** | **M-34 old-system-sessions — done** — 90 of 90 filed | 90 |
+| 5 | **M-27 void-lounge · NEXT** | M-36 void-lounge — 4 bands | 55 |
 | 6 | M-28 core-harmonies | M-37 core-harmonies — 1 band | 20 |
 | 7 | M-29 void-ballads | M-38 void-ballads — 2 bands | 25 |
 
-### M-21 · M-22 · M-24 · M-25 · M-27 · M-28 · M-29 · `[agent]` Lyrics and prompts — 59 albums, 455 songs — **M-25 DONE 2026-08-29**
+### M-21 · M-22 · M-24 · M-25 · M-27 · M-28 · M-29 · `[agent]` Lyrics and prompts — 59 albums, 455 songs — **M-25 DONE 2026-08-29 · M-27 NEXT**
 Files: one file per album under `music/production/lyrics/`
 Check: every song has lyrics, a generation prompt and an exclude line; every lyric passes the
 swap-the-nouns test; every song has a vocal. M-21 writes `al_005.yaml` … `al_011.yaml`.
@@ -1257,7 +1257,7 @@ Depends on: M-20 for M-21; thereafter each genre's lyrics card depends on the pr
 **audio** card being finished — that is what "one genre at a time" means. **M-25 closed on
 2026-08-29, so M-34 is runnable now**, and M-27's turn comes when M-34 does.
 
-### M-30 · M-31 · M-33 · M-34 · M-36 · M-37 · M-38 · `[you]` Suno — 455 songs — **M-33 DONE 2026-08-28 · M-34 44 OF 90 FILED 2026-09-01 · M-34 NEXT**
+### M-30 · M-31 · M-33 · M-34 · M-36 · M-37 · M-38 · `[you]` Suno — 455 songs — **M-33 DONE 2026-08-28 · M-34 DONE 2026-09-03**
 Files: `music/audio/<label>/<album>/NN.mp3`
 Check: every song in that genre has a keeper take, downloaded and named, with the prompt, attempts,
 model version and date recorded in the album's lyrics file. Custom mode only.
@@ -1381,13 +1381,45 @@ has confirmed Pro and remixing off on 2026-09-01, which is what §9 conditions c
 so the six were filed. The dated capture of the terms has not been taken.
 `music/licence-evidence/2026-09-suno-licence-note.md` exists and opens by saying so, because
 `licence_period` is free text and **no gate in this project will ever ask** (D-098).
-Note (M-34, for the remaining 46): they are **Undershore Local** (`al_103`, `al_104` — 16 songs) and
-**The Ninefoot Cut** (`al_140` … `al_143` — 30 songs), and neither has a single take yet, so both can
-go to a different generator without splitting a band. **Test one track before committing to 46**:
-`make music-dispatch` proves a take by the lyric in its own tags and currently expects Suno's exact
-`id=` and `created=` comment format, which another vendor is unlikely to write. **And run M-51 before
-that pile is filed** — it counts the two licence invariants that are still prose, and the new
-generator's first sitting is exactly where a wrong period would be typed.
+Result (M-34, part 3, 2026-09-03 — **the card is done**): **the last 46 takes are filed, measured,
+tagged and in the catalogue** — `music/audio/label_7/al_103`, `al_104` and `al_140` … `al_143`. So
+**old-system sessions is 90 of 90, all eleven records complete, and all four of its bands finished**.
+**400 of the 500 exist, and every lyric written in this project now has audio**: 474 songs carry a
+take, 474 files sit under `music/audio/`, and `make music-tag`'s unclaimed sweep is down from 48
+files to 2 — the two rejected twins below, which are kept deliberately and will always read as
+unclaimed because the sweep covers the staging area too.
+**The second generator never happened, and that closes three worries at once** (D-105). The operator
+generated all 46 on Suno v5.5 on **2026-09-02**, in seven sittings across five hours: `al_103` in
+four minutes fifteen — the fastest record in the catalogue — then `al_104` within the hour, so
+**Undershore Local was finished in one morning**, and The Ninefoot Cut's four records the same day.
+Nothing is split across vendors, `make music-dispatch` needed no second tag format, and **the
+September evidence already covers them**: 2026-09-02 is one day before Suno's terms changed, so all
+52 September takes are under the same March 26 2026 revision as the six from the 1st, and the note
+now says so and counts them. **M-51 was not run first and did not need to be** — its own card says
+it does not block this one, and its two invariants would both be green here: the period matches the
+month in every `suno_created`, and `2026-09-suno-licence-note.md` is the evidence the prefix rule
+looks for.
+**45 of the 46 match their lyric exactly.** `s_0844` *Ask Me When I'm Dry* came back at 92% because
+Suno sang the whole written lyric and then sang 51 words of it again — **nothing was dropped**, so
+unlike lane-rock's drift no song here loses a world noun and §12 rule 5 is untouched. It broadcasts
+as it is (D-093) and its `take:` block says why it runs 4:30.
+**Two songs are the first in the catalogue chosen from a pair, and the dispatch is what forced the
+choice.** Tracks 1 and 2 of `al_104` both arrived as the two takes Suno returns from one prompt, and
+a pair claims one lyric twice — so the words that prove every other take in this project could not
+separate them and the pile was refused until the operator listened. `s_0849` went to the shorter
+take by ear; `s_0850` went to the one that sings what was written, a 16.9-second run-up and a fade
+against the other's no run-up and a sustain. Both rejects are kept under
+`music/audio/RAW/M-34-REJECTED/` and both are in the dispatch manifest as NOT DISPATCHED rows.
+**Two measurements the operator should see before M-27's lyrics are written.** This genre is **much
+slower than any other: 0.882 seconds per sung word**, against Frontier Reels' 0.698, lane-rock's
+0.779 and relay-pop's 0.746 — so its lyrics, written for 3:36, came back averaging **4:30**, and
+§12's 288-word floor lands at **4:13** here. **An hour of old-system sessions is twelve songs, not
+fourteen.** And catalogue-wide the drift is now one-directional: **the commissioned 400 average
+3:56 against §7's 3:30**, with the 2:00–3:00 band fed only by the pilot. Nothing is under 2:00 in
+these 46 and the shortest is 3:19. **This genre is also the first to meet an intro-ramp target** —
+15% at ≥15 seconds, exactly what §7 asks — while ≥8 seconds reaches 26% against the 40% asked, and
+across the 400 the two figures are 12% and 5%. Its outros are the miss instead: **9% fade against
+45% asked**, and 48% sustain.
 Depends on: M-21 for M-30, M-22 for M-31, and so on down the table.
 
 ### M-39 · `[agent]` Measure and tag every song

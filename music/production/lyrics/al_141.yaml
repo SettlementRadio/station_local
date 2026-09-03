@@ -20,7 +20,11 @@
 # neck of the bass** on `s_1151` to deaden it and has never taken it off, so from this record on the
 # bass is shorter and drier than it was on al_140.
 #
-# `generation:` and every `take:` are empty until M-34.
+# `generation:` and every `take:` were filled from the dispatch manifest at M-34. Generated on
+# 2026-09-02 on Suno v5.5 and all seven takes match their lyric exactly. **The one record of the
+# forty-six cut in two sittings**: track 1 came back at 09:26 and the other six two hours later.
+# Same day, same account, same model, so §9's risk does not bite; it is written down because the
+# gap is real and the manifest shows it.
 
 album:
   id: al_141
@@ -45,13 +49,21 @@ album:
     and was left audible.
 
 generation:
-  # Empty until M-34's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-34. Suno Pro, remixing disabled, generated 2026-09-02.
+  # **The one record here cut in two sittings**: track 1 came back at 09:26 and the other
+  # six at 11:36, two hours later. Same day, same account, same model, so §9's risk does
+  # not bite — it is recorded because the gap is real and the manifest shows it.
+  model_version: v5.5
+  licence_period: suno-pro-2026-09
+  generated_on: 2026-09-02
+  sittings:
+    - {date: 2026-09-02, from: '09:26:51', to: '09:26:51', tracks: [1]}
+    - {date: 2026-09-02, from: '11:36:04', to: '11:38:07', tracks: [2, 3, 4, 5, 6, 7]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-25-SECOND by `make music-dispatch`. All seven takes
+    matched their lyric exactly. The two-hour gap between track 1 and the rest is the only
+    split sitting in either band's run and it is inside one day, one account and one model.
 
 songs:
   - id: s_1148
@@ -118,7 +130,15 @@ songs:
       I know the thing I waited for was you upon that boat.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 0dfdf841-bd20-4485-9ab9-f354344db3af
+      suno_created: 2026-09-02T09:26:51Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_141/01.mp3
 
   - id: s_1149
     title: The Cut Is Closed
@@ -184,7 +204,15 @@ songs:
       now the bottom tells us what the place is built around.
 
       [Outro - sustain]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: ea6b6fe5-1140-4f8e-bd16-8a9421efa97e
+      suno_created: 2026-09-02T11:36:04Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_141/02.mp3
 
   - id: s_1150
     title: A Winter Off the Boats
@@ -258,7 +286,15 @@ songs:
       I would rather lose the distance than lose you.
 
       [Coda - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 2000b4c8-da7e-442d-b52e-04a048b2660e
+      suno_created: 2026-09-02T11:36:32Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_141/03.mp3
 
   - id: s_1151
     title: Nothing Moves Till the Thaw
@@ -330,7 +366,15 @@ songs:
       every borrowed kindness leaves a mark.
 
       [Outro - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 3a5a195e-ba28-439a-b61a-4a547211d74c
+      suno_created: 2026-09-02T11:36:56Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_141/04.mp3
 
   - id: s_1152
     title: Owe It to the Shop
@@ -398,7 +442,15 @@ songs:
       what she gave us never fit the book at all.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: b1723d1f-da24-4abb-b8fb-20e82f522c96
+      suno_created: 2026-09-02T11:37:18Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_141/05.mp3
 
   - id: s_1153
     title: Somebody Else's Kitchen
@@ -470,7 +522,15 @@ songs:
       and another chair appearing in the room.
 
       [Outro - sustain]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 017dfc1f-acd5-4f4b-a9cb-45aea9c0bb3d
+      suno_created: 2026-09-02T11:37:41Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_141/06.mp3
 
   - id: s_1154
     title: Back on the Water
@@ -542,4 +602,12 @@ songs:
       let the stick beat answer from the stone.
 
       [Coda - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 0b56f9df-3225-4cd5-9a09-5b9c32a88eca
+      suno_created: 2026-09-02T11:38:07Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_141/07.mp3

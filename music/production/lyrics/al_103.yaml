@@ -22,7 +22,12 @@
 # harmonica and drums, so every exclude line here keeps a bass of any kind out, rather than relying on
 # the card's `electric bass` to do it (§7, no line-up gains a player).
 #
-# `generation:` and every `take:` are empty until M-34.
+# `generation:` and every `take:` were filled from the dispatch manifest at M-34. Generated on
+# 2026-09-02 on Suno v5.5 — **not on the second generator the card had planned for**, so nothing
+# here is split across vendors and no new evidence file was needed. Eight of the nine takes match
+# their lyric exactly; s_0844 sings the whole lyric and then repeats 51 words of it, which is
+# recorded in that song's `take:` block and drops nothing (D-093: the take broadcasts as it is).
+# The whole record was cut in four minutes fifteen, which is the fastest sitting in the catalogue.
 
 album:
   id: al_103
@@ -47,13 +52,25 @@ album:
     shift, ragged, in three keys and a beat behind the band, credited on the sleeve by branch number.
 
 generation:
-  # Empty until M-34's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-34. Suno Pro, remixing disabled — the same account, tier
+  # and settings as every take before these, confirmed by the operator on 2026-09-01 and
+  # unchanged since. Generated 2026-09-02, one day before Suno's terms changed, so the
+  # evidence is the same March 26 2026 revision the 2026-09 note reads (COMMISSION.md §9,
+  # M-40). **The whole record was cut in four minutes fifteen of wall clock** — the fastest
+  # sitting in the catalogue — and the band's other record followed within the hour, so
+  # Undershore Local was finished in one morning on one model (§9).
+  model_version: v5.5
+  licence_period: suno-pro-2026-09
+  generated_on: 2026-09-02
+  sittings:
+    - {date: 2026-09-02, from: '07:11:03', to: '07:15:18', tracks: [1, 2, 3, 4, 5, 6, 7, 8, 9]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-25-SECOND by `make music-dispatch`. Eight of the nine
+    takes matched their lyric exactly; s_0844 came back at 92% because Suno sang the whole
+    lyric and then repeated 51 words of it, which drops nothing and is recorded in that
+    song's take: block. The oldest record in the import catalogue is also the fastest one
+    ever cut here — four minutes fifteen from the first take to the ninth.
 
 songs:
   - id: s_0840
@@ -117,7 +134,15 @@ songs:
       Leave the wet form at the gate where no one can ignore it.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e93bc7ab-3bdb-4d81-8dc3-04e90049937e
+      suno_created: 2026-09-02T07:11:03Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_103/01.mp3
 
   - id: s_0841
     title: The Long Ladder
@@ -180,7 +205,15 @@ songs:
       Count for the one you carry. Let the rest wait overhead.
 
       [Outro - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 0a3bd358-b7d3-4dda-b6ff-1facdcab5958
+      suno_created: 2026-09-02T07:11:44Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_103/02.mp3
 
   - id: s_0842
     title: Wages in Two Halves
@@ -245,7 +278,15 @@ songs:
       Pay it whole. We brought the promise to your door.
 
       [Outro - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e1772d2a-ad07-4205-a73c-09065779de78
+      suno_created: 2026-09-02T07:12:15Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_103/03.mp3
 
   - id: s_0843
     title: Saltwater Boots
@@ -307,7 +348,15 @@ songs:
       Two pairs a year, and your repair outlasts them both.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: febebc59-f5c7-4b16-bad3-4f67d31044d2
+      suno_created: 2026-09-02T07:12:41Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_103/04.mp3
 
   - id: s_0844
     title: Ask Me When I'm Dry
@@ -371,7 +420,19 @@ songs:
       Mostly yes, and yes to you, and sorry for the rest.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: c8d8c531-077f-4815-b685-0a3611ee1ccf
+      suno_created: 2026-09-02T07:13:35Z
+      # Suno sang the whole written lyric and then sang 51 words of it a second time —
+      # nothing was dropped, so §12 rule 5 is unaffected and the take is 4:30 rather than
+      # the 4:05 the words bought. The lane-rock shape (s_1083), milder. D-093: the take
+      # broadcasts as it is.
+      lyric_match: 0.9228 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_103/05.mp3
 
   - id: s_0845
     title: The Second Gate
@@ -434,7 +495,15 @@ songs:
       I send it anyway.
 
       [Outro - sustain]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: f2c0d72b-3929-443c-b564-a09d96346997
+      suno_created: 2026-09-02T07:14:07Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_103/06.mp3
 
   - id: s_0846
     title: Two Shifts, No Sleep
@@ -497,7 +566,15 @@ songs:
       Ask the voice that left and came back for the warning.
 
       [Outro - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 376b937e-d6fc-456c-b7df-f2becc992c07
+      suno_created: 2026-09-02T07:14:29Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_103/07.mp3
 
   - id: s_0847
     title: Under the Ice Yard
@@ -560,7 +637,15 @@ songs:
       There is room between the echoes. Meet me there.
 
       [Coda - sustain, gallery decay]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 97311dd9-091b-42ce-a6a3-170350925d86
+      suno_created: 2026-09-02T07:14:49Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_103/08.mp3
 
   - id: s_0848
     title: Walk Out Together
@@ -627,4 +712,12 @@ songs:
       Walk home together. Come back together. Count again.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 4afbd5ba-20df-45b0-91cc-f62caadefc49
+      suno_created: 2026-09-02T07:15:18Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_103/09.mp3

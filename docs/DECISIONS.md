@@ -3299,3 +3299,40 @@ said delete.
 stop being played by editing one field: it moves to a layer-B record, loses its fact, leaves its
 album's lyrics stub and gives up its audio. That is four files, and M-53 hit the same wall when it
 found 33 bands needing layer-B records of their own.
+
+### D-105 · The second generator never happened, and a pair is the one thing the words cannot prove — 2026-09-03
+
+M-34's last 46 takes were made on **Suno v5.5 on 2026-09-02**, not on the second generator the card
+had planned for since D-097. **Three open worries close with that one fact and none of them needed
+work.** No band is split across vendors, so COMMISSION §9's risk never arose in its stronger form.
+`make music-dispatch` needed no second tag format — D-097's note had warned it expects Suno's exact
+`id=` and `created=` comment shape and that another vendor would not write it. And no new licence
+evidence was needed: 2026-09-02 is one day before Suno's terms changed, so all **52** September takes
+sit under the same March 26 2026 revision as the six from the 1st, and `2026-09-suno-licence-note.md`
+now counts them rather than six. **M-51 was not run first**, which its own card permits — it says in
+so many words that it does not block M-34 — and both its invariants would be green here.
+
+**A pair of takes is the one case D-091's method cannot decide, and the right answer was to stop and
+ask.** Tracks 1 and 2 of `al_104` each arrived as the two takes Suno returns from one prompt. Both
+members of a pair carry the same lyric, so both match it at 100% and `plan()` sees a song claimed
+twice — the same shape as D-091's real failure, where the lyric box had not changed between two
+prompts. **The dispatch cannot tell those two situations apart and should not try.** It refused the
+whole pile, the operator listened and chose, and 46 filed in one pass afterwards. `s_0849` went to
+the shorter take on the operator's ear alone; `s_0850` went to the take that sings what was written —
+a 16.9-second run-up and a fade against the other's no run-up and a sustain, where the song declares
+8 and fade. **Both rejects are kept, not deleted**, at `music/audio/RAW/M-34-REJECTED/`, with a NOT
+DISPATCHED row each in the dispatch manifest — M-30's `87_wrong.mp3` precedent, and the reason is the
+same: the only record of why a take was not used is the one written at the time. **`attempts: 2` on
+those two songs**, following M-31's `s_0340`, which is the only other song whose attempt count is
+knowable.
+
+**Suno's rate is a property of the form, and the words were bought at the wrong price here.**
+Old-system sessions measures **0.882 seconds per sung word** — against Frontier Reels' 0.698,
+lane-rock's 0.779 and relay-pop's 0.746 — so lyrics written for §7's 3:36 came back averaging
+**4:30**, and §12's 288-word floor lands at **4:13** in this genre. **An hour of it is twelve songs,
+not fourteen.** D-095 already said the rate moves with the form and that the fix is not to edit the
+lyrics; that still holds and nothing was regenerated. What is new is the direction: **the commissioned
+400 now average 3:56 against §7's 3:30**, the pilot is the only thing feeding the 2:00–3:00 band, and
+the three genres still to be written (M-27 · M-28 · M-29, 100 songs) are the last chance to pull the
+average back. **That is a finding for the operator, not an edit** — §7's table is a target for the
+500 and the three remaining audio cards — M-36 · M-37 · M-38 — are where it is met or missed.

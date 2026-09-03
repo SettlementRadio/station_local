@@ -107,6 +107,20 @@ may be claimed twice, no take may claim a song that already has audio, and every
 audio has to be claimed by something. A pile that fails any of those prints why and moves nothing,
 which is the same failure shape D-091 found: one song claimed twice and another claimed by nobody.
 
+**"claimed by more than one take" has two causes and only you can tell them apart.** Either the lyric
+box did not change between two prompts, which is D-091's real failure and means a song was never
+generated — or you downloaded **both** takes Suno returns from one prompt, and the pair naturally
+matches one lyric twice. The command cannot distinguish them and does not guess. Look at the two
+`created=` times in the files' comment tags: seconds apart is a pair, and a real miss is minutes or
+hours apart with one song left unclaimed at the bottom of the report.
+
+**If it is a pair, choose one by ear and keep the other.** Move both out of the pile, run the
+dispatch again to file everything else, then put the keeper back on its own and run it once more —
+the matcher compares against every written lyric in the genre, so a pile of one still has to prove
+itself. Do not delete the reject: put it somewhere named, like `music/audio/RAW/M-34-REJECTED/`, and
+add a row for it to the manifest with `"song": null` and a `verified:` line saying which take won and
+why. M-34 did this for tracks 1 and 2 of `al_104` and it is the only record of the choice (D-105).
+
 **Every take is matched against every written lyric in the genre and filed only against the ones
 still waiting**, which is not the same thing. Topping up a single missing song against a pool of one
 would make "which song is this?" a question with no wrong answer, and the take would be filed as that

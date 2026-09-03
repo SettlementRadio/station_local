@@ -23,7 +23,16 @@
 # with the fingers cut off, which is audible on the keys on every track and is the subject of
 # `s_0851`. As on al_103, every exclude line keeps a bass out: this band has never had one.
 #
-# `generation:` and every `take:` are empty until M-34.
+# `generation:` and every `take:` were filled from the dispatch manifest at M-34. Generated on
+# 2026-09-02 on Suno v5.5, within the hour of `al_103`, so **Undershore Local was finished in one
+# morning on one model** (COMMISSION.md §9). All seven takes match their lyric exactly.
+#
+# **Tracks 1 and 2 are the first songs in the catalogue chosen from a pair.** Suno returns two takes
+# per prompt and both arrived for each of them, and a pair matches one lyric twice — so the words
+# that prove every other take in the project could not choose between them, and `make
+# music-dispatch` refused the whole pile until the operator listened and chose, on 2026-09-03. Both
+# `take:` blocks name the generation that was not used, both rejects are kept under
+# `music/audio/RAW/M-34-REJECTED/`, and both are in the dispatch manifest as NOT DISPATCHED rows.
 
 album:
   id: al_104
@@ -49,13 +58,27 @@ album:
     many and audibly so.
 
 generation:
-  # Empty until M-34's Suno sitting. See al_001.yaml for what each field means.
-  model_version: null
-  licence_period: null
-  generated_on: null
-  sittings: []
+  # Filled from the manifest by M-34. Suno Pro, remixing disabled, generated 2026-09-02,
+  # under the same terms as al_103 and within the hour of it, which finishes Undershore
+  # Local on one model in one morning (COMMISSION.md §9).
+  # **Two of these seven songs have a rejected twin.** Tracks 1 and 2 each came back as the
+  # pair Suno returns from one prompt, and a pair matches one lyric twice — so the words
+  # that prove every other take here could not choose between them and the operator did, by
+  # ear, on 2026-09-03. Both take: blocks name the take that was not used and both rejects
+  # are in the dispatch manifest as NOT DISPATCHED rows.
+  model_version: v5.5
+  licence_period: suno-pro-2026-09
+  generated_on: 2026-09-02
+  sittings:
+    - {date: 2026-09-02, from: '08:06:53', to: '08:09:35', tracks: [1, 2, 3, 4, 5, 6, 7]}
   ai_generated: true # never changes; written into every file's tags by M-05
-  notes: null
+  notes: >-
+    Dispatched from music/audio/RAW/M-25-SECOND by `make music-dispatch`. All seven takes
+    matched their lyric exactly. Tracks 1 and 2 arrived as pairs — the two takes Suno
+    returns from one prompt — and a pair claims one lyric twice, so `make music-dispatch`
+    refused the pile until the operator chose which of each was the keeper by ear on
+    2026-09-03. Both rejects are kept and are in the dispatch manifest. Filing this record
+    finishes Undershore Local.
 
 songs:
   - id: s_0849
@@ -119,7 +142,19 @@ songs:
       Count the hours found again by people still awake.
 
       [Outro - sustain]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: 2 # this prompt returned two takes one second apart and the other is
+                  # cd1fadb9-e1d5-4fb9-bdb5-8d5d1a47c8e5, 4:57 against this one's 4:39.
+                  # Both match the lyric at 100%, so the words could not separate them and
+                  # the operator chose by ear on 2026-09-03 (M-34). The other is kept at
+                  # music/audio/RAW/M-34-REJECTED/849_1.mp3 and is in the manifest.
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 2c7cded2-e132-4dde-b288-b6b0db038fe4
+      suno_created: 2026-09-02T08:06:53Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_104/01.mp3
 
   - id: s_0850
     title: Nobody Off at the Same Time
@@ -186,7 +221,20 @@ songs:
       Four chairs stay waiting though the table has gone cold.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: 2 # this prompt returned two takes in the same second and the other is
+                  # d1ac47c0-9984-4093-8ace-c43aabb899df. Both match the lyric at 100%; this
+                  # one was chosen on 2026-09-03 because it is the one that sings what was
+                  # written — a 16.9s run-up and a fade, where the other has no run-up and a
+                  # sustain against a declared 8 and fade. The rejected take is kept at
+                  # music/audio/RAW/M-34-REJECTED/850.mp3 and is in the manifest.
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 84f6a40e-df5b-4695-a147-570520d349a3
+      suno_created: 2026-09-02T08:07:19Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_104/02.mp3
 
   - id: s_0851
     title: Cold Store, Late Hour
@@ -249,7 +297,15 @@ songs:
       Nothing here is ours, so share it while it lasts.
 
       [Coda - fade, piano and room]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 239676c6-e978-4aae-8aef-da71c143fd9d
+      suno_created: 2026-09-02T08:07:51Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_104/03.mp3
 
   - id: s_0852
     title: Half the Local Left
@@ -316,7 +372,15 @@ songs:
       The board says it in figures. Read the empty chairs.
 
       [Outro - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: fe9b5242-b09e-4d9c-9359-844601ec95fe
+      suno_created: 2026-09-02T08:08:21Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_104/04.mp3
 
   - id: s_0853
     title: Nothing Warm to Drink
@@ -378,7 +442,15 @@ songs:
       Put the kettle on the scrubber pipe. We have one answer now.
 
       [Outro - fade]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: e9ef5959-6511-4521-8dd4-02233f070a3a
+      suno_created: 2026-09-02T08:08:49Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_104/05.mp3
 
   - id: s_0854
     title: The Last Grievance
@@ -443,7 +515,15 @@ songs:
       The door closes clean. Make the office write that down.
 
       [Outro - cold stop]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 3af01405-2b47-49ae-9f3b-279cb90e214a
+      suno_created: 2026-09-02T08:09:11Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_104/06.mp3
 
   - id: s_0855
     title: Nobody Locks It Behind Us
@@ -507,4 +587,12 @@ songs:
       Leave a way through for whatever comes after us.
 
       [Outro - sustain, the yard gate]
-    take: null # M-34 fills this in at the Suno sitting
+    take:
+      attempts: null # the sitting did not record how many were generated
+      model_version: null # inherits generation.model_version (v5.5)
+      generated_on: 2026-09-02
+      prompt_used: null # null means the prompt above was used unchanged
+      suno_id: 32b18ac7-3695-4dfc-a3e2-fa7d7cc05337
+      suno_created: 2026-09-02T08:09:35Z
+      lyric_match: 1.0000 # how much of the take is the written lyric (D-091)
+      file: music/audio/label_7/al_104/07.mp3

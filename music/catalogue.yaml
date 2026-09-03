@@ -18179,18 +18179,18 @@ tracks:
   artist: b_048
   title: Nothing Dries Down Here
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_103/01.mp3
+  duration_sec: 294.52
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - wry
   - rolling
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Hob Venner wrote the chorus on the back of a grievance form and the form is reproduced on the
     sleeve of the Europa pressing.
 - id: s_0841
@@ -18198,18 +18198,18 @@ tracks:
   artist: b_048
   title: The Long Ladder
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_103/02.mp3
+  duration_sec: 277.24
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   - hard
   - steady
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Marta Ospel plays it on a kit with no cymbals, which she took off because the gallery's echo made
     them unusable and never put back.
 - id: s_0842
@@ -18217,18 +18217,18 @@ tracks:
   artist: b_048
   title: Wages in Two Halves
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_103/03.mp3
+  duration_sec: 267.64
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - blunt
   - brisk
   - defiant
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The local's committee asked the band not to record it during a live dispute about split payments,
     the only time it ever asked them for anything.
 - id: s_0843
@@ -18236,18 +18236,18 @@ tracks:
   artist: b_048
   title: Saltwater Boots
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_103/04.mp3
+  duration_sec: 274.68
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - plain
   - midtempo
   - cold
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Saira Dunn's piano is a quarter-tone flat for the whole track because it would not hold pitch
     in the cold and the band would not move rooms.
 - id: s_0844
@@ -18255,18 +18255,18 @@ tracks:
   artist: b_048
   title: Ask Me When I'm Dry
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_103/05.mp3
+  duration_sec: 269.8
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - funny
   - shuffling
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Tel Brask plays the harmonica through a lamp horn, which is how he played it in the canteens so
     it would carry down a gallery.
 - id: s_0845
@@ -18274,18 +18274,18 @@ tracks:
   artist: b_048
   title: The Second Gate
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_103/06.mp3
+  duration_sec: 283.0
+  intro_ramp_sec: 25.82
+  outro_type: sustain
+  category: gold
   mood:
   - slow
   - blue
   - still
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: About a man who worked the second gate for thirty years; he heard the record when it came out
     and told the band he did not recognise himself in it.
 - id: s_0846
@@ -18293,18 +18293,18 @@ tracks:
   artist: b_048
   title: Two Shifts, No Sleep
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_103/07.mp3
+  duration_sec: 294.32
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - tired
   - driving
   - hard
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Cut at the end of a double shift and Hob Venner's voice fails on the last verse, which the band
     kept on the grounds that it was accurate.
 - id: s_0847
@@ -18312,18 +18312,18 @@ tracks:
   artist: b_048
   title: Under the Ice Yard
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_103/08.mp3
+  duration_sec: 281.68
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - cold
   - spacious
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Recorded in the gallery rather than the canteen, and the four-second decay on it is the room and
     not anything the recording did.
 - id: s_0848
@@ -18331,18 +18331,18 @@ tracks:
   artist: b_048
   title: Walk Out Together
   track_no: 9
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_103/09.mp3
+  duration_sec: 289.8
+  intro_ramp_sec: 17.39
+  outro_type: cold
+  category: gold
   mood:
   - communal
   - final
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The local's whole night shift sings the last chorus, about forty people, and the sleeve credits
     them under the branch number rather than by name.
 - id: s_0849
@@ -18350,18 +18350,18 @@ tracks:
   artist: b_048
   title: Second Shift Blues
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_104/01.mp3
+  duration_sec: 279.2
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - slow
   - blue
   - weary
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The only song the band gave their own form's name to, and Hob Venner said he used the word because
     it was the plainest one available.
 - id: s_0850
@@ -18369,18 +18369,18 @@ tracks:
   artist: b_048
   title: Nobody Off at the Same Time
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_104/02.mp3
+  duration_sec: 281.92
+  intro_ramp_sec: 16.93
+  outro_type: fade
+  category: gold
   mood:
   - wry
   - midtempo
   - tired
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Written about the shift pattern that ended the band, and recorded on one of the two nights a month
     that pattern left them all free.
 - id: s_0851
@@ -18388,18 +18388,18 @@ tracks:
   artist: b_048
   title: Cold Store, Late Hour
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_104/03.mp3
+  duration_sec: 244.72
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - slow
   - close
   - cold
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Saira Dunn plays in gloves with the fingers cut off, which can be heard on the keys throughout,
     because the canteen heating was off after midnight.
 - id: s_0852
@@ -18407,18 +18407,18 @@ tracks:
   artist: b_048
   title: Half the Local Left
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_104/04.mp3
+  duration_sec: 269.6
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - blunt
   - driving
   - hard
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The membership numbers in the second verse are the branch's real ones, read off the noticeboard
     on the night of the take.
 - id: s_0853
@@ -18426,18 +18426,18 @@ tracks:
   artist: b_048
   title: Nothing Warm to Drink
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_104/05.mp3
+  duration_sec: 238.12
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - dry
   - shuffling
   - funny
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Tel Brask sings the lead, the only time he does on either record, because Hob Venner was on shift
     and came in after it was finished.
 - id: s_0854
@@ -18445,18 +18445,18 @@ tracks:
   artist: b_048
   title: The Last Grievance
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_104/06.mp3
+  duration_sec: 255.84
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - hard
   - defiant
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Played once at the branch's final meeting and once for the record, and the band refused a second
     take on the grounds that they had already done it twice.
 - id: s_0855
@@ -18464,18 +18464,18 @@ tracks:
   artist: b_048
   title: Nobody Locks It Behind Us
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_104/07.mp3
+  duration_sec: 304.6
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - final
   - slow
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The last thing Undershore Local recorded, and the sound at the end is the yard gate, which nobody
     had ever locked and which is on the take anyway.
 - id: s_0856
@@ -23197,18 +23197,18 @@ tracks:
   artist: b_063
   title: Ten Locks to the Sea
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_140/01.mp3
+  duration_sec: 327.08
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - rolling
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Fenna Crole counts ten locks and there are eleven, because the eleventh was cut in after she wrote
     it and she has refused to change the number since.
 - id: s_1142
@@ -23216,18 +23216,18 @@ tracks:
   artist: b_063
   title: Wait for the Water
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_140/02.mp3
+  duration_sec: 332.44
+  intro_ramp_sec: 12.28
+  outro_type: sustain
+  category: gold
   mood:
   - patient
   - slow
   - wry
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Written in the hour and a half the top lock needs to fill, which Fenna Crole timed against the
     lock house clock before she would let the band shorten it.
 - id: s_1143
@@ -23235,18 +23235,18 @@ tracks:
   artist: b_063
   title: Nobody Walks the Towpath
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_140/03.mp3
+  duration_sec: 299.16
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - blue
   - midtempo
   - plain
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: About the winter the towpath lamps were stripped off the posts for the metal in them, and the
     man the crews blamed lived four doors from Sim Pallow and never spoke to him again.
 - id: s_1144
@@ -23254,18 +23254,18 @@ tracks:
   artist: b_063
   title: Half a Mile an Hour
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_140/04.mp3
+  duration_sec: 333.04
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - slow
   - steady
   - dry
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Aldis Merrow plays it at the speed a loaded boat moves and would not agree to the tempo until
     Torr Bexley had walked one alongside him.
 - id: s_1145
@@ -23273,18 +23273,18 @@ tracks:
   artist: b_063
   title: Two Boats Waiting
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_140/05.mp3
+  duration_sec: 241.84
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - funny
   - brisk
   - blunt
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The two crews who would not give way to one another for a whole afternoon in 2604 are both in
     the song, and both of them bought the record.
 - id: s_1146
@@ -23292,18 +23292,18 @@ tracks:
   artist: b_063
   title: Paid at the Wharf
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_140/06.mp3
+  duration_sec: 263.6
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - driving
   - hard
   - defiant
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The sum in the last verse is what the four of them were paid for this record, once and flat, and
     nothing has been added to it since.
 - id: s_1147
@@ -23311,18 +23311,18 @@ tracks:
   artist: b_063
   title: Down to the Lock House
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_140/07.mp3
+  duration_sec: 293.28
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - close
   - warm
   - final
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Sim Pallow plays with his hands and no sticks the whole way through, because the lock house is
     joined to a house with a child asleep in it.
 - id: s_1148
@@ -23330,18 +23330,18 @@ tracks:
   artist: b_063
   title: Everything Comes By Water
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_141/01.mp3
+  duration_sec: 289.56
+  intro_ramp_sec: 22.2
+  outro_type: cold
+  category: gold
   mood:
   - rolling
   - warm
   - communal
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Wenna Ferrin's concertina is on it from the first bar and she had been in the band three months
     when they recorded it.
 - id: s_1149
@@ -23349,18 +23349,18 @@ tracks:
   artist: b_063
   title: The Cut Is Closed
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_141/02.mp3
+  duration_sec: 199.0
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - still
   - cold
   - patient
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The gang who drained the cut sing the chorus, and they were paid for it out of the same share
     the band was.
 - id: s_1150
@@ -23368,18 +23368,18 @@ tracks:
   artist: b_063
   title: A Winter Off the Boats
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_141/03.mp3
+  duration_sec: 326.92
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: gold
   mood:
   - slow
   - blue
   - close
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Fenna Crole wrote it in the four days her whole family were in the lock house together for the
     first time since 2599, which she has said was three days more than anybody needed.
 - id: s_1151
@@ -23387,18 +23387,18 @@ tracks:
   artist: b_063
   title: Nothing Moves Till the Thaw
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_141/04.mp3
+  duration_sec: 262.16
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - dry
   - tired
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Torr Bexley plays with a boat rope wound round the neck of the bass to deaden it, which he began
     doing because of the cold and has never stopped.
 - id: s_1152
@@ -23406,18 +23406,18 @@ tracks:
   artist: b_063
   title: Owe It to the Shop
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_141/05.mp3
+  duration_sec: 240.76
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - wry
   - brisk
   - plain
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The woman who kept the crews in credit through the closure is in the second verse and asked the
     band to leave her name in it.
 - id: s_1153
@@ -23425,18 +23425,18 @@ tracks:
   artist: b_063
   title: Somebody Else's Kitchen
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_141/06.mp3
+  duration_sec: 319.48
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - warm
   - fond
   - slow
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Written about the fortnight the band spent eating in other people's kitchens, and Fenna Crole
     has never said whose.
 - id: s_1154
@@ -23444,18 +23444,18 @@ tracks:
   artist: b_063
   title: Back on the Water
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_141/07.mp3
+  duration_sec: 277.8
+  intro_ramp_sec: 6.32
+  outro_type: sustain
+  category: gold
   mood:
   - bright
   - driving
   - final
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The first thing the five of them played on the day the water came back, standing on the lock beam,
     and the record ends where the closure did.
 - id: s_1155
@@ -23463,18 +23463,18 @@ tracks:
   artist: b_063
   title: Not the Band You Wrote For
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_142/01.mp3
+  duration_sec: 273.0
+  intro_ramp_sec: 15.05
+  outro_type: cold
+  category: gold
   mood:
   - brisk
   - dry
   - knowing
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The title is the line Fenna Crole put at the top of her first reply to Relay Road Import in 2605,
     when she thought that would be the end of it.
 - id: s_1156
@@ -23482,18 +23482,18 @@ tracks:
   artist: b_063
   title: Letters Take a Season
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_142/02.mp3
+  duration_sec: 314.16
+  intro_ramp_sec: 13.56
+  outro_type: cold
+  category: gold
   mood:
   - patient
   - blue
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The second verse is Aldis Merrow's arithmetic about an answer that cannot arrive in the same year
     as the letter it answers, sung as he wrote it out.
 - id: s_1157
@@ -23501,18 +23501,18 @@ tracks:
   artist: b_063
   title: It Was Meant for Somebody Else
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_142/03.mp3
+  duration_sec: 288.76
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - wry
   - rolling
   - plain
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: About a coat somebody left in the lock house and never came back for, which is still on the same
     hook.
 - id: s_1158
@@ -23520,18 +23520,18 @@ tracks:
   artist: b_063
   title: Eleven Miles of Water
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_142/04.mp3
+  duration_sec: 289.56
+  intro_ramp_sec: 21.22
+  outro_type: sustain
+  category: gold
   mood:
   - steady
   - warm
   - rolling
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Torr Bexley counts the eleven miles off by the bridges rather than by the locks, which is how
     the crews do it and why his numbers do not agree with the band's first record.
 - id: s_1159
@@ -23539,18 +23539,18 @@ tracks:
   artist: b_063
   title: The Bottom Gate Leaks
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_142/05.mp3
+  duration_sec: 242.0
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - blunt
   - hard
   - driving
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The bottom gate of the lowest lock has leaked since 2601 and the band sent this song to the navigation
     office with a copy of the record.
 - id: s_1160
@@ -23558,18 +23558,18 @@ tracks:
   artist: b_063
   title: Two Names on the Bill
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_142/06.mp3
+  duration_sec: 321.0
+  intro_ramp_sec: 11.42
+  outro_type: cold
+  category: gold
   mood:
   - midtempo
   - fond
   - plain
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The two names in the chorus belong to the lock keepers who worked the cut before Fenna Crole's
     family did, and both their daughters were in the room for it.
 - id: s_1161
@@ -23577,18 +23577,18 @@ tracks:
   artist: b_063
   title: Working Under the Bridge
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_142/07.mp3
+  duration_sec: 237.44
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: gold
   mood:
   - loud
   - defiant
   - fast
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Sim Pallow strikes the arch of the bridge with a lock key all the way through, because the band
     played this one standing underneath it.
 - id: s_1162
@@ -23596,18 +23596,18 @@ tracks:
   artist: b_063
   title: She Never Wrote Back
   track_no: 8
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_142/08.mp3
+  duration_sec: 322.36
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - slow
   - aching
   - blue
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The only song on the record Fenna Crole did not write; Aldis Merrow wrote it, has never said who
     it is about, and the band have stopped asking him.
 - id: s_1163
@@ -23615,18 +23615,18 @@ tracks:
   artist: b_063
   title: Stay Where the Water Is
   track_no: 9
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_142/09.mp3
+  duration_sec: 304.76
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: gold
   mood:
   - final
   - close
   - warm
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The last thing cut in the wharf room, sung with the doors on to the water standing open, and a
     boat goes past underneath the final verse.
 - id: s_1164
@@ -23634,18 +23634,18 @@ tracks:
   artist: b_063
   title: Somebody Sent Us This
   track_no: 1
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_143/01.mp3
+  duration_sec: 295.48
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: A
   mood:
   - bright
   - warm
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The record the importer sent to the lock house in 2619 arrived with no letter and no name on the
     sleeve, and the band wrote to the road head and waited a season to find out whose it was.
 - id: s_1165
@@ -23653,18 +23653,18 @@ tracks:
   artist: b_063
   title: Sing the One They Sent
   track_no: 2
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_143/02.mp3
+  duration_sec: 302.8
+  intro_ramp_sec: 13.63
+  outro_type: sustain
+  category: A
   mood:
   - communal
   - rolling
   - close
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The round is the Shore Rounds', learned off that record, and the Ninefoot Cut come in together
     where the Titan band come in a line apart.
 - id: s_1166
@@ -23672,18 +23672,18 @@ tracks:
   artist: b_063
   title: Nine Foot of Water
   track_no: 3
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_143/03.mp3
+  duration_sec: 256.6
+  intro_ramp_sec: 0.0
+  outro_type: cold
+  category: A
   mood:
   - dry
   - funny
   - brisk
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Fenna Crole gives the cut its depth in the first line and the navigation office wrote to the band
     to say that it is nine foot six.
 - id: s_1167
@@ -23691,18 +23691,18 @@ tracks:
   artist: b_063
   title: The Second Copy
   track_no: 4
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_143/04.mp3
+  duration_sec: 286.88
+  intro_ramp_sec: 0.0
+  outro_type: sustain
+  category: A
   mood:
   - patient
   - wry
   - steady
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Written about the crate that went astray in 2622 with the band's first copy in it, and finished
     before anybody had told them the crate was gone.
 - id: s_1168
@@ -23710,18 +23710,18 @@ tracks:
   artist: b_063
   title: The Same Eleven Miles
   track_no: 5
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_143/05.mp3
+  duration_sec: 333.52
+  intro_ramp_sec: 14.12
+  outro_type: sustain
+  category: A
   mood:
   - slow
   - plain
   - fond
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Torr Bexley has worked the same eleven miles since 2598, and the song lists what has changed on
     them in order and ends on nothing.
 - id: s_1169
@@ -23729,18 +23729,18 @@ tracks:
   artist: b_063
   title: Who Taught You That
   track_no: 6
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_143/06.mp3
+  duration_sec: 279.4
+  intro_ramp_sec: 22.55
+  outro_type: sustain
+  category: A
   mood:
   - warm
   - generous
   - midtempo
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: Wenna Ferrin learned the concertina from a woman on the next boat who would not play a tune twice,
     and this is the one tune she went back and asked for three times.
 - id: s_1170
@@ -23748,18 +23748,18 @@ tracks:
   artist: b_063
   title: Leave the Gate Open
   track_no: 7
-  playable: false
-  file: null
-  duration_sec: null
-  intro_ramp_sec: null
-  outro_type: null
-  category: null
+  playable: true
+  file: music/audio/label_7/al_143/07.mp3
+  duration_sec: 253.28
+  intro_ramp_sec: 0.0
+  outro_type: fade
+  category: A
   mood:
   - final
   - communal
   - bright
   language: en
-  licence_note: null
+  licence_note: suno-pro-2026-09
   fact: The band played it out through the open lock house door and the crews tied up outside sing the
     last chorus back at them.
 - id: s_1171
