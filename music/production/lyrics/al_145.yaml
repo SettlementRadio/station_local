@@ -1,0 +1,448 @@
+# al_145 — Two Ferries Missed · After the Ferry (b_064) · Lower Bell Editions · 2607 · 6 songs · album
+#
+# Written by M-27. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The house's best year, and the only record the band ever made with money behind it. The coast was
+# shut for the season, the core's rooms were full of players with nowhere to be, and Lower Bell
+# Editions had its pick of hired hands for the first and only time.
+#
+# **Sel Ardin is on three of the six and the style card does not allow her.** b_064's backing line is
+# one voice from the keyboard chair on a last chorus and nothing else; the wiki puts a vocal arranger
+# in the room for three nights and gives her three answering voices on `s_1178`. **The wiki wins**
+# (D-092's precedent), and the three tracks she is on say so in the prompt and in `room:` — the other
+# three keep the card exactly.
+#
+# The fourth night is `s_1181` and the band would not sign for it. The record ends on the room's own
+# upright piano because Hessa Lin's instrument had been sold that spring to clear the band's back pay,
+# which is the last thing `s_1182` is about and the first thing it sounds like.
+#
+# `generation:` and every `take:` are empty until M-36.
+
+album:
+  id: al_145
+  title: Two Ferries Missed
+  band: b_064
+  band_name: After the Ferry
+  label: label_6
+  release_year: 2607
+  genre: void-lounge
+  cornerstone: false
+  song_count: 6
+  style_card: b_064
+  room: >-
+    The Lower Bell room again, three nights the house paid for and a fourth the band played anyway.
+    The card holds: low female contralto very quiet and close, upright piano taking every
+    instrumental break, upright bass, brushed kit, synth-harpsichord. **Two departures from the card,
+    both from the wiki.** Sel Ardin came down for three nights and is on `s_1178`, `s_1180` and
+    `s_1181` — three answering voices built under the lead on `s_1178`, one low answering voice on
+    the other two — so those three prompts ask for female backing vocals and the other three exclude
+    them outright, which is the card's own line. And `s_1180` is played on a borrowed upright bass a
+    whole tone darker than the rest of the record, which the prompt asks for as a dark heavy bass
+    tone rather than as a different instrument.
+
+generation:
+  # Empty until M-36's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1177
+    title: Two Ferries Missed
+    track_number: 1
+    mood: [wry, warm, midtempo]
+    fact: >-
+      Nesta Vire counted the two ferries she had actually missed that week into the opening line and
+      refused to change the number afterwards, so the band has sung it wrong on purpose ever since.
+    arrangement_note: the count is in the first sung line and the band comes in behind it a beat late on purpose, which is how they have played it ever since
+    intro: 11
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      74 BPM wry slow torch; quiet low female contralto close and conversational, upright piano,
+      upright bass, brushed kit entering a beat behind the vocal, plucked electronic strings, fade.
+    exclude: backing vocals, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and bass, eleven seconds]
+
+      [Verse 1]
+      Two ferries missed this week and it is Thursday.
+      One by a minute and one by half an hour.
+      I stood on the wrong side of the water twice
+      and watched the lights go out across the lane.
+      There is a kind of person this keeps happening to
+      and I have stopped pretending I am not.
+      The timetable has never once been wrong.
+      I am the variable. I have checked.
+
+      [Chorus]
+      Two ferries missed, and I am still here.
+      Two ferries missed, and the room is warm.
+      Whatever I was hurrying towards this evening
+      has managed without me and will do again.
+
+      [Verse 2]
+      It was three the week I wrote this, if we're honest,
+      but two was what I said and two it stays.
+      The band has sung it wrong for seven seasons
+      because the first night is the night that counts.
+      You cannot fix a number in a chorus.
+      You can only sing it and let it be untrue.
+      Everybody here has heard the real amount
+      and everybody here still sings the two.
+
+      [Verse 3]
+      You were on the far bank in the cold both times,
+      not waving, not annoyed, just standing there,
+      the way somebody waits for someone hopeless
+      whom they have decided not to give up on.
+      The last ferry does not wait for anybody
+      and the long way round is nine and a half miles.
+      When I came round the long way you had gone in.
+      The kettle had already been and gone.
+      You said, without looking up from what you were doing,
+      that you had put a second one on.
+
+      [Final Chorus]
+      Two ferries missed, and I am still here.
+      Two ferries missed, and the kettle has been on.
+      Whatever I was hurrying towards this evening
+      is exactly where I have ended up. Go on.
+
+      [Outro - piano and bass, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1178
+    title: The Room Fills at One
+    track_number: 2
+    mood: [patient, glowing, slow]
+    fact: >-
+      Sel Ardin built the three answering voices around a lead she had heard once, standing at the
+      bar with her coat still on.
+    arrangement_note: three answering female voices under the lead from the first refrain on, built to sit below her and never above, and the lead is not doubled anywhere
+    intro: 18
+    outro: sustain
+    target_duration: "4:10"
+    prompt: >-
+      56 BPM patient slow torch; quiet low female contralto close and unhurried, three low female
+      answering voices underneath her from the first refrain, upright piano, upright bass, brushed
+      kit, plucked electronic strings, sustained ending.
+    exclude: harmony above the lead, doubled lead vocal, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano alone, then bass, eighteen seconds]
+
+      [Verse 1]
+      Nothing happens in this room till one.
+      Before that it is chairs and a low lamp
+      and four of us in front of eleven people,
+      three of whom are waiting for a friend.
+      But we all know the hour we are working toward
+      and none of us has ever said it out.
+
+      [Refrain]
+      This room fills at one. It always has.
+      The last ferry lands them and they climb the stair.
+      You can hear it coming up before you see it,
+      that particular noise of somewhere else out there.
+
+      [Verse 2]
+      She came in with her coat still on, that evening,
+      stood at the bar and did not order once.
+      Listened to the whole of a slow number,
+      went out, came back the next night with a plan.
+      What she heard, she said, was one voice with a gap under it,
+      and gaps are what she does, and what she is for.
+      She built three underneath and did not touch the top.
+      Nobody had ever done that to us before.
+
+      [Refrain]
+      This room fills at one. It always has.
+      The last ferry lands them and they climb the stair.
+      You can hear it coming up before you see it,
+      that particular noise of somewhere else out there.
+
+      [Verse 3]
+      So now the hour arrives and we are ready,
+      three voices under mine and none above,
+      and the door goes, and the cold comes up the stairwell,
+      and the room does what the room has always done.
+      But the eleven are the reason there are ninety.
+      Somebody has to hold the room till then.
+
+      [Refrain]
+      This room fills at one. It always has.
+      The last ferry lands them and they climb the stair.
+      Whatever it is you came across the water for,
+      it starts about an hour from now. Sit there.
+
+      [Outro - voices and piano sustaining]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1179
+    title: Your Coat, My Fault
+    track_number: 3
+    mood: [rueful, tender, slow]
+    fact: >-
+      Ollan Beke wrote the piano part out of an argument he had in the coat room and has never said
+      which half of it was his.
+    arrangement_note: the piano and the voice take opposite sides all the way through — the piano answers every line the voice ends on, and the break is the argument with nobody singing over it
+    intro: 9
+    outro: fade
+    target_duration: "4:00"
+    prompt: >-
+      64 BPM rueful slow blues torch; quiet low female contralto close and level, upright piano
+      answering every vocal line and taking a fifteen-second break alone, upright bass, brushed kit,
+      plucked electronic strings, fade.
+    exclude: backing vocals, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano, nine seconds]
+
+      [Verse 1]
+      It started over nothing in the coat room.
+      It always starts in coat rooms. Ask around.
+      Somewhere between the hangers and the doorway
+      a whole year of not saying it came down.
+      You had my coat. I had already said the thing.
+      Neither of us could put either of them back.
+      And the room outside went on being a room
+      with a piano in it and a hum of talk.
+
+      [Chorus]
+      My fault, your coat, and both of us standing.
+      My fault, your coat, and the door half wide.
+      Somebody wanting past us with an armful.
+      Somebody saying sorry to the side.
+
+      [Verse 2]
+      He wrote the piano part out of that evening
+      and he has never said which half was his.
+      You can hear both of them in it if you want to.
+      The left hand will not let the right hand finish.
+      That is the argument, and that is all of it,
+      and it goes round twice and does not resolve.
+      I asked him once. He looked at me and shrugged.
+      He said a part is not a confession, love.
+
+      [Instrumental - upright piano break, fifteen seconds]
+
+      [Verse 3]
+      We got the coats the right way round eventually.
+      We went out into a cold that did not care.
+      The last ferry had gone an hour before that
+      and neither of us mentioned it out there.
+      Whatever it was, it was not about the coat.
+      Whatever it was, it is not settled yet.
+      Nobody has ever won a thing in a doorway
+      with an armful of somebody else's winter.
+      But I have the sleeve of it in my two hands
+      and I am not the one who lets it go.
+
+      [Chorus]
+      My fault, your coat, and both of us standing.
+      My fault, your coat, and the lane outside.
+      Somebody wanting past us with an armful.
+      Somebody saying sorry to the side.
+
+      [Outro - piano fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1180
+    title: Nothing Until Morning
+    track_number: 4
+    mood: [aching, hushed, spare]
+    fact: >-
+      Tarrin Meel plays Toben Alt's bass on this one, borrowed off Coldwater Court for a fortnight
+      while his own was away being repaired, and it is a whole tone darker than the rest of the record.
+    arrangement_note: the borrowed bass is the lowest thing on the record and sits well under everything, and one answering voice comes in only on the last chorus
+    intro: 7
+    outro: cold
+    target_duration: "3:40"
+    prompt: >-
+      50 BPM hushed spare torch; quiet low female contralto very close, a dark heavy upright bass
+      well below everything else, upright piano sparse, brushed kit, one low female answering voice
+      on the last chorus only, hard cold stop.
+    exclude: bright bass tone, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, fade ending, backing vocals before the last chorus
+    lyrics: |
+      [Intro - bass and piano, seven seconds]
+
+      [Verse 1]
+      There is nothing to be done about it now.
+      The office shut at six. The clerk went home.
+      Whatever it is that you have found out this evening
+      is a thing you have to carry until nine.
+      I know. I know. I have had those nights myself.
+      There is no hour worse than the one you cannot use.
+      Sit down. Put it on the table where I can see it.
+      We will look at it together and then leave it.
+
+      [Verse 2]
+      A borrowed bass is under this, and you can hear it —
+      lower than the room is built to hold,
+      lent for a fortnight out of the other house
+      by a man who never asks what for or when.
+      That is what people are, in the end, at this hour:
+      whatever they can lend you that will keep.
+      Nobody solved a thing at four in the morning.
+      Plenty have been carried to the light.
+
+      [Chorus]
+      Nothing till morning. Nothing until then.
+      The dark is not a place where things get mended.
+      Stay in it with me and do not think.
+      There is a whole day coming. Let it come.
+
+      [Verse 3]
+      By seven you will be somebody with a problem,
+      which is better than a person in a hole.
+      You will make a call. Somebody will answer.
+      It will be smaller in a coat and out of doors.
+      I am not telling you it is nothing. It is something.
+      I am telling you it is nothing until nine,
+      and there are two hours yet, and the piano is still open,
+      and I have not stopped playing in my life.
+
+      [Chorus - one answering voice underneath]
+      Nothing till morning. Nothing until then.
+      The dark is not a place where things get mended.
+      Stay in it with me and do not think.
+      There is a whole day coming. Let it come.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1181
+    title: The Fourth Night
+    track_number: 5
+    mood: [tired, warm, building]
+    fact: >-
+      The band played a fourth night the house had not paid for and would not sign for it, which is
+      the only bill Maro Deyn ever wrote off.
+    arrangement_note: the only track on the record the whole band wrote, and it builds from one instrument to five across the three verses without ever getting loud
+    intro: 15
+    outro: cold
+    target_duration: "4:25"
+    prompt: >-
+      70 BPM building slow torch; quiet low female contralto close and tired, entering over piano
+      alone with upright bass, brushed kit, plucked electronic strings and one low female answering
+      voice added one at a time across the song, upright piano taking a fourteen-second break, hard
+      cold stop.
+    exclude: loud dynamics, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, fade ending
+    lyrics: |
+      [Intro - piano alone, fifteen seconds]
+
+      [Verse 1]
+      Three nights were paid for and we played a fourth.
+      Nobody asked us to. The room was there.
+      The doors were open and the lamps were burning
+      and the five of us had nowhere else to be.
+      There was a docket on the table in the morning
+      with a line for what a fourth night should have cost.
+      We looked at it a while and left it blank
+      and put it back exactly where it was.
+
+      [Chorus]
+      Not for the docket. Not for the account.
+      A fourth night is the one that is not counted.
+      Everything before it we were working.
+      This one we were only in the room.
+
+      [Verse 2]
+      He came in at two and stood against the doorframe,
+      the man who signs for everything down here,
+      and he watched us do an hour we were not paid for
+      and he did not say a word to anyone.
+      Next week the paper came back through the letterbox
+      with a line drawn through the whole of what was owed.
+      It is the only bill he ever wrote off
+      and he has never once explained the reason.
+
+      [Instrumental - upright piano break, fourteen seconds]
+
+      [Verse 3]
+      It was the best of the four and everybody knows it.
+      The freight crew stayed. The people from the coast stayed.
+      Somebody's cousin sang a thing we did not know
+      and we found it under her by the second time.
+      There is no version of it anywhere on tape.
+      That is not a tragedy. That is the point.
+      A night you cannot sell is still a night.
+      Ask anybody on the stair, or up the relay,
+      or anywhere at all outside the core.
+
+      [Final Chorus]
+      Not for the docket. Not for the account.
+      A fourth night is the one that is not counted.
+      Everything before it we were working.
+      This one we were only in the room. Go home.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1182
+    title: Down to the Last Lamp
+    track_number: 6
+    mood: [final, warm, slow]
+    fact: >-
+      Hessa Lin plays the closing figure on the room's upright piano because her own instrument had
+      been sold that spring to pay the band what the house owed it.
+    arrangement_note: no plucked electronic strings anywhere on this track — the keyboard chair is at the room's upright piano instead, and the closing figure is hers
+    intro: 12
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      60 BPM warm closing torch; quiet low female contralto close and unhurried, two upright pianos
+      and no electronic instruments of any kind, upright bass, brushed kit, the second piano taking
+      the closing figure alone, fade.
+    exclude: plucked electronic strings, synthesizers, keyboards, backing vocals, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - two pianos, twelve seconds]
+
+      [Verse 1]
+      Her instrument went out of here in April
+      in the back of somebody's van, and did not come back.
+      What it fetched went round the five of us in envelopes
+      and squared what we were owed and nothing more.
+      She did not make a speech about it. She came in,
+      sat at the room's old upright, and began.
+      You would not know, unless you knew, what you were hearing.
+      You are hearing it. It is the whole last track.
+
+      [Verse 2]
+      There is a way of playing a thing you did not choose
+      that is not resignation and not spite.
+      It is the sound of somebody who would rather
+      be in this room on this instrument tonight
+      than anywhere at all with better keys.
+      The lamps are going off along the wall.
+      We are down to the last lamp and the one figure
+      and the bass is putting its cloth over the strings.
+      There is no ceremony being made of this.
+      There is a woman playing, and a room.
+
+      [Chorus]
+      Down to the last lamp, and it is enough.
+      Down to the last lamp and the door.
+      What we could not keep, we could not keep.
+      What we can play, we are playing. Hear it out.
+
+      [Verse 3]
+      Somebody in the storm season will ask her
+      whether she minds, and she will say she doesn't,
+      and half of that is true and half is manners
+      and the half that is true is the half that made this.
+      The relay carries what we pressed this April
+      out past the core to rooms we will not see.
+      It goes out with the room's own piano on it.
+      That is the only thing I want them to hear.
+
+      [Coda]
+      Down to the last lamp, and it is enough.
+      Down to the last lamp. Get your coat.
+
+      [Outro - the closing figure alone, fading]
+    take: null # M-36 fills this in at the Suno sitting

@@ -1,0 +1,515 @@
+# al_149 — Numbers on the Sleeve · The Quiet Half (b_066) · Stormline Issue · 2619 · 7 songs · album
+#
+# Written by M-27. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Stormline Issue's first record in the form, made because the coast had sealed, the crates had gone,
+# the dance acts were off the coast, and there was a singer in a hall with a band she had put
+# together four months earlier. **Juna Carrow is the same voice as `al_148`'s** — the card says so —
+# and this is where she stops singing it the way the core taught her.
+#
+# **The record is about a coast and not about a catalogue.** The dispute is furniture: eleven numbers
+# on a sleeve, a question she will not answer, a hall that pays the slow hour at the dancing's rate.
+# The subjects are a season with no agreed end to the night, a wall with dancing on the other side of
+# it, an instrument that could not go home, and one person saying a thing too late.
+#
+# **One departure from the card, and it is the wiki's.** b_066's backing line is *none*; Sel Ardin
+# sings the answering line on `s_1207` and it is the only track the band has ever ended with two
+# voices. The wiki wins (D-092's precedent) and the other six exclude backing vocals outright.
+# `s_1205` carries a guest synth-harpsichord the card does not list, which the wiki puts in the room
+# and the card does not exclude; the break on it is still the piano's, because §7 gives a break only
+# to an instrument the card already names.
+#
+# `generation:` and every `take:` are empty until M-36.
+
+album:
+  id: al_149
+  title: Numbers on the Sleeve
+  band: b_066
+  band_name: The Quiet Half
+  label: label_3
+  release_year: 2619
+  genre: void-lounge
+  cornerstone: false
+  song_count: 7
+  style_card: b_066
+  room: >-
+    A wet coast hall in a sealed season, recorded after the dancing had finished and most of the room
+    had gone — wide and empty behind the band, the voice close and dry against it. The card holds:
+    low grainy female lead with air in the tone and a small fall at the end of every phrase, upright
+    piano taking every instrumental break, upright bass under her without doubling the line, brushed
+    kit, and the hall's compact electric keyboards wherever its piano will not hold its tuning, which
+    on this record is `s_1203` and `s_1204`. Two tracks are their own. `s_1205` has a guest
+    synth-harpsichord that came down in a dance crate and could not go back, held long and glassy
+    under everything, with the piano still taking the break over it. And `s_1207` ends on two voices,
+    which is the only backing vocal in the band's life.
+
+generation:
+  # Empty until M-36's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1201
+    title: Numbers on the Sleeve
+    track_number: 1
+    mood: [cold, wry, slow]
+    fact: >-
+      The eleven numbers Juna Carrow sings are the Lower Bell catalogue numbers of the records she
+      cannot get back, in the order the receiver listed them.
+    arrangement_note: the eleven numbers are sung in strict time with only the bass under them, flat and without expression, and the band comes back in on the line after
+    intro: 12
+    outro: cold
+    target_duration: "4:00"
+    prompt: >-
+      54 BPM cold slow torch in a wide empty hall; low grainy female lead close and dry with air in
+      the tone, one section sung flat and strictly in time over upright bass alone, upright piano,
+      brushed kit, hard cold stop.
+    exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, fade ending
+    lyrics: |
+      [Intro - piano and bass, twelve seconds]
+
+      [Verse 1]
+      There is a list in an office in the core
+      with eleven lines on it and all of them are mine.
+      Not mine in law. I want to be exact.
+      Mine in the sense that I am on all eleven.
+      A man I have never met has put them in an order
+      and the order is the order they were made in,
+      and he has done that carefully and well,
+      and he will never hear a bar of any one.
+
+      [Verse 2]
+      Nineteen eleven. Nineteen twenty-four.
+      Nineteen thirty-one, and thirty-eight.
+      Two thousand and six. Two thousand and nine.
+      Two thousand and twenty, twenty-one, and two.
+      Two thousand and thirty. Two thousand and forty-one.
+      That is all of them. That is the whole shelf.
+      Eleven numbers and a lock and a receiver
+      and the man who dusts the top box every week.
+
+      [Chorus]
+      So I put the numbers on the sleeve.
+      Nothing else on the back of it at all.
+      If they will not press them I will print them,
+      and whoever wants to look them up can look.
+
+      [Verse 3]
+      The house here asked me what I wanted on it.
+      I said eleven numbers and no words.
+      They said that people would not understand it.
+      I said that some of them would understand it well.
+      It went out up the relay in the autumn
+      to rooms I will not see across the lag,
+      and a woman in the core wrote to the shipboard press
+      to say she had them all and had them still,
+      and had bought the last one twice, in different halls,
+      and would I like to know which two they were.
+
+      [Chorus]
+      So I put the numbers on the sleeve.
+      Nothing else on the back of it at all.
+      If they will not press them I will print them,
+      and whoever wants to look them up can look.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1202
+    title: A Coast With No Ferry
+    track_number: 2
+    mood: [wistful, spacious, patient]
+    fact: >-
+      Juna Carrow wrote it in her first sealed season, on finding that a coast with no last ferry has
+      no hour at which the night is agreed to be over.
+    arrangement_note: nothing marks the ends of sections — the piano runs straight through every join, and the break arrives without a cue
+    intro: 15
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      48 BPM spacious patient slow torch in a wide empty hall; low grainy female lead close and dry
+      with long line ends, upright piano running continuously through every section join and taking a
+      sixteen-second break, upright bass, brushed kit, sustained ending.
+    exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending, drum fills marking section ends
+    lyrics: |
+      [Intro - piano alone, fifteen seconds]
+
+      [Verse 1]
+      Where I come from the night ends at midnight
+      because that is when the last ferry goes.
+      Everybody stands up at the same moment.
+      Half the room goes down the stair at once.
+      What is left is left on purpose, and it knows it,
+      and that is the hour the whole form was built for.
+      Out here there is no boat and no departure
+      and nothing tells a room that it is done.
+
+      [Verse 2]
+      In a sealed season nobody is leaving.
+      There is nowhere any of them have to be.
+      So a hall can run from ten until whenever
+      and whenever is a word that has no hour.
+      I have finished sets at four and at half five
+      and once at seven with the wet light coming through,
+      and every one of them just stopped, eventually,
+      the way a conversation stops. Not ended. Stopped.
+
+      [Chorus]
+      A coast without a ferry has no midnight.
+      A coast without a ferry has no last.
+      I did not know how much I leaned upon it
+      until I stood in a hall that had no end.
+
+      [Instrumental - upright piano break, sixteen seconds]
+
+      [Verse 3]
+      I am not asking anybody's pity.
+      There are worse things than a night that will not close.
+      But a form needs a shape and mine had one
+      and its shape was a boat leaving at twelve.
+      So I have started calling it at three,
+      out loud, from the front, which nobody asked for,
+      and the storm coast lets me, being a polite place,
+      and about nine people every night go home.
+      The rest of them stay on and I stay with them
+      and none of us can tell you what we are waiting for.
+
+      [Chorus]
+      A coast without a ferry has no midnight.
+      A coast without a ferry has no last.
+      So I will be the boat, and I will call it,
+      and whoever wants an ending has got mine.
+
+      [Outro - piano sustaining]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1203
+    title: The Hall Next Door Is Dancing
+    track_number: 3
+    mood: [wry, warm, midtempo]
+    fact: >-
+      What is on the other side of the wall is Cordon Hours playing to a full room, and Dessa Roan
+      set the tempo at exactly half theirs.
+    arrangement_note: the tempo is exactly half the dance band's and the kit lands on their alternate beats, which the drummer counted off the wall before the take
+    intro: 6
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      68 BPM wry midtempo slow torch in a hall built for dancing; low grainy female lead close and
+      dry, compact electric keyboards in place of a piano, upright bass, brushed kit sitting at
+      exactly half a dance tempo, faint four-on-the-floor bleeding through a wall in the background
+      only, fade.
+    exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, a four-on-the-floor kick in the band itself, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending
+    lyrics: |
+      [Intro - keyboards and bass, six seconds]
+
+      [Verse 1]
+      There is a wall, and there is a room behind it,
+      and there are four hundred people in that room.
+      You can feel it in the floor before you hear it.
+      You can hear it in the gaps, which is worse.
+      We are eleven in here and the lamps are on
+      and the hall we have is the hall they finished with.
+      That is the arrangement. I agreed to it.
+      I would agree to it again tomorrow night.
+
+      [Verse 2]
+      He counted off their kick and halved it, flatly,
+      standing at the wall with one hand on the plaster,
+      and every beat we play lands in their silence
+      and every beat they play lands in ours.
+      Nobody in either room has noticed.
+      It is the single best thing on this record.
+      Two bands in one building, in agreement,
+      who have never met and never will.
+
+      [Chorus]
+      Let them dance. It is a good night for it.
+      Let the whole coast go through there and come back.
+      We are the half of the evening that is quiet
+      and there is no evening without both.
+
+      [Verse 3]
+      At about four the wall goes soft and empty
+      and the ones who are still upright wander in,
+      coats on, glassy, sweating, and enormous,
+      and sit down at the back and do not speak.
+      Those are the best forty minutes of the week.
+      They have had all the noise that they can hold.
+      Whatever a person has been carrying since the sealed season
+      arrives at about ten past four. And then we play.
+
+      [Chorus]
+      Let them dance. It is a good night for it.
+      Let the whole coast go through there and come back.
+      We are the half of the evening that is quiet
+      and there is no evening without both.
+
+      [Outro - keyboards fading, kit last]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1204
+    title: Slow Set at Six
+    track_number: 4
+    mood: [tired, tender, slow]
+    fact: >-
+      Stormline Issue booked the band for the hour after the dancing stopped and paid it at the
+      dancing's rate, which the house has never explained and has never repeated for anybody else.
+    arrangement_note: everything on this track is played as tired as it can be played without dragging, and the kit is brushes on a closed hi-hat only
+    intro: 5
+    outro: fade
+    target_duration: "3:40"
+    prompt: >-
+      46 BPM tired tender slow torch at the very end of a night; low grainy female lead close and dry
+      and audibly tired, compact electric keyboards, upright bass, brushes on a closed hi-hat and
+      nothing else from the kit, fade.
+    exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending, snare and toms
+    lyrics: |
+      [Intro - keyboards, five seconds]
+
+      [Verse 1]
+      Six in the morning is a strange hour to be paid for.
+      The doors are open. There is grey outside.
+      The cleaners have begun along the far wall
+      and they work around us and they do not mind.
+      There are perhaps nine people on the benches
+      and two of them are staff and one's asleep.
+      One came off a hauler at about four
+      and has not decided yet to go to bed.
+      This is the set. This is what we are here for.
+      I would not swap it for the ten o'clock.
+
+      [Verse 2]
+      The house pays this hour what it pays the dancing,
+      which nobody has ever asked them to,
+      and when the shipboard press went and asked them
+      they said nothing and have said nothing since.
+      It has not happened for another act.
+      It has not happened twice. It happened once.
+      I have decided not to look at it too closely
+      in case it turns out to be an error.
+      A thing that is in your favour and unexplained
+      is a thing you carry carefully and do not shake.
+
+      [Refrain]
+      Slow at six, and the light along the storm coast.
+      Slow at six, and the money is the same.
+      Whatever this is, somebody decided it,
+      and did not put their name on it, and left.
+
+      [Verse 3]
+      He came in once, the man who signs the dockets,
+      and stood at the back with his coat over his arm,
+      and heard the whole hour out and did not clap
+      and went away and put the rate up by a tenth.
+      Ask him and he will tell you it is business.
+      The dance acts fill the hall. That much is true.
+      But somebody in that office likes this hour
+      and I have never once found out which one.
+      I would like to. I have decided not to try.
+      Some accounts are better left uncounted.
+
+      [Outro - keyboards and bass, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1205
+    title: Somebody Else's Instrument
+    track_number: 5
+    mood: [glassy, cool, hypnotic]
+    fact: >-
+      Miro Olt plays a synth-harpsichord that had come down in a dance crate and could not go back
+      before the coast sealed, and he charged the house for the season it spent there.
+    arrangement_note: a guest synth-harpsichord holds long glassy figures under everything from the first bar, and the piano still takes the break over the top of it
+    intro: 20
+    outro: sustain
+    target_duration: "4:20"
+    prompt: >-
+      50 BPM glassy hypnotic slow torch in a wide empty hall; low grainy female lead close and dry,
+      long sustained plucked electronic string figures underneath from the first bar, upright piano
+      taking a fifteen-second break over them, upright bass, brushed kit, sustained ending.
+    exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending
+    lyrics: |
+      [Intro - plucked electronic strings alone, twenty seconds]
+
+      [Verse 1]
+      It came down in the cargo with the dance kit
+      and the crate went back and this did not go with it.
+      By then the season had begun to seal
+      and a thing in the wrong hall is in the wrong hall.
+      A synth-harpsichord in a room like this one
+      is not what anybody would have chosen.
+      It sat under a sheet in the side corridor
+      for eleven weeks and then somebody uncovered it.
+      Nobody wrote to ask about it either.
+      Nobody up the road appeared to miss it.
+
+      [Verse 2]
+      He plays it as if it were owed him, which it is not,
+      and he has charged the house for every week it stayed,
+      and the house has paid, because the house is careless
+      with everything except the dancing nights.
+      I do not like him and he does not like me
+      and neither of us has ever said so out loud.
+      He is the best thing on this side of the record
+      and he knows it, and I have not told him.
+
+      [Instrumental - upright piano break over the held strings, fifteen seconds]
+
+      [Verse 3]
+      There is a way of using what is in the room
+      that is not the same as wanting it.
+      I did not want this. I do not want it now.
+      But it is here and it is cold and it goes on forever
+      and the hall behind it has the wet in the plaster
+      and it holds a note the way this coast holds weather.
+      When the season lifts, the crate will come and take it.
+      Whoever gets it next will get a different thing.
+      It will not sound like this in a dry hall.
+      It will not sound like this anywhere but here.
+
+      [Refrain]
+      Somebody else's, and it is going back.
+      Somebody else's, and it made this record.
+      I will not ask the house to buy it for me.
+      I will remember exactly how it sounded.
+
+      [Outro - plucked strings sustaining alone]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1206
+    title: Ask Me About the Core
+    track_number: 6
+    mood: [dry, bitter, midtempo]
+    fact: >-
+      Juna Carrow never answers the question in the chorus and Teme Hollick answers it for her, with
+      the first four notes of Bela's Key.
+    arrangement_note: the piano answers the unanswered chorus with a four-note quotation from another record, and it is the only place in the song the piano plays alone
+    intro: 8
+    outro: cold
+    target_duration: "4:05"
+    prompt: >-
+      70 BPM dry bitter midtempo slow blues torch in a wide hall; low grainy female lead close and
+      dry, upright piano answering the end of each chorus with a bare four-note figure and taking a
+      thirteen-second break, upright bass, brushed kit, hard cold stop.
+    exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, fade ending
+    lyrics: |
+      [Intro - piano and bass, eight seconds]
+
+      [Verse 1]
+      Everybody out here asks the same thing
+      inside about four minutes of hello.
+      They do not mean it badly. It is interest.
+      It is the only thing they know about me yet.
+      What was it like. Was it as good as they say.
+      Did you know him. Were you there at the end.
+      I have a face I do now, and I use it,
+      and the conversation moves along.
+
+      [Chorus]
+      Ask me about the weather on this coast.
+      Ask me what the hall is like in a sealed season.
+      Ask me anything you want about tonight.
+      Ask me about the core, and I will smile.
+
+      [Verse 2]
+      He does it for me now, which I have not thanked him for.
+      Four notes at the end of every chorus,
+      off a song from a record nobody out here has,
+      and the four notes are the answer and they are not mine.
+      Nobody in the hall knows what they are.
+      Two people up the relay road will know.
+      That is the correct number of people
+      and I would not add one to it if I could.
+
+      [Instrumental - upright piano break, thirteen seconds]
+
+      [Verse 3]
+      It was cold and it was late and it was small
+      and I was twenty-four and it was everything.
+      That is the answer, and it is not sayable,
+      and it would not survive being said out loud.
+      So it goes in four notes at the end of a chorus
+      in a wet hall with the dancing through the wall.
+      Ask me about the core and I will smile at you
+      and mean it, which is not the same as answering.
+
+      [Chorus]
+      Ask me about the weather on this coast.
+      Ask me what the hall is like in a sealed season.
+      Ask me anything you want about tonight.
+      Ask me about the core, and I will smile.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1207
+    title: Late Enough to Say It
+    track_number: 7
+    mood: [warm, aching, final]
+    fact: >-
+      Sel Ardin sings the answering line, and it is the only song the band has ever ended with two
+      voices.
+    arrangement_note: one female answering voice on the closing section only, entering under the lead and staying below her, and the two finish the last line together
+    intro: 10
+    outro: sustain
+    target_duration: "3:55"
+    prompt: >-
+      52 BPM warm aching closing slow torch in a wide empty hall; low grainy female lead close and
+      dry, one second low female voice entering under her on the closing section only and finishing
+      the last line with her, upright piano, upright bass, brushed kit, sustained ending.
+    exclude: harmony above the lead, backing vocals before the closing section, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending
+    lyrics: |
+      [Intro - piano, ten seconds]
+
+      [Verse 1]
+      There is an hour that gets things said at last
+      and it is later than anybody plans for.
+      Not the good hour. Not the one at midnight
+      when the room is full and everybody's clever.
+      The other one, when the chairs are going up
+      and the person you have been not saying it to
+      is putting on a coat with their back turned
+      and there are about four minutes left of it.
+      Everybody has an hour like that somewhere.
+      Most people let it go and get their coat.
+
+      [Verse 2]
+      She has been at the side of the hall all sealed season,
+      arranging other people's voices, quietly,
+      and she said one line to me in a corridor in autumn
+      that I have thought about most weeks since then.
+      I did not answer it. I have not answered it.
+      I put her on the end of this instead,
+      which is not an answer either, and she knows that,
+      and she came in and sang it anyway.
+
+      [Chorus]
+      Late enough to say it, and I said it,
+      and the room was mostly stacked and nearly dark.
+      Nobody heard it and it does not matter.
+      A thing said late is still a thing said.
+
+      [Verse 3]
+      There will not be another one like this one.
+      The storm coast will go on and we will play it
+      and this will be the only night with two.
+      The band is four and it will stay at four
+      and the card says one voice and I agree with it
+      and this is the exception and it is the last.
+      So when the piano goes down to the last figure
+      and the hall out there is empty to the doors,
+      there are two of us on the line, and only once,
+      and the whole of what it is is that it happened.
+
+      [Coda - the second voice entering, both together on the last line]
+      Late enough to say it, and we said it.
+      Late enough. And the doors are standing open.
+
+      [Outro - two voices and piano sustaining]
+    take: null # M-36 fills this in at the Suno sitting

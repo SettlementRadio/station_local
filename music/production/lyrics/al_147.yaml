@@ -1,0 +1,445 @@
+# al_147 — First Round Slow · Coldwater Court (b_065) · Lower Bell Editions · 2594 · 6 songs · album
+#
+# Written by M-27. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The house's fifth record and the one that made it — Maro Deyn's own band, which he had put off
+# pressing for five years because it would look exactly like what it was. He gave in the year the
+# first burn festival emptied the quarter of everybody with a lane job. **Bela Runn sings all six**,
+# in the last stretch of the twenty-six years she gave the band.
+#
+# **Two departures from the card, both from the wiki.** b_065 excludes guitar of any kind and Talla
+# Venn is on `s_1192` and `s_1193` — on the second of those the guitar answers the piano's left hand
+# the whole way through, which is the argument the record keeps and does not settle. And b_065's
+# backing line is *none*; Sel Ardin sings the closing answer of `s_1194` alone, because the band's
+# own harmony singers had gone home on the last ferry. **The wiki wins in both places** (D-092's
+# precedent), and the other four tracks keep the card exactly.
+#
+# `s_1192` has no drums: Odell Prine is not in its credits.
+#
+# `generation:` and every `take:` are empty until M-36.
+
+album:
+  id: al_147
+  title: First Round Slow
+  band: b_065
+  band_name: Coldwater Court
+  label: label_6
+  release_year: 2594
+  genre: void-lounge
+  cornerstone: false
+  song_count: 6
+  style_card: b_065
+  room: >-
+    The Lower Bell room across a season in which it was half empty, recorded the way the house's
+    founder said a room should be — one voice, a piano, and nothing added. The card holds: low grainy
+    female lead singing behind the piano with no ornament and no vibrato, upright piano taking every
+    instrumental break, upright bass, brushed kit with light hand percussion, and **no keyboard or
+    synthesiser of any kind anywhere on the record.** Three tracks depart from it and each one is a
+    wiki fact. `s_1192` has no drums at all and a fretted composite guitar instead; `s_1193` has the
+    same guitar answering the piano's left hand from the first bar to the last, which is what the two
+    players argued about and what the take keeps; and `s_1194` ends on one female answering voice,
+    the only backing vocal on any Coldwater Court record. `s_1191` is played on a bass with two
+    working strings, so the bass part is sparse and stays low all the way through.
+
+generation:
+  # Empty until M-36's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1189
+    title: First Round Slow
+    track_number: 1
+    mood: [unhurried, warm, wry]
+    fact: >-
+      Bela Runn opens at the tempo the Lower Bell's staff pour at, which Maro Deyn timed against the
+      bar clock one night and wrote on the back of a docket.
+    arrangement_note: the tempo is the pouring tempo and nothing on the record is faster than it, and the piano waits a full bar behind the voice at every entry
+    intro: 14
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      54 BPM unhurried Purist slow torch; low grainy female lead singing behind the piano with no
+      vibrato and no ornament, upright piano, upright bass, brushed kit with light hand percussion,
+      tracked live in a small club room, tape warmth, fade.
+    exclude: keyboards, synthesizers, plucked electronic strings, backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, added reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and bass, fourteen seconds]
+
+      [Verse 1]
+      Nobody hurries what is poured in this room.
+      It is not a policy. Nobody wrote it down.
+      It is the speed the woman at the tap goes,
+      and she has gone that speed since she was young.
+      He stood one night and timed her with the bar clock
+      and wrote the number on the back of a docket,
+      and the docket is in a drawer behind the bottles,
+      and that is the tempo everything here takes.
+
+      [Chorus]
+      First round slow, and the second one slower.
+      Nothing in this quarter is on time.
+      The ferry is, the plant is, and the lane is.
+      In here we are pouring, and we take the night.
+
+      [Verse 2]
+      A man came in from the core last winter,
+      the kind who taps the counter with a coin.
+      He asked her twice and she did not go faster
+      and he watched his own glass fill and stopped complaining.
+      By one o'clock he was the last one talking.
+      By two he had his coat over a chair.
+      He comes back every season now, that man,
+      and he has never once tapped anything since.
+
+      [Chorus]
+      First round slow, and the second one slower.
+      Nothing in this quarter is on time.
+      The ferry is, the plant is, and the lane is.
+      In here we are pouring, and we take the night.
+
+      [Verse 3]
+      I sing it at the speed the glass goes down,
+      which is slower than a person wants at first
+      and exactly right by about the second verse,
+      and by the third you cannot hear the clock.
+      That is the whole trick and there is nothing else.
+      Everybody who has played here knows the tempo.
+      Everybody who has drunk here knows it too.
+      Nobody in the settlement has ever named it.
+      It is not in a book. It is not on the wall.
+      It is the speed a woman pours, and that is all.
+
+      [Outro - piano and bass, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1190
+    title: Everyone's on the Lanes
+    track_number: 2
+    mood: [wistful, spare, slow]
+    fact: >-
+      Written the week the first burn festival took the room's regulars out to the lanes, and the
+      number of empty chairs in the second verse is the count Odell Prine made from behind the kit.
+    arrangement_note: the count of empty chairs is sung as a plain number and the band stops dead under it, and the hand percussion is the only thing that comes back in after
+    intro: 6
+    outro: sustain
+    target_duration: "3:45"
+    prompt: >-
+      50 BPM wistful spare Purist torch; low grainy female lead behind the piano, no vibrato, upright
+      piano, upright bass, light hand percussion and brushes, the whole band stopping dead under one
+      spoken number, sustained ending.
+    exclude: keyboards, synthesizers, plucked electronic strings, backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, added reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano, six seconds]
+
+      [Verse 1]
+      The first burn festival took the whole quarter
+      and left us with the ones who could not go.
+      Everybody with a lane job went out to it.
+      Everybody with a berth was on the water.
+      The rest of us are here, which is the truth of it,
+      and the truth of it is not a complaint.
+      Somebody has to be in the room in the empty season.
+      Somebody has to keep the lamps alight.
+
+      [Verse 2]
+      He counted them from behind the kit that evening.
+      Thirty-one chairs, and eleven of them down.
+      He said the number afterwards quite flatly,
+      the way a man says a thing he has been checking.
+      The band stops dead when the number comes around
+      because it is a fact and not a feeling,
+      and a fact should have some quiet either side of it
+      or people will mistake it for a mood.
+
+      [Refrain]
+      Everybody's out along the lane tonight.
+      Everybody's where the fires are and the noise.
+      I am in a warm room with eleven empty chairs
+      and I would not be anywhere but here.
+
+      [Verse 3]
+      They will come back in a fortnight, sunburnt, broke,
+      wanting the same table and the same hour,
+      and none of them will ask what we were doing
+      and none of us will tell them what it was.
+      This is what it was: a slow week and a piano,
+      and a woman counting chairs from behind a kit,
+      and rain against a window nobody looked at,
+      and the best three nights this band has ever played
+      in front of almost nobody at all.
+
+      [Refrain]
+      Everybody's out along the lane tonight.
+      Everybody's where the fires are and the noise.
+      I am in a warm room with eleven empty chairs
+      and I would not be anywhere but here.
+
+      [Outro - hand percussion and piano sustaining]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1191
+    title: The Court at Four
+    track_number: 3
+    mood: [hushed, cold, patient]
+    fact: >-
+      Toben Alt plays the whole song on two strings, after the stair door caught his hand on the way
+      in and nobody wanted to lose the night.
+    arrangement_note: the bass has two working strings and stays low and sparse the whole way through, and the piano covers everything it would otherwise have played
+    intro: 18
+    outro: cold
+    target_duration: "4:10"
+    prompt: >-
+      48 BPM cold hushed Purist torch; low grainy female lead behind the piano, no vibrato, a sparse
+      low upright bass playing very few notes, upright piano taking a fifteen-second break and
+      covering the bass register, brushed kit, hard cold stop.
+    exclude: keyboards, synthesizers, plucked electronic strings, backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, added reverb, vocal tuning, whispered or rapped sections, modern studio production, fade ending
+    lyrics: |
+      [Intro - piano alone, eighteen seconds]
+
+      [Verse 1]
+      The stair door took his hand at half past ten
+      and there was a good deal of blood and no discussion.
+      He wrapped it in a cloth from behind the counter
+      and asked what time the second set began.
+      There was a hauler crew in at the front table
+      who stood up when he came back down the room.
+      Nobody talked him out of it. You do not.
+      He played the whole night on the two that worked
+      and the piano went down under him and covered,
+      and it is the best thing on the record. Ask him.
+
+      [Verse 2]
+      Four in the morning is a different room.
+      The chairs are up. The far half has gone dark.
+      Whoever is still here has made a decision
+      and every one of them has made it twice.
+      There is a man asleep against the panelling
+      whose shift begins in ninety minutes' time.
+      There is a woman who has not touched her glass since one.
+      There is nobody here who is here by accident.
+      Out there the lane is empty to the water.
+      In here the ceiling holds the whole of it.
+
+      [Instrumental - upright piano break, fifteen seconds]
+
+      [Verse 3]
+      Play it low. There is nothing to be gained
+      by asking any more of anybody now.
+      The last ferry went before the first set finished.
+      Whatever gets you home is on your feet.
+      I have been in this room at four a thousand times
+      and it has never once been the same room twice,
+      and every one of them has ended the same way,
+      and it is never any warmer than the outside,
+      and I have never once been cold in it at all.
+
+      [Refrain]
+      Four in the morning, and the piano is still open.
+      Four in the morning, and the door is on the latch.
+      Whoever wants to sit down and say nothing,
+      there is a chair, and nobody will ask.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1192
+    title: Send a Card Instead
+    track_number: 4
+    mood: [tender, rueful, slow]
+    fact: >-
+      Bela Runn wrote it for her brother on the freight circuit and sings his reply as the second
+      verse, which she has said is the only line of his she kept.
+    arrangement_note: no drums anywhere — a fretted composite guitar takes the pulse instead, and the second verse is his answer sung in her own voice with the guitar dropping out under it
+    intro: 8
+    outro: fade
+    target_duration: "3:40"
+    prompt: >-
+      52 BPM tender Purist torch ballad; low grainy female lead behind the piano, no vibrato, upright
+      piano, upright bass, a fretted composite acoustic guitar carrying the pulse in place of drums,
+      no percussion of any kind, guitar dropping out entirely for the second verse, fade.
+    exclude: drums, brushed kit, hand percussion, keyboards, synthesizers, plucked electronic strings, backing vocals, saxophone and brass, orchestral strings, electric guitar, drum machines, belted vocals, added reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - guitar and piano, eight seconds]
+
+      [Verse 1]
+      He has been on the freight circuit nineteen years
+      and he is not a man who writes and never was.
+      I send four a season and he sends back one
+      and the one is always shorter than the stamp.
+      I do not mind. I want that understood.
+      He is where he is and he is doing well.
+      But there is the lag on everything he sends me
+      and by the time it lands the news has gone.
+      A season is a long way to be pleased in.
+      A season is a long way to be sorry.
+
+      [Verse 2]
+      Don't write, he says. It only makes it longer.
+      Don't tell me about the room and who comes in.
+      Every letter takes a season to catch up with me
+      and lands the day I've stopped thinking about home.
+      Send a card. A card is a card. A card says nothing
+      except that on a Tuesday you were there.
+      I read it out. That is the whole of his reply.
+      That is the only line of his I kept.
+
+      [Chorus]
+      So I send him a card, and I say nothing at all.
+      Weather. Work. A line about the stair.
+      Everything I actually want to tell him
+      I have been putting in the second set instead.
+
+      [Verse 3]
+      He came through once, four seasons back, in summer,
+      stood at the bar and did not take his coat off,
+      heard three numbers, said that I had got good,
+      and went out on the midnight with a hauler.
+      He had the manifest already in his hand.
+      He did not sit down once in the whole hour.
+      I did not sing this one. I had it ready.
+      There is a version where I sing it and he hears it
+      and neither of us would have known what to do,
+      and this is not that version, and it never was.
+
+      [Outro - guitar and piano fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1193
+    title: Nothing Opens Till Nine
+    track_number: 5
+    mood: [dry, warm, midtempo]
+    fact: >-
+      Talla Venn's guitar answers Maro Deyn's left hand all the way through, which is the opposite of
+      what Deyn had written out and the two of them never agreed about it afterwards.
+    arrangement_note: the guitar answers the piano's left hand in every gap from the first bar to the last, which is what was argued about, and the break is the two of them doing it without the voice
+    intro: 5
+    outro: fade
+    target_duration: "4:00"
+    prompt: >-
+      70 BPM dry midtempo Purist slow blues torch; low grainy female lead behind the piano, no
+      vibrato, upright piano, a fretted composite acoustic guitar answering the piano's left hand in
+      every gap throughout, upright bass, brushed kit with hand percussion, piano and guitar taking a
+      fourteen-second break together, fade.
+    exclude: keyboards, synthesizers, plucked electronic strings, backing vocals, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, added reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and guitar, five seconds]
+
+      [Verse 1]
+      Nothing opens until nine in this whole quarter
+      and it is twenty past six and it is raining,
+      and I have got four hours and a wet coat
+      and a thing I have decided I will say.
+      There is no place at all to say it in.
+      The transfer hall is warm and full of strangers.
+      The stair is cold. The lane is out of the way.
+      So I will walk about with it until the doors.
+
+      [Chorus]
+      Nothing opens until nine, and I am ready now.
+      Nothing opens until nine, and I am not.
+      Give me three hours and I will talk myself
+      out of every word of it. I know I will.
+
+      [Verse 2]
+      He wrote the part out properly, in pencil,
+      and gave it to the man who plays the strings,
+      and the man looked at it and put it on the music stand
+      and did the opposite from the first bar on.
+      Every place the left hand leaves a gap in
+      there is an answer in it that was not asked for.
+      They have not agreed about it in eleven years.
+      They have also never played it any other way.
+
+      [Instrumental - piano and guitar answering each other, fourteen seconds]
+
+      [Verse 3]
+      By nine o'clock I had it down to one line
+      and by five past I had not said the line.
+      You made tea. You asked about the record.
+      I said the record's fine. And it is fine.
+      There is an answer in the gap and I can hear it.
+      There is an answer in the gap and it is yours.
+      Nothing opens until nine, and then it opens,
+      and then a person has to go on in.
+
+      [Chorus]
+      Nothing opens until nine, and I am ready now.
+      Nothing opens until nine, and I am not.
+      Give me three hours and I will talk myself
+      out of every word of it. I know I will.
+
+      [Outro - guitar last, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1194
+    title: Warm Glass, Cold Court
+    track_number: 6
+    mood: [final, tender, slow]
+    fact: >-
+      Sel Ardin sings the closing answer alone because the band's own harmony singers had gone home
+      on the last ferry and nobody had thought to ask them to stay.
+    arrangement_note: one female answering voice on the closing section and nowhere else on the record, unaccompanied for two lines before the piano comes back under her
+    intro: 11
+    outro: sustain
+    target_duration: "3:50"
+    prompt: >-
+      50 BPM tender closing Purist torch; low grainy female lead behind the piano, no vibrato, upright
+      piano, upright bass, brushed kit with light hand percussion, one single female answering voice
+      alone on the closing section only and unaccompanied for two lines, sustained ending.
+    exclude: keyboards, synthesizers, plucked electronic strings, backing vocals before the closing section, harmony above the lead, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, added reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and bass, eleven seconds]
+
+      [Verse 1]
+      A warm glass and a cold court is the whole of it.
+      That is the bargain and it has never changed.
+      Outside there is a yard with a stone floor
+      and a wind that comes up off the water at three.
+      In here there is a lamp and a low ceiling
+      and forty people breathing the same air.
+      There is a hauler crew who come up every Tuesday
+      and stand exactly where they always stand.
+      Nobody has ever said it is worth it.
+      Everybody comes back the following week.
+
+      [Verse 2]
+      They had gone home. That is the plain explanation.
+      The two who sing the answer had a ferry
+      and nobody had thought to ask them to stay on
+      and by the time we noticed it was gone.
+      So there was one voice left in the whole building
+      who had come in for something else entirely,
+      and she stood where they stand and sang it once through
+      and we did not do a second take of it.
+      She had not heard the song before that evening.
+      She has not sung it since, and will not now.
+
+      [Chorus]
+      Warm glass, cold court, and the door standing open.
+      Warm glass, cold court, and the lamps down low.
+      Whoever is still standing when the piano stops
+      can have the rest of what is in the pot.
+
+      [Verse 3]
+      This is the end of the record and the season.
+      The quarter fills again in about a week.
+      The regulars come back off the burn festival
+      and the chairs go down and the whole thing starts again.
+      I have sung the last song on four hundred evenings
+      and it is never the last song. That is the joke.
+      There is always somebody putting on a coat
+      and always somebody deciding not to.
+
+      [Coda - one answering voice alone, then piano under her]
+      Warm glass, cold court, and the lamps down low.
+      Whoever is still standing, come on through.
+
+      [Outro - voice and piano sustaining]
+    take: null # M-36 fills this in at the Suno sitting

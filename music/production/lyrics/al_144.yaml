@@ -1,0 +1,459 @@
+# al_144 — The Late Fare · After the Ferry (b_064) · Lower Bell Editions · 2600 · 6 songs · album
+#
+# Written by M-27. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The house had sat on this band for six years and could not afford to press it; what changed in
+# 2600 was the shared format that cleared the plant's backlog. Four nights in the Lower Bell room
+# itself, after the last ferry, the band playing its ordinary set and stopping when the room emptied.
+# **Everything on this record is the room's own economy** — a fare off the wall board, a round, a
+# night porter's hours, an empty ferry board, and the phrase the staff use to clear the place out.
+#
+# Hessa Lin joined that spring and her synth-harpsichord is on every track, which is what the house
+# filed as the band changing sides. The card allows one voice from the keyboard chair on a last
+# chorus and nothing else; on this record it is used twice, on `s_1171` and `s_1176`, and the other
+# four are one voice alone.
+#
+# `generation:` and every `take:` are empty until M-36.
+
+album:
+  id: al_144
+  title: The Late Fare
+  band: b_064
+  band_name: After the Ferry
+  label: label_6
+  release_year: 2600
+  genre: void-lounge
+  cornerstone: false
+  song_count: 6
+  style_card: b_064
+  room: >-
+    The Lower Bell room, four nights, after closing and after the last ferry — a small low-ceilinged
+    club room with the chairs still down, one or two microphones, the band playing where it always
+    plays. The card holds throughout: low female contralto very quiet and close, unhurried, never
+    raised; upright piano taking every instrumental break; upright bass; brushed kit; and Hessa Lin's
+    synth-harpsichord, which is on all six because she joined that spring. Two things are this
+    record's own. `s_1172` has no drum kit at all — brushes on the back of a chair, because the room's
+    kit was out at a wedding and came back a night late — and the prompt asks for that rather than
+    for a quiet kit. And `s_1175` opens with one held keyboard chord under the whole first verse and
+    nothing else moving, which is what the band played the night the ferry board showed nothing.
+
+generation:
+  # Empty until M-36's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1171
+    title: The Late Fare
+    track_number: 1
+    mood: [wry, unhurried, warm]
+    fact: >-
+      The fare Nesta Vire names in the second verse is what the room's own staff were charged to get
+      home after the last ferry, which Ollan Beke copied off the board on the wall.
+    arrangement_note: piano and bass alone for twelve seconds, the voice in under them, and the keyboard chair adds one voice on the last chorus and nowhere else
+    intro: 12
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      68 BPM slow torch; quiet low female contralto close-mic'd and conversational, upright piano,
+      upright bass, brushed kit, plucked electronic strings held low, one second voice on the final
+      chorus only, fade.
+    exclude: saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending, backing vocals before the final chorus
+    lyrics: |
+      [Intro - piano and bass, twelve seconds]
+
+      [Verse 1]
+      The last ferry goes at half past midnight.
+      This room does not empty until two.
+      We stack the chairs, we count the drawer out,
+      The board outside has stopped announcing.
+      The lane runs quiet as a held breath.
+      Whoever wants to cross the water after
+      pays the late fare or walks home in the dark.
+
+      [Chorus]
+      The late fare, the late fare.
+      Eleven and a half to cross the water,
+      eleven and a half to come back down.
+      I have paid it every night this winter
+      and I have never once begrudged the town.
+
+      [Verse 2]
+      There is a card behind the service window
+      with the night rates written out by hand.
+      The clerk there knows me by my coat now,
+      knows I never argue with the price.
+      He counts it twice and slides the paper over.
+      He says the same two words to me each time.
+
+      [Chorus]
+      The late fare, the late fare.
+      Eleven and a half to cross the water,
+      eleven and a half to come back down.
+      I have paid it every night this winter
+      and I have never once begrudged the town.
+
+      [Verse 3]
+      You said you would wait up and you waited.
+      You said the kettle would be on and it was.
+      I came in cold and smelling of the river
+      and you asked what a crossing costs these days.
+      Nothing, I said, and put the ticket in the drawer
+      with all the other nothings I have paid.
+      The drawer will not shut properly by spring now.
+      That is the only accounting we have made.
+
+      [Final Chorus - one voice added from the keyboard chair]
+      The late fare, the late fare.
+      Eleven and a half to cross the water
+      and whatever the walk home is worth to you.
+      I would pay it twice to find the kettle boiling.
+      I have never once begrudged the crossing through.
+
+      [Outro - piano and bass, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1172
+    title: Coats on the Chair Backs
+    track_number: 2
+    mood: [tender, hushed, slow]
+    fact: >-
+      Deran Shale plays the whole song with brushes on the back of a chair, because the room's kit
+      had gone out on loan to a wedding and came back a night late.
+    arrangement_note: no drum kit anywhere — brushes on the back of a wooden chair, dry and close, and the bass takes the pulse instead
+    intro: 9
+    outro: sustain
+    target_duration: "3:40"
+    prompt: >-
+      58 BPM hushed torch ballad; quiet low female contralto very close and conversational, upright
+      piano, upright bass carrying the pulse, brushes on a wooden chair back instead of a kit,
+      plucked electronic strings underneath, sustained ending.
+    exclude: drum kit, snare, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, backing vocals, cold ending
+    lyrics: |
+      [Intro - piano and brushes on wood, nine seconds]
+
+      [Verse 1]
+      Two coats are on the chair backs by the window
+      and the people who arrived in them are gone.
+      One went out at midnight with a hauler,
+      one went out at one and left the other one.
+      I am not the person who decides here
+      whether a thing gets carried to the door.
+      I only turn the lamps down in the corners
+      and set the chairs the way they were before.
+
+      [Verse 2]
+      She wore the grey one every second evening.
+      He wore the other one all year and more.
+      Then something happened somewhere in the middle
+      of a night that I was working and not near,
+      and now there are two coats across the chair backs
+      and no arrangement made for either here.
+
+      [Refrain]
+      Somebody will come back for them by morning.
+      Somebody has meant to for a week.
+      I hang them where the light will not get at them
+      and I do not say the thing I want to speak.
+
+      [Verse 3]
+      The last ferry took the rest of them at midnight.
+      I could tell you what was said across this table.
+      I have never told a soul and never will.
+      A room like this is mostly what is left in it —
+      a glass, a folded ticket, and a chair,
+      and two coats that have been waiting since the storm season
+      for whoever should have carried them from here.
+
+      [Bridge]
+      If you are cold tonight, that is the reason.
+      If you are cold tonight, come in and sit.
+      There is a fire that stays alight until the morning
+      and nobody at all is watching it.
+
+      [Refrain]
+      Somebody will come back for them by morning.
+      Somebody has meant to for a week.
+      I hang them where the light will not get at them
+      and I do not say the thing I want to speak.
+
+      [Outro - piano sustaining, brushes stopping first]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1173
+    title: Same Round Again
+    track_number: 3
+    mood: [resigned, warm, midtempo]
+    fact: >-
+      Tarrin Meel's bass figure is Odile Prenn's, learned off a handwritten part that has been kept
+      behind the Lower Bell's bar since before anyone working there was born.
+    arrangement_note: the bass figure is the oldest thing in the room and repeats unchanged the whole way through, and the piano break at the middle is built over it without altering it
+    intro: 16
+    outro: fade
+    target_duration: "4:05"
+    prompt: >-
+      76 BPM slow blues torch; quiet low female contralto conversational and close, a repeating
+      walking upright bass figure that never varies, upright piano taking a fourteen-second break,
+      brushed kit, plucked electronic strings, fade.
+    exclude: saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, backing vocals, cold ending
+    lyrics: |
+      [Intro - bass figure alone, then piano, sixteen seconds]
+
+      [Verse 1]
+      There is a part behind the bar in someone's handwriting
+      that is older than the woman pouring now.
+      The bass has played it every night for forty seasons
+      and it has not asked the room for anything.
+      It goes around and comes back where it started.
+      That is the whole of what it does and what it is.
+
+      [Chorus]
+      One more of the same, if you are pouring.
+      One more, and then I promise I will go.
+      I have said that in this room since I was twenty.
+      The room has never once believed me. Nor did I.
+
+      [Verse 2]
+      He comes in off the freight crew every Tuesday
+      with the same six words and the same coat.
+      She takes it and she does not count it over.
+      She knows the sum the way she knows the door.
+      They have done this eight years running, more or less,
+      and neither one of them has said what for.
+
+      [Chorus]
+      One more of the same, if you are pouring.
+      One more, and then I promise I will go.
+      I have said that in this room since I was twenty.
+      The room has never once believed me. Nor did I.
+
+      [Instrumental - upright piano break over the bass figure, fourteen seconds]
+
+      [Verse 3]
+      There is no version of this evening where it ends well
+      and there is no version where it ends at all.
+      Outside, the lane is emptying towards the water.
+      In here the same four notes come round again.
+      I am a person in a room that knows my name.
+      Bring it round, and bring one for the bass player,
+      and put the handwritten thing back where it came.
+
+      [Chorus]
+      One more of the same, if you are pouring.
+      One more, and then I promise I will go.
+      I have said that in this room since I was twenty.
+      The room has never once believed me. Nor did I.
+
+      [Outro - bass figure alone, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1174
+    title: Who Waits Up
+    track_number: 4
+    mood: [aching, spare, slow]
+    fact: >-
+      Nesta Vire wrote it for the room's night porter, who waited up for a partner whose shift ended
+      at a different hour every night of the week.
+    arrangement_note: no drums until the last section, and the piano plays only on the ends of lines so the room is audible in the gaps
+    intro: 7
+    outro: sustain
+    target_duration: "3:45"
+    prompt: >-
+      54 BPM spare torch ballad; quiet low female contralto very close and unhurried, upright piano
+      answering only at the ends of lines, upright bass, plucked electronic strings, brushed kit
+      entering only in the final section, sustained ending.
+    exclude: saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, backing vocals, cold ending, drums in the opening sections
+    lyrics: |
+      [Intro - piano, seven seconds]
+
+      [Verse 1]
+      He has the chair beside the service door
+      and a book he has been reading since the spring.
+      He is not waiting for the room to empty.
+      He is waiting on a shift that has no end time.
+      Some nights it is eleven, some it is four,
+      and there is not a rota anywhere that says.
+      So he sits where he can hear the outer stairwell
+      and turns a page each time it does not open.
+
+      [Refrain]
+      Who waits up is not a small arrangement.
+      Who waits up is most of what there is.
+      Anybody can be somewhere at an agreed hour.
+      It is the unagreed hours that are his.
+
+      [Verse 2]
+      The last ferry went at midnight, so that settles
+      one whole class of ways she might arrive.
+      Now it is the long way round or nothing,
+      the lane, the stair, the cold half of the night.
+      He does not phone the depot. He has learned that.
+      He asked once and they told him and it hurt.
+      Not knowing is a kinder sort of company
+      than a voice that says another two hours yet.
+
+      [Refrain]
+      Who waits up is not a small arrangement.
+      Who waits up is most of what there is.
+      Anybody can be somewhere at an agreed hour.
+      It is the unagreed hours that are his.
+
+      [Verse 3]
+      And when she comes, she comes in like the weather,
+      cold hands, a bag, the smell of somewhere else.
+      She never says she's sorry and he never
+      asks her to, because she isn't, and nor is he.
+      The lamps are down, the chairs are on the tables.
+      Then the two of them go out into the quiet
+      and the door swings shut on nobody at all.
+
+      [Coda - brushed kit entering under the last lines]
+      It is the unagreed hours that are his.
+      It is the unagreed hours. And she knows.
+
+      [Outro - piano sustaining]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1175
+    title: Ferry Board Blank
+    track_number: 5
+    mood: [cold, patient, low]
+    fact: >-
+      Hessa Lin holds one chord under the whole first verse because the band played it the night the
+      ferry board showed nothing at all and nobody knew whether the room would fill.
+    arrangement_note: one held keyboard chord under the whole first verse with nothing else moving, and the band arrives one instrument at a time from the second verse on
+    intro: 20
+    outro: cold
+    target_duration: "4:20"
+    prompt: >-
+      52 BPM cold slow torch; quiet low female contralto close and level, one sustained plucked
+      electronic string chord held under the entire first verse, upright bass and brushed kit
+      entering one at a time afterwards, upright piano taking a twelve-second break, hard cold stop.
+    exclude: saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, backing vocals, fade ending
+    lyrics: |
+      [Intro - one held chord, twenty seconds]
+
+      [Verse 1]
+      There is nothing on the board tonight.
+      Not delayed, not cancelled, not a time.
+      Just the frame and the empty slots inside it
+      and a man with a cloth who has gone home.
+      A blank board is worse than a bad one.
+      A bad one you can plan against and swear.
+      This one only says that somewhere up the line
+      a decision has been made and not declared.
+
+      [Verse 2]
+      We opened anyway. We always open.
+      The lamps went on at nine the way they do.
+      The bass came in, the brushes came in after,
+      and I stood at the front and looked at you —
+      four people at two tables near the window,
+      and the rest of the settlement outside somewhere
+      deciding whether it was worth the crossing home.
+
+      [Chorus]
+      Play it for whoever is in the doorway.
+      Play it for whoever is not there.
+      A blank board is a room that has not answered.
+      A room that has not answered is still a room.
+
+      [Instrumental - upright piano break, twelve seconds]
+
+      [Verse 3]
+      By one o'clock there were nineteen and a hauler crew,
+      by two the coats were three deep on the stand.
+      Nobody said a word about the ferry.
+      Nobody was going anywhere by boat.
+      They stayed until the piano stopped for good and
+      they went out into a cold with no last ferry in it,
+      and the board outside still said absolutely nothing.
+
+      [Chorus]
+      Play it for whoever is in the doorway.
+      Play it for whoever is not there.
+      A blank board is a room that has not answered.
+      A room that has not answered is still a room.
+
+      [Final Chorus]
+      Play it for whoever is in the doorway.
+      Play it until the doorway is not full.
+      A blank board is a room that has not answered,
+      and we answered, and we did it all night long.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1176
+    title: Turn the Lamps Down
+    track_number: 6
+    mood: [warm, final, hushed]
+    fact: >-
+      The closing line is the phrase the Lower Bell's staff used to clear the room, and Maro Deyn
+      objected to putting it on a record and printed it on the sleeve anyway.
+    arrangement_note: the band thins out section by section until only the piano and the voice are left, and the keyboard chair takes one voice under the last chorus
+    intro: 10
+    outro: fade
+    target_duration: "3:35"
+    prompt: >-
+      62 BPM warm closing torch; quiet low female contralto close and unhurried, upright piano,
+      upright bass, brushed kit thinning out across the song until only piano and voice remain, one
+      second voice from the keyboard chair on the final chorus only, fade.
+    exclude: saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending, backing vocals before the final chorus
+    lyrics: |
+      [Intro - piano and bass, ten seconds]
+
+      [Verse 1]
+      There is an hour that belongs to nobody paying,
+      after the drawer is counted and the door is on the latch.
+      The people still in here are here on sufferance
+      and every one of them knows exactly that.
+      Nobody minds. It is the best part of the evening.
+      The prices stop, the argument runs down.
+      Somebody's coat is being used as a cushion.
+      Somebody's shift begins in half an hour.
+
+      [Chorus]
+      Turn the lamps down, that's the finish.
+      Turn the lamps down, take your glass.
+      We are not throwing anybody out into the weather.
+      We are only saying that the night has passed.
+
+      [Verse 2]
+      She has been saying it for nineteen seasons
+      in a voice that has never once been raised.
+      It works because it does not sound like closing.
+      It sounds like somebody being kind and tired.
+      The freight crew go, the ones from the storm coast go,
+      the two who never speak to one another go,
+      and the room lets out its held breath at the doorway
+      and stands there being empty in the cold.
+
+      [Pre-Chorus]
+      One more and then the lamps.
+      One more and then the stairs.
+
+      [Verse 3]
+      Somebody wrote it down and put it on a record,
+      which is a thing you are not really meant to do.
+      A house phrase is a house phrase, said the founder.
+      A room's own words should stay inside the room.
+      And then he printed it across the sleeve in full,
+      because he is a man who loses arguments in style,
+      and now the whole of the core can say it to each other
+      and none of them have ever climbed our stair.
+
+      [Chorus - one voice added from the keyboard chair]
+      Turn the lamps down, that's the finish.
+      Turn the lamps down, take your glass.
+      We are not throwing anybody out into the weather.
+      We are only saying that the night has passed.
+
+      [Outro - piano fading, voice last]
+    take: null # M-36 fills this in at the Suno sitting

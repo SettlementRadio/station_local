@@ -1,0 +1,443 @@
+# al_150 — The Quarter Without Me · The Quiet Half (b_066) · Stormline Issue · 2624 · 6 songs · album
+#
+# Written by M-27. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# Concordance's largest hall reopened in 2624 and every house in the settled worlds booked time in
+# it; Stormline Issue put its season's money into a wet hall on the storm coast instead and said in
+# print it would do it again. So the band paid the hall's fee themselves out of a season of coast
+# work, and the house paid for the sleeve and is credited on it for the sleeve.
+#
+# **`s_1211` is `s_1197` under another title, re-recorded so that the plays do not pay the two
+# claimants.** A re-recording is normally the same words, and these are not: two identical lyrics in
+# `music/production/lyrics/` would give `make music-dispatch` two takes it could not tell apart, and
+# §12 rule 1 counts an album's section shapes. So it is written as the same song remade twelve years
+# later — the list verse comes back shorter and from memory, and the singer says out loud in the
+# third verse that it is the same song and why it has a different name. **That is a decision this
+# card made and it is in `DECISIONS.md`.**
+#
+# `generation:` and every `take:` are empty until M-36.
+
+album:
+  id: al_150
+  title: The Quarter Without Me
+  band: b_066
+  band_name: The Quiet Half
+  label: label_3
+  release_year: 2624
+  genre: void-lounge
+  cornerstone: false
+  song_count: 6
+  style_card: b_066
+  room: >-
+    The reopened hall in the Concordance late-club quarter — the largest room this band has ever
+    stood in, and dry, which the coast halls are not. The card holds: low grainy female lead close
+    and dry with air in the tone and a small fall at the end of every phrase, upright piano taking
+    every instrumental break, upright bass under her without doubling, brushed kit. The hall's own
+    piano holds its tuning, so there are no compact keyboards on this record except where Calo Meret
+    plays them under `s_1212` and `s_1213`. Two things are the room's. `s_1210` is played on an
+    upright bass out of the hall's own store, because the band's did not survive the crossing, and
+    the prompt asks for a bass that does not match the rest of the record. And the ferry bell is
+    audible through the loading door twice on `s_1212`, which the take keeps.
+
+generation:
+  # Empty until M-36's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1208
+    title: The Quarter Without Me
+    track_number: 1
+    mood: [aching, cold, slow]
+    fact: >-
+      Juna Carrow names four rooms in the second verse, all four of which closed between 2617 and 2624.
+    arrangement_note: the four names are sung one to a line with the band holding one chord under all four, and nothing moves until the fourth is finished
+    intro: 14
+    outro: sustain
+    target_duration: "4:00"
+    prompt: >-
+      50 BPM aching cold slow torch in a large dry hall; low grainy female lead close with air in the
+      tone, the band holding a single chord under one whole section, upright piano, upright bass,
+      brushed kit, sustained ending.
+    exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and bass, fourteen seconds]
+
+      [Verse 1]
+      I walked it for two days before we played.
+      Nobody asked me to. Nobody knew.
+      Down the stair off the lane and along the water
+      and up the other side and round again.
+      Seven years is nothing and it is everything.
+      The bread shop is a bread shop. That is something.
+      The rest of it has turned over twice
+      and none of it turned over into me.
+
+      [Verse 2]
+      The Anchor Stair is flats. The Low Room's gone.
+      The Waterhouse is offices and quiet.
+      The Ropewalk's standing, shut, and owned by nobody
+      that anybody in the quarter can name.
+      Four rooms. That is not an industry collapsing.
+      That is four leases and four sets of stairs.
+      But I sang in all of them before I left here
+      and I cannot get into one of them tonight.
+
+      [Chorus]
+      The quarter without me got on very well.
+      The quarter without me did not stop.
+      I do not know why I thought that it would wait.
+      I would not have waited. Nobody waits.
+
+      [Verse 3]
+      There is a woman at the corner selling flowers
+      who was there when I was twenty and is there.
+      She did not know me. There is no reason she would.
+      I bought a bunch and did not say a word.
+      She wrapped them in the paper she has always used
+      and told me it was going to rain by four.
+      That is the whole of my return, and it was plenty,
+      and the storm coast is a nine-day crossing back,
+      and I have got a hall to fill on Thursday
+      and about four hundred people who know my name.
+
+      [Chorus]
+      The quarter without me got on very well.
+      The quarter without me did not stop.
+      I do not know why I thought that it would wait.
+      I would not have waited. Nobody waits.
+
+      [Outro - piano sustaining]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1209
+    title: Paid for It Ourselves
+    track_number: 2
+    mood: [wry, defiant, midtempo]
+    fact: >-
+      The band paid the reopened hall's fee out of a season of coast work, and the sleeve credits
+      Stormline Issue with the sleeve and nothing else.
+    arrangement_note: the whole band plays a little louder and a little more forward on this one than anywhere else on the record, which is deliberate and is the only time it happens
+    intro: 5
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      72 BPM wry defiant midtempo slow blues torch in a large dry hall; low grainy female lead close
+      and forward, upright piano taking a fourteen-second break, upright bass, brushed kit, the whole
+      band slightly more present than a late-night mix, fade.
+    exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and kit, five seconds]
+
+      [Verse 1]
+      The hall reopened and the whole trade booked it,
+      every house in the settled worlds, in a queue.
+      Ours put its money in a wet hall up the storm coast
+      and said in print that it would do it twice.
+      I am not going to argue with that choice.
+      The wet room is where we have made our living.
+      But the hall reopened once and only once
+      and I was not going to hear about it after.
+
+      [Verse 2]
+      So it came out of a season. That is the sum.
+      Forty nights of hall work on the coast,
+      the cheap crossing, four of us in one room,
+      and a fee that took the whole of it and more.
+      Nobody lent us anything. Nobody offered.
+      That is not bitterness, that is the ledger.
+      A house is not a friend and never says it is
+      and this one paid for the sleeve, and it is a good sleeve.
+
+      [Chorus]
+      We paid the whole of it ourselves, and would again.
+      Put that on the back of it in full.
+      Whoever wants the room can have the room
+      for the price of everything you made last year.
+
+      [Instrumental - upright piano break, fourteen seconds]
+
+      [Verse 3]
+      There were four hundred in and it was dry
+      and the sound went up and did not come back wet
+      and I have never in my life heard my own voice
+      arrive at the far wall and stop there properly.
+      Worth it. Worth the season. Worth the crossing.
+      I would not have believed a room could do that.
+      And the cargo went back light and we went with it
+      and the coast had rained the whole time we were gone.
+
+      [Chorus]
+      We paid the whole of it ourselves, and would again.
+      Put that on the back of it in full.
+      Whoever wants the room can have the room
+      for the price of everything you made last year.
+
+      [Outro - kit and piano, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1210
+    title: The Room Was Rebuilt
+    track_number: 3
+    mood: [wistful, warm, slow]
+    fact: >-
+      Ivor Sanne plays an upright bass the hall keeps in its own store, because the band's own did
+      not survive the crossing out of Meridian.
+    arrangement_note: the bass is a stranger's instrument and does not match the rest of the record, which is left in rather than corrected
+    intro: 9
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      54 BPM wistful warm slow torch in a large dry hall; low grainy female lead close with air in
+      the tone, an upright bass with a different and brighter tone from the rest of the record,
+      upright piano, brushed kit, fade.
+    exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending, matching the bass tone to the room
+    lyrics: |
+      [Intro - piano and bass, nine seconds]
+
+      [Verse 1]
+      They have taken out the balcony entirely
+      and the ceiling is nine feet higher than it was.
+      The bar is on the other side. The doors are new.
+      I got lost between the stage and the back corridor.
+      Everybody says the sound is better now
+      and everybody saying it is right.
+      It is better. It is plainly, audibly better.
+      I stood in it and could not find the room.
+
+      [Verse 2]
+      His own bass came apart in the crossing over —
+      the cold, the wet, the hold, a bad crate —
+      and the hall has one it keeps in its own store
+      that a hundred strangers have played and put back.
+      It does not match us. You can hear it not matching.
+      We could have fixed that and we did not fix it.
+      A borrowed instrument in a rebuilt room
+      is the most honest thing on this whole record.
+
+      [Refrain]
+      They rebuilt it and they did it well.
+      They took a room I knew and made it good.
+      I am not owed a single splinter of it.
+      I would have liked one door to be the same.
+
+      [Verse 3]
+      A room is not a building. That is the trouble.
+      A room is forty people and a smell.
+      You cannot rebuild that and nobody claims to.
+      The people are the ones who went away.
+      They are out along the relay somewhere, mostly,
+      and none of them is coming back for this.
+      So it is a fine hall and it is not my hall
+      and both of those are true and it is fine,
+      and somebody who is twenty in this quarter
+      will be standing here in thirty years and grieving.
+
+      [Refrain]
+      They rebuilt it and they did it well.
+      They took a room I knew and made it good.
+      I am not owed a single splinter of it.
+      I would have liked one door to be the same.
+
+      [Outro - bass last, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1211
+    title: New Name, Old Song
+    track_number: 4
+    mood: [bruised, spare, slow]
+    fact: >-
+      This is Borrowed Against Us under another title, re-recorded because every play of the 2612
+      version pays the two claimants who hold the Coldwater Court catalogue.
+    arrangement_note: the same tune as the 2612 recording at a slower tempo, with the list verse shortened because it is being remembered rather than read
+    intro: 7
+    outro: cold
+    target_duration: "4:05"
+    prompt: >-
+      46 BPM bruised spare slow torch in a large dry hall; low grainy female lead close and plain,
+      one section sung flat and strictly in time over upright bass alone, upright piano, brushed kit,
+      hard cold stop.
+    exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, fade ending
+    lyrics: |
+      [Intro - bass and piano, seven seconds]
+
+      [Verse 1]
+      I have sung this before under another name
+      and if you know it, you know it, and you do.
+      Twelve years ago, in a room forty feet across,
+      three weeks before the whole arrangement fell,
+      in a quarter of the core that had one house in it
+      and has had none at all since that same spring.
+      Every time that version gets a play
+      the money goes to two men in an argument
+      who never heard it made and do not want it
+      and cannot agree which of them is owed.
+
+      [Verse 2]
+      The lease. The plant account. The masters.
+      The unsold. The two presses. The whole name.
+      That is six of eleven and I have lost the rest,
+      which I did not expect and do not mind.
+      A list you read four minutes in an office
+      does not stay. What stays is the eleventh line.
+      The eleventh line was me, and it is still me,
+      and it is the only one I can still say.
+      I have tried to get the others back for years.
+      They are gone the way a room goes. All at once.
+
+      [Refrain]
+      New name, same song, and the tune has not moved.
+      Slower, because I am, and because it wants it.
+      Whatever this pays, it pays the four of us,
+      and that is the entire reason it exists.
+
+      [Verse 3]
+      It is not a better version. I will say that.
+      The first one had the cold of the actual week in it
+      and this one has twelve years of thinking about it,
+      which is not the same and is not worth as much.
+      But that one is in a shed behind a lock
+      and this one goes out up the relay road on Thursday,
+      and a song that nobody can play is not a song,
+      and I would rather have the worse one in the world.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1212
+    title: Back on the Last Ferry
+    track_number: 5
+    mood: [warm, tender, midtempo]
+    fact: >-
+      Dessa Roan plays the brushes against the ferry bell, which is still audible in the reopened
+      hall through its loading door and is on the record twice.
+    arrangement_note: the ferry bell comes through the loading door twice and the brushes answer it both times, and neither one was arranged
+    intro: 12
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      66 BPM warm tender midtempo slow torch in a large dry hall; low grainy female lead close with
+      air in the tone, a distant bell audible twice from outside the room with the brushed kit
+      answering it, upright piano taking a thirteen-second break, compact electric keyboards held
+      low underneath, upright bass, fade.
+    exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and keyboards, twelve seconds]
+
+      [Verse 1]
+      The bell still goes. They have not moved the water.
+      They have moved the bar and the whole east wall
+      and the loading door is where the loading door was
+      and the bell comes through it twice a night at least.
+      Midnight, and then whatever they put on after,
+      which in this quarter is the one at half past two.
+      Everybody in the building stops for half a beat
+      and nobody in the building says they did.
+
+      [Verse 2]
+      He answered it. He did not plan to answer it.
+      The bell went in the gap after a line
+      and there is a brush hit right behind it on the take
+      and the two of them agree, exactly, once.
+      We heard it back and nobody said anything
+      and then somebody said leave it, and we left it.
+      It happens twice. It is not the same both times.
+      The second one he meant, and you can tell.
+
+      [Chorus]
+      Home on the last ferry, back the way I came,
+      seven years and a season and a hall.
+      Everybody I came out here to find
+      is somewhere else and doing very well.
+
+      [Instrumental - upright piano break, thirteen seconds]
+
+      [Verse 3]
+      I used to run for it. That is the funny part.
+      Every night of my twenties, down that lane,
+      and half the time I missed it and walked round
+      and the walk was better than the boat and always was.
+      Tonight I am inside and it is going
+      and I have got nowhere at all that I need to be,
+      and the bell is not for me, and I can hear it,
+      and that is the best that it has ever been.
+
+      [Chorus]
+      Home on the last ferry, back the way I came,
+      seven years and a season and a hall.
+      Everybody I came out here to find
+      is somewhere else and doing very well.
+
+      [Outro - keyboards and piano, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1213
+    title: Leave It Lit
+    track_number: 6
+    mood: [final, warm, hushed]
+    fact: >-
+      The band asked the hall to leave its lamps on for the last song and the hall's keeper is named
+      on the sleeve for agreeing to it.
+    arrangement_note: the band finishes and the hall does not go dark, so the last twenty seconds are the room's own sound with nothing played into it
+    intro: 16
+    outro: sustain
+    target_duration: "3:50"
+    prompt: >-
+      48 BPM warm hushed closing slow torch in a large dry hall; low grainy female lead close with a
+      small fall at the end of every phrase, upright piano, compact electric keyboards held low,
+      upright bass, brushed kit, the last twenty seconds the empty room's own sound with nothing
+      played, sustained ending.
+    exclude: backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending
+    lyrics: |
+      [Intro - piano alone, sixteen seconds]
+
+      [Verse 1]
+      We asked him if he'd leave the lamps up after.
+      It is not what a hall does at the end.
+      A hall goes dark. That is how a hall says finished.
+      The lamps come up on the seats and then go down.
+      He said he would have to stay on if we did,
+      an hour more than he is paid to be there,
+      and then he said all right, and that was all of it,
+      and his name is on the sleeve of this for that.
+
+      [Verse 2]
+      So the song ends and nothing else happens.
+      No lights. No door. No coats. No going home.
+      Four hundred people sitting in a bright room
+      with nothing to look at but each other's faces.
+      It went on longer than we thought it would.
+      Somebody laughed at about the forty-second mark.
+      Then it was fine, and then it was very good,
+      and then people got up when they wanted to.
+
+      [Chorus]
+      Leave it lit. Leave the whole room lit.
+      Nobody has to be anywhere at all.
+      There is no last ferry from a room like this one.
+      There is only the front door, and it is open.
+
+      [Verse 3]
+      I have played four hundred closings on the storm coast
+      and every one of them went out at the end,
+      because the season seals and the halls are cold
+      and a keeper has a family and a bed.
+      This one had a man who had an hour spare
+      and gave it, and is named, and did not ask.
+      That is the last thing on the record, and it is his,
+      and it is the only credit that I fought for.
+
+      [Chorus]
+      Leave it lit. Leave the whole room lit.
+      Nobody has to be anywhere at all.
+      There is no last ferry from a room like this one.
+      There is only the front door, and it is open.
+
+      [Outro - the empty hall's own sound, sustaining]
+    take: null # M-36 fills this in at the Suno sitting

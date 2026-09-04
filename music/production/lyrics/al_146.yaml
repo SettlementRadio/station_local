@@ -1,0 +1,439 @@
+# al_146 — Everything on Account · After the Ferry (b_064) · Lower Bell Editions · 2612 · 6 songs · album
+#
+# Written by M-27. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The last record the band made, cut in the spring of 2612 and held by the plant within weeks of
+# being finished. **It is about four payments and one meeting and nothing more general than that.**
+# Nesta Vire wrote most of it out of the band's own paperwork, and the wiki is explicit that none of
+# it is about the house in the abstract — so no lyric here is about a folded label, an industry or a
+# catalogue. They are about a docket, a window, a framed piece of paper, a room, a walking bass part
+# and four cardboard boxes.
+#
+# **`s_1186` breaks the card and the wiki is why.** b_064's backing line is one voice from the
+# keyboard chair on a last chorus; the wiki says all five of the band sing this chorus because Nesta
+# Vire would not sing it on her own. The wiki wins (D-092's precedent) and the prompt asks for five
+# voices, ragged and unmatched, on the choruses only.
+#
+# `generation:` and every `take:` are empty until M-36.
+
+album:
+  id: al_146
+  title: Everything on Account
+  band: b_064
+  band_name: After the Ferry
+  label: label_6
+  release_year: 2612
+  genre: void-lounge
+  cornerstone: false
+  song_count: 6
+  style_card: b_064
+  room: >-
+    The Lower Bell room in the spring, colder than the other two records and with the house already
+    paying in credit notes. The card holds: low female contralto very quiet and close, upright piano
+    taking every instrumental break, upright bass, brushed kit, synth-harpsichord. **One departure,
+    from the wiki.** `s_1186`'s chorus is all five of the band, ragged and in no arrangement at all,
+    because Nesta Vire would not sing it alone — so that prompt asks for five untrained voices on
+    the choruses and every other track on the record excludes backing vocals outright. `s_1184`
+    counts in on a spoken number and the count is left on the take.
+
+generation:
+  # Empty until M-36's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1183
+    title: Everything on Account
+    track_number: 1
+    mood: [wry, bitter, midtempo]
+    fact: >-
+      The four amounts Nesta Vire sings are the four credit notes the band was last paid in, in the
+      order they were issued.
+    arrangement_note: the four amounts fall in the same place in each verse and the band drops out under every one of them, so the number is the loudest thing on the track
+    intro: 8
+    outro: fade
+    target_duration: "3:45"
+    prompt: >-
+      78 BPM wry slow blues torch; quiet low female contralto close and dry, upright piano, upright
+      bass, brushed kit, plucked electronic strings, the whole band dropping out under one line in
+      each verse, fade.
+    exclude: backing vocals, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and bass, eight seconds]
+
+      [Verse 1]
+      The first one came in April on a Tuesday,
+      a slip of paper folded into three,
+      and the figure written on it in blue pencil
+      was forty-one and eighty. Ask the band.
+      We took it to the merchant on the corner
+      who has known the house since either of us started.
+
+      [Chorus]
+      Everything on account, everything on paper.
+      Everything is coming, and it will.
+      I have played this room eleven hundred evenings.
+      I have never yet been paid in something I could spend.
+
+      [Verse 2]
+      The second was in May and it was smaller,
+      nineteen and forty, and it came by hand
+      from a clerk who would not meet the eye of any of us
+      and had clearly been told not to stay.
+      The third one nobody remembers opening.
+      The fourth was six and twenty, and was last.
+      They are in Tarrin's book in the same order
+      with a line drawn under the whole of what they are.
+
+      [Chorus]
+      Everything on account, everything on paper.
+      Everything is coming, and it will.
+      I have played this room eleven hundred evenings.
+      I have never yet been paid in something I could spend.
+
+      [Verse 3]
+      I am not telling you this as a complaint.
+      A complaint is a thing you take to somebody.
+      There is nobody left down here to take it to;
+      the man it goes to is the man it is about.
+      So it goes in a song, which is where things go
+      when the office and the window are both shut,
+      and the freight crew who have come up off the lanes
+      can hear four numbers and know what they mean.
+
+      [Final Chorus]
+      Everything on account, everything on paper,
+      and the room still full at one, past the last ferry.
+      I have played this room eleven hundred evenings.
+      I would play it for a fifth note. There. It's told.
+
+      [Outro - piano fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1184
+    title: Who Signs for This
+    track_number: 2
+    mood: [cold, tense, slow]
+    fact: >-
+      Ollan Beke wrote it in the plant's waiting room while the band argued for its own copies, and
+      the count-in is the number on the clerk's window.
+    arrangement_note: a spoken count-in on a two-digit number, kept on the take, and the piano break is the only place the tension comes off
+    intro: 6
+    outro: cold
+    target_duration: "4:00"
+    prompt: >-
+      66 BPM cold tense slow blues torch; a quiet spoken two-word count-in kept at the top, quiet low
+      female contralto close and level, upright piano taking a thirteen-second break, upright bass,
+      brushed kit, plucked electronic strings, hard cold stop.
+    exclude: backing vocals, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, rapped sections, modern studio production, fade ending
+    lyrics: |
+      [Intro - spoken count-in on the window number, then piano, six seconds]
+
+      [Verse 1]
+      Twenty-nine is the number on the window.
+      There is a bench. There is a form. There is a queue.
+      The man behind the glass is not unpleasant.
+      The man behind the glass has nothing he can do.
+      We have been here since the middle of the morning
+      with four boxes' worth of something that is ours,
+      and the only question anybody asks us
+      is a question about who is going to sign.
+
+      [Verse 2]
+      Not the house, because the house is not a person
+      and the person who was it will not come out.
+      Not the plant, because the plant is owed and knows it,
+      and a thing that is security cannot go out the door.
+      Not the hauler crew, who lift and leave the cargo.
+      So the four of us stand there in the corridor
+      being nobody the paperwork believes.
+
+      [Chorus]
+      Who signs for it, then? Somebody has to.
+      Who puts a name to it? Not one of them will.
+      There is a box with our own name across the side of it
+      and a stranger's hand across the seal.
+
+      [Instrumental - upright piano break, thirteen seconds]
+
+      [Verse 3]
+      He wrote the tune on the back of the wrong document
+      on a bench with his coat still buttoned to the throat,
+      and it is the coldest thing he has ever given us,
+      and he says he does not know where it came from.
+      I do. It came from waiting. Everything does.
+      A day and a half of waiting makes a shape.
+      You can hear the bench in it, and the strip light,
+      and the number twenty-nine above the glass.
+
+      [Chorus]
+      Who signs for it, then? Somebody has to.
+      Who puts a name to it? Not one of them will.
+      There is a box with our own name across the side of it
+      and a stranger's hand across the seal.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1185
+    title: Paid in Paper
+    track_number: 3
+    mood: [resigned, warm, slow]
+    fact: >-
+      Tarrin Meel was paid for the record in paper the plant would not accept, kept all of it, and
+      has it framed on the wall of the room the band still plays.
+    arrangement_note: the bass leads the whole song and the piano stays behind it, which is the only track on the record where that happens
+    intro: 13
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      58 BPM warm resigned slow torch; quiet low female contralto close and unhurried, upright bass
+      leading the arrangement with the upright piano behind it, brushed kit, plucked electronic
+      strings, fade.
+    exclude: backing vocals, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - bass alone, then piano, thirteen seconds]
+
+      [Verse 1]
+      He has it on the wall above the upright,
+      four slips in a frame he bought himself.
+      Everybody asks and he explains it
+      the same way every time and does not tire.
+      This one is April. This one is the small one.
+      This one nobody ever opened. This is last.
+      He does not say the word for what they are.
+      He says: this is what a record cost the band.
+
+      [Verse 2]
+      His wife has asked him twice to take it down
+      and both times he has said that he will think.
+      It is not a grievance hanging on the plaster.
+      He is not the kind of man who keeps a grudge.
+      It is only that a thing that cannot buy
+      a loaf, a fare, a ration or a berth
+      still bought a whole spring of five people's evenings
+      and he wants the evenings written somewhere down.
+
+      [Refrain]
+      Paid in slips, and none of the slips will spend.
+      Framed on the wall above where the piano stands.
+      It is not a wound and it is not a joke.
+      It is a receipt for something that was made.
+
+      [Verse 3]
+      The room is still the room. The band still plays it.
+      People come up off the last ferry at one.
+      Nobody in the audience has ever noticed
+      the four small slips behind the player's head.
+      And once a season somebody comes up after
+      and asks him what they are, and he will tell them,
+      and it takes him about a minute, and he smiles,
+      and then he goes back over and sits down.
+
+      [Refrain]
+      Paid in slips, and none of the slips will spend.
+      Framed on the wall above where the piano stands.
+      It is not a wound and it is not a joke.
+      It is a receipt for something that was made.
+
+      [Outro - bass and piano, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1186
+    title: Keep the Room Open
+    track_number: 4
+    mood: [defiant, warm, building]
+    fact: >-
+      The chorus is what the Lower Bell's staff shouted at the founder's last meeting, and all five
+      of the band sing it because Nesta Vire would not sing it on her own.
+    arrangement_note: all five of the band sing every chorus, ragged and unmatched and in no arrangement at all, and the lead is alone again the moment each chorus ends
+    intro: 10
+    outro: sustain
+    target_duration: "4:15"
+    prompt: >-
+      72 BPM defiant building slow torch; quiet low female contralto close and unhurried in the
+      verses, five untrained voices together and unarranged on every chorus, upright piano, upright
+      bass, brushed kit, plucked electronic strings, sustained ending.
+    exclude: trained or blended backing harmony, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted lead vocal, large reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano and bass, ten seconds]
+
+      [Verse 1]
+      There were nineteen of us in a room built for twelve
+      and the founder at the end behind a table.
+      He had the figures and he read them out
+      and every one of them was true and did not help.
+      Somebody's mother had worked the door since Clearing Day.
+      Somebody had come in on their night off.
+      He said the words that men say in that chair
+      and then he stopped, and then the shouting started.
+
+      [Chorus - all five voices]
+      Keep the room open! Keep the room open!
+      Whatever else goes, whatever else is sold!
+      Shut the house and shut the whole account down —
+      keep the room open, and we will do the rest!
+
+      [Verse 2]
+      It is not a slogan. Nobody had planned it.
+      It came out of the back and went round twice
+      and by the third time even the ones who hated it
+      were saying it because the room had turned.
+      That is what a room is. That is all it is.
+      A place where nineteen people find one line.
+      Ask anybody who was up against the wall there.
+      They will tell you they were not the one who started.
+
+      [Chorus - all five voices]
+      Keep the room open! Keep the room open!
+      Whatever else goes, whatever else is sold!
+      Shut the house and shut the whole account down —
+      keep the room open, and we will do the rest!
+
+      [Verse 3]
+      I would not sing it on my own. I said so.
+      It is not a thing one voice has any right to.
+      So the five of us are on it, badly, all of us,
+      and the bass player is a whole tone under everyone.
+      If you want it done properly, it is not this record.
+      If you want to know what it sounded like, it is.
+      The house went anyway. The room is open.
+      Come off the last ferry on a Thursday and see.
+
+      [Outro - the five voices sustaining, then piano alone]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1187
+    title: Nobody Owns a Night
+    track_number: 5
+    mood: [aching, spacious, slow]
+    fact: >-
+      Hessa Lin's figure quotes the walking part Odile Prenn left behind, which is the only thing on
+      the record neither claimant has ever tried to put a number on.
+    arrangement_note: the keyboard chair quotes the old walking part in the second half of every verse and never anywhere else, and the piano break is built over it without touching it
+    intro: 17
+    outro: sustain
+    target_duration: "4:10"
+    prompt: >-
+      54 BPM spacious aching slow torch; quiet low female contralto close and level, plucked
+      electronic strings quoting an old walking figure in the second half of each verse, upright
+      piano taking a sixteen-second break over it, upright bass, brushed kit, sustained ending.
+    exclude: backing vocals, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - plucked strings, then piano, seventeen seconds]
+
+      [Verse 1]
+      There is a walking part that came from a dead woman
+      and everybody in this quarter plays it wrong.
+      She left no paper. She left nothing written.
+      What she left is in the hands of people's hands.
+      Two houses have gone under since she stopped.
+      Three rooms have closed. A whole street has been sold.
+      Nobody has ever put a figure on the figure.
+      Nobody has ever thought to try.
+
+      [Chorus]
+      No one owns a night. You can own the pressing.
+      You can own the plant and every box in it.
+      The hour between the last ferry and the first one
+      belongs to whoever is awake and in the room.
+
+      [Verse 2]
+      They can have the masters. Let them have the masters.
+      They have got them and they cannot agree whose.
+      There are eleven records in a receiver's cupboard
+      and a lamp on them and a docket and a lock.
+      I would like them back. I am not going to get them.
+      That is a sentence I have learned to say out loud.
+      But the part that came from her goes round the quarter
+      in the fingers of about a hundred hands.
+
+      [Instrumental - upright piano break over the walking figure, sixteen seconds]
+
+      [Verse 3]
+      A claim is a thing you make about an object.
+      You cannot make a claim about a Tuesday.
+      You cannot take delivery of an evening,
+      or hold a room, or bank an hour of it.
+      Whoever comes up out of the cold and settlement
+      into this light and sits and does not speak
+      is doing the one thing that is not in the schedule
+      and no receiver anywhere can touch.
+
+      [Chorus]
+      No one owns a night. You can own the pressing.
+      You can own the plant and every box in it.
+      The hour between the last ferry and the first one
+      belongs to whoever is awake and in the room.
+
+      [Outro - plucked strings and piano sustaining]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1188
+    title: Last Thing Pressed
+    track_number: 6
+    mood: [final, cold, hushed]
+    fact: >-
+      Every copy that exists outside the receiver's room came out of the four boxes the band carried
+      away from the Gantry Street plant themselves.
+    arrangement_note: the band drops to piano and voice alone for the last verse and the kit does not return, so the record stops on the smallest thing on it
+    intro: 5
+    outro: cold
+    target_duration: "3:35"
+    prompt: >-
+      56 BPM cold hushed closing torch; quiet low female contralto very close, upright piano, upright
+      bass and brushed kit dropping away entirely for the final verse leaving piano and voice, plucked
+      electronic strings, hard cold stop.
+    exclude: backing vocals, saxophone and brass, orchestral strings, electric guitar, drum machines, four-on-the-floor kick, belted vocals, large reverb, vocal tuning, whispered or rapped sections, modern studio production, fade ending
+    lyrics: |
+      [Intro - piano, five seconds]
+
+      [Verse 1]
+      Four boxes came out of that building on a handcart
+      and the handcart was not ours and we brought it back.
+      It took a day and a half of standing arguing
+      to be allowed to carry off our own.
+      The cargo doors were shut and stayed shut on us.
+      A man came out at four and let us through.
+      They are in the room now, under the piano,
+      and we sell them off the top of it at cost.
+      When they are gone there will not be any others.
+      That is not sad. That is arithmetic.
+
+      [Verse 2]
+      Somewhere there is a cupboard with the rest in
+      and a man who is not allowed to open it,
+      and two sets of solicitors who write each other
+      about a thing that neither one has heard.
+      I hope it is dry in there. I mean that plainly.
+      I would rather it survived and stayed away
+      than came out into anybody's ownership
+      with a sticker on the spine and half our name.
+      A thing can be looked after and still lost.
+
+      [Refrain]
+      This is the last of it they pressed. No other.
+      Four boxes and a room and Thursday nights.
+      If you have one of these, you got it from us
+      out of the hands of somebody who played on it.
+
+      [Verse 3]
+      We are still here. That is the awkward ending.
+      Nobody wants the group that did not stop.
+      They want the folded house and the disputed catalogue
+      and a story with a shut door at the end.
+      Come up the stair. It is eleven and a half
+      to cross the water and about the same to leave.
+      The last ferry has gone. It always has by then.
+      That has never emptied out this room yet.
+      We start at ten and finish when it finishes.
+      Bring the cold in with you. Shut the door.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting

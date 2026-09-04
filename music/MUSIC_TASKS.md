@@ -67,7 +67,7 @@ marked **NEXT**.
 | 3 · Tooling that needed audio | M-04 · M-05 · M-06 | **M-06** `music/catalogue.yaml` · 2026-08-16 | **all done.** The takes are measured (D-083), tagged (D-084), and joined into the one file the station's database ingests — 1,358 tracks, 45 of them playable, checked against the wiki by `make check` (D-085) |
 | **D · The duration rule** | M-50 | **M-50** three verses and a word floor · 2026-08-16 | **done.** §12 is ten rules: 3 verse sections and **288 sung words**, both live and green, with the pilot's four albums exempt by id and their 72 failures counted where they can be seen. Solos are §7 prose for lane-rock, Frontier Reels and void-lounge |
 | **4 · Style cards — the other 20 bands** | M-20 | **M-20** style cards for the other 20 bands · 2026-08-16 | **done.** All 25 layer-A bands carry a six-line card and every one of the 63 playable albums reads `yes` in `make music-albums`. The three soloing forms name their break instrument on the card; the two forms that take no solo exclude one. Two lead voices were decided here (D-089) |
-| **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-34** old-system sessions' audio, all 90 filed · 2026-09-03 | **M-34 is DONE and old-system sessions is finished** — 90 of 90 takes filed, measured, tagged and in the catalogue, all eleven records complete and all four bands whole on one model in one licence period. **400 of the 500 playable songs now exist**, and **every lyric written in this project has audio**; the 100 outstanding are the three genres whose lyrics are not written yet — void-lounge 55, core-harmonies 20, void-ballads 25 (M-27 · M-28 · M-29, then M-36 · M-37 · M-38). **The 46 came back on Suno after all, not on a second generator**, so nothing is split across vendors and the September evidence already covers them (D-105). **`make music-tag`'s unclaimed report drops from 48 files to 2** — the two rejected twins, which are kept on purpose. Next is **M-27**, void-lounge's lyrics. Two findings for the operator sit under M-34's Result — this genre runs 0.882 s per sung word against Frontier Reels' 0.698, so an hour of it is **twelve** songs, and the commissioned 400 now average **3:56** against §7's 3:30 |
+| **5 · The bulk — 7 genres, lyrics → audio → measure** | M-21 … M-39 | **M-27** void-lounge's 55 lyrics · 2026-09-03 | **M-34 is DONE and old-system sessions is finished** — 90 of 90 takes filed, measured, tagged and in the catalogue, all eleven records complete and all four bands whole on one model in one licence period. **400 of the 500 playable songs now exist**, and **every lyric written in this project has audio**; the 100 outstanding are the three genres whose lyrics are not written yet — void-lounge 55, core-harmonies 20, void-ballads 25 (M-27 · M-28 · M-29, then M-36 · M-37 · M-38). **The 46 came back on Suno after all, not on a second generator**, so nothing is split across vendors and the September evidence already covers them (D-105). **`make music-tag`'s unclaimed report drops from 48 files to 2** — the two rejected twins, which are kept on purpose. **M-27 is DONE and void-lounge has its words** — 55 lyrics across 9 albums, `al_144` … `al_152`, green on all ten rules, with the genre's only male lead and the only records in the catalogue with no piano on them. Next is **M-36**, void-lounge's audio, and **it is yours**: 55 takes, four bands, one band per sitting. **Two findings sit under M-27's Result and D-106.** Void-lounge's cards run **44–84 BPM**, slower than old-system's 58–124, so its floor-length lyrics come back near **4:29** at the slowest measured rate and an hour of it is eleven or twelve songs — **D-105 asked the three unwritten genres to pull the 500's average back and this one cannot.** The only lever left is §12 rule 10's 288, and moving it is the operator's call. **45 songs of lyrics remain** — core-harmonies 20 and void-ballads 25 (M-28 · M-29), each waiting on the audio card before it |
 | **7 · The July collection** | M-52 · M-53 · M-54 · M-55 · M-56 | **M-56** the pile retired · 2026-09-02 | **the stage is closed and the collection is done.** `music/wiki/independents.yaml` carries **42 bands, 77 albums and 135 songs — 74 the station holds at `music/audio/unsigned/al_NNN/NN.mp3` and 61 titles it can only name**, all `label: unsigned`, all re-dated into 2613–2621 so the whole shelf is `gold` and none of it crowds the 500. **428 playable rows** in `music/catalogue.yaml`; 42 stub lyrics files `al_170` … `al_211` carry provenance and no lyrics; the July licence note covers **132** assets. `s_1362` *Cargo-Hold Lullaby* is a runaway the operator heard, `playable: false` on `al_245` (D-102), and `s_1368` *Departure Hymn* and `s_1369` *The Blue Cradle* went the same way on 2026-09-03 against canon fact 21 — layer B on `al_246`, audio deleted (D-104). **M-56 deleted `music/audio/RAW/music/` — 137 files — and kept the folder above it**: it still held `M-25-SECOND/`, the 48 takes M-34 needed, and the dispatch manifest, so the card's own "delete `music/audio/RAW/`" would have destroyed live work (D-103). **M-34 has since filed 46 of those 48**; the folder now holds only the manifest and the two rejected twins under `M-34-REJECTED/`. Check 4 caught three album retitles M-53 never wrote down and they are in the wiki now. **Nothing here blocks M-42 any more** |
 | 6 · Hand over | M-41 · M-42 | — nothing yet | last |
 
@@ -104,14 +104,14 @@ before the next one starts. That pairing is the point: a problem shows up after 
 instead of after 455. The two cards inside one genre cannot overlap, so **the sessions take turns
 rather than running side by side.**
 
-**Three genres are finished and the fourth has its words.** Relay-pop is 105 of 105, lane-rock is
-110 of 110, and Frontier Reels closed on 2026-08-28 (M-33) — 95 takes generated, filed, measured and
-tagged, every one of them matching its written lyric exactly. **M-25 closed on 2026-08-29** —
-old-system sessions' 90 lyrics across 11 albums, written and green on all ten of §12's rules, and
-written at the word floor plus eleven because M-39 asked for that in writing. **M-34 is next and it
-is yours**: 90 takes, four bands, one band per sitting, and the four bands sound less like each other
-than any genre so far — a Mars tram works canteen, four voices in a Titan lake yard, a cold Europa
-gallery and a lock house on eleven miles of Earth canal.
+**Four genres are finished and the fifth has its words.** Relay-pop is 105 of 105, lane-rock is
+110 of 110, Frontier Reels closed on 2026-08-28 (M-33) and old-system sessions closed on 2026-09-03
+(M-34) — 400 of the 500 exist, and every lyric written before this session has audio. **M-27 closed
+on 2026-09-03** — void-lounge's 55 lyrics across 9 albums, written and green on all ten of §12's
+rules, at the word floor plus seventeen. **M-36 is next and it is yours**: 55 takes, four bands, one
+band per sitting, and this is the genre with the catalogue's only male lead and its only records with
+no piano on them — a folded late-club house in the core, and two bands on a storm coast who disagree
+about whose music it is.
 
 **Filing a pile is now `make music-dispatch`** rather than something an agent works out each time.
 Point it at the export folder; it reads the lyric out of every file's own tags, proves the whole pile
@@ -1085,11 +1085,11 @@ are never reused, because a number is an identity here and not a position in a q
 | 2 | **M-22 lane-rock — done** | **M-31 lane-rock — done** | 110 |
 | 3 | **M-24 frontier-reels — done** | **M-33 frontier-reels — done** | 95 |
 | 4 | **M-25 old-system-sessions — done** | **M-34 old-system-sessions — done** — 90 of 90 filed | 90 |
-| 5 | **M-27 void-lounge · NEXT** | M-36 void-lounge — 4 bands | 55 |
+| 5 | **M-27 void-lounge — done** | **M-36 void-lounge · NEXT** — 4 bands | 55 |
 | 6 | M-28 core-harmonies | M-37 core-harmonies — 1 band | 20 |
 | 7 | M-29 void-ballads | M-38 void-ballads — 2 bands | 25 |
 
-### M-21 · M-22 · M-24 · M-25 · M-27 · M-28 · M-29 · `[agent]` Lyrics and prompts — 59 albums, 455 songs — **M-25 DONE 2026-08-29 · M-27 NEXT**
+### M-21 · M-22 · M-24 · M-25 · M-27 · M-28 · M-29 · `[agent]` Lyrics and prompts — 59 albums, 455 songs — **M-27 DONE 2026-09-03 · M-28 waits on M-36**
 Files: one file per album under `music/production/lyrics/`
 Check: every song has lyrics, a generation prompt and an exclude line; every lyric passes the
 swap-the-nouns test; every song has a vocal. M-21 writes `al_005.yaml` … `al_011.yaml`.
@@ -1253,11 +1253,73 @@ Titan, Saturn and the Belt.
 **Nothing was generated and nothing was measured**: every `generation:` block and every `take:` is
 null until M-34, `music/catalogue.yaml` is byte-identical, and `make music-tag` reports exactly what
 it reported before — 310 of 310.
+Result (M-27): **void-lounge is written — 55 songs across 9 albums**, `al_144` … `al_152`, on the
+two labels the form has ever had: the late-club house that folded in 2612 with its catalogue
+disputed, and the storm-coast dance house that picked the form up afterwards. Four bands, and one
+singer in two of them — Juna Carrow is in `b_065` and `b_066` and is the only person in the wiki who
+is, so one voice runs from a 2612 record made three weeks before a house folded to a 2624 record made
+in a hall the band paid for themselves. **`make check` is green on all ten of §12's rules.**
+**This is the genre's only male lead**, and the only one in the catalogue with no piano on it: `b_067`
+plays a synth-harpsichord where the piano would be and the card excludes both piano and guitar.
+**The record's subject is money and rooms, and the dispute is furniture** (§3). Nothing here is a song
+about a folded label or a disputed catalogue. They are about a fare copied off a wall board, a round
+poured at the room's own tempo, two coats nobody came back for, four credit notes in the order they
+were issued, a bench and a clerk's window, a walking bass part left behind by a dead woman that
+neither claimant has priced, a hazard board, nine lamps on a sea wall, a hall that pays by the hour,
+and a keeper who stayed an unpaid hour six times. **Eleven of the 55 are about who gets paid**, which
+is the same count Frontier Reels reached and is what these four bands have in common with a promoter
+and a hall keeper.
+**§7's four distributions all land.** Breaks: **19 of 55, 35%** — §7's "roughly one in three" — never
+fewer than two on an album, and every one of them on the instrument that band's card names, which for
+`b_067` means the synth-harpsichord and for the other three the upright piano. `s_1205` has a guest
+synth-harpsichord and the break on it is still the piano's, because §7 gives a break only to an
+instrument the card already lists. Ramps: **67% declare ≥8s and 24% ≥15s** against §7's ≥40% and
+≥15% — higher than old-system's 61/17 because a late-club torch opens on a piano before anybody
+sings, and lower than nothing, because M-39 has now found five genres running where declaring the
+ramp did not produce it. Outros: **16 cold / 24 fade / 15 sustain**, which is **29/44/27** against
+§7's 30/45/25 — the closest any genre has come. Stated targets average **3:56** with nothing under
+3:35.
+**The lyrics are at the floor and the floor is now the whole of the problem** (D-106). 290 to 324 sung
+words, **mean 305 — the floor plus seventeen** — 16,754 words in all, against old-system's 299,
+Frontier Reels' 340, lane-rock's 317 and relay-pop's 308. D-105 called the three unwritten genres the
+last chance to pull the 500's average back and **this one cannot do it.** Its four cards run **44–84
+BPM**, slower than old-system sessions, which measured 0.882 seconds per sung word — so these come
+back near **4:29** at that rate and near **5:05** at one second a word, and **an hour of void-lounge
+will be eleven or twelve songs.** There is no shorter lyric available; 288 is a hard floor. The only
+lever left is §12 rule 10's number and it is the operator's to move.
+**Rule 4 bound hardest, again, and rule 1 bound for the first time since M-22.** These titles are
+room phrases and closing lines and every one of them wants to be the hook: the first pass had four
+albums above 65% and two at 100%. **18 of 55 sing their own title** and the other 37 take it from an
+image in the lyric. Rule 1 went red once — three songs on `al_151` arrived at the same section shape,
+because a form with no chorus tradition keeps reaching for verse/verse/refrain — and the fix was a
+reordering and a coda, not different songs. Rule 3 came free: **the echoed answer is on none of the
+55**, because these four bands answer the lead with a piano, a set of plucked strings or nothing at
+all, which is where the card puts the answering voice.
+**Rule 5 was harder here than in any core genre so far.** Two of the four bands live in a late-club
+quarter with no freight in it and two live on a sealed coast where the noun list's ferries do not run.
+What carries it is the half of the list about getting home and getting paid — last ferry, ferry, lane,
+the core, the lag, relay, relay road, hauler, freight crew, cargo, manifest, berth, hold, ration,
+transfer hall, shipboard press, carrier wave, settlement, storm coast, storm season, sealed season,
+burn festival, Clearing Day, the dark, synth-harpsichord — **25 of the 43**, and every song clears the
+floor of two. `s_1202` is built on the absence of one of them: a coast with no last ferry has no hour
+at which the night is agreed to be over, which is the wiki's own fact for that song.
+**Six collisions between the wiki and the style cards were resolved the wiki's way** (D-106), and one
+is a decision rather than a conflict. Sel Ardin sings on five tracks across three bands whose cards
+say `backing: none`; `s_1186`'s chorus is all five of `b_064` because Nesta Vire would not sing it
+alone; Talla Venn's guitar is on two `al_147` tracks and `b_065` excludes guitar. Each is named in
+that song's prompt and its album's `room:` block, and every other track on those records excludes the
+same thing outright. **No style card was amended.** And **`s_1211` is `s_1197` remade rather than
+`s_1197` retyped**: two identical lyrics files would give `make music-dispatch` two takes it could not
+tell apart, so the re-recording is written as the same song twelve years later, with the list verse
+shorter because it is being remembered rather than read.
+**Nothing was generated and nothing was measured**: every `generation:` block and every `take:` is
+null until M-36, `music/catalogue.yaml` is byte-identical, and `make music-tag` reports exactly what
+it reported before — 474 of 474.
 Depends on: M-20 for M-21; thereafter each genre's lyrics card depends on the previous genre's
-**audio** card being finished — that is what "one genre at a time" means. **M-25 closed on
-2026-08-29, so M-34 is runnable now**, and M-27's turn comes when M-34 does.
+**audio** card being finished — that is what "one genre at a time" means. **M-27 closed on
+2026-09-03, so M-36 is runnable now**, and M-28's turn comes when M-36 does.
 
-### M-30 · M-31 · M-33 · M-34 · M-36 · M-37 · M-38 · `[you]` Suno — 455 songs — **M-33 DONE 2026-08-28 · M-34 DONE 2026-09-03**
+### M-30 · M-31 · M-33 · M-34 · M-36 · M-37 · M-38 · `[you]` Suno — 455 songs — **M-34 DONE 2026-09-03 · M-36 NEXT**
 Files: `music/audio/<label>/<album>/NN.mp3`
 Check: every song in that genre has a keeper take, downloaded and named, with the prompt, attempts,
 model version and date recorded in the album's lyrics file. Custom mode only.

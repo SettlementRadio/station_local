@@ -1,0 +1,463 @@
+# al_152 — Lamps Left Burning · Nine Lamps (b_067) · Stormline Issue · 2624 · 6 songs · album
+#
+# Written by M-27. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# **The last record of the genre and the last of the 55.** The sealed season of 2623 ran eleven weeks
+# and the band played the last hour of forty nights of it in the Longwall hall, after Cordon Hours
+# had finished and most of the room had gone. Six of those hours were recorded and this is what came
+# out of them, issued in 2624 while the rest of the industry was in Concordance booking the reopened
+# hall — which is `al_150`, made in the same year by the other band on the same house, and the two
+# records do not mention each other.
+#
+# The hall's keeper left the lamps on past his own hours for every one of the six and is the only
+# person outside the band named on the sleeve. He is `s_1220` and he is the last line of `s_1225`,
+# which is what he says when a seal lifts.
+#
+# `s_1224` has no drums on it at all, because the drummer was asleep in the corner between two songs
+# and the other three played it without him. It is the only track on either Nine Lamps record with
+# no kit.
+#
+# `generation:` and every `take:` are empty until M-36.
+
+album:
+  id: al_152
+  title: Lamps Left Burning
+  band: b_067
+  band_name: Nine Lamps
+  label: label_3
+  release_year: 2624
+  genre: void-lounge
+  cornerstone: false
+  song_count: 6
+  style_card: b_067
+  room: >-
+    The Longwall hall on Meridian's storm coast across the sealed season of 2623, six nights out of
+    forty, recorded after the dance band had finished and most of the room had gone — a very large
+    cold hall with the lamps still up. The card holds throughout: high light male tenor, quiet and
+    unforced and almost breathy at the top, long notes let go rather than stopped; synth-harpsichord
+    where a piano would be, taking every instrumental break; compact electric keyboards holding one
+    long tone under everything; upright bass; brushed kit. **No piano and no guitar anywhere.** Two
+    tracks are their own. `s_1222` opens on a spoken count of the room, read off a door keeper's
+    slip. And `s_1224` has no drums of any kind, which is the only time that has happened on either
+    record — the prompt excludes percussion outright rather than asking for it quietly.
+
+generation:
+  # Empty until M-36's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1220
+    title: Lamps Left Burning
+    track_number: 1
+    mood: [warm, spacious, slow]
+    fact: >-
+      Recorded on the fortieth night of the sealed season of 2623, after Cordon Hours had finished
+      and the hall's keeper had left the lamps on for it.
+    arrangement_note: the hall is very large and almost empty and is left audible behind everything, and nothing is close-mic'd except the voice
+    intro: 16
+    outro: fade
+    target_duration: "4:00"
+    prompt: >-
+      48 BPM warm spacious slow torch in a very large near-empty hall; high light male tenor close
+      and quiet against a long room, plucked electronic strings where a piano would be, one long held
+      keyboard tone, upright bass, brushed kit, the hall audible behind everything, fade.
+    exclude: piano, guitar, backing vocals, saxophone and brass, orchestral strings, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending, close-miking the room
+    lyrics: |
+      [Intro - held tone and plucked strings, sixteen seconds]
+
+      [Verse 1]
+      Fortieth night, and the seal has three days left,
+      and the hall has had four hundred in it since eight.
+      They have gone. The floor is wet and full of paper.
+      There are nine of them left and one of them is staff.
+      It is ten past four and we are due to start
+      and the keeper is standing by the switch and does not throw it.
+      He looks at us. We look at him. He shrugs.
+      And that is how the lamps stayed up all six nights.
+
+      [Verse 2]
+      He is not paid past four. Nobody is.
+      He has a family up the row and a bed in it
+      and he has stayed an extra hour six times
+      for four people playing to almost nobody.
+      He will not take anything. We have offered twice.
+      He said the second time that he would like it
+      if his name went on the back of it in full,
+      which is the cheapest thing that anyone has asked us.
+
+      [Chorus]
+      Lamps left burning in an empty room.
+      Somebody upstairs decided not to.
+      That is the whole of it and it is enough
+      to have made a record out of. Here it is.
+
+      [Verse 3]
+      A sealed season is eleven weeks of inside.
+      By the fortieth night you know each other's coats.
+      The dance crowd and the nine who stay behind
+      and the woman on the door and the keeper and us.
+      That is a settlement, whatever else it is.
+      Nobody chose it. The weather chose it for them.
+      And the last hour of it every night was ours
+      and no one from the core has ever heard it.
+
+      [Chorus]
+      Lamps left burning in an empty room.
+      Somebody upstairs decided not to.
+      That is the whole of it and it is enough
+      to have made a record out of. Here it is.
+
+      [Outro - the hall, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1221
+    title: The Last Hour Each Night
+    track_number: 2
+    mood: [tired, tender, patient]
+    fact: >-
+      The band played the last hour of every night of that seal, and Sabin Loch closed all forty of
+      them with this one.
+    arrangement_note: the arrangement is the one the band arrived at by playing it forty times, and the break is where the fortieth night's version differed
+    intro: 7
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      54 BPM tired tender patient slow torch in a very large hall; high light male tenor quiet and
+      unforced with long notes let go rather than stopped, plucked electronic strings taking a
+      fifteen-second break, one long held keyboard tone, upright bass, brushed kit, fade.
+    exclude: piano, guitar, backing vocals, saxophone and brass, orchestral strings, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending
+    lyrics: |
+      [Intro - plucked strings and bass, seven seconds]
+
+      [Verse 1]
+      Forty nights and this one at the end of each.
+      Not because it is the best thing that we have.
+      Because it finishes, which is a quality
+      that about four songs in a hundred have.
+      You can hear the room decide to put its coat on
+      somewhere around the middle of the second verse
+      and that is not a failure, that is the job,
+      and a closer that will not close is a bad closer.
+      Out here a sealed season has no last ferry
+      and somebody has to say when it is over.
+
+      [Verse 2]
+      It changed across the season, slowly, nightly,
+      the way a thing does when nobody is watching.
+      By about the twentieth it had lost a section.
+      By the thirtieth the bass had changed its mind.
+      Nobody discussed a bar of it out loud.
+      Forty repetitions and a room
+      will do more to a song than any argument,
+      and none of us could put it back if asked.
+
+      [Chorus]
+      Last hour, every night, for eleven weeks.
+      Last hour, and then the doors, and then the cold.
+      Everything I know about this coast
+      I learned between about four and about five.
+
+      [Instrumental - plucked electronic strings break, fifteen seconds]
+
+      [Verse 3]
+      The fortieth one is the one that got recorded
+      and it is the one that is the least like the first,
+      and somewhere in a hall on a wet Tuesday
+      is the version I would rather you had heard.
+      That one is gone. It went the way they go.
+      There is no tape of a room that is not recorded.
+      What there is, is this, at the end of the season,
+      played by four people who had done it enough.
+      It went up the relay in the spring to strangers.
+      I hope the room came with it. It may not have.
+
+      [Chorus]
+      Last hour, every night, for eleven weeks.
+      Last hour, and then the doors, and then the cold.
+      Everything I know about this coast
+      I learned between about four and about five.
+
+      [Outro - held tone, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1222
+    title: Nobody Went Home
+    track_number: 3
+    mood: [warm, communal, slow]
+    fact: >-
+      Nera Bly counts the room in at the top of the song, and the number is the one the hall's door
+      keeper handed her on a slip that night.
+    arrangement_note: a spoken count of the room off a paper slip at the top, kept on the take, and the bass comes in on the number
+    intro: 5
+    outro: fade
+    target_duration: "3:50"
+    prompt: >-
+      58 BPM warm communal slow torch in a very large hall; a quiet spoken number read off a slip of
+      paper at the top and kept, then high light male tenor quiet and unforced, plucked electronic
+      strings, one long held keyboard tone, upright bass entering on the number, brushed kit, fade.
+    exclude: piano, guitar, backing vocals, saxophone and brass, orchestral strings, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, rapped sections, dance and modern studio production, cold ending
+    lyrics: |
+      [Intro - a spoken count read off a slip, then bass, five seconds]
+
+      [Verse 1]
+      A hundred and forty-one. She read it out.
+      The woman on the door had counted them in
+      and wrote it on a slip and handed it over
+      because she thought that we would like to know.
+      A hundred and forty-one at half past four
+      in a hall that holds nine hundred when it wants to.
+      The dance had finished ninety minutes back
+      and the last hauler off the coast had gone at two.
+      Nobody went home. That is the whole song.
+
+      [Verse 2]
+      It was the twenty-second night of eleven weeks
+      and everybody in the place was sick of everybody.
+      That is what a seal does by about then.
+      The same four hundred faces and no exit.
+      Nobody had come in off the relay in weeks.
+      Nobody had anything to say that was new.
+      And a hundred and forty-one of them sat down
+      after the loud part, in the cold, and stayed,
+      and about a third of them were not the kind
+      who would admit in daylight that they had.
+
+      [Refrain]
+      Nobody went home. Nobody could.
+      Nobody went home and it was better.
+      There is a difference between the two of those
+      and by the end of a season there is not.
+
+      [Verse 3]
+      The seal lifted eleven days after that
+      and the first crate off the coast took half the room.
+      Everybody who could go, went, and quickly,
+      and I have never blamed a single one of them.
+      But there was a Tuesday in the middle of the winter
+      with a hundred and forty-one in a wet hall
+      who had nowhere to be and stayed on anyway,
+      and I would put that against most things I know.
+      They will not tell you that in the storm season.
+      They will tell you they were waiting for a boat.
+
+      [Refrain]
+      Nobody went home. Nobody could.
+      Nobody went home and it was better.
+      There is a difference between the two of those
+      and by the end of a season there is not.
+
+      [Outro - bass and held tone, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1223
+    title: The Slow Hour Pays
+    track_number: 4
+    mood: [dry, wry, midtempo]
+    fact: >-
+      The hall pays the dance bands by the night and Nine Lamps by the hour, which Sabin Loch has
+      called the only honest arrangement on the coast.
+    arrangement_note: the most conversational vocal on the record, almost spoken in the verses without ever leaving the sung line
+    intro: 6
+    outro: cold
+    target_duration: "3:45"
+    prompt: >-
+      68 BPM dry wry midtempo slow torch in a very large hall; high light male tenor quiet and almost
+      conversational but always sung, plucked electronic strings taking a thirteen-second break, one
+      long held keyboard tone, upright bass, brushed kit, hard cold stop.
+    exclude: piano, guitar, backing vocals, saxophone and brass, orchestral strings, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, spoken or rapped sections, dance and modern studio production, fade ending
+    lyrics: |
+      [Intro - bass and plucked strings, six seconds]
+
+      [Verse 1]
+      They pay the dance bands by the night, in full,
+      whatever happens, whoever comes, whatever.
+      That is a fee and it is a proper fee
+      and I would take it if it were on offer.
+      They pay us by the hour, which is different,
+      and everybody thinks that it is worse.
+      An hour is an hour. It is measurable.
+      A night is whatever the hall decides it was.
+      A hauler crew gets paid against a manifest.
+      Nobody argues with a manifest either.
+
+      [Verse 2]
+      I have been in three arguments about a night.
+      Not one of them was ever settled properly.
+      A night began when somebody says it began
+      and finished when the man with the keys was tired.
+      Nobody has ever argued with a clock.
+      You start, and then you stop, and it is counted,
+      and the money that arrives is the same money
+      whether they liked it or they did not like it.
+      That is the only wage out on this storm coast
+      that has never once been settled by a mood.
+
+      [Chorus]
+      By the hour, and the hour is what we play.
+      By the hour, and I have never once been short.
+      Everybody tells me I should ask for a fee.
+      Everybody telling me is owed one.
+
+      [Instrumental - plucked electronic strings break, thirteen seconds]
+
+      [Verse 3]
+      There is one hall on this coast that pays like that
+      and I have stayed with it eleven years for the reason.
+      Not loyalty. I would go tomorrow, gladly,
+      if somebody would count the same way twice.
+      A fair arrangement is not a kind arrangement.
+      Nobody down here is being kind to anyone.
+      It is only that a clock cannot be argued with
+      and that is the whole of what I am asking for.
+
+      [Chorus]
+      By the hour, and the hour is what we play.
+      By the hour, and I have never once been short.
+      Everybody tells me I should ask for a fee.
+      Everybody telling me is owed one.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1224
+    title: Salt and Sleep
+    track_number: 5
+    mood: [hushed, aching, spare]
+    fact: >-
+      Corle Sten fell asleep in the corner between two songs and the other three played this one
+      without him, which is the only track on either record with no drums.
+    arrangement_note: no percussion of any kind anywhere, and the bass takes everything the kit would have done without playing any more notes than usual
+    intro: 10
+    outro: sustain
+    target_duration: "4:05"
+    prompt: >-
+      44 BPM hushed aching spare slow torch in a very large hall; high light male tenor quiet and
+      breathy with long notes let go rather than stopped, plucked electronic strings, one long held
+      keyboard tone, upright bass and no percussion of any kind, sustained ending.
+    exclude: drums, brushed kit, percussion of any kind, piano, guitar, backing vocals, saxophone and brass, orchestral strings, drum machines, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, cold ending
+    lyrics: |
+      [Intro - held tone and bass, ten seconds]
+
+      [Verse 1]
+      He went between two songs and he went properly,
+      sitting up, in the corner, coat still on.
+      Eleven weeks of nights will do that to a man
+      and he is fifty-one and does the loading too —
+      the cargo off the road, the kit, the cases,
+      the whole of it, both ends, for eleven weeks.
+      Nobody woke him. Nobody thought about it.
+      The three of us just started the next one
+      and it was four bars in before I understood
+      what the enormous quiet underneath it was.
+
+      [Verse 2]
+      There is a thing that happens with no drums
+      that I have not heard in eleven years of this.
+      The hall comes forward. All of it. At once.
+      Every foot of wall and every empty seat.
+      The bass stopped holding anybody's time
+      and started being the lowest thing in a room,
+      and I sang about a third quieter than usual
+      and it was still too loud by half. It was.
+
+      [Refrain]
+      Salt in everything and sleep in everything
+      and a season with eleven weeks of dark.
+      Let the man alone. He is not missing it.
+      He is doing what the whole storm coast wants to do.
+
+      [Verse 3]
+      He woke at the end and said that he was sorry
+      and we said nothing, having got a track out of it,
+      and then we played the last one with him back
+      and it was fine, and it was the ordinary thing.
+      That is the record: forty ordinary hours
+      and about six minutes where the room got in.
+      You cannot arrange for that. You can only be there
+      often enough that it eventually occurs.
+      Forty nights is how you buy the six minutes.
+      There is no other way of buying them at all.
+
+      [Refrain]
+      Salt in everything and sleep in everything
+      and a season with eleven weeks of dark.
+      Let the man alone. He is not missing it.
+      He is doing what the whole storm coast wants to do.
+
+      [Outro - bass and held tone sustaining]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1225
+    title: Open the Doors Slowly
+    track_number: 6
+    mood: [final, warm, hopeful]
+    fact: >-
+      The last line is what the Longwall hall's keeper says when a seal lifts, and Emre Talt holds
+      the closing chord until the doors are actually open.
+    arrangement_note: the closing chord is held until the hall's doors are physically open and the outside is audible on the take, which is why the end runs long
+    intro: 4
+    outro: cold
+    target_duration: "4:10"
+    prompt: >-
+      50 BPM warm hopeful closing torch in a very large hall; high light male tenor quiet and
+      unforced, plucked electronic strings holding one final chord for a very long time at the end
+      with the outside becoming audible over it, one long held keyboard tone, upright bass, brushed
+      kit, hard cold stop after the doors.
+    exclude: piano, guitar, backing vocals, saxophone and brass, orchestral strings, drum machines, four-on-the-floor kick, belted vocals, vocal tuning, whispered or rapped sections, dance and modern studio production, fade ending
+    lyrics: |
+      [Intro - plucked strings, four seconds]
+
+      [Verse 1]
+      The seal lifts at a time somebody decides
+      and the word goes round the row before the board.
+      Everybody knows an hour before it's posted.
+      Nobody out here has ever known how.
+      It is not the carrier wave. It is not the board.
+      It is somebody's cousin at the harbour office.
+      The hall was still full when it came through that night
+      and the whole room turned around to face the door
+      and the dance band played on for about a minute
+      to four hundred backs, and finished, and came off.
+
+      [Verse 2]
+      Then it was ours, as it had been for weeks,
+      with eleven days of everybody's patience
+      spent, and the crates already being loaded,
+      and half the room with somewhere they could go —
+      a berth, a road, a crossing, a relay seat,
+      eleven weeks of not being where they live.
+      A hundred stayed. I do not know why they stayed.
+      There was a boat and a road and a lifted season
+      and a hundred people sat down on a wet floor
+      and let us take the last hour of the seal.
+
+      [Chorus]
+      Open the doors slowly. Do not throw them.
+      Open the doors slowly. Let it in.
+      There is a whole coast out there and it is freezing
+      and every one of us has waited weeks.
+
+      [Verse 3]
+      He held the last chord while the keeper walked it,
+      both doors, one at a time, the whole way back,
+      and you can hear the weather arrive across it,
+      and the sea, and somebody's hauler on the road,
+      and the first cargo of the spring going by.
+      It runs about a minute past the ending.
+      The house asked whether we would like it shortened.
+      We said no, and they printed it entire,
+      and it is the last thing on the record. Here:
+
+      [Coda - the doors opening, the outside audible]
+      Open the doors slowly. There is no hurry.
+      It has been eleven weeks. Let the coast in.
+
+      [Outro - cold stop after the doors]
+    take: null # M-36 fills this in at the Suno sitting

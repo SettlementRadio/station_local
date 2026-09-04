@@ -3336,3 +3336,39 @@ lyrics; that still holds and nothing was regenerated. What is new is the directi
 the three genres still to be written (M-27 · M-28 · M-29, 100 songs) are the last chance to pull the
 average back. **That is a finding for the operator, not an edit** — §7's table is a target for the
 500 and the three remaining audio cards — M-36 · M-37 · M-38 — are where it is met or missed.
+
+### D-106 · Void-lounge's words are at the floor, and the floor is the only lever left — 2026-09-03
+
+M-27 wrote void-lounge's 55 lyrics across nine albums and every one of §12's ten rules is green.
+**Three things were decided here.**
+
+**A re-recording is not the same file twice.** The wiki says `s_1211` *New Name, Old Song* is
+`s_1197` *Borrowed Against Us* under another title, re-recorded in 2624 so that the plays stop paying
+the two claimants who hold the Coldwater Court catalogue. Writing the same words into two lyrics
+files would give `make music-dispatch` two takes it cannot tell apart — D-091's method proves a pile
+by matching each take's own lyric tag against the written lyric, and two identical lyrics are the
+pair problem of D-105 arriving by hand — and §12 rule 1 counts an album's section shapes. So it is
+written as the same song remade twelve years later: the list verse comes back **shorter and from
+memory**, six of eleven lines instead of eleven, and the third verse says out loud that it is the
+same song and why it has a different name. The fact is unchanged and the wiki was not edited.
+
+**Six collisions between the wiki and the style cards were resolved the wiki's way**, which is
+D-092's, D-095's and D-096's precedent applied a fourth time. Sel Ardin is a vocal arranger on
+`s_1178`, `s_1180`, `s_1181`, `s_1194` and `s_1207` and three of those bands' cards say `backing:
+none`; b_064's card allows one voice on a last chorus and `s_1186`'s chorus is all five of the band
+because Nesta Vire would not sing it alone; b_065 excludes guitar and Talla Venn plays on `s_1192`
+and `s_1193`. Every departure is named in its own prompt and in its album's `room:` block, and every
+other track on those records excludes the same thing outright. **No style card was amended.**
+`s_1205`'s guest synth-harpsichord is an addition rather than a collision — the card does not
+exclude it — and the break on that track is still the piano's, because §7 gives a break only to an
+instrument the band's card already names.
+
+**The words are at the floor and the floor is now the whole of the problem.** D-105 called the three
+unwritten genres the last chance to pull the 500's average back. **Void-lounge cannot do it and no
+writing decision could have.** Its four style cards run **44–84 BPM**, slower than old-system
+sessions' 58–124, which is the slowest rate anyone has measured at 0.882 seconds per sung word. These
+lyrics average **305 sung words** — rule 10's floor plus seventeen, against M-25's floor plus eleven —
+so at old-system's rate they come back near **4:29**, and at 1.00 seconds a word near **5:05**. There
+is no shorter lyric available: 288 is a hard floor and going under it is red. **The only lever left is
+§12 rule 10's number itself, and that is the operator's to move, not a card's.** Stated rather than
+compensated for, on D-096's precedent; M-36 and M-39 settle it.

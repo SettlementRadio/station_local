@@ -1,0 +1,443 @@
+# al_148 — The Founder's Room · Coldwater Court (b_065) · Lower Bell Editions · 2612 · 6 songs · album
+#
+# Written by M-27. **The file shape is fixed by al_001.yaml — read that header once.** Production
+# vocabulary (COMMISSION.md §8): never enters the wiki, never said on air. Lyrics written by hand;
+# Suno Custom mode only. Written under §12 rules 9 and 10.
+#
+# The band's second record, made eighteen years after the first, and the last thing Lower Bell
+# Editions ever pressed. **Juna Carrow sings all six**, seven years into the chair, and the card's
+# voice line covers both singers because both are the same low grainy contralto — which is the whole
+# reason M-20 could write one voice line for a band with two leads.
+#
+# It was cut in the room the founder had bought in 2610 with a loan against the catalogue, which is
+# what the title is about and what the band rather than the founder chose to call it. The plant held
+# the run within a month, so the record went from being made to being disputed without ever being
+# sold.
+#
+# **Two things depart from the card and both are the wiki's.** `s_1199` has a second upright bass on
+# it — Oren Saye alongside Toben Alt — which is the only track in the band's life with two, and Alt
+# plays the second night a whole tone below the first. And `s_1200` is credited to two people: one
+# voice and one piano, with no bass and no drums anywhere on it, and the closing figure is the last
+# thing Maro Deyn has played in public.
+#
+# `generation:` and every `take:` are empty until M-36.
+
+album:
+  id: al_148
+  title: The Founder's Room
+  band: b_065
+  band_name: Coldwater Court
+  label: label_6
+  release_year: 2612
+  genre: void-lounge
+  cornerstone: false
+  song_count: 6
+  style_card: b_065
+  room: >-
+    The Lower Bell room, two nights, in the spring the house went under. The card holds: low grainy
+    female lead singing behind the piano with no ornament and no vibrato, upright piano taking every
+    instrumental break, upright bass, brushed kit with light hand percussion, and no keyboard or
+    synthesiser of any kind. Two tracks are their own. `s_1199` carries two upright basses, the
+    band's own tuned a whole tone down on the second night, so the prompt asks for a doubled low bass
+    register and a dark heavy tone. And `s_1200` is voice and piano and nothing else — the prompt
+    excludes bass and drums outright, and the closing figure is played alone with the voice already
+    finished.
+
+generation:
+  # Empty until M-36's Suno sitting. See al_001.yaml for what each field means.
+  model_version: null
+  licence_period: null
+  generated_on: null
+  sittings: []
+  ai_generated: true # never changes; written into every file's tags by M-05
+  notes: null
+
+songs:
+  - id: s_1195
+    title: The Founder's Room
+    track_number: 1
+    mood: [wry, cold, midtempo]
+    fact: >-
+      Juna Carrow chose the title and Maro Deyn approved it without saying anything, which the rest
+      of the band took to mean the argument was over.
+    arrangement_note: the voice is further forward than on anything else the band has cut, and the piano stays behind it the whole way without once answering a line
+    intro: 9
+    outro: cold
+    target_duration: "3:50"
+    prompt: >-
+      72 BPM wry cold midtempo Purist slow blues torch; low grainy female lead well forward, no
+      vibrato, upright piano staying behind the voice throughout and never answering it, upright
+      bass, brushed kit with light hand percussion, hard cold stop.
+    exclude: keyboards, synthesizers, plucked electronic strings, backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, added reverb, vocal tuning, whispered or rapped sections, modern studio production, fade ending
+    lyrics: |
+      [Intro - piano and bass, nine seconds]
+
+      [Verse 1]
+      He bought the room. That is a matter of record.
+      He borrowed on the shelf to do it with.
+      Nobody asked him to and nobody stopped him
+      and it was two years back and it is done.
+      We play in it. We have always played in it.
+      It was a room before it was an asset.
+      The stair is the same stair off the same lane.
+      The window still does not shut in storm season.
+
+      [Chorus]
+      The founder's room, and we are in it, playing.
+      The founder's room, and the founder's at the back.
+      Whatever a room is for, it is not for owning.
+      Somebody had better tell him. Nobody will.
+
+      [Verse 2]
+      I put it on the paper as the title
+      and I did it partly to see what he would say.
+      He read it, and he looked at me a moment,
+      and he did not say a word and signed it off.
+      The others took that to mean it was over.
+      I am not certain that is what it meant.
+      A man can let a thing go past him quietly
+      and still be carrying the whole of it at home.
+
+      [Verse 3]
+      There is nothing cruel in it. I want that clear.
+      He is the reason any of this was pressed.
+      Twenty-three years of one house and one form
+      and no other house in the settlement would touch it.
+      But he has put the room in with the paper
+      and the room has people in it every week,
+      and when the paper goes, as paper does,
+      they will come for it, and it will have our name.
+
+      [Chorus]
+      The founder's room, and we are in it, playing.
+      The founder's room, and the founder's at the back.
+      Whatever a room is for, it is not for owning.
+      Somebody had better tell him. Nobody will.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1196
+    title: Bela's Key
+    track_number: 2
+    mood: [tender, warm, slow]
+    fact: >-
+      Juna Carrow sings it in Bela Runn's key instead of her own and has never sung it in any other,
+      including on the coast.
+    arrangement_note: the whole song sits low in the singer's range and slightly under where she is comfortable, which is the point and must not be corrected
+    intro: 13
+    outro: sustain
+    target_duration: "3:45"
+    prompt: >-
+      48 BPM tender Purist torch ballad; low grainy female lead pitched at the bottom of her range
+      and slightly below comfort, no vibrato, upright piano, upright bass, brushed kit with light
+      hand percussion, sustained ending.
+    exclude: keyboards, synthesizers, plucked electronic strings, backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, added reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending, transposing the vocal upward
+    lyrics: |
+      [Intro - piano, thirteen seconds]
+
+      [Verse 1]
+      She sang this one for twenty-six years running
+      and I came in and sang it the next spring.
+      They told me from the start to take it upward,
+      to put it where my own voice wants to go.
+      I tried it twice in front of nobody
+      and both times it was better and it was wrong.
+      So it stays where she had it, underneath me,
+      and I go down to meet it every time.
+
+      [Verse 2]
+      There is a place a fourth below your comfort
+      where the tone goes grainy and the breath runs out,
+      and a lot of people call that a mistake
+      and a few of us have built a life in it.
+      That is where she lived. That is where the song lives.
+      I do not sound like her. I never did.
+      But the shape of what she did is in the corners
+      and I am not the one who takes it out.
+
+      [Refrain]
+      Leave it where she had it. Leave it low.
+      A key is not a preference. It is a room.
+      Move it up and everything gets easier
+      and the thing you moved it for is not there.
+
+      [Verse 3]
+      She left over an account she asked to see twice
+      and she has not been in this quarter since.
+      I do not know her. We have never spoken.
+      The last ferry she took, she took alone.
+      Somewhere out past the relay she is living
+      and does not think about a Tuesday in the core.
+      I will sing this in her key on the storm coast
+      and in every hall I get to after that.
+
+      [Refrain]
+      Leave it where she had it. Leave it low.
+      A key is not a preference. It is a room.
+      Move it up and everything gets easier
+      and the thing you moved it for is not there.
+
+      [Outro - piano sustaining]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1197
+    title: Borrowed Against Us
+    track_number: 3
+    mood: [bitter, tense, slow]
+    fact: >-
+      The second verse lists what the loan was secured on, in the order it appears on the paper the
+      band was shown in 2611.
+    arrangement_note: the list in the second verse is sung flat and in strict time with only the bass under it, and the piano does not come back until it is finished
+    intro: 6
+    outro: cold
+    target_duration: "4:05"
+    prompt: >-
+      62 BPM bitter tense Purist slow blues torch; low grainy female lead, no vibrato, one verse sung
+      flat and strictly in time over upright bass alone, upright piano returning after it and taking
+      a thirteen-second break, brushed kit with hand percussion, hard cold stop.
+    exclude: keyboards, synthesizers, plucked electronic strings, backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, added reverb, vocal tuning, whispered or rapped sections, modern studio production, fade ending
+    lyrics: |
+      [Intro - bass alone, six seconds]
+
+      [Verse 1]
+      They showed us the paper in a back office
+      and gave us about four minutes with the thing.
+      There was a hauler idling in the lane outside
+      and I watched it the whole time and not the page.
+      Nobody in the band can read that language.
+      One of us could count, and that was enough.
+      It is a list. That is all a paper is.
+      Somebody writes down everything you have
+      and puts a figure at the bottom of the column
+      and the figure is smaller than the list.
+      It is always smaller. That is what a figure is.
+
+      [Verse 2]
+      The lease on the room. The plant account in credit.
+      The masters. The unsold. The two spare presses.
+      The cases. The name. The catalogue entire.
+      The rights in everything the house has issued.
+      Eleven lines and every one of them is us.
+      The eleventh line is the one that has my voice on.
+      I am on a piece of paper as security
+      and the man who wrote me down was in the room.
+
+      [Instrumental - upright piano break, thirteen seconds]
+
+      [Verse 3]
+      I do not think he understood the list.
+      I think he saw a number and a room he wanted
+      and signed a thing a lawyer put in front of him
+      and went back down the stair and opened up.
+      That is not a defence. It is worse than one.
+      A man who understood it could be argued with.
+      There is nobody to shout at in this building.
+      There is only what the paper says there is.
+      I have shouted at a man across a table.
+      It is a good deal better than this is.
+
+      [Refrain]
+      Borrowed against the room and the recordings,
+      borrowed against the whole of what we made.
+      Somewhere on that column I am a figure
+      and the freight crew at the bar are worth more.
+      Borrowed against a Tuesday and a stairwell.
+      Borrowed against the thing that cannot move.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1198
+    title: Nothing Since the Festival
+    track_number: 4
+    mood: [wistful, spare, patient]
+    fact: >-
+      Odell Prine plays the brush pattern off the band's first record note for note, which is the
+      only thing the four of them agreed on before they started.
+    arrangement_note: the brush pattern is the one from the band's first record, unchanged, and it is the only continuous thing on the track
+    intro: 16
+    outro: fade
+    target_duration: "3:55"
+    prompt: >-
+      52 BPM wistful patient Purist torch; low grainy female lead behind the piano, no vibrato, a
+      single unchanging brush pattern running the whole length of the track, upright piano, upright
+      bass, light hand percussion, fade.
+    exclude: keyboards, synthesizers, plucked electronic strings, backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, added reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending, drum fills
+    lyrics: |
+      [Intro - brushes alone, then piano, sixteen seconds]
+
+      [Verse 1]
+      Eighteen years between one record and the other
+      and the only thing agreed before we started
+      was the pattern the man behind the kit would play,
+      which is the pattern off the first one, note for note.
+      He did not offer it. He simply did it.
+      By the second bar the rest of us had stopped
+      and then we all came in and did not mention it
+      and that is how a band decides a thing.
+      Nobody voted. Nobody was asked.
+      A pattern started and the room agreed.
+
+      [Verse 2]
+      Nothing has come out of here since the festival.
+      That is not idleness. That is a queue.
+      He would not put his own band up the order
+      in front of anybody he had signed,
+      and there was always somebody he had signed,
+      until this spring, when suddenly there was not.
+      The last ferry brought nobody down this season.
+      The relay brought no crate up to the door.
+      So here we are, at the front, because the queue behind us
+      has walked off down the lane and gone.
+
+      [Chorus]
+      Nothing out of here since the festival, and now this.
+      Eighteen years, and a fortnight, and a room.
+      Everything we did not do is on it
+      and none of it is anything to hear.
+
+      [Verse 3]
+      A gap is not a silence. We were playing.
+      Three nights a week for eighteen years, in here.
+      Nobody wrote it down and nobody pressed it
+      and about four thousand people heard it happen.
+      They came up off the water and they sat there
+      and went back out and did not write it down.
+      If the shelf goes and the masters go with it
+      that is still four thousand evenings in the world.
+      He has the brush pattern. I have the rest of it.
+      Between the two of us it is all still here.
+      Neither one of us is giving it back.
+
+      [Outro - brushes last, fading]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1199
+    title: The Plant Keeps Ours
+    track_number: 5
+    mood: [cold, resigned, slow]
+    fact: >-
+      Toben Alt heard between the two nights that the plant intended to hold the run, and plays
+      everything on the second night a whole tone lower than he had on the first.
+    arrangement_note: two upright basses, the band's own tuned a whole tone down, and the low register is doubled from the second verse onward
+    intro: 7
+    outro: cold
+    target_duration: "4:15"
+    prompt: >-
+      50 BPM cold resigned Purist slow torch; low grainy female lead, no vibrato, two upright basses
+      doubling the low register from the second verse with a dark heavy tone, upright piano taking a
+      fourteen-second break, brushed kit with hand percussion, hard cold stop.
+    exclude: keyboards, synthesizers, plucked electronic strings, backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, four-on-the-floor kick, belted vocals, added reverb, vocal tuning, whispered or rapped sections, modern studio production, fade ending, bright bass tone
+    lyrics: |
+      [Intro - two basses, seven seconds]
+
+      [Verse 1]
+      Somebody told him between the two nights.
+      He did not tell the rest of us till after.
+      He came in on the second night and tuned down
+      and played the whole of it a whole tone under.
+      Nobody asked him what he thought he was doing.
+      You could hear it from the doorway. It was obvious.
+      A man had had some news at about six
+      and had decided where to put it.
+      It went into the bottom of the instrument
+      because there was nowhere else for it to go.
+
+      [Verse 2]
+      They keep the run. They are entitled to it.
+      Two years of pressing owed is two years owed
+      and a plant is not a friend and never said it was
+      and everything in the building is security.
+      So there are boxes with our name across the side
+      in a building that we cannot get into,
+      and the cargo doors are shut on the whole spring
+      and nobody is doing anything wrong.
+
+      [Instrumental - upright piano break over the low basses, fourteen seconds]
+
+      [Verse 3]
+      It is not the loss. I want to be precise.
+      The loss is a thing that people can survive.
+      It is that it is finished and still sitting there,
+      complete, and boxed, and forty feet away.
+      A record that is made and never issued
+      is not a record. It is an argument.
+      I would rather they had stopped us in the winter
+      than let us do the whole of it and hold it.
+      A thing you never finished is a story.
+      A thing you finished is a room you cannot enter.
+
+      [Refrain]
+      The plant has ours. The plant is in the right.
+      The plant is a shed with a lock and a fair claim.
+      Somebody down there dusts the top box weekly
+      and does not know a single word of it.
+      I hope he likes his job. I mean that plainly.
+      He is the last person who will stand near it.
+
+      [Outro - cold stop]
+    take: null # M-36 fills this in at the Suno sitting
+
+  - id: s_1200
+    title: Close the House
+    track_number: 6
+    mood: [final, aching, hushed]
+    fact: >-
+      Maro Deyn plays the closing figure alone, and he has not played in public since 2612.
+    arrangement_note: voice and piano only, with no bass and no drums anywhere on the track, and the last forty seconds are the piano alone after the voice has finished
+    intro: 20
+    outro: sustain
+    target_duration: "3:40"
+    prompt: >-
+      46 BPM hushed aching closing Purist torch; low grainy female lead and one upright piano and
+      nothing else at all, no vibrato, the piano alone for the last section after the voice has
+      stopped, tracked live in a small club room, tape warmth, sustained ending.
+    exclude: bass, drums, percussion, keyboards, synthesizers, plucked electronic strings, backing vocals, saxophone and brass, orchestral strings, guitar, drum machines, belted vocals, added reverb, vocal tuning, whispered or rapped sections, modern studio production, cold ending
+    lyrics: |
+      [Intro - piano alone, twenty seconds]
+
+      [Verse 1]
+      Close the house. There is no other sentence.
+      Close it properly and turn the key yourself.
+      Do not let it go on being nearly open
+      for another year, for anybody's sake.
+      The staff know. They have known since about the autumn.
+      The plant knows. The distributor knows first.
+      There is one man in the whole of this arrangement
+      who is waiting for a season that will fix it.
+      No season fixes anything down here.
+      The last ferry goes at midnight either way.
+
+      [Verse 2]
+      Twenty-three years is a life and not a hobby.
+      You built the only house this form has had.
+      Nobody in the core would touch the music
+      and you went and pressed it for a quarter century.
+      That is the thing they will say at the finish
+      and it is true and you will not believe it,
+      and you will hear the other thing instead,
+      which is the sound of a shed with our boxes in.
+
+      [Refrain]
+      Close the house. Let it be a thing you did
+      and not a thing that happened while you watched.
+      There is a difference and it is the whole difference
+      and it is yours to take, and only yours.
+
+      [Verse 3]
+      He played the last figure on his own, at the end,
+      after I had finished, with the room already going.
+      Nobody counted him in and nobody stopped him.
+      It runs about a minute and it does not resolve.
+      I stood at the side of it and let it run.
+      Nobody in the room so much as coughed.
+      He has not played in front of anyone since then.
+      He is asked about once a season and says nothing.
+      Whatever that minute was, it is on the record,
+      and the record is in a shed and will not move.
+      Close the house. Then come and sit down here.
+      There is a chair by the piano. There always was.
+
+      [Outro - piano alone, sustaining]
+    take: null # M-36 fills this in at the Suno sitting
